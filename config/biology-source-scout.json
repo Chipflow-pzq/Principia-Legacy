@@ -1,0 +1,297 @@
+[
+  {
+    "dossier": "B01",
+    "query": "Accurate prediction of protein structures and interactions using a three-track neural network",
+    "results": [
+      {
+        "authorString": "Baek M, DiMaio F, Anishchenko I, Dauparas J, Ovchinnikov S, Lee GR, Wang J, Cong Q, Kinch LN, Schaeffer RD, Millán C, Park H, Adams C, Glassman CR, DeGiovanni A, Pereira JH, Rodrigues AV, van Dijk AA, Ebrecht AC, Opperman DJ, Sagmeister T, Buhlheller C, Pavkov-Keller T, Rathinaswamy MK, Dalwadi U, Yip CK, Burke JE, Garcia KC, Grishin NV, Adams PD, Read RJ, Baker D.",
+        "doi": "10.1126/science.abj8754",
+        "id": "34282049",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC7612213",
+        "title": "Accurate prediction of protein structures and interactions using a three-track neural network."
+      }
+    ]
+  },
+  {
+    "dossier": "B02",
+    "query": "A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity",
+    "results": [
+      {
+        "authorString": "Jinek M, Chylinski K, Fonfara I, Hauer M, Doudna JA, Charpentier E.",
+        "doi": "10.1126/science.1225829",
+        "id": "22745249",
+        "isOpenAccess": "N",
+        "pmcid": "PMC6286148",
+        "title": "A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity."
+      }
+    ]
+  },
+  {
+    "dossier": "B02",
+    "query": "CRISPR-Cas9 Gene Editing for Sickle Cell Disease and beta-Thalassemia",
+    "results": []
+  },
+  {
+    "dossier": "B03",
+    "query": "Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine",
+    "results": [
+      {
+        "authorString": "Baden LR, El Sahly HM, Essink B, Kotloff K, Frey S, Novak R, Diemert D, Spector SA, Rouphael N, Creech CB, McGettigan J, Khetan S, Segall N, Solis J, Brosz A, Fierro C, Schwartz H, Neuzil K, Corey L, Gilbert P, Janes H, Follmann D, Marovich M, Mascola J, Polakowski L, Ledgerwood J, Graham BS, Bennett H, Pajon R, Knightly C, Leav B, Deng W, Zhou H, Han S, Ivarsson M, Miller J, Zaks T, COVE Study Group.",
+        "doi": "10.1056/nejmoa2035389",
+        "id": "33378609",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC7787219",
+        "title": "Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine."
+      }
+    ]
+  },
+  {
+    "dossier": "B04",
+    "query": "Highly parallel genome-wide expression profiling of individual cells using nanoliter droplets",
+    "results": [
+      {
+        "authorString": "Macosko EZ, Basu A, Satija R, Nemesh J, Shekhar K, Goldman M, Tirosh I, Bialas AR, Kamitaki N, Martersteck EM, Trombetta JJ, Weitz DA, Sanes JR, Shalek AK, Regev A, McCarroll SA.",
+        "doi": "10.1016/j.cell.2015.05.002",
+        "id": "26000488",
+        "isOpenAccess": "N",
+        "pmcid": "PMC4481139",
+        "title": "Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets."
+      }
+    ]
+  },
+  {
+    "dossier": "B04",
+    "query": "Spatial reconstruction of single-cell gene expression data",
+    "results": [
+      {
+        "authorString": "Satija R, Farrell JA, Gennert D, Schier AF, Regev A.",
+        "doi": "10.1038/nbt.3192",
+        "id": "25867923",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC4430369",
+        "title": "Spatial reconstruction of single-cell gene expression data."
+      }
+    ]
+  },
+  {
+    "dossier": "B05",
+    "query": "Safety, Activity, and Immune Correlates of Anti-PD-1 Antibody in Cancer",
+    "results": [
+      {
+        "authorString": "Daskivich TJ, Belldegrun A.",
+        "doi": "10.1016/j.eururo.2014.12.052",
+        "id": "25765212",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "Words of wisdom. Re: Safety, activity, and immune correlates of anti-PD-1 antibody in cancer."
+      },
+      {
+        "authorString": "Topalian SL, Hodi FS, Brahmer JR, Gettinger SN, Smith DC, McDermott DF, Powderly JD, Carvajal RD, Sosman JA, Atkins MB, Leming PD, Spigel DR, Antonia SJ, Horn L, Drake CG, Pardoll DM, Chen L, Sharfman WH, Anders RA, Taube JM, McMiller TL, Xu H, Korman AJ, Jure-Kunkel M, Agrawal S, McDonald D, Kollia GD, Gupta A, Wigginton JM, Sznol M.",
+        "doi": "10.1056/nejmoa1200690",
+        "id": "22658127",
+        "isOpenAccess": "N",
+        "pmcid": "PMC3544539",
+        "title": "Safety, activity, and immune correlates of anti-PD-1 antibody in cancer."
+      },
+      {
+        "authorString": "Taneja SS.",
+        "doi": "10.1016/j.juro.2012.08.170",
+        "id": "23289116",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "Re: Safety, activity, and immune correlates of anti-PD-1 antibody in cancer."
+      }
+    ]
+  },
+  {
+    "dossier": "B05",
+    "query": "Chimeric Antigen Receptor T Cells for Sustained Remissions in Leukemia",
+    "results": [
+      {
+        "authorString": "Maude SL, Frey N, Shaw PA, Aplenc R, Barrett DM, Bunin NJ, Chew A, Gonzalez VE, Zheng Z, Lacey SF, Mahnke YD, Melenhorst JJ, Rheingold SR, Shen A, Teachey DT, Levine BL, June CH, Porter DL, Grupp SA.",
+        "doi": "10.1056/nejmoa1407222",
+        "id": "25317870",
+        "isOpenAccess": "N",
+        "pmcid": "PMC4267531",
+        "title": "Chimeric antigen receptor T cells for sustained remissions in leukemia."
+      },
+      {
+        "authorString": null,
+        "doi": "10.1056/nejmx160005",
+        "id": "26962747",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "Chimeric Antigen Receptor-Modified T Cells in Chronic Lymphoid Leukemia; Chimeric Antigen Receptor-Modified T Cells for Acute Lymphoid Leukemia; Chimeric Antigen Receptor T Cells for Sustained Remissions in Leukemia."
+      }
+    ]
+  },
+  {
+    "dossier": "B06",
+    "query": "The complete sequence of a human genome",
+    "results": [
+      {
+        "authorString": "Nurk S, Koren S, Rhie A, Rautiainen M, Bzikadze AV, Mikheenko A, Vollger MR, Altemose N, Uralsky L, Gershman A, Aganezov S, Hoyt SJ, Diekhans M, Logsdon GA, Alonge M, Antonarakis SE, Borchers M, Bouffard GG, Brooks SY, Caldas GV, Chen NC, Cheng H, Chin CS, Chow W, de Lima LG, Dishuck PC, Durbin R, Dvorkina T, Fiddes IT, Formenti G, Fulton RS, Fungtammasan A, Garrison E, Grady PGS, Graves-Lindsay TA, Hall IM, Hansen NF, Hartley GA, Haukness M, Howe K, Hunkapiller MW, Jain C, Jain M, Jarvis ED, Kerpedjiev P, Kirsche M, Kolmogorov M, Korlach J, Kremitzki M, Li H, Maduro VV, Marschall T, McCartney AM, McDaniel J, Miller DE, Mullikin JC, Myers EW, Olson ND, Paten B, Peluso P, Pevzner PA, Porubsky D, Potapova T, Rogaev EI, Rosenfeld JA, Salzberg SL, Schneider VA, Sedlazeck FJ, Shafin K, Shew CJ, Shumate A, Sims Y, Smit AFA, Soto DC, Sović I, Storer JM, Streets A, Sullivan BA, Thibaud-Nissen F, Torrance J, Wagner J, Walenz BP, Wenger A, Wood JMD, Xiao C, Yan SM, Young AC, Zarate S, Surti U, McCoy RC, Dennis MY, Alexandrov IA, Gerton JL, O'Neill RJ, Timp W, Zook JM, Schatz MC, Eichler EE, Miga KH, Phillippy AM.",
+        "doi": "10.1126/science.abj6987",
+        "id": "35357919",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC9186530",
+        "title": "The complete sequence of a human genome."
+      },
+      {
+        "authorString": "Nurk S, Koren S, Rhie A, Rautiainen M, Bzikadze AV, Mikheenko A, Vollger MR, Altemose N, Uralsky L, Gershman A, Aganezov S, Hoyt SJ, Diekhans M, Logsdon GA, Alonge M, Antonarakis SE, Borchers M, Bouffard GG, Brooks SY, Caldas GV, Cheng H, Chin C, Chow W, de Lima LG, Dishuck PC, Durbin R, Dvorkina T, Fiddes IT, Formenti G, Fulton RS, Fungtammasan A, Garrison E, Grady PG, Graves-Lindsay TA, Hall IM, Hansen NF, Hartley GA, Haukness M, Howe K, Hunkapiller MW, Jain C, Jain M, Jarvis ED, Kerpedjiev P, Kirsche M, Kolmogorov M, Korlach J, Kremitzki M, Li H, Maduro VV, Marschall T, McCartney AM, McDaniel J, Miller DE, Mullikin JC, Myers EW, Olson ND, Paten B, Peluso P, Pevzner PA, Porubsky D, Potapova T, Rogaev EI, Rosenfeld JA, Salzberg SL, Schneider VA, Sedlazeck FJ, Shafin K, Shew CJ, Shumate A, Sims Y, Smit AFA, Soto DC, Sović I, Storer JM, Streets A, Sullivan BA, Thibaud-Nissen F, Torrance J, Wagner J, Walenz BP, Wenger A, Wood JMD, Xiao C, Yan SM, Young AC, Zarate S, Surti U, McCoy RC, Dennis MY, Alexandrov IA, Gerton JL, O’Neill RJ, Timp W, Zook JM, Schatz MC, Eichler EE, Miga KH, Phillippy AM.",
+        "doi": "10.1101/2021.05.26.445798",
+        "id": "PPR348563",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "The complete sequence of a human genome"
+      }
+    ]
+  },
+  {
+    "dossier": "B07",
+    "query": "Induction of Pluripotent Stem Cells from Adult Human Fibroblasts by Defined Factors",
+    "results": [
+      {
+        "authorString": "Takahashi K, Tanabe K, Ohnuki M, Narita M, Ichisaka T, Tomoda K, Yamanaka S.",
+        "doi": "10.1016/j.cell.2007.11.019",
+        "id": "18035408",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "Induction of pluripotent stem cells from adult human fibroblasts by defined factors."
+      }
+    ]
+  },
+  {
+    "dossier": "B08",
+    "query": "Optogenetics: 10 years of microbial opsins in neuroscience",
+    "results": [
+      {
+        "authorString": "Deisseroth K.",
+        "doi": "10.1038/nn.4091",
+        "id": "26308982",
+        "isOpenAccess": "N",
+        "pmcid": "PMC4790845",
+        "title": "Optogenetics: 10 years of microbial opsins in neuroscience."
+      }
+    ]
+  },
+  {
+    "dossier": "B08",
+    "query": "Making Sense of Optogenetics",
+    "results": [
+      {
+        "authorString": "Guru A, Post RJ, Ho YY, Warden MR.",
+        "doi": "10.1093/ijnp/pyv079",
+        "id": "26209858",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC4756725",
+        "title": "Making Sense of Optogenetics."
+      }
+    ]
+  },
+  {
+    "dossier": "B09",
+    "query": "Global burden of bacterial antimicrobial resistance in 2019",
+    "results": [
+      {
+        "authorString": "Ranjbar R, Alam M.",
+        "doi": "10.1136/ebnurs-2022-103540",
+        "id": "37500506",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "Antimicrobial Resistance Collaborators (2022). Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis."
+      },
+      {
+        "authorString": "Wagenlehner FME, Dittmar F.",
+        "doi": "10.1016/j.eururo.2022.08.023",
+        "id": "36068104",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "Re: Global Burden of Bacterial Antimicrobial Resistance in 2019: A Systematic Analysis."
+      },
+      {
+        "authorString": "Antimicrobial Resistance Collaborators.",
+        "doi": "10.1016/s0140-6736(21)02724-0",
+        "id": "35065702",
+        "isOpenAccess": "N",
+        "pmcid": "PMC8841637",
+        "title": "Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis."
+      }
+    ]
+  },
+  {
+    "dossier": "B10",
+    "query": "CONSORT 2010 Explanation and Elaboration",
+    "results": [
+      {
+        "authorString": "Moher D, Hopewell S, Schulz KF, Montori V, Gøtzsche PC, Devereaux PJ, Elbourne D, Egger M, Altman DG, CONSORT.",
+        "doi": "10.1016/j.ijsu.2011.10.001",
+        "id": "22036893",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "CONSORT 2010 explanation and elaboration: updated guidelines for reporting parallel group randomised trials."
+      },
+      {
+        "authorString": "Moher D, Hopewell S, Schulz KF, Montori V, Gøtzsche PC, Devereaux PJ, Elbourne D, Egger M, Altman DG.",
+        "doi": "10.1136/bmj.c869",
+        "id": "20332511",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC2844943",
+        "title": "CONSORT 2010 explanation and elaboration: updated guidelines for reporting parallel group randomised trials."
+      },
+      {
+        "authorString": "Moher D, Hopewell S, Schulz KF, Montori V, Gøtzsche PC, Devereaux PJ, Elbourne D, Egger M, Altman DG, Consolidated Standards of Reporting Trials Group.",
+        "doi": "10.1016/j.jclinepi.2010.03.004",
+        "id": "20346624",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "CONSORT 2010 Explanation and Elaboration: Updated guidelines for reporting parallel group randomised trials."
+      }
+    ]
+  },
+  {
+    "dossier": "B10",
+    "query": "The PRISMA 2020 statement",
+    "results": [
+      {
+        "authorString": "Page MJ, Mayo-Wilson E, Zeng M, Clark DP, Hamilton DG, Nguyen P, Nussbaumer-Streit B, Ying X, Kilicoglu H, McKenzie JE.",
+        "doi": "10.12688/f1000research.180216.1",
+        "id": "PPR1184558",
+        "isOpenAccess": "N",
+        "pmcid": null,
+        "title": "Evaluation of automated assessments of systematic review adherence to the PRISMA 2020 statement: study protocol"
+      },
+      {
+        "authorString": "Akl EA, Khabsa J, Iannizzi C, Piechotta V, Kahale LA, Barker JM, McKenzie JE, Page MJ, Skoetz N, PRISMA-LSR Group.",
+        "doi": "10.1136/bmj-2024-079183",
+        "id": "39562017",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC12036629",
+        "title": "Extension of the PRISMA 2020 statement for living systematic reviews (PRISMA-LSR): checklist and explanation."
+      },
+      {
+        "authorString": "Ivaldi D, Burgos M, Oltra G, Liquitay CE, Garegnani L.",
+        "doi": "10.1002/cesm.12074",
+        "id": "40476264",
+        "isOpenAccess": "Y",
+        "pmcid": "PMC11795886",
+        "title": "Adherence to PRISMA 2020 statement assessed through the expanded checklist in systematic reviews of interventions: A meta-epidemiological study."
+      }
+    ]
+  },
+  {
+    "dossier": "B12",
+    "query": "Effect of Fecal Microbiota Transplantation on Recurrence in Multiply Recurrent Clostridium difficile Infection",
+    "results": [
+      {
+        "authorString": "Kelly CR, Khoruts A, Staley C, Sadowsky MJ, Abd M, Alani M, Bakow B, Curran P, McKenney J, Tisch A, Reinert SE, Machan JT, Brandt LJ.",
+        "doi": "10.7326/m16-0271",
+        "id": "27547925",
+        "isOpenAccess": "N",
+        "pmcid": "PMC5909820",
+        "title": "Effect of Fecal Microbiota Transplantation on Recurrence in Multiply Recurrent Clostridium difficile Infection: A Randomized Trial."
+      }
+    ]
+  }
+]

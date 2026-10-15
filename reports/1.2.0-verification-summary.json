@@ -1,0 +1,279 @@
+{
+  "release_id": "1.2.0-exploratory",
+  "software_status": "verified exploratory reader; archive verification recorded separately beside distribution",
+  "counts": {
+    "contribution": 2667,
+    "relation": 2233,
+    "source": 237,
+    "review": 5167
+  },
+  "coverage": {
+    "mathematics": {
+      "dossiers": 31,
+      "populated_topics": 30,
+      "initial_neighborhoods": 19,
+      "contributions": 516,
+      "macro_checklist_coverage": 0.967741935483871
+    },
+    "physics": {
+      "dossiers": 31,
+      "populated_topics": 31,
+      "initial_neighborhoods": 14,
+      "contributions": 499,
+      "macro_checklist_coverage": 0.989247311827957
+    },
+    "computer_science": {
+      "dossiers": 32,
+      "populated_topics": 31,
+      "initial_neighborhoods": 14,
+      "contributions": 601,
+      "macro_checklist_coverage": 0.9479166666666666
+    },
+    "economics": {
+      "dossiers": 30,
+      "populated_topics": 30,
+      "initial_neighborhoods": 12,
+      "contributions": 483,
+      "macro_checklist_coverage": 0.9777777777777777
+    },
+    "biology_medicine": {
+      "dossiers": 30,
+      "populated_topics": 30,
+      "initial_neighborhoods": 12,
+      "contributions": 568,
+      "macro_checklist_coverage": 0.9555555555555556
+    }
+  },
+  "shortfall_by_subject": {
+    "mathematics": {
+      "populated_topics": 170,
+      "unique_primary_subject_insights": 1484
+    },
+    "physics": {
+      "populated_topics": 169,
+      "unique_primary_subject_insights": 1501
+    },
+    "computer_science": {
+      "populated_topics": 169,
+      "unique_primary_subject_insights": 1399
+    },
+    "economics": {
+      "populated_topics": 170,
+      "unique_primary_subject_insights": 1517
+    },
+    "biology_medicine": {
+      "populated_topics": 170,
+      "unique_primary_subject_insights": 1432
+    }
+  },
+  "expanded_coverage_target_met": false,
+  "backend": {
+    "passed": 65,
+    "failed": 0
+  },
+  "browser_full": {
+    "passed": 46,
+    "failed": 0,
+    "intentional_skips": 2,
+    "report": "browser-1.2-full.json"
+  },
+  "browser_delayed_startup": {
+    "passed": 2,
+    "failed": 0,
+    "report": "browser-1.2-loading.json"
+  },
+  "math": {
+    "formulas": 5404,
+    "failures": []
+  },
+  "integrity": {
+    "passed": true,
+    "release_id": "1.2.0-exploratory",
+    "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+    "counts": {
+      "contribution": 2667,
+      "relation": 2233,
+      "source": 237,
+      "review": 5167
+    },
+    "exact_machine_reviews_for_all_visible_records": true,
+    "dossiers": 154,
+    "flagship_endpoint_checks": 5,
+    "tour_checks": 3,
+    "source_closure": true,
+    "neighborhood_cap_and_joint_premises": true,
+    "frozen_evaluation_files_unchanged": true,
+    "external_jsonschema": "10648 immutable versions validated against exported JSON Schemas",
+    "qualified_human_audit": "not performed"
+  },
+  "offline": {
+    "passed": true,
+    "release_id": "1.2.0-exploratory",
+    "external_socket_attempts": [],
+    "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
+    "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
+    "checked": [
+      "all bundled assets",
+      "search",
+      "dossiers",
+      "contribution inspector",
+      "shared topic links and scientist profiles",
+      "relationship inspector",
+      "neighborhood",
+      "brief",
+      "snapshot changes"
+    ]
+  },
+  "corrections": {
+    "passed": true,
+    "scope": "Actual flagship records, isolated disposable corpus copy; no fabricated corrections or human reviews added to distributed corpus",
+    "checks": [
+      {
+        "dossier": "M06",
+        "target": "n-b25ad0851484c7b2",
+        "dependent_interpretations": 9,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "P01",
+        "target": "n-bd00254115887cfb",
+        "dependent_interpretations": 14,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "C01",
+        "target": "n-7174667738dd3cf9",
+        "dependent_interpretations": 10,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "E01",
+        "target": "n-7a2dcf7d88d3269d",
+        "dependent_interpretations": 12,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "B01",
+        "target": "n-711b35dd72329889",
+        "dependent_interpretations": 19,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      }
+    ]
+  },
+  "performance": {
+    "release_id": "1.2.0-exploratory",
+    "counts": {
+      "contribution": 2667,
+      "relation": 2233,
+      "source": 237,
+      "review": 5167
+    },
+    "machine": {
+      "os": "macOS-26.3.1-x86_64-i386-64bit",
+      "python": "3.12.7",
+      "architecture": "x86_64"
+    },
+    "warm_http": {
+      "search": {
+        "samples": 30,
+        "p50_ms": 73.77,
+        "p95_ms": 106.08,
+        "max_ms": 111.14
+      },
+      "neighborhood": {
+        "samples": 30,
+        "p50_ms": 116.33,
+        "p95_ms": 580.74,
+        "max_ms": 606.24
+      },
+      "dossiers": {
+        "samples": 30,
+        "p50_ms": 308.69,
+        "p95_ms": 1293.46,
+        "max_ms": 1429.47
+      }
+    },
+    "targets": {
+      "search_p95_ms": 500,
+      "neighborhood_p95_ms": 1000,
+      "first_view_ms": 5000,
+      "combined_memory_bytes_approx": 1000000000
+    },
+    "browser": {
+      "first_view_ms": 1088,
+      "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+      "js_heap_bytes": 14426090,
+      "browser_process_rss_bytes": 700182528,
+      "reader_process_rss_bytes": 365838336,
+      "combined_rss_bytes": 1066020864,
+      "memory_method": "ps RSS summed over the test Chromium process tree plus the local reader; shared pages may be counted more than once",
+      "requests": 6,
+      "external_requests": [],
+      "page_errors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    }
+  },
+  "usage": {
+    "requests": 1149,
+    "unreceipted_interruption_upper_bound": 4,
+    "interruption_markers": 1,
+    "successful": 1060,
+    "unknown_possible_charge": 53,
+    "prompt_tokens": 21009312,
+    "completion_tokens": 3169805,
+    "planning_allowance_usd": 300,
+    "cost_status": "Account charges managed manually by owner; tokens are receipts, not an exact bill.",
+    "planning_estimate": {
+      "currency": "CNY",
+      "known_token_subtotal": 108.667,
+      "rates_per_million_input_output": {
+        "deepseek-ai/DeepSeek-V4-Flash": [
+          3,
+          9
+        ],
+        "deepseek-ai/DeepSeek-V4-Pro": [
+          12,
+          24
+        ]
+      },
+      "pricing_source": "https://www.siliconflow.cn/pricing",
+      "rates_checked": "2026-10-13",
+      "notice": "Planning estimate using standard daytime rates, before cache/time discounts. Excludes unreported and unknown request usage. Not the account bill or an enforcement of the USD allowance."
+    }
+  },
+  "historical_tracked_corpus_manifests_and_evaluation_unchanged": true,
+  "older_archives_verified": [
+    "principia-legacy-1.1.0-exploratory-source.zip",
+    "principia-legacy-1.1.0-exploratory.zip"
+  ],
+  "qualified_human_audit": "not performed",
+  "human_reviewed_contributions": 0,
+  "platforms_executed": [
+    "macOS 26.3.1, Python 3.12.7, Chrome desktop and emulated mobile"
+  ],
+  "platforms_not_executed": [
+    "Windows",
+    "Linux",
+    "physical mobile devices"
+  ],
+  "research": "Original synthetic pilot preserved. Exact matched input-token study and independent expert labels remain outstanding.",
+  "distribution_verification": "See dist/principia-legacy-1.2.0-exploratory-verification.json generated from clean extraction and offline startup."
+}

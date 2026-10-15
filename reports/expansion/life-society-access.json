@@ -1,0 +1,285 @@
+{
+  "notice": "Access inspection only; no claim admission or human review.",
+  "sources": [
+    {
+      "access": "retrieved",
+      "bytes_hash": "66536b7aaff9360ef4c7d82151f6d729dc8906cd02cd35e9853de1fdac414202",
+      "dossier": "B03",
+      "passages": 103,
+      "title": "AbstractBackgroundMethodsResultsConclusionsMethodsTrial OversightParticipants, Randomization, and Data BlindingTrial VaccineSafety AssessmentsEfficacy AssessmentsStatistical AnalysisResultsTrial PopulationRandomization and Analysis Populations.Demographic and Clinical Characteristics at Baseline.*SafetySolicited Local and Systemic Adverse Events.EfficacyVaccine Efficacy of mRNA-1273 to Prevent Covid-19.Vaccine Efficacy of mRNA-1273 to Prevent Covid-19 in Subgroups.DiscussionAcknowledgmentsProtocolSupplementary AppendixDisclosure FormsData Sharing StatementResearch SummaryFootnotesReferencesAssociated DataSupplementary Materials",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7787219/fullTextXML"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "d7bad0a551b75ec6ab6b947019cc5ca032c7937ddd40a2196e1b8bc330330787",
+      "dossier": "B01",
+      "passages": 31,
+      "title": "Network architecture developmentEnabling experimental protein structure determinationProviding insights into biological functionDirect generation of protein-protein complex modelsConclusionsSupplementary MaterialAcknowledgmentsFundingData and materials availabilityOne-Sentence SummaryNetwork architecture and performance.Enabling experimental structure determination with RoseTTAFold.RoseTTAFold models provide insights into function.Complex structure prediction using RoseTTAFold.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7612213/fullTextXML"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "e3b50427379d62d43cafeb69d33beb7da260b8dc25c557681ea1420aa6ce5c34",
+      "dossier": "B02",
+      "passages": 120,
+      "title": "A programmable dual RNA-guided DNA endonuclease in adaptive bacterial immunity",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6286148/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "ffb1d74f419405c4fd98161c629f8c41c93aea1ec11a2d229f7b5c67bb828a2e",
+      "dossier": "B04",
+      "passages": 99,
+      "title": "IntroductionResultsCombining RNA-Seq and in situs to infer spatial locationMatching binary in situs to continuous, noisy RNA-seq dataProbabilistic inference of spatial originZebrafish blastula spatial reference map from RNA in situsSingle cell RNA-Seq of zebrafish embryosAccurately inferred spatial assignments and in situsClustering expression patterns reveal spatial archetypesSpatially diverse landmark genes improve Seurat’s mappingSeurat correctly localizes rare cell populationsSeurat finds new markers of rare subpopulationsSeurat identifies new dispersed, rare cell populationsDiscussionSeurat packageOnline MethodsAnimal modelsCollecting dissociated cellsCollecting single reference cellsProbe synthesisColorogenic in situ hybridizationFluorescent in situ hybridizationBinary interpretation of colorigenic in situsSingle-cell RNA-seq: Reverse transcriptionSingle-cell RNA-seq: PCR pre-amplificationSingle-cell RNA-seq: Library preparationSingle-cell RNA-seq: Read processing, alignment, and gene quantificationIdentification of highly variable genesPrincipal components analysisIdentification of EVL cellsConstructing models of gene expression (data imputation)Mixture model fitting to translate between RNA in situ hybridization and RNA-Seq dataProbabilistic inference of spatial originEvaluating Seurat’s performanceDetermination of archetypal patterns of gene expressionDown-sampling (power) analysesIdentification and characterization of embryonic subpopulationsSupplementary MaterialAcknowledgementsReferencesOverview of SeuratSingle-cell RNA-seq from zebrafish embryosSeurat correctly infers the spatial position of cellsNine archetypal patterns discovered through spatial clusteringSeurat identifies and characterizes rare cell populations",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4430369/fullTextXML"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "98d85af91d35ee56aef6b7657f5d378ed2d7d50ef613c24ed34faad4ed3770ba",
+      "dossier": "B04",
+      "passages": 240,
+      "title": "Highly parallel genome-wide expression profiling of individual cells using nanoliter droplets",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4481139/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "4f613065d67218ef9649216c9df4c5c623e422ee3583fe3f616461f588f171cd",
+      "dossier": "B05",
+      "passages": 290,
+      "title": "Safety, Activity, and Immune Correlates of Anti–PD-1 Antibody in Cancer",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3544539/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "fe0a6824de2c57fab3ba8e7aec2ecf3b191f89eb06a2be652993f1f2e91a436b",
+      "dossier": "B06",
+      "passages": 64,
+      "title": "One-Sentence Summary:Cell line and sequencingGenome assemblyrDNA assemblyAssembly validation and polishingA truly complete genomeAcrocentric chromosomesAnalyses and resourcesFuture of the human reference genomeSupplementary MaterialAcknowledgements:Funding:Competing interests:References and Notes:Summary of the complete T2T-CHM13 human genome assembly.High-resolution assembly string graph of the CHM13 genome.Sequencing coverage and assembly validation.Short arms of the acrocentric chromosomes.Resolved FRG1 paralogs.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9186530/fullTextXML"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "98dfb747608293cd1abd44e375c6987e862430b7344cc3e1c73e6b041a16a6ca",
+      "dossier": "E01",
+      "passages": 146,
+      "title": "Scientific Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 202",
+      "url": "https://www.nobelprize.org/uploads/2021/10/advanced-economicsciencesprize2021.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "653a828ee929fedf6a954494711bcf92657a5f8dfbd3d79487bd19897d4e87ca",
+      "dossier": "E02",
+      "passages": 130,
+      "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+      "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "faaec5e3c964bf89e67c5d97a02303f3a5ab248281ce9500acb5f40c547fcad1",
+      "dossier": "E03",
+      "passages": 43,
+      "title": "",
+      "url": "https://www.nobelprize.org/uploads/2018/06/advanced-economicsciences2012.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "cf35e749ea98b5dba7ac25696e4d3b15547264937ca479bd06b4735d7b3399bb",
+      "dossier": "E03",
+      "passages": 36,
+      "title": "Lecture Slides",
+      "url": "https://www.nobelprize.org/uploads/2018/06/roth-lecture_slides.pdf"
+    },
+    {
+      "access": "unavailable",
+      "dossier": "E01",
+      "error": "HTTP Error 404: Not Found",
+      "url": "https://www.homepages.ucl.ac.uk/~uctpcac/Angrist_Krueger91.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "b608f80f8a985816965726bd79019e921f8d2eaa60a9b1cdd8adc54a9c5438e0",
+      "dossier": "E04",
+      "passages": 24,
+      "title": "Institutions, Technology and Prosperity",
+      "url": "https://www.nobelprize.org/uploads/2025/01/acemoglu-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "21f28143a7d3a804919913d8f1a09f01cbb30505156ec5e91df5c0daf0959f1b",
+      "dossier": "B05",
+      "passages": 166,
+      "title": "Chimeric Antigen Receptor T Cells for Sustained Remissions in Leukemia",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4267531/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "2a87cb8200b802a58c3f8dba27191dfba3741261225ae81c71bf239cd5582783",
+      "dossier": "E04",
+      "passages": 77,
+      "title": "Robert M. Solow – Prize Lecture - NobelPrize.orgOpen the search menuClose the search menuOpen the search menuClose the search menu",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/lecture/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "047593042fcabf7b8f4530b962f01c9385f9925a8d344dad613435a7c2ba5bfb",
+      "dossier": "E06",
+      "passages": 30,
+      "title": "Richard H. Thaler - Prize Lecture in Economic Sciences 2017",
+      "url": "https://www.nobelprize.org/uploads/2018/01/thaler-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "2b68874f67ee5c70a1f47d3b10296595d68254a12906cdaa0eeb8b10dea4761d",
+      "dossier": "E06",
+      "passages": 19,
+      "title": "Hamilton O. Smith - Nobel Lecture",
+      "url": "https://www.nobelprize.org/uploads/2018/06/smith-lecture.pdf"
+    },
+    {
+      "access": "unavailable",
+      "dossier": "B07",
+      "error": "PDF parser failed or exceeded its CPU budget; use a lawful HTML/text alternative",
+      "url": "https://www.nobelprize.org/uploads/2018/06/gurdon-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "9ef654cf6114760123a45806ba7f15b54daee0296918e50be09d92c354b49e1b",
+      "dossier": "B08",
+      "passages": 286,
+      "title": "Optogenetics: 10 years of microbial opsins in neuroscience",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4790845/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "c8cc9f47ef0a976f072edcca2649e6a391689505bf97b82c2d624eaa54d67613",
+      "dossier": "B08",
+      "passages": 33,
+      "title": "AbstractIntroductionWhat Are Optogenetic Actuators?How Do Optogenetic Actuators Work?Optogenetic Stimulation of Neural ActivityChannelrhodopsinsUltrafast Opsins Step-Function OpsinsSpectrally Shifted Excitatory OpsinsOptogenetic Inhibition of Neuronal ActivityChloride PumpsProton PumpsSpectrally Shifted Inhibitory OpsinsOptogenetic Control of Intracellular SignalingHow Are Neurons Engineered to Express Opsins?How Are Neurons Illuminated?Laser light sourcesLight-Emitting Diode Light SourcesWhat Are Some Pitfalls in Applying Optogenetics?ConclusionStatement of InterestAcknowledgmentsReferences",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4756725/fullTextXML"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "0f224d9c1dbe032887196f0e009ad1fa9917be42202df882bb7f9a07fc8b3991",
+      "dossier": "B09",
+      "passages": 246,
+      "title": "Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8841637/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "f309f7ef1185bce8114d0a672315bae65994a06acaf2306ae076738e15ccedc3",
+      "dossier": "B10",
+      "passages": 340,
+      "title": "AbstractIncomplete and inaccurate reportingBox 1: Treatment allocation. What’s so special about randomisation?Improving the reporting of RCTs: the CONSORT statementThe CONSORT 2010 Statement: explanation and elaborationThe CONSORT 2010 Explanation and Elaboration: changesChecklist itemsTitle and abstractItem 1a. Identification as a randomised trial in the title.Item 1b. Structured summary of trial design, methods, results, and conclusionsIntroductionItem 2a. Scientific background and explanation of rationaleItem 2b. Specific objectives or hypothesesMethodsItem 3a. Description of trial design (such as parallel, factorial) including allocation ratioItem 3b. Important changes to methods after trial commencement (such as eligibility criteria), with reasonsItem 4a. Eligibility criteria for participantsItem 4b. Settings and locations where the data were collectedItem 5. The interventions for each group with sufficient details to allow replication, including how and when they were actually administeredItem 6a. Completely defined pre-specified primary and secondary outcome measures, including how and when they were assessedItem 6b. Any changes to trial outcomes after the trial commenced, with reasonsItem 7a. How sample size was determinedItem 7b. When applicable, explanation of any interim analyses and stopping guidelinesItem 8a. Method used to generate the random allocation sequenceBox 2: Randomisation and minimisationItem 8b. Type of randomisation; details of any restriction (such as blocking and block size)Item 9. Mechanism used to implement the random allocation sequence (such as sequentially numbered containers), describing any steps taken to conceal the sequence until interventions were assignedItem 10. Who generated the allocation sequence, who enrolled participants, and who assigned participants to interventionsBox 3: Steps in a typical randomisation process Sequence generationAllocation concealmentImplementationItem 11a. If done, who was blinded after assignment to interventions (for example, participants, care providers, those assessing outcomes) and howBox 4: Blinding terminologyItem 11b. If relevant, description of the similarity of interventionsItem 12a. Statistical methods used to compare groups for primary and secondary outcomesItem 12b. Methods for additional analyses, such as subgroup analyses and adjusted analysesResultsItem 13. Participant flow (a diagram is strongly recommended) Item 13a. For each group, the numbers of participants who were randomly assigned, received intended treatment, and were analysed for the primary outcomeItem 13b. For each group, losses and exclusions after randomisation, together with reasonsItem 14a. Dates defining the periods of recruitment and follow-upItem 14b. Why the trial ended or was stoppedBox 5: Early stoppingItem 15. A table showing baseline demographic and clinical characteristics for each groupItem 16. For each group, number of participants (denominator) included in each analysis and whether the analysis was by original assigned groupsBox 6: Intention-to-treat analysisMissing outcomesNon-adherence to the protocolItem 17a. For each primary and secondary outcome, results for each group, and the estimated effect size and its precision (such as 95% confidence interval)Item 17b. For binary outcomes, presentation of both absolute and relative effect sizes is recommendedItem 18. Results of any other analyses performed, including subgroup analyses and adjusted analyses, distinguishing pre-specified from exploratoryItem 19. All important harms or unintended effects in each groupDiscussionItem 20. Trial limitations, addressing sources of potential bias, imprecision, and, if relevant, multiplicity of analysesItem 21. Generalisability (external validity, applicability) of the trial findingsItem 22. Interpretation consistent with results, balancing benefits and harms, and considering other relevant evidenceOther informationItem 23. Registration number and name of trial registryItem 24. Where the full trial protocol can be accessed, if availableItem 25. Sources of funding and other support (such as supply of drugs), role of fundersReporting RCTs that did not have a two group parallel designDiscussion",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2844943/fullTextXML"
+    },
+    {
+      "access": "unavailable",
+      "dossier": "B11",
+      "error": "HTTP Error 404: Not Found",
+      "url": "https://people.eecs.berkeley.edu/~mlustig/CS/SparseMRI.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "37f0ea43b62776c0330529b8a8af5d2f01c4459562fe5c0647e30260cad46d7d",
+      "dossier": "B11",
+      "passages": 18,
+      "title": "Peter Mansfield - Nobel Lecture",
+      "url": "https://www.nobelprize.org/uploads/2018/06/mansfield-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "6a013a6c901756a5d31a1302e547fe7d0058df9c8f381d1e6115a4b867d31fd6",
+      "dossier": "B12",
+      "passages": 198,
+      "title": "Effect of Fecal Microbiota Transplantation on Recurrence in Multiply Recurrent Clostridium difficile Infection: A Randomized Trial",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5909820/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "46ddafc7bfd91ff66758ed94893ff259947825b1166d6db82784063027436c60",
+      "dossier": "E07",
+      "passages": 27,
+      "title": "Oliver Hart - Prize Lecture: Incomplete Contracts and Control",
+      "url": "https://www.nobelprize.org/uploads/2018/06/hart-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "5bf06cab6432119c05e5d5d4b61b785a0d956cba0eb9e556d176c50939a3123b",
+      "dossier": "E07",
+      "passages": 30,
+      "title": "Bengt Holmström - Prize Lecture: Pay for Performance and Beyond",
+      "url": "https://www.nobelprize.org/uploads/2018/06/holmstrom-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "9c4648b82d6f60d8b0d9b7e9ba4f86f5b7a52b8eabee1779cfafc5e7c7d5f593",
+      "dossier": "E08",
+      "passages": 16,
+      "title": "Multiple Equilibria",
+      "url": "https://www.nobelprize.org/uploads/2025/03/dybvig-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "ffb04f119539228da2db0699530425e56e815c890b6ebe7b5c932675e2eebdb0",
+      "dossier": "E05",
+      "passages": 58,
+      "title": "",
+      "url": "https://www.nber.org/system/files/working_papers/w32487/w32487.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "c60aeea8908b4f40d70cb796030175e0ff277c2d15d7ab7e6aa8945b784b6b7d",
+      "dossier": "E10",
+      "passages": 14,
+      "title": "Prize Lecture by Paul Krugman",
+      "url": "https://www.nobelprize.org/uploads/2018/06/krugman_lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "1a2f058fe401969c1962c9f6edb483d28a2696844ac3ac00d074d0315d1bcae5",
+      "dossier": "E11",
+      "passages": 32,
+      "title": "William D. Nordhaus - Prize Lecture: Climate change: The Ultimate Challenge for Economics",
+      "url": "https://www.nobelprize.org/uploads/2018/10/nordhaus-lecture.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "cb2605535cd3f7c8fe50788b7202abdcb342258becda72612f58b2bd68433dd8",
+      "dossier": "E12",
+      "passages": 41,
+      "title": "The Prize in Economic Sciences 1998 - Press release - NobelPrize.orgOpen the search menuClose the search menuOpen the search menuClose the search menu",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/press-release/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "1b37cc9e4594807e92633a2b730e4f373029e9d2579a444dc99caa487fe4bc8a",
+      "dossier": "E12",
+      "passages": 66,
+      "title": "Amartya Sen – Biographical - NobelPrize.orgOpen the search menuClose the search menuOpen the search menuClose the search menu",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/sen/biographical/"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "18592689ff7358ff0b4987ec924f12e3e836c0276e1af1469165f44393d569f4",
+      "dossier": "E09",
+      "passages": 70,
+      "title": "Theoretical Foundations of Buffer Stock Saving",
+      "url": "https://www.econ2.jhu.edu/people/ccarroll/papers/BufferStockTheory.pdf"
+    },
+    {
+      "access": "retrieved",
+      "bytes_hash": "9af82b90f2a94f8757ace8c7b7ef0934b145a00f4156fc806f4fb8a33e1bddc2",
+      "dossier": "E05",
+      "passages": 66,
+      "title": "",
+      "url": "https://www.nber.org/system/files/working_papers/w31161/w31161.pdf"
+    },
+    {
+      "access": "unavailable",
+      "dossier": "C04",
+      "error": "The read operation timed out",
+      "url": "https://sel4.org/Research/pdfs/sel4-formal-verification-os-kernel.pdf"
+    }
+  ]
+}

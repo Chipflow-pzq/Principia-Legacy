@@ -1,0 +1,5045 @@
+{
+  "batches": [
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "55bb4beb0e940aff565e4db06d0bd108f0e9fb5e889230128360638a4467f888",
+        "job_id": "de7db4b3955382feb7cd25dbe9fd48739049ad42ba11beeda4450f667d8b54eb",
+        "output_hash": "1dac31199e38a0ab5c9584526d2c41a1d3d1087fbd2ce9340c21f96519e2c5b0",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "cd5731ec-bf88-4427-84b2-dc7e2b7131cd",
+        "request_id": "01a133207560729d01324a39dc94ca12",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:a7300eb4f36a",
+        "time": "2026-10-13T02:38:47+00:00",
+        "trace_id": "cd5731ec-bf88-4427-84b2-dc7e2b7131cd",
+        "usage": {
+          "completion_tokens": 651,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2093,
+          "prompt_tokens": 2093,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2744
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "0476b4b991b7a7cc",
+          "reason": "The LaTeX correctly represents the mathematical expression α_1 ∈ [0,1]."
+        },
+        {
+          "accepted": true,
+          "id": "052287ea2b99ad4c",
+          "reason": "The LaTeX correctly represents the equation W_nc = ΔE."
+        },
+        {
+          "accepted": true,
+          "id": "055d6fbd835edc53",
+          "reason": "The LaTeX correctly represents the expression dx/sqrt(2(E-U(x))/m)."
+        },
+        {
+          "accepted": true,
+          "id": "0586e23583aa5f89",
+          "reason": "The LaTeX correctly represents the equation dv = 1 dx."
+        },
+        {
+          "accepted": true,
+          "id": "05879a60873ded3e",
+          "reason": "All four LaTeX spans correctly represent the corresponding mathematical expressions."
+        },
+        {
+          "accepted": true,
+          "id": "05a054c93a246fa2",
+          "reason": "The LaTeX correctly represents the equation |a_n| = b_n^n."
+        },
+        {
+          "accepted": true,
+          "id": "05e89dd5d240c50a",
+          "reason": "The LaTeX correctly represents the inequality 'Scalar curvature ≥ r−2'."
+        },
+        {
+          "accepted": true,
+          "id": "065a37db4387bf44",
+          "reason": "The LaTeX correctly represents the equation g(x) = g(a)."
+        },
+        {
+          "accepted": true,
+          "id": "066eb8ccd13130b2",
+          "reason": "The LaTeX correctly represents the equations L = Iω and Σ τ = I α."
+        },
+        {
+          "accepted": true,
+          "id": "0670383a954de979",
+          "reason": "The LaTeX correctly represents the equation L = Iω."
+        },
+        {
+          "accepted": true,
+          "id": "067f00b674755881",
+          "reason": "The LaTeX correctly represents the equation Syz(F) = PSyz(F)."
+        },
+        {
+          "accepted": true,
+          "id": "06c8c3ff75f80bce",
+          "reason": "The LaTeX correctly represents the expressions mL_v, pΔV, and Q − W."
+        },
+        {
+          "accepted": true,
+          "id": "06d8d3bd89a2ede5",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "070dcde426bb28a6",
+          "reason": "The LaTeX correctly represents the equations τ = Iα and τ_net = Στ_i = Iα."
+        },
+        {
+          "accepted": true,
+          "id": "07278484f2ce5fe1",
+          "reason": "The LaTeX correctly represents the subscripted variable β_t."
+        },
+        {
+          "accepted": true,
+          "id": "076ba3254d43fee1",
+          "reason": "The LaTeX correctly represents the tuple (α_t, A_t)."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "4175e81c5d2ee6379629522abd8d28ec63d45f7598d0e10135beed679d1f3407",
+        "job_id": "a3f95c613f6c1903e50cb201142691277bfce2d4f7c6e3d18521305678c97a81",
+        "output_hash": "81e98f9927a02e02a3c8f690ac203c5f25d181bc9c8dcb9913a954ae725b7310",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5ece1ab0-c084-47a5-8ca8-bb7613c23744",
+        "request_id": "01a1332002f0a3696edac7afc5bda0f9",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:a7300eb4f36a",
+        "time": "2026-10-13T02:38:04+00:00",
+        "trace_id": "5ece1ab0-c084-47a5-8ca8-bb7613c23744",
+        "usage": {
+          "completion_tokens": 855,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1297,
+          "prompt_tokens": 1297,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2152
+        }
+      },
+      "rejected_spans": []
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "cd0a2a59e609eaacf4d5641a8bc41ed27343f116407a4970574206f210f9781d",
+        "job_id": "afc349d8741328975916aa500bc8e55a1fa505aa2f2effd808098034022d0aae",
+        "output_hash": "958372e88dc89b0d6e3bc641d2fa217cc65709fbdce70485b0d0db1fc7de15ac",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "cff3d497-eb96-4f6d-96ae-0daf1da1404c",
+        "request_id": "01a133218fd240c87c37a4e852fc66e6",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:f7d47f7d1c49",
+        "time": "2026-10-13T02:39:45+00:00",
+        "trace_id": "cff3d497-eb96-4f6d-96ae-0daf1da1404c",
+        "usage": {
+          "completion_tokens": 747,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2127,
+          "prompt_tokens": 2127,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2874
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "07850ae6a1b48ca2",
+          "reason": "The original Greek lambda with subscript k is correctly represented as \\lambda_k."
+        },
+        {
+          "accepted": true,
+          "id": "08532751a65e9efe",
+          "reason": "All proposed LaTeX spans preserve the mathematical meaning of the original expressions."
+        },
+        {
+          "accepted": true,
+          "id": "08cfd8a3ef826031",
+          "reason": "The Shannon capacity formula is correctly converted to LaTeX with the same variables and meaning."
+        },
+        {
+          "accepted": true,
+          "id": "08f02b799686316f",
+          "reason": "The Omega_K expression and the plus/minus notation are faithfully represented."
+        },
+        {
+          "accepted": true,
+          "id": "099d90ecad9c16e3",
+          "reason": "The exponent 10^16 is correctly rendered as 10^{16}."
+        },
+        {
+          "accepted": false,
+          "id": "09aca08e9ffec3af",
+          "reason": "No mathematical spans were proposed; the item is an abstention."
+        },
+        {
+          "accepted": true,
+          "id": "0af34d758aace479",
+          "reason": "The equation E = K + U is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "0b41757fdbee57c9",
+          "reason": "The sine function with argument x^3 is correctly represented as \\sin(x^3)."
+        },
+        {
+          "accepted": true,
+          "id": "0ce01446a18427fe",
+          "reason": "The fraction 1/(2x) and the point x=2 are correctly converted to LaTeX."
+        },
+        {
+          "accepted": false,
+          "id": "0d2a6ca55ba70856",
+          "reason": "No mathematical spans were proposed; the item is an abstention."
+        },
+        {
+          "accepted": true,
+          "id": "0d96f80a386d25ad",
+          "reason": "The angular momentum derivative and torque sum are correctly represented with vector notation and summation."
+        },
+        {
+          "accepted": true,
+          "id": "0e382aacb8c1ef8b",
+          "reason": "All proposed LaTeX spans preserve the original mathematical expressions and units."
+        },
+        {
+          "accepted": true,
+          "id": "0ebfddef2ac6ca6f",
+          "reason": "The inequality a ≤ b is correctly converted to a \\leq b."
+        },
+        {
+          "accepted": true,
+          "id": "0fc506a44cb5cd5d",
+          "reason": "The integral splitting identity is correctly represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "1207d441e4a6ad18",
+          "reason": "All proposed LaTeX spans preserve the mathematical meaning of the original expressions."
+        },
+        {
+          "accepted": true,
+          "id": "12bee15eb962a49a",
+          "reason": "The internal energy change expression is correctly converted to LaTeX."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b4bf8ff3a58d773d60ca85a8a4a62bd84eef68d26b9ec4a283d6d456568b276c",
+        "job_id": "a7987c71eef0d498912a725b4edce8a1de02706a478c8bc78e65fcf180ef0e2e",
+        "output_hash": "69c8339186bc8309165c6935eb4da49805c46f1efdc6593d74635d15cf073629",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7e9b9575-4d55-4e85-b07e-c4aa349cefc4",
+        "request_id": "01a133209ef3b53e55e420db83a611b2",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:f7d47f7d1c49",
+        "time": "2026-10-13T02:38:57+00:00",
+        "trace_id": "7e9b9575-4d55-4e85-b07e-c4aa349cefc4",
+        "usage": {
+          "completion_tokens": 969,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1232,
+          "prompt_tokens": 1232,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2201
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "09aca08e9ffec3af",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1b6755cc660d8c5f229921a4af2603bf1d8dbe440ac125e3abf50b178728d1ba",
+        "job_id": "98158d151dd81d1fd722508c82fa198c2be3624ee6351dd0044b231478148024",
+        "output_hash": "8fb35029c5ab0ae777114a04bb893c11fa6d1f3871964a4234922785f8f53e06",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ad39fdf4-ca11-4bf7-b935-108bf571eea2",
+        "request_id": "01a13321633c91f324715f36f9b7537a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:38517a91bda0",
+        "time": "2026-10-13T02:39:34+00:00",
+        "trace_id": "ad39fdf4-ca11-4bf7-b935-108bf571eea2",
+        "usage": {
+          "completion_tokens": 472,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3834,
+          "prompt_tokens": 3834,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4306
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "0024858b9bbf17ee",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "0032fe8fb4509199",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "00c3187688225ba4",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "00f02da9b4f02e32",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "0107035f1d3481a6",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "015b5d6583051087",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "019c7c9edf318483",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "020c5442c056ab19",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "02424f1f6c37e522",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "0267fbf20f9d1ec2",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "02a5dfdc4556f4de",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "02f026bb7008fab7",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "03f9e028c5cfbde0",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "04165651c9a712e3",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "044cbdbcf9bc7081",
+          "reason": "Identical text."
+        },
+        {
+          "accepted": true,
+          "id": "0474dffa70d94251",
+          "reason": "Identical text."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "908a174ab25dbd3d6f9510336eb415a0832d3ad07510f3264f794845f290bf35",
+        "job_id": "caf8f19bd9981fca2dc03d314d952ecd27569a2944ac615a88a10bc87fa3a4b7",
+        "output_hash": "908a174ab25dbd3d6f9510336eb415a0832d3ad07510f3264f794845f290bf35",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "206d834c-3149-427b-aa0d-e65961c8684d",
+        "request_id": "01a1332002dd0f672c650329f520fcaf",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:38517a91bda0",
+        "time": "2026-10-13T02:38:04+00:00",
+        "trace_id": "206d834c-3149-427b-aa0d-e65961c8684d",
+        "usage": {
+          "completion_tokens": 1816,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1995,
+          "prompt_tokens": 1995,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3811
+        }
+      },
+      "rejected_spans": []
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "20ec5d907715a191ed702e0606f1668f671fdcd590bfb852676e71da5798c1b1",
+        "job_id": "9e485d84304b796bbbe028bad86b0593c283a36e936a435f7de5b227f26a9320",
+        "output_hash": "46335255822f68c696afb06317299ff33923a73af06e95c91d384fca359fe493",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "be53dd42-2a19-4463-8139-1d8199b21640",
+        "request_id": "01a1332217f14f2d4508ed18168e989f",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:6dfc9064260a",
+        "time": "2026-10-13T02:40:34+00:00",
+        "trace_id": "be53dd42-2a19-4463-8139-1d8199b21640",
+        "usage": {
+          "completion_tokens": 631,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2378,
+          "prompt_tokens": 2378,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3009
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "12c71011d75d60d3",
+          "reason": "The mathematical expressions are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "133d7f063e31578b",
+          "reason": "The integral expression is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "133e7d9c3c85a380",
+          "reason": "The fraction and limit are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "135388d83bc8b5ea",
+          "reason": "The equation is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "13e6e1683acb27a8",
+          "reason": "The functions are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "148aa904f605b68c",
+          "reason": "The numerical expressions and units are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "151d1a1c787557ea",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "15d61e3f3708957e",
+          "reason": "The integral expression is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "1985f062506033d7",
+          "reason": "The equation is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "19dfc637dcc26c7d",
+          "reason": "The equations and inequality are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "1af9bf48bc7a5956",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "1b76833e946f1a03",
+          "reason": "The intervals, integral, and derivative are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "1dbd0e2b8ac88b21",
+          "reason": "The limits and equation are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "1dcc5f05a631d26a",
+          "reason": "The equation is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "1e51da2e33ed6032",
+          "reason": "The equation is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "1e5a7ea1fedb8f55",
+          "reason": "The function call and assignment are correctly converted to LaTeX with identical meaning."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6f10852ce971e39200dc84af3ad862a4895c6e70b7e0787ba1f62cf54a54f5a6",
+        "job_id": "d40562a07a14d895c0a7608a99fe39dde7885f4bd816ad7f28a6a3a1d92a523b",
+        "output_hash": "d3ecac118f666682266badc984bdb44d40e8874c71b8f05eec8303145b7d50ad",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "e84eb7e5-7dd2-408e-b139-9ea10426f16a",
+        "request_id": "01a133219c3ad2f176d1a9078837cb7d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:6dfc9064260a",
+        "time": "2026-10-13T02:39:49+00:00",
+        "trace_id": "e84eb7e5-7dd2-408e-b139-9ea10426f16a",
+        "usage": {
+          "completion_tokens": 1157,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1336,
+          "prompt_tokens": 1336,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2493
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "12c71011d75d60d3",
+          "original": "b_n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "133d7f063e31578b",
+          "original": "F",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "1af9bf48bc7a5956",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "1dbd0e2b8ac88b21",
+          "original": "1/x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6147490d9d897b73dbeff396279432167a7414da61913e8042649935217a569d",
+        "job_id": "ef5523ee59379040cbb1ce05fefb0286462a36b9894c176c00704ef0d25695b7",
+        "output_hash": "313a242511211b28367cd84eaabbfb226248225b3bdd0d3cf138a15217debcc3",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "782d2ff3-2c27-40c9-9190-64249c149a3a",
+        "request_id": "01a13321f1450b8121805fee01d72c38",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:4ac1eddfaeca",
+        "time": "2026-10-13T02:40:24+00:00",
+        "trace_id": "782d2ff3-2c27-40c9-9190-64249c149a3a",
+        "usage": {
+          "completion_tokens": 743,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3027,
+          "prompt_tokens": 3027,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3770
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "1fa766b828eb55b2",
+          "reason": "The original 'e^x' is correctly converted to LaTeX 'e^x' with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "1ff91433c1165771",
+          "reason": "All spans are correctly converted: intervals, function expression, values, and variable assignments match the original exactly."
+        },
+        {
+          "accepted": true,
+          "id": "20ab9a877a0f1d2d",
+          "reason": "The function, velocity with units, and time with units are accurately represented in LaTeX with same values and meaning."
+        },
+        {
+          "accepted": true,
+          "id": "21bfe040caf987ff",
+          "reason": "The average value formula is correctly converted; the LaTeX preserves the integral, fraction, and variables exactly."
+        },
+        {
+          "accepted": true,
+          "id": "21e6ca3a939f47f5",
+          "reason": "The expression 'e = r/s' is correctly rendered as 'e = r/s' with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "2473e63bd45f3156",
+          "reason": "The vector notation is appropriately added (bold) without changing meaning; cross products and derivatives are correctly represented."
+        },
+        {
+          "accepted": true,
+          "id": "26211f0456c2ba62",
+          "reason": "The integration by parts formula is correctly converted; all functions, derivatives, and integrals match the original."
+        },
+        {
+          "accepted": true,
+          "id": "267cfbe541f7d807",
+          "reason": "The equation and logarithm are correctly converted with identical mathematical content."
+        },
+        {
+          "accepted": true,
+          "id": "275a150c1600232b",
+          "reason": "The Newton iteration functions are correctly rendered; the fraction and subscript notation match the original."
+        },
+        {
+          "accepted": true,
+          "id": "27e1f275a5460d37",
+          "reason": "All spans are correctly converted: integrals, interval, limit, function, and variable assignment are accurate."
+        },
+        {
+          "accepted": true,
+          "id": "286f67f76300af7b",
+          "reason": "The Taylor coefficient and the point a=0 are correctly represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "29b6172ed2805e6a",
+          "reason": "The complexity class E and the inequality P ≠ NP are correctly converted with same meaning."
+        },
+        {
+          "accepted": true,
+          "id": "2b3ddc72a69218ba",
+          "reason": "The energy equation, labels (n1), (n2), and 'Equation 8.12' are correctly converted; the text label is appropriate."
+        },
+        {
+          "accepted": true,
+          "id": "2b3f32cbaaa22922",
+          "reason": "The percentage and the calculation are correctly converted; the arithmetic and result match the original."
+        },
+        {
+          "accepted": true,
+          "id": "2bb5f89915d370de",
+          "reason": "The asymptote line, function, infinity, and ratio are correctly converted with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "2bef1838249ae5e1",
+          "reason": "All series, limits, inequalities, and rho value are correctly converted; mathematical content is preserved."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fa03cdb0f2a650f4fb9b14e9570793e842d85d67d37db1b076e99f13149313b0",
+        "job_id": "2c92a4a9c054e9f345db3dec8c153014f49e5d1cf04250b9c74e6603d115cb85",
+        "output_hash": "37a8ace930545aee93cd0feabb70770860047a303fb8c8cf240a55d0fdf38271",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "96db1260-2bf7-4391-87d7-770a916f9143",
+        "request_id": "01a133218cf14d1b53021aa2c15b477d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:4ac1eddfaeca",
+        "time": "2026-10-13T02:39:58+00:00",
+        "trace_id": "96db1260-2bf7-4391-87d7-770a916f9143",
+        "usage": {
+          "completion_tokens": 1615,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1650,
+          "prompt_tokens": 1650,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3265
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "1ff91433c1165771",
+          "original": "1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "20ab9a877a0f1d2d",
+          "original": "45 mph",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "20ab9a877a0f1d2d",
+          "original": "45 mph",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "21bfe040caf987ff",
+          "original": "[a,b]",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "21bfe040caf987ff",
+          "original": "[a,b]",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "267cfbe541f7d807",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "2b3f32cbaaa22922",
+          "original": "107",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "2b3f32cbaaa22922",
+          "original": "110",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "2b3f32cbaaa22922",
+          "original": "100",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "2bef1838249ae5e1",
+          "original": "1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "2bef1838249ae5e1",
+          "original": "1/n^p",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "2bef1838249ae5e1",
+          "original": "1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a0c9a009a27173851074ae62ed528bef7964129e3be736f8c90ae8030e489bef",
+        "job_id": "3814175e413cba2bd2f19364bfde7b0be9af8058afd6b34b9f85a022cb255b76",
+        "output_hash": "e35c7d7cc7f5ff52e0194c0622626f773cc0628630445437ba5fdd279a6523ec",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "57a80dbb-59e1-4679-96c0-ea00f25d7de6",
+        "request_id": "01a133227115249b5196a2e22d58f260",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:e425102972f0",
+        "time": "2026-10-13T02:40:57+00:00",
+        "trace_id": "57a80dbb-59e1-4679-96c0-ea00f25d7de6",
+        "usage": {
+          "completion_tokens": 708,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2645,
+          "prompt_tokens": 2645,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3353
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "37a75ac307765649",
+          "reason": "The LaTeX exactly matches the original mathematical expression."
+        },
+        {
+          "accepted": true,
+          "id": "38898336279af909",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "38d411303e056198",
+          "reason": "The identifier is correctly escaped as a LaTeX token, preserving the original text."
+        },
+        {
+          "accepted": true,
+          "id": "39a75c505bd058ed",
+          "reason": "All identifiers are correctly escaped or formatted as LaTeX commands, preserving original meaning."
+        },
+        {
+          "accepted": true,
+          "id": "39f6616abacf3a37",
+          "reason": "All mathematical expressions are correctly converted to LaTeX with proper spacing and notation."
+        },
+        {
+          "accepted": true,
+          "id": "3a44f1af7c08ee52",
+          "reason": "The equation Q = W is correctly represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "3cf77601eb96465a",
+          "reason": "The abbreviation MR = MC is correctly preserved in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "3dba684ea6bd2711",
+          "reason": "Identifiers are correctly escaped or formatted as text, preserving original meaning."
+        },
+        {
+          "accepted": true,
+          "id": "3e9134caa6550794",
+          "reason": "The mathematical statement is correctly converted to LaTeX with proper text for qualifiers."
+        },
+        {
+          "accepted": true,
+          "id": "40466414f3c26f72",
+          "reason": "The derivative notation is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "4077b886d0b1fc65",
+          "reason": "The integral equation is correctly converted to LaTeX with proper limits and spacing."
+        },
+        {
+          "accepted": true,
+          "id": "41ae3b119408492b",
+          "reason": "The inequality is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "4317fa3cb9ba97d8",
+          "reason": "The identifier is correctly escaped as a LaTeX token, preserving the original text."
+        },
+        {
+          "accepted": true,
+          "id": "43654f056cb0c893",
+          "reason": "Identifiers are correctly escaped as LaTeX tokens, preserving original meaning."
+        },
+        {
+          "accepted": true,
+          "id": "44697f4e40325aee",
+          "reason": "All mathematical expressions are correctly converted to LaTeX with proper notation and spacing."
+        },
+        {
+          "accepted": true,
+          "id": "4503b83652332964",
+          "reason": "The function expression is correctly converted to LaTeX."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d61426fc8ab982eec0bd656e6348fe4990722743c7feac03ea594a89be658246",
+        "job_id": "5f4bf0df824682668b4b71bdecb834f00d525f1ac197784a0d0ce8e823aac284",
+        "output_hash": "54ae3f630ecb84eca91e71e1778155892fc150256a17f99ee94044a75815aa21",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "36184bed-b704-4027-a30f-2c1a77ae7a60",
+        "request_id": "01a133228a800f7c7104d517007f06d4",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:e425102972f0",
+        "time": "2026-10-13T02:40:50+00:00",
+        "trace_id": "36184bed-b704-4027-a30f-2c1a77ae7a60",
+        "usage": {
+          "completion_tokens": 1207,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1614,
+          "prompt_tokens": 1614,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2821
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "39a75c505bd058ed",
+          "original": "simp",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "39a75c505bd058ed",
+          "original": "ring",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "39a75c505bd058ed",
+          "original": "norm_cast",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "39a75c505bd058ed",
+          "original": "norm_cast",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "39f6616abacf3a37",
+          "original": "∫ x sin x dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "4317fa3cb9ba97d8",
+          "original": "0-RTT",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "44697f4e40325aee",
+          "original": "R<1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "c56cd2bc6340ffb1ca0556c269ed251938fac974798479f4f62b3791999c019d",
+        "job_id": "8646b39564e20fcdb5eb5fb0e2bb3429a128ce105dfdfd8abfb40cf74c300435",
+        "output_hash": "6337e0ddf76156a441da71aedb68707b75e5377728c398a85d7e2ed3e3f0254f",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9012b803-6695-40db-ab00-78de6e9d45df",
+        "request_id": "01a13322a38d5cabdf3eb40efcc12bfd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:ad01c6881ed7",
+        "time": "2026-10-13T02:41:10+00:00",
+        "trace_id": "9012b803-6695-40db-ab00-78de6e9d45df",
+        "usage": {
+          "completion_tokens": 724,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2387,
+          "prompt_tokens": 2387,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3111
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "2d18b8b58b8ba84f",
+          "reason": "All proposed LaTeX spans match the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "2d697dee9d66685d",
+          "reason": "The span 'e^x' is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "2e9e1e3f0f1c5b8c",
+          "reason": "The symbols psi_I, psi_T, psi_S are correctly converted to LaTeX with subscripts."
+        },
+        {
+          "accepted": true,
+          "id": "2fb4c244bdbdf5fd",
+          "reason": "The integral expression is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "3125259d7d36b6c1",
+          "reason": "Both mathematical expressions are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "31b08d71c73663a9",
+          "reason": "The phi symbols with subscripts are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "33d44fbea4e0b7b0",
+          "reason": "The ratio m/m₀ and v/c=1 are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "3409cb09f6d966ec",
+          "reason": "The coefficient formula is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "3419cc90c7d58cd4",
+          "reason": "The inequality and condition are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "34beab88160803e4",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "34ceab53e2fcfc16",
+          "reason": "The derivative and expression are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "34da7d9a4699eca8",
+          "reason": "The equation and condition are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "363418d52cd61ab9",
+          "reason": "The pair (α_t, A_t) is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "36a1d49f63b923d2",
+          "reason": "All integral expressions and the function are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "377d08f8eb963091",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "3788744249ac84bc",
+          "reason": "The recurrence expression is correctly converted to LaTeX."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "9cdb42b4e0f99fc402330c3f676104bf5013cca796f2c6034ad98a66024640fd",
+        "job_id": "9ef31786f461fb45e0aefa1a855c6acbcef84c9529204348e848a9010f64b248",
+        "output_hash": "d1fbb7e2582f35b228135d7664a580c3cce85ea92d5e01675fc38ad4c7b6234f",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "128e91e2-2f8e-4a4c-994e-b599efd44885",
+        "request_id": "01a1332246893a04d816cd8e492a647e",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:ad01c6881ed7",
+        "time": "2026-10-13T02:40:46+00:00",
+        "trace_id": "128e91e2-2f8e-4a4c-994e-b599efd44885",
+        "usage": {
+          "completion_tokens": 989,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1488,
+          "prompt_tokens": 1488,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2477
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "33d44fbea4e0b7b0",
+          "original": "v/c",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "34ceab53e2fcfc16",
+          "original": "x^3",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d10f3a2e4b1db073c24a3d77ad3d4d0429acfd62ebb248a47f11152999cd100e",
+        "job_id": "ade9a3fdc833f361f98c48a621af326c2396f124420bb04ba7f734a5177a9c29",
+        "output_hash": "a1e5c0ee87feb5675bae26136649ab63a58d7f378e854b8540f51ae33200c595",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b31d3711-b1f8-486c-855e-c760d402db84",
+        "request_id": "01a133237897a21667cff22daa28f697",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:1c94459f7659",
+        "time": "2026-10-13T02:41:17+00:00",
+        "trace_id": "b31d3711-b1f8-486c-855e-c760d402db84",
+        "usage": {
+          "completion_tokens": 871,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2743,
+          "prompt_tokens": 2743,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3614
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "4551810d2e6aaaaf",
+          "reason": "The original 'chi_p' is correctly converted to LaTeX '\\chi_p' with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "45738b0a2a3c5c58",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "45b7716d1dd38b54",
+          "reason": "Both spans are faithful LaTeX conversions: '[a,b]' to '[a,b]' and the integral expression to '\\int_a^b f(x)\\,dx = F(b) - F(a)' with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "45db3e8d187e9aed",
+          "reason": "All three spans are correct LaTeX conversions preserving original mathematical content: inequality, interval, and absolute value integral inequality."
+        },
+        {
+          "accepted": true,
+          "id": "46027f5c3dca6c9a",
+          "reason": "The conversions '\\chi_{\\mathrm{eff}}' and '\\chi_p' accurately represent 'chi_eff' and 'chi_p' with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "46207a74849ef5a8",
+          "reason": "Both spans 'MR = MC' and 'P > MC' are correctly converted to LaTeX with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "4714061179695ad9",
+          "reason": "All three spans are faithful LaTeX conversions of the original mathematical expressions, preserving variables and structure."
+        },
+        {
+          "accepted": true,
+          "id": "472fcf7bd1aa85e3",
+          "reason": "The integral expression is correctly converted to '\\int_{-2}^{2} (t^2 - 4)\\,dt' with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "47337f9d230dac9e",
+          "reason": "All three spans are correct LaTeX conversions: '\\Delta S \\geq 0', '\\Delta S=0', and '\\Delta S>0' preserve original mathematical content."
+        },
+        {
+          "accepted": true,
+          "id": "476d631c9f5a3893",
+          "reason": "The conversion of 'j's' to 'j's' is acceptable as it is not mathematical notation, and 'phi_0' to '\\phi_0' is a faithful conversion."
+        },
+        {
+          "accepted": true,
+          "id": "47702770d2f2e7e9",
+          "reason": "All three spans are correct LaTeX conversions: 'g(-1)=4', 'x^2-4', and 'x=2' preserve original mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "4801a6992592ed46",
+          "reason": "All five spans are faithful LaTeX conversions of the original mathematical expressions, preserving variables and structure."
+        },
+        {
+          "accepted": true,
+          "id": "4a6edbdc8169a6b9",
+          "reason": "Both spans are correct LaTeX conversions: 'h(x)=1/(x-2)^2' and '\\lim_{x\\to 2} h(x) = +\\infty' preserve original mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "4c77208cae61fff9",
+          "reason": "The conversion of 'e^x' to 'e^x' is a faithful LaTeX representation with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "4e96927830b4f608",
+          "reason": "The conversion of 'h=f-g' to 'h=f-g' is a faithful LaTeX representation with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "4f7d30e0dc079c72",
+          "reason": "The conversion of '3^n' to '3^n' is a faithful LaTeX representation with identical meaning."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f93d53cafea5c016ae82bfb74e5823ba95fc5a6c16069696c8539c2157d8a928",
+        "job_id": "19ee6290266def46f5fb3023086c53e77df8b0e77d5a41b78ece90de128ffeac",
+        "output_hash": "b5577fedadfe4314ebd27ad8e8792c88f3fffee6b3cbfce5a286b261b9e2c8df",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "22ede598-f59f-4576-81d9-c49746e5aed8",
+        "request_id": "01a13322e346165b55a273a60b75685f",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:1c94459f7659",
+        "time": "2026-10-13T02:41:12+00:00",
+        "trace_id": "22ede598-f59f-4576-81d9-c49746e5aed8",
+        "usage": {
+          "completion_tokens": 1131,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1716,
+          "prompt_tokens": 1716,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2847
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "45db3e8d187e9aed",
+          "original": "a ≤ b",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "4f7d30e0dc079c72",
+          "original": "2^n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "4f7d30e0dc079c72",
+          "original": "2^n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "0ca56e4f5299ca498a8c22b56cc14b5fd4498d41d347e5f0a5d9a2f7e0398de5",
+        "job_id": "ee767604a8953897947d34ee81020f9cdc68b8d0e1d1de9008cd73db8b5ab27c",
+        "output_hash": "1b31e070bc3267564070f3e1e8ac37291068dd2f4ae0c61bde7fa1f39247e7f2",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "07185e39-1b9d-4e5b-b8a5-0016442b799c",
+        "request_id": "01a13323989a4cd2445b685fe902a847",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:489186c9a774",
+        "time": "2026-10-13T02:42:05+00:00",
+        "trace_id": "07185e39-1b9d-4e5b-b8a5-0016442b799c",
+        "usage": {
+          "completion_tokens": 557,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3497,
+          "prompt_tokens": 3497,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4054
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "5a930ff6bec9493d",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5ab94c57ede8d840",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5abd8a120fd9fa32",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5aecb4d21bdf8bc4",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5b843e03bdea09c6",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5baf0d22a88f1640",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5bcc463bde20fbcd",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5be5a8e3ab5a888a",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5c8989c43117a7b4",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5ecd5bd8c282148c",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5ee97450d7be9039",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "5ff8b1752726e434",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "60078a89361945c3",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "608767fcfe8368f0",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "60fff445bd71ecc3",
+          "reason": "The proposed text is identical to the original."
+        },
+        {
+          "accepted": true,
+          "id": "6227491c76314f3b",
+          "reason": "The proposed text is identical to the original."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "97e474c2ee26e2f411fe9d126b83e19e02f207c3686414c02328855067dfaef3",
+        "job_id": "e980e5f95224dbcac95db42e53c9572d6c2539c9b989a8d55b5348f40b647c65",
+        "output_hash": "97e474c2ee26e2f411fe9d126b83e19e02f207c3686414c02328855067dfaef3",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "e4c1b4bb-782e-421e-9672-d11a5bf171ca",
+        "request_id": "01a133239397824406930d9791893c4f",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:489186c9a774",
+        "time": "2026-10-13T02:41:57+00:00",
+        "trace_id": "e4c1b4bb-782e-421e-9672-d11a5bf171ca",
+        "usage": {
+          "completion_tokens": 1648,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1827,
+          "prompt_tokens": 1827,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3475
+        }
+      },
+      "rejected_spans": []
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1b55f11660ddd79a26e3e66e1c86b39d76f3122e5a6a0f2bf42377f315b77c7d",
+        "job_id": "ff6fae6eafd97ecc88dc136a6c164dc9bcdc3156fe5aa76e6763ce6046dfade3",
+        "output_hash": "d52ddafc50d12c0c292431d9b996b857984f70e8a6797dcaf2b11b5726d5a699",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "af31b5bb-922a-49b9-85b5-fd6e68bd26aa",
+        "request_id": "01a13322f237c0310263b7ba1e884548",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:fc2beda34d30",
+        "time": "2026-10-13T02:41:29+00:00",
+        "trace_id": "af31b5bb-922a-49b9-85b5-fd6e68bd26aa",
+        "usage": {
+          "completion_tokens": 719,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3301,
+          "prompt_tokens": 3301,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4020
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "4f8392650c6f7304",
+          "reason": "The LaTeX faithfully reproduces the piecewise function and inequalities."
+        },
+        {
+          "accepted": true,
+          "id": "509f04ceee9502ff",
+          "reason": "All integral expressions and inequalities are correctly converted without altering meaning."
+        },
+        {
+          "accepted": true,
+          "id": "50e4d58018f1d3a3",
+          "reason": "The equation f(x)=0 is accurately represented."
+        },
+        {
+          "accepted": true,
+          "id": "51830728bd168467",
+          "reason": "The expressions Q/T, ΔE_int, and ΔS are correctly converted with proper subscripts and logarithms."
+        },
+        {
+          "accepted": true,
+          "id": "528f814f6d277be8",
+          "reason": "The function and point are accurately rendered in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "52bce31822bdea16",
+          "reason": "The inequality f''(x_n) ≠ 0 is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "530639da715a414f",
+          "reason": "All mathematical expressions, including the function, interval, equalities, and membership, are faithfully represented."
+        },
+        {
+          "accepted": true,
+          "id": "532bcd1ebd7e1aca",
+          "reason": "The boundary term [x tan^{-1} x]_0^1 is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "5379454a6321f12b",
+          "reason": "The series ∑e^n/n^3 is accurately represented."
+        },
+        {
+          "accepted": true,
+          "id": "53ec9f38402ff046",
+          "reason": "All interval, sum, limit, and integral expressions are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "541347a40031345d",
+          "reason": "The function sin(x^3) is correctly rendered."
+        },
+        {
+          "accepted": true,
+          "id": "5419ba3947308a15",
+          "reason": "The vector notation for angular momentum and torque is appropriately added without changing meaning."
+        },
+        {
+          "accepted": true,
+          "id": "542b94edbd6e2ccb",
+          "reason": "The function and recurrence relation are accurately converted."
+        },
+        {
+          "accepted": true,
+          "id": "5623b5598b6f9fd4",
+          "reason": "The numerical values, units, and equations are correctly represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "56dd8d42bd524716",
+          "reason": "The equation, exponential function, and logarithm are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "59880888f31bad4c",
+          "reason": "The substitution variables and differential are accurately rendered."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3d854d78a79ef44c445d10e95118ae4860b432dc71f9318af5728bb725fe4e91",
+        "job_id": "ff82dc7d28872e71821932df93ee81acc878065af7af10a07892c86ff2062777",
+        "output_hash": "946ec89cbeb4fd8f84e22bc23ebd58c9d9b37f3cb2510c0bb51dd6c2f1bb9538",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "dbcf1af5-9c93-4ae7-8615-a66bde4105bf",
+        "request_id": "01a13322f078cc6d1e6a6646602d68b1",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:fc2beda34d30",
+        "time": "2026-10-13T02:41:22+00:00",
+        "trace_id": "dbcf1af5-9c93-4ae7-8615-a66bde4105bf",
+        "usage": {
+          "completion_tokens": 1566,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1919,
+          "prompt_tokens": 1919,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3485
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "4f8392650c6f7304",
+          "original": "x=2",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "4f8392650c6f7304",
+          "original": "x=2",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "532bcd1ebd7e1aca",
+          "original": "tan^{-1} x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "5379454a6321f12b",
+          "original": "e^n/n^3",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "53ec9f38402ff046",
+          "original": "x_i*",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "5623b5598b6f9fd4",
+          "original": "ΔE_int",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "56dd8d42bd524716",
+          "original": "p_N",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "af2a06e88ee29420e4a9bb1849d8064724c36ce33be6b762b3bf266add855b30",
+        "job_id": "0c8786558a35a27ac85e17cbe87ead4c38d405d686ea3e74bf4dc126aebac3a2",
+        "output_hash": "e8d420740ffaaec3d6e662d32d2abec1bb65163429ada4ccfc0e6a81b4dd980c",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "39ee7d72-419d-45e0-8948-2dbb6b09076d",
+        "request_id": "01a133241a9332254b5645652f0f9dc4",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:22dabfa7594c",
+        "time": "2026-10-13T02:42:46+00:00",
+        "trace_id": "39ee7d72-419d-45e0-8948-2dbb6b09076d",
+        "usage": {
+          "completion_tokens": 597,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2806,
+          "prompt_tokens": 2806,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3403
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "62578dc8b73fb469",
+          "reason": "All three spans are faithful LaTeX conversions of the original mathematical expressions."
+        },
+        {
+          "accepted": true,
+          "id": "625af82629d5953c",
+          "reason": "The square root, exponent, and infinity symbols are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "6306474013027557",
+          "reason": "The inequality is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "637e69d433d9af65",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "6410d7c78444e26e",
+          "reason": "All vector equations, cross products, dot products, and the final torque equation are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "650a3a0caed1e02b",
+          "reason": "The limit expression is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "657465f7f7e508f9",
+          "reason": "The substitutions and integration-by-parts formula are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "65c061177f246d6b",
+          "reason": "The definite integral and the fraction are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "664b4e6a8733c3c6",
+          "reason": "The inequality is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "67831332875cd677",
+          "reason": "The equations MR = MC and MR < P are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "67a8ddf35a083e3e",
+          "reason": "The plus-minus symbol is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "68cafcd4673532b3",
+          "reason": "All economic equations and inequalities are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "6925e214afa5ff39",
+          "reason": "The chain rule expression is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "69444ed499b0603c",
+          "reason": "The exponential, polynomial equation, and natural logarithm are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "697efdd5f288059e",
+          "reason": "The composite function and its derivative are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "69b029403bec77b9",
+          "reason": "The cosmological distance formula is correctly converted to LaTeX."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6b754c44080dde5bb4dddb731be8816033081ffc80b1628eba28d6528e1ab99c",
+        "job_id": "972a369d499b0b7ca686c2a0dcd90fb659d15665dfe679846d8d2f167c3aac85",
+        "output_hash": "89e549f1817d30aaef154aa8016c69b0a7b869da77e5c70a36f062bcf70d9b94",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a38b05f1-4972-4ade-a002-2d73508a7408",
+        "request_id": "01a133238911733d69ec06a51aa4f432",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:22dabfa7594c",
+        "time": "2026-10-13T02:42:09+00:00",
+        "trace_id": "a38b05f1-4972-4ade-a002-2d73508a7408",
+        "usage": {
+          "completion_tokens": 1430,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1589,
+          "prompt_tokens": 1589,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3019
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "62578dc8b73fb469",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "62578dc8b73fb469",
+          "original": "sin x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "62578dc8b73fb469",
+          "original": "cos x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "625af82629d5953c",
+          "original": "f′",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "625af82629d5953c",
+          "original": "√x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "625af82629d5953c",
+          "original": "f′",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "6410d7c78444e26e",
+          "original": "Σ(r × F)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "67a8ddf35a083e3e",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "67a8ddf35a083e3e",
+          "original": "sin x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "67a8ddf35a083e3e",
+          "original": "cos x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "42ce89a2dd7eac3a1f927433a831323b70e625df03aa2311d53c4e59abfde8cb",
+        "job_id": "c3887e536c057b6c2118de2ead63ae3b4372f855d470b5ce3bb1c2760b6baf39",
+        "output_hash": "f24e15ec0ff93c3c599a93a5ebd588807150d909bd4811c11ec6f07df42cdfcc",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "23d5a4ff-6689-45bd-8852-4a38699dad75",
+        "request_id": "01a13324f6b1ca57a3b09203a427803e",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:074eea1e1459",
+        "time": "2026-10-13T02:43:40+00:00",
+        "trace_id": "23d5a4ff-6689-45bd-8852-4a38699dad75",
+        "usage": {
+          "completion_tokens": 536,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2194,
+          "prompt_tokens": 2194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2730
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "72d400425ae80379",
+          "reason": "Exact mathematical equivalence."
+        },
+        {
+          "accepted": true,
+          "id": "7346d4b93b274c81",
+          "reason": "No mathematical content proposed; abstention acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "736790630ea7bb67",
+          "reason": "Exponent notation equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "7435f8979816e418",
+          "reason": "Both spans match original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "754f093a22e4fc10",
+          "reason": "Summation and Greek letters equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "75954bd54ec24e7b",
+          "reason": "Greek Omega and superscript preserved."
+        },
+        {
+          "accepted": true,
+          "id": "75d5b1dc2577d043",
+          "reason": "No mathematical content proposed; abstention acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "76b31d39f38e0fdd",
+          "reason": "Exponent notation equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "793aa5a1783ffc4e",
+          "reason": "Trigonometric and differential notation equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "79414bddfbe78d14",
+          "reason": "Identical mathematical expression."
+        },
+        {
+          "accepted": true,
+          "id": "798ad358ac20581e",
+          "reason": "Inequalities and integrals match exactly."
+        },
+        {
+          "accepted": true,
+          "id": "79dab2ab9f359033",
+          "reason": "Exponential notation equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "7adb3ca396ccc314",
+          "reason": "Angular momentum formula equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "7b8ae7934326edf8",
+          "reason": "Integral and units match exactly."
+        },
+        {
+          "accepted": true,
+          "id": "7bc02ab008af43c6",
+          "reason": "Absolute value, exponential, and sine notations equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "7bee25e69e89d45d",
+          "reason": "All integrals, intervals, and fraction notation match exactly."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "9aaf71e34edf8a942783cba262ec06a6ed71e81dce5dd084f0eaefce3d07ebb0",
+        "job_id": "1b90dd9a484c16d3aacfceb161e405b8b2d5b1d7b892ad68e9d5c2c6935304f3",
+        "output_hash": "8362875f5149ed30ca76cd7a9eb934dd85e3d9b53bd98141319f3db65b6c8255",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "e9992cc5-8974-4b57-a77a-5f99bfdec072",
+        "request_id": "01a13324b4c37fa25e9fe99e21fb85a3",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:074eea1e1459",
+        "time": "2026-10-13T02:43:25+00:00",
+        "trace_id": "e9992cc5-8974-4b57-a77a-5f99bfdec072",
+        "usage": {
+          "completion_tokens": 958,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1354,
+          "prompt_tokens": 1354,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2312
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "7435f8979816e418",
+          "original": "x*",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "76b31d39f38e0fdd",
+          "original": "2^n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "76b31d39f38e0fdd",
+          "original": "2^n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "7bc02ab008af43c6",
+          "original": "R_n(x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "9a2d4290ef32f7f11d2ad78415d1ebcfd592fbda3b6011d89a542582e387c535",
+        "job_id": "07dcc618c948dbe756fd9a2557da7549a20dff4724283fa01e444730ab642c64",
+        "output_hash": "f172f94699c86627a7595dfca19a40270f4b4334abee85ec38334e88c56bd4c5",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f8c489a8-8a0e-43ff-b1ca-66d5216fb7fe",
+        "request_id": "01a133251d4225679080b72a2dbb8779",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:860b0b8782f1",
+        "time": "2026-10-13T02:43:50+00:00",
+        "trace_id": "f8c489a8-8a0e-43ff-b1ca-66d5216fb7fe",
+        "usage": {
+          "completion_tokens": 696,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2890,
+          "prompt_tokens": 2890,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3586
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "6a5fd5a782da31d4",
+          "reason": "Both spans are straightforward mathematical expressions with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "6aa642274f0056a3",
+          "reason": "The equation E = K + U is correctly converted with no change in meaning."
+        },
+        {
+          "accepted": true,
+          "id": "6c68f0c67aa15323",
+          "reason": "The integral and the difference F(b)-F(a) are correctly represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "6cb2a01da569b792",
+          "reason": "All spans preserve the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "6e115b0efbd8e3e2",
+          "reason": "The integral and differential are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "6e570f3e1456720b",
+          "reason": "The function F(x) is correctly represented."
+        },
+        {
+          "accepted": true,
+          "id": "6e6ea97af0466d2e",
+          "reason": "The expression b_n^n is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "6f36ed0d145fc356",
+          "reason": "All mathematical expressions are correctly converted with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "6fb3f3ba559f7836",
+          "reason": "The integral, antiderivative, and differentiation result are all correctly represented."
+        },
+        {
+          "accepted": true,
+          "id": "6fd6a0357a62578e",
+          "reason": "The expression sin(x^3) is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "70c5a6c95d3bf4e6",
+          "reason": "All mathematical statements are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "70ddc780bfa3537e",
+          "reason": "The equation W_nc = ΔE is correctly converted with subscript and Delta."
+        },
+        {
+          "accepted": true,
+          "id": "70f572b5e0b82ea0",
+          "reason": "The equation tan(x)-x=0 is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "71aa8568171bb772",
+          "reason": "The expression e^x is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "7296fca1d47add29",
+          "reason": "The expression e^x is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "72a9a2b231ca2504",
+          "reason": "The expression MR = MC is correctly converted."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b93dda31dfd948007fb2604be18428279865225baab3af1b8836b468af295e50",
+        "job_id": "6695263eb01624738c6267546c215ea9347a07a06217c8c4586d06e5da58c706",
+        "output_hash": "c22e0915b2d5552ed9973fed8ecae101725c1e498e23a8bbf6e88660bf86f6b0",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "22d709ba-bb78-4989-a3de-bfab7d9100ad",
+        "request_id": "01a13323fcd20a01cd87d6d1e2c4a2be",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:860b0b8782f1",
+        "time": "2026-10-13T02:42:38+00:00",
+        "trace_id": "22d709ba-bb78-4989-a3de-bfab7d9100ad",
+        "usage": {
+          "completion_tokens": 1456,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1820,
+          "prompt_tokens": 1820,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3276
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "6f36ed0d145fc356",
+          "original": "|a_n|",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "6f36ed0d145fc356",
+          "original": "ρ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6b8a6c1376823afe79af935b6d7b344cc303d20c8fc3b228ffef64e87bf81235",
+        "job_id": "1322a9eb757453072aa287e3ff46db8781a1327ea577c4433dd02a592e612e20",
+        "output_hash": "58f70aeaba15a2be2c25e204bf507b56c848a7ce2dc6cd994b9f2f9d1f07a2bc",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "84f190a7-956e-4af5-8508-fb4939a127b2",
+        "request_id": "01a133254a272fc12a751c78c9eeb7d4",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:8c410512f9d5",
+        "time": "2026-10-13T02:43:50+00:00",
+        "trace_id": "84f190a7-956e-4af5-8508-fb4939a127b2",
+        "usage": {
+          "completion_tokens": 717,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3106,
+          "prompt_tokens": 3106,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3823
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "7c53d74f5ef261e4",
+          "reason": "The LaTeX correctly represents the original mathematical expression."
+        },
+        {
+          "accepted": true,
+          "id": "7d57f2fed046c7c7",
+          "reason": "The span 'a=0' is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "7e2fa7db1839ff4a",
+          "reason": "The subscript 'nc' is correctly rendered as '_{nc}'."
+        },
+        {
+          "accepted": true,
+          "id": "7f964567bc604930",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "7fc0a7c665a952b7",
+          "reason": "The integral and exponential are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "802d935b67966601",
+          "reason": "All three spans are correctly converted to LaTeX with proper notation."
+        },
+        {
+          "accepted": true,
+          "id": "8128b05775b4f708",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "819ab6872d4aed6c",
+          "reason": "The integral equality is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "82d14d1d03ac28a0",
+          "reason": "All spans are correctly converted to LaTeX, preserving subscripts, fractions, and notation."
+        },
+        {
+          "accepted": true,
+          "id": "82daf03744070799",
+          "reason": "The metric tensor and line element are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "82fec3d2c20bef29",
+          "reason": "No mathematical spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "838fb14cedd5edd2",
+          "reason": "All spans are correctly converted to LaTeX, including subscripts and absolute values."
+        },
+        {
+          "accepted": true,
+          "id": "83cfa3ff22d9519d",
+          "reason": "The inequality is correctly converted to LaTeX with proper symbols."
+        },
+        {
+          "accepted": true,
+          "id": "83d184032ac721c8",
+          "reason": "All spans are correctly converted to LaTeX, preserving subscripts and inequalities."
+        },
+        {
+          "accepted": true,
+          "id": "8484e04aa23e705b",
+          "reason": "All spans are correctly converted to LaTeX, including subscripts and function notation."
+        },
+        {
+          "accepted": true,
+          "id": "84f0697d3aef47d8",
+          "reason": "The delta symbol is correctly converted to LaTeX."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3db4be9e415f44bc9c55fc45a8e60ce4e703c51659ed7db2bfaffe8e178cf0af",
+        "job_id": "41ca02a96945ae8d8fd4989ddb5c4a4c8640d12ca5f94c52f059926a020823e7",
+        "output_hash": "d864903b410ba8e407ca5e8457a9083d3d9bbc548e7128b22c2c569b799e5c26",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c612434f-b727-408e-b914-68cbdf127725",
+        "request_id": "01a1332534fe1f28049ef1400e9d5829",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:8c410512f9d5",
+        "time": "2026-10-13T02:43:44+00:00",
+        "trace_id": "c612434f-b727-408e-b914-68cbdf127725",
+        "usage": {
+          "completion_tokens": 1322,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2007,
+          "prompt_tokens": 2007,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3329
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "8128b05775b4f708",
+          "original": "f_r",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "8128b05775b4f708",
+          "original": "f_CE",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "82d14d1d03ac28a0",
+          "original": "x0",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "82d14d1d03ac28a0",
+          "original": "x1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "838fb14cedd5edd2",
+          "original": "f(x_i*)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "838fb14cedd5edd2",
+          "original": "A1 − A2",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "838fb14cedd5edd2",
+          "original": "A1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "838fb14cedd5edd2",
+          "original": "A2",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "83d184032ac721c8",
+          "original": "ρ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "8484e04aa23e705b",
+          "original": "R_n(1)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "eb83547fcfeb9a7f4ac8474bf7b2a6a03f8ee1c8871c8e5c4e7b537816093120",
+        "job_id": "531222b0424409c4340281358386be2eec59d8718ec07d818454d8fd31959bc5",
+        "output_hash": "721e16f3dce74ad8070859efb7fb0d18115fdbaf8942cdc42e576e2a4c853e55",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9ffd0342-ffec-4ff1-950e-73eab3060ac6",
+        "request_id": "01a1332571d23f71cf6a21dce91cf3bf",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:22e19b33ea0b",
+        "time": "2026-10-13T02:43:59+00:00",
+        "trace_id": "9ffd0342-ffec-4ff1-950e-73eab3060ac6",
+        "usage": {
+          "completion_tokens": 584,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2401,
+          "prompt_tokens": 2401,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2985
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "85d52389541ece48",
+          "reason": "No spans proposed; abstention."
+        },
+        {
+          "accepted": true,
+          "id": "871317f839f64a07",
+          "reason": "The LaTeX conversion preserves the exact mathematical expression W_nc = 0."
+        },
+        {
+          "accepted": true,
+          "id": "882bbf319a6225ea",
+          "reason": "The integral notation is correctly converted to LaTeX with proper spacing."
+        },
+        {
+          "accepted": true,
+          "id": "88ceb29318bbfcb3",
+          "reason": "No spans proposed; abstention."
+        },
+        {
+          "accepted": true,
+          "id": "89144cf01f65bcae",
+          "reason": "q^n is correctly converted to LaTeX superscript."
+        },
+        {
+          "accepted": true,
+          "id": "89a7a2813c313477",
+          "reason": "No spans proposed; abstention."
+        },
+        {
+          "accepted": true,
+          "id": "8a2db19a2149cd94",
+          "reason": "2^{-NH} correctly represents the original expression."
+        },
+        {
+          "accepted": true,
+          "id": "8c8174a324afdb92",
+          "reason": "Both spans are correctly converted: cross product and sine function."
+        },
+        {
+          "accepted": true,
+          "id": "8ceea9b9a1cd1056",
+          "reason": "No spans proposed; abstention."
+        },
+        {
+          "accepted": true,
+          "id": "8ecb4ec93b3d0348",
+          "reason": "The flag variable is correctly represented as text in LaTeX, preserving the programming identifier."
+        },
+        {
+          "accepted": true,
+          "id": "900c655313b03aa6",
+          "reason": "e^x is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "906778645bbf7b73",
+          "reason": "All four spans are correctly converted, preserving mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "90a2b8a69ebb3258",
+          "reason": "Both derivative expressions are correctly converted with proper superscripts and multiplication dot."
+        },
+        {
+          "accepted": true,
+          "id": "914e522fc38a4737",
+          "reason": "Both inequalities are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "91bb57ac0d5bd873",
+          "reason": "All three spans are correctly converted, preserving function notation."
+        },
+        {
+          "accepted": true,
+          "id": "93139b6144d05b68",
+          "reason": "All six spans are correctly converted, including integral, square root, sine, and derivative notation."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "389337c35d6f038e4ee7f3f5882f21921e0d542aad2604a76910abb4e1a24d80",
+        "job_id": "00a21823d570682d396743d8f5da60e0dd14a6faa1ca5bbf1225470390032cf8",
+        "output_hash": "8f6e110a8f2c222679995ad98191044c6128e08add03f152fc0fdfec46a08070",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a8641e17-b708-4f76-9bf0-4cd8e6af74a1",
+        "request_id": "01a13325426056fb08675e5f949de090",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:22e19b33ea0b",
+        "time": "2026-10-13T02:43:54+00:00",
+        "trace_id": "a8641e17-b708-4f76-9bf0-4cd8e6af74a1",
+        "usage": {
+          "completion_tokens": 1073,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1540,
+          "prompt_tokens": 1540,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2613
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "85d52389541ece48",
+          "original": "β_t",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "85d52389541ece48",
+          "original": "β_t",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "89a7a2813c313477",
+          "original": "α_t",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "89a7a2813c313477",
+          "original": "α_t",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "8ecb4ec93b3d0348",
+          "original": "flag=0",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "8ecb4ec93b3d0348",
+          "original": "flag=0",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "8ecb4ec93b3d0348",
+          "original": "flag=1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "8ecb4ec93b3d0348",
+          "original": "flag=1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "93139b6144d05b68",
+          "original": "u(x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a1308db1fe064169ddcfb28ac20c40817e135d7dee786b377c7c7b49dcb64d03",
+        "job_id": "d9f7d307813a4194c7a580ea8656f3ff6116e365e1ca25db972af34fef5f6f83",
+        "output_hash": "619ecc91abf507d9f4350a6f6d247e68fee58c00b0010e94bc61a86520a777ea",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a78dad7c-d43b-4818-b5fc-95a3fd2a5ed0",
+        "request_id": "01a1332655c1a97e7d55a8d3625fe7b8",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:ee46a547942d",
+        "time": "2026-10-13T02:44:58+00:00",
+        "trace_id": "a78dad7c-d43b-4818-b5fc-95a3fd2a5ed0",
+        "usage": {
+          "completion_tokens": 614,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2028,
+          "prompt_tokens": 2028,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2642
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "93394c2516a0a32e",
+          "reason": "All proposed LaTeX spans preserve the exact mathematical meaning of the original text."
+        },
+        {
+          "accepted": true,
+          "id": "935eab23aba2870c",
+          "reason": "The span P = MC is correctly converted to LaTeX without altering meaning."
+        },
+        {
+          "accepted": true,
+          "id": "93641b30610c7f5f",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "936949e9e7bdec06",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "94b4d9fab3e6dc1b",
+          "reason": "The equation f(a)=f(b) is faithfully represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "94ca28db1b50c61a",
+          "reason": "The expression f(x)=x^n is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "95283223ae0fc62a",
+          "reason": "ln x and x=1 are accurately converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "95aead68372cd597",
+          "reason": "The inequality g(x) ≠ g(a) is correctly represented."
+        },
+        {
+          "accepted": true,
+          "id": "962a04a8ff413f53",
+          "reason": "The chain rule expression is correctly converted to LaTeX with proper notation."
+        },
+        {
+          "accepted": true,
+          "id": "966131be4d1c9634",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "96de5e133e21d596",
+          "reason": "The equation ΔE_int = 0 is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "96e152c7f874f56c",
+          "reason": "The integral equality is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "975112b148c0eb9d",
+          "reason": "The equation τ_net = Iα is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "975127c3aa56a05f",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "988a474127309b8e",
+          "reason": "The inequality g(x) ≠ g(a) is correctly represented."
+        },
+        {
+          "accepted": true,
+          "id": "99bd9794393f7dd2",
+          "reason": "The expression N=0 is correctly converted to LaTeX."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "607974d885fe8a3bf52866d9c266ece60810cc0aa25f66994f8ff1379749174c",
+        "job_id": "edde6e9d2ada8589262210e03f677de8104e73c8f310aadd435dd5947c0e0b1c",
+        "output_hash": "a4e83ec3de58d406860818b52e567a2e0f48fab01d3f464a96450eed24f1a491",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "aae69b80-1d45-4c88-8b7e-5c87e6dd8adb",
+        "request_id": "01a133252a79cc9454238244259574a3",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:ee46a547942d",
+        "time": "2026-10-13T02:43:55+00:00",
+        "trace_id": "aae69b80-1d45-4c88-8b7e-5c87e6dd8adb",
+        "usage": {
+          "completion_tokens": 780,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1381,
+          "prompt_tokens": 1381,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2161
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "93394c2516a0a32e",
+          "original": "epsilon",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "93394c2516a0a32e",
+          "original": "N0",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "966131be4d1c9634",
+          "original": "α_t",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "96e152c7f874f56c",
+          "original": "∫_a^b f(x) dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "dde641ed63d4915f8d0cb0a5966545d5071d18274f582d2126515927a56c3c02",
+        "job_id": "4dbe080caee3a86eda21a4349a5d56143629072ded7fc623c8ed24ac363c7bba",
+        "output_hash": "9ee7b21bc7d1a5a46d7009f54aa9555e3e5524d9572d01e659ce182b55dd24c1",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c2656529-df34-4304-9870-ae0beebc1106",
+        "request_id": "01a13325642ca423d82fb683c5e5c7b2",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:2be1cad117fc",
+        "time": "2026-10-13T02:44:09+00:00",
+        "trace_id": "c2656529-df34-4304-9870-ae0beebc1106",
+        "usage": {
+          "completion_tokens": 795,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2958,
+          "prompt_tokens": 2958,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3753
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "99dc198bd41f68e5",
+          "reason": "All proposed LaTeX spans preserve the exact mathematical meaning, units, and notation of the original text."
+        },
+        {
+          "accepted": true,
+          "id": "9a92bfed747bb8ce",
+          "reason": "The formula C = W log(1 + P/N) is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9aa4a90882abbe72",
+          "reason": "The notation S(f) is faithfully represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9ab15f6481833fdc",
+          "reason": "The Greek letter phi and the group SL_2(Z) are correctly converted to LaTeX with the same mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9ad7390ec29f9f17",
+          "reason": "The inequality f'(x) ≠ 0 is accurately rendered in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9b03e4cb93bdffb5",
+          "reason": "The constant C=0 is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9b5ba323364933a7",
+          "reason": "The equations α = 1 and y0 = b are faithfully represented in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9b8b2ff5371bf428",
+          "reason": "The number 10^10 is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9bb9cdf986888f93",
+          "reason": "The expressions r/poly(β), C^n, and S^1·X are correctly converted to LaTeX with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9be185a482193557",
+          "reason": "The asymptotic notation O(H^ε) is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9c2e1f2938028b5b",
+          "reason": "The integral and probability expressions are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9ca1445295df3964",
+          "reason": "The update rule, loss function, and variable Y_t are all correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9ce5dd2a40f37078",
+          "reason": "No mathematical spans were proposed; the text is prose and correctly left unchanged."
+        },
+        {
+          "accepted": true,
+          "id": "9d05d6e09bcc0903",
+          "reason": "The function notation f_i is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9d76701e2ec19142",
+          "reason": "The ratio sigma/sigma_SM and the value 0.87 ± 0.23 are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "9d863a40be9353f7",
+          "reason": "The thermodynamic equations and inequalities are correctly converted to LaTeX with identical meaning."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "e79e2e098455bfec374007961a5599607a5d88579e9ce90c0c2fcddc35a31bb3",
+        "job_id": "7bc5069460238c2fa45b186336df076e0376e296339f8513e2044ba9318859a6",
+        "output_hash": "f6fc81404cbf9bc015e79ae0952793917834b132b8adb4b36ac253ff359b1568",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c044ac71-5c2c-438a-9646-7ee7c5abc908",
+        "request_id": "01a133255020450c52cad48d85865832",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:2be1cad117fc",
+        "time": "2026-10-13T02:44:03+00:00",
+        "trace_id": "c044ac71-5c2c-438a-9646-7ee7c5abc908",
+        "usage": {
+          "completion_tokens": 1431,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1694,
+          "prompt_tokens": 1694,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3125
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "9a92bfed747bb8ce",
+          "original": "W",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9a92bfed747bb8ce",
+          "original": "P",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9a92bfed747bb8ce",
+          "original": "N",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9aa4a90882abbe72",
+          "original": "Z_i",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9bb9cdf986888f93",
+          "original": "β",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9bb9cdf986888f93",
+          "original": "S^1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9ca1445295df3964",
+          "original": "α",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9ca1445295df3964",
+          "original": "β_t",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "230c05a7eb57baa7a593705d1968a2f51b71296002d6524345be4ce4c44f92e2",
+        "job_id": "c8df9d67b820cf7a055bb30b27d08bba2ce70d73bd986eaffc091bc1fb0cb259",
+        "output_hash": "78a73c9b92cdcb1cfb9027ece51e02700758470e54b842e4d079779f87c6c480",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "e837b715-2b08-4790-aaef-eb741e445482",
+        "request_id": "01a133276a8696c1194261b841f6c35c",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:69c836dfde2e",
+        "time": "2026-10-13T02:46:09+00:00",
+        "trace_id": "e837b715-2b08-4790-aaef-eb741e445482",
+        "usage": {
+          "completion_tokens": 611,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2960,
+          "prompt_tokens": 2960,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3571
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "9dbb886d84653c13",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9ec76eb37c2b1946",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9edf8500c9391d38",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9ee5a2d8bff4142c",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9f15ba5f4aa2acdb",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "9f1fcb36632c2f49",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a0204257af45958b",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a054035a6f885da7",
+          "reason": "No spans proposed; abstention accepted."
+        },
+        {
+          "accepted": true,
+          "id": "a0b1bce4df05cf2f",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a112ce40e2febe17",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a1aac2454a9f22c3",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a1e065e0c79b34aa",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a2a155da1bebb134",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a2caf3347970a445",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a34ac7d54ed5d171",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a34afdd9462d061d",
+          "reason": "All spans are faithful mathematical transcriptions with equivalent meaning."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a00a6b254a9c7d91b9b7778a4f5de796dcc2f5df2a168a53efb6504af535600b",
+        "job_id": "8827812f34751c01b62ecb8290a59e52e3bdf32796964172091160d6103476c5",
+        "output_hash": "dcea94f04e5158811f4eaeec1bd6442f19bd8fd93301217fcd5a28220289b2c0",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "159ff5b5-5e6e-4516-aff6-785e58400fc1",
+        "request_id": "01a13326302fe3abb4ba8a42a080c611",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:69c836dfde2e",
+        "time": "2026-10-13T02:45:02+00:00",
+        "trace_id": "159ff5b5-5e6e-4516-aff6-785e58400fc1",
+        "usage": {
+          "completion_tokens": 1423,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1713,
+          "prompt_tokens": 1713,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3136
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "9dbb886d84653c13",
+          "original": "sin(1/x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9dbb886d84653c13",
+          "original": "sin(1/x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9ec76eb37c2b1946",
+          "original": "λ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "9ec76eb37c2b1946",
+          "original": "μ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a0b1bce4df05cf2f",
+          "original": "RRE",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a0b1bce4df05cf2f",
+          "original": "RRE-definable",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "df259ab4f2110adca7959e16b37f267e7169117f1f206de5391adcbffde75863",
+        "job_id": "6df69d7ad6fe2d3cccebb88c4a25e6c9956daf970069e36ff49fd961ceaee8ea",
+        "output_hash": "22ccf4de4f707bbe1a66420596472585390dd30ccf6f54a9a658e2c0787e5f87",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "292f159a-83ff-4820-a8fd-e3b46eaf0305",
+        "request_id": "01a1332773e15a476783cc70300c83ac",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:f8a0bb4af649",
+        "time": "2026-10-13T02:46:18+00:00",
+        "trace_id": "292f159a-83ff-4820-a8fd-e3b46eaf0305",
+        "usage": {
+          "completion_tokens": 697,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3021,
+          "prompt_tokens": 3021,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3718
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "acd5967939ddaca6",
+          "reason": "All proposed LaTeX spans are faithful mathematical typesetting of the original expressions."
+        },
+        {
+          "accepted": true,
+          "id": "ada004e9dcb3915c",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "aec8dde44087a1fd",
+          "reason": "The integral expression is correctly typeset with the exponent and differential."
+        },
+        {
+          "accepted": true,
+          "id": "b048743888a37df7",
+          "reason": "2^n is correctly represented."
+        },
+        {
+          "accepted": true,
+          "id": "b0db42f6c2950059",
+          "reason": "All proposed LaTeX spans match the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "b11b91973c961440",
+          "reason": "The function and limits are correctly typeset."
+        },
+        {
+          "accepted": true,
+          "id": "b1c18776e12f7fbd",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "b1c2bae089c78d6f",
+          "reason": "The inverse tangent and the computed value are correctly typeset."
+        },
+        {
+          "accepted": true,
+          "id": "b2839f2b69f91428",
+          "reason": "The equation τ_net = Iα is correctly typeset."
+        },
+        {
+          "accepted": true,
+          "id": "b289a1bbb425a755",
+          "reason": "All proposed LaTeX spans match the original mathematical expressions."
+        },
+        {
+          "accepted": true,
+          "id": "b4427c9fd51a93ab",
+          "reason": "All proposed LaTeX spans are faithful typesetting of the original mathematical expressions."
+        },
+        {
+          "accepted": true,
+          "id": "b44f8325b8ae8011",
+          "reason": "The flag variable and the value 1 are correctly typeset."
+        },
+        {
+          "accepted": true,
+          "id": "b4623b8b36eac63c",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "b4d9179e0f27da5d",
+          "reason": "The substitution variables and exponent are correctly typeset."
+        },
+        {
+          "accepted": true,
+          "id": "b50c114a6e8cc5c3",
+          "reason": "The metric tensor and line element are correctly typeset."
+        },
+        {
+          "accepted": true,
+          "id": "b673bceaef593e6d",
+          "reason": "All proposed LaTeX spans match the original mathematical expressions."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f8acbfd652c307b5960c07a141a80f3fe3f62e76b93fb61d79d2aa5b920d945e",
+        "job_id": "9dc0d2225fe5c1806c312e94d6ea2bd9c23136cdc4282e6af58febe0447f110e",
+        "output_hash": "f74e087fc41d28c0026e1daf826f09e2d84955833e35beea38b4f4b6b651d9ab",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c7a40d96-e431-4f26-ab5c-5231cb1846ac",
+        "request_id": "01a1332748a1f3f96ded9a131f75ecc0",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:f8a0bb4af649",
+        "time": "2026-10-13T02:46:12+00:00",
+        "trace_id": "c7a40d96-e431-4f26-ab5c-5231cb1846ac",
+        "usage": {
+          "completion_tokens": 1272,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1971,
+          "prompt_tokens": 1971,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3243
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "acd5967939ddaca6",
+          "original": "w",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "acd5967939ddaca6",
+          "original": "a",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b048743888a37df7",
+          "original": "n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b0db42f6c2950059",
+          "original": "x*",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b0db42f6c2950059",
+          "original": "x* = F(x*)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b0db42f6c2950059",
+          "original": "x_n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b0db42f6c2950059",
+          "original": "x*",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b0db42f6c2950059",
+          "original": "x* = F(x*)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b4427c9fd51a93ab",
+          "original": "ρ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b4427c9fd51a93ab",
+          "original": "b_n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "b673bceaef593e6d",
+          "original": "L",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "93d55bff5c2acece0dcc260414086adddf1b98db5c365d9332a6f1ca9912cbaf",
+        "job_id": "e289e7d77bced75665bb8224e5a300deb45971109be183e21b50f18d89fe8ffc",
+        "output_hash": "a6f452db886c3ec18ab7931f13c14b7737dce5b041f595bd53c855f361f7d462",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "e9314c3c-1b81-4e50-9a7d-82edfc503ca1",
+        "request_id": "01a13327780da22cfe60d61396aad576",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:e399b15da880",
+        "time": "2026-10-13T02:46:26+00:00",
+        "trace_id": "e9314c3c-1b81-4e50-9a7d-82edfc503ca1",
+        "usage": {
+          "completion_tokens": 740,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3170,
+          "prompt_tokens": 3170,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3910
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "a359d113798daf4e",
+          "reason": "The LaTeX conversion of sin(x^3) to \\sin(x^3) preserves the mathematical meaning exactly."
+        },
+        {
+          "accepted": true,
+          "id": "a37615f42ab50a50",
+          "reason": "The spans for (n+1)th and e^b are correctly converted to LaTeX without changing their mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a3a94a1f3b978517",
+          "reason": "The conversions of Z_q^n to \\mathbb{Z}_q^n and R_q^k to R_q^k are mathematically equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "a45072d6cb95c2de",
+          "reason": "All three spans (σxy, E_N, π) are correctly converted to LaTeX, preserving the exact mathematical expressions."
+        },
+        {
+          "accepted": true,
+          "id": "a48467b302fdd1e5",
+          "reason": "The integral and equation spans are correctly converted to LaTeX, maintaining the mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a4b8639057e1c46d",
+          "reason": "The conversion of ln x to \\ln x is correct and preserves the mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a61aa7f925c4ae99",
+          "reason": "The conversion of p ≤ poly(n) to p \\leq \\mathrm{poly}(n) is mathematically equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "a68abde3891fa45e",
+          "reason": "The conversion of h(x)=sin(x^3) to h(x)=\\sin(x^3) is correct."
+        },
+        {
+          "accepted": true,
+          "id": "a7104b3ce32b548f",
+          "reason": "The integral equality is correctly converted to LaTeX, preserving the mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a716f76813d31139",
+          "reason": "The conversion of S = V - tH to LaTeX is correct and preserves the mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "a8558a13d9ddbb71",
+          "reason": "No spans were proposed, so the item is accepted as an abstention."
+        },
+        {
+          "accepted": true,
+          "id": "a8d1ebb287462de1",
+          "reason": "No spans were proposed, so the item is accepted as an abstention."
+        },
+        {
+          "accepted": true,
+          "id": "a97e472cd62371e1",
+          "reason": "The conversions of 1/x and x=1 to LaTeX are correct and preserve the mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "aa04968fc8654481",
+          "reason": "The conversion of ΔE_int = 0 to \\Delta E_{\\mathrm{int}} = 0 is correct and preserves the mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "aaaae317b8383a0b",
+          "reason": "The conversion of the cyclic integral equation to LaTeX is correct and preserves the mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "ac65fbbdcc9f63da",
+          "reason": "No spans were proposed, so the item is accepted as an abstention."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5ba835302280267a49d9ea8d8509e4853e72091728371c714869d66c90b2464b",
+        "job_id": "65567b5aa81b6360f5081963ce6aa66289f9239412a3235f94a0ef34f7f8302f",
+        "output_hash": "04d4ed4cf6da79f9d8eff5a839965b0438da48bd95bb2946a007866546349b7e",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "4fd6cef1-35ca-4fb4-a112-b76913b13f6f",
+        "request_id": "01a133266bceabadb0dc99c0c1df4d73",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:e399b15da880",
+        "time": "2026-10-13T02:45:18+00:00",
+        "trace_id": "4fd6cef1-35ca-4fb4-a112-b76913b13f6f",
+        "usage": {
+          "completion_tokens": 1995,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1386,
+          "prompt_tokens": 1386,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3381
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "a37615f42ab50a50",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a37615f42ab50a50",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a37615f42ab50a50",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a37615f42ab50a50",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a4b8639057e1c46d",
+          "original": "x=1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a4b8639057e1c46d",
+          "original": "x=1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a7104b3ce32b548f",
+          "original": "∫",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a7104b3ce32b548f",
+          "original": "a",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a7104b3ce32b548f",
+          "original": "b",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a7104b3ce32b548f",
+          "original": "f(x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "a7104b3ce32b548f",
+          "original": "dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "add2c37c2fa21cce62e383c6b7115c558a93c26e5361b6633fb0d4ba9d048161",
+        "job_id": "559a26b2fe9495554e7c483696b88a1dae042ec2ba56a346387aecfd1b753c3f",
+        "output_hash": "e0b11a99650d53f77d36fc6966025b0fece7973abba23702f3e45d7b9226cd60",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c8b9fe70-59b4-4310-889a-55dfd4b4dcf1",
+        "request_id": "01a133277abf7128c576c841b38aa6ea",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:8b3bf6c80997",
+        "time": "2026-10-13T02:46:27+00:00",
+        "trace_id": "c8b9fe70-59b4-4310-889a-55dfd4b4dcf1",
+        "usage": {
+          "completion_tokens": 692,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2569,
+          "prompt_tokens": 2569,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3261
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "b76d9593139c0900",
+          "reason": "The LaTeX conversion of 'dv = 1 dx' to 'dv = 1\\,dx' preserves the mathematical meaning exactly."
+        },
+        {
+          "accepted": true,
+          "id": "b81cdeb3c8d3f6f9",
+          "reason": "No spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "b822298efba7d93b",
+          "reason": "The LaTeX conversion of 'τ_net = Iα' to '\\tau_{\\text{net}} = I\\alpha' preserves the mathematical meaning exactly."
+        },
+        {
+          "accepted": true,
+          "id": "b87daf95f20969a7",
+          "reason": "No spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "b9f73a7535d9ddb8",
+          "reason": "All LaTeX conversions preserve the mathematical meaning of the original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "ba6178808c74f97e",
+          "reason": "All LaTeX conversions preserve the mathematical meaning of the original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "ba6aeab8d41498e6",
+          "reason": "The LaTeX conversion of 'e^x' to 'e^x' preserves the mathematical meaning exactly."
+        },
+        {
+          "accepted": true,
+          "id": "ba6bb3b331326f7f",
+          "reason": "No spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "badab007620d84dc",
+          "reason": "No spans were proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "bb46c088e21f268e",
+          "reason": "The LaTeX conversion of 'F(x) = ∫_a^x f(t) dt' to 'F(x) = \\int_a^x f(t)\\,dt' preserves the mathematical meaning exactly."
+        },
+        {
+          "accepted": true,
+          "id": "bc20789d8465c4de",
+          "reason": "All LaTeX conversions preserve the mathematical meaning of the original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "bc8988476ece15ef",
+          "reason": "All LaTeX conversions preserve the mathematical meaning of the original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "be40770a9084b127",
+          "reason": "The LaTeX conversions preserve the mathematical meaning of the original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "bf64e6e8979e780e",
+          "reason": "All LaTeX conversions preserve the mathematical meaning of the original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "bf8dac784e43238a",
+          "reason": "The LaTeX conversions preserve the mathematical meaning of the original expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "bf92dac333789dd6",
+          "reason": "The LaTeX conversion of 'ρ^n' to '\\rho^n' preserves the mathematical meaning exactly."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "464eacb6cf97081d053b75c726274cedb0b81116800393bee6b152dfdf8ff1de",
+        "job_id": "214c50e9ab476ed8c26d29a290dcf4eaec9691793fe14f1c25ee8b2f43379d87",
+        "output_hash": "624b87cc6c902f79d7c23748fc51ec14df8d05efcc56777573c20d37af1402b4",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c756544b-dc89-4b62-9c01-2b13cef68235",
+        "request_id": "01a133279c07a9f2376e20b8ffa249cb",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:8b3bf6c80997",
+        "time": "2026-10-13T02:46:22+00:00",
+        "trace_id": "c756544b-dc89-4b62-9c01-2b13cef68235",
+        "usage": {
+          "completion_tokens": 1119,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1596,
+          "prompt_tokens": 1596,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2715
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "b81cdeb3c8d3f6f9",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "ba6bb3b331326f7f",
+          "original": "M^{-1}",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "bf64e6e8979e780e",
+          "original": "∫ e^{t²} dt",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "bf64e6e8979e780e",
+          "original": "∫ e^{t²} dt",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "bbefea9253b6169508ad1dc8f6c8d81063bd60a1081071d4c30d09226d843f72",
+        "job_id": "19854f7426771b81ea6a91c78145e3bd7952a0d472da2e506eda152e9c3e920b",
+        "output_hash": "dfd65c844b1f40a126c1fe8216caac075563ca5057cc0f6d3416b0f004fe9375",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "df30d616-b259-4718-b24b-3ae3e78570b2",
+        "request_id": "01a13328790bcfd1740f4bfae0506dca",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:05e83ea79009",
+        "time": "2026-10-13T02:47:25+00:00",
+        "trace_id": "df30d616-b259-4718-b24b-3ae3e78570b2",
+        "usage": {
+          "completion_tokens": 815,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3040,
+          "prompt_tokens": 3040,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3855
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "c6edf299e2c11f8c",
+          "reason": "The spans correctly convert the mathematical expressions 1/x and x=1 to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "c8031f219f1a41c6",
+          "reason": "All three spans accurately translate the mathematical notation (map, set-builder, min, inverse) into equivalent LaTeX preserving variables and qualifiers."
+        },
+        {
+          "accepted": false,
+          "id": "c8e544eb909a4b95",
+          "reason": "No mathematical spans were proposed; the original text contains no standalone mathematical expressions to convert, so the empty span is an abstention."
+        },
+        {
+          "accepted": true,
+          "id": "c8ffa2d46712bb5d",
+          "reason": "The spans Δ_d(f,p) and f_i(p_j) are correctly converted to LaTeX with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "c9043ed36e6afaff",
+          "reason": "The inequality p ≤ 2√n is faithfully represented as p \\leq 2\\sqrt{n}."
+        },
+        {
+          "accepted": true,
+          "id": "c9ada9aee5b05eab",
+          "reason": "The structures R_an,exp and SL2(R)^n are correctly converted to LaTeX preserving the mathematical notation."
+        },
+        {
+          "accepted": true,
+          "id": "ca334b31e648dadc",
+          "reason": "The spans for the error set, inner product, and inequalities are accurately converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "ca43e2886db0ca83",
+          "reason": "The equations MR = MC and P = MC are correctly converted to LaTeX with proper mathrm for MR and MC."
+        },
+        {
+          "accepted": true,
+          "id": "ca4d4c7aca12bbcb",
+          "reason": "The spans 1/x, x=1, and the interval (0,2) are correctly converted to LaTeX with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "caf293dd55f5a3d3",
+          "reason": "The expressions 1/(2x) and x=2 are correctly converted to LaTeX preserving the mathematical content."
+        },
+        {
+          "accepted": true,
+          "id": "cafed3e17964aaa5",
+          "reason": "The function difference h=f-g is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "cb3e9fc81ec45e8a",
+          "reason": "All mathematical expressions (numeric values, functions, and limits) are correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "cb640e522b303e35",
+          "reason": "The update formula and numeric values are correctly converted to LaTeX, preserving the mathematical and heuristic content."
+        },
+        {
+          "accepted": true,
+          "id": "cb8454654ec7405d",
+          "reason": "The spans for r>2, p(t), a(r), b(r), r≥0, r=0, and √2 are correctly converted to LaTeX with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "cbc0646f67e6da78",
+          "reason": "The cosmological parameter Omega_m h^2 is correctly converted to LaTeX preserving the notation."
+        },
+        {
+          "accepted": true,
+          "id": "cbd6f0e561646ff7",
+          "reason": "The function definitions f(x)=x and f(x)=c are correctly converted to LaTeX with identical meaning."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "aa77b1a622a95714f4401efc65693939510ebfed20fa434893b46fa8f19a7f1b",
+        "job_id": "66b73fc733a9007943f05100f35e4c2766bb4fdfbc84ecdb9fde91a13e377e9b",
+        "output_hash": "4ed34edd2d34eb02d410ff9f7dd57a36b72063b1280f723b15b383d3e38860d0",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "bbe94a3d-7906-45b6-8070-01032548b860",
+        "request_id": "01a13327ccb4f8f0857920d09a821bcc",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:05e83ea79009",
+        "time": "2026-10-13T02:46:48+00:00",
+        "trace_id": "bbe94a3d-7906-45b6-8070-01032548b860",
+        "usage": {
+          "completion_tokens": 1552,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1650,
+          "prompt_tokens": 1650,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3202
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "cb3e9fc81ec45e8a",
+          "original": "f(x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cb3e9fc81ec45e8a",
+          "original": "sin(x)/x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cb3e9fc81ec45e8a",
+          "original": "sin(x)/x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cb640e522b303e35",
+          "original": "ρ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cb8454654ec7405d",
+          "original": "2",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cbd6f0e561646ff7",
+          "original": "a",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cbd6f0e561646ff7",
+          "original": "c",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "e85219e5521a09e7559f864dacce99307b3deac0e0fa38b774f79021f1f1beb8",
+        "job_id": "9478bafb4736061777034a9bbf4223fb588e4d4ca513f2a89d0d91ae4b6f58f3",
+        "output_hash": "64709353486d9d078fed3e65a8b931d96cc9c703082117051ada6906aa45ed3a",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ae7a59ea-e850-4787-beb7-3123b64abdd6",
+        "request_id": "01a13328be1fdf8ee620bcc94400532f",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:8e7fddc5d8b3",
+        "time": "2026-10-13T02:47:35+00:00",
+        "trace_id": "ae7a59ea-e850-4787-beb7-3123b64abdd6",
+        "usage": {
+          "completion_tokens": 576,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2069,
+          "prompt_tokens": 2069,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2645
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "cde03de94a6eb42f",
+          "reason": "Both spans are exact mathematical equivalences."
+        },
+        {
+          "accepted": true,
+          "id": "ce47d747e5149288",
+          "reason": "The integral expression is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "ce4c835de52b9d93",
+          "reason": "All three limit expressions are mathematically equivalent to the originals."
+        },
+        {
+          "accepted": true,
+          "id": "cefd7240e1269c5a",
+          "reason": "MR = MC is correctly rendered."
+        },
+        {
+          "accepted": true,
+          "id": "d008d5b7d6c3bfb1",
+          "reason": "All three mathematical expressions are equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "d0cfc069e6646391",
+          "reason": "The contour integral is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "d2732edac6d32912",
+          "reason": "The energy equation is correctly rendered."
+        },
+        {
+          "accepted": true,
+          "id": "d2afbe10eded355e",
+          "reason": "The torque equation is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "d2fb98dbb3ffdb4d",
+          "reason": "The capacity formula is correctly rendered."
+        },
+        {
+          "accepted": true,
+          "id": "d31619d0a4ab050e",
+          "reason": "The expression 1/n^p is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "d3283570e50777f7",
+          "reason": "Both equations are mathematically equivalent."
+        },
+        {
+          "accepted": true,
+          "id": "d395584ec8d4b65d",
+          "reason": "phi^4 is correctly rendered as \\phi^4."
+        },
+        {
+          "accepted": true,
+          "id": "d4c9a1e1e26a3158",
+          "reason": "e^x is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "d4d6425b0270f06d",
+          "reason": "The equality is correctly rendered."
+        },
+        {
+          "accepted": true,
+          "id": "d5736130d5cf0a60",
+          "reason": "The equation f(x)=0 is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "d5c892439d8159aa",
+          "reason": "The equality a = b is correctly rendered."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f30e7ca5d57fc0443e7fdc09d1125213234f68800aa7c08875f1d15cfb8d7661",
+        "job_id": "beb6f88cdd4bd850aebb83c8c401c587891c42a05a4ccf92d8fd394cfaf4526c",
+        "output_hash": "be1c2c8b66c74d007cd951032a9b83142ca67cac77a97381acd04db92f3fafd1",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7e4766e2-63b6-4960-931d-0371a2e7e340",
+        "request_id": "01a13328ab0d51bb0a23830ab127a6e0",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:8e7fddc5d8b3",
+        "time": "2026-10-13T02:47:30+00:00",
+        "trace_id": "7e4766e2-63b6-4960-931d-0371a2e7e340",
+        "usage": {
+          "completion_tokens": 1038,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1210,
+          "prompt_tokens": 1210,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2248
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "cde03de94a6eb42f",
+          "original": "∫_a^∞ g(x) dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cde03de94a6eb42f",
+          "original": "∫_a^∞ f(x) dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cde03de94a6eb42f",
+          "original": "∫_a^∞ f(x) dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "cde03de94a6eb42f",
+          "original": "∫_a^∞ g(x) dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "247b449556aa9050dd17ff2c5af8002416cbcd330157c6f66dc4e47c49d00085",
+        "job_id": "8312979ac07cd888ecd044e606caa444317fe4b8384b8363037459d086360741",
+        "output_hash": "c46981a3b511f11472f05cc7bf6c54b6cd935b71cd63f6e47f58c4ca925ce864",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "cbdb07fc-e31c-4651-9f8e-5fcc46132f82",
+        "request_id": "01a13328de3d0f7709ee2d7716a18189",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:d76c1b5a2409",
+        "time": "2026-10-13T02:47:45+00:00",
+        "trace_id": "cbdb07fc-e31c-4651-9f8e-5fcc46132f82",
+        "usage": {
+          "completion_tokens": 809,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3143,
+          "prompt_tokens": 3143,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3952
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "d65e1447146af375",
+          "reason": "The conversion of g_mu_nu to g_{\\mu\\nu} preserves the mathematical meaning exactly."
+        },
+        {
+          "accepted": true,
+          "id": "d69e18b7be1f67af",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "d6f02e0d23d3e1f9",
+          "reason": "All proposed LaTeX conversions (p_0, p_1, p_2, p_3; \\ln x; x=1) are faithful and unambiguous."
+        },
+        {
+          "accepted": true,
+          "id": "d71f52edc6ab2cd8",
+          "reason": "Conversions 2^n and n=23 are exact mathematical equivalents."
+        },
+        {
+          "accepted": true,
+          "id": "d8009cb42e002a74",
+          "reason": "L = I\\omega exactly represents the original L = Iω."
+        },
+        {
+          "accepted": true,
+          "id": "d841f5cadf088841",
+          "reason": "All proposed LaTeX conversions preserve the original mathematical expressions and notation."
+        },
+        {
+          "accepted": true,
+          "id": "d85b27c4d53df3af",
+          "reason": "C = W \\log(1 + P/N) is an exact LaTeX rendering of the original formula."
+        },
+        {
+          "accepted": true,
+          "id": "d8c5f60cdb0a07df",
+          "reason": "MR < P, MR = MC, and P = MC are correctly converted to LaTeX without altering meaning."
+        },
+        {
+          "accepted": true,
+          "id": "db2855be6b341dda",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "db32cfdd115ded39",
+          "reason": "x^3+4x+16=0 is faithfully converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "dbecfa521d09fa8e",
+          "reason": "The integral expression and interval are correctly converted, preserving all variables and limits."
+        },
+        {
+          "accepted": true,
+          "id": "dbed20e639ca1015",
+          "reason": "All inequalities and functions are converted accurately, including f_hat to \\hat{f} and the constants."
+        },
+        {
+          "accepted": true,
+          "id": "dd30cf1c570bc5a6",
+          "reason": "The energy difference formula and the unit kJ are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "dd5920f9a93fe062",
+          "reason": "All substitutions and the integration by parts formula are faithfully rendered in LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "de144abc7215644d",
+          "reason": "m̂ to \\hat{m} and the expectation expression are exact mathematical equivalents."
+        },
+        {
+          "accepted": true,
+          "id": "ded1f80bf3a23dc4",
+          "reason": "All proposed LaTeX conversions (E_4, E_6, E_2, \\Delta^2, z \\to -1/z) preserve the original mathematical meaning."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "806d42ca930c14d5b15748f05809d22f7f1c6d7eaeff0edcfc771ce89c8751fd",
+        "job_id": "4f0eb99aca40b29301099b4a392039749badca414b8a77cc8e32b4977b200e8b",
+        "output_hash": "8615ab49cbd7855904c35ade6336a27edb1ec297b39b464b3d8863ed42961827",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "83ecd6bb-a6d3-4ba3-a60e-446cfd639624",
+        "request_id": "01a13328c76220c7693fd388eddcadc5",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:d76c1b5a2409",
+        "time": "2026-10-13T02:47:39+00:00",
+        "trace_id": "83ecd6bb-a6d3-4ba3-a60e-446cfd639624",
+        "usage": {
+          "completion_tokens": 1311,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1924,
+          "prompt_tokens": 1924,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3235
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "d841f5cadf088841",
+          "original": "ln ρ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "de144abc7215644d",
+          "original": "m̌",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a65d2973feb45a71e95535ca28341739090c5decf4c1582f7b5311fe336212a1",
+        "job_id": "e76a3e0799433e38efd2b2bce80075c6feb968b9c4aa0d143dbbb79168d284d3",
+        "output_hash": "a0465331e8f1a19099e7fc7edadb1b9cbcae4a1350e51bcf157af48b250f7111",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "8c0c3480-6da1-4f9a-b3f8-f4669ebaa02f",
+        "request_id": "01a13327d66fd7b7d3dbb1909aa02c53",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:f86ee8a1fb95",
+        "time": "2026-10-13T02:46:50+00:00",
+        "trace_id": "8c0c3480-6da1-4f9a-b3f8-f4669ebaa02f",
+        "usage": {
+          "completion_tokens": 719,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3047,
+          "prompt_tokens": 3047,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3766
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "bfbc241e05d49557",
+          "reason": "All proposed LaTeX spans preserve the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "c05524fcd75f39c3",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "c0f0859134360b40",
+          "reason": "The LaTeX conversions for e_i and LT(Syz(F)) are faithful and unambiguous."
+        },
+        {
+          "accepted": true,
+          "id": "c10acf6dcd68288f",
+          "reason": "The conversions for f(x) and the infinity symbol are correct and preserve meaning."
+        },
+        {
+          "accepted": true,
+          "id": "c1fd5a3038d3e4de",
+          "reason": "The conversion of x=0 is straightforward and correct."
+        },
+        {
+          "accepted": true,
+          "id": "c24f4c8fd24a74f0",
+          "reason": "The integral expression is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "c3593730fc9b28c9",
+          "reason": "The subscript beta_t is correctly represented."
+        },
+        {
+          "accepted": true,
+          "id": "c38022bf17fc7679",
+          "reason": "The LaTeX for the map and the symbol phi are faithful."
+        },
+        {
+          "accepted": true,
+          "id": "c437610190fc3b5e",
+          "reason": "The expressions n^{p/n} and n to infinity are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "c48edb145363fe9e",
+          "reason": "The conversions for x=a and the infinities are correct."
+        },
+        {
+          "accepted": true,
+          "id": "c5a1984bbfde89c2",
+          "reason": "The conversions for e^x and ln(2) are correct."
+        },
+        {
+          "accepted": true,
+          "id": "c69029f58170d60f",
+          "reason": "All proposed LaTeX spans match the original mathematical expressions."
+        },
+        {
+          "accepted": true,
+          "id": "c6a2c3fd0b8a66fe",
+          "reason": "The integral and variable assignments are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "c6d736d6a58cbdbe",
+          "reason": "All proposed LaTeX spans preserve the original equations and assignments."
+        },
+        {
+          "accepted": true,
+          "id": "c6d9c98f75c4ae71",
+          "reason": "The LaTeX conversions for the ratio and Omega parameters are faithful."
+        },
+        {
+          "accepted": true,
+          "id": "c6e098e358a319db",
+          "reason": "The LaTeX conversions for entropy changes and the cyclic integral are correct."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "0a89ab4a65d3ad25802fdb5d4c62bed4f0360bf8fcaac36272fdf9e9c6d53a7a",
+        "job_id": "02fe98008d15b8ef2bcc57be5bd9d66196f8c3b41586a01a3eaa3061b58631db",
+        "output_hash": "3f5028d0f4ed023ca99cbe506ff0f14823786770bf070ddd2bd03038c906145c",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "1f25ff75-8f4a-4ff4-a8d3-9ff8e8d882bd",
+        "request_id": "01a13327ec095a6576624321a9555e05",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:f86ee8a1fb95",
+        "time": "2026-10-13T02:46:42+00:00",
+        "trace_id": "1f25ff75-8f4a-4ff4-a8d3-9ff8e8d882bd",
+        "usage": {
+          "completion_tokens": 1519,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1693,
+          "prompt_tokens": 1693,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3212
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "c10acf6dcd68288f",
+          "original": "+∞",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "c10acf6dcd68288f",
+          "original": "+∞",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "c69029f58170d60f",
+          "original": "v/c",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "c6d736d6a58cbdbe",
+          "original": "∫ x² e^{3x} dx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "c6d736d6a58cbdbe",
+          "original": "u = x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "c6e098e358a319db",
+          "original": "Q_h/T_h",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7af3b88194dc9867450df63827c5fb7bbd4cf46d42a8e10921bc6e6581648562",
+        "job_id": "3340014d6e8cb925f72485a12b1435afa6cdc3f57c3f873b545fd8b30db234df",
+        "output_hash": "7dd418c4f64939bb47a0ebece9c67177332db36e8b1e926df9ffbb30e30b1141",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "80be3f08-26bd-411e-ba9a-eb21686cdf25",
+        "request_id": "01a13328f4fdc7acdd65b90d3b0ce13d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:f3c2beb2f43c",
+        "time": "2026-10-13T02:48:02+00:00",
+        "trace_id": "80be3f08-26bd-411e-ba9a-eb21686cdf25",
+        "usage": {
+          "completion_tokens": 705,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2269,
+          "prompt_tokens": 2269,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2974
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "e72e7cebaa111459",
+          "reason": "Both spans are straightforward mathematical expressions with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "e747c8e30921d6a5",
+          "reason": "The LaTeX conversions preserve the mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "e74fbc1cd59f8546",
+          "reason": "The equation is correctly converted to LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "e7c1130677ab3ee7",
+          "reason": "The expression z=0.35 is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "ea43268b0cc9f35c",
+          "reason": "All three spans are correctly converted: -10, Γ(2) to \\Gamma(2), and the equation ψ_S+ψ_T=ψ_I to \\psi_S+\\psi_T=\\psi_I."
+        },
+        {
+          "accepted": true,
+          "id": "ea6c442500a9b4a3",
+          "reason": "The functions e^x, sin x, and cos x are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "eadcd06ea9e8c16d",
+          "reason": "R=2 is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "eae779c689fdcd47",
+          "reason": "The multiplication symbol × is correctly converted to \\times."
+        },
+        {
+          "accepted": true,
+          "id": "eafb9f090408d6dc",
+          "reason": "All three spans are correctly converted: the sup expression, the bound expression, and α*_a to \\alpha^*_a."
+        },
+        {
+          "accepted": true,
+          "id": "eafe424ffaa6d471",
+          "reason": "The function f(x)=x^2-a and the expression a/x_n are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "eb2667e312e285f3",
+          "reason": "The equations MR = MC and MR < P are correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "eb29e578c6d39e59",
+          "reason": "S^1 is correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "ebc01551efcf8d19",
+          "reason": "e^x is correctly converted."
+        },
+        {
+          "accepted": true,
+          "id": "ee3187e0890fda02",
+          "reason": "All three spans are correctly converted: e^x = 2, x = ln(2) to x = \\ln(2), and p_N(x) - 2 = 0."
+        },
+        {
+          "accepted": true,
+          "id": "ee4704b13385c75d",
+          "reason": "The expressions S = V - tH, (T+U), and -H δt are correctly converted to LaTeX."
+        },
+        {
+          "accepted": true,
+          "id": "ee5e8b89f4080429",
+          "reason": "The efficiency expressions e_Stir = 0.14 and e_Car = 0.25 are correctly converted with subscripts."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6f6f723df3d26601bac8fdcf689105cf4a868ca7749268f5b11ccabfcda914fc",
+        "job_id": "b7c0adc32eef19e9e4c7b304d9a11796c740361426bc35feef7735d7913f240f",
+        "output_hash": "f8c3a44e75916e68f28e6a38640da7cb72d217a1b7b0a6800927a46ed767434f",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9487244c-fc23-4eaf-a804-5e3114ef28b2",
+        "request_id": "01a133290f16f4ba5e7606e337b4bbc8",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:f3c2beb2f43c",
+        "time": "2026-10-13T02:47:57+00:00",
+        "trace_id": "9487244c-fc23-4eaf-a804-5e3114ef28b2",
+        "usage": {
+          "completion_tokens": 1113,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1312,
+          "prompt_tokens": 1312,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2425
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "ea43268b0cc9f35c",
+          "original": "ψ_I",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "eafb9f090408d6dc",
+          "original": "ε_1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "eafb9f090408d6dc",
+          "original": "ε_2",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "ee3187e0890fda02",
+          "original": "e^x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "ee3187e0890fda02",
+          "original": "p_N(x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "ee3187e0890fda02",
+          "original": "ln(2)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "56f5b74259418850230853280373193b852edd27482540ab7960d85d0895afbd",
+        "job_id": "483b4aa79242b45f107bb0f5c58241f19c4be8f8f12c1a51cdd35ba3a1c16d85",
+        "output_hash": "af74d2b4af0ba0fe31eaf68ed0c5ecc016ee577b7b4ccf6bb451534d37cd0393",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5e5766f8-d48a-4e46-85dd-f9e8f6fc1253",
+        "request_id": "01a13328deb0d3aae213ab65e2f36556",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:79d46c9ecbc4",
+        "time": "2026-10-13T02:47:58+00:00",
+        "trace_id": "5e5766f8-d48a-4e46-85dd-f9e8f6fc1253",
+        "usage": {
+          "completion_tokens": 808,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3283,
+          "prompt_tokens": 3283,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4091
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "df26447270acf938",
+          "reason": "All proposed LaTeX spans correctly convert the original mathematical expressions with equivalent meaning and notation."
+        },
+        {
+          "accepted": false,
+          "id": "df8eaede710d5138",
+          "reason": "The proposed LaTeX '2^{-n' is incomplete and does not match the original '2^{-n}'."
+        },
+        {
+          "accepted": true,
+          "id": "e0735aa389a931a3",
+          "reason": "The proposed LaTeX 'q^{n-1}' correctly represents the original 'q^{n−1}'."
+        },
+        {
+          "accepted": true,
+          "id": "e0a22bc268e45665",
+          "reason": "All proposed LaTeX spans correctly convert the original mathematical expressions with equivalent meaning and notation."
+        },
+        {
+          "accepted": true,
+          "id": "e11519d584dda604",
+          "reason": "The proposed LaTeX spans correctly convert the original mathematical expressions with equivalent meaning and notation."
+        },
+        {
+          "accepted": true,
+          "id": "e12cc0c032989924",
+          "reason": "All proposed LaTeX spans correctly convert the original mathematical expressions with equivalent meaning and notation."
+        },
+        {
+          "accepted": true,
+          "id": "e15532acb46e4446",
+          "reason": "The proposed LaTeX correctly represents the original code-like expression as text, preserving the mathematical meaning of the assignment."
+        },
+        {
+          "accepted": true,
+          "id": "e1b519807ac42dfc",
+          "reason": "All proposed LaTeX spans correctly convert the original mathematical expressions with equivalent meaning and notation."
+        },
+        {
+          "accepted": true,
+          "id": "e1b7c303a01b40bf",
+          "reason": "No spans were proposed, so the item is accepted as an abstention."
+        },
+        {
+          "accepted": true,
+          "id": "e21d74cb5a17d2c8",
+          "reason": "No spans were proposed, so the item is accepted as an abstention."
+        },
+        {
+          "accepted": true,
+          "id": "e277fdc5229b3715",
+          "reason": "The proposed LaTeX 'a \\leq b' correctly represents the original 'a ≤ b'."
+        },
+        {
+          "accepted": true,
+          "id": "e33af905982be461",
+          "reason": "The proposed LaTeX 'x=2' correctly represents the original 'x=2'."
+        },
+        {
+          "accepted": true,
+          "id": "e3caedacc0ac1938",
+          "reason": "The proposed LaTeX spans correctly convert the original mathematical expressions with equivalent meaning and notation."
+        },
+        {
+          "accepted": true,
+          "id": "e40aed6607b9e88c",
+          "reason": "The proposed LaTeX '|a_n| = b_n^n' correctly represents the original '|a_n| = b_n^n'."
+        },
+        {
+          "accepted": true,
+          "id": "e55850c702759f3d",
+          "reason": "The proposed LaTeX correctly converts the original mathematical expression with equivalent meaning and notation."
+        },
+        {
+          "accepted": true,
+          "id": "e6d63991aceaf25c",
+          "reason": "The proposed LaTeX 'r_d h' correctly represents the original 'r_d h'."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5af542f5d688aaffdb7bd83d66c189d864ee6c3b70437743a71e6bdd0f318861",
+        "job_id": "09f5f54f6b6d0aa02f08ee465c3a0d7f919d5fdb8766e9368e1c1415252d8e5b",
+        "output_hash": "7647256f217c831d78232481bc061c142f938cbacec8fdb403b1b5eea11efeb6",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "34b4a622-90df-4df0-81ce-b94cd1692799",
+        "request_id": "01a13328dc80601a8573e2b6a683a0b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:79d46c9ecbc4",
+        "time": "2026-10-13T02:47:50+00:00",
+        "trace_id": "34b4a622-90df-4df0-81ce-b94cd1692799",
+        "usage": {
+          "completion_tokens": 1668,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1838,
+          "prompt_tokens": 1838,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3506
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "df26447270acf938",
+          "original": "ln x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "df26447270acf938",
+          "original": "x=1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "df26447270acf938",
+          "original": "ln x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "df26447270acf938",
+          "original": "x=1",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "e0735aa389a931a3",
+          "original": "q^n",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "e1b7c303a01b40bf",
+          "original": "g_mu_nu",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "e1b7c303a01b40bf",
+          "original": "g_mu_nu",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "e3caedacc0ac1938",
+          "original": "T_h",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "e3caedacc0ac1938",
+          "original": "T_c",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "e3caedacc0ac1938",
+          "original": "dQ",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "81260dd636a72be73ae968ad1bd3bfa1ebee185da8eb66921e59b43cc04f8fc0",
+        "job_id": "c4188f5a0647e7443c7aa5f0633624455ade14ff0bf43fc9df8dcee9b594965c",
+        "output_hash": "d71860c3b6272d046b0498d4e05336ede54b4e622a46eb90f51398de5e6d533f",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b44d7a86-a135-45f7-bb29-beca52661b99",
+        "request_id": "01a1332917cbecacd143e65fb3943b94",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:06994d4922bf",
+        "time": "2026-10-13T02:48:11+00:00",
+        "trace_id": "b44d7a86-a135-45f7-bb29-beca52661b99",
+        "usage": {
+          "completion_tokens": 711,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2122,
+          "prompt_tokens": 2122,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2833
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "ee71b70b22c9a620",
+          "reason": "Both spans are simple variable assignments with identical mathematical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "eeab60d18e475aa3",
+          "reason": "The LaTeX \\(\\sin(x^3)\\) is the standard typesetting of the original sin(x^3), preserving the function and argument."
+        },
+        {
+          "accepted": true,
+          "id": "ef9b42f5dd8acdf0",
+          "reason": "The LaTeX forms \\(\\cos x\\) and \\(e^x\\) are equivalent to the original plain-text expressions."
+        },
+        {
+          "accepted": true,
+          "id": "efdbdf549aec9cde",
+          "reason": "The LaTeX integral with limits and differential is a faithful typesetting of the original expression."
+        },
+        {
+          "accepted": true,
+          "id": "f045551fd45f79a3",
+          "reason": "The expressions 1/x and x=1 are correctly rendered in LaTeX with identical meaning."
+        },
+        {
+          "accepted": true,
+          "id": "f189998ec4c7e878",
+          "reason": "Both integrals are correctly typeset, preserving the integrands, limits, and the constant π."
+        },
+        {
+          "accepted": true,
+          "id": "f18aa105ae5b12c7",
+          "reason": "The LaTeX integral matches the original expression exactly in meaning."
+        },
+        {
+          "accepted": true,
+          "id": "f1f060c67fe28b18",
+          "reason": "All three spans are correctly converted to LaTeX with identical mathematical content."
+        },
+        {
+          "accepted": true,
+          "id": "f26627cf26781c59",
+          "reason": "No spans were proposed; this is an acceptable abstention."
+        },
+        {
+          "accepted": true,
+          "id": "f39ed9a1653f7e13",
+          "reason": "The LaTeX fractions preserve the original subscripts and ratios exactly."
+        },
+        {
+          "accepted": true,
+          "id": "f4eb56f3c640db87",
+          "reason": "The subscripted variable b_n is correctly typeset."
+        },
+        {
+          "accepted": true,
+          "id": "f505a7ae5d38c967",
+          "reason": "All spans are correctly typeset, including the integral and the state labels A and B."
+        },
+        {
+          "accepted": true,
+          "id": "f62bbc4973e7264e",
+          "reason": "The LaTeX forms for z=1089, 4%, and 5% are equivalent to the original."
+        },
+        {
+          "accepted": true,
+          "id": "f69c6aa6f29388bb",
+          "reason": "No spans were proposed; this is an acceptable abstention."
+        },
+        {
+          "accepted": true,
+          "id": "f74970e9456a3ec0",
+          "reason": "The LaTeX P^m matches the original superscript notation."
+        },
+        {
+          "accepted": true,
+          "id": "f9914894f30189b6",
+          "reason": "The LaTeX \\(\\mathbb{R}^8\\) is the standard typesetting for R^8, preserving the mathematical meaning."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "649da2211db4b9e932bac02085bc683267a343595382ba80b886c9f366b3bcfd",
+        "job_id": "1e5ef3ab17ba207133c225245fbbaae5829261722794671fc3797a8ef5523c60",
+        "output_hash": "6b9b411ad5c17ec748e9adc1a1bc0bd5ffe6012dc57fa8fee7ab8c9ff6f020a9",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f2bde453-ba44-4422-9480-9e5a0eb0a899",
+        "request_id": "01a13329356b41d2061c1a46a3ffe27a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:06994d4922bf",
+        "time": "2026-10-13T02:48:06+00:00",
+        "trace_id": "f2bde453-ba44-4422-9480-9e5a0eb0a899",
+        "usage": {
+          "completion_tokens": 1039,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1259,
+          "prompt_tokens": 1259,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2298
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "f1f060c67fe28b18",
+          "original": "f′(a)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "f1f060c67fe28b18",
+          "original": "f(x)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "f1f060c67fe28b18",
+          "original": "(x−a)",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "f39ed9a1653f7e13",
+          "original": "1/2",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "f505a7ae5d38c967",
+          "original": "S",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "f62bbc4973e7264e",
+          "original": "z=0.35",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "f62bbc4973e7264e",
+          "original": "z=0.35",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    },
+    {
+      "check_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "bd5f12640eb5f3913593f4bfa3d7189c485c660dea9bcbed32aae40d8cd2fbee",
+        "job_id": "d53bda88ef89340a42c9404c75584566813f5ca976f0bc05c04e4329d67bf9c4",
+        "output_hash": "00734e72105e8b7d9a33fb118a8dd44686a073a7fc797b22dba516f43dd600df",
+        "prompt_hash": "88468d5908c6674c70429df268b2c7e1d7202cb25dbe6618d533b2b4082fb4aa",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c59c6d75-201f-4d34-bc17-13fb2bcaa07f",
+        "request_id": "01a1332978222fb2d16fe92420f90073",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset-check:fd3c67cd7a98",
+        "time": "2026-10-13T02:48:37+00:00",
+        "trace_id": "c59c6d75-201f-4d34-bc17-13fb2bcaa07f",
+        "usage": {
+          "completion_tokens": 556,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2190,
+          "prompt_tokens": 2190,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2746
+        }
+      },
+      "decisions": [
+        {
+          "accepted": true,
+          "id": "f9d56e5463a5c56f",
+          "reason": "The LaTeX conversion preserves the mathematical expression exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fa56b92045726baa",
+          "reason": "No spans proposed; abstention is acceptable."
+        },
+        {
+          "accepted": true,
+          "id": "fa976a0ecec67473",
+          "reason": "Both LaTeX conversions match the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "faf5b028e922b444",
+          "reason": "The LaTeX conversions preserve the mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fca70b299c12d529",
+          "reason": "The LaTeX conversion matches the original expression exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fd0df83ac2cd36dd",
+          "reason": "All LaTeX conversions preserve the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fd6b7f9c08024453",
+          "reason": "All LaTeX conversions preserve the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fd9f0392567116ea",
+          "reason": "The LaTeX conversion matches the original expression exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fdf2c1c8d37d49d5",
+          "reason": "The LaTeX conversion preserves the original integral expression exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fe3d69e190bee92c",
+          "reason": "The LaTeX conversion matches the original expression exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fe795303e5c5cad5",
+          "reason": "All LaTeX conversions preserve the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "fe8658b03d462285",
+          "reason": "The LaTeX conversion matches the original expression exactly."
+        },
+        {
+          "accepted": true,
+          "id": "feb7eaf59558fd56",
+          "reason": "The LaTeX conversion preserves the original integral expression exactly."
+        },
+        {
+          "accepted": true,
+          "id": "ff20a08ee92c4ea2",
+          "reason": "All LaTeX conversions preserve the original mathematical expressions exactly."
+        },
+        {
+          "accepted": true,
+          "id": "ff523aee3aefba60",
+          "reason": "The LaTeX conversion matches the original expression exactly."
+        }
+      ],
+      "proposal_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "2e86eb78fc0c568d59fcfdbfa39781656e9fad8d04e0f21ad54472367e525264",
+        "job_id": "95a8d8c2119b0b3d9977872f5479671cc014c605a105e65de9b0ad44ae468e4a",
+        "output_hash": "b843154a384f8aad6735cfad2c69ae03fe3bba85913c798ba1107f6d8e33a6ae",
+        "prompt_hash": "d2738ba333ac793096fee7a30a86371de3c76ffdc6a36ab3ff12a3c8c1b1df6d",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "2f723eda-d70e-4588-861a-dc5de17db53d",
+        "request_id": "01a133291456a9e07331cc977ecc00cb",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "state": "succeeded",
+        "task": "typeset:fd3c67cd7a98",
+        "time": "2026-10-13T02:48:12+00:00",
+        "trace_id": "2f723eda-d70e-4588-861a-dc5de17db53d",
+        "usage": {
+          "completion_tokens": 1061,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 1281,
+          "prompt_tokens": 1281,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2342
+        }
+      },
+      "rejected_spans": [
+        {
+          "id": "faf5b028e922b444",
+          "original": "v = −cos x + K",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "faf5b028e922b444",
+          "original": "v = −cos x + K",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "faf5b028e922b444",
+          "original": "Kx",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "ff20a08ee92c4ea2",
+          "original": "1/x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        },
+        {
+          "id": "ff20a08ee92c4ea2",
+          "original": "1/x",
+          "reason": "Unanchored or ambiguous mathematical span"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "fields_considered": 463,
+  "fields_typeset": 1132,
+  "incremental": true,
+  "method": "Exact-span presentation overlay plus independent machine equivalence check; no canonical claim edits or human review"
+}

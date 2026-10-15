@@ -1,0 +1,151 @@
+{
+  "$id": "urn:principia-legacy:relation:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "anchors": {
+      "items": {
+        "properties": {
+          "anchor_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_revision": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "source_id",
+          "source_revision",
+          "anchor_id"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "conclusion": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "revision": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "revision"
+      ],
+      "type": "object"
+    },
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "curation": {
+      "type": "object"
+    },
+    "human_review": {
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[A-Za-z0-9_-]{1,100}$",
+      "type": "string"
+    },
+    "layer": {
+      "enum": [
+        "conceptual",
+        "evidential",
+        "historical",
+        "logical",
+        "pedagogical"
+      ]
+    },
+    "machine_screening": {
+      "type": "string"
+    },
+    "predicate": {
+      "enum": [
+        "historical_basis_for",
+        "motivated",
+        "applied_in",
+        "independent_formulation_of",
+        "premise_for",
+        "generalized_by",
+        "bounded_by",
+        "supports",
+        "challenges",
+        "analogous_to",
+        "equivalent_under",
+        "prerequisite_for_reading"
+      ]
+    },
+    "premise_mode": {
+      "const": "all"
+    },
+    "premises": {
+      "items": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "revision": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "revision"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "publication_state": {
+      "type": "string"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "type": "string"
+    },
+    "type": {
+      "const": "relation"
+    },
+    "warrant": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "revision",
+    "schema_version",
+    "content_hash",
+    "premises",
+    "conclusion",
+    "premise_mode",
+    "predicate",
+    "layer",
+    "scope",
+    "warrant",
+    "anchors",
+    "publication_state",
+    "machine_screening",
+    "human_review",
+    "curation"
+  ],
+  "title": "Relation",
+  "type": "object"
+}

@@ -1,0 +1,140 @@
+{
+  "attempts": [
+    {
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "17451e91bb37919809f59a56b20640f9170a3305786f7edd03b5f938a4db9a91",
+        "job_id": "6897d5c6a5748359d6417c0a9528130d584c4806a9e11809e4a4418f1992979b",
+        "output_hash": "f8b73122fe1956ebfdce01e96162b0fd5a36ef71a3708acde4ecc17879e740f8",
+        "prompt_hash": "ac7aadcb407050cf88fe426835a473ca848d8a87fb71be9bc939811272df2b3b",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fa807bc2-f769-4157-b98c-2ea7ab7b16be",
+        "request_id": "01a1334dbfa85500262a0286c54f688e",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "editorial-exclusion:17451e91bb379198:format-0",
+        "time": "2026-10-13T03:28:15+00:00",
+        "trace_id": "fa807bc2-f769-4157-b98c-2ea7ab7b16be",
+        "usage": {
+          "completion_tokens": 229,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2168,
+          "prompt_tokens": 2168,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2397
+        }
+      },
+      "returned_checks": [
+        {
+          "decision": "retain",
+          "index": 0,
+          "reason": "Formulates symmetry-based shortcuts for definite integrals, reducing the interval to half and doubling, or eliminating the integral entirely for odd functions."
+        },
+        {
+          "decision": "retain",
+          "index": 1,
+          "reason": "Reframes the Fundamental Theorem of Calculus, Part 2 as a statement about net change of any quantity, not just area, and presents it in two equivalent forms to suit different applications."
+        },
+        {
+          "decision": "retain",
+          "index": 2,
+          "reason": "Introduces the distinction between integrating velocity (signed) and integrating its absolute value (unsigned), and shows that the latter requires splitting the interval at points where velocity changes sign."
+        },
+        {
+          "decision": "retain",
+          "index": 3,
+          "reason": "Explicitly distinguishes the two types of integrals and emphasizes that indefinite integrals are families of antiderivatives, not single functions."
+        }
+      ],
+      "valid_format": true
+    }
+  ],
+  "baseline": null,
+  "checked_records": 4,
+  "checks": [
+    {
+      "decision": "retain",
+      "id": "n-2564225c9fd690de",
+      "reason": "Formulates symmetry-based shortcuts for definite integrals, reducing the interval to half and doubling, or eliminating the integral entirely for odd functions."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3ee1328937010594",
+      "reason": "Reframes the Fundamental Theorem of Calculus, Part 2 as a statement about net change of any quantity, not just area, and presents it in two equivalent forms to suit different applications."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a3a62751b75067d1",
+      "reason": "Introduces the distinction between integrating velocity (signed) and integrating its absolute value (unsigned), and shows that the latter requires splitting the interval at points where velocity changes sign."
+    },
+    {
+      "decision": "retain",
+      "id": "n-befa35f8fce2da25",
+      "reason": "Explicitly distinguishes the two types of integrals and emphasizes that indefinite integrals are families of antiderivatives, not single functions."
+    }
+  ],
+  "incomplete_batches": [],
+  "input_refs": [
+    {
+      "content_hash": "12e4487c46f70c867ccfe65603f1d7e6ab1a9ea4f2283d80a7f046257c15576b",
+      "id": "n-2564225c9fd690de",
+      "revision": 1
+    },
+    {
+      "content_hash": "3c27f9ad05286452d832dcc8e963dfe99cdf5ec86990c44541baf65c54f4c7f5",
+      "id": "n-3ee1328937010594",
+      "revision": 1
+    },
+    {
+      "content_hash": "14c38c636cd8b732a1c350dedc503dd8acb2c7fd8e3dc597511d8be7a4187ffa",
+      "id": "n-a3a62751b75067d1",
+      "revision": 1
+    },
+    {
+      "content_hash": "ec1ca11df38dd0b61418bef331f5c6a51ba0b975e9cd96c027a7a0fd37456ca7",
+      "id": "n-befa35f8fce2da25",
+      "revision": 1
+    }
+  ],
+  "receipts": [
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "17451e91bb37919809f59a56b20640f9170a3305786f7edd03b5f938a4db9a91",
+      "job_id": "6897d5c6a5748359d6417c0a9528130d584c4806a9e11809e4a4418f1992979b",
+      "output_hash": "f8b73122fe1956ebfdce01e96162b0fd5a36ef71a3708acde4ecc17879e740f8",
+      "prompt_hash": "ac7aadcb407050cf88fe426835a473ca848d8a87fb71be9bc939811272df2b3b",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "fa807bc2-f769-4157-b98c-2ea7ab7b16be",
+      "request_id": "01a1334dbfa85500262a0286c54f688e",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:17451e91bb379198:format-0",
+      "time": "2026-10-13T03:28:15+00:00",
+      "trace_id": "fa807bc2-f769-4157-b98c-2ea7ab7b16be",
+      "usage": {
+        "completion_tokens": 229,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2168,
+        "prompt_tokens": 2168,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 2397
+      }
+    }
+  ],
+  "records": 4,
+  "status": "machine editorial triage; not human review or source fidelity approval"
+}

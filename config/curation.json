@@ -1,0 +1,17 @@
+{
+  "base_url": "https://api.siliconflow.cn/v1",
+  "cache_cap_bytes": 512000000,
+  "concurrency": 4,
+  "escalation_model": "deepseek-ai/DeepSeek-V4-Pro",
+  "expansion_nodes": 45,
+  "first_pass_nodes": 24,
+  "initial_release_id": "1.2.0-exploratory",
+  "max_depth": 6,
+  "max_extended_depth": 10,
+  "max_source_bytes": 12000000,
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "network_default": false,
+  "planning_allowance_usd": 300,
+  "provider": "SiliconFlow",
+  "spending_control": "owner_managed"
+}

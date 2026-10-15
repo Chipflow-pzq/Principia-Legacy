@@ -1,0 +1,1793 @@
+{
+  "assignments": [
+    {
+      "depth": 1,
+      "dossier": "C01",
+      "need": "Sequence-to-sequence learning: the fixed-vector encoder-decoder antecedent and its limitations before attention.",
+      "parent": "n-7174667738dd3cf9",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1409.3215"
+    },
+    {
+      "depth": 1,
+      "dossier": "C01",
+      "need": "Layer normalization: a distinct normalization method subsequently used in Transformers, with documented application evidence required.",
+      "parent": "n-7174667738dd3cf9",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1607.06450"
+    },
+    {
+      "depth": 1,
+      "dossier": "C02",
+      "need": "Deep unsupervised learning using nonequilibrium thermodynamics: the original diffusion modeling construction.",
+      "parent": "n-cb876a51a6738941",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1503.03585"
+    },
+    {
+      "depth": 1,
+      "dossier": "C02",
+      "need": "Generative modeling by estimating gradients of the data distribution: score matching and annealed sampling.",
+      "parent": "n-cb876a51a6738941",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1907.05600"
+    },
+    {
+      "depth": 1,
+      "dossier": "C03",
+      "need": "Asynchronous methods for deep reinforcement learning: policy/value learning and stability tradeoffs.",
+      "parent": "n-a1c1ac73d47c6a3c",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1602.01783"
+    },
+    {
+      "depth": 1,
+      "dossier": "C03",
+      "need": "Proximal policy optimization: the clipped surrogate and its actual empirical and theoretical limits.",
+      "parent": "n-a1c1ac73d47c6a3c",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1707.06347"
+    },
+    {
+      "depth": 1,
+      "dossier": "C04",
+      "need": "The original seL4 verification result: refinement, specification, assumptions and what was excluded from the proof.",
+      "parent": "n-b208a8033b25941a",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://sel4.systems/Research/pdfs/Klein_AEMSKH_09.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "C05",
+      "need": "The Byzantine generals problem: fault models and impossibility thresholds distinct from crash-fault consensus.",
+      "parent": "n-fc6adc7124ac3acc",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://lamport.azurewebsites.net/pubs/byz.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "C05",
+      "need": "Paxos consensus explained by its original author: safety, liveness conditions and quorum reasoning.",
+      "parent": "n-fc6adc7124ac3acc",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "C06",
+      "need": "Learning with errors: the hardness reduction behind lattice cryptography, without conflating it with the standardized implementation.",
+      "parent": "n-b03950019d9c9379",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://cims.nyu.edu/~regev/papers/qcrypto.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "C06",
+      "need": "ML-DSA as a distinct standardized lattice signature primitive; explain its role and security assumptions at conceptual level.",
+      "parent": "n-b03950019d9c9379",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "M01",
+      "need": "Elaboration in dependent type theory: reconstructing implicit arguments while retaining a small trusted kernel.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1505.04324"
+    },
+    {
+      "depth": 1,
+      "dossier": "M01",
+      "need": "Lean 4 system architecture: extensibility, compilation and proof checking; distinguish it from earlier Lean.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://leanprover.github.io/papers/lean4.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "M02",
+      "need": "Dvir’s finite-field Kakeya polynomial method, with an explicit warning that finite-field bounds are not the Euclidean theorem.",
+      "parent": "n-90529b0eaa2b1648",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/0803.2336"
+    },
+    {
+      "depth": 1,
+      "dossier": "M02",
+      "need": "Tao’s survey of the polynomial method: explain distinct proof strategies and their domain restrictions.",
+      "parent": "n-90529b0eaa2b1648",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1310.6482"
+    },
+    {
+      "depth": 1,
+      "dossier": "M03",
+      "need": "Ax–Schanuel for the j-function: a precise functional-transcendence result preceding the general Shimura theorem.",
+      "parent": "n-e5b30a8c67deb4e6",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1412.8255"
+    },
+    {
+      "depth": 1,
+      "dossier": "M03",
+      "need": "Wilkie’s conjecture for restricted elementary functions: bounded rational-point counts and definability assumptions.",
+      "parent": "n-e5b30a8c67deb4e6",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1605.04671"
+    },
+    {
+      "depth": 1,
+      "dossier": "M04",
+      "need": "The microscopic-to-fluid derivation via Boltzmann kinetic theory, distinguishing regimes and remaining assumptions.",
+      "parent": "n-d68447fc712f2e62",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/2503.01800"
+    },
+    {
+      "depth": 1,
+      "dossier": "M05",
+      "need": "Ricci flow with surgery: how singularities are handled, with limitations on what is established in this paper.",
+      "parent": "n-7a5e578551722179",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/math/0303109"
+    },
+    {
+      "depth": 1,
+      "dossier": "M06",
+      "need": "The sphere-packing problem in dimension 24: which parts generalize the dimension-eight construction and which require new work.",
+      "parent": "n-b25ad0851484c7b2",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1603.06518"
+    },
+    {
+      "depth": 1,
+      "dossier": "P01",
+      "need": "Gottesman’s stabilizer formalism: error syndromes, code spaces and fault-tolerance assumptions.",
+      "parent": "n-bd00254115887cfb",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/quant-ph/9705052"
+    },
+    {
+      "depth": 1,
+      "dossier": "P01",
+      "need": "Kitaev’s fault-tolerant quantum computation by anyons: topological error protection and its scope.",
+      "parent": "n-bd00254115887cfb",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/quant-ph/9707021"
+    },
+    {
+      "depth": 1,
+      "dossier": "P02",
+      "need": "The first PeV IceCube events: distinguish event observation, background rejection and astrophysical interpretation.",
+      "parent": "n-18291a44e9045d8d",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1304.5356"
+    },
+    {
+      "depth": 1,
+      "dossier": "P03",
+      "need": "Advanced LIGO: interferometry, noise control and calibration that made gravitational-wave detection possible.",
+      "parent": "n-9ccdd879a7cf2edb",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1411.4547"
+    },
+    {
+      "depth": 1,
+      "dossier": "P03",
+      "need": "Properties inferred from GW150914: model assumptions, parameter uncertainty and limits of inference.",
+      "parent": "n-9ccdd879a7cf2edb",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1602.03840"
+    },
+    {
+      "depth": 1,
+      "dossier": "P04",
+      "need": "CMS independent Higgs-boson observation: separate the experimental formulations and retain channels and uncertainty.",
+      "parent": "n-12dab3ce878deec9",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1207.7235"
+    },
+    {
+      "depth": 1,
+      "dossier": "P04",
+      "need": "Spontaneous symmetry breaking and gauge-boson mass: attribution, physical mechanism and theoretical assumptions.",
+      "parent": "n-12dab3ce878deec9",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/englert-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "P06",
+      "need": "Planck cosmological parameters: the CMB evidence used in comparisons with later large-scale-structure measurements.",
+      "parent": "n-5a747c3e8b465322",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1807.06209"
+    },
+    {
+      "depth": 1,
+      "dossier": "P06",
+      "need": "Detection of the baryon acoustic peak in galaxy clustering: the standard-ruler foundation of later DESI analyses.",
+      "parent": "n-5a747c3e8b465322",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/astro-ph/0501171"
+    },
+    {
+      "depth": 1,
+      "dossier": "C07",
+      "need": "Communication-efficient learning from decentralized data: federated averaging and its distinction from privacy guarantees.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1605.08294"
+    },
+    {
+      "depth": 1,
+      "dossier": "C07",
+      "need": "Deep learning with differential privacy: privacy accounting, clipped gradients and accuracy tradeoffs.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1607.00133"
+    },
+    {
+      "depth": 1,
+      "dossier": "C09",
+      "need": "LLVM’s typed intermediate representation and lifelong program analysis as an earlier compiler design.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://llvm.org/pubs/2004-01-30-CGO-LLVM.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "C10",
+      "need": "TLS integration in QUIC: handshake, authentication and encryption boundaries.",
+      "parent": "n-b6fff3af36e7cec8",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.rfc-editor.org/rfc/rfc9001.html"
+    },
+    {
+      "depth": 1,
+      "dossier": "C10",
+      "need": "QUIC loss detection and congestion control: conceptual differences from reliable transport and security.",
+      "parent": "n-b6fff3af36e7cec8",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.rfc-editor.org/rfc/rfc9002.html"
+    },
+    {
+      "depth": 1,
+      "dossier": "C11",
+      "need": "Predictive inference with the jackknife+: finite-sample coverage and its assumptions compared with split conformal methods.",
+      "parent": "n-0bb95eb79a2ecf8f",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1909.07857"
+    },
+    {
+      "depth": 1,
+      "dossier": "C11",
+      "need": "Adaptive conformal inference under distribution shift: what changes when exchangeability no longer holds.",
+      "parent": "n-0bb95eb79a2ecf8f",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/2106.00170"
+    },
+    {
+      "depth": 1,
+      "dossier": "C12",
+      "need": "Cooperative inverse reinforcement learning: uncertainty about objectives and assumptions about human cooperation.",
+      "parent": "n-649eb5f55812b8be",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1606.03137"
+    },
+    {
+      "depth": 1,
+      "dossier": "C12",
+      "need": "Concrete problems in AI safety: distinct research arguments, examples and explicitly unestablished claims.",
+      "parent": "n-649eb5f55812b8be",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1606.06565"
+    },
+    {
+      "depth": 1,
+      "dossier": "M07",
+      "need": "Iterative Bregman projections for regularized transportation: computational ancestry of entropic solvers.",
+      "parent": "n-e7c03a594b4fa3f2",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1412.5154"
+    },
+    {
+      "depth": 1,
+      "dossier": "M08",
+      "need": "Conic optimization via operator splitting and homogeneous self-dual embedding: certificates and numerical limitations.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1312.3039"
+    },
+    {
+      "depth": 1,
+      "dossier": "M08",
+      "need": "OSQP: a concrete operator-splitting quadratic-program solver and its infeasibility certificates.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1711.08013"
+    },
+    {
+      "depth": 1,
+      "dossier": "M09",
+      "need": "Exact matrix completion via convex optimization: low-rank recovery and incoherence, compared with sparse vectors.",
+      "parent": "n-fb0e165531b3528c",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/0805.4471"
+    },
+    {
+      "depth": 1,
+      "dossier": "M09",
+      "need": "Robust uncertainty principles and exact recovery from incomplete Fourier information; preserve precise sparsity assumptions.",
+      "parent": "n-fb0e165531b3528c",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/math/0409186"
+    },
+    {
+      "depth": 1,
+      "dossier": "M10",
+      "need": "The F5 criterion revised: algebraic justification and limits of signature criteria.",
+      "parent": "n-6073f9eaffae3917",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1012.3664"
+    },
+    {
+      "depth": 1,
+      "dossier": "M11",
+      "need": "Gradient pathologies in physics-informed neural networks: a concrete limitation and proposed response, not a universal failure claim.",
+      "parent": "n-6163e21b208236db",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/2001.04536"
+    },
+    {
+      "depth": 1,
+      "dossier": "M11",
+      "need": "Fourier neural operators as an alternative PDE approximation: function-space representation and empirical/generalization limits.",
+      "parent": "n-6163e21b208236db",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/2010.08895"
+    },
+    {
+      "depth": 1,
+      "dossier": "M12",
+      "need": "Fixed-energy universality for generalized Wigner matrices: distinguish proof assumptions from other universality theorems.",
+      "parent": "n-d4247a8ebf2e479f",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/1407.5606"
+    },
+    {
+      "depth": 1,
+      "dossier": "P08",
+      "need": "Quantum spin Hall effect in graphene: the proposed mechanism and assumptions, kept distinct from experimental realization.",
+      "parent": "n-dfd7e812c12034d4",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/cond-mat/0504147"
+    },
+    {
+      "depth": 1,
+      "dossier": "P08",
+      "need": "Kane–Mele Z2 topological order and the quantum spin Hall effect: the topological invariant and physical scope.",
+      "parent": "n-dfd7e812c12034d4",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/cond-mat/0506581"
+    },
+    {
+      "depth": 1,
+      "dossier": "P09",
+      "need": "The rise of graphene: Dirac quasiparticles, band structure, transport and limits of semiconductor application.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://arxiv.org/pdf/cond-mat/0702595"
+    },
+    {
+      "depth": 1,
+      "dossier": "P09",
+      "need": "Semiconductor junction and transistor concepts in Shockley’s own lecture; preserve collective and competing contributions.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/shockley-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "P10",
+      "need": "Frequency metrology and optical combs in Hall’s lecture, keeping independent/collective attribution distinct.",
+      "parent": "n-4bb6b3fb735d5471",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/hall-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "P11",
+      "need": "Renormalization group and critical phenomena: coarse-graining, fixed points, universality and the limits of approximation.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/wilson-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "P12",
+      "need": "Multiscale molecular simulation and empirical force fields: why physical approximations matter.",
+      "parent": "n-a8d577166b1e2459",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/karplus-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "P12",
+      "need": "Computational structural biology and coarse-grained molecular models as separately attributed contributions.",
+      "parent": "n-a8d577166b1e2459",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Known primary-source accession or author/institution candidate; retrieved content and separate critic must establish identity and relevance.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/levitt-lecture.pdf"
+    }
+  ],
+  "frozen_checklists": {
+    "C01": [
+      {
+        "contributions": [
+          "n-0d8ad2c483c75944",
+          "n-1297d13e2df3c280",
+          "n-168d39dc8caf9866",
+          "n-2afb6619dd774080",
+          "n-593b21799bcdb85f",
+          "n-6132cf11d7ca9b0b",
+          "n-7174667738dd3cf9",
+          "n-7eebbf975b3ab079",
+          "n-801c5739bee56db3",
+          "n-8b4edffa52a17c09",
+          "n-8fb43a7b474a592e",
+          "n-db91fa68ed42f857",
+          "n-e63e1f4690344df5",
+          "n-f58299fcb8c9d328",
+          "n-f758ba89eb6bda13"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0d8ad2c483c75944",
+          "n-142b0ef6570377b2",
+          "n-1ebb6249ceed5973",
+          "n-4d48f67affeac563",
+          "n-54871f8b872a0c37",
+          "n-5695bc0aae2c9155",
+          "n-593b21799bcdb85f",
+          "n-70418ebdb5651f51",
+          "n-7174667738dd3cf9",
+          "n-7967715d9538424c",
+          "n-801c5739bee56db3",
+          "n-8ef0a588ed82a21f",
+          "n-a0d4b5c914f15ee5",
+          "n-a6ee919e8e2fd13e",
+          "n-a9ec4cc76c4299e6",
+          "n-c0daf2301324a81a",
+          "n-d862cf314f5530cc",
+          "n-db91fa68ed42f857",
+          "n-eb793c7bd4e7ae3c",
+          "n-f217d30557d0c330",
+          "n-f58299fcb8c9d328",
+          "n-f758ba89eb6bda13"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-142b0ef6570377b2",
+          "n-1ebb6249ceed5973",
+          "n-4a8b48aed8d9affe",
+          "n-54542bc6309e7625",
+          "n-5695bc0aae2c9155",
+          "n-5f77d8708fa493d0",
+          "n-6132cf11d7ca9b0b",
+          "n-911ef77aa63fe48d",
+          "n-a0d4b5c914f15ee5",
+          "n-a9ec4cc76c4299e6"
+        ],
+        "id": "limits",
+        "requirement": "Separate architectural contributions, training recipes, and recent provider claims."
+      }
+    ],
+    "C02": [
+      {
+        "contributions": [
+          "n-0bf2a97e801c02db",
+          "n-cb876a51a6738941"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-50d0d04c24bac796",
+          "n-6e727f3584dc9bff",
+          "n-8b5f9ca288e9ebdb",
+          "n-cb876a51a6738941",
+          "n-cd01931badeba0dd",
+          "n-e4f2b3320b1bf0b8",
+          "n-e54e182c665a7015"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-c20878d2f4b535c8"
+        ],
+        "id": "limits",
+        "requirement": "Distinguish samples that look plausible from reliable world models."
+      }
+    ],
+    "C03": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-6893d22e0d30155d",
+          "n-6bd0f4b5da318071",
+          "n-a1c1ac73d47c6a3c",
+          "n-bbee0a3d655a2555",
+          "n-cb074f095f4d3f4e"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-260e564e31d22ce1",
+          "n-32982ed0f5fdd648",
+          "n-4f96486c12c60fcc",
+          "n-6bd0f4b5da318071",
+          "n-a1c1ac73d47c6a3c",
+          "n-bbee0a3d655a2555",
+          "n-c267b8c1f4fb40e9",
+          "n-e2624480c27c1a89"
+        ],
+        "id": "limits",
+        "requirement": "Include reward misspecification and distribution shifts; select a concrete original result."
+      }
+    ],
+    "C04": [
+      {
+        "contributions": [
+          "n-475e3dbab48d0b5b",
+          "n-750a5b4a79f55601",
+          "n-83792e331afa0d30",
+          "n-add161f44f021897",
+          "n-b208a8033b25941a",
+          "n-bbb161ea96b5fca0"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-8b88841aad048ca8",
+          "n-add161f44f021897",
+          "n-b208a8033b25941a",
+          "n-b32af2df08344b1f",
+          "n-f49b129111413a42",
+          "n-fc73a36c0b4aba2b"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-69f1cdba30211d08",
+          "n-83792e331afa0d30",
+          "n-b208a8033b25941a",
+          "n-f49b129111413a42"
+        ],
+        "id": "limits",
+        "requirement": "Verification has configuration and hardware assumptions; do not call every deployment secure."
+      }
+    ],
+    "C05": [
+      {
+        "contributions": [
+          "n-2016e6bbe400764f",
+          "n-5f7e4645342b2ae9",
+          "n-7cc0b2815a6064dd",
+          "n-8d36de15d6ae94c3",
+          "n-9a7859d24fe78d2f",
+          "n-dbeea5eac1b1a7d4",
+          "n-fc6adc7124ac3acc"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-2016e6bbe400764f",
+          "n-4cb8864e923499bf",
+          "n-548c42b29a9e7074",
+          "n-5f7e4645342b2ae9",
+          "n-7cc0b2815a6064dd",
+          "n-8d36de15d6ae94c3",
+          "n-93d760bfa7b55ce9",
+          "n-9a7859d24fe78d2f",
+          "n-d5ab44388306e883",
+          "n-dbeea5eac1b1a7d4",
+          "n-fc6adc7124ac3acc"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-4cb8864e923499bf",
+          "n-548c42b29a9e7074",
+          "n-93d760bfa7b55ce9",
+          "n-c64052adfc5caac2",
+          "n-d5ab44388306e883",
+          "n-fc6adc7124ac3acc"
+        ],
+        "id": "limits",
+        "requirement": "Keep crash failure, Byzantine failure, and synchrony assumptions separate."
+      }
+    ],
+    "C06": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-1190680f6259affd",
+          "n-24327698ab779875",
+          "n-2d7d48b1af01ffc7",
+          "n-66fb23d757b49ed1",
+          "n-6a5ec69bed9566d3",
+          "n-6fea6433dca00491",
+          "n-8377635b4917985b",
+          "n-b03950019d9c9379",
+          "n-b34f0030a61283ca",
+          "n-b68351cd3cc7dfb4",
+          "n-c408af118fd90625",
+          "n-d5019f0adccb7302",
+          "n-e449b1e29c1ad69c",
+          "n-f669e3cd242ca8c9",
+          "n-f7bca3ec5933f269"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-0b985f91ace8ce15",
+          "n-1190680f6259affd",
+          "n-2d695761cf47247b",
+          "n-66cd3af4f909d8de",
+          "n-6855fb7064e1ccf9",
+          "n-b03950019d9c9379",
+          "n-d6a22b65278d6bb5"
+        ],
+        "id": "limits",
+        "requirement": "Preserve threat models and algorithm revisions; exclude exploit instructions."
+      }
+    ],
+    "C07": [
+      {
+        "contributions": [
+          "n-661993b22d366f58",
+          "n-6fa3ce7ef3fb0309",
+          "n-d8cc4f61a4cea8ba"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-51e18edb335189d3",
+          "n-544d8fcf6d24fa53",
+          "n-82657e5496bdf48e",
+          "n-d94c4a63b77a0585",
+          "n-e7085ec5ce0e36e0",
+          "n-f9d713722366fd86"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-3fb7bf48214f8f49",
+          "n-93984ad96d7a88f4",
+          "n-b66a59e38d88c5e0",
+          "n-e4e63b525bf84edb"
+        ],
+        "id": "limits",
+        "requirement": "Privacy budget and threat model cannot be dropped from a usable insight."
+      }
+    ],
+    "C09": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0daeaf565f18ae09",
+          "n-1397f27bb4dbace8",
+          "n-21bb30721939b590",
+          "n-4cb4733cc733aa4c",
+          "n-50ce11597b1b48b4",
+          "n-528a8f94678b4026",
+          "n-64169eb6af4f4260",
+          "n-ce1a382010ada1be",
+          "n-d3dd230f8b93d719"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-528a8f94678b4026",
+          "n-64169eb6af4f4260"
+        ],
+        "id": "limits",
+        "requirement": "A representation framework is not a proof that all rewrites are semantics-preserving."
+      }
+    ],
+    "C10": [
+      {
+        "contributions": [
+          "n-0137d41062bc8988",
+          "n-0449a119b6c75548",
+          "n-1c91631c181ef580",
+          "n-255497fb80288942",
+          "n-5b4093d6aadbff37",
+          "n-89d3654fb1da5097",
+          "n-8e94cf4a118bab5d",
+          "n-9afb95332b083d24",
+          "n-9b311ae426e492f5",
+          "n-9ee6bfa7be1590a8",
+          "n-a61eac0a741605d7",
+          "n-b6fff3af36e7cec8",
+          "n-d008d47b4cfd1956",
+          "n-e919ba5cfa4b3ba3",
+          "n-fc407469fc36b359"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0137d41062bc8988",
+          "n-0449a119b6c75548",
+          "n-1c91631c181ef580",
+          "n-255497fb80288942",
+          "n-5b4093d6aadbff37",
+          "n-5d0ab4aa4c7b6c56",
+          "n-89d3654fb1da5097",
+          "n-8e94cf4a118bab5d",
+          "n-9afb95332b083d24",
+          "n-9b311ae426e492f5",
+          "n-9ee6bfa7be1590a8",
+          "n-a61eac0a741605d7",
+          "n-b6fff3af36e7cec8",
+          "n-d008d47b4cfd1956",
+          "n-e919ba5cfa4b3ba3",
+          "n-fc407469fc36b359"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Record versions and endpoint/network assumptions."
+      }
+    ],
+    "C11": [
+      {
+        "contributions": [
+          "n-0bb95eb79a2ecf8f",
+          "n-67c115158e9cab54",
+          "n-c3fe51281c4dc6a9",
+          "n-ccc28c7469660848",
+          "n-f095820795600a18",
+          "n-fe1329b694016e9a"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-3ee8575e293ae79b",
+          "n-3f78924264ee2385",
+          "n-45ebc2d773a81a78",
+          "n-67c115158e9cab54",
+          "n-791b74cb6aa3a7db",
+          "n-83e202bf9e485c1c",
+          "n-94b1e29b79a93f3f",
+          "n-aa0e2abb9dbae66a",
+          "n-af2d59e1bcc77543",
+          "n-ba19f2685fd6c1d3",
+          "n-c3fe51281c4dc6a9",
+          "n-ccc28c7469660848",
+          "n-e6d139ce8faf459a",
+          "n-f095820795600a18",
+          "n-fe1329b694016e9a"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-0bb95eb79a2ecf8f"
+        ],
+        "id": "limits",
+        "requirement": "Marginal coverage is not universal conditional coverage; distribution shift matters."
+      }
+    ],
+    "C12": [
+      {
+        "contributions": [
+          "n-72c89ba3537099c0",
+          "n-d354475cd045130b",
+          "n-e5bc01cb5c0557db"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-1cd457f611fe759f",
+          "n-59aa850f3a1ecc65",
+          "n-886d4624f70b4f3d",
+          "n-934d72f48a592c03",
+          "n-a8d5600390b879fd",
+          "n-e3207c830c551b25",
+          "n-e593848e0a420747"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-4605bc48f5a8ab9e",
+          "n-b0d15417b34c05e1",
+          "n-e6c03aa42fcda2c6",
+          "n-e783a932fba8412a"
+        ],
+        "id": "limits",
+        "requirement": "Include counterexamples and information asymmetry; never mark superalignment solved."
+      }
+    ],
+    "M01": [
+      {
+        "contributions": [
+          "n-212d5dd8f13fb363",
+          "n-76aecbcf0625a385",
+          "n-8ecdbcfad274d2b7",
+          "n-c2f2db17d8dc1c24",
+          "n-f5f18d7c716ec38e"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0a4e376e21045ad5",
+          "n-0da4b8ce1a85d2ba",
+          "n-212d5dd8f13fb363",
+          "n-b38151fb0a1d1093",
+          "n-d8f6b251a66e5a9c",
+          "n-f5f18d7c716ec38e"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-04336513185953f6"
+        ],
+        "id": "limits",
+        "requirement": "Separate formal correctness from informal interpretation; inspect trust assumptions."
+      }
+    ],
+    "M02": [
+      {
+        "contributions": [
+          "n-02757076ddc10d99",
+          "n-3d738014669e4343",
+          "n-5ac23c43c7978363",
+          "n-5ce5643b0b545f5d",
+          "n-60e458bcdfb9430d",
+          "n-871fc531a62017c7",
+          "n-8b9f592ec8db272d",
+          "n-90529b0eaa2b1648",
+          "n-ab034d1a3df1f529",
+          "n-f56bfd429e5fd9d5"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-02757076ddc10d99",
+          "n-3ed4df053a4d1db8",
+          "n-48c2d9490c43ed12",
+          "n-5ce5643b0b545f5d",
+          "n-90529b0eaa2b1648",
+          "n-934fd76f70c3362c",
+          "n-9cb882b71fd06118",
+          "n-bdb9932843f70a06"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-90529b0eaa2b1648"
+        ],
+        "id": "limits",
+        "requirement": "Preserve failed approaches and distinguish dimension three from unrestricted dimensions."
+      }
+    ],
+    "M03": [
+      {
+        "contributions": [
+          "n-268b6fd957f68744",
+          "n-e5b30a8c67deb4e6"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-268b6fd957f68744",
+          "n-e5b30a8c67deb4e6"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-e5b30a8c67deb4e6"
+        ],
+        "id": "limits",
+        "requirement": "Resolve each theorem and attribution separately; an award citation is only a starting gateway."
+      }
+    ],
+    "M04": [
+      {
+        "contributions": [
+          "n-2aa2943486638fb9",
+          "n-acdc88b4867fe173",
+          "n-d68447fc712f2e62",
+          "n-f57668cd4f73da04",
+          "n-fb6ac50b2e2405b6"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-13f6a55410832951",
+          "n-5134b96bd23a0164",
+          "n-6a877fabeea98440",
+          "n-8c128bbb490f83cd",
+          "n-9afa02291b1f4842",
+          "n-b4c80ff89340567c",
+          "n-ce91abb3a3ee3620",
+          "n-ed3a6955a7d82806",
+          "n-f496e989258b8a94"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-7807400969df2aab",
+          "n-acdc88b4867fe173",
+          "n-c89d56b65d9a1473",
+          "n-d68447fc712f2e62"
+        ],
+        "id": "limits",
+        "requirement": "Keep scale, time-horizon, and convergence assumptions; do not claim every physical regime."
+      }
+    ],
+    "M05": [
+      {
+        "contributions": [
+          "n-00e029832700d281",
+          "n-09e9d19ba69f87a3",
+          "n-1b75e25348a47550",
+          "n-43b83c4f78031ccc",
+          "n-4da25191fb00fd19",
+          "n-70817282fae2b5ef",
+          "n-7690fc1806759630",
+          "n-7a5e578551722179",
+          "n-82e329223c183624",
+          "n-9d4105550b4a815e",
+          "n-a108c4ed0f5718dc",
+          "n-ba15565299943270",
+          "n-c0b9cac2c8e03c89",
+          "n-f09932014b380680"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-00e029832700d281",
+          "n-43b83c4f78031ccc",
+          "n-87ac6f7c387e63e7",
+          "n-9d4105550b4a815e",
+          "n-ba15565299943270",
+          "n-c0b9cac2c8e03c89"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-09e9d19ba69f87a3",
+          "n-1b75e25348a47550",
+          "n-4da25191fb00fd19",
+          "n-70817282fae2b5ef",
+          "n-7690fc1806759630",
+          "n-7a5e578551722179",
+          "n-82e329223c183624",
+          "n-87ac6f7c387e63e7",
+          "n-a108c4ed0f5718dc",
+          "n-c026f671015129eb",
+          "n-f09932014b380680"
+        ],
+        "id": "limits",
+        "requirement": "Do not compress different invariants or conjectures into a single proof claim."
+      }
+    ],
+    "M06": [
+      {
+        "contributions": [
+          "n-0341505e7fee0eb7",
+          "n-0e21616ff3dcac8b",
+          "n-1eb3efc9d77886ae",
+          "n-284d2e0f305083e5",
+          "n-29ff2cc56f6c1540",
+          "n-335437961857c75b",
+          "n-47edbe1f27703a29",
+          "n-5b5db857d3777449",
+          "n-5e12972f4aa7edd7",
+          "n-5e44ec0b07f326fb",
+          "n-61545435b8d41483",
+          "n-64fa21537a8db821",
+          "n-7f9cb2c2aadf1857",
+          "n-a08f3aa00dcb54ca",
+          "n-b25ad0851484c7b2",
+          "n-b64cbd6fa171c197",
+          "n-b71bf01a2832bea4",
+          "n-cbf44eb51de4aad7",
+          "n-d7ab36f3ea8b8b06",
+          "n-dc6490dbc6efde79",
+          "n-fa143e145461f649",
+          "n-fe6f3c9d66f237ed",
+          "n-ffb331e98ffc2fc2"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0341505e7fee0eb7",
+          "n-084b746d4477f87d",
+          "n-335437961857c75b",
+          "n-3ce02bc03dc28c79",
+          "n-47edbe1f27703a29",
+          "n-5d1ae80a95c0c49b",
+          "n-5e12972f4aa7edd7",
+          "n-64fa21537a8db821",
+          "n-7f9cb2c2aadf1857",
+          "n-8c8147ef38ef300c",
+          "n-a08f3aa00dcb54ca",
+          "n-b25ad0851484c7b2",
+          "n-dc6490dbc6efde79",
+          "n-ffb331e98ffc2fc2"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-61545435b8d41483",
+          "n-8c8147ef38ef300c",
+          "n-aead12d69798e8d2",
+          "n-b25ad0851484c7b2",
+          "n-b64cbd6fa171c197"
+        ],
+        "id": "limits",
+        "requirement": "Dimension-eight result is not a solution in all dimensions."
+      }
+    ],
+    "M07": [
+      {
+        "contributions": [
+          "n-3b9ee3e649623718",
+          "n-59613958125da35c",
+          "n-e7c03a594b4fa3f2"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-40b8b0a05806bd3b",
+          "n-e7c03a594b4fa3f2"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-c491b9b35b83267e"
+        ],
+        "id": "limits",
+        "requirement": "Numerical regularization and approximations are not identical to the unregularized object."
+      }
+    ],
+    "M08": [
+      {
+        "contributions": [
+          "n-58ef71d1e9e51e6b",
+          "n-5b6d1d4988dfe7dc",
+          "n-a5e4ba963ffee9b0",
+          "n-fd125cdf9d601885"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-52b7bae79c2751b7",
+          "n-5b96374076ba56ef",
+          "n-8b2840491a9ece76",
+          "n-a10d8c1ba6667a15",
+          "n-b6e0ecadc3922f87",
+          "n-c2edd513f18d104e",
+          "n-c56b29534900c1e1",
+          "n-ccc840542ef010db"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-330d857b3dcbf778",
+          "n-d3ffe25adc8d561b"
+        ],
+        "id": "limits",
+        "requirement": "State regularity assumptions and gaps between convex and nonconvex problems."
+      }
+    ],
+    "M09": [
+      {
+        "contributions": [
+          "n-5d73ba280ad51c5c",
+          "n-e0d001d3e5cf94fd",
+          "n-fb0e165531b3528c"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-050ac75fbabfa1d6",
+          "n-5d73ba280ad51c5c",
+          "n-5e4af465ca48240f",
+          "n-642a8a2af4111cdd",
+          "n-90c6e6a0dae8ac92",
+          "n-c36ed1d94f58f9b3",
+          "n-e0d001d3e5cf94fd",
+          "n-e6e1c4d4efe4f9bd",
+          "n-fb0e165531b3528c",
+          "n-fdf97dbe2a74f561"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-39a6113f9696e2c0",
+          "n-5e4af465ca48240f",
+          "n-642a8a2af4111cdd",
+          "n-e0d001d3e5cf94fd",
+          "n-e3738ff70fbfb22e",
+          "n-e6e1c4d4efe4f9bd",
+          "n-fb0e165531b3528c",
+          "n-fdf97dbe2a74f561"
+        ],
+        "id": "limits",
+        "requirement": "Differentiate worst-case guarantees, distributional assumptions, and empirical success."
+      }
+    ],
+    "M10": [
+      {
+        "contributions": [
+          "n-6073f9eaffae3917",
+          "n-a76a089ecc8a8883",
+          "n-b076ef0fe70a5eb8"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-24cc020a47d71a7b",
+          "n-5b515910b1728291",
+          "n-7bb7770fa662abdf"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-24cc020a47d71a7b",
+          "n-6073f9eaffae3917",
+          "n-a76a089ecc8a8883"
+        ],
+        "id": "limits",
+        "requirement": "Separate computational tractability from mathematical existence."
+      }
+    ],
+    "M11": [
+      {
+        "contributions": [
+          "n-6163e21b208236db",
+          "n-e96dcbc5d77d0b8b",
+          "n-fea1357fda74a44e"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-46eebeb8eb5bbde3",
+          "n-4da6c0752c57c7e5",
+          "n-6163e21b208236db",
+          "n-87c2375be3dcc081",
+          "n-d1a8be295f2340f7"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-4a322c4bf3d16408",
+          "n-4da6c0752c57c7e5",
+          "n-6163e21b208236db",
+          "n-87c2375be3dcc081",
+          "n-d1a8be295f2340f7",
+          "n-fc33898b12da1e69"
+        ],
+        "id": "limits",
+        "requirement": "Preserve ill-posedness, stability conditions, and model-versus-discretization error."
+      }
+    ],
+    "M12": [
+      {
+        "contributions": [
+          "n-047c10e7c0242779",
+          "n-52e9ec045ef80b37",
+          "n-713ca7d50271ee5c",
+          "n-d4247a8ebf2e479f"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-047c10e7c0242779",
+          "n-52e9ec045ef80b37",
+          "n-713ca7d50271ee5c",
+          "n-92bd5be48fcc48fc",
+          "n-d4247a8ebf2e479f"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-713ca7d50271ee5c",
+          "n-d4247a8ebf2e479f",
+          "n-d5ec9fa1a85fac83"
+        ],
+        "id": "limits",
+        "requirement": "Universal behavior still depends on an explicitly delimited class."
+      }
+    ],
+    "P01": [
+      {
+        "contributions": [
+          "n-bd00254115887cfb"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0574780fff20f0e7",
+          "n-0df535cb4bde50aa",
+          "n-1ffac8bdf1c5113e",
+          "n-2074bbd94aba81dc",
+          "n-2c1895febd0555f2",
+          "n-2ff1052e7ec67922",
+          "n-38b21124bd5cf176",
+          "n-51cc61b8ab58ee04",
+          "n-56e78604daea7653",
+          "n-5ce74b0acf0bb1aa",
+          "n-6e2492d44276f24f",
+          "n-7f80d9dcec33652f",
+          "n-95d9b2f181590b47",
+          "n-97b0f2e61bbf86eb",
+          "n-a3b3386fc782226f",
+          "n-b41aa691b922fd9a",
+          "n-b8c189017b213277",
+          "n-bc01a50aebc0446b",
+          "n-bd00254115887cfb",
+          "n-c27efc9e50758aa7",
+          "n-c6d205f98488de3b",
+          "n-d44129ccd85691a8",
+          "n-e5fa367f3fd09f14",
+          "n-f5d9336f4c53dadb",
+          "n-ff3c6fb5b594e15e"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-0df535cb4bde50aa",
+          "n-56e78604daea7653",
+          "n-5ce74b0acf0bb1aa",
+          "n-895419cd4de08fc5",
+          "n-8e7431450cdb1c71",
+          "n-95d9b2f181590b47",
+          "n-b41aa691b922fd9a",
+          "n-bbf3ee399b9fc634",
+          "n-bcee38151e12bfe5",
+          "n-bd00254115887cfb",
+          "n-be89f598c6670e72",
+          "n-c6d205f98488de3b",
+          "n-da57943f91fc274d",
+          "n-ff3c6fb5b594e15e"
+        ],
+        "id": "limits",
+        "requirement": "Do not equate an error-corrected memory with a universally useful fault-tolerant computer."
+      }
+    ],
+    "P02": [
+      {
+        "contributions": [
+          "n-18291a44e9045d8d"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-18291a44e9045d8d",
+          "n-1ad41dc5651d20d3",
+          "n-1d4ba605858c0c0e",
+          "n-73b3c2edb488caa7",
+          "n-782a0e31b72b690d",
+          "n-cc374d17d1e05127",
+          "n-d596ed36e1c629ec"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-0a55fe6b533d8cc5",
+          "n-0d6d08f2ba6b485d",
+          "n-18291a44e9045d8d",
+          "n-2ecb2c63ce6a3ed8",
+          "n-597fa300697ced9f",
+          "n-82869de5cb6c9d71",
+          "n-aab99091d4c88de6",
+          "n-beb9eb37aad92253"
+        ],
+        "id": "limits",
+        "requirement": "Separate observation, source association, and speculative source mechanisms."
+      }
+    ],
+    "P03": [
+      {
+        "contributions": [
+          "n-1619544cc011ad56",
+          "n-3784e7adcc5746c8",
+          "n-9ccdd879a7cf2edb"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-02ede865c548b11d",
+          "n-0cec2d8c4b373f32",
+          "n-15015520fc034e99",
+          "n-3784e7adcc5746c8",
+          "n-3b8cac15a57361c1",
+          "n-5941bf32ba7c477f",
+          "n-606155af023a20bc",
+          "n-6d3294e997d7f78e",
+          "n-9ccdd879a7cf2edb",
+          "n-adac400ca120098d",
+          "n-fad545e0592cd36d"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-02ede865c548b11d",
+          "n-0cec2d8c4b373f32",
+          "n-15015520fc034e99",
+          "n-1619544cc011ad56",
+          "n-3784e7adcc5746c8",
+          "n-3b71a59b71be6129",
+          "n-3b8cac15a57361c1",
+          "n-3e5752291c0b058b",
+          "n-5941bf32ba7c477f",
+          "n-5f561a1e103d3392",
+          "n-606155af023a20bc",
+          "n-6d3294e997d7f78e",
+          "n-9ccdd879a7cf2edb",
+          "n-adac400ca120098d",
+          "n-c85e8a683508008d",
+          "n-fad545e0592cd36d"
+        ],
+        "id": "limits",
+        "requirement": "Keep discovery evidence distinct from inferred source properties and model assumptions."
+      }
+    ],
+    "P04": [
+      {
+        "contributions": [
+          "n-12dab3ce878deec9",
+          "n-29188656f23e2269",
+          "n-6bd5e8ade698e697"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-03628ffc9944a11f",
+          "n-12dab3ce878deec9",
+          "n-158aed1b6137e2d2",
+          "n-73f3d7b6a20c1332",
+          "n-7e8b5a8f406c87e1",
+          "n-a8f5cf45b700d6c4",
+          "n-acaeded6ad147639",
+          "n-c68c8de77ec52fc9",
+          "n-e1ff6feb20b1cbca",
+          "n-e385e5b9bee4cad0",
+          "n-e7a5a6f6a33792f0",
+          "n-f533c364b1e2ec4f",
+          "n-fd518b3615fcf188"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-12dab3ce878deec9"
+        ],
+        "id": "limits",
+        "requirement": "Do not imply the Standard Model resolves dark matter or all mass-generation questions."
+      }
+    ],
+    "P06": [
+      {
+        "contributions": [
+          "n-0974b1c55b29bc34",
+          "n-1381e2371e815629",
+          "n-5948a8d5bfa45a81",
+          "n-5a747c3e8b465322",
+          "n-69f3c9fe926fdff3",
+          "n-9384e0f75f3b8036",
+          "n-ed2f72af91b0c39c"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-3691830a4011a62a",
+          "n-3bc594ba484fe9b8",
+          "n-479ae74014af40b4",
+          "n-661d6ac1a8d6d4a0",
+          "n-cb44702e3725ac19",
+          "n-d70c3a08a3134287"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-0974b1c55b29bc34",
+          "n-1381e2371e815629",
+          "n-251dd279581e0c72",
+          "n-33be188254ee8352",
+          "n-5948a8d5bfa45a81",
+          "n-5a747c3e8b465322",
+          "n-661d6ac1a8d6d4a0",
+          "n-69f3c9fe926fdff3",
+          "n-9384e0f75f3b8036",
+          "n-ed2f72af91b0c39c",
+          "n-fedf25e4cd1fc9a9"
+        ],
+        "id": "limits",
+        "requirement": "Record competing model interpretations; do not label a tentative discrepancy a discovery."
+      }
+    ],
+    "P08": [
+      {
+        "contributions": [
+          "n-09d281b7ce18f1f1",
+          "n-4739c11cbb0ac6d1",
+          "n-71bde34ce820605b",
+          "n-c68c351c0fd19355",
+          "n-e54100028236c257",
+          "n-eefe584806109dd7",
+          "n-f1575359c2c45888"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-198da465c35cccc1",
+          "n-39332bf5b89a9edf",
+          "n-90b58de009dd3bb6",
+          "n-d3fe0f3a85c01707",
+          "n-f3beb6c8fe8de9f5"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-950b6ec0ebf32123",
+          "n-a8b37c2ae547c4bf",
+          "n-dfd7e812c12034d4",
+          "n-fdca82df913f7847"
+        ],
+        "id": "limits",
+        "requirement": "Separate ideal topological protections from experimental disorder and temperature limits."
+      }
+    ],
+    "P09": [
+      {
+        "contributions": [
+          "n-48984e838a684072",
+          "n-8e0c4d15cfcc8115",
+          "n-e3bb79afb48d18d3",
+          "n-eb6a40cde581b226",
+          "n-f08b856dbb81ad89"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-5af74483075aa95a",
+          "n-6ada977bee2721b4",
+          "n-8e0c4d15cfcc8115",
+          "n-90c130d0d7cf51c6",
+          "n-b076bd8f1e697bc2",
+          "n-c314ec3045c690e7",
+          "n-de4a2e21b00a923c",
+          "n-eb6a40cde581b226",
+          "n-f08b856dbb81ad89"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-3135b26e368a2d29",
+          "n-5af74483075aa95a",
+          "n-60a4fe150430c92b",
+          "n-6ada977bee2721b4",
+          "n-9e78115b3ad3a435",
+          "n-b076bd8f1e697bc2",
+          "n-c314ec3045c690e7",
+          "n-de4a2e21b00a923c",
+          "n-e3bb79afb48d18d3",
+          "n-eb2c479d041ce464"
+        ],
+        "id": "limits",
+        "requirement": "Record device-specific tradeoffs rather than a universal scaling-law promise."
+      }
+    ],
+    "P10": [
+      {
+        "contributions": [
+          "n-4bb6b3fb735d5471",
+          "n-a9cb143b220a4ec8"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-23f16ae8bb5b90c9",
+          "n-47843fcbff18ded2",
+          "n-4bb6b3fb735d5471",
+          "n-65e53084a7cc4441",
+          "n-a9cb143b220a4ec8",
+          "n-abb32c5258f2dcdc"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-79e98deb65e9fb0f",
+          "n-f39542835b5a507d"
+        ],
+        "id": "limits",
+        "requirement": "Distinguish enabling physical principles from later manufacturing innovations."
+      }
+    ],
+    "P11": [
+      {
+        "contributions": [
+          "n-4dcbcae7b1728c9d",
+          "n-6f6eb73f7559cf6c",
+          "n-813804da6bb92cb4",
+          "n-88eeca0080402618",
+          "n-90432d803a058f53",
+          "n-bc4c56a2f306da42"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0b6ac23a9550204a",
+          "n-1628b5f0dff09cad",
+          "n-18c1f80e724b6c45",
+          "n-202d86e777273be9",
+          "n-747332047bcb7e96",
+          "n-8d009d2e19f22629",
+          "n-b2af7f181f85b16e",
+          "n-c2b51b3f38e32b0c"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-4e8cd74d368af3bc",
+          "n-6f6eb73f7559cf6c",
+          "n-88eeca0080402618",
+          "n-fca6d8e38395d70c"
+        ],
+        "id": "limits",
+        "requirement": "Retain universality classes and nonuniversal quantities."
+      }
+    ],
+    "P12": [
+      {
+        "contributions": [
+          "n-323b985466a4ee64",
+          "n-a8d577166b1e2459",
+          "n-c05a61974866a9da"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-0fb1412f7d57fa82",
+          "n-10cb71ac09ab101a",
+          "n-2bd7de26e7dd4561",
+          "n-2d14bf9622276c1e",
+          "n-323b985466a4ee64",
+          "n-49bb86cdcc114e5e",
+          "n-949f0bfc0c796e62",
+          "n-a8d577166b1e2459",
+          "n-f1cde4e552371f0a"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Compare conservation, closure assumptions, calibration, and physical validation."
+      }
+    ]
+  },
+  "id": "foundations-1-1",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 45,
+  "purpose": "Source-backed foundations, alternatives and scope limits across mathematics, physics and computing. Accession candidates require identity/relevance checks; these assignments assert no historical arrows."
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "contribution": {
+      "content_hash": "c6eeb6d166792e08ecdce06458678f25fcc2c82f21ab2b6cf0c76221994991d8",
+      "id": "n-1619544cc011ad56",
+      "revision": 1
+    },
+    "reason": "Explore how gravitational-wave observations test general relativity in the strong-field regime.",
+    "topic_id": "P1002"
+  },
+  {
+    "contribution": {
+      "content_hash": "0853cf67b8dbff7f81d9c07c123610d2b29500ac38b0eff61dea75a01407a715",
+      "id": "n-efc3b9329b7842e8",
+      "revision": 3
+    },
+    "reason": "Read Einstein’s dated 1923 account as conceptual background for the gravitational-wave topic. This reading route does not assert a direct historical influence.",
+    "topic_id": "P03"
+  },
+  {
+    "contribution": {
+      "content_hash": "771efb266b5a000f544753863c795cc3e7776835e9d67248bca30fb542e76db3",
+      "id": "n-e5a261f2212363c0",
+      "revision": 3
+    },
+    "reason": "Read Einstein’s dated 1923 account as conceptual background for the gravitational-wave topic. This reading route does not assert a direct historical influence.",
+    "topic_id": "P03"
+  },
+  {
+    "contribution": {
+      "content_hash": "11fc8401b6374d25d7d193b12e6c771e15019f4230297170a4a920c26650de05",
+      "id": "n-b257813387ae2476",
+      "revision": 1
+    },
+    "reason": "Divide-and-conquer is a foundational design method for studying efficient algorithms.",
+    "topic_id": "C08"
+  },
+  {
+    "contribution": {
+      "content_hash": "1ad720ed1f76b692ffc952fe0f7e5beca0a41571797548caa1152e44bb19127e",
+      "id": "n-1c857b4c4b365622",
+      "revision": 1
+    },
+    "reason": "Combinatorial explosion explains a computational limit that motivates the efficient-algorithms topic.",
+    "topic_id": "C08"
+  },
+  {
+    "contribution": {
+      "content_hash": "360e1ed87a229e8b24f4f7bdf267f5cf2484339547f94201f95305ef9a3e40f5",
+      "id": "n-f58299fcb8c9d328",
+      "revision": 1
+    },
+    "reason": "Read the soft-attention mechanism as computational background for attention-based biomolecular models. This is an editorial reading route, not an asserted inheritance claim.",
+    "topic_id": "B01"
+  },
+  {
+    "contribution": {
+      "content_hash": "55aedbc44a8b301ebf1afea1bce25adc452aa9c0857b6c9c74f5ef53e7e3afe6",
+      "id": "n-52283983a367c0fc",
+      "revision": 1
+    },
+    "reason": "Classical inheritance provides background for comparing genomic variation; linkage and the scope of independent assortment must remain visible.",
+    "topic_id": "B06"
+  },
+  {
+    "contribution": {
+      "content_hash": "b7a5ab96211c5f9f3de9d6ae51919a1338054f28e9618ad4a52207273f9d4909",
+      "id": "n-14a0a345898561e6",
+      "revision": 1
+    },
+    "reason": "Opportunity cost and comparative advantage are foundational concepts for reading the trade topic.",
+    "topic_id": "E10"
+  },
+  {
+    "contribution": {
+      "content_hash": "c12b1b8a8b0297ee8f3a064215e1c7e751faec42182a43d91fc3b9afbc727c3d",
+      "id": "n-1dfc573a2f14a53b",
+      "revision": 1
+    },
+    "reason": "The noisy-channel coding theorem provides a foundation for understanding the distinction between reliable communication limits and particular transport protocols.",
+    "topic_id": "C10"
+  },
+  {
+    "contribution": {
+      "content_hash": "acc9a2266b55b062913a58d5a333d10ae71178a596f5216b842856eec6d47a87",
+      "id": "n-2f452eb39e2eec93",
+      "revision": 1
+    },
+    "reason": "Compare the precise maximum-entropy property of a Gaussian distribution with the mathematical probability models used in random-matrix and stochastic results. This is a reading route, not a claim of historical influence.",
+    "topic_id": "M12"
+  }
+]

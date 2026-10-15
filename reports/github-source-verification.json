@@ -1,0 +1,201 @@
+{
+  "source_edition": "1.2.0-github-2026-10-15",
+  "data_release": "1.2.0-exploratory",
+  "checked_on": "2026-10-15",
+  "platform": {
+    "system": "Darwin",
+    "architecture": "x86_64",
+    "python": "3.12.7"
+  },
+  "scope": "Publication source, prebuilt local reader and optional hosted adapter; no production mutation or paid model requests",
+  "python_tests": {
+    "passed": 99,
+    "failed": 0,
+    "core": 65,
+    "hosting": 34,
+    "command": "python3 -m pytest -q",
+    "duration_seconds": 11.25
+  },
+  "browser_tests": {
+    "passed": 48,
+    "failed": 0,
+    "skipped": 2,
+    "skip_reasons": [
+      "Performance measured once on desktop",
+      "All-topic enumeration measured once on desktop"
+    ],
+    "platforms": [
+      "desktop Chromium",
+      "emulated iPhone 13 Chromium"
+    ],
+    "duration_description": "2.7 minutes",
+    "reader_origin": "http://127.0.0.1:18765",
+    "command": "PRINCIPIA_TEST_URL=http://127.0.0.1:18765 pnpm --dir web test"
+  },
+  "hosted_prefix_tests": {
+    "passed": 2,
+    "failed": 0,
+    "command": "pnpm --dir web exec playwright test --config playwright.hosted.config.ts",
+    "coverage": [
+      "mounted assets and API URLs",
+      "public status label",
+      "search",
+      "scientist profile",
+      "reload",
+      "insight inspector",
+      "shared topic navigation"
+    ],
+    "initial_test_adjustment": "The mobile header intentionally hides its status badge; the assertion now checks its text on both viewports and visibility on desktop.",
+    "duration_seconds": 9.51
+  },
+  "frontend_builds": {
+    "offline": "passed TypeScript and Vite",
+    "hosted": "passed TypeScript and Vite, base /web/legacy/",
+    "warnings": [
+      "Existing main bundle exceeds the Vite 500 kB chunk-size advisory; build succeeded."
+    ]
+  },
+  "formula_validation": {
+    "formulas": 5404,
+    "failures": 0
+  },
+  "data_acceptance": {
+    "passed": true,
+    "release_id": "1.2.0-exploratory",
+    "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+    "counts": {
+      "contribution": 2667,
+      "relation": 2233,
+      "source": 237,
+      "review": 5167
+    },
+    "exact_machine_reviews_for_all_visible_records": true,
+    "dossiers": 154,
+    "flagship_endpoint_checks": 5,
+    "tour_checks": 3,
+    "source_closure": true,
+    "neighborhood_cap_and_joint_premises": true,
+    "frozen_evaluation_files_unchanged": true,
+    "external_jsonschema": "10648 immutable versions validated against exported JSON Schemas",
+    "qualified_human_audit": "not performed"
+  },
+  "offline": {
+    "passed": true,
+    "release_id": "1.2.0-exploratory",
+    "external_socket_attempts": [],
+    "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
+    "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
+    "checked": [
+      "all bundled assets",
+      "search",
+      "dossiers",
+      "contribution inspector",
+      "shared topic links and scientist profiles",
+      "relationship inspector",
+      "neighborhood",
+      "brief",
+      "snapshot changes"
+    ]
+  },
+  "living_corrections": {
+    "passed": true,
+    "scope": "Actual flagship records, isolated disposable corpus copy; no fabricated corrections or human reviews added to distributed corpus",
+    "checks": [
+      {
+        "dossier": "M06",
+        "target": "n-b25ad0851484c7b2",
+        "dependent_interpretations": 9,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "P01",
+        "target": "n-bd00254115887cfb",
+        "dependent_interpretations": 14,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "C01",
+        "target": "n-7174667738dd3cf9",
+        "dependent_interpretations": 10,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "E01",
+        "target": "n-7a2dcf7d88d3269d",
+        "dependent_interpretations": 12,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      },
+      {
+        "dossier": "B01",
+        "target": "n-711b35dd72329889",
+        "dependent_interpretations": 19,
+        "old_snapshot_preserved": true,
+        "new_approval_required": true,
+        "coverage_updated": true,
+        "brief_updated": true
+      }
+    ]
+  },
+  "canonical_preservation": {
+    "passed": true,
+    "checked": 115,
+    "categories": [
+      "corpus",
+      "manifests",
+      "schemas",
+      "tours"
+    ]
+  },
+  "browser_performance": {
+    "first_view_ms": 1095,
+    "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+    "js_heap_bytes": 14329871,
+    "browser_process_rss_bytes": 706019328,
+    "reader_process_rss_bytes": 237219840,
+    "combined_rss_bytes": 943239168,
+    "memory_method": "ps RSS summed over the test Chromium process tree plus the local reader; shared pages may be counted more than once",
+    "requests": 6,
+    "external_requests": [],
+    "page_errors": [],
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  "documentation": {
+    "readme_words": 478,
+    "visual_review": "Local Markdown preview inspected in browser at desktop width and 390 px. Banner and reader screenshot loaded; no horizontal overflow observed. GitHub rendering was not published or tested.",
+    "relative_links": {
+      "broken": 0,
+      "scope": "All tracked Markdown links and HTML href/src paths"
+    }
+  },
+  "publication_hygiene": {
+    "historical_browser_reports": "Only private local path prefixes were redacted; test outcomes retained.",
+    "runtime_sources": "Five reader modules and two hosting modules reconciled with deployed files.",
+    "excluded": "Credentials, private server configuration, authoring caches, environments, node_modules, operational backups and later unpublished campaign records.",
+    "tracked_source_files": 398,
+    "private_reference_files_found": 0,
+    "files_over_50mb": [],
+    "dependency_symlink": "Local dependency symlink removed from the publication tree and excluded from its Git history."
+  },
+  "distribution_verification": "Archive SHA-256, extracted per-file checksums, actual-credential exclusion, standard-library startup under external-socket denial and rebuilt-database equality are recorded in the adjacent *-verification.json delivery receipt after packaging.",
+  "limitations": [
+    "Machine screening is not qualified human review. Human audit has not been performed.",
+    "The corpus remains below expanded per-subject coverage targets.",
+    "This edition was built and executed on macOS. The current Linux production reader was inspected read-only; the new examples were not deployed there. Windows startup was not executed.",
+    "No new research evaluation or claims of improved alignment were produced."
+  ]
+}

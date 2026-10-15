@@ -1,0 +1,344 @@
+{
+  "books": [
+    {
+      "book": "Algorithms, fourth edition",
+      "source_hash": "6861049403e1ca2c77dc33f2efc9bf7516b9b127c2a277936d3649f8406a4372",
+      "subject": "computer_science",
+      "title": "Algorithms, fourth edition",
+      "topics": [],
+      "url": "https://algs4.cs.princeton.edu/home/"
+    },
+    {
+      "book": "Logical foundations",
+      "source_hash": "3f347db5c909766c57609fa8893cfcd12b5566385106500db1e76cc6dd7fd3a5",
+      "subject": "computer_science",
+      "title": "Logical foundations",
+      "topics": [
+        {
+          "area": "Logical foundations",
+          "title": "Proof by Induction (Induction)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Working with Structured Data (Lists)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Lists.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Polymorphism and Higher-Order Functions (Poly)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Poly.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Logic in Rocq (Logic)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Logic.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Inductively Defined Propositions (IndProp)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/IndProp.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Total and Partial Maps (Maps)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Maps.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "A Formal Development of the Curry-Howard Correspondence (CurryHoward)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/CurryHoward.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Properties of Relations (Rel)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Rel.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Simple Imperative Programs (Imp)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Imp.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "Lexing and Parsing in Rocq (ImpParser)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/ImpParser.html"
+        },
+        {
+          "area": "Logical foundations",
+          "title": "An Evaluation Function for Imp (ImpCEvalFun)",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/ImpCEvalFun.html"
+        }
+      ],
+      "url": "https://softwarefoundations.cis.upenn.edu/lf-current/toc.html"
+    },
+    {
+      "book": "Programming language foundations",
+      "source_hash": "a688d2ad8c9243ee01d68a4915f3acee5dc7e25de3b9e55c81670b4d8847d461",
+      "subject": "computer_science",
+      "title": "Programming language foundations",
+      "topics": [
+        {
+          "area": "Programming language foundations",
+          "title": "Program Equivalence (Equiv)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Equiv.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Hoare Logic, Part I (Hoare)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Hoare.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Hoare Logic, Part II (Hoare2)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Hoare2.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Hoare Logic as a Logic (HoareAsLogic)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/HoareAsLogic.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Small-step Operational Semantics (Smallstep)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Smallstep.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Type Systems (Types)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Types.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "The Simply Typed Lambda-Calculus (Stlc)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Stlc.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Properties of STLC (StlcProp)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/StlcProp.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "More on the Simply Typed Lambda-Calculus (MoreStlc)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/MoreStlc.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Subtyping (Sub)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Sub.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "A Typechecker for STLC (Typechecking)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Typechecking.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Adding Records to STLC (Records)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Records.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Typing Mutable References (References)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/References.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Subtyping with Records (RecordSub)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/RecordSub.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Normalization of STLC (Norm)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Norm.html"
+        },
+        {
+          "area": "Programming language foundations",
+          "title": "Partial Evaluation (PE)",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/PE.html"
+        }
+      ],
+      "url": "https://softwarefoundations.cis.upenn.edu/plf-current/toc.html"
+    },
+    {
+      "book": "Verified functional algorithms",
+      "source_hash": "88319e1d022fc89db023ea4bb1bae75ec0ad1221eafdfbf32381259671ddb458",
+      "subject": "computer_science",
+      "title": "Verified functional algorithms",
+      "topics": [
+        {
+          "area": "Verified functional algorithms",
+          "title": "Basic Techniques for Comparisons and Permutations (Perm)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Perm.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Insertion Sort (Sort)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Sort.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Insertion Sort Verified With Multisets (Multiset)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Multiset.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Insertion Sort With Bags (BagPerm)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/BagPerm.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Selection Sort (Selection)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Selection.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Merge Sort, With Specification and Proof of Correctness (Merge)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Merge.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Total and Partial Maps (Maps)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Maps.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Binary Search Trees (SearchTree)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/SearchTree.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Abstract Data Types (ADT)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/ADT.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Running Coq Programs in OCaml (Extract)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Extract.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Red-Black Trees (Redblack)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Redblack.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Number Representations and Efficient Lookup Tables (Trie)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Trie.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Priority Queues (Priqueue)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Priqueue.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Binomial Queues (Binom)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Binom.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Programming with Decision Procedures (Decide)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Decide.html"
+        },
+        {
+          "area": "Verified functional algorithms",
+          "title": "Graph Coloring (Color)",
+          "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Color.html"
+        }
+      ],
+      "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html"
+    },
+    {
+      "book": "Separation logic foundations",
+      "source_hash": "6299634e8859fe1ddc4876bb408fd8c3d2380cf7c18893407a0669be34ade4cf",
+      "subject": "computer_science",
+      "title": "Separation logic foundations",
+      "topics": [
+        {
+          "area": "Separation logic foundations",
+          "title": "Basic Proofs in Separation Logic (Basic)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Basic.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Representation Predicates (Repr)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Repr.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Structural Reasoning Rules (Triples)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Triples.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Reasoning Rules for Term Constructs (Rules)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Rules.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "The Magic Wand and Other Operators (Wand)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Wand.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Semantics of Weakest Preconditions (WPsem)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/WPsem.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Weakest Precondition Generator (WPgen)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/WPgen.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Soundness of the Weakest Precondition Generator (WPsound)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/WPsound.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Affine Separation Logic (Affine)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Affine.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Reasoning about Arrays (Arrays)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Arrays.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Reasoning about Records (Records)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/Records.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Appendix - The Full Construction (LibSepReference)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/LibSepReference.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Appendix - Finite Maps (LibSepFmap)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/LibSepFmap.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Appendix - Program Variables (LibSepVar)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/LibSepVar.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Appendix - Simplification Tactic for Entailments (LibSepSimpl)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/LibSepSimpl.html"
+        },
+        {
+          "area": "Separation logic foundations",
+          "title": "Appendix - Minimalistic Soundness Proof (LibSepMinimal)",
+          "url": "https://softwarefoundations.cis.upenn.edu/slf-current/LibSepMinimal.html"
+        }
+      ],
+      "url": "https://softwarefoundations.cis.upenn.edu/slf-current/toc.html"
+    }
+  ],
+  "status": "Discovered curriculum; no scientific admission implied"
+}

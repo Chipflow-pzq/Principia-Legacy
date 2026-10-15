@@ -1,0 +1,13 @@
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.command text eol=lf
+*.bat text eol=crlf
+*.jsonl text eol=lf
+*.svg text eol=lf
+web_dist/** linguist-generated=true
+web/src/notation.json linguist-generated=true
+corpus/** linguist-generated=true
+manifests/releases/** linguist-generated=true
+reports/** linguist-generated=true
+docs/licenses/** linguist-vendored=true

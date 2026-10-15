@@ -1,0 +1,660 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "M2000",
+      "need": "Explain the nontrivial reasoning and boundaries of Approximating Areas. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/1-1-approximating-areas"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2000",
+      "need": "Explain the nontrivial reasoning and boundaries of The Scope and Scale of Physics. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/1-1-the-scope-and-scale-of-physics"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2000",
+      "need": "Explain the nontrivial reasoning and boundaries of Computer Science. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/1-1-computer-science"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2000",
+      "need": "Explain the nontrivial reasoning and boundaries of What Is Economics, and Why Is It Important?. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/1-1-what-is-economics-and-why-is-it-important"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2000",
+      "need": "Explain the nontrivial reasoning and boundaries of Overview of Anatomy and Physiology. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/anatomy-and-physiology-2e/pages/preface",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-1-overview-of-anatomy-and-physiology"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2001",
+      "need": "Explain the nontrivial reasoning and boundaries of Parametric Equations. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-3/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/1-1-parametric-equations"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2001",
+      "need": "Explain the nontrivial reasoning and boundaries of Temperature and Thermal Equilibrium. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-1-temperature-and-thermal-equilibrium"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2001",
+      "need": "Explain the nontrivial reasoning and boundaries of Floating-point errors. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introduction-python-programming/pages/preface",
+      "url": "https://openstax.org/books/introduction-python-programming/pages/2-4-floating-point-errors"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2001",
+      "need": "Explain the nontrivial reasoning and boundaries of What Is Finance?. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-finance/pages/preface",
+      "url": "https://openstax.org/books/principles-finance/pages/1-1-what-is-finance"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2001",
+      "need": "Explain the nontrivial reasoning and boundaries of The Science of Biology. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2002",
+      "need": "Explain the nontrivial reasoning and boundaries of Review of Functions. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/1-1-review-of-functions"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2002",
+      "need": "Explain the nontrivial reasoning and boundaries of The Propagation of Light. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-3/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2002",
+      "need": "Explain the nontrivial reasoning and boundaries of Proof by Induction (Induction). Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://softwarefoundations.cis.upenn.edu/lf-current/toc.html",
+      "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2002",
+      "need": "Explain the nontrivial reasoning and boundaries of Microeconomics and Macroeconomics. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/1-2-microeconomics-and-macroeconomics"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2002",
+      "need": "Explain the nontrivial reasoning and boundaries of What Our Ancestors Knew. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/microbiology/pages/preface",
+      "url": "https://openstax.org/books/microbiology/pages/1-1-what-our-ancestors-knew"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2003",
+      "need": "Explain the nontrivial reasoning and boundaries of Definitions of Statistics, Probability, and Key Terms. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introductory-statistics-2e/pages/preface",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2003",
+      "need": "Explain the nontrivial reasoning and boundaries of The Nature of Astronomy. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/astronomy-2e/pages/preface",
+      "url": "https://openstax.org/books/astronomy-2e/pages/1-1-the-nature-of-astronomy"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2003",
+      "need": "Explain the nontrivial reasoning and boundaries of Program Equivalence (Equiv). Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://softwarefoundations.cis.upenn.edu/plf-current/toc.html",
+      "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Equiv.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2003",
+      "need": "Explain the nontrivial reasoning and boundaries of The Role of Finance in an Organization. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-finance/pages/preface",
+      "url": "https://openstax.org/books/principles-finance/pages/1-2-the-role-of-finance-in-an-organization"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2003",
+      "need": "Explain the nontrivial reasoning and boundaries of Structural Organization of the Human Body. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/anatomy-and-physiology-2e/pages/preface",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2004",
+      "need": "Explain the nontrivial reasoning and boundaries of Up. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://textbooks.math.gatech.edu/ila/",
+      "url": "https://textbooks.math.gatech.edu/ila/index.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2004",
+      "need": "Explain the nontrivial reasoning and boundaries of Units and Standards. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2004",
+      "need": "Explain the nontrivial reasoning and boundaries of Basic Techniques for Comparisons and Permutations (Perm). Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html",
+      "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Perm.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2004",
+      "need": "Explain the nontrivial reasoning and boundaries of How Economists Use Theories and Models to Understand Economic Issues. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/1-3-how-economists-use-theories-and-models-to-understand-economic-issues"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2004",
+      "need": "Explain the nontrivial reasoning and boundaries of Themes and Concepts of Biology. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology"
+    }
+  ],
+  "frozen_checklists": {
+    "B2000": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2003": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2004": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2000": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2003": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2004": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2000": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2003": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2004": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2000": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2003": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2004": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2000": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2003": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2004": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ]
+  },
+  "id": "curriculum-1-2-001",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 24,
+  "purpose": "Bounded source-grounded foundations expansion with checked reuse."
+}

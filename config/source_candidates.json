@@ -1,0 +1,570 @@
+{
+  "B01": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8371605/fullTextXML",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7612213/fullTextXML"
+  ],
+  "B02": [
+    "https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6286148/"
+  ],
+  "B03": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5906799/fullTextXML",
+    "https://www.nobelprize.org/prizes/medicine/2023/advanced-information/",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7787219/fullTextXML"
+  ],
+  "B04": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5762154/fullTextXML",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4481139/",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4430369/fullTextXML"
+  ],
+  "B05": [
+    "https://www.nobelprize.org/uploads/2018/10/advanced-medicineprize2018.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3544539/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4267531/"
+  ],
+  "B06": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10172123/fullTextXML",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9186530/fullTextXML"
+  ],
+  "B07": [
+    "https://www.nobelprize.org/uploads/2018/06/yamanaka-lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/gurdon-lecture.pdf"
+  ],
+  "B08": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4790845/fullTextXML",
+    "https://web.stanford.edu/group/dlab/media/papers/Boyden%20Nat%20Neurosci%202005.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4790845/",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4756725/fullTextXML"
+  ],
+  "B09": [
+    "https://www.nobelprize.org/uploads/2018/06/fleming-lecture.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8841637/"
+  ],
+  "B10": [
+    "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2844943/fullTextXML"
+  ],
+  "B1001": [
+    "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance"
+  ],
+  "B11": [
+    "https://www.nobelprize.org/uploads/2018/06/lauterbur-lecture.pdf",
+    "https://people.eecs.berkeley.edu/~mlustig/CS/SparseMRI.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/mansfield-lecture.pdf"
+  ],
+  "B1101": [
+    "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells"
+  ],
+  "B1102": [
+    "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+  ],
+  "B1103": [
+    "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+  ],
+  "B1104": [
+    "https://openstax.org/books/biology-2e/pages/5-3-active-transport"
+  ],
+  "B1105": [
+    "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+  ],
+  "B1106": [
+    "https://openstax.org/books/biology-2e/pages/7-2-glycolysis"
+  ],
+  "B1107": [
+    "https://openstax.org/books/biology-2e/pages/7-3-oxidation-of-pyruvate-and-the-citric-acid-cycle"
+  ],
+  "B1108": [
+    "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+  ],
+  "B1109": [
+    "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+  ],
+  "B1110": [
+    "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis"
+  ],
+  "B1111": [
+    "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication"
+  ],
+  "B1112": [
+    "https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code"
+  ],
+  "B12": [
+    "https://www.genome.gov/Pages/Newsroom/CurrentNewsReleases/Nature_HMP_061312.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5909820/"
+  ],
+  "B2000": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-1-overview-of-anatomy-and-physiology"
+  ],
+  "B2001": [
+    "https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology"
+  ],
+  "B2002": [
+    "https://openstax.org/books/microbiology/pages/1-1-what-our-ancestors-knew"
+  ],
+  "B2003": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+  ],
+  "B2004": [
+    "https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology"
+  ],
+  "C01": [
+    "https://arxiv.org/html/1706.03762v7",
+    "https://arxiv.org/pdf/1409.0473",
+    "https://arxiv.org/pdf/1512.03385",
+    "https://arxiv.org/pdf/1409.3215",
+    "https://arxiv.org/pdf/1607.06450"
+  ],
+  "C02": [
+    "https://arxiv.org/pdf/2006.11239",
+    "https://arxiv.org/pdf/2011.13456",
+    "https://arxiv.org/pdf/1503.03585",
+    "https://arxiv.org/pdf/1907.05600"
+  ],
+  "C03": [
+    "https://arxiv.org/pdf/1312.5602",
+    "https://arxiv.org/pdf/1602.01783",
+    "https://arxiv.org/pdf/1707.06347"
+  ],
+  "C04": [
+    "https://sel4.systems/About/seL4-whitepaper.pdf",
+    "https://sel4.systems/Research/pdfs/Klein_AEMSKH_09.pdf",
+    "https://sel4.org/Research/pdfs/sel4-formal-verification-os-kernel.pdf"
+  ],
+  "C05": [
+    "https://raft.github.io/raft.pdf",
+    "https://lamport.azurewebsites.net/pubs/byz.pdf",
+    "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf"
+  ],
+  "C06": [
+    "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf",
+    "https://cims.nyu.edu/~regev/papers/qcrypto.pdf",
+    "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.204.pdf"
+  ],
+  "C07": [
+    "https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf",
+    "https://arxiv.org/pdf/1605.08294",
+    "https://arxiv.org/pdf/1607.00133"
+  ],
+  "C08": [
+    "https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf"
+  ],
+  "C09": [
+    "https://arxiv.org/pdf/2002.11054",
+    "https://llvm.org/pubs/2004-01-30-CGO-LLVM.pdf"
+  ],
+  "C10": [
+    "https://www.rfc-editor.org/rfc/rfc9000.html",
+    "https://www.rfc-editor.org/rfc/rfc9001.html",
+    "https://www.rfc-editor.org/rfc/rfc9002.html"
+  ],
+  "C1001": [
+    "https://openstax.org/books/introduction-computer-science/pages/3-4-algorithmic-paradigms"
+  ],
+  "C1002": [
+    "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+  ],
+  "C1003": [
+    "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+  ],
+  "C11": [
+    "https://arxiv.org/pdf/2107.07511",
+    "https://arxiv.org/pdf/1909.07857",
+    "https://arxiv.org/pdf/2106.00170"
+  ],
+  "C1101": [
+    "https://openstax.org/books/introduction-computer-science/pages/3-1-introduction-to-data-structures-and-algorithms"
+  ],
+  "C1102": [
+    "https://openstax.org/books/introduction-computer-science/pages/6-3-processes-and-concurrency"
+  ],
+  "C1103": [
+    "https://openstax.org/books/introduction-computer-science/pages/13-4-towards-intelligent-autonomous-networked-super-systems"
+  ],
+  "C1104": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"
+  ],
+  "C1105": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf"
+  ],
+  "C1106": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"
+  ],
+  "C1107": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"
+  ],
+  "C1108": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"
+  ],
+  "C1109": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"
+  ],
+  "C1110": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"
+  ],
+  "C1111": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf"
+  ],
+  "C1112": [
+    "https://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf"
+  ],
+  "C12": [
+    "https://arxiv.org/pdf/1611.08219",
+    "https://arxiv.org/pdf/2312.09390",
+    "https://arxiv.org/pdf/1606.03137",
+    "https://arxiv.org/pdf/1606.06565"
+  ],
+  "C2000": [
+    "https://openstax.org/books/introduction-computer-science/pages/1-1-computer-science"
+  ],
+  "C2001": [
+    "https://openstax.org/books/introduction-python-programming/pages/2-4-floating-point-errors"
+  ],
+  "C2002": [
+    "https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html"
+  ],
+  "C2003": [
+    "https://softwarefoundations.cis.upenn.edu/plf-current/Equiv.html"
+  ],
+  "C2004": [
+    "https://softwarefoundations.cis.upenn.edu/vfa-current/Perm.html"
+  ],
+  "E01": [
+    "https://arxiv.org/pdf/1608.00060",
+    "https://arxiv.org/pdf/1608.00033",
+    "https://www.homepages.ucl.ac.uk/~uctpcac/Angrist_Krueger91.pdf",
+    "https://www.nobelprize.org/uploads/2021/10/advanced-economicsciencesprize2021.pdf"
+  ],
+  "E02": [
+    "https://www.nobelprize.org/uploads/2020/09/advanced-economicsciencesprize2020.pdf",
+    "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+  ],
+  "E03": [
+    "https://www.nobelprize.org/uploads/2018/06/popular-economicsciences2012.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/advanced-economicsciences2012.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/roth-lecture_slides.pdf"
+  ],
+  "E04": [
+    "https://www.nber.org/system/files/working_papers/w3210/w3210.pdf",
+    "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/lecture/",
+    "https://www.nobelprize.org/uploads/2025/01/acemoglu-lecture.pdf"
+  ],
+  "E05": [
+    "https://www.nber.org/system/files/working_papers/w25684/w25684.pdf",
+    "https://www.nber.org/system/files/working_papers/w31161/w31161.pdf",
+    "https://www.nber.org/system/files/working_papers/w32487/w32487.pdf"
+  ],
+  "E06": [
+    "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/01/thaler-lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/smith-lecture.pdf"
+  ],
+  "E07": [
+    "https://www.nobelprize.org/uploads/2018/06/akerlof-lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/hart-lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/holmstrom-lecture.pdf"
+  ],
+  "E08": [
+    "https://www.nobelprize.org/uploads/2022/10/advanced-economicsciencesprize2022.pdf",
+    "https://www.nobelprize.org/uploads/2025/03/dybvig-lecture.pdf"
+  ],
+  "E09": [
+    "https://www.nber.org/system/files/working_papers/w21897/w21897.pdf",
+    "https://www.econ2.jhu.edu/people/ccarroll/papers/BufferStockTheory.pdf"
+  ],
+  "E10": [
+    "https://economics.mit.edu/sites/default/files/publications/The%20Network%20Origins%20of%20Aggregate%20Fluctuations.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/krugman_lecture.pdf"
+  ],
+  "E1001": [
+    "https://openstax.org/books/principles-economics-3e/pages/2-2-the-production-possibilities-frontier-and-social-choices"
+  ],
+  "E11": [
+    "https://www.nobelprize.org/uploads/2018/06/ostrom_lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/10/nordhaus-lecture.pdf"
+  ],
+  "E1101": [
+    "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services"
+  ],
+  "E1102": [
+    "https://openstax.org/books/principles-economics-3e/pages/3-4-price-ceilings-and-price-floors"
+  ],
+  "E1103": [
+    "https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing"
+  ],
+  "E1104": [
+    "https://openstax.org/books/principles-economics-3e/pages/8-1-perfect-competition-and-why-it-matters"
+  ],
+  "E1105": [
+    "https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price"
+  ],
+  "E1106": [
+    "https://openstax.org/books/principles-economics-3e/pages/10-2-oligopoly"
+  ],
+  "E1107": [
+    "https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods"
+  ],
+  "E1108": [
+    "https://openstax.org/books/principles-economics-3e/pages/16-1-the-problem-of-imperfect-information-and-asymmetric-information"
+  ],
+  "E1109": [
+    "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes"
+  ],
+  "E1110": [
+    "https://openstax.org/books/principles-economics-3e/pages/33-1-absolute-and-comparative-advantage"
+  ],
+  "E1111": [
+    "https://openstax.org/books/principles-economics-3e/pages/21-1-how-economists-define-and-compute-unemployment-rate"
+  ],
+  "E1112": [
+    "https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation"
+  ],
+  "E12": [
+    "https://www.nobelprize.org/uploads/2018/06/sen-lecture.pdf",
+    "https://www.csc2.ncsu.edu/faculty/mpsingh/local/Social/f16/wrap/readings/Amartya-Sen-Nobel-AER-1999.pdf",
+    "https://www.nobelprize.org/prizes/economic-sciences/1998/press-release/",
+    "https://www.nobelprize.org/prizes/economic-sciences/1998/sen/biographical/"
+  ],
+  "E2000": [
+    "https://openstax.org/books/principles-economics-3e/pages/1-1-what-is-economics-and-why-is-it-important"
+  ],
+  "E2001": [
+    "https://openstax.org/books/principles-finance/pages/1-1-what-is-finance"
+  ],
+  "E2002": [
+    "https://openstax.org/books/principles-economics-3e/pages/1-2-microeconomics-and-macroeconomics"
+  ],
+  "E2003": [
+    "https://openstax.org/books/principles-finance/pages/1-2-the-role-of-finance-in-an-organization"
+  ],
+  "E2004": [
+    "https://openstax.org/books/principles-economics-3e/pages/1-3-how-economists-use-theories-and-models-to-understand-economic-issues"
+  ],
+  "M01": [
+    "https://arxiv.org/pdf/1910.09336",
+    "https://arxiv.org/pdf/1505.04324",
+    "https://leanprover.github.io/papers/lean4.pdf"
+  ],
+  "M02": [
+    "https://arxiv.org/pdf/2502.17655",
+    "https://arxiv.org/pdf/0803.2336",
+    "https://arxiv.org/pdf/1310.6482"
+  ],
+  "M03": [
+    "https://arxiv.org/pdf/1711.02189",
+    "https://arxiv.org/pdf/1412.8255",
+    "https://arxiv.org/pdf/1605.04671"
+  ],
+  "M04": [
+    "https://arxiv.org/html/2503.01800v1",
+    "https://arxiv.org/pdf/2408.07818",
+    "https://arxiv.org/pdf/2503.01800"
+  ],
+  "M05": [
+    "https://arxiv.org/pdf/math/0211159",
+    "https://arxiv.org/pdf/math/0303109"
+  ],
+  "M06": [
+    "https://arxiv.org/pdf/1603.04246",
+    "https://arxiv.org/pdf/math/0110009",
+    "https://arxiv.org/pdf/1603.06518"
+  ],
+  "M07": [
+    "https://arxiv.org/pdf/1803.00567",
+    "https://arxiv.org/pdf/1306.0895",
+    "https://arxiv.org/pdf/1412.5154"
+  ],
+  "M08": [
+    "https://web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf",
+    "https://arxiv.org/pdf/1312.3039",
+    "https://arxiv.org/pdf/1711.08013"
+  ],
+  "M09": [
+    "https://arxiv.org/pdf/math/0503066",
+    "https://arxiv.org/pdf/0805.4471",
+    "https://arxiv.org/pdf/math/0409186"
+  ],
+  "M10": [
+    "https://www.math.clemson.edu/~sgao/papers/gvw10.pdf",
+    "https://arxiv.org/pdf/1205.6050",
+    "https://arxiv.org/pdf/1012.3664"
+  ],
+  "M1001": [
+    "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+  ],
+  "M11": [
+    "https://arxiv.org/pdf/1711.10561",
+    "https://arxiv.org/pdf/2001.04536",
+    "https://arxiv.org/pdf/2010.08895"
+  ],
+  "M1101": [
+    "https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function"
+  ],
+  "M1102": [
+    "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function"
+  ],
+  "M1103": [
+    "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule"
+  ],
+  "M1104": [
+    "https://openstax.org/books/calculus-volume-1/pages/4-4-the-mean-value-theorem"
+  ],
+  "M1105": [
+    "https://openstax.org/books/calculus-volume-1/pages/4-9-newtons-method"
+  ],
+  "M1106": [
+    "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+  ],
+  "M1107": [
+    "https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts"
+  ],
+  "M1108": [
+    "https://openstax.org/books/calculus-volume-2/pages/3-7-improper-integrals"
+  ],
+  "M1109": [
+    "https://openstax.org/books/calculus-volume-2/pages/5-1-sequences"
+  ],
+  "M1110": [
+    "https://openstax.org/books/calculus-volume-2/pages/5-6-ratio-and-root-tests"
+  ],
+  "M1111": [
+    "https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series"
+  ],
+  "M1112": [
+    "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives"
+  ],
+  "M12": [
+    "https://arxiv.org/pdf/0906.0510",
+    "https://arxiv.org/pdf/1001.3453",
+    "https://arxiv.org/pdf/1407.5606"
+  ],
+  "M2000": [
+    "https://openstax.org/books/calculus-volume-2/pages/1-1-approximating-areas"
+  ],
+  "M2001": [
+    "https://openstax.org/books/calculus-volume-3/pages/1-1-parametric-equations"
+  ],
+  "M2002": [
+    "https://openstax.org/books/calculus-volume-1/pages/1-1-review-of-functions"
+  ],
+  "M2003": [
+    "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms"
+  ],
+  "M2004": [
+    "https://textbooks.math.gatech.edu/ila/index.html"
+  ],
+  "M2005": [
+    "https://openstax.org/books/calculus-volume-2/pages/1-4-integration-formulas-and-the-net-change-theorem"
+  ],
+  "P01": [
+    "https://arxiv.org/html/2408.13687v1",
+    "https://arxiv.org/pdf/quant-ph/9705052",
+    "https://arxiv.org/pdf/1208.0928",
+    "https://arxiv.org/pdf/quant-ph/9707021"
+  ],
+  "P02": [
+    "https://arxiv.org/pdf/1405.5303",
+    "https://arxiv.org/pdf/1304.5356"
+  ],
+  "P03": [
+    "https://arxiv.org/pdf/1602.03837",
+    "https://arxiv.org/pdf/1411.4547",
+    "https://arxiv.org/pdf/1602.03840"
+  ],
+  "P04": [
+    "https://arxiv.org/pdf/1207.7214",
+    "https://arxiv.org/pdf/1207.7235",
+    "https://www.nobelprize.org/uploads/2018/06/englert-lecture.pdf"
+  ],
+  "P05": [
+    "https://www.llnl.gov/article/50801/llnls-breakthrough-ignition-experiment-highlighted-physical-review-letters"
+  ],
+  "P06": [
+    "https://arxiv.org/html/2404.03002v3",
+    "https://arxiv.org/pdf/1807.06209",
+    "https://arxiv.org/pdf/astro-ph/0501171"
+  ],
+  "P07": [
+    "https://arxiv.org/pdf/1407.3493"
+  ],
+  "P08": [
+    "https://arxiv.org/pdf/1002.3895",
+    "https://arxiv.org/pdf/cond-mat/0504147",
+    "https://arxiv.org/pdf/cond-mat/0506581"
+  ],
+  "P09": [
+    "https://arxiv.org/pdf/cond-mat/0410550",
+    "https://arxiv.org/pdf/cond-mat/0702595",
+    "https://www.nobelprize.org/uploads/2018/06/shockley-lecture.pdf"
+  ],
+  "P10": [
+    "https://www.nobelprize.org/uploads/2018/06/hansch-lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/hall-lecture.pdf"
+  ],
+  "P1001": [
+    "https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/GenMeth.pdf"
+  ],
+  "P1002": [
+    "https://www.nobelprize.org/uploads/2018/06/einstein-lecture.pdf"
+  ],
+  "P11": [
+    "https://arxiv.org/pdf/cond-mat/0012164",
+    "https://www.nobelprize.org/uploads/2018/06/wilson-lecture.pdf"
+  ],
+  "P1101": [
+    "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation"
+  ],
+  "P1102": [
+    "https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law"
+  ],
+  "P1103": [
+    "https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem"
+  ],
+  "P1104": [
+    "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy"
+  ],
+  "P1105": [
+    "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+  ],
+  "P1106": [
+    "https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum"
+  ],
+  "P1107": [
+    "https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation"
+  ],
+  "P1108": [
+    "https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation"
+  ],
+  "P1109": [
+    "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+  ],
+  "P1110": [
+    "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics"
+  ],
+  "P1111": [
+    "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics"
+  ],
+  "P1112": [
+    "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy"
+  ],
+  "P12": [
+    "https://www.nobelprize.org/uploads/2018/06/advanced-chemistryprize2013.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/karplus-lecture.pdf",
+    "https://www.nobelprize.org/uploads/2018/06/levitt-lecture.pdf"
+  ],
+  "P2000": [
+    "https://openstax.org/books/university-physics-volume-1/pages/1-1-the-scope-and-scale-of-physics"
+  ],
+  "P2001": [
+    "https://openstax.org/books/university-physics-volume-2/pages/1-1-temperature-and-thermal-equilibrium"
+  ],
+  "P2002": [
+    "https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light"
+  ],
+  "P2003": [
+    "https://openstax.org/books/astronomy-2e/pages/1-1-the-nature-of-astronomy"
+  ],
+  "P2004": [
+    "https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards"
+  ]
+}

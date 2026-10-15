@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "release_id": "1.2.0-exploratory",
+  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+  "counts": {
+    "contribution": 2667,
+    "relation": 2233,
+    "source": 237,
+    "review": 5167
+  },
+  "exact_machine_reviews_for_all_visible_records": true,
+  "dossiers": 154,
+  "flagship_endpoint_checks": 5,
+  "tour_checks": 3,
+  "source_closure": true,
+  "neighborhood_cap_and_joint_premises": true,
+  "frozen_evaluation_files_unchanged": true,
+  "external_jsonschema": "10648 immutable versions validated against exported JSON Schemas",
+  "qualified_human_audit": "not performed"
+}

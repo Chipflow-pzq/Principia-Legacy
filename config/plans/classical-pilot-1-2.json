@@ -1,0 +1,166 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "P1001",
+      "need": "Hamilton’s characteristic function, variational dynamics and precisely attributed 1834 results.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "url": "https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/GenMeth.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1002",
+      "need": "Einstein’s own account of gravitational geometry, equivalence and the scope of relativity; separate his 1923 lecture from original discovery dates.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/einstein-lecture.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1001",
+      "need": "Why integration and differentiation are inverse operations under stated regularity conditions; do not assign historical priority absent evidence.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1001",
+      "need": "Algorithmic representation, computational problem solving, and specific limitations; omit routine coding settings.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/3-4-algorithmic-paradigms"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1001",
+      "need": "Opportunity cost, attainable production tradeoffs, and what efficiency does and does not imply.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/2-2-the-production-possibilities-frontier-and-social-choices"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1001",
+      "need": "Mendel’s segregation and assortment arguments, empirical basis and the limits of their applicability.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "url": "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance"
+    }
+  ],
+  "frozen_checklists": {
+    "B1001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ],
+    "C1001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ],
+    "E1001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ],
+    "M1001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ],
+    "P1001": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ],
+    "P1002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ]
+  },
+  "id": "classical-pilot-1-2",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 24,
+  "purpose": "Source-complete classical foundations and user-reported search gaps before broad curriculum expansion."
+}

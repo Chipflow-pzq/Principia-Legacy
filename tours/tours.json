@@ -1,0 +1,38 @@
+[
+  {
+    "id": "uncertainty",
+    "title": "Uncertainty and inference",
+    "description": "How mathematics, physics, economics and medicine distinguish a useful estimate from justified knowledge.",
+    "dossiers": [
+      "M09",
+      "P06",
+      "C11",
+      "E01",
+      "B10"
+    ]
+  },
+  {
+    "id": "representation",
+    "title": "Representation and compression",
+    "description": "Follow the forms that make a difficult problem tractable, from formal languages to molecular geometry.",
+    "dossiers": [
+      "M01",
+      "M07",
+      "C01",
+      "C09",
+      "B01"
+    ]
+  },
+  {
+    "id": "correction",
+    "title": "Control, incentives and correction",
+    "description": "Explore systems that detect errors, coordinate decisions, and expose the assumptions behind deference.",
+    "dossiers": [
+      "P01",
+      "C05",
+      "C12",
+      "E03",
+      "E07"
+    ]
+  }
+]

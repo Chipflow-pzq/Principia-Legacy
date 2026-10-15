@@ -1,0 +1,1064 @@
+{
+  "batches": [
+    {
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "connection-27b186ee4a77bad2",
+          "rationale": "The evidence text from the surgery paper explicitly states: 'the claim about the lower bound for the volumes of the maximal horns and the smoothness of the solution from some time on, which turned out to be unjustified'. This directly contradicts the earlier claim about the volume estimate for maximal horns, supporting the challenges relation."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-17b582df912cb7a7",
+          "rationale": "The evidence shows Cuturi (2013) established the Sinkhorn-Knopp algorithm for the regularized OT problem, and the 2014 paper reformulates the same problem as a KL projection. However, the warrant claims this is a 'direct conceptual extension', but the evidence only shows both papers address the same regularized OT problem. There is no documented historical arrow showing the 2014 formulation was built upon or derived from Cuturi's specific contribution rather than being an independent reformulation of the same mathematical problem."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-c32edd5584709f8b",
+          "rationale": "The evidence shows Cuturi's algorithm computes the entropic OT solution via Sinkhorn-Knopp fixed-point iterations, and the 2014 paper presents alternating KL projections. However, the warrant claims this is a reformulation of Cuturi's iterative method, but the evidence does not demonstrate that the 2014 paper's Bregman projection framework was historically derived from or built upon Cuturi's work. Both describe the same underlying algorithm (Sinkhorn) applied to the same problem, which is not sufficient for a historical_basis_for relation."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-1e20a57a6acf2ca5",
+          "rationale": "The 2004 paper uses random Fourier sampling for exact recovery. The 2005 paper notes that Gaussian matrices satisfy the restricted isometry condition. The warrant claims this is a generalization, but the evidence shows the 2005 paper merely cites prior results about Gaussian matrices as another example of matrices satisfying the condition. There is no logical generalization from Fourier sampling to Gaussian matrices; they are different measurement ensembles. The 2005 paper does not derive Gaussian matrix properties from the Fourier result."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-1f30137ade2a6b31",
+          "rationale": "The 2004 paper proves exact recovery for sparse signals with bounded support size. The 2005 paper (Theorem 2) extends this to stable recovery of arbitrary signals with error bounded by noise plus a tail term, under the same restricted isometry condition. The evidence shows this is a direct logical generalization from exact recovery of sparse signals to stable recovery of approximately sparse signals."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-550a4e06bb9506f8",
+          "rationale": "The 2004 paper establishes exact recovery with high probability for random Fourier samples under a support-size condition. The 2005 paper introduces the deterministic condition δ3S + 3δ4S < 2 that guarantees stable recovery for any matrix satisfying it. This is a logical generalization from a probabilistic, Fourier-specific result to a deterministic condition applicable to any matrix."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-59d46b062c90be7b",
+          "rationale": "The 2004 paper focuses on Fourier sampling. The 2005 paper generalizes to any orthonormal measurement basis with mutual coherence μ. However, the evidence shows the 2005 paper cites prior work for this generalization, not deriving it from the 2004 paper. The warrant claims the 2004 paper is the premise for this generalization, but the evidence does not support a logical or historical derivation from the 2004 Fourier-specific result to the general orthogonal ensemble result."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-8c6a635170c4d9bf",
+          "rationale": "The 2004 paper proves exact recovery for random Fourier samples with a specific support-size bound. The 2005 paper shows the Fourier ensemble satisfies the restricted isometry condition for S ≤ C n/(log m)^6. The warrant claims this is a generalization, but the evidence shows the 2005 paper cites prior work for this result. There is no demonstration that the 2005 Fourier ensemble result was logically derived from or generalizes the 2004 exact recovery result; they are different results about the Fourier ensemble."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-a4990dce07d8620f",
+          "rationale": "The 2004 paper proves exact recovery via l1-minimization from incomplete Fourier samples under a support-size condition. The 2005 paper (Theorem 1) extends this to stable recovery of sparse signals from noisy measurements under a deterministic restricted isometry condition. The evidence shows this is a logical generalization from exact noiseless recovery with probabilistic Fourier sampling to stable noisy recovery with a deterministic condition."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-c767599d6d76fa06",
+          "rationale": "The 2004 paper proves recovery with a logarithmic support-size condition. The 2005 paper compares restricted isometry to coherence-based methods, showing the former allows far fewer measurements. The warrant claims this is a generalization, but the evidence shows the 2005 paper makes a qualitative comparison, not a logical generalization derived from the 2004 result. The comparison is a separate observation about the power of restricted isometry versus coherence, not an extension of the 2004 theorem."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-e1da9f375f7ec6a8",
+          "rationale": "The 2004 paper proves theoretical recovery guarantees via convex optimization. The 2005 paper shows the programs can be recast as SOCPs. The warrant claims this is a generalization, but the evidence shows the 2005 paper simply notes a computational implementation detail. This is not a logical generalization of the theoretical recovery result; it is a practical observation about how to solve the optimization problems. The theoretical result does not logically imply the SOCP formulation."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-312ebefb2e050141",
+          "rationale": "The evidence explicitly states that the rigidity estimate in the 2015 paper is an extension of the rigidity estimate from [21] (the local semicircle law paper) to hold uniformly in time via a continuity argument. The local semicircle law provides the rigidity input for the DBM trajectories, as stated in the assumptions. This supports the historical_basis_for relation."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-360f3ab5569f096c",
+          "rationale": "The evidence shows the stabilizer formalism provides the algebraic framework for quantum error correction, and the toric code is defined using stabilizer operators. However, the warrant claims the toric code's properties are derived from the stabilizer formalism, but the evidence does not show that the specific toric code paper (Kitaev 1997) historically built upon or logically required Gottesman's stabilizer formalism. Both papers appeared in 1997, and the toric code defines its own stabilizers independently. The relation premise_for requires the premise to be a logical premise for the conclusion, but the evidence only shows both describe stabilizer codes, not that one is a premise for the other."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-15bbbb4dd3bd4792",
+          "rationale": "The evidence states that the 2014 supplementary methods used 'maximum likelihood fits of the observed photon timing distributions' as described in [12] (the 2013 paper), and the angular resolution values are derived from these fits. This directly supports the historical_basis_for relation."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-245f2ba56462e52b",
+          "rationale": "The evidence shows the 2014 paper describes the veto as 'as before [11]' and adds the quantitative requirement of fewer than 3 of the first 250 photoelectrons on the boundary, directly extending the earlier calorimetric approach from 2013. This supports the historical_basis_for relation."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-5a2d730fa8762653",
+          "rationale": "The evidence shows both the 2013 and 2014 papers describe the same southern hemisphere suppression mechanism with references to [27,28]. However, the warrant claims the 2013 description is the historical basis for the 2014 description, but the evidence shows both papers reference the same external sources [27,28] for this mechanism. The 2014 paper does not cite the 2013 paper as the basis for this mechanism; both independently describe a known technique from the same prior work."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-68765fbebbf49785",
+          "rationale": "The evidence shows the 2014 supplementary methods explicitly reference the earlier test from [10] (the 2013 paper) and describe how the new likelihood ratio test improves upon it by including spectral and angular information. This supports the historical_basis_for relation."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-945ac5edd6d2fd1e",
+          "rationale": "The evidence states the 2014 paper follows 'the same techniques' as the earlier analysis, which included a blind analysis using only ~10% of data for selection development. This supports the historical_basis_for relation."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-97e2b00a5b3218f1",
+          "rationale": "The evidence shows the 2013 paper reported two PeV events (1.04 and 1.14 PeV), and the 2014 paper reports event 35 with deposited energy 2004 TeV, described as 'the highest-energy neutrino interaction ever observed'. The 2014 paper extends the observation of PeV events to a higher energy, supporting the historical_basis_for relation."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-d9a8fa8c0efc5043",
+          "rationale": "The warrant claims the 2013 distinction between CC νe and NC interactions informs the 2014 assumption of a 1:1:1 flavor ratio. However, the evidence only shows the 2014 paper assumes a 1:1:1 flavor ratio and the 2013 paper discusses interaction types. There is no evidence that the 2014 assumption was historically based on or derived from the 2013 finding. The 1:1:1 flavor ratio is a standard assumption in astrophysical neutrino physics, not a conclusion drawn from the 2013 interaction type analysis."
+        }
+      ],
+      "input_hash": "df81d35cb574043adb74eeac4541a21c772ce3951e754953e72f3536b218e5d9",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "df81d35cb574043adb74eeac4541a21c772ce3951e754953e72f3536b218e5d9",
+        "job_id": "26cf77590c83b542f952bae29f1208cccfd4b7d238af43b96098f71a9762150a",
+        "output_hash": "b3633a1fbe1cd5cf53ee40e4d0ea737d0455083f345e379825f60688b11db212",
+        "prompt_hash": "a05cec0da8c271cf446f46c23bc710f8b4224f532d83b81d8e7d33e9fc4bf1fb",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "39dc31d9-8825-4e75-ab43-e7b6f4a903f8",
+        "request_id": "01a130f5eba761422ad57eb65024d276",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "connection-escalation:df81d35cb574043a",
+        "time": "2026-10-12T16:33:04+00:00",
+        "trace_id": "39dc31d9-8825-4e75-ab43-e7b6f4a903f8",
+        "usage": {
+          "completion_tokens": 2424,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 29901,
+          "prompt_tokens": 29901,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 32325
+        }
+      }
+    },
+    {
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "connection-80959a7ae20b4e7c",
+          "rationale": "Both passages (s-40071f9227452f0d@1:p28 and s-beeaeda1908e6236@1:p6) explicitly attribute the no-trade theorem to Milgrom and Stokey (1982) and describe its core claim that rational traders will not trade based solely on asymmetric information. The endpoints are independent formulations of the same contribution from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-a217216b19e000ec",
+          "rationale": "Both passages (s-40071f9227452f0d@1:p11 and s-beeaeda1908e6236@1:p11) attribute the concepts of affiliation and the linkage principle to Milgrom and Weber (1982). The endpoints describe the same contribution, anchored in different sources."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-a4c5d0d9236efe60",
+          "rationale": "The warrant claims the two nodes have identical assumptions and conclusion, but the quoted passages do not support this. The first endpoint (n-64ecd9fa4b5b7caa) states the theorem applies 'without efficiency motives' and assumes 'Common knowledge of rationality', while the second (n-87b8cee066ef8f1a) states it applies when the 'initial allocation is Pareto optimal and common knowledge' and assumes 'Risk-averse agents with strictly concave utility'. The passages (s-40071f9227452f0d@1:p28 and s-beeaeda1908e6236@1:p7) describe the theorem with different framing and detail, not as identical formulations."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-bd75b69cf73af7ae",
+          "rationale": "The warrant states that Glosten and Milgrom (1985) showed informed traders can profit when transactional motives exist, challenging the no-trade theorem's conclusion. The evidence (s-beeaeda1908e6236@1:p7) explicitly states that once traders have transactional reasons to trade, speculators may find profitable opportunities, and cites Glosten and Milgrom (1985) as studying this. This directly supports the challenges relationship."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-cc0bb6169f910cd0",
+          "rationale": "The warrant claims the incentive auction's reverse auction relies on the descending clock auction class formalized by Milgrom and Segal (2020). The evidence (s-40071f9227452f0d@1:p24) describes the incentive auction design led by Milgrom, and (s-beeaeda1908e6236@1:p124) explicitly states the solutions are spelled out in Milgrom and Segal (2020) and formalizes the descending clock auction. This documents the premise_for relationship."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-d510aa6e7a5db6c2",
+          "rationale": "Both passages (s-40071f9227452f0d@1:p23 and s-beeaeda1908e6236@1:p23) attribute the Combinatorial Clock Auction (CCA) design to Ausubel, Cramton, and Milgrom. The endpoints describe the same contribution from different sources."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-d86f12e36c647393",
+          "rationale": "The warrant claims the two nodes are equivalent descriptions of the same SMR/SMRA design. However, the endpoints differ significantly: n-30b74863813e151c attributes the design to Milgrom and Wilson, while n-8add6a93928bd69c includes McAfee as a co-designer. The evidence (s-beeaeda1908e6236@1:p16) states 'Robert Wilson and I proposed our simultaneous multiple round (SMR) design,' while (s-40071f9227452f0d@1:p22) states the design was based on proposals by Milgrom and Wilson, and by Preston McAfee. The endpoints are not equivalent formulations of the same contribution."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-dc7336b3789b873f",
+          "rationale": "The warrant claims the affiliation concept and MLRP are premises for the linkage principle. However, the evidence (s-beeaeda1908e6236@1:p11 and p12) shows that both affiliation and the linkage principle are introduced and proved in the same Milgrom and Weber (1982) paper. The premise node (n-526626b0bfa4ce8f) and conclusion node (n-70cac66d570dcaea) describe the same paper's contributions, not a logical dependency where one is a premise for the other. The linkage principle is a result within the same work, not a separate conclusion built upon the premise."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-0bb9fc4399d66c9e",
+          "rationale": "Both passages (s-ae64810b8a972ecf@1:p10 and s-ebdcff489aa4cce2@1:p11) state that the Gale-Shapley deferred acceptance algorithm always produces a stable matching. The endpoints are independent formulations of the same result from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-3324928c8132c1fa",
+          "rationale": "Both passages (s-ebdcff489aa4cce2@1:p30 and s-ae64810b8a972ecf@1:p26) attribute the adaptation of top trading cycles to kidney exchange to Roth, Sönmez, and Ünver. The endpoints describe the same contribution from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-3f117af4e588e677",
+          "rationale": "Both passages (s-ebdcff489aa4cce2@1:p28 and s-18c86174f4cdd156@1:p4) describe the 2003 NYC high school choice redesign using applicant-proposing deferred acceptance, resulting in a 90 percent reduction in unmatched students. The endpoints are independent formulations of the same contribution from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-9a2fe32805928dcb",
+          "rationale": "Both passages (s-ebdcff489aa4cce2@1:p25 and s-18c86174f4cdd156@1:p3) describe the Roth-Peranson algorithm accommodating couples, adopted by the NRMP in 1997. The endpoints are independent formulations of the same contribution from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-9ab9eede9df6448c",
+          "rationale": "Both passages (s-ebdcff489aa4cce2@1:p17 and s-ae64810b8a972ecf@1:p7) state that Shapley and Scarf (1974) proved the top trading cycle algorithm produces a stable/core allocation. The endpoints are independent formulations of the same result from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-df2c93af62fbeb4d",
+          "rationale": "Both passages (s-ebdcff489aa4cce2@1:p22 and s-18c86174f4cdd156@1:p2) describe Roth's comparative study of U.K. medical markets linking stable algorithms to success. The endpoints are independent formulations of the same contribution from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-f2490ae7f3cad4ab",
+          "rationale": "Both passages (s-18c86174f4cdd156@1:p2 and s-ebdcff489aa4cce2@1:p21) describe Roth's 1984 finding that the NRMP algorithm is related to deferred acceptance and that stability explains its success. The endpoints are independent formulations of the same contribution from different sources."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-fb3ef36ea6c77be7",
+          "rationale": "Both passages (s-ebdcff489aa4cce2@1:p12 and s-18c86174f4cdd156@1:p2) describe the Gale-Shapley result that the proposing side receives its most preferred stable matching and the receiving side its least preferred. The endpoints are independent formulations of the same theorem from different sources."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-1ddea3ea33884743",
+          "rationale": "The warrant claims an analogy between multiple equilibria in the Diamond-Dybvig banking model and multiple equilibria in a labor market model by Dybvig and Jaynes (1979). The evidence (s-b0b2b440c574001f@1:p10) describes the Dybvig-Jaynes model as having multiple equilibria with unemployment, but does not establish a documented conceptual analogy between the two models. The mere presence of multiple equilibria in both models is a common vocabulary, not a specific documented analogy."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-244e27beea6a6eb6",
+          "rationale": "The warrant claims Dybvig (2022) suggests rationalizability may better explain bank run behavior, challenging the adequacy of Nash equilibrium in the Diamond-Dybvig model. The evidence (s-b0b2b440c574001f@1:p13) mentions rationalizability as an idea for further work and notes it 'could help us to explain the empirical results,' but this is a speculative suggestion, not a documented challenge with contrary evidence against the Nash equilibrium concept used in the model."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-25531ce91923a013",
+          "rationale": "The warrant claims the Diamond-Dybvig model's multiple equilibria support the view that multiple equilibria are a meaningful economic phenomenon. The evidence (s-b0b2b440c574001f@1:p4) explicitly states: 'Our Prize paper helped economists to understand that having multiple equilibria can be an important conclusion of the analysis,' directly supporting the relationship."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-25c9adb1b9333173",
+          "rationale": "The warrant claims the sunspot equilibrium concept supports the possibility of runs occurring with small probability. The evidence (s-b0b2b440c574001f@1:p12) mentions Cass and Shell (1983) and sunspots as answering a puzzle about why agents would deposit if they expect a run, but does not document that the sunspot concept supports the specific claim that runs can occur with small probability making deposits attractive. The passage describes sunspots as an equilibrium selection device, not as evidence supporting the endpoint's claim."
+        }
+      ],
+      "input_hash": "63ee789bf26c7604661769c1c205e84e6873ad4759fb2a9cdf527ab914cce215",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "63ee789bf26c7604661769c1c205e84e6873ad4759fb2a9cdf527ab914cce215",
+        "job_id": "42feb3d8a854212f1302530af17504f01d47737df4584a7ee7fd055ba18f076f",
+        "output_hash": "ef8d3bb27b3fe344c740be7dd26c5f70d6dbfbb07cd2740bb0c1cd996077bf29",
+        "prompt_hash": "a05cec0da8c271cf446f46c23bc710f8b4224f532d83b81d8e7d33e9fc4bf1fb",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "bf76dc71-9a54-422e-ad06-25dc1c6bda30",
+        "request_id": "01a130f5ec684b4d70dbe7ef22af8c9b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "connection-escalation:63ee789bf26c7604",
+        "time": "2026-10-12T16:33:04+00:00",
+        "trace_id": "bf76dc71-9a54-422e-ad06-25dc1c6bda30",
+        "usage": {
+          "completion_tokens": 2492,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 35546,
+          "prompt_tokens": 35546,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 38038
+        }
+      }
+    },
+    {
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "connection-120bb575e9587be7",
+          "rationale": "The evidence (s-3254ab3a15dccb9a@1:p2) explicitly states that the RNN Encoder-Decoder framework is proposed by Cho et al. (2014a) and Sutskever et al. (2014), and describes Sutskever et al. (2014) as using an LSTM to encode a variable-length source sentence into a fixed-length vector. This directly supports the warrant that the encoder-decoder framework in Bahdanau et al. (2015) is attributed to Sutskever et al. (2014), establishing the historical basis."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-24670cd9f172c9fe",
+          "rationale": "The evidence for the NMT paper (s-3254ab3a15dccb9a@1:p6) shows a qualitative analysis of alignment matrices for translation. The evidence for the Transformer (s-f593f350d93c7f67@1:p154) shows an example of attention heads attending to long-distance dependencies. While both involve inspecting attention weights, the warrant claims an analogy between the interpretability of these specific analyses. The NMT analysis focuses on linguistically plausible alignments for translation, while the Transformer analysis focuses on syntactic and semantic structure. The evidence does not demonstrate that these two specific qualitative analyses are analogous in their methodology or findings, only that both papers visualize attention weights."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-326da5f0dee2e674",
+          "rationale": "The evidence (s-3254ab3a15dccb9a@1:p2) describes the RNN Encoder-Decoder framework, citing Sutskever et al. (2014) as using an LSTM to encode a source sentence into a fixed-length vector. The evidence for the LSTM paper (s-0480da48214bea42@1:p2) describes using one LSTM to read the input sequence into a fixed-dimensional vector and another to decode. The warrant that the attention paper's background section describes the exact approach of the LSTM paper is directly supported by the cited passage."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-939fd93cabf10364",
+          "rationale": "The evidence for the NMT paper (s-3254ab3a15dccb9a@1:p14) describes a maxout hidden layer in the deep output for computing target word probabilities. The evidence for the Transformer (s-f593f350d93c7f67@1:p39) shows the formula for a position-wise feed-forward network with ReLU activation. The warrant claims an analogy between these two non-recurrent processing layers. However, the evidence does not establish that these specific components are analogous in function or design beyond both being non-linear transformations. The maxout layer is part of the output probability computation, while the Transformer's FFN is applied after attention in each layer. The analogy is not supported by the provided passages."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-9c01d241a97c4d0c",
+          "rationale": "The evidence for the NMT paper (s-3254ab3a15dccb9a@1:p8) states that the attention mechanism requires computing the annotation weight of every source word for each target word, which may limit applicability to other tasks. The evidence for the Transformer (s-f593f350d93c7f67@1:p52) shows the complexity analysis of self-attention as O(n^2 * d). The warrant that the Transformer's complexity analysis directly addresses the NMT paper's stated limitation on computational cost is supported, as the NMT paper identifies the quadratic scaling as a limitation and the Transformer paper explicitly analyzes this complexity."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-b4c8732dca7caf58",
+          "rationale": "The evidence (s-9ba66ec259647822@1:p13) provides formulations for applying layer normalization to LSTM and GRU. The NMT paper's gated hidden unit is a GRU. The warrant claims that layer normalization generalizes the gated hidden unit. However, the evidence shows layer normalization is applied to the gated unit, not that it generalizes the gating mechanism itself. Layer normalization is a normalization technique added to existing architectures; it does not generalize the gated hidden unit concept. The relationship is more accurately described as an enhancement or modification, not a generalization."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-b91ea1837b5e216e",
+          "rationale": "The evidence for the LSTM paper (s-0480da48214bea42@1:p2) describes compressing the input sequence into a fixed-dimensional vector. The evidence for the attention paper (s-3254ab3a15dccb9a@1:p3) describes the novel architecture that computes a weighted sum of annotations instead of a single fixed vector. The warrant that the attention mechanism extends the fixed-length vector approach is directly supported by the passages, which show the historical progression from the fixed-vector encoder-decoder to the attention-based model."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-bda8a4f02816584c",
+          "rationale": "The evidence (s-3254ab3a15dccb9a@1:p6) explicitly states that the motivation behind the proposed approach was the fixed-length context vector limitation in the basic encoder-decoder, and shows that the RNNsearch model is more robust to sentence length, outperforming the basic encoder-decoder especially on long sentences. This directly supports the warrant that the empirical finding of improved long-sentence translation addresses the limitation of fixed-length vectors in Sutskever et al. (2014)."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-c1d493aec363503e",
+          "rationale": "The evidence for the LSTM paper (s-0480da48214bea42@1:p2) describes compressing the input into a fixed-dimensional vector. The evidence for the attention paper (s-3254ab3a15dccb9a@1:p1) explicitly conjectures that the use of a fixed-length vector is a bottleneck in improving performance. The warrant that the fixed-length vector encoding motivated the conjecture is directly supported by the passages."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-e87e8f26c2c5f0b4",
+          "rationale": "The evidence for the attention paper (s-3254ab3a15dccb9a@1:p9) states that one of the challenges left for the future is to better handle unknown or rare words. The evidence for the LSTM paper (s-0480da48214bea42@1:p1) states that the BLEU score was penalized on out-of-vocabulary words. The warrant that the LSTM paper's limitation is an instance of the broader challenge identified in the attention paper is supported, as the LSTM paper explicitly describes the UNK replacement limitation and the attention paper identifies this as a general challenge."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-1f65861163543acc",
+          "rationale": "The evidence for the later formulation (s-7135f04b26b5ce91@1:p2) explicitly states that the paper presents progress in diffusion probabilistic models [53], citing Sohl-Dickstein et al., and describes the model as a parameterized Markov chain with a fixed forward diffusion process. The evidence for the original formulation (s-30157c08e6d2f6cf@1:p1) defines the model as the endpoint of a Markov chain. The warrant that the later formulation builds on the original is directly supported by the explicit citation and the consistent description of the model."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-d872c7b8b80ad56b",
+          "rationale": "The evidence (s-8cfa97546eff02c9@1:p24) explicitly states that MLWE is a generalization of the LWE problem introduced by Regev in 2005, and that the ML-KEM standard cites Regev's LWE as the basis. This directly supports the warrant that MLWE generalizes LWE."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-02e41463b2581ff5",
+          "rationale": "The evidence (s-beeaeda1908e6236@1:p10) explicitly states that Milgrom (2004) used the envelope theorem to extend the logic of the Revenue Equivalence Theorem, proving payoff equivalence for any two mechanisms where the highest type always wins and types are independent. This directly supports the warrant that Milgrom's payoff equivalence theorem generalizes Vickrey's revenue equivalence theorem."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-10b94a22ad28aac2",
+          "rationale": "The evidence from both sources (s-beeaeda1908e6236@1:p19 and s-40071f9227452f0d@1:p28) describes the same Hatfield and Milgrom (2005) model of matching with contracts. The warrant that the two nodes describe the same contribution is directly supported, as both passages attribute the model to Hatfield and Milgrom (2005) and describe it as a general model encompassing matching and auctions."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-2c15c9e818b6fab3",
+          "rationale": "The evidence for the dominant strategy (s-40071f9227452f0d@1:p8) describes truthful bidding as a dominant strategy in second-price auctions. The evidence for the payoff equivalence theorem (s-beeaeda1908e6236@1:p10) describes the theorem as extending the logic of the Revenue Equivalence Theorem, proving equal payoffs across mechanisms where the highest type wins. The warrant that the dominant strategy is a special case of the payoff equivalence theorem is logically supported, as the second-price auction is a mechanism where the highest type wins, and the theorem generalizes the revenue equivalence result that Vickrey originally proved for the four standard auction formats."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-2f36841e57f1514b",
+          "rationale": "The evidence (s-beeaeda1908e6236@1:p6) explicitly states that Milgrom (1979) extended Wilson's analysis to identify a necessary and sufficient condition for price convergence, whereas Wilson had provided only a sufficient condition. This directly supports the warrant that Milgrom's result is a logical generalization of Wilson's earlier result."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-392fc158d5b53507",
+          "rationale": "The evidence (s-beeaeda1908e6236@1:p11 and p12) describes how Milgrom and Weber (1982) extended the Vickrey model by allowing values to depend on others' information and replacing independence with affiliation, and proved the linkage principle that ranks auctions by revenue. This directly supports the warrant that the linkage principle generalizes the revenue equivalence theorem to affiliated values."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-61eb5c924515e6fb",
+          "rationale": "The evidence (s-beeaeda1908e6236@1:p10 and p11) explicitly states that the Milgrom and Weber (1982) model subsumed the Vickrey and Wilson models, extending the Vickrey model by allowing each bidder's value to depend on others' information and replacing independence with affiliation. Wilson's model is the special case with common values. This directly supports the warrant that Milgrom and Weber generalized Wilson's common-value model."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-6f7c695fd1d05837",
+          "rationale": "The evidence for the CCA (s-40071f9227452f0d@1:p23) states that the CCA uses a second-price rule and core-selecting payments. The evidence for core-selecting auctions (s-beeaeda1908e6236@1:p27) describes Day and Milgrom's characterization of core-selecting auctions. The warrant that the CCA applies the core-selecting payments characterized by Day and Milgrom is supported by the passages, which show the CCA uses core-selecting payments and Day and Milgrom characterized such auctions."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-716cdee8abfe1cbb",
+          "rationale": "The evidence from both sources (s-40071f9227452f0d@1:p22 and s-beeaeda1908e6236@1:p16) describes the same SMRA design by Milgrom and Wilson for the 1994 FCC spectrum auction. The warrant that the two nodes describe the same contribution is directly supported, as both passages attribute the design to Milgrom and Wilson and describe the simultaneous multiple round auction format."
+        }
+      ],
+      "input_hash": "5428381401a1ef285d1bfff0308494a600ac4ac8bfdc0730b349900f18a5b141",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5428381401a1ef285d1bfff0308494a600ac4ac8bfdc0730b349900f18a5b141",
+        "job_id": "ac8421c32363596befbac8051232dc2c433f92a267a26584093fca27289597f0",
+        "output_hash": "21b88efc0b356e609a909d39710102157071fd963b52151931db7cb943b838ee",
+        "prompt_hash": "a05cec0da8c271cf446f46c23bc710f8b4224f532d83b81d8e7d33e9fc4bf1fb",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5a648db7-3a81-4857-a582-687633c194f9",
+        "request_id": "01a130f5ebab23be985dfb0e2c1564a1",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "connection-escalation:5428381401a1ef28",
+        "time": "2026-10-12T16:33:04+00:00",
+        "trace_id": "5a648db7-3a81-4857-a582-687633c194f9",
+        "usage": {
+          "completion_tokens": 2934,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 36330,
+          "prompt_tokens": 36330,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 39264
+        }
+      }
+    },
+    {
+      "checks": [
+        {
+          "decision": "unsupported",
+          "id": "connection-4d6eb01f6f377769",
+          "rationale": "The warrant claims an analogy between coordination-based multiple equilibria in banking (Diamond-Dybvig) and wage dispersion from on-the-job search (Dybvig and Jaynes 1980). The supplied evidence for the banking model (s-a6db249dd72a8790@1:p45) describes multiple Nash equilibria arising from strategic complementarities. The evidence for the wage dispersion model (s-b0b2b440c574001f@1:p11) describes multiple equilibria in the wage distribution, but the text explicitly states that the model 'anticipated the emphasis on multiple equilibria in macro models' and connects it to Keynes, not to the Diamond-Dybvig banking model. The evidence does not document any analogy drawn between these two specific models, nor does it show that the coordination issues are analogous. The warrant is an unsupported assertion."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-e855201ce2de6f26",
+          "rationale": "The warrant claims that the multiple-equilibria result (1983) motivates the analysis of deposit insurance with full coverage (1986). The evidence for the premise (s-a6db249dd72a8790@1:p45) states that Diamond and Dybvig 'argued, provides a rationale for financial regulation, such as deposit insurance,' which is a general statement. The evidence for the conclusion (s-b0b2b440c574001f@1:p8) discusses the 1986 policy piece and its recommendation for full insurance, but it does not document that the 1983 model's multiple-equilibria result was the specific motivation for the 1986 analysis. The 1986 paper is a policy piece that builds on the model, but the evidence does not show a documented historical arrow of motivation from the precise 1983 result to the 1986 analysis."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-ee04ce1be3ca2130",
+          "rationale": "The warrant claims that the model's logic motivates the analysis of shadow banking as a consequence of restricting bank liquidity provision. The evidence for the premise (s-a6db249dd72a8790@1:p45) describes the Diamond-Dybvig model. The evidence for the conclusion (s-b0b2b440c574001f@1:p8) contains a quote from Diamond and Dybvig (1986) about 100% reserve banking and shadow banking. However, the evidence does not document that the 1983 model's logic specifically motivated this 1986 analysis. The 1986 paper is a policy discussion, but the supplied passages do not establish a documented historical arrow of motivation from the model to this specific conclusion."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-ef232a93745ca1f7",
+          "rationale": "The warrant claims an analogy between the coordination problem in bank runs and adoption externalities in technology adoption. The evidence for the banking model (s-a6db249dd72a8790@1:p45) describes multiple equilibria. The evidence for the adoption model (s-b0b2b440c574001f@1:p9) states that the technology adoption model is 'very similar to bank run models, in that you like to do what everybody else is doing.' However, this is a general statement by Dybvig in his Nobel lecture, not a documented analogy drawn in the original 1983 papers. The evidence does not show that Dybvig and Spatt (1983a) explicitly drew an analogy to Diamond-Dybvig (1983), nor does it provide a specific warrant for the analogy beyond the author's retrospective comment."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-02eb8978c51e03e8",
+          "rationale": "The warrant claims that the capability approach to individual advantage was generalized to argue that capabilities should be the principal dimension for equality. The evidence for the premise (s-3a7869c67be13520@1:p50) describes the capability approach as assessing individual advantage in terms of substantive freedoms. The evidence for the conclusion (s-2b0419520eb91a90@1:p25) states that Sen maintains capabilities should be the principal dimension for equality. However, the evidence does not document a generalization relationship; it merely describes two aspects of Sen's capability approach. The premise and conclusion appear to be different formulations of the same idea, not a documented generalization from one to the other."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-13e89ed88060f353",
+          "rationale": "The warrant claims that the poverty index relies on the expanded informational base of social choice theory. The evidence for the premise (s-2b0419520eb91a90@1:p22) describes the axiomatic derivation of the poverty index. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory with an expanded informational base was crucial for Sen's applied work. However, the evidence does not specifically document that the poverty index, as a particular applied measure, depends on or was historically grounded in the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this connection."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-1a476909d87fe1a1",
+          "rationale": "The warrant claims that the entitlement analysis of famine supports the observation that economic unfreedom can lead to violations of other freedoms. The evidence for the premise (s-2b0419520eb91a90@1:p27) describes Sen's entitlement analysis showing famines occur without food supply decline. The evidence for the conclusion (s-3a7869c67be13520@1:p9) provides the Kader Mia anecdote, where extreme poverty forced a man to risk his life, illustrating that 'economic unfreedom, in the form of extreme poverty, can make a person a helpless prey in the violation of other kinds of freedom.' The entitlement analysis provides a systematic framework for understanding how lack of economic entitlements forces individuals into deprivation, which directly supports the individual case observation. The evidence documents this connection."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-2f4b2094913cdb15",
+          "rationale": "The warrant claims that the development of a social choice school at Delhi, including Pattanaik's thesis, provided the collaborative basis for the majority rule conditions. The evidence for the premise (s-3a7869c67be13520@1:p28) describes Pattanaik's arrival, his thesis on voting theory, and subsequent joint work with Sen. The evidence for the conclusion (s-2b0419520eb91a90@1:p16) states that Sen and Pattanaik specified conditions eliminating intransitivities of majority rule. The biographical account directly documents that Pattanaik's thesis and collaboration led to this joint work, establishing a historical basis."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-8bd9a34e84e07921",
+          "rationale": "The warrant claims that the welfare indicator y·(1-G) presupposes the expanded informational base of social choice theory. The evidence for the premise (s-2b0419520eb91a90@1:p23) describes the welfare indicator as derived from axioms. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory was crucial for applied work. However, the evidence does not specifically document that this particular welfare indicator logically presupposes or was historically grounded in the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this connection."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-97439cbe3c6f0454",
+          "rationale": "The warrant claims that Sen's philosophical studies were a premise for his ethical argument that capabilities should be the principal dimension for equality. The evidence for the premise (s-3a7869c67be13520@1:p25) states that studying philosophy was important for his work on social choice and inequality. The evidence for the conclusion (s-2b0419520eb91a90@1:p25) describes the equality of capabilities argument. However, the evidence does not specifically document that the philosophical studies were a logical premise for this particular argument. The biographical statement is a general reflection on the importance of philosophy, not a specific warrant linking philosophy to the capabilities-as-equality argument."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-a30d0c1c100c2599",
+          "rationale": "The warrant claims that the motivation to overcome Arrow's impossibility led to Sen's work on expanding the informational base, including interpersonal comparability. The evidence for the premise (s-3a7869c67be13520@1:p46) explicitly states that Sen's work in social choice theory was 'initially motivated by a desire to overcome Arrow's pessimistic picture by going beyond his limited informational base.' The evidence for the conclusion (s-2b0419520eb91a90@1:p20) describes Sen's work on interpersonal comparability as initiating a new field in social choice. The biographical statement directly documents this motivation and its connection to the work on informational bases."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-be77623f8793d365",
+          "rationale": "The warrant claims that Sen's conceptualization of famines as entitlement failures was based on his earlier detailed analysis in 'Poverty and Famines'. The evidence for the premise (s-3a7869c67be13520@1:p44) describes Sen's attempt to see famines as economic problems, focusing on entitlements, which is a summary of his 1981 book. The evidence for the conclusion (s-2b0419520eb91a90@1:p27) provides the detailed analysis from that book. The biographical account explicitly states that the 1981 book 'Poverty and Famines' was written for this purpose, establishing a direct historical basis."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-c0a26d50bb1e4444",
+          "rationale": "The warrant claims that the welfare indicator y·(1-G) is another applied measure grounded in the expanded informational base of social choice. The evidence for the premise (s-2b0419520eb91a90@1:p23) describes the welfare indicator. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory was crucial for applied work. However, the evidence does not specifically document that this particular welfare indicator was historically applied as a result of or grounded in the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this connection."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-c65655dd65fa4ff5",
+          "rationale": "The warrant claims that Sen's early emphasis on capabilities as determinants of welfare was later formalized into the capability approach to individual advantage. The evidence for the premise (s-2b0419520eb91a90@1:p24) describes Sen's early view that welfare is created by activities enabled by goods, with capabilities depending on factors like health. The evidence for the conclusion (s-3a7869c67be13520@1:p50) describes the Tanner Lectures (1979) where the capability approach was formalized as assessing advantage in terms of substantive freedoms. The biographical account documents the development from the early formulation to the more developed Tanner Lectures approach, establishing a historical basis."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-d2d6acc7eb61c190",
+          "rationale": "The warrant claims that Sen's study of philosophy was a premise for his work on interpersonal comparability and moral principles. The evidence for the premise (s-3a7869c67be13520@1:p25) states that studying philosophy was important for his work. The evidence for the conclusion (s-2b0419520eb91a90@1:p20) describes his work on interpersonal comparability and moral principles. However, the evidence does not specifically document that the philosophical studies were a logical premise for this particular work on interpersonal comparability. The biographical statement is a general reflection, not a specific warrant linking philosophy to the interpersonal comparability results."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-f5b8b9d693270935",
+          "rationale": "The warrant claims that the poverty index presupposes the expanded informational base of social choice theory. The evidence for the premise (s-2b0419520eb91a90@1:p22) describes the axiomatic derivation of the poverty index. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory was crucial for applied work. However, the evidence does not specifically document that the poverty index logically presupposes the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this logical connection."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-fcdf89a21f663029",
+          "rationale": "The warrant claims that the principle of equality in capabilities was applied to health equity. The evidence for the premise (s-2b0419520eb91a90@1:p25) states that Sen maintains capabilities should be the principal dimension for equality. The evidence for the conclusion (s-3a7869c67be13520@1:p52) states that Sen took an interest in health equity, applying concepts of equity and justice to public health. The biographical account documents that health equity was a 'challenging field of application for concepts of equity and justice,' which directly supports the application of the capabilities-as-equality principle to health."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-3ddba39deadff9b1",
+          "rationale": "The warrant claims that the type class inference mechanism (2015) is the historical basis for the structure hierarchy with semi-bundled type classes (2020). The evidence for the premise (s-bdda7faaf8345721@1:p15) describes type class inference as on-demand choice constraints. The evidence for the conclusion (s-4495ee5941de316c@1:p3) describes mathlib's structure hierarchy using type class inference. However, the evidence does not document that the 2015 paper's specific mechanism was the historical basis for the 2020 mathlib design. The 2020 paper describes type class inference as a feature of Lean's core library, but does not cite the 2015 paper as its basis. The connection is one of shared infrastructure, not documented historical inheritance."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-6d78be3a5ed8320d",
+          "rationale": "The warrant claims an evolution of the decidable type class from the 2015 paper to the 2020 mathlib paper. The evidence for the premise (s-bdda7faaf8345721@1:p8) describes the decidable class in Lean's standard library. The evidence for the conclusion (s-4495ee5941de316c@1:p5) describes the same class in mathlib. However, the evidence does not document a historical evolution or that the 2020 work directly extends the 2015 definition. Both describe the same standard library feature; the 2020 paper does not cite the 2015 paper as its basis. This is a description of the same original feature, not a documented historical development."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-74341cabb0369e60",
+          "rationale": "The warrant claims design continuity in Lean's type class hierarchy from the 2015 paper to the 2020 mathlib paper. The evidence for the premise (s-bdda7faaf8345721@1:p7) describes semi-bundled type classes in Lean's algebraic hierarchy. The evidence for the conclusion (s-4495ee5941de316c@1:p4) describes mathlib's adoption of semi-bundled type classes. However, the evidence does not document that the 2020 mathlib design was historically based on the 2015 paper. The 2020 paper describes this as a design decision of the mathlib community, not as an inheritance from the 2015 paper. Both describe the same design pattern in the same system, but the evidence does not establish a documented historical arrow from the 2015 paper to the 2020 mathlib paper."
+        }
+      ],
+      "input_hash": "b08dde6b804b160f3c4f295b2744570d2b54b27ef8d34ccce87e5abc4e20cbb4",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b08dde6b804b160f3c4f295b2744570d2b54b27ef8d34ccce87e5abc4e20cbb4",
+        "job_id": "a41aacdc789a298f7bd3d6ca5e6da795901cfa7715bfb7cc656a48bf18805833",
+        "output_hash": "04e2100fa03894e332079d00b1e7d4045e9007a0cacf1f1226fe0a948fd7277e",
+        "prompt_hash": "a05cec0da8c271cf446f46c23bc710f8b4224f532d83b81d8e7d33e9fc4bf1fb",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f929bb6d-f08b-4f01-81de-33214e977a76",
+        "request_id": "01a130f5ec94b7c3a33dfcbfd5e3d87a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "connection-escalation:b08dde6b804b160f",
+        "time": "2026-10-12T16:33:04+00:00",
+        "trace_id": "f929bb6d-f08b-4f01-81de-33214e977a76",
+        "usage": {
+          "completion_tokens": 3685,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 27275,
+          "prompt_tokens": 27275,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 30960
+        }
+      }
+    },
+    {
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "connection-f3750bc82beec9d9",
+          "rationale": "The evidence passage (s-73c03c6510f9c285@1:p2) explicitly states that the two-year data 'provided the first strong evidence' and that the three-year analysis uses 'the same methods' with an additional year, directly building on the earlier observation. This confirms the historical_basis_for relationship between the 2013 two-PeV event observation and the 2014 three-year 5.7σ detection."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-1815bd7e8bae3751",
+          "rationale": "The warrant claims that the luminosity distance measurement and redshift degeneracy are 'part of the parameter estimation, providing distance and redshift values used in the analysis.' However, the evidence passages (s-2cbb8d3b3b27f740@1:p3 and p7) describe the distance measurement and redshift degeneracy as results of the parameter estimation, not as a premise that supports it. The relationship is one of co-derivation within the same analysis, not an evidential support where one finding provides evidence for the other. The passages do not show that the distance measurement supports the parameter estimation claim; they are both outputs of the same Bayesian analysis."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-4ff385c68f2f1147",
+          "rationale": "The evidence passage (s-2cbb8d3b3b27f740@1:p6) explicitly describes the waveform model averaging method for systematic error estimation and states that 'We combine the posterior samples of both distributions with equal weight, in effect marginalizing over our choice of waveform model. These averaged results give our best estimate for the parameters describing GW150914.' This directly supports the conclusion's claim that uncertainties include statistical and systematic errors from averaging results of different waveform models."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-8e3b3457672ba6e4",
+          "rationale": "The warrant claims that the direct spin constraints 'provide spin measurements that are part of the parameter estimation results.' However, the evidence passages (s-2cbb8d3b3b27f740@1:p8 and p9) present the spin constraints as outputs of the parameter estimation, not as evidence that supports the parameter estimation methodology. The spin measurements are results derived from the Bayesian analysis, not premises that support the claim about the analysis method. The relationship is one of co-derivation, not evidential support."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-e4d3666cb6cfa9b3",
+          "rationale": "The evidence passages (s-2cbb8d3b3b27f740@1:p2 and p11) state that 'we assume circular orbits' and 'we find no evidence for residual eccentricity,' with preliminary investigations suggesting that eccentricities up to 0.1 at 10 Hz would not measurably affect results. This validation of the circular orbit assumption directly supports the conclusion's claim that the Bayesian parameter estimation uses general relativity-based models, which rely on the circular orbit assumption."
+        },
+        {
+          "decision": "unsupported",
+          "id": "connection-244c0d802d7204ac",
+          "rationale": "The warrant claims that the external-cell technique (n-34f335bbd90a7400, formulated in the late 1960s) is a historical basis for the later dye laser method (n-47843fcbff18ded2, demonstrated in 1972). However, the evidence passages (s-1dffa399e936fe08@1:p3 and s-ac8a203d7cffa313@1:p16) show that the external-cell technique was an early experiment, but the dye laser method is described as a new method that 'did not require the sample to be placed inside a laser cavity.' The relationship is one of alternative approaches to the same problem (Doppler-free saturation spectroscopy), not a documented historical arrow where the external-cell work directly led to the dye laser method. The passages do not demonstrate that the later work built upon the earlier external-cell experiments in a documented inheritance."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-8e5a9389d57c2d7e",
+          "rationale": "The evidence passages (s-ac8a203d7cffa313@1:p23 and s-1dffa399e936fe08@1:p2) explicitly state that the Garching team's 1999 demonstration of a comb-based phase-coherent link from microwaves to the visible was the first such demonstration, and that the frequency comb 'can link and compare optical frequencies and microwave frequencies phase-coherently in a single step,' enabling its role as the 'long missing clockwork' for optical atomic clocks. This confirms the historical_basis_for relationship between the 1999 demonstration and the later application as clockwork."
+        },
+        {
+          "decision": "supported",
+          "id": "connection-d1d8b400a00c2908",
+          "rationale": "The evidence passages (s-ac8a203d7cffa313@1:p27, p28, and s-1dffa399e936fe08@1:p9) explicitly explain that the coherent addition of pulse train harmonics yields a frequency comb with sharp lines at harmonics of the repetition rate, and that the comb line frequencies are given by f_m = m f_r + f_CE. The Fourier analysis of a periodic pulse train is presented as the basis for the comb line spacing, with the offset f_CE added for phase slips. This directly supports the premise_for relationship between the coherent addition principle and the comb ruler formula."
+        }
+      ],
+      "input_hash": "5d9eebe99379f199116bed4bb39b630da19982f1dd85cae4e0433abd352da2b4",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5d9eebe99379f199116bed4bb39b630da19982f1dd85cae4e0433abd352da2b4",
+        "job_id": "57fb71ed7d79b576506ca20468f3d6cb2e482b3c971cfcc00ccbd2314fc82657",
+        "output_hash": "747f5ce12554c5a4e53ac276235d46b27beda947b46c8f591d754c7975d7ce3e",
+        "prompt_hash": "a05cec0da8c271cf446f46c23bc710f8b4224f532d83b81d8e7d33e9fc4bf1fb",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "849e5b54-3932-4762-852b-0acb542c98d3",
+        "request_id": "01a130f6c0875ed3d713a5697d9677a7",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "connection-escalation:5d9eebe99379f199",
+        "time": "2026-10-12T16:33:57+00:00",
+        "trace_id": "849e5b54-3932-4762-852b-0acb542c98d3",
+        "usage": {
+          "completion_tokens": 1277,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 22151,
+          "prompt_tokens": 22151,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 23428
+        }
+      }
+    }
+  ],
+  "candidates": 88,
+  "checks": [
+    {
+      "decision": "supported",
+      "id": "connection-27b186ee4a77bad2",
+      "rationale": "The evidence text from the surgery paper explicitly states: 'the claim about the lower bound for the volumes of the maximal horns and the smoothness of the solution from some time on, which turned out to be unjustified'. This directly contradicts the earlier claim about the volume estimate for maximal horns, supporting the challenges relation."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-17b582df912cb7a7",
+      "rationale": "The evidence shows Cuturi (2013) established the Sinkhorn-Knopp algorithm for the regularized OT problem, and the 2014 paper reformulates the same problem as a KL projection. However, the warrant claims this is a 'direct conceptual extension', but the evidence only shows both papers address the same regularized OT problem. There is no documented historical arrow showing the 2014 formulation was built upon or derived from Cuturi's specific contribution rather than being an independent reformulation of the same mathematical problem."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-c32edd5584709f8b",
+      "rationale": "The evidence shows Cuturi's algorithm computes the entropic OT solution via Sinkhorn-Knopp fixed-point iterations, and the 2014 paper presents alternating KL projections. However, the warrant claims this is a reformulation of Cuturi's iterative method, but the evidence does not demonstrate that the 2014 paper's Bregman projection framework was historically derived from or built upon Cuturi's work. Both describe the same underlying algorithm (Sinkhorn) applied to the same problem, which is not sufficient for a historical_basis_for relation."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-1e20a57a6acf2ca5",
+      "rationale": "The 2004 paper uses random Fourier sampling for exact recovery. The 2005 paper notes that Gaussian matrices satisfy the restricted isometry condition. The warrant claims this is a generalization, but the evidence shows the 2005 paper merely cites prior results about Gaussian matrices as another example of matrices satisfying the condition. There is no logical generalization from Fourier sampling to Gaussian matrices; they are different measurement ensembles. The 2005 paper does not derive Gaussian matrix properties from the Fourier result."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-1f30137ade2a6b31",
+      "rationale": "The 2004 paper proves exact recovery for sparse signals with bounded support size. The 2005 paper (Theorem 2) extends this to stable recovery of arbitrary signals with error bounded by noise plus a tail term, under the same restricted isometry condition. The evidence shows this is a direct logical generalization from exact recovery of sparse signals to stable recovery of approximately sparse signals."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-550a4e06bb9506f8",
+      "rationale": "The 2004 paper establishes exact recovery with high probability for random Fourier samples under a support-size condition. The 2005 paper introduces the deterministic condition δ3S + 3δ4S < 2 that guarantees stable recovery for any matrix satisfying it. This is a logical generalization from a probabilistic, Fourier-specific result to a deterministic condition applicable to any matrix."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-59d46b062c90be7b",
+      "rationale": "The 2004 paper focuses on Fourier sampling. The 2005 paper generalizes to any orthonormal measurement basis with mutual coherence μ. However, the evidence shows the 2005 paper cites prior work for this generalization, not deriving it from the 2004 paper. The warrant claims the 2004 paper is the premise for this generalization, but the evidence does not support a logical or historical derivation from the 2004 Fourier-specific result to the general orthogonal ensemble result."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-8c6a635170c4d9bf",
+      "rationale": "The 2004 paper proves exact recovery for random Fourier samples with a specific support-size bound. The 2005 paper shows the Fourier ensemble satisfies the restricted isometry condition for S ≤ C n/(log m)^6. The warrant claims this is a generalization, but the evidence shows the 2005 paper cites prior work for this result. There is no demonstration that the 2005 Fourier ensemble result was logically derived from or generalizes the 2004 exact recovery result; they are different results about the Fourier ensemble."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-a4990dce07d8620f",
+      "rationale": "The 2004 paper proves exact recovery via l1-minimization from incomplete Fourier samples under a support-size condition. The 2005 paper (Theorem 1) extends this to stable recovery of sparse signals from noisy measurements under a deterministic restricted isometry condition. The evidence shows this is a logical generalization from exact noiseless recovery with probabilistic Fourier sampling to stable noisy recovery with a deterministic condition."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-c767599d6d76fa06",
+      "rationale": "The 2004 paper proves recovery with a logarithmic support-size condition. The 2005 paper compares restricted isometry to coherence-based methods, showing the former allows far fewer measurements. The warrant claims this is a generalization, but the evidence shows the 2005 paper makes a qualitative comparison, not a logical generalization derived from the 2004 result. The comparison is a separate observation about the power of restricted isometry versus coherence, not an extension of the 2004 theorem."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-e1da9f375f7ec6a8",
+      "rationale": "The 2004 paper proves theoretical recovery guarantees via convex optimization. The 2005 paper shows the programs can be recast as SOCPs. The warrant claims this is a generalization, but the evidence shows the 2005 paper simply notes a computational implementation detail. This is not a logical generalization of the theoretical recovery result; it is a practical observation about how to solve the optimization problems. The theoretical result does not logically imply the SOCP formulation."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-312ebefb2e050141",
+      "rationale": "The evidence explicitly states that the rigidity estimate in the 2015 paper is an extension of the rigidity estimate from [21] (the local semicircle law paper) to hold uniformly in time via a continuity argument. The local semicircle law provides the rigidity input for the DBM trajectories, as stated in the assumptions. This supports the historical_basis_for relation."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-360f3ab5569f096c",
+      "rationale": "The evidence shows the stabilizer formalism provides the algebraic framework for quantum error correction, and the toric code is defined using stabilizer operators. However, the warrant claims the toric code's properties are derived from the stabilizer formalism, but the evidence does not show that the specific toric code paper (Kitaev 1997) historically built upon or logically required Gottesman's stabilizer formalism. Both papers appeared in 1997, and the toric code defines its own stabilizers independently. The relation premise_for requires the premise to be a logical premise for the conclusion, but the evidence only shows both describe stabilizer codes, not that one is a premise for the other."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-15bbbb4dd3bd4792",
+      "rationale": "The evidence states that the 2014 supplementary methods used 'maximum likelihood fits of the observed photon timing distributions' as described in [12] (the 2013 paper), and the angular resolution values are derived from these fits. This directly supports the historical_basis_for relation."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-245f2ba56462e52b",
+      "rationale": "The evidence shows the 2014 paper describes the veto as 'as before [11]' and adds the quantitative requirement of fewer than 3 of the first 250 photoelectrons on the boundary, directly extending the earlier calorimetric approach from 2013. This supports the historical_basis_for relation."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-5a2d730fa8762653",
+      "rationale": "The evidence shows both the 2013 and 2014 papers describe the same southern hemisphere suppression mechanism with references to [27,28]. However, the warrant claims the 2013 description is the historical basis for the 2014 description, but the evidence shows both papers reference the same external sources [27,28] for this mechanism. The 2014 paper does not cite the 2013 paper as the basis for this mechanism; both independently describe a known technique from the same prior work."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-68765fbebbf49785",
+      "rationale": "The evidence shows the 2014 supplementary methods explicitly reference the earlier test from [10] (the 2013 paper) and describe how the new likelihood ratio test improves upon it by including spectral and angular information. This supports the historical_basis_for relation."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-945ac5edd6d2fd1e",
+      "rationale": "The evidence states the 2014 paper follows 'the same techniques' as the earlier analysis, which included a blind analysis using only ~10% of data for selection development. This supports the historical_basis_for relation."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-97e2b00a5b3218f1",
+      "rationale": "The evidence shows the 2013 paper reported two PeV events (1.04 and 1.14 PeV), and the 2014 paper reports event 35 with deposited energy 2004 TeV, described as 'the highest-energy neutrino interaction ever observed'. The 2014 paper extends the observation of PeV events to a higher energy, supporting the historical_basis_for relation."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-d9a8fa8c0efc5043",
+      "rationale": "The warrant claims the 2013 distinction between CC νe and NC interactions informs the 2014 assumption of a 1:1:1 flavor ratio. However, the evidence only shows the 2014 paper assumes a 1:1:1 flavor ratio and the 2013 paper discusses interaction types. There is no evidence that the 2014 assumption was historically based on or derived from the 2013 finding. The 1:1:1 flavor ratio is a standard assumption in astrophysical neutrino physics, not a conclusion drawn from the 2013 interaction type analysis."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-80959a7ae20b4e7c",
+      "rationale": "Both passages (s-40071f9227452f0d@1:p28 and s-beeaeda1908e6236@1:p6) explicitly attribute the no-trade theorem to Milgrom and Stokey (1982) and describe its core claim that rational traders will not trade based solely on asymmetric information. The endpoints are independent formulations of the same contribution from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-a217216b19e000ec",
+      "rationale": "Both passages (s-40071f9227452f0d@1:p11 and s-beeaeda1908e6236@1:p11) attribute the concepts of affiliation and the linkage principle to Milgrom and Weber (1982). The endpoints describe the same contribution, anchored in different sources."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-a4c5d0d9236efe60",
+      "rationale": "The warrant claims the two nodes have identical assumptions and conclusion, but the quoted passages do not support this. The first endpoint (n-64ecd9fa4b5b7caa) states the theorem applies 'without efficiency motives' and assumes 'Common knowledge of rationality', while the second (n-87b8cee066ef8f1a) states it applies when the 'initial allocation is Pareto optimal and common knowledge' and assumes 'Risk-averse agents with strictly concave utility'. The passages (s-40071f9227452f0d@1:p28 and s-beeaeda1908e6236@1:p7) describe the theorem with different framing and detail, not as identical formulations."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-bd75b69cf73af7ae",
+      "rationale": "The warrant states that Glosten and Milgrom (1985) showed informed traders can profit when transactional motives exist, challenging the no-trade theorem's conclusion. The evidence (s-beeaeda1908e6236@1:p7) explicitly states that once traders have transactional reasons to trade, speculators may find profitable opportunities, and cites Glosten and Milgrom (1985) as studying this. This directly supports the challenges relationship."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-cc0bb6169f910cd0",
+      "rationale": "The warrant claims the incentive auction's reverse auction relies on the descending clock auction class formalized by Milgrom and Segal (2020). The evidence (s-40071f9227452f0d@1:p24) describes the incentive auction design led by Milgrom, and (s-beeaeda1908e6236@1:p124) explicitly states the solutions are spelled out in Milgrom and Segal (2020) and formalizes the descending clock auction. This documents the premise_for relationship."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-d510aa6e7a5db6c2",
+      "rationale": "Both passages (s-40071f9227452f0d@1:p23 and s-beeaeda1908e6236@1:p23) attribute the Combinatorial Clock Auction (CCA) design to Ausubel, Cramton, and Milgrom. The endpoints describe the same contribution from different sources."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-d86f12e36c647393",
+      "rationale": "The warrant claims the two nodes are equivalent descriptions of the same SMR/SMRA design. However, the endpoints differ significantly: n-30b74863813e151c attributes the design to Milgrom and Wilson, while n-8add6a93928bd69c includes McAfee as a co-designer. The evidence (s-beeaeda1908e6236@1:p16) states 'Robert Wilson and I proposed our simultaneous multiple round (SMR) design,' while (s-40071f9227452f0d@1:p22) states the design was based on proposals by Milgrom and Wilson, and by Preston McAfee. The endpoints are not equivalent formulations of the same contribution."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-dc7336b3789b873f",
+      "rationale": "The warrant claims the affiliation concept and MLRP are premises for the linkage principle. However, the evidence (s-beeaeda1908e6236@1:p11 and p12) shows that both affiliation and the linkage principle are introduced and proved in the same Milgrom and Weber (1982) paper. The premise node (n-526626b0bfa4ce8f) and conclusion node (n-70cac66d570dcaea) describe the same paper's contributions, not a logical dependency where one is a premise for the other. The linkage principle is a result within the same work, not a separate conclusion built upon the premise."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-0bb9fc4399d66c9e",
+      "rationale": "Both passages (s-ae64810b8a972ecf@1:p10 and s-ebdcff489aa4cce2@1:p11) state that the Gale-Shapley deferred acceptance algorithm always produces a stable matching. The endpoints are independent formulations of the same result from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-3324928c8132c1fa",
+      "rationale": "Both passages (s-ebdcff489aa4cce2@1:p30 and s-ae64810b8a972ecf@1:p26) attribute the adaptation of top trading cycles to kidney exchange to Roth, Sönmez, and Ünver. The endpoints describe the same contribution from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-3f117af4e588e677",
+      "rationale": "Both passages (s-ebdcff489aa4cce2@1:p28 and s-18c86174f4cdd156@1:p4) describe the 2003 NYC high school choice redesign using applicant-proposing deferred acceptance, resulting in a 90 percent reduction in unmatched students. The endpoints are independent formulations of the same contribution from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-9a2fe32805928dcb",
+      "rationale": "Both passages (s-ebdcff489aa4cce2@1:p25 and s-18c86174f4cdd156@1:p3) describe the Roth-Peranson algorithm accommodating couples, adopted by the NRMP in 1997. The endpoints are independent formulations of the same contribution from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-9ab9eede9df6448c",
+      "rationale": "Both passages (s-ebdcff489aa4cce2@1:p17 and s-ae64810b8a972ecf@1:p7) state that Shapley and Scarf (1974) proved the top trading cycle algorithm produces a stable/core allocation. The endpoints are independent formulations of the same result from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-df2c93af62fbeb4d",
+      "rationale": "Both passages (s-ebdcff489aa4cce2@1:p22 and s-18c86174f4cdd156@1:p2) describe Roth's comparative study of U.K. medical markets linking stable algorithms to success. The endpoints are independent formulations of the same contribution from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-f2490ae7f3cad4ab",
+      "rationale": "Both passages (s-18c86174f4cdd156@1:p2 and s-ebdcff489aa4cce2@1:p21) describe Roth's 1984 finding that the NRMP algorithm is related to deferred acceptance and that stability explains its success. The endpoints are independent formulations of the same contribution from different sources."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-fb3ef36ea6c77be7",
+      "rationale": "Both passages (s-ebdcff489aa4cce2@1:p12 and s-18c86174f4cdd156@1:p2) describe the Gale-Shapley result that the proposing side receives its most preferred stable matching and the receiving side its least preferred. The endpoints are independent formulations of the same theorem from different sources."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-1ddea3ea33884743",
+      "rationale": "The warrant claims an analogy between multiple equilibria in the Diamond-Dybvig banking model and multiple equilibria in a labor market model by Dybvig and Jaynes (1979). The evidence (s-b0b2b440c574001f@1:p10) describes the Dybvig-Jaynes model as having multiple equilibria with unemployment, but does not establish a documented conceptual analogy between the two models. The mere presence of multiple equilibria in both models is a common vocabulary, not a specific documented analogy."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-244e27beea6a6eb6",
+      "rationale": "The warrant claims Dybvig (2022) suggests rationalizability may better explain bank run behavior, challenging the adequacy of Nash equilibrium in the Diamond-Dybvig model. The evidence (s-b0b2b440c574001f@1:p13) mentions rationalizability as an idea for further work and notes it 'could help us to explain the empirical results,' but this is a speculative suggestion, not a documented challenge with contrary evidence against the Nash equilibrium concept used in the model."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-25531ce91923a013",
+      "rationale": "The warrant claims the Diamond-Dybvig model's multiple equilibria support the view that multiple equilibria are a meaningful economic phenomenon. The evidence (s-b0b2b440c574001f@1:p4) explicitly states: 'Our Prize paper helped economists to understand that having multiple equilibria can be an important conclusion of the analysis,' directly supporting the relationship."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-25c9adb1b9333173",
+      "rationale": "The warrant claims the sunspot equilibrium concept supports the possibility of runs occurring with small probability. The evidence (s-b0b2b440c574001f@1:p12) mentions Cass and Shell (1983) and sunspots as answering a puzzle about why agents would deposit if they expect a run, but does not document that the sunspot concept supports the specific claim that runs can occur with small probability making deposits attractive. The passage describes sunspots as an equilibrium selection device, not as evidence supporting the endpoint's claim."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-120bb575e9587be7",
+      "rationale": "The evidence (s-3254ab3a15dccb9a@1:p2) explicitly states that the RNN Encoder-Decoder framework is proposed by Cho et al. (2014a) and Sutskever et al. (2014), and describes Sutskever et al. (2014) as using an LSTM to encode a variable-length source sentence into a fixed-length vector. This directly supports the warrant that the encoder-decoder framework in Bahdanau et al. (2015) is attributed to Sutskever et al. (2014), establishing the historical basis."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-24670cd9f172c9fe",
+      "rationale": "The evidence for the NMT paper (s-3254ab3a15dccb9a@1:p6) shows a qualitative analysis of alignment matrices for translation. The evidence for the Transformer (s-f593f350d93c7f67@1:p154) shows an example of attention heads attending to long-distance dependencies. While both involve inspecting attention weights, the warrant claims an analogy between the interpretability of these specific analyses. The NMT analysis focuses on linguistically plausible alignments for translation, while the Transformer analysis focuses on syntactic and semantic structure. The evidence does not demonstrate that these two specific qualitative analyses are analogous in their methodology or findings, only that both papers visualize attention weights."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-326da5f0dee2e674",
+      "rationale": "The evidence (s-3254ab3a15dccb9a@1:p2) describes the RNN Encoder-Decoder framework, citing Sutskever et al. (2014) as using an LSTM to encode a source sentence into a fixed-length vector. The evidence for the LSTM paper (s-0480da48214bea42@1:p2) describes using one LSTM to read the input sequence into a fixed-dimensional vector and another to decode. The warrant that the attention paper's background section describes the exact approach of the LSTM paper is directly supported by the cited passage."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-939fd93cabf10364",
+      "rationale": "The evidence for the NMT paper (s-3254ab3a15dccb9a@1:p14) describes a maxout hidden layer in the deep output for computing target word probabilities. The evidence for the Transformer (s-f593f350d93c7f67@1:p39) shows the formula for a position-wise feed-forward network with ReLU activation. The warrant claims an analogy between these two non-recurrent processing layers. However, the evidence does not establish that these specific components are analogous in function or design beyond both being non-linear transformations. The maxout layer is part of the output probability computation, while the Transformer's FFN is applied after attention in each layer. The analogy is not supported by the provided passages."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-9c01d241a97c4d0c",
+      "rationale": "The evidence for the NMT paper (s-3254ab3a15dccb9a@1:p8) states that the attention mechanism requires computing the annotation weight of every source word for each target word, which may limit applicability to other tasks. The evidence for the Transformer (s-f593f350d93c7f67@1:p52) shows the complexity analysis of self-attention as O(n^2 * d). The warrant that the Transformer's complexity analysis directly addresses the NMT paper's stated limitation on computational cost is supported, as the NMT paper identifies the quadratic scaling as a limitation and the Transformer paper explicitly analyzes this complexity."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-b4c8732dca7caf58",
+      "rationale": "The evidence (s-9ba66ec259647822@1:p13) provides formulations for applying layer normalization to LSTM and GRU. The NMT paper's gated hidden unit is a GRU. The warrant claims that layer normalization generalizes the gated hidden unit. However, the evidence shows layer normalization is applied to the gated unit, not that it generalizes the gating mechanism itself. Layer normalization is a normalization technique added to existing architectures; it does not generalize the gated hidden unit concept. The relationship is more accurately described as an enhancement or modification, not a generalization."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-b91ea1837b5e216e",
+      "rationale": "The evidence for the LSTM paper (s-0480da48214bea42@1:p2) describes compressing the input sequence into a fixed-dimensional vector. The evidence for the attention paper (s-3254ab3a15dccb9a@1:p3) describes the novel architecture that computes a weighted sum of annotations instead of a single fixed vector. The warrant that the attention mechanism extends the fixed-length vector approach is directly supported by the passages, which show the historical progression from the fixed-vector encoder-decoder to the attention-based model."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-bda8a4f02816584c",
+      "rationale": "The evidence (s-3254ab3a15dccb9a@1:p6) explicitly states that the motivation behind the proposed approach was the fixed-length context vector limitation in the basic encoder-decoder, and shows that the RNNsearch model is more robust to sentence length, outperforming the basic encoder-decoder especially on long sentences. This directly supports the warrant that the empirical finding of improved long-sentence translation addresses the limitation of fixed-length vectors in Sutskever et al. (2014)."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-c1d493aec363503e",
+      "rationale": "The evidence for the LSTM paper (s-0480da48214bea42@1:p2) describes compressing the input into a fixed-dimensional vector. The evidence for the attention paper (s-3254ab3a15dccb9a@1:p1) explicitly conjectures that the use of a fixed-length vector is a bottleneck in improving performance. The warrant that the fixed-length vector encoding motivated the conjecture is directly supported by the passages."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-e87e8f26c2c5f0b4",
+      "rationale": "The evidence for the attention paper (s-3254ab3a15dccb9a@1:p9) states that one of the challenges left for the future is to better handle unknown or rare words. The evidence for the LSTM paper (s-0480da48214bea42@1:p1) states that the BLEU score was penalized on out-of-vocabulary words. The warrant that the LSTM paper's limitation is an instance of the broader challenge identified in the attention paper is supported, as the LSTM paper explicitly describes the UNK replacement limitation and the attention paper identifies this as a general challenge."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-1f65861163543acc",
+      "rationale": "The evidence for the later formulation (s-7135f04b26b5ce91@1:p2) explicitly states that the paper presents progress in diffusion probabilistic models [53], citing Sohl-Dickstein et al., and describes the model as a parameterized Markov chain with a fixed forward diffusion process. The evidence for the original formulation (s-30157c08e6d2f6cf@1:p1) defines the model as the endpoint of a Markov chain. The warrant that the later formulation builds on the original is directly supported by the explicit citation and the consistent description of the model."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-d872c7b8b80ad56b",
+      "rationale": "The evidence (s-8cfa97546eff02c9@1:p24) explicitly states that MLWE is a generalization of the LWE problem introduced by Regev in 2005, and that the ML-KEM standard cites Regev's LWE as the basis. This directly supports the warrant that MLWE generalizes LWE."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-02e41463b2581ff5",
+      "rationale": "The evidence (s-beeaeda1908e6236@1:p10) explicitly states that Milgrom (2004) used the envelope theorem to extend the logic of the Revenue Equivalence Theorem, proving payoff equivalence for any two mechanisms where the highest type always wins and types are independent. This directly supports the warrant that Milgrom's payoff equivalence theorem generalizes Vickrey's revenue equivalence theorem."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-10b94a22ad28aac2",
+      "rationale": "The evidence from both sources (s-beeaeda1908e6236@1:p19 and s-40071f9227452f0d@1:p28) describes the same Hatfield and Milgrom (2005) model of matching with contracts. The warrant that the two nodes describe the same contribution is directly supported, as both passages attribute the model to Hatfield and Milgrom (2005) and describe it as a general model encompassing matching and auctions."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-2c15c9e818b6fab3",
+      "rationale": "The evidence for the dominant strategy (s-40071f9227452f0d@1:p8) describes truthful bidding as a dominant strategy in second-price auctions. The evidence for the payoff equivalence theorem (s-beeaeda1908e6236@1:p10) describes the theorem as extending the logic of the Revenue Equivalence Theorem, proving equal payoffs across mechanisms where the highest type wins. The warrant that the dominant strategy is a special case of the payoff equivalence theorem is logically supported, as the second-price auction is a mechanism where the highest type wins, and the theorem generalizes the revenue equivalence result that Vickrey originally proved for the four standard auction formats."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-2f36841e57f1514b",
+      "rationale": "The evidence (s-beeaeda1908e6236@1:p6) explicitly states that Milgrom (1979) extended Wilson's analysis to identify a necessary and sufficient condition for price convergence, whereas Wilson had provided only a sufficient condition. This directly supports the warrant that Milgrom's result is a logical generalization of Wilson's earlier result."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-392fc158d5b53507",
+      "rationale": "The evidence (s-beeaeda1908e6236@1:p11 and p12) describes how Milgrom and Weber (1982) extended the Vickrey model by allowing values to depend on others' information and replacing independence with affiliation, and proved the linkage principle that ranks auctions by revenue. This directly supports the warrant that the linkage principle generalizes the revenue equivalence theorem to affiliated values."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-61eb5c924515e6fb",
+      "rationale": "The evidence (s-beeaeda1908e6236@1:p10 and p11) explicitly states that the Milgrom and Weber (1982) model subsumed the Vickrey and Wilson models, extending the Vickrey model by allowing each bidder's value to depend on others' information and replacing independence with affiliation. Wilson's model is the special case with common values. This directly supports the warrant that Milgrom and Weber generalized Wilson's common-value model."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-6f7c695fd1d05837",
+      "rationale": "The evidence for the CCA (s-40071f9227452f0d@1:p23) states that the CCA uses a second-price rule and core-selecting payments. The evidence for core-selecting auctions (s-beeaeda1908e6236@1:p27) describes Day and Milgrom's characterization of core-selecting auctions. The warrant that the CCA applies the core-selecting payments characterized by Day and Milgrom is supported by the passages, which show the CCA uses core-selecting payments and Day and Milgrom characterized such auctions."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-716cdee8abfe1cbb",
+      "rationale": "The evidence from both sources (s-40071f9227452f0d@1:p22 and s-beeaeda1908e6236@1:p16) describes the same SMRA design by Milgrom and Wilson for the 1994 FCC spectrum auction. The warrant that the two nodes describe the same contribution is directly supported, as both passages attribute the design to Milgrom and Wilson and describe the simultaneous multiple round auction format."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-4d6eb01f6f377769",
+      "rationale": "The warrant claims an analogy between coordination-based multiple equilibria in banking (Diamond-Dybvig) and wage dispersion from on-the-job search (Dybvig and Jaynes 1980). The supplied evidence for the banking model (s-a6db249dd72a8790@1:p45) describes multiple Nash equilibria arising from strategic complementarities. The evidence for the wage dispersion model (s-b0b2b440c574001f@1:p11) describes multiple equilibria in the wage distribution, but the text explicitly states that the model 'anticipated the emphasis on multiple equilibria in macro models' and connects it to Keynes, not to the Diamond-Dybvig banking model. The evidence does not document any analogy drawn between these two specific models, nor does it show that the coordination issues are analogous. The warrant is an unsupported assertion."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-e855201ce2de6f26",
+      "rationale": "The warrant claims that the multiple-equilibria result (1983) motivates the analysis of deposit insurance with full coverage (1986). The evidence for the premise (s-a6db249dd72a8790@1:p45) states that Diamond and Dybvig 'argued, provides a rationale for financial regulation, such as deposit insurance,' which is a general statement. The evidence for the conclusion (s-b0b2b440c574001f@1:p8) discusses the 1986 policy piece and its recommendation for full insurance, but it does not document that the 1983 model's multiple-equilibria result was the specific motivation for the 1986 analysis. The 1986 paper is a policy piece that builds on the model, but the evidence does not show a documented historical arrow of motivation from the precise 1983 result to the 1986 analysis."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-ee04ce1be3ca2130",
+      "rationale": "The warrant claims that the model's logic motivates the analysis of shadow banking as a consequence of restricting bank liquidity provision. The evidence for the premise (s-a6db249dd72a8790@1:p45) describes the Diamond-Dybvig model. The evidence for the conclusion (s-b0b2b440c574001f@1:p8) contains a quote from Diamond and Dybvig (1986) about 100% reserve banking and shadow banking. However, the evidence does not document that the 1983 model's logic specifically motivated this 1986 analysis. The 1986 paper is a policy discussion, but the supplied passages do not establish a documented historical arrow of motivation from the model to this specific conclusion."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-ef232a93745ca1f7",
+      "rationale": "The warrant claims an analogy between the coordination problem in bank runs and adoption externalities in technology adoption. The evidence for the banking model (s-a6db249dd72a8790@1:p45) describes multiple equilibria. The evidence for the adoption model (s-b0b2b440c574001f@1:p9) states that the technology adoption model is 'very similar to bank run models, in that you like to do what everybody else is doing.' However, this is a general statement by Dybvig in his Nobel lecture, not a documented analogy drawn in the original 1983 papers. The evidence does not show that Dybvig and Spatt (1983a) explicitly drew an analogy to Diamond-Dybvig (1983), nor does it provide a specific warrant for the analogy beyond the author's retrospective comment."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-02eb8978c51e03e8",
+      "rationale": "The warrant claims that the capability approach to individual advantage was generalized to argue that capabilities should be the principal dimension for equality. The evidence for the premise (s-3a7869c67be13520@1:p50) describes the capability approach as assessing individual advantage in terms of substantive freedoms. The evidence for the conclusion (s-2b0419520eb91a90@1:p25) states that Sen maintains capabilities should be the principal dimension for equality. However, the evidence does not document a generalization relationship; it merely describes two aspects of Sen's capability approach. The premise and conclusion appear to be different formulations of the same idea, not a documented generalization from one to the other."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-13e89ed88060f353",
+      "rationale": "The warrant claims that the poverty index relies on the expanded informational base of social choice theory. The evidence for the premise (s-2b0419520eb91a90@1:p22) describes the axiomatic derivation of the poverty index. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory with an expanded informational base was crucial for Sen's applied work. However, the evidence does not specifically document that the poverty index, as a particular applied measure, depends on or was historically grounded in the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this connection."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-1a476909d87fe1a1",
+      "rationale": "The warrant claims that the entitlement analysis of famine supports the observation that economic unfreedom can lead to violations of other freedoms. The evidence for the premise (s-2b0419520eb91a90@1:p27) describes Sen's entitlement analysis showing famines occur without food supply decline. The evidence for the conclusion (s-3a7869c67be13520@1:p9) provides the Kader Mia anecdote, where extreme poverty forced a man to risk his life, illustrating that 'economic unfreedom, in the form of extreme poverty, can make a person a helpless prey in the violation of other kinds of freedom.' The entitlement analysis provides a systematic framework for understanding how lack of economic entitlements forces individuals into deprivation, which directly supports the individual case observation. The evidence documents this connection."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-2f4b2094913cdb15",
+      "rationale": "The warrant claims that the development of a social choice school at Delhi, including Pattanaik's thesis, provided the collaborative basis for the majority rule conditions. The evidence for the premise (s-3a7869c67be13520@1:p28) describes Pattanaik's arrival, his thesis on voting theory, and subsequent joint work with Sen. The evidence for the conclusion (s-2b0419520eb91a90@1:p16) states that Sen and Pattanaik specified conditions eliminating intransitivities of majority rule. The biographical account directly documents that Pattanaik's thesis and collaboration led to this joint work, establishing a historical basis."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-8bd9a34e84e07921",
+      "rationale": "The warrant claims that the welfare indicator y·(1-G) presupposes the expanded informational base of social choice theory. The evidence for the premise (s-2b0419520eb91a90@1:p23) describes the welfare indicator as derived from axioms. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory was crucial for applied work. However, the evidence does not specifically document that this particular welfare indicator logically presupposes or was historically grounded in the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this connection."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-97439cbe3c6f0454",
+      "rationale": "The warrant claims that Sen's philosophical studies were a premise for his ethical argument that capabilities should be the principal dimension for equality. The evidence for the premise (s-3a7869c67be13520@1:p25) states that studying philosophy was important for his work on social choice and inequality. The evidence for the conclusion (s-2b0419520eb91a90@1:p25) describes the equality of capabilities argument. However, the evidence does not specifically document that the philosophical studies were a logical premise for this particular argument. The biographical statement is a general reflection on the importance of philosophy, not a specific warrant linking philosophy to the capabilities-as-equality argument."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-a30d0c1c100c2599",
+      "rationale": "The warrant claims that the motivation to overcome Arrow's impossibility led to Sen's work on expanding the informational base, including interpersonal comparability. The evidence for the premise (s-3a7869c67be13520@1:p46) explicitly states that Sen's work in social choice theory was 'initially motivated by a desire to overcome Arrow's pessimistic picture by going beyond his limited informational base.' The evidence for the conclusion (s-2b0419520eb91a90@1:p20) describes Sen's work on interpersonal comparability as initiating a new field in social choice. The biographical statement directly documents this motivation and its connection to the work on informational bases."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-be77623f8793d365",
+      "rationale": "The warrant claims that Sen's conceptualization of famines as entitlement failures was based on his earlier detailed analysis in 'Poverty and Famines'. The evidence for the premise (s-3a7869c67be13520@1:p44) describes Sen's attempt to see famines as economic problems, focusing on entitlements, which is a summary of his 1981 book. The evidence for the conclusion (s-2b0419520eb91a90@1:p27) provides the detailed analysis from that book. The biographical account explicitly states that the 1981 book 'Poverty and Famines' was written for this purpose, establishing a direct historical basis."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-c0a26d50bb1e4444",
+      "rationale": "The warrant claims that the welfare indicator y·(1-G) is another applied measure grounded in the expanded informational base of social choice. The evidence for the premise (s-2b0419520eb91a90@1:p23) describes the welfare indicator. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory was crucial for applied work. However, the evidence does not specifically document that this particular welfare indicator was historically applied as a result of or grounded in the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this connection."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-c65655dd65fa4ff5",
+      "rationale": "The warrant claims that Sen's early emphasis on capabilities as determinants of welfare was later formalized into the capability approach to individual advantage. The evidence for the premise (s-2b0419520eb91a90@1:p24) describes Sen's early view that welfare is created by activities enabled by goods, with capabilities depending on factors like health. The evidence for the conclusion (s-3a7869c67be13520@1:p50) describes the Tanner Lectures (1979) where the capability approach was formalized as assessing advantage in terms of substantive freedoms. The biographical account documents the development from the early formulation to the more developed Tanner Lectures approach, establishing a historical basis."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-d2d6acc7eb61c190",
+      "rationale": "The warrant claims that Sen's study of philosophy was a premise for his work on interpersonal comparability and moral principles. The evidence for the premise (s-3a7869c67be13520@1:p25) states that studying philosophy was important for his work. The evidence for the conclusion (s-2b0419520eb91a90@1:p20) describes his work on interpersonal comparability and moral principles. However, the evidence does not specifically document that the philosophical studies were a logical premise for this particular work on interpersonal comparability. The biographical statement is a general reflection, not a specific warrant linking philosophy to the interpersonal comparability results."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-f5b8b9d693270935",
+      "rationale": "The warrant claims that the poverty index presupposes the expanded informational base of social choice theory. The evidence for the premise (s-2b0419520eb91a90@1:p22) describes the axiomatic derivation of the poverty index. The evidence for the conclusion (s-3a7869c67be13520@1:p40) states that progress in pure social choice theory was crucial for applied work. However, the evidence does not specifically document that the poverty index logically presupposes the expanded informational base. The biographical statement is a general reflection, not a specific warrant for this logical connection."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-fcdf89a21f663029",
+      "rationale": "The warrant claims that the principle of equality in capabilities was applied to health equity. The evidence for the premise (s-2b0419520eb91a90@1:p25) states that Sen maintains capabilities should be the principal dimension for equality. The evidence for the conclusion (s-3a7869c67be13520@1:p52) states that Sen took an interest in health equity, applying concepts of equity and justice to public health. The biographical account documents that health equity was a 'challenging field of application for concepts of equity and justice,' which directly supports the application of the capabilities-as-equality principle to health."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-3ddba39deadff9b1",
+      "rationale": "The warrant claims that the type class inference mechanism (2015) is the historical basis for the structure hierarchy with semi-bundled type classes (2020). The evidence for the premise (s-bdda7faaf8345721@1:p15) describes type class inference as on-demand choice constraints. The evidence for the conclusion (s-4495ee5941de316c@1:p3) describes mathlib's structure hierarchy using type class inference. However, the evidence does not document that the 2015 paper's specific mechanism was the historical basis for the 2020 mathlib design. The 2020 paper describes type class inference as a feature of Lean's core library, but does not cite the 2015 paper as its basis. The connection is one of shared infrastructure, not documented historical inheritance."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-6d78be3a5ed8320d",
+      "rationale": "The warrant claims an evolution of the decidable type class from the 2015 paper to the 2020 mathlib paper. The evidence for the premise (s-bdda7faaf8345721@1:p8) describes the decidable class in Lean's standard library. The evidence for the conclusion (s-4495ee5941de316c@1:p5) describes the same class in mathlib. However, the evidence does not document a historical evolution or that the 2020 work directly extends the 2015 definition. Both describe the same standard library feature; the 2020 paper does not cite the 2015 paper as its basis. This is a description of the same original feature, not a documented historical development."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-74341cabb0369e60",
+      "rationale": "The warrant claims design continuity in Lean's type class hierarchy from the 2015 paper to the 2020 mathlib paper. The evidence for the premise (s-bdda7faaf8345721@1:p7) describes semi-bundled type classes in Lean's algebraic hierarchy. The evidence for the conclusion (s-4495ee5941de316c@1:p4) describes mathlib's adoption of semi-bundled type classes. However, the evidence does not document that the 2020 mathlib design was historically based on the 2015 paper. The 2020 paper describes this as a design decision of the mathlib community, not as an inheritance from the 2015 paper. Both describe the same design pattern in the same system, but the evidence does not establish a documented historical arrow from the 2015 paper to the 2020 mathlib paper."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-f3750bc82beec9d9",
+      "rationale": "The evidence passage (s-73c03c6510f9c285@1:p2) explicitly states that the two-year data 'provided the first strong evidence' and that the three-year analysis uses 'the same methods' with an additional year, directly building on the earlier observation. This confirms the historical_basis_for relationship between the 2013 two-PeV event observation and the 2014 three-year 5.7σ detection."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-1815bd7e8bae3751",
+      "rationale": "The warrant claims that the luminosity distance measurement and redshift degeneracy are 'part of the parameter estimation, providing distance and redshift values used in the analysis.' However, the evidence passages (s-2cbb8d3b3b27f740@1:p3 and p7) describe the distance measurement and redshift degeneracy as results of the parameter estimation, not as a premise that supports it. The relationship is one of co-derivation within the same analysis, not an evidential support where one finding provides evidence for the other. The passages do not show that the distance measurement supports the parameter estimation claim; they are both outputs of the same Bayesian analysis."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-4ff385c68f2f1147",
+      "rationale": "The evidence passage (s-2cbb8d3b3b27f740@1:p6) explicitly describes the waveform model averaging method for systematic error estimation and states that 'We combine the posterior samples of both distributions with equal weight, in effect marginalizing over our choice of waveform model. These averaged results give our best estimate for the parameters describing GW150914.' This directly supports the conclusion's claim that uncertainties include statistical and systematic errors from averaging results of different waveform models."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-8e3b3457672ba6e4",
+      "rationale": "The warrant claims that the direct spin constraints 'provide spin measurements that are part of the parameter estimation results.' However, the evidence passages (s-2cbb8d3b3b27f740@1:p8 and p9) present the spin constraints as outputs of the parameter estimation, not as evidence that supports the parameter estimation methodology. The spin measurements are results derived from the Bayesian analysis, not premises that support the claim about the analysis method. The relationship is one of co-derivation, not evidential support."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-e4d3666cb6cfa9b3",
+      "rationale": "The evidence passages (s-2cbb8d3b3b27f740@1:p2 and p11) state that 'we assume circular orbits' and 'we find no evidence for residual eccentricity,' with preliminary investigations suggesting that eccentricities up to 0.1 at 10 Hz would not measurably affect results. This validation of the circular orbit assumption directly supports the conclusion's claim that the Bayesian parameter estimation uses general relativity-based models, which rely on the circular orbit assumption."
+    },
+    {
+      "decision": "unsupported",
+      "id": "connection-244c0d802d7204ac",
+      "rationale": "The warrant claims that the external-cell technique (n-34f335bbd90a7400, formulated in the late 1960s) is a historical basis for the later dye laser method (n-47843fcbff18ded2, demonstrated in 1972). However, the evidence passages (s-1dffa399e936fe08@1:p3 and s-ac8a203d7cffa313@1:p16) show that the external-cell technique was an early experiment, but the dye laser method is described as a new method that 'did not require the sample to be placed inside a laser cavity.' The relationship is one of alternative approaches to the same problem (Doppler-free saturation spectroscopy), not a documented historical arrow where the external-cell work directly led to the dye laser method. The passages do not demonstrate that the later work built upon the earlier external-cell experiments in a documented inheritance."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-8e5a9389d57c2d7e",
+      "rationale": "The evidence passages (s-ac8a203d7cffa313@1:p23 and s-1dffa399e936fe08@1:p2) explicitly state that the Garching team's 1999 demonstration of a comb-based phase-coherent link from microwaves to the visible was the first such demonstration, and that the frequency comb 'can link and compare optical frequencies and microwave frequencies phase-coherently in a single step,' enabling its role as the 'long missing clockwork' for optical atomic clocks. This confirms the historical_basis_for relationship between the 1999 demonstration and the later application as clockwork."
+    },
+    {
+      "decision": "supported",
+      "id": "connection-d1d8b400a00c2908",
+      "rationale": "The evidence passages (s-ac8a203d7cffa313@1:p27, p28, and s-1dffa399e936fe08@1:p9) explicitly explain that the coherent addition of pulse train harmonics yields a frequency comb with sharp lines at harmonics of the repetition rate, and that the comb line frequencies are given by f_m = m f_r + f_CE. The Fourier analysis of a periodic pulse train is presented as the basis for the comb line spacing, with the offset f_CE added for phase slips. This directly supports the premise_for relationship between the coherent addition principle and the comb ruler formula."
+    }
+  ],
+  "status": "machine source-fidelity review; not human auditing",
+  "unavailable": []
+}

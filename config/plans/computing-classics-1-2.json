@@ -1,0 +1,62 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "C1002",
+      "need": "Turing’s 1936 machine model, universal computation and undecidability arguments. Preserve the exact problem stated; do not replace circle-freeness or the Entscheidungsproblem with a casually attributed modern halting theorem.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted copy of the original scientific paper.",
+      "url": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1003",
+      "need": "Shannon’s 1948 mathematical theory: information, entropy, source coding, channel capacity and precise communication limits. Distinguish communication uncertainty from semantic meaning and normative values.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted copy of the original scientific paper.",
+      "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+    }
+  ],
+  "frozen_checklists": {
+    "C1002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ],
+    "C1003": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ]
+  },
+  "id": "computing-classics-1-2",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 24,
+  "purpose": "Primary-source accounts of two missing classical foundations."
+}

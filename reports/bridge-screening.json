@@ -1,0 +1,92 @@
+{
+  "admitted": 7,
+  "candidates": 11,
+  "decisions": [
+    {
+      "decision": "supported",
+      "id": "bridge-465f80f2a3e50411",
+      "rationale": "The Viazovska source (s-7414b1e9b6725a75, p3) explicitly states: 'In 2003 Cohn and Elkies [4] developed linear programming bounds that apply directly to sphere packings' and then presents 'Theorem 2. (Cohn, Elkies [4])' as the key tool. The paper then uses this theorem to construct an optimal function g, establishing a direct documentary inheritance from the Cohn-Elkies theorem to Viazovska's proof."
+    },
+    {
+      "decision": "supported",
+      "id": "bridge-8f0bc8688fc05516",
+      "rationale": "The Cohn-Elkies source (s-7edb5c263f75a465, p17) states 'Conjecture 7.3. There exist functions that satisfy the hypotheses of Theorem 3.2 and solve the sphere packing problem in dimensions 2, 8, and 24.' The Viazovska source (s-7414b1e9b6725a75, p4) states 'Theorem 2 applied to the optimal function f(x) = g(√2x) immediately implies Theorem 1. Additionally, the function g satisfies the conclusions of [4, Conjecture 8.1].' This shows Viazovska's work directly confirms the conjecture for dimension 8, establishing a clear historical basis."
+    },
+    {
+      "decision": "supported",
+      "id": "bridge-83d538cb52505561",
+      "rationale": "The Cohn-Elkies source (s-7edb5c263f75a465, p18-19) presents Conjecture 8.1 and the uniqueness argument in Section 8. The Viazovska source (s-7414b1e9b6725a75, p4) explicitly states: 'the function g satisfies the conclusions of [4, Conjecture 8.1]. This implies the uniqueness of the densest periodic sphere packing in R^8.' This is a direct application of the Cohn-Elkies uniqueness framework, not just a similar result."
+    },
+    {
+      "decision": "unsupported",
+      "id": "bridge-5b6c47a806ae5e9f",
+      "rationale": "The warrant claims the numerical bounds 'motivated' Viazovska's exact solution. The Viazovska source (s-7414b1e9b6725a75, p3) notes the proximity of the Cohn-Elkies bound ('their upper bound for Δ8 was only 1.000001 times greater than the lower bound') but does not state this motivated her work. The relation is 'historical_basis_for', which requires explicit documentary inheritance, not mere chronology or similarity. The evidence shows Viazovska used the Cohn-Elkies theorem (Theorem 2) as a tool, not that the numerical bound motivated her construction."
+    },
+    {
+      "decision": "unsupported",
+      "id": "bridge-e05c910537297ff6",
+      "rationale": "The predicate is 'motivated', but the evidence does not show that the impossibility of compact support guided Viazovska's choice. The Cohn-Elkies source (s-7edb5c263f75a465, p11-12) proves compact support is impossible for sharp bounds. The Viazovska source (s-7414b1e9b6725a75, p8) constructs functions a and b using contour integrals, which indeed have non-compact support. However, there is no statement in Viazovska's paper that this impossibility motivated her construction. The warrant's claim of consistency is insufficient for a 'motivated' relation."
+    },
+    {
+      "decision": "supported",
+      "id": "bridge-60e8498cc4e2d98c",
+      "rationale": "The AF3 source (s-f4a9c46d8b6e8da2, p14) explicitly states: 'The overall structure of AF3... echoes that of AF2' and describes modifications to the trunk and structure module. This establishes AF2 as the direct predecessor and documentary basis for AF3's architecture."
+    },
+    {
+      "decision": "supported",
+      "id": "bridge-66751aa79669d373",
+      "rationale": "The AF3 source (s-f4a9c46d8b6e8da2, p14) states: 'The pairformer... replaces the evoformer of AF2 as the dominant processing block.' This is a direct statement of architectural evolution, establishing the evoformer as the historical basis for the pairformer."
+    },
+    {
+      "decision": "supported",
+      "id": "bridge-cd4c31c94a48f027",
+      "rationale": "The AF3 source (s-f4a9c46d8b6e8da2, p12) states: 'it directly predicts the raw atom coordinates with a diffusion module, replacing the AF2 structure module that operated on amino-acid-specific frames and side-chain torsion angles.' This explicitly identifies the AF2 structure module as the component being replaced, establishing a direct historical basis."
+    },
+    {
+      "decision": "unsupported",
+      "id": "bridge-4cfa580d1957c803",
+      "rationale": "The predicate is 'analogous_to', which requires a specific scoped structural analogy. The warrant notes both papers report a similar dependence on MSA depth. The AF3 source (s-f4a9c46d8b6e8da2, p31) states AF3 has a 'very similar dependence on MSA depth to AlphaFold-Multimer v.2.3.' However, this is an empirical observation of similarity, not a claim of a structural analogy between the two findings. The relation is merely noting that two different models exhibit a similar phenomenon, which is not a scoped structural analogy."
+    },
+    {
+      "decision": "supported",
+      "id": "bridge-de50adc5dfc6caa6",
+      "rationale": "The AF3 source (s-f4a9c46d8b6e8da2, p34) states: 'As with AF2, AF3 confidence measures are well calibrated with accuracy' and p18 describes the pLDDT head 'as in AF2.' This shows the AF2 confidence measure concept is directly inherited and used as the basis for AF3's confidence measures."
+    },
+    {
+      "decision": "unsupported",
+      "id": "bridge-3c46ad6e3e8f8530",
+      "rationale": "The predicate is 'analogous_to', which requires a specific scoped structural analogy. The warrant claims both methods use predictions from another model as training data. The AF2 source (s-057b1d8c009ba859, p18) describes self-distillation using its own predictions. The AF3 source (s-f4a9c46d8b6e8da2, p16) describes cross-distillation using AF2 predictions. While both are distillation techniques, the analogy is at the level of a general concept (using predicted structures for training), not a specific scoped structural analogy. The sources do not frame these as analogous; they are different instantiations of a broad technique."
+    }
+  ],
+  "excluded_same_source": 37,
+  "receipt": {
+    "attempt": 1,
+    "finish_reason": "stop",
+    "input_hash": "301b7d465d7b4e4cc0c434036ffa21b40d83e9bc512ecdf7687b1c32f9f48c9b",
+    "job_id": "e17e330ac12623246ab1fd6fb62a5ed94cc0bfdfc8d90979691e27802d746e18",
+    "output_hash": "b3570ac39e2864e95a718654bda585edb607adaf61cc0d005243473c2ef6dc1f",
+    "prompt_hash": "19d0989ddb9b323ecc4270cb445bbabdc1747a2669d29ed934b48c3111987ba3",
+    "provider": "SiliconFlow",
+    "provider_trace_id": "379e43b1-36d4-4c44-b1d5-b093fcd1e5e1",
+    "request_id": "01a1300f6f97bda96ef634b9ea8f4f93",
+    "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "state": "succeeded",
+    "task": "cross-source-escalation-v1",
+    "time": "2026-10-12T12:21:19+00:00",
+    "trace_id": "379e43b1-36d4-4c44-b1d5-b093fcd1e5e1",
+    "usage": {
+      "completion_tokens": 1636,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 22288,
+      "prompt_tokens": 22288,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 23924
+    }
+  }
+}

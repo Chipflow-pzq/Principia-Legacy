@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "scope": "Actual flagship records, isolated disposable corpus copy; no fabricated corrections or human reviews added to distributed corpus",
+  "checks": [
+    {
+      "dossier": "M06",
+      "target": "n-b25ad0851484c7b2",
+      "dependent_interpretations": 9,
+      "old_snapshot_preserved": true,
+      "new_approval_required": true,
+      "coverage_updated": true,
+      "brief_updated": true
+    },
+    {
+      "dossier": "P01",
+      "target": "n-bd00254115887cfb",
+      "dependent_interpretations": 14,
+      "old_snapshot_preserved": true,
+      "new_approval_required": true,
+      "coverage_updated": true,
+      "brief_updated": true
+    },
+    {
+      "dossier": "C01",
+      "target": "n-7174667738dd3cf9",
+      "dependent_interpretations": 10,
+      "old_snapshot_preserved": true,
+      "new_approval_required": true,
+      "coverage_updated": true,
+      "brief_updated": true
+    },
+    {
+      "dossier": "E01",
+      "target": "n-7a2dcf7d88d3269d",
+      "dependent_interpretations": 12,
+      "old_snapshot_preserved": true,
+      "new_approval_required": true,
+      "coverage_updated": true,
+      "brief_updated": true
+    },
+    {
+      "dossier": "B01",
+      "target": "n-711b35dd72329889",
+      "dependent_interpretations": 19,
+      "old_snapshot_preserved": true,
+      "new_approval_required": true,
+      "coverage_updated": true,
+      "brief_updated": true
+    }
+  ]
+}

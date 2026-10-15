@@ -1,0 +1,23 @@
+{
+  "attribution_pages_total": 679,
+  "examples": {
+    "general_relativity_search": {
+      "people": 1,
+      "results": 23,
+      "topics": 2
+    },
+    "hamiltonian_mechanics_topics": [
+      "Hamiltonian mechanics"
+    ],
+    "terence_tao_profiles": [
+      "Emmanuel Candes, Justin Romberg, Terence Tao",
+      "Terence Tao",
+      "Justin Romberg",
+      "Emmanuel Candès"
+    ]
+  },
+  "notice": "Source-linked research profiles are not complete biographies. Other name/group pages explicitly retain incomplete biographical status. Shared membership is navigation, not an influence assertion.",
+  "release_id": "1.2.0-exploratory",
+  "research_profiles": 29,
+  "shared_topic_routes": 10
+}

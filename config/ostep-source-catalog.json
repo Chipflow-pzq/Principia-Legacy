@@ -1,0 +1,204 @@
+{
+  "source_hash": "008a3ad6aeb4e6683f54f41b0046aa8d967e1b6cbda8ccb89fcdd867e62cb4a2",
+  "status": "discovered sources; not admitted claims",
+  "title": "Operating Systems: Three Easy Pieces",
+  "topics": [
+    {
+      "title": "Processes",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"
+    },
+    {
+      "title": "Address Spaces",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf"
+    },
+    {
+      "title": "Concurrency and Threads",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"
+    },
+    {
+      "title": "I/O Devices",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf"
+    },
+    {
+      "title": "Intro Security",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/security-intro.pdf"
+    },
+    {
+      "title": "Process API",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf"
+    },
+    {
+      "title": "Memory API",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-api.pdf"
+    },
+    {
+      "title": "Thread API",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf"
+    },
+    {
+      "title": "Hard Disk Drives",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf"
+    },
+    {
+      "title": "Authentication",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/security-authentication.pdf"
+    },
+    {
+      "title": "Direct Execution",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf"
+    },
+    {
+      "title": "Address Translation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf"
+    },
+    {
+      "title": "Locks",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"
+    },
+    {
+      "title": "Redundant Disk Arrays (RAID)",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-raid.pdf"
+    },
+    {
+      "title": "Access Control",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/security-access.pdf"
+    },
+    {
+      "title": "CPU Scheduling",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"
+    },
+    {
+      "title": "Segmentation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf"
+    },
+    {
+      "title": "Locked Data Structures",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf"
+    },
+    {
+      "title": "Files and Directories",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf"
+    },
+    {
+      "title": "Cryptography",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/security-crypto.pdf"
+    },
+    {
+      "title": "Multi-level Feedback",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf"
+    },
+    {
+      "title": "Free Space Management",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf"
+    },
+    {
+      "title": "Condition Variables",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"
+    },
+    {
+      "title": "File System Implementation",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf"
+    },
+    {
+      "title": "Distributed",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/security-distributed.pdf"
+    },
+    {
+      "title": "Lottery Scheduling",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-lottery.pdf"
+    },
+    {
+      "title": "Introduction to Paging",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"
+    },
+    {
+      "title": "Semaphores",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"
+    },
+    {
+      "title": "Fast File System (FFS)",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf"
+    },
+    {
+      "title": "Multi-CPU Scheduling",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf"
+    },
+    {
+      "title": "Translation Lookaside Buffers",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf"
+    },
+    {
+      "title": "Concurrency Bugs",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"
+    },
+    {
+      "title": "FSCK and Journaling",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf"
+    },
+    {
+      "title": "Advanced Page Tables",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf"
+    },
+    {
+      "title": "Event-based Concurrency",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf"
+    },
+    {
+      "title": "Log-structured File System (LFS)",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf"
+    },
+    {
+      "title": "Swapping: Mechanisms",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf"
+    },
+    {
+      "title": "Flash-based SSDs",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf"
+    },
+    {
+      "title": "Virtual Machines",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf"
+    },
+    {
+      "title": "Swapping: Policies",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf"
+    },
+    {
+      "title": "Data Integrity and Protection",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-integrity.pdf"
+    },
+    {
+      "title": "Complete VM Systems",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-complete.pdf"
+    },
+    {
+      "title": "Monitors",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-monitors.pdf"
+    },
+    {
+      "title": "Distributed Systems",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf"
+    },
+    {
+      "title": "Lab Tutorial",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/lab-tutorial.pdf"
+    },
+    {
+      "title": "Network File System (NFS)",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/dist-nfs.pdf"
+    },
+    {
+      "title": "Systems Labs",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/lab-projects-systems.pdf"
+    },
+    {
+      "title": "Andrew File System (AFS)",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/dist-afs.pdf"
+    },
+    {
+      "title": "xv6 Labs",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/lab-projects-xv6.pdf"
+    }
+  ],
+  "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+}

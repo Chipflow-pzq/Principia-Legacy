@@ -1,0 +1,211 @@
+{
+  "admission": {
+    "new_contributions": 69,
+    "new_records": 260,
+    "new_relations": 58,
+    "plan_total_contributions": 69,
+    "plan_total_relations": 58
+  },
+  "completed_at": "2026-10-13T01:50:26+00:00",
+  "estimate": {
+    "assignments": 6,
+    "maximum_output_tokens_before_retries": 196608,
+    "maximum_parallel_requests": 4,
+    "normal_calls_before_retries": 12,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged."
+  },
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "outcomes": [
+    {
+      "admission": "admitted",
+      "assignment_id": "b87594785615b693293bb1029a908436312ccaf94cdb5717042324099f2b3af9",
+      "depth": 0,
+      "dossier": "P1001",
+      "gaps": [
+        "The source does not provide a complete solution for systems with more than two points; it only sketches the method.",
+        "The source does not discuss the existence or uniqueness of solutions to the partial differential equations for V.",
+        "The source does not provide numerical examples or comparisons with other methods.",
+        "The source does not address the historical influence of this paper on later developments in mechanics."
+      ],
+      "need": "Hamilton’s characteristic function, variational dynamics and precisely attributed 1834 results.",
+      "new_contributions": 11,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 11,
+        "accepted_relations": 9,
+        "proposed_nodes": 11,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative methods in detail beyond mentioning Lagrange's and others' work.",
+        "attribution": "The source clearly attributes the new method to Hamilton, while acknowledging prior work by Lagrange and others.",
+        "limitations": "The source explicitly states the method does not apply when the law of living force does not hold, and that practical facility may not be gained."
+      },
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "source_title": "On a General Method in Dynamics",
+      "state": "succeeded",
+      "url": "https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/GenMeth.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "6b4fa4aed57f2d51e0760bed3e6c601ba3d9eee82316291e825ab14a8085cbb4",
+      "depth": 0,
+      "dossier": "P1002",
+      "gaps": [
+        "The source does not provide the original 1905 and 1915 papers, so the exact dates and detailed derivations are not covered.",
+        "The lecture does not discuss the mathematical details of the field equations or the geodesic equation.",
+        "The empirical evidence for the redshift is noted as uncertain, but no further data is provided.",
+        "The source does not address the quantum theory of gravity or later developments in unified field theories."
+      ],
+      "need": "Einstein’s own account of gravitational geometry, equivalence and the scope of relativity; separate his 1923 lecture from original discovery dates.",
+      "new_contributions": 15,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 15,
+        "accepted_relations": 14,
+        "proposed_nodes": 15,
+        "proposed_relations": 14
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a lecture by Einstein himself, providing a first-person account of the development of relativity. It does not discuss alternative theories in detail, but mentions the affine theory as an alternative approach to unification.",
+        "attribution": "The source clearly attributes the development of special and general relativity to Einstein, but also credits Mach for the principle of inertia and Levi-Civita, Weyl, and Eddington for ideas on affine correlation. The lecture is a secondary source for the original discoveries, as it was delivered in 1923, after the theories were formulated.",
+        "limitations": "The source is a lecture, not a peer-reviewed paper, and it reflects Einstein's personal perspective. It does not provide detailed derivations or experimental data. The redshift agreement is noted as not fully assured."
+      },
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "source_title": "Fundamental ideas and problems of the theory of relativity",
+      "state": "succeeded",
+      "url": "https://www.nobelprize.org/uploads/2018/06/einstein-lecture.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "ffb559968bd82304051745e8c474ac5d802b0523a8e9e8b9adb1b9c92232a669",
+      "depth": 0,
+      "dossier": "M1001",
+      "gaps": [
+        "The source does not provide a rigorous proof of the Fundamental Theorem of Calculus, Part 1, beyond a sketch using the Mean Value Theorem for Integrals.",
+        "The source does not discuss the historical development of the theorem, such as the priority dispute between Newton and Leibniz, or the contributions of other mathematicians like Barrow.",
+        "The source does not address the limitations of the theorem for functions that are not continuous, such as piecewise continuous functions or functions with jump discontinuities.",
+        "The source does not provide a formal definition of the Riemann integral, which is the basis for the definite integral used in the theorem.",
+        "The source does not discuss the generalization of the theorem to Lebesgue integration or other integration theories."
+      ],
+      "need": "Why integration and differentiation are inverse operations under stated regularity conditions; do not assign historical priority absent evidence.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 7,
+        "proposed_nodes": 8,
+        "proposed_relations": 7
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section, not a historical paper. It provides a standard exposition of the Fundamental Theorem of Calculus but does not offer alternative formulations or proofs beyond the standard ones.",
+        "attribution": "The source attributes the discovery of the relationship between differentiation and integration to Newton and Leibniz, but does not provide specific evidence or primary sources. The attribution is secondary and lacks detail.",
+        "limitations": "The source does not provide historical details on the development of the theorem, such as the specific contributions of Newton and Leibniz or other mathematicians. It also does not discuss edge cases like improper integrals or functions with discontinuities."
+      },
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "source_title": "5.3 The Fundamental Theorem of Calculus - Calculus Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "44193a6b9b7b7f4d2a1f5be83a716795ed5803aed355593d7ed7c6a63d103d84",
+      "depth": 0,
+      "dossier": "C1001",
+      "gaps": [
+        "No historical attribution for divide and conquer, greedy, or reduction paradigms.",
+        "No formal complexity analysis of reductions.",
+        "No discussion of dynamic programming details.",
+        "No treatment of NP-completeness or complexity classes."
+      ],
+      "need": "Algorithmic representation, computational problem solving, and specific limitations; omit routine coding settings.",
+      "new_contributions": 12,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 12,
+        "accepted_relations": 8,
+        "proposed_nodes": 12,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section, not a research paper; it provides no historical origins for the paradigms.",
+        "attribution": "No original attributions for algorithmic paradigms are given; the source is a secondary exposition.",
+        "limitations": "The source does not discuss dynamic programming in detail, despite mentioning it as an alternative to greedy."
+      },
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "source_title": "3.4 Algorithmic Paradigms - Introduction to Computer Science | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/3-4-algorithmic-paradigms"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "041d9517ae671279b27fd6ecb3d2be963fab0472c24af4ec487ebe105813b744",
+      "depth": 0,
+      "dossier": "E1001",
+      "gaps": [
+        "Historical origin of the PPF concept is not provided.",
+        "Original attribution for the law of increasing opportunity cost is missing.",
+        "No discussion of empirical applications or real-world data.",
+        "The source does not address critiques or limitations of the PPF model beyond its simplified assumptions."
+      ],
+      "need": "Opportunity cost, attainable production tradeoffs, and what efficiency does and does not imply.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 5,
+        "proposed_nodes": 7,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "This source is a textbook section, not a primary historical document. It provides no information about alternative formulations or competing models beyond the standard PPF framework.",
+        "attribution": "No individual contributors are named for the concepts; the source is a collective textbook by Greenlaw, Shapiro, and MacDonald. The intellectual origins of the PPF, opportunity cost, and comparative advantage are not discussed.",
+        "limitations": "The source does not provide historical origins, original authorship, or citations for the concepts. It is a pedagogical exposition, so attribution to specific economists is absent. The treatment is simplified to two goods and does not address complexities like multiple goods, dynamic changes, or empirical measurement."
+      },
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "source_title": "2.2 The Production Possibilities Frontier and Social Choices - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/2-2-the-production-possibilities-frontier-and-social-choices"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "6190bf2bea785c01d4c13c7e5f15dd85d54d73e28af03525827623c575e1a017",
+      "depth": 0,
+      "dossier": "B1001",
+      "gaps": [
+        "No primary source evidence for Mendel's original experiments.",
+        "No dates for Mendel's publications or the discovery of linkage and epistasis.",
+        "No attribution for the forked-line method, probability method, or general rules.",
+        "No detailed explanation of recombination mechanisms or genetic mapping techniques.",
+        "No discussion of statistical methods used by Mendel or modern tests of independent assortment."
+      ],
+      "need": "Mendel’s segregation and assortment arguments, empirical basis and the limits of their applicability.",
+      "new_contributions": 16,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 15,
+        "proposed_nodes": 16,
+        "proposed_relations": 15
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section, not a primary historical document. It provides a secondary account of Mendel's laws and their extensions.",
+        "attribution": "Mendel is credited with the laws of segregation, independent assortment, and dominance. The meiotic basis, linkage, recombination, and epistasis are described without specific attribution to researchers.",
+        "limitations": "The source does not provide primary evidence from Mendel's original paper, nor does it detail the historical development of the laws. It also does not specify dates for Mendel's work or the discovery of linkage and epistasis."
+      },
+      "source_discovery": "University-hosted historical paper, original Nobel lecture, or section title directly parsed from the publisher curriculum.",
+      "source_title": "12.3 Laws of Inheritance - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance"
+    }
+  ],
+  "plan_hash": "9655569229a5171366260344103af5f9e6e617ae0e2d51997b7f576d731a98c5",
+  "plan_id": "classical-pilot-1-2",
+  "started_at": "2026-10-13T01:45:53+00:00"
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "credit": "Vaswani et al.",
+    "people": [
+      "person-d376c7e060c7c681",
+      "person-ba7112b748832514",
+      "person-a6bf1aef6178cf10",
+      "person-6d352077e009f1c6",
+      "person-199d24395f2e18e2",
+      "person-2ecfd082c710c05a",
+      "person-9a8b93c0561cad2f",
+      "person-c9c3b038558ae34b"
+    ],
+    "reason": "The source author list resolves this recorded collective author credit.",
+    "source_ids": [
+      "s-f593f350d93c7f67"
+    ]
+  },
+  {
+    "credit": "Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin",
+    "people": [
+      "person-d376c7e060c7c681",
+      "person-ba7112b748832514",
+      "person-a6bf1aef6178cf10",
+      "person-6d352077e009f1c6",
+      "person-199d24395f2e18e2",
+      "person-2ecfd082c710c05a",
+      "person-9a8b93c0561cad2f",
+      "person-c9c3b038558ae34b"
+    ],
+    "reason": "The source author list resolves this recorded collective author credit.",
+    "source_ids": [
+      "s-f593f350d93c7f67"
+    ]
+  },
+  {
+    "credit": "Bahdanau, Cho, Bengio",
+    "people": [
+      "person-ad51876a192511f8",
+      "person-1b4ab65c2b6d782b",
+      "person-e18284faecba9b85"
+    ],
+    "reason": "The source author list resolves this recorded collective author credit.",
+    "source_ids": [
+      "s-3254ab3a15dccb9a"
+    ]
+  },
+  {
+    "credit": "Emmanuel Candes, Justin Romberg, Terence Tao",
+    "people": [
+      "person-ad2831cdd1a91b28",
+      "person-7766ba84a90a2746",
+      "person-a42dc0ae63c20b40"
+    ],
+    "reason": "The source author list explicitly names these people. The original role and attribution caveat are retained for each insight.",
+    "source_ids": [
+      "s-b2acf48348d2a1f4"
+    ]
+  },
+  {
+    "credit": "Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau",
+    "people": [
+      "person-23bec15eab27a42a",
+      "person-c3dc2383455b5892"
+    ],
+    "reason": "The source author list explicitly names these people. The original role and attribution caveat are retained for each insight.",
+    "source_ids": [
+      "s-0f5356584e283d80",
+      "s-2a1bbb030183032c",
+      "s-3cea19aacc28e893",
+      "s-51a9f410cddbe243",
+      "s-62cf78b1f9e0b796",
+      "s-bf3912e04ca1b581",
+      "s-c6dc3d5c121b98f7"
+    ]
+  }
+]

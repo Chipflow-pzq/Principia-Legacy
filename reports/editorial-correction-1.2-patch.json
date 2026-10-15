@@ -1,0 +1,2930 @@
+{
+  "base_corpus_hash": "a2d8d3c17ce98b4e442852c2b09d1aaa49874c4147fdbfbc12d8c5dddda9cb24",
+  "generated_at": "2026-10-13T03:25:04+00:00",
+  "impact": [
+    "connection-fcdf89a21f663029",
+    "r-05296ff91e539398",
+    "r-1fb2816df2014b50",
+    "r-303e4f50ca6512d5",
+    "r-34a7b625228e6067",
+    "r-583bdd1f542ff16c",
+    "r-863d11ea08daa4a5",
+    "r-88abc716b89ce970",
+    "r-99c5a72a2866babd",
+    "r-a58f9d0fb7e3aee7",
+    "r-a96f620b04564e4c",
+    "r-b85dfd1e2b10a5df",
+    "r-bb3bfee16ad19975",
+    "r-c4051b7b39599b2b",
+    "r-c8612c78c8cfbc27",
+    "r-d537857b13a20343",
+    "r-d546cec520a4cc6b",
+    "r-ea0db5df5f3194f9",
+    "r-ed269cc03a09fd45",
+    "r-ed5c11c3d1b1421e",
+    "r-ee03b95e58d526d6",
+    "r-f1bf5b9c6d317839"
+  ],
+  "reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+  "records": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The historical account is accurate as presented."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The textbook provides a general historical statement without specific attribution.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "The concept of a limit has ancient roots, but the formal definition did not appear until the late 19th century.",
+      "conceptual_move": "Acknowledge the long history of limiting processes while noting the relatively recent formalization.",
+      "content_hash": "eb1f44ea9c38cca857b9116b90bc507d45c3bd658dfa6be06c808c9afd13590f",
+      "curation": {
+        "input_hash": "30cc4484e76e3dd024853975d13b26009d418e5ace35d5357bfae046f2b91324",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "857c19c0a3fd440fb43533e9b5d2f178760e47853a41632b8f0cbda9e03d1da4",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9de6f3483fcd98aa1b6b2854a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fad00f74527a5b48e36fa4948e",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "The textbook was published in 2016; the formal definition is attributed to the late 19th century.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1101"
+      ],
+      "explanation": "The textbook states that limiting processes have been used for thousands of years, for example by early mathematicians approximating areas of circles, but the formal definition of a limit only appeared in the late 19th century. This historical note is important because it distinguishes the intuitive use of limits from the rigorous formalization. The textbook chooses to begin with an intuitive approach, as did early mathematicians, and promises to examine the formal definition later in the chapter. This sets the stage for the epsilon-delta definition, which is the standard formalization.",
+      "human_review": "not_reviewed",
+      "id": "n-b95e2d89c9103e48",
+      "kind": "normative_argument",
+      "limits": [
+        "The textbook does not provide specific names or dates for the formal definition.",
+        "Withheld by machine editorial triage: The textbook does not provide specific names or dates for the formal definition."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Understanding the historical development of limits helps contextualize the intuitive approach used in the textbook.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "normative/not empirical",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Historical note on the formal definition of limits",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p126",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p127",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p128",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p129",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The function is differentiable on the relevant interval",
+        "The equation has at least one root"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The text presents these as exercises without attribution.",
+          "name": "unknown",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Exercises ask to show that certain equations have exactly one real root, using the Mean Value Theorem to rule out multiple roots.",
+      "conceptual_move": "Assume two distinct roots and use the theorem to derive a contradiction involving the derivative.",
+      "content_hash": "9700e766a8ba925e3133a166b3f02f1b434e076c37b0c1981176c77450c8865d",
+      "curation": {
+        "input_hash": "fb4707e6da0759b12491e37786ef50ebdea0592cea8a7dd04d170eb587fdcf8c",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "d69a97975a8fb81b2960583ea7883d3abcd451ff185b2b053af7014e9fe3eb65",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9ddc62ee736817adb2f3b531d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fa73a2eaa0d309c8fdabcf635b",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook exposition dated 2016.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1104"
+      ],
+      "explanation": "The exercises include problems like showing x^3+4x+16=0 has exactly one real root. The typical approach is to assume two roots, apply Rolle's theorem or the Mean Value Theorem to find a point where the derivative is zero, and then show the derivative cannot vanish, yielding a contradiction. This demonstrates the theorem's utility in proving uniqueness results beyond simple algebraic manipulation.",
+      "human_review": "not_reviewed",
+      "id": "n-83f452dc56d66506",
+      "kind": "question",
+      "limits": [
+        "The exercises are pedagogical; they do not introduce new theory.",
+        "Withheld by machine editorial triage: The exercises are pedagogical prompts asking students to apply the theorem, not introducing new substantive intellectual moves, theorems, or findings."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Apply the Mean Value Theorem to establish uniqueness of solutions to equations, a common application in analysis.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook exercises.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Exercise: using the Mean Value Theorem to prove uniqueness of roots",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p87",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p88",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p89",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p91",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p109",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p114",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Students have basic knowledge of continuity and differentiability"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The text presents these as exercises without attribution.",
+          "name": "unknown",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "The exercises ask students to construct counterexamples showing why continuity and differentiability are required for the Mean Value Theorem.",
+      "conceptual_move": "Use counterexample construction as a pedagogical tool to clarify the role of each hypothesis.",
+      "content_hash": "aadfcacbe279ec49261b4ebca41b0f008739112d73d3f1f4c4c25f17611607d7",
+      "curation": {
+        "input_hash": "fb4707e6da0759b12491e37786ef50ebdea0592cea8a7dd04d170eb587fdcf8c",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "d69a97975a8fb81b2960583ea7883d3abcd451ff185b2b053af7014e9fe3eb65",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9ddc62ee736817adb2f3b531d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fa73a2eaa0d309c8fdabcf635b",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook exposition dated 2016.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1104"
+      ],
+      "explanation": "The section includes exercises that explicitly ask why continuity and differentiability are needed, and whether a discontinuous function could still satisfy the conclusion. These questions guide students to recognize that the hypotheses are not merely formal but essential for the theorem's validity. The exercises also ask when Rolle's theorem and the Mean Value Theorem are equivalent, prompting reflection on the relationship between the two results.",
+      "human_review": "not_reviewed",
+      "id": "n-9d991e835bb8623f",
+      "kind": "question",
+      "limits": [
+        "The exercises are pedagogical prompts, not new mathematical results.",
+        "Withheld by machine editorial triage: The exercises are pedagogical prompts for constructing counterexamples to reinforce hypotheses, not new substantive results."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Reinforce understanding of the theorem's hypotheses by having students find functions that violate them and show the conclusion fails.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook exercises.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Exercise: continuity and differentiability are necessary hypotheses",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p52",
+          "source_id": "s-3a7869c67be13520",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Health is a fundamental capability.",
+        "Health disparities are unjust and addressable."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Sen describes his own interest and collaboration.",
+          "name": "Amartya Sen",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Sen took an interest in health equity, applying concepts of equity and justice to public health, in collaboration with Sudhir Anand.",
+      "conceptual_move": "Extending the capability approach to health, viewing health as a dimension of individual advantage and a matter of social justice.",
+      "content_hash": "a7f4dbb2697e570df902340137c7f82297a49776a516cd6096d63491344f48c8",
+      "curation": {
+        "input_hash": "74b339c063e950ea5b57504abe16c214274678126ad8bc1abd31d975eaa8c2f5",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6fee1fd8d6daafac7b78c1dd2b44e5ccfe2a7f8360230daca0a616d32c00b592",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130d7390221a494250623a5324f90",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130d836e867f112db7496575e7720",
+        "time": "2026-10-12T15:59:46+00:00"
+      },
+      "date": {
+        "event": "formulation",
+        "note": "During his Harvard years, likely in the late 1980s or early 1990s.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "E12"
+      ],
+      "explanation": "Sen's biography mentions that he started taking an interest in health equity and public health, in close collaboration with Sudhir Anand. This application of equity and justice concepts to health was a challenging field, as it required measuring health outcomes and addressing disparities. It extended the capability approach to a new domain, emphasizing that health is a crucial aspect of human well-being and a matter of social justice. This work contributed to the development of health equity as a field of study.",
+      "human_review": "not_reviewed",
+      "id": "n-886f389b25779244",
+      "kind": "normative_argument",
+      "limits": [
+        "The biography does not provide details of the work.",
+        "It is a brief mention of his research interests.",
+        "Withheld by machine editorial triage: Only mentions taking an interest in health equity and applying concepts, without any specific substantive intellectual move, finding, or argument."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "economics",
+      "problem": "Health disparities are a form of inequality that traditional welfare economics often overlooked.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "normative/not empirical",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Health equity as a field of application for concepts of equity and justice",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p25",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p26",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p27",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p29",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The listed values are accurate to the given order of magnitude.",
+        "The chosen examples are representative of the scales they illustrate."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The table is presented without specific attribution; it is a compilation of standard physical data.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "A table of orders of magnitude for length, mass, and time, from subatomic to cosmic scales, illustrates the vast range over which physics applies and enables quantitative comparisons.",
+      "conceptual_move": "Organize known physical quantities into a table by order of magnitude, providing a visual and quantitative map of the universe's scales.",
+      "content_hash": "c04bb2cf25eace8d68f78cc2ce98e501be249cbe722aa7a01ea6fbb92f85367f",
+      "curation": {
+        "input_hash": "97b0f8c1c2b3162aa7a7f6ed1d6269d7af42151af789aab0471e441fcb05db98",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "df497895537d7e691df687ceddc5ecb4587adf4cae4a65c69a1d81892866538e",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332267e4de023c43de63da036b5b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13324e3127345fe5c538e1f39c971",
+        "time": "2026-10-13T02:40:54+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "The table is part of the 2016 textbook.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "P2000"
+      ],
+      "explanation": "The text presents a table (Figure 1.4) listing representative lengths, masses, and times as orders of magnitude, from the diameter of a proton (10^-15 m) to the edge of the observable universe (10^26 m), from the mass of an electron (10^-30 kg) to the upper limit of the known universe (10^53 kg), and from the lifetime of an unstable nucleus (10^-22 s) to the age of the universe (10^18 s). This representation allows readers to pose comparative questions, such as how many hydrogen atoms stretch across the Sun's diameter (10^19) or how many protons are in a bacterium (10^12). The table serves as a pedagogical tool to convey the scope of physics and to practice order-of-magnitude reasoning. It is a curated compilation of known values, not an original measurement, but it is a valuable conceptual organization.",
+      "human_review": "not_reviewed",
+      "id": "n-3563bcfd9bcfc731",
+      "kind": "representation",
+      "limits": [
+        "The table provides only approximate values, not precise measurements.",
+        "It is a static snapshot and does not capture the full diversity of physical objects.",
+        "Withheld by machine editorial triage: A table describing the range of scales is an overview illustration, without a distinct inference or method."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "physics",
+      "problem": "The laws of physics apply across an immense range of scales, but without a structured representation, the breadth is difficult to grasp or compare.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard reference data for educational purposes.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "physics",
+        "foundations"
+      ],
+      "title": "Comparative scale table for length, mass, and time",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "There is an underlying order in nature that can be described by laws.",
+        "Quantitative laws are the most effective way to understand natural phenomena."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The text presents this as a general characterization of physics without specific attribution.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Physics aims to understand natural phenomena at the most basic level, using a small number of quantitative laws to describe interactions of energy, matter, space, and time, and this scope makes it foundational to other sciences.",
+      "conceptual_move": "Define physics by its goal of uncovering fundamental mechanisms and its reliance on quantitative laws, positioning it as the basis for other sciences.",
+      "content_hash": "9cc6868803ec0f1cfcc9a0cf44225a48a945b629291d79944ecd5fcbcd568bff",
+      "curation": {
+        "input_hash": "97b0f8c1c2b3162aa7a7f6ed1d6269d7af42151af789aab0471e441fcb05db98",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "df497895537d7e691df687ceddc5ecb4587adf4cae4a65c69a1d81892866538e",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332267e4de023c43de63da036b5b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13324e3127345fe5c538e1f39c971",
+        "time": "2026-10-13T02:40:54+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Part of the 2016 textbook exposition.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "P2000"
+      ],
+      "explanation": "The text defines physics as concerned with 'describing the interactions of energy, matter, space, and time to uncover the fundamental mechanisms that underlie every phenomenon.' It emphasizes that physics uses a small number of quantitative laws to understand the world at the most basic level, and that these laws govern everything in the observable universe at all measurable scales. This definition frames physics as the foundational science, with applications in chemistry, engineering, geology, and biology. The text also notes that the same basic training prepares students for any area of physics, highlighting a common core. This is a normative argument about the scope and role of physics, presented as an introductory framing rather than an original discovery.",
+      "human_review": "not_reviewed",
+      "id": "n-7463661ff1f3e35a",
+      "kind": "normative_argument",
+      "limits": [
+        "The definition is broad and may not capture the diversity of physics subfields.",
+        "It does not address the limits of reductionism or the emergence of complex phenomena.",
+        "Withheld by machine editorial triage: A generic definition of the scope of physics belongs in topic orientation rather than a separate intellectual contribution."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "physics",
+      "problem": "The breadth of physics, from subatomic particles to the universe, needs a unifying definition that explains its scope and its relationship to other disciplines.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "normative/not empirical",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "physics",
+        "foundations"
+      ],
+      "title": "Physics as the study of fundamental mechanisms across all scales",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Technological innovations are driven by physics knowledge.",
+        "The examples are representative of physics applications."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The text explicitly credits them with inventing the MOSFET in 1959.",
+          "name": "Mohamed M. Atalla and Dawon Kahng",
+          "role": "original contributor"
+        },
+        {
+          "evidence_note": "The text credits her with programming the first computers for accurate remote sensing and positioning.",
+          "name": "Gladys West",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Physics principles underpin modern technologies such as MOSFETs, GPS, and medical imaging, and are applied in diverse professions including engineering, medicine, and piloting.",
+      "conceptual_move": "Provide specific examples of technologies and professions that rely on physics, showing its broad applicability.",
+      "content_hash": "687866ee449bf56a79f61ddd5f56acf7d916143155978b3a7c23804f8c4589ad",
+      "curation": {
+        "input_hash": "97b0f8c1c2b3162aa7a7f6ed1d6269d7af42151af789aab0471e441fcb05db98",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "df497895537d7e691df687ceddc5ecb4587adf4cae4a65c69a1d81892866538e",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332267e4de023c43de63da036b5b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13324e3127345fe5c538e1f39c971",
+        "time": "2026-10-13T02:40:54+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "The text was published in 2016; the MOSFET invention is dated 1959 in the text.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "P2000"
+      ],
+      "explanation": "The text argues that physics is foundational to technology and professional practice. It cites the invention of the MOSFET by Mohamed M. Atalla and Dawon Kahng in 1959 as the basis for modern electronics, and mentions GPS algorithms developed by Gladys West. It also lists professions such as engineers, pilots, physicians, and physical therapists that apply physics concepts daily. The text further notes applications in medical diagnostics (radiographs, MRI, ultrasound) and therapy (radiotherapy). This is an argument for the relevance of physics, using specific historical examples. The attributions to Atalla, Kahng, and West are explicit in the text, but the broader claim is a general pedagogical argument.",
+      "human_review": "not_reviewed",
+      "id": "n-cf6585982fd7a597",
+      "kind": "argument",
+      "limits": [
+        "The text does not provide technical details of how physics is applied in each case.",
+        "It is a motivational overview, not a comprehensive analysis.",
+        "Withheld by machine editorial triage: A list of professions and technologies using physics does not identify a specific intellectual move."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "physics",
+      "problem": "Students may question the relevance of physics to their lives and careers; concrete examples are needed to demonstrate its practical importance.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Historical facts about technology development, presented as examples.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "physics",
+        "foundations"
+      ],
+      "title": "Physics as the basis for technology and professional practice",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The universe is governed by universal laws.",
+        "These laws are discoverable and describable by humans."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The text presents this as a general statement without specific attribution.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "The laws of physics govern everything in the observable universe at all measurable scales of length, mass, and time, making physics the foundational science.",
+      "conceptual_move": "Assert the universal scope of physics laws, supported by examples from subatomic to cosmic scales.",
+      "content_hash": "8365676c39510e42d37a530b6e58b49d65a89314c51ac516c2cc096e35081671",
+      "curation": {
+        "input_hash": "97b0f8c1c2b3162aa7a7f6ed1d6269d7af42151af789aab0471e441fcb05db98",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "df497895537d7e691df687ceddc5ecb4587adf4cae4a65c69a1d81892866538e",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332267e4de023c43de63da036b5b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13324e3127345fe5c538e1f39c971",
+        "time": "2026-10-13T02:40:54+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Part of the 2016 textbook exposition.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "P2000"
+      ],
+      "explanation": "The text states that 'the laws of physics govern everything in the observable universe at all measurable scales of length, mass, and time.' This claim is supported by examples such as the Whirlpool Galaxy, where the same gravity that causes stars to rotate is thought to be the same as that causing water to flow over hydroelectric dams on Earth. The text also notes that physics is used by all sciences because it retains the most basic aspects of science. This is a foundational argument for the scope of physics, presented as a general principle rather than an original discovery.",
+      "human_review": "not_reviewed",
+      "id": "n-be635f017b3cd50b",
+      "kind": "argument",
+      "limits": [
+        "The text does not address the possibility of scale-dependent physics or emergent laws.",
+        "It is a philosophical claim, not empirically proven in the text.",
+        "Withheld by machine editorial triage: The generic assertion that physics applies at all measurable scales repeats topic orientation rather than establishing a scoped scientific result."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "physics",
+      "problem": "To justify the study of physics, one must establish that its laws are universally applicable across all scales.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard assumption in physics education.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "physics",
+        "foundations"
+      ],
+      "title": "Laws of physics govern all measurable scales",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Body structures can be studied independently of their functions for descriptive purposes.",
+        "Function can be studied through experimental manipulation and measurement."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no historical attribution provided.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Anatomy is the scientific study of body structures, while physiology is the scientific study of how those structures function through chemistry and physics, together supporting life.",
+      "conceptual_move": "Defines anatomy and physiology as distinct fields with different objects of study and methods, rather than treating them as interchangeable.",
+      "content_hash": "e3b1265371301dfc788c72823f83bda688adb88554749c49d43b9c0ae4952d82",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2022
+      },
+      "dossiers": [
+        "B2000"
+      ],
+      "explanation": "This textbook section establishes a foundational distinction: anatomy focuses on the body's structures, from macroscopic to microscopic, while physiology focuses on function, emphasizing chemistry and physics. The move is conceptual, providing a framework for organizing the vast scope of human biology. It clarifies that anatomy is primarily observational and descriptive, whereas physiology relies on experimental manipulation to understand mechanisms. This separation is not merely semantic but guides methodological choices: anatomists dissect and image, while physiologists design laboratory experiments. The distinction also sets the stage for exploring their interdependence, as form and function are closely related. This representation is a pedagogical and organizational tool, not a new empirical discovery, but it is essential for structuring the discipline.",
+      "human_review": "not_reviewed",
+      "id": "n-ed822ab8f7e3bc4c",
+      "kind": "representation",
+      "limits": [
+        "The distinction is conceptual and may blur in practice, as many studies integrate both.",
+        "The text does not address historical debates about the primacy of structure versus function.",
+        "Withheld by machine editorial triage: The definitions of two disciplines are topic orientation, not a specific scientific intellectual move."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "Students and researchers need a clear conceptual separation between structure and function to organize biological inquiry.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook framing, widely accepted in education.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Anatomy and physiology as complementary but distinct scientific disciplines",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Magnification is the key criterion for classifying anatomical study.",
+        "Cytology and histology are subfields of microscopic anatomy."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no historical attribution provided.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Anatomy is divided into gross anatomy (structures visible without magnification) and microscopic anatomy (structures requiring microscopes), including cytology and histology.",
+      "conceptual_move": "Introduces a scale-based classification of anatomical study, distinguishing macroscopic and microscopic approaches.",
+      "content_hash": "ebd8b42daa29a85254dbf124467bff055c977b8c2f9ea6226982a9f194e64bb2",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2022
+      },
+      "dossiers": [
+        "B2000"
+      ],
+      "explanation": "This passage organizes anatomy by scale: gross anatomy deals with large structures visible to the naked eye, while microscopic anatomy requires magnification and includes cytology (cells) and histology (tissues). The move is taxonomic, creating categories that guide what tools and methods are appropriate. It also highlights technological progression: as microscopes advanced, anatomists could study smaller structures, from organ slices to three-dimensional molecules. This representation is foundational for curriculum design and research specialization. It does not claim new findings but provides a framework for understanding the scope of anatomical inquiry. The distinction is practical, as it determines whether dissection or microscopy is the primary method.",
+      "human_review": "not_reviewed",
+      "id": "n-7da2c4caee0e4bd4",
+      "kind": "representation",
+      "limits": [
+        "The classification is simplified; some structures may be studied at multiple scales.",
+        "The text does not discuss emerging imaging technologies that blur the gross/microscopic boundary.",
+        "Withheld by machine editorial triage: The list of anatomical subdisciplines is a field overview rather than a standalone intellectual contribution."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "The body's structures span vastly different scales, requiring different observational tools and methods.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook classification, widely used in education.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Gross and microscopic anatomy as complementary scales of structural study",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Laboratory experiments can reveal causal relationships in physiology.",
+        "Physiological functions are amenable to experimental manipulation."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no historical attribution provided.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Current advances in physiology usually depend on carefully designed laboratory experiments that reveal functions of structures and chemical compounds.",
+      "conceptual_move": "Emphasizes experimental manipulation as the primary method for physiological discovery.",
+      "content_hash": "4b968e858cde45f463ec8c2c432ede9160299442ad4e684b6e4bde6fab6a9f30",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2022
+      },
+      "dossiers": [
+        "B2000"
+      ],
+      "explanation": "This passage states that physiology advances through carefully designed laboratory experiments, contrasting with anatomy's observational methods. The move is methodological, highlighting the need for manipulation and measurement to uncover functions. It implies that physiological knowledge is built on experimental evidence, not just description. This is a key distinction from anatomy, which relies more on observation and dissection. The text does not detail specific experimental designs but establishes the importance of controlled conditions. This representation is foundational for understanding how physiological knowledge is generated.",
+      "human_review": "not_reviewed",
+      "id": "n-e7d276d018b57db1",
+      "kind": "method",
+      "limits": [
+        "The text does not discuss ethical constraints or limitations of experimental approaches.",
+        "No examples of specific experiments are provided.",
+        "Withheld by machine editorial triage: The general statement that physiology uses experiments does not specify an experimental inference or method."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "Observation alone is insufficient to understand physiological mechanisms; controlled experiments are needed.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard methodological principle in physiology.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Physiology relies on carefully designed laboratory experiments",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Physiological functions can be studied at multiple levels of organization.",
+        "Findings at one level can inform understanding at other levels."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no historical attribution provided.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Physiologists may work from the organ level, such as brain regions, to the molecular level, such as electrochemical signals along nerves.",
+      "conceptual_move": "Introduces a scale-based framework for physiological study, from organs to molecules.",
+      "content_hash": "72293ce170b9b005d4c85acedb0111a0d3019080989fd5b537c87b29df7f32f3",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2022
+      },
+      "dossiers": [
+        "B2000"
+      ],
+      "explanation": "This passage describes how physiologists specialize across levels, from organ-level studies of brain function to molecular-level studies of nerve signals. The move is organizational, providing a hierarchy of analysis that guides research questions. It parallels the gross/microscopic distinction in anatomy but focuses on function. This representation helps students understand that physiology is not confined to one scale. It also implies that different methods are needed at each level, from imaging to biochemical assays. The text does not detail specific techniques but establishes the breadth of physiological inquiry.",
+      "human_review": "not_reviewed",
+      "id": "n-23c4fc8a4c75dbb8",
+      "kind": "representation",
+      "limits": [
+        "The text does not discuss integration across levels.",
+        "No examples of specific research programs are provided.",
+        "Withheld by machine editorial triage: The range of scales studied by physiologists is a disciplinary overview, not a particular explanatory advance."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "Physiological functions occur at multiple levels of organization, requiring different analytical approaches.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook representation.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Physiology spans from organ-level to molecular-level analysis",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-ce73913278821bca",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Computer science should include human-centered perspectives"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no specific attribution.",
+          "name": "Dr. Jean-Claude Franchitti",
+          "role": "collective or unknown"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Computer science includes human-centered subfields like HCI and computer science education, which emphasize social, cognitive, and communal aspects, reflecting a growing desire to serve a broader public.",
+      "conceptual_move": "Expanded the definition of computer science to include social and educational dimensions.",
+      "content_hash": "bb1a227ff36899b332b61633caa4f5ebeb7796d4ef7f63566c138f9a562fa5c2",
+      "curation": {
+        "input_hash": "6fbd3cf8714cb689d8454e4b8859418b1138d67074dd19ba58a82f00df0b04ce",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "40a5336a38ffcd3d0fbb42fe65b55b1eab39b18190456883b762b6eaa0b598d5",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332584bdd0e2397e9b5628fef607",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133332eb1c621450bed61c142fd70",
+        "time": "2026-10-13T02:44:18+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2024
+      },
+      "dossiers": [
+        "C2000"
+      ],
+      "explanation": "The passage discusses how theoretical computer science is often emphasized in undergraduate programs, sometimes to the detriment of social and technical values. It highlights human-computer interaction (HCI) and computer science education as subfields that emphasize the social aspects of computation. HCI hosts annual conferences bringing together researchers and professionals, while computer science education focuses on cognitive, social, and communal aspects of learning. The passage argues that these human-centered subfields are increasingly represented, reflecting a growing desire to engage students and the public in understanding the values of computer technologies. This is a normative argument about the scope of the field, presented as a textbook perspective.",
+      "human_review": "not_reviewed",
+      "id": "n-3c35fb335429d2fb",
+      "kind": "normative_argument",
+      "limits": [
+        "No empirical evidence for the claims about subfield representation",
+        "Withheld by machine editorial triage: The list of human-centered computing subfields is a catalog rather than a specific result or argument."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Countering the historical emphasis on theoretical and technical aspects of computer science.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "normative/not empirical",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Human-centered subfields in computer science",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-ce73913278821bca",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Algorithms are the fundamental unit of computing",
+        "Computing includes all computer-related phenomena"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no historical attribution provided.",
+          "name": "Dr. Jean-Claude Franchitti",
+          "role": "collective or unknown"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Computer science is defined as the study of computing, including all computer-related phenomena, with a focus on algorithms as sequences of precise instructions that enable computation.",
+      "conceptual_move": "Broadened the scope from computers themselves to all computing phenomena, centering algorithms as the core object of study.",
+      "content_hash": "9a70f474f12decdea8c6aa5523ee508c7cf3d2c408355f8c285d9fe1d0e5815d",
+      "curation": {
+        "input_hash": "6fbd3cf8714cb689d8454e4b8859418b1138d67074dd19ba58a82f00df0b04ce",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "40a5336a38ffcd3d0fbb42fe65b55b1eab39b18190456883b762b6eaa0b598d5",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332584bdd0e2397e9b5628fef607",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133332eb1c621450bed61c142fd70",
+        "time": "2026-10-13T02:44:18+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2024
+      },
+      "dossiers": [
+        "C2000"
+      ],
+      "explanation": "This passage establishes a foundational definition of computer science as the study of computing, encompassing all phenomena related to computers, such as the Internet. The key move is to place algorithms—defined as sequences of precise instructions—at the center of the discipline, rather than focusing solely on hardware or software. This definition frames computer science as a field with roots in engineering and mathematics, and it positions algorithms as the unifying concept that enables applications from online shopping to streaming music. The passage also emphasizes that computer science is not just about computers but about the broader phenomena they enable, which sets the stage for later discussions of social and human-centered aspects. This is a textbook exposition, not an original discovery, but it provides a clear conceptual boundary for the field.",
+      "human_review": "not_reviewed",
+      "id": "n-fcb986933ecc4807",
+      "kind": "normative_argument",
+      "limits": [
+        "Definition is presented as textbook exposition, not a formal theorem",
+        "Does not address edge cases like non-algorithmic computing",
+        "Withheld by machine editorial triage: A broad introductory definition of computer science is better presented as topic orientation than a contribution card."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "The field lacked a clear, inclusive definition that distinguished it from mere hardware or programming.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "normative/not empirical",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Computer science as the study of algorithms and computing phenomena",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-497f9e93c99dd071",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-497f9e93c99dd071",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-497f9e93c99dd071",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-497f9e93c99dd071",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-497f9e93c99dd071",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-497f9e93c99dd071",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Economic problems can be decomposed into smaller, testable pieces.",
+        "Understanding economics improves decision-making and citizenship."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The textbook presents this view as its own.",
+          "name": "Steven A. Greenlaw, David Shapiro, Daniel MacDonald",
+          "role": "authors of the exposition"
+        },
+        {
+          "evidence_note": "The textbook cites their Nobel Prize-winning work as an example.",
+          "name": "Esther Duflo, Abhijit Banerjee, Michael Kremer",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Economics should be viewed as a collection of questions and puzzles, with tools to solve them, rather than primarily a set of facts to memorize.",
+      "conceptual_move": "Reframe economics as an analytical toolkit for addressing complex problems.",
+      "content_hash": "ed7da486c894db329ad5352f2670255193563b7fedacef664f6cf8f286fbd2a8",
+      "curation": {
+        "input_hash": "c86670ae32417a970a15d66496f581d1934c7e98a4f436522b0300b32af95ab6",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f12d447b9ff6800c6bcd6cb36aa374de4975f8185b730c3ff2348d1ebd2f9795",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332735953d35bb68bb135bf778c5",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133273ad1bd9be4b7f624e06abe23",
+        "time": "2026-10-13T02:45:56+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2022
+      },
+      "dossiers": [
+        "E2000"
+      ],
+      "explanation": "The textbook argues that economics is not primarily a collection of facts but a set of questions and puzzles, with tools to solve them. This framing is illustrated by the work of Esther Duflo, Abhijit Banerjee, and Michael Kremer, who won the 2019 Nobel Prize for breaking widespread problems like poverty and education barriers into smaller pieces and testing small interventions. The authors quote Duflo: 'the war on poverty was not going to be won in one major battle, but in a series of small triumphs.' This approach emphasizes experimentation and incremental learning as a method for addressing complex economic issues. The argument positions economics as crucial for understanding and solving major world problems, from global warming to poverty, and for good citizenship, enabling individuals to evaluate arguments and make informed decisions. The study of economics does not dictate answers but illuminates different choices.",
+      "human_review": "not_reviewed",
+      "id": "n-f8810958fb22f457",
+      "kind": "normative_argument",
+      "limits": [
+        "The argument is pedagogical and motivational, not an empirical claim.",
+        "It does not specify which tools are most effective or their limitations.",
+        "Withheld by machine editorial triage: General advice to view a subject as puzzles rather than facts does not provide a distinct scientific argument in this account."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "economics",
+      "problem": "To guide how students should approach the study of economics.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "normative/not empirical",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics",
+        "foundations"
+      ],
+      "title": "Economics as a tool for solving puzzles, not a collection of facts",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p108",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p116",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p117",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The piecewise function is defined as specified."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The textbook presents this as an example.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Piecewise functions can have different one-sided limits at a point, leading to a non-existent two-sided limit, as illustrated by a function with a break at x=2.",
+      "conceptual_move": "Apply the relationship between one-sided and two-sided limits to piecewise functions.",
+      "content_hash": "81468aec053acfe4702a826cfd61248517e4131aaa19fef2d61e3371b7ce75e5",
+      "curation": {
+        "input_hash": "30cc4484e76e3dd024853975d13b26009d418e5ace35d5357bfae046f2b91324",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "857c19c0a3fd440fb43533e9b5d2f178760e47853a41632b8f0cbda9e03d1da4",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9de6f3483fcd98aa1b6b2854a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fad00f74527a5b48e36fa4948e",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Standard example.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1101"
+      ],
+      "explanation": "The textbook presents a piecewise function f(x) = x+1 for x<2 and x²−4 for x≥2. The left limit at x=2 is 3, and the right limit is 0, so the two-sided limit does not exist. This example demonstrates how to use tables and graphs to evaluate one-sided limits and how to conclude that a two-sided limit fails when the one-sided limits differ. It also shows that the function has a break at x=2, which is a discontinuity. This is a key application of the concepts introduced in the section.",
+      "human_review": "not_reviewed",
+      "id": "n-42f3f4637707fa57",
+      "kind": "empirical_finding",
+      "limits": [
+        "The conclusion is specific to this function.",
+        "Withheld by machine editorial triage: This particular piecewise-function exercise illustrates an already represented general limit principle; no separate generalization is supplied."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Piecewise functions often have jumps or breaks; their limits need to be analyzed using one-sided limits.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard example in calculus.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Limits of piecewise functions and discontinuities",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p199",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p202",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p203",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p204",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The relativistic mass equation is valid.",
+        "v is less than c."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The textbook mentions Einstein's equation, but the limit analysis is presented by the textbook authors.",
+          "name": "Albert Einstein",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "In Einstein's mass equation, the ratio m/m₀ increases without bound as v/c approaches 1, indicating a vertical asymptote at v/c=1.",
+      "conceptual_move": "Use the concept of a vertical asymptote to interpret the physical implication of the relativistic mass formula.",
+      "content_hash": "698f96f35567fcf184be0023ccf705b14dab01be11b23dd9852bd3ec17d3d155",
+      "curation": {
+        "input_hash": "30cc4484e76e3dd024853975d13b26009d418e5ace35d5357bfae046f2b91324",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "857c19c0a3fd440fb43533e9b5d2f178760e47853a41632b8f0cbda9e03d1da4",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9de6f3483fcd98aa1b6b2854a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fad00f74527a5b48e36fa4948e",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "The textbook was published in 2016; Einstein's equation is from the early 20th century.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1101"
+      ],
+      "explanation": "The textbook applies the concept of limits to Einstein's equation for the mass of a moving object, m = m₀/√(1−v²/c²). By graphing m/m₀ as a function of v/c, it shows that as v/c approaches 1, the ratio increases without bound, meaning the function has a vertical asymptote at v/c=1. This implies that as an object's speed approaches the speed of light, its mass becomes arbitrarily large, which is a physical interpretation of the limit. This example demonstrates how limits are used to analyze real-world phenomena and to identify asymptotic behavior.",
+      "human_review": "not_reviewed",
+      "id": "n-b41344541fe1b251",
+      "kind": "empirical_finding",
+      "limits": [
+        "The interpretation is based on the mathematical model; physical implications may require additional context.",
+        "Withheld by machine editorial triage: This worked limit example does not establish a separate discovery, and Einstein is named for the underlying equation rather than authorship of this textbook limit analysis."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "The limit concept is applied to a physical model to understand behavior at extreme speeds.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard application in physics and calculus.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Application of limits to relativistic mass",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "h(x)=sin(x^3)",
+        "x approaches a"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The textbook presents this as an example, not as an original derivation.",
+          "name": "unknown",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "The derivative of sin(x^3) is derived by multiplying and dividing the difference quotient by (x^3 - a^3), then recognizing each factor as a derivative.",
+      "conceptual_move": "Algebraic manipulation of the difference quotient to reveal two derivative limits.",
+      "content_hash": "6a3ca95b96a62fc66c17980058dfbf30fbc99c40b28c04d45f653d0f6941d2b8",
+      "curation": {
+        "input_hash": "63bccaeb7782d72670f9b9f277bab8d55c3ca64f0b9b61e2ef7ebfb7f9bcae04",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fabb5a659a886a420e679b071b66b503c8b9dd8705686d2226f26aaf271316c6",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9f9dcc63f7b4ab8e57f0d305a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fa244346627f1675f1f1fb7b31",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "No historical date given.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1103"
+      ],
+      "explanation": "The text demonstrates a concrete derivation of the chain rule for a specific composition. Starting from the limit definition of h'(a), it multiplies and divides by (x^3 - a^3), then identifies the first factor as the derivative of sin(u) with respect to u, and the second as the derivative of x^3. This step-by-step approach illustrates how the chain rule emerges from the limit definition, providing a pedagogical proof for a special case.",
+      "human_review": "not_reviewed",
+      "id": "n-8e2fe48d4fa573e3",
+      "kind": "method",
+      "limits": [
+        "Only demonstrates a special case, not a general proof.",
+        "Withheld by machine editorial triage: A worked differentiation of sin(x^3) repeats the separately represented chain rule rather than adding a distinct general method."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Directly applying the limit definition to sin(x^3) yields an expression that is not immediately recognizable as a derivative.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Correct and standard derivation.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Limit-based derivation of chain rule for sin(x^3)",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Function is integrable on [a,b]"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Authors explaining the concept.",
+          "name": "Gilbert Strang and Edwin “Jed” Herman",
+          "role": "textbook authors"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "The variable of integration in a definite integral is a dummy variable; changing its name does not change the integral's value.",
+      "conceptual_move": "Emphasize that the variable of integration is analogous to a summation index and can be replaced by any other symbol.",
+      "content_hash": "01531641eeccd5ae65e3dfb06ce3365c01788d80b584b35bdc4d55d4eb1c3de2",
+      "curation": {
+        "input_hash": "323f7e4c48a1b32dfbc094ed3d49f600d40e18e7b76699954b56b36b8cec4d9d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "693dc66204fb4d6634d8f31aa8cf4a72001ea4b37bd72c2bc53faca7ac00ed2b",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132faa45016b69db66a0845fec4cd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132ff67d9cce5f130260eeb1f34c5",
+        "time": "2026-10-13T01:57:28+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "M1106"
+      ],
+      "explanation": "The text explains that the dx in ∫_a^b f(x) dx indicates that f is a function of x, called the variable of integration. Like the index in a sum, this variable is a dummy variable and has no impact on the computation. The text explicitly states that ∫_a^b f(x) dx = ∫_a^b f(t) dt = ∫_a^b f(u) du. This is a conceptual clarification that helps avoid confusion when substituting variables or when the same letter is used elsewhere. It is a simple but important point for understanding the notation. The text does not discuss any exceptions or subtleties.",
+      "human_review": "not_reviewed",
+      "id": "n-5252a330029e4ee9",
+      "kind": "representation",
+      "limits": [
+        "No exceptions discussed",
+        "Withheld by machine editorial triage: Changing a bound dummy variable name is supporting notation within integral explanations, not a separate explanatory advance here."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Students may confuse the variable of integration with a specific value; need to clarify that it is a placeholder.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard clarification in calculus.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Dummy variable in definite integrals",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p143",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p144",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Function has derivatives of all orders at x=2"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "The Taylor series for f(x)=1/(2x) at x=2 can be found and its interval of convergence determined, illustrating the general procedure.",
+      "conceptual_move": "Compute derivatives at the center and use the ratio test or geometric series to find the interval of convergence.",
+      "content_hash": "37f0846337eb96996a21892f1a80b4ea38a362302364c56ce9cd5ad299b18d14",
+      "curation": {
+        "input_hash": "c13134f8f1e7f38e82ea6aad521dd12e36939c95be17ba1ce927bdd27bdb3522",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "87b365ce664caf33bfb771cbd1c1f458425b56718561be6768b76ceeef1bdf87",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132fddd632f88425df10bc646f5dd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133008eeac99d0349f8ae887dcb76",
+        "time": "2026-10-13T02:00:59+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Classical example.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1111"
+      ],
+      "explanation": "The text presents an example of finding the Taylor series for 1/(2x) at x=2. This is a straightforward application of the derivative-based coefficient formula. The interval of convergence is determined using standard tests, showing how to handle functions beyond the basic exponential and trigonometric ones.",
+      "human_review": "not_reviewed",
+      "id": "n-09c38d8f1812d79f",
+      "kind": "method",
+      "limits": [
+        "The series converges only on a finite interval, not all real numbers",
+        "Withheld by machine editorial triage: A worked Taylor expansion of a particular rational function repeats the general Taylor method already represented."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Find the Taylor series for a rational function at a given point and determine convergence.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard example.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Taylor series for 1/(2x) at x=2",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "ln x has derivatives of all orders at x=1"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "The Taylor polynomials for ln x at x=1 are p0=0, p1=x-1, p2=(x-1)-1/2(x-1)^2, p3=(x-1)-1/2(x-1)^2+1/3(x-1)^3, and they approximate ln x near x=1.",
+      "conceptual_move": "Compute derivatives at the center and plug into the Taylor polynomial formula.",
+      "content_hash": "f2be1fb9bcf212632a88f4dd9c0202077a746b058cd7bc53fdcde15753614169",
+      "curation": {
+        "input_hash": "c13134f8f1e7f38e82ea6aad521dd12e36939c95be17ba1ce927bdd27bdb3522",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "87b365ce664caf33bfb771cbd1c1f458425b56718561be6768b76ceeef1bdf87",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132fddd632f88425df10bc646f5dd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133008eeac99d0349f8ae887dcb76",
+        "time": "2026-10-13T02:00:59+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Classical example.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1111"
+      ],
+      "explanation": "The text works through the example of ln x at x=1, computing the first few Taylor polynomials. This demonstrates the procedure of evaluating derivatives at the center and constructing the polynomial. The graphs show that the polynomials approximate the function well near x=1, illustrating the concept of local approximation.",
+      "human_review": "not_reviewed",
+      "id": "n-725a6f771922faa0",
+      "kind": "method",
+      "limits": [
+        "Approximation is only good near the center; error grows away from x=1",
+        "Withheld by machine editorial triage: A worked Taylor expansion of logarithm repeats the general method already represented rather than establishing an independent move."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Illustrate how to compute Taylor polynomials for a non-polynomial function.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard example.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Taylor polynomials for ln x at x=1",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p244",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p246",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p247",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The Maclaurin polynomial approximates e^x well near the root"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Approximate roots of p_N(x)-2=0, where p_N is the Nth Maclaurin polynomial of e^x, give approximate values of ln(2).",
+      "conceptual_move": "Recognize that solving e^x = 2 is equivalent to finding ln(2), and approximate e^x by its Maclaurin polynomial.",
+      "content_hash": "d9cf2e98b86df0c990946acb159f715fea2c99b270d3636cb5ee0c44a7b9f368",
+      "curation": {
+        "input_hash": "c13134f8f1e7f38e82ea6aad521dd12e36939c95be17ba1ce927bdd27bdb3522",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "87b365ce664caf33bfb771cbd1c1f458425b56718561be6768b76ceeef1bdf87",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132fddd632f88425df10bc646f5dd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133008eeac99d0349f8ae887dcb76",
+        "time": "2026-10-13T02:00:59+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Classical application.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M1111"
+      ],
+      "explanation": "The text connects Taylor polynomials to root finding. Since e^x = 2 has solution x = ln(2), approximating e^x by its Maclaurin polynomial p_N(x) and solving p_N(x) - 2 = 0 gives an approximation to ln(2). This illustrates a practical application of Taylor polynomials in numerical methods.",
+      "human_review": "not_reviewed",
+      "id": "n-9d329dd2b5c6c997",
+      "kind": "method",
+      "limits": [
+        "The approximation quality depends on N and the distance from 0",
+        "Withheld by machine editorial triage: Combining standard numerical tools in this single exercise does not supply a separately established general insight."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "Use Taylor polynomials to approximate the value of ln(2) via root finding.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard application.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Newton's method with Taylor polynomials for ln(2)",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The period is accurately known.",
+        "The oscillation is periodic with a constant period."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The textbook presents this as an example without historical attribution.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+      "claim": "Given a period of $0.400\\ \\mu s$, the frequency is calculated as $2.50 \\times 10^6$ Hz, which is above the human hearing range and thus classified as ultrasound.",
+      "conceptual_move": "Use the formula $f = 1/T$ to compute frequency from a given period, then interpret the result in terms of the human hearing range.",
+      "content_hash": "a433fe27f8c843533dae3fa34dda4dad98c20c4f985ad16331e5621c760f6e18",
+      "curation": {
+        "input_hash": "0739e659b1f408e68dabc5c7b06edbfe822955eb856245d026aad8708254de47",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "690cec6262ed1e48c62566b8aa7e99faf2152c6bab211f048070d04ea9f06a2f",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a133029f0cb2766fcfcafe6a5ce1ab",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13304fc2c017ffdcf1e8cbedbed68",
+        "time": "2026-10-13T02:06:11+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Published in 2016.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "P1109"
+      ],
+      "explanation": "The text presents a worked example to illustrate the use of the frequency-period relationship. A medical ultrasound device oscillates with a period of $0.400\\ \\mu s$. Substituting into $f = 1/T$ gives $f = 1/(0.400 \\times 10^{-6}\\ s) = 2.50 \\times 10^6$ Hz. This frequency is much higher than the human hearing range (20 Hz to 20,000 Hz), so it is called ultrasound. The example shows how the basic formula can be applied to determine the frequency of a device, and it connects the concept to practical applications in medical imaging. The calculation is straightforward but demonstrates the utility of the relationship in a non-trivial context, highlighting that oscillations at such frequencies are used for noninvasive diagnoses.",
+      "human_review": "not_reviewed",
+      "id": "n-1f4ff86271096011",
+      "kind": "method",
+      "limits": [
+        "The example is a simple calculation; it does not address complexities of ultrasound imaging.",
+        "Withheld by machine editorial triage: A single frequency-period calculation classifying ultrasound is an exercise, not a separate scientific inference."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "physics",
+      "problem": "Need to demonstrate practical use of the frequency-period relationship in a real-world context.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Illustrative example in textbook.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "physics",
+        "foundations"
+      ],
+      "title": "Applying frequency-period relation to determine ultrasound frequency",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-2b0419520eb91a90",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p52",
+          "source_id": "s-3a7869c67be13520",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-886f389b25779244",
+        "revision": 1
+      },
+      "content_hash": "2ac12a1860773a6efd5b10f42b8b6a7abe2cd9f74c02f8c3a00c23344cd45394",
+      "curation": {
+        "method": "Cross-source proposal and separate exact-passage criticism",
+        "provider": "SiliconFlow",
+        "request_id": "01a130e445a4291862c8fde7ab821113",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130e54e501b1a45f917acc628e609"
+      },
+      "human_review": "not_reviewed",
+      "id": "connection-fcdf89a21f663029",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-228002921ecff2cf",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The principle of equality in capabilities was applied to health equity, treating health as a key dimension of equality.",
+      "type": "relation",
+      "warrant": "Sen's argument that capabilities are the principal dimension for equality extends to health, as health is a capability. His work on health equity applies this principle to public health, addressing disparities in health as matters of justice."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p127",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p128",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p129",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-83f452dc56d66506",
+        "revision": 1
+      },
+      "content_hash": "01ef5a3b76587ebbf69a161019092f0982f8152975a00581ea05f034806c39c4",
+      "curation": {
+        "input_hash": "fb4707e6da0759b12491e37786ef50ebdea0592cea8a7dd04d170eb587fdcf8c",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "d69a97975a8fb81b2960583ea7883d3abcd451ff185b2b053af7014e9fe3eb65",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9ddc62ee736817adb2f3b531d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fa73a2eaa0d309c8fdabcf635b",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-05296ff91e539398",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-dc4577c9c072e833",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The Mean Value Theorem is used to prove uniqueness of roots in exercises.",
+      "type": "relation",
+      "warrant": "The exercises ask to show equations have exactly one real root, a task typically solved by assuming two roots and using the theorem to derive a contradiction."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p116",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p121",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-42f3f4637707fa57",
+        "revision": 1
+      },
+      "content_hash": "9dff81d47732f42ab2e60f6cf45c27e6b7952ace75921c4fda12172c96c4940c",
+      "curation": {
+        "input_hash": "30cc4484e76e3dd024853975d13b26009d418e5ace35d5357bfae046f2b91324",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "857c19c0a3fd440fb43533e9b5d2f178760e47853a41632b8f0cbda9e03d1da4",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9de6f3483fcd98aa1b6b2854a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fad00f74527a5b48e36fa4948e",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-1fb2816df2014b50",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5a07446f536065e3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The relationship between one-sided and two-sided limits is applied to analyze piecewise functions.",
+      "type": "relation",
+      "warrant": "The textbook uses the piecewise function example to show that differing one-sided limits imply the two-sided limit does not exist, directly applying the relationship."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p204",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-b41344541fe1b251",
+        "revision": 1
+      },
+      "content_hash": "6597d1cac6dce8a91f950a914d8e5495d35fab13c8da5356b7cbe7c16378ea1b",
+      "curation": {
+        "input_hash": "30cc4484e76e3dd024853975d13b26009d418e5ace35d5357bfae046f2b91324",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "857c19c0a3fd440fb43533e9b5d2f178760e47853a41632b8f0cbda9e03d1da4",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9de6f3483fcd98aa1b6b2854a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fad00f74527a5b48e36fa4948e",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-303e4f50ca6512d5",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-19dfe9bcd3ffaeaf",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The concept of a vertical asymptote is applied to the relativistic mass function.",
+      "type": "relation",
+      "warrant": "The textbook identifies a vertical asymptote at v/c=1 in the graph of m/m₀, using the definition of vertical asymptotes."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-84f0f4a7bf8fe8ab",
+        "revision": 1
+      },
+      "content_hash": "3aa70c1a2d130142ee215ac2cdf70ebcbdb6efb0ebd7fd475e3241a49c276500",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-34a7b625228e6067",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ed822ab8f7e3bc4c",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The distinction between anatomy and physiology sets the stage for identifying homeostasis as a physiological focus.",
+      "type": "relation",
+      "warrant": "The passage defines physiology as the study of function and then immediately introduces homeostasis as a central focus, indicating that the conceptual separation of anatomy and physiology is a prerequisite for understanding physiology's specific concerns."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ed822ab8f7e3bc4c",
+        "revision": 1
+      },
+      "content_hash": "5f2384bbe037682aef7456770d70841bb28b3c00275d914f9aeb93ce3856ca79",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-583bdd1f542ff16c",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-e7d276d018b57db1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The experimental method of physiology contrasts with anatomy's observational methods, reinforcing their distinctness.",
+      "type": "relation",
+      "warrant": "The text states that physiology depends on laboratory experiments, while anatomy relies on observation and dissection, providing methodological evidence for the separation of the disciplines."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-ce73913278821bca",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-ce73913278821bca",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-fcb986933ecc4807",
+        "revision": 1
+      },
+      "content_hash": "94bd396b697790b869e2c920356ea15755fa8539a198260e2ee7e69f84b35fb0",
+      "curation": {
+        "input_hash": "6fbd3cf8714cb689d8454e4b8859418b1138d67074dd19ba58a82f00df0b04ce",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "40a5336a38ffcd3d0fbb42fe65b55b1eab39b18190456883b762b6eaa0b598d5",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332584bdd0e2397e9b5628fef607",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133332eb1c621450bed61c142fd70",
+        "time": "2026-10-13T02:44:18+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-863d11ea08daa4a5",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-e95415577f018cfd",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Definition of computer science",
+      "type": "relation",
+      "warrant": "Forsythe's definition of computer science as focused on algorithms supports the broader definition presented in the passage, reinforcing the centrality of algorithms."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-725a6f771922faa0",
+        "revision": 1
+      },
+      "content_hash": "e5b57bb7db20012a58837b7c191588180022692caea9e572690de9bc96ce0e0a",
+      "curation": {
+        "input_hash": "c13134f8f1e7f38e82ea6aad521dd12e36939c95be17ba1ce927bdd27bdb3522",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "87b365ce664caf33bfb771cbd1c1f458425b56718561be6768b76ceeef1bdf87",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132fddd632f88425df10bc646f5dd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133008eeac99d0349f8ae887dcb76",
+        "time": "2026-10-13T02:00:59+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-88abc716b89ce970",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-b0d639b6e5a6da3b",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The Taylor polynomial definition is used to compute polynomials for ln x.",
+      "type": "relation",
+      "warrant": "The text uses the definition of Taylor polynomials to compute p0, p1, p2, p3 for ln x at x=1."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p246",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-9d329dd2b5c6c997",
+        "revision": 1
+      },
+      "content_hash": "f823f58f5239bca9fad8b110d7279c70459cb889a8a845615e51e6d6e64ee3c7",
+      "curation": {
+        "input_hash": "c13134f8f1e7f38e82ea6aad521dd12e36939c95be17ba1ce927bdd27bdb3522",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "87b365ce664caf33bfb771cbd1c1f458425b56718561be6768b76ceeef1bdf87",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132fddd632f88425df10bc646f5dd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133008eeac99d0349f8ae887dcb76",
+        "time": "2026-10-13T02:00:59+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-99c5a72a2866babd",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-fc83c1bd57bd8d52",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Maclaurin polynomial for e^x is used in Newton's method to approximate ln(2).",
+      "type": "relation",
+      "warrant": "The text uses the Maclaurin polynomial for e^x to set up the equation p_N(x)-2=0, whose roots approximate ln(2)."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-3563bcfd9bcfc731",
+        "revision": 1
+      },
+      "content_hash": "8aa5c29c6af7f662bf1d66e75b4587a9f8c49dddd1ed69733c5dbb08472c6a9a",
+      "curation": {
+        "input_hash": "97b0f8c1c2b3162aa7a7f6ed1d6269d7af42151af789aab0471e441fcb05db98",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "df497895537d7e691df687ceddc5ecb4587adf4cae4a65c69a1d81892866538e",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332267e4de023c43de63da036b5b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13324e3127345fe5c538e1f39c971",
+        "time": "2026-10-13T02:40:54+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-a58f9d0fb7e3aee7",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-c74ce8a4da186eba",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The order-of-magnitude method is used to construct and interpret the comparative scale table.",
+      "type": "relation",
+      "warrant": "The text introduces order of magnitude as a tool for handling vast ranges, then presents the table of length, mass, and time using orders of magnitude, making the method a prerequisite for the table's use."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-7463661ff1f3e35a",
+        "revision": 1
+      },
+      "content_hash": "3f11be9746617688491131659d4486e6c10d10ebe1b2176ccb44a5b1336f5542",
+      "curation": {
+        "input_hash": "97b0f8c1c2b3162aa7a7f6ed1d6269d7af42151af789aab0471e441fcb05db98",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "df497895537d7e691df687ceddc5ecb4587adf4cae4a65c69a1d81892866538e",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332267e4de023c43de63da036b5b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13324e3127345fe5c538e1f39c971",
+        "time": "2026-10-13T02:40:54+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-a96f620b04564e4c",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-cf6585982fd7a597",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Examples of technology and professional applications support the claim that physics is foundational.",
+      "type": "relation",
+      "warrant": "The text lists technologies like MOSFETs and GPS and professions like engineering and medicine to illustrate the broad applicability of physics, reinforcing the definition of physics as foundational."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-23c4fc8a4c75dbb8",
+        "revision": 1
+      },
+      "content_hash": "10945566d7b817aea2d2c0223e4b6c36f042ae1b7e4b6a8a207c9f50a2f6e259",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-b85dfd1e2b10a5df",
+      "layer": "conceptual",
+      "machine_screening": "not_run",
+      "predicate": "analogous_to",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-7da2c4caee0e4bd4",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Both anatomy and physiology are organized by scale, from macroscopic to microscopic.",
+      "type": "relation",
+      "warrant": "The text describes anatomy's gross/microscopic division and physiology's organ-to-molecular levels, showing a parallel scale-based organization in both disciplines."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-bbff583501cccead",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-be635f017b3cd50b",
+        "revision": 1
+      },
+      "content_hash": "d55f8e425b37e463290f4e625c60271276ae23e0aedd83eda5bc8b67cfec4923",
+      "curation": {
+        "input_hash": "97b0f8c1c2b3162aa7a7f6ed1d6269d7af42151af789aab0471e441fcb05db98",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "df497895537d7e691df687ceddc5ecb4587adf4cae4a65c69a1d81892866538e",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a1332267e4de023c43de63da036b5b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13324e3127345fe5c538e1f39c971",
+        "time": "2026-10-13T02:40:54+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-bb3bfee16ad19975",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-7463661ff1f3e35a",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The definition of physics as studying fundamental mechanisms supports the claim that its laws govern all scales.",
+      "type": "relation",
+      "warrant": "The text defines physics as uncovering fundamental mechanisms and then asserts that these laws govern everything at all measurable scales, making the definition a basis for the universal scope claim."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-40cc51c99e506b2e",
+        "revision": 1
+      },
+      "content_hash": "463986bd953a746917770d975f42ae0d2dfe9b4bde863aacf27da972e3604afe",
+      "curation": {
+        "input_hash": "30cc4484e76e3dd024853975d13b26009d418e5ace35d5357bfae046f2b91324",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "857c19c0a3fd440fb43533e9b5d2f178760e47853a41632b8f0cbda9e03d1da4",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9de6f3483fcd98aa1b6b2854a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fad00f74527a5b48e36fa4948e",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-c4051b7b39599b2b",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "historical_basis_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-b95e2d89c9103e48",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The historical use of limiting processes is a precursor to the modern intuitive definition.",
+      "type": "relation",
+      "warrant": "The textbook notes that early mathematicians used limiting processes, and the section begins with an intuitive approach, indicating a historical lineage."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-f8739561ba456c7b",
+        "revision": 1
+      },
+      "content_hash": "de7de125a0b6e21ffcf30fa962955849cb129a26e87be85521817a27046f4a9b",
+      "curation": {
+        "input_hash": "323f7e4c48a1b32dfbc094ed3d49f600d40e18e7b76699954b56b36b8cec4d9d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "693dc66204fb4d6634d8f31aa8cf4a72001ea4b37bd72c2bc53faca7ac00ed2b",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132faa45016b69db66a0845fec4cd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132ff67d9cce5f130260eeb1f34c5",
+        "time": "2026-10-13T01:57:28+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-c8612c78c8cfbc27",
+      "layer": "pedagogical",
+      "machine_screening": "not_run",
+      "predicate": "prerequisite_for_reading",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5252a330029e4ee9",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Knowing that the variable of integration is a dummy variable (n13) is needed to understand the definition's notation.",
+      "type": "relation",
+      "warrant": "The definition uses dx, and n13 explains that this is a dummy variable, which is part of reading the integral notation correctly."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p143",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-09c38d8f1812d79f",
+        "revision": 1
+      },
+      "content_hash": "307b59c9eca94343c50064f97962d54b9acbc7d76877dd47cf2f18739772c5fc",
+      "curation": {
+        "input_hash": "c13134f8f1e7f38e82ea6aad521dd12e36939c95be17ba1ce927bdd27bdb3522",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "87b365ce664caf33bfb771cbd1c1f458425b56718561be6768b76ceeef1bdf87",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132fddd632f88425df10bc646f5dd",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133008eeac99d0349f8ae887dcb76",
+        "time": "2026-10-13T02:00:59+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d537857b13a20343",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-b0d639b6e5a6da3b",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The Taylor series definition is used to find the series for 1/(2x) at x=2.",
+      "type": "relation",
+      "warrant": "The text computes the Taylor series for 1/(2x) using the definition from n2."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7c76f5436ee55dc2",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-e81e5cdbfc24c98b",
+        "revision": 1
+      },
+      "content_hash": "85d4558dd645c1dc896cbe4b3b26f344127fb342b47be5ff92c76ebcc65317b1",
+      "curation": {
+        "input_hash": "63bccaeb7782d72670f9b9f277bab8d55c3ca64f0b9b61e2ef7ebfb7f9bcae04",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fabb5a659a886a420e679b071b66b503c8b9dd8705686d2226f26aaf271316c6",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9f9dcc63f7b4ab8e57f0d305a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fa244346627f1675f1f1fb7b31",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d546cec520a4cc6b",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8e2fe48d4fa573e3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The special case derivation motivates the general rule.",
+      "type": "relation",
+      "warrant": "The text derives the chain rule for sin(x^3) before stating the general rule, suggesting the special case is used to introduce the general principle."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p87",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p88",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p89",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-fef8739077106222",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-9d991e835bb8623f",
+        "revision": 1
+      },
+      "content_hash": "4ba399e3d988940f7dbb81cf53eabb3f787fe256b5ea67c5cb224b7e4809e6e3",
+      "curation": {
+        "input_hash": "fb4707e6da0759b12491e37786ef50ebdea0592cea8a7dd04d170eb587fdcf8c",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "d69a97975a8fb81b2960583ea7883d3abcd451ff185b2b053af7014e9fe3eb65",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a132f9ddc62ee736817adb2f3b531d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a132fa73a2eaa0d309c8fdabcf635b",
+        "time": "2026-10-13T01:56:30+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ea0db5df5f3194f9",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "motivated",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-dc4577c9c072e833",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The exercises are designed to reinforce understanding of the theorem's hypotheses.",
+      "type": "relation",
+      "warrant": "The exercises ask students to construct counterexamples for missing continuity or differentiability, directly probing the necessity of these conditions."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-7da2c4caee0e4bd4",
+        "revision": 1
+      },
+      "content_hash": "49f044d72e016d6729bca5956e9b42d7a7ec5c94d72f37097b0e745a2dd05a68",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ed269cc03a09fd45",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-996fe266aec05fc2",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Imaging techniques are used in gross anatomy to observe structures in living people.",
+      "type": "relation",
+      "warrant": "The passage on imaging describes visualizing structures like tumors and fractures, which are large-scale, thus applying to gross anatomy's domain."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p52",
+          "source_id": "s-3a7869c67be13520",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-886f389b25779244",
+        "revision": 1
+      },
+      "content_hash": "7efc2f392195d023dd5ad75aa337ede672c44341ce72a0fb535c2cacc0cb44e1",
+      "curation": {
+        "input_hash": "74b339c063e950ea5b57504abe16c214274678126ad8bc1abd31d975eaa8c2f5",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6fee1fd8d6daafac7b78c1dd2b44e5ccfe2a7f8360230daca0a616d32c00b592",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130d7390221a494250623a5324f90",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130d836e867f112db7496575e7720",
+        "time": "2026-10-12T15:59:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ed5c11c3d1b1421e",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-f9c3f91caff494f4",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The capability approach was applied to health equity.",
+      "type": "relation",
+      "warrant": "Sen's interest in health equity as a field of application for equity and justice concepts is consistent with the capability approach's focus on substantive freedoms."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-1f4ff86271096011",
+        "revision": 1
+      },
+      "content_hash": "69e6c4fd5b3175144c780219f3d40ff6c50d297db70ac62c655c3be7db88a60a",
+      "curation": {
+        "input_hash": "0739e659b1f408e68dabc5c7b06edbfe822955eb856245d026aad8708254de47",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "690cec6262ed1e48c62566b8aa7e99faf2152c6bab211f048070d04ea9f06a2f",
+        "prompt_hash": "ba76648712d584ebec2c7eb04a8fb7d5b3d0dd8aaa2cacb292dc8172090b40c5",
+        "provider": "SiliconFlow",
+        "request_id": "01a133029f0cb2766fcfcafe6a5ce1ab",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13304fc2c017ffdcf1e8cbedbed68",
+        "time": "2026-10-13T02:06:11+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ee03b95e58d526d6",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-17ccddf7210ae10c",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The period-frequency relationship is used to calculate ultrasound frequency.",
+      "type": "relation",
+      "warrant": "The definition of frequency as the reciprocal of period (n6) is directly applied in the ultrasound example (n7) to compute the frequency from a given period."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-95f6283ede100ed5",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ed822ab8f7e3bc4c",
+        "revision": 1
+      },
+      "content_hash": "1612c1c9c8ecaf7869cd8f94c49e346e3b77be4a1b9bc73ecc63d989d2d7e242",
+      "curation": {
+        "input_hash": "75544a254d85da540608d669a2f8771a2f41b72465f61657c266b9ce72f4e813",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e95e4878da507adcbadcd21a7dd44b8c82ead96a2909248f7197eb9b0efa6359",
+        "prompt_hash": "c5708826dcab14704e612a68015d5350fc8b8795451b098d6ec80dd61f587854",
+        "provider": "SiliconFlow",
+        "request_id": "01a13327e81d341356c2471772ecff6b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a133282555bd1cf23db8f32a4bd710",
+        "time": "2026-10-13T02:46:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-f1bf5b9c6d317839",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-db27cff93421c17b",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The principle that form and function are related supports the integration of anatomy and physiology.",
+      "type": "relation",
+      "warrant": "The passage argues that form is closely related to function, which justifies studying anatomy and physiology together, reinforcing the complementary relationship defined in the initial distinction."
+    }
+  ],
+  "status": "proposed"
+}

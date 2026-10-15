@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="310" viewBox="0 0 1280 310" role="img" aria-labelledby="title desc">
+  <title id="title">Principia-Legacy</title>
+  <desc id="desc">A living atlas of human understanding. Human understanding, with its reasons intact.</desc>
+  <rect width="1280" height="310" rx="16" fill="#f5f2ec"/>
+  <rect x="1" y="1" width="1278" height="308" rx="15" fill="none" stroke="#e6dfd2"/>
+  <path d="M56 53h44" stroke="#76578f" stroke-width="3"/>
+  <text x="56" y="89" fill="#766a7f" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="3">A LIVING ATLAS OF HUMAN UNDERSTANDING</text>
+  <text x="53" y="171" fill="#302a36" font-family="Georgia,'Times New Roman',serif" font-size="66" letter-spacing="-2">Principia-Legacy</text>
+  <text x="56" y="222" fill="#695d70" font-family="Georgia,'Times New Roman',serif" font-size="24">Human understanding, with its reasons intact.</text>
+  <text x="56" y="269" fill="#928995" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="2">IDEAS · CONNECTIONS · EVIDENCE · REVISION</text>
+  <g fill="none" stroke="#c6bbd0" stroke-width="1.5">
+    <path d="M930 70L1043 149L1166 77M1043 149L1161 247M1043 149L915 240M930 70L915 240M1166 77L1161 247"/>
+    <path d="M930 70Q1088 6 1166 77M915 240Q1065 294 1161 247" stroke-dasharray="4 7"/>
+    <circle cx="1043" cy="149" r="55" stroke="#e2dbe7"/>
+    <circle cx="1043" cy="149" r="74" stroke="#eae4ec"/>
+  </g>
+  <g stroke="#f5f2ec" stroke-width="5">
+    <circle cx="930" cy="70" r="13" fill="#9d8bb8"/>
+    <circle cx="1166" cy="77" r="11" fill="#79a9ae"/>
+    <circle cx="1043" cy="149" r="19" fill="#76578f"/>
+    <circle cx="915" cy="240" r="12" fill="#b79576"/>
+    <circle cx="1161" cy="247" r="14" fill="#8fa78e"/>
+  </g>
+</svg>

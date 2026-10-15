@@ -1,0 +1,811 @@
+{
+  "admission": {
+    "new_contributions": 198,
+    "new_records": 638,
+    "new_relations": 109,
+    "plan_total_contributions": 198,
+    "plan_total_relations": 109
+  },
+  "completed_at": "2026-10-13T03:12:08+00:00",
+  "estimate": {
+    "assignments": 25,
+    "maximum_output_tokens_before_retries": 819200,
+    "maximum_parallel_requests": 2,
+    "normal_calls_before_retries": 50,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged."
+  },
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "outcomes": [
+    {
+      "admission": "admitted",
+      "assignment_id": "23284106375bf9910a81c3a16a625bdd781363039c5d92b0e03e978d73cf8da4",
+      "depth": 0,
+      "dossier": "M2000",
+      "gaps": [
+        "The source does not provide a rigorous proof of the convergence of Riemann sums for continuous functions; it only states the theorem.",
+        "The source does not discuss the historical development of Riemann sums or the definite integral beyond Archimedes.",
+        "The source does not address the extension of area approximation to functions that are not nonnegative or not continuous.",
+        "The source does not provide error bounds for non-monotonic functions.",
+        "The source does not mention alternative approximation methods such as the midpoint rule or trapezoidal rule."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Approximating Areas. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 14,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 14,
+        "accepted_relations": 9,
+        "proposed_nodes": 14,
+        "proposed_relations": 13
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents left- and right-endpoint approximations as alternatives, and mentions Riemann sums as a general framework. It does not discuss other numerical integration methods like the midpoint rule or trapezoidal rule.",
+        "attribution": "The source explicitly attributes the method of exhaustion to Archimedes. Other concepts (sigma notation, partition, endpoint approximations, Riemann sums) are presented as standard without historical attribution. The textbook authors are Gilbert Strang and Edwin “Jed” Herman.",
+        "limitations": "The source is a textbook exposition, not a primary research document. It does not provide proofs for the convergence of Riemann sums or the uniqueness theorem, deferring them to later sections. Historical attributions are limited to Archimedes for the method of exhaustion; other concepts are presented without attribution."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "source_title": "1.1 Approximating Areas - Calculus Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/1-1-approximating-areas"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "ad40cb6045e74a9c3ead02956da18d4477d38be36d906ecb9bf5cafdbb4c4680",
+      "depth": 0,
+      "dossier": "P2000",
+      "gaps": [
+        "The source does not provide historical origins or priority for the order-of-magnitude method.",
+        "The source does not discuss alternative philosophical positions on the nature of scientific laws, such as instrumentalism or realism.",
+        "The source does not provide evidence for the claim that physics laws govern all scales; it is asserted without empirical support.",
+        "The source does not attribute the model-theory-law distinction to any specific philosopher or scientist."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of The Scope and Scale of Physics. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 10,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 4,
+        "proposed_nodes": 10,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides no alternative formulations of order of magnitude or scientific terminology; it presents standard definitions without discussing competing views.",
+        "attribution": "The source explicitly credits Atalla and Kahng for the MOSFET and Gladys West for GPS algorithms, but does not attribute the order-of-magnitude method, the model-theory-law distinction, or the fallibilist view to specific originators. The Bohr model is named but not attributed to Bohr in the text.",
+        "limitations": "The source is a textbook exposition and does not provide original research or historical attributions for the concepts discussed. It does not address the limits of order-of-magnitude reasoning beyond noting it is approximate."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "1.1 The Scope and Scale of Physics - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/1-1-the-scope-and-scale-of-physics"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "61ae75237c8bfa3c3e2df4a4b4379e552e2733fa2b2b1dd69c00e50bd85f43b3",
+      "depth": 0,
+      "dossier": "C2000",
+      "gaps": [
+        "No formal proof or detailed technical explanation of Turing completeness is provided.",
+        "The historical account of computing is simplified and may omit important details or alternative narratives.",
+        "No empirical evidence is provided for claims about the digital divide, online commerce risks, or the effectiveness of LOGO in education.",
+        "The source does not address recent developments in computer science, such as quantum computing or advanced AI, beyond brief mentions.",
+        "Attribution for many claims is unclear, as the textbook does not cite primary sources for historical events."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Computer Science. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 15,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 15,
+        "accepted_relations": 2,
+        "proposed_nodes": 15,
+        "proposed_relations": 7
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides a textbook overview of computer science, including historical and social perspectives, but does not offer alternative formal definitions or competing theories beyond the ones presented.",
+        "attribution": "Attributions are provided for some historical figures (e.g., Bellman, Forsythe, Turing, LOGO designers), but many claims are presented without specific attribution, reflecting the textbook's collective authorship.",
+        "limitations": "The source is a textbook exposition, not a research paper, so it lacks formal proofs, empirical data, and detailed technical explanations. Historical attributions are presented as facts without primary source verification."
+      },
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "source_title": "1.1 Computer Science - Introduction to Computer Science | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/1-1-computer-science"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "e8907d601694ef0df200785956caf23cbea1fe3545af725dd609111cc5d17b81",
+      "depth": 0,
+      "dossier": "E2000",
+      "gaps": [
+        "No primary sources are cited for Smith's claims or the Nobel laureates' work.",
+        "The source does not address critiques of the scarcity framework or alternative economic paradigms.",
+        "The effectiveness of division of labor is asserted but not empirically tested in the source."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of What Is Economics, and Why Is It Important?. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 3,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 3,
+        "accepted_relations": 1,
+        "proposed_nodes": 3,
+        "proposed_relations": 2
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents scarcity and division of labor as central concepts but does not discuss alternative definitions of economics or competing frameworks.",
+        "attribution": "Adam Smith is credited with the division of labor concept, but the textbook does not provide primary evidence or discuss other historical contributors.",
+        "limitations": "The source is a textbook exposition, not original research; it does not provide evidence for the effectiveness of division of labor beyond Smith's anecdotal pin factory example."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "1.1 What Is Economics, and Why Is It Important? - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/1-1-what-is-economics-and-why-is-it-important"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "4e72d4fcbea464a89445479cd988cc538e65dbccd04711d630102dec0bb373c7",
+      "depth": 0,
+      "dossier": "B2000",
+      "gaps": [
+        "Historical origins of anatomy and physiology as disciplines are not addressed.",
+        "The concept of homeostasis is introduced without historical context or attribution.",
+        "No discussion of how imaging techniques were developed or their limitations.",
+        "The relationship between regional and systemic anatomy is not explored in depth.",
+        "No mention of ethical considerations in dissection or experimentation."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Overview of Anatomy and Physiology. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 8,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 5,
+        "proposed_nodes": 8,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides no alternative frameworks or competing definitions for anatomy and physiology.",
+        "attribution": "No historical attribution is given for the concepts of anatomy, physiology, homeostasis, or the form-function relationship; the text is presented as standard knowledge without citing original sources.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the concepts presented, nor does it discuss limitations of the definitions or methods."
+      },
+      "source_discovery": "https://openstax.org/books/anatomy-and-physiology-2e/pages/preface",
+      "source_title": "1.1 Overview of Anatomy and Physiology - Anatomy and Physiology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-1-overview-of-anatomy-and-physiology"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "b3cb5d748edf768461cf74f82967ba6c0c518304682ec22bc49ce718f2e02dfc",
+      "depth": 0,
+      "dossier": "M2001",
+      "gaps": [
+        "The source does not establish the historical origin of parametric equations as a mathematical concept.",
+        "The cycloid and hypocycloid equations are presented without attribution to their original discoverers.",
+        "The source does not discuss the limitations of parametric representation for curves with singularities or self-intersections.",
+        "The claim that irrational a/b hypocycloids are 'space-filling' is not rigorously justified in the text."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Parametric Equations. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 10,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 5,
+        "proposed_nodes": 10,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section that presents standard methods without discussing alternative approaches or competing formulations.",
+        "attribution": "The textbook attributes the witch of Agnesi to Agnesi, Grandi, and Fermat, but this is a secondary account. No attribution is given for the general parametric representation or the elimination method.",
+        "limitations": "The source does not provide historical attribution for the parametric equations concept itself, nor does it discuss the origins of the cycloid or hypocycloid equations. The historical account of the witch of Agnesi is secondary and lacks primary source citations."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-3/pages/preface",
+      "source_title": "1.1 Parametric Equations - Calculus Volume 3 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/1-1-parametric-equations"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "41a13e192312d1d824a3fff8ec87c6b2433921a812f3cdddc3e832732af219fb",
+      "depth": 0,
+      "dossier": "P2001",
+      "gaps": [
+        "Historical origin of the operational definition of temperature is not provided.",
+        "The kinetic theory interpretation of temperature is only previewed, not detailed.",
+        "No discussion of how thermal equilibrium is achieved over time or its quantitative conditions.",
+        "The zeroth law is stated as empirical without theoretical justification."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Temperature and Thermal Equilibrium. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 5,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 2,
+        "proposed_nodes": 5,
+        "proposed_relations": 3
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative definitions of temperature beyond the operational and kinetic preview.",
+        "attribution": "Attribution is mostly unknown for the core concepts; only Fowler's naming of the zeroth law is credited. No original discoverers are identified.",
+        "limitations": "The source is a textbook exposition; it does not provide historical priority for the zeroth law's content, only for its naming. It also does not address measurement errors or non-equilibrium situations."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "source_title": "1.1 Temperature and Thermal Equilibrium - University Physics Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-1-temperature-and-thermal-equilibrium"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "5f62a4f8f48b661bd41022dff99400060298282bd5dfb7d3c7edd39dd7c8cb8f",
+      "depth": 0,
+      "dossier": "C2001",
+      "gaps": [
+        "No discussion of IEEE 754 standard or binary representation details.",
+        "No mention of underflow or subnormal numbers.",
+        "No historical context or attribution for floating-point concepts.",
+        "No coverage of error propagation in arithmetic operations."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Floating-point errors. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 3,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 3,
+        "accepted_relations": 1,
+        "proposed_nodes": 3,
+        "proposed_relations": 2
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative representations like fixed-point or decimal arithmetic.",
+        "attribution": "No specific originators are credited; the content is presented as standard knowledge.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution or original research findings."
+      },
+      "source_discovery": "https://openstax.org/books/introduction-python-programming/pages/preface",
+      "source_title": "2.4 Floating-point errors - Introduction to Python Programming | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/introduction-python-programming/pages/2-4-floating-point-errors"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "2ef3a6a0b20af168c5657307c9af4440bce029121c1bc2f260b5d0c725157136",
+      "depth": 0,
+      "dossier": "E2001",
+      "gaps": [
+        "No evidence of original research or novel contributions; the source is purely expository.",
+        "Historical attribution for regulatory events is secondary, based on cited sources like History Channel and Investopedia.",
+        "The source does not discuss alternative normative frameworks like stakeholder theory, which is a gap in the shareholder wealth maximization discussion.",
+        "The claim that capital budgeting is the most important financial function is asserted without empirical support.",
+        "The normal distribution assumption for returns is presented without acknowledging limitations like fat tails.",
+        "No detailed explanation of beta calculation or its theoretical basis is provided."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of What Is Finance?. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 16,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 14,
+        "proposed_nodes": 16,
+        "proposed_relations": 14
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents a standard textbook overview without discussing alternative definitions of finance or competing theories.",
+        "attribution": "The source attributes content to textbook authors Julie Dahlquist and Rainford Knight, but does not establish original contributions to finance theory. Historical events are cited to external sources.",
+        "limitations": "The source is an introductory textbook section; it does not provide original research, empirical data, or detailed theoretical models. Historical claims are based on secondary sources."
+      },
+      "source_discovery": "https://openstax.org/books/principles-finance/pages/preface",
+      "source_title": "1.1 What Is Finance? - Principles of Finance | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-finance/pages/1-1-what-is-finance"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "8c7b1f00aeda2da45b067ee3cbaecb8230ad53aad03b2a7a5913ff5c9c06d7f4",
+      "depth": 0,
+      "dossier": "B2001",
+      "gaps": [
+        "The source does not provide evidence for the historical origins of falsifiability as a demarcation criterion, beyond mentioning Bacon's inductive methods.",
+        "The source does not discuss the limitations of peer review, such as bias or failure to detect fraud.",
+        "The source does not offer a framework for resolving bioethical dilemmas, only raising questions.",
+        "The source does not address the problem of induction or the underdetermination of theory by data in scientific reasoning."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of The Science of Biology. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 6,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 6,
+        "accepted_relations": 4,
+        "proposed_nodes": 6,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents the scientific method as a flexible process, acknowledging that it is not always linear and that inductive and deductive reasoning are used in tandem. It also discusses the debate between basic and applied science, presenting both as valid.",
+        "attribution": "The source credits Sir Francis Bacon with first documenting the scientific method, but does not attribute other concepts like falsifiability, control groups, or peer review to specific originators. The Tuskegee study and HeLa cell line are mentioned as historical examples without detailed sourcing.",
+        "limitations": "The source is a textbook exposition and does not provide original research or historical attribution for the concepts discussed. It does not address limitations of falsifiability, such as the Duhem-Quine thesis, or practical challenges in experimental design like randomization and blinding."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "1.1 The Science of Biology - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/1-1-the-science-of-biology"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "dad3b8a5fdab7d7061883570160406220d02e0bfb3e219c7b37d5dfb4c000026",
+      "depth": 0,
+      "dossier": "M2002",
+      "gaps": [
+        "Historical origins of the function definition and related concepts are not provided.",
+        "The source does not discuss limitations of the vertical line test for non-standard graphs.",
+        "No evidence on how these concepts were developed or by whom."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Review of Functions. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 9,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 9,
+        "proposed_nodes": 10,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides standard textbook exposition; no alternative formulations or competing definitions are discussed.",
+        "attribution": "No historical attribution is given for any of the concepts; they are presented as standard mathematical knowledge. The authors are textbook authors, not originators of the concepts.",
+        "limitations": "The source does not address functions of multiple variables, complex-valued functions, or pathological functions. It also does not discuss the historical development of the function concept."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "source_title": "1.1 Review of Functions - Calculus Volume 1 | OpenStaxSearchSearchSearch",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/1-1-review-of-functions"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "41aaed5f3b91f8413cb74dfe1ecf8d919edadaaf648e89e74e89423fec9723ae",
+      "depth": 0,
+      "dossier": "P2002",
+      "gaps": [
+        "No evidence on the original formulation of the index of refraction concept",
+        "No evidence on the historical development of the ray model",
+        "No discussion of limitations of the ray model beyond object size",
+        "No mention of wave optics as an alternative in this section"
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of The Propagation of Light. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 5,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 2,
+        "proposed_nodes": 5,
+        "proposed_relations": 3
+      },
+      "search_outcomes": {
+        "alternatives": "The text mentions that light can travel directly, through media, or by reflection, but does not discuss alternative theories of light propagation.",
+        "attribution": "Attribution for the index of refraction and ray model is not provided; only the historical measurements are attributed to named scientists.",
+        "limitations": "The text does not provide historical context for the development of the ray model or the index of refraction, nor does it discuss wave-particle duality."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-3/pages/preface",
+      "source_title": "1.1 The Propagation of Light - University Physics Volume 3 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "2e81e3aab8e90e64c1d6888968aa336f1c61e6ea0b17f74d11a4ebbd5c5220b7",
+      "depth": 0,
+      "dossier": "C2002",
+      "gaps": [
+        "Historical origin of the induction principle is not documented in this source.",
+        "The source does not discuss limitations of induction for non-inductive types or more complex induction schemes like well-founded induction.",
+        "No evidence on the priority of the replace tactic or other Rocq tactics."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Proof by Induction (Induction). Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 7,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 1,
+        "proposed_nodes": 7,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source discusses simplification, case analysis (destruct), and rewriting as alternatives to induction, but shows they are insufficient for many theorems.",
+        "attribution": "No creators are listed for the source; the text is an instructional chapter without explicit authorship. The induction principle is attributed to 'a discrete math course' without naming originators.",
+        "limitations": "The source does not provide historical attribution for the induction principle or the tactics; it presents them as standard. It also notes that formal proofs are inefficient for human communication."
+      },
+      "source_discovery": "https://softwarefoundations.cis.upenn.edu/lf-current/toc.html",
+      "source_title": "Induction: Proof by Induction",
+      "state": "succeeded",
+      "url": "https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "21a7b1685e3e13ed3f0ba215862693b81fe600a01156aeca9a15956eb20d14d0",
+      "depth": 0,
+      "dossier": "E2002",
+      "gaps": [
+        "No historical origins of the micro-macro distinction are provided.",
+        "No discussion of how micro and macro perspectives might conflict or require reconciliation.",
+        "No empirical evidence or formal models linking micro decisions to macro outcomes.",
+        "No treatment of policy trade-offs or limitations of monetary and fiscal policy."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Microeconomics and Macroeconomics. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 2,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 2,
+        "accepted_relations": 1,
+        "proposed_nodes": 2,
+        "proposed_relations": 1
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides no alternative formulations of micro-macro relationships beyond the complementary-perspectives analogy.",
+        "attribution": "Attribution is limited to the textbook authors; no historical figures are credited for the concepts presented.",
+        "limitations": "The source is a textbook section; it does not provide historical attribution for the micro-macro distinction or policy definitions. No evidence of original discovery."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "1.2 Microeconomics and Macroeconomics - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/1-2-microeconomics-and-macroeconomics"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "58f3bf810fa868accd2d8e40a6e3bf66cabb32a5ffae4938317b4d4f9a6fc694",
+      "depth": 0,
+      "dossier": "B2002",
+      "gaps": [
+        "The source does not provide experimental details for Pasteur's and Koch's discoveries, limiting verification.",
+        "The text does not establish the historical influence of earlier ideas on later scientists, only chronological order.",
+        "The efficacy of ancient sanitation and quarantine practices is not empirically supported.",
+        "The source does not address the development of the microscope or its inventors beyond Leeuwenhoek.",
+        "The text does not discuss the limitations of Gram staining or culture methods in detail.",
+        "The source does not provide evidence for the claim that microbiology contributed to broader biology.",
+        "The text does not specify dates for many contributions, making historical sequencing incomplete."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of What Our Ancestors Knew. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 16,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 1,
+        "proposed_nodes": 16,
+        "proposed_relations": 20
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides a textbook overview of historical microbiology, but does not discuss alternative theories in depth beyond miasma and supernatural explanations.",
+        "attribution": "Attribution is clear for named figures like Hippocrates, Thucydides, Varro, al-Razi, Ibn Sina, Leeuwenhoek, Pasteur, and Koch, but many practices are attributed to collective or unknown originators. The text does not always distinguish original discovery from later interpretation.",
+        "limitations": "The source is a textbook exposition, not a primary research document; it lacks experimental details and does not establish priority for many claims. It also does not provide evidence for the efficacy of historical practices."
+      },
+      "source_discovery": "https://openstax.org/books/microbiology/pages/preface",
+      "source_title": "1.1 What Our Ancestors Knew - Microbiology | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/microbiology/pages/1-1-what-our-ancestors-knew"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "f6032baa22b2487477108c4963fcd065ba61d17701512f2ac63693d5a2f7df0b",
+      "depth": 0,
+      "dossier": "M2003",
+      "gaps": [
+        "No historical attribution for the definitions of statistics, probability, population, sample, statistic, or parameter.",
+        "No discussion of alternative definitions or philosophical interpretations of probability (e.g., frequentist vs. Bayesian).",
+        "No formal treatment of sampling methods or representativeness criteria.",
+        "No mention of the law of large numbers or central limit theorem as formal underpinnings.",
+        "The source does not address the distinction between descriptive and inferential statistics in a formal mathematical way."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Definitions of Statistics, Probability, and Key Terms. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 9,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 5,
+        "proposed_nodes": 9,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides only textbook definitions; no alternative formulations or competing frameworks are discussed.",
+        "attribution": "The source does not attribute the definitions to specific originators; it presents them as standard knowledge. Historical figures like Karl Pearson are mentioned only in an anecdote about coin tossing, not as originators of probability theory.",
+        "limitations": "The source is an introductory textbook section; it does not provide historical attributions for the concepts, nor does it discuss formal mathematical foundations or edge cases."
+      },
+      "source_discovery": "https://openstax.org/books/introductory-statistics-2e/pages/preface",
+      "source_title": "1.1 Definitions of Statistics, Probability, and Key Terms - Introductory Statistics 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "5463ee718d8b16b3894904de007c061712f4d9a9847ecf44a138ba4a60a9cfc7",
+      "depth": 0,
+      "dossier": "P2003",
+      "gaps": [
+        "The source does not discuss the historical development of astronomy or attribute any specific ideas to original contributors.",
+        "The source does not address limitations of astronomical methods or alternative interpretations of cosmic evolution.",
+        "The source does not provide evidence for the claim that the universe is 'more hospitable' for life; this is presented as an assertion without support."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of The Nature of Astronomy. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 5,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 4,
+        "proposed_nodes": 5,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides only a brief introductory definition and framing; no alternative definitions or competing views of astronomy are discussed.",
+        "attribution": "The source does not attribute any specific discoveries to individuals; it presents collective textbook knowledge. No historical priority claims are made.",
+        "limitations": "The source is a textbook section with no original research; all claims are presented as established knowledge or pedagogical framing. No negative evidence or unresolved questions are mentioned."
+      },
+      "source_discovery": "https://openstax.org/books/astronomy-2e/pages/preface",
+      "source_title": "1.1 The Nature of Astronomy - Astronomy 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/astronomy-2e/pages/1-1-the-nature-of-astronomy"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "f57f0c476eb9305e92a21d7adfd99550d7cb2991fddfd9f722f8e6b42dc12897",
+      "depth": 0,
+      "dossier": "C2003",
+      "gaps": [
+        "The source does not provide historical attribution for the concept of behavioral equivalence or its variants.",
+        "The source does not discuss alternative definitions of equivalence, such as bisimulation or denotational semantics.",
+        "The source does not address the decidability or complexity of checking program equivalence.",
+        "The source does not discuss the relationship between program equivalence and other program properties like type safety or termination analysis."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Program Equivalence (Equiv). Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 8,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 7,
+        "proposed_nodes": 8,
+        "proposed_relations": 7
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative definitions of program equivalence, such as bisimulation or denotational semantics.",
+        "attribution": "No specific originators are credited for the definitions or theorems; they are presented as standard textbook material. The source does not provide historical context or priority claims.",
+        "limitations": "The source is a textbook chapter, so it does not provide historical attribution for the concepts; it presents them as standard. The proofs are formalized in Rocq, but the source does not discuss limitations of the approach beyond the exercises."
+      },
+      "source_discovery": "https://softwarefoundations.cis.upenn.edu/plf-current/toc.html",
+      "source_title": "Equiv: Program Equivalence",
+      "state": "succeeded",
+      "url": "https://softwarefoundations.cis.upenn.edu/plf-current/Equiv.html"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "6cf61d1731d15187093ab2efeba947756268373d01a86e43cdcd697fa33a955b",
+      "depth": 0,
+      "dossier": "E2003",
+      "gaps": [
+        "The source does not provide evidence for the claimed benefits of financial planning, such as the Bacon Signs example being systematically analyzed.",
+        "The source does not discuss the limitations of financial analysis techniques, such as accounting distortions or the reliability of ratios.",
+        "The source does not address how the roles of controller, treasurer, VP-F, and CFO vary across different types of organizations or industries.",
+        "The source does not provide methods for constructing pro forma statements or conducting sensitivity analysis in detail.",
+        "The source does not discuss the historical development of these financial roles or planning practices."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of The Role of Finance in an Organization. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 8,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 6,
+        "proposed_nodes": 8,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section that presents standard finance concepts without discussing alternative theories or approaches. It does not mention competing frameworks for financial planning or organizational roles.",
+        "attribution": "The source attributes no original discoveries; it is a textbook exposition by Julie Dahlquist and Rainford Knight. Historical attributions, such as the Eisenhower quote, are noted but not central. No priority claims are made.",
+        "limitations": "The source provides no empirical evidence for the claims about financial planning benefits or role effectiveness. It is prescriptive and descriptive, not analytical. The example of Bacon Signs is anecdotal. The text does not address potential downsides of planning or variations in practice."
+      },
+      "source_discovery": "https://openstax.org/books/principles-finance/pages/preface",
+      "source_title": "1.2 The Role of Finance in an Organization - Principles of Finance | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-finance/pages/1-2-the-role-of-finance-in-an-organization"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "17a90bb23af033522840831964c89573ed36766485df94d8e223c0f4fdbeffb5",
+      "depth": 0,
+      "dossier": "B2003",
+      "gaps": [
+        "Historical origins of the six-level organization framework are not documented.",
+        "The source does not discuss emergent properties or interactions between levels beyond cooperation.",
+        "No evidence on how the hierarchy was developed or by whom.",
+        "The biosphere level is mentioned but not elaborated, leaving a gap in the framework's completeness."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Structural Organization of the Human Body. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 10,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 8,
+        "proposed_nodes": 10,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents the six-level hierarchy as the standard framework; no alternative organizational schemes are discussed.",
+        "attribution": "No original contributors are named for the concepts; the text is a collective textbook formulation. Historical origins of the hierarchy or cell theory are not addressed.",
+        "limitations": "The source is a textbook exposition, not a primary research article. It does not provide historical attribution for the concepts, and it acknowledges the imprecision of organ-system classification but does not explore alternatives."
+      },
+      "source_discovery": "https://openstax.org/books/anatomy-and-physiology-2e/pages/preface",
+      "source_title": "1.2 Structural Organization of the Human Body - Anatomy and Physiology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+    },
+    {
+      "assignment_id": "9a3e4b0e1e1e416b7241f45b882a1a1041adc493999897a06aff4f3dfe5e8ab7",
+      "depth": 0,
+      "dossier": "M2004",
+      "error": "Insufficient readable source text",
+      "need": "Explain the nontrivial reasoning and boundaries of Up. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://textbooks.math.gatech.edu/ila/",
+      "state": "failed",
+      "time": "2026-10-13T03:07:36+00:00",
+      "url": "https://textbooks.math.gatech.edu/ila/index.html"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "35e8c0283532069f7ec69cb4731450ecbc1e11618efe9a010260b82a1f75daf6",
+      "depth": 0,
+      "dossier": "P2004",
+      "gaps": [
+        "No primary sources cited for the 1967, 1983, or 2019 redefinitions; attribution to specific committees or scientists is missing.",
+        "The source does not discuss the practical challenges or precision limits of atomic clocks, Kibble balances, or light-based meter realization.",
+        "No coverage of the historical development of the metric system beyond the meter and kilogram, such as the role of the French Academy or the CGPM.",
+        "The source does not address the philosophical or theoretical debates about the choice of base quantities, such as whether seven are necessary or sufficient."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Units and Standards. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 7,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 2,
+        "proposed_nodes": 7,
+        "proposed_relations": 3
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions English units (fps) and cgs as alternative systems, but does not provide detailed reasoning for their use or decline.",
+        "attribution": "The source does not attribute the unit definitions or the prefix system to specific individuals; it presents them as established standards without naming originators.",
+        "limitations": "The source is a textbook exposition; it does not provide primary evidence for the historical decisions or the scientific debates behind unit redefinitions."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "1.2 Units and Standards - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "85096e6c8fc8b33df0f7b4ca93e8890d5f4e6cc1fcc7aca8d88d49fd8e7cfac9",
+      "depth": 0,
+      "dossier": "C2004",
+      "gaps": [
+        "The source does not provide dates for the chapter or the techniques.",
+        "The source does not discuss the historical origins of the reflect type or the Permutation definition.",
+        "The source does not compare the presented techniques with alternative proof methods in other proof assistants.",
+        "The source does not provide a formal proof that the inductive definition of Permutation is complete or correct beyond the examples."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Basic Techniques for Comparisons and Permutations (Perm). Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 9,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 7,
+        "proposed_nodes": 9,
+        "proposed_relations": 7
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative definitions of permutation or alternative proof techniques beyond the ones presented.",
+        "attribution": "No individual authors are credited for the techniques; they are presented as part of the Software Foundations series, building on Coq's standard library.",
+        "limitations": "The source is a pedagogical chapter; it does not claim original research contributions. The proofs are exercises or worked examples, and the techniques are specific to Coq."
+      },
+      "source_discovery": "https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html",
+      "source_title": "Perm: Basic Techniques for Comparisons and Permutations",
+      "state": "succeeded",
+      "url": "https://softwarefoundations.cis.upenn.edu/vfa-current/Perm.html"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "38c3f34c1958f02058f37c4ea134e9aca1985051d05c0f83688907f149e27367",
+      "depth": 0,
+      "dossier": "E2004",
+      "gaps": [
+        "Historical origin of the circular flow diagram is not documented",
+        "No discussion of limitations of the theory-as-simplification approach",
+        "No evidence on how models are empirically tested",
+        "Attribution for the theory-model distinction is unspecified"
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of How Economists Use Theories and Models to Understand Economic Issues. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 5,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 4,
+        "proposed_nodes": 5,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative methodological frameworks, such as behavioral economics or institutional approaches, beyond noting different disciplinary assumptions.",
+        "attribution": "Keynes's quote is attributed, but the circular flow diagram and theory definitions are presented as standard without specific attribution. No priority claims are made.",
+        "limitations": "The source is a textbook exposition; it does not provide evidence for the historical origins of the circular flow diagram or the theory-model distinction. No empirical validation of the models is presented."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "1.3 How Economists Use Theories and Models to Understand Economic Issues - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/1-3-how-economists-use-theories-and-models-to-understand-economic-issues"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "95de6b8392494b1d8743d98dc9fc20a40614b200ef84baeba40d434440bb5663",
+      "depth": 0,
+      "dossier": "B2004",
+      "gaps": [
+        "No primary source is cited for the eight-characteristic definition of life; its historical origin is unknown.",
+        "The passage does not explain how phylogenetic trees are constructed (e.g., methods, assumptions) beyond mentioning rRNA sequencing.",
+        "The source does not discuss limitations of the three-domain tree, such as later revisions or the role of horizontal gene transfer.",
+        "No evidence is provided for the claim that virologists are 'not biologists, strictly speaking'; this is a stipulative boundary, not an empirical finding.",
+        "The hierarchy's treatment of emergent properties or cross-level interactions is absent."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Themes and Concepts of Biology. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 8,
+      "parent": null,
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 5,
+        "proposed_nodes": 8,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents the eight-characteristic definition and the cell-based hierarchy as the standard biological framework; it does not discuss alternative definitions of life (e.g., virus-as-living, metabolic vs. evolutionary definitions).",
+        "attribution": "Attribution is clear for Woese's rRNA-based tree (credited to Carl Woese, early 1970s). Other concepts (eight characteristics, hierarchy, homeostasis, adaptation) are presented as collective textbook knowledge without specific originators.",
+        "limitations": "The source is a textbook exposition; it does not provide primary evidence for the origin of the eight characteristics or the hierarchy. Woese's contribution is described secondarily, without primary data. The passage does not address debates about phylogenetic tree construction or horizontal gene transfer."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "1.2 Themes and Concepts of Biology - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology"
+    }
+  ],
+  "plan_hash": "009795fc86393287f1db817dfbd5a42ca9d2c5bf439db042e4a2f28d2194555a",
+  "plan_id": "curriculum-1-2-001",
+  "started_at": "2026-10-13T02:40:52+00:00"
+}

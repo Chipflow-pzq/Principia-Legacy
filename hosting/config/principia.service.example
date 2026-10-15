@@ -1,0 +1,33 @@
+[Unit]
+Description=Principia-Legacy immutable public reader
+After=network.target
+
+[Service]
+Type=simple
+User=principia
+Group=principia
+WorkingDirectory=/opt/principia-legacy/hosting
+Environment=PRINCIPIA_BUNDLE=/opt/principia-legacy
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/principia-legacy/.venv/bin/gunicorn --config /opt/principia-legacy/hosting/gunicorn.conf.py app:create_app()
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+IPAddressDeny=any
+IPAddressAllow=localhost
+MemoryMax=1800M
+TasksMax=64
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

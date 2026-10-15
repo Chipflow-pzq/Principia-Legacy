@@ -1,0 +1,62 @@
+{
+  "analogous_to": {
+    "label": "analogous to",
+    "layer": "conceptual",
+    "symmetric": true
+  },
+  "applied_in": {
+    "label": "applied in",
+    "layer": "historical",
+    "symmetric": false
+  },
+  "bounded_by": {
+    "label": "bounded by",
+    "layer": "logical",
+    "symmetric": false
+  },
+  "challenges": {
+    "label": "challenges",
+    "layer": "evidential",
+    "symmetric": false
+  },
+  "equivalent_under": {
+    "label": "equivalent under",
+    "layer": "conceptual",
+    "symmetric": true
+  },
+  "generalized_by": {
+    "label": "generalized by",
+    "layer": "logical",
+    "symmetric": false
+  },
+  "historical_basis_for": {
+    "label": "historical basis for",
+    "layer": "historical",
+    "symmetric": false
+  },
+  "independent_formulation_of": {
+    "label": "independent formulation of",
+    "layer": "historical",
+    "symmetric": true
+  },
+  "motivated": {
+    "label": "motivated",
+    "layer": "historical",
+    "symmetric": false
+  },
+  "premise_for": {
+    "label": "premise for",
+    "layer": "logical",
+    "symmetric": false
+  },
+  "prerequisite_for_reading": {
+    "label": "helps explain",
+    "layer": "pedagogical",
+    "symmetric": false
+  },
+  "supports": {
+    "label": "supports",
+    "layer": "evidential",
+    "symmetric": false
+  }
+}

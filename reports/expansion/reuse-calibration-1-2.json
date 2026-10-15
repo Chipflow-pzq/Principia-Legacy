@@ -1,0 +1,62 @@
+{
+  "admission": {
+    "new_contributions": 4,
+    "new_records": 11,
+    "new_relations": 1,
+    "plan_total_contributions": 4,
+    "plan_total_relations": 1
+  },
+  "completed_at": "2026-10-13T03:25:19+00:00",
+  "estimate": {
+    "assignments": 1,
+    "maximum_output_tokens_before_retries": 57344,
+    "maximum_parallel_requests": 1,
+    "normal_calls_before_retries": 2,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged.",
+    "optional_reuse_refinement_calls": 1
+  },
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "outcomes": [
+    {
+      "admission": "admitted",
+      "assignment_id": "575292367a729f9fff22080e0430fcc204124ea102e05d85e12ded1e7ecd856e",
+      "depth": 0,
+      "dossier": "M2005",
+      "gaps": [
+        "The historical origin of the net change theorem is not addressed in the source.",
+        "The source does not discuss the conditions under which the net change theorem fails, such as when the derivative is not integrable.",
+        "The source does not provide a proof of the even/odd integration rules, only verification through examples.",
+        "The source does not discuss the relationship between the net change theorem and the Fundamental Theorem of Calculus in detail, beyond stating the equivalence.",
+        "The source does not address the use of the net change theorem for improper integrals or infinite intervals."
+      ],
+      "need": "Explain the nontrivial reasoning and boundaries of Integration Formulas and the Net Change Theorem. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "new_contributions": 4,
+      "parent": null,
+      "reuse_refinement": {
+        "accepted_memberships": 0,
+        "hints": 2,
+        "performed": true
+      },
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 4,
+        "accepted_relations": 1,
+        "proposed_nodes": 4,
+        "proposed_relations": 2
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations of the net change theorem or alternative methods for computing net change, such as using Riemann sums or numerical integration.",
+        "attribution": "The source does not attribute the net change theorem or the even/odd integration rules to specific originators. It presents them as standard results without historical context.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the net change theorem or the even/odd integration rules. It also does not discuss the limitations of these methods in detail, such as cases where the integrand is not continuous or where the antiderivative is not elementary."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "source_title": "1.4 Integration Formulas and the Net Change Theorem - Calculus Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/1-4-integration-formulas-and-the-net-change-theorem"
+    }
+  ],
+  "plan_hash": "0f2569a3f5e064360d9cb8352fd7ee56b11842cbd191ae312813187773132815",
+  "plan_id": "reuse-calibration-1-2",
+  "started_at": "2026-10-13T03:23:51+00:00"
+}

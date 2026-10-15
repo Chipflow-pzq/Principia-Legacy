@@ -1,0 +1,3755 @@
+{
+  "available_count": 33,
+  "contributions": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p42",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Unconfoundedness after conditioning on covariates",
+        "Nuisance estimators satisfy rate conditions"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Section 6.2.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DML estimates of the effect of 401(k) eligibility on net financial assets are substantially attenuated relative to uncontrolled estimates, suggesting confounding control matters.",
+      "conceptual_move": "Apply DML with flexible ML controls and compare to naive estimates.",
+      "content_hash": "51346f185403b46d5bf69364cf65f3e579df28195cfc4aa5db929eadc07836da",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper estimates the ATE of 401(k) eligibility on net financial assets using DML with various ML methods. The estimates are around $7,000-$9,000, much lower than the uncontrolled estimate of $19,559, indicating that controlling for confounding is important. The results are consistent across methods, supporting the theory that orthogonal scores yield similar results regardless of the nuisance estimator.",
+      "human_review": "not_reviewed",
+      "id": "n-12d4463d5bc3c830",
+      "kind": "empirical_finding",
+      "limits": [
+        "Unconfoundedness is untestable",
+        "Results depend on covariate set"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Demonstrate DML in an observational study with potential confounding.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Illustrative application.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Empirical application to 401(k) eligibility",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Partially linear model holds",
+        "Nuisance estimators converge at rates such that product of errors is o(N^{-1/2})"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper derives and applies this score in Section 4.1.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "The score (Y - Dθ - g(X))(D - m(X)) is Neyman orthogonal for the partially linear model, removing regularization bias.",
+      "conceptual_move": "Partial out the effect of X from D using an estimate of m(X), creating an orthogonalized regressor.",
+      "content_hash": "74fbbe8e978de74b031b4cc6556547808d51ced6d2adf81692da1c3e236f6e03",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper constructs a Neyman orthogonal score for the partially linear model by multiplying the residual from the outcome equation by the residual from the treatment equation. This score has a vanishing Gateaux derivative with respect to the nuisance functions g and m, because the bias term becomes a product of estimation errors, which vanishes under mild rate conditions. The score is shown to be equivalent to a linear IV estimator and links to debiased lasso methods.",
+      "human_review": "not_reviewed",
+      "id": "n-151095b708b8a3d1",
+      "kind": "method",
+      "limits": [
+        "Requires estimation of both g and m",
+        "Efficiency only under homoscedasticity"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "The naive score (Y - Dθ - g(X))D is sensitive to nuisance estimation error.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Standard tool in causal ML.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Orthogonal score for partially linear regression",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Approximate sparsity of nuisance functions",
+        "Lasso estimators with known convergence rates"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Remark 4.3 and Remark 5.2.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Cross-fitting weakens sparsity requirements from (s_g)^2 + (s_m)^2 << N to s_g * s_m << N for lasso-based nuisance estimation.",
+      "conceptual_move": "Show that cross-fitting allows the bias term to depend on the product of nuisance errors, relaxing the joint sparsity condition.",
+      "content_hash": "cd82d36a280025e0639d6fbccd0d809351dda08aa4c2e6c73e6b3c8c8b44bd43",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper analyzes the rate conditions for DML in the partially linear model when nuisance functions are estimated by lasso. Without sample splitting, the conditions require the sum of squared sparsity indices to be much smaller than N. With cross-fitting, the condition becomes the product of sparsity indices to be much smaller than N, which is weaker. This allows one nuisance function to be dense if the other is very sparse, as illustrated in Remark 4.3.",
+      "human_review": "not_reviewed",
+      "id": "n-1def0e35b076fa6c",
+      "kind": "empirical_finding",
+      "limits": [
+        "The condition is asymptotic and ignores log factors",
+        "Requires cross-fitting"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Without sample splitting, entropy conditions impose restrictive sparsity requirements.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Influential in high-dimensional causal inference.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Relaxed sparsity conditions via cross-fitting",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p40",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Random assignment of treatment",
+        "Nuisance estimators satisfy rate conditions"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Section 6.1.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DML estimates of the effect of a cash bonus on unemployment duration are negative and significant across various ML methods, consistent with prior studies.",
+      "conceptual_move": "Apply DML with multiple ML methods and report estimates with split-adjusted standard errors.",
+      "content_hash": "7393998e7c04ae22bb4c4fe0500451473e65b49fa50d1fc259b01601d077b17d",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper reanalyzes the Pennsylvania Reemployment Bonus experiment, estimating the ATE of a cash bonus on unemployment duration. Using DML with lasso, random forests, boosting, neural nets, and ensembles, the estimates are consistently negative and significant at the 5% level. The results are robust across methods and cross-fitting choices, illustrating the practical utility of DML.",
+      "human_review": "not_reviewed",
+      "id": "n-22a61c41440c0b1a",
+      "kind": "empirical_finding",
+      "limits": [
+        "Specific to this experiment",
+        "Standard errors vary slightly across methods"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Demonstrate DML in a randomized experiment with ML nuisance estimation.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Illustrative application.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Empirical application to unemployment insurance bonus",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Conditions of Theorem 3.1 or 3.3 hold",
+        "Variance estimator is consistent"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents Corollary 3.1.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Confidence intervals based on DML estimators have asymptotic coverage uniformly over a class of probability measures.",
+      "conceptual_move": "Prove that the asymptotic normality holds uniformly, allowing uniform confidence intervals.",
+      "content_hash": "9ec36e6193f63e67b7752caa351666b6fc11bc223c3dbfaae616cde9bb1ec922",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper establishes that DML estimators are asymptotically normal uniformly over a sequence of probability measures, which implies that confidence intervals constructed from them have coverage that converges to the nominal level uniformly. This is stronger than pointwise validity and ensures robustness to model perturbations. The result is stated in Corollary 3.1.",
+      "human_review": "not_reviewed",
+      "id": "n-25f6a4ba80fec06e",
+      "kind": "theorem",
+      "limits": [
+        "Uniformity is over a class of distributions, not all distributions"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Standard confidence intervals may not be valid uniformly across different data-generating processes.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Important for reliable inference.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Uniformly valid confidence intervals",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "High-dimensional settings with p growing with N"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper discusses this in Section 1.2 and Section 3.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Donsker conditions, which require bounded entropy, are violated by high-dimensional models and ML estimators, making them inappropriate for modern settings.",
+      "conceptual_move": "Argue that entropy grows with dimension, so Donsker conditions fail, motivating the need for cross-fitting.",
+      "content_hash": "753a85b03b047d67dbb88687fd599b9c44f5e9c5ed880dfc9f476435df7d3beb",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper explains that Donsker conditions require the entropy integral of the function class to be bounded, which fails when the dimension of covariates grows with the sample size. For example, a linear model with a Euclidean ball parameter space has entropy growing with p_N. This makes Donsker conditions inapplicable to ML methods like lasso or random forests. Cross-fitting avoids these conditions by using sample splitting to control remainder terms.",
+      "human_review": "not_reviewed",
+      "id": "n-2b662a58e8627bcf",
+      "kind": "argument",
+      "limits": [
+        "Does not provide a formal proof of failure for all ML methods"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Classical semiparametric theory relies on Donsker conditions that limit complexity, but ML methods operate in high-complexity spaces.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Widely accepted critique of classical conditions.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Donsker conditions are unsuitable for high-dimensional ML",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Unconfoundedness",
+        "Propensity score bounded away from 0 and 1",
+        "Nuisance estimators satisfy rate conditions"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents Theorem 5.1.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DML estimators for ATE and ATTE are root-N consistent, asymptotically normal, and efficient, reaching the semiparametric efficiency bound.",
+      "conceptual_move": "Use orthogonal scores based on influence functions for missing data, combined with cross-fitting.",
+      "content_hash": "def4d31105bfdcf182df733c58799651732ad1511d3dd2511b220060200bc6da",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper provides orthogonal scores for ATE and ATTE in the interactive model with binary treatment. These scores are based on the influence function for missing data, and the paper proves that DML estimators using these scores achieve root-N consistency and asymptotic normality, with variance reaching the semiparametric efficiency bound of Hahn (1998). The rate conditions require the product of nuisance estimation errors to be o(N^{-1/2}), which is weaker than without cross-fitting.",
+      "human_review": "not_reviewed",
+      "id": "n-33e47fd4ec6e1420",
+      "kind": "theorem",
+      "limits": [
+        "Requires binary treatment",
+        "Assumes unconfoundedness, which is untestable"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Estimating ATE with ML nuisance functions requires debiasing to avoid bias.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Key result in causal ML.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "DML for average treatment effects under unconfoundedness",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Exclusion restriction holds",
+        "ITT is the effect of assignment on outcome"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source cites this paper for the discussion of ITT dilution.",
+          "name": "Hernán and Hernandez-Diaz (2012)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Under the exclusion restriction, the intention-to-treat effect is a diluted version of the treatment effect, which may be conservative for evaluating new treatments but can be misleading for safety.",
+      "conceptual_move": "Show that ITT is a diluted treatment effect under exclusion, but this dilution can make unsafe treatments appear safe.",
+      "content_hash": "715fec5676b11a2638a4abbe42174abc7945c7f83f0facfff34af983af6e99b6",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Hernán and Hernandez-Diaz (2012).",
+        "precision": "year",
+        "year": 2012
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This argument clarifies the interpretation of ITT effects. The source notes that under the exclusion restriction, the ITT effect is a diluted treatment effect because it averages over non-compliers who do not receive the treatment. This dilution may be conservative for evaluating efficacy, but it can be problematic for safety: if a treatment has serious side effects, the dilution may make it appear safe. The source cites Hernán and Hernandez-Diaz (2012) for this discussion. This is important for clinical trial design and interpretation, as it challenges the assumption that ITT is always the conservative choice.",
+      "human_review": "not_reviewed",
+      "id": "n-345ad9fc1b14c008",
+      "kind": "argument",
+      "limits": [
+        "The argument depends on the specific context and outcome",
+        "ITT may still be policy-relevant in some cases"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "ITT analysis is standard in medical trials, but its interpretation as a conservative estimate is not always valid.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted as a valid critique of ITT analysis.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "ITT effect as diluted treatment effect under exclusion restriction",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Independent observations",
+        "Nuisance estimators converge at specified rates",
+        "K fixed"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper coins the term 'cross-fitting' and formalizes the procedure, building on earlier sample-splitting ideas.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Cross-fitting swaps roles of main and auxiliary samples across K folds and averages estimates, removing overfitting bias while retaining full-sample efficiency.",
+      "conceptual_move": "Introduce a K-fold procedure that reuses all observations for both nuisance estimation and target estimation, averaging fold-specific estimates.",
+      "content_hash": "687046765d62b5ab7a8ca649ce9d0c4b5045a7682c24115cd94dc57be1c4d04d",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper defines cross-fitting as a K-fold random partition where each fold's nuisance parameters are estimated on the complement, and the target parameter is estimated on the fold using those nuisance estimates. The fold-specific estimates are then averaged (DML1) or combined in a pooled equation (DML2). This approach eliminates the bias from overfitting—where model errors correlate with estimation errors—by ensuring that the data used for nuisance estimation is disjoint from that used for target estimation. The averaging restores efficiency, as the fold estimates are approximately independent.",
+      "human_review": "not_reviewed",
+      "id": "n-3b2f72b57fe05a8a",
+      "kind": "method",
+      "limits": [
+        "Finite-sample sensitivity to the number of folds K",
+        "Requires random partitioning, which introduces additional variability"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Sample splitting reduces overfitting bias but uses only a subset of data, losing efficiency.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Widely adopted in causal ML practice.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Cross-fitting as efficient sample splitting",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Binary treatment and instrument",
+        "Instrument validity and monotonicity (Imbens and Angrist 1994)",
+        "Nuisance estimators satisfy rate conditions"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents Theorem 5.2.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DML estimators for LATE are root-N consistent and asymptotically normal under conditions on nuisance estimation rates.",
+      "conceptual_move": "Construct an orthogonal score for LATE using influence function adjustments and apply cross-fitting.",
+      "content_hash": "9c292fe60858baebe9e9c8846e65512fd51afc813088c171219077e3cf506f8a",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper extends DML to estimate LATE with a binary instrument and treatment. It provides an orthogonal score that combines estimates of conditional mean functions and propensity scores, and proves that DML estimators achieve root-N consistency and asymptotic normality. The rate conditions require the product of nuisance errors to be o(N^{-1/2}), similar to other settings.",
+      "human_review": "not_reviewed",
+      "id": "n-3e87a08911ccb520",
+      "kind": "theorem",
+      "limits": [
+        "Requires binary treatment and instrument",
+        "Assumes LATE identification conditions"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Estimating LATE with ML nuisance functions requires debiasing in an IV setting.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Influential for IV with ML.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "DML for local average treatment effects with IV",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p130",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Treatment participation is observed",
+        "LATE assumptions hold"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source cites these authors as arguing for LATE as the main estimand.",
+          "name": "Various authors, including McNamee (2009) and Shrier et al. (2014)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "In medical trials with incomplete adherence, LATE estimates the effect for compliers and is argued to be a more informative estimand than intention-to-treat, which can be misleading for safety and comparative effectiveness.",
+      "conceptual_move": "Advocate for LATE as the main causal estimand when treatment participation is observed, complementing ITT analysis.",
+      "content_hash": "3c231347ded9cee2e869fbce29bacb28f73d993435298318ffdc9058ce0fcdfd",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "McNamee (2009) is an early example.",
+        "precision": "approximate",
+        "year": 2009
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This argument addresses the limitations of intention-to-treat (ITT) analysis in medical trials. The source notes that ITT estimates measure the effect of assignment, not the treatment itself, and can be misleading when adherence rates differ across treatments or when examining side effects. For example, a treatment may appear more effective simply because subjects adhered to it more, or an unsafe treatment may appear safe because the effect is diluted by non-adherence. The source argues that LATE, which captures the effect on compliers, should be the main causal estimand when treatment participation is observed. This is a normative argument about what should be reported in clinical trials.",
+      "human_review": "not_reviewed",
+      "id": "n-41d418049c82e5a5",
+      "kind": "normative_argument",
+      "limits": [
+        "LATE is specific to compliers and may not generalize",
+        "ITT may still be policy-relevant in some contexts"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Intention-to-treat analysis measures the effect of assignment, not treatment, and can make unsafe interventions appear safe or effective interventions appear ineffective.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "normative/not empirical",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "LATE as complement to intention-to-treat analysis in medical trials",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p118",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Binary instrument",
+        "Monotonicity",
+        "Other LATE assumptions"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits this paper for the multi-valued treatment result.",
+          "name": "Angrist and Imbens (1995)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "With a binary instrument and multi-valued treatment, the IV estimand is a weighted average of unit causal responses among compliers at different points in the treatment distribution, with positive weights summing to one.",
+      "conceptual_move": "Define unit causal responses and show the IV estimand is a weighted average of these responses, with weights reflecting the instrument's effect on treatment at each point.",
+      "content_hash": "d09e70affbd9be5c0655df116dd7b7f70d30ff07dbf2c99a3b7e72a5affa2a8a",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Angrist and Imbens (1995) in JASA.",
+        "precision": "year",
+        "year": 1995
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This result extends the LATE framework to multi-valued treatments. The source states that Angrist and Imbens (1995) showed that with a single binary instrument, the IV estimand is a weighted average of unit causal responses—the difference in potential outcomes among compliers at a particular point in the treatment distribution. The weights reflect the extent to which individuals are affected by the instrument at different points in the treatment distribution, and they are all positive and sum to one. This is important for interpreting IV estimates of returns to schooling, where treatment is years of schooling, and the effect may vary across the distribution.",
+      "human_review": "not_reviewed",
+      "id": "n-4c7a0674fec097de",
+      "kind": "theorem",
+      "limits": [
+        "The weighted average may not correspond to a policy-relevant parameter if weights are not of interest",
+        "Requires careful interpretation of weights"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "When treatment is multi-valued, such as years of schooling, there are many potential causal effects, and the IV estimand's interpretation was unclear.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted and influential in applied work.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "IV estimand as weighted average of unit causal responses for multi-valued treatments",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Conditional moment restrictions hold",
+        "Certain moment conditions on the weighting functions"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Section 2.2.4.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "For conditional moment restrictions, an orthogonal score can be constructed using a weighting matrix and moment selection functions, achieving semiparametric efficiency with appropriate choices.",
+      "conceptual_move": "Generalize the GMM construction to conditional moments, allowing for arbitrary weighting and selection functions.",
+      "content_hash": "985c364be48be4263fa4d5f5efe489d113f1325080feca7a6a8e670e45e9d633",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper presents a framework for conditional moment restrictions where the score is a product of a weighting matrix function and the moment function. The weighting matrix is chosen to ensure orthogonality, and specific choices lead to the semiparametric efficiency bound of Chamberlain (1992). This framework covers many models without requiring a likelihood, and the paper illustrates it with the partially linear model.",
+      "human_review": "not_reviewed",
+      "id": "n-5284d631475648d2",
+      "kind": "method",
+      "limits": [
+        "Requires estimation of additional nuisance functions (weighting matrix)",
+        "Efficiency requires correct specification of conditional variance"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Need a general framework for orthogonal scores in models defined by conditional moment restrictions.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Generalizes GMM to conditional settings.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Orthogonal scores for conditional moment restrictions",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p119",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p122",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Randomization and relevance hold",
+        "Bayesian parametric models are correctly specified"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits this paper for the sensitivity analysis framework.",
+          "name": "Imbens and Rubin (1997a)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Imbens and Rubin (1997a) developed a Bayesian framework for sensitivity analysis that maintains randomization and relevance but relaxes exclusion restriction and monotonicity, allowing assessment of how conclusions change.",
+      "conceptual_move": "Use Bayesian parametric models to generate unobserved potential outcomes and examine the impact of relaxing key assumptions.",
+      "content_hash": "e84c81438ce8f229e1aad7f0c3b8473ac5e4c69e650d96ca0b3bd383b0088d27",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Imbens and Rubin (1997a) in Annals of Statistics.",
+        "precision": "year",
+        "year": 1997
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This method provides a systematic way to assess the sensitivity of causal conclusions to violations of the exclusion restriction and monotonicity. The source describes how Imbens and Rubin (1997a) maintained the randomization and relevance assumptions but allowed the exclusion restriction and monotonicity to fail, using Bayesian parametric models to generate unobserved potential outcomes. This allows estimation of intention-to-treat effects for always-takers and never-takers, which should be zero if the exclusion restriction holds, providing a way to test its validity. This approach is particularly useful for the exclusion restriction, which is a common concern in many applications.",
+      "human_review": "not_reviewed",
+      "id": "n-5c0f5c0db284a89c",
+      "kind": "method",
+      "limits": [
+        "Requires parametric assumptions that may be strong",
+        "Sensitivity analysis does not provide a definitive test of assumptions"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "The LATE framework relies on assumptions that may be violated in practice, and researchers need tools to assess the robustness of their conclusions.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted as a useful tool for robustness checks.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Sensitivity analysis for violations of exclusion restriction and monotonicity",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Potential outcomes exist for each individual",
+        "Observed outcome equals the potential outcome corresponding to actual treatment"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits Neyman for introducing potential outcomes and Rubin for extending them to observational data.",
+          "name": "Neyman (1923) and Rubin (1974)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "The observed difference in mean outcomes between treated and untreated groups equals the average causal effect on the treated plus a selection-bias term, formalizing why naive comparisons are not causal.",
+      "conceptual_move": "Express the observed mean difference as the sum of a counterfactual causal effect and a selection-bias term using potential outcomes.",
+      "content_hash": "1b5ba1d0b9bf134ac4b83e4a7dd1815ca10d268af0578a5e11fda900bfe851b7",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "formulation",
+        "note": "Neyman's original work; Rubin's extension in 1974.",
+        "precision": "approximate",
+        "year": 1923
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This decomposition is a foundational representation in causal inference. It shows that the difference in observed means, Δ, can be written as the average causal effect among the treated, E[Y(1)-Y(0)|D=1], plus a selection-bias term, E[Y(0)|D=1]-E[Y(0)|D=0]. The selection-bias term captures how different the treated and untreated groups would have been in the absence of treatment. This formalization makes explicit why a simple comparison of means is generally not a causal estimate: even if the treatment has no effect, selection bias can make the groups differ. The move is to introduce potential outcomes and a counterfactual term, turning a vague concern about confounding into a precise algebraic identity. This representation is a prerequisite for designing identification strategies that eliminate or isolate the selection-bias term.",
+      "human_review": "not_reviewed",
+      "id": "n-5d51583ec6bb2da6",
+      "kind": "representation",
+      "limits": [
+        "Does not by itself identify the causal effect; it only clarifies the source of bias",
+        "Requires a strategy to address the selection-bias term"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Observational comparisons of outcomes between treated and untreated groups conflate the causal effect of treatment with systematic differences between groups.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted foundational result in causal inference.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Decomposition of observed group differences into causal effect and selection bias",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "High-dimensional or highly complex nuisance parameters",
+        "Regularized estimators with bias rate slower than N^{-1/2}"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this as a motivating example with numerical illustration.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Naive plug-in of ML nuisance estimates into estimating equations yields estimators with slower than root-N convergence due to regularization bias, as shown in simulations.",
+      "conceptual_move": "Decompose the estimation error to isolate the regularization bias term, which does not vanish.",
+      "content_hash": "0135a01c991be414c9b667080edb53a33db31b678a1a946377d3a100f1d92fa0",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper demonstrates that a naive estimator, which plugs an ML estimate of the nuisance function into the estimating equation, has an error term that is a sum of non-zero mean terms involving the nuisance estimation bias. This term diverges because the regularization bias converges slower than N^{-1/2}. A simulation with random forests illustrates the resulting bias, showing the estimator's distribution shifted away from the true value. This finding motivates the need for orthogonalization and cross-fitting.",
+      "human_review": "not_reviewed",
+      "id": "n-64b9edb48abf19e3",
+      "kind": "empirical_finding",
+      "limits": [
+        "Illustrated with a specific simulation, not a general proof of failure"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "ML methods use regularization, which introduces bias in nuisance estimates, contaminating the target estimator.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Well-established phenomenon in high-dimensional statistics.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Regularization bias in naive ML plug-in estimators",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The natural experiment generates variation independent of potential outcomes",
+        "The researcher can identify and exploit the exogenous variation"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits Card and Angrist with popularizing natural experiments in economics, building on earlier ideas by Haavelmo and Campbell.",
+          "name": "David Card, Joshua Angrist, and others",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Natural experiments—events or policy changes not under subjects' control—can generate variation that is as-if randomly assigned, enabling causal inference from observational data.",
+      "conceptual_move": "Treat policy changes, administrative rules, or natural events as sources of exogenous variation that mimic random assignment.",
+      "content_hash": "a44b02940a998814dace15f7026d05e90d147f042431ce09479190a655a0ebfd",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "formulation",
+        "note": "Early influential studies by Card and Angrist in the early 1990s.",
+        "precision": "approximate",
+        "year": 1990
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This method shifts the focus from controlling for all confounders to finding sources of variation that are plausibly exogenous. The source describes natural experiments as events that generate variation in the treatment variable as if it were randomly assigned, even though the researcher did not control the assignment. Examples include policy changes, administrative thresholds, and random events like birth dates or weather shocks. The key move is to use institutional knowledge to argue that the variation is independent of potential outcomes, thus allowing identification of causal effects without a controlled experiment. This approach became central to the design-based approach in economics, transforming how observational data are used for causal inference.",
+      "human_review": "not_reviewed",
+      "id": "n-653b63fc274a2369",
+      "kind": "method",
+      "limits": [
+        "Requires institutional knowledge to justify exogeneity",
+        "Not all natural experiments are valid; exogeneity must be argued case-by-case"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Many important causal questions cannot be studied with randomized controlled trials due to ethical, financial, or practical constraints.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Widely accepted and dominant approach in applied microeconomics.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Natural experiments as as-if random assignment for causal identification",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p136",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The distribution of p-values under the null is known",
+        "Excess mass just below 0.05 indicates p-hacking"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits this paper for the finding.",
+          "name": "Brodeur, Cook, and Heyes (2020)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Brodeur et al. (2020) found that p-hacking is more common in IV and difference-in-differences methods than in RCTs and regression discontinuity designs, likely because the latter are more scripted.",
+      "conceptual_move": "Analyze the distribution of p-values to detect excess mass just below 0.05, indicating p-hacking.",
+      "content_hash": "234b577b5ae2568d7778ae1433165cfb60148c9791da8100f503b0d2c4199d1a",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Brodeur et al. (2020) in American Economic Review.",
+        "precision": "year",
+        "year": 2020
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This finding provides evidence on the prevalence of p-hacking in different research designs. The source describes how Brodeur et al. (2020) found that p-hacking is more common for IV and DiD methods than for RCTs and RD designs. This pattern is likely due to the fact that RCTs and RD designs have established codes of conduct that limit researcher degrees of freedom, while IV and DiD methods offer more flexibility. The source also notes that IV analysis in RCTs with partial compliance exhibits less p-hacking than other IV studies, and p-hacking is lower when the first stage is strong. This has implications for research practice and the credibility of empirical results.",
+      "human_review": "not_reviewed",
+      "id": "n-653fd9614cbb175e",
+      "kind": "empirical_finding",
+      "limits": [
+        "The analysis is based on published studies, which may be subject to selection",
+        "P-hacking is not the only explanation for excess mass"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Publication bias and p-hacking can compromise the credibility of empirical results, and it was unclear how prevalent they are across different research designs.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted as evidence of p-hacking in economics.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Publication bias and p-hacking in design-based research",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "S fixed",
+        "Asymptotic conditions of DML hold"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents Definition 3.3 and Corollary 3.3.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Repeating DML over multiple splits and taking the median of estimates and variance estimators provides robustness to split-specific variability.",
+      "conceptual_move": "Propose a median-based aggregation over multiple sample splits to reduce sensitivity to any particular split.",
+      "content_hash": "9360bfed57024bb8de120cabf2b1687caf48b18eea30f6d3c637397eb13451f6",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper suggests repeating the DML procedure S times with different random partitions and summarizing results using the median of point estimates and a median-based variance estimator. This approach is more robust to outliers than averaging, and the paper proves that the median estimator is first-order equivalent to the single-split estimator asymptotically. The variance estimator incorporates both within-split and between-split variability.",
+      "human_review": "not_reviewed",
+      "id": "n-75d35177be89e689",
+      "kind": "method",
+      "limits": [
+        "Behavior when S grows with N is left open",
+        "Median variance estimator may be conservative"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "The random partition in cross-fitting introduces additional variability in finite samples.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Practical tool in DML applications.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Median method for incorporating sample-splitting uncertainty",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Neyman orthogonality or near-orthogonality",
+        "Nuisance estimators satisfy rate conditions (e.g., product of errors o(N^{-1/2}))",
+        "Identification condition on the Jacobian",
+        "Moment conditions and regularity"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents Theorems 3.1 and 3.3 as its main results.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DML estimators concentrate in a 1/sqrt(N) neighborhood of the true parameter and are approximately linear and Gaussian, uniformly over a class of probability measures.",
+      "conceptual_move": "Combine Neyman orthogonality and cross-fitting to show that the remainder terms in the estimation error vanish, yielding a linear representation.",
+      "content_hash": "7926e95145da0ca753cbebc1efe1177cba4470ac735dc45321affc2106311be0",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper proves that DML estimators, constructed with Neyman orthogonal scores and cross-fitting, achieve root-N consistency and asymptotic normality. The proof decomposes the scaled estimation error into a leading term that is asymptotically normal, a bias term that vanishes due to orthogonality (product of nuisance errors), and a remainder that vanishes due to sample splitting. The result holds uniformly over a sequence of probability measures, ensuring robustness to perturbations. This is the central theoretical contribution, establishing the validity of the method for a broad class of ML nuisance estimators.",
+      "human_review": "not_reviewed",
+      "id": "n-7a2dcf7d88d3269d",
+      "kind": "theorem",
+      "limits": [
+        "Requires nuisance estimators to achieve certain convergence rates, though weaker than without cross-fitting",
+        "Uniformity over a class of distributions, not all distributions"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Naive ML plug-in estimators fail to be root-N consistent due to regularization bias and overfitting.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Foundational result in debiased machine learning.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "DML estimator achieves root-N consistency and asymptotic normality",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p118",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Probabilistic monotonicity",
+        "Other LATE assumptions"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits this paper for the probabilistic monotonicity result.",
+          "name": "DiNardo and Lee (2011)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DiNardo and Lee (2011) showed that monotonicity can be relaxed to probabilistic monotonicity—requiring the probability of treatment to increase for all individuals—and the IV estimand remains a weighted average of individual causal effects.",
+      "conceptual_move": "Replace deterministic monotonicity with a probabilistic version that only requires the treatment probability to increase for all individuals.",
+      "content_hash": "8181b0ab2d10d1a31aebfbf6f62d56c2aa4d22781207785c60d3ccdacdfa707c",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "DiNardo and Lee (2011).",
+        "precision": "year",
+        "year": 2011
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This extension relaxes the monotonicity assumption, making the LATE framework more widely applicable. The source states that DiNardo and Lee (2011) showed that one can relax monotonicity to probabilistic monotonicity, which requires the probability of treatment to increase for all individuals randomized to treatment. Under this assumption, the IV estimand is interpretable as a weighted average of individual causal effects, where the weights reflect the effect of the instrument on the probability of treatment for each type of individual. This is useful because it implies that IV estimates may generalize beyond the population of compliers.",
+      "human_review": "not_reviewed",
+      "id": "n-8a373d3769ed028c",
+      "kind": "theorem",
+      "limits": [
+        "Probabilistic monotonicity may still be violated in some settings",
+        "The weighted average interpretation may be less intuitive"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Monotonicity may be too strong in some settings, limiting the applicability of LATE.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted as a useful relaxation.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Probabilistic monotonicity relaxes LATE assumptions",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p123",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p127",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Random assignment of judges",
+        "Exclusion restriction",
+        "Monotonicity"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source cites these studies as examples of judge leniency designs.",
+          "name": "Kling (2006), Dahl et al. (2014), Dobbie et al. (2018)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "The LATE framework is applied to judge leniency designs, where random assignment of judges provides an instrument for decisions like incarceration or bail, with monotonicity being a key concern.",
+      "conceptual_move": "Use random assignment of judges as an instrument, with the exclusion restriction and monotonicity as key assumptions.",
+      "content_hash": "5e3707986d7c9816b82f6fe86f377088064c5892de0fc6ff087717d2b81defad",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Kling (2006) is an early example.",
+        "precision": "approximate",
+        "year": 2006
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This application illustrates the LATE framework in a modern setting. The source describes how judge leniency designs use the fact that judges are randomly assigned to cases, and some judges are systematically harsher than others. This provides an instrument for the decision (e.g., incarceration length). The exclusion restriction requires that the judge's leniency affects the outcome only through the decision, which is easier to justify when there is no interaction between the judge and the case. Monotonicity requires that individuals released by a strict judge would also be released by a more lenient judge, which may be violated if judges differ in preferences beyond leniency.",
+      "human_review": "not_reviewed",
+      "id": "n-8cbbf667ea03c2b5",
+      "kind": "method",
+      "limits": [
+        "Monotonicity may be violated if judges differ in preferences",
+        "Exclusion restriction may be violated if judges interact with cases"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Researchers need instruments for decisions like incarceration length or pretrial detention, and judge leniency provides a natural experiment.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Widely used and accepted in applied economics.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "LATE framework applied to judge leniency designs",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p108",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p111",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p113",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p116",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Random assignment of the instrument",
+        "Relevance: instrument affects treatment",
+        "Exclusion restriction: instrument affects outcome only via treatment",
+        "Monotonicity: no defiers"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source explicitly credits Imbens and Angrist for this result.",
+          "name": "Imbens and Angrist (1994)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Under assumptions of random assignment, relevance, exclusion restriction, and monotonicity, the instrumental variables estimand identifies the average causal effect for compliers—the local average treatment effect (LATE).",
+      "conceptual_move": "Define the estimand as the effect for the subpopulation that complies with the instrument, rather than the entire population, and show it is identified by IV under minimal assumptions.",
+      "content_hash": "1cc0541134cdb19abeb1a3e4715503b04bd5850ab14a20fe411756d9411852b4",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Imbens and Angrist (1994) in Econometrica.",
+        "precision": "year",
+        "year": 1994
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This theorem is the central result of the LATE framework. It shows that when treatment effects are heterogeneous and compliance is incomplete, the IV estimand—the ratio of the reduced-form effect to the first-stage effect—identifies the average causal effect for compliers, i.e., those who change treatment status in response to the instrument. The assumptions are: (1) the instrument is as good as randomly assigned, (2) the instrument has a nonzero effect on treatment (relevance), (3) the instrument affects the outcome only through the treatment (exclusion restriction), and (4) monotonicity, meaning no one is a defier (who would take treatment when assigned control but not when assigned treatment). This result clarifies what can be learned from IV designs and provides a transparent interpretation of the estimand.",
+      "human_review": "not_reviewed",
+      "id": "n-8d4f954e637f82dc",
+      "kind": "theorem",
+      "limits": [
+        "LATE is specific to compliers and may not generalize to other populations",
+        "Monotonicity may be violated in some settings"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "With heterogeneous treatment effects and incomplete compliance, the IV estimand does not generally identify the average treatment effect for the whole population or the treated.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Seminal and widely accepted result in causal inference.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "LATE framework: identifying causal effects for compliers under minimal assumptions",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p135",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "LATE assumptions hold",
+        "Selection-correction model is correctly specified"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits this paper for the equivalence result.",
+          "name": "Kline and Walters (2019)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Kline and Walters (2019) showed that instrumental variables and selection-correction type estimates (e.g., Heckman's) of LATE are numerically equivalent, implying the choice between them is unimportant for identified treatment effects.",
+      "conceptual_move": "Demonstrate numerical equivalence of IV and selection-correction estimates for LATE, providing a basis for validation exercises.",
+      "content_hash": "9db7ec3d7171feff978506ef6444ed92fed078e60b01a8d2556390ee36cefd02",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Kline and Walters (2019) in Econometrica.",
+        "precision": "year",
+        "year": 2019
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This finding clarifies the relationship between two estimation approaches. The source states that Kline and Walters (2019) showed that IV and selection-correction type estimates (e.g., Heckman, 1979) of LATE are numerically equivalent. This means that for treatment effects that are identified in the data, the choice between these estimators does not matter. This equivalence can form the basis for validation exercises of structural models that impose parametric assumptions to identify other causal effects, such as the average treatment effect in the population. This is important for applied researchers who need to choose between methods.",
+      "human_review": "not_reviewed",
+      "id": "n-9113f5903af67a9f",
+      "kind": "empirical_finding",
+      "limits": [
+        "Equivalence holds for LATE, not for other estimands",
+        "Requires correct specification of the selection model"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Researchers face a choice between IV and selection-correction methods for estimating treatment effects, and it was unclear if they yield different results.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted and influential in applied work.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Equivalence of IV and selection-correction estimates for LATE",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p23",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Nuisance estimator has an influence function representation",
+        "Adjustment term is computable"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Section 2.2.5, building on Newey (1994).",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "An orthogonal score can be constructed by adding the influence function adjustment for nuisance estimation to the original score.",
+      "conceptual_move": "Use the influence function of the nuisance estimator to adjust the score, ensuring orthogonality.",
+      "content_hash": "1d5b3f1d7ff0029e6111862783969449796e678f924048fd5cadedbfec304f97",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper describes a general construction: given an original score and a nonparametric estimator of the nuisance function, add an adjustment term that accounts for the estimation error. This adjustment is derived from the influence function of the nuisance estimator, as analyzed by Newey (1994). The resulting score is Neyman orthogonal and its expectation identifies the target parameter. This provides a systematic way to debias scores in various settings.",
+      "human_review": "not_reviewed",
+      "id": "n-917be3cca6a9730c",
+      "kind": "method",
+      "limits": [
+        "Requires knowledge of the influence function",
+        "May be complex for some estimators"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Need a way to debias any initial score when nuisance functions are estimated nonparametrically.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Standard technique in semiparametrics.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Influence function adjustment for orthogonal scores",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p137",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Natural experiments provide as-if random variation",
+        "Identifying assumptions are stated and validated"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits these laureates for establishing the design-based approach.",
+          "name": "David Card, Joshua Angrist, Guido Imbens",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "The design-based approach, built on natural experiments and the LATE framework, features a clear statement of identifying assumptions and validation of these assumptions, transforming empirical practice in economics.",
+      "conceptual_move": "Shift focus from model specification to the source of identifying variation and the assumptions needed for causal interpretation.",
+      "content_hash": "d76b864b8561f56e026ca93f4e238dc817f026ec1a26aaae856b1bf3c8f67a6c",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "formulation",
+        "note": "Developed through the 1990s.",
+        "precision": "approximate",
+        "year": 1990
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This is a methodological paradigm shift. The source describes how the design-based approach, pioneered by Card, Angrist, and Imbens, uses natural experiments to emulate randomized experiments. The approach requires researchers to understand the process determining which units receive which treatments, i.e., the assignment mechanism, and to state clearly the assumptions under which the design identifies a causal effect. This transparency allows for replication and robustness analysis, as other researchers can focus on the validity of the assumptions. The approach has become dominant in economics and has spread to other social sciences.",
+      "human_review": "not_reviewed",
+      "id": "n-a26ab247b049c4d6",
+      "kind": "method",
+      "limits": [
+        "May prioritize internal validity over external validity",
+        "Requires institutional knowledge to find valid natural experiments"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Traditional structural equation modeling required correct specification of behavioral systems, which was often difficult to achieve credibly.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Dominant approach in applied microeconomics.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Design-based approach emphasizes clear identification assumptions and validation",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Same asymptotic conditions as DML1"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents Definition 3.2 and Remark 3.1.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DML2 solves a single estimating equation pooling all folds, which is better behaved in small samples than DML1.",
+      "conceptual_move": "Define DML2 as the solution to a pooled equation across folds, improving stability.",
+      "content_hash": "cb5ff4d5c8d65ed3217a5afe6bfcc50bbdbc1f989c0b185235eecd07d11bfbd8",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper defines two variants of DML: DML1 averages fold-specific estimates, while DML2 solves a single equation that pools the empirical moments across all folds. The pooled Jacobian in DML2 is more stable than the separate Jacobians in DML1, making DML2 preferable in small samples. The paper recommends DML2 in most cases, except when the two are equivalent, such as in the interactive model for ATE.",
+      "human_review": "not_reviewed",
+      "id": "n-ad122f716d2d1dc5",
+      "kind": "method",
+      "limits": [
+        "DML2 may not be equivalent to DML1 in all settings"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "DML1 averages fold-specific estimates, which may have unstable Jacobians in small samples.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Commonly used in practice.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "DML2 estimator with pooled Jacobian",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Criterion function is differentiable",
+        "Nuisance parameter maximizer exists and is differentiable"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Section 2.2.3, building on Newey (1994).",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Concentrating out the nuisance parameter by maximizing the expected criterion and then differentiating yields a Neyman orthogonal score.",
+      "conceptual_move": "Show that the full derivative of the concentrated criterion with respect to the target parameter produces an orthogonal score.",
+      "content_hash": "e382d0e923604232f547c75d94aac2c4c30d519610bf95124f11fd52300d1c43",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper describes a concentrating-out approach: for each value of the target parameter, maximize the expected criterion over the nuisance parameter, then differentiate the resulting function with respect to the target parameter. This yields a score that is orthogonal to the nuisance parameter, as the first-order condition for the nuisance parameter ensures the derivative vanishes. This method works for both finite-dimensional and infinite-dimensional nuisance parameters, and does not require a likelihood.",
+      "human_review": "not_reviewed",
+      "id": "n-b1f98fc52a72bb93",
+      "kind": "method",
+      "limits": [
+        "Requires interchange of derivatives",
+        "May not yield efficient score unless likelihood is used"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Need a general method to construct orthogonal scores for arbitrary criterion functions.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Useful for deriving orthogonal scores in practice.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Construction of orthogonal scores via concentrating-out",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p118",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Monotonicity of the instrument on treatment probability",
+        "Other LATE assumptions hold"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits this paper for the multi-valued instrument result.",
+          "name": "Imbens and Angrist (1994)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "With multi-valued discrete instruments, the IV estimand is a weighted average of local average treatment effects, with positive weights summing to one, and 2SLS consistently estimates this weighted average under monotonicity.",
+      "conceptual_move": "Extend the LATE framework to multi-valued instruments, showing the IV estimand is a weighted average of LATEs.",
+      "content_hash": "7af83dc4db3a83c8a73ca14a52d3b0bb3201f6a9f820cd3854e5f5b130e506f6",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Imbens and Angrist (1994).",
+        "precision": "year",
+        "year": 1994
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This extension generalizes the LATE result to settings with more than two instrument values. The source states that Imbens and Angrist (1994) showed that with multi-valued discrete instruments, the IV estimand is a weighted average of local average treatment effects, where the weights are positive and sum to one. Furthermore, the two-stage least squares (2SLS) estimator, the most efficient one-step IV estimator, consistently estimates this weighted average when the instruments have a monotonic effect on the probability of treatment. This result is important because many natural experiments, such as quarter of birth, provide multiple instrument values, and researchers need to know what the IV estimate represents in such cases.",
+      "human_review": "not_reviewed",
+      "id": "n-b62f9829efab5c35",
+      "kind": "theorem",
+      "limits": [
+        "The weighted average may not correspond to a single well-defined causal effect if weights vary",
+        "Requires discrete instruments; continuous instruments need different treatment"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Binary instruments are restrictive; many natural experiments provide multi-valued instruments, and the interpretation of IV estimates in such cases was unclear.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted and widely used in applied work.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "IV estimand as weighted average of LATEs for multi-valued instruments",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p45",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Instrument validity (exclusion restriction)",
+        "Partially linear IV model"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Section 6.3.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "DML is applied to estimate the effect of institutions on GDP using settler mortality as an instrument, demonstrating use in partially linear IV models.",
+      "conceptual_move": "Apply DML to the AJR model with flexible control for covariates.",
+      "content_hash": "27d5e482bba4cd4fdf38ac81b1e24d5e1c28c2abb9b4a78d0258901670041085",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper applies DML to estimate the effect of institutions on GDP, using settler mortality as an instrument, following Acemoglu et al. (2001). This illustrates the use of DML in partially linear IV models, where the nuisance functions are estimated by ML. The paper does not report detailed results but highlights the method's applicability.",
+      "human_review": "not_reviewed",
+      "id": "n-d7e722b32afc435c",
+      "kind": "empirical_finding",
+      "limits": [
+        "Results not detailed in the provided passages",
+        "Instrument validity is arguable"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Demonstrate DML in a structural IV setting with potential endogeneity.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Illustrative application.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Empirical application to institutions and growth",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p91",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p93",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Potential outcomes framework applies",
+        "Instrument is binary or can be represented as such"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits this paper for making the distinction particularly clear.",
+          "name": "Angrist, Imbens, and Rubin (1996)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Casting instrumental variables analysis in the potential-outcomes framework separates the exogeneity assumption into randomization and exclusion restriction, making the identifying assumptions transparent.",
+      "conceptual_move": "Use potential outcomes to define the instrument's effect on treatment and outcome, separating randomization from exclusion.",
+      "content_hash": "3cf8c42a8ccaecbafbfa6d234b834f46a44184c005e11ba8272eea0c12ecf61a",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Angrist, Imbens, and Rubin (1996) in JASA.",
+        "precision": "year",
+        "year": 1996
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This representation is a key conceptual innovation. By framing IV in terms of potential outcomes, the source shows that the exogeneity assumption in linear regression actually combines two distinct assumptions: randomization (the instrument is independent of potential outcomes) and exclusion restriction (the instrument affects the outcome only through the treatment). This separation is important because violations of these assumptions have different sources and consequences. For example, in the schooling example, birth date is plausibly random, but it may affect earnings through school starting age, violating exclusion. This framework allows researchers to assess the plausibility of each assumption separately and to conduct sensitivity analyses.",
+      "human_review": "not_reviewed",
+      "id": "n-d82cbf475eae1d7a",
+      "kind": "representation",
+      "limits": [
+        "Requires careful argument for each assumption in practice",
+        "Does not solve the problem of finding valid instruments"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Traditional IV analysis conflated multiple assumptions under the label of exogeneity, obscuring the distinct conditions needed for identification.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted and influential framework.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Merging IV framework with potential outcomes to clarify identifying assumptions",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p120",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "LATE assumptions hold",
+        "Methods for describing compliers are valid"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The source credits these authors for methods to describe complier populations.",
+          "name": "Abadie (2003) and Angrist (2004)",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "Even though compliers are unobserved, their characteristics can be described using observed covariates, helping assess the generalizability of LATE estimates.",
+      "conceptual_move": "Use methods like Abadie (2003) and Angrist (2004) to estimate the distribution of covariates among compliers.",
+      "content_hash": "c1ce2e6060583b7a19248bde616427274b921d67e364d8bb928bda18edd281b8",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Abadie (2003) and Angrist (2004).",
+        "precision": "approximate",
+        "year": 2003
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "This method addresses the generalizability of LATE estimates. The source notes that even though the identity of compliers is unobserved, it is possible to estimate the fraction of compliers in the data and describe their characteristics in terms of observed covariates. This is important because if the policy target population differs from compliers, the LATE may not be relevant. For example, if low-income individuals are overrepresented among compliers, then LATE is highly relevant for policies targeting low-income individuals. This approach provides a way to assess how special compliers are relative to the population of interest.",
+      "human_review": "not_reviewed",
+      "id": "n-ede196d09aca28f5",
+      "kind": "method",
+      "limits": [
+        "Only observed covariates can be used; unobserved characteristics may differ",
+        "Descriptions are not causal estimates"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "LATE estimates are specific to compliers, but researchers need to know how special compliers are relative to the population of interest for policy.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted and used in applied work.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Describing complier populations using observed covariates",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Homoscedastic errors",
+        "Partially linear model"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The paper presents this in Remark 4.2 and Theorem 5.1.",
+          "name": "Chernozhukov et al.",
+          "role": "original contributor"
+        }
+      ],
+      "claim": "In the partially linear model with homoscedastic errors, the DML estimator achieves the semiparametric efficiency bound.",
+      "conceptual_move": "Show that under homoscedasticity, the asymptotic variance reduces to the efficiency bound.",
+      "content_hash": "45d69a57477c6a7b64f5b2032a3160b90f99715c492e725138e192e501313a38",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "arXiv version received June 2014, published 2016.",
+        "precision": "year",
+        "year": 2016
+      },
+      "dossiers": [
+        "E01"
+      ],
+      "explanation": "The paper notes that under conditional homoscedasticity, the asymptotic variance of the DML estimator in the partially linear model equals the semiparametric efficiency bound. This is stated in Remark 4.2, and the paper also shows that the ATE and ATTE estimators are efficient in general, reaching the Hahn (1998) bound.",
+      "human_review": "not_reviewed",
+      "id": "n-f94ea78e2150b253",
+      "kind": "theorem",
+      "limits": [
+        "Efficiency only under homoscedasticity for PLR",
+        "ATE efficiency requires correct score"
+      ],
+      "machine_screening": "passed",
+      "pillar": "economics",
+      "problem": "Need to know when DML is efficient.",
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Establishes optimality in specific cases.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "economics"
+      ],
+      "title": "Semiparametric efficiency under homoscedasticity",
+      "type": "contribution"
+    }
+  ],
+  "layers": [
+    "conceptual",
+    "evidential",
+    "historical",
+    "logical",
+    "pedagogical"
+  ],
+  "limit": 200,
+  "notice": "Paths describe the recorded relationship layers, not exclusive ancestry or transitive proof.",
+  "relations": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "8e9996d01283a4a91faf8763079bc04ae817c967ee064db341913d227df6a2ae",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-010bb9c51b2ac5b5",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-33e47fd4ec6e1420",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The ATE score is used to construct DML estimators.",
+      "type": "relation",
+      "warrant": "The paper applies the general DML theory to ATE estimation using orthogonal scores, proving root-N consistency and efficiency."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "aa25f69a857f1df096611b04c06288440de0acab9941e31b5a464618ea84f300",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-03af14622534dc9a",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-1def0e35b076fa6c",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "Relaxed sparsity conditions support the practical applicability of DML.",
+      "type": "relation",
+      "warrant": "The paper shows that cross-fitting weakens sparsity requirements, making DML applicable in a broader range of settings, which supports the general theory."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "c5d25d92f081f28c73f48b9da434737966791ca37bbb073f93f0444d5d805f4c",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-04d7d25be8817372",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-3b2f72b57fe05a8a",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "Cross-fitting is a key ingredient for DML's root-N consistency.",
+      "type": "relation",
+      "warrant": "The paper states that sample splitting plays a key role in guaranteeing that remainder terms vanish, which is essential for the asymptotic normality result."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "e1d29d79210d2571a8c57fd8168f664bdb8ed767c3a8ea3cedb33e918048d911",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-06005d1ba524f75f",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-75d35177be89e689",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The median method provides a robust way to aggregate DML estimates.",
+      "type": "relation",
+      "warrant": "The paper shows that the median estimator is first-order equivalent to the single-split estimator, supporting the practical use of DML."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p42",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "b212e484f0a5fc42f78c635655426227dc94458ed33a3b932d0ec3666fc28854",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-0973eb607f0e21b6",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-12d4463d5bc3c830",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The 401(k) example demonstrates DML in an observational study.",
+      "type": "relation",
+      "warrant": "The paper applies DML to estimate the effect of 401(k) eligibility, showing that the method controls for confounding flexibly, illustrating its practical use."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-653b63fc274a2369",
+        "revision": 1
+      },
+      "content_hash": "996a618e56dbf000e571aad308a5f1fa848dd3ed78e223d40a7bf6c569bff2e5",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-1d35ab001eb97ccb",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5d51583ec6bb2da6",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The decomposition of observed differences into causal effect and selection bias motivates the need for designs that eliminate selection bias, such as natural experiments.",
+      "type": "relation",
+      "warrant": "The source presents the decomposition as a formalization of why observational comparisons are biased, and then introduces natural experiments as a way to address this bias by generating as-if random variation."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p118",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-b62f9829efab5c35",
+        "revision": 1
+      },
+      "content_hash": "90188d2955bc8b441d0a37f95550b9a9666e87dd933f5a3e1490a39b82adcfdc",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-28b45d94005091d5",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "generalized_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE result for binary instruments is generalized to multi-valued instruments.",
+      "type": "relation",
+      "warrant": "The source states that Imbens and Angrist (1994) extended the LATE framework to multi-valued instruments, showing the IV estimand is a weighted average of LATEs."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p137",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-a26ab247b049c4d6",
+        "revision": 1
+      },
+      "content_hash": "56f85c4abae5e17e0744f388c1cc5dfc9e5a9ccb189227af762b94a16afec0b0",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-403a469df6a37a83",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-653b63fc274a2369",
+          "revision": 1
+        },
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "Natural experiments and the LATE framework are core components of the design-based approach.",
+      "type": "relation",
+      "warrant": "The source describes the design-based approach as relying on natural experiments and the LATE framework to establish causal effects with clear assumptions."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "13a71be24b6661c5aa91cf94ff25a6c7b6a7edf40259cedea648b5fe44e0390d",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-49b840f0af20c5dd",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-3e87a08911ccb520",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE score is used to construct DML estimators.",
+      "type": "relation",
+      "warrant": "The paper applies the general DML theory to LATE estimation using an orthogonal score, proving root-N consistency and normality."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "3cfe684ad96232b985d2fb0e8a33b957ae1ea7ab58a99efcc59b52a7b1906988",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-4adbdce91480e899",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ad122f716d2d1dc5",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "DML2 is a variant of DML that also achieves root-N consistency.",
+      "type": "relation",
+      "warrant": "The paper proves that both DML1 and DML2 estimators satisfy the same asymptotic properties, with DML2 being recommended for small samples."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p135",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-9113f5903af67a9f",
+        "revision": 1
+      },
+      "content_hash": "efe3104b5bbcde85eb9b0ffd2b353545c3ea898777594075e0a85992ae4c41cf",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-62dbed277706ae43",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE framework provides a common estimand that IV and selection-correction methods both estimate.",
+      "type": "relation",
+      "warrant": "The source states that Kline and Walters (2019) showed numerical equivalence of IV and selection-correction estimates of LATE, which is only meaningful because LATE is a well-defined estimand."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-3b2f72b57fe05a8a",
+        "revision": 1
+      },
+      "content_hash": "a2ac606a949b65df9b6593301cb8d0267892dc74c5521bffb185fba1233e74db",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-6326334fdffd0827",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "motivated",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-64b9edb48abf19e3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The failure of naive estimators motivates the need for cross-fitting.",
+      "type": "relation",
+      "warrant": "The paper shows that overfitting bias persists even with orthogonal scores, motivating the use of sample splitting to eliminate it."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p40",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "32bd426a7a38f70b82d2f4d2fd078ffb7478f64f7975f4f40267d52449496f6f",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-64f4ce96c5ef782e",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-22a61c41440c0b1a",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The UI bonus example demonstrates DML in practice.",
+      "type": "relation",
+      "warrant": "The paper applies DML to the Pennsylvania experiment, showing that the method produces sensible estimates, illustrating its practical use."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "c1589b787416440bc5d8b3fa5c94c0d8bbdd54a9d4aeb3d76ad2038811f0eadf",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-69003bedea715b44",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "generalized_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-25f6a4ba80fec06e",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "Uniform confidence intervals extend the pointwise normality result.",
+      "type": "relation",
+      "warrant": "The paper proves that the asymptotic normality holds uniformly, which allows the construction of uniformly valid confidence intervals, a stronger result than pointwise normality."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p118",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-4c7a0674fec097de",
+        "revision": 1
+      },
+      "content_hash": "fa18647efae12f7b6f79db29da515ff45d640d9b0139a06560154b3554cce326",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-7b277229d2e4ea8b",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "generalized_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE result is generalized to multi-valued treatments.",
+      "type": "relation",
+      "warrant": "The source states that Angrist and Imbens (1995) extended the framework to multi-valued treatments, showing the IV estimand is a weighted average of unit causal responses."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p136",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-653fd9614cbb175e",
+        "revision": 1
+      },
+      "content_hash": "c62e298f47a1691da68d7cfa42067584d1c14eefee14cdcd3a8fcff3befcd32a",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-7e3b4f77a3fe5d46",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "challenges",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-a26ab247b049c4d6",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The design-based approach's emphasis on credible identification is challenged by evidence of p-hacking in some designs.",
+      "type": "relation",
+      "warrant": "The source discusses how p-hacking is more common in IV and DiD methods, which are part of the design-based approach, potentially compromising credibility."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "981f9a526641663a38b37d0d0c41cc6d647e42ba7918a69ab54b3e030b8a17c8",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-9799056d57fc9501",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-151095b708b8a3d1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The orthogonal score for PLR is used to construct DML estimators.",
+      "type": "relation",
+      "warrant": "The paper applies the general DML theory to the partially linear model using the orthogonal score, proving root-N consistency and normality."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p120",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-ede196d09aca28f5",
+        "revision": 1
+      },
+      "content_hash": "a3ed86c3f39ac909b1acd5fcb9048953a28efc76ad51098dc025dd5cb1311ed6",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-bbeffc0ff2783bae",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE framework enables methods to describe complier populations.",
+      "type": "relation",
+      "warrant": "The source notes that even though compliers are unobserved, their characteristics can be described using observed covariates, which is a direct implication of the LATE framework."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p130",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-41d418049c82e5a5",
+        "revision": 1
+      },
+      "content_hash": "c92779fa5f9d594fa739ccee456384e3e6a1ea8cdffe9b19fc98bd2e807b49e6",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-c6cc52c4af280d94",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE framework is applied to medical trials with incomplete adherence.",
+      "type": "relation",
+      "warrant": "The source discusses how LATE can be estimated in medical trials and argues it should be the main estimand, complementing ITT analysis."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p45",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "9c7c2979342758ff28cdccaa4cbe58454e028d084f02dc482728f99fcc75bcdd",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d0b7c4a1cb68c643",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-d7e722b32afc435c",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The institutions example demonstrates DML in an IV setting.",
+      "type": "relation",
+      "warrant": "The paper applies DML to estimate the effect of institutions on GDP, showing the method's applicability in structural IV models."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p91",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-8d4f954e637f82dc",
+        "revision": 1
+      },
+      "content_hash": "b1bc4890a0b9853ee9a5f4f3c54378c94c6866eb19b96603cac8ebc1414b7934",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d109b63ede347795",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-d82cbf475eae1d7a",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The potential-outcomes representation clarifies the assumptions needed for LATE identification, including randomization and exclusion restriction.",
+      "type": "relation",
+      "warrant": "The source states that casting IV in the potential-outcomes framework makes the identifying assumptions transparent, which is essential for stating the LATE assumptions."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-3b2f72b57fe05a8a",
+        "revision": 1
+      },
+      "content_hash": "9e92f91ce3bbafe10550a3e39d6e5fa216cef5cb3981d010aa083f4db07af36d",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d24a391d060433ed",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "motivated",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-2b662a58e8627bcf",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The unsuitability of Donsker conditions motivates cross-fitting.",
+      "type": "relation",
+      "warrant": "The paper argues that Donsker conditions are inappropriate for high-dimensional ML, and cross-fitting avoids these conditions, providing a practical alternative."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p94",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-8d4f954e637f82dc",
+        "revision": 1
+      },
+      "content_hash": "a53c75b77b6a7848a8860899ebb0ffdf6c0e193d75b0d699d9eb217ff43ff45e",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-db8a7e83db9ce850",
+      "layer": "logical",
+      "machine_screening": "passed",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-653b63fc274a2369",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "Natural experiments generate instruments that are as-if randomly assigned, which is a key assumption in the LATE framework.",
+      "type": "relation",
+      "warrant": "The source describes natural experiments as sources of exogenous variation, and the LATE framework requires the instrument to be as good as randomly assigned, which natural experiments provide."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-151095b708b8a3d1",
+        "revision": 1
+      },
+      "content_hash": "2228fc8b8265b72b5debb742c4f8404c80225853cd0b383b07948e2aa3a0ae33",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-e432b21a1dad9b18",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "historical_basis_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-b1f98fc52a72bb93",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The concentrating-out approach yields the orthogonal score for PLR.",
+      "type": "relation",
+      "warrant": "The paper shows that applying the concentrating-out method to the partially linear model produces the score (D - m(X))(Y - Dθ - g(X)), which is the same as the score in (1.5)."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-151095b708b8a3d1",
+        "revision": 1
+      },
+      "content_hash": "1cc5514c97fb604b51b43f2c7c7b25408d4760415f50764bb2b41ee184ecc58c",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-e803b2d4b08b1409",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "historical_basis_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5284d631475648d2",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The conditional moment framework yields the orthogonal score for PLR.",
+      "type": "relation",
+      "warrant": "The paper shows that applying the conditional moment framework with a specific weighting matrix yields the same orthogonal score for the partially linear model."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p119",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-5c0f5c0db284a89c",
+        "revision": 1
+      },
+      "content_hash": "a958a944d93d0f98db111dc058d93922f5b89f075b4de1b9d9d6d829cabfddc2",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-f36dca11b8d4451c",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE framework provides a basis for sensitivity analysis by clarifying which assumptions are key.",
+      "type": "relation",
+      "warrant": "The source describes how Imbens and Rubin (1997a) used the LATE framework to conduct sensitivity analysis by relaxing exclusion and monotonicity, which is only possible because the assumptions are clearly stated."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-151095b708b8a3d1",
+        "revision": 1
+      },
+      "content_hash": "8cd977d4b0843220f3059c7b10ae3372bc729895f78c4922cf6df64aac70ae11",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-f4723a53fb1077bd",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "historical_basis_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-917be3cca6a9730c",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The influence function adjustment yields the orthogonal score for PLR.",
+      "type": "relation",
+      "warrant": "The paper shows that adding the influence function adjustment to the naive score produces the orthogonal score for the partially linear model."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p123",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p127",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-8cbbf667ea03c2b5",
+        "revision": 1
+      },
+      "content_hash": "87a8d453b8d84a2f178ea5448b2d80e8b29fa5575df39067c65ea72dd8dc78ad",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-f59a04f1003d7485",
+      "layer": "historical",
+      "machine_screening": "passed",
+      "predicate": "applied_in",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d4f954e637f82dc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The LATE framework is applied to judge leniency designs.",
+      "type": "relation",
+      "warrant": "The source describes how judge leniency designs use random assignment of judges as an instrument, and the LATE framework provides the interpretation of the resulting estimates."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "content_hash": "bd82afd13fb85b04e39b86a47cbc8b42639ed573e39f6b2fbd85a9925c4da331",
+      "curation": {
+        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
+        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
+        "provider": "SiliconFlow",
+        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
+        "time": "2026-10-12T11:32:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-f6aa210a9b5aa5e7",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-f94ea78e2150b253",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "Efficiency results strengthen the DML theorem.",
+      "type": "relation",
+      "warrant": "The paper shows that DML achieves the semiparametric efficiency bound in specific cases, indicating that the method is not only consistent but also optimal in those settings."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "conclusion": {
+        "id": "n-41d418049c82e5a5",
+        "revision": 1
+      },
+      "content_hash": "bae7523de68c9cb7a054bb345255f43c980a2e6ae986e740e36db592d199b7c2",
+      "curation": {
+        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a130cb577246c1a49747beca2e312a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
+        "time": "2026-10-12T15:46:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-fa1366d11e28f05d",
+      "layer": "evidential",
+      "machine_screening": "passed",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-345ad9fc1b14c008",
+          "revision": 1
+        }
+      ],
+      "publication_state": "exploratory",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "The argument that ITT is a diluted treatment effect supports the case for LATE as a more informative estimand.",
+      "type": "relation",
+      "warrant": "The source uses the dilution argument to show that ITT can be misleading, which motivates the use of LATE."
+    }
+  ],
+  "release_id": "1.2.0-exploratory",
+  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf"
+}

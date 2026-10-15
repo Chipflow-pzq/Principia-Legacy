@@ -1,0 +1,96 @@
+{
+  "applied_at": "2026-10-12T13:20:58+00:00",
+  "impact": [
+    "r-01ce2ad1543fe75a",
+    "r-07e8e408fd7c4ec5",
+    "r-2cb6214a8eb3412c",
+    "r-547444a3313ea100",
+    "r-88a49cedf0b79a88",
+    "r-9637b656e9e551f2",
+    "r-9af37e5238147eb0",
+    "r-ad22874117bb7690",
+    "r-b607a8c6f94fa2f3",
+    "r-c1984b8ae92012d7",
+    "r-f3c12e2e7a84488a",
+    "r-f5d4434ef1283878"
+  ],
+  "reason": "Machine editorial correction: remove generic background summaries, routine implementation settings, and duplicate claims from ordinary browsing; retain immutable earlier revisions.",
+  "record_refs": [
+    {
+      "id": "n-284d2e0f305083e5",
+      "revision": 2
+    },
+    {
+      "id": "n-5e44ec0b07f326fb",
+      "revision": 2
+    },
+    {
+      "id": "n-aead12d69798e8d2",
+      "revision": 2
+    },
+    {
+      "id": "n-fa143e145461f649",
+      "revision": 2
+    },
+    {
+      "id": "n-a6ee919e8e2fd13e",
+      "revision": 2
+    },
+    {
+      "id": "n-c0daf2301324a81a",
+      "revision": 2
+    },
+    {
+      "id": "n-be89f598c6670e72",
+      "revision": 2
+    },
+    {
+      "id": "r-01ce2ad1543fe75a",
+      "revision": 2
+    },
+    {
+      "id": "r-07e8e408fd7c4ec5",
+      "revision": 2
+    },
+    {
+      "id": "r-2cb6214a8eb3412c",
+      "revision": 2
+    },
+    {
+      "id": "r-547444a3313ea100",
+      "revision": 2
+    },
+    {
+      "id": "r-88a49cedf0b79a88",
+      "revision": 2
+    },
+    {
+      "id": "r-9637b656e9e551f2",
+      "revision": 2
+    },
+    {
+      "id": "r-9af37e5238147eb0",
+      "revision": 2
+    },
+    {
+      "id": "r-ad22874117bb7690",
+      "revision": 2
+    },
+    {
+      "id": "r-b607a8c6f94fa2f3",
+      "revision": 2
+    },
+    {
+      "id": "r-c1984b8ae92012d7",
+      "revision": 2
+    },
+    {
+      "id": "r-f3c12e2e7a84488a",
+      "revision": 2
+    },
+    {
+      "id": "r-f5d4434ef1283878",
+      "revision": 2
+    }
+  ]
+}

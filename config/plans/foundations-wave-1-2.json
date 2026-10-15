@@ -1,0 +1,1570 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "M1101",
+      "need": "Explain the substantive principles of The Limit of a Function. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1102",
+      "need": "Explain the substantive principles of The Derivative as a Function. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1103",
+      "need": "Explain the substantive principles of The Chain Rule. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1104",
+      "need": "Explain the substantive principles of The Mean Value Theorem. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-4-the-mean-value-theorem"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1105",
+      "need": "Explain the substantive principles of Newton’s Method. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-9-newtons-method"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1106",
+      "need": "Explain the substantive principles of The Definite Integral. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1107",
+      "need": "Explain the substantive principles of Integration by Parts. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1108",
+      "need": "Explain the substantive principles of Improper Integrals. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-7-improper-integrals"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1109",
+      "need": "Explain the substantive principles of Sequences. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-1-sequences"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1110",
+      "need": "Explain the substantive principles of Ratio and Root Tests. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-6-ratio-and-root-tests"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1111",
+      "need": "Explain the substantive principles of Taylor and Maclaurin Series. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series"
+    },
+    {
+      "depth": 0,
+      "dossier": "M1112",
+      "need": "Explain the substantive principles of Partial Derivatives. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-3/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1101",
+      "need": "Explain the substantive principles of Newton’s Second Law for Rotation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1102",
+      "need": "Explain the substantive principles of Newton’s Third Law. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1103",
+      "need": "Explain the substantive principles of Work-Energy Theorem. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1104",
+      "need": "Explain the substantive principles of Conservation of Energy. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1105",
+      "need": "Explain the substantive principles of Conservation of Linear Momentum. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1106",
+      "need": "Explain the substantive principles of Angular Momentum. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1107",
+      "need": "Explain the substantive principles of Newton's Law of Universal Gravitation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1108",
+      "need": "Explain the substantive principles of Bernoulli’s Equation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1109",
+      "need": "Explain the substantive principles of Simple Harmonic Motion. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1110",
+      "need": "Explain the substantive principles of First Law of Thermodynamics. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1111",
+      "need": "Explain the substantive principles of Statements of the Second Law of Thermodynamics. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics"
+    },
+    {
+      "depth": 0,
+      "dossier": "P1112",
+      "need": "Explain the substantive principles of Entropy. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1101",
+      "need": "Explain the substantive principles of Introduction to Data Structures and Algorithms. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/3-1-introduction-to-data-structures-and-algorithms"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1102",
+      "need": "Explain the substantive principles of Processes and Concurrency. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/6-3-processes-and-concurrency"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1103",
+      "need": "Explain the substantive principles of Towards Intelligent Autonomous Networked Super Systems. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/13-4-towards-intelligent-autonomous-networked-super-systems"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1101",
+      "need": "Explain the substantive principles of Demand, Supply, and Equilibrium in Markets for Goods and Services. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1102",
+      "need": "Explain the substantive principles of Price Ceilings and Price Floors. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/3-4-price-ceilings-and-price-floors"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1103",
+      "need": "Explain the substantive principles of Elasticity and Pricing. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1104",
+      "need": "Explain the substantive principles of Perfect Competition and Why It Matters. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/8-1-perfect-competition-and-why-it-matters"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1105",
+      "need": "Explain the substantive principles of How a Profit-Maximizing Monopoly Chooses Output and Price. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1106",
+      "need": "Explain the substantive principles of Oligopoly. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/10-2-oligopoly"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1107",
+      "need": "Explain the substantive principles of Public Goods. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1108",
+      "need": "Explain the substantive principles of The Problem of Imperfect Information and Asymmetric Information. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-1-the-problem-of-imperfect-information-and-asymmetric-information"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1109",
+      "need": "Explain the substantive principles of Income Inequality: Measurement and Causes. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1110",
+      "need": "Explain the substantive principles of Absolute and Comparative Advantage. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/33-1-absolute-and-comparative-advantage"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1111",
+      "need": "Explain the substantive principles of How Economists Define and Compute Unemployment Rate. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/21-1-how-economists-define-and-compute-unemployment-rate"
+    },
+    {
+      "depth": 0,
+      "dossier": "E1112",
+      "need": "Explain the substantive principles of Tracking Inflation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1101",
+      "need": "Explain the substantive principles of Prokaryotic Cells. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1102",
+      "need": "Explain the substantive principles of Eukaryotic Cells. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1103",
+      "need": "Explain the substantive principles of Passive Transport. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1104",
+      "need": "Explain the substantive principles of Active Transport. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/5-3-active-transport"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1105",
+      "need": "Explain the substantive principles of Enzymes. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1106",
+      "need": "Explain the substantive principles of Glycolysis. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/7-2-glycolysis"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1107",
+      "need": "Explain the substantive principles of Oxidation of Pyruvate and the Citric Acid Cycle. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/7-3-oxidation-of-pyruvate-and-the-citric-acid-cycle"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1108",
+      "need": "Explain the substantive principles of Overview of Photosynthesis. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1109",
+      "need": "Explain the substantive principles of The Cell Cycle. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1110",
+      "need": "Explain the substantive principles of The Process of Meiosis. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1111",
+      "need": "Explain the substantive principles of Basics of DNA Replication. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication"
+    },
+    {
+      "depth": 0,
+      "dossier": "B1112",
+      "need": "Explain the substantive principles of The Genetic Code. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1104",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Processes and execution isolation; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1105",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Virtual address spaces; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1106",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Concurrency and Threads; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1107",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Mutual exclusion with locks; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1108",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Paging and virtual memory; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1109",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Condition Variables; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1110",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Semaphores; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1111",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in File-system consistency and journaling; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1112",
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Distributed Systems; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf"
+    }
+  ],
+  "frozen_checklists": {
+    "B1101": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1102": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1103": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1104": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1105": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1106": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1107": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1108": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1109": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1110": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1111": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "B1112": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "C1101": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "C1102": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "C1103": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "C1104": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1105": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1106": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1107": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1108": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1109": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1110": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1111": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "C1112": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the abstraction and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the mechanism and correctness argument"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify failures, costs and attribution uncertainty"
+      }
+    ],
+    "E1101": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1102": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1103": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1104": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1105": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1106": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1107": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1108": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1109": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1110": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1111": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "E1112": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1101": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1102": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1103": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1104": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1105": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1106": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1107": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1108": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1109": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1110": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1111": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "M1112": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1101": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1102": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1103": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1104": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1105": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1106": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1107": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1108": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1109": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1110": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1111": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ],
+    "P1112": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State the specific intellectual move and its precise assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the reasoning, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and uncertain historical attribution"
+      }
+    ]
+  },
+  "id": "foundations-wave-1-2",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 24,
+  "purpose": "Balanced expansion of classical reasoning, laws and foundational methods after six-source calibration. Twelve or fewer source sections per subject; no padding when a requested concept cannot be located."
+}

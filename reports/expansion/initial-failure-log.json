@@ -1,0 +1,96 @@
+{
+  "notice": "Preserved original failures before resumption. Final outcomes may succeed later; these are not additional API billing receipts.",
+  "failures": [
+    {
+      "batch": "gap-repair-1-1",
+      "state": "failed",
+      "dossier": "M03",
+      "error": "The read operation timed out",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "gap-repair-1-1",
+      "state": "failed",
+      "dossier": "E12",
+      "error": "HTTP Error 403: Forbidden",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "gap-repair-1-1",
+      "state": "failed",
+      "dossier": "B08",
+      "error": "Source URL is outside the explicit HTTPS allowlist",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "C03",
+      "error": "The read operation timed out",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "C04",
+      "error": "HTTP Error 404: Not Found",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "M01",
+      "error": "<urlopen error timed out>",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "M01",
+      "error": "<urlopen error timed out>",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "M03",
+      "error": "The read operation timed out",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "M05",
+      "error": "The read operation timed out",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "M06",
+      "error": "<urlopen error timed out>",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "P01",
+      "error": "Provider job failed (ValueError, HTTP None); see receipt 3ec792df-2194-4059-a09a-72a08c05f9f0",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "P04",
+      "error": "The read operation timed out",
+      "phase": "initial source pass; console reported topic, not URL"
+    },
+    {
+      "batch": "foundations-1-1",
+      "state": "failed",
+      "dossier": "P04",
+      "error": "Source exceeds download cap",
+      "phase": "initial source pass; console reported topic, not URL"
+    }
+  ]
+}

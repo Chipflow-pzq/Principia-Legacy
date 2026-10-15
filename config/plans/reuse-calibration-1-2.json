@@ -1,0 +1,35 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "M2005",
+      "need": "Explain the nontrivial reasoning and boundaries of Integration Formulas and the Net Change Theorem. Reuse already documented intellectual moves when independently supported. Distinguish textbook exposition from original discovery; do not invent credit or pad with exercise fragments.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/1-4-integration-formulas-and-the-net-change-theorem"
+    }
+  ],
+  "frozen_checklists": {
+    "M2005": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ]
+  },
+  "id": "reuse-calibration-1-2",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 24
+}

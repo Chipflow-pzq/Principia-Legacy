@@ -1,0 +1,3977 @@
+{
+  "baseline": "1.1.0-exploratory",
+  "checked_records": 577,
+  "checks": [
+    {
+      "decision": "retain",
+      "id": "n-607afb5751f0f08a",
+      "reason": "Defines passive transport as movement down a concentration gradient without energy, a substantive representation of a core biological transport category."
+    },
+    {
+      "decision": "retain",
+      "id": "n-60c65e50ddb083eb",
+      "reason": "Introduces osmoregulation as a set of mechanisms (cell walls, contractile vacuoles, kidneys) to counteract osmotic stress, a substantive explanatory mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6ec875be4a8ddb5f",
+      "reason": "Describes diffusion as a passive process driven by concentration gradients, with gradients as potential energy, a substantive mechanistic explanation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7e44b9eac492cf78",
+      "reason": "Links diffusion limitations to cell size constraints, providing a substantive negative result explaining why cells cannot be arbitrarily large."
+    },
+    {
+      "decision": "retain",
+      "id": "n-839d21fc35f1b4ed",
+      "reason": "Classifies solutions by osmolarity relative to the cell and links them to water movement and cell outcomes, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8416df9482fab2b8",
+      "reason": "Describes plasmolysis as a distinct outcome of osmotic water loss in walled cells, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-843e55895b3bb46a",
+      "reason": "Introduces dynamic equilibrium to distinguish net movement from ongoing molecular motion, a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-afa1c11e40465965",
+      "reason": "Attributes membrane permeability differences to the amphiphilic structure, a substantive mechanistic explanation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b32c251db3d3eb04",
+      "reason": "Describes channel proteins as selective hydrophilic pores that provide a pathway through the hydrophobic membrane core, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-bf6bd73498b875f5",
+      "reason": "Treats each substance's concentration gradient as independent, allowing separate analysis of diffusion, a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c39e9a3e9b13237b",
+      "reason": "Introduces gating as a control mechanism for channel-mediated transport, enabling electrical signaling, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c409e2a959d47b6a",
+      "reason": "Introduces pressure as an additional driving force for diffusion-like transport, a substantive mechanistic extension."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c4ba9861a293b050",
+      "reason": "Defines osmosis as a special case of diffusion driven by water's concentration gradient, a substantive mechanistic explanation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d53d42829f57dafb",
+      "reason": "Links osmotic water movement to structural cell damage (lysis and crenation), a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f2728adb75ad85c6",
+      "reason": "Introduces conformational change as the mechanism for carrier-mediated transport, a substantive mechanistic explanation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f96633f177e7f64b",
+      "reason": "Introduces membrane proteins as facilitators that overcome the hydrophobic barrier for polar substances, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-382253a28a245753",
+      "reason": "Defines primary active transport as a category where ATP hydrolysis is directly coupled to ion movement against gradients, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-39b9bb5b321e6689",
+      "reason": "Provides a functional taxonomy of membrane transporters (uniporter, symporter, antiporter), a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4ca1de42bcdfb7cd",
+      "reason": "Extends the concept of electrochemical gradients to protons, showing their dual role in cotransport and ATP production, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-63cf6064fdbd351d",
+      "reason": "Links the energy dependence of active transport to its susceptibility to metabolic inhibition, a substantive negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7e6dde2ac784fc18",
+      "reason": "Introduces the concept that energy stored in an electrochemical gradient can drive transport of other substances, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a46e85e28d3e8f29",
+      "reason": "Identifies the sodium-potassium pump as electrogenic, linking ion transport to membrane potential generation, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-bf4713a391bbbfec",
+      "reason": "Describes the Na+-K+ ATPase six-step conformational cycle linking ATP hydrolysis to directional transport, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-dd59aa45416c7034",
+      "reason": "Unifies concentration and electrical gradients into a single composite electrochemical gradient concept for biological membranes, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1903683f5dd35458",
+      "reason": "Separates kinetic barrier (activation energy) from thermodynamic driving force (free energy change) to clarify the distinct role of enzymes, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-25a1efa91f392df4",
+      "reason": "Replaces the static lock-and-key model with a dynamic induced-fit model where both enzyme and substrate adjust, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5655d3e70dc3c8cd",
+      "reason": "Applies negative feedback to metabolic pathways, where the product inhibits an early enzyme, a substantive regulatory mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-620a42694900d6e9",
+      "reason": "Introduces allosteric sites and subunit cooperativity as a global switch for enzyme activity, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-65601dd08a805e14",
+      "reason": "Distinguishes cofactors from coenzymes and links them to enzyme activity, a substantive mechanistic explanation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-84093dd113123307",
+      "reason": "Applies enzyme inhibition principles to drug design, linking basic biochemistry to therapeutic applications, a substantive heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9ede88520551c145",
+      "reason": "Classifies inhibitors by binding site and kinetic consequences, linking molecular mechanism to observable rate behavior, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9f8d1f1ef02fdd86",
+      "reason": "Introduces subcellular localization as a regulatory mechanism for enzyme activity, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a1260bfc00876dc8",
+      "reason": "Enumerates distinct catalytic strategies (orientation, environment, contortion, covalent participation) that enzymes use, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c27604e55ccdb991",
+      "reason": "Shifts from a purely shape-based view to a chemical-environment view of active sites, emphasizing residue properties, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-21de476a243f8683",
+      "reason": "Identifies pyruvate kinase as a rate-limiting enzyme affecting pathway completion and ATP yield, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3e5b5e246208425e",
+      "reason": "Introduces substrate-level phosphorylation as a direct ATP synthesis mechanism in glycolysis, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4b35435f8fc6d0e7",
+      "reason": "Identifies phosphorylation as a trapping mechanism based on charge and membrane impermeability, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5599062255f0c283",
+      "reason": "Shows that aldolase cleavage produces two different isomers that are then equilibrated to a common intermediate, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-63f633b93c934926",
+      "reason": "Shows that enolase dehydration rearranges the molecule to elevate phosphate bond energy, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-782998dad85ae363",
+      "reason": "Introduces fermentation as a redox-balancing mechanism to regenerate NAD+ under anaerobic conditions, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-89449895500e2bf1",
+      "reason": "Identifies phosphofructokinase as a key regulatory node controlled by ATP/ADP levels, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-99c6b30f084d9512",
+      "reason": "Divides glycolysis into an investment phase and a payoff phase, clarifying the energy balance, a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a0a9c405a9c61af4",
+      "reason": "Defines glycolysis as a universal, oxygen-independent metabolic process localized in the cytoplasm, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-aa15efa66647087b",
+      "reason": "Uses red blood cells as a model to demonstrate glycolysis's essential role in ATP production, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-affce5c4a969e720",
+      "reason": "Identifies NAD+ as an essential electron carrier and introduces substrate-level phosphorylation in glycolysis, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-007115553da176b3",
+      "reason": "The forked-line method is a distinct visual probability technique for multihybrid crosses, solving a specific problem with Punnett squares."
+    },
+    {
+      "decision": "retain",
+      "id": "n-41864f7daab4a59d",
+      "reason": "Introduces linkage and recombination as a substantive negative result to independent assortment, with a clear conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-52283983a367c0fc",
+      "reason": "The law of independent assortment and the 9:3:3:1 dihybrid ratio is a core empirical finding in genetics."
+    },
+    {
+      "decision": "retain",
+      "id": "n-56bd57755a1b7def",
+      "reason": "Applying sum and product rules to compute genotypic proportions is a distinct method for multihybrid crosses."
+    },
+    {
+      "decision": "retain",
+      "id": "n-87453a964b8611e0",
+      "reason": "The law of dominance and the concept of latent recessive alleles is a foundational empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-88d18ed9fdd2b4bb",
+      "reason": "Using recombination frequency as a measure of gene distance is a substantive method for genetic mapping."
+    },
+    {
+      "decision": "retain",
+      "id": "n-892fe2a0c77d6a28",
+      "reason": "Decomposing dihybrid ratios into independent 3:1 ratios via the product rule is a distinct calculation method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8c156613a3aa63cd",
+      "reason": "Deriving combinatorial formulas (2^n gametes, 3^n genotypes, 2^n phenotypes) for multihybrid crosses is a substantive heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-98c8efbb949b7246",
+      "reason": "The argument for discrete unit factors as hereditary particles is a major conceptual move against blending inheritance."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a252fbac23c0bdb0",
+      "reason": "The law of segregation and equal gamete allocation is a core explanatory argument for the 3:1 ratio."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d1c03b85aa70146a",
+      "reason": "Demonstrating dominant epistasis with a 12:3:1 ratio in summer squash is a specific empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-dc792bc303620352",
+      "reason": "Defining epistasis as a masking gene interaction is a substantive mechanistic concept."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f21ea991fe43d1d5",
+      "reason": "The conjecture that Mendel may have encountered linkage but omitted it is a specific, attributed historical speculation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f29470c9daa6ab86",
+      "reason": "The finding that most single characteristics are polygenic is a substantive negative result contradicting a simpler model."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f39d128bf387ea99",
+      "reason": "Linking Mendelian laws to meiotic chromosome behavior provides a substantive cytological mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ff1b5e242ffabaaa",
+      "reason": "Demonstrating reciprocal epistasis with a 15:1 ratio in shepherd's purse is a specific empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-06d09ff810b3606d",
+      "reason": "The claim that microbes are ubiquitous and can be beneficial or harmful is a generic textbook observation, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-099e779df3b27899",
+      "reason": "A logarithmic scale representation of biological sizes and viewing instruments is a routine textbook visualization, not a distinct conceptual method or finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-4b3ce2989c4537a7",
+      "reason": "Providing quantitative size ranges for prokaryotic and eukaryotic cells is a textbook fact without a distinct explanatory inference or discovery claim."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-56888af2eccd8040",
+      "reason": "The definition of prokaryotes as cells lacking a nucleus is a standard textbook representation, not a substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-6bd20bae139d2b42",
+      "reason": "Defining bioremediation as using microbes to remove pollutants is a generic description of a known application, not a distinct method or finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-88044b3b1f7c14eb",
+      "reason": "A generalized structural model of a prokaryotic cell is a routine textbook summary, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-9d926ebf85ca7d5d",
+      "reason": "The claim that small cell size enables rapid diffusion is a textbook mechanistic explanation without a specific attributed discovery or inference."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-bf9e81b65f7194e2",
+      "reason": "The surface area-to-volume ratio constraint on cell size is a standard textbook argument, not a distinct attributed intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-d2b401329c09cacf",
+      "reason": "Assigning functional roles to prokaryotic structures is a routine textbook exposition of known facts, not a distinct empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-03df58b0503c26e0",
+      "reason": "Describing ribosome structure and function in protein synthesis is a standard textbook representation, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-44a045e8998bf39b",
+      "reason": "Describing chromatin as a dynamic DNA-protein complex is a routine textbook representation, not a distinct conceptual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-52a88e8b05f9c8a2",
+      "reason": "Describing the nucleus as a control center with a nuclear envelope and pores is a standard textbook representation, not a distinct intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-652d15b19ccc1062",
+      "reason": "The role of the central vacuole in water regulation and cell expansion is a textbook empirical finding without a distinct attributed discovery."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-659d1ba307a5f911",
+      "reason": "Describing chloroplast structure with thylakoids and its own genome is a standard textbook representation, not a distinct intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-a511f3eb861bf9df",
+      "reason": "Describing lysosomes as acidic digestive compartments is a routine textbook representation, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-a88c9c03a7dda520",
+      "reason": "Describing mitochondria as ATP-producing organelles with cristae and their own genome is a standard textbook representation, not a distinct intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-b907b2746ca92483",
+      "reason": "Distinguishing vesicles and vacuoles by membrane fusion properties is a routine textbook representation, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-bdd552f8f27bb81d",
+      "reason": "Describing peroxisomes as compartments for oxidative reactions is a standard textbook representation, not a distinct intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-c6dfb4b44d5f38c0",
+      "reason": "The finding that cells without centrosomes can still divide is a textbook empirical finding without a specific attributed discovery or explanatory inference."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-d3e70d8827b89a52",
+      "reason": "The claim that microvilli increase absorptive surface area is a routine textbook example of form following function, not a distinct empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-eaa2f2ed3fc2c6c1",
+      "reason": "The endosymbiosis argument for mitochondrial and chloroplast origins is a textbook exposition of a known theory, not a distinct attributed intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-f799befbd7505a89",
+      "reason": "Describing the plasma membrane as a selective barrier with embedded proteins is a standard textbook representation, not a distinct intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-fb48ab5c366ab450",
+      "reason": "Elevating compartmentalization as an organizing principle is a textbook normative argument, not a distinct attributed intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-fd464c8c1e1d7ad3",
+      "reason": "Describing plant cell wall composition and function is a routine textbook representation, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-10602515a21fbbfe",
+      "reason": "Linking membrane asymmetry to selective permeability is a textbook summary of known findings, not a distinct empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-16cf6e7ca3e350ec",
+      "reason": "Framing selective permeability as a defining membrane property is a routine textbook representation, not a distinct intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-29ad8c2c3d6de180",
+      "reason": "Introducing tonicity and osmolarity as descriptors is a standard textbook representation, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-4a5679159ae260a4",
+      "reason": "Enumerating factors affecting diffusion rate is a textbook exposition of known physical principles, not a distinct empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-4af28f82fa6898db",
+      "reason": "The claim that saturation of carrier proteins limits transport rate is a textbook exposition of a known kinetic concept, not a distinct empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-55b50a4d5fb3d970",
+      "reason": "Decomposes pyruvate conversion into three discrete chemical steps, which is a substantive mechanistic decomposition."
+    },
+    {
+      "decision": "retain",
+      "id": "n-880bb8b040651d82",
+      "reason": "Summarizes the stoichiometry of the citric acid cycle as a whole, providing a clear accounting of energy carriers, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-96910eba344fcf9e",
+      "reason": "Identifies specific regulatory points in the cycle linked to energy charge, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d8c164a477a8fcfd",
+      "reason": "Defines the cycle by its regenerative topology, emphasizing that the final product is also the first reactant, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e9345b7e3c8a10c0",
+      "reason": "Expands the cycle's role from energy production to include biosynthetic functions, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ea73affc3982f23c",
+      "reason": "Introduces the concept of isoenzymes to explain tissue-specific energy currency production, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f060db1000d15436",
+      "reason": "Highlights the exception of succinate dehydrogenase and explains the thermodynamic reason for using FAD instead of NAD+, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-14edc387099de69f",
+      "reason": "Introduces a tripartite classification based on energy source and carbon source, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-39ed64c45ceccd6b",
+      "reason": "Presents a balanced chemical equation as a summary and qualifies it as 'deceptively simple' to motivate study, which is a routine textbook representation without a distinct explanatory advance."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6194f98e9f9a6be0",
+      "reason": "Introduces a two-stage framework with energy carriers shuttling between stages, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-725aa86249a529cb",
+      "reason": "Presents chloroplast structure as a membrane system with distinct compartments and notes the endosymbiotic origin, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8f68ae06cf04f00e",
+      "reason": "Distinguishes photosynthesis from passive solar energy use by emphasizing energy storage in carbon-carbon bonds, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-daa9aef430865147",
+      "reason": "Links anatomical features to their functional roles in photosynthesis and water balance, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f245cdf679e423ab",
+      "reason": "Uses a grocery store as a concrete example to trace diverse products back to photosynthetic origins, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0279c44178bba984",
+      "reason": "Introduces G0 as a distinct phase representing exit from the cycle, not just a pause within it, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0ea0861e7e268c87",
+      "reason": "Systematizes mitosis into discrete phases based on observable chromosomal and spindle behaviors, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6136f2b2aaf6762f",
+      "reason": "Describes two distinct mechanisms of cytokinesis based on cell wall presence, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7bebbf9e2c978dbd",
+      "reason": "Subdivides interphase into functional phases based on cellular activities, not just visual appearance, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7cde01228504f914",
+      "reason": "Identifies the kinetochore as a specific protein structure mediating microtubule attachment, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a3ea7e54fdad67cb",
+      "reason": "Proposes that specific proteins (cohesins) hold sister chromatids together and their degradation initiates separation, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cb00bb9031b0bb9c",
+      "reason": "Defines the cell cycle as a repeating sequence with distinct phases rather than a linear process, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f9c6497e253030c3",
+      "reason": "Uses cell counts in a fixed population as a proxy for time distribution, which is a substantive methodological advance."
+    },
+    {
+      "decision": "retain",
+      "id": "n-185e23aa74ba0ee2",
+      "reason": "Defines meiosis as a coordinated sequence of replication and two divisions, distinct from mitosis, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-298c25c4a37ab441",
+      "reason": "Classifies meiosis II as equational, not reductional, and highlights its similarity to mitosis, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-428cba4e39523857",
+      "reason": "Formalizes independent assortment as a combinatorial mechanism with a calculable number of outcomes, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4c2e8f1a0681d1ca",
+      "reason": "Introduces synapsis as a unique meiotic event mediated by a protein lattice, distinct from mitotic chromosome behavior, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-99c3518ccfacfd7b",
+      "reason": "Extends the synapsis model to non-homologous sex chromosomes via limited homology, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a43a5ba0746c4f22",
+      "reason": "Defines meiosis I as reductional, distinct from mitosis, and explains chiasma role in segregation, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f96cfdda05f0dc1f",
+      "reason": "Identifies crossover as the first source of genetic variation in meiosis, distinct from independent assortment, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fdf7cb01de989e32",
+      "reason": "Frames meiosis evolution as a sequence of specific mechanistic innovations, which is a substantive conjecture."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2e4d9803468274de",
+      "reason": "Uses isotopic labeling to mark parental DNA and density centrifugation to separate DNA molecules by their nitrogen content, which is a substantive methodological advance."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5732db5826abf8ab",
+      "reason": "Describes replication as a template-directed process where complementarity ensures sequence fidelity, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9717f99b81c05873",
+      "reason": "Uses predicted banding patterns of each model to interpret observed centrifugation results, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c7449a16bcb18d0c",
+      "reason": "Links the structural complementarity of base pairs to a functional replication mechanism, which is a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ea704f6dcdba319b",
+      "reason": "Defines a set of mutually exclusive mechanistic hypotheses to be tested experimentally, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3fd7e001b76968b8",
+      "reason": "Identifies special codons that function as punctuation in the genetic message, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-81f43d61031b2572",
+      "reason": "Groups codons by shared first and second nucleotides to expose patterns in amino acid assignment, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8e932d789a8c927c",
+      "reason": "Uses induced frameshift mutations to test whether the reading frame is based on groups of three nucleotides, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9cd769f7e1488746",
+      "reason": "Interprets the code's redundancy as an adaptive mechanism to minimize the deleterious effects of mutations, which is a substantive mechanistic insight."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a2f9314066a91b15",
+      "reason": "Uses cell-free translation systems with artificial mRNA templates to deduce codon assignments from protein sequences, which is a substantive methodological advance."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c5ec15db8086dc04",
+      "reason": "Uses the conservation of the code across diverse organisms as an argument for a single origin of life, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f51e4ad660504cda",
+      "reason": "Formulates the flow of genetic information as a unidirectional pathway from DNA to RNA to protein, which is a substantive conceptual representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-08e8eb5250b3e98f",
+      "reason": "Introduces reduction as a formal mechanism for establishing relative difficulty between problems, a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1074c02cc8f4fb39",
+      "reason": "Demonstrates a concrete reduction technique by adding a dummy vertex to encode vertex costs as edge costs, a distinct algorithmic method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1c857b4c4b365622",
+      "reason": "Identifies combinatorial explosion as the fundamental practical barrier to brute-force enumeration, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-377eef01456b5df7",
+      "reason": "Identifies minimum spanning tree as a problem where greedy algorithms are provably optimal, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4de55840d4c66307",
+      "reason": "Describes merge sort as a divide-and-conquer algorithm with multiple recursive calls and a nontrivial merging combine step, a substantive algorithmic representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4f5476c5349d9cfb",
+      "reason": "Introduces greedy algorithms as a single-solution construction method based on local optimal choices, a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-723e6098b43c2e71",
+      "reason": "Frames protein folding as a combinatorial optimization problem motivating approximation algorithms, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-950de91d9567979d",
+      "reason": "Introduces reduction as a three-step process (preprocess, apply existing algorithm, postprocess), a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-abc61d75718d0f8b",
+      "reason": "Defines combinatorial problems as optimization tasks over a solution space with a quality metric, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b257813387ae2476",
+      "reason": "Formalizes divide and conquer as a three-phase paradigm (divide, conquer, combine) with independent subproblems, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f0fbc482aa167651",
+      "reason": "Provides a counterexample showing a natural greedy rule fails for interval scheduling, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fc96f71df77a5255",
+      "reason": "Identifies binary search as a special case of divide and conquer with a single recursive call and trivial combine step, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1616464942739747",
+      "reason": "Proves the asymptotic equipartition property for ergodic sources, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1b6c17bd214745a8",
+      "reason": "Derives the capacity formula C = W log(1 + P/N) for a band-limited channel with white noise, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1dfc573a2f14a53b",
+      "reason": "States and proves the noisy channel coding theorem establishing the fundamental limit of reliable communication, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2f452eb39e2eec93",
+      "reason": "Proves that the Gaussian distribution maximizes entropy under a power constraint, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-46273bbb4cc1b07c",
+      "reason": "Defines the reliability function N(T,q) and shows its growth rate equals channel capacity, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-74712a6b43b4d520",
+      "reason": "States the sampling theorem that band-limited functions are determined by samples at the Nyquist rate, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7ab6eb346ad868fe",
+      "reason": "Proves the source coding theorem that entropy is the fundamental limit for lossless compression, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8e8c403d7e1778d9",
+      "reason": "Proves key properties of entropy (non-negativity, maximum at uniform, subadditivity, conditioning), a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a17a5ce27ed5c9ce",
+      "reason": "Shifts the framing of communication from meaning to statistical selection from a set of possible messages, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b034a2688d764a90",
+      "reason": "Adopts a logarithmic measure of information and introduces the term 'bit', a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-018954a1c65ac826",
+      "reason": "Defines abstract data type by separating interface (functionality) from implementation (representation), a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0b645ea3b1e54afd",
+      "reason": "Introduces a top-down method for data structure selection by first choosing an ADT then quantifying resource constraints, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0e7d860e64f8f7cb",
+      "reason": "Identifies the fundamental trade-off between access speed and modification speed for array lists vs. linked lists, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-109dc0b4f63cf407",
+      "reason": "Introduces the AVL tree property and rotations as a mechanism for self-balancing binary search trees, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-13ef75ee7063fcea",
+      "reason": "Describes the binary search tree property that enables efficient search by ruling out half the elements per comparison, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-176bb4a7465cae28",
+      "reason": "Demonstrates the application of graph data structures to contact tracing and epidemic modeling, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1896bcc2341ce38d",
+      "reason": "Identifies that unbalanced binary search trees can degrade to linear efficiency, a substantive negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2a3669bcce839982",
+      "reason": "Argues that the graph ADT is less standardized and requires problem-specific design, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2aebd3b658d44cfe",
+      "reason": "Clarifies the conceptual distinction between an algorithm and a program, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-36b547d3d6b6e412",
+      "reason": "Introduces the method of combining multiple data structures to support complex features beyond a single map, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5aaad009f6f1f9c9",
+      "reason": "Defines the graph ADT as representing binary relations with vertices and edges, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5aca2a5c2d02aed5",
+      "reason": "Introduces abstraction as the process of simplifying complex concepts for computer representation, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5e9980d799ebc824",
+      "reason": "Introduces the principle of reusability for universal data structures and hints at its drawbacks, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6134570791f781ea",
+      "reason": "Defines a data structure as a complex data type with a specific representation and operations, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-649d4404d04878da",
+      "reason": "Argues that linear data structures can implement all ADTs but specialized structures may be more efficient, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8efa8cf7fe898bc1",
+      "reason": "Describes the binary heap as a hybrid array-backed tree with the heap property for priority queues, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a2b0686819497a0b",
+      "reason": "Defines the map ADT as unordered key-value associations with unique keys, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a67a932a62d83667",
+      "reason": "Defines the set ADT as an unordered collection of unique elements with a trade-off between functionality and efficiency, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b3588917909f2a19",
+      "reason": "Introduces the notion of canonical algorithms as exemplars of design principles, a substantive heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b453061068a611ce",
+      "reason": "Defines the priority queue ADT with highest-priority retrieval, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c290759eb440c352",
+      "reason": "Defines a data type by both its value domain and permitted operations, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ce1c1b4156205824",
+      "reason": "Defines the list ADT as an ordered sequence with indexed access, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0229eb742cdb466e",
+      "reason": "Defines a state machine for process life cycle including ready, running, blocked, and zombie states, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a74a5fb3f98d470d",
+      "reason": "Identifies uncontrolled scheduling as the root cause of race conditions and illustrates the mechanism with an assembly-level counter example, which is a substantive explanatory inference."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d77d3a9da81ade63",
+      "reason": "Distinguishes parallelism and I/O overlap as two distinct motivations for threads, a substantive conceptual argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e01a5e738f4e17a1",
+      "reason": "Generalizes atomicity as a principle for building correct systems beyond concurrency to file systems and databases, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e17d1320fd749e55",
+      "reason": "Positions the OS as the first concurrent program and its internal structures as critical sections, a substantive historical and conceptual argument for studying concurrency."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f227794705706f4c",
+      "reason": "Introduces the thread abstraction as multiple execution points sharing an address space, a substantive representation distinct from the process abstraction."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fa2ee6e1f5d1e2ed",
+      "reason": "Identifies sleeping/waking as a distinct concurrency interaction pattern requiring separate synchronization mechanisms, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-06c5b568752146a5",
+      "reason": "Introduces the lock abstraction with defined semantics for mutual exclusion, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2101b924775f5031",
+      "reason": "Proposes yield-based locking to reduce CPU waste while identifying its starvation and overhead limitations, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2703ee95e3e46e9f",
+      "reason": "Presents Dekker's and Peterson's algorithms as software-only mutual exclusion using loads/stores, a substantive mechanism with noted limitations."
+    },
+    {
+      "decision": "retain",
+      "id": "n-28d797e4e64801cc",
+      "reason": "Introduces compare-and-swap as an alternative atomic primitive for building locks, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-33cf0a36265f06b2",
+      "reason": "Describes a ticket lock using fetch-and-add to ensure fairness and prevent starvation, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-54bac306cee8c1e3",
+      "reason": "Identifies the wakeup/waiting race and proposes setpark() as a solution, a substantive negative result and mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-57930006a67eca75",
+      "reason": "Demonstrates the failure of a simple flag-based lock due to interleaving and spin-waiting inefficiency, a substantive negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-886284ea54e6eed0",
+      "reason": "Proposes two-phase locks that combine spinning and sleeping to balance responsiveness and CPU efficiency, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8decb562e830ebc4",
+      "reason": "Defines evaluation criteria (mutual exclusion, fairness, performance) for locks, a substantive methodological contribution."
+    },
+    {
+      "decision": "retain",
+      "id": "n-92fbfc855be40aac",
+      "reason": "Describes interrupt disabling as a mutual exclusion mechanism and analyzes its limitations, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c165713639d47123",
+      "reason": "Describes a Linux futex-based lock packing state and waiters into a single integer, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-caa14f4abb7e1b31",
+      "reason": "Proposes a queue-based lock with park/unpark to avoid spinning and starvation, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cc0946abd48eb2e9",
+      "reason": "Identifies priority inversion as a correctness issue and proposes priority inheritance, a substantive empirical finding and mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d74dfcead00ba0ee",
+      "reason": "Evaluates spin locks on fairness and shows starvation is possible, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e875b556e4629a6b",
+      "reason": "Introduces load-linked/store-conditional as an atomic mechanism for lock construction, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fb733c545ca213d0",
+      "reason": "Introduces test-and-set as a hardware primitive enabling correct spin locks, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0d48c09d725bd170",
+      "reason": "Describes PTE bits for protection and validity to support sparse address spaces and page replacement, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6c5b6656ad27bb7f",
+      "reason": "Quantifies paging overhead as an extra memory access per reference, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7975e37b2be80846",
+      "reason": "Presents the linear page table as an array indexed by VPN, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-934f79724d0de83c",
+      "reason": "Uses memory trace visualization to illustrate paging overhead, a substantive methodological contribution."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a3f94efaf10834ec",
+      "reason": "Introduces paging as fixed-size memory virtualization to avoid external fragmentation, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ad3666f48c92e7a5",
+      "reason": "Calculates page table size explosion for large address spaces, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c3a675f598f24060",
+      "reason": "Describes address translation by VPN/PFN replacement, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-12f2533614a160c0",
+      "reason": "Defines Mesa semantics where signal is a hint requiring condition re-checking, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1617376c282503eb",
+      "reason": "Introduces covering conditions using broadcast to wake all waiters when the correct one is unknown, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1e74c86b193754ce",
+      "reason": "Argues that a state variable is necessary to record a condition and prevent missed signals, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-357f3990182ff144",
+      "reason": "Introduces the condition variable as an explicit queue with wait and signal operations, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-86c822d571d616a3",
+      "reason": "Describes atomic release-and-sleep in wait() to prevent the lost wakeup race, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9e2dabd9cac80ae0",
+      "reason": "Establishes the while-loop re-checking rule for condition variables, a substantive heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9ec8b0911081e3c9",
+      "reason": "Identifies spurious wakeups as a reason for while-loop re-checking, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-bb4dc34669d1c6a9",
+      "reason": "Generalizes the buffer to multiple slots for increased concurrency and efficiency, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ed04742bf1d4fe18",
+      "reason": "Uses two condition variables to direct signaling between producers and consumers, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-300a30c39880bbc6",
+      "reason": "Describes building a reader-writer lock with semaphores, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-35c0e766beb7c54c",
+      "reason": "Proposes semaphore-based thread throttling to limit concurrent resource-intensive threads, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-43c0a1fcd3b4b04b",
+      "reason": "States Hill's Law that simple synchronization can outperform complex primitives, a substantive heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-55710aca250fff61",
+      "reason": "Solves the bounded buffer problem using two semaphores with careful lock placement, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-69544a187ac63702",
+      "reason": "Implements semaphores using locks and condition variables, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-95401372897465c8",
+      "reason": "Provides a heuristic for semaphore initialization as a resource count, a substantive heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ac30c7dbcff0d332",
+      "reason": "Identifies circular wait as the deadlock cause in dining philosophers and breaks it by reversing acquisition order, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b27a556cdc54f8b3",
+      "reason": "Describes a specific mechanism for using a semaphore as a lock, which is a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b837eece78b48d4d",
+      "reason": "Presents a substantive negative result about the difficulty of building condition variables from semaphores, citing real-world evidence."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c19535dc946dad9b",
+      "reason": "Proposes a unified representation of semaphores as a primitive parameterized by initial value, which is a distinct conceptual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-e8852e074aaac43a",
+      "reason": "This is a meta-historical note about uncertain attribution, not a distinct substantive intellectual move in computer science itself."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f54e8bcb569cb831",
+      "reason": "Describes a specific mechanism for using a semaphore to order events, which is a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-10eb66a8b23c1bc5",
+      "reason": "Identifies a specific empirical finding about disk write caches ignoring barriers, which is a substantive limitation and finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-24d64996606c8bf9",
+      "reason": "Describes a specific method of batching updates into a global transaction to reduce journal traffic, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-26893cd3e5b96fd4",
+      "reason": "Describes a specific method using a transaction checksum to enable a single-write journal commit, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2f57a270e34fe641",
+      "reason": "Describes a specific method, Backpointer-based consistency (BBC), for lazy crash consistency, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-35e2d8f8b60eca7e",
+      "reason": "Describes the specific method of fsck for lazy repair, a substantive conceptual move in crash consistency."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3d9a32de568059b6",
+      "reason": "Describes the specific method of Soft Updates for achieving consistency through write ordering, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-48c36c969d5f5722",
+      "reason": "Describes a specific method for managing a finite log using a circular structure and journal superblock, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4a55a7f09ac727de",
+      "reason": "Describes the specific method of metadata journaling with ordered data writes, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-66d6ad61b99249c1",
+      "reason": "Describes the specific method of optimistic crash consistency, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7f56d8c9a99b4394",
+      "reason": "Describes the specific method of using revoke records to handle block reuse in journaling, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-948bb65c06858aae",
+      "reason": "Formalizes the crash-consistency problem by enumerating failure modes, which is a substantive empirical finding and conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a9e0e9470b74eecc",
+      "reason": "Quantifies the recovery time reduction from journaling, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-aa8efbcdab41973d",
+      "reason": "Describes the specific method of Copy-on-write (COW) for crash consistency, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b3b7252dc785c906",
+      "reason": "Describes the specific data journaling protocol with transaction begin/end blocks, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e04f0e5761441797",
+      "reason": "Identifies specific limitations of fsck, a substantive empirical finding and negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-eb467abaa7b52c80",
+      "reason": "Describes the specific method of journaling (write-ahead logging) for file systems, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0857335dcdcb3454",
+      "reason": "Describes a specific mechanism using sequence counters for duplicate detection, a substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-117c3fb02821ec75",
+      "reason": "Describes the specific mechanism of acknowledgment, timeout, and retry for reliable communication, a substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3ee8973bf3cb3239",
+      "reason": "Presents RPC as a dominant abstraction, a substantive representation and conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4c38c5336507b6fc",
+      "reason": "Presents the end-to-end argument for reliable file transfer, a substantive attributed normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-60ae9c9dfd720e44",
+      "reason": "Describes a specific method where the RPC run-time library handles naming, transport, and reliability, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-659e7cef45a06a64",
+      "reason": "Describes a specific mechanism for handling long-running remote calls with explicit acknowledgments, a substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-74a061b0c5e55889",
+      "reason": "Describes a specific mechanism for handling byte ordering with XDR for interoperability, a substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-786a0b38c22ce0ee",
+      "reason": "Presents the DSM abstraction and its limitations, a substantive representation and negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8af93be71243078f",
+      "reason": "Describes a specific mechanism of asynchronous RPC for performance optimization, a substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9cfbc5ac006d39ab",
+      "reason": "Establishes the fundamental unreliability of communication as a baseline assumption, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b56250bfc9592689",
+      "reason": "Describes a specific method of using a stub generator to automate marshaling and unmarshaling, a substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f39ab5e8b2bdf759",
+      "reason": "Describes the specific heuristic of exponential back-off to avoid overload, a substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-14a0a345898561e6",
+      "reason": "Defines comparative advantage in terms of opportunity cost rather than absolute productivity, a distinct substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-207bffa031be4d92",
+      "reason": "Defines productive efficiency as the impossibility of improving one good without sacrificing another, a substantive normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2125cd325925786e",
+      "reason": "Applies the slope calculation to the PPF to quantify opportunity cost, a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-25941e5ca58665ea",
+      "reason": "Introduces allocative efficiency as a separate concept based on societal preferences, a substantive normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-56e03966f989eedf",
+      "reason": "Models economic growth as an outward shift of the PPF, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8317e460019a1074",
+      "reason": "Analogizes the individual budget constraint to a societal-level frontier, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ac5682f604e9aedd",
+      "reason": "Attributes PPF curvature to resource heterogeneity and increasing opportunity cost, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0ce533b094d0eddb",
+      "reason": "Establishes a standard graphical convention for the demand curve, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-17f3484583970ec2",
+      "reason": "Defines equilibrium as the intersection of demand and supply curves, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2ff5f67b383ef3cc",
+      "reason": "Clarifies the distinction between demand (curve) and quantity demanded (point), a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-38a69b0cd0867020",
+      "reason": "Formalizes the positive price-quantity relationship as the law of supply, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-721f8738639f5aab",
+      "reason": "Clarifies the distinction between supply (curve) and quantity supplied (point), a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7301e8f2bc218978",
+      "reason": "Establishes a standard graphical representation for the supply curve, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a8bc4111f38db2a2",
+      "reason": "Formalizes the inverse price-quantity relationship as the law of demand, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-aef3b8106f455d29",
+      "reason": "Describes the incentive structure driving price adjustments toward equilibrium under excess demand, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-af7c7c4eaf0c17ec",
+      "reason": "Describes the incentive structure driving price adjustments toward equilibrium under excess supply, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-00992b5bf2d9528f",
+      "reason": "Uses the demand and supply diagram to show that a price floor above equilibrium creates a surplus, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1675c09b22ce02af",
+      "reason": "Argues that economic principles of demand and supply cannot be negated by law, a substantive normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-29115b6e661dfdf7",
+      "reason": "Applies the demand and supply model to show that a price ceiling prevents market clearing after a demand shift, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9d102493c2e610e7",
+      "reason": "Describes the institutional mechanism of price supports as government demand-side intervention, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a1bfbb9cad42d478",
+      "reason": "Highlights that price ceilings reduce quantity traded and may lower quality, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-07bd7e23bc5a85f3",
+      "reason": "Applies short-run vs. long-run elasticity distinction to explain price and quantity dynamics, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1aa3bfb7dc78ce7e",
+      "reason": "Compares equilibrium outcomes under identical supply shifts but different demand elasticities to isolate the role of elasticity, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2a584169dfd09b6e",
+      "reason": "Compiles and presents empirical elasticity estimates for selected goods, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-32f05863b9ca5d4b",
+      "reason": "Translates the elasticity concept into a directional pricing rule for revenue maximization, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3a913e10b08f072e",
+      "reason": "Uses inelastic demand to explain observed price swings in the coffee market, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-514da0e79aaf04e1",
+      "reason": "Links relative elasticities of demand and supply to the division of the tax wedge, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ac676664f68b3d8a",
+      "reason": "Applies the elasticity concept to evaluate the effectiveness of excise taxes on cigarettes, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-00a4d28be1d3fff7",
+      "reason": "Describes entry and exit as the mechanism driving economic profits to zero in long-run equilibrium, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-94fb48bd2033fb79",
+      "reason": "Frames the firm's problem as selecting output to maximize profit or minimize loss, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b93ad774cadb99e9",
+      "reason": "Explains price-taking as a direct result of product homogeneity and many competitors, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cc19e82103ba5099",
+      "reason": "Defines perfect competition via four structural conditions, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e0ccf211e7aeae55",
+      "reason": "Uses USDA data on corn prices to illustrate price-taking in practice, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0b7df94591b2c534",
+      "reason": "Compares monopoly outcome to the perfect competition benchmark to show allocative inefficiency, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0de204292a52a460",
+      "reason": "Distinguishes perceived demand from market demand for a monopoly, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-36027bf25e715e9e",
+      "reason": "Introduces a counterbalancing incentive argument that established monopolies may become complacent, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4e909dd000209901",
+      "reason": "Applies the marginalist principle to monopoly, showing profit-maximizing output where MR = MC, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-73c61a1ee7c62098",
+      "reason": "Contrasts the long-run equilibrium of perfect competition with the protected position of a monopoly, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-afd7bf5089ee46df",
+      "reason": "Uses legal and historical examples to show that market definition is contested and consequential, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f6de822771d9f66a",
+      "reason": "Decomposes the effect of a one-unit increase in quantity to explain why marginal revenue is less than price, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-18a7921e7df0f7e1",
+      "reason": "Introduces mutual interdependence as the defining feature of oligopoly, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1c71ae717d0a2be1",
+      "reason": "Separates collusion (behavior) from cartel (formal agreement) and introduces tacit collusion, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1ee2ead33b55161e",
+      "reason": "Transfers the prisoner's dilemma structure to a duopoly output game, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2417076523fcf0c3",
+      "reason": "Introduces the prisoner's dilemma as a canonical game to illustrate suboptimal outcomes from rational self-interest, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6f77557fcec7c07a",
+      "reason": "Defines and applies the concept of a dominant strategy to explain equilibrium selection in the prisoner's dilemma, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ceb91565ec277c21",
+      "reason": "Introduces a distinct complementary statistic (labor force participation rate) to address a specific interpretive gap in unemployment measurement, which is a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d8057f8c8889e147",
+      "reason": "Introduces a separate establishment-based survey as a complementary method for measuring job creation from the employer side, which is a substantive methodological contribution."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d97a4f7465389bdd",
+      "reason": "Introduces a three-way classification of the adult population that refines labor statistics by adding the 'out of the labor force' category, which is a substantive representational move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2a57af25005ecbdc",
+      "reason": "Defines inflation as the percentage change in a constructed aggregate price level, separating conceptual definition from measurement, which is a substantive representational move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b1c838105e2b37d3",
+      "reason": "Rejects a naive average and introduces expenditure-share weighting for price level construction, which is a substantive methodological move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-bdb36375d8f08496",
+      "reason": "Explicitly warns against a common incorrect shortcut (subtracting index numbers) and demonstrates the correct percentage-change calculation, which is a substantive negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c86070c350c20c54",
+      "reason": "Distinguishes nominal from real changes by showing that inflation affects wages and incomes, not just goods prices, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d295184e805fbf37",
+      "reason": "Demonstrates the invariance of inflation rates to arbitrary base year selection through proportional rescaling, which is a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d8a2299169ddbe97",
+      "reason": "Formalizes inflation calculation as a percentage change in fixed basket cost, providing a concrete operational procedure, which is a substantive methodological move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-eae82ed488fe390f",
+      "reason": "Introduces index numbers with an arbitrary base year as a proportional rescaling to simplify interpretation of price levels, which is a substantive representational move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-85f312819c3dc4cd",
+      "reason": "Introduces the kinked demand curve as a specific strategic mechanism that stabilizes tacit collusion in oligopoly, which is a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-88cc4665fdb1b4cb",
+      "reason": "Presents a documented real-world case study of cartel operation, detection, and legal consequences, constituting a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8c84cdc7bde2f7f1",
+      "reason": "Identifies the tension between collective and individual incentives as a core mechanism explaining collusion instability, a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a125582924ea17e2",
+      "reason": "Argues that game theory is the appropriate analytical framework for oligopoly due to mutual interdependence, a substantive methodological argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b37395c36eb8dc7e",
+      "reason": "Applies product differentiation and brand advertising as a mechanism creating oligopoly barriers, a distinct explanatory inference."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b51a1e085452ad0a",
+      "reason": "Introduces enforcement mechanisms such as penalties and monitoring as solutions to the prisoner's dilemma in oligopoly, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c7696efcfc16382f",
+      "reason": "Extends natural monopoly logic to explain oligopoly formation through economies of scale and market demand, a distinct mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e503d6671a32d874",
+      "reason": "Frames imperfect competition as a tradeoff between dynamic benefits and static inefficiencies, an attributed normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-effe80b71a4a0702",
+      "reason": "Uses additional case studies to illustrate cartel fragility and legal consequences, a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-004dea7d32e073ce",
+      "reason": "Applies the public goods framework to public health, showing positive externalities and public good characteristics, a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-049d8347ec83b819",
+      "reason": "Reframes the tragedy of the commons as a property rights problem, a distinct attributed argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-116f9170a87a1f5d",
+      "reason": "Provides empirical evidence from Ostrom's fieldwork that communities can manage common resources sustainably, a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2b2a667a4ca27fbc",
+      "reason": "Applies the prisoner's dilemma framework to public goods provision to explain the free rider problem, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-42c965cd4c177228",
+      "reason": "Defines public goods by nonexcludability and non-rivalry, shifting the definition from institutional provision to inherent attributes, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4bb5c3681383367b",
+      "reason": "Identifies business models that circumvent non-excludability for public goods, a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b64d18723151f6eb",
+      "reason": "Proposes coercive taxation through democratic agreement as a solution to free riding, an attributed normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ea3c8a35a9d43490",
+      "reason": "Introduces common resources as a third category of goods based on nonexcludability and rivalry, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-00028f3d6558fb48",
+      "reason": "Frames collateral and cosigners as information-reducing mechanisms addressing asymmetric information, a distinct mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-33ba119b1012893f",
+      "reason": "Identifies trial periods as a practical screening mechanism in the labor market, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-343e3f00d2cffd3f",
+      "reason": "Links information quality to market thickness, a structural empirical finding about market participation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3ea1f0d4807299ae",
+      "reason": "Identifies reputation as an informal guarantee substituting for direct quality verification, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-44a91332339682bb",
+      "reason": "Frames guarantees, warranties, and service contracts as information-revealing devices, a distinct mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-52c08164d13e2de4",
+      "reason": "Separates imperfect and asymmetric information as distinct concepts, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-63940a2695858737",
+      "reason": "Establishes a regulatory boundary between permissible puffery and illegal deception, an attributed normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7ca669ea11ebd323",
+      "reason": "Reframes seemingly irrational behavior as systematic, opening new modeling avenues, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8e5ab049511417df",
+      "reason": "Treats occupational licensing as a double-edged sword of information provision and market restriction, a distinct mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e690a656cd25cb71",
+      "reason": "Introduces price as an informational signal of quality, altering equilibrium analysis, a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1c9268bc00760ff7",
+      "reason": "Applies quintile share method to cross-country data to rank inequality levels, a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3ff658e2939b5989",
+      "reason": "Argues that household composition changes account for roughly half of rising income inequality, a substantive explanatory argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8cd0e023223b00de",
+      "reason": "Applies supply-demand model to infer that demand for high-skilled labor increased faster than supply, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8d6513d071906a16",
+      "reason": "Introduces quintile-based grouping as a standard descriptive tool for income distribution, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b18809c56eaf858a",
+      "reason": "Separates poverty and inequality by constructing hypothetical scenarios where one changes while the other stays constant, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ba3a926f290315fe",
+      "reason": "Documents a trend of rising U.S. income inequality from 1980 to 2020 using quintile and top-5% shares, a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-eaf634f6dfaaf821",
+      "reason": "Introduces winner-take-all labor markets to explain why top earners' salaries outpace educational differences, a substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ff8a094bcded2c9a",
+      "reason": "Transforms discrete quintile shares into a cumulative Lorenz curve to graphically encode inequality, a substantive representation."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-0c90f75e4a919e40",
+      "reason": "Adopting a linear PPF is a routine modeling simplification to make calculations tractable, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2318e02c5e87edbb",
+      "reason": "Defines the set of mutually beneficial trade prices based on opportunity cost ratios, a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4605c92ccd1fd500",
+      "reason": "Shows that specialization and trade allow consumption beyond the PPF, a scoped empirical finding about gains from trade."
+    },
+    {
+      "decision": "retain",
+      "id": "n-51396c520b39063e",
+      "reason": "Distinguishes absolute advantage from comparative advantage to show trade is driven by relative costs, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-55c1016110fd1266",
+      "reason": "Defines comparative advantage by lower opportunity cost rather than resource efficiency, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f23b3c6fcc28c4b7",
+      "reason": "Uses labor-hour ratios to compute opportunity costs for direct cross-country comparison, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-048aa117c228c196",
+      "reason": "Introduces the umbrella term 'hidden unemployment' to capture underemployment and discouraged workers, a substantive conjecture."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0db1f862e3f3dd54",
+      "reason": "Implements a multi-stage stratified sampling design with rotating panel for monthly unemployment measurement, a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4d50ae1fd1ad291c",
+      "reason": "Identifies specific sources of measurement error in the official unemployment rate, a scoped negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c19d7dd2960f3dfe",
+      "reason": "Restricts the unemployment rate denominator to the labor force, aligning the measure with active job seekers, a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-00b5f82fe16be9cc",
+      "reason": "The Mean Value Theorem for Integrals is a distinct substantive theorem that bridges average value and pointwise attainment via the Intermediate Value Theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-59b3177f1b28f1a3",
+      "reason": "The chain rule extension for differentiating integrals with variable limits is a distinct conceptual method that generalizes the Fundamental Theorem of Calculus."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-a176b015c3fe9e18",
+      "reason": "The observation that the constant of integration cancels in definite integrals is a routine algebraic consequence of the Fundamental Theorem of Calculus, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-a58bbad0952b11fb",
+      "reason": "The clarification that definite integrals yield net signed area rather than geometric area is a standard interpretive note about the definition, not a distinct substantive finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d84fd03f6323f42b",
+      "reason": "The method of splitting integrals with variable lower and upper limits is a distinct conceptual technique for applying the Fundamental Theorem of Calculus to a broader class of problems."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e1f056cf5ec2f020",
+      "reason": "The Fundamental Theorem of Calculus, Part 2, is a major substantive theorem that provides a computational shortcut for evaluating definite integrals via antiderivatives."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f9a005cb40fe288b",
+      "reason": "The Fundamental Theorem of Calculus, Part 1, is a major substantive theorem establishing the inverse relationship between differentiation and integration."
+    },
+    {
+      "decision": "retain",
+      "id": "n-19dfe9bcd3ffaeaf",
+      "reason": "Defining vertical asymptotes via infinite limits is a distinct substantive representation that links geometric features to limit behavior."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-1b7af51bcc12a36c",
+      "reason": "The claim that a function's limit can differ from its value is a basic pedagogical illustration of a removable discontinuity, not a distinct substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-255202c6463f94e3",
+      "reason": "The introduction of one-sided limits and their notation is a distinct substantive representation that extends the limit concept to directional approaches."
+    },
+    {
+      "decision": "retain",
+      "id": "n-40cc51c99e506b2e",
+      "reason": "The intuitive definition of the limit of a function is a distinct substantive representation that shifts focus from point value to neighborhood behavior."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-42f3f4637707fa57",
+      "reason": "The analysis of limits for a specific piecewise function is a routine example application of one-sided limits, not a distinct substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5a07446f536065e3",
+      "reason": "The theorem relating one-sided and two-sided limits is a distinct substantive result that establishes an equivalence criterion for limit existence."
+    },
+    {
+      "decision": "retain",
+      "id": "n-80036e9a3d4def88",
+      "reason": "The limits of identity and constant functions are basic but distinct substantive theorems that serve as building blocks for limit computations."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-88a2a7043f1f80d2",
+      "reason": "The non-existence of a limit due to oscillation for sin(1/x) is a standard counterexample, not a distinct substantive empirical finding beyond the known behavior of that function."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-9ede3131a72034ae",
+      "reason": "The one-sided infinite limits of 1/x at zero are a routine example of a standard function's behavior, not a distinct substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a914e7045c910ecf",
+      "reason": "The graphical method for estimating limits is a distinct substantive conceptual method that uses visual representation to infer limit behavior."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-b41344541fe1b251",
+      "reason": "The application of limits to relativistic mass is a routine illustrative example of a vertical asymptote in a physical model, not a distinct substantive empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-b95e2d89c9103e48",
+      "reason": "The historical note on the formal definition of limits is a vague contextual remark without a specific attributed normative argument or substantive claim."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d57ab4206ca15cdd",
+      "reason": "The introduction of infinite limits and their notation is a distinct substantive representation that extends the limit concept to unbounded behavior."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-e18ed85dfb10db83",
+      "reason": "The limits of sin(x)/x and (√x−2)/(x−4) are standard examples estimated by tables and graphs, not distinct substantive empirical findings."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f0508f53b6d9fa8b",
+      "reason": "The theorem classifying infinite limits of 1/(x−a)ⁿ based on parity of n is a distinct substantive result for a specific function form."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f2e5d45b2a458d0a",
+      "reason": "The table of values method for estimating limits is a distinct substantive conceptual method that uses numerical sampling to infer limiting behavior."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0ab41dfe3a13dd3e",
+      "reason": "The method of constructing a smooth piecewise function by matching continuity and differentiability is a distinct substantive conceptual technique."
+    },
+    {
+      "decision": "retain",
+      "id": "n-32203c1781c9f548",
+      "reason": "Defining the derivative function pointwise as a limit over its domain is a distinct substantive representation that promotes the derivative to a function-level object."
+    },
+    {
+      "decision": "retain",
+      "id": "n-466ddc9cb7e8110c",
+      "reason": "The negative result that continuity does not imply differentiability, with counterexamples isolating distinct geometric reasons, is a distinct substantive finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-59debe6699d1a881",
+      "reason": "The representation of higher-order derivatives as iterated differentiation is a distinct substantive conceptual extension of the derivative concept."
+    },
+    {
+      "decision": "retain",
+      "id": "n-89135d15449584b7",
+      "reason": "The theorem that differentiability implies continuity, with its proof, is a distinct substantive result clarifying the logical relationship between the two concepts."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-c0f253b6655a0c77",
+      "reason": "The smoothness heuristic is a qualitative summary of counterexamples, not a distinct substantive intellectual move beyond the negative result already captured."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ebffd3c60b56dd6a",
+      "reason": "The graphical interpretation linking derivative sign and zeros to monotonicity and extrema is a distinct substantive empirical finding that provides a visual method for understanding derivatives."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f0e684bcb7e270b9",
+      "reason": "The interpretation of Leibniz notation as a limit of secant slopes is a distinct substantive representation connecting notation to the derivative concept."
+    },
+    {
+      "decision": "retain",
+      "id": "n-507bf8e19e49a433",
+      "reason": "The power rule for compositions is a distinct substantive theorem that combines the power rule with the chain rule."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-56d87bb67597c16a",
+      "reason": "The application of the chain rule to related rates problems is a collection of illustrative examples, not a distinct substantive empirical finding with an explanatory inference."
+    },
+    {
+      "decision": "retain",
+      "id": "n-65db6d41bfb2c4ad",
+      "reason": "The Leibniz notation for the chain rule is a distinct substantive representation that provides a widely used mnemonic form of the theorem."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-7fd247503c439bb1",
+      "reason": "The informal proof of the chain rule is a routine sketch of a standard proof, not a distinct substantive argument beyond the theorem itself."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-8e2fe48d4fa573e3",
+      "reason": "The limit-based derivation for sin(x^3) is a specific worked example illustrating the chain rule, not a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-adf83aae1da18a77",
+      "reason": "The chain rule with trigonometric functions is a distinct substantive theorem extending the chain rule to trigonometric outer functions."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d2f137a753d117e9",
+      "reason": "The method of combining the chain rule with product and quotient rules is a distinct substantive conceptual technique for differentiating complex functions."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e81e5cdbfc24c98b",
+      "reason": "The chain rule as the derivative of a composition is a major substantive theorem that handles differentiation of composite functions."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fb37ebce3911fb23",
+      "reason": "The chain rule for compositions of three or more functions is a distinct substantive theorem obtained by iterative application of the basic chain rule."
+    },
+    {
+      "decision": "retain",
+      "id": "n-02c932e54a1c12ed",
+      "reason": "The corollary linking the sign of the derivative to monotonicity is a distinct substantive theorem derived from the Mean Value Theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0884c358a00a9c32",
+      "reason": "The corollary that zero derivative implies a constant function is a distinct substantive theorem needed for uniqueness of antiderivatives."
+    },
+    {
+      "decision": "retain",
+      "id": "n-58d1d6da35365e7b",
+      "reason": "Rolle's theorem is a distinct substantive theorem that serves as a foundational existence result for derivatives."
+    },
+    {
+      "decision": "retain",
+      "id": "n-61fe3fc5a17ce785",
+      "reason": "The counterexample showing non-differentiability invalidates Rolle's theorem is a distinct substantive negative result demonstrating the necessity of the hypotheses."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-7b14a5da4d4b72db",
+      "reason": "The application of the Mean Value Theorem to instantaneous velocity is a routine illustrative example, not a distinct substantive empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-83f452dc56d66506",
+      "reason": "The record describes a pedagogical exercise applying the Mean Value Theorem to prove uniqueness of roots, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-9d991e835bb8623f",
+      "reason": "The record describes pedagogical exercises asking students to construct counterexamples to reinforce understanding of the Mean Value Theorem's hypotheses, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d8b266dc7a04e524",
+      "reason": "The claim that functions with equal derivatives differ by a constant is a substantive theorem characterizing antiderivatives."
+    },
+    {
+      "decision": "retain",
+      "id": "n-dc4577c9c072e833",
+      "reason": "The Mean Value Theorem is a substantive theorem generalizing Rolle's theorem and linking average and instantaneous rates of change."
+    },
+    {
+      "decision": "retain",
+      "id": "n-00306823f9a68a22",
+      "reason": "The secant method is a substantive conceptual method for root-finding that avoids explicit derivatives by using a finite-difference approximation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0040077551f080e4",
+      "reason": "Specializing Newton's method to compute square roots via the recurrence x_{n+1} = (1/2)(x_n + a/x_n) is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-28baeccce1369bd0",
+      "reason": "Introducing cycles and chaos in iterative processes and linking them to the logistic map is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3797d14ccbf67e70",
+      "reason": "Newton's method is a substantive conceptual method for root approximation using tangent-line iteration."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4b8c5c44b88fe512",
+      "reason": "The theorem that a convergent iterative process must converge to a fixed point is a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-65f1649e04d4e41c",
+      "reason": "Applying Newton's method to the derivative to find critical points is a substantive extension of the method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-73450f4cfd6a27d3",
+      "reason": "Framing Newton's method as a fixed-point iteration F(x) = x - f(x)/f'(x) is a substantive representation that abstracts the recurrence."
+    },
+    {
+      "decision": "retain",
+      "id": "n-73af8fbd0f35c353",
+      "reason": "Identifying and categorizing specific failure modes of Newton's method is a substantive negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cc4585c18fde303b",
+      "reason": "The cobweb diagram is a substantive graphical representation for visualizing iterative process behavior."
+    },
+    {
+      "decision": "retain",
+      "id": "n-289b33ad6d37ae3a",
+      "reason": "The finding that functions with finite jump discontinuities are integrable is a substantive empirical finding broadening the class of integrable functions."
+    },
+    {
+      "decision": "retain",
+      "id": "n-438a51c08b0808ea",
+      "reason": "Additivity of the definite integral over intervals is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4f79035dc56f9870",
+      "reason": "The theorem that the integral over a point is zero is a substantive property of the definite integral."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5039841b66bc9635",
+      "reason": "Leibniz's integral notation and terminology is a substantive representation that distinguishes definite and indefinite integrals."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-5252a330029e4ee9",
+      "reason": "The claim that the variable of integration is a dummy variable is a routine notation clarification, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-55f5324b404f0a77",
+      "reason": "Interpreting the definite integral of velocity as displacement using net signed area is a substantive empirical finding connecting the integral to a physical application."
+    },
+    {
+      "decision": "retain",
+      "id": "n-919349a824cdb31b",
+      "reason": "Defining total area as the integral of the absolute value is a substantive representation extending the area interpretation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ad1d5ab5a28f2d63",
+      "reason": "The claim that regular partitions suffice for defining the integral is a substantive methodological simplification."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b4789ade66d378c4",
+      "reason": "Extending the area interpretation to net signed area for functions taking negative values is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b54632273881a295",
+      "reason": "Evaluating integrals using geometric area formulas is a substantive method leveraging the area interpretation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-bf7405cd84c6a60f",
+      "reason": "The theorem that continuous functions are integrable is a substantive sufficient condition for integrability."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c2e19abce5a91deb",
+      "reason": "The average value of a function via the definite integral is a substantive method extending the concept of average to continuous functions."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d837e84ebe6727d9",
+      "reason": "The set of algebraic properties of the definite integral is a substantive theorem enabling symbolic manipulation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f0ae7aea8713dd4f",
+      "reason": "Comparison properties of integrals are substantive theorems for estimating and comparing integrals."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f672772aaf52227f",
+      "reason": "The theorem that reversing limits changes the sign of the integral is a substantive property."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f8739561ba456c7b",
+      "reason": "Defining the definite integral as the limit of Riemann sums without requiring continuity or nonnegativity is a substantive generalization of the area concept."
+    },
+    {
+      "decision": "retain",
+      "id": "n-19b441e9763fb1f9",
+      "reason": "The heuristic that choice of u and dv in integration by parts is trial-and-error and poor choices can worsen the integral is a substantive conceptual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1cb76cd2d9abc7ed",
+      "reason": "Using the constant function 1 as dv to apply integration by parts to single-function integrals is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-223695ebe3f93c38",
+      "reason": "The reality check heuristic using geometric estimates to verify definite integral results is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-354ba2fdbc9c1dc2",
+      "reason": "Integration by parts as the integral form of the product rule is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-44c9dcc6ff6cf66a",
+      "reason": "Repeated integration by parts to reduce polynomial degree is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-70609aaef79e4d23",
+      "reason": "The compact differential notation ∫ u dv = uv − ∫ v du is a substantive representation simplifying application of integration by parts."
+    },
+    {
+      "decision": "retain",
+      "id": "n-83efa2d559d4991f",
+      "reason": "The finding that LIATE can fail and alternative choices may be necessary is a substantive negative result identifying a limitation of the heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-94413454b085bc8b",
+      "reason": "Extending integration by parts to definite integrals by evaluating the boundary term at limits is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b5f2d6f4a3eac624",
+      "reason": "The argument that an arbitrary constant in v cancels out in integration by parts is a substantive conceptual clarification."
+    },
+    {
+      "decision": "retain",
+      "id": "n-bd4be72979a7cece",
+      "reason": "Deriving reduction formulas via integration by parts is a substantive method for simplifying integrals with high powers."
+    },
+    {
+      "decision": "retain",
+      "id": "n-dd6f0b580aad8d87",
+      "reason": "The LIATE mnemonic is a substantive heuristic for choosing u in integration by parts."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e37cef8485e4eda1",
+      "reason": "Solving for the integral algebraically when it reappears after repeated parts is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f6140ea8569cfdfe",
+      "reason": "Verification of an antiderivative by differentiation is a substantive method for checking correctness."
+    },
+    {
+      "decision": "retain",
+      "id": "n-38bf0be08ecdd3c2",
+      "reason": "The definition that a two-sided improper integral requires splitting and independent convergence of both parts is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7cfe6881fcef7565",
+      "reason": "Splitting an integral at an interior discontinuity and requiring both parts to converge is a substantive representation for handling improper integrals."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8536b96622252655",
+      "reason": "Gabriel's Horn, with infinite area but finite volume, is a substantive empirical finding challenging intuition about improper integrals."
+    },
+    {
+      "decision": "retain",
+      "id": "n-afe66900b1d379fc",
+      "reason": "Defining Taylor polynomials as the partial sums of the Taylor series is a distinct conceptual move connecting infinite series to finite approximations."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b0d639b6e5a6da3b",
+      "reason": "The formal definition of Taylor and Maclaurin series as the infinite sum of derivative terms is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c94dc34f3d227659",
+      "reason": "The method of determining power series coefficients by matching derivatives at a point is a distinct conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cdde179c179f8eff",
+      "reason": "Proving the Maclaurin series for e^x converges to the function for all real x by bounding the remainder is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-de384a14a721c3ee",
+      "reason": "Proving the Maclaurin series for sin x converges to the function for all real x by bounding the remainder is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ed283f39966b2392",
+      "reason": "Using Taylor's theorem remainder bound to determine the x-interval for a specified approximation accuracy is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fc4e4ac0a7868cd3",
+      "reason": "The method of evaluating limits by substituting Taylor series and simplifying is a distinct conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fc83c1bd57bd8d52",
+      "reason": "Providing explicit formulas for Maclaurin polynomials of e^x, sin x, and cos x by computing derivatives and identifying patterns is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4c1c17ee3ed2f52b",
+      "reason": "The separation of variables method for solving PDEs by assuming a product of single-variable functions is a distinct conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-52b6223be16c65d5",
+      "reason": "Applying boundary conditions to determine eigenvalues and coefficients in a series solution using Fourier methods is a substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5d529e242cb11a27",
+      "reason": "Defining a PDE as an equation involving an unknown function of multiple variables and its partial derivatives is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6e72a98a2746eb79",
+      "reason": "Identifying the flawed assumptions in Kelvin's model (ignoring radioactive heating, solid Earth assumption) is a substantive negative result."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6ea55bdec152968d",
+      "reason": "Stating Clairaut's theorem on the equality of mixed partial derivatives under continuity is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7251daf38d4a7778",
+      "reason": "Extending the partial derivative concept to functions of three or more variables by holding others constant is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7b5b8960c4819d01",
+      "reason": "The method of estimating partial derivatives from contour maps by approximating secant slopes is a distinct conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-814f7dade9f1f132",
+      "reason": "The computational rule of treating other variables as constants to compute partial derivatives is a substantive heuristic."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a26931e2d7f353d9",
+      "reason": "The geometric interpretation of partial derivatives as slopes of tangent lines parallel to coordinate axes is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cfa8aedc7698c73f",
+      "reason": "Defining higher-order and mixed partial derivatives by repeated application of the partial derivative operator is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d66f6ae985487380",
+      "reason": "Kelvin's use of the heat equation to estimate Earth's age as 20-400 million years is a substantive empirical finding with a clear explanatory inference."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d8de76027bad00b6",
+      "reason": "The limit-based definition of partial derivatives for functions of two variables is a substantive representation extending the derivative concept."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-89ed465630c248a8",
+      "reason": "The claim merely describes applying L'Hôpital's rule to an indeterminate form in an improper integral, which is a routine use of a standard tool rather than a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-8ef54c9ad0628011",
+      "reason": "The claim describes a standard application of improper integrals to probability density functions without introducing a new theorem, method, or explanatory inference beyond the basic definition."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9869b99652bc053a",
+      "reason": "The definition of an improper integral with an infinite discontinuity at an endpoint as a one-sided limit is a distinct substantive representation that extends the Riemann integral to unbounded integrands."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cc8c6d137c3034ca",
+      "reason": "Defining the Laplace transform as an improper integral and linking its domain to convergence is a substantive conceptual move that bridges integral theory and transform methods."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d6f91adacb71103b",
+      "reason": "The definition of an integral over an infinite interval as a limit of proper integrals is a foundational substantive representation that extends the Riemann integral to unbounded domains."
+    },
+    {
+      "decision": "retain",
+      "id": "n-db24ca07d14de5ae",
+      "reason": "The Comparison Theorem for convergence of improper integrals is a distinct substantive theorem that provides a method for determining convergence without direct evaluation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-06c9f19f3d06c7ce",
+      "reason": "The Squeeze Theorem for sequences is a substantive theorem that extends a function-limit result to sequences, providing a distinct convergence criterion."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2da8b85988492e52",
+      "reason": "The Monotone Convergence Theorem for sequences is a fundamental substantive theorem guaranteeing convergence of bounded monotone sequences without explicit limit computation."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-42ecbf9b4efb9383",
+      "reason": "The distinction between explicit formulas and recurrence relations is a routine textbook navigation of definitional modes for sequences, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-4e6d56b14f5fc3e1",
+      "reason": "The theorem that shifting indices does not change the limit is a substantive result used in analyzing recursively defined sequences, even if its proof is omitted."
+    },
+    {
+      "decision": "retain",
+      "id": "n-598727e78982be0e",
+      "reason": "The method of solving linear recurrences via characteristic roots is a distinct substantive conceptual method for obtaining closed-form expressions."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-71c7cbc91427fd4a",
+      "reason": "Arithmetic and geometric sequences are standard named classes with explicit forms; presenting them is routine textbook navigation rather than a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-732e42a2e1ad5b42",
+      "reason": "The theorem that continuity of a function applied to a convergent sequence preserves the limit is a substantive result linking continuity and sequence convergence."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8ba571a9a500ce9b",
+      "reason": "The method of using function limits to evaluate sequence limits is a substantive conceptual bridge between the theory of limits of functions and sequences."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9527094e19072ee3",
+      "reason": "The theorem that convergent sequences are bounded is a substantive necessary condition for convergence, widely used in proofs."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-9588ca763567f4a9",
+      "reason": "Defining a sequence as an ordered list and as a function on positive integers is a routine representation that sets up notation without an explanatory advance."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-b326c2085f818cfd",
+      "reason": "Modeling population, finance, and dilution with linear recurrences is a standard application of sequence theory without a new theorem, method, or explanatory inference."
+    },
+    {
+      "decision": "retain",
+      "id": "n-ba212a2a52e0716c",
+      "reason": "The recursive generation of binary expansion is a substantive method that links sequence theory to an algorithmic representation of real numbers."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-d52de141503e788f",
+      "reason": "Presenting Newton's method as a recursively defined sequence is merely using a standard tool to illustrate sequence concepts, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d64b3e4a4949a47a",
+      "reason": "The complete classification of convergence behavior of geometric sequences {r^n} by the value of r is a substantive empirical finding that organizes key examples."
+    },
+    {
+      "decision": "retain",
+      "id": "n-de030d6b750d0610",
+      "reason": "The algebraic limit laws for sequences are substantive theorems that extend function limit laws to sequences, enabling computation of limits of combined sequences."
+    },
+    {
+      "decision": "retain",
+      "id": "n-10fceb25a2db8afd",
+      "reason": "The limitation that ratio and root tests require existence of the limit is a substantive negative result identifying a boundary of applicability."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-21ec0b47538b4ca8",
+      "reason": "The comparison of ratio and root tests merely highlights a parallel structure between two standard tests without a distinct substantive argument or inference."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-254a08e79605d172",
+      "reason": "The heuristic for the root test via geometric approximation is an informal motivation rather than a distinct substantive theorem, method, or finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-2fa94e081ce81b7d",
+      "reason": "The claim that the root test simplifies power-type terms is a heuristic observation about when to use a standard tool, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-357cc3145771bc14",
+      "reason": "The Ratio Test criterion for absolute convergence is a substantive theorem providing a convergence test based on the limit of consecutive-term ratios."
+    },
+    {
+      "decision": "retain",
+      "id": "n-36a3574ced5e02c5",
+      "reason": "The proof of the ratio test convergence via geometric comparison is a substantive argument that rigorously justifies the test's criterion."
+    },
+    {
+      "decision": "retain",
+      "id": "n-44e82128c1a96803",
+      "reason": "The proof of the ratio test divergence via term growth is a substantive argument that rigorously justifies the test's divergence criterion."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-5d0be353ac94ec16",
+      "reason": "Using L'Hôpital's rule to evaluate a limit in the root test for p-series is a routine application of a standard tool, not a distinct substantive method."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-5db63b2c3d4c0da2",
+      "reason": "The claim that ratio and root tests imply absolute convergence is a direct consequence of applying the tests to absolute values, not a distinct substantive theorem beyond the tests themselves."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-992febc6d2b97fb5",
+      "reason": "Using the divergence test as a fallback is a routine strategic tip for applying a standard necessary condition, not a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b87cf4dbf3b742a6",
+      "reason": "The Root Test criterion for absolute convergence is a substantive theorem providing a convergence test based on the nth root of terms."
+    },
+    {
+      "decision": "retain",
+      "id": "n-dba6bca0da13af3f",
+      "reason": "The generalized ratio test comparing terms at doubled indices is a distinct substantive theorem that extends convergence testing beyond standard ratio and root tests."
+    },
+    {
+      "decision": "retain",
+      "id": "n-dcc08555cdfd50b1",
+      "reason": "The demonstration that p-series make ratio and root tests inconclusive at ρ=1 is a substantive empirical finding that establishes a genuine boundary case."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-e7e9bd41ed806338",
+      "reason": "The strategy for choosing a convergence test is a heuristic decision tree for applying standard tools, not a distinct substantive theorem, method, or finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-f20ca12aea859581",
+      "reason": "Applying the ratio test to alternating series for absolute convergence is a routine use of a standard test on absolute values, not a distinct substantive method."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-fa86127a3e008798",
+      "reason": "The claim that the ratio test simplifies factorial and exponential terms is a heuristic observation about when to use a standard tool, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-09c38d8f1812d79f",
+      "reason": "Finding the Taylor series for 1/(2x) at x=2 is a routine worked example illustrating a standard procedure, not a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0c7f1f157a0fde74",
+      "reason": "The method of proving Taylor series convergence by showing the remainder tends to zero using Taylor's theorem bound is a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-407cef5fa7ca0892",
+      "reason": "The uniqueness of power series representation is a substantive theorem that establishes the Taylor series as the only possible power series representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5b4d541e7151d13f",
+      "reason": "Taylor's theorem with remainder is a substantive theorem that quantifies the error in Taylor polynomial approximations."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7165949b8db78276",
+      "reason": "The argument using Taylor series to prove e is irrational is a substantive attributed normative argument that applies series theory to a number-theoretic result."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-725a6f771922faa0",
+      "reason": "Computing Taylor polynomials for ln x at x=1 is a routine worked example illustrating a standard procedure, not a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7f9006c3a4e15b0a",
+      "reason": "The finding that the Taylor series for 1/x at x=1 converges on (0,2) is a substantive empirical finding that determines the interval of convergence for a key example."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-9d329dd2b5c6c997",
+      "reason": "Using Newton's method with Taylor polynomials to approximate ln(2) is a routine application of standard tools without a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-b854e9cc333bd23e",
+      "reason": "The claim clarifies a technical definition to prevent conceptual misunderstandings, which is a pedagogical clarification rather than a distinct substantive intellectual move (theorem, method, finding, etc.)."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c2266483d5bf9315",
+      "reason": "The claim presents a generalized conservation law expressing the change in mechanical energy as work done by non-conservative forces, which is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c5ae1717655d797d",
+      "reason": "The claim introduces a combined quantity, mechanical energy, to simplify analysis and serve as a conserved quantity, which is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cd63bdcbcb410a25",
+      "reason": "The claim specializes a generalized law to the case of zero non-conservative work, yielding a familiar conservation statement, which is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f3c93b0ba7a9f9b5",
+      "reason": "The claim describes an energy-based method to derive full time dependence of motion via integration, which is a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0584eb86341a1b17",
+      "reason": "The claim applies momentum conservation to calculate a specific, small velocity change for a comet due to a lander bounce, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-79571942b70ab068",
+      "reason": "The claim derives momentum conservation from Newton's third law for a two-body interaction, which is a substantive explanatory argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7e100b871202844b",
+      "reason": "The claim applies the conservation law to a specific case to derive the result that momentum is fully transferred in equal-mass collisions, which is a scoped empirical finding."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-a97dafc614bcb949",
+      "reason": "The claim codifies a four-step problem-solving procedure for applying a known law, which is a routine pedagogical method rather than a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b584c8d298d6468d",
+      "reason": "The claim generalizes the two-body result by defining total momentum as the vector sum for N objects and stating its conservation, which is a substantive representation."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-bfa0ba77951eb649",
+      "reason": "The claim states the law of conservation of momentum as a foundational principle supported by experimental evidence, but it is a general statement of a known law without a distinct substantive move beyond the law itself."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c8b60cbd92b23a3b",
+      "reason": "The claim specifies necessary conditions (constant mass, zero net external force) for momentum conservation and defines a closed system, which is a substantive attributed normative argument."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-d3b086defc647a21",
+      "reason": "The claim introduces the concept of a mechanical system and emphasizes that the choice of system is crucial, which is a routine methodological step rather than a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-fc50d2fb73098064",
+      "reason": "The claim demonstrates that Earth's momentum changes in a ball bounce by expanding the system to include Earth, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-0d635a6a9475f0b7",
+      "reason": "The claim defines total angular momentum as the vector sum of individual angular momenta for a system of particles, which is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2cbad5a811348d58",
+      "reason": "The claim provides a rotational analog of Newton's second law relating torque to angular acceleration for rigid bodies, which is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3f38eddd2ab25e66",
+      "reason": "The claim derives a dynamical law connecting torque to the time derivative of angular momentum for a particle, which is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-72a4dafb0664d941",
+      "reason": "The claim simplifies the calculation of angular momentum for extended rotating objects by relating it to moment of inertia and angular velocity, which is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-81c92991c51ba5b5",
+      "reason": "The claim uses a worked example to illustrate and validate the additivity of angular momentum and torque for systems, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c1b7acb78c0a6ebc",
+      "reason": "The claim clarifies that angular momentum depends on the choice of origin and introduces the lever arm concept, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cb5d5cb5d0d2cf03",
+      "reason": "The claim provides a dynamical law for systems of particles by equating the time derivative of total angular momentum to net external torque, which is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f634a081b4e650d3",
+      "reason": "The claim defines angular momentum as a vector cross product, making it origin-dependent and directionally meaningful, which is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-075d78b2a6a0a53f",
+      "reason": "The claim reports Cavendish's torsion-balance measurement of the universal gravitational constant G, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-1096c24898e2ae91",
+      "reason": "The claim applies Newton's law to estimate gravitational drift and collision time between two orbiting objects, which is a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-24c8561aec560a62",
+      "reason": "The claim synthesizes prior astronomical and terrestrial observations into a single dynamical law, emphasizing the novelty of the connection, which is a substantive explanatory argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6577816a884ab10b",
+      "reason": "The claim interprets the inverse-square law as a geometric necessity for point sources, linking gravitation to other force laws, which is a substantive explanatory argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6742c1f51175eac2",
+      "reason": "The claim postulates a single force law governing both terrestrial and celestial motion, which is a substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-857724a2fbe3dffd",
+      "reason": "The claim applies Newton's law at cosmic scales to calculate the gravitational force and predicted collision time between galaxies, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8b570da9370c3648",
+      "reason": "The claim highlights the dual nature of gravity as the weakest fundamental force yet dominant at cosmic scales, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9cbb986ee36f42c3",
+      "reason": "The claim attributes the establishment of Newtonian gravitation to Du Châtelet's translation and augmentation, which is a substantive attributed normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b6947e66febf572f",
+      "reason": "The claim describes general relativity as a successor theory that replaces the force concept with a geometric description, which is a substantive explanatory argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-c8915b57ec2b988d",
+      "reason": "The claim extends the point-mass law to spherically symmetric objects and justifies approximation for distant nonspherical objects, which is a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-5a61a9cd006e2d0c",
+      "reason": "The claim describes a pitot tube as a practical instrument to measure fluid velocity using Bernoulli's principle, which is a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-937e0f629a63fe57",
+      "reason": "The claim shows that Bernoulli's equation reduces to the hydrostatic pressure-depth relation for a static fluid, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a2cce138e6bae022",
+      "reason": "The claim explains how high-velocity fluid streams create low-pressure regions to entrain other fluids, which is a substantive mechanism."
+    },
+    {
+      "decision": "retain",
+      "id": "n-a93dcf1b1119762a",
+      "reason": "The claim simplifies Bernoulli's equation for constant depth to predict pressure variations due to speed changes, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-b43ff033f92644fa",
+      "reason": "The claim derives Bernoulli's equation from the work-energy theorem for incompressible frictionless flow, which is a substantive conceptual method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d45d075454264ed4",
+      "reason": "The claim applies the full Bernoulli's equation to a fire hose nozzle scenario where pressure, velocity, and height all change, which is a scoped empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-17ccddf7210ae10c",
+      "reason": "The claim defines period, frequency, and their reciprocal relationship as fundamental quantities for repetitive motion, which is a substantive representation."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-1f4ff86271096011",
+      "reason": "The claim is a simple calculation using the frequency-period relationship to classify a sound as ultrasound, which is a routine application rather than a distinct substantive intellectual move."
+    },
+    {
+      "decision": "retain",
+      "id": "n-3a121cf3eed29c70",
+      "reason": "The claim introduces amplitude as a key parameter that scales the cosine function and describes the range of motion, which is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-526462d340f0c3ec",
+      "reason": "The claim shows that gravity only shifts the equilibrium position in vertical spring motion without altering the form of SHM equations, which is a substantive explanatory argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-60d26168c2911d0e",
+      "reason": "The claim derives the differential equation for SHM from Newton's second law and Hooke's law, which is a substantive explanatory argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-6678e6264d54bd8d",
+      "reason": "The claim establishes that period and frequency are independent of amplitude for a simple harmonic oscillator, which is a substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-97f2b65817c25899",
+      "reason": "The claim defines simple harmonic motion by a linear restoring force law rather than by trajectory shape, which is a substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-9cd1a05dfb631b78",
+      "reason": "Introducing a phase shift parameter to generalize the SHM equation for arbitrary initial conditions is a distinct substantive conceptual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-ea951629d0822fea",
+      "reason": "This is a direct application of the phase-shifted cosine model to experimental data, not a distinct substantive intellectual move separate from the introduction of the phase shift itself."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f572423db542bc28",
+      "reason": "Deriving the kinematic equations for SHM position, velocity, and acceleration by differentiation is a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-011177dc2534d921",
+      "reason": "Identifying Q - W as a path-independent state function difference is a distinct substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-02ea4b7f2506a0c4",
+      "reason": "Representing work geometrically as the area under the pressure-volume curve is a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-239d5d3572282d1f",
+      "reason": "The theorem that for a closed thermodynamic cycle the change in internal energy is zero is a distinct substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2a23488eb909ab03",
+      "reason": "Applying the first law to phase changes using latent heat and pΔV to compute internal energy change is a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-48eac71b7ee6a61b",
+      "reason": "The empirical finding that internal energy of an ideal gas depends only on temperature is a distinct substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-65e1cb9249d3f5f7",
+      "reason": "Formulating the first law as ΔE_int = Q - W with sign conventions is a distinct substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-cd2a9d0be6e03588",
+      "reason": "Demonstrating that frictional work increases internal energy equivalently to heat is a distinct substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-e7264097e5eed112",
+      "reason": "The negative result that the first law applies to non-quasi-static processes is a distinct substantive limitation or finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-04b700011ceebdf7",
+      "reason": "The Kelvin statement of the second law as the impossibility of a perfect engine is a distinct substantive normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-43ed77a54314106a",
+      "reason": "The argument that all reversible engines between the same reservoirs have equal efficiency is a distinct substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-608b900cbd1f53bc",
+      "reason": "The argument that reversible engines are more efficient than irreversible engines between the same reservoirs is a distinct substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-7eae5709775bda99",
+      "reason": "The equivalence proof of Kelvin and Clausius statements via contradiction is a distinct substantive argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-8970e962566df18f",
+      "reason": "The Clausius statement of the second law as the impossibility of a perfect refrigerator is a distinct substantive normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-246f6b27d81e12b8",
+      "reason": "The theorem that the net entropy change is zero for any reversible cyclic process is a distinct substantive theorem."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2ea7a596ece17eb1",
+      "reason": "The method to compute entropy change for irreversible processes using reversible substitutes is a distinct substantive method."
+    },
+    {
+      "decision": "retain",
+      "id": "n-2f3bb4e9d41c2c13",
+      "reason": "The entropy statement of the second law that total entropy never decreases is a distinct substantive normative argument."
+    },
+    {
+      "decision": "retain",
+      "id": "n-32498c9165e6ff9a",
+      "reason": "Defining entropy as a state function via reversible heat exchange is a distinct substantive representation."
+    },
+    {
+      "decision": "retain",
+      "id": "n-d1d54f3c4f3ac706",
+      "reason": "The empirical finding about Stirling engine irreversibility and the role of a regenerator is a distinct substantive empirical finding."
+    },
+    {
+      "decision": "retain",
+      "id": "n-f26e825499bcebfb",
+      "reason": "Deriving explicit formulas for entropy change in isothermal and isochoric processes for ideal gases is a distinct substantive method."
+    }
+  ],
+  "incomplete_batches": [
+    {
+      "expected_ids": [
+        "n-0407833f31980f5e",
+        "n-5a6ce89767fb0691",
+        "n-5e4456f970580f31",
+        "n-5f359b04e71694ab",
+        "n-68932c5ad6ce465c",
+        "n-6f7e5b69501b2fdf",
+        "n-79f1e144c27b4a08",
+        "n-b687619777aa4a0e",
+        "n-c59c83bf964e9503",
+        "n-dc404fd2e23bb490",
+        "n-e7b5ed768fd3aa2a",
+        "n-f09d55eaa78893b9",
+        "n-29fe34b652a3eaf2",
+        "n-3a53f5f3454588ed",
+        "n-68f60651f656ed05",
+        "n-692a1bd914e43d77",
+        "n-7481b01403f40bf9",
+        "n-acbaeef6dd741d65",
+        "n-b9b8113d669c0f09",
+        "n-d0156db81f85b304",
+        "n-d5c4f24212015ec7",
+        "n-e28bf7446a2d4ad7",
+        "n-1ecc821fa29bbf63",
+        "n-2cd3837c422b1717",
+        "n-44991a63c7c940d3",
+        "n-54b789d3bc9a47e1",
+        "n-61d19421d72081b9",
+        "n-7e23145cb7462a69",
+        "n-c4b826a60287d1c7",
+        "n-ca62368c1865d2f0",
+        "n-d507ce688e9ff860",
+        "n-f8e47e8d767d06aa",
+        "n-2826cc74d0fe3cee",
+        "n-2a8240961737891f",
+        "n-2b5aceec557bc53d",
+        "n-512da5389fc22610",
+        "n-52d5e6c24fa0784e",
+        "n-7deffbace7ff8c3f",
+        "n-a835183bebfae544",
+        "n-c554276005663172",
+        "n-dad28b8e7fc298e3",
+        "n-e3b3d984225f3421",
+        "n-2c7abcdf11054b35",
+        "n-5a1ef70dc6a5c30f",
+        "n-9e5ec34ed0527281"
+      ],
+      "reason": "Incomplete or misidentified batch; no decisions from this batch applied",
+      "returned_checks": [
+        {
+          "decision": "retain",
+          "id": "n-0407833f31980f5e",
+          "reason": "Identifies deadlock as a circular wait failure mode and proposes prevention strategies, which is a distinct substantive conceptual move."
+        },
+        {
+          "decision": "retain",
+          "id": "n-5a6ce89767fb0691",
+          "reason": "Defines a set of scheduling policies (FCFS, RR, STCF, SRPT) with distinct properties, representing a substantive method contribution."
+        },
+        {
+          "anchors": [
+            {
+              "anchor_id": "p26",
+              "source_id": "s-ff53fd63df315324",
+              "source_revision": 1
+            }
+          ],
+          "claim": "Early IBM/DEC mainframes used time-sharing with single-threaded processes, but by the late 1970s multitasking with time slicing became prominent, later evolving to multithreading.",
+          "conceptual_move": "Provide a historical narrative of concurrency approaches.",
+          "dossiers": [
+            "C1102"
+          ],
+          "id": "n-5e4456f970580f31",
+          "kind": "empirical_finding",
+          "limits": [
+            "No citations or detailed historical evidence provided."
+          ],
+          "problem": "How did OS concurrency evolve historically to improve performance?",
+          "title": "Historical shift from time-sharing to multitasking with threads"
+        },
+        {
+          "decision": "retain",
+          "id": "n-5f359b04e71694ab",
+          "reason": "Defines critical sections and mutual exclusion as complementary concepts for shared resource safety, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-68932c5ad6ce465c",
+          "reason": "Encapsulates all process information in a single data structure (PCB) managed by the kernel, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-6f7e5b69501b2fdf",
+          "reason": "Defines the process as the fundamental unit of execution, separating program from execution context, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-79f1e144c27b4a08",
+          "reason": "Classifies memory allocation methods (contiguous, linked, indexed) based on block organization, a substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-b687619777aa4a0e",
+          "reason": "Classifies concurrency environments (multiprogramming, multiprocessing, distributed) based on processor and memory sharing, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-c59c83bf964e9503",
+          "reason": "Introduces threads as lightweight execution paths that share process resources, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-dc404fd2e23bb490",
+          "reason": "Provides a taxonomy of synchronization primitives with distinct semantics, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-e7b5ed768fd3aa2a",
+          "reason": "Provides a range of IPC mechanisms to balance isolation with collaboration, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-f09d55eaa78893b9",
+          "reason": "Defines a procedure for saving and restoring process contexts via PCBs, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-29fe34b652a3eaf2",
+          "reason": "Introduces a hardware architecture that models neurons and synapses using components like memristors, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-3a53f5f3454588ed",
+          "reason": "Introduces a category of networked autonomous systems that learn and adapt, distinguishing them from automated networks, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-68f60651f656ed05",
+          "reason": "Integrates AI, cognitive science, and robotics to enable robots to mimic human cognition and predict human behavior, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-692a1bd914e43d77",
+          "reason": "Proposes a decentralized knowledge-sharing infrastructure for swarm robots to adapt behavior contextually, a substantive heuristic."
+        },
+        {
+          "decision": "retain",
+          "id": "n-7481b01403f40bf9",
+          "reason": "Demonstrates how XR can overlay 3D data onto real-life situations for faster medical interventions, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-acbaeef6dd741d65",
+          "reason": "Characterizes the metaverse as a persistent, shared immersive digital world and decomposes it into functional layers, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-b9b8113d669c0f09",
+          "reason": "Extends HCI principles to immersive solutions, emphasizing human sensing, reasoning, planning, and motivation, a substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-d0156db81f85b304",
+          "reason": "Introduces qubits, superposition, and entanglement as fundamental principles and notes Feynman's observation on quantum simulation, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-d5c4f24212015ec7",
+          "reason": "Surveys different physical implementations of qubits and identifies scalability constraints, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-e28bf7446a2d4ad7",
+          "reason": "Proposes molecular-level engineering to enhance cloud infrastructure and speculates on neural nanorobots for brain-cloud interfaces, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-1ecc821fa29bbf63",
+          "reason": "Details the steps of process creation including eager vs. lazy loading and initialization tasks, a substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-2cd3837c422b1717",
+          "reason": "Introduces the zombie state as an intermediate state between exit and cleanup, enabling parent inspection, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-44991a63c7c940d3",
+          "reason": "Formalizes the process state model with transitions (running, ready, blocked), a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-54b789d3bc9a47e1",
+          "reason": "Defines the process as an abstraction encapsulating all machine state a program can access or affect during execution, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-61d19421d72081b9",
+          "reason": "Introduces the process list and PCB as fundamental OS data structures, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-7e23145cb7462a69",
+          "reason": "Contrasts eager and lazy loading, pointing to paging as the mechanism for on-demand loading, a substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-c4b826a60287d1c7",
+          "reason": "Demonstrates through traces that blocking on I/O allows scheduling another process, improving utilization, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-ca62368c1865d2f0",
+          "reason": "Defines the essential components of a process API (create, destroy, wait, control, status), a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-d507ce688e9ff860",
+          "reason": "Advocates for policy/mechanism separation as a design paradigm, a substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-f8e47e8d767d06aa",
+          "reason": "Introduces time sharing as the basic technique for CPU virtualization, a substantive mechanism."
+        },
+        {
+          "decision": "retain",
+          "id": "n-2826cc74d0fe3cee",
+          "reason": "Defines a per-process virtual view of memory that hides physical layout and enables multiplexing, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-2a8240961737891f",
+          "reason": "Proposes a standard address space layout that accommodates growth by placing heap and stack at opposite ends, a substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-2b5aceec557bc53d",
+          "reason": "Connects memory protection to the broader principle of isolation for system reliability, a substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-512da5389fc22610",
+          "reason": "Identifies the performance bottleneck of swapping whole memory images to disk, motivating virtualizing addresses, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-52d5e6c24fa0784e",
+          "reason": "Frames the evolution of OS memory management as a response to user demands for interactivity and efficiency, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-7deffbace7ff8c3f",
+          "reason": "Establishes a tripartite goal set (transparency, efficiency, protection) to guide VM design and evaluation, a substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-a835183bebfae544",
+          "reason": "Frames memory virtualization as the central problem of OS memory management, requiring both mechanism and policy, a substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-c554276005663172",
+          "reason": "Contrasts early simple systems with modern virtual memory to motivate the need for abstraction, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-dad28b8e7fc298e3",
+          "reason": "Links multiprogramming to the necessity of memory protection, a substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-e3b3d984225f3421",
+          "reason": "Demonstrates with a simple program that all user-visible addresses are virtual, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-2c7abcdf11054b35",
+          "reason": "Demonstrates via a counter increment example that instruction interleavings cause lost updates and race conditions, a substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-5a1ef70dc6a5c30f",
+          "reason": "Proposes building synchronization primitives from basic hardware instructions rather than requiring hardware support for every high-level operation, a substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-9e5ec34ed0527281",
+          "reason": "Defines critical section and mutual exclusion as key concepts for writing correct concurrent programs, a substantive normative argument."
+        }
+      ]
+    },
+    {
+      "expected_ids": [
+        "n-4d7200a966cfb450",
+        "n-4e824201e2d4d13f",
+        "n-5c61a792956694ce",
+        "n-65c653ca2fbb26f2",
+        "n-8480f94a5e4c6631",
+        "n-8f11113e160f05fe",
+        "n-bb8cc3e152ddba3f",
+        "n-c1378513e1c7a9f7",
+        "n-edbbcdaf044da62d",
+        "n-efa5d7a59275fdeb",
+        "n-f99e21624479613d",
+        "n-1c4566b1e4f453db",
+        "n-35cf0f4cea27ef56",
+        "n-3c608e6733232b34",
+        "n-5b262ff382b6fd3f",
+        "n-8efd2975ffb574b3",
+        "n-b04da9793342dca8",
+        "n-c8a46ed3fd93b141",
+        "n-d18006f3841a6613",
+        "n-d9ce8cbcadfc0220",
+        "n-dff53422c9b9330c",
+        "n-e5a261f2212363c0",
+        "n-efc3b9329b7842e8",
+        "n-f93bc204aca7430b",
+        "n-fe74e16e97dec6be",
+        "n-60802576f3cd1d80",
+        "n-70c41bba58346805",
+        "n-7a3cd7ca0dd4a6f9",
+        "n-9327c6715003d442",
+        "n-b8ae34487b127095",
+        "n-0b6c7e92a4238b56",
+        "n-28d9371de6911d67",
+        "n-437f5bbebc73a97d",
+        "n-98eba769b660ee36",
+        "n-a2879182d5c6e7a5",
+        "n-e667f428d9b63084",
+        "n-00cd47b1562be054",
+        "n-5edf40c590ec928c",
+        "n-62eea6f059bbb0c4",
+        "n-651de73d5509dbe3",
+        "n-69dcc94bb85d192c",
+        "n-1a51c7f417606941",
+        "n-3ec6c9a29d6b9969",
+        "n-49c24fb09ede329a",
+        "n-b45173218177ed49"
+      ],
+      "reason": "Incomplete or misidentified batch; no decisions from this batch applied",
+      "returned_checks": [
+        {
+          "decision": "retain",
+          "id": "n-4d7200a966cfb450",
+          "reason": "Deriving two partial differential equations for the characteristic function from the law of living force is a distinct substantive theorem."
+        },
+        {
+          "decision": "retain",
+          "id": "n-4e824201e2d4d13f",
+          "reason": "Verifying that the characteristic function method reproduces known equations of motion and conservation laws is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-5c61a792956694ce",
+          "reason": "Separating the motion of a system into center-of-gravity and relative parts with their own characteristic functions is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-65c653ca2fbb26f2",
+          "reason": "Defining a single characteristic function whose partial derivatives yield all integrals of motion is a distinct substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-8480f94a5e4c6631",
+          "reason": "Developing a general perturbation method by adding a correction term to an approximate characteristic function is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-8f11113e160f05fe",
+          "reason": "Formulating the law of varying action by varying endpoints and the energy constant is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-bb8cc3e152ddba3f",
+          "reason": "Specializing the characteristic function to the Newtonian inverse-square law and deriving orbit and time relations is a distinct substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-c1378513e1c7a9f7",
+          "reason": "Providing a general method to express the characteristic function in arbitrary coordinates via kinetic energy transformation is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-edbbcdaf044da62d",
+          "reason": "Extending the characteristic function method to many-body systems using internal coordinates is a distinct substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-efa5d7a59275fdeb",
+          "reason": "Deriving an explicit characteristic function for a binary system with center-of-gravity and relative parts is a distinct substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-f99e21624479613d",
+          "reason": "Introducing an auxiliary function S = V - tH that depends on time and satisfies a single partial differential equation is a distinct substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-1c4566b1e4f453db",
+          "reason": "Arguing that rigid bodies and clocks are approximate and logically circular as foundational concepts is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-35cf0f4cea27ef56",
+          "reason": "Introducing local inertial frames and Gaussian coordinates to describe spacetime in the presence of gravity is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-3c608e6733232b34",
+          "reason": "Presenting empirical evidence for general relativity (perihelion, light deflection, redshift) while noting tentative redshift agreement is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-5b262ff382b6fd3f",
+          "reason": "Adopting Mach's principle as a guiding idea that the metric field should be completely determined by matter is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-8efd2975ffb574b3",
+          "reason": "Proposing affine correlation as a geometric structure to unify gravity and electromagnetism is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-b04da9793342dca8",
+          "reason": "Framing special relativity as a principled adaptation to Maxwell-Lorentz electrodynamics using the light principle is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-c8a46ed3fd93b141",
+          "reason": "Postulating the gravitational field equations as the simplest generally covariant second-order equations is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-d18006f3841a6613",
+          "reason": "Arguing that the relativity principle will survive future theoretical developments as a limiting law is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-d9ce8cbcadfc0220",
+          "reason": "Elevating the requirement of empirical definability to a foundational epistemological criterion for physical concepts is a distinct substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-dff53422c9b9330c",
+          "reason": "Generalizing the relativity principle to all frames using the equivalence principle is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-e5a261f2212363c0",
+          "reason": "Identifying the geodesic equation as the generalization of the law of inertia in curved spacetime is a distinct substantive theorem."
+        },
+        {
+          "decision": "retain",
+          "id": "n-efc3b9329b7842e8",
+          "reason": "Identifying the metric tensor as both the descriptor of spacetime geometry and the gravitational potential is a distinct substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-f93bc204aca7430b",
+          "reason": "Adopting a phenomenological approach to introduce matter as a source term in the field equations is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-fe74e16e97dec6be",
+          "reason": "Setting a criterion that a satisfactory field theory must yield singularity-free solutions for elementary particles is a distinct substantive normative argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-60802576f3cd1d80",
+          "reason": "Demonstrating that adding a child to a merry-go-round reduces angular acceleration under constant torque is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-70c41bba58346805",
+          "reason": "Providing a systematic problem-solving strategy for rotational dynamics is a distinct substantive heuristic."
+        },
+        {
+          "decision": "retain",
+          "id": "n-7a3cd7ca0dd4a6f9",
+          "reason": "Deriving the vector form of the rotational Newton's second law via cross product is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-9327c6715003d442",
+          "reason": "Generalizing the point-mass result to rigid bodies as τ_net = Iα is a distinct substantive theorem."
+        },
+        {
+          "decision": "retain",
+          "id": "n-b8ae34487b127095",
+          "reason": "Deriving the rotational analog of Newton's second law for a point mass is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-0b6c7e92a4238b56",
+          "reason": "Introducing the concept of 'system of interest' to separate external and internal forces is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-28d9371de6911d67",
+          "reason": "Explicitly stating that internal forces cancel due to Newton's third law is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-437f5bbebc73a97d",
+          "reason": "Framing Newton's third law as a symmetry principle with forces always occurring in pairs is a distinct substantive representation."
+        },
+        {
+          "decision": "retain",
+          "id": "n-98eba769b660ee36",
+          "reason": "Clarifying that action-reaction forces act on different bodies and do not cancel is a distinct substantive argument."
+        },
+        {
+          "decision": "retain",
+          "id": "n-a2872d5c6e7a5",
+          "reason": "Distinguishing that a scale measures the force it exerts, not weight directly, is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-e667f428d9b63084",
+          "reason": "Explaining rocket propulsion via reaction force and correcting the misconception about pushing on air is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-00cd47b1562be054",
+          "reason": "Deriving the work-energy theorem from Newton's second law is a distinct substantive theorem."
+        },
+        {
+          "decision": "retain",
+          "id": "n-5edf40c590ec928c",
+          "reason": "Using the work-energy theorem as a computational shortcut over Newton's second law on curved surfaces is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-62eea6f059bbb0c4",
+          "reason": "Explaining off-center bullet penetration difference via residual rotational kinetic energy is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-651de73d5509dbe3",
+          "reason": "Deriving the minimum starting height for a loop-the-loop using the work-energy theorem and centripetal condition is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-69dcc94bb85d192c",
+          "reason": "Using the work-energy theorem inversely to infer average force from motion is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-1a51c7f417606941",
+          "reason": "Using energy conservation to find pendulum speed without solving differential equations is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-3ec6c9a29d6b9969",
+          "reason": "Providing a systematic problem-solving strategy for energy conservation is a distinct substantive method."
+        },
+        {
+          "decision": "retain",
+          "id": "n-49c24fb09ede329a",
+          "reason": "Calculating dissipated mechanical energy without knowing the dissipative force details is a distinct substantive empirical finding."
+        },
+        {
+          "decision": "retain",
+          "id": "n-b45173218177ed49",
+          "reason": "Extending energy conservation to multi-particle systems by summing energies is a distinct substantive theorem."
+        }
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "0be7177a5eb7f52187c0794a0a532cab6ae544fac49369919473e6d676a78cca",
+      "job_id": "d0816a4e5e26f4900c6a3a182e135dd561d3524a20b837ed18c4a390d33b4cd8",
+      "output_hash": "66216a44eb3afb43a9e2336b45bff697d3ccaab932a652afcb5a6ec06c1e266c",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "05b5e889-e99d-4c0b-8e34-4b6e724bc70a",
+      "request_id": "01a1332f25a44e1dc3fbada665faff93",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:0be7177a5eb7f521",
+      "time": "2026-10-13T02:54:49+00:00",
+      "trace_id": "05b5e889-e99d-4c0b-8e34-4b6e724bc70a",
+      "usage": {
+        "completion_tokens": 2528,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 10727,
+        "prompt_tokens": 10727,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 13255
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "c414eea4228fe7fdc691dde59557637e0fa64b13a36ef792f3ef8d183d86a062",
+      "job_id": "f597281d7d0c230401ccf3e351d0ad6bd0d2a892b31825ceceba49d76b884229",
+      "output_hash": "612b1773a52753dc9bd3fa70340a14b1a7db3b940d944bc4bd281cf2484ecf06",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "db20d82d-d965-4419-bc97-fead419cf377",
+      "request_id": "01a1332f25ec135914f699ad82df704f",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:c414eea4228fe7fd",
+      "time": "2026-10-13T02:54:49+00:00",
+      "trace_id": "db20d82d-d965-4419-bc97-fead419cf377",
+      "usage": {
+        "completion_tokens": 2580,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 10571,
+        "prompt_tokens": 10571,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 13151
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "7a73f18ce6900c1452508eb42c86c8c7476ea513ed56795aeacc87e1c06f6b55",
+      "job_id": "b6c3f02f70b661738fb8ff89bf1985ffa605140946c14fb770acbe6bf3bd5037",
+      "output_hash": "baff71a98ee039b66ed5120410805aab19112da61e740a7ddab0e129fe3882c5",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "ebc623b3-97c1-4f79-bb79-48ba677fa9f5",
+      "request_id": "01a1332ffc9ed9026b780cc29e0f7b7c",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:7a73f18ce6900c14",
+      "time": "2026-10-13T02:55:44+00:00",
+      "trace_id": "ebc623b3-97c1-4f79-bb79-48ba677fa9f5",
+      "usage": {
+        "completion_tokens": 2476,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 11384,
+        "prompt_tokens": 11384,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 13860
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "7b707895ed0301063de82df5d4ac601e454dc0cdd086a80b8dfc3a2507968f25",
+      "job_id": "804f8a9412ffc305fca1a0a447856d0196b2dbbe4dc86dc51ac82f92e81cda36",
+      "output_hash": "b92e6ddcd104974a0ef44dece5984be70aeefb15214255fa9f1383ecdcf3a9b9",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "9a1f1928-4ed0-4fa9-abf9-b1a9e0f40be1",
+      "request_id": "01a133300295fda2994dc454e144bcb6",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:7b707895ed030106",
+      "time": "2026-10-13T02:55:46+00:00",
+      "trace_id": "9a1f1928-4ed0-4fa9-abf9-b1a9e0f40be1",
+      "usage": {
+        "completion_tokens": 2510,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 10226,
+        "prompt_tokens": 10482,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "total_tokens": 12992
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "7d0fef66e2c98599c4668f6815b917351a4367f8dce69a10716091b03fe238a2",
+      "job_id": "57312cf931707afe39aa9e91a4f38a49dea4c3c088a2c88bf381c6d364c7baa4",
+      "output_hash": "ee548a27b5f2937bc75deb50ef990c4d2495940034e82a15cde7be6720d42432",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "44275c76-25a4-4c3a-ba57-e64208550a3d",
+      "request_id": "01a13330d5a71ad8ff9bcc8bf366e111",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:7d0fef66e2c98599",
+      "time": "2026-10-13T02:56:40+00:00",
+      "trace_id": "44275c76-25a4-4c3a-ba57-e64208550a3d",
+      "usage": {
+        "completion_tokens": 2443,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 10354,
+        "prompt_tokens": 10354,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 12797
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "881958dcf145cc6402a65dbb14b659630e37539bc19f398ba2a4eeb3332ed4bd",
+      "job_id": "6f1260f3b772a717cc176d3bbecc5b4cfbffb8774fad1aaa5e7a69212e0eff54",
+      "output_hash": "4c02098aca47304ecb6bdbd6e10334fade06c822daeb91d28cead29aa4e59461",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "d6d4502d-3877-40a5-bab7-d5dceedd8edd",
+      "request_id": "01a13330c95c6377f76043a26b45227c",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:881958dcf145cc64",
+      "time": "2026-10-13T02:56:37+00:00",
+      "trace_id": "d6d4502d-3877-40a5-bab7-d5dceedd8edd",
+      "usage": {
+        "completion_tokens": 2691,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 11852,
+        "prompt_tokens": 11852,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 14543
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "27b5602299d8f105a8277a9139c0242f07babcc8a5486dd5c71ff97743a08613",
+      "job_id": "a10823ebbdeaa4c7f7ae9c71df00b125cc3e45b59de3582e83ad062c1179528b",
+      "output_hash": "65e0fff0408baef8248e34abbcbcee976384fd2e1353b88cab2ed24196d099c6",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "6c77efa0-dca9-484b-858f-c2089bc5c363",
+      "request_id": "01a13331aae2775bf7f1ee92bc9467a7",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:27b5602299d8f105",
+      "time": "2026-10-13T02:57:34+00:00",
+      "trace_id": "6c77efa0-dca9-484b-858f-c2089bc5c363",
+      "usage": {
+        "completion_tokens": 1823,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 7486,
+        "prompt_tokens": 7486,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 9309
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "632a6fae9b02a6ff44f9d3707aac1edad0bc39c79831a4c62e63a6c22ac670c8",
+      "job_id": "b83a89841a44ebcee336795722693fbdc6c388946b949db662308652041b116f",
+      "output_hash": "ac02921382c1362dcaf7c3ab1cc0c48d320bf916d5e8b33d85f23fc5a54258f0",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "ba8efb2b-124f-4353-8935-bc6b3f6d6ea8",
+      "request_id": "01a13331b20b65e74cd69c672ece15fd",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:632a6fae9b02a6ff",
+      "time": "2026-10-13T02:57:36+00:00",
+      "trace_id": "ba8efb2b-124f-4353-8935-bc6b3f6d6ea8",
+      "usage": {
+        "completion_tokens": 2447,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 12665,
+        "prompt_tokens": 12665,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 15112
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "aca2220e0c6b168ad1defd64a6b8aba57de47f8f2b30723dc97944d829f81aae",
+      "job_id": "c939acc2849e5ea9e15c634a5e847440e11614c90d9614c38941281563dad7a1",
+      "output_hash": "02994bcea8293c9f94aa164c689169a1a39fb3b59295039d8da8d16987949f57",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "5a680bce-e971-41ce-9b59-4309b25cfa7a",
+      "request_id": "01a133327dfdb46e3bf8d1b8d709e6cb",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:aca2220e0c6b168a",
+      "time": "2026-10-13T02:58:29+00:00",
+      "trace_id": "5a680bce-e971-41ce-9b59-4309b25cfa7a",
+      "usage": {
+        "completion_tokens": 621,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 3325,
+        "prompt_tokens": 3325,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 3946
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "53fd53e3dc06a5fdf82e389026bf2f2b08590430ab2eea668ac6b5a1fc259344",
+      "job_id": "0b6b2e5363d3aef4ecb173dbe7e88e28ef5018f7aedac4862cd9836783b8707c",
+      "output_hash": "a4aa6de6dfdeed3c0e2c5c1785972a76bc0821e65fc6d40e9b7fc5e5b91c328c",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "1d88d150-9117-4e36-b4b4-0fbe920d1551",
+      "request_id": "01a133324259a11119c2db0bb8aa09e2",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:53fd53e3dc06a5fd",
+      "time": "2026-10-13T02:58:13+00:00",
+      "trace_id": "1d88d150-9117-4e36-b4b4-0fbe920d1551",
+      "usage": {
+        "completion_tokens": 2497,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 11959,
+        "prompt_tokens": 11959,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 14456
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "b479b3e078c6af0ae1e4afe296978764ff62c2cca93ecdeb5dee5993fcf139b6",
+      "job_id": "ccfcb0808fff7baf911e41d1461dc6e21cda661de8690d83296dc0ffbb3b5b7e",
+      "output_hash": "82975d8ad9850e66740b7831d0b40848e2701f3ced505d32301c9c2b03632ae5",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "0461a408-444b-4b32-a25c-289a126906d5",
+      "request_id": "01a13332c20ad37e1d4babff94d54699",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:b479b3e078c6af0a",
+      "time": "2026-10-13T02:58:44+00:00",
+      "trace_id": "0461a408-444b-4b32-a25c-289a126906d5",
+      "usage": {
+        "completion_tokens": 2707,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 17431,
+        "prompt_tokens": 17431,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 20138
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "46da8e8123194ac93896102249e60442e4c85da617e71ccef0e67377586d41be",
+      "job_id": "8bc0328613cb3b4859149e62dc87287492dcfa986786e538eaae3e3d1eb5a83e",
+      "output_hash": "748dc6cc0de604308671db37db49a2e4d2fb15b6b091d0c8808d391ecf3604f3",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "82ab5cd9-c629-476a-a0f6-08ae996bcd7d",
+      "request_id": "01a133331af6ea6bd0da9ae2f4758de0",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:46da8e8123194ac9",
+      "time": "2026-10-13T02:59:08+00:00",
+      "trace_id": "82ab5cd9-c629-476a-a0f6-08ae996bcd7d",
+      "usage": {
+        "completion_tokens": 2480,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 14773,
+        "prompt_tokens": 14773,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 17253
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "8b690c3b7c118b4b4e312b785756d285a4e6d5e2221d6df533f02ad319649fef",
+      "job_id": "ed88d9173251624f473d2e71706a6f78d97b516ac5ced70495d17327997c882b",
+      "output_hash": "a132594cf3c81d5955aeb77e67f35f159e7397ec75cb84b398ea8390964d83ee",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "6e7ae9a7-f85b-42b9-8d1d-cc0d9c9315f3",
+      "request_id": "01a13333f75b9df842a06c83a72c8b71",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:8b690c3b7c118b4b",
+      "time": "2026-10-13T03:00:05+00:00",
+      "trace_id": "6e7ae9a7-f85b-42b9-8d1d-cc0d9c9315f3",
+      "usage": {
+        "completion_tokens": 1151,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 6418,
+        "prompt_tokens": 6418,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7569
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "a171b9cbc7b5d279f975357d0f577925f90989168727057608f123971eb9636e",
+      "job_id": "ed03ab94c912e1692fb99f8a51dbb7f316b94e4c6dc08f998763132d5d6875aa",
+      "output_hash": "dddc5d62014e16d3b6496eee7adfe4be2cd9df837b4cc2872931f700c5cc554b",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "c84b1d5d-10f1-42fd-ba01-e05603d53332",
+      "request_id": "01a13333b15624cd06126093f7ddeb59",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:a171b9cbc7b5d279",
+      "time": "2026-10-13T02:59:45+00:00",
+      "trace_id": "c84b1d5d-10f1-42fd-ba01-e05603d53332",
+      "usage": {
+        "completion_tokens": 2772,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 16608,
+        "prompt_tokens": 16608,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 19380
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "cf13bc58650036b45488e3c0be5da7a301e7492d4e40036d026d970bac487039",
+      "job_id": "93ce1f126d2ba775d98c25d6ec862778f2fd05b36a9b908bdc4dade5938c4d04",
+      "output_hash": "0cc696efb32c5b0846e1371493d305881f51fa0a0eeaa733fc9defafe331d7a3",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "10d848d1-7998-49b4-a70f-3d256a080875",
+      "request_id": "01a1333476b47ba9a869ec2b222a8b65",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:cf13bc58650036b4",
+      "time": "2026-10-13T03:00:35+00:00",
+      "trace_id": "10d848d1-7998-49b4-a70f-3d256a080875",
+      "usage": {
+        "completion_tokens": 2523,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 15336,
+        "prompt_tokens": 15336,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 17859
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "3082f4473df83004e4b4273a1d834e4519d7df793700a74db2fcc6bab49db1a2",
+      "job_id": "6815d2b837cc62e7ef97e6df98ab36284ea1734558b37033025730aa45d7ea64",
+      "output_hash": "7fe450ce64776b27edf69472030d97cd7e0ad58ef77161a4ec9cf5c0078148d9",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "2257b74a-25f5-4e01-8d52-ab0903f5e368",
+      "request_id": "01a13334aa399b6d106b34006e95647c",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:3082f4473df83004",
+      "time": "2026-10-13T03:00:51+00:00",
+      "trace_id": "2257b74a-25f5-4e01-8d52-ab0903f5e368",
+      "usage": {
+        "completion_tokens": 2808,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 16188,
+        "prompt_tokens": 16188,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 18996
+      }
+    },
+    {
+      "attempt": 1,
+      "finish_reason": "stop",
+      "input_hash": "303e4f44fd9c72de5103ee9a166dcef303a1944c5ab5c0f93de152cbc7a9a77e",
+      "job_id": "564e71da379b44de1db1e84b112dc99f9a955cb93c2bd929970d7c4c432d023d",
+      "output_hash": "96fc27db07ba839208346100176881414b4fdd393a25b1fd1d7be3c88b2b6c8a",
+      "prompt_hash": "df12bc6525f06301f1888142059f8585594653801a4bbec6b6c4134dc4582239",
+      "provider": "SiliconFlow",
+      "provider_trace_id": "12d8526d-694a-4c3e-ba7f-462dcc956524",
+      "request_id": "01a133354565c3bc1dea4b2340a1c9c4",
+      "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "state": "succeeded",
+      "task": "editorial-exclusion:303e4f44fd9c72de",
+      "time": "2026-10-13T03:01:31+00:00",
+      "trace_id": "12d8526d-694a-4c3e-ba7f-462dcc956524",
+      "usage": {
+        "completion_tokens": 1232,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 8040,
+        "prompt_tokens": 8040,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 9272
+      }
+    }
+  ],
+  "records": 667,
+  "status": "machine editorial triage; not human review or source fidelity approval"
+}

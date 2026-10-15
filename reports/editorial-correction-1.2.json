@@ -1,0 +1,173 @@
+{
+  "applied": {
+    "applied": "38d4cae799026599a86aacdc66339be33757664da6005d0d3567ea92e37006d7",
+    "previous_release": "before-a2d8d3c17ce9",
+    "recheck": [
+      "connection-fcdf89a21f663029",
+      "r-05296ff91e539398",
+      "r-1fb2816df2014b50",
+      "r-303e4f50ca6512d5",
+      "r-34a7b625228e6067",
+      "r-583bdd1f542ff16c",
+      "r-863d11ea08daa4a5",
+      "r-88abc716b89ce970",
+      "r-99c5a72a2866babd",
+      "r-a58f9d0fb7e3aee7",
+      "r-a96f620b04564e4c",
+      "r-b85dfd1e2b10a5df",
+      "r-bb3bfee16ad19975",
+      "r-c4051b7b39599b2b",
+      "r-c8612c78c8cfbc27",
+      "r-d537857b13a20343",
+      "r-d546cec520a4cc6b",
+      "r-ea0db5df5f3194f9",
+      "r-ed269cc03a09fd45",
+      "r-ed5c11c3d1b1421e",
+      "r-ee03b95e58d526d6",
+      "r-f1bf5b9c6d317839"
+    ]
+  },
+  "excluded_contributions": [
+    {
+      "decision_origin": "Pro editorial triage",
+      "id": "n-b95e2d89c9103e48",
+      "reason": "The textbook does not provide specific names or dates for the formal definition.",
+      "title": "Historical note on the formal definition of limits"
+    },
+    {
+      "decision_origin": "Pro editorial triage",
+      "id": "n-83f452dc56d66506",
+      "reason": "The exercises are pedagogical prompts asking students to apply the theorem, not introducing new substantive intellectual moves, theorems, or findings.",
+      "title": "Exercise: using the Mean Value Theorem to prove uniqueness of roots"
+    },
+    {
+      "decision_origin": "Pro editorial triage",
+      "id": "n-9d991e835bb8623f",
+      "reason": "The exercises are pedagogical prompts for constructing counterexamples to reinforce hypotheses, not new substantive results.",
+      "title": "Exercise: continuity and differentiability are necessary hypotheses"
+    },
+    {
+      "decision_origin": "Pro editorial triage",
+      "id": "n-886f389b25779244",
+      "reason": "Only mentions taking an interest in health equity and applying concepts, without any specific substantive intellectual move, finding, or argument.",
+      "title": "Health equity as a field of application for concepts of equity and justice"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-3563bcfd9bcfc731",
+      "reason": "A table describing the range of scales is an overview illustration, without a distinct inference or method.",
+      "title": "Comparative scale table for length, mass, and time"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-7463661ff1f3e35a",
+      "reason": "A generic definition of the scope of physics belongs in topic orientation rather than a separate intellectual contribution.",
+      "title": "Physics as the study of fundamental mechanisms across all scales"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-cf6585982fd7a597",
+      "reason": "A list of professions and technologies using physics does not identify a specific intellectual move.",
+      "title": "Physics as the basis for technology and professional practice"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-be635f017b3cd50b",
+      "reason": "The generic assertion that physics applies at all measurable scales repeats topic orientation rather than establishing a scoped scientific result.",
+      "title": "Laws of physics govern all measurable scales"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-ed822ab8f7e3bc4c",
+      "reason": "The definitions of two disciplines are topic orientation, not a specific scientific intellectual move.",
+      "title": "Anatomy and physiology as complementary but distinct scientific disciplines"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-7da2c4caee0e4bd4",
+      "reason": "The list of anatomical subdisciplines is a field overview rather than a standalone intellectual contribution.",
+      "title": "Gross and microscopic anatomy as complementary scales of structural study"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-e7d276d018b57db1",
+      "reason": "The general statement that physiology uses experiments does not specify an experimental inference or method.",
+      "title": "Physiology relies on carefully designed laboratory experiments"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-23c4fc8a4c75dbb8",
+      "reason": "The range of scales studied by physiologists is a disciplinary overview, not a particular explanatory advance.",
+      "title": "Physiology spans from organ-level to molecular-level analysis"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-3c35fb335429d2fb",
+      "reason": "The list of human-centered computing subfields is a catalog rather than a specific result or argument.",
+      "title": "Human-centered subfields in computer science"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-fcb986933ecc4807",
+      "reason": "A broad introductory definition of computer science is better presented as topic orientation than a contribution card.",
+      "title": "Computer science as the study of algorithms and computing phenomena"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-f8810958fb22f457",
+      "reason": "General advice to view a subject as puzzles rather than facts does not provide a distinct scientific argument in this account.",
+      "title": "Economics as a tool for solving puzzles, not a collection of facts"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-42f3f4637707fa57",
+      "reason": "This particular piecewise-function exercise illustrates an already represented general limit principle; no separate generalization is supplied.",
+      "title": "Limits of piecewise functions and discontinuities"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-b41344541fe1b251",
+      "reason": "This worked limit example does not establish a separate discovery, and Einstein is named for the underlying equation rather than authorship of this textbook limit analysis.",
+      "title": "Application of limits to relativistic mass"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-8e2fe48d4fa573e3",
+      "reason": "A worked differentiation of sin(x^3) repeats the separately represented chain rule rather than adding a distinct general method.",
+      "title": "Limit-based derivation of chain rule for sin(x^3)"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-5252a330029e4ee9",
+      "reason": "Changing a bound dummy variable name is supporting notation within integral explanations, not a separate explanatory advance here.",
+      "title": "Dummy variable in definite integrals"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-09c38d8f1812d79f",
+      "reason": "A worked Taylor expansion of a particular rational function repeats the general Taylor method already represented.",
+      "title": "Taylor series for 1/(2x) at x=2"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-725a6f771922faa0",
+      "reason": "A worked Taylor expansion of logarithm repeats the general method already represented rather than establishing an independent move.",
+      "title": "Taylor polynomials for ln x at x=1"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-9d329dd2b5c6c997",
+      "reason": "Combining standard numerical tools in this single exercise does not supply a separately established general insight.",
+      "title": "Newton's method with Taylor polynomials for ln(2)"
+    },
+    {
+      "decision_origin": "assistant editorial inspection",
+      "id": "n-1f4ff86271096011",
+      "reason": "A single frequency-period calculation classifying ultrasound is an exercise, not a separate scientific inference.",
+      "title": "Applying frequency-period relation to determine ultrasound frequency"
+    }
+  ],
+  "human_review": false,
+  "initial_screening_exclusions_not_automatically_applied": true,
+  "rationale": "The initial screen overrejected standard classical content. Calibrated triage retained such content; explicit concrete exercise/generic-overview exclusions were inspected separately. All old record versions remain reproducible."
+}

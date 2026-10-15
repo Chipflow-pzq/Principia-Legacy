@@ -1,0 +1,66 @@
+{
+  "admission": {
+    "new_contributions": 10,
+    "new_records": 29,
+    "new_relations": 4,
+    "plan_total_contributions": 10,
+    "plan_total_relations": 4
+  },
+  "completed_at": "2026-10-13T02:32:27+00:00",
+  "estimate": {
+    "assignments": 2,
+    "maximum_output_tokens_before_retries": 65536,
+    "maximum_parallel_requests": 2,
+    "normal_calls_before_retries": 4,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged."
+  },
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "outcomes": [
+    {
+      "assignment_id": "cb5fb1ed18b6b0429280a993d0c91f4630de06b8225d72febf105b325f1dd3cc",
+      "depth": 0,
+      "dossier": "C1002",
+      "error": "<urlopen error timed out>",
+      "need": "Turing’s 1936 machine model, universal computation and undecidability arguments. Preserve the exact problem stated; do not replace circle-freeness or the Entscheidungsproblem with a casually attributed modern halting theorem.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "University-hosted copy of the original scientific paper.",
+      "state": "failed",
+      "time": "2026-10-13T02:29:20+00:00",
+      "url": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "244c696f895021a6085a75a4b3a934a75cf47c7ccf8d7994fc1a8dc16e336a5d",
+      "depth": 0,
+      "dossier": "C1003",
+      "gaps": [
+        "The source does not provide a rigorous proof of the sampling theorem, referencing a later paper instead.",
+        "The source does not fully address the case of non-ergodic sources in the main text, only in an appendix.",
+        "The source does not provide explicit coding schemes for approaching capacity in general noisy channels."
+      ],
+      "need": "Shannon’s 1948 mathematical theory: information, entropy, source coding, channel capacity and precise communication limits. Distinguish communication uncertainty from semantic meaning and normative values.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 4,
+        "proposed_nodes": 16,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions independent formulations of the capacity formula by Wiener, Tuller, and Sullivan, but does not provide details of their work.",
+        "attribution": "The source credits Hartley and Nyquist for prior work, and Tukey for suggesting the term 'bit'. It also mentions Fano's independent discovery of a similar coding method.",
+        "limitations": "The source notes that the proof of Theorem 11 is non-constructive and that explicit coding schemes are difficult to find. It also acknowledges that the continuous case is treated with less rigor."
+      },
+      "source_discovery": "University-hosted copy of the original scientific paper.",
+      "source_title": "A Mathematical Theory of Communication",
+      "state": "succeeded",
+      "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+    }
+  ],
+  "plan_hash": "285dce9858bc2569c2ac972adfe272289bba4d1984e97342aaf275b52caf2bc6",
+  "plan_id": "computing-classics-1-2",
+  "started_at": "2026-10-13T02:29:06+00:00"
+}

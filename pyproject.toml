@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "principia-legacy"
+version = "1.2.0"
+description = "A local-first living atlas of human understanding"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+authoring = ["pypdf>=5,<7", "jsonschema>=4,<5"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+principia = "principia_legacy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests", "hosting/tests"]

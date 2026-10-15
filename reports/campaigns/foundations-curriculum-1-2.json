@@ -1,0 +1,88 @@
+{
+  "active_batch": "curriculum-1-2-001",
+  "completed_batches": [
+    "curriculum-1-2-001"
+  ],
+  "counts": {
+    "contribution": 2686,
+    "relation": 2254,
+    "review": 5162,
+    "source": 236
+  },
+  "coverage": {
+    "biology_medicine": {
+      "contributions": 572,
+      "dossiers": 30,
+      "initial_neighborhoods": 12,
+      "macro_checklist_coverage": 0.9666666666666667,
+      "populated_topics": 30
+    },
+    "computer_science": {
+      "contributions": 603,
+      "dossiers": 32,
+      "initial_neighborhoods": 14,
+      "macro_checklist_coverage": 0.9479166666666666,
+      "populated_topics": 31
+    },
+    "economics": {
+      "contributions": 485,
+      "dossiers": 30,
+      "initial_neighborhoods": 12,
+      "macro_checklist_coverage": 0.9777777777777777,
+      "populated_topics": 30
+    },
+    "mathematics": {
+      "contributions": 522,
+      "dossiers": 30,
+      "initial_neighborhoods": 20,
+      "macro_checklist_coverage": 0.9666666666666667,
+      "populated_topics": 29
+    },
+    "physics": {
+      "contributions": 504,
+      "dossiers": 31,
+      "initial_neighborhoods": 14,
+      "macro_checklist_coverage": 0.989247311827957,
+      "populated_topics": 31
+    }
+  },
+  "id": "foundations-curriculum-1-2",
+  "last_batch_failed_assignments": 1,
+  "plan_hash": "f37c37f43cd3c84002315b7c78f63f9a0a4e79691bdb8d338c5261410daa2737",
+  "shortfall_by_subject": {
+    "biology_medicine": {
+      "populated_topics": 170,
+      "unique_primary_subject_insights": 1428
+    },
+    "computer_science": {
+      "populated_topics": 169,
+      "unique_primary_subject_insights": 1397
+    },
+    "economics": {
+      "populated_topics": 170,
+      "unique_primary_subject_insights": 1515
+    },
+    "mathematics": {
+      "populated_topics": 171,
+      "unique_primary_subject_insights": 1478
+    },
+    "physics": {
+      "populated_topics": 169,
+      "unique_primary_subject_insights": 1496
+    }
+  },
+  "started_at": "2026-10-13T02:40:52+00:00",
+  "state": "bounded_run_complete",
+  "updated_at": "2026-10-13T03:12:16+00:00",
+  "usage": {
+    "completion_tokens": 3084421,
+    "cost_status": "Account charges managed manually by owner; tokens are receipts, not an exact bill.",
+    "interruption_markers": 1,
+    "planning_allowance_usd": 300,
+    "prompt_tokens": 20518374,
+    "requests": 1077,
+    "successful": 986,
+    "unknown_possible_charge": 55,
+    "unreceipted_interruption_upper_bound": 4
+  }
+}

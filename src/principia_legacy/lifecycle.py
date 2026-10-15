@@ -1,0 +1,218 @@
+"""Explicit correction patches and revision-bound human review."""
+
+from pathlib import Path
+from .common import digest, now, read_json, seal, write_json, write_lines
+from .records import validate
+from .storage import corpus, latest_records, manifest
+
+
+def impact(root, target, revision=None):
+    records = latest_records(corpus(root))
+    direct = []
+    for r in records:
+        if r["type"] == "relation" and any(
+            x["id"] == target and (revision is None or x["revision"] == revision)
+            for x in [*r["premises"], r["conclusion"]]
+        ):
+            direct.append(r["id"])
+        if r["type"] in ("contribution", "relation") and any(
+            a["source_id"] == target
+            and (revision is None or a["source_revision"] == revision)
+            for a in r.get("anchors", [])
+        ):
+            direct.append(r["id"])
+    affected = set(direct)
+    for r in records:
+        if r["type"] == "relation" and any(
+            x["id"] in affected for x in [*r["premises"], r["conclusion"]]
+        ):
+            affected.add(r["id"])
+    dossiers = sorted(
+        {
+            d
+            for r in records
+            if r["id"] in affected | {target}
+            for d in r.get("dossiers", [])
+        }
+    )
+    shared = read_json(Path(root) / "manifests/topic_memberships.json", [])
+    navigation_recheck = [
+        m
+        for m in shared
+        if m["contribution"]["id"] in affected | {target}
+        or any(
+            a["source_id"] == target
+            and (revision is None or a["source_revision"] == revision)
+            for a in m.get("anchors", [])
+        )
+    ]
+    dossiers = sorted(set(dossiers) | {m["topic_id"] for m in navigation_recheck})
+    return {
+        "target": target,
+        "revision": revision,
+        "direct_dependents": sorted(set(direct)),
+        "recheck": sorted(affected),
+        "affected_dossiers": dossiers,
+        "navigation_recheck": [
+            {"topic_id": m["topic_id"], "contribution": m["contribution"]}
+            for m in navigation_recheck
+        ],
+        "policy": "Recheck dependent interpretations; do not automatically reverse conclusions.",
+    }
+
+
+def prepare_patch(root, patch):
+    root = Path(root)
+    if (
+        not patch.get("reason")
+        or not isinstance(patch.get("records"), list)
+        or not patch["records"]
+    ):
+        raise ValueError("Patch needs reason and nonempty records")
+    existing = corpus(root)
+    latest = {r["id"]: r for r in latest_records(existing)}
+    changes = []
+    affected = set()
+    for candidate in patch["records"]:
+        r = dict(candidate)
+        if r.get("type") == "review":
+            raise ValueError("Use the explicit review command for review records")
+        old = latest.get(r.get("id"))
+        expected = old["revision"] + 1 if old else 1
+        if r.get("revision") != expected:
+            raise ValueError("Patch revision must be the next revision")
+        if old and patch.get("base_hashes", {}).get(old["id"]) != old["content_hash"]:
+            raise ValueError("Patch base hash missing or stale")
+        if r.get("type") in ("contribution", "relation"):
+            r.update(
+                publication_state="candidate",
+                machine_screening="not_run",
+                human_review="not_reviewed",
+            )
+        r["change_reason"] = patch["reason"]
+        seal(r)
+        changes.append(r)
+        if old:
+            affected.update(impact(root, old["id"], old["revision"])["recheck"])
+    changed = {r["id"] for r in changes}
+    for id in sorted(affected - changed):
+        old = latest[id]
+        r = dict(old)
+        r.update(
+            revision=old["revision"] + 1,
+            publication_state="quarantined",
+            machine_screening="not_run",
+            human_review="not_reviewed",
+            change_reason="Supporting record changed; requires recheck.",
+        )
+        seal(r)
+        changes.append(r)
+    errors = validate([*existing, *changes])
+    if errors:
+        raise ValueError("\n".join(errors[:30]))
+    return {
+        "reason": patch["reason"],
+        "base_corpus_hash": digest(existing),
+        "records": changes,
+        "impact": sorted(affected),
+        "generated_at": now(),
+        "status": "proposed",
+    }
+
+
+def apply_patch(root, patch_path):
+    root = Path(root)
+    patch = read_json(patch_path)
+    if patch.get("status") != "proposed":
+        raise ValueError("Apply a patch produced by propose")
+    existing = corpus(root)
+    if digest(existing) != patch["base_corpus_hash"]:
+        raise ValueError("Corpus changed since proposal; regenerate the patch")
+    errors = validate([*existing, *patch["records"]])
+    if errors:
+        raise ValueError("\n".join(errors))
+    # Preserve current state before applying; snapshots pin complete revisions.
+    before = manifest(root, "before-" + digest(existing)[:12])
+    dest = root / "manifests/releases" / (before["release_id"] + ".json")
+    if not dest.exists():
+        write_json(dest, before)
+    patch_id = digest(patch)
+    write_lines(root / "corpus/patches" / f"{patch_id}.jsonl", patch["records"])
+    write_json(
+        root / "manifests/patches" / f"{patch_id}.json",
+        {
+            "reason": patch["reason"],
+            "impact": patch["impact"],
+            "applied_at": now(),
+            "record_refs": [
+                {"id": r["id"], "revision": r["revision"]} for r in patch["records"]
+            ],
+        },
+    )
+    return {
+        "applied": patch_id,
+        "recheck": patch["impact"],
+        "previous_release": before["release_id"],
+    }
+
+
+def human_review(
+    root,
+    target,
+    revision,
+    reviewer,
+    attestation_path,
+    scope="editorial",
+    judgment="accepted",
+):
+    if scope not in ("editorial", "domain_expert") or judgment not in (
+        "accepted",
+        "disputed",
+        "rejected",
+    ):
+        raise ValueError("Invalid review scope/judgment")
+    attestation = read_json(attestation_path)
+    if (
+        attestation.get("reviewer_identity") != reviewer
+        or attestation.get("target") != target
+        or attestation.get("revision") != revision
+        or attestation.get("human_action") is not True
+        or not attestation.get("rationale")
+    ):
+        raise ValueError(
+            "Attestation must identify the explicit human action, target, revision, reviewer, and rationale"
+        )
+    record = next(
+        (r for r in corpus(root) if r["id"] == target and r["revision"] == revision),
+        None,
+    )
+    if not record:
+        raise ValueError("Review target not found")
+    if attestation.get("content_hash") != record["content_hash"]:
+        raise ValueError("Attestation hash does not match target")
+    r = seal(
+        {
+            "id": "human-review-" + digest(attestation)[:20],
+            "type": "review",
+            "schema_version": 1,
+            "revision": 1,
+            "target": {
+                "id": target,
+                "revision": revision,
+                "content_hash": record["content_hash"],
+            },
+            "reviewer_type": "human",
+            "reviewer_identity": reviewer,
+            "scope": scope,
+            "judgment": judgment,
+            "rationale": attestation["rationale"],
+            "evidence_checked": attestation.get("evidence_checked", []),
+            "time": now(),
+            "human_attestation": attestation,
+        }
+    )
+    dest = Path(root) / "corpus/reviews" / f"{r['id']}.jsonl"
+    if dest.exists():
+        raise ValueError("This attestation already has a review record")
+    write_lines(dest, [r])
+    return r

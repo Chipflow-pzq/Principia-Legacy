@@ -1,0 +1,185 @@
+{
+  "applied_at": "2026-10-13T02:09:40+00:00",
+  "impact": [
+    "r-0f649dbd2b405674",
+    "r-17ccb5c71839234f",
+    "r-27bb1000adf94347",
+    "r-4090ad8e2c5a51ae",
+    "r-4ffcdcdf2655fee0",
+    "r-50f2bcb764debb0e",
+    "r-62db0eba3016a326",
+    "r-8204301f2bb65e74",
+    "r-8418ab9a8de645e3",
+    "r-9157f83b1f71b345",
+    "r-979d53ac4478b158",
+    "r-a4d0fbaecbd14981",
+    "r-aea39ac3f836ce46",
+    "r-bd541ec1fe271399",
+    "r-c12ce821699e58e0",
+    "r-c2c029fd3220df49",
+    "r-d37e8987b5a0d63d",
+    "r-dd299511a573337b",
+    "r-deef0eb042c001b0",
+    "r-ed895fe60bc8c911",
+    "r-eebac23f588773f8"
+  ],
+  "reason": "Classical calibration: distinguish dated scientific opinions and textbook exposition from current findings and original independent discovery.",
+  "record_refs": [
+    {
+      "id": "n-1be553c18cad7206",
+      "revision": 2
+    },
+    {
+      "id": "n-1c4566b1e4f453db",
+      "revision": 2
+    },
+    {
+      "id": "n-35cf0f4cea27ef56",
+      "revision": 2
+    },
+    {
+      "id": "n-3c608e6733232b34",
+      "revision": 2
+    },
+    {
+      "id": "n-5b262ff382b6fd3f",
+      "revision": 2
+    },
+    {
+      "id": "n-7c714248f9589b4f",
+      "revision": 2
+    },
+    {
+      "id": "n-8efd2975ffb574b3",
+      "revision": 2
+    },
+    {
+      "id": "n-b04da9793342dca8",
+      "revision": 2
+    },
+    {
+      "id": "n-c8a46ed3fd93b141",
+      "revision": 2
+    },
+    {
+      "id": "n-d18006f3841a6613",
+      "revision": 2
+    },
+    {
+      "id": "n-d9ce8cbcadfc0220",
+      "revision": 2
+    },
+    {
+      "id": "n-dff53422c9b9330c",
+      "revision": 2
+    },
+    {
+      "id": "n-e1f056cf5ec2f020",
+      "revision": 2
+    },
+    {
+      "id": "n-e5a261f2212363c0",
+      "revision": 2
+    },
+    {
+      "id": "n-efc3b9329b7842e8",
+      "revision": 2
+    },
+    {
+      "id": "n-f93bc204aca7430b",
+      "revision": 2
+    },
+    {
+      "id": "n-f9a005cb40fe288b",
+      "revision": 2
+    },
+    {
+      "id": "n-fe74e16e97dec6be",
+      "revision": 2
+    },
+    {
+      "id": "r-0f649dbd2b405674",
+      "revision": 2
+    },
+    {
+      "id": "r-17ccb5c71839234f",
+      "revision": 2
+    },
+    {
+      "id": "r-27bb1000adf94347",
+      "revision": 2
+    },
+    {
+      "id": "r-4090ad8e2c5a51ae",
+      "revision": 2
+    },
+    {
+      "id": "r-4ffcdcdf2655fee0",
+      "revision": 2
+    },
+    {
+      "id": "r-50f2bcb764debb0e",
+      "revision": 2
+    },
+    {
+      "id": "r-62db0eba3016a326",
+      "revision": 2
+    },
+    {
+      "id": "r-8204301f2bb65e74",
+      "revision": 2
+    },
+    {
+      "id": "r-8418ab9a8de645e3",
+      "revision": 2
+    },
+    {
+      "id": "r-9157f83b1f71b345",
+      "revision": 2
+    },
+    {
+      "id": "r-979d53ac4478b158",
+      "revision": 2
+    },
+    {
+      "id": "r-a4d0fbaecbd14981",
+      "revision": 2
+    },
+    {
+      "id": "r-aea39ac3f836ce46",
+      "revision": 2
+    },
+    {
+      "id": "r-bd541ec1fe271399",
+      "revision": 2
+    },
+    {
+      "id": "r-c12ce821699e58e0",
+      "revision": 2
+    },
+    {
+      "id": "r-c2c029fd3220df49",
+      "revision": 2
+    },
+    {
+      "id": "r-d37e8987b5a0d63d",
+      "revision": 2
+    },
+    {
+      "id": "r-dd299511a573337b",
+      "revision": 2
+    },
+    {
+      "id": "r-deef0eb042c001b0",
+      "revision": 2
+    },
+    {
+      "id": "r-ed895fe60bc8c911",
+      "revision": 2
+    },
+    {
+      "id": "r-eebac23f588773f8",
+      "revision": 2
+    }
+  ]
+}

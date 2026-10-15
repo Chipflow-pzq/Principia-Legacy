@@ -1,0 +1,39 @@
+{
+  "receipt": {
+    "attempt": 1,
+    "finish_reason": "stop",
+    "input_hash": "1a991dcb9e6389145cc5c7c78e1edb95ecbb92499aa294ed663677bddf6d3f81",
+    "job_id": "af20b399e9522b7c87d606a5e53971bf644f113bba8da5c135164582723e268f",
+    "output_hash": "0561eb478068d816f9ced77cc3f38d3d3931c5e54d596b01cdef784bb1fd01cf",
+    "prompt_hash": "4a303d34a87494e40753c6af01f063cb13a3e7677c11286a36c77b01b15bba2a",
+    "provider": "SiliconFlow",
+    "provider_trace_id": "7a2ee707-d73e-4087-9e08-a18b8dffdcbe",
+    "request_id": "01a1304460f8e8ade92ae654ec0910dc",
+    "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "state": "succeeded",
+    "task": "calibration-missing-id-repair",
+    "time": "2026-10-12T13:19:09+00:00",
+    "trace_id": "7a2ee707-d73e-4087-9e08-a18b8dffdcbe",
+    "usage": {
+      "completion_tokens": 214,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3978,
+      "prompt_tokens": 3978,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 4192
+    }
+  },
+  "result": {
+    "id": "r-78d8d52a07c27bf0",
+    "judgment": "supported",
+    "reason": "The relation claims that residual learning enables bottleneck architectures for deeper networks. The premise (n-db91fa68ed42f857) describes the residual learning reformulation, and the conclusion (n-eb793c7bd4e7ae3c) describes the bottleneck residual block. The provided evidence passage (anchor p9) explicitly states: 'Identity shortcuts are particularly important for not increasing the complexity of the bottleneck architectures that are introduced below' and describes the bottleneck design using 1x1, 3x3, and 1x1 convolutions, noting that 'parameter-free identity shortcuts are particularly important for the bottleneck architectures.' This directly supports the generalization relationship: the residual framework (with identity shortcuts) is what makes the efficient bottleneck design feasible, as replacing identity shortcuts with projections would double complexity. The warrant aligns with the evidence, and the scope matches the content of both endpoints."
+  },
+  "time": "2026-10-12T13:19:16+00:00",
+  "timing": "Additional exact-ID recheck performed during release verification, after broad expansion; does not change or erase original calibration outcome."
+}

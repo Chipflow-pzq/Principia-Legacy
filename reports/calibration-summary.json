@@ -1,0 +1,24 @@
+{
+  "editorial_exclusions": 12,
+  "exact_id_responses": 59,
+  "exact_id_responses_after_recheck": 60,
+  "finding": "Model screening admitted routine details. Extraction and checking prompts strengthened; routine nodes and incident edges quarantined. One model-returned ID did not match and is not counted as checked.",
+  "late_identity_recheck": {
+    "id": "r-78d8d52a07c27bf0",
+    "judgment": "supported",
+    "reason": "The relation claims that residual learning enables bottleneck architectures for deeper networks. The premise (n-db91fa68ed42f857) describes the residual learning reformulation, and the conclusion (n-eb793c7bd4e7ae3c) describes the bottleneck residual block. The provided evidence passage (anchor p9) explicitly states: 'Identity shortcuts are particularly important for not increasing the complexity of the bottleneck architectures that are introduced below' and describes the bottleneck design using 1x1, 3x3, and 1x1 convolutions, noting that 'parameter-free identity shortcuts are particularly important for the bottleneck architectures.' This directly supports the generalization relationship: the residual framework (with identity shortcuts) is what makes the efficient bottleneck design feasible, as replacing identity shortcuts with projections would double complexity. The warrant aligns with the evidence, and the scope matches the content of both endpoints."
+  },
+  "method": "Separate Pro model source-grounded calibration; not human validation",
+  "missing_ids": [],
+  "original_missing_ids": [
+    "r-78d8d52a07c27bf0"
+  ],
+  "sample_nodes": 20,
+  "sample_relations": 40,
+  "status": "calibrated_with_documented_limitations",
+  "supported_by_model": 59,
+  "timing_note": "The original pre-expansion pass had 59 matching IDs; the remaining relation received a separate late recheck during release verification.",
+  "unrecognized_ids": [
+    "r-78d52a07c27bf0"
+  ]
+}

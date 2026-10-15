@@ -1,0 +1,215 @@
+{
+  "book": "Interactive Linear Algebra",
+  "source_hash": "f97626f88e6b4d5d9afc9c00c0f246c60222192a1b5ae13384d73ea39b4bd355",
+  "status": "Scouted source sections, not admitted claims",
+  "subject": "mathematics",
+  "title": "Interactive Linear Algebra",
+  "topics": [
+    {
+      "area": "Linear algebra",
+      "title": "Up",
+      "url": "https://textbooks.math.gatech.edu/ila/index.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Systems of Linear Equations: Algebra",
+      "url": "https://textbooks.math.gatech.edu/ila/chap-algebra.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Systems of Linear Equations",
+      "url": "https://textbooks.math.gatech.edu/ila/systems-of-eqns.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Row Reduction",
+      "url": "https://textbooks.math.gatech.edu/ila/row-reduction.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Parametric Form",
+      "url": "https://textbooks.math.gatech.edu/ila/parametric-form.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Systems of Linear Equations: Geometry",
+      "url": "https://textbooks.math.gatech.edu/ila/chap-geometry.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Vectors",
+      "url": "https://textbooks.math.gatech.edu/ila/vectors.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Vector Equations and Spans",
+      "url": "https://textbooks.math.gatech.edu/ila/spans.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Matrix Equations",
+      "url": "https://textbooks.math.gatech.edu/ila/matrix-equations.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Solution Sets",
+      "url": "https://textbooks.math.gatech.edu/ila/solution-sets.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Linear Independence",
+      "url": "https://textbooks.math.gatech.edu/ila/linear-independence.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Subspaces",
+      "url": "https://textbooks.math.gatech.edu/ila/subspaces.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Basis and Dimension",
+      "url": "https://textbooks.math.gatech.edu/ila/dimension.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Bases as Coordinate Systems",
+      "url": "https://textbooks.math.gatech.edu/ila/bases-as-coord-systems.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "The Rank Theorem",
+      "url": "https://textbooks.math.gatech.edu/ila/rank-thm.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Linear Transformations and Matrix Algebra",
+      "url": "https://textbooks.math.gatech.edu/ila/chap-matrices.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Matrix Transformations",
+      "url": "https://textbooks.math.gatech.edu/ila/matrix-transformations.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "One-to-one and Onto Transformations",
+      "url": "https://textbooks.math.gatech.edu/ila/one-to-one-onto.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Linear Transformations",
+      "url": "https://textbooks.math.gatech.edu/ila/linear-transformations.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Matrix Multiplication",
+      "url": "https://textbooks.math.gatech.edu/ila/matrix-multiplication.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Matrix Inverses",
+      "url": "https://textbooks.math.gatech.edu/ila/matrix-inverses.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "The Invertible Matrix Theorem",
+      "url": "https://textbooks.math.gatech.edu/ila/invertible-matrix-thm.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Determinants",
+      "url": "https://textbooks.math.gatech.edu/ila/chap-determinant.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Determinants: Definition",
+      "url": "https://textbooks.math.gatech.edu/ila/determinants-definitions-properties.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Cofactor Expansions",
+      "url": "https://textbooks.math.gatech.edu/ila/determinants-cofactors.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Determinants and Volumes",
+      "url": "https://textbooks.math.gatech.edu/ila/determinants-volumes.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Eigenvalues and Eigenvectors",
+      "url": "https://textbooks.math.gatech.edu/ila/chap-eigenvalues.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Eigenvalues and Eigenvectors",
+      "url": "https://textbooks.math.gatech.edu/ila/eigenvectors.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "The Characteristic Polynomial",
+      "url": "https://textbooks.math.gatech.edu/ila/characteristic-polynomial.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Similarity",
+      "url": "https://textbooks.math.gatech.edu/ila/similarity.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Diagonalization",
+      "url": "https://textbooks.math.gatech.edu/ila/diagonalization.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Complex Eigenvalues",
+      "url": "https://textbooks.math.gatech.edu/ila/complex-eigenvalues.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Stochastic Matrices",
+      "url": "https://textbooks.math.gatech.edu/ila/stochastic-matrices.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Orthogonality",
+      "url": "https://textbooks.math.gatech.edu/ila/chap-orthogonality.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Dot Products and Orthogonality",
+      "url": "https://textbooks.math.gatech.edu/ila/dot-product.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Orthogonal Complements",
+      "url": "https://textbooks.math.gatech.edu/ila/orthogonal-complements.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Orthogonal Projection",
+      "url": "https://textbooks.math.gatech.edu/ila/projections.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Orthogonal Sets",
+      "url": "https://textbooks.math.gatech.edu/ila/orthogonal-sets.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "The Method of Least Squares",
+      "url": "https://textbooks.math.gatech.edu/ila/least-squares.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Complex Numbers",
+      "url": "https://textbooks.math.gatech.edu/ila/complex-numbers.html"
+    },
+    {
+      "area": "Linear algebra",
+      "title": "Next",
+      "url": "https://textbooks.math.gatech.edu/ila/colophon-1.html"
+    }
+  ],
+  "url": "https://textbooks.math.gatech.edu/ila/"
+}

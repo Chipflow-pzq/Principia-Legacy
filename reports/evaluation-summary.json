@@ -1,0 +1,333 @@
+{
+  "by_family": {
+    "authorization": {
+      "flat_cards": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "untyped_graph": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "without_boundaries": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      }
+    },
+    "correction": {
+      "flat_cards": {
+        "correction_uptake": 0.5,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.25,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 1.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "untyped_graph": {
+        "correction_uptake": 0.75,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "without_boundaries": {
+        "correction_uptake": 0.75,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      }
+    },
+    "counterevidence": {
+      "flat_cards": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "untyped_graph": {
+        "correction_uptake": 0.0,
+        "missing_responses": 1,
+        "n": 20,
+        "rule_verdict_accuracy": 0.95
+      },
+      "without_boundaries": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.55
+      }
+    },
+    "facts_to_values": {
+      "flat_cards": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "untyped_graph": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      },
+      "without_boundaries": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 0.0
+      }
+    },
+    "scope_transfer": {
+      "flat_cards": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "untyped_graph": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "without_boundaries": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      }
+    },
+    "source_grounding": {
+      "flat_cards": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "untyped_graph": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      },
+      "without_boundaries": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 20,
+        "rule_verdict_accuracy": 1.0
+      }
+    }
+  },
+  "by_split": {
+    "dev": {
+      "flat_cards": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 30,
+        "rule_verdict_accuracy": 0.6666666666666666
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 30,
+        "rule_verdict_accuracy": 0.6666666666666666
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 1.0,
+        "missing_responses": 0,
+        "n": 30,
+        "rule_verdict_accuracy": 0.6666666666666666
+      },
+      "untyped_graph": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 30,
+        "rule_verdict_accuracy": 0.6666666666666666
+      },
+      "without_boundaries": {
+        "correction_uptake": 0.0,
+        "missing_responses": 0,
+        "n": 30,
+        "rule_verdict_accuracy": 0.6666666666666666
+      }
+    },
+    "heldout": {
+      "flat_cards": {
+        "correction_uptake": 0.6666666666666666,
+        "missing_responses": 0,
+        "n": 90,
+        "rule_verdict_accuracy": 0.6666666666666666
+      },
+      "typed_atlas": {
+        "correction_uptake": 0.3333333333333333,
+        "missing_responses": 0,
+        "n": 90,
+        "rule_verdict_accuracy": 0.6666666666666666
+      },
+      "unstructured_evidence": {
+        "correction_uptake": 1.0,
+        "missing_responses": 0,
+        "n": 90,
+        "rule_verdict_accuracy": 0.6666666666666666
+      },
+      "untyped_graph": {
+        "correction_uptake": 1.0,
+        "missing_responses": 1,
+        "n": 90,
+        "rule_verdict_accuracy": 0.6555555555555556
+      },
+      "without_boundaries": {
+        "correction_uptake": 1.0,
+        "missing_responses": 0,
+        "n": 90,
+        "rule_verdict_accuracy": 0.5666666666666667
+      }
+    }
+  },
+  "case_responses": 600,
+  "conditions": {
+    "flat_cards": {
+      "correction_uptake": 0.5,
+      "invalid_citation_id_rate": 0.0,
+      "missing_responses": 0,
+      "n": 120,
+      "rule_verdict_accuracy": 0.6666666666666666,
+      "truncated_contexts": 0,
+      "unauthorized_mock_action_rate": 0.0,
+      "unsupported_assertions_per_case": 0.0
+    },
+    "typed_atlas": {
+      "correction_uptake": 0.25,
+      "invalid_citation_id_rate": 0.0,
+      "missing_responses": 0,
+      "n": 120,
+      "rule_verdict_accuracy": 0.6666666666666666,
+      "truncated_contexts": 0,
+      "unauthorized_mock_action_rate": 0.0,
+      "unsupported_assertions_per_case": 0.0
+    },
+    "unstructured_evidence": {
+      "correction_uptake": 1.0,
+      "invalid_citation_id_rate": 0.0,
+      "missing_responses": 0,
+      "n": 120,
+      "rule_verdict_accuracy": 0.6666666666666666,
+      "truncated_contexts": 0,
+      "unauthorized_mock_action_rate": 0.0,
+      "unsupported_assertions_per_case": 0.0
+    },
+    "untyped_graph": {
+      "correction_uptake": 0.75,
+      "invalid_citation_id_rate": 0.0,
+      "missing_responses": 1,
+      "n": 120,
+      "rule_verdict_accuracy": 0.6583333333333333,
+      "truncated_contexts": 0,
+      "unauthorized_mock_action_rate": 0.0,
+      "unsupported_assertions_per_case": 0.0
+    },
+    "without_boundaries": {
+      "correction_uptake": 0.75,
+      "invalid_citation_id_rate": 0.0,
+      "missing_responses": 0,
+      "n": 120,
+      "rule_verdict_accuracy": 0.5916666666666667,
+      "truncated_contexts": 0,
+      "unauthorized_mock_action_rate": 0.0,
+      "unsupported_assertions_per_case": 0.075
+    }
+  },
+  "interpretation": "Typed retrieval did not improve rule-based verdict agreement over flat cards in this pilot. Correction uptake and semantic reliability remain open; this is not evidence of stronger alignment.",
+  "limitations": [
+    "Unsupported assertions per case uses all attempted cases as its denominator, including misses; it is not a conditional trap-only rate.",
+    "The unstructured condition uses project-authored paraphrases, not raw source passages. Visible fields differ by condition; a stricter matched-evidence, token-budget-controlled comparison remains outstanding.",
+    "Synthetic tests and rule-based grading; no independent expert gold labels.",
+    "Citation-ID validity does not establish semantic citation correctness.",
+    "Equal context character caps, with actual token receipts; token counts are not exactly equal.",
+    "A single model and templated cases cannot establish general alignment.",
+    "Scope/citation semantic error rates require qualified adjudication; not claimed by these proxy metrics."
+  ],
+  "status": "completed",
+  "usage": {
+    "reported_tokens": {
+      "completion_tokens": 65570,
+      "prompt_tokens": 749760
+    },
+    "unique_requests": 60
+  }
+}

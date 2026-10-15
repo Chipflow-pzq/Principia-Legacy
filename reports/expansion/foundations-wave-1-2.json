@@ -1,0 +1,1883 @@
+{
+  "admission": {
+    "new_contributions": 590,
+    "new_records": 2178,
+    "new_relations": 469,
+    "plan_total_contributions": 590,
+    "plan_total_relations": 469
+  },
+  "completed_at": "2026-10-13T02:29:02+00:00",
+  "estimate": {
+    "assignments": 60,
+    "maximum_output_tokens_before_retries": 1966080,
+    "maximum_parallel_requests": 4,
+    "normal_calls_before_retries": 120,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged."
+  },
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "outcomes": [
+    {
+      "admission": "admitted",
+      "assignment_id": "904840cd18b48b2ffa3c22067a0ff46c1e8113af83c344767e5505ad0bba61eb",
+      "depth": 0,
+      "dossier": "M1101",
+      "gaps": [
+        "The source does not identify who first formulated the formal definition of a limit in the late 19th century.",
+        "The source does not provide historical details about the development of one-sided limits or infinite limits.",
+        "The source does not discuss the epsilon-delta definition, which is the formal counterpart to the intuitive definition presented here."
+      ],
+      "need": "Explain the substantive principles of The Limit of a Function. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 16,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 14,
+        "proposed_nodes": 16,
+        "proposed_relations": 14
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides tables and graphs as alternative methods for estimating limits, but does not discuss algebraic limit laws or the epsilon-delta definition in this section.",
+        "attribution": "The source does not attribute the concepts to specific individuals; it presents them as standard mathematical knowledge. The only named individual is Albert Einstein, in the context of an application, not the limit concept itself.",
+        "limitations": "The source is a textbook exposition and does not provide original historical attributions for the concepts; it only notes that the formal definition appeared in the late 19th century without naming specific mathematicians."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "source_title": "2.2 The Limit of a Function - Calculus Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "9d4dc2e0d9349f6319197a21a4add2738c79d327a11c92ad699891a9bf825713",
+      "depth": 0,
+      "dossier": "M1102",
+      "gaps": [
+        "Historical origin of the derivative function definition is not addressed in the source.",
+        "The source does not discuss alternative definitions of differentiability, such as for functions of several variables.",
+        "The source does not provide a rigorous classification of all possible reasons for non-differentiability beyond the three examples.",
+        "The source does not discuss the historical development of Leibniz notation or its formal justification."
+      ],
+      "need": "Explain the substantive principles of The Derivative as a Function. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 7,
+        "proposed_nodes": 8,
+        "proposed_relations": 7
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative definitions of the derivative, such as symmetric derivatives or derivatives in higher dimensions.",
+        "attribution": "The source does not attribute the derivative function definition or related theorems to specific historical figures. It only mentions that dy/dx is called Leibniz notation, but does not discuss the historical development.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution for the derivative function concept, the differentiability-implies-continuity theorem, or the counterexamples. It also does not cover pathological functions beyond the three examples."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "source_title": "3.2 The Derivative as a Function - Calculus Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "7b9e52bf0e85ccbaf7f01f3a8c9ce0095a99db0c98e3cf1191d9cb5216c43cc4",
+      "depth": 0,
+      "dossier": "M1103",
+      "gaps": [
+        "Historical origin of the chain rule is not addressed in this source.",
+        "Rigorous proof of the chain rule is not provided; only an informal sketch.",
+        "The source does not discuss edge cases where the inner function is constant, which are excluded from the informal proof."
+      ],
+      "need": "Explain the substantive principles of The Chain Rule. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 8,
+        "proposed_nodes": 9,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations or proofs of the chain rule beyond the informal proof and Leibniz notation.",
+        "attribution": "The source does not attribute the chain rule to any specific historical figure. It is presented as a standard rule without historical context.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution or discuss the chain rule's discovery. The informal proof explicitly ignores cases where the inner function is constant."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "source_title": "3.6 The Chain Rule - Calculus Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "55eb24fdfa3c95b5116faf554618d3783d430933b54028c163d5ceb855fa5008",
+      "depth": 0,
+      "dossier": "M1104",
+      "gaps": [
+        "Historical attribution of Rolle's theorem and the Mean Value Theorem is not provided in this source.",
+        "The source does not discuss alternative proofs or generalizations such as Cauchy's Mean Value Theorem.",
+        "The source does not address the historical development or priority of these theorems."
+      ],
+      "need": "Explain the substantive principles of The Mean Value Theorem. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 8,
+        "proposed_nodes": 9,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides no alternative formulations of the Mean Value Theorem beyond the standard statement and proof via Rolle's theorem.",
+        "attribution": "The source does not attribute the theorems to specific historical figures; all results are presented as standard mathematical facts.",
+        "limitations": "The source does not discuss historical origins or alternative proofs; it is a textbook exposition."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "source_title": "4.4 The Mean Value Theorem - Calculus Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-4-the-mean-value-theorem"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "a93422c4610652072deccf17bad7415a01aa4db6208d856e16d9360c44185947",
+      "depth": 0,
+      "dossier": "M1105",
+      "gaps": [
+        "The source does not provide historical context for Newton’s method, such as the original publication or Newton’s own formulation.",
+        "The source does not discuss convergence rates or conditions for guaranteed convergence, referring instead to numerical analysis texts.",
+        "The secant method is mentioned but its formula is not fully presented in the passages, limiting comparison.",
+        "The source does not address the behavior of Newton’s method for complex roots or higher-dimensional problems."
+      ],
+      "need": "Explain the substantive principles of Newton’s Method. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 8,
+        "proposed_nodes": 9,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions the secant method as an alternative to Newton’s method, but does not provide its full formula or detailed comparison. It also discusses iterative processes in general, including fixed-point iteration and the logistic map.",
+        "attribution": "The source names the method after Newton but provides no historical details or original discovery date. Attribution to Newton is inferred from the method’s name, not from source evidence.",
+        "limitations": "The source explicitly lists failure modes of Newton’s method: zero derivative, convergence to a different root, and oscillation. It also notes that convergence speed is discussed in numerical analysis texts but does not provide details."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "source_title": "4.9 Newton’s Method - Calculus Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-9-newtons-method"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "ca8108f0f7e83de2edc0f04829a3de24e978206631a0fa39c18e7e191dd2c23f",
+      "depth": 0,
+      "dossier": "M1106",
+      "gaps": [
+        "The source does not provide a proof of the theorem that continuous functions are integrable.",
+        "The source does not discuss the historical development of the definite integral beyond a brief mention of Leibniz's notation.",
+        "The source does not address the equivalence of regular and nonregular partition definitions of the integral.",
+        "The source does not discuss other types of discontinuities (e.g., infinite discontinuities) and their integrability."
+      ],
+      "need": "Explain the substantive principles of The Definite Integral. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 16,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 15,
+        "proposed_nodes": 16,
+        "proposed_relations": 15
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative definitions of the integral (e.g., Darboux or Lebesgue) or alternative notations beyond Leibniz's.",
+        "attribution": "The source attributes the integral notation to Leibniz but does not provide primary evidence. The textbook authors are not the original contributors of the mathematical concepts.",
+        "limitations": "The source is a textbook exposition; it does not provide proofs for theorems or historical primary sources. The historical attribution of Leibniz's notation is secondary."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-1/pages/preface",
+      "source_title": "5.2 The Definite Integral - Calculus Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "0280969ac2efc70dda9749ba2604b272d0bd99bbc2ee7ae717b90f594e6afcab",
+      "depth": 0,
+      "dossier": "M1107",
+      "gaps": [
+        "Historical origin of integration by parts is not addressed in the source.",
+        "The source does not discuss the formal proof of the formula under weaker assumptions (e.g., absolutely continuous functions).",
+        "The source does not mention the relationship to other integration techniques like substitution or partial fractions in a comparative way.",
+        "The source does not provide a general criterion for when integration by parts will succeed or fail."
+      ],
+      "need": "Explain the substantive principles of Integration by Parts. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 13,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 13,
+        "accepted_relations": 10,
+        "proposed_nodes": 13,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents integration by parts as the primary technique for products, but also mentions substitution as an alternative for certain integrals. It does not discuss other methods like tabular integration or the Risch algorithm.",
+        "attribution": "The source is a textbook by Strang and Herman, but it does not attribute the formula to any historical figure. The LIATE mnemonic is presented without attribution.",
+        "limitations": "The source does not provide historical attribution for the integration-by-parts formula or the LIATE mnemonic. It also does not discuss the conditions under which the formula fails, such as improper integrals or non-differentiable functions."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "source_title": "3.1 Integration by Parts - Calculus Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "52ca4ce525fc55ca67afd750fc55915cddd5b0c6c17c6589eec85609dfe24df4",
+      "depth": 0,
+      "dossier": "M1108",
+      "gaps": [
+        "Historical origin of the improper integral definition is not addressed.",
+        "The comparison theorem is stated without a formal proof.",
+        "The source does not discuss the Cauchy principal value or other alternative definitions.",
+        "The source does not cover improper integrals with multiple discontinuities or oscillatory behavior.",
+        "The Laplace transform is only defined; its properties and applications are not explored in this section."
+      ],
+      "need": "Explain the substantive principles of Improper Integrals. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 8,
+        "proposed_nodes": 9,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative definitions such as Cauchy principal value or conditional convergence. It only presents the standard limit-based definition.",
+        "attribution": "No historical attribution is given for the definitions or theorems. The source names Gabriel's Horn but does not attribute its discovery. The Laplace transform is mentioned without historical context.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the concepts. It does not cover all types of improper integrals, such as those with oscillatory discontinuities or multiple discontinuities."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "source_title": "3.7 Improper Integrals - Calculus Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-7-improper-integrals"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "0d07edcbc527a021dd058d6fc97855e89b4ead9cd148f4c39a64cc18f4c62359",
+      "depth": 0,
+      "dossier": "M1109",
+      "gaps": [
+        "Historical origins of the concept of a sequence and convergence are not addressed in the source.",
+        "The formal epsilon-N definition of sequence convergence is not explicitly stated, only an informal definition.",
+        "Proofs of the Monotone Convergence Theorem and the boundedness of convergent sequences are omitted.",
+        "The source does not discuss alternative definitions of convergence, such as Cauchy sequences or subsequential limits.",
+        "No attribution is given for the Squeeze Theorem, algebraic limit laws, or the characteristic equation method for recurrences."
+      ],
+      "need": "Explain the substantive principles of Sequences. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 15,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 15,
+        "accepted_relations": 11,
+        "proposed_nodes": 16,
+        "proposed_relations": 12
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section that presents standard definitions and theorems without discussing alternative formulations or competing approaches. It does not mention historical alternatives to the epsilon-N definition or other convergence criteria.",
+        "attribution": "No historical attributions are given in the source. All concepts are presented as standard textbook material without naming original contributors. The source is a 2016 OpenStax textbook by Gilbert Strang and Edwin 'Jed' Herman, but it does not claim any original research contributions.",
+        "limitations": "The source is an introductory textbook, so it omits proofs for the Monotone Convergence Theorem and the boundedness of convergent sequences. It also does not provide historical attributions for any of the concepts, treating them as standard. The informal definition of convergence is not the formal epsilon-N definition, though the Squeeze Theorem proof uses epsilon-N reasoning."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "source_title": "5.1 Sequences - Calculus Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-1-sequences"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "c91805e0608dcf4911b58f607e4664c7a39af185a2811d636f3f4b9d2c6faa1e",
+      "depth": 0,
+      "dossier": "M1110",
+      "gaps": [
+        "Historical origin of the ratio and root tests is not documented in this source.",
+        "The source does not discuss the behavior of the tests when the limit does not exist.",
+        "The generalized ratio test is presented without proof or attribution.",
+        "The source does not provide a formal proof of the root test, only a heuristic and statement."
+      ],
+      "need": "Explain the substantive principles of Ratio and Root Tests. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 16,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 13,
+        "proposed_nodes": 16,
+        "proposed_relations": 14
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides the ratio and root tests as alternatives to comparison and integral tests, and also mentions a generalized ratio test for advanced cases.",
+        "attribution": "The source does not attribute the ratio or root tests to any specific originator; it presents them as standard results. Historical attribution is not provided.",
+        "limitations": "The source explicitly notes that both tests are inconclusive when ρ=1, and implicitly requires the existence of the limit. It does not discuss cases where the limit does not exist."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "source_title": "5.6 Ratio and Root Tests - Calculus Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/5-6-ratio-and-root-tests"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "1b61451f5d4c1e8b03ff82c68431fc8d8850f8fc09ef48d739fcb2c0493f3213",
+      "depth": 0,
+      "dossier": "M1111",
+      "gaps": [
+        "Historical origin of Taylor and Maclaurin series is not documented in this source; only a reference to external biographies is given.",
+        "The source does not discuss functions whose Taylor series converges but does not equal the function (e.g., the classic example of e^{-1/x^2}).",
+        "No information on the development of Taylor's theorem with remainder or its historical proof is provided."
+      ],
+      "need": "Explain the substantive principles of Taylor and Maclaurin Series. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 16,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 14,
+        "proposed_nodes": 16,
+        "proposed_relations": 14
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section; it does not discuss alternative formulations or competing approaches beyond the standard Taylor series framework.",
+        "attribution": "The source names Brook Taylor and Colin Maclaurin but does not provide evidence of their original contributions; it is a textbook exposition, so attribution is not established from this source alone.",
+        "limitations": "The source does not provide historical details on the development of Taylor and Maclaurin series; it only mentions that biographies are available elsewhere. It also does not address cases where the Taylor series converges but not to the function (e.g., non-analytic functions)."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-2/pages/preface",
+      "source_title": "6.3 Taylor and Maclaurin Series - Calculus Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "8f4a0717d81a37440220dbddea740f43d13190852a533bd7290f0519673b5e9e",
+      "depth": 0,
+      "dossier": "M1112",
+      "gaps": [
+        "Historical origin of the partial derivative definition is not provided.",
+        "Proof of Clairaut's theorem is not included.",
+        "Detailed derivation of Kelvin's solution is not fully shown; only key steps are described.",
+        "No discussion of alternative methods for solving PDEs, such as integral transforms.",
+        "The source does not address the modern age of Earth or the impact of radioactivity on the revised estimate."
+      ],
+      "need": "Explain the substantive principles of Partial Derivatives. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 12,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 12,
+        "accepted_relations": 10,
+        "proposed_nodes": 12,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative definitions of partial derivatives or alternative methods for solving PDEs beyond separation of variables.",
+        "attribution": "The source names Clairaut for the theorem and Kelvin for the Earth age estimate, but does not attribute the definition of partial derivatives or the separation of variables method to specific individuals.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution for the definition of partial derivatives or Clairaut's theorem. The proof of Clairaut's theorem is not given. The Kelvin application is presented as a historical example but with limited detail on the full derivation."
+      },
+      "source_discovery": "https://openstax.org/books/calculus-volume-3/pages/preface",
+      "source_title": "4.3 Partial Derivatives - Calculus Volume 3 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/4-3-partial-derivatives"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "74e19b14d454f201dab9c10147de16f29a890300acb433c7c8abc9c067ee7c10",
+      "depth": 0,
+      "dossier": "P1101",
+      "gaps": [
+        "Historical origin of Newton's second law for rotation is not addressed in this source.",
+        "The source does not discuss the validity of the equation for non-rigid bodies or general three-dimensional rotation.",
+        "No mention of experimental verification or empirical evidence beyond illustrative examples."
+      ],
+      "need": "Explain the substantive principles of Newton’s Second Law for Rotation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 5,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 4,
+        "proposed_nodes": 5,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations of rotational dynamics, such as Lagrangian or Hamiltonian approaches.",
+        "attribution": "The source does not attribute the rotational second law to any specific historical figure; it presents it as established knowledge.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution for the rotational second law or discuss its limitations beyond fixed-axis rotation."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "10.7 Newton’s Second Law for Rotation - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/10-7-newtons-second-law-for-rotation"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "1635adc32aa89ff11a6daed4a507086d308e6fe083bbb01b6e91836b30b357e8",
+      "depth": 0,
+      "dossier": "P1102",
+      "gaps": [
+        "Historical origin of Newton's third law is not documented in this source.",
+        "The source does not discuss the law's applicability in relativistic or quantum contexts.",
+        "No experimental evidence or verification of the law is provided.",
+        "The source does not address potential exceptions or limitations of the law in complex systems."
+      ],
+      "need": "Explain the substantive principles of Newton’s Third Law. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 6,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 6,
+        "accepted_relations": 5,
+        "proposed_nodes": 6,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations of Newton's third law or competing theories.",
+        "attribution": "The law is attributed to Newton by name, but the source does not provide historical documentation of his original formulation.",
+        "limitations": "The source is a textbook exposition and does not provide historical evidence for the original discovery of the law. It does not discuss the law's limitations in non-classical contexts."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "5.5 Newton’s Third Law - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "2b74da83999d54efb741b4e9506187267c3b18214d2f6dca0215449132f007f8",
+      "depth": 0,
+      "dossier": "P1103",
+      "gaps": [
+        "Historical origin of the work-energy theorem is not covered; no attribution to original discoverers (e.g., Coriolis, Joule) is provided.",
+        "The source does not discuss limitations of the theorem for relativistic speeds or systems with variable mass.",
+        "The off-center bullet penetration explanation lacks quantitative details and assumes rotational energy without derivation.",
+        "No mention of potential energy or conservative forces, which are generalizations of the theorem."
+      ],
+      "need": "Explain the substantive principles of Work-Energy Theorem. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 5,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 4,
+        "proposed_nodes": 5,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents Newton's second law and kinematics as an alternative method for simple cases, but notes its limitations for curved surfaces. No other alternative formulations of the work-energy theorem are discussed.",
+        "attribution": "The source credits the authors as textbook writers, not as discoverers. Historical attribution of the work-energy theorem is not addressed. The bullet-block puzzle is attributed to Asif Shakur's 2015 article.",
+        "limitations": "The source is a textbook exposition, not a historical account. It does not provide original historical attribution for the theorem. The derivation assumes classical mechanics and particle models. The off-center bullet explanation is qualitative and references an external article without full details."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "7.3 Work-Energy Theorem - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "6dee6f769250326e865a0924b65d8ed5212d7741fbe088133400eb5e43ed2394",
+      "depth": 0,
+      "dossier": "P1104",
+      "gaps": [
+        "Historical origin of the conservation of energy principle is not addressed in this source.",
+        "The source does not discuss the relationship between mechanical energy conservation and the first law of thermodynamics.",
+        "The source does not cover relativistic or quantum mechanical extensions in detail, only mentioning them as future topics."
+      ],
+      "need": "Explain the substantive principles of Conservation of Energy. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 8,
+        "proposed_nodes": 9,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents energy conservation as a fundamental principle but does not discuss alternative formulations such as Lagrangian or Hamiltonian mechanics.",
+        "attribution": "The source credits the authors as textbook writers, not as originators of the conservation principle. No historical figures are mentioned.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution for the discovery of energy conservation. It notes that the law applies to classical particles and requires adjustment for relativity."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "8.3 Conservation of Energy - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "32dfbfbd8330dfc47a815b27ffac8c6cd2512c62760a99f184cce8caf56d888d",
+      "depth": 0,
+      "dossier": "P1105",
+      "gaps": [
+        "Historical origin of the law of conservation of momentum is not addressed in this source.",
+        "Experimental evidence supporting the law is mentioned but not detailed or cited.",
+        "The source does not discuss the law's validity in relativistic or quantum contexts."
+      ],
+      "need": "Explain the substantive principles of Conservation of Linear Momentum. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 8,
+        "proposed_nodes": 9,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations of momentum conservation, such as those in relativistic or quantum mechanics.",
+        "attribution": "The source does not attribute the law to any specific discoverer; it presents it as established physics. The Philae landing is dated to November 12, 2014, but the textbook was published in 2016.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the law of conservation of momentum. It also does not discuss potential exceptions or limitations of the law."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "9.3 Conservation of Linear Momentum - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/9-3-conservation-of-linear-momentum"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "1d3a6751b984de8b5dff78f1a8ba022d1736a7cc8bf5a9b6ca58de104c3aa7a6",
+      "depth": 0,
+      "dossier": "P1106",
+      "gaps": [
+        "Historical origin of the angular momentum concept is not addressed in the source.",
+        "The source does not discuss the conservation of angular momentum in detail, only mentions it in learning objectives.",
+        "The source does not cover quantum mechanical angular momentum or its commutation relations.",
+        "The source does not address the limitations of the rigid body formula for non-symmetric bodies."
+      ],
+      "need": "Explain the substantive principles of Angular Momentum. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 6,
+        "proposed_nodes": 8,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations of angular momentum, such as those in Hamiltonian or Lagrangian mechanics.",
+        "attribution": "No historical figures are named in the source; all contributions are presented as collective textbook knowledge without individual credit.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the concepts; it presents them as established knowledge without citing original discoverers."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "11.2 Angular Momentum - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/11-2-angular-momentum"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "f79dfb194c4c33516e25157695c707e3ddd39321b1024ca5ec3e0ed3ef01e701",
+      "depth": 0,
+      "dossier": "P1107",
+      "gaps": [
+        "No primary evidence for Newton's original derivation or the exact date of his formulation.",
+        "No detailed account of Hooke's potential priority or the controversy over the inverse-square law.",
+        "No proof of the spherical-shell theorem, only a statement of its applicability.",
+        "No discussion of the philosophical implications of action at a distance.",
+        "No mention of modern refinements to G or tests of general relativity beyond gravitational waves."
+      ],
+      "need": "Explain the substantive principles of Newton's Law of Universal Gravitation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 10,
+        "proposed_nodes": 10,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions Hooke's intuitive suggestion of solar attraction and Einstein's general relativity as alternatives, but does not detail Hooke's priority dispute or provide primary evidence.",
+        "attribution": "Newton is credited with the law, Cavendish with measuring G, and du Châtelet with promoting acceptance. However, the text does not address potential priority disputes (e.g., Hooke) or the exact historical context of Newton's formulation.",
+        "limitations": "The source is a textbook, so historical attributions are secondary and simplified. It does not provide primary sources for Newton's or Cavendish's original works, nor does it discuss the full scope of Newton's derivation or the shell theorem proof."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "13.1 Newton's Law of Universal Gravitation - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "63f5dfb2ba8cf9396d379b1cf196c73aa14b9b6dff5a4e2acd048a48130ae089",
+      "depth": 0,
+      "dossier": "P1108",
+      "gaps": [
+        "Historical derivation of Bernoulli's equation is not detailed; only the name and publication year are given.",
+        "No discussion of the equation's limitations in real fluids with viscosity or compressibility.",
+        "No mention of alternative derivations or extensions by other researchers."
+      ],
+      "need": "Explain the substantive principles of Bernoulli’s Equation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 6,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 6,
+        "accepted_relations": 5,
+        "proposed_nodes": 6,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations of Bernoulli's equation or competing theories.",
+        "attribution": "The source attributes the equation to Daniel Bernoulli and his 1738 book Hydrodynamica, but does not provide evidence of original derivation or priority.",
+        "limitations": "The source is a textbook exposition; it does not provide historical derivation details or discuss limitations beyond the assumptions of incompressibility and frictionless flow."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "14.6 Bernoulli’s Equation - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "c64b483ab802010375f84c40758d220a2edca79089535acf8e064c65e532f860",
+      "depth": 0,
+      "dossier": "P1109",
+      "gaps": [
+        "The source does not provide historical information about who first formulated the equations of SHM or the concept of phase shift.",
+        "The source does not discuss the limitations of the SHM model for large amplitudes or nonlinear restoring forces.",
+        "The source does not address the derivation of the period for other systems like pendulums, only for mass-spring systems."
+      ],
+      "need": "Explain the substantive principles of Simple Harmonic Motion. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 8,
+        "proposed_nodes": 10,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative formulations of SHM, such as using sine functions or complex exponentials, beyond noting that sine and cosine differ by a phase shift.",
+        "attribution": "No historical attributions are given for the concepts; the source treats them as standard knowledge. The authors are listed as textbook creators, not originators of the physics.",
+        "limitations": "The source is a textbook exposition and does not provide historical context or original research findings. It presents established concepts without attributing them to specific discoverers."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-1/pages/preface",
+      "source_title": "15.1 Simple Harmonic Motion - University Physics Volume 1 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "c2b1b1ad6bbed64692399ab96ad76a4ded81f45590175fa11529ed86ad6334f0",
+      "depth": 0,
+      "dossier": "P1110",
+      "gaps": [
+        "Historical origin of the first law is not documented in this source.",
+        "The source does not discuss limitations of the first law, such as its inability to predict process direction.",
+        "No mention of alternative sign conventions or their historical usage."
+      ],
+      "need": "Explain the substantive principles of First Law of Thermodynamics. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 5,
+        "proposed_nodes": 8,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook exposition and does not discuss alternative formulations of the first law or competing theories.",
+        "attribution": "No original contributors are named; the source credits C. P. Snow with a humorous statement but not with the law itself. Historical priority is not addressed.",
+        "limitations": "The source does not provide historical attribution for the first law or its components; it presents the law as established knowledge without citing original discoverers."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "source_title": "3.3 First Law of Thermodynamics - University Physics Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "8f725fb16d909c8af9c043a159dd6c95f3ad040843cf5beb4d0fa07e1d97668f",
+      "depth": 0,
+      "dossier": "P1111",
+      "gaps": [
+        "Historical origin of Kelvin and Clausius statements not provided",
+        "Original discovery dates and contributors not mentioned",
+        "Proof of equivalence in the reverse direction (Kelvin false implies Clausius false) is not explicitly shown",
+        "No discussion of entropy or other formulations of the second law"
+      ],
+      "need": "Explain the substantive principles of Statements of the Second Law of Thermodynamics. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 5,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 4,
+        "proposed_nodes": 5,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents both Kelvin and Clausius statements as alternative formulations of the second law, but does not discuss other alternatives like the Planck statement or entropy-based formulations.",
+        "attribution": "No original contributors are named for the Kelvin or Clausius statements or the equivalence proofs; the source treats them as established knowledge without historical context.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution for the statements or proofs, nor does it discuss the original discovery dates or contributors."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "source_title": "4.4 Statements of the Second Law of Thermodynamics - University Physics Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "ee484236f585af5c5a638603ad4b4bf410b1ab3938fbbc3e064383be499f5022",
+      "depth": 0,
+      "dossier": "P1112",
+      "gaps": [
+        "Historical origin of entropy as a concept is not addressed.",
+        "Detailed proof of consistency between entropy statement and Kelvin/Clausius statements is not provided.",
+        "Statistical mechanics interpretation of entropy is absent.",
+        "Absolute entropy values and the third law are not covered."
+      ],
+      "need": "Explain the substantive principles of Entropy. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 6,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 6,
+        "accepted_relations": 5,
+        "proposed_nodes": 6,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides only the entropy statement of the second law; it does not discuss alternative formulations like Kelvin or Clausius in detail, only mentions consistency.",
+        "attribution": "No original contributors are named for the entropy concept or the second law; the text is a modern pedagogical presentation.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the entropy concept or the second law. It does not discuss statistical mechanics interpretations of entropy."
+      },
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "source_title": "4.6 Entropy - University Physics Volume 2 | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "e68ff46c1553ffe4bc74b9785a22d0e80ab85786a0533bacd8d293714dab1f3d",
+      "depth": 0,
+      "dossier": "C1101",
+      "gaps": [
+        "The source does not provide historical dates or original references for most data structures and algorithms, such as binary search trees, binary heaps, or the ADT concept.",
+        "The source does not discuss the formal complexity analysis (e.g., Big-O notation) for the operations of the described data structures.",
+        "The source does not cover alternative balanced tree structures like red-black trees or B-trees, which are mentioned only as 'many other balanced binary search trees' without details.",
+        "The source does not provide evidence for the empirical claims about efficiency, such as the performance of binary heaps in earthquake tracking, beyond illustrative examples."
+      ],
+      "need": "Explain the substantive principles of Introduction to Data Structures and Algorithms. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 22,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 22,
+        "accepted_relations": 13,
+        "proposed_nodes": 22,
+        "proposed_relations": 13
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section that provides introductory explanations of data structures and algorithms. It does not discuss alternative historical accounts or competing theories.",
+        "attribution": "The source attributes AVL trees to Adelson-Velsky and Landis, but does not provide dates or original references. Other concepts are presented without historical attribution, so their origins remain unknown from this source.",
+        "limitations": "The source is a pedagogical exposition, not a primary research document. It does not provide historical dates for the invention of data structures like binary search trees or heaps, except for naming AVL tree inventors. It does not include formal complexity analysis or proofs."
+      },
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "source_title": "3.1 Introduction to Data Structures and Algorithms - Introduction to Computer Science | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/3-1-introduction-to-data-structures-and-algorithms"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "aee2fe7768843a27afe1dd888e233fe25fa65dabd7bc5b352ddc475db4155946",
+      "depth": 0,
+      "dossier": "C1102",
+      "gaps": [
+        "Historical origins of process abstraction, PCB, and context switching are not documented.",
+        "No evidence of original discovery; all concepts are presented as standard textbook material.",
+        "Lack of detailed performance analysis or empirical data for scheduling algorithms.",
+        "No discussion of modern concurrency issues like lock-free programming or transactional memory."
+      ],
+      "need": "Explain the substantive principles of Processes and Concurrency. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 13,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 13,
+        "accepted_relations": 8,
+        "proposed_nodes": 14,
+        "proposed_relations": 9
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides a textbook overview of processes and concurrency, but does not discuss alternative models like microkernels or actor-based concurrency.",
+        "attribution": "No specific inventors or historical contributors are named for the concepts; attribution is collective and unknown.",
+        "limitations": "Historical claims are presented without citations, and the source does not establish priority or original discovery. It is an educational exposition, not a research paper."
+      },
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "source_title": "6.3 Processes and Concurrency - Introduction to Computer Science | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/6-3-processes-and-concurrency"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "17f70a26861cf7ac8fe2ee8617a590a1388ffe2adb213a7febcf5e5d60a42925",
+      "depth": 0,
+      "dossier": "C1103",
+      "gaps": [
+        "No evidence for the origin of the IANS concept or its formal definition",
+        "No empirical data supporting XR healthcare benefits beyond anecdotal examples",
+        "No validation of the open world repository proposal for AGI",
+        "No comparison of quantum computing implementations' performance",
+        "No historical context for cognitive robotics or swarm robotics origins"
+      ],
+      "need": "Explain the substantive principles of Towards Intelligent Autonomous Networked Super Systems. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 6,
+        "proposed_nodes": 10,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides a survey of multiple technologies (XR, nanotechnology, robotics, neuromorphic, quantum) as alternatives for building IANS, but does not compare them systematically.",
+        "attribution": "The source does not provide detailed historical attributions for most concepts. It credits the metaverse term to the 1992 novel Snow Crash, Mead for neuromorphic computing, and Feynman for the quantum simulation observation. Other contributions are presented as collective or unknown.",
+        "limitations": "The source is a textbook exposition, not original research. It lacks empirical validation for many claims, and some proposals (e.g., Internet of Thoughts, open world repository) are speculative. Historical attributions are limited to Carver Mead (neuromorphic computing) and Richard Feynman (quantum simulation challenge)."
+      },
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "source_title": "13.4 Towards Intelligent Autonomous Networked Super Systems - Introduction to Computer Science | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/13-4-towards-intelligent-autonomous-networked-super-systems"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "bd12bed0c9c353ceb14da32671af0cac324efb34d30305505f61f31697053a9c",
+      "depth": 0,
+      "dossier": "E1101",
+      "gaps": [
+        "Historical origins of the law of demand and supply are not documented in this source.",
+        "The source does not discuss exceptions to the laws or conditions under which they might fail.",
+        "No evidence on the development of the demand-supply model or its key contributors is provided."
+      ],
+      "need": "Explain the substantive principles of Demand, Supply, and Equilibrium in Markets for Goods and Services. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 5,
+        "proposed_nodes": 9,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook section that presents standard demand-supply theory without discussing alternative models or competing theories.",
+        "attribution": "The source does not attribute the concepts to specific originators; they are presented as collective economic knowledge. No priority claims are made.",
+        "limitations": "The source does not provide historical context or original sources for the concepts; it is a pedagogical exposition. It does not address exceptions to the laws of demand and supply in detail."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "3.1 Demand, Supply, and Equilibrium in Markets for Goods and Services - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "5c27b38364b09a36db3f78172cf93cd3f86ac2483b58451c09516b201a864943",
+      "depth": 0,
+      "dossier": "E1102",
+      "gaps": [
+        "Historical origins of price ceiling and floor concepts are not addressed in this source.",
+        "Empirical evidence for the claimed effects (e.g., quality deterioration) is not provided.",
+        "The source does not discuss exceptions or cases where price controls might be beneficial."
+      ],
+      "need": "Explain the substantive principles of Price Ceilings and Price Floors. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 5,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 3,
+        "proposed_nodes": 5,
+        "proposed_relations": 3
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions alternative policy tools can achieve goals with fewer tradeoffs but does not specify them.",
+        "attribution": "The authors are credited as textbook expositors, not originators of the demand-supply analysis.",
+        "limitations": "The source is a textbook exposition, not original research; it does not provide historical attribution for the concepts of price ceilings and floors."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "3.4 Price Ceilings and Price Floors - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/3-4-price-ceilings-and-price-floors"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "47dcf405951b32ed7c787b059cadf3cc0437efc951f01d68cb7e587d7b2a3890",
+      "depth": 0,
+      "dossier": "E1103",
+      "gaps": [
+        "The original sources and dates for the empirical elasticity estimates in Table 5.2 are not provided, preventing verification of their accuracy and context.",
+        "The historical development of the elasticity concept and the revenue-maximization rule is not traced, so the original discoverers of these ideas are unknown from this source.",
+        "The passage does not discuss the mathematical derivation of elasticity or the conditions under which the revenue rule holds for non-linear demand curves.",
+        "No information is given on how elasticity estimates are measured empirically or the potential biases in those estimates.",
+        "The tax incidence analysis assumes a competitive market but does not address how market power or externalities might alter the conclusions."
+      ],
+      "need": "Explain the substantive principles of Elasticity and Pricing. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 6,
+        "proposed_nodes": 7,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents elasticity and pricing as standard textbook material without discussing alternative theoretical frameworks or competing models. No alternative approaches to revenue maximization or tax incidence are mentioned.",
+        "attribution": "No original contributors are named for the concepts presented. The text attributes elasticity estimates to 'various studies by economists' and 'economic research' without naming specific researchers or publications. The historical OPEC and coffee events are described but not attributed to specific analysts.",
+        "limitations": "The source is a textbook exposition and does not provide original research. Empirical elasticity estimates are cited without specific sources or dates. The historical oil and coffee examples are stylized illustrations rather than rigorous empirical analyses. No discussion of measurement issues or estimation methods for elasticities is included."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "5.3 Elasticity and Pricing - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "cfd31ba82ba7f9d2ca54a7f0d291e81464207b863818dc5749c8597cdd74c45d",
+      "depth": 0,
+      "dossier": "E1104",
+      "gaps": [
+        "Historical origins of the perfect competition concept are not documented in this source.",
+        "The formal condition for profit maximization (e.g., marginal cost equals price) is not stated in this section.",
+        "Empirical evidence beyond the corn price example is not provided to validate the assumptions.",
+        "The relationship between perfect competition and welfare or efficiency is not discussed in this section."
+      ],
+      "need": "Explain the substantive principles of Perfect Competition and Why It Matters. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 5,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 5,
+        "proposed_nodes": 5,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative market structures such as monopoly or monopolistic competition in this section; it only mentions that perfect competition is a hypothetical extreme and that some industries approximate it.",
+        "attribution": "No original contributors are named for the concepts of perfect competition, price taking, or long-run equilibrium. The source presents these as standard economic principles without historical context.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the concepts. It does not address formal proofs, empirical tests of the assumptions, or deviations from perfect competition beyond noting that it is an ideal."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "8.1 Perfect Competition and Why It Matters - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/8-1-perfect-competition-and-why-it-matters"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "0131a98e24b26a6344275b5fedfc66c7f3403eecc7141372de47e5955750e982",
+      "depth": 0,
+      "dossier": "E1105",
+      "gaps": [
+        "Historical origins of the MR = MC rule are not documented in this source.",
+        "The source does not provide formal proofs or derivations of the profit-maximizing condition.",
+        "Empirical evidence on the magnitude of monopoly inefficiency is not provided.",
+        "The source does not discuss price discrimination as an alternative pricing strategy for monopolies."
+      ],
+      "need": "Explain the substantive principles of How a Profit-Maximizing Monopoly Chooses Output and Price. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 6,
+        "proposed_nodes": 7,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative theories of monopoly pricing, such as price discrimination or contestable markets.",
+        "attribution": "The source attributes the 'quiet life' quote to John Hicks (1935) but does not attribute the core theoretical concepts to specific originators. The DuPont case is mentioned as a legal example, not as a theoretical contribution.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the MR = MC rule or the concept of allocative efficiency. It also does not address empirical evidence on monopoly behavior beyond anecdotal examples."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "9.2 How a Profit-Maximizing Monopoly Chooses Output and Price - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "935def2e122820720c5ab27dcca639d6ac12a20ff10207e0fc123e4d8da683b8",
+      "depth": 0,
+      "dossier": "E1106",
+      "gaps": [
+        "The source does not provide historical origins or original citations for the prisoner's dilemma, game theory, or kinked demand curve concepts.",
+        "The source does not discuss alternative oligopoly models such as Cournot, Bertrand, or Stackelberg, which are important for a comprehensive understanding.",
+        "The source does not address the empirical evidence on the prevalence or stability of tacit collusion beyond the case studies mentioned.",
+        "The source does not provide a formal mathematical treatment of oligopoly equilibrium concepts."
+      ],
+      "need": "Explain the substantive principles of Oligopoly. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 14,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 14,
+        "accepted_relations": 12,
+        "proposed_nodes": 15,
+        "proposed_relations": 13
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents game theory, specifically the prisoner's dilemma, as the primary framework for analyzing oligopoly, but does not discuss alternative theories such as Cournot or Bertrand competition models.",
+        "attribution": "The source attributes the collusion observation to Adam Smith (1776) but does not attribute other concepts to specific originators. The textbook authors are credited as expositors, not originators.",
+        "limitations": "The source is a textbook exposition and does not provide original research or historical attribution for the concepts presented. It does not establish priority for the prisoner's dilemma or kinked demand curve concepts."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "10.2 Oligopoly - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/10-2-oligopoly"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "b484b54f198cd75d8653bdf78d5eda2044c87da4ec9dd133f5b3b4764588455e",
+      "depth": 0,
+      "dossier": "E1107",
+      "gaps": [
+        "The historical origin of the public goods definition (nonexcludable and non-rival) is not documented in this source.",
+        "The date of Ostrom's fieldwork and publications is not provided.",
+        "The source does not discuss the formal conditions under which community management succeeds, beyond proximity and communication.",
+        "The passage on technology inequality (Voyager I) is not integrated into the public goods framework; it is a tangential observation."
+      ],
+      "need": "Explain the substantive principles of Public Goods. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 6,
+        "proposed_nodes": 8,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents market-based alternatives to government provision, such as advertising and subscription models, and community-based management as an alternative to regulation.",
+        "attribution": "Garrett Hardin is explicitly attributed for the term 'tragedy of the commons' (1968). Elinor Ostrom is attributed for the alternative view, but no date is given. Other concepts are presented as collective economic knowledge without specific attribution.",
+        "limitations": "The source is a textbook, so it does not provide original research or detailed historical attributions. The origin of the public goods definition is not dated, and Ostrom's work is summarized without specific dates or design principles."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "13.3 Public Goods - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "9703526a0e818c56f10b89c9c1158ee8fe186f4a7a5f5e08321997f6aea0a5b6",
+      "depth": 0,
+      "dossier": "E1108",
+      "gaps": [
+        "No formal definitions or mathematical models of imperfect and asymmetric information are provided.",
+        "Historical origins of concepts like thin markets and price signaling are not traced.",
+        "Empirical evidence for the effectiveness of reputation, guarantees, and licensing is not systematically presented.",
+        "The relationship between behavioral economics and information problems is only briefly mentioned, not deeply explored."
+      ],
+      "need": "Explain the substantive principles of The Problem of Imperfect Information and Asymmetric Information. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 9,
+        "proposed_nodes": 10,
+        "proposed_relations": 9
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides a textbook exposition, not original research. It cites Kahneman and Tversky's 1979 loss aversion paper as a documented contribution, but other concepts like reputation and warranties are presented as general knowledge without specific attribution.",
+        "attribution": "The textbook authors are credited for the exposition, but original discoveries are not identified except for Kahneman and Tversky's loss aversion. Other concepts are presented as common knowledge without named originators.",
+        "limitations": "The source does not provide formal models or empirical evidence for most mechanisms; it is descriptive. Historical attribution for concepts like thin markets or price signaling is not given. The L.L. Bean example is anecdotal, not systematic evidence."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "16.1 The Problem of Imperfect Information and Asymmetric Information - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-1-the-problem-of-imperfect-information-and-asymmetric-information"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "cdfe2cde57633dd5cbf3e4aed21ae73ae09d852f972a3c3af2c8841d43e86ff5",
+      "depth": 0,
+      "dossier": "E1109",
+      "gaps": [
+        "The historical origins of the quintile method and Lorenz curve are not documented in this source.",
+        "The source does not provide a precise decomposition of the causes of inequality, only qualitative statements.",
+        "The 'winner-take-all' theory is mentioned without attribution to its original proponents.",
+        "The source does not address alternative inequality measures such as the Gini coefficient."
+      ],
+      "need": "Explain the substantive principles of Income Inequality: Measurement and Causes. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 8,
+        "proposed_nodes": 8,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents two main causal explanations for rising U.S. inequality: changing household composition and shifts in wage distribution. It does not discuss alternative measures like the Gini coefficient or Theil index.",
+        "attribution": "The source does not attribute the quintile method, Lorenz curve, or winner-take-all theory to specific originators. It cites data from the U.S. Census Bureau and World Bank but does not establish historical priority for the concepts.",
+        "limitations": "The source is a textbook exposition, not original research. It does not provide detailed methodology for the 'roughly half' attribution to household changes, nor does it quantify the relative contributions of technology versus globalization. The cross-country data use different survey years, limiting comparability."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "15.4 Income Inequality: Measurement and Causes - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "68a685674748f6e721a10b994d9f1d0fc955ad1daef0b6f45eec45e7a09aaadf",
+      "depth": 0,
+      "dossier": "E1110",
+      "gaps": [
+        "The source does not provide the original text of Ricardo's treatise, so the exact wording of his argument is not available.",
+        "The historical development of the concept of absolute advantage is not traced.",
+        "The source does not discuss the empirical validity of the Ricardian model or its limitations in explaining real-world trade patterns."
+      ],
+      "need": "Explain the substantive principles of Absolute and Comparative Advantage. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 6,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 6,
+        "accepted_relations": 5,
+        "proposed_nodes": 6,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative theories of trade beyond the Ricardian model, such as the Heckscher-Ohlin model or new trade theory.",
+        "attribution": "The source attributes the comparative advantage argument to David Ricardo's 1817 treatise, but does not provide direct quotes or primary source analysis. The concept of absolute advantage is presented without specific attribution.",
+        "limitations": "The source is a textbook exposition and does not provide primary historical evidence for Ricardo's original formulation. It also does not address real-world complications like transportation costs, tariffs, or non-constant opportunity costs."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "33.1 Absolute and Comparative Advantage - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/33-1-absolute-and-comparative-advantage"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "0dc93ed8179c34a210c074ada1b999e477ad87cf537ed93d6b25010be3d10a14",
+      "depth": 0,
+      "dossier": "E1111",
+      "gaps": [
+        "Historical origin of the unemployment rate definition is not documented in this source.",
+        "Historical origin of the labor force participation rate concept is not documented.",
+        "The source does not provide quantitative evidence of the extent of hidden unemployment.",
+        "The source does not detail the evolution of the CPS sampling methodology since 1940."
+      ],
+      "need": "Explain the substantive principles of How Economists Define and Compute Unemployment Rate. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 6,
+        "proposed_nodes": 7,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source discusses alternative measures such as hidden unemployment and the labor force participation rate, but does not present alternative unemployment rate formulas beyond the standard one.",
+        "attribution": "Attribution is limited to institutional sources (BLS, Census Bureau) for current practices; no individual inventors or discoverers are named.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution for the origin of the unemployment rate definition or the CPS methodology. It also does not quantify the magnitude of measurement errors."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "21.1 How Economists Define and Compute Unemployment Rate - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/21-1-how-economists-define-and-compute-unemployment-rate"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "25aa09bbd77919e0b724eb1668b479aba962c6e82b004a45c792596f5d2002b8",
+      "depth": 0,
+      "dossier": "E1112",
+      "gaps": [
+        "Historical origins of price index methodology are not addressed.",
+        "No discussion of substitution bias, quality adjustments, or new goods in basket construction.",
+        "No mention of alternative inflation measures (e.g., PCE, core inflation).",
+        "Empirical claims about wage and GDP growth are not formally analyzed."
+      ],
+      "need": "Explain the substantive principles of Tracking Inflation. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 6,
+        "proposed_nodes": 7,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative inflation measures such as core inflation, chain-weighted indices, or hedonic adjustments.",
+        "attribution": "No original contributors are named for the concepts; they are presented as standard economic practice. Historical origins are not covered.",
+        "limitations": "The source is a textbook exposition; it does not provide historical attribution for the concepts. It acknowledges practical difficulties but does not detail them."
+      },
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "source_title": "22.1 Tracking Inflation - Principles of Economics 3e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "e8dc719bba146389c159935fab6338cc22b4df5438ef21335cd04ee9d1323125",
+      "depth": 0,
+      "dossier": "B1101",
+      "gaps": [
+        "Historical origins of the prokaryote/eukaryote distinction are not documented.",
+        "Original discoverers of cell structures (e.g., nucleoid, peptidoglycan cell wall) are not identified.",
+        "Evidence for functional roles of pili, flagella, and capsule is not provided.",
+        "The source does not address exceptions to size ranges or structural variability across Archaea.",
+        "No primary literature is cited for the surface area-to-volume argument or diffusion mechanism."
+      ],
+      "need": "Explain the substantive principles of Prokaryotic Cells. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 4,
+        "proposed_nodes": 9,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides a textbook exposition of prokaryotic cell structure and function, but does not discuss alternative historical theories or competing classifications.",
+        "attribution": "No specific historical discoverers are named for the concepts described. The contributions are presented as collective knowledge, and the date of publication (2018) is distinct from any original discovery dates.",
+        "limitations": "The source is a general biology textbook and does not provide primary research evidence, historical attributions, or detailed mechanistic data. It presents consensus knowledge without citing original studies."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "4.2 Prokaryotic Cells - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "fd84c6ba7efcac63502b5876f1b2e491112e8e1d621ab3a8303c173b3474a07d",
+      "depth": 0,
+      "dossier": "B1102",
+      "gaps": [
+        "Historical discovery dates and original contributors for organelles (nucleus, mitochondria, ribosomes, etc.) are not provided.",
+        "The source does not cite primary literature for the endosymbiosis theory or other claims.",
+        "No evidence on the molecular mechanisms of membrane transport or protein synthesis is given.",
+        "The text does not discuss evolutionary relationships among eukaryotes beyond endosymbiosis."
+      ],
+      "need": "Explain the substantive principles of Eukaryotic Cells. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 15,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 15,
+        "accepted_relations": 10,
+        "proposed_nodes": 15,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter, not a research article. It presents standard cell biology concepts without discussing alternative hypotheses except for the endosymbiosis theory, which is presented as the leading explanation.",
+        "attribution": "All content is attributed to the textbook authors as a collective, but no original discoveries are claimed. The endosymbiosis hypothesis is mentioned without naming its originator.",
+        "limitations": "The source does not provide historical attribution for any discoveries. It is a secondary exposition, so priority and original authorship cannot be determined from this document. The text also lacks detailed molecular mechanisms and quantitative data."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "4.3 Eukaryotic Cells - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "c00f74273ba1c76d043ed34d1d1310f899c48e02f2178a4b0797521b345e073e",
+      "depth": 0,
+      "dossier": "B1103",
+      "gaps": [
+        "Historical attribution of passive transport concepts is not provided in the source.",
+        "The source does not discuss the original experiments or discoveries that established the principles of diffusion and osmosis.",
+        "The mechanism of carrier protein conformational change is acknowledged as poorly understood.",
+        "The source does not provide quantitative relationships for diffusion rates or osmotic pressure.",
+        "The source does not address the historical development of the concept of selective permeability."
+      ],
+      "need": "Explain the substantive principles of Passive Transport. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 21,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 21,
+        "accepted_relations": 16,
+        "proposed_nodes": 21,
+        "proposed_relations": 16
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter that presents passive transport as a well-established concept. It does not discuss alternative theories or competing explanations for passive transport. The text focuses on the standard model of diffusion, osmosis, and facilitated transport.",
+        "attribution": "The source credits the illustrations to Rao, Ryan, Fletcher, Hawkins, and Tag from Texas A&M University, but the intellectual content is presented as general knowledge without specific attribution to original discoverers. The authors of the textbook are Mary Ann Clark, Matthew Douglas, and Jung Choi, but they are not the original discoverers of passive transport principles. The historical origins of concepts like diffusion and osmosis are not addressed.",
+        "limitations": "The source is a textbook exposition, not a primary research article. It does not provide historical context for the discovery of passive transport principles. The text does not cite original research papers or attribute specific discoveries to named scientists. The mechanisms of carrier protein conformational change are noted as poorly understood. The source does not discuss quantitative models of diffusion or detailed molecular structures."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "5.2 Passive Transport - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "eeccad97699038a3f3f68302aae6548f11eda211a26594d58d7b9cc679c7d46e",
+      "depth": 0,
+      "dossier": "B1104",
+      "gaps": [
+        "Historical origin of the active transport concept is not addressed in the source.",
+        "Primary literature for the sodium-potassium pump mechanism is not cited.",
+        "Quantitative details of electrochemical gradients (e.g., Nernst equation) are not provided.",
+        "The source does not discuss the discovery of the Na+-K+ ATPase by Jens Skou or other historical figures."
+      ],
+      "need": "Explain the substantive principles of Active Transport. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 6,
+        "proposed_nodes": 8,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative models of active transport, such as the detailed thermodynamics or kinetics of pumps, nor does it compare with other transport mechanisms beyond facilitated diffusion.",
+        "attribution": "The source credits the figures to Rao, A., Ryan, K., Tag, A., and Fletcher, S. from Texas A&M University, but the text itself is authored by Clark, Douglas, and Choi. No historical attribution for the discovery of active transport is given.",
+        "limitations": "The source is a textbook exposition and does not provide primary evidence for the historical discovery of active transport or the sodium-potassium pump. It does not cite original research papers."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "5.3 Active Transport - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/5-3-active-transport"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "0773ede114117fd3a01ef6ead876acb3bd310e6c17afb9f9566941de7b37159e",
+      "depth": 0,
+      "dossier": "B1105",
+      "gaps": [
+        "Historical attribution for induced fit model (e.g., Koshland) is missing.",
+        "Historical attribution for allosteric regulation (e.g., Monod, Wyman, Changeux) is missing.",
+        "Historical attribution for feedback inhibition is missing.",
+        "The source does not provide quantitative kinetic models (e.g., Michaelis-Menten) or their derivations.",
+        "The source does not discuss the experimental evidence supporting induced fit versus lock-and-key.",
+        "The source does not address the limitations of the induced fit model or alternative models."
+      ],
+      "need": "Explain the substantive principles of Enzymes. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 8,
+        "proposed_nodes": 10,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides a textbook overview of enzyme principles but does not discuss alternative models such as the Michaelis-Menten kinetics framework or the MWC model for allosteric regulation.",
+        "attribution": "The source does not name the discoverers of enzyme catalysis, induced fit, allosteric regulation, or feedback inhibition. It only credits the figures to Texas A&M University contributors, but not the original scientists.",
+        "limitations": "The source does not provide historical attribution for the concepts; it presents them as established knowledge without citing original researchers. It also does not cover advanced topics like enzyme kinetics equations or specific experimental evidence."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "6.5 Enzymes - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "3a72fce31784ad79121b23360404027d7c8693d94b7ad7ef5f61bd1b2aee33e7",
+      "depth": 0,
+      "dossier": "B1106",
+      "gaps": [
+        "Historical discovery of glycolysis and its enzymes is not addressed.",
+        "Detailed regulatory mechanisms beyond ATP/ADP and enzyme availability are not covered.",
+        "Thermodynamic details of individual reactions are omitted.",
+        "The source does not discuss the evolutionary origins of glycolysis."
+      ],
+      "need": "Explain the substantive principles of Glycolysis. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 11,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 11,
+        "accepted_relations": 10,
+        "proposed_nodes": 11,
+        "proposed_relations": 10
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative pathways to glycolysis in detail, only mentioning fermentation as an alternative for NAD+ regeneration.",
+        "attribution": "No specific historical discoverers are named; the content is presented as collective scientific knowledge.",
+        "limitations": "The source is a textbook exposition and does not provide historical attribution for the discovery of glycolysis or its individual steps."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "7.2 Glycolysis - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/7-2-glycolysis"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "e04cb1932332847233f707ef93bb508dfa35e5fb448566586b1afb1f529a19ea",
+      "depth": 0,
+      "dossier": "B1107",
+      "gaps": [
+        "The source does not provide primary evidence for Hans Krebs's discovery, so the intellectual content of his work is not documented here.",
+        "The source does not detail the molecular mechanisms of enzyme regulation or the structure of the pyruvate dehydrogenase complex.",
+        "The source does not discuss anaplerotic reactions that replenish cycle intermediates when they are used for biosynthesis.",
+        "The source does not quantify the ATP yield from NADH and FADH2 in the electron transport chain, leaving the total energy balance incomplete."
+      ],
+      "need": "Explain the substantive principles of Oxidation of Pyruvate and the Citric Acid Cycle. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 5,
+        "proposed_nodes": 8,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides no alternative pathways or competing models for pyruvate oxidation or the citric acid cycle.",
+        "attribution": "The source attributes the cycle's discovery to Hans Krebs in the 1930s, but this is a secondary account without primary evidence. Other contributions are attributed to the textbook authors as collective exposition.",
+        "limitations": "The source is a textbook exposition, not a primary research article. It does not provide experimental evidence or detailed historical context for the discoveries."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "7.3 Oxidation of Pyruvate and the Citric Acid Cycle - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/7-3-oxidation-of-pyruvate-and-the-citric-acid-cycle"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "458a8164343734c1afd3ce5707d5e98f7307e431e8e1c5e8be6b485423eba741",
+      "depth": 0,
+      "dossier": "B1108",
+      "gaps": [
+        "The source does not identify who discovered photosynthesis or its components (e.g., the light and dark reactions, the Calvin cycle).",
+        "The source does not explain the historical development of the photosynthesis equation or the two-stage model.",
+        "The source does not provide evidence for the claim that photosynthesis powers 99 percent of ecosystems.",
+        "The source does not discuss the origin of oxygen in photosynthesis (from water splitting), which is a key mechanistic detail.",
+        "The source does not address the regulation of photosynthesis by environmental factors beyond stomatal closure."
+      ],
+      "need": "Explain the substantive principles of Overview of Photosynthesis. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 4,
+        "proposed_nodes": 7,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions chemoautotrophs as an alternative energy source for organic compound synthesis, but does not detail their mechanisms or compare them to photosynthesis.",
+        "attribution": "The source does not attribute specific discoveries to named scientists; it presents photosynthesis as established knowledge. The figure credit to Rao et al. is for the illustration, not the conceptual framework.",
+        "limitations": "The source is a textbook overview; it does not provide experimental evidence, historical context of discoveries, or detailed biochemical mechanisms. It also does not address C4 or CAM photosynthesis, photorespiration, or the evolutionary history of photosynthesis beyond a brief mention of cyanobacterial ancestry."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "8.1 Overview of Photosynthesis - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "162620ee996bf7332d5c005492754b49970506bcbe3ee091b9ee6a2d9878e082",
+      "depth": 0,
+      "dossier": "B1109",
+      "gaps": [
+        "Historical origins of the cell cycle phases (G1, S, G2, M) are not documented.",
+        "Discovery of kinetochore and cohesin roles is not attributed.",
+        "Mechanisms of cell-cycle regulation (e.g., cyclins, CDKs) are absent.",
+        "The G0 concept's origin is not attributed.",
+        "The method's validity assumptions are not critically examined."
+      ],
+      "need": "Explain the substantive principles of The Cell Cycle. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 7,
+        "proposed_nodes": 8,
+        "proposed_relations": 7
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides only textbook exposition; no alternative models or competing theories are discussed.",
+        "attribution": "No original discoverers are named; all concepts are presented as collective knowledge without citation.",
+        "limitations": "The source does not provide historical attribution for the concepts; it does not discuss molecular regulation, checkpoints, or variations across species beyond plant/animal cytokinesis."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "10.2 The Cell Cycle - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "551e07993ee75309bd1f4bae88d79b1a8fb250ef1599b072e1ad8573e1603d4b",
+      "depth": 0,
+      "dossier": "B1110",
+      "gaps": [
+        "Original historical discovery of meiosis is not documented in this source.",
+        "Dates for the cited evolutionary hypotheses are not provided.",
+        "Molecular details of synaptonemal complex assembly are not covered.",
+        "Errors such as nondisjunction are not discussed."
+      ],
+      "need": "Explain the substantive principles of The Process of Meiosis. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 8,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 8,
+        "accepted_relations": 6,
+        "proposed_nodes": 8,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions alternative approaches to studying meiosis evolution, including comparisons of protist meiosis forms and genetic comparisons by Ramesh and colleagues.",
+        "attribution": "Attribution for the evolutionary hypothesis is given to Wilkins and Holliday, and for protist comparisons to Ramesh and colleagues, but the source does not establish priority or original discovery dates.",
+        "limitations": "The source is a textbook exposition and does not provide primary historical evidence for the discovery of meiosis. It cites Wilkins and Holliday and Ramesh et al. without dates or original publication details."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "11.1 The Process of Meiosis - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "f88b8eb7d05a42fcf48f3847d61ed3539bdffd013cfaf879c10fabe3f79d9964",
+      "depth": 0,
+      "dossier": "B1111",
+      "gaps": [
+        "The source does not specify who proposed the conservative, semi-conservative, and dispersive models, nor the dates of their proposal.",
+        "The source does not provide the publication date of the Meselson-Stahl experiment.",
+        "The source does not discuss the enzymatic details of DNA replication, such as the role of DNA polymerase or the direction of synthesis.",
+        "The source does not address potential limitations or criticisms of the Meselson-Stahl experiment."
+      ],
+      "need": "Explain the substantive principles of Basics of DNA Replication. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 5,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 5,
+        "accepted_relations": 4,
+        "proposed_nodes": 5,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source describes three alternative models (conservative, semi-conservative, dispersive) and explains how the Meselson-Stahl experiment ruled out two of them.",
+        "attribution": "Watson and Crick are credited for the base-pairing copying insight via a direct quote. Meselson and Stahl are credited for the experiment and its interpretation. The three models are presented without named proposers.",
+        "limitations": "The source does not provide dates for the Meselson-Stahl experiment or the proposal of the three models. It does not detail the molecular machinery of replication beyond the template principle. Attribution for the three models is not specified."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "14.3 Basics of DNA Replication - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "577bbbeb02bbcfe5fd550cf16ded3b88ac68c403ec89b956590416e888215e99",
+      "depth": 0,
+      "dossier": "B1112",
+      "gaps": [
+        "No dates are provided for the triplet hypothesis, the frameshift experiment, or the in vitro code solving.",
+        "The passage does not name the scientists who solved the genetic code via in vitro translation.",
+        "The passage does not detail the exceptions to the universal code.",
+        "The passage does not explain the mechanism of stop codon recognition or the role of release factors.",
+        "The passage does not discuss the evolutionary origin of the code's structure."
+      ],
+      "need": "Explain the substantive principles of The Genetic Code. Distinguish textbook exposition from original historical discovery. Do not turn routine exercise steps or software syntax into insights.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 5,
+        "proposed_nodes": 8,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source does not discuss alternative genetic codes or non-triplet reading mechanisms beyond the triplet hypothesis.",
+        "attribution": "Crick and Brenner are named for the frameshift experiment, but other discoveries (triplet hypothesis, in vitro code solving, stop codons, universality) are attributed to unnamed 'scientists.' The central dogma is not attributed to a specific person in the passage.",
+        "limitations": "The source is a textbook exposition; it does not provide primary experimental details, dates, or full attribution for the discoveries. The frameshift experiment is described without specifying the virus or assay conditions."
+      },
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "source_title": "15.1 The Genetic Code - Biology 2e | OpenStax",
+      "state": "succeeded",
+      "url": "https://openstax.org/books/biology-2e/pages/15-1-the-genetic-code"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "e3c946c6f8a059c75380f2a32f4101167978efdd2c67fc1e5fdb759feb72e566",
+      "depth": 0,
+      "dossier": "C1104",
+      "gaps": [
+        "No primary evidence for the origin of the process abstraction; only secondary citations.",
+        "The source does not detail the context switch mechanism, which is deferred to later chapters.",
+        "No discussion of failure modes or correctness conditions for process isolation.",
+        "The source does not cover hardware support for process switching (e.g., traps, interrupts).",
+        "No empirical data on performance costs of time sharing beyond qualitative statements."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Processes and execution isolation; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 9,
+        "proposed_nodes": 10,
+        "proposed_relations": 9
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter, not a research paper; it provides no new alternatives to existing process abstractions.",
+        "attribution": "The source attributes process state concepts to Dennis and Van Horn (1966) and Multics (1965), and policy/mechanism separation to Hydra (1975), but does not establish priority or provide primary evidence.",
+        "limitations": "The source is an introductory exposition; it does not provide formal proofs, detailed mechanisms, or historical analysis. Attribution of concepts is secondary, citing earlier works without deep discussion."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "The Abstraction: The Process (OSTEP Chapter 4)",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "a543e8a11acdf8feaf2bc60a7666a6724317da055c814b6d566bf27df2759119",
+      "depth": 0,
+      "dossier": "C1105",
+      "gaps": [
+        "No detailed mechanisms for address translation (e.g., paging, segmentation) are provided in this chapter.",
+        "The historical account relies on secondary citations; priority of time-sharing ideas is uncertain (e.g., McCarthy vs. Strachey).",
+        "The chapter does not discuss failure modes or costs of virtual memory in depth."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Virtual address spaces; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 10,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 10,
+        "accepted_relations": 6,
+        "proposed_nodes": 10,
+        "proposed_relations": 6
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter, not a research paper; it provides a conceptual overview rather than new mechanisms.",
+        "attribution": "Historical attributions are cited (e.g., Corbató, McCarthy, Strachey) but the chapter does not claim original contributions; it is an exposition.",
+        "limitations": "The chapter does not detail hardware translation mechanisms, policies, or performance trade-offs; it is an introduction."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "The Abstraction: Address Spaces (Chapter 13 of OSTEP)",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "d8bf2d0b570e7f5a8425e7dbe026a3d262f7f94b441ad28ca4ffe51d09529d99",
+      "depth": 0,
+      "dossier": "C1106",
+      "gaps": [
+        "The source does not specify the original authors or dates for the thread abstraction, parallelism motivations, or atomicity principle.",
+        "The source does not discuss the historical development of synchronization primitives beyond citing Dijkstra.",
+        "The source does not provide formal definitions or proofs for the concepts introduced."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Concurrency and Threads; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 8,
+        "proposed_nodes": 9,
+        "proposed_relations": 8
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter; it does not provide alternative formulations or competing theories.",
+        "attribution": "The source attributes the terms critical section, race condition, and mutual exclusion to Dijkstra, but does not provide detailed historical evidence for other concepts.",
+        "limitations": "The source is an introductory exposition and does not cover advanced topics like lock-free programming or formal verification."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "single.dvi",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "b72eaf45a168f0a9ebf6795eb6bbfca035d67576f59650239be4fe99c870a4e6",
+      "depth": 0,
+      "dossier": "C1107",
+      "gaps": [
+        "No primary sources for the invention of test-and-set, compare-and-swap, or load-linked/store-conditional; only textbook descriptions.",
+        "The source does not provide empirical performance measurements for the locks; only qualitative analysis.",
+        "The historical development of locks from early multiprocessors to modern systems is not fully documented; only brief mentions.",
+        "The source does not discuss lock-free synchronization in detail, only mentions it as a future topic."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Mutual exclusion with locks; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 16,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 10,
+        "proposed_nodes": 16,
+        "proposed_relations": 11
+      },
+      "search_outcomes": {
+        "alternatives": "The source provides multiple lock implementations: interrupt disabling, flag-based, test-and-set, compare-and-swap, load-linked/store-conditional, ticket, yield, queue-based, futex, and two-phase locks.",
+        "attribution": "Attribution is uncertain for most mechanisms; the text credits ticket lock to Mellor-Crummey and Scott, Dekker and Peterson for their algorithms, and Dahm for two-phase locks, but does not provide primary evidence.",
+        "limitations": "The source is a textbook, so it does not provide original research findings; it synthesizes known techniques. Attribution for many mechanisms is unknown or credited to references without detailed evidence."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "single.dvi",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "b5c1b305c20b16324bca3a44733f971708e9a86d26460aca0347c6c601b274bb",
+      "depth": 0,
+      "dossier": "C1108",
+      "gaps": [
+        "No primary source evidence for the origin of paging; only secondary citations.",
+        "The chapter does not discuss TLB or multi-level page tables, which are covered in later chapters.",
+        "No empirical measurements of actual slowdown; the factor of two is an estimate.",
+        "The memory trace uses simplified assumptions (e.g., fixed instruction size) that may not reflect real x86 behavior."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Paging and virtual memory; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 7,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 7,
+        "accepted_relations": 5,
+        "proposed_nodes": 7,
+        "proposed_relations": 5
+      },
+      "search_outcomes": {
+        "alternatives": "The source mentions segmentation as an alternative approach but does not detail it; it also references later chapters for TLB and advanced page tables.",
+        "attribution": "The chapter attributes the origin of paging to the Atlas system via citations [KE+62, L78], but does not provide primary evidence; other concepts are presented as standard without specific attribution.",
+        "limitations": "The source is a textbook exposition, not a primary research paper; historical attribution to Atlas is secondary via references."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "Paging: Introduction (Chapter 18 of OSTEP)",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "346872fe31991ceb5d3fc114a60932fa93cf1daab0a8bc3d8ad3ccc9a343a3dd",
+      "depth": 0,
+      "dossier": "C1109",
+      "gaps": [
+        "The source does not provide primary evidence for the historical origins of condition variables; it only cites references.",
+        "The chapter does not discuss implementation details of how atomic release-and-sleep is achieved in real systems.",
+        "No quantitative analysis of the performance impact of covering conditions is provided.",
+        "The source does not cover alternative synchronization primitives like semaphores in depth, though it mentions them."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Condition Variables; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 9,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 9,
+        "accepted_relations": 7,
+        "proposed_nodes": 9,
+        "proposed_relations": 7
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter; it does not provide alternative formulations beyond the ones discussed. It mentions Hoare semantics as an alternative to Mesa but does not detail its implementation.",
+        "attribution": "The chapter attributes the condition variable concept to Dijkstra's private semaphores and Hoare's monitors, and Mesa semantics to Lampson and Redell, but these are secondary accounts. The textbook authors are the creators of the exposition, not the original concepts.",
+        "limitations": "The source is a secondary exposition; historical attributions (e.g., Dijkstra, Hoare, Lampson and Redell) are cited but not verified from primary sources. The chapter does not provide formal proofs or performance measurements."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "Condition Variables (Chapter 30, Operating Systems: Three Easy Pieces)",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "f4636fef1ffdc3cbfe5882a4a06513bc6617d0c0b6450a4a932ea74a4ebaf193",
+      "depth": 0,
+      "dossier": "C1110",
+      "gaps": [
+        "No primary sources for semaphore invention are provided.",
+        "No formal correctness proofs for the presented synchronization patterns.",
+        "No performance measurements for reader-writer locks or throttling.",
+        "No detailed analysis of the difficulty of building condition variables from semaphores."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Semaphores; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 12,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 12,
+        "accepted_relations": 11,
+        "proposed_nodes": 12,
+        "proposed_relations": 11
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter; it does not provide primary historical evidence. It cites Dijkstra's papers and Gray and Reuter's book for alternative history.",
+        "attribution": "Attribution is based on the source's citations; the source itself is secondary and notes historical uncertainty.",
+        "limitations": "The source does not resolve the priority of semaphore invention, nor does it provide formal proofs of correctness for the presented solutions."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "single.dvi",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "d9d77df1ec3209924ef14fcb9da8b2a8ff19e6ca61c4373571e8880b549bc21e",
+      "depth": 0,
+      "dossier": "C1111",
+      "gaps": [
+        "The source does not provide primary evidence for the original development of journaling or fsck; it relies on secondary citations.",
+        "The source does not discuss the historical evolution of journaling in detail, such as the transition from ext2 to ext3.",
+        "The source does not cover all crash-consistency techniques, such as log-structured file systems in depth.",
+        "The source does not provide quantitative performance data for the techniques discussed.",
+        "The source does not address the latest research beyond 2014, such as newer approaches to crash consistency."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in File-system consistency and journaling; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 16,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 16,
+        "accepted_relations": 15,
+        "proposed_nodes": 16,
+        "proposed_relations": 15
+      },
+      "search_outcomes": {
+        "alternatives": "The source discusses several alternatives to journaling, including fsck, Soft Updates, copy-on-write, backpointer-based consistency, and optimistic crash consistency.",
+        "attribution": "The source attributes the first journaling file system to Cedar [H87], fsck to McKusick and Kowalski [MK96], Soft Updates to Ganger and Patt [GP94], and various Wisconsin research to the cited papers. However, the source does not provide primary evidence for these attributions.",
+        "limitations": "The source is a textbook chapter, so it does not provide primary evidence for the original development of these techniques. Attribution is based on citations, which may not be exhaustive. The source does not cover all possible crash-consistency approaches or the latest research."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "Crash Consistency: FSCK and Journaling (Chapter 42 of OSTEP)",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "263e33fc18630a7b78859a5ff65a5f7cf45e9fa46a77505c23a8e8265afbe329",
+      "depth": 0,
+      "dossier": "C1112",
+      "gaps": [
+        "The source does not provide primary evidence for the historical development of RPC or the end-to-end argument; it only cites secondary references.",
+        "The chapter does not discuss failure modes beyond packet loss, such as Byzantine failures or network partitions.",
+        "No quantitative performance data is provided for the mechanisms described.",
+        "The source does not cover security aspects of distributed systems in detail, only mentioning them as a consideration."
+      ],
+      "need": "Substantive mechanisms, correctness conditions and failure modes in Distributed Systems; omit routine code and exercises, and preserve historical attribution uncertainty.",
+      "new_contributions": 12,
+      "parent": null,
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 12,
+        "accepted_relations": 11,
+        "proposed_nodes": 12,
+        "proposed_relations": 11
+      },
+      "search_outcomes": {
+        "alternatives": "The source is a textbook chapter, not a research paper; it provides a conceptual overview rather than original research findings.",
+        "attribution": "The chapter cites key papers (e.g., Birrell and Nelson 1984, Saltzer et al. 1984) but does not establish priority beyond those citations. The authors of the chapter are not the original contributors of the concepts.",
+        "limitations": "The chapter does not provide formal proofs or quantitative analyses; it is an introductory exposition. Historical attributions are based on citations, not primary evidence."
+      },
+      "source_discovery": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "source_title": "Distributed Systems (Chapter 48 of OSTEP)",
+      "state": "succeeded",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf"
+    }
+  ],
+  "plan_hash": "31535114f870e8ca18dbf0ac805b5e34fee5a9fd7856a7b0f450f29eab8c8b39",
+  "plan_id": "foundations-wave-1-2",
+  "started_at": "2026-10-13T01:56:26+00:00"
+}

@@ -1,0 +1,1280 @@
+{
+  "assignments": [
+    {
+      "depth": 1,
+      "dossier": "B01",
+      "need": "RoseTTAFold three-track architecture: alternative formulation, use of evolutionary and geometric information, interaction prediction scope.",
+      "parent": "n-711b35dd72329889",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7612213/fullTextXML"
+    },
+    {
+      "depth": 1,
+      "dossier": "B02",
+      "need": "Jinek et al. 2012 programmable RNA-guided DNA cleavage: the conceptual foundation of genome editing; no operational protocols.",
+      "parent": "n-f85dc1a6cfbda314",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6286148/"
+    },
+    {
+      "depth": 1,
+      "dossier": "B03",
+      "need": "The randomized mRNA-1273 vaccine trial: effect estimates, endpoint definition, follow-up and generalization limits.",
+      "parent": "n-8ce5528e576a27ba",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7787219/fullTextXML"
+    },
+    {
+      "depth": 1,
+      "dossier": "B04",
+      "need": "Drop-seq as a distinct single-cell measurement contribution: barcoding and measurement limitations at conceptual level.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4481139/"
+    },
+    {
+      "depth": 1,
+      "dossier": "B04",
+      "need": "Spatial reconstruction of single-cell gene-expression data: inference assumptions and limits, distinguished from direct spatial measurement.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4430369/fullTextXML"
+    },
+    {
+      "depth": 1,
+      "dossier": "B05",
+      "need": "Anti-PD-1 clinical evidence: early trial design, response heterogeneity and safety boundaries; do not imply randomized causal evidence.",
+      "parent": "n-5e121c4165a316c7",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3544539/"
+    },
+    {
+      "depth": 1,
+      "dossier": "B05",
+      "need": "CAR T-cell remission evidence: engineered-cell concept, follow-up and toxicities; no clinical advice or implementation protocols.",
+      "parent": "n-5e121c4165a316c7",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4267531/"
+    },
+    {
+      "depth": 1,
+      "dossier": "B06",
+      "need": "Telomere-to-telomere reference genome: assembly reasoning and remaining population-diversity limits before pangenomes.",
+      "parent": "n-bf916b5c3cc32451",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9186530/fullTextXML"
+    },
+    {
+      "depth": 1,
+      "dossier": "C04",
+      "need": "The original seL4 functional correctness proof: scope, refinement layers and explicit unverified assumptions.",
+      "parent": "n-b208a8033b25941a",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://sel4.org/Research/pdfs/sel4-formal-verification-os-kernel.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E01",
+      "need": "Compulsory schooling instrumental-variable identification: instrument assumptions, local interpretation and potential violations.",
+      "parent": "n-7a2dcf7d88d3269d",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.homepages.ucl.ac.uk/~uctpcac/Angrist_Krueger91.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E01",
+      "need": "Natural experiments and local average treatment effects: selection assumptions and the distinct identification problem before machine-learning nuisance estimation.",
+      "parent": "n-7a2dcf7d88d3269d",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2021/10/advanced-economicsciencesprize2021.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E02",
+      "need": "Auction design in the original investigator’s account: incentives, information and actual documented connections to matching.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E03",
+      "need": "Stable matching theory and empirical market design: independent formulations and the precise difference between stability and efficiency.",
+      "parent": "n-fab40a0b84c56f14",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/advanced-economicsciences2012.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E03",
+      "need": "Market design in Roth’s own lecture: stability, incentives, kidney exchange and practical institutional constraints.",
+      "parent": "n-fab40a0b84c56f14",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/roth-lecture_slides.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E04",
+      "need": "Growth accounting and the neoclassical growth model: what exogenous technological progress leaves unexplained.",
+      "parent": "n-616d6a7be712b4bd",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/lecture/"
+    },
+    {
+      "depth": 1,
+      "dossier": "E04",
+      "need": "Institutions and prosperity: a complementary account, inferential limits, and interaction with innovation. Admit only portions relevant to growth.",
+      "parent": "n-616d6a7be712b4bd",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2025/01/acemoglu-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E05",
+      "need": "Generative AI at work: measured task-specific productivity effects and heterogeneous outcomes, distinguished from aggregate growth claims.",
+      "parent": "n-bd9dc6b94c77f44a",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nber.org/system/files/working_papers/w31161/w31161.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E05",
+      "need": "Simple macroeconomics of AI: task-based aggregation assumptions and boundaries of projected impacts.",
+      "parent": "n-bd9dc6b94c77f44a",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nber.org/system/files/working_papers/w32487/w32487.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E06",
+      "need": "Behavioral economics and bounded rationality: documented mechanisms and limits, without treating normative nudges as established welfare improvements.",
+      "parent": "n-0494977b87c05556",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/01/thaler-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E06",
+      "need": "Vernon Smith’s experimental economics: institutional context and evidence distinct from prospect theory; retain independent scientific attribution.",
+      "parent": "n-0494977b87c05556",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/smith-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "B07",
+      "need": "Nuclear reprogramming experiments and conceptual evidence that cellular differentiation need not irreversibly erase genetic information.",
+      "parent": "n-4a3a4836ce24eff0",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/gurdon-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "B08",
+      "need": "Original investigator account of optogenetics: microbial opsins, cell-type targeting, causal inference and perturbation limits.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4790845/"
+    },
+    {
+      "depth": 1,
+      "dossier": "B08",
+      "need": "Optogenetic causal interpretation: alternative tools and controls, circuit-level limitations. Attribute this methodological synthesis to its authors.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4756725/fullTextXML"
+    },
+    {
+      "depth": 1,
+      "dossier": "B09",
+      "need": "Antimicrobial resistance burden estimates: counterfactual estimands, uncertainty and observational-data limitations.",
+      "parent": "n-62829936e5a310bd",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8841637/"
+    },
+    {
+      "depth": 1,
+      "dossier": "B10",
+      "need": "CONSORT reporting guidance: randomization, allocation concealment, estimands and harms; guidance is normative methodological advice, not empirical efficacy.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2844943/fullTextXML"
+    },
+    {
+      "depth": 1,
+      "dossier": "B11",
+      "need": "Compressed sensing in MRI: the documented link between mathematical sparsity and medical image acquisition; exact assumptions and reconstruction failure limits.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://people.eecs.berkeley.edu/~mlustig/CS/SparseMRI.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "B11",
+      "need": "Mansfield’s independent MRI formulation: spatial encoding, imaging speed and distinctions from Lauterbur’s contributions.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/mansfield-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "B12",
+      "need": "Randomized fecal-microbiota-transplantation evidence: recurrence outcome, comparator and generalization limits; no treatment directions.",
+      "parent": "n-1585596ef5ccfe67",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5909820/"
+    },
+    {
+      "depth": 1,
+      "dossier": "E07",
+      "need": "Incomplete contracts and ownership: formal assumptions, residual control rights, and limits of contractual completeness.",
+      "parent": "n-a9b413216d9a4277",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/hart-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E07",
+      "need": "Moral hazard and incentive contracting: informativeness, multitasking and limits of performance measures.",
+      "parent": "n-a9b413216d9a4277",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/holmstrom-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E08",
+      "need": "Bank runs and multiple equilibria: liquidity transformation, fragility and assumptions behind deposit-insurance conclusions.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2025/03/dybvig-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E09",
+      "need": "Buffer-stock saving: income risk, impatience conditions and the consumption function, a mathematical foundation relevant to heterogeneous-agent models. Distinguish this 2021 treatment from original priority and from HANK policy conclusions.",
+      "parent": "n-7a21c275b68f9516",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.econ2.jhu.edu/people/ccarroll/papers/BufferStockTheory.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E10",
+      "need": "Increasing returns and trade: product differentiation and economic geography as distinct mechanisms from production-network shocks.",
+      "parent": "n-4870009a17fbc3e8",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/06/krugman_lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E11",
+      "need": "Integrated assessment of climate and growth: damages, discounting, uncertainty and normative parameter choices.",
+      "parent": "n-92708d8e0f1bd2c8",
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/uploads/2018/10/nordhaus-lecture.pdf"
+    },
+    {
+      "depth": 1,
+      "dossier": "E12",
+      "need": "Institutional explanation of Sen’s welfare-economics contributions: social choice, informational assumptions, poverty and capability. Clearly secondary evidence, no theorem proof claims.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/press-release/"
+    },
+    {
+      "depth": 1,
+      "dossier": "E12",
+      "need": "Sen’s first-person intellectual history: Arrow, Rawls, collective choice and capabilities. Historical testimony supports attribution and development, not mathematical proof.",
+      "parent": null,
+      "role": "foundation_or_boundary",
+      "source_discovery": "Primary author or institutional account; verify identity, access and claim support from retrieved passages.",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/sen/biographical/"
+    }
+  ],
+  "frozen_checklists": {
+    "B01": [
+      {
+        "contributions": [
+          "n-2cb219a9998c1a05",
+          "n-3d671d88b4fcb089",
+          "n-6cf530f8f03b7dab",
+          "n-6ecdc3cdb0cf0aac",
+          "n-711b35dd72329889",
+          "n-779419114e545af4"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-083f6daeeca77f9b",
+          "n-111816b6705fa729",
+          "n-137dbeca62da7e63",
+          "n-143fd0ebd9c38e03",
+          "n-1ce856fde6e35d1a",
+          "n-2cb219a9998c1a05",
+          "n-36199efa1e91cb6a",
+          "n-3d671d88b4fcb089",
+          "n-60bd317af3d28a6a",
+          "n-6cf530f8f03b7dab",
+          "n-6ecdc3cdb0cf0aac",
+          "n-711b35dd72329889",
+          "n-779419114e545af4",
+          "n-7b9f43b45e25c221",
+          "n-7f92a136b6dbe37b",
+          "n-8ee9810539d14639",
+          "n-901f138c96d9cb50",
+          "n-9c9cf88cda0ba36f",
+          "n-9d562975e57687ca",
+          "n-9e2728319c4ed2b0",
+          "n-a32c34dd9e1248de",
+          "n-a723dc08f3320cc3",
+          "n-b14ef59696253b87",
+          "n-b984cbafda8c3187",
+          "n-c41d7f4bb44f718f",
+          "n-d75eae826643b24a",
+          "n-e6a299176bb14107",
+          "n-f3afe3ca519fca0b",
+          "n-f4001d8ae6f581bd",
+          "n-fcfbc95e0461e2ce",
+          "n-feedb19c2c0d0955"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-137dbeca62da7e63",
+          "n-143fd0ebd9c38e03",
+          "n-1ce856fde6e35d1a",
+          "n-2a2a0298d1245141",
+          "n-36199efa1e91cb6a",
+          "n-38c9c9e13228f681",
+          "n-45adf700ccba91c9",
+          "n-60bd317af3d28a6a",
+          "n-7f92a136b6dbe37b",
+          "n-8ee9810539d14639",
+          "n-9c9cf88cda0ba36f",
+          "n-9e2728319c4ed2b0",
+          "n-a32c34dd9e1248de",
+          "n-f198a38af84f9b54",
+          "n-f3afe3ca519fca0b",
+          "n-f3d91847a324a362",
+          "n-feedb19c2c0d0955"
+        ],
+        "id": "limits",
+        "requirement": "Prediction is not experimental confirmation or therapeutic efficacy."
+      }
+    ],
+    "B02": [
+      {
+        "contributions": [
+          "n-12463f1c6b63f665",
+          "n-863f3e1a7406de67",
+          "n-a40260ab248df1ac",
+          "n-f85dc1a6cfbda314"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-217df8c65659e8fe",
+          "n-37c78f9d040c60ea",
+          "n-a40260ab248df1ac",
+          "n-bb50c3df0e291ea7",
+          "n-f85dc1a6cfbda314"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-12463f1c6b63f665",
+          "n-217df8c65659e8fe",
+          "n-37c78f9d040c60ea",
+          "n-7259fff433a7cc11",
+          "n-863f3e1a7406de67",
+          "n-a40260ab248df1ac",
+          "n-bb50c3df0e291ea7",
+          "n-c532c43e5bb8090b",
+          "n-cca4680a0e020c66",
+          "n-f85dc1a6cfbda314"
+        ],
+        "id": "limits",
+        "requirement": "Separate mechanism, trial evidence, approval date, eligibility, and safety limits; no protocols."
+      }
+    ],
+    "B03": [
+      {
+        "contributions": [
+          "n-3659517e8f80bef8",
+          "n-8ce5528e576a27ba",
+          "n-ef83401d88ccbbdf"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-27e21cf667aa659c",
+          "n-3915904bfed17a4a",
+          "n-40c29418ab971aed",
+          "n-53bea1d256a4bb9f",
+          "n-59d4ee6d3deee419",
+          "n-b7e20812b2c61278",
+          "n-c3b49a13bf01726c"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-1af9e913027d555a",
+          "n-267b9032008c766d",
+          "n-3659517e8f80bef8",
+          "n-3915904bfed17a4a",
+          "n-40750417347f94b1",
+          "n-40c29418ab971aed",
+          "n-53bea1d256a4bb9f",
+          "n-55855f4edfd4a427",
+          "n-59d4ee6d3deee419",
+          "n-7d08c307d63017bd",
+          "n-8ce5528e576a27ba",
+          "n-91447560b90cfbe7",
+          "n-c3b49a13bf01726c",
+          "n-ef83401d88ccbbdf"
+        ],
+        "id": "limits",
+        "requirement": "Resolve original discoveries and human clinical evidence; avoid practical biological protocols."
+      }
+    ],
+    "B04": [
+      {
+        "contributions": [
+          "n-04bfbeb4be0d2b4a",
+          "n-3a0f87f79c41e428"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-04bfbeb4be0d2b4a",
+          "n-06de7d0d5abf3ad5",
+          "n-2321e8665e7cb706",
+          "n-49f8666be7537423",
+          "n-5cdbcbde26787f93",
+          "n-a133297d2b332d75",
+          "n-b75472c3d21ee899",
+          "n-e5e5d50dc3296c66",
+          "n-edf03e64b2259cc2",
+          "n-f3e1d0cd9a35454a"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-04bfbeb4be0d2b4a",
+          "n-3a0f87f79c41e428",
+          "n-7b162c95131e0310"
+        ],
+        "id": "limits",
+        "requirement": "An atlas label is not a unique immutable cell identity; preserve sampling limits."
+      }
+    ],
+    "B05": [
+      {
+        "contributions": [
+          "n-19379d8d36714459",
+          "n-1a1307e91ccdcd84",
+          "n-1eeec69aaa52c37b",
+          "n-1fddeeec3df41fb8",
+          "n-2230ea115541abd9",
+          "n-2b6d545fe27b36ba",
+          "n-2e16fcf950871c35",
+          "n-36faab63b6dcb93c",
+          "n-5e121c4165a316c7",
+          "n-70495dbd2f1dc8e0",
+          "n-7494f38eef2939c4",
+          "n-75ed344ed6d43a9d",
+          "n-834a6c4e80269b2e",
+          "n-8d8a646d56bd3b74",
+          "n-9c3064c87aae7ab3",
+          "n-a544fcdd6713feb6",
+          "n-b5c1ddb9810667ec",
+          "n-cf5d6c5a02351f25",
+          "n-d9412490eb84ead6"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-19379d8d36714459",
+          "n-1a1307e91ccdcd84",
+          "n-1eeec69aaa52c37b",
+          "n-1fddeeec3df41fb8",
+          "n-2230ea115541abd9",
+          "n-2b6d545fe27b36ba",
+          "n-2e16fcf950871c35",
+          "n-36faab63b6dcb93c",
+          "n-5e121c4165a316c7",
+          "n-70495dbd2f1dc8e0",
+          "n-7494f38eef2939c4",
+          "n-75ed344ed6d43a9d",
+          "n-834a6c4e80269b2e",
+          "n-8d8a646d56bd3b74",
+          "n-9c3064c87aae7ab3",
+          "n-a544fcdd6713feb6",
+          "n-b5c1ddb9810667ec",
+          "n-cf5d6c5a02351f25",
+          "n-d9412490eb84ead6"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-19379d8d36714459",
+          "n-1a1307e91ccdcd84",
+          "n-1eeec69aaa52c37b",
+          "n-1fddeeec3df41fb8",
+          "n-2230ea115541abd9",
+          "n-2b6d545fe27b36ba",
+          "n-2e16fcf950871c35",
+          "n-36faab63b6dcb93c",
+          "n-5e121c4165a316c7",
+          "n-70495dbd2f1dc8e0",
+          "n-7494f38eef2939c4",
+          "n-75ed344ed6d43a9d",
+          "n-834a6c4e80269b2e",
+          "n-8d8a646d56bd3b74",
+          "n-9c3064c87aae7ab3",
+          "n-a544fcdd6713feb6",
+          "n-b5c1ddb9810667ec",
+          "n-cf5d6c5a02351f25",
+          "n-d9412490eb84ead6"
+        ],
+        "id": "limits",
+        "requirement": "Do not conflate modalities, indications, or benefit-risk profiles."
+      }
+    ],
+    "B06": [
+      {
+        "contributions": [
+          "n-dc9829b0ba4d9e47"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-05326029a01765b7",
+          "n-29fca322be558d59",
+          "n-b3f25467dd7c5937",
+          "n-bf916b5c3cc32451"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-06570ce42b653018",
+          "n-61b14f72de38712f",
+          "n-a1386ee43e01949c",
+          "n-bf916b5c3cc32451"
+        ],
+        "id": "limits",
+        "requirement": "Represent diversity and sampling limitations; prohibit genetic determinism and unsupported traits."
+      }
+    ],
+    "B07": [
+      {
+        "contributions": [
+          "n-09923da0b0309229",
+          "n-2d6390b0b6e67aae",
+          "n-fd5783e34a5d6659"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-1c864e73f894ce1a",
+          "n-272b6374d46d43a0",
+          "n-4a3a4836ce24eff0",
+          "n-755e3daa6010ab06",
+          "n-8ea6f6820e55d7dc",
+          "n-98aafcfbecbba052",
+          "n-a7661f86db5aa351",
+          "n-a7b511b608f19655",
+          "n-d8e5d9ca73e43233",
+          "n-e6b9b31fbe844a57"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-10517bad6997e54d",
+          "n-272b6374d46d43a0",
+          "n-4a3a4836ce24eff0",
+          "n-60e72f11641eda88",
+          "n-8ea6f6820e55d7dc",
+          "n-a7661f86db5aa351",
+          "n-ed154e13dddea5c8"
+        ],
+        "id": "limits",
+        "requirement": "Model resemblance is not whole-organ function or a ready clinical treatment."
+      }
+    ],
+    "B08": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Bound causal claims by perturbation, organism, and measurement; no invasive experimental instructions."
+      }
+    ],
+    "B09": [
+      {
+        "contributions": [
+          "n-1cf064f10f49b5e5",
+          "n-3a8fbcad6114ce83",
+          "n-4f9b53dae3a5976a",
+          "n-5bc6822ecec3419b",
+          "n-72597aa803ab51b5",
+          "n-9f0d452a4215e6a7",
+          "n-a9ce4ed39a4c8628",
+          "n-ae8fe107e3eba282",
+          "n-c9d41910a4b93adf",
+          "n-cb00d16db7ce6d70"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-1cf064f10f49b5e5",
+          "n-3a8fbcad6114ce83",
+          "n-55302a146f31bda9",
+          "n-5bc6822ecec3419b",
+          "n-72597aa803ab51b5",
+          "n-8a044b19b451edc6",
+          "n-ae8fe107e3eba282",
+          "n-d71c23908030ce3d"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-1cf064f10f49b5e5",
+          "n-2664dac0ca692a39",
+          "n-62829936e5a310bd",
+          "n-72597aa803ab51b5",
+          "n-ae8fe107e3eba282",
+          "n-e91dd7451573e0b9"
+        ],
+        "id": "limits",
+        "requirement": "Distinguish historical efficacy, current resistance, and local clinical decisions; no pathogen protocols."
+      }
+    ],
+    "B10": [
+      {
+        "contributions": [
+          "n-379c06a4318e516a",
+          "n-45e58df3429efc6e",
+          "n-4bb4124522b2e09b",
+          "n-8e0fcdf1076a3b4c",
+          "n-9f03ff5c473053d4",
+          "n-bfd6596955b6daf7",
+          "n-ddcaf7347042aedd",
+          "n-f4eb3ccb7b4a52aa"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-45ec52a526b01d12"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-379c06a4318e516a",
+          "n-45e58df3429efc6e",
+          "n-45ec52a526b01d12",
+          "n-4bb4124522b2e09b",
+          "n-8e0fcdf1076a3b4c",
+          "n-9f03ff5c473053d4",
+          "n-a5d9cd861cad6475",
+          "n-bfd6596955b6daf7",
+          "n-ddcaf7347042aedd",
+          "n-f4eb3ccb7b4a52aa"
+        ],
+        "id": "limits",
+        "requirement": "Preserve adverse outcomes, bias, transportability, and patient consent."
+      }
+    ],
+    "B11": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-013a45711a8c9637",
+          "n-1bac74b1eabf6d75",
+          "n-1c15ebc22a8f2709",
+          "n-231c4a730fd2c44b",
+          "n-960e217dc8cee870",
+          "n-9ab094b7f26494b4",
+          "n-b83ed4ea8b0ba9fd",
+          "n-c61475088cba3bd1",
+          "n-da57a17a96292f1c",
+          "n-eb7171de9ec1ef2d",
+          "n-f542921f06ce3050"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Images are model-dependent measurements; do not turn a historical card into diagnosis."
+      }
+    ],
+    "B12": [
+      {
+        "contributions": [
+          "n-434cdf887cca324a",
+          "n-a7ce2c2e75c1d487",
+          "n-c38d4d95496d228b",
+          "n-ef5cc535572d02c7"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-1585596ef5ccfe67",
+          "n-58376f5b7de58b17",
+          "n-75bcf75814d98c02",
+          "n-ad761cfb3ff93f1e",
+          "n-c7ddbb7d17a96385",
+          "n-dc7279526f0f1993",
+          "n-ebdefebd772a0dd0"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-1585596ef5ccfe67",
+          "n-35b38b7e7c7df25d",
+          "n-434cdf887cca324a",
+          "n-58376f5b7de58b17",
+          "n-8f2fa5d6fe573105",
+          "n-a0303fe0011e6fcc",
+          "n-a7ce2c2e75c1d487",
+          "n-ad2a9eba3aff2551",
+          "n-c38d4d95496d228b",
+          "n-c7ddbb7d17a96385",
+          "n-e901b09c736fbee6",
+          "n-ebdefebd772a0dd0",
+          "n-ef5cc535572d02c7"
+        ],
+        "id": "limits",
+        "requirement": "Association is not causation; retain ecological context and uncertainty."
+      }
+    ],
+    "C04": [
+      {
+        "contributions": [
+          "n-475e3dbab48d0b5b",
+          "n-750a5b4a79f55601",
+          "n-83792e331afa0d30",
+          "n-add161f44f021897",
+          "n-b208a8033b25941a",
+          "n-bbb161ea96b5fca0"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-8b88841aad048ca8",
+          "n-add161f44f021897",
+          "n-b208a8033b25941a",
+          "n-b32af2df08344b1f",
+          "n-f49b129111413a42",
+          "n-fc73a36c0b4aba2b"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-69f1cdba30211d08",
+          "n-83792e331afa0d30",
+          "n-b208a8033b25941a",
+          "n-f49b129111413a42"
+        ],
+        "id": "limits",
+        "requirement": "Verification has configuration and hardware assumptions; do not call every deployment secure."
+      }
+    ],
+    "E01": [
+      {
+        "contributions": [
+          "n-25f6a4ba80fec06e",
+          "n-33e47fd4ec6e1420",
+          "n-3e87a08911ccb520",
+          "n-7a2dcf7d88d3269d",
+          "n-f94ea78e2150b253"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-151095b708b8a3d1",
+          "n-33e47fd4ec6e1420",
+          "n-3b2f72b57fe05a8a",
+          "n-3e87a08911ccb520",
+          "n-5284d631475648d2",
+          "n-75d35177be89e689",
+          "n-7a2dcf7d88d3269d",
+          "n-917be3cca6a9730c",
+          "n-ad122f716d2d1dc5",
+          "n-b1f98fc52a72bb93"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State identification assumptions, not just predictive metrics."
+      }
+    ],
+    "E02": [
+      {
+        "contributions": [
+          "n-1d1c8c973b6f891c",
+          "n-4a3b661a3fd7ac8a",
+          "n-526626b0bfa4ce8f",
+          "n-64ecd9fa4b5b7caa",
+          "n-6f022401da2e1aa3",
+          "n-8ecc824319932aa1",
+          "n-973f5b672f7846fa",
+          "n-9fe056f52ed49afc",
+          "n-d53d10d639d091d5",
+          "n-e74435b3b5fc7d49"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-03aa6187c6b63d89",
+          "n-6e8551ed2449ad49",
+          "n-8add6a93928bd69c",
+          "n-c873b5bfd18ffb6a",
+          "n-e3941f1211f7a011"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-f620d19ee80e2437"
+        ],
+        "id": "limits",
+        "requirement": "Select original design results; efficiency does not imply fairness."
+      }
+    ],
+    "E03": [
+      {
+        "contributions": [
+          "n-1289607352645aaf",
+          "n-3ac5a52497e1d1a0",
+          "n-b63b3f9167f2e402",
+          "n-d65247acc2ddee1e"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-4831541dbf7d66c2",
+          "n-49e3087666684db4",
+          "n-660474eff360e6b2",
+          "n-a048aa06df93936c",
+          "n-d65247acc2ddee1e",
+          "n-fab40a0b84c56f14"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-49e3087666684db4",
+          "n-660474eff360e6b2",
+          "n-a048aa06df93936c",
+          "n-b63b3f9167f2e402",
+          "n-fab40a0b84c56f14"
+        ],
+        "id": "limits",
+        "requirement": "Test stability, incentives, and distributional consequences separately."
+      }
+    ],
+    "E04": [
+      {
+        "contributions": [
+          "n-037acecf90941aca",
+          "n-0e30c132ffe1435c",
+          "n-1f1eef0f3665ba2b",
+          "n-616d6a7be712b4bd",
+          "n-b795f0588fe4fe11",
+          "n-dcf4e7362976dcd2",
+          "n-dd7598a24e395945",
+          "n-f3fe68a5544c6ccc"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-037acecf90941aca",
+          "n-799c2436a7b09db0",
+          "n-afeaecbbfb4fbabf"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-0e30c132ffe1435c",
+          "n-1f1eef0f3665ba2b",
+          "n-616d6a7be712b4bd",
+          "n-afeaecbbfb4fbabf",
+          "n-b795f0588fe4fe11",
+          "n-dcf4e7362976dcd2",
+          "n-f3fe68a5544c6ccc"
+        ],
+        "id": "limits",
+        "requirement": "Use explicit models and historical evidence; do not universalize one policy prescription."
+      }
+    ],
+    "E05": [
+      {
+        "contributions": [
+          "n-96d6c5e13df3c430",
+          "n-c05899914cbd1c80",
+          "n-c238aab3b1f95ec3",
+          "n-d51da574f9126fd7"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-75cdc7e7f3ed3b00",
+          "n-92c4211b711e8a4b",
+          "n-aab259b58c62363e",
+          "n-bd9dc6b94c77f44a"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-40c9d28c038972af",
+          "n-bd9dc6b94c77f44a",
+          "n-de8078c330eb9e9d"
+        ],
+        "id": "limits",
+        "requirement": "Resolve original recent studies including competing estimates; scenarios are not observations."
+      }
+    ],
+    "E06": [
+      {
+        "contributions": [
+          "n-0494977b87c05556",
+          "n-1d1a3f5ad5c5a9e2",
+          "n-6256236a15178a07",
+          "n-68b8a03da828be43",
+          "n-97f0d49a1db29b07",
+          "n-d40d89be878921c9",
+          "n-dc13279f3ec481c8"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-cd232636ce0744c4"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Preserve experimental population, replication evidence, and competing explanations."
+      }
+    ],
+    "E07": [
+      {
+        "contributions": [
+          "n-1823636fa3179c54",
+          "n-9a1b3c0043ed93da",
+          "n-a0522ed3a9cc1cdd",
+          "n-a9b413216d9a4277",
+          "n-cd54b335a69d3741",
+          "n-fd81938292cdd441",
+          "n-fff3cfa0031f827c"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-1823636fa3179c54",
+          "n-8895d275675bc662",
+          "n-a9b413216d9a4277"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-296a273ec6891e24",
+          "n-8895d275675bc662",
+          "n-9a1b3c0043ed93da",
+          "n-a0522ed3a9cc1cdd",
+          "n-cd54b335a69d3741",
+          "n-ce6b5e4bc5093014",
+          "n-fd81938292cdd441",
+          "n-fff3cfa0031f827c"
+        ],
+        "id": "limits",
+        "requirement": "Do not translate incentive models directly into moral approval of manipulation."
+      }
+    ],
+    "E08": [
+      {
+        "contributions": [
+          "n-09af07bab1c6002a",
+          "n-0a72ff9a7f865d77",
+          "n-48cbf6a29d48ce03",
+          "n-50040d6f2f94d6c8",
+          "n-7f3b3bba397a86c2",
+          "n-e27e2b59be5d0e58"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-9929ed6f8f08d835",
+          "n-dd8f2b86441b8301",
+          "n-e27e2b59be5d0e58"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Separate theoretical equilibria, historical episodes, and contemporary policy advice."
+      }
+    ],
+    "E09": [
+      {
+        "contributions": [
+          "n-3351043dc9485884",
+          "n-4d856d756938d717",
+          "n-6bb927fd453da5de",
+          "n-711fea29ae79b074",
+          "n-741aa5ff44d5787b",
+          "n-7a21c275b68f9516",
+          "n-91e749e030b05b8c"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-1cc5814dcac952c9",
+          "n-3351043dc9485884",
+          "n-5a55c2e691b04728",
+          "n-6bb927fd453da5de",
+          "n-711fea29ae79b074",
+          "n-741aa5ff44d5787b",
+          "n-7a21c275b68f9516",
+          "n-91e749e030b05b8c",
+          "n-92921c6cd55cf2c5",
+          "n-ae74763ac9837f9b",
+          "n-b3190c91d3b366bf"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-3351043dc9485884",
+          "n-6bb927fd453da5de",
+          "n-711fea29ae79b074",
+          "n-7a21c275b68f9516",
+          "n-91e749e030b05b8c",
+          "n-ae74763ac9837f9b"
+        ],
+        "id": "limits",
+        "requirement": "Retain calibration and identification uncertainty; no single model is the whole economy."
+      }
+    ],
+    "E10": [
+      {
+        "contributions": [
+          "n-275f67d6cdb8c7d6",
+          "n-44935dc81868bbab",
+          "n-47970ea6f6c2880f",
+          "n-57222daf25f3d209",
+          "n-9a286312523060db",
+          "n-d1ede7803bd8ddc1",
+          "n-eddddfbbcfc0bfd1"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-44935dc81868bbab",
+          "n-47970ea6f6c2880f",
+          "n-5fe5030872e6bde3"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-4870009a17fbc3e8"
+        ],
+        "id": "limits",
+        "requirement": "Country aggregates can conceal distributional losses and dependence."
+      }
+    ],
+    "E11": [
+      {
+        "contributions": [
+          "n-09b520e51ccdee9a",
+          "n-1e5436346106fe6c",
+          "n-4d7aca7aaa6e09f1",
+          "n-7303682f4bce44d9",
+          "n-a58bea8fcef59d4f",
+          "n-a6b4909b16265138",
+          "n-bb9920fa39242f6e",
+          "n-d7bc01e396eee73d"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-09b520e51ccdee9a",
+          "n-10b9f81baeb74d08",
+          "n-629791233855cae8",
+          "n-7303682f4bce44d9"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-1e90b206d4646113",
+          "n-2c7010e2cc7ca024",
+          "n-5d49cf8c18fed8e9",
+          "n-629791233855cae8",
+          "n-7303682f4bce44d9",
+          "n-92708d8e0f1bd2c8",
+          "n-a208abeb56ffea2d",
+          "n-b00730f5191a44c1"
+        ],
+        "id": "limits",
+        "requirement": "Make ethical discounting and welfare assumptions explicit; include governance alternatives."
+      }
+    ],
+    "E12": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "No objective function or voting theorem establishes a unique human value system."
+      }
+    ]
+  },
+  "id": "life-society-1-1",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 45,
+  "purpose": "Foundations and empirical boundaries in biology, medicine and economics; fill remaining empty topics using inspectable sources. Clinical and normative content stays explicitly scoped."
+}

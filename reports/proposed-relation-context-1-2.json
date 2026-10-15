@@ -1,0 +1,323 @@
+{
+  "base_corpus_hash": "f05a1d489ec796caa54d22f9f3a77994bebb31fa7a69d78ae0c223304a4a5771",
+  "generated_at": "2026-10-13T02:38:07+00:00",
+  "impact": [],
+  "reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+  "records": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-d18006f3841a6613",
+        "revision": 3
+      },
+      "content_hash": "bbf4c1e6fb52a5966a501fdbfeb62ca8236e55148d3182197bd5f178b7f65358",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331ace8fc442d562f40d37778e2d"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-17ccb5c71839234f",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-fe74e16e97dec6be",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: The relativity principle remains valid despite quantum challenges.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, even if quantum theory changes the equations, the relativity principle will persist as a limiting law, as argued by Einstein."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-dff53422c9b9330c",
+        "revision": 3
+      },
+      "content_hash": "1bedb7b9b78cc7ff970581038710cd46d3c921380e41de6b4856ce7b5dcf224d",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331b0131c59aee146074932aca2c"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-4090ad8e2c5a51ae",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-b04da9793342dca8",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: Special relativity's preference for inertial frames is a limitation that motivates general relativity.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, einstein notes that special relativity still favors inertial frames, which is unsatisfactory, leading to the general relativity principle."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-c8a46ed3fd93b141",
+        "revision": 3
+      },
+      "content_hash": "3f5f7d66e2d9a1fdf5e59924d14c4e7fb1f81bfcd0943d1d61c482ac90d7e2ea",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331b4ef19c647bed344fe68358e3"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-50f2bcb764debb0e",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-35cf0f4cea27ef56",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: The field equations are formulated using the metric and general covariance.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, the field equations are the simplest generally covariant equations for the metric, as derived from the general relativity principle."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-1c4566b1e4f453db",
+        "revision": 3
+      },
+      "content_hash": "f4bef9ebbcdcc7ac9f3a0d6bae9f8d5b0eabaadfd11be0ddbf11a3951455540a",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331c0fe3ccac71de1a4655c2baf6"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-979d53ac4478b158",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-d9ce8cbcadfc0220",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: The stipulation of meaning is used to critique the rigid body concept.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, the stipulation of meaning requires concepts to have unambiguous empirical assignments, and the rigid body fails this criterion because it is only approximate in nature."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-5b262ff382b6fd3f",
+        "revision": 3
+      },
+      "content_hash": "91dedc57d83d825da4783e2ca880e253f3a46757133ce152f2ea751f6a6767a0",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331c7a2742af7be100ff0198171a"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-bd541ec1fe271399",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "motivated",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-f93bc204aca7430b",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: The phenomenological treatment of matter motivates Mach's principle.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, the need to determine the metric from matter leads to Mach's stipulation that the metric is completely determined by matter."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-3c608e6733232b34",
+        "revision": 3
+      },
+      "content_hash": "cbb74b1f10d41bdacf6546fbd395add806ebb89d9251084487dbabed8c16e7ef",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331cb4a07f6bf27511ae59b5c877"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-c2c029fd3220df49",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-c8a46ed3fd93b141",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: The field equations lead to empirical predictions.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, the field equations yield the Newtonian limit and predict the perihelion of Mercury, light deflection, and redshift, which are confirmed by experience."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-35cf0f4cea27ef56",
+        "revision": 3
+      },
+      "content_hash": "fcd2d30bd64f61e686299717e8b024ca7c3771203e96bc4750102b1d694c5601",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331ce6cc895e903b49fd95d8c401"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d37e8987b5a0d63d",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-efc3b9329b7842e8",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: The metric representation requires local inertial frames and Gaussian coordinates.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, to describe the metric in finite regions, one uses local inertial frames and Gaussian coordinates, as the metric varies from point to point."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-446e103d2c7efdb9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+      "conclusion": {
+        "id": "n-e5a261f2212363c0",
+        "revision": 3
+      },
+      "content_hash": "6f44c905a04f19febf6ea340cdbb6db4f6bb11745d7f6b2661f15c51666e183c",
+      "curation": {
+        "method": "Explicit correction recheck against exact source versions",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "screening_request_id": "01a1331cfdf5da7706c18b07cc9279f0"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-deef0eb042c001b0",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-35cf0f4cea27ef56",
+          "revision": 3
+        }
+      ],
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scope": "Einstein’s 1923 account: The geodesic equation is derived from the metric structure.",
+      "type": "relation",
+      "warrant": "In the reasoning presented in Einstein’s 1923 lecture, given the metric, the geodesic equation describes the motion of free particles, generalizing the law of inertia."
+    }
+  ],
+  "status": "proposed"
+}

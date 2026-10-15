@@ -1,0 +1,39 @@
+{
+  "applied_at": "2026-10-13T02:38:09+00:00",
+  "impact": [],
+  "reason": "Make the historical date explicit in relationship scope and warrant as well as in both endpoint claims.",
+  "record_refs": [
+    {
+      "id": "r-17ccb5c71839234f",
+      "revision": 4
+    },
+    {
+      "id": "r-4090ad8e2c5a51ae",
+      "revision": 4
+    },
+    {
+      "id": "r-50f2bcb764debb0e",
+      "revision": 4
+    },
+    {
+      "id": "r-979d53ac4478b158",
+      "revision": 4
+    },
+    {
+      "id": "r-bd541ec1fe271399",
+      "revision": 4
+    },
+    {
+      "id": "r-c2c029fd3220df49",
+      "revision": 4
+    },
+    {
+      "id": "r-d37e8987b5a0d63d",
+      "revision": 4
+    },
+    {
+      "id": "r-deef0eb042c001b0",
+      "revision": 4
+    }
+  ]
+}

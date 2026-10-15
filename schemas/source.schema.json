@@ -1,0 +1,72 @@
+{
+  "$id": "urn:principia-legacy:source:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "access_state": {
+      "type": "string"
+    },
+    "anchors": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "creators": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "id": {
+      "pattern": "^[A-Za-z0-9_-]{1,100}$",
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "rights": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "source_version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "const": "source"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "revision",
+    "schema_version",
+    "content_hash",
+    "title",
+    "creators",
+    "url",
+    "source_version",
+    "retrieved_at",
+    "access_state",
+    "rights",
+    "anchors"
+  ],
+  "title": "Source",
+  "type": "object"
+}

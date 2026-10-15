@@ -1,0 +1,268 @@
+{
+  "applied_at": "2026-10-12T16:42:16+00:00",
+  "impact": [
+    "connection-5a2d730fa8762653",
+    "connection-9a2fe32805928dcb",
+    "r-05e7b6ed7dec02c0",
+    "r-22911023b03f81d8",
+    "r-2e231f0b84ad421e",
+    "r-429d96d4eceb9e0f",
+    "r-45aacf8de92e6544",
+    "r-541694a8e8ec8d3e",
+    "r-78b6eea8ed47cc79",
+    "r-844d6c8c9a37b2db",
+    "r-c3fc5d25a1c56e47",
+    "r-c7b59e0d41403f1a",
+    "r-cf8340f343eabc6e",
+    "r-d733744d87442a7d",
+    "r-dbe0afe755dd70fd",
+    "r-e3a081ba8fc7f982"
+  ],
+  "reason": "1.1 quality correction: hold redundant or non-substantive contribution accounts and cross-source warrants that did not pass the stricter evidence review; preserve all earlier revisions.",
+  "record_refs": [
+    {
+      "id": "n-05914f72950b4613",
+      "revision": 2
+    },
+    {
+      "id": "n-3d767b2631871bfc",
+      "revision": 2
+    },
+    {
+      "id": "n-c1ac8781bf2a3a99",
+      "revision": 2
+    },
+    {
+      "id": "n-ab7097e419e7e5fe",
+      "revision": 2
+    },
+    {
+      "id": "n-167ce1a96e8050ff",
+      "revision": 2
+    },
+    {
+      "id": "n-79e98deb65e9fb0f",
+      "revision": 2
+    },
+    {
+      "id": "n-9d783199f6443e39",
+      "revision": 2
+    },
+    {
+      "id": "n-b22e937267fa0b85",
+      "revision": 2
+    },
+    {
+      "id": "n-fab40a0b84c56f14",
+      "revision": 2
+    },
+    {
+      "id": "n-ab6c630b3df13311",
+      "revision": 2
+    },
+    {
+      "id": "connection-17b582df912cb7a7",
+      "revision": 2
+    },
+    {
+      "id": "connection-c32edd5584709f8b",
+      "revision": 2
+    },
+    {
+      "id": "connection-1e20a57a6acf2ca5",
+      "revision": 2
+    },
+    {
+      "id": "connection-59d46b062c90be7b",
+      "revision": 2
+    },
+    {
+      "id": "connection-8c6a635170c4d9bf",
+      "revision": 2
+    },
+    {
+      "id": "connection-c767599d6d76fa06",
+      "revision": 2
+    },
+    {
+      "id": "connection-e1da9f375f7ec6a8",
+      "revision": 2
+    },
+    {
+      "id": "connection-360f3ab5569f096c",
+      "revision": 2
+    },
+    {
+      "id": "connection-5a2d730fa8762653",
+      "revision": 2
+    },
+    {
+      "id": "connection-d9a8fa8c0efc5043",
+      "revision": 2
+    },
+    {
+      "id": "connection-a4c5d0d9236efe60",
+      "revision": 2
+    },
+    {
+      "id": "connection-d86f12e36c647393",
+      "revision": 2
+    },
+    {
+      "id": "connection-dc7336b3789b873f",
+      "revision": 2
+    },
+    {
+      "id": "connection-1ddea3ea33884743",
+      "revision": 2
+    },
+    {
+      "id": "connection-244e27beea6a6eb6",
+      "revision": 2
+    },
+    {
+      "id": "connection-25c9adb1b9333173",
+      "revision": 2
+    },
+    {
+      "id": "connection-24670cd9f172c9fe",
+      "revision": 2
+    },
+    {
+      "id": "connection-939fd93cabf10364",
+      "revision": 2
+    },
+    {
+      "id": "connection-b4c8732dca7caf58",
+      "revision": 2
+    },
+    {
+      "id": "connection-4d6eb01f6f377769",
+      "revision": 2
+    },
+    {
+      "id": "connection-e855201ce2de6f26",
+      "revision": 2
+    },
+    {
+      "id": "connection-ee04ce1be3ca2130",
+      "revision": 2
+    },
+    {
+      "id": "connection-ef232a93745ca1f7",
+      "revision": 2
+    },
+    {
+      "id": "connection-02eb8978c51e03e8",
+      "revision": 2
+    },
+    {
+      "id": "connection-13e89ed88060f353",
+      "revision": 2
+    },
+    {
+      "id": "connection-8bd9a34e84e07921",
+      "revision": 2
+    },
+    {
+      "id": "connection-97439cbe3c6f0454",
+      "revision": 2
+    },
+    {
+      "id": "connection-c0a26d50bb1e4444",
+      "revision": 2
+    },
+    {
+      "id": "connection-d2d6acc7eb61c190",
+      "revision": 2
+    },
+    {
+      "id": "connection-f5b8b9d693270935",
+      "revision": 2
+    },
+    {
+      "id": "connection-3ddba39deadff9b1",
+      "revision": 2
+    },
+    {
+      "id": "connection-6d78be3a5ed8320d",
+      "revision": 2
+    },
+    {
+      "id": "connection-74341cabb0369e60",
+      "revision": 2
+    },
+    {
+      "id": "connection-1815bd7e8bae3751",
+      "revision": 2
+    },
+    {
+      "id": "connection-8e3b3457672ba6e4",
+      "revision": 2
+    },
+    {
+      "id": "connection-244c0d802d7204ac",
+      "revision": 2
+    },
+    {
+      "id": "connection-9a2fe32805928dcb",
+      "revision": 2
+    },
+    {
+      "id": "r-05e7b6ed7dec02c0",
+      "revision": 2
+    },
+    {
+      "id": "r-22911023b03f81d8",
+      "revision": 2
+    },
+    {
+      "id": "r-2e231f0b84ad421e",
+      "revision": 2
+    },
+    {
+      "id": "r-429d96d4eceb9e0f",
+      "revision": 2
+    },
+    {
+      "id": "r-45aacf8de92e6544",
+      "revision": 2
+    },
+    {
+      "id": "r-541694a8e8ec8d3e",
+      "revision": 2
+    },
+    {
+      "id": "r-78b6eea8ed47cc79",
+      "revision": 2
+    },
+    {
+      "id": "r-844d6c8c9a37b2db",
+      "revision": 2
+    },
+    {
+      "id": "r-c3fc5d25a1c56e47",
+      "revision": 2
+    },
+    {
+      "id": "r-c7b59e0d41403f1a",
+      "revision": 2
+    },
+    {
+      "id": "r-cf8340f343eabc6e",
+      "revision": 2
+    },
+    {
+      "id": "r-d733744d87442a7d",
+      "revision": 2
+    },
+    {
+      "id": "r-dbe0afe755dd70fd",
+      "revision": 2
+    },
+    {
+      "id": "r-e3a081ba8fc7f982",
+      "revision": 2
+    }
+  ]
+}

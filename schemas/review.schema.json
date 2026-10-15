@@ -1,0 +1,69 @@
+{
+  "$id": "urn:principia-legacy:review:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "evidence_checked": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "id": {
+      "pattern": "^[A-Za-z0-9_-]{1,100}$",
+      "type": "string"
+    },
+    "judgment": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "reviewer_identity": {
+      "type": "string"
+    },
+    "reviewer_type": {
+      "type": "string"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "type": "string"
+    },
+    "target": {
+      "type": "object"
+    },
+    "time": {
+      "type": "string"
+    },
+    "type": {
+      "const": "review"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "revision",
+    "schema_version",
+    "content_hash",
+    "target",
+    "reviewer_type",
+    "reviewer_identity",
+    "scope",
+    "judgment",
+    "rationale",
+    "evidence_checked",
+    "time"
+  ],
+  "title": "Review",
+  "type": "object"
+}

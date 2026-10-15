@@ -1,0 +1,179 @@
+{
+  "$id": "urn:principia-legacy:contribution:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "anchors": {
+      "items": {
+        "properties": {
+          "anchor_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_revision": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "source_id",
+          "source_revision",
+          "anchor_id"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "attribution": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "conceptual_move": {
+      "type": "string"
+    },
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "curation": {
+      "type": "object"
+    },
+    "date": {
+      "properties": {
+        "event": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "precision": {
+          "type": "string"
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "year",
+        "precision",
+        "event",
+        "note"
+      ],
+      "type": "object"
+    },
+    "dossiers": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "human_review": {
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[A-Za-z0-9_-]{1,100}$",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "argument",
+        "conjecture",
+        "empirical_finding",
+        "heuristic",
+        "mechanism",
+        "method",
+        "negative_result",
+        "normative_argument",
+        "question",
+        "representation",
+        "theorem"
+      ]
+    },
+    "limits": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "machine_screening": {
+      "type": "string"
+    },
+    "pillar": {
+      "enum": [
+        "mathematics",
+        "physics",
+        "computer_science",
+        "economics",
+        "biology_medicine"
+      ]
+    },
+    "problem": {
+      "type": "string"
+    },
+    "publication_state": {
+      "type": "string"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scientific_standing": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "const": "contribution"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "revision",
+    "schema_version",
+    "content_hash",
+    "title",
+    "kind",
+    "pillar",
+    "claim",
+    "problem",
+    "conceptual_move",
+    "explanation",
+    "assumptions",
+    "limits",
+    "attribution",
+    "date",
+    "anchors",
+    "curation",
+    "scientific_standing",
+    "publication_state",
+    "machine_screening",
+    "human_review",
+    "dossiers"
+  ],
+  "title": "Contribution",
+  "type": "object"
+}

@@ -1,0 +1,73 @@
+{
+  "applied": {
+    "applied": "8ac7474659ab196183ddb06b4a0e0a67cf3486710ff7867a8b370c6e0b23d7e3",
+    "previous_release": "before-285835bce444",
+    "recheck": [
+      "r-01ce2ad1543fe75a",
+      "r-07e8e408fd7c4ec5",
+      "r-2cb6214a8eb3412c",
+      "r-547444a3313ea100",
+      "r-88a49cedf0b79a88",
+      "r-9637b656e9e551f2",
+      "r-9af37e5238147eb0",
+      "r-ad22874117bb7690",
+      "r-b607a8c6f94fa2f3",
+      "r-c1984b8ae92012d7",
+      "r-f3c12e2e7a84488a",
+      "r-f5d4434ef1283878"
+    ]
+  },
+  "excluded_contributions": [
+    {
+      "decision": "exclude",
+      "id": "n-284d2e0f305083e5",
+      "reason": "This is a summary of background material on modular forms, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-5e44ec0b07f326fb",
+      "reason": "This claim about double zeroes as a necessary condition is a duplicate of the substantive move in n-335437961857c75b from the same source occurrence."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-aead12d69798e8d2",
+      "reason": "This is a summary of historical context on prior sphere packing results, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-fa143e145461f649",
+      "reason": "This is a summary of standard Schwartz space and admissibility conditions, a technical requirement rather than a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-a6ee919e8e2fd13e",
+      "reason": "The learning rate schedule with warmup is a routine hyperparameter setting for training, not a distinct substantive intellectual move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-c0daf2301324a81a",
+      "reason": "The record states the use of byte-pair encoding is 'Not a novel contribution of this paper,' making it a routine use of a standard tool rather than a distinct substantive move."
+    },
+    {
+      "decision": "exclude",
+      "id": "n-be89f598c6670e72",
+      "reason": "This is a duplicate substantive claim of the resource overhead forecast already captured in n-bbf3ee399b9fc634 from the same source occurrence."
+    }
+  ],
+  "human_review": false,
+  "retained_despite_recommendation": [
+    {
+      "id": "n-1297d13e2df3c280",
+      "reason": "Predating a secondary source does not itself invalidate a substantive intellectual contribution; original attribution remains separately qualified."
+    },
+    {
+      "id": "n-8ef0a588ed82a21f",
+      "reason": "Predating a secondary source does not itself invalidate a substantive intellectual contribution; original attribution remains separately qualified."
+    },
+    {
+      "id": "n-8fb43a7b474a592e",
+      "reason": "Predating a secondary source does not itself invalidate a substantive intellectual contribution; original attribution remains separately qualified."
+    }
+  ],
+  "role": "Machine editorial triage; no new source-fidelity approval"
+}

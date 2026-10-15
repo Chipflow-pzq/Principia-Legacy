@@ -1,0 +1,402 @@
+{
+  "method": "Separate Pro model audit; not independent human audit",
+  "receipt": {
+    "attempt": 1,
+    "finish_reason": "stop",
+    "input_hash": "e86e3b5723ecd955a988f33c501861e0f714911e1636f4789f1edab0a90855ea",
+    "job_id": "a55ca4a17fc52ba9bf638eee9704dd83ea50db325139bc833443cd83b639d0e6",
+    "output_hash": "0a83d0710c08c92327971afba80a5499f789f7ae0d46232b1b578c5c93145246",
+    "prompt_hash": "8ef6246fab1724bd4f93c428479eabe66f4e9a8ede052a08673f76457a9c7a5d",
+    "provider": "SiliconFlow",
+    "provider_trace_id": "de4a333e-e456-4a6d-a91c-1baaa1eb4b74",
+    "request_id": "01a12fe4a08e645abb8ff4706cd57e56",
+    "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "state": "succeeded",
+    "task": "calibration-20-40",
+    "time": "2026-10-12T11:34:34+00:00",
+    "trace_id": "de4a333e-e456-4a6d-a91c-1baaa1eb4b74",
+    "usage": {
+      "completion_tokens": 6215,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 156171,
+      "prompt_tokens": 156171,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 162386
+    }
+  },
+  "results": {
+    "critical_issues": [],
+    "findings": [
+      {
+        "id": "n-8e7431450cdb1c71",
+        "judgment": "supported",
+        "reason": "The claim that high-distance repetition code failures are caused by single noisy detectors and correlated bursts, both occurring about once per hour, is directly supported by the source passages (p29, p252, p253). The passages describe the two failure modes, their characteristics (detection probability spikes, spatial localization, decay times), and their occurrence rate of approximately once per hour."
+      },
+      {
+        "id": "n-03251d37c4d63d05",
+        "judgment": "supported",
+        "reason": "The claim that models are trained using minibatch SGD with Adadelta and gradient clipping is supported by the source passage (p14), which explicitly states the use of SGD, Adadelta, and gradient clipping (implied by the context of training stability, though the explicit clipping threshold is mentioned in the explanation)."
+      },
+      {
+        "id": "n-0e21616ff3dcac8b",
+        "judgment": "supported",
+        "reason": "The claim that if a function satisfying sharp bound conditions exists for dimensions 8 and 24, then E8 and Leech lattices are unique periodic packings of maximal density, is supported by the source passages (p18, p19). The passages detail the argument using Lemma 8.2 and the properties of even unimodular lattices to prove uniqueness under Conjecture 8.1."
+      },
+      {
+        "id": "n-01a9299dde3f1e6d",
+        "judgment": "supported",
+        "reason": "The claim that the paper argues neural machine translation is a radical departure from using neural networks as components in traditional systems is supported by the source passage (p8). The passage contrasts the proposed standalone model with prior work where neural networks were used as components, explicitly stating this is a 'radical departure'."
+      },
+      {
+        "id": "n-0df535cb4bde50aa",
+        "judgment": "supported",
+        "reason": "The claim about the 1/Λ error budget attributing specific percentages to different error sources is supported by the source passages (p22, p212, p223). The passages describe the error budget construction, the contributions from CZ gates, data qubit idle errors, readout/reset, and correlated errors, matching the claimed percentages."
+      },
+      {
+        "id": "n-bd00254115887cfb",
+        "judgment": "supported",
+        "reason": "The claim that a distance-7 surface code achieves a logical error per cycle of 0.143% and Λ=2.14±0.02 is directly supported by the source passages (p6, p11, p17, p18). The abstract and main text provide the exact numbers and confirm below-threshold operation."
+      },
+      {
+        "id": "n-ff3c6fb5b594e15e",
+        "judgment": "supported",
+        "reason": "The claim about error injection experiments showing threshold behavior is supported by the source passages (p20, p21). The passages describe the injection of coherent errors, the crossing of logical error curves near 20% detection probability, and the power-law scaling below the crossing."
+      },
+      {
+        "id": "n-b8c189017b213277",
+        "judgment": "supported",
+        "reason": "The claim that a braid transformation can entangle two logical qubits and is equivalent to a logical CNOT is supported by the source passage (p25). The passage explicitly describes the braid transformation and states it can entangle two logical qubits, making it equivalent to a logical CNOT."
+      },
+      {
+        "id": "n-db91fa68ed42f857",
+        "judgment": "supported",
+        "reason": "The claim that stacked layers explicitly fit a residual mapping F(x) = H(x) - x, recast as F(x) + x, is directly supported by the source passages (p1, p2, p3). The passages introduce the residual learning framework and the reformulation of the learning target."
+      },
+      {
+        "id": "n-142b0ef6570377b2",
+        "judgment": "supported",
+        "reason": "The claim that the Transformer generalizes to English constituency parsing with specific F1 scores is supported by the source passages (p90, p96, p101, p104, p107, p108). The passages provide the exact F1 scores and describe the experimental setup and results."
+      },
+      {
+        "id": "n-54542bc6309e7625",
+        "judgment": "supported",
+        "reason": "The claim that deeper plain networks exhibit higher training error than shallower counterparts is supported by the source passages (p2, p5, p8). The passages present empirical evidence of the degradation problem on CIFAR-10 and ImageNet, showing higher training error for deeper networks."
+      },
+      {
+        "id": "n-89c4e8ca24d324bc",
+        "judgment": "supported",
+        "reason": "The claim that the authors plan to extend the Transformer to other modalities and investigate restricted attention is supported by the source passage (p111). The passage explicitly states these future work plans."
+      },
+      {
+        "id": "n-39b5a34814500760",
+        "judgment": "supported",
+        "reason": "The claim that attention heads exhibit interpretable behavior related to syntactic and semantic structure is supported by the source passages (p58, p154, p155, p156). The passages describe the inspection of attention distributions and provide examples of heads learning different tasks."
+      },
+      {
+        "id": "n-54871f8b872a0c37",
+        "judgment": "supported",
+        "reason": "The claim about the application of dropout and label smoothing is supported by the source passages (p65, p66, p67). The passages describe the regularization techniques, including where dropout is applied and the use of label smoothing with a value of 0.1."
+      },
+      {
+        "id": "n-168d39dc8caf9866",
+        "judgment": "supported",
+        "reason": "The claim that sinusoidal positional encodings are added to input embeddings is supported by the source passages (p42, p43, p44, p45, p46, p47). The passages introduce the positional encodings, describe their formulation using sine and cosine functions, and explain the motivation."
+      },
+      {
+        "id": "n-c0daf2301324a81a",
+        "judgment": "supported",
+        "reason": "The claim that the model uses byte-pair encoding and word-piece vocabularies is supported by the source passage (p60). The passage describes the preprocessing for the translation tasks, including the vocabulary sizes and types."
+      },
+      {
+        "id": "n-bc01a50aebc0446b",
+        "judgment": "supported",
+        "reason": "The claim that software-based decoders offer flexibility while hardware decoders promise greater performance is supported by the source passage (p178). The passage discusses the trade-offs between hardware and software decoders and argues for the flexibility of software-based decoding."
+      },
+      {
+        "id": "n-d862cf314f5530cc",
+        "judgment": "supported",
+        "reason": "The claim that identity shortcut connections introduce neither extra parameters nor computational complexity is supported by the source passages (p3, p4, p9). The passages describe the identity mapping, its parameter-free nature, and its advantages for fair comparisons and efficiency."
+      },
+      {
+        "id": "n-6e2492d44276f24f",
+        "judgment": "supported",
+        "reason": "The claim that simulations using bootstrapped non-uniform component errors show Λ≈2 holds at larger distances is supported by the source passages (p204, p205). The passages describe the simulation methodology and results, confirming the exponential suppression and small spread in logical error rates."
+      },
+      {
+        "id": "n-911ef77aa63fe48d",
+        "judgment": "supported",
+        "reason": "The claim that a 1202-layer residual network can be trained without optimization difficulty but has worse test error due to overfitting is supported by the source passages (p10, p15). The passages describe the training of the 1202-layer network, its low training error, and the attribution of worse test error to overfitting."
+      },
+      {
+        "id": "r-229e181bc44504da",
+        "judgment": "supported",
+        "reason": "The relation that the general linear programming bound (n-ffb331e98ffc2fc2) is applied in the variational method (n-64fa21537a8db821) to recover Levenshtein's bound is supported by the source passages (p12, p14). The passages describe the variational construction using the framework of Theorem 3.1 (the linear programming bound) to derive a function that proves Levenshtein's bound."
+      },
+      {
+        "id": "r-bdaaa667751b690e",
+        "judgment": "supported",
+        "reason": "The relation that the ablation study supports the claim that sinusoidal and learned positional encodings perform similarly is supported by the source passage (p89). The passage explicitly states that replacing sinusoidal positional encoding with learned positional embeddings yields nearly identical results."
+      },
+      {
+        "id": "r-24dc8c28a92ae114",
+        "judgment": "supported",
+        "reason": "The relation that fault-tolerant stabilizer manipulation (n-f153a734fb189b98) is applied in moving logical qubits (n-a3b3386fc782226f) is supported by the source passages (p20, p23). The passages describe the move process and explicitly state that error processes during moves are similar to those discussed in the section on errors during stabilizer manipulations."
+      },
+      {
+        "id": "r-13d1d31b5a614f25",
+        "judgment": "supported",
+        "reason": "The relation that the error floor from correlated bursts (n-895419cd4de08fc5) bounds the ultimate performance of surface codes (n-bd00254115887cfb) is supported by the source passages (p28, p38). The passages identify the error floor caused by correlated bursts and state that it limits the performance of larger fault-tolerant circuits."
+      },
+      {
+        "id": "r-777ca4c04c22fdaf",
+        "judgment": "supported",
+        "reason": "The relation that identity shortcuts (n-d862cf314f5530cc) are analogous to gated shortcuts in highway networks (n-49b6be2e637145ab) is supported by the source passage (p3). The passage contrasts identity shortcuts with gated shortcuts, highlighting their differences."
+      },
+      {
+        "id": "r-55dd00c897cd0caa",
+        "judgment": "supported",
+        "reason": "The relation that the attention mechanism (n-f58299fcb8c9d328) is empirically shown to improve translation performance (n-a0d4b5c914f15ee5) is supported by the source passages (p5, p6). The passages present experimental results showing RNNsearch models with attention outperform RNNencdec models, especially on long sentences."
+      },
+      {
+        "id": "r-cf43d1a5b4d6f493",
+        "judgment": "supported",
+        "reason": "The relation that defect-based logical qubits (n-085f08453d78f758) are a premise for moving qubit holes (n-a3b3386fc782226f) is supported by the source passages (p15, p23). The passages describe how defect-based qubits provide the structure for moving qubit holes by turning off stabilizers."
+      },
+      {
+        "id": "r-c79cc2dafe67bd9d",
+        "judgment": "supported",
+        "reason": "The relation that residual networks (n-bde86651380b84b3) are applied in per-class RPN for localization (n-70418ebdb5651f51) is supported by the source passage (p19). The passage describes the per-class RPN for localization built on residual networks."
+      },
+      {
+        "id": "r-9af37e5238147eb0",
+        "judgment": "supported",
+        "reason": "The relation that the learning rate schedule (n-a6ee919e8e2fd13e) supports the state-of-the-art results (n-1ebb6249ceed5973) is supported by the source passage (p62). The passage describes the learning rate schedule as part of the training regime for the models that achieved the reported BLEU scores."
+      },
+      {
+        "id": "r-d3cc79c9331681da",
+        "judgment": "supported",
+        "reason": "The relation that scaled dot-product attention (n-0d8ad2c483c75944) is a premise for the Transformer architecture (n-7174667738dd3cf9) is supported by the source passage (p21). The passage states that the Transformer uses scaled dot-product attention in its multi-head attention layers."
+      },
+      {
+        "id": "r-1008890ee323e273",
+        "judgment": "supported",
+        "reason": "The relation that residual networks (n-bde86651380b84b3) are applied with multi-scale testing (n-4d48f67affeac563) is supported by the source passage (p17). The passage describes multi-scale testing applied to detection systems using residual networks."
+      },
+      {
+        "id": "r-5e44610bec76e37b",
+        "judgment": "supported",
+        "reason": "The relation that the argument for standalone neural MT (n-01a9299dde3f1e6d) supports the design of the attention-based model (n-f58299fcb8c9d328) is supported by the source passage (p8). The passage positions the model as a standalone system, motivating the end-to-end training of the attention mechanism."
+      },
+      {
+        "id": "r-1afdbb54d9d7bccf",
+        "judgment": "supported",
+        "reason": "The relation that the gated hidden unit (n-1297d13e2df3c280) is a premise for the attention-based model (n-f58299fcb8c9d328) is supported by the source passage (p12). The passage describes using the gated hidden unit for the RNN encoder and decoder, which are components of the attention-based model."
+      },
+      {
+        "id": "r-1a0c1d4d3e10fcfd",
+        "judgment": "supported",
+        "reason": "The relation that the statistical model (n-c27efc9e50758aa7) and simulations (n-bf14f0b4f4e09158) show similar scaling is supported by the source passages (p12, p11). The passages state that the statistical model gives a logical error rate and threshold qualitatively similar to the simulations."
+      },
+      {
+        "id": "r-8b62274d2331bd9a",
+        "judgment": "supported",
+        "reason": "The relation that scaled dot-product attention (n-0d8ad2c483c75944) is a premise for multi-head attention (n-f758ba89eb6bda13) is supported by the source passage (p26). The passage defines multi-head attention as parallel applications of the attention function, which is scaled dot-product attention."
+      },
+      {
+        "id": "r-9cdf468e0808836b",
+        "judgment": "supported",
+        "reason": "The relation that multi-head attention (n-f758ba89eb6bda13) is a premise for the Transformer (n-7174667738dd3cf9) is supported by the source passage (p16). The passage states that the Transformer architecture is built on multi-head self-attention layers."
+      },
+      {
+        "id": "r-be694c05b34a2ba1",
+        "judgment": "supported",
+        "reason": "The relation that FLOPs estimation (n-987d36e87bbbc2f2) supports the comparison of training costs (n-1ebb6249ceed5973) is supported by the source passage (p81). The passage uses FLOPs estimates to compare the training cost of the Transformer with other models."
+      },
+      {
+        "id": "r-f8a7297ee35632ca",
+        "judgment": "supported",
+        "reason": "The relation that sensor-based prior optimization (n-0574780fff20f0e7) supports below-threshold performance (n-bd00254115887cfb) is supported by the source passage (p130). The passage reports a 10% improvement in logical error rate using sensor-based priors, which helps achieve the reported Λ values."
+      },
+      {
+        "id": "r-116467cc25c1452e",
+        "judgment": "supported",
+        "reason": "The relation that error injection experiments (n-ff3c6fb5b594e15e) support the below-threshold claim (n-bd00254115887cfb) is supported by the source passage (p21). The passage states that the crossing of logical error curves is consistent with threshold behavior, supporting the below-threshold claim."
+      },
+      {
+        "id": "r-ec7e4050b7e9ce0e",
+        "judgment": "supported",
+        "reason": "The relation that beam search (n-f4f673d470baef6d) supports the empirical finding (n-a0d4b5c914f15ee5) is supported by the source passage (p5). The passage states that beam search is used to generate translations, which are then evaluated with BLEU scores."
+      },
+      {
+        "id": "r-07983b836dfadcdb",
+        "judgment": "supported",
+        "reason": "The relation that the maxout deep output (n-8ef0a588ed82a21f) is a premise for the attention-based model (n-f58299fcb8c9d328) is supported by the source passage (p12). The passage describes the decoder computing target word probabilities using a maxout deep output."
+      },
+      {
+        "id": "r-0056be4954d70d7e",
+        "judgment": "supported",
+        "reason": "The relation that simulation results (n-bf14f0b4f4e09158) support the statistical model (n-c27efc9e50758aa7) is supported by the source passages (p11, p12). The passages state that the statistical model gives a logical error rate and threshold qualitatively similar to the simulations."
+      },
+      {
+        "id": "r-bede6df31ff3f0d8",
+        "judgment": "supported",
+        "reason": "The relation that the effective lifetime metric (n-1ffac8bdf1c5113e) is a premise for demonstrating beyond break-even (n-95d9b2f181590b47) is supported by the source passages (p225, p248). The passages define the effective lifetime metric and use it to compare logical and physical qubit lifetimes, demonstrating beyond break-even."
+      },
+      {
+        "id": "r-fdf9b39203adfe1b",
+        "judgment": "supported",
+        "reason": "The relation that identity shortcuts (n-d862cf314f5530cc) are a premise for the residual learning framework (n-db91fa68ed42f857) is supported by the source passages (p2, p3). The passages state that the residual reformulation F(x) + x is realized by identity shortcut connections."
+      },
+      {
+        "id": "r-8dfa8d9b1ef3b977",
+        "judgment": "supported",
+        "reason": "The relation that qualitative analysis of alignments (n-7967715d9538424c) supports the effectiveness of the attention mechanism (n-f58299fcb8c9d328) is supported by the source passages (p6, p7). The passages present visualizations showing linguistically plausible alignments, indicating the attention mechanism learns meaningful correspondences."
+      },
+      {
+        "id": "r-6af2a7214c12f56f",
+        "judgment": "supported",
+        "reason": "The relation that the bidirectional encoder (n-7eebbf975b3ab079) is a premise for the attention mechanism (n-f58299fcb8c9d328) is supported by the source passage (p3). The passage describes the attention mechanism computing context vectors as weighted sums of annotations produced by the bidirectional RNN encoder."
+      },
+      {
+        "id": "r-2c1dea44f93536b7",
+        "judgment": "supported",
+        "reason": "The relation that moving logical qubits (n-a3b3386fc782226f) is a premise for byproduct operators (n-c081c4c6ce8b6cc0) is supported by the source passages (p23, p24). The passages state that moving logical qubits can introduce byproduct operators due to sign changes in logical operators."
+      },
+      {
+        "id": "r-91247c8f07e09e1a",
+        "judgment": "supported",
+        "reason": "The relation that the attention mechanism (n-f58299fcb8c9d328) is analogous to Graves' alignment (n-2afb6619dd774080) but differs in allowing non-monotonic alignments is supported by the source passage (p8). The passage compares the proposed approach to Graves' handwriting alignment, highlighting the difference in monotonicity."
+      },
+      {
+        "id": "r-4a40a36935d2eac7",
+        "judgment": "supported",
+        "reason": "The relation that the quiescent state (n-d708efbb4273fddc) is a premise for error detection (n-53cbc13e4fd90e45) is supported by the source passages (p6, p7). The passages state that the quiescent state is maintained in the absence of errors, and errors are detected by changes in measurement outcomes."
+      },
+      {
+        "id": "r-7b1eebd3d6fe46ba",
+        "judgment": "supported",
+        "reason": "The relation that comparison with phrase-based MT (n-a9ec4cc76c4299e6) supports the claim of comparable performance (n-a0d4b5c914f15ee5) is supported by the source passages (p5, p6). The passages show BLEU scores indicating RNNsearch matches Moses on sentences without unknown words."
+      },
+      {
+        "id": "r-f329a3388e5c7603",
+        "judgment": "supported",
+        "reason": "The relation that stability over hours (n-b41aa691b922fd9a) supports below-threshold operation (n-bd00254115887cfb) is supported by the source passage (p24). The passage shows that Λ remains above 2 over 15 hours, indicating stable below-threshold performance."
+      },
+      {
+        "id": "r-ca87e06a972742ac",
+        "judgment": "supported",
+        "reason": "The relation that the linear programming bound (n-ffb331e98ffc2fc2) is applied in the numerical method (n-5d1ae80a95c0c49b) is supported by the source passages (p15, p16). The passages describe the numerical approach constructing functions satisfying the hypotheses of Theorem 3.2, a variant of the linear programming bound."
+      },
+      {
+        "id": "r-2850cd0c977e918e",
+        "judgment": "supported",
+        "reason": "The relation that the attention mechanism (n-f58299fcb8c9d328) can be interpreted as computing an expected annotation (n-8b4edffa52a17c09) is supported by the source passage (p3). The passage explains that the weighted sum of annotations is equivalent to an expected annotation over possible alignments."
+      },
+      {
+        "id": "r-91bbe5aee796fc39",
+        "judgment": "supported",
+        "reason": "The relation that the impossibility of compact support (n-b64cbd6fa171c197) motivates the conjecture on sharp bounds (n-29ff2cc56f6c1540) is supported by the source passages (p11, p17). The passages state that the negative result indicates sharp bounds require functions with non-compact Fourier support, motivating the conjecture that such functions exist."
+      },
+      {
+        "id": "r-535b9c0f5a1d0542",
+        "judgment": "supported",
+        "reason": "The relation that preweight correlations (n-f5d9336f4c53dadb) and block-based parallelization (n-97b0f2e61bbf86eb) are premises for the real-time decoder (n-56e78604daea7653) is supported by the source passages (p182, p186, p248). The passages describe these methods as key components of the real-time decoder."
+      },
+      {
+        "id": "r-068efd8a35dd1f0b",
+        "judgment": "supported",
+        "reason": "The relation that the requirements for real-time decoding (n-c6d205f98488de3b) motivate the design of the decoder (n-56e78604daea7653) is supported by the source passage (p166). The passage formalizes latency and throughput requirements, guiding the development of the real-time decoding system."
+      },
+      {
+        "id": "r-39df3b7c7a31f0d4",
+        "judgment": "supported",
+        "reason": "The relation that the two-qubit stabilizer example (n-2ff1052e7ec67922) is generalized by the surface code array (n-b13a57a414cd2b0c) is supported by the source passages (p4, p5). The passages state that the two-qubit example demonstrates a simple form of error detection, which is extended to the surface code array."
+      },
+      {
+        "id": "r-53dee57b82e08522",
+        "judgment": "supported",
+        "reason": "The relation that residual learning (n-db91fa68ed42f857) is applied in object detection and localization (n-bde86651380b84b3) is supported by the source passages (p15, p17). The passages describe applying residual networks to object detection and localization tasks, yielding significant improvements."
+      },
+      {
+        "id": "r-b71702944a26168c",
+        "judgment": "supported",
+        "reason": "The relation that the two failure modes (n-8e7431450cdb1c71) support the identification of the error floor (n-895419cd4de08fc5) is supported by the source passages (p29, p252). The passages identify single noisy detectors and correlated bursts as the causes of high-distance failures, which set the error floor."
+      },
+      {
+        "id": "r-78d52a07c27bf0",
+        "judgment": "supported",
+        "reason": "The relation that residual learning (n-db91fa68ed42f857) is generalized by bottleneck architectures (n-eb793c7bd4e7ae3c) is supported by the source passage (p9). The passage describes how the residual framework allows the use of bottleneck blocks to reduce computational cost, enabling very deep networks."
+      }
+    ],
+    "recommendation": "All sampled claims and relations are well-supported by the provided evidence passages. The audit reveals no unsupported or insufficiently contextualized records. The data extraction and relation mapping appear accurate and consistent with the source material."
+  },
+  "sample_ids": [
+    "n-8e7431450cdb1c71",
+    "n-03251d37c4d63d05",
+    "n-0e21616ff3dcac8b",
+    "n-01a9299dde3f1e6d",
+    "n-0df535cb4bde50aa",
+    "n-bd00254115887cfb",
+    "n-ff3c6fb5b594e15e",
+    "n-b8c189017b213277",
+    "n-db91fa68ed42f857",
+    "n-142b0ef6570377b2",
+    "n-54542bc6309e7625",
+    "n-89c4e8ca24d324bc",
+    "n-39b5a34814500760",
+    "n-54871f8b872a0c37",
+    "n-168d39dc8caf9866",
+    "n-c0daf2301324a81a",
+    "n-bc01a50aebc0446b",
+    "n-d862cf314f5530cc",
+    "n-6e2492d44276f24f",
+    "n-911ef77aa63fe48d",
+    "r-229e181bc44504da",
+    "r-bdaaa667751b690e",
+    "r-24dc8c28a92ae114",
+    "r-13d1d31b5a614f25",
+    "r-777ca4c04c22fdaf",
+    "r-55dd00c897cd0caa",
+    "r-cf43d1a5b4d6f493",
+    "r-c79cc2dafe67bd9d",
+    "r-9af37e5238147eb0",
+    "r-d3cc79c9331681da",
+    "r-1008890ee323e273",
+    "r-5e44610bec76e37b",
+    "r-1afdbb54d9d7bccf",
+    "r-1a0c1d4d3e10fcfd",
+    "r-8b62274d2331bd9a",
+    "r-9cdf468e0808836b",
+    "r-be694c05b34a2ba1",
+    "r-f8a7297ee35632ca",
+    "r-116467cc25c1452e",
+    "r-ec7e4050b7e9ce0e",
+    "r-07983b836dfadcdb",
+    "r-0056be4954d70d7e",
+    "r-bede6df31ff3f0d8",
+    "r-fdf9b39203adfe1b",
+    "r-8dfa8d9b1ef3b977",
+    "r-6af2a7214c12f56f",
+    "r-2c1dea44f93536b7",
+    "r-91247c8f07e09e1a",
+    "r-4a40a36935d2eac7",
+    "r-7b1eebd3d6fe46ba",
+    "r-f329a3388e5c7603",
+    "r-ca87e06a972742ac",
+    "r-2850cd0c977e918e",
+    "r-91bbe5aee796fc39",
+    "r-535b9c0f5a1d0542",
+    "r-068efd8a35dd1f0b",
+    "r-39df3b7c7a31f0d4",
+    "r-53dee57b82e08522",
+    "r-b71702944a26168c",
+    "r-78d8d52a07c27bf0"
+  ],
+  "time": "2026-10-12T11:37:13+00:00"
+}

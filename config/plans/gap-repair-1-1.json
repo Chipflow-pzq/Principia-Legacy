@@ -1,0 +1,304 @@
+{
+  "assignments": [
+    {
+      "depth": 1,
+      "dossier": "M03",
+      "need": "Functional transcendence for the j-function and its relation to the general Shimura theorem.",
+      "parent": "n-e5b30a8c67deb4e6",
+      "role": "foundation",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://arxiv.org/pdf/1412.8255"
+    },
+    {
+      "depth": 0,
+      "dossier": "M04",
+      "need": "Long-time derivation, cumulants, and precise limits of the hard-sphere result.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://arxiv.org/pdf/2408.07818"
+    },
+    {
+      "depth": 0,
+      "dossier": "M05",
+      "need": "Entropy monotonicity, noncollapsing, and Hamilton’s program as actually documented.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://arxiv.org/pdf/math/0211159"
+    },
+    {
+      "depth": 0,
+      "dossier": "M07",
+      "need": "Entropic regularization, matrix scaling, and approximation limitations.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://arxiv.org/pdf/1306.0895"
+    },
+    {
+      "depth": 0,
+      "dossier": "M10",
+      "need": "Signature-based Gröbner bases, justified criteria and termination assumptions.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://arxiv.org/pdf/1205.6050"
+    },
+    {
+      "depth": 0,
+      "dossier": "M12",
+      "need": "Bulk universality, local laws, and distribution assumptions.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://arxiv.org/pdf/1001.3453"
+    },
+    {
+      "depth": 0,
+      "dossier": "P05",
+      "need": "Target energy gain and its distinction from electrical or whole-facility gain.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://www.llnl.gov/article/50801/llnls-breakthrough-ignition-experiment-highlighted-physical-review-letters"
+    },
+    {
+      "depth": 0,
+      "dossier": "C08",
+      "need": "NP-completeness, reductions, independent formulations, and unresolved complexity limits.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "E12",
+      "need": "Social-choice impossibility, informational assumptions, welfare and capability distinctions.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://www.csc2.ncsu.edu/faculty/mpsingh/local/Social/f16/wrap/readings/Amartya-Sen-Nobel-AER-1999.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "B03",
+      "need": "Nucleoside modification, innate recognition, translation and bounded clinical evidence.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://www.nobelprize.org/prizes/medicine/2023/advanced-information/"
+    },
+    {
+      "depth": 0,
+      "dossier": "B08",
+      "need": "Channelrhodopsin-mediated temporal control and the scope of causal interpretation.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "Primary repository, author manuscript or institution; title verified during 2026-10-12 source scouting.",
+      "url": "https://web.stanford.edu/group/dlab/media/papers/Boyden%20Nat%20Neurosci%202005.pdf"
+    }
+  ],
+  "frozen_checklists": {
+    "B03": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Resolve original discoveries and human clinical evidence; avoid practical biological protocols."
+      }
+    ],
+    "B08": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Bound causal claims by perturbation, organism, and measurement; no invasive experimental instructions."
+      }
+    ],
+    "C08": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Distinguish unsolved complexity questions from impossibility theorems."
+      }
+    ],
+    "E12": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "No objective function or voting theorem establishes a unique human value system."
+      }
+    ],
+    "M03": [
+      {
+        "contributions": [
+          "n-268b6fd957f68744",
+          "n-e5b30a8c67deb4e6"
+        ],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [
+          "n-268b6fd957f68744",
+          "n-e5b30a8c67deb4e6"
+        ],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [
+          "n-e5b30a8c67deb4e6"
+        ],
+        "id": "limits",
+        "requirement": "Resolve each theorem and attribution separately; an award citation is only a starting gateway."
+      }
+    ],
+    "M04": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Keep scale, time-horizon, and convergence assumptions; do not claim every physical regime."
+      }
+    ],
+    "M05": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Do not compress different invariants or conjectures into a single proof claim."
+      }
+    ],
+    "M07": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Numerical regularization and approximations are not identical to the unregularized object."
+      }
+    ],
+    "M10": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Separate computational tractability from mathematical existence."
+      }
+    ],
+    "M12": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Universal behavior still depends on an explicitly delimited class."
+      }
+    ],
+    "P05": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the formal or representational move"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain the measurement or computational method"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Target energy gain is not net electrical power; omit operational weapons-design details."
+      }
+    ]
+  },
+  "id": "gap-repair-1-1",
+  "model": "deepseek-ai/DeepSeek-V4-Flash",
+  "new_node_allowance": 45,
+  "purpose": "Resolve the ten empty topics and strengthen the two-node mathematics topic without relaxing evidence gates."
+}

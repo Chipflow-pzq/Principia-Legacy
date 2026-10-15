@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "release_id": "1.2.0-exploratory",
+  "external_socket_attempts": [],
+  "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
+  "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
+  "checked": [
+    "all bundled assets",
+    "search",
+    "dossiers",
+    "contribution inspector",
+    "shared topic links and scientist profiles",
+    "relationship inspector",
+    "neighborhood",
+    "brief",
+    "snapshot changes"
+  ]
+}

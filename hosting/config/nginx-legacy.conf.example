@@ -1,0 +1,35 @@
+# Define once at http scope, before including these locations in an HTTPS server:
+# limit_req_zone $binary_remote_addr zone=legacy_api:10m rate=5r/s;
+# limit_req_zone $binary_remote_addr zone=legacy_exports:10m rate=1r/s;
+# This snippet belongs inside an existing server {}; adapt paths and mount prefix.
+# Configure TLS, common security headers and logs in that server. Preserve its other routes.
+
+location = /web/legacy { return 308 /web/legacy/; }
+location = /web/legacy/ {
+    alias /opt/principia-legacy/web_hosted/index.html;
+    expires -1;
+    limit_except GET { deny all; }
+}
+location ^~ /web/legacy/assets/ {
+    alias /opt/principia-legacy/web_hosted/assets/;
+    autoindex off;
+    expires 1y;
+    limit_except GET { deny all; }
+}
+location = /web/legacy/api/brief {
+    limit_req zone=legacy_exports burst=3 nodelay;
+    include /etc/nginx/snippets/legacy-proxy.conf;
+}
+location = /web/legacy/api/changes {
+    limit_req zone=legacy_exports burst=3 nodelay;
+    include /etc/nginx/snippets/legacy-proxy.conf;
+}
+location ^~ /web/legacy/api/ {
+    limit_req zone=legacy_api burst=20 nodelay;
+    include /etc/nginx/snippets/legacy-proxy.conf;
+}
+location = /web/legacy/healthz {
+    limit_req zone=legacy_api burst=20 nodelay;
+    include /etc/nginx/snippets/legacy-proxy.conf;
+}
+location /web/legacy/ { return 404; }

@@ -1,0 +1,5713 @@
+{
+  "actual": {
+    "contributions": 100,
+    "relations": 150
+  },
+  "items": [
+    {
+      "completed_at": null,
+      "content_hash": "c18ca68eacaf999339c871919e661a1194d3904c8c14164eeb581617706f4670",
+      "id": "n-70495dbd2f1dc8e0",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-2f9f0eac7d814913",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p34",
+          "source_id": "s-2f9f0eac7d814913",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9969accf3db40d6b5510970d5d13ddc0618faad29ec1919188297898905a81c4",
+      "id": "n-b27a556cdc54f8b3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7e2fef5e090b62b5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7e2fef5e090b62b5",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6049f2123dcdb0335960c127c094b80be7d60cfe9809538b7a00b40591b6fe8c",
+      "id": "n-70a42874423eb231",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-6c47b3757c098c0b",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "33e44f9a5267b69a8886084bfae0b65c67fcee7417c96d10445f23c2b3de2112",
+      "id": "n-b0446b7a77d97f7b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "629d7576c07944311e2a3fb34adbbc227340683a7140dcf00e9299dc44cd3eeb",
+      "id": "n-c05a61974866a9da",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-fd97115b7a3f4085",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "183b1ee51b795310294b7095707833ba25373f3cf9579eb8729901b29644b0f2",
+      "id": "n-e8b7e546f8efef9d",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p88",
+          "source_id": "s-d8b6b456b54a4ffc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p89",
+          "source_id": "s-d8b6b456b54a4ffc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-d8b6b456b54a4ffc",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ae195d8cd08ca9265c8ccbe40e709d6d253a59d142b3d57ef3a0a6e9857cc0aa",
+      "id": "n-49b71cae205177fb",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-a90bd794e3bf5f24",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ce6770f73d8f2d261c13f604178dbf582c8e0e7446a0f49501bc1619859449bf",
+      "id": "n-44a91332339682bb",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-5afaf3f0444a00e5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p34",
+          "source_id": "s-5afaf3f0444a00e5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-5afaf3f0444a00e5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p38",
+          "source_id": "s-5afaf3f0444a00e5",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "642e0c27b3dcccfcb26544b8a36c9fef55362e20ebbe159d8a0477eaea6b04bb",
+      "id": "n-ad1d5ab5a28f2d63",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "72d4e62b14607aa52ff567b4b0901d516c3af9919ff04e776cd69c4b1bc62a45",
+      "id": "n-b3ba0aedfc37b656",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-73c03c6510f9c285",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-73c03c6510f9c285",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5dfc0927f86288a3fd6ed59cc826de9bbe16f0567e5337033e826e3a6df367ed",
+      "id": "n-8e932d789a8c927c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-1811c2d78d4ddb4c",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c151a327ae5904aa86306c7cdd4866be7afa867d9d5ede5f749890d4f0094db5",
+      "id": "n-cc0946abd48eb2e9",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-51a9f410cddbe243",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "fb069bafd5ccf0b71f36a4933e109e51cb660eb99003c9e9c4a7b524aed2f857",
+      "id": "n-d8a2299169ddbe97",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p27",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p29",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p34",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f57986d43837dc98daa55156281272a688eebb335c7b4ea639c5729a149a06ea",
+      "id": "n-5bae4b574a7d6402",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-c57c010e5b24a6cd",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-c57c010e5b24a6cd",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-c57c010e5b24a6cd",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "dd5dd6d5e3e3de3dea1c91bc6f8cd59da8712b8c98da0350be5537a20bd6dd3e",
+      "id": "n-abb32c5258f2dcdc",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-1dffa399e936fe08",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "32451adbbc756b0413b233893dd484315ebca4f0e63a56a143a5ed0e043ff1a0",
+      "id": "n-a7661f86db5aa351",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-732cb9c11e1f216d",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1208ec9f1280a360d643499cee5b03c30e65d0b75fd8581478e1db8b964f257e",
+      "id": "n-992a52d97924a6a6",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p289",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p291",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p293",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p295",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p420",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p423",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p427",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p439",
+          "source_id": "s-0a07b3e96ced6457",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5f12f97ce92ce85258810c094e899b0a9f34ff40bceedb7fcaa4810b06c3dce0",
+      "id": "n-514da0e79aaf04e1",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "809479966f200c6e230bd0acf71c2b4bbdcc898fb6e97b8936040b1de61c189d",
+      "id": "n-3590fc1ad17630ba",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-efd6d176d72258f1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-efd6d176d72258f1",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9ea11fa9e71c6b2f346b317ec1feffaafa6afb119a0b534129b3445aefe00ae3",
+      "id": "n-ff5dcf1d77b10baf",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-142b9b367d5ed257",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-142b9b367d5ed257",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "eda10b6b72da6913fb255abc64c5f3f8eaac23e50ee28964b71b033f4611ad8b",
+      "id": "n-cb00d16db7ce6d70",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-4f5a0f49eb2a002e",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "caef77c42b094d49e1e91256dbf9bc76a04a11a64537fc886beb86a4067a9d58",
+      "id": "n-399ea5fec4fa475f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-acc933f4ccfb3046",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9360bfed57024bb8de120cabf2b1687caf48b18eea30f6d3c637397eb13451f6",
+      "id": "n-75d35177be89e689",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9c9a6ebcc9e53904f9cc72cb8fab3dd23039bbe07753f800103f92b2b32bd8e8",
+      "id": "n-40b8b0a05806bd3b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-3a2a46e2adf9c565",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-3a2a46e2adf9c565",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-3a2a46e2adf9c565",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-3a2a46e2adf9c565",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "a78026adbc6beed0d57e1c34988faea781636979dde822fae029ecb143c4e900",
+      "id": "n-f634a081b4e650d3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f314e04de6d93f9a80343850b15faf2860619b35ee773ec60cfe02638321fe9b",
+      "id": "n-7494f38eef2939c4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p45",
+          "source_id": "s-2f9f0eac7d814913",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-2f9f0eac7d814913",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5556d5c66511577e1097511987e080274651d69d60dda93c88d6624911d8ec24",
+      "id": "n-1ecc821fa29bbf63",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-62cf78b1f9e0b796",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-62cf78b1f9e0b796",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3d897845f2a7606a2ec29e7905d7367e442b73666280c54c885f3544e3c9a94c",
+      "id": "n-517c63a08cd8644b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-75bd7941e0c0bd85",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1a496827de26ae26ca385b80e077968b5667f771ae1167d8445a7229af66b4f9",
+      "id": "n-dd6f0b580aad8d87",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3cb4adee216ab53c969c590314bb54d46c10e48db56f54a70a9adeb3da6ffc35",
+      "id": "n-25319b2ff63be179",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-cd4195bdf7aa5cc5",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e16884174704b9f77fd955f470151bc217bf6baab4c96acd0d2ee5c6ad8080b3",
+      "id": "n-9f03ff5c473053d4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p54",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p55",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p56",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p57",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p58",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p59",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p60",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p61",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "18b10384bbe8914721a7ea8b4745b5ff3538deb18ba62109c9e61816efa26597",
+      "id": "n-93984ad96d7a88f4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p27",
+          "source_id": "s-bf69f7abd494a56f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-bf69f7abd494a56f",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "54a0f35377bbbc729bf7788bc93f064e8c65ded5fefbd0f15d2a4c7b081dd453",
+      "id": "n-d87ec448c95ff72c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-ebdcff489aa4cce2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-ebdcff489aa4cce2",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c3853bf237f28fc331ab4b5994a0a6350e892625896f451a53b419b6e750fdf4",
+      "id": "n-38bf0be08ecdd3c2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-7eb9ae3ec41a0f0d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7eb9ae3ec41a0f0d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-7eb9ae3ec41a0f0d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-7eb9ae3ec41a0f0d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-7eb9ae3ec41a0f0d",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3c7458a8dcff0646b8a99cb20c6c966ff95180c9fcc1072513be04ffa89cf28c",
+      "id": "n-6bd5e8ade698e697",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-0f6aad1d94a97c2f",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "73e6b0c2076238b9aaf41801dc8884a0274c4e50966dfb8bf585f7c76433c331",
+      "id": "n-e2e35c5f4897faba",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p216",
+          "source_id": "s-492511433f4a3b0f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p220",
+          "source_id": "s-492511433f4a3b0f",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "406aa3c630280b26259ac25314e058e1af309a84ed11b7cd3e0dc7e248f4d3be",
+      "id": "n-f5d469815734c974",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-1da717602e8f19bb",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "aa7c18167367f2dd938ff42077fd1085590c0e15081f8557e84fdce52f6459e0",
+      "id": "n-eae82ed488fe390f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p38",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p47",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p51",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c597cf2649744405da64885bd9994917b47df60c0af5719e9e253d87b3e93656",
+      "id": "n-0653219a2a26ae5f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-a9736c72734f6b5c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p26",
+          "source_id": "s-a9736c72734f6b5c",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "55f649362085a0537728c6dcc2af1faf55ebbfe67f32b2b7207fef5fda72595f",
+      "id": "n-c85e8a683508008d",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-9428a9fa38da4d9d",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6afe37d8d4a99b71536f98c06bb94109d83a27eea4d150a9679ee084eeca4302",
+      "id": "n-4bb4124522b2e09b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p70",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p72",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3301747ca41d8a88d6c6a44974c49777091db1d9a3400b895527f9d1bb0b124c",
+      "id": "n-d1d1ec0fb414090a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-5e5157577b275142",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9334b5fb2043ba86add087c2ec3bf6366df3b97381a8b22a5d4279c093d0de5a",
+      "id": "n-116f9170a87a1f5d",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-c2a8da41ce057077",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "97918cc40534c1eefc5b84bf10baee7daefedd9b79c9c39a939f5c20f9c1289d",
+      "id": "n-d9127ea8b22bd4fc",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1222175160e17e8cfc250541edf12d8412a8598b5c6b2a03d21a17fa701d3ee4",
+      "id": "n-651de73d5509dbe3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-bbfbbc8d50065937",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p29",
+          "source_id": "s-bbfbbc8d50065937",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-bbfbbc8d50065937",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-bbfbbc8d50065937",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-bbfbbc8d50065937",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-bbfbbc8d50065937",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p34",
+          "source_id": "s-bbfbbc8d50065937",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "593d194781954e0563fa0574ea35c7bafa5626e7e88b0a3c66aa593b768e0bbd",
+      "id": "n-c5ec15db8086dc04",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-1811c2d78d4ddb4c",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "213b9001d04e04631362672e3e3dcfb0f5361f8f5c57f140ecd7a36949d4f99e",
+      "id": "n-5b4093d6aadbff37",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p163",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p166",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p167",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p168",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p169",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p170",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p171",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p172",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p173",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p174",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p175",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p176",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p188",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p191",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p192",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p193",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p194",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p195",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "42de7d81a026c9b3171d9a4ead69f76d706c18e614e4058929d87a8201d768e4",
+      "id": "n-f6de822771d9f66a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-b1aef9cba91010e0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p61",
+          "source_id": "s-b1aef9cba91010e0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p62",
+          "source_id": "s-b1aef9cba91010e0",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "dd65e52ef7c4c868596499ccebb356a54fba90b06682d2be0c4215b404867592",
+      "id": "n-d837e84ebe6727d9",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p93",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p95",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p96",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p98",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p100",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p102",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p106",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "98cbffe6ca5d91fd324d5a8e626a74a42d4fb34bcce4e5369d633d8b31253a87",
+      "id": "n-58fde78f2e301a2c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p62",
+          "source_id": "s-ff33b73d2099fc12",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1a27e16dc2d71200d5695ad9c42816a2b98b3ecf49d0e3ffcd9c61fee1ccadda",
+      "id": "n-c8125132477647dd",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p72",
+          "source_id": "s-db5e29283b3da932",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p105",
+          "source_id": "s-db5e29283b3da932",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "8c92d447c4d1ee6f70124da4a27d5c672e24d8a3479a39c5f3b9d9e89d22813a",
+      "id": "n-a29971c22ed09cbf",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p89",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p91",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p92",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p93",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p94",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p95",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p96",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p97",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p98",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p99",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p100",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p101",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p102",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p103",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-ebb3953f5e87b340",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5978dc276376972f4490113bd1b16329e36069bea37b2c8b5710e7d222f11b69",
+      "id": "n-fde26488ebc47d07",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-ae64810b8a972ecf",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "0d59942d184fac0f5e6cae896cc5136093a2ad0e3b38e2f3569190088ab84330",
+      "id": "n-6e72a98a2746eb79",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p155",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "dd80b42f0e4bb6ed2bd8b897824bdbb15573f996c6122d17adf307a0fcca094f",
+      "id": "n-2a23488eb909ab03",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p67",
+          "source_id": "s-f623189058a6e9e2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p68",
+          "source_id": "s-f623189058a6e9e2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p69",
+          "source_id": "s-f623189058a6e9e2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p70",
+          "source_id": "s-f623189058a6e9e2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p71",
+          "source_id": "s-f623189058a6e9e2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p72",
+          "source_id": "s-f623189058a6e9e2",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "52984f68a56f788063539a9ed4dc18e2d4b6fc72c8179948b44715dd7f2d5015",
+      "id": "n-fce49e6ac19a0d56",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p94",
+          "source_id": "s-db5e29283b3da932",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p119",
+          "source_id": "s-db5e29283b3da932",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6b57837545226c15399688cd9e479d79e6f53376bc363331617d1faf768d0981",
+      "id": "n-b12fb48e2de19696",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-c2336f25b50b1f81",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-c2336f25b50b1f81",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-c2336f25b50b1f81",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3b55c557facda8790dcf6899b3c6e055bd2f474f7f67f4313c0b41a8283fb4af",
+      "id": "n-dd8f2b86441b8301",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p84",
+          "source_id": "s-a6db249dd72a8790",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p86",
+          "source_id": "s-a6db249dd72a8790",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5b6bd0cbebc647ee4a6a7a0c57bbdfe959f181f0c13b6528f011cdc54a4c8372",
+      "id": "n-a739854e2ce51b95",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "bfc8dc7c4a1aa41f8755bc1e2a8e72e8ff0688484ce5f5e558814bd6448cae3c",
+      "id": "n-cc0a4e40f669d8d5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-52a292e1e8c2a3fc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-52a292e1e8c2a3fc",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ae60008cb740782bcb0692112322430beb46154e0b8d3611c160572f2629f3f5",
+      "id": "n-f0fc80459f27dedc",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-ca3f8ce1856791f1",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "af578d0edf29a5af3590e834b537d141f07cb0eb6cb7627e2e6af1fbf533363f",
+      "id": "n-e4e63b525bf84edb",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-bf69f7abd494a56f",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "a9c1ec823ef60c02695265fd8633524f572eba9389a1c0de172c30a74b81cfc0",
+      "id": "n-07bd7e23bc5a85f3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p46",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p47",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p48",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p49",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p51",
+          "source_id": "s-234908378b6a8c4f",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1a3503e9f41c5f77838246e799d50bca5aebd9236d0501b9376d0a12d06b0948",
+      "id": "n-7b5b8960c4819d01",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p49",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p60",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p63",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "258cfde1344e1aea4eb7e895b46acc1e2ec26447503ac3a229c877680b9f0fb7",
+      "id": "n-a08e6ff0156cbab6",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-3e2a6afb528ab6fe",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-3e2a6afb528ab6fe",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7107036e7f2c8b60511221c7cf4455952439c315da866c2d425d6cd8005cd6e4",
+      "id": "n-06de7d0d5abf3ad5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-efbb4f7f19f72a7a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-efbb4f7f19f72a7a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-efbb4f7f19f72a7a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-efbb4f7f19f72a7a",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5e0c1e7065926ad3b810d5f775c1e30348a716b85f8900800209e7e887ff5b8d",
+      "id": "n-06c5b568752146a5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-51a9f410cddbe243",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-51a9f410cddbe243",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "8f7b4a23fe577ca1aa88e901ccdc8301b2b073802efaa05f307fa522df189674",
+      "id": "n-eaf634f6dfaaf821",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p59",
+          "source_id": "s-e7b7572d8bb62540",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3a60ec278ed16cacca7dbf7a99eff6c1203bc0f6c2ffcdbb7812979e99ae63a8",
+      "id": "n-37541e2154bed36e",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-eeb3a9062fd99ce4",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-eeb3a9062fd99ce4",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "550869f00a98f12af38b5ad8df16dd4236603aa1d96fe5a7552988ee44070914",
+      "id": "n-49d1a39dc1ac0b1f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-4745deb2d8f473bd",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-4745deb2d8f473bd",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "53254a6332b946dee5fbfa8aa8391128866b7466834d24bef6b6b92187d95e1e",
+      "id": "n-c61475088cba3bd1",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-ca3f8ce1856791f1",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "0db96b3fa84219a03a0fe321b934184e836fdc59f8526366bb0c09b2da9b270a",
+      "id": "n-8f4a9fcc265c34e2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p60",
+          "source_id": "s-15e02abf035faed0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p61",
+          "source_id": "s-15e02abf035faed0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p62",
+          "source_id": "s-15e02abf035faed0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p63",
+          "source_id": "s-15e02abf035faed0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p64",
+          "source_id": "s-15e02abf035faed0",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "05153827e6161593c79def7b8037ee8cf889f393f0a21f95b41aa20876375c3d",
+      "id": "n-1e5436346106fe6c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-17e64978201cbb0c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p25",
+          "source_id": "s-17e64978201cbb0c",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "df61a4ec6fc834df97c4fa7856100d130bd037b1804e823b691d62619f761224",
+      "id": "n-fe3ec17dc5930548",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-15c15cda3d28b6ca",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "73c5be627126bb5d1c2b480ed9e0c71b95cc7f37fa4e6e2c4baf0f617e911f54",
+      "id": "n-fc50d2fb73098064",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p65",
+          "source_id": "s-27d13ce918dde1f9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p66",
+          "source_id": "s-27d13ce918dde1f9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p67",
+          "source_id": "s-27d13ce918dde1f9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p79",
+          "source_id": "s-27d13ce918dde1f9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p80",
+          "source_id": "s-27d13ce918dde1f9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p81",
+          "source_id": "s-27d13ce918dde1f9",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "0ee47d8773f9c68a84e2cfe85c218d7d8636da8dc24be6611cf893e353098b4c",
+      "id": "n-e1fa1dcff9af66c8",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-298d348784b6f726",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c2ba0094f09341a14273fe808b1eb903585460b35ebc222807c889243f7fc89d",
+      "id": "n-69544a187ac63702",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-7e2fef5e090b62b5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7e2fef5e090b62b5",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "db7779f6caeeacdc67405bb90a97001dc1c3f091942107c1e3ebdd8ddc05faef",
+      "id": "n-3d796f70079ce7ed",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-f20638572a678ccb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-f20638572a678ccb",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1a3fffe85bd85aa5138610364fe8b95a8760235cb70640ea72816bccb4a9bee8",
+      "id": "n-e37cef8485e4eda1",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p63",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p64",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p65",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p66",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p67",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p68",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p69",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p70",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p71",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p72",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p73",
+          "source_id": "s-e598e750983b63c1",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "54d7dfbf363f3e58782356c4f06b61abaae06d9a7c9a524d04173cf05664c0ea",
+      "id": "n-54d053f43b114e79",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ad0f211878f439056a850a8b59ab18fba8438091bc26a2899968546297792f52",
+      "id": "n-f542921f06ce3050",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-ca3f8ce1856791f1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-ca3f8ce1856791f1",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "45af08d37aba4de7676ba82fac2ca950cd4cddf984ca70ab76b6ea7a70ee79d3",
+      "id": "n-79ef83c60ab2c188",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p107",
+          "source_id": "s-15e02abf035faed0",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "33b16193b2b8e7320fa0db17f5c2e7df0ae4c7b68487f79dbdda9708b7c46a82",
+      "id": "n-6f77557fcec7c07a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-a590861cddfef691",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "16acef417fbd3255c77510f5774b298bafc8cc64510d5f1019ce67f0b2cf4119",
+      "id": "n-e0d001d3e5cf94fd",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-1f319684a021c497",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5eb2624890a9c04489b2f82998674a2c6a1e0e56fa070360d4617e96dcaf5eb5",
+      "id": "n-09d281b7ce18f1f1",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-1ac30ea8132204ed",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-1ac30ea8132204ed",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "63ceb16d54039188886c1eab5b50ebc1cae5961d7ba10ed1ebc0f3278dc19f1c",
+      "id": "n-34c02e26d9a92e12",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-fd6145ad1ec80172",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "8c971d28aac42493f761960d099290228231ba9d0a3511f91cd7209990bab1e1",
+      "id": "n-19fff47845265fa8",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-30157c08e6d2f6cf",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "2f5164f2d25807dbba70d052f703fd49221febde7f500636e5f3de5cee4ce5ac",
+      "id": "n-aab259b58c62363e",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-27718d2beae4ec05",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-27718d2beae4ec05",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-27718d2beae4ec05",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "4c770243ba414fed7f39641d65159b76a85181bd4fe5195617042e8527c6d2df",
+      "id": "n-52b6223be16c65d5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p163",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p164",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p166",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p168",
+          "source_id": "s-ca66f37c1cf999c8",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9e70b589fdd5ab481b1052676d879832d91777e30e54e5db817cab39bb8f05c9",
+      "id": "n-cbb96af06bc6323b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-52a292e1e8c2a3fc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-52a292e1e8c2a3fc",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "72c7f7e3004aeb5d19120f1439e1b65b51974bb2c265e753913b5cd36e67c2fe",
+      "id": "n-d2b401329c09cacf",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-c6073bb5c00f6d5d",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7a33c12bba1818ce700a21a5528802c0d065848ba331716044d7d132c59fde23",
+      "id": "n-6fea6433dca00491",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-8cfa97546eff02c9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-8cfa97546eff02c9",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7944e0004f73d6a281b6a018ddc2e1dfe28be6ceaba1129ff0c26e904624ea57",
+      "id": "n-8e37fffe8cdd5718",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-9af08cf39717811c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-9af08cf39717811c",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "49a4f7f1a8550f77f495bfa62f58442bf3e8aecf8b3c3eb55155847a4ccd0044",
+      "id": "n-b71bf01a2832bea4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "378e613da1627dd37b5f22e704971e928392590180c6ef4e615322436dff88e9",
+      "id": "n-c8915b57ec2b988d",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e7f0e78223dab91edc26e0e79d24334853359f7efc04ab2f5de99e40f60994ad",
+      "id": "n-bf9e81b65f7194e2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-c6073bb5c00f6d5d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-c6073bb5c00f6d5d",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5e5a63abe031e2f5a9ab135d6f409417968532d43c31103ff0706b6d5225ef66",
+      "id": "n-43c0a1fcd3b4b04b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7e2fef5e090b62b5",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7bf4e9c32f33e86cc5bd45984a9cda6d57400c6f547390c79724f2ece7233d2e",
+      "id": "n-c05899914cbd1c80",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-27718d2beae4ec05",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-27718d2beae4ec05",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-27718d2beae4ec05",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "429b0492652cf8bd395af3a8514d484618a1e28ede935bea029cc87d21753be2",
+      "id": "n-e96dcbc5d77d0b8b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-08ec5d27a3affbc6",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "da9acf98c912ef8ec50ae5e7428077f9d910ccde61883d1e7c64c99daaf901c9",
+      "id": "n-2cbad5a811348d58",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p87",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p88",
+          "source_id": "s-63a40d4d6df77637",
+          "source_revision": 1
+        }
+      ],
+      "type": "contribution"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "88ac1359751060fabb16949a0a70e5fa99f274d3ea8009942fd84bd86d9c8f4c",
+      "id": "r-d4e85a917a9bf355",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-c3f4c107d967f6d5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p22",
+          "source_id": "s-c3f4c107d967f6d5",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "feec7b781096410787df39a8b30c8c4f91a1d5cd173e9265573346a654a98e10",
+      "id": "r-af9d22f034073138",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p55",
+          "source_id": "s-e34bca52a172e7e0",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "239b466723c390e14ca171ff443248b9b2c06a6a3dd0a5a7a5c58723af2e0e3c",
+      "id": "r-3beecbd829b76516",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p67",
+          "source_id": "s-3dbd5090a92c426b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "211dbb1643dc5be0dfe712e30fda745be94b067e2ff430ec24be97557a75c6d0",
+      "id": "r-a2cc8adcbd0fc55b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-298d348784b6f726",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "8b13f832d590a536aac974ac0cfe50508e5a1a2c78adc74638a465258737584f",
+      "id": "bridge-de50adc5dfc6caa6",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "705501f88a6f43417bc7f4cd05ef961e30bad18a6b448cb35d14e8633f528e76",
+      "id": "r-3ea66f7aa2d2fb24",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-ca3f8ce1856791f1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-ca3f8ce1856791f1",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6553359322f99bfb3b9fbf83b39775b703f0d067f523b2ce3795fb47340a3fe8",
+      "id": "r-2b743d14697835e0",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f318a35604bf6a05ff2b6ff4e6a6968ba112ce1498191cfbe93e561fa0fca5a2",
+      "id": "r-1b82c4536bd9e025",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9a2cb5733a2208a9a8d3dabebe3d0e998d8863a1967552a42eeba2d5bd62f250",
+      "id": "r-96ef7b2894b2073b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-732cb9c11e1f216d",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "cfc3172164d0b0060a09e125931f6aacd5ef92933a721f32f439b5583aff2126",
+      "id": "r-8f2096d2f7029641",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-fe4fff6657997723",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fe4fff6657997723",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "40a0ca6ede1a4b72c99daa0639540f58a95b4c0be42cf1fbff5cd85a7c990786",
+      "id": "r-111f7e19fffcb987",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-ea65112e7fc8c452",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "016613dd163eb2a8cc9e1ef91bd8f35be6c80418573ab5f4d7afec7d89b96e1b",
+      "id": "r-57fde882155ed39b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p14",
+          "source_id": "s-3ecaee950264decc",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "2d70ec75e2aa7502a4939bb7f5e38c1c5ef38db443c412df3eb4f81f1bcab665",
+      "id": "connection-e87e8f26c2c5f0b4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p1",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f8d6eb16a645d8d50e72a30c6f33f70f3509a84f7542152c79a126619415ac43",
+      "id": "r-e09e4cf3e039851f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-d3ce3ac366bdb9da",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-d3ce3ac366bdb9da",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "fa2b65e199d8a54c54fff8fa3c4bc09fcee1b9544d6383972eb33d231f885d7c",
+      "id": "r-167d0698276a8fb5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-8ec98256519cb242",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e95437f181f1e542f6f1e2102ab5baa91c33fb974b12414ab8fea3b6e5392432",
+      "id": "connection-b91ea1837b5e216e",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "dd608541ea024d4f2a67dc71c62655798b030f971d0c9201fcf1432ae6fac92a",
+      "id": "r-60888434b22bb6a5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-d3ce3ac366bdb9da",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-d3ce3ac366bdb9da",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7e5ec6cd102f9d6935e4615ebfa237822a977db3618bfaef4de25f853d0b0785",
+      "id": "r-4a10190a5ca0b4f4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-d3ce3ac366bdb9da",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p35",
+          "source_id": "s-d3ce3ac366bdb9da",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "db207eb99c8d75f6ca8c4fc9a11d3cd83a7da15de35351ddf06ea876d565b9cb",
+      "id": "r-733fe8f9f8c3fae4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p495",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p498",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6cda9876e372bbc9dcd520b7e79fe490b6271e3bd0b6fb1c235df66ad75acca4",
+      "id": "r-60ccf970b9982648",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p419",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p448",
+          "source_id": "s-d9d82e5868bf0f37",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "240f7cf8ef8f5246803e924f135e100b741ef31ea86ebf5584ca4b1ca56c0985",
+      "id": "r-a043957c89a9e948",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-b0b2b440c574001f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "fd5945c209c5c1fec62325e93811fb53025238b4968cc6a9729378c18ba81522",
+      "id": "r-4b2c74d65227271a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-395441e9f9efd764",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-395441e9f9efd764",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9a778b8dedd4f7ad771fc4313bd6f35638ede6f5f950d080e8fe4931516e3db5",
+      "id": "r-02090bc00f0f723a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-9af08cf39717811c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "87a8d453b8d84a2f178ea5448b2d80e8b29fa5575df39067c65ea72dd8dc78ad",
+      "id": "r-f59a04f1003d7485",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p123",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p127",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f50eb614aa8396c5ba37452b627470371722c4996f459f29db3ad19660501a46",
+      "id": "r-94517af087ca1768",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-18c86174f4cdd156",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-18c86174f4cdd156",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "30aa4dea2326a0372125cc55a677fe644aa8cc6b92052477bf098f4f2add2217",
+      "id": "connection-80959a7ae20b4e7c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-40071f9227452f0d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-beeaeda1908e6236",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f3a7458785d58bc59fbeb1dce63238ac061edda453f489edaf122927833e5efe",
+      "id": "r-f2b57ffb679841ca",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p14",
+          "source_id": "s-17e64978201cbb0c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ed80037610f33acf016eac9a50c5c616141a436850cc0e2b9674ee1a609ed333",
+      "id": "r-7bd2c7a88acd987c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-b0c7c6c90192bbba",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p66",
+          "source_id": "s-b0c7c6c90192bbba",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "d39abfb4b71d38e1fb26426c223da8046e7f99dcb1f9896811fd8585814be880",
+      "id": "r-28df5e82f687e02b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-17e64978201cbb0c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p27",
+          "source_id": "s-17e64978201cbb0c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6fbb391aef74a9fac96b64c7fc2f8ed3a90e7f84cf18f9bda6e2b200d91cd7f5",
+      "id": "r-741ebceea908e831",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-40071f9227452f0d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-40071f9227452f0d",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "91d2c9f7caf53cfa262034f7b85aa056ab4c622406378b51c9cdd645199bdfec",
+      "id": "r-257ea97acb73016d",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-a9736c72734f6b5c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p38",
+          "source_id": "s-a9736c72734f6b5c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "797ed9aaaddc9b0d2513dd397c2f21e808582d496407419a84d97f59d8963362",
+      "id": "r-9a0e4153388fc8b9",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-eb86a023172ef904",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "b58e9671461f43a94b5b25dd471176c0dd7b5a7af4a3c939a728da3e1505a150",
+      "id": "r-00e25f30b93ec407",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "76efba1cef16c6221dba3243c5885f3458140235cb2907891c49b833a262254b",
+      "id": "r-f9061725217c2bde",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p116",
+          "source_id": "s-d9722cc17f959953",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p121",
+          "source_id": "s-d9722cc17f959953",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "2cd4ddee6d89facbaf4f3c3b508433d635ee24c4b108b7cbde1a36c9599945de",
+      "id": "r-b1034be258a47b4a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-eeb3a9062fd99ce4",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "4722ac02c58b1afc2d3cc5f6335cf098278145d476217e62f1edc8f0d8eba12c",
+      "id": "r-9d855ac8334cc153",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-467c0b328c31694b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e25051d0e86c4206c0afa85f915694163b4d4b20d22c4ab69d8fd52dcf712805",
+      "id": "r-c89af160555a348a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-eeb3a9062fd99ce4",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "83d0f440d06fe20f23d0c5d74698549d6076932fb094e1d51cfe0ef5dbba832b",
+      "id": "r-2f898fa49dc97ef4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-08ec5d27a3affbc6",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7cd5449ef6d28cddd25e500b0eb4f2eabf5f4ed1ddaf3c7a49fb723df5f2687d",
+      "id": "r-4e657c17738815e9",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-4495ee5941de316c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "b440f4810d6734f92904fdea7b033ad96ffa778ce5ae7d0e356ec4e370e8d713",
+      "id": "r-d5720544291fe09c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-33ec4347b121b9a8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-33ec4347b121b9a8",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ce050ce38cc4c92f8a6ab382ce0121dedd22ad07578c21e644699027f4906bcc",
+      "id": "r-6ae9ac57cef95759",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-b092c80da192d6eb",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "cb196148cd9b1450f32b094c1b132abf4fdbffc8e6cf57266716b17c7362741e",
+      "id": "r-f49226ae970f77e2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-aef80ec13174b85f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "39b0b24ee749c2f8bf4fa39c683a8bd3b0368435f09d394d67bc00f701840401",
+      "id": "r-15e0ec7405fb641d",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p62",
+          "source_id": "s-ff33b73d2099fc12",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1372d77c46daebc9767eb15d0362576dbbd401dcb99888c3613a0f1940981c2a",
+      "id": "r-725d86ab72649ec0",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-73c03c6510f9c285",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "dcea04b3d1cc63f18bd197d647594c5319cbe9bfa43784e7d8446ec69e6ec622",
+      "id": "r-3fac97409e690056",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-1ac30ea8132204ed",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "d13482d6f1fb65f5004fd5e22aceb8325a57ae7b174d81a09f935de789855f71",
+      "id": "r-ddd589e6d502ab1f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e5d53276f833c9f53b7bb3be9ed4ce9b8cd33a2791c3ee0cac9b4cef04fc5e33",
+      "id": "r-cc2e635579b3e320",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-cd4195bdf7aa5cc5",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5e7e6ac9331b2001335b54f59e577cdd17027d294510c70fbc77c4a374ef5d1e",
+      "id": "r-68e14c50537332ca",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p27",
+          "source_id": "s-92a2e56a11b16de1",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7d7aa4c63d383e682d829cce8fc5be2e0cfacfff738dbe9339e1650b061fd2cb",
+      "id": "r-993b58d568de853a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-1ac30ea8132204ed",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "8bae6fbe2373cb7435200e13079a5447008d84ead90fdd7b705c33884adb1ea4",
+      "id": "r-e69bd5e35a68d980",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p25",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "62892c5e50863a52574abf17f2f6a7497affe577fc2943cc94a39e6bae4c422d",
+      "id": "r-4926b57076ae5d8c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-251aee296a654062",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-251aee296a654062",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "2df004421f5d08c0849fb77b2bf0e21b7fff2195321f1737a358e22717b1fa8a",
+      "id": "r-aaf323f68d6207f3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p139",
+          "source_id": "s-d790b6ce91925d0f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p144",
+          "source_id": "s-d790b6ce91925d0f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "61aa7eb4a77d40ef7d69af81356a29ba6d8cbe011c97b3023a15c9d68772a176",
+      "id": "r-1f7dd11200f52551",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-4f5a0f49eb2a002e",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "b1ed12a2992ab1d0a597b9d0ebda4df8d912cae315572f823fc5ba15616c5ed7",
+      "id": "r-03d6fbe3f54cfdc4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p45",
+          "source_id": "s-f46f71db46d1fcd2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p49",
+          "source_id": "s-f46f71db46d1fcd2",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3699d07c5f69101375431fb6c2be017199b4fd7f6e632aaa08be1309b386a8d3",
+      "id": "r-360795d69292c7d2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-0d305f37b3588d4e",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9d492db491daf07c09d22ef90d4a17937557793065361a86268ba8e413e2e7e5",
+      "id": "r-599aa469eb9af9a2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-ca3f8ce1856791f1",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "667dd7285238f0f359b3ad6b4e6cc6c3d7a75b598e59c8c980bbaa29dd408d70",
+      "id": "r-2b58299b1ab533b8",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p142",
+          "source_id": "s-d790b6ce91925d0f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "fc49bad0b93763887f8ce97c8b5ecb78df3eeac686c95bdd317bf15e7508b634",
+      "id": "r-fbb64b7af40b80e4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-732cb9c11e1f216d",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "247484b64473dc26ff657f157c1aa3c260cbc5b811825504df7e671e50c3c0b5",
+      "id": "r-0ba63560668e1417",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-fd192b4b66d11318",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p62",
+          "source_id": "s-fd192b4b66d11318",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "0492feccb32f71b750e824e9edcc658f09a6f9ce86e1999a461e09dcc3601a2e",
+      "id": "r-1504823b1efdb9ce",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p242",
+          "source_id": "s-b7c9af9e7edb6695",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "2c31c2f1cdd95e3b9f68434f964b4450c0eaed398739c44189ddf041db21b690",
+      "id": "r-2850cd0c977e918e",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "85d05f0e85a9b18f9edf7ae0a5e1e11012f7e0a15940e244c11dee7e0eb75ad4",
+      "id": "r-835b01891ebe4df8",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-a3e1058e40844545",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "331f04e7f0c62e8cca32f64156de18ec32333d289d0e09aad9f2037d6f20d056",
+      "id": "r-4e856abed4a052a9",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-0e80e40dbb4bbbbf",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-0e80e40dbb4bbbbf",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "26e52242e70b55a6de40154c594306de71cd18f6e3cb2e1227c6aa56ec5b3bdf",
+      "id": "r-13f8ab914ebd9637",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-0f5356584e283d80",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "393baf50e9baa2c593bb673c51b2028eaa9112dbe635b13ca6c8f88adeef14aa",
+      "id": "connection-326da5f0dee2e674",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "37823e1ef4918202ba344e04662650e2e3173db7783c06ab1ba974d1a00fcec0",
+      "id": "r-a5c8b9c333729bcc",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-3376509a2e5b32f8",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-3376509a2e5b32f8",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "fb53693787ad70ccc7255d3ad7e7668d538698c225726724f788ee7db2f62992",
+      "id": "r-1c977b471204279e",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-3ecaee950264decc",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "9f41d304f565bd2fb50f0e36c40cf4857d28bc9daa98f35f55edaac426d5139d",
+      "id": "r-f5c5347600892874",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-1fdf33d9fdefcf23",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1965a60278c8ec80ab421b81f2ce29d01025a6acff97e8ce226a52b91b5b7399",
+      "id": "r-6185198fdbdafa3a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-0f5356584e283d80",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "035ca0742785aa04ac239b75959ee3888df41d8fff2292a3a09bf088669f9d1f",
+      "id": "r-937898f087070c6f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-69ccc13228065078",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "59d578291e3166cab77fcaec5aec1d3c1ee8f354419964548b04ea72246da2e2",
+      "id": "r-de92c96a39062d30",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-f20638572a678ccb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-f20638572a678ccb",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c8642227c215f10b8a66b6b7a0ecb4875524737b11eccb4bdb751d679adbcf7b",
+      "id": "r-35aaa7f9809dc34f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-c8fa40bbc6c616f5",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "a61b66e99e40ad41624028db049baeee886d9ad82d77f486e62ec6108be99961",
+      "id": "r-dd02a484a546f4c3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p30",
+          "source_id": "s-e7b7572d8bb62540",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-e7b7572d8bb62540",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1963fc02db781efd9cfa787997334aa58bd03bff6d809d53b3b3f2caac9f473a",
+      "id": "connection-be77623f8793d365",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p44",
+          "source_id": "s-3a7869c67be13520",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p27",
+          "source_id": "s-2b0419520eb91a90",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "98a220a44ef47b188d84437ac3ee646dd559f1ac9958d7c11892805311c33dc9",
+      "id": "connection-df2c93af62fbeb4d",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-ebdcff489aa4cce2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-18c86174f4cdd156",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ea5ef8515c3ef1ba681e771293adaa1f36117be08dfa31791243f57f9892e003",
+      "id": "r-5023188cdc668f76",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-a590861cddfef691",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-a590861cddfef691",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "a98614afc83fd6402f5a08b4c796bf640a97f3064ea19c2b205a44b8f3bc6b8a",
+      "id": "r-3cd23c40acf03455",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p14",
+          "source_id": "s-ebdcff489aa4cce2",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "a0889e25977ce9948a3d591faec96e9b9657196b944285138f2f85b8d46e8463",
+      "id": "r-7714920ce5e8be17",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p52",
+          "source_id": "s-a6db249dd72a8790",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f0383f330430adeae9e16925b49e37c1c16ee6679a81d95bc5c36319d18422c2",
+      "id": "r-32c3d7238c148529",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-17e64978201cbb0c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ba8a9cf73b7d47175b37a89836ad8319c51797ce235c77d1ae7437afdd88eccc",
+      "id": "r-a6c8f639d2362925",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-bdda7faaf8345721",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p25",
+          "source_id": "s-bdda7faaf8345721",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e43542844dbd730b9eec0cee2a02d391cd466195edf7561e9141123365a5541b",
+      "id": "r-207b1230a7b871f4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-4f90d283c36fd30e",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c99dcdb59dc684f5ffb36b019ddcdb868dbcc8560de4b93db20b3e14d1299d42",
+      "id": "connection-27b186ee4a77bad2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-79ddbd983d8a600c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "bbf0e6048525effb05e6b0266da741266601d019addedd40a02e464d6b5e1321",
+      "id": "r-5bf300dd78c445f0",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-4495ee5941de316c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-4495ee5941de316c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "0a875e0434cedccd2c9a2c695c43ae8ef3cac97087cca5f9517b2ff56a5f122e",
+      "id": "r-e9870b4b7103bf29",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-4f90d283c36fd30e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p35",
+          "source_id": "s-4f90d283c36fd30e",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3212c8f6d3be8061795ed7116c6ca6f533e2dd39bd4728a5ad52aa35c4ff78b7",
+      "id": "r-4366ba042ec6b1ae",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "4178aa2cc9ac4e11bc8e76d23d5f007e92bfe8afd48895049205a289e3123386",
+      "id": "r-70b4d60fc76c3fe3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p69",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p70",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p71",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p72",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p73",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p74",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p75",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p76",
+          "source_id": "s-31448c8bf74f2981",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "09a7e27502cbcad59aa5dab2ff5f19f8e06d7b35e733e1c5c597b0820de3b72e",
+      "id": "r-00cae9b1468cdbaf",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-efd6d176d72258f1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-efd6d176d72258f1",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "2cf2a522cafb8f451f9d251d32c3e5afbbdf91238e2702afea5616655a025f72",
+      "id": "r-710536e97255d20e",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-ffe76c4723a5f5cb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-ffe76c4723a5f5cb",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "1dccd3f946bcf272be1d180febb6f478e03ff3c8ce4825bd6f465ca55de4dad8",
+      "id": "r-31badf04c6a3800f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "867c2eb51f0cebbd0e283a06270e166bb6c9b7c5376a0a5aeb3206dc7ae9a4bd",
+      "id": "r-c592060a1a3e47d5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-aef80ec13174b85f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "28e0d2777f54a17c69fdea711eba44d585b2d4a14107b0e7dfcc0a56b8c727f7",
+      "id": "r-5c718f6d4810fd26",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p109",
+          "source_id": "s-7ac64084e46bbc12",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p111",
+          "source_id": "s-7ac64084e46bbc12",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7883617eb72644cac7768afe6cc52fb23d878ccc9a88e06c301116479c12a068",
+      "id": "r-2fda161ced6259cb",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-62c2763c7913ce7c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "0cd41f4a6d47516eb89bdac2b22b1649db4b5ba7c14426e457c61298629859a5",
+      "id": "r-737d2b750f679cb3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p39",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-04ff13603a58e3c3",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "60d64c1ccf46348379263a68deb541849dd2f7f4f015e5d731e434b347dbe283",
+      "id": "r-8bc6b820ba06784b",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-fd97115b7a3f4085",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c341c057f1f3be21465ea452ab383053551f9f01c3e024417c11f8173af6b80a",
+      "id": "r-fd7cb9b8ad99d9a4",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-6eb6bf725143731b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-6eb6bf725143731b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e35da0602b52ecb1be79522df80910251a7ef9310b2cfb664219d2e7e6b5d272",
+      "id": "r-818b59f17db46d38",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p86",
+          "source_id": "s-7ac64084e46bbc12",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p88",
+          "source_id": "s-7ac64084e46bbc12",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "b453ac9ebeaf489b0dc06c0483f9116e01cc486fef5ec3fde5b61b67ca97916e",
+      "id": "r-752140b0dad82c7f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-0d6cca11e2742f66",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "2ee7ae40af5603e7774bd646ec8636804408fa96010e2b4313cb0f26a5c520cb",
+      "id": "r-d83cdcacc478c336",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p37",
+          "source_id": "s-4745deb2d8f473bd",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-4745deb2d8f473bd",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "06779f9a4ffc86d9fd163648c812be30c8ae9c2370c17783a00604b4d6cd03b3",
+      "id": "r-12886fcfdcda71f5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-e3a14439e51906f9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-e3a14439e51906f9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-e3a14439e51906f9",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ff5dd09035b40e949f2a62f80d88f57773f73bf61a0c5b8de8ef8bdb2cb06f83",
+      "id": "r-f6733e949d7e9bb3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p141",
+          "source_id": "s-3dbd5090a92c426b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-3dbd5090a92c426b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "4a33d2bfe850dcd5aa7b13d04397e249daf8a2266f2fdb9ed58b755bdb10f3f7",
+      "id": "r-dd2c5dd305fbc1ca",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p224",
+          "source_id": "s-3dbd5090a92c426b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p225",
+          "source_id": "s-3dbd5090a92c426b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "74a5a6144b330a820dd4c2fcb3da82d98ce705df53cd40a15a78f6d7e36a4994",
+      "id": "r-cd4542ea6f05f44f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-23eb6bed3c233bae",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "88763b41067498dbd6192c0d75ef05f7793b9263bc737f6442f7b3e96605dbf5",
+      "id": "r-76de2a8d4d87f786",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p32",
+          "source_id": "s-2f9f0eac7d814913",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-2f9f0eac7d814913",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "76e275d447972fc97a4c562dbb9ffaf3de684678d7c60cd2cd15f7a87d641054",
+      "id": "r-57b45d80567ef3b8",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-c64a6fddf4626c3f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-c64a6fddf4626c3f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "01cbae9e3596e6234894b8a80fe857cf9a3bd5e035ec7f63b95944605fe18732",
+      "id": "r-a436cd896a26b394",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p178",
+          "source_id": "s-492511433f4a3b0f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7cf9c693a5695f1717ead3fb0a2d873c284346fa33a7e2c13e813507c276e959",
+      "id": "r-7fb519581d5347e2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-fd192b4b66d11318",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "a1f2320946128ec286284cd18e8385630189e225410ee9f1f68006dc602e7c54",
+      "id": "r-a4487cb880cddb08",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p47",
+          "source_id": "s-f46f71db46d1fcd2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p65",
+          "source_id": "s-f46f71db46d1fcd2",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ebe06ad3a27095df06ab191dff31142985c7c5676d26e328dd906614b96270ce",
+      "id": "r-777ca4c04c22fdaf",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-1243b0daadf113cc",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3a1e591f4ff3e3a3b45028f241a852dccef759f9b22533043f99518da3c89972",
+      "id": "r-8fae2c3548aa6e86",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-d3ce3ac366bdb9da",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e31823fd2340b0d4ab7eb879de9dea7f18b4fe64465c24470bcca69791c5c296",
+      "id": "r-d6dd02a8dec686b2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-62cf78b1f9e0b796",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7debaeec7acd78c31cb6b863feed1f7a35c947e0a92216804ac32d935214afbb",
+      "id": "r-b9fcd18e606a0ff2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-30157c08e6d2f6cf",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-30157c08e6d2f6cf",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "342116818ac2c2b800a72b1e05f219bd3388ca711ef97ef4ae49d27e08e81114",
+      "id": "r-d2db8c5fdb7148b2",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-c6dc3d5c121b98f7",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-c6dc3d5c121b98f7",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "3eae06aa406036bc07f0f8404f10e1c539706d36cfaaa2010d76e32d6c0eadec",
+      "id": "r-6f763d408fb1067a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p39",
+          "source_id": "s-ce3f4d74a8d8ef8c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-ce3f4d74a8d8ef8c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "49377dba6a2b54a3b602532a87fbb857d60d63c6956e369802bb69be74e2e6b0",
+      "id": "r-0dd7d2842b449b4a",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-d63c2ab8cd931a58",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p35",
+          "source_id": "s-d63c2ab8cd931a58",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "49ee9feeaddcf6cbc0e66b4535b91c60b878a57ea6a1f18c2a003dba153bacf6",
+      "id": "r-6f396ae28f7d3182",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-62cf78b1f9e0b796",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-62cf78b1f9e0b796",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "c3b1bc8f388cf6222e4dd8ed03f8f7961aa5b34e633cc0312ef666fc8f9e44d9",
+      "id": "r-7cbfb74375bbb9ff",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-5e5157577b275142",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-5e5157577b275142",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "0784ac3509d5db39e4b227eefc6280fae64ff37d569d690c0c4817f507d7dba7",
+      "id": "r-c20633ca618a3335",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p40",
+          "source_id": "s-5afaf3f0444a00e5",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p49",
+          "source_id": "s-5afaf3f0444a00e5",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "a0c3b67b94a595fe8a5015e2b977548c4d24b2d8f1eabe57c52fbd1f0b14bdfc",
+      "id": "r-57f4af70429d5897",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p32",
+          "source_id": "s-c2a8da41ce057077",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-c2a8da41ce057077",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "264babb796de53b085830435a80cc40536726350e208e42ec35fa1d09c0a2a62",
+      "id": "r-baf058fdbaa50470",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-f20638572a678ccb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-f20638572a678ccb",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-f20638572a678ccb",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "7daa6d4f7674739335f4827a34a25665224b4dea7c50ba9a3dac950e6a828ee3",
+      "id": "r-02d2c22e95cb1839",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-ae64810b8a972ecf",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p26",
+          "source_id": "s-ae64810b8a972ecf",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "49a2c44dc6efd1986f607dd6f0f53143515b254691a1c1af28877d49e3d167a2",
+      "id": "connection-c65655dd65fa4ff5",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-2b0419520eb91a90",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-3a7869c67be13520",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "59d0d95d364692266a868378ca792f4775e445b164a73b2704855a24ec1376dd",
+      "id": "connection-fb3ef36ea6c77be7",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-ebdcff489aa4cce2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-18c86174f4cdd156",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "12639ab7c874406c5d37e24b693a3ec777adb243d63521c1d225cc62bd45f5f0",
+      "id": "r-7472e164db209149",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-69ccc13228065078",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "b51d0a298da8eb43f5493c9052a84ef64bc73fff04f06413909ab098e9b5f846",
+      "id": "r-dd9d4e0731533672",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p47",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p49",
+          "source_id": "s-e8a8cf0df220a271",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "8a1926e60ec02635e09a92a1dc2aa7367bbf61308801f234c9086f154c438240",
+      "id": "r-63298b97a611f2fc",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7bc72fb159c8e5cc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p38",
+          "source_id": "s-7bc72fb159c8e5cc",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "5aac030c9d42cb3c0f4486a84c0ed0c5b19b636687308da4c94365263414791b",
+      "id": "r-79246aa833b90d94",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-27718d2beae4ec05",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "b2584bd9b397805e838cdc1605e898669e80dba2112099783f629c593e719652",
+      "id": "r-dd8a2c09f9df5f8c",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p60",
+          "source_id": "s-4f90d283c36fd30e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p61",
+          "source_id": "s-4f90d283c36fd30e",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "008bc9dd22415bb948b46cb7aa533ff035ad2851178a107b27c71b8a4326c2be",
+      "id": "r-c55a442b14a1e7c9",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-3114d5cb3d75d5e4",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p25",
+          "source_id": "s-3114d5cb3d75d5e4",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ff010e5c895f8cdea86241b2ac074c18b4513fe8aef3e6ca1981314510e42e4f",
+      "id": "r-9467aab22e9bcf30",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p45",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-90fe33645aeeee34",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "96bac889568e3783135c716aeb4fd11311a6e824526f2da275586eaa6a266ffe",
+      "id": "r-82dd65403be824cb",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-1f319684a021c497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-1f319684a021c497",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "26bb1db8d7603fc8870f02e83779bc4a551b4752fd4e52c114078a015494c668",
+      "id": "r-9e77ac25de2a7cc6",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p249",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p251",
+          "source_id": "s-d4a83bf49aaaa29b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "32988bd7e029caa7004575b6573ce77adf063b509a100e71ceabdb0cbc94b342",
+      "id": "r-85f59217f8a02549",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-d9722cc17f959953",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p215",
+          "source_id": "s-d9722cc17f959953",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "beef9489634356c124fce83df830a39f864ade2126a702f8907e1631220f9d64",
+      "id": "r-69b68db295d0278f",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-7796f84a01954d9b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ca2617aa44f3a745f3fcf9a118bc80b72e0c801476fc1235cc9639580f5fb175",
+      "id": "r-785b8cb2cf5e51a8",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-4f90d283c36fd30e",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "de3696c937815a6ea55f4c20f9de8e567a29a0f30ee0d15aaa20cc1da8be94f5",
+      "id": "connection-1f30137ade2a6b31",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-b2acf48348d2a1f4",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-1f319684a021c497",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "07bc6b3caa8a2891ba085df1520f0669263663cb5b477e181e9131666e6eab1c",
+      "id": "r-5d645ba64d42ad72",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p41",
+          "source_id": "s-467c0b328c31694b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "e3527dfefb40a37b5b32f55832e3e82c12b1ed4f048ef7ee1f231c3600530d36",
+      "id": "r-ac3be9a4f543c5e3",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-ac8a203d7cffa313",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6f861b55f0bfba15c33163de5bc9a1d2146295a3a700f60ac45fcb7c9d454b29",
+      "id": "r-339d65e0abe72315",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-4375c187b9e91f37",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6c13284a62eaca96da46814df6ed050b7ebacd3069c8a39af40ff38bd4545eea",
+      "id": "r-699b7a850af02bc9",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-5b267ae0785f2af1",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p26",
+          "source_id": "s-5b267ae0785f2af1",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "19dbacf6d22d6801cc5037755d8b586fbca3b2f1f0748fa4569b861e080ddcef",
+      "id": "r-d5bbd063a25db4c1",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p62",
+          "source_id": "s-b22ba75f174aa6df",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6054c4e6f475b0b841db2bca5ac8a164e6bc60f44e54d73a6a45df551b85c576",
+      "id": "connection-945ac5edd6d2fd1e",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-73c03c6510f9c285",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "77d5a05566aaf2751cb9f2f2cc0b4b6c138b849f330268c2dfee9a1bd994ded7",
+      "id": "r-4853d5b1390ecec0",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-cd4195bdf7aa5cc5",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "da9152ddc8a2ee2838b082c0261bf72839e3356d67800a2c679e76b125176634",
+      "id": "r-3173d285eca3b135",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-aef80ec13174b85f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ccacef74c7e550ed970243b6f5a2fb0f225a6070d1b1ef029000da7db7c2d36e",
+      "id": "r-5f642d26b52fefab",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p56",
+          "source_id": "s-6eb6bf725143731b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "83314abb47e0d15e65a61962a31e073e7b9d05be5b901d07c1380cedd16fc9dd",
+      "id": "r-a8340fa06d031471",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-32f7d97ec155546f",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p175",
+          "source_id": "s-32f7d97ec155546f",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "61255bde0e57fc0558e74e7e387f1ca054ccc05954787832246b0b7f21e4926d",
+      "id": "r-b1ce97fab5222695",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p191",
+          "source_id": "s-3dbd5090a92c426b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p278",
+          "source_id": "s-3dbd5090a92c426b",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "6708d6d4f4fe9b1937b1733b8311402e58ed8412b0829b7bf38984315e74a204",
+      "id": "r-7d44c45c2c8e71cc",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-e0949748e1f6e663",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "f8b79a0e78fab1745b8ce377256c89a6f933d3094896443ed6c97b7184e4f691",
+      "id": "r-cfc544462f3174b6",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-fc834934fde2cd3c",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p79",
+          "source_id": "s-fc834934fde2cd3c",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "ff8f710a0a9e6edee6ff5f87f995ac67a7557abbf5b83952c40947c5b9527972",
+      "id": "r-a5f624cd404e9b90",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-b0bdc0ebe4ce2ec4",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    },
+    {
+      "completed_at": null,
+      "content_hash": "505d97dfb4dddb853ca02e0a0c61e6bd7d71814c489aa1219e187abea41b0f55",
+      "id": "r-de352e0ab74a3910",
+      "judgment": null,
+      "rationale": null,
+      "reviewer": null,
+      "revision": 1,
+      "source_anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-298d348784b6f726",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-298d348784b6f726",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-298d348784b6f726",
+          "source_revision": 1
+        }
+      ],
+      "type": "relation"
+    }
+  ],
+  "release_id": "1.2.0-exploratory",
+  "requested": {
+    "contributions": 100,
+    "relations": 150
+  },
+  "selection": "Fixed seed 894103; equal pillar cycling for contributions; pillar/layer/predicate cycling for relations; without replacement",
+  "status": "prepared; no qualified human audit performed",
+  "strata": {
+    "contributions_by_pillar": {
+      "biology_medicine": 20,
+      "computer_science": 20,
+      "economics": 20,
+      "mathematics": 20,
+      "physics": 20
+    },
+    "relations_by_predicate": {
+      "analogous_to": 16,
+      "applied_in": 16,
+      "bounded_by": 15,
+      "challenges": 16,
+      "equivalent_under": 5,
+      "generalized_by": 15,
+      "historical_basis_for": 16,
+      "independent_formulation_of": 4,
+      "motivated": 15,
+      "premise_for": 15,
+      "prerequisite_for_reading": 1,
+      "supports": 16
+    }
+  }
+}

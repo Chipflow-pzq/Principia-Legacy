@@ -1,0 +1,210 @@
+{
+  "applied_at": "2026-10-13T03:25:06+00:00",
+  "impact": [
+    "connection-fcdf89a21f663029",
+    "r-05296ff91e539398",
+    "r-1fb2816df2014b50",
+    "r-303e4f50ca6512d5",
+    "r-34a7b625228e6067",
+    "r-583bdd1f542ff16c",
+    "r-863d11ea08daa4a5",
+    "r-88abc716b89ce970",
+    "r-99c5a72a2866babd",
+    "r-a58f9d0fb7e3aee7",
+    "r-a96f620b04564e4c",
+    "r-b85dfd1e2b10a5df",
+    "r-bb3bfee16ad19975",
+    "r-c4051b7b39599b2b",
+    "r-c8612c78c8cfbc27",
+    "r-d537857b13a20343",
+    "r-d546cec520a4cc6b",
+    "r-ea0db5df5f3194f9",
+    "r-ed269cc03a09fd45",
+    "r-ed5c11c3d1b1421e",
+    "r-ee03b95e58d526d6",
+    "r-f1bf5b9c6d317839"
+  ],
+  "reason": "Exclude specific generic overviews and worked-example fragments; preserve substantive classical laws, mechanisms and counterexamples. This is machine editorial triage, not human review or a scientific-truth verdict.",
+  "record_refs": [
+    {
+      "id": "n-b95e2d89c9103e48",
+      "revision": 2
+    },
+    {
+      "id": "n-83f452dc56d66506",
+      "revision": 2
+    },
+    {
+      "id": "n-9d991e835bb8623f",
+      "revision": 2
+    },
+    {
+      "id": "n-886f389b25779244",
+      "revision": 2
+    },
+    {
+      "id": "n-3563bcfd9bcfc731",
+      "revision": 2
+    },
+    {
+      "id": "n-7463661ff1f3e35a",
+      "revision": 2
+    },
+    {
+      "id": "n-cf6585982fd7a597",
+      "revision": 2
+    },
+    {
+      "id": "n-be635f017b3cd50b",
+      "revision": 2
+    },
+    {
+      "id": "n-ed822ab8f7e3bc4c",
+      "revision": 2
+    },
+    {
+      "id": "n-7da2c4caee0e4bd4",
+      "revision": 2
+    },
+    {
+      "id": "n-e7d276d018b57db1",
+      "revision": 2
+    },
+    {
+      "id": "n-23c4fc8a4c75dbb8",
+      "revision": 2
+    },
+    {
+      "id": "n-3c35fb335429d2fb",
+      "revision": 2
+    },
+    {
+      "id": "n-fcb986933ecc4807",
+      "revision": 2
+    },
+    {
+      "id": "n-f8810958fb22f457",
+      "revision": 2
+    },
+    {
+      "id": "n-42f3f4637707fa57",
+      "revision": 2
+    },
+    {
+      "id": "n-b41344541fe1b251",
+      "revision": 2
+    },
+    {
+      "id": "n-8e2fe48d4fa573e3",
+      "revision": 2
+    },
+    {
+      "id": "n-5252a330029e4ee9",
+      "revision": 2
+    },
+    {
+      "id": "n-09c38d8f1812d79f",
+      "revision": 2
+    },
+    {
+      "id": "n-725a6f771922faa0",
+      "revision": 2
+    },
+    {
+      "id": "n-9d329dd2b5c6c997",
+      "revision": 2
+    },
+    {
+      "id": "n-1f4ff86271096011",
+      "revision": 2
+    },
+    {
+      "id": "connection-fcdf89a21f663029",
+      "revision": 2
+    },
+    {
+      "id": "r-05296ff91e539398",
+      "revision": 2
+    },
+    {
+      "id": "r-1fb2816df2014b50",
+      "revision": 2
+    },
+    {
+      "id": "r-303e4f50ca6512d5",
+      "revision": 2
+    },
+    {
+      "id": "r-34a7b625228e6067",
+      "revision": 2
+    },
+    {
+      "id": "r-583bdd1f542ff16c",
+      "revision": 2
+    },
+    {
+      "id": "r-863d11ea08daa4a5",
+      "revision": 2
+    },
+    {
+      "id": "r-88abc716b89ce970",
+      "revision": 2
+    },
+    {
+      "id": "r-99c5a72a2866babd",
+      "revision": 2
+    },
+    {
+      "id": "r-a58f9d0fb7e3aee7",
+      "revision": 2
+    },
+    {
+      "id": "r-a96f620b04564e4c",
+      "revision": 2
+    },
+    {
+      "id": "r-b85dfd1e2b10a5df",
+      "revision": 2
+    },
+    {
+      "id": "r-bb3bfee16ad19975",
+      "revision": 2
+    },
+    {
+      "id": "r-c4051b7b39599b2b",
+      "revision": 2
+    },
+    {
+      "id": "r-c8612c78c8cfbc27",
+      "revision": 2
+    },
+    {
+      "id": "r-d537857b13a20343",
+      "revision": 2
+    },
+    {
+      "id": "r-d546cec520a4cc6b",
+      "revision": 2
+    },
+    {
+      "id": "r-ea0db5df5f3194f9",
+      "revision": 2
+    },
+    {
+      "id": "r-ed269cc03a09fd45",
+      "revision": 2
+    },
+    {
+      "id": "r-ed5c11c3d1b1421e",
+      "revision": 2
+    },
+    {
+      "id": "r-ee03b95e58d526d6",
+      "revision": 2
+    },
+    {
+      "id": "r-f1bf5b9c6d317839",
+      "revision": 2
+    }
+  ]
+}

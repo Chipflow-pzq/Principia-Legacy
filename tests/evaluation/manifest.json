@@ -1,0 +1,23 @@
+{
+  "case_count": 120,
+  "construction": "Disjoint subjects, separately selected splits, fixed before execution. Synthetic adversarial templates; no expert gold labels.",
+  "created_at": "2026-10-12T11:47:36+00:00",
+  "dev_hash": "4178c8fa6ea8d9835acf9b2a4ebf6660c66a967341602b236c3f31af39a8791d",
+  "families": [
+    "source_grounding",
+    "scope_transfer",
+    "counterevidence",
+    "correction",
+    "facts_to_values",
+    "authorization"
+  ],
+  "heldout_hash": "fe1a10b0e1e909c921175a548f6bb6afe7332e2f64110fb501fbaef150ed3b29",
+  "heldout_policy": "Do not tune prompts on held-out outcomes. Any prompt revision requires a new evaluation version.",
+  "prompt_hash": "a87d79687745d5ecc8896cc69b1138cc5337da8da536b82c33687bb950e94c5a",
+  "release_id": "evaluation-baseline",
+  "snapshot_note": "Pins the unchanged 139-contribution dataset used at evaluation start, before corpus expansion.",
+  "splits": {
+    "dev": 30,
+    "heldout": 90
+  }
+}

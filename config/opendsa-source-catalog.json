@@ -1,0 +1,155 @@
+{
+  "book": "OpenDSA",
+  "source_hash": "1370dfaccd56123ce2419a76b4eb25464a276a1c316ae04360adf12032c3aa01",
+  "status": "Discovered university curriculum, not admitted claims",
+  "subject": "computer_science",
+  "title": "OpenDSA Complete Catalog",
+  "topics": [
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Senior Algorithms",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/index.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Data and Algorithm Analysis",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/AAIntro.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Bounds Review",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/BoundsReview.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Recurrence Relations",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/RecurrenceIntro.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Solving Recurrence Relations",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Recurrence.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Mathematical Proof Techniques",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Proofs.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Analyzing Search in Unsorted Lists",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/UnsortedSearch.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Search in Sorted Arrays",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/SortedSearch.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Lower Bounds for Sorting",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/SortingLowerBound.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Sets and Relations",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/SetDef.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Adversarial Lower Bounds Proofs",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/BoundAdversary.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "State Space Lower Bounds Proofs",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/BoundState.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Dynamic Programming",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/DynamicProgramming.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Amortized Analysis",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/AmortAnal.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Optimal Sorting",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/SortingOptimal.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Limits to Computing",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/LimComp.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reductions",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Reduction.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "NP-Completeness Proofs",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/provingNPC.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "The Independent Set Problem",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/independentSet.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reduction of Circuit SAT to SAT",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/circuitSAT_to_SAT.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reduction of SAT to 3-SAT",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/SAT_to_threeSAT.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reduction of 3-SAT to Clique",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/threeSAT_to_clique.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reduction of Independent Set to Vertex Cover",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/independentSet_to_vertexCover.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reduction of 3-SAT to Hamiltonian Cycle",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/threeSAT_to_hamiltonianCycle.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reduction of Clique to Independent Set",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/clique_to_independentSet.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Reduction of Hamiltonian Cycle to Traveling Salesman",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/hamiltonianCycle_to_TSP.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Turing Machines",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Turing.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Bibliography",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Bibliography.html"
+    },
+    {
+      "area": "Algorithms, data structures and computation",
+      "title": "Search Page",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/search.html"
+    }
+  ],
+  "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/index.html"
+}

@@ -1,0 +1,33 @@
+{
+  "source_edition": "1.2.0-github-2026-10-15",
+  "data_release": "1.2.0-exploratory",
+  "prepared_on": "2026-10-15",
+  "public_demo": "https://atlas.chipflow.net/web/legacy/",
+  "source_commit": "361bee5",
+  "upstream_archives": {
+    "principia-legacy-1.2.0-exploratory.zip": "24c55af8ede1f455002f3b29a2cef5c3526021b8cfb47ad4c26ab93e603b65b5",
+    "principia-legacy-1.2.0-exploratory-source.zip": "7ba4246095dfba4a765e00d720143573e1c1df56a84fa396f9a34acdae2f7ef2"
+  },
+  "live_runtime_files_match": {
+    "src/principia_legacy/catalog.py": "1f23e8fcec2f5f35eb1b5bcdb8804a92250532811ccb2a632d45af6be26f97a3",
+    "src/principia_legacy/common.py": "000557603c57e89d60ea534ed29c8d9487b9cbafdec935f0e8991e0e39f9d682",
+    "src/principia_legacy/records.py": "b0e97925cec9916c7766cea2a9c758514cadf9b2b6acdb4b4d9e9ebb3d2c8647",
+    "src/principia_legacy/__init__.py": "d045a24112dd65b5b719e8de960bac73d563a469cf8cf2abcdc05508a8769e9c",
+    "src/principia_legacy/storage.py": "e8d1843225603decf5f9334a3d6e99e69b116663fc7bb8741136777544991045"
+  },
+  "live_hosting_files": {
+    "hosting/gunicorn.conf.py": "9e0dd23ec010ec88d5c7196efaeafcf6b387b7ccc0c48e52112a282422b4be27",
+    "hosting/app.py": "35588a2235f8ceca85fe2200c16bc3942e23e252022fa03bb6d605a49f0b208c"
+  },
+  "live_database_sha256": "8391bb11b5756dcb085543775c1cd1e618f2368392ad407802d8cf9a4b926269",
+  "live_frontend_adaptation": "API prefix changed from /api/ to /web/legacy/api/; reproducible Vite base handling added to this source edition",
+  "public_health": "HTTPS health and info returned 200 with the frozen release; no production write performed",
+  "publication_changes": [
+    "Concise README, local vector banner and linked contributor/operator documentation",
+    "Complete deployed WSGI adapter with publication-safe examples and 34 boundary tests",
+    "Reproducible hosted frontend base path and hosted status label",
+    "Explicit release identifier required by CLI",
+    "Package allowlist includes public hosting and community files",
+    "No unpublished curation records included; historical versions and manifests remain unchanged"
+  ]
+}
