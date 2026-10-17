@@ -1,0 +1,31 @@
+[
+  {
+    "anchors": [
+      {
+        "anchor_id": "p3",
+        "source_id": "s-7414b1e9b6725a75",
+        "source_revision": 1
+      },
+      {
+        "anchor_id": "p4",
+        "source_id": "s-7414b1e9b6725a75",
+        "source_revision": 1
+      }
+    ],
+    "contribution": {
+      "content_hash": "1a7cce37d5392c2e05f07a112db5767bebb9ce46659b07cf8dafbd59e6665fa3",
+      "id": "n-ffb331e98ffc2fc2",
+      "revision": 1
+    },
+    "reason": "Viazovska restates the Cohn–Elkies admissible-function bound as Theorem 2 and applies it to the optimal function for dimension eight. The source expresses packing density; dividing by the volume of the radius-one unit ball gives the center-density normalization used by this insight: delta_center <= f(0)/(2^d f_hat(0)). The exclusion distance is one, so the packed spheres have radius one-half. This reading membership does not reassign discovery credit.",
+    "role": "uses",
+    "screening_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "screening_request_id": "01a14869d8c47234599a23dcf99c0d57",
+    "work": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "work_id": "w-source-7414b1e9b6725a75"
+  }
+]

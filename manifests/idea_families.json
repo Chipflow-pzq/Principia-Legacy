@@ -1,76 +1,85 @@
 [
   {
-    "id": "sphere-packing-bounds",
-    "title": "Linear programming bounds for sphere packing",
-    "description": "Accounts of the bounding method in its original source and its later application. These are separate source occurrences; grouping does not assert independent discovery or priority.",
     "contributions": [
       "n-0341505e7fee0eb7",
       "n-ffb331e98ffc2fc2"
-    ]
+    ],
+    "description": "Accounts of the bounding method in its original source and its later application. These are separate source occurrences; grouping does not assert independent discovery or priority.",
+    "id": "sphere-packing-bounds",
+    "title": "Linear programming bounds for sphere packing"
   },
   {
-    "id": "sequence-attention",
-    "title": "Attention as a representation for sequences",
-    "description": "Compare additive attention, scaled dot-product attention and multiple attention heads. This reading group does not imply equivalence or establish historical influence.",
     "contributions": [
       "n-f58299fcb8c9d328",
       "n-0d8ad2c483c75944",
       "n-f758ba89eb6bda13"
-    ]
+    ],
+    "description": "Compare additive attention, scaled dot-product attention and multiple attention heads. This reading group does not imply equivalence or establish historical influence.",
+    "id": "sequence-attention",
+    "title": "Attention as a representation for sequences"
   },
   {
-    "id": "biomolecular-representations",
-    "title": "Learned representations of biomolecular geometry",
-    "description": "Keep AlphaFold 2 and AlphaFold 3's distinct computational moves visible for comparison. Scope and limitations remain attached to each contribution.",
     "contributions": [
       "n-6cf530f8f03b7dab",
       "n-6ecdc3cdb0cf0aac",
       "n-779419114e545af4"
-    ]
+    ],
+    "description": "Keep AlphaFold 2 and AlphaFold 3's distinct computational moves visible for comparison. Scope and limitations remain attached to each contribution.",
+    "id": "biomolecular-representations",
+    "title": "Learned representations of biomolecular geometry"
   },
   {
-    "id": "ricci-neighborhoods",
-    "title": "High-curvature neighborhoods in Ricci flow",
-    "description": "Compare the 2002 limiting description with the classification used in the 2003 surgery account. The assumptions and precise conclusions remain separate.",
     "contributions": [
       "n-74743cf76c734609",
       "n-82e329223c183624"
-    ]
+    ],
+    "description": "Compare the 2002 limiting description with the classification used in the 2003 surgery account. The assumptions and precise conclusions remain separate.",
+    "id": "ricci-neighborhoods",
+    "title": "High-curvature neighborhoods in Ricci flow"
   },
   {
-    "id": "higgs-independent-analyses",
-    "title": "Higgs searches: independent experimental analyses",
-    "description": "ATLAS and CMS report separate data analyses. Similar method names do not make their observations the same contribution.",
     "contributions": [
       "n-79eadd8f6374c5ed",
       "n-acaeded6ad147639"
-    ]
+    ],
+    "description": "ATLAS and CMS report separate data analyses. Similar method names do not make their observations the same contribution.",
+    "id": "higgs-independent-analyses",
+    "title": "Higgs searches: independent experimental analyses"
   },
   {
-    "id": "wigner-universality",
-    "title": "Universality with and without energy averaging",
-    "description": "The fixed-energy statement and the earlier energy-averaged statement have different scopes. Read their assumptions before comparing them.",
     "contributions": [
       "n-d4247a8ebf2e479f",
       "n-ff385dd32552e505"
-    ]
+    ],
+    "description": "The fixed-energy statement and the earlier energy-averaged statement have different scopes. Read their assumptions before comparing them.",
+    "id": "wigner-universality",
+    "title": "Universality with and without energy averaging"
   },
   {
-    "id": "neutrino-mass-constraints",
-    "title": "Comparing cosmological neutrino-mass constraints",
-    "description": "Planck and DESI use different data combinations and assumptions. These are separate empirical constraints, not interchangeable universal bounds.",
     "contributions": [
       "n-4e4c83200722f38b",
       "n-69f3c9fe926fdff3"
-    ]
+    ],
+    "description": "Planck and DESI use different data combinations and assumptions. These are separate empirical constraints, not interchangeable universal bounds.",
+    "id": "neutrino-mass-constraints",
+    "title": "Comparing cosmological neutrino-mass constraints"
   },
   {
-    "id": "comb-self-reference",
-    "title": "Self-referencing frequency combs: distinct demonstrations",
-    "description": "These accounts describe different groups and events. Grouping helps compare attribution and dates; it does not establish independence or priority.",
     "contributions": [
       "n-23f16ae8bb5b90c9",
       "n-ab6c630b3df13311"
-    ]
+    ],
+    "description": "These accounts describe different groups and events. Grouping helps compare attribution and dates; it does not establish independence or priority.",
+    "id": "comb-self-reference",
+    "title": "Self-referencing frequency combs: distinct demonstrations"
+  },
+  {
+    "contributions": [
+      "n-ea687c9c5c407e72",
+      "n-eef47bee83b5cb45"
+    ],
+    "description": "The secondary account explicitly distinguishes Darwin and Wallace. Separate contribution identities preserve that attribution; grouping does not erase manuscript or historical differences.",
+    "id": "natural-selection-independent-formulations",
+    "title": "Natural selection: independent formulations"
   }
 ]

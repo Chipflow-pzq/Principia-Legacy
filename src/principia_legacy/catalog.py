@@ -4,10 +4,11 @@ A topic membership says where to read an insight, not who influenced whom.
 Contributor profiles project recorded credit; only explicit aliases join names.
 """
 
-from collections import defaultdict
 import re
 import unicodedata
+from collections import defaultdict
 from urllib.parse import urlparse
+
 from .common import digest
 from .records import visible
 
@@ -78,10 +79,27 @@ def navigation_index(manifest, records, source_versions=None):
     for p in manifest.get("people", []):
         if not p.get("id") or not p.get("name"):
             raise ValueError("Contributor profile requires identity and name")
+        if manifest.get("catalog_version", 1) >= 2 and (
+            p["name"].count(",") > 1
+            or ";" in p["name"]
+            or " and " in p["name"]
+            or " et al" in p["name"]
+        ):
+            raise ValueError(
+                "Contributor profiles must identify one individual, not an author list"
+            )
         if p["id"] in profiles:
             raise ValueError("Duplicate contributor identity")
         if p.get("biography") and not p.get("bio_sources"):
             raise ValueError("Biographical descriptions require sources")
+        if manifest.get("catalog_version", 1) >= 2 and (
+            p.get("kind") != "person"
+            or not p.get("selection_reason")
+            or not p.get("bio_sources")
+        ):
+            raise ValueError(
+                "Curated contributors need an individual identity, selection reason and sources"
+            )
         for source in p.get("bio_sources", []):
             url = urlparse(source.get("url", ""))
             if (
@@ -136,6 +154,8 @@ def navigation_index(manifest, records, source_versions=None):
                 aliases.get(key, contributor_id(name))
             ]
             for id in ids:
+                if manifest.get("catalog_version", 1) >= 2 and id not in profiles:
+                    continue  # A source author-list string is not a person.
                 if documented_groups and id not in profiles:
                     raise ValueError("Credit group links an undefined contributor")
                 profiles.setdefault(
@@ -165,6 +185,12 @@ def navigation_index(manifest, records, source_versions=None):
         linked = by_person[id]
         related_topics = sorted(
             {topic for n in linked for topic in node_topics[n["id"]]}
+            | {
+                topic
+                for w in manifest.get("works", [])
+                if id in w.get("people", [])
+                for topic in w["topic_ids"]
+            }
         )
         if not linked and not p.get("biography"):
             continue
@@ -172,12 +198,30 @@ def navigation_index(manifest, records, source_versions=None):
             **p,
             "contribution_count": len(linked),
             "topic_ids": related_topics,
-            "subjects": sorted({n["pillar"] for n in linked}),
+            "subjects": sorted(
+                {n["pillar"] for n in linked}
+                | set(p.get("subjects", []))
+                | {
+                    subject
+                    for w in manifest.get("works", [])
+                    if id in w.get("people", [])
+                    for subject in w["subjects"]
+                }
+            ),
+            "work_count": sum(
+                id in w.get("people", []) for w in manifest.get("works", [])
+            ),
             "profile_status": "source-linked research profile"
             if p.get("biography")
             else "recorded attribution; biographical research pending",
         }
         values["revision"] = p.get("revision", 1)
-        values["content_hash"] = digest(values)
+        if manifest.get("catalog_version", 1) >= 2:
+            expected = digest({k: v for k, v in p.items() if k != "content_hash"})
+            if p.get("content_hash") and p["content_hash"] != expected:
+                raise ValueError("Contributor content hash mismatch")
+            values["content_hash"] = expected
+        else:
+            values["content_hash"] = digest(values)
         result[id] = values
     return nodes, memberships, result, links

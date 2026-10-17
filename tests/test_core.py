@@ -101,6 +101,56 @@ def records():
     return [s, *nodes, e]
 
 
+def test_source_anchor_enrichment_preserves_old_pins_but_changes_invalidate(tmp_path):
+    original = records()
+    write_lines(tmp_path / "corpus/records.jsonl", original)
+    source = copy.deepcopy(original[0])
+    source["revision"] = 2
+    source["anchors"].append(
+        {
+            "id": "a2",
+            "selector": "Section 3",
+            "summary": "Additional evidence",
+            "checked": True,
+        }
+    )
+    proposal = {
+        "reason": "Add a locator to identical bytes",
+        "base_hashes": {"s1": original[0]["content_hash"]},
+        "records": [source],
+    }
+    result = prepare_patch(tmp_path, proposal)
+    assert result["impact"] == []
+    assert [r["id"] for r in result["records"]] == ["s1"]
+    source["anchors"][0]["summary"] = "Changed existing evidence"
+    assert set(prepare_patch(tmp_path, proposal)["impact"]) == {"n1", "n2", "n3", "r1"}
+    source["anchors"][0] = copy.deepcopy(original[0]["anchors"][0])
+    source["source_version"] = "different bytes"
+    assert set(prepare_patch(tmp_path, proposal)["impact"]) == {"n1", "n2", "n3", "r1"}
+
+
+def test_search_prioritizes_named_ideas_before_body_mentions(atlas_root):
+    items = records()
+    items[1]["title"] = "Applications of the finite theorem"
+    items[1]["explanation"] = "finite theorem " * 30
+    items[2]["title"] = "Finite theorem under bounded assumptions"
+    items[3]["title"] = "Another mathematical result"
+    items[3]["explanation"] = "This uses the finite theorem."
+    write_lines(atlas_root / "corpus/records.jsonl", [seal(r) for r in items])
+    build(atlas_root)
+    a = Atlas(atlas_root)
+    try:
+        assert [r["id"] for r in a.search("finite theorem")["results"]] == [
+            "n2",
+            "n1",
+            "n3",
+        ]
+        assert a.search("finite theorem", offset=1, limit=1)["results"][0]["id"] == "n1"
+        assert a.search("finite theorem%")["totals"]["ideas"] == 3
+    finally:
+        a.close()
+
+
 @pytest.fixture
 def atlas_root(tmp_path):
     write_lines(tmp_path / "corpus/records.jsonl", records())
@@ -610,3 +660,47 @@ def test_dossier_brief_closes_joint_premises_across_pillars(atlas_root):
     assert brief["supported_relations"][0]["premise_mode"] == "all"
     assert brief["permitted_action_scope"] == "read_only"
     atlas.close()
+
+
+def test_personal_exploration_index_has_only_visible_revision_pinned_records(
+    atlas_root,
+):
+    atlas = Atlas(atlas_root)
+    try:
+        first = atlas.exploration_index(0, 2)
+        second = atlas.exploration_index(2, 2)
+        assert first["total"] == 3
+        assert first["snapshot_hash"] == second["snapshot_hash"]
+        assert {v["id"] for v in first["entries"]}.isdisjoint(
+            v["id"] for v in second["entries"]
+        )
+        assert len(first["entries"] + second["entries"]) == 3
+        assert all(v["revision"] == 1 and v["content_hash"] for v in first["entries"])
+        all_entries = first["entries"] + second["entries"]
+        for entry in all_entries:
+            assert set(entry["neighbors"]) == {"n1", "n2", "n3"} - {entry["id"]}
+        assert all("curation" not in v and "reviews" not in v for v in first["entries"])
+        for offset, limit in ((-1, 1), (10001, 1), (0, 201), (0, 0), ("x", 10)):
+            with pytest.raises(ValueError):
+                atlas.exploration_index(offset, limit)
+    finally:
+        atlas.close()
+
+
+def test_exploration_index_never_exposes_candidates(atlas_root):
+    candidates = records()
+    target = next(r for r in candidates if r["id"] == "n1")
+    target["publication_state"] = "candidate"
+    target["machine_screening"] = "pending"
+    candidates = [
+        seal(r) if r["id"] == "n1" else r for r in candidates if r["type"] != "relation"
+    ]
+    write_lines(atlas_root / "corpus/records.jsonl", candidates)
+    build(atlas_root)
+    atlas = Atlas(atlas_root)
+    try:
+        result = atlas.exploration_index()
+        assert result["total"] == 2
+        assert all(r["id"] != "n1" for r in result["entries"])
+    finally:
+        atlas.close()

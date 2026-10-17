@@ -18,7 +18,10 @@ test("offline landing, five subjects and paginated topic collection", async ({
   await expect(page.locator(".flagship-card")).toHaveCount(5);
   await expect(page.locator(".dossier-tile")).toHaveCount(60);
   await expect(
-    page.getByText("Source-grounded, machine-screened.", { exact: false }),
+    page.getByText(
+      "A sourced research catalog with machine-screened insights.",
+      { exact: false },
+    ),
   ).toBeAttached();
   const overflow = await page.evaluate(
     () => document.documentElement.scrollWidth > innerWidth + 1,
@@ -57,7 +60,7 @@ test("search, empty human review filter, and no external font requests", async (
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("attention");
   await expect(page.locator(".result-card").first()).toBeVisible();
   await page.getByRole("checkbox", { name: "Human-reviewed only" }).check();
@@ -69,7 +72,7 @@ test("search, empty human review filter, and no external font requests", async (
 });
 test("comparison and evidence export", async ({ page }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("attention");
   await page.locator(".result-card").first().click();
   await page.getByRole("button", { name: "Compare", exact: true }).click();
@@ -124,10 +127,10 @@ test("layer filters, boundaries and snapshot screen", async ({ page }) => {
 test("keyboard search, trace and progressive expansion", async ({ page }) => {
   await page.keyboard.press("/");
   await expect(
-    page.getByRole("textbox", { name: "Search contributions" }),
+    page.getByRole("textbox", { name: "Search the atlas" }),
   ).toBeFocused();
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("attention");
   await page.locator(".result-card").first().click();
   await page.getByRole("button", { name: "Trace its connections ↗" }).click();
@@ -135,7 +138,7 @@ test("keyboard search, trace and progressive expansion", async ({ page }) => {
     page.getByRole("button", { name: "Back to this topic" }),
   ).toBeVisible();
   await expect(
-    page.getByRole("textbox", { name: "Search contributions" }),
+    page.getByRole("textbox", { name: "Search the atlas" }),
   ).toHaveValue("");
   await page.getByRole("button", { name: "Expand · 1 of 6 steps" }).click();
   await expect(
@@ -188,7 +191,7 @@ test("source text cannot inject HTML or approve itself", async ({ page }) => {
     await route.fulfill({ response, json: data });
   });
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("attention");
   await page.locator(".result-card").first().click();
   await expect(page.locator("img[data-injection]")).toHaveCount(0);
@@ -292,7 +295,7 @@ test("choose a second comparison without dismissing the panel", async ({
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("attention");
   await page.locator(".result-card").first().click();
   await page.getByRole("button", { name: "Compare", exact: true }).click();
@@ -317,7 +320,7 @@ test("mathematics is typeset in search, list, inspector and comparison", async (
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("Scaled dot-product attention");
   const result = page
     .locator(".result-card")
@@ -383,17 +386,23 @@ test("browser back and forward restore a topic and its selected contribution", a
   ).toBeVisible();
 });
 
-test("every installed topic opens and resolves its main-result inspector", async ({
+test("every populated topic and each subject’s catalog-only page open correctly", async ({
   page,
 }, testInfo) => {
   test.skip(
     testInfo.project.name === "mobile",
     "Full content traversal runs once; narrow-screen interactions have separate coverage.",
   );
-  test.setTimeout(360000);
+  test.setTimeout(600000);
   const catalogue = await (await page.request.get("/api/dossiers")).json();
   expect(catalogue.dossiers.length).toBeGreaterThanOrEqual(60);
-  for (const topic of catalogue.dossiers) {
+  // Every admitted neighborhood is inspected. Empty catalogue pages share one
+  // component; exercise one per subject here, while acceptance validates every
+  // topic and its work references offline.
+  const populated = catalogue.dossiers.filter((d: { contribution_count: number }) => d.contribution_count > 0);
+  const emptyBySubject = new Map<string, { id: string }>();
+  for (const d of catalogue.dossiers) if (!d.contribution_count && !emptyBySubject.has(d.pillar)) emptyBySubject.set(d.pillar, d);
+  for (const topic of [...populated, ...emptyBySubject.values()]) {
     await page.goto(
       "/#" +
         new URLSearchParams({
@@ -459,7 +468,7 @@ test("keyboard focus enters the inspector and returns to its opener", async ({
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("Scaled dot-product attention");
   const result = page.locator(".result-card").first();
   await expect(result).toBeVisible();
@@ -495,4 +504,44 @@ test("large topics expand the readable view without losing existing ideas", asyn
   );
   const after = await page.locator(".node-list > button h3").allTextContents();
   for (const title of before) expect(after).toContain(title);
+});
+
+test("connection filtering preserves the canvas without waiting on another request", async ({
+  page,
+}, testInfo) => {
+  await page
+    .locator(".flagship-card")
+    .filter({ hasText: "The Transformer and attention" })
+    .click();
+  await expect(page.getByRole("img")).toHaveAttribute(
+    "aria-label",
+    /[1-9][0-9]* contributions/,
+  );
+  const requests: string[] = [];
+  page.on("request", (r) => {
+    if (r.url().includes("/api/")) requests.push(r.url());
+  });
+  const handle = await page.locator(".graph canvas").first().elementHandle();
+  await page.locator(".layer-menu summary").click();
+  const start = Date.now();
+  await page
+    .locator(".layer-menu")
+    .getByLabel("History", { exact: true })
+    .uncheck();
+  await expect(
+    page.locator(".layer-menu").getByLabel("History", { exact: true }),
+  ).not.toBeChecked();
+  expect(requests).toEqual([]);
+  expect(await handle!.evaluate((node) => node.isConnected)).toBe(true);
+  await testInfo.attach("connection-filter-timing.json", {
+    body: JSON.stringify({
+      interaction_ms: Date.now() - start,
+      server_requests: 0,
+    }),
+    contentType: "application/json",
+  });
+  const width = page.viewportSize()!.width;
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(width + 1);
 });

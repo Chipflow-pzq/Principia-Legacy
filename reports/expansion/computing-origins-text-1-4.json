@@ -1,0 +1,102 @@
+{
+  "admission": {
+    "new_contributions": 29,
+    "new_records": 112,
+    "new_relations": 26,
+    "plan_total_contributions": 29,
+    "plan_total_relations": 26
+  },
+  "completed_at": "2026-10-17T05:21:45+00:00",
+  "estimate": {
+    "assignments": 2,
+    "maximum_output_tokens_before_retries": 114688,
+    "maximum_parallel_requests": 2,
+    "normal_calls_before_retries": 4,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged.",
+    "optional_reuse_refinement_calls": 2
+  },
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "outcomes": [
+    {
+      "admission": "admitted",
+      "assignment_id": "be145d0d5923fb6d91b45c0853d840eece19a348b1907db27beb15e8c1b27f28",
+      "depth": 0,
+      "dossier": "C1002",
+      "gaps": [
+        "The source does not establish present-day consensus on the Church-Turing thesis or on the status of the Entscheidungsproblem; it presents Turing's 1936 position.",
+        "The paper's equivalence proof with Church's effective calculability is given in outline, with several formulas assumed without proof.",
+        "The detailed table for the universal machine is complex and the paper does not fully verify every step in the reproduction.",
+        "The correction does not re-derive every step of the corrected proof; it states the modifications and asserts the proof is then correct.",
+        "The source does not discuss later developments in computability theory, complexity theory, or the halting problem as a modern formulation.",
+        "Priority and historical influence of the paper relative to Church's work are not fully resolved by the passages; the paper acknowledges Church's independent formulation but does not settle priority."
+      ],
+      "need": "Turing’s 1936 machine model, universal computation and undecidability arguments. Preserve the exact problem stated; do not replace circle-freeness or the Entscheidungsproblem with a casually attributed modern halting theorem.",
+      "new_contributions": 11,
+      "parent": null,
+      "reuse_refinement": {
+        "accepted_memberships": 0,
+        "hints": 0,
+        "performed": false
+      },
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 11,
+        "accepted_relations": 11,
+        "proposed_nodes": 11,
+        "proposed_relations": 12
+      },
+      "search_outcomes": {
+        "alternatives": "The paper itself acknowledges Church's independent formulation of effective calculability and his similar conclusions about the Entscheidungsproblem, and cites Gödel's incompleteness results as distinct. The correction acknowledges P. Bernays for pointing out errors and notes Brouwer's priority for overlapping intervals in defining real numbers.",
+        "attribution": "The paper is authored by A. M. Turing. Church's independent work is explicitly acknowledged. Gödel's results are cited as distinct. Bernays is acknowledged for pointing out errors. Brouwer is credited for overlapping intervals. The source is a reproduction of the 1936 paper with the 1937 correction, published by the London Mathematical Society.",
+        "limitations": "The paper's justification of the definition of computability rests on appeals to intuition, which Turing calls fundamentally unsatisfactory mathematically. The original Entscheidungsproblem proof contained formal errors corrected in 1937. The definition of computable numbers via decimal expansions creates a difficulty resolved by modifying the association with computable sequences. The restricted Dedekind theorem shows a computable bounded increasing sequence of computable numbers need not have a computable limit."
+      },
+      "source_discovery": "https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf",
+      "source_title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+      "state": "succeeded",
+      "url": "https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf"
+    },
+    {
+      "admission": "admitted",
+      "assignment_id": "283a7c86a8300578f12127665688507b017b26619ff8c043d89ddbf80ac58047",
+      "depth": 0,
+      "dossier": "C1401",
+      "gaps": [
+        "The passages do not establish the collective EDVAC design credit or distinguish von Neumann's individual contributions from those of other Moore School staff.",
+        "The report's missing sections on programming and input/output are not available in these passages.",
+        "The passages do not provide evidence about the historical influence of the report beyond Godfrey's statement that Turing cited it and that it influenced the first generation of computer engineers.",
+        "The passages do not give a date for the formulation of the stored-program idea independent of the report's publication date.",
+        "The passages do not provide empirical performance data for the proposed machine.",
+        "The passages do not resolve whether the iconoscope memory was ever realized as described."
+      ],
+      "need": "John von Neumann’s First Draft of a Report on the EDVAC: memory for instructions and data, control, arithmetic, and limitations. Distinguish the report's authorship from collective EDVAC design credit.",
+      "new_contributions": 18,
+      "parent": null,
+      "reuse_refinement": {
+        "accepted_memberships": 0,
+        "hints": 0,
+        "performed": false
+      },
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 18,
+        "accepted_relations": 15,
+        "proposed_nodes": 18,
+        "proposed_relations": 15
+      },
+      "search_outcomes": {
+        "alternatives": "The report itself considers the iconoscope memory as an alternative to the delay memory (Section 12.8) and mentions function tables with interpolation as an alternative to direct analytical operations (Section 10.4). It also mentions a trick due to G. Stibitz for handling binary-point overflow, which it declines to use (Section 9.2).",
+        "attribution": "The report is authored by John von Neumann. The introduction by Michael D. Godfrey documents the editorial history. The report credits J. W. Mauchly for a rounding suggestion and mentions G. Stibitz for an overflow trick. The passages do not delineate individual contributions within the collective EDVAC design effort beyond von Neumann's authorship of this report.",
+        "limitations": "The report is a first draft with missing sections on programming and input/output, typographical and symbol errors, and forward references to unwritten sections. Its capacity estimates are rough, its memory technology is provisional, and its arithmetic range is restricted to [−1,1] with scaling rules that can be violated."
+      },
+      "source_discovery": "https://www.cs.sjsu.edu/~mak/archive/CS185C/EDVAC.pdf",
+      "source_title": "First Draft of a Report on the EDVAC",
+      "state": "succeeded",
+      "url": "https://www.cs.sjsu.edu/~mak/archive/CS185C/EDVAC.pdf"
+    }
+  ],
+  "plan_hash": "abc4ed414483bd5f7ac3f5d4d2469d02f39e5b20621020ef3da0f8cfa99cbb97",
+  "plan_id": "computing-origins-text-1-4",
+  "started_at": "2026-10-17T05:19:43+00:00"
+}

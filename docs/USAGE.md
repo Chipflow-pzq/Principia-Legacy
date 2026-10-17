@@ -40,7 +40,13 @@ python3 start.py brief --dossier C01 --query 'attention' --output attention-brie
 python3 scripts/verify_release.py .
 ```
 
-`build` compiles the current working corpus. To restore a published snapshot, add `--release 1.2.0-exploratory`. Older manifests and record revisions remain available. Internal correction checkpoints are retained and can be explicitly rebuilt by ID; they are not all indexed into the default reader. The brief includes selected claims, complete selected relation premises, source revisions, review states, boundaries, gaps, and any explicitly supplied `--policy-profile profile.json`. Its permitted action scope is always `read_only`.
+`build` compiles the current working corpus. To restore a published snapshot, add `--release 1.3.1-exploratory`. Older manifests and record revisions remain available. Internal correction checkpoints are retained and can be explicitly rebuilt by ID; they are not all indexed into the default reader. The brief includes selected claims, complete selected relation premises, source revisions, review states, boundaries, gaps, and any explicitly supplied `--policy-profile profile.json`. Its permitted action scope is always `read_only`.
 
 See [the data contract](CONTRACT.md), [authoring workflow](AUTHORING.md), [API reference](API.md), [evaluation protocol](EVALUATION.md), and [contribution guidance](../GOVERNANCE.md).
 
+
+## Trace a discovery of your own
+
+Use **Trace a discovery** beside **Browse the atlas**. Configure your SiliconFlow key and model in the global **Settings**. This optional online workflow sends requests directly from your browser and produces a personal draft; it never writes to the atlas server. Use **Save on this device** or **Download map** only when you want to retain it. [Progress, evidence checks, saving and privacy](PERSONAL_EXPLORATION.md).
+
+Settings also distinguishes the reader software version from the frozen atlas snapshot. Old preview bookmarks open the same installed software. Snapshot identifiers remain in atlas reading links so older claims and corrections can be reproduced.

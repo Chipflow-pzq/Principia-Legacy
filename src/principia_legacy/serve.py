@@ -39,7 +39,7 @@ def handler_for(root):
             self.send_header("Referrer-Policy", "no-referrer")
             self.send_header(
                 "Content-Security-Policy",
-                "default-src 'self'; connect-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+                "default-src 'self'; connect-src 'self' https://api.siliconflow.cn https://api.crossref.org https://www.ebi.ac.uk https://en.wikipedia.org; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
             )
             self.send_header(
                 "Cache-Control",
@@ -68,15 +68,34 @@ def handler_for(root):
                         out = atlas.info()
                     elif path == "/api/dossiers":
                         out = atlas.dossiers()
+                    elif path == "/api/exploration-index":
+                        out = atlas.exploration_index(
+                            q.get("offset", 0), q.get("limit", 200)
+                        )
                     elif path == "/api/people":
                         out = atlas.people(
                             q.get("q", ""),
                             q.get("limit", 60),
                             q.get("offset", 0),
                             q.get("human") == "true",
+                            q.get("pillar"),
                         )
                     elif path.startswith("/api/people/"):
                         out = atlas.person(
+                            unquote(path.rsplit("/", 1)[1]), q.get("human") == "true"
+                        )
+                    elif path == "/api/works":
+                        out = atlas.works(
+                            q.get("q", ""),
+                            q.get("pillar"),
+                            q.get("topic"),
+                            q.get("person"),
+                            q.get("human") == "true",
+                            q.get("limit", 40),
+                            q.get("offset", 0),
+                        )
+                    elif path.startswith("/api/works/"):
+                        out = atlas.work(
                             unquote(path.rsplit("/", 1)[1]), q.get("human") == "true"
                         )
                     elif path == "/api/search":

@@ -108,6 +108,24 @@
   "B2004": [
     "https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology"
   ],
+  "B2121": [
+    "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing"
+  ],
+  "B2130": [
+    "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+  ],
+  "B2161": [
+    "https://openstax.org/books/microbiology/pages/11-7-gene-regulation-operon-theory"
+  ],
+  "B2181": [
+    "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution"
+  ],
+  "B2190": [
+    "https://openstax.org/books/biology-2e/pages/19-1-population-evolution"
+  ],
+  "B2196": [
+    "https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution"
+  ],
   "C01": [
     "https://arxiv.org/html/1706.03762v7",
     "https://arxiv.org/pdf/1409.0473",
@@ -162,7 +180,9 @@
     "https://openstax.org/books/introduction-computer-science/pages/3-4-algorithmic-paradigms"
   ],
   "C1002": [
-    "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+    "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
+    "https://www.wolframscience.com/prizes/tm23/images/Turing.pdf",
+    "https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf"
   ],
   "C1003": [
     "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
@@ -214,6 +234,11 @@
     "https://arxiv.org/pdf/1606.03137",
     "https://arxiv.org/pdf/1606.06565"
   ],
+  "C1401": [
+    "https://cva.stanford.edu/classes/cs99s/papers/vonneumann-firstdraftedvac.pdf",
+    "https://web.mit.edu/sts.035/www/PDFs/edvac.pdf",
+    "https://www.cs.sjsu.edu/~mak/archive/CS185C/EDVAC.pdf"
+  ],
   "C2000": [
     "https://openstax.org/books/introduction-computer-science/pages/1-1-computer-science"
   ],
@@ -228,6 +253,24 @@
   ],
   "C2004": [
     "https://softwarefoundations.cis.upenn.edu/vfa-current/Perm.html"
+  ],
+  "C2091": [
+    "https://openstax.org/books/introduction-computer-science/pages/4-3-parallel-programming-models"
+  ],
+  "C2095": [
+    "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/DynamicProgramming.html"
+  ],
+  "C2101": [
+    "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/AmortAnal.html"
+  ],
+  "C2116": [
+    "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Reduction.html"
+  ],
+  "C2119": [
+    "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/provingNPC.html"
+  ],
+  "C2121": [
+    "https://openstax.org/books/introduction-computer-science/pages/5-5-memory-hierarchy"
   ],
   "E01": [
     "https://arxiv.org/pdf/1608.00060",
@@ -339,6 +382,24 @@
   ],
   "E2004": [
     "https://openstax.org/books/principles-economics-3e/pages/1-3-how-economists-use-theories-and-models-to-understand-economic-issues"
+  ],
+  "E2100": [
+    "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information"
+  ],
+  "E2117": [
+    "https://openstax.org/books/principles-finance/pages/11-5-efficient-markets"
+  ],
+  "E2122": [
+    "https://openstax.org/books/principles-economics-3e/pages/19-5-how-well-gdp-measures-the-well-being-of-society"
+  ],
+  "E2155": [
+    "https://openstax.org/books/principles-finance/pages/15-2-risk-and-return-to-multiple-assets"
+  ],
+  "E2174": [
+    "https://openstax.org/books/principles-economics-3e/pages/25-3-the-phillips-curve"
+  ],
+  "E2198": [
+    "https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes"
   ],
   "M01": [
     "https://arxiv.org/pdf/1910.09336",
@@ -456,6 +517,25 @@
   "M2005": [
     "https://openstax.org/books/calculus-volume-2/pages/1-4-integration-formulas-and-the-net-change-theorem"
   ],
+  "M2146": [
+    "https://textbooks.math.gatech.edu/ila/diagonalization.html"
+  ],
+  "M2152": [
+    "https://textbooks.math.gatech.edu/ila/stochastic-matrices.html"
+  ],
+  "M2159": [
+    "https://openstax.org/books/calculus-volume-3/pages/6-7-stokes-theorem"
+  ],
+  "M2163": [
+    "https://openstax.org/books/introductory-statistics-2e/pages/7-1-the-central-limit-theorem-for-sample-means-averages",
+    "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/f44fa78f05ac31a4ba2bd82f599dcf60_MIT6_436JF18_lec17.pdf"
+  ],
+  "M2164": [
+    "https://textbooks.math.gatech.edu/ila/projections.html"
+  ],
+  "M2170": [
+    "https://textbooks.math.gatech.edu/ila/least-squares.html"
+  ],
   "P01": [
     "https://arxiv.org/html/2408.13687v1",
     "https://arxiv.org/pdf/quant-ph/9705052",
@@ -566,5 +646,23 @@
   ],
   "P2004": [
     "https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards"
+  ],
+  "P2111": [
+    "https://openstax.org/books/astronomy-2e/pages/5-2-the-electromagnetic-spectrum"
+  ],
+  "P2113": [
+    "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law"
+  ],
+  "P2150": [
+    "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+  ],
+  "P2174": [
+    "https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle"
+  ],
+  "P2238": [
+    "https://openstax.org/books/university-physics-volume-3/pages/9-6-semiconductors-and-doping"
+  ],
+  "P2242": [
+    "https://openstax.org/books/university-physics-volume-3/pages/9-7-semiconductor-devices"
   ]
 }

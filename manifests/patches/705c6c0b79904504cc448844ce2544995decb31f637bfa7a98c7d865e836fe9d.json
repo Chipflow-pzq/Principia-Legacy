@@ -1,0 +1,22 @@
+{
+  "applied_at": "2026-10-17T06:05:07+00:00",
+  "impact": [
+    "r-ce898fb22491bf42",
+    "r-d517870e7e5aab66"
+  ],
+  "reason": "Correct the direction of the reduction in the symbol-printing undecidability claim. The original explanation and two dependent warrants already used the correct direction; their exact new endpoints are independently rechecked. Machine review, not human auditing.",
+  "record_refs": [
+    {
+      "id": "n-03d82e1ae6035422",
+      "revision": 2
+    },
+    {
+      "id": "r-ce898fb22491bf42",
+      "revision": 4
+    },
+    {
+      "id": "r-d517870e7e5aab66",
+      "revision": 2
+    }
+  ]
+}

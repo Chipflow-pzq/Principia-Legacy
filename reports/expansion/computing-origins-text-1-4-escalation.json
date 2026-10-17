@@ -1,0 +1,339 @@
+{
+  "batches": [
+    {
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "r-7bf13903400d59ef",
+          "rationale": "The warrant states that Godfrey's introduction documents missing programming and I/O sections, and Section 14.1 postpones the I/O order class. The evidence from p1 confirms the introduction explicitly states 'the Sections on programming and on the input/output system are missing.' The evidence from p43 confirms Section 14.1 postpones discussion of I/O orders: 'The discussion of (d) is also better delayed (cf.{}).' The conclusion's limit 'The input/output order class is not discussed' is directly bounded by these documented omissions. The relation is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "r-876bdc29fece001e",
+          "rationale": "The warrant claims the report's first-draft status and missing sections bound the five-part subdivision. Evidence p1 confirms Godfrey's introduction states the report was never proofread, contains errors, and lacks programming and I/O sections. Evidence p8 presents the five-part subdivision (CA, CC, M, I, O) in Sections 2.0-2.9. The conclusion's limit 'The account is explicitly preliminary and incomplete' and 'Sections on programming and input/output were never written' are directly bounded by the documented first-draft limitations. The relation is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "r-905910979edaa734",
+          "rationale": "The warrant states Section 12.2 defines the memory unit and minor cycle, and Sections 12.3-12.4 estimate requirements in those units. Evidence p31 defines the unit as 'the ability to retain the value of one binary digit' and the 32-unit minor cycle. Evidence p32 and p33 show the capacity estimates in minor cycles and units, culminating in the conclusion that memory is the bottleneck. The capacity unit is the accounting premise for the capacity estimate. The relation is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "r-9c9f282f1c809152",
+          "rationale": "The warrant claims the 32-unit minor cycle and its first unit provide the structure for distinguishing numbers from orders. Evidence p31 defines the minor cycle and notes 'it is advisable to add a further unit in lieu of a symbol which characterizes it as a number (to distinguish it from an order, cf. {14.1}).' Evidence p43 and p45 confirm that i0 is used as the tag (i0=0 for number, i0=1 for order). The minor cycle structure is the direct premise for the stored-order representation. The relation is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "r-b0c746fc0bc19fde",
+          "rationale": "The warrant states Section 15.3 lists order types and their digit requirements, and Sections 15.4-15.5 analyze pooling. Evidence p45 presents the classification of orders and their digit requirements. Evidence p47 explicitly discusses pooling orders within a minor cycle, noting the constraints and efficiency. The order classification is the direct premise for the pooling analysis. The relation is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "r-ff34d884bd6a3bd8",
+          "rationale": "The warrant states Section 12.4 concludes about 262,144 units are needed, and Section 12.7 factors this into 256 organs of 1,024 units. Evidence p34 concludes 'total capacities of 8,000 or 2,000 minor cycles obtain' and selects the higher estimate of 262,144 = 2^18 units. Evidence p37 explicitly states the factorization: 'A c = hk-way switching problem can be replaced by a k-way switching problem and an h-step temporal succession' with c=250,000, k=1,000, h=250, and then chooses powers of two. The capacity estimate is the direct premise for the switching factorization. The relation is supported."
+        }
+      ],
+      "input_hash": "952c4f899fac86117de2e84050c25e1bcc23619dc66c5d1a3caab76935927506",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "952c4f899fac86117de2e84050c25e1bcc23619dc66c5d1a3caab76935927506",
+        "job_id": "f187cb1e02219f9eae4ee0272bb92c7a1072415e360ec92e8f530409c1848830",
+        "output_hash": "159672c725f9adb563abb0c2f3952958ae5f5325753af22fba7d0dea1b3004d1",
+        "prompt_hash": "a05cec0da8c271cf446f46c23bc710f8b4224f532d83b81d8e7d33e9fc4bf1fb",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f9656cb2-0ddd-4e22-8100-04a1aaa51662",
+        "request_id": "01a14851a1bab6ca2f79b071752fb98b",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "connection-escalation:952c4f899fac8611",
+        "time": "2026-10-17T05:24:28+00:00",
+        "trace_id": "f9656cb2-0ddd-4e22-8100-04a1aaa51662",
+        "usage": {
+          "completion_tokens": 889,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 15983,
+          "prompt_tokens": 15983,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 16872
+        }
+      }
+    },
+    {
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "r-2939ac02d46b55b7",
+          "rationale": "The warrant states that the definition of computability from §1-2 is a prerequisite for reading the Appendix's equivalence proof. The evidence from p67 shows the Appendix explicitly assumes the terms and constructions from the main paper, including the machine model defined in §1-2. The definition is a necessary pedagogical foundation for understanding the equivalence argument."
+        },
+        {
+          "decision": "supported",
+          "id": "r-3d4459cecde19d22",
+          "rationale": "The warrant states that the universal machine is a premise of the contradiction proving no machine decides circle-freeness. The evidence from p49 explicitly describes combining the hypothetical decision machine D with the universal machine I to construct H, which computes the diagonal sequence J'. The universal machine is a necessary component of the proof."
+        },
+        {
+          "decision": "supported",
+          "id": "r-60ffc47b3437d303",
+          "rationale": "The warrant states that the standard description encoding is a prerequisite for the universal machine construction. The evidence from p30 shows the universal machine is supplied with the S.D of a computing machine on its tape and uses it to simulate that machine. The S.D encoding from §5 is a necessary pedagogical foundation for understanding the universal machine."
+        },
+        {
+          "decision": "supported",
+          "id": "r-7713e233bfc39c36",
+          "rationale": "The warrant states that the 1937 correction identifies formal errors in the original Entscheidungsproblem proof and supplies modifications, limiting the original proof. The evidence from p71 explicitly states the proof contained formal errors, corrects the expression for Inst, and introduces a new functional variable G and corrected Un(M). This directly bounds the original claim."
+        },
+        {
+          "decision": "supported",
+          "id": "r-9605516237d869ce",
+          "rationale": "The warrant states that computable functions are defined in terms of computable sequences and numbers, making the base definitions prerequisites. The evidence from p55 shows Turing defines a computable function of an integral variable using a computable sequence in which 0 appears infinitely often, and defines computable functions of a computable variable using computable numbers. The base definitions are pedagogical prerequisites."
+        },
+        {
+          "decision": "supported",
+          "id": "r-9c96ee6cdfbfa7ee",
+          "rationale": "The warrant states that the difficulty concerns the original definition of computable numbers via decimal expansions and limits the original association. The evidence from p72 explicitly says some difficulty arises from the particular manner in which 'computable number' was defined, and shows that the converse claim about obtaining a description number from nested intervals is false. This directly bounds the original definition."
+        },
+        {
+          "decision": "supported",
+          "id": "r-ae204232d1629823",
+          "rationale": "The warrant states that the enumeration of computable sequences follows from the description-number encoding. The evidence from p29 shows that to each computable sequence there corresponds at least one description number, and to no description number does there correspond more than one computable sequence, so the computable sequences are enumerable. The encoding is the premise for the enumeration."
+        },
+        {
+          "decision": "supported",
+          "id": "r-ce898fb22491bf42",
+          "rationale": "The warrant states that the two undecidability results about circle-freeness and printing are used to show the Entscheidungsproblem has no solution. The evidence from p66 shows that if Un(M) is provable then M ever prints 0, and by Lemmas 1 and 2, a process for determining provability would decide whether M ever prints 0, which is impossible by §8. Both undecidability results are premises of the conclusion."
+        },
+        {
+          "decision": "supported",
+          "id": "r-d517870e7e5aab66",
+          "rationale": "The warrant states that the impossibility of deciding circle-freeness is used to show no machine decides whether a machine ever prints 0. The evidence from p50 shows that if there were a machine R that determines whether M ever prints 0, then there would be a general process for determining whether M is circle-free, contradicting the result of §8. The circle-freeness result is the premise."
+        },
+        {
+          "decision": "supported",
+          "id": "r-de16332dbed8ba20",
+          "rationale": "The warrant states that the example of a definable but non-computable number uses the theorem of §8. The evidence from p54 says the sequence P, whose n-th figure is 1 or 0 according as n is or is not satisfactory, is not computable as an immediate consequence of the theorem of §8. The undecidability result is the premise for the non-computability of P."
+        },
+        {
+          "decision": "supported",
+          "id": "r-f313309aad662437",
+          "rationale": "The warrant states that the definition of computable sequences and machines is needed before the standard description encoding can be understood. The evidence from p7 and p8 defines computing machines, m-configurations, and symbols, while p29 encodes machine tables in terms of these elements. The machine model is a pedagogical prerequisite for the encoding."
+        },
+        {
+          "decision": "supported",
+          "id": "r-01f73282ca1b03dd",
+          "rationale": "The warrant states that the five-part subdivision identifies memory as one of the specific parts, setting up the question of whether its functions should be unified. The evidence from p8 identifies M as the third specific part, and p9 argues that it is tempting to treat the entire memory as one organ. The subdivision is the premise that makes the unification question meaningful."
+        },
+        {
+          "decision": "supported",
+          "id": "r-04ac0387ca7c8c60",
+          "rationale": "The warrant states that the E-element and its delay τ define the delay organ dl(k) and its capacity. The evidence from p15 introduces the E-element with synaptic delay τ, and p18 defines lk and dl(k) in terms of kτ periods. The E-element abstraction is the premise for the delay-organ representation."
+        },
+        {
+          "decision": "supported",
+          "id": "r-128aa8bc7a19078c",
+          "rationale": "The warrant states that the factorization into major and minor cycles provides the addressing units used by control transfers. The evidence from p37 chooses 256 delay organs of 1,024 units, and p44 numbers the organs 0-255 and the minor cycles 0-31. The factorization is the premise for the addressing scheme."
+        },
+        {
+          "decision": "supported",
+          "id": "r-27efba6f9b797d67",
+          "rationale": "The warrant states that the E-element abstraction provides the vocabulary in which the multiplier's memory requirement is described. The evidence from p15 introduces the E-element and its delay τ, and p18 expresses the multiplier's memory requirement in periods τ. The E-element abstraction is the representational premise for stating the multiplier memory requirement."
+        },
+        {
+          "decision": "supported",
+          "id": "r-35d9b784923a9cf1",
+          "rationale": "The warrant states that the central arithmetical part CA is one of the five parts, and its internal number system must be chosen. The evidence from p8 identifies CA as the first specific part, and p12 argues that binary arithmetic is natural for its two-state elements. The identification of CA is the premise for the binary choice."
+        },
+        {
+          "decision": "supported",
+          "id": "r-398d63477faa1fe6",
+          "rationale": "The warrant states that binary representation and the digit-by-digit treatment of multiplication set up the binary-point problem. The evidence from p12 adopts binary arithmetic, and p24 states that the binary point convention has no influence on addition and subtraction but is essential for multiplication and division. The binary representation is the premise for the fixed-point convention."
+        },
+        {
+          "decision": "supported",
+          "id": "r-422f2c58546324f5",
+          "rationale": "The warrant states that delay organs of capacity k are the units whose number and capacity are factored in the switching analysis. The evidence from p18 introduces dl(k) with capacity k, and p36-37 factor the total capacity into h organs of capacity k. The delay organ is the premise for the factorization heuristic."
+        },
+        {
+          "decision": "supported",
+          "id": "r-4908a18567249634",
+          "rationale": "The warrant states that the large estimated capacity motivates considering an alternative memory technology. The evidence from p34 concludes that memory is the bottleneck, and p38 then considers the iconoscope as an alternative with comparable capacity. The capacity estimate motivates the search for a different memory principle."
+        },
+        {
+          "decision": "supported",
+          "id": "r-5665156496ff267e",
+          "rationale": "The warrant states that orders that transfer control to another minor cycle require an addressing scheme for memory locations. The evidence from p43 classifies orders including control transfers, and p44 defines major and minor cycle numbers and permanent versus transient transfers. The order classification is the premise for the addressing scheme."
+        }
+      ],
+      "input_hash": "7ea1c5a6873303630ff9cf0bbe9e2c094e4ea8fc0c0f7b97212d752bd25fa704",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7ea1c5a6873303630ff9cf0bbe9e2c094e4ea8fc0c0f7b97212d752bd25fa704",
+        "job_id": "96a6b9f92231d95ca73fdfa37b787ea9a5a6b2571d050718217ff5a33770ed2e",
+        "output_hash": "e8fb484b75350361073bd1ca17aa87a1c15f8fb620f1933c1449a1179bdb0d6d",
+        "prompt_hash": "a05cec0da8c271cf446f46c23bc710f8b4224f532d83b81d8e7d33e9fc4bf1fb",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ae80c380-e774-4162-ac18-b3a1fec41179",
+        "request_id": "01a148519fd84098188b5681bd7a1b8d",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "connection-escalation:7ea1c5a687330363",
+        "time": "2026-10-17T05:24:28+00:00",
+        "trace_id": "ae80c380-e774-4162-ac18-b3a1fec41179",
+        "usage": {
+          "completion_tokens": 2063,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 38579,
+          "prompt_tokens": 38579,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 40642
+        }
+      }
+    }
+  ],
+  "candidates": 26,
+  "checks": [
+    {
+      "decision": "supported",
+      "id": "r-7bf13903400d59ef",
+      "rationale": "The warrant states that Godfrey's introduction documents missing programming and I/O sections, and Section 14.1 postpones the I/O order class. The evidence from p1 confirms the introduction explicitly states 'the Sections on programming and on the input/output system are missing.' The evidence from p43 confirms Section 14.1 postpones discussion of I/O orders: 'The discussion of (d) is also better delayed (cf.{}).' The conclusion's limit 'The input/output order class is not discussed' is directly bounded by these documented omissions. The relation is supported."
+    },
+    {
+      "decision": "supported",
+      "id": "r-876bdc29fece001e",
+      "rationale": "The warrant claims the report's first-draft status and missing sections bound the five-part subdivision. Evidence p1 confirms Godfrey's introduction states the report was never proofread, contains errors, and lacks programming and I/O sections. Evidence p8 presents the five-part subdivision (CA, CC, M, I, O) in Sections 2.0-2.9. The conclusion's limit 'The account is explicitly preliminary and incomplete' and 'Sections on programming and input/output were never written' are directly bounded by the documented first-draft limitations. The relation is supported."
+    },
+    {
+      "decision": "supported",
+      "id": "r-905910979edaa734",
+      "rationale": "The warrant states Section 12.2 defines the memory unit and minor cycle, and Sections 12.3-12.4 estimate requirements in those units. Evidence p31 defines the unit as 'the ability to retain the value of one binary digit' and the 32-unit minor cycle. Evidence p32 and p33 show the capacity estimates in minor cycles and units, culminating in the conclusion that memory is the bottleneck. The capacity unit is the accounting premise for the capacity estimate. The relation is supported."
+    },
+    {
+      "decision": "supported",
+      "id": "r-9c9f282f1c809152",
+      "rationale": "The warrant claims the 32-unit minor cycle and its first unit provide the structure for distinguishing numbers from orders. Evidence p31 defines the minor cycle and notes 'it is advisable to add a further unit in lieu of a symbol which characterizes it as a number (to distinguish it from an order, cf. {14.1}).' Evidence p43 and p45 confirm that i0 is used as the tag (i0=0 for number, i0=1 for order). The minor cycle structure is the direct premise for the stored-order representation. The relation is supported."
+    },
+    {
+      "decision": "supported",
+      "id": "r-b0c746fc0bc19fde",
+      "rationale": "The warrant states Section 15.3 lists order types and their digit requirements, and Sections 15.4-15.5 analyze pooling. Evidence p45 presents the classification of orders and their digit requirements. Evidence p47 explicitly discusses pooling orders within a minor cycle, noting the constraints and efficiency. The order classification is the direct premise for the pooling analysis. The relation is supported."
+    },
+    {
+      "decision": "supported",
+      "id": "r-ff34d884bd6a3bd8",
+      "rationale": "The warrant states Section 12.4 concludes about 262,144 units are needed, and Section 12.7 factors this into 256 organs of 1,024 units. Evidence p34 concludes 'total capacities of 8,000 or 2,000 minor cycles obtain' and selects the higher estimate of 262,144 = 2^18 units. Evidence p37 explicitly states the factorization: 'A c = hk-way switching problem can be replaced by a k-way switching problem and an h-step temporal succession' with c=250,000, k=1,000, h=250, and then chooses powers of two. The capacity estimate is the direct premise for the switching factorization. The relation is supported."
+    },
+    {
+      "decision": "supported",
+      "id": "r-2939ac02d46b55b7",
+      "rationale": "The warrant states that the definition of computability from §1-2 is a prerequisite for reading the Appendix's equivalence proof. The evidence from p67 shows the Appendix explicitly assumes the terms and constructions from the main paper, including the machine model defined in §1-2. The definition is a necessary pedagogical foundation for understanding the equivalence argument."
+    },
+    {
+      "decision": "supported",
+      "id": "r-3d4459cecde19d22",
+      "rationale": "The warrant states that the universal machine is a premise of the contradiction proving no machine decides circle-freeness. The evidence from p49 explicitly describes combining the hypothetical decision machine D with the universal machine I to construct H, which computes the diagonal sequence J'. The universal machine is a necessary component of the proof."
+    },
+    {
+      "decision": "supported",
+      "id": "r-60ffc47b3437d303",
+      "rationale": "The warrant states that the standard description encoding is a prerequisite for the universal machine construction. The evidence from p30 shows the universal machine is supplied with the S.D of a computing machine on its tape and uses it to simulate that machine. The S.D encoding from §5 is a necessary pedagogical foundation for understanding the universal machine."
+    },
+    {
+      "decision": "supported",
+      "id": "r-7713e233bfc39c36",
+      "rationale": "The warrant states that the 1937 correction identifies formal errors in the original Entscheidungsproblem proof and supplies modifications, limiting the original proof. The evidence from p71 explicitly states the proof contained formal errors, corrects the expression for Inst, and introduces a new functional variable G and corrected Un(M). This directly bounds the original claim."
+    },
+    {
+      "decision": "supported",
+      "id": "r-9605516237d869ce",
+      "rationale": "The warrant states that computable functions are defined in terms of computable sequences and numbers, making the base definitions prerequisites. The evidence from p55 shows Turing defines a computable function of an integral variable using a computable sequence in which 0 appears infinitely often, and defines computable functions of a computable variable using computable numbers. The base definitions are pedagogical prerequisites."
+    },
+    {
+      "decision": "supported",
+      "id": "r-9c96ee6cdfbfa7ee",
+      "rationale": "The warrant states that the difficulty concerns the original definition of computable numbers via decimal expansions and limits the original association. The evidence from p72 explicitly says some difficulty arises from the particular manner in which 'computable number' was defined, and shows that the converse claim about obtaining a description number from nested intervals is false. This directly bounds the original definition."
+    },
+    {
+      "decision": "supported",
+      "id": "r-ae204232d1629823",
+      "rationale": "The warrant states that the enumeration of computable sequences follows from the description-number encoding. The evidence from p29 shows that to each computable sequence there corresponds at least one description number, and to no description number does there correspond more than one computable sequence, so the computable sequences are enumerable. The encoding is the premise for the enumeration."
+    },
+    {
+      "decision": "supported",
+      "id": "r-ce898fb22491bf42",
+      "rationale": "The warrant states that the two undecidability results about circle-freeness and printing are used to show the Entscheidungsproblem has no solution. The evidence from p66 shows that if Un(M) is provable then M ever prints 0, and by Lemmas 1 and 2, a process for determining provability would decide whether M ever prints 0, which is impossible by §8. Both undecidability results are premises of the conclusion."
+    },
+    {
+      "decision": "supported",
+      "id": "r-d517870e7e5aab66",
+      "rationale": "The warrant states that the impossibility of deciding circle-freeness is used to show no machine decides whether a machine ever prints 0. The evidence from p50 shows that if there were a machine R that determines whether M ever prints 0, then there would be a general process for determining whether M is circle-free, contradicting the result of §8. The circle-freeness result is the premise."
+    },
+    {
+      "decision": "supported",
+      "id": "r-de16332dbed8ba20",
+      "rationale": "The warrant states that the example of a definable but non-computable number uses the theorem of §8. The evidence from p54 says the sequence P, whose n-th figure is 1 or 0 according as n is or is not satisfactory, is not computable as an immediate consequence of the theorem of §8. The undecidability result is the premise for the non-computability of P."
+    },
+    {
+      "decision": "supported",
+      "id": "r-f313309aad662437",
+      "rationale": "The warrant states that the definition of computable sequences and machines is needed before the standard description encoding can be understood. The evidence from p7 and p8 defines computing machines, m-configurations, and symbols, while p29 encodes machine tables in terms of these elements. The machine model is a pedagogical prerequisite for the encoding."
+    },
+    {
+      "decision": "supported",
+      "id": "r-01f73282ca1b03dd",
+      "rationale": "The warrant states that the five-part subdivision identifies memory as one of the specific parts, setting up the question of whether its functions should be unified. The evidence from p8 identifies M as the third specific part, and p9 argues that it is tempting to treat the entire memory as one organ. The subdivision is the premise that makes the unification question meaningful."
+    },
+    {
+      "decision": "supported",
+      "id": "r-04ac0387ca7c8c60",
+      "rationale": "The warrant states that the E-element and its delay τ define the delay organ dl(k) and its capacity. The evidence from p15 introduces the E-element with synaptic delay τ, and p18 defines lk and dl(k) in terms of kτ periods. The E-element abstraction is the premise for the delay-organ representation."
+    },
+    {
+      "decision": "supported",
+      "id": "r-128aa8bc7a19078c",
+      "rationale": "The warrant states that the factorization into major and minor cycles provides the addressing units used by control transfers. The evidence from p37 chooses 256 delay organs of 1,024 units, and p44 numbers the organs 0-255 and the minor cycles 0-31. The factorization is the premise for the addressing scheme."
+    },
+    {
+      "decision": "supported",
+      "id": "r-27efba6f9b797d67",
+      "rationale": "The warrant states that the E-element abstraction provides the vocabulary in which the multiplier's memory requirement is described. The evidence from p15 introduces the E-element and its delay τ, and p18 expresses the multiplier's memory requirement in periods τ. The E-element abstraction is the representational premise for stating the multiplier memory requirement."
+    },
+    {
+      "decision": "supported",
+      "id": "r-35d9b784923a9cf1",
+      "rationale": "The warrant states that the central arithmetical part CA is one of the five parts, and its internal number system must be chosen. The evidence from p8 identifies CA as the first specific part, and p12 argues that binary arithmetic is natural for its two-state elements. The identification of CA is the premise for the binary choice."
+    },
+    {
+      "decision": "supported",
+      "id": "r-398d63477faa1fe6",
+      "rationale": "The warrant states that binary representation and the digit-by-digit treatment of multiplication set up the binary-point problem. The evidence from p12 adopts binary arithmetic, and p24 states that the binary point convention has no influence on addition and subtraction but is essential for multiplication and division. The binary representation is the premise for the fixed-point convention."
+    },
+    {
+      "decision": "supported",
+      "id": "r-422f2c58546324f5",
+      "rationale": "The warrant states that delay organs of capacity k are the units whose number and capacity are factored in the switching analysis. The evidence from p18 introduces dl(k) with capacity k, and p36-37 factor the total capacity into h organs of capacity k. The delay organ is the premise for the factorization heuristic."
+    },
+    {
+      "decision": "supported",
+      "id": "r-4908a18567249634",
+      "rationale": "The warrant states that the large estimated capacity motivates considering an alternative memory technology. The evidence from p34 concludes that memory is the bottleneck, and p38 then considers the iconoscope as an alternative with comparable capacity. The capacity estimate motivates the search for a different memory principle."
+    },
+    {
+      "decision": "supported",
+      "id": "r-5665156496ff267e",
+      "rationale": "The warrant states that orders that transfer control to another minor cycle require an addressing scheme for memory locations. The evidence from p43 classifies orders including control transfers, and p44 defines major and minor cycle numbers and permanent versus transient transfers. The order classification is the premise for the addressing scheme."
+    }
+  ],
+  "status": "machine source-fidelity review; not human auditing",
+  "unavailable": []
+}

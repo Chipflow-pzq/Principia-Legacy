@@ -1,0 +1,411 @@
+{
+  "catalog": {
+    "catalog": {
+      "people": 899,
+      "topics": 781,
+      "works": 882,
+      "works_with_insights": 262
+    },
+    "human_reviewed_contributions": 0,
+    "limitations": [
+      "Catalog membership establishes documented relevance, not verified insight-level support.",
+      "Most new achievement entries are a source-backed extraction backlog; they do not have completed maps.",
+      "Nobel, Fields, Abel and institutional computing selections privilege recognized traditions and omit many important teams, regions and earlier discoveries.",
+      "The full ACM Turing Award listing was inaccessible in this source pass. Selected computing figures use other institutional evidence.",
+      "Broad award citations remain research-result or research-program entries; they are not invented paper titles. Recognition years are not discovery years.",
+      "Exposition works preserve evidence provenance; their authors are not automatically credited with originating every explained insight.",
+      "Independent discoveries remain distinct. Shared topics and shared insights do not establish historical influence.",
+      "Small spelling corrections and named concept expansions are offline and bounded; arbitrary semantic paraphrases are not guaranteed.",
+      "No qualified human audit has been performed. Personal Trace a discovery retains the limitations documented in the 1.3 live evaluation."
+    ],
+    "release_id": "1.4.1-exploratory",
+    "scientific_records": {
+      "contribution": 2905,
+      "relation": 1941,
+      "review": 7674,
+      "source": 270
+    },
+    "selection_source_families": {
+      "abelprize.no": 28,
+      "api.nobelprize.org": 638,
+      "arxiv.org": 16,
+      "computerhistory.org": 105,
+      "cs.nyu.edu": 1,
+      "mathshistory.st-andrews.ac.uk": 37,
+      "openstax.org": 3,
+      "pages.cs.wisc.edu": 2,
+      "pmc.ncbi.nlm.nih.gov": 1,
+      "www.cs.utexas.edu": 1,
+      "www.darwinproject.ac.uk": 1,
+      "www.econlib.org": 7,
+      "www.maths.tcd.ie": 1,
+      "www.mathunion.org": 51,
+      "www.nobelprize.org": 5,
+      "www.nokia.com": 1,
+      "www.pasteur.fr": 1
+    },
+    "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
+    "subjects": {
+      "biology_medicine": {
+        "catalog_shortfall_to_suggested_200_people": 0,
+        "catalog_shortfall_to_suggested_200_works": 0,
+        "catalogued_works": 214,
+        "populated_topics": 36,
+        "registered_topics": 200,
+        "selected_people": 287,
+        "unique_primary_subject_insights": 621,
+        "works_with_extracted_insights": 50
+      },
+      "computer_science": {
+        "catalog_shortfall_to_suggested_200_people": 71,
+        "catalog_shortfall_to_suggested_200_works": 36,
+        "catalogued_works": 164,
+        "populated_topics": 39,
+        "registered_topics": 140,
+        "selected_people": 129,
+        "unique_primary_subject_insights": 664,
+        "works_with_extracted_insights": 57
+      },
+      "economics": {
+        "catalog_shortfall_to_suggested_200_people": 90,
+        "catalog_shortfall_to_suggested_200_works": 76,
+        "catalogued_works": 124,
+        "populated_topics": 36,
+        "registered_topics": 109,
+        "selected_people": 110,
+        "unique_primary_subject_insights": 519,
+        "works_with_extracted_insights": 51
+      },
+      "mathematics": {
+        "catalog_shortfall_to_suggested_200_people": 87,
+        "catalog_shortfall_to_suggested_200_works": 43,
+        "catalogued_works": 157,
+        "populated_topics": 36,
+        "registered_topics": 123,
+        "selected_people": 113,
+        "unique_primary_subject_insights": 564,
+        "works_with_extracted_insights": 53
+      },
+      "physics": {
+        "catalog_shortfall_to_suggested_200_people": 0,
+        "catalog_shortfall_to_suggested_200_works": 0,
+        "catalogued_works": 225,
+        "populated_topics": 37,
+        "registered_topics": 209,
+        "selected_people": 270,
+        "unique_primary_subject_insights": 537,
+        "works_with_extracted_insights": 51
+      }
+    },
+    "topic_without_work": [],
+    "work_connections": 36,
+    "work_insight_memberships": 2906,
+    "work_kinds": {
+      "book": 12,
+      "exposition": 107,
+      "paper": 1,
+      "publication": 153,
+      "report": 1,
+      "research_program": 88,
+      "research_result": 394,
+      "technology_or_research": 126
+    }
+  },
+  "created_at": "2026-10-17T06:24:13.500346+00:00",
+  "limitations": [
+    "Catalogue counts include 107 explanatory source sections as well as research results, publications, technologies, books and programs.",
+    "620 works await insight extraction; 597 registered topics have no admitted insights.",
+    "Suggested 200–500 work/person selections are not reached in every subject. Deeper per-subject content targets remain unmet.",
+    "Nobel and institutional selections are biased toward recognized traditions; historical, industrial and regional coverage needs further work.",
+    "Fuzzy search uses bounded spelling recovery and 30 curated concept groups; it is not unrestricted semantic paraphrase retrieval.",
+    "Qualified human audit: not performed.",
+    "The six-query live personal exploration evaluation from 1.3 was not rerun. Its scientific-scope and route-quality limitations remain. Browser/provider regression fixtures are not fresh paid-model success evidence.",
+    "Only macOS was executed; Windows and Linux launchers and CI are supplied but not certified by this session."
+  ],
+  "memory_after_historical_browsing": {
+    "current_release": "1.4.1-exploratory",
+    "historical_routes": [
+      {
+        "milliseconds": 516.09,
+        "reader_rss_bytes": 115548160,
+        "release_id": "1.0.0-exploratory"
+      },
+      {
+        "milliseconds": 691.0,
+        "reader_rss_bytes": 120897536,
+        "release_id": "1.1.0-exploratory"
+      },
+      {
+        "milliseconds": 837.38,
+        "reader_rss_bytes": 146481152,
+        "release_id": "1.2.0-exploratory"
+      },
+      {
+        "milliseconds": 891.42,
+        "reader_rss_bytes": 178737152,
+        "release_id": "1.3.0-exploratory"
+      },
+      {
+        "milliseconds": 900.13,
+        "reader_rss_bytes": 207249408,
+        "release_id": "1.3.1-exploratory"
+      },
+      {
+        "milliseconds": 1251.06,
+        "reader_rss_bytes": 238387200,
+        "release_id": "1.4.0-exploratory"
+      },
+      {
+        "milliseconds": 1237.65,
+        "reader_rss_bytes": 263356416,
+        "release_id": "1.4.1-exploratory"
+      },
+      {
+        "milliseconds": 403.39,
+        "reader_rss_bytes": 256135168,
+        "release_id": "evaluation-baseline"
+      }
+    ],
+    "method": "Sequential info, topics, search, graph and brief requests for every listed frozen snapshot, including the evaluation baseline; read-only. RSS includes allocator high-water effects.",
+    "reader_after_historical_browsing_bytes": 256135168,
+    "reader_before_bytes": 102952960
+  },
+  "next_bounded_batch": "Prioritize source-complete extraction from the selected historical and prize works, with separate scientific checks and explicit cross-work reuse. Extend underrepresented math, computer science and economics selections based on evidence, not quotas.",
+  "packaging": {
+    "distributions": [
+      {
+        "archive": "principia-legacy-1.4.1-exploratory.zip",
+        "catalog_counts": {
+          "people": 899,
+          "topics": 781,
+          "works": 882,
+          "works_with_insights": 262
+        },
+        "checksums": {
+          "failures": [],
+          "files": 635,
+          "verified": true
+        },
+        "distribution": "offline",
+        "external_requests": [],
+        "prebuilt_database": true,
+        "reader_environment": "Python 3.12.7 with -S; external socket connections blocked; no Node or installed Python packages",
+        "release_id": "1.4.1-exploratory",
+        "startup_seconds_including_index_build": 0.73,
+        "tested_archive_sha256": "6295fb5aebd6a1ba4ea69cf5cc611eb6d934cd27f68e8edf428e0679ee9fee23"
+      },
+      {
+        "archive": "principia-legacy-1.4.1-exploratory-source.zip",
+        "catalog_counts": {
+          "people": 899,
+          "topics": 781,
+          "works": 882,
+          "works_with_insights": 262
+        },
+        "checksums": {
+          "failures": [],
+          "files": 626,
+          "verified": true
+        },
+        "distribution": "source",
+        "external_requests": [],
+        "prebuilt_database": false,
+        "reader_environment": "Python 3.12.7 with -S; external socket connections blocked; no Node or installed Python packages",
+        "release_id": "1.4.1-exploratory",
+        "startup_seconds_including_index_build": 17.65,
+        "tested_archive_sha256": "b25c5fd409d0d233ec77ff82999b765244398e29accae07723bfa5b2ac55ca3c"
+      }
+    ],
+    "hosted_allowlist_import": "isolated reader imports and work search passed",
+    "passed": true,
+    "platform": "macOS 26.3.1 x86_64",
+    "qualified_human_audit": false,
+    "scope": "Local clean preflight distributions; final documentation receipts are added afterwards without changing tested code, canonical content or assets."
+  },
+  "performance": {
+    "browser": {
+      "browser_process_rss_bytes": 688361472,
+      "combined_rss_bytes": 952164352,
+      "external_requests": [],
+      "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+      "first_view_ms": 1122,
+      "js_heap_bytes": 15657024,
+      "memory_method": "ps RSS summed over this browser's CDP-identified process tree plus the local reader; unrelated QA browsers excluded; shared pages may be counted more than once",
+      "page_errors": [],
+      "reader_process_rss_bytes": 263802880,
+      "requests": 7,
+      "viewport": {
+        "height": 1000,
+        "width": 1440
+      }
+    },
+    "counts": {
+      "contribution": 2905,
+      "relation": 1941,
+      "review": 7674,
+      "source": 270
+    },
+    "machine": {
+      "architecture": "x86_64",
+      "os": "macOS-26.3.1-x86_64-i386-64bit",
+      "python": "3.12.7"
+    },
+    "release_id": "1.4.1-exploratory",
+    "targets": {
+      "combined_memory_bytes_approx": 1000000000,
+      "first_view_ms": 5000,
+      "neighborhood_p95_ms": 1000,
+      "search_p95_ms": 500
+    },
+    "warm_http": {
+      "dossiers": {
+        "max_ms": 329.69,
+        "p50_ms": 318.31,
+        "p95_ms": 329.17,
+        "samples": 30
+      },
+      "neighborhood": {
+        "max_ms": 110.56,
+        "p50_ms": 103.22,
+        "p95_ms": 108.63,
+        "samples": 30
+      },
+      "search": {
+        "max_ms": 151.14,
+        "p50_ms": 141.64,
+        "p95_ms": 150.42,
+        "samples": 30
+      }
+    }
+  },
+  "reader_version": "1.4.0rc1",
+  "release_id": "1.4.1-exploratory",
+  "scientific_corrections": [
+    "Separate countability from effective enumeration in computing origins.",
+    "Correct reduction direction and clarify the 1937 proof correction.",
+    "Withhold four implementation inventories without a distinct general insight.",
+    "Independently recheck the corrected symbol-printing claim and both dependent arrows in 1.4.1.",
+    "Reject the first shared sphere-packing membership verdict rationale, then correct and recheck the density normalization."
+  ],
+  "scope": "Local acceptance candidate. No deployment, push or remote publication.",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
+  "software": {
+    "final_browser_confirmation": {
+      "release_id": "1.4.1-exploratory",
+      "scope": "Final work, search, navigation and snapshot-recovery checks after the last UI and memory changes.",
+      "stats": {
+        "duration": 78258.474,
+        "expected": 32,
+        "flaky": 0,
+        "skipped": 0,
+        "startTime": "2026-10-17T06:16:12.053Z",
+        "unexpected": 0
+      }
+    },
+    "full_browser_regression": {
+      "reader": "1.4.0rc1",
+      "scope": "Full desktop/mobile regression. Initial snapshot 1.4.0; final targeted checks also cover the immutable 1.4.1 scientific correction. No live provider calls are made by this deterministic suite.",
+      "stats": {
+        "duration": 358834.644,
+        "expected": 297,
+        "flaky": 0,
+        "skipped": 3,
+        "startTime": "2026-10-17T05:59:38.659Z",
+        "unexpected": 0
+      }
+    },
+    "hosted_prefix_browser": {
+      "duration": 16043.337999999998,
+      "expected": 2,
+      "flaky": 0,
+      "skipped": 0,
+      "startTime": "2026-10-17T06:18:14.095Z",
+      "unexpected": 0
+    },
+    "living_check": "Five actual flagship corrections exercised in a disposable copy; tests/test_works.py separately checks stale work interpretations, exact source pins, symmetric links and preserved releases.",
+    "notation_validation": {
+      "failures": [],
+      "formulas": 8658
+    },
+    "offline_verification": {
+      "checked": [
+        "all bundled assets",
+        "search",
+        "dossiers",
+        "contribution inspector",
+        "shared topic links and scientist profiles",
+        "work catalog and offline fuzzy search",
+        "relationship inspector",
+        "neighborhood",
+        "brief",
+        "snapshot changes"
+      ],
+      "external_socket_attempts": [],
+      "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
+      "passed": true,
+      "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
+      "release_id": "1.4.1-exploratory"
+    },
+    "python_tests_passed": 117,
+    "python_undefined_names": "passed",
+    "schema_and_reference_acceptance": {
+      "catalog_counts": {
+        "people": 899,
+        "topics": 781,
+        "works": 882,
+        "works_with_insights": 262
+      },
+      "counts": {
+        "contribution": 2905,
+        "relation": 1941,
+        "review": 7674,
+        "source": 270
+      },
+      "dossiers": 781,
+      "exact_machine_reviews_for_all_visible_records": true,
+      "external_jsonschema": "14378 immutable versions validated against exported JSON Schemas",
+      "flagship_endpoint_checks": 5,
+      "frozen_evaluation_files_unchanged": true,
+      "neighborhood_cap_and_joint_premises": true,
+      "passed": true,
+      "qualified_human_audit": "not performed",
+      "release_id": "1.4.1-exploratory",
+      "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
+      "source_closure": true,
+      "tour_checks": 3
+    },
+    "typescript_no_unused": "passed"
+  },
+  "usage_cumulative": {
+    "completion_tokens": 3809024,
+    "cost_status": "Account charges managed manually by owner; tokens are receipts, not an exact bill.",
+    "interruption_markers": 1,
+    "planning_allowance_usd": 300,
+    "planning_estimate": {
+      "currency": "CNY",
+      "known_token_subtotal": 111.574,
+      "notice": "Planning estimate using dated standard rates, before cache/time discounts. Excludes models without a verified rate, unreported and unknown request usage. Unpriced requests are not free. Not the account bill or an enforcement of the USD allowance.",
+      "pricing_source": "https://www.siliconflow.cn/pricing",
+      "rates_checked": "2026-10-13",
+      "rates_per_million_input_output": {
+        "deepseek-ai/DeepSeek-V4-Flash": [
+          3,
+          9
+        ],
+        "deepseek-ai/DeepSeek-V4-Pro": [
+          12,
+          24
+        ]
+      },
+      "unpriced_model_ids": [
+        "deepseek-ai/DeepSeek-V4.1-Flash"
+      ],
+      "unpriced_requests": 666
+    },
+    "prompt_tokens": 31966593,
+    "requests": 1828,
+    "successful": 1739,
+    "unknown_possible_charge": 53,
+    "unreceipted_interruption_upper_bound": 4
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "checks": [
+    {
+      "decision": "supported",
+      "id": "n-cf5f70656e15b2a3",
+      "issues": [],
+      "rationale": "The claim that there is no general mechanical procedure deciding provability in the restricted Hilbert functional calculus is directly stated in the source (p62: 'there can be no general process for determining whether a given formula U of the functional calculus Z is provable'). The encoding of the printing problem as a provability question and the conclusion that such a decision procedure would solve an impossible machine decision problem are explicitly described (p63, p66). The correction note (p71) acknowledges formal errors but does not reverse the conclusion."
+    },
+    {
+      "decision": "supported",
+      "id": "n-aabaf8f226854c33",
+      "issues": [],
+      "rationale": "The source (p29) describes the standard form, the numbering of m-configurations and symbols, the construction of the standard description (S.D.), and the mapping to a description number (D.N.). It states that the D.N. determines the S.D. and the machine uniquely, and that the computable sequences are enumerable. The claim matches the source exactly."
+    },
+    {
+      "decision": "supported",
+      "id": "n-22ddaf106193b1c1",
+      "issues": [],
+      "rationale": "The source (p6) states that computable numbers include algebraic numbers, zeros of Bessel functions, π, and e, and that they do not include all definable numbers. The enumeration follows from the description-number encoding (p29). The non-computable definable number P is described (p54) as an immediate consequence of the theorem of §8. The claim is fully supported."
+    },
+    {
+      "decision": "supported",
+      "id": "n-0c59baec5564e0c9",
+      "issues": [],
+      "rationale": "The source (p71) explicitly states that the original proof contained formal errors, corrects the expression for Inst, introduces a new functional variable G, defines Q, and modifies Un(M). It acknowledges P. Bernays. The claim that the correction repairs the encoding and does not reverse the undecidability conclusion is directly supported."
+    },
+    {
+      "decision": "supported",
+      "id": "r-60ffc47b3437d303",
+      "issues": [],
+      "rationale": "The relation is prerequisite_for_reading from the standard description encoding (n-aabaf8f226854c33) to the universal machine (n-ec38b80285726778). The source (p30, p31) states that the universal machine is supplied with the S.D. of a computing machine on its tape and uses that description to simulate the machine. The encoding is a concrete limited teaching dependency for understanding the universal machine construction."
+    },
+    {
+      "decision": "supported",
+      "id": "r-7713e233bfc39c36",
+      "issues": [],
+      "rationale": "The relation is bounded_by from the Entscheidungsproblem result (n-cf5f70656e15b2a3) to the correction (n-0c59baec5564e0c9). The source (p71) states that the original proof contained formal errors and supplies modifications. This limits the scope/validity of the original proof as published, fitting the bounded_by predicate."
+    },
+    {
+      "decision": "supported",
+      "id": "r-ae204232d1629823",
+      "issues": [],
+      "rationale": "The relation is premise_for from the standard description encoding (n-aabaf8f226854c33) to the countability claim (n-22ddaf106193b1c1). The source (p29) states that each computable sequence corresponds to at least one D.N. and no D.N. corresponds to more than one computable sequence, hence the computable sequences are enumerable. The encoding is a genuine inferential premise for the enumeration conclusion."
+    },
+    {
+      "decision": "supported",
+      "id": "r-ce898fb22491bf42",
+      "issues": [],
+      "rationale": "The relation is premise_for from the two undecidability results (n-4f36bf328c5109c3 and n-03d82e1ae6035422) to the Entscheidungsproblem result (n-cf5f70656e15b2a3). The source (p63, p66) constructs Un(M) so that provability is equivalent to M printing 0, and states that a provability decision method would decide the printing problem, which §8 shows impossible. Both undecidability results are necessary premises for the conclusion."
+    },
+    {
+      "decision": "supported",
+      "id": "r-de16332dbed8ba20",
+      "issues": [],
+      "rationale": "The relation is premise_for from the circle-free undecidability result (n-4f36bf328c5109c3) to the definable non-computable number claim (n-22ddaf106193b1c1). The source (p54) states that P is not computable as an immediate consequence of the theorem of §8. The undecidability result is a genuine inferential premise for the non-computability of P."
+    },
+    {
+      "decision": "supported",
+      "id": "r-f313309aad662437",
+      "issues": [],
+      "rationale": "The relation is prerequisite_for_reading from the definition of computing machines (n-922b62a1090f3c40) to the standard description encoding (n-aabaf8f226854c33). The source (p7, p8) defines m-configurations, scanned symbols, and operations. The encoding (p29) uses these concepts (qi, Sj, Sk, L, R, N). The definition is a concrete teaching dependency for understanding the encoding."
+    }
+  ],
+  "editorial_exclusions": {
+    "n-604ad94139d7b560": "Instruction-set inventory, without a separate intellectual move.",
+    "n-8d68562de944f88e": "A fixed word-size convention; the substantive shared-memory representation remains.",
+    "n-9ec6f65d16c511e7": "Routine instruction packing details for one design.",
+    "n-f0f6f7e6521aad53": "Specific address-field choices, rather than a distinct general insight."
+  },
+  "qualified_human_review": false,
+  "receipt": {
+    "attempt": 1,
+    "finish_reason": "stop",
+    "input_hash": "f912889c06661dea83da1161ed12d0e1051b2e2453addce91b05ab14d553a65d",
+    "job_id": "77496c7dba6313a028f3c0ffb924c64e70af9026b5306dcfeec64813bbc41004",
+    "output_hash": "ad7d143c69c29ad5ec2055d0dc0bd73b13e8dacadfb4ec9e87ef80baae71b183",
+    "prompt_hash": "707dc950001c5ea98593d661f9ce6f64e96b7f52acd2f82594d9add40a298449",
+    "provider": "SiliconFlow",
+    "provider_trace_id": "55d03d98-05cd-4ccd-8427-9956cae4d454",
+    "request_id": "01a14856711052d89dd706247888fd62",
+    "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "state": "succeeded",
+    "task": "computing-origins-corrections-1.4-format-1",
+    "time": "2026-10-17T05:29:44+00:00",
+    "trace_id": "55d03d98-05cd-4ccd-8427-9956cae4d454",
+    "usage": {
+      "completion_tokens": 1302,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 32644,
+      "prompt_tokens": 32644,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 33946
+    }
+  }
+}

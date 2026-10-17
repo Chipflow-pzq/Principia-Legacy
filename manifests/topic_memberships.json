@@ -88,5 +88,56 @@
     },
     "reason": "Compare the precise maximum-entropy property of a Gaussian distribution with the mathematical probability models used in random-matrix and stochastic results. This is a reading route, not a claim of historical influence.",
     "topic_id": "M12"
+  },
+  {
+    "anchors": [
+      {
+        "anchor_id": "p32",
+        "source_id": "s-ed921c9f703624bd",
+        "source_revision": 1
+      },
+      {
+        "anchor_id": "p33",
+        "source_id": "s-ed921c9f703624bd",
+        "source_revision": 1
+      },
+      {
+        "anchor_id": "p34",
+        "source_id": "s-ed921c9f703624bd",
+        "source_revision": 1
+      }
+    ],
+    "contribution": {
+      "content_hash": "042712d489613fac52899de1685cfeae6096bd70a754fa61a2043aeb2188bc49",
+      "id": "n-466e2022cf18c01e",
+      "revision": 1
+    },
+    "reason": "This existing insight states the same distinction between diversifiable and non-diversifiable risk that the source passage explains, and it helps frame the boundary of diversification: firm-specific risk can be reduced by holding a portfolio, while systematic risk remains. The source passage provides the concrete examples and the correlation mechanism that make this distinction operational for the topic of portfolio diversification and correlated risk.",
+    "screening_request_id": "01a1479757ef70fdcdd3f56336ee6b6a",
+    "source_url": "https://openstax.org/books/principles-finance/pages/15-2-risk-and-return-to-multiple-assets",
+    "topic_id": "E2155"
+  },
+  {
+    "anchors": [
+      {
+        "anchor_id": "p4",
+        "source_id": "s-87774cba136e0356",
+        "source_revision": 1
+      },
+      {
+        "anchor_id": "p8",
+        "source_id": "s-87774cba136e0356",
+        "source_revision": 1
+      }
+    ],
+    "contribution": {
+      "content_hash": "9712f13fdfcaff43c2968312035eaf100e8afe929fdd21793defecee146dfda9",
+      "id": "n-8ec8e003ab63e97f",
+      "revision": 1
+    },
+    "reason": "The existing insight already captures adaptation as the fit of organisms to their environment produced by natural selection tracking environmental change, which is the same intellectual move this source makes when it defines adaptive evolution as selection raising beneficial and lowering deleterious allele frequencies in response to the environment.",
+    "screening_request_id": "01a1479a5524877cb8d3c9ec315736b9",
+    "source_url": "https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution",
+    "topic_id": "B2196"
   }
 ]

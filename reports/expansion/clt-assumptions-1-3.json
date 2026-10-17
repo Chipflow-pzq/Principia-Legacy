@@ -1,0 +1,62 @@
+{
+  "admission": {
+    "new_contributions": 4,
+    "new_records": 17,
+    "new_relations": 4,
+    "plan_total_contributions": 4,
+    "plan_total_relations": 4
+  },
+  "completed_at": "2026-10-17T02:12:25+00:00",
+  "estimate": {
+    "assignments": 1,
+    "maximum_output_tokens_before_retries": 57344,
+    "maximum_parallel_requests": 4,
+    "normal_calls_before_retries": 2,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged.",
+    "optional_reuse_refinement_calls": 1
+  },
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "outcomes": [
+    {
+      "admission": "admitted",
+      "assignment_id": "adce6623f3b6701b4a43f788b3d10b62d015d2f42ae9c078369c9c334fa111ab",
+      "depth": 0,
+      "dossier": "M2163",
+      "gaps": [
+        "No historical origin, priority, or independent formulation of the central limit theorem is documented in this source.",
+        "No proof or derivation of the Berry-Esseen theorem is provided; it is stated with a reference to Feller.",
+        "The assumptions of independence and identical distribution for the central limit theorem are stated but not discussed in terms of necessity or relaxation.",
+        "The source does not discuss cases with infinite variance or dependent observations.",
+        "No empirical validation of the normal approximation for specific sample sizes is provided.",
+        "The continuity theorem is stated and proved without attribution, so its historical origin is unresolved.",
+        "The complex sequence limit $(1+a_n/n)^n\\to e^a$ is stated without proof."
+      ],
+      "need": "Replace an overbroad introductory central-limit claim with the precise IID, finite nonzero variance, centered and scaled limit theorem. Explain convergence in distribution, distinguish sums and means, preserve independence assumptions and limitations of finite-sample tail approximation. At most four developed contributions; no routine recipes, glossary fragments, exercise calculations, or unsupported historical credit.",
+      "new_contributions": 4,
+      "reuse_refinement": {
+        "accepted_memberships": 0,
+        "hints": 0,
+        "performed": false
+      },
+      "reused_memberships": [],
+      "role": "endpoint",
+      "screened": {
+        "accepted_nodes": 4,
+        "accepted_relations": 4,
+        "proposed_nodes": 4,
+        "proposed_relations": 4
+      },
+      "search_outcomes": {
+        "alternatives": "The source presents the weak law of large numbers, the central limit theorem, and the Berry-Esseen bound. It does not discuss alternative limit theorems, exact finite-sample distributions, or non-normal approximations. It notes that the finite-mean assumption in the weak law can be relaxed for symmetric distributions to $nP(|X_1|>n)\\to 0$, and that the central limit theorem admits density and lattice refinements under additional integrability or discreteness assumptions.",
+        "attribution": "The lecture attributes the weak law's history to Bernoulli (1713), Chebyshev (1867), and Khintchine (1929), and cites Van Beeck (1972) for the improved Berry-Esseen constant. It provides no attribution or date for the continuity theorem or for the central limit theorem itself. The lecture's authors are not named in the source metadata; the document is an MIT OpenCourseWare lecture.",
+        "limitations": "The source gives no proof of the Berry-Esseen theorem and no proof of the complex sequence limit used in the weak law. It states the central limit theorem only for i.i.d. variables with finite mean and variance, and does not discuss infinite-variance or dependent cases. It provides no rate of convergence for the central limit theorem itself, deferring that to Berry-Esseen. It does not address when the normal approximation is inadequate for finite samples."
+      },
+      "source_title": "6.436J / 15.085J Fundamentals of Probability, Lecture 17: Laws of Large Numbers and Central Limit Theorem",
+      "state": "succeeded",
+      "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/f44fa78f05ac31a4ba2bd82f599dcf60_MIT6_436JF18_lec17.pdf"
+    }
+  ],
+  "plan_hash": "7ea192ca23ef4fd6447163b1696710c28a2d0ff11cb8ffb27b8e191e27c7e494",
+  "plan_id": "clt-assumptions-1-3",
+  "started_at": "2026-10-17T02:11:41+00:00"
+}

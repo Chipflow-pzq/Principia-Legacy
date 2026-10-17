@@ -1,0 +1,135 @@
+{
+  "correction": "Primary browser reading found an inaccurate ancillary summary of local-limit refinements: the unnormalized sum and lattice probability scaling were conflated with the normalized CLT. Narrow the explanation to the proved normalized-sum result and state the boundary explicitly.",
+  "dependent_checks": [
+    {
+      "new_revision": 5,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's predicate, direction, and scope are grounded in the supplied passages. The premise contribution (n-ed32a75acb0c02b3) states the normalized i.i.d. CLT convergence in distribution, and the conclusion contribution (n-08d13cf9a3702bdc) states the Berry–Esseen finite-sample CDF bound. The evidence passages explicitly present Berry–Esseen as a refinement of the CLT: page 8 says the CDF of normalized sums approaches the standard normal CDF uniformly with speed 1/sqrt(n), and page 9 gives the precise bound |P(sum(Xk−μk) ≤ λσ) − Φ(λ)| ≤ 6T/σ^3. Thus the conclusion is properly bounded by the CLT premise: Berry–Esseen quantifies the error of the normal approximation asserted by the CLT, with a uniform O(1/sqrt(n)) bound under the stated moment assumptions. The endpoint claims are also source-grounded: the CLT endpoint correctly restricts to normalized i.i.d. sums and avoids density/local-limit overreach; the Berry–Esseen endpoint correctly states the independent possibly non-identically distributed scope, finite third absolute central moments, positive total variance, the 6T/σ^3 CDF bound, and the Van Beeck 0.7975 i.i.d. refinement. No unsupported historical influence or causation is asserted; attribution is limited to naming and the cited refinement."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7a549d778e918d3082e210e960ed03be186a7dc4f0728dadbc8ba426d25d0a6d",
+        "job_id": "6091b01a07d6d4462c69f4fc4f29fb55ad1a0d5dd92b7fefa4a5ec31ca11140c",
+        "output_hash": "872beedb7917310e5a09a95d8da36dcfbc9339a4fb9d2128feddd3e7016aa087",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a9c379e3-c7a7-4d91-94bb-c232fcd8b384",
+        "request_id": "01a147be66577e3c38e8e95a7269992c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-8b67f093717f8810:4",
+        "time": "2026-10-17T02:43:45+00:00",
+        "trace_id": "a9c379e3-c7a7-4d91-94bb-c232fcd8b384",
+        "usage": {
+          "completion_tokens": 316,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3510,
+          "prompt_tokens": 3510,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3826
+        }
+      },
+      "revision": 4,
+      "target": "r-8b67f093717f8810"
+    },
+    {
+      "new_revision": 5,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's predicate is prerequisite_for_reading, and the cited evidence p7 explicitly contains the CLT proof step: after establishing pointwise convergence of φ_{S_n/√n}(t) to e^{-t²/2}, the lecture concludes convergence in distribution. The relation's scope and warrant match this exact inferential bridge. The premise contribution (continuity theorem) is also grounded in the same source, and the conclusion contribution is the normalized i.i.d. CLT with finite positive variance, matching p7. No unsupported attribution, causation, or historical influence is asserted; the theorem is presented as standard and unattributed. The limitations and assumptions are consistent with the passage. All substantive assertions are grounded in the supplied evidence."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3859249b721de123a41792107910381a77eb4495d3b51b8eab41f9a4d20cb99d",
+        "job_id": "3466b2e0c85057abaf0444bb3488360ab11dc2dc3cac6cbb12f165fa1331226e",
+        "output_hash": "1363b8d02f705ea8828cad78191137d2516d5166044324456229c86da0f4f3c5",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "323db0a5-5b17-49bd-83b0-6fc7a177018f",
+        "request_id": "01a147be83175b4b79ea39b5f0a275bb",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-ab47cb40fc5db7e9:4",
+        "time": "2026-10-17T02:43:52+00:00",
+        "trace_id": "323db0a5-5b17-49bd-83b0-6fc7a177018f",
+        "usage": {
+          "completion_tokens": 158,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3567,
+          "prompt_tokens": 3567,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3725
+        }
+      },
+      "revision": 4,
+      "target": "r-ab47cb40fc5db7e9"
+    },
+    {
+      "new_revision": 5,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation asserts that the weak law and CLT cards are analogous because both are proved by the same characteristic-function method: expand the transform at zero, raise to the n-th power, and identify the pointwise limit. The supplied passages directly support this: p6 proves the weak law by expanding φ_{X1}(t/n) to first order, raising to the n-th power, and identifying the limit e^{iμt}; p7 proves the CLT by expanding φ_X(t/√n) to second order, raising to the n-th power, and identifying the limit e^{-t²/2}. The scope, predicate, direction, and warrant are grounded in the exact evidence, and the endpoint claims are consistent with the passages. No unsupported historical or causal assertion is required for this analogous_to relation."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "87e46653b4f307bf2fab8fee300744afff3df17ebac9e6b8d8fa495b953d4b2b",
+        "job_id": "769ab1395a2357edee5a7bfbde7469369edcb120109ce6a6f269074a75c6921d",
+        "output_hash": "132604cd2a4ce1a9ad2e29e72ba0d7432a6635c2da2a20118e8deb077f7da357",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "05e6b160-dd09-4936-83d9-ea2158ecfc1d",
+        "request_id": "01a147beaa08d29d73ecaeb85282e82a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-e1593a22a2f5f2e1:4",
+        "time": "2026-10-17T02:43:59+00:00",
+        "trace_id": "05e6b160-dd09-4936-83d9-ea2158ecfc1d",
+        "usage": {
+          "completion_tokens": 175,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 4341,
+          "prompt_tokens": 4341,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4516
+        }
+      },
+      "revision": 4,
+      "target": "r-e1593a22a2f5f2e1"
+    }
+  ],
+  "patch": {
+    "applied": "5121eb97e6530e031c291fef76d0634e9bf832f772c6e08fc35535fa1f891a59",
+    "previous_release": "before-8eb051614fca",
+    "recheck": [
+      "r-8b67f093717f8810",
+      "r-ab47cb40fc5db7e9",
+      "r-e1593a22a2f5f2e1"
+    ]
+  },
+  "qualified_human_review": false
+}

@@ -2971,50 +2971,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p8",
-          "source_id": "s-7414b1e9b6725a75",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-3ce02bc03dc28c79",
-        "revision": 1
-      },
-      "content_hash": "be11abe3cd6d5f391b4e453260cc38b0750939c326eec3afcc1fb5b35f4a650f",
-      "curation": {
-        "input_hash": "51b98a02c88b8bcafa06971d7a46a2cba245b4b93d12fcfdb900b8aaa685e0ec",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "be9e87a6ff9a21caa2f9acbb221c5e8e2e48b89bc16ffecd9203d1291130a3d4",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2a1a84b1ddcbda3190cf9cef9",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe455dd15ebd0324904e84d6e28",
-        "time": "2026-10-12T11:32:23+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-003486f912450b0c",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-88e180a4b0f839a1",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The j-invariant's coefficients have known asymptotics.",
-      "type": "relation",
-      "warrant": "The paper cites the asymptotic formula for j's coefficients, which is used to estimate phi_0's coefficients."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p4",
           "source_id": "s-69512c05c214f09d",
           "source_revision": 1
@@ -3467,55 +3423,6 @@
       "scope": "Asymptotic formulas justify the Fourier expansions.",
       "type": "relation",
       "warrant": "The asymptotic formulas for coefficients are used to compute the first terms of the Fourier expansions."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p9",
-          "source_id": "s-7414b1e9b6725a75",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p15",
-          "source_id": "s-7414b1e9b6725a75",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-a08f3aa00dcb54ca",
-        "revision": 1
-      },
-      "content_hash": "a3dd88b238e25c398cee2346c5cc2137a6a51e625ac6569cbcdb49ad9a35b9db",
-      "curation": {
-        "input_hash": "51b98a02c88b8bcafa06971d7a46a2cba245b4b93d12fcfdb900b8aaa685e0ec",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "be9e87a6ff9a21caa2f9acbb221c5e8e2e48b89bc16ffecd9203d1291130a3d4",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2a1a84b1ddcbda3190cf9cef9",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe455dd15ebd0324904e84d6e28",
-        "time": "2026-10-12T11:32:23+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-30ea6b220a78ca28",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-dc6490dbc6efde79",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The contour integration method is used to construct both a and b.",
-      "type": "relation",
-      "warrant": "The same technique of contour integrals with modular forms is applied to define both a and b, with different modular forms and transformation rules."
     },
     {
       "anchors": [
@@ -4201,50 +4108,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p4",
-          "source_id": "s-7414b1e9b6725a75",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-b71bf01a2832bea4",
-        "revision": 1
-      },
-      "content_hash": "b422c022de715275fe08bd3e21586f5e847311ec9e95a56196d90759d696abc0",
-      "curation": {
-        "input_hash": "51b98a02c88b8bcafa06971d7a46a2cba245b4b93d12fcfdb900b8aaa685e0ec",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "be9e87a6ff9a21caa2f9acbb221c5e8e2e48b89bc16ffecd9203d1291130a3d4",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2a1a84b1ddcbda3190cf9cef9",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe455dd15ebd0324904e84d6e28",
-        "time": "2026-10-12T11:32:23+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-80fac6c68c33dbdf",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-335437961857c75b",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The necessary condition of double zeroes is derived from Poisson summation.",
-      "type": "relation",
-      "warrant": "The paper uses Poisson summation to derive the double zero condition, which is a generalization of the ratio condition."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p10",
           "source_id": "s-7414b1e9b6725a75",
           "source_revision": 1
@@ -4657,60 +4520,6 @@
       "scope": "The integral representation of a contributes to the non-vanishing of g.",
       "type": "relation",
       "warrant": "The representation (38) shows that a(r) is proportional to sin^2(pi r^2/2), which vanishes only at lattice lengths, and the integral is nonzero."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p9",
-          "source_id": "s-7414b1e9b6725a75",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p14",
-          "source_id": "s-7414b1e9b6725a75",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p20",
-          "source_id": "s-7414b1e9b6725a75",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-8c8147ef38ef300c",
-        "revision": 1
-      },
-      "content_hash": "92fd07c8123cccfb2fa33d5ceb3458ddaf01c9f54a414e73306661eb9b474760",
-      "curation": {
-        "input_hash": "51b98a02c88b8bcafa06971d7a46a2cba245b4b93d12fcfdb900b8aaa685e0ec",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "be9e87a6ff9a21caa2f9acbb221c5e8e2e48b89bc16ffecd9203d1291130a3d4",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2a1a84b1ddcbda3190cf9cef9",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe455dd15ebd0324904e84d6e28",
-        "time": "2026-10-12T11:32:23+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-a23c4558e305d203",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-6acd8c0f8f8b3df2",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Fourier expansions are used to compute asymptotic approximations.",
-      "type": "relation",
-      "warrant": "The expansions (32)–(34) and (49)–(51) are used to derive the approximations A_0^(n) and A_inf^(n)."
     },
     {
       "anchors": [
@@ -5357,28 +5166,22 @@
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-2289cb8ea0a7d9d1",
         "revision": 1
       },
-      "content_hash": "08b6b9358eeed36981111fa2d79590a9fe6ff150866702c525de1aee00dffffb",
+      "content_hash": "046059147fe51bd84847653908afc68cdac350d7fb4362176d0acb3cb4a6ca78",
       "curation": {
-        "input_hash": "51b98a02c88b8bcafa06971d7a46a2cba245b4b93d12fcfdb900b8aaa685e0ec",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "be9e87a6ff9a21caa2f9acbb221c5e8e2e48b89bc16ffecd9203d1291130a3d4",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2a1a84b1ddcbda3190cf9cef9",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe455dd15ebd0324904e84d6e28",
-        "time": "2026-10-12T11:32:23+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479c745d0ed35f069ce18b7b2d7b"
       },
       "human_review": "not_reviewed",
       "id": "r-d489ee50eb0dc05f",
-      "layer": "evidential",
+      "layer": "logical",
       "machine_screening": "passed",
-      "predicate": "supports",
+      "predicate": "premise_for",
       "premise_mode": "all",
       "premises": [
         {
@@ -5387,11 +5190,11 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
-      "scope": "The main theorem relies on the non-vanishing property of g.",
+      "scope": "The non-vanishing property of g is a premise in the proof of the E8 sphere-packing theorem.",
       "type": "relation",
-      "warrant": "The non-vanishing property is part of Theorem 3, which is used to prove Theorem 1."
+      "warrant": "Theorem 3 supplies the radial Schwartz function g satisfying the sign and non-vanishing conditions. Applying Theorem 2 to f(x)=g(√2x) immediately yields Theorem 1, so the non-vanishing property functions as an inferential premise in the proof rather than as evidence bearing on the theorem's truth."
     },
     {
       "anchors": [
@@ -5644,6 +5447,6 @@
       "warrant": "The paper applies Poisson summation within the framework of the Cohn–Elkies bound to derive the inequality f(0)/f_hat(0) ≥ 2^4."
     }
   ],
-  "release_id": "1.2.0-exploratory",
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf"
+  "release_id": "1.4.1-exploratory",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f"
 }

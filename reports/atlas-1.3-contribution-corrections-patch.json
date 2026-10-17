@@ -1,0 +1,508 @@
+{
+  "base_corpus_hash": "86a32de0274d2e693342c1f4faf5ec834c5ea7a6b4e00aeb397cd158dd649431",
+  "generated_at": "2026-10-17T02:22:25+00:00",
+  "impact": [
+    "r-5b5118415cfa19fa",
+    "r-8ce02eaeed7acf8c"
+  ],
+  "reason": "Complete the stratified contribution audit: correct exact evidence locators, narrow causal scope and repair a LaTeX escape. Source enrichment preserves identical old anchors and bytes.",
+  "records": [
+    {
+      "access_state": "anchor_checked",
+      "anchors": [
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p65",
+          "selector": "PDF page 84",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "P is the class of languages accepted by deterministic Turing machines in polynomial time; NP is defined via polynomial-time checking relations with polynomially bounded certificates, making the P vs NP question precise.",
+          "text_hash": "39c460eb48f57ce6e9fda14a1fad53e23697e4229f3bc038761b94e167381a58"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p66",
+          "selector": "PDF page 85",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "P is the class of languages accepted by deterministic Turing machines in polynomial time; NP is defined via polynomial-time checking relations with polynomially bounded certificates, making the P vs NP question precise.",
+          "text_hash": "6f19295b08c1b037b2c1f6d2016ce21ada629e7196a6c39a37dcf8a025b811a4"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p68",
+          "selector": "PDF page 87",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "A natural problem has a feasible algorithm iff it has a polynomial-time algorithm, though this is a thesis, not a theorem, and has potential counterexamples.",
+          "text_hash": "24bb2d867a25af81c610e48f29c232880b8b8f36be10ecfe65af0fa1195dfb52"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p69",
+          "selector": "PDF page 88",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "A language L1 is p-reducible to L2 if there is a polynomial-time computable function f such that x ∈ L1 iff f(x) ∈ L2; L is NP-complete if L ∈ NP and every NP language p-reduces to L.",
+          "text_hash": "9efe588e1a7de0d2195006dd952f5900d1634d897887dee951b705b578bf68bd"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p70",
+          "selector": "PDF page 89",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "The Boolean satisfiability problem (SAT) and its restriction 3-SAT are NP-complete, as shown by encoding Turing machine computations as propositional formulas.",
+          "text_hash": "72435e84bdf592b0f33a36c1bfb75cbdb2f3174e8c8ecafa74ec466b41362aad"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p73",
+          "selector": "PDF page 92",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "There exists an oracle A relative to which P = NP, showing that diagonalization with reduction, which relativizes, cannot prove P ≠ NP.",
+          "text_hash": "b884e022862f8fb2c02a55b15914a11049b2cd47c35a5d8c87e2ca742fa2a9ff"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p74",
+          "selector": "PDF page 93",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "All known methods for proving circuit lower bounds are 'natural proofs', and natural proofs cannot prove super-polynomial lower bounds for general circuits unless strong pseudorandom generators do not exist.",
+          "text_hash": "47d24cf7a9603bc48006e85e76496ad6b5ad695ea87d44333e5569a3927c8576"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p75",
+          "selector": "PDF page 94",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "If every language in E (exponential time) can be computed by Boolean circuit families that are smaller than the maximum needed for some n, then P ≠ NP.",
+          "text_hash": "680090d47c29a81702f6b4d48c306a2c3ef3d93b3caa18f4dea6950c284d88e9"
+        },
+        {
+          "checked": true,
+          "checked_by": "Primary agent direct inspection of pinned source bytes",
+          "id": "p78",
+          "selector": "PDF page 97",
+          "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+          "summary": "Bibliography identifies Kannan’s 1982 circuit-size lower-bound paper.",
+          "text_hash": "9d0d6150b832d5615d5846af2496a1611581f5474a9ca98de96317070934e46d"
+        }
+      ],
+      "change_reason": "Complete the stratified contribution audit: correct exact evidence locators, narrow causal scope and repair a LaTeX escape. Source enrichment preserves identical old anchors and bytes.",
+      "content_hash": "16b6b909974d6ae9e9e5fe5f475a7928e6ef55aaf886d85e5d8f713dd66e1349",
+      "creators": [
+        "Stephen Cook"
+      ],
+      "date": "2006",
+      "id": "s-53e00d2b7920b142",
+      "resolved_url": "https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf",
+      "retrieved_at": "2026-10-12T14:22:08+00:00",
+      "revision": 2,
+      "rights": {
+        "distributed_material": "Project-authored paraphrases, metadata and locators only",
+        "license": "Not established; consult source publisher",
+        "status": "source-specific; original text not redistributed"
+      },
+      "schema_version": 1,
+      "source_version": "7fb0391e8ea20db9102c022a9f6aa504d5436e644d0dffb6c9ed82f4f09af269",
+      "title": "The P versus NP Problem",
+      "type": "source",
+      "url": "https://www.claymath.org/wp-content/uploads/2022/02/MPPc.pdf"
+    },
+    {
+      "access_state": "anchor_checked",
+      "anchors": [
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p1",
+          "selector": "PDF page 1",
+          "source_version": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "summary": "A convolutional neural network trained with Q-learning and experience replay learns control policies directly from raw Atari pixels, outperforming prior methods on six of seven games and surpassing human experts on three.",
+          "text_hash": "f11e8cb0751ad095d30664d998e55bb71752b08bd2984790f2dc0173f19dafec"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p4",
+          "selector": "PDF page 4",
+          "source_version": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "summary": "A convolutional neural network trained with Q-learning and experience replay learns control policies directly from raw Atari pixels, outperforming prior methods on six of seven games and surpassing human experts on three.",
+          "text_hash": "6bdfcec197a74cdec9e8607d1832f0bee0fecd5134c62d75a4d6c0f8549971f5"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p5",
+          "selector": "PDF page 5",
+          "source_version": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "summary": "A convolutional neural network trained with Q-learning and experience replay learns control policies directly from raw Atari pixels, outperforming prior methods on six of seven games and surpassing human experts on three.",
+          "text_hash": "35da4f31ae96d9440dc3d21a8ee6216154da6729532639aa72adab638cf8d8f9"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p6",
+          "selector": "PDF page 6",
+          "source_version": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "summary": "Clipping all positive rewards to 1 and negative rewards to -1 limits the scale of error derivatives, enabling the same learning rate across games with varying score scales.",
+          "text_hash": "641448ac9b0b6b0efcce9659b02ba51f657fee186410056c33ccff4107c34dc3"
+        },
+        {
+          "checked": true,
+          "checked_by": "source-grounded machine critic",
+          "id": "p7",
+          "selector": "PDF page 7",
+          "source_version": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "summary": "A convolutional neural network trained with Q-learning and experience replay learns control policies directly from raw Atari pixels, outperforming prior methods on six of seven games and surpassing human experts on three.",
+          "text_hash": "4b29c049b86b4d2bf096e549466adb3f3e2aadc6ec8b380ee849261cd713e210"
+        },
+        {
+          "checked": true,
+          "checked_by": "Primary agent direct inspection of pinned source bytes",
+          "id": "p8",
+          "selector": "PDF page 8",
+          "source_version": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+          "summary": "Table 1 gives the 2013 DQN and human scores; the authors discuss three below-human games and long-time-scale strategies.",
+          "text_hash": "17e902469d162fef04fb5f5307c4d5d83bb8792645fd97bf514bc9b2960549ee"
+        }
+      ],
+      "change_reason": "Complete the stratified contribution audit: correct exact evidence locators, narrow causal scope and repair a LaTeX escape. Source enrichment preserves identical old anchors and bytes.",
+      "content_hash": "e079d7571b65218b1004c7abe4f66185b80689edbffc782aed092ac89011664d",
+      "creators": [
+        "Volodymyr Mnih",
+        "Koray Kavukcuoglu",
+        "David Silver",
+        "Alex Graves",
+        "Ioannis Antonoglou",
+        "Daan Wierstra",
+        "Martin Riedmiller"
+      ],
+      "date": "2013-12-19",
+      "id": "s-acc933f4ccfb3046",
+      "resolved_url": "https://arxiv.org/pdf/1312.5602",
+      "retrieved_at": "2026-10-12T11:44:40+00:00",
+      "revision": 2,
+      "rights": {
+        "distributed_material": "Project-authored paraphrases, metadata and locators only",
+        "license": "Not established; consult source publisher",
+        "status": "source-specific; original text not redistributed"
+      },
+      "schema_version": 1,
+      "source_version": "8db04120cace173151c77e0faa6f3eaa4207009da66b9417597dc70bfee56d9c",
+      "title": "Playing Atari with Deep Reinforcement Learning",
+      "type": "source",
+      "url": "https://arxiv.org/pdf/1312.5602"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p75",
+          "source_id": "s-53e00d2b7920b142",
+          "source_revision": 2
+        },
+        {
+          "anchor_id": "p78",
+          "source_id": "s-53e00d2b7920b142",
+          "source_revision": 2
+        }
+      ],
+      "assumptions": [
+        "Definition of polynomial hierarchy",
+        "Definition of LINEAR-SIZE"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Cook cites Kannan's 1982 paper.",
+          "name": "Ravi Kannan",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Complete the stratified contribution audit: correct exact evidence locators, narrow causal scope and repair a LaTeX escape. Source enrichment preserves identical old anchors and bytes.",
+      "claim": "There are languages in the polynomial hierarchy that are not in LINEAR-SIZE, as proved by Kannan.",
+      "conceptual_move": "Separate the polynomial hierarchy from linear-size circuit families; use this known separation in a conditional P-versus-NP argument.",
+      "content_hash": "d12112e7ab91e669eedef4d92aba6d65b200732252c29f4eb1ff53970d6eb83d",
+      "curation": {
+        "input_hash": "a9598cc2a9efa8b8e862c557252437b4d6233dae23049d87fed34d43a2a80faa",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "8eb3115f89a1ce61ceaffa0c4efa822c84932c7d333a28a88d2100d624e71497",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a1307e09eb394bf3bd558ce51f746a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13081a09a563a1fb0b08fa1c8cc88",
+        "time": "2026-10-12T14:22:08+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Kannan's paper was published in 1982.",
+        "precision": "year",
+        "year": 1982
+      },
+      "dossiers": [
+        "C08"
+      ],
+      "explanation": "Cook mentions Kannan's result that there are languages in the polynomial hierarchy (a generalization of NP) that are not in LINEAR-SIZE, the class of languages computable by circuits of size O(n). This is a rare separation result, as it shows that the polynomial hierarchy is not contained in a restricted circuit class. It is used in Proposition 2: if P ⊆ LINEAR-SIZE, then P ≠ NP, because if P = NP, the polynomial hierarchy collapses to P, contradicting Kannan's result. This provides a conditional separation.",
+      "human_review": "not_reviewed",
+      "id": "n-5ee1829e545c17d8",
+      "kind": "theorem",
+      "limits": [
+        "Does not separate P from NP directly",
+        "Only shows a separation for the polynomial hierarchy"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "To show that the polynomial hierarchy contains languages that require super-linear circuit size, providing a separation result.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Accepted as a known separation result.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science"
+      ],
+      "title": "Polynomial hierarchy does not collapse to linear-size circuits",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-acc933f4ccfb3046",
+          "source_revision": 2
+        }
+      ],
+      "assumptions": [
+        "The games requiring long-term strategies are representative of a broader class of challenges."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Reported in the paper's main evaluation section.",
+          "name": "Volodymyr Mnih et al.",
+          "role": "original contributors"
+        }
+      ],
+      "change_reason": "Complete the stratified contribution audit: correct exact evidence locators, narrow causal scope and repair a LaTeX escape. Source enrichment preserves identical old anchors and bytes.",
+      "claim": "In the reported 2013 evaluation, DQN scored below the expert-human benchmark on Q*bert, Seaquest and Space Invaders. The authors discuss long-time-scale strategies as a challenge; this is an interpretation of those results, not an isolated causal test.",
+      "conceptual_move": "Identifying a limitation of the approach in specific game types.",
+      "content_hash": "ff6ae119598dd7e61e6716b2cd39741fbd4954ffec0dadec8ee8747f618a487b",
+      "curation": {
+        "input_hash": "9248e9a9bda0af4fd0e6baca02999b663a93e688877c8f612894fef5e5eef0e4",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "7a157af5fc9714b2d51b64288a218fa4fa1cbee187aad8d938f0d9acccf6ad63",
+        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
+        "provider": "SiliconFlow",
+        "request_id": "01a12ff15e216a7e542ae2c9fd577707",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12ff23776f716aebab98a84001723",
+        "time": "2026-10-12T11:48:42+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Reported in the DQN paper.",
+        "precision": "year",
+        "year": 2013
+      },
+      "dossiers": [
+        "C03"
+      ],
+      "explanation": "The paper reports that DQN achieves close to human performance on Beam Rider and surpasses humans on Breakout, Enduro, and Pong, but is far from human performance on Q*bert, Seaquest, and Space Invaders. The authors attribute this to the need for strategies that extend over long time scales, which the current method struggles with. This is an empirical limitation of the approach.",
+      "human_review": "not_reviewed",
+      "id": "n-32982ed0f5fdd648",
+      "kind": "empirical_finding",
+      "limits": [
+        "This finding is specific to the reported 2013 system and evaluation protocol; it is not a claim about all DQN variants or present-day agents.",
+        "The long-horizon explanation was not established by a controlled causal experiment."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Some Atari games require planning over long horizons, which is challenging for the current method.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Empirical finding; no formal analysis.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science"
+      ],
+      "title": "The 2013 DQN evaluation exposes a gap on several games",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The counter starts at zero and has enough bits for all N increments without overflow.",
+        "Each bit flip has unit cost."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Presented as a textbook example; the binary counter example is a classic illustration but the source names no originator.",
+          "name": "OpenDSA Project Contributors",
+          "role": "authors of exposition"
+        }
+      ],
+      "change_reason": "Complete the stratified contribution audit: correct exact evidence locators, narrow causal scope and repair a LaTeX escape. Source enrichment preserves identical old anchors and bytes.",
+      "claim": "Starting from zero, a sequence of $N$ binary-counter increments performs fewer than $2N$ bit flips when overflow is excluded. The low-order bit changes every time, the next at most half as often, and successive bits geometrically less often.",
+      "conceptual_move": "Charge each bit flip to the bit position and sum the geometric series of flip frequencies across positions.",
+      "content_hash": "954bb1dc3f1b6c872558df10c37df0910d34189c52ae8a7216fe1b6596a1679d",
+      "curation": {
+        "method": "Primary agent editorial correction checked against pinned passages and explicit mathematical reasoning"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook exposition.",
+        "precision": "year",
+        "year": 2020
+      },
+      "dossiers": [
+        "C2101"
+      ],
+      "explanation": "A single increment can flip many bits when a suffix of ones changes to zeros. Charging that worst case to every increment overstates the total. Across $N$ increments from zero, the lowest bit flips $N$ times, the next at most $\\lfloor N/2\\rfloor$ times, the next at most $\\lfloor N/4\\rfloor$ times, and so on. Their sum is less than $2N$. The source displays the corresponding geometric sum as less than two per operation, although its prose rounds this to two. The bounded sum, rather than an exact equality, is the substantive result. It gives constant amortized bit-flip cost while allowing an individual increment to be expensive. This bound concerns a whole sequence and requires enough bits to avoid overflow; it is not a probabilistic average over randomly selected counter states.",
+      "human_review": "not_reviewed",
+      "id": "n-e2055ae3bf7bfbf1",
+      "kind": "empirical_finding",
+      "limits": [
+        "Individual increments can flip many bits.",
+        "The bound is for bit-flip cost, not a claim about every hardware instruction or counter representation."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Naive worst-case analysis of binary counter increments charges n bit flips per increment, giving n·2^n for 2^n increments, which overstates the real cost.",
+      "publication_state": "candidate",
+      "revision": 4,
+      "schema_version": 1,
+      "scientific_standing": "Correct and standard; the geometric-series argument is elementary and well established.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Binary counting has a constant amortized number of bit flips",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p74",
+          "source_id": "s-53e00d2b7920b142",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-4256e2492fdb870b",
+        "revision": 1
+      },
+      "content_hash": "478b965b121b924c6548129303718942bec5c507480636b77450b8d06add5deb",
+      "curation": {
+        "audit_reason": "The critique is correct. The cited passage p74 discusses circuit lower bounds, natural proofs, and unprovable adjacent separations, but does not mention Kannan or any result that the polynomial hierarchy is not in LINEAR-SIZE. The premise is absent from the quoted evidence, so the supports relation lacks source support.",
+        "input_hash": "a9598cc2a9efa8b8e862c557252437b4d6233dae23049d87fed34d43a2a80faa",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "8eb3115f89a1ce61ceaffa0c4efa822c84932c7d333a28a88d2100d624e71497",
+        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
+        "provider": "SiliconFlow",
+        "request_id": "01a1307e09eb394bf3bd558ce51f746a",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a13081a09a563a1fb0b08fa1c8cc88",
+        "time": "2026-10-12T14:22:08+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-5b5118415cfa19fa",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5ee1829e545c17d8",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Kannan's result shows a separation for the polynomial hierarchy, but not for P vs NP.",
+      "type": "relation",
+      "warrant": "The result that the polynomial hierarchy is not in LINEAR-SIZE provides a conditional separation, but does not resolve P vs NP directly."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-acc933f4ccfb3046",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-a1c1ac73d47c6a3c",
+        "revision": 1
+      },
+      "content_hash": "cb656d4bd193ac06454552383a083196d89adbf6282c94325cec4eda0bef6460",
+      "curation": {
+        "input_hash": "9248e9a9bda0af4fd0e6baca02999b663a93e688877c8f612894fef5e5eef0e4",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "7a157af5fc9714b2d51b64288a218fa4fa1cbee187aad8d938f0d9acccf6ad63",
+        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
+        "provider": "SiliconFlow",
+        "request_id": "01a12ff15e216a7e542ae2c9fd577707",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "screening_request_id": "01a12ff23776f716aebab98a84001723",
+        "time": "2026-10-12T11:48:42+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-8ce02eaeed7acf8c",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-32982ed0f5fdd648",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "DQN performance is limited on long-horizon games.",
+      "type": "relation",
+      "warrant": "The paper reports far-from-human performance on games requiring long-term strategies, bounding the general applicability of the method."
+    }
+  ],
+  "status": "proposed"
+}

@@ -97,7 +97,50 @@ for kind, fields in REQUIRED.items():
 write_json(
     root / "schemas/predicates.json",
     {
-        k: {"layer": v[0], "symmetric": v[1], "label": v[2]}
+        k: {"layer": v[0], "symmetric": v[1], "label": v[2], "meaning": v[3]}
         for k, v in PREDICATES.items()
     },
 )
+
+# Catalog metadata is versioned alongside (not substituted for) scientific records.
+pinned = {
+    **ref,
+    'required': ['id', 'revision', 'content_hash'],
+    'properties': {**ref['properties'], 'content_hash': {'type': 'string', 'pattern': '^[a-f0-9]{64}$'}},
+}
+text = {'type': 'string', 'minLength': 1}
+strings = {'type': 'array', 'items': text, 'uniqueItems': True}
+provenance = {'type': 'array', 'minItems': 1, 'items': {
+    'type': 'object', 'required': ['title', 'url', 'note'],
+    'properties': {'title': text, 'url': {'type': 'string', 'pattern': '^https://'}, 'note': text},
+}}
+identity = pinned['properties']
+catalogs = {
+    'work': {
+        **identity, 'title': text, 'summary': text, 'kind': text,
+        'subjects': {'type': 'array', 'minItems': 1, 'items': {'enum': list(PILLARS)}, 'uniqueItems': True},
+        'topic_ids': {**strings, 'minItems': 1}, 'people': strings,
+        'source_refs': {'type': 'array', 'items': pinned}, 'provenance': provenance,
+    },
+    'person': {
+        **identity, 'name': text, 'kind': {'const': 'person'}, 'biography': text,
+        'selection_reason': text, 'aliases': strings, 'subjects': strings, 'bio_sources': provenance,
+    },
+    'work-insight': {
+        'work_id': text, 'work': pinned, 'contribution': pinned,
+        'role': {'enum': ['establishes','uses','explains','discusses']}, 'reason': text,
+        'anchors': {'type':'array', 'minItems':1, 'items':anchor_ref},
+    },
+    'work-relation': {
+        **identity, 'from':pinned, 'to':pinned, 'basis_relation':pinned,
+        'kind': {'const':'insight_projection'}, 'predicate': {'enum':list(PREDICATES)},
+        'scope':text, 'warrant':text, 'provenance':provenance,
+    },
+}
+for kind, properties in catalogs.items():
+    write_json(root / 'schemas' / f'{kind}.schema.json', {
+        '$schema':'https://json-schema.org/draft/2020-12/schema',
+        '$id':f'urn:principia-legacy:catalog:{kind}:2',
+        'type':'object', 'required':[k for k in properties if not (kind == 'person' and k == 'subjects')], 'properties':properties,
+        'additionalProperties':True,
+    })

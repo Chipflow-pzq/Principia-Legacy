@@ -1,0 +1,204 @@
+[
+  {
+    "terms": [
+      "genetic scissors",
+      "gene editing",
+      "CRISPR",
+      "CRISPR Cas9",
+      "genome editing"
+    ]
+  },
+  {
+    "terms": [
+      "general relativity",
+      "Einstein gravity",
+      "spacetime curvature"
+    ]
+  },
+  {
+    "terms": [
+      "quantum mechanics",
+      "quantum theory"
+    ]
+  },
+  {
+    "terms": [
+      "large language models",
+      "LLM",
+      "language model",
+      "ChatGPT",
+      "Transformer"
+    ]
+  },
+  {
+    "terms": [
+      "protein folding",
+      "AlphaFold",
+      "protein structure prediction"
+    ]
+  },
+  {
+    "terms": [
+      "PECVD",
+      "plasma enhanced chemical vapour deposition",
+      "plasma enhanced chemical vapor deposition"
+    ]
+  },
+  {
+    "terms": [
+      "chip lithography",
+      "photolithography",
+      "lithography",
+      "EUV lithography"
+    ]
+  },
+  {
+    "terms": [
+      "neural networks",
+      "artificial neural networks",
+      "deep learning"
+    ]
+  },
+  {
+    "terms": [
+      "stored program",
+      "von Neumann architecture",
+      "EDVAC"
+    ]
+  },
+  {
+    "terms": [
+      "universal computation",
+      "Turing machine",
+      "computability"
+    ]
+  },
+  {
+    "terms": [
+      "Hamiltonian mechanics",
+      "Hamiltonian dynamics"
+    ]
+  },
+  {
+    "terms": [
+      "causal inference",
+      "causal effects",
+      "cause and effect"
+    ]
+  },
+  {
+    "terms": [
+      "double machine learning",
+      "debiased machine learning"
+    ]
+  },
+  {
+    "terms": [
+      "digital currencies",
+      "cryptocurrency",
+      "blockchain"
+    ]
+  },
+  {
+    "terms": [
+      "public key cryptography",
+      "asymmetric cryptography"
+    ]
+  },
+  {
+    "terms": [
+      "internet protocols",
+      "TCP IP",
+      "TCP/IP"
+    ]
+  },
+  {
+    "terms": [
+      "RISC",
+      "reduced instruction set computer"
+    ]
+  },
+  {
+    "terms": [
+      "AI",
+      "artificial intelligence"
+    ]
+  },
+  {
+    "terms": [
+      "MRI",
+      "magnetic resonance imaging"
+    ]
+  },
+  {
+    "terms": [
+      "NMR",
+      "nuclear magnetic resonance"
+    ]
+  },
+  {
+    "terms": [
+      "DNA",
+      "deoxyribonucleic acid"
+    ]
+  },
+  {
+    "terms": [
+      "mRNA",
+      "messenger RNA"
+    ]
+  },
+  {
+    "terms": [
+      "GPS",
+      "global positioning system"
+    ]
+  },
+  {
+    "terms": [
+      "quantum error correction",
+      "surface code",
+      "fault tolerant quantum computing"
+    ]
+  },
+  {
+    "terms": [
+      "sphere packing",
+      "E8 lattice",
+      "eight dimensional sphere packing"
+    ]
+  },
+  {
+    "terms": [
+      "prime numbers",
+      "primes"
+    ]
+  },
+  {
+    "terms": [
+      "Fourier analysis",
+      "harmonic analysis"
+    ]
+  },
+  {
+    "terms": [
+      "vaccination",
+      "vaccines"
+    ]
+  },
+  {
+    "terms": [
+      "GPU",
+      "graphics processing unit",
+      "CUDA",
+      "accelerated computing"
+    ]
+  },
+  {
+    "terms": [
+      "reusable rocket",
+      "reusable launch vehicle",
+      "rocket propulsion"
+    ]
+  }
+]

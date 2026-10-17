@@ -1,0 +1,125 @@
+{
+  "$id": "urn:principia-legacy:catalog:work:2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "kind": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "people": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "provenance": {
+      "items": {
+        "properties": {
+          "note": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "pattern": "^https://",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url",
+          "note"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "source_refs": {
+      "items": {
+        "properties": {
+          "content_hash": {
+            "pattern": "^[a-f0-9]{64}$",
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "revision": {
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "revision",
+          "content_hash"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "subjects": {
+      "items": {
+        "enum": [
+          "mathematics",
+          "physics",
+          "computer_science",
+          "economics",
+          "biology_medicine"
+        ]
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "summary": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "topic_ids": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "revision",
+    "content_hash",
+    "title",
+    "summary",
+    "kind",
+    "subjects",
+    "topic_ids",
+    "people",
+    "source_refs",
+    "provenance"
+  ],
+  "type": "object"
+}

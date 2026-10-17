@@ -1,0 +1,48 @@
+{
+  "current_release": "1.4.1-exploratory",
+  "reader_before_bytes": 102952960,
+  "reader_after_historical_browsing_bytes": 256135168,
+  "historical_routes": [
+    {
+      "release_id": "1.0.0-exploratory",
+      "milliseconds": 516.09,
+      "reader_rss_bytes": 115548160
+    },
+    {
+      "release_id": "1.1.0-exploratory",
+      "milliseconds": 691.0,
+      "reader_rss_bytes": 120897536
+    },
+    {
+      "release_id": "1.2.0-exploratory",
+      "milliseconds": 837.38,
+      "reader_rss_bytes": 146481152
+    },
+    {
+      "release_id": "1.3.0-exploratory",
+      "milliseconds": 891.42,
+      "reader_rss_bytes": 178737152
+    },
+    {
+      "release_id": "1.3.1-exploratory",
+      "milliseconds": 900.13,
+      "reader_rss_bytes": 207249408
+    },
+    {
+      "release_id": "1.4.0-exploratory",
+      "milliseconds": 1251.06,
+      "reader_rss_bytes": 238387200
+    },
+    {
+      "release_id": "1.4.1-exploratory",
+      "milliseconds": 1237.65,
+      "reader_rss_bytes": 263356416
+    },
+    {
+      "release_id": "evaluation-baseline",
+      "milliseconds": 403.39,
+      "reader_rss_bytes": 256135168
+    }
+  ],
+  "method": "Sequential info, topics, search, graph and brief requests for every listed frozen snapshot, including the evaluation baseline; read-only. RSS includes allocator high-water effects."
+}

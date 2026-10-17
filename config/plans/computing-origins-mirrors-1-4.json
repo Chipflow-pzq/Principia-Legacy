@@ -1,0 +1,61 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "C1002",
+      "need": "Turing’s 1936 machine model, universal computation and undecidability arguments. Preserve the exact problem stated; do not replace circle-freeness or the Entscheidungsproblem with a casually attributed modern halting theorem.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://www.wolframscience.com/prizes/tm23/images/Turing.pdf",
+      "url": "https://www.wolframscience.com/prizes/tm23/images/Turing.pdf"
+    },
+    {
+      "depth": 0,
+      "dossier": "C1401",
+      "need": "John von Neumann’s First Draft of a Report on the EDVAC: memory for instructions and data, control, arithmetic, and limitations. Distinguish the report's authorship from collective EDVAC design credit.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://web.mit.edu/sts.035/www/PDFs/edvac.pdf",
+      "url": "https://web.mit.edu/sts.035/www/PDFs/edvac.pdf"
+    }
+  ],
+  "frozen_checklists": {
+    "C1002": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ],
+    "C1401": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "Explain the specific intellectual move and its assumptions"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain why the argument or method works"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "State limits, counterexamples and attribution uncertainty"
+      }
+    ]
+  },
+  "id": "computing-origins-mirrors-1-4",
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "new_node_allowance": 24
+}

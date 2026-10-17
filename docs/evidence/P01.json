@@ -138,17 +138,6 @@
     },
     {
       "assumptions": [
-        "The code is nondegenerate.",
-        "Errors are independent and depolarizing."
-      ],
-      "id": "n-5c83e3bb4e735ba0",
-      "limits": [
-        "The bound does not apply to degenerate codes.",
-        "It is not tight for all parameters."
-      ]
-    },
-    {
-      "assumptions": [
         "DQLR operation is imperfect but modeled",
         "Leakage is a significant error source"
       ],
@@ -171,17 +160,6 @@
     },
     {
       "assumptions": [
-        "Repetition codes are representative of surface code behavior",
-        "Error bursts are rare and correlated"
-      ],
-      "id": "n-895419cd4de08fc5",
-      "limits": [
-        "Origin of bursts unknown",
-        "Error floor is still many orders of magnitude above required for large algorithms"
-      ]
-    },
-    {
-      "assumptions": [
         "Logical error channel is Pauli",
         "Uniform averaging over pure states is appropriate"
       ],
@@ -189,17 +167,6 @@
       "limits": [
         "Metric does not account for state preparation, measurement, or gate costs",
         "Comparison is subtle due to different noise processes"
-      ]
-    },
-    {
-      "assumptions": [
-        "Ancilla preparation is imperfect but verifiable.",
-        "Errors are independent and low-probability."
-      ],
-      "id": "n-98f55d12b6d33405",
-      "limits": [
-        "The method requires additional qubits and time.",
-        "It does not protect against errors during the verification process."
       ]
     },
     {
@@ -247,17 +214,6 @@
       "limits": [
         "Transient TLS can still cause fluctuations",
         "Stability demonstrated for memory, not full computation"
-      ]
-    },
-    {
-      "assumptions": [
-        "Error suppression continues exponentially",
-        "Component improvements are uniform"
-      ],
-      "id": "n-bbf3ee399b9fc634",
-      "limits": [
-        "Extrapolation may not hold due to error floors",
-        "Resource estimates do not include overhead for logical operations"
       ]
     },
     {
@@ -331,104 +287,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p28",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p38",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-bd00254115887cfb",
-        "revision": 1
-      },
-      "content_hash": "f8ce155041c97d0c53f9b76d812fb9b50db816929b96f8f78656ae59356a5e11",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-13d1d31b5a614f25",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-895419cd4de08fc5",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The error floor from correlated bursts limits the ultimate performance of surface codes.",
-      "type": "relation",
-      "warrant": "The paper identifies a logical error floor of 10^-10 in repetition codes caused by rare correlated bursts, which would also affect surface codes at large distances."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p81",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-4b897aef075f4a4f",
-        "revision": 1
-      },
-      "content_hash": "5abd2d16ddeb01bf2c16ffc0358a26431944b4b577c2b2a45adcfaf8011f5dfc",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-2a3c48e113ddb383",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-5c83e3bb4e735ba0",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The Hamming bound is an upper bound, while the Gilbert-Varshamov bound is a lower bound.",
-      "type": "relation",
-      "warrant": "The Hamming bound limits the maximum rate, while the Gilbert-Varshamov bound guarantees existence, together bounding the achievable rates."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p210",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -476,7 +334,7 @@
   "notice": "This evidence brief is not authorization and does not establish expert validation.",
   "permitted_action_scope": "read_only",
   "query": "Flagship evidence: P01",
-  "release_id": "1.2.0-exploratory",
+  "release_id": "1.4.1-exploratory",
   "relevant_contributions": [
     {
       "anchors": [
@@ -1309,71 +1167,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "The code is nondegenerate.",
-        "Errors are independent and depolarizing."
-      ],
-      "attribution": [
-        {
-          "evidence_note": "The thesis cites [53] for this bound.",
-          "name": "A. Ekert and C. Macchiavello",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "For nondegenerate codes correcting t errors, the quantum Hamming bound ∑_{j=0}^t 3^j C(n,j) 2^k ≤ 2^n holds.",
-      "conceptual_move": "Extended the classical Hamming bound to quantum codes, accounting for the three Pauli error types.",
-      "content_hash": "9b5bc2a9dea1503b476e328813e1e029c8070b4e7471a8e2576eabbeef14ed1b",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "The thesis cites the paper from 1996.",
-        "precision": "year",
-        "year": 1996
-      },
-      "dossiers": [
-        "P01"
-      ],
-      "explanation": "Gottesman presents the quantum Hamming bound, which limits the number of encoded qubits k for a nondegenerate code of length n correcting t errors. The bound arises from the linear independence of states E_a|ψ_i⟩ for all errors and codewords. The factor 3^j accounts for the three types of Pauli errors. This bound is a fundamental limit for nondegenerate codes, though degenerate codes may potentially exceed it.",
-      "human_review": "not_reviewed",
-      "id": "n-5c83e3bb4e735ba0",
-      "kind": "theorem",
-      "limits": [
-        "The bound does not apply to degenerate codes.",
-        "It is not tight for all parameters."
-      ],
-      "machine_screening": "passed",
-      "pillar": "physics",
-      "problem": "Bounding the efficiency of quantum codes was needed to guide code design.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Standard bound in quantum coding theory.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "physics"
-      ],
-      "title": "Quantum Hamming bound for nondegenerate codes",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p23",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -1514,81 +1307,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p26",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p28",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p29",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Repetition codes are representative of surface code behavior",
-        "Error bursts are rare and correlated"
-      ],
-      "attribution": [
-        {
-          "evidence_note": "The paper reports the experiments and analysis.",
-          "name": "Google Quantum AI and Collaborators",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "Repetition codes up to distance-29 reveal a logical error floor of 10^-10 per cycle caused by rare correlated error bursts occurring about once per hour, with unknown origin.",
-      "conceptual_move": "Using high-distance repetition codes to probe ultra-low error regimes and identify new error mechanisms.",
-      "content_hash": "846c9cce2dbaed082d138e6ae2859252ccb9d17ec1ade5417723791067a683b6",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "Preprint dated 24 Aug 2024",
-        "precision": "year",
-        "year": 2024
-      },
-      "dossiers": [
-        "P01"
-      ],
-      "explanation": "The paper runs distance-29 repetition codes for 2×10^10 cycles and finds error suppression factor Λ=8.4±0.1, breaking past the previous 10^-6 floor. However, at distances ≥15, logical error saturates at 10^-10 due to rare correlated error bursts. These bursts occur approximately once per hour, are spatially localized to ~30 qubits, and decay with time constant ~400 µs. Their origin is not yet understood, but they set a current error floor that precludes larger fault-tolerant circuits.",
-      "human_review": "not_reviewed",
-      "id": "n-895419cd4de08fc5",
-      "kind": "empirical_finding",
-      "limits": [
-        "Origin of bursts unknown",
-        "Error floor is still many orders of magnitude above required for large algorithms"
-      ],
-      "machine_screening": "passed",
-      "pillar": "physics",
-      "problem": "Previous repetition codes showed error floor around 10^-6 due to high-energy impact events; new devices needed reassessment.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Experimental finding with statistical basis; preprint.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "physics"
-      ],
-      "title": "Identification of rare correlated error bursts as error floor",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p19",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -1659,76 +1377,6 @@
         "physics"
       ],
       "title": "Beyond break-even logical memory with multi-qubit code",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p47",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p72",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Ancilla preparation is imperfect but verifiable.",
-        "Errors are independent and low-probability."
-      ],
-      "attribution": [
-        {
-          "evidence_note": "The thesis presents this as part of the fault-tolerant framework.",
-          "name": "Daniel Gottesman",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "Measuring stabilizer generators fault-tolerantly uses cat state ancillas and repeated measurements to prevent error propagation.",
-      "conceptual_move": "Used entangled ancilla states and transversal CNOTs to extract syndrome information without disturbing the code.",
-      "content_hash": "ae2f8c7120310df35dec9e8e4a2f0212477d10ac3212e786f68679d6d22d51a5",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "The thesis describes the method.",
-        "precision": "year",
-        "year": 1997
-      },
-      "dossiers": [
-        "P01"
-      ],
-      "explanation": "Gottesman details a fault-tolerant method for measuring stabilizer generators. It involves preparing a cat state (|0...0⟩+|1...1⟩) as an ancilla, performing CNOTs from data qubits to ancilla qubits, and measuring the ancilla. This reveals the parity of the data qubits without collapsing superpositions. To guard against errors in the ancilla, multiple cat states are prepared and a majority vote is taken. The cat state itself must be verified to avoid multiple bit-flip errors that could feed back into the data. This method is essential for error correction in fault-tolerant computation.",
-      "human_review": "not_reviewed",
-      "id": "n-98f55d12b6d33405",
-      "kind": "method",
-      "limits": [
-        "The method requires additional qubits and time.",
-        "It does not protect against errors during the verification process."
-      ],
-      "machine_screening": "passed",
-      "pillar": "physics",
-      "problem": "Direct syndrome measurement can introduce errors that corrupt the data, so a fault-tolerant method is needed.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Standard technique in fault-tolerant quantum computing.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "physics"
-      ],
-      "title": "Fault-tolerant syndrome measurement via cat states",
       "type": "contribution"
     },
     {
@@ -1997,81 +1645,6 @@
         "physics"
       ],
       "title": "Stability over hours-long timescales",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p38",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p39",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p206",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Error suppression continues exponentially",
-        "Component improvements are uniform"
-      ],
-      "attribution": [
-        {
-          "evidence_note": "The paper presents these projections.",
-          "name": "Google Quantum AI and Collaborators",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "Scaling to 10^-6 error rate requires 1457 qubits with current performance, but halving physical error rates would reduce this to 337 qubits, showing exponential leverage.",
-      "conceptual_move": "Extrapolating from measured Λ and simulating improved component fidelities.",
-      "content_hash": "ec7605d8a3367411e3e8609cd55ede0ec543e2cce54085139f61c5d97cfb3508",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "Preprint dated 24 Aug 2024",
-        "precision": "year",
-        "year": 2024
-      },
-      "dossiers": [
-        "P01"
-      ],
-      "explanation": "The paper extrapolates that a distance-27 code (1457 qubits) would achieve 10^-6 logical error rate with current performance. However, simulations with twice-better component errors predict Λ≈4.5, requiring only distance-13 (337 qubits). This demonstrates that improving physical error rates by a factor of two reduces resource requirements by over fourfold, highlighting the exponential leverage of error correction.",
-      "human_review": "not_reviewed",
-      "id": "n-bbf3ee399b9fc634",
-      "kind": "empirical_finding",
-      "limits": [
-        "Extrapolation may not hold due to error floors",
-        "Resource estimates do not include overhead for logical operations"
-      ],
-      "machine_screening": "passed",
-      "pillar": "physics",
-      "problem": "Estimating the resource cost of achieving error rates needed for large-scale algorithms.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Simulation-based projection; preprint.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "physics"
-      ],
-      "title": "Resource overhead for scaling to algorithmically-relevant error rates",
       "type": "contribution"
     },
     {
@@ -2587,13 +2160,6 @@
     },
     {
       "human_review": "not_reviewed",
-      "id": "n-5c83e3bb4e735ba0",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Standard bound in quantum coding theory."
-    },
-    {
-      "human_review": "not_reviewed",
       "id": "n-5ce74b0acf0bb1aa",
       "machine_screening": "passed",
       "revision": 1,
@@ -2608,24 +2174,10 @@
     },
     {
       "human_review": "not_reviewed",
-      "id": "n-895419cd4de08fc5",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Experimental finding with statistical basis; preprint."
-    },
-    {
-      "human_review": "not_reviewed",
       "id": "n-95d9b2f181590b47",
       "machine_screening": "passed",
       "revision": 1,
       "scientific_standing": "Experimental result with statistical uncertainty; preprint."
-    },
-    {
-      "human_review": "not_reviewed",
-      "id": "n-98f55d12b6d33405",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Standard technique in fault-tolerant quantum computing."
     },
     {
       "human_review": "not_reviewed",
@@ -2654,13 +2206,6 @@
       "machine_screening": "passed",
       "revision": 1,
       "scientific_standing": "Experimental result with statistical uncertainty; preprint."
-    },
-    {
-      "human_review": "not_reviewed",
-      "id": "n-bbf3ee399b9fc634",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Simulation-based projection; preprint."
     },
     {
       "human_review": "not_reviewed",
@@ -2751,6 +2296,179 @@
         "revision": 1
       },
       "time": "2026-10-12T11:27:09+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "3f38251524f5ea556f89d789d7723de27f7353ed80a5c43ba60c2bb806247282",
+      "evidence_checked": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-0bfa3bb7d3bdefa2caa0",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a7feb645941685e98341b283e1c27bd444513ade2f07c047fc3ce68b04f94f93",
+        "job_id": "cb79fd3b208bb593a7c2ddbf2ca056fd8176418dfdd7167f6b90bc4db113e6a3",
+        "output_hash": "d6422b3cb2830ac4315180cb9826df6393f9171309566718c267fc0a31c9604f",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "53cc8e67-c59c-4083-a4e1-e08b93538e1b",
+        "request_id": "01a1479064c038d879b5c4ae228e92be",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:a7feb645941685e98341",
+        "time": "2026-10-17T01:53:30+00:00",
+        "trace_id": "53cc8e67-c59c-4083-a4e1-e08b93538e1b"
+      },
+      "rationale": "p24 states byproduct operators are not applied as gates but tracked in control software as discussed in Sect. IX (software-implemented logical operators), matching the applied_in claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "b33be7db337d9880a1c99b7685507cafa9f209b847263667ac1412518878c77a",
+        "id": "r-d139656bb77f2a6e",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:30+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "f709d41728e793e302c51c2dec43e798d38701537c1a00dfdac5f787d518fc74",
+      "evidence_checked": [
+        {
+          "anchor_id": "p130",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-0ed8afa7665cede749ca",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "01929efcd212a96b67ded13d29f18aac7be49b5dabe4b351f0f2e0180cebea4d",
+        "job_id": "adf5f0f4db015406243b9bbf8cd1f9628c45d15709ff9269f6687b1761dc1119",
+        "output_hash": "8239fccc539e49727ff18b34dc6145eef6bf009a00acab14cfbb6266c0d2820f",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a31df5dc-21c2-40e1-8e24-d32a94ac63ce",
+        "request_id": "01a147914efdaf49fc320fe7489a509a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:01929efcd212a96b67de",
+        "time": "2026-10-17T01:54:30+00:00",
+        "trace_id": "a31df5dc-21c2-40e1-8e24-d32a94ac63ce"
+      },
+      "rationale": "The passage reports sensor-based prior optimization yields 10% average LER improvement for MWPM, evidence bearing on the below-threshold performance claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "a04453030e89355c644e93d22e1e4fdbecdec4c08edb31b6076273408465844e",
+        "id": "r-f8a7297ee35632ca",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:30+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "faa6f03d49383d2c4b3574f3186901df946abf7f1cd793d88f19af9004733d37",
+      "evidence_checked": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-1040403db78d82c0759b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "347a962cf32874f99676553330c5d916b26efaeaf27f3787b9e811047618398b",
+        "job_id": "63d30440fe64dfdecdc228c4217c57e2409646aa54f0df29217e5c6b503e679d",
+        "output_hash": "1f5e35d07360528ecfbc975fcf9e7596609d9d99e48dd67e1a244d985339bd83",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d249e8f7-fbd2-4d2a-9c6c-c7af1d464e34",
+        "request_id": "01a1478f6dc18aa98b1946a242c7b543",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:347a962cf32874f99676",
+        "time": "2026-10-17T01:52:24+00:00",
+        "trace_id": "d249e8f7-fbd2-4d2a-9c6c-c7af1d464e34"
+      },
+      "rationale": "p23 reports activating DQLR 'substantially boosts distance-5 performance, resulting in a 35% increase in Λ' and concludes 'addressing leakage is crucial to operating surface codes with transmon qubits,' directly supporting the claim that DQLR is crucial for below-threshold performance.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "7bbf1b82be190d8f9aa573b628835b85adc0389f096708f3918ca175ea27fcaa",
+        "id": "r-a26f98885811c4c0",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:24+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "17b3b31d1215faa82919f0817c8c1f433eae1ed7dc3749b38de25b0fa79da7b7",
+      "evidence_checked": [
+        {
+          "anchor_id": "p205",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-11b381abc68505831ed1",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "c0f275ae6303e8ef6b6f8fc7488f385bdd36a35024fcbf2ece37ab88fb0f52b1",
+        "job_id": "cbae6f14f06962bdee3bd5226f8eb3268275dee71e5df3838941b6620d00845c",
+        "output_hash": "ba1b2dc2333777a0bf9549cd6fbc84375437d85fa636d0fbc557b7b2bddd4d87",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d50dc675-db25-45c8-9908-a4e26d7683e3",
+        "request_id": "01a1478dbca7fde6efba7e7900e5b8a1",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:c0f275ae6303e8ef6b6f",
+        "time": "2026-10-17T01:50:36+00:00",
+        "trace_id": "d50dc675-db25-45c8-9908-a4e26d7683e3"
+      },
+      "rationale": "p205 reports non-uniform-error simulations with Λ≈2 and Λ3/5≳2 holding at larger distances, bearing on the below-threshold suppression claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "2fca01f490c5dc16e5758f83b2d2e8204040b4048851113b7b8ec5cb97dfc486",
+        "id": "r-592416bcae44fd00",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:36+00:00",
       "type": "review"
     },
     {
@@ -2957,6 +2675,53 @@
       "type": "review"
     },
     {
+      "content_hash": "95de7184348637dc7e0d0bd3cb19db651269a3583633c3353b74380ea4a5fab4",
+      "evidence_checked": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-24ff0cd00194f791cc80",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5ae4905221647419a80c73ccc457fe3f76ca0a055488c9ad5950a365e597f8a6",
+        "job_id": "4095562cda2315cf6f3429fde2ab5d365da3399e0f532cc5ac4fc379e8fe642d",
+        "output_hash": "c83841085661a33949ceb9c3856a38a7e1e3f6c1710424e1244bb1d84f4eb326",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "97b3a8e0-192d-45dd-acee-721e706c2a12",
+        "request_id": "01a1478c18d2339ff7ab3dc12a39415d",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:5ae4905221647419a80c",
+        "time": "2026-10-17T01:48:45+00:00",
+        "trace_id": "97b3a8e0-192d-45dd-acee-721e706c2a12"
+      },
+      "rationale": "p15 notes d=3 can only reach d=4 without a larger hole; p21 describes creating a five-stabilizer hole and increasing distance to d=8, preserving the small-hole qubit as a special case.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "7dd8c34850ac8220075e598ebd6256306b4ceda5334ed7a9a606c5f93c2592bd",
+        "id": "r-0a86457e713bc8de",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:45+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "69e051ae7ce2991f639c4be16ee36df1073fefcf2cc0df9f21ea037880225f1c",
       "evidence_checked": [
         {
@@ -2998,58 +2763,6 @@
       "target": {
         "content_hash": "bcf2b7054f623a4daea19aeabd67e959c7d3baa0e480257128bac32e9bd7b11f",
         "id": "n-e5fa367f3fd09f14",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:27:09+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "b725b464bcdc3515f3105366a19fd04b1a3acd4681eb1c19c98e593c0427484a",
-      "evidence_checked": [
-        {
-          "anchor_id": "p38",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p39",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p206",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-260b874dcf56801f7e57",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "0774dbf52c11e0c975ebe6af1e5f0c7a287b923e2f266389e7f3a3d91ec8cabd",
-        "job_id": "ae43bcd841104b8993be169e6ba44e35bfab0f3902ea24935d6effe01c280fc4",
-        "output_hash": "8488f4a6af03e40df89dff566831d76908f895d95ddc6b48e7ab473d57e24d3a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6",
-        "request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:P01:c67a27f4bf1d",
-        "time": "2026-10-12T11:27:09+00:00",
-        "trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6"
-      },
-      "rationale": "The paper and supplementary information state that scaling to 10^-6 error rate requires 1457 qubits with current performance, but halving physical error rates reduces this to 337 qubits, showing exponential leverage. This is directly supported.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "ec7605d8a3367411e3e8609cd55ede0ec543e2cce54085139f61c5d97cfb3508",
-        "id": "n-bbf3ee399b9fc634",
         "revision": 1
       },
       "time": "2026-10-12T11:27:09+00:00",
@@ -3100,6 +2813,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:27:09+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "d52edb6406c278f01f7cd37c1f33483f76c558226dd695d8649390755ca6f7c9",
+      "evidence_checked": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-2c6edb79287f90faca09",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5cddb78c55cfc816e153cb08ab9d901ec84e90049b2880303609530a51fac5bd",
+        "job_id": "72f2ee664214e9117c760374e6203d67c1e9769b32ed65911c04e00fd0565680",
+        "output_hash": "96c75e622d39e3736bc07ce98a3b3104a5a4a3419627b025cdfec185a1b2f74d",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7132999b-ff0f-41ca-a089-8a5c54aa65e7",
+        "request_id": "01a1478d2bb33c1bb6dca686e4b89f0a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:5cddb78c55cfc816e153",
+        "time": "2026-10-17T01:49:56+00:00",
+        "trace_id": "7132999b-ff0f-41ca-a089-8a5c54aa65e7"
+      },
+      "rationale": "p5 describes topological quantum order (ground-state degeneracy depending on surface topology) and p9 describes a dynamically created Z2×Z2 symmetry; both are presented as hidden-order phenomena arising from the Hamiltonian's structure, matching the stated limited correspondence.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "0cca3ee4671c8308ad7d8e9abbe465374c51f0475d4f216582050de1cb4626c0",
+        "id": "r-3d93012617fe0559",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:56+00:00",
       "type": "review"
     },
     {
@@ -3238,48 +2998,6 @@
       "target": {
         "content_hash": "e4c05937d7b77dc0d08d3a131043f3d8fcceeeb26c2e6718dd59730d6a8e8033",
         "id": "r-d24c3a2fbd0c0a1b",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:27:09+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "864b0c2b5fe2cef9d1e93a0abd191db725b68926a86f59408e7326fe4a1d36a2",
-      "evidence_checked": [
-        {
-          "anchor_id": "p206",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-4fca413bedd8e6da162f",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "0774dbf52c11e0c975ebe6af1e5f0c7a287b923e2f266389e7f3a3d91ec8cabd",
-        "job_id": "ae43bcd841104b8993be169e6ba44e35bfab0f3902ea24935d6effe01c280fc4",
-        "output_hash": "8488f4a6af03e40df89dff566831d76908f895d95ddc6b48e7ab473d57e24d3a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6",
-        "request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:P01:c67a27f4bf1d",
-        "time": "2026-10-12T11:27:09+00:00",
-        "trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6"
-      },
-      "rationale": "The paper's projections indicate that with improved components, the below-threshold performance can be scaled to meet algorithm requirements, directly supporting the relation.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "426fcdf75dda3739fed6a19a44bc4040ae6e615bb95e88a0a5c3b073e02abd05",
-        "id": "r-f4438c2ef803ab16",
         "revision": 1
       },
       "time": "2026-10-12T11:27:09+00:00",
@@ -3464,6 +3182,53 @@
       "type": "review"
     },
     {
+      "content_hash": "4230661122a6f0b891407a3bcebb9d5fc055e2ab5d1c8f2afa8bb9af7ee6208c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p23",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-57815ef75d61b110bc01",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f0c423137730069c6b736fe98fd18dc406716c80303f0797f506f7af5290a848",
+        "job_id": "957267f40562e633ebb4e7d11f98039f67ee6526017c444ff57d544d5ea9a7e1",
+        "output_hash": "418968d28f9b0559304ef3147f0c1338c95c850675dec8a12352983f815dcb37",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ea7364d3-b86d-47ad-84d4-832d0df9fdea",
+        "request_id": "01a14790661d6a589c8e234f72534061",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f0c423137730069c6b73",
+        "time": "2026-10-17T01:53:27+00:00",
+        "trace_id": "ea7364d3-b86d-47ad-84d4-832d0df9fdea"
+      },
+      "rationale": "p15 establishes defect-based logical qubits (holes created by turning off stabilizers, logical operators defined); p23 describes moving a Z-cut hole by turning off the Z stabilizer below it, measuring data qubit 6, and redefining logical operators, taking 1+d cycles. The premise supplies the structure used for the move.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "918025b8d96f24bb4ba6cf2031e3bf634d69d94d09c82488fee98f102afe9195",
+        "id": "r-cf43d1a5b4d6f493",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:27+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "4ebeab154a535f98928d142b2fd3bd8d82919b3a0514505e503d16643cb73242",
       "evidence_checked": [
         {
@@ -3506,50 +3271,45 @@
       "type": "review"
     },
     {
-      "content_hash": "c085caac0d8bf58284b734069c48607c29132665c545952a38b69dfe81e095be",
+      "content_hash": "b78ac3902dc1ed18d877d7335c52c3febafc9529a6b1592712f5f0d109f47991",
       "evidence_checked": [
         {
-          "anchor_id": "p47",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p72",
-          "source_id": "s-7ac64084e46bbc12",
+          "anchor_id": "p22",
+          "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
         }
       ],
-      "id": "review-68f9ba75ac36fff5e4c8",
+      "id": "review-61cff6f78bde568f9a66",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "10737093c47b2a739c1d3a0e1866d0f0d4245eacbe01fc620ff86ed5ed259cb6",
-        "job_id": "b8f732410989a641101ebb3feca794718cbe4131351caa02322bfb8ca84a1f45",
-        "output_hash": "76025665ffaefbeb71d71127e4492a6bc642347c7957c2ffc77bf1b9df9f913c",
-        "prompt_hash": "c9f1b93dcfb8011f6c3e09fb90a12a36e448459baab9b11e355e996b216f5a2c",
+        "input_hash": "6605947480b4e21e9f388c1562c708e2a52cdb3bd786a7befb319037feea70f5",
+        "job_id": "0d291ef9a820ae75437f28604afe9fa30ce9a7a5f1e3b79e344d1edd069e8a19",
+        "output_hash": "2e35139287e4300b1a602d8ba7517c97ba3151cb9e453e27045b3eeb1e679129",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17",
-        "request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "8d1fa95e-d94e-4c3c-80d8-3b5199c05d15",
+        "request_id": "01a1479147a4572c59953915a8599b42",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:P01:75a9f0aa6a68",
-        "time": "2026-10-12T15:22:22+00:00",
-        "trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17"
+        "task": "atlas-audit:6605947480b4e21e9f38",
+        "time": "2026-10-17T01:54:25+00:00",
+        "trace_id": "8d1fa95e-d94e-4c3c-80d8-3b5199c05d15"
       },
-      "rationale": "The thesis details fault-tolerant syndrome measurement using cat-state ancillas, transversal CNOTs, repeated measurements, and verification (p47, p72).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p22 describes the error budget attributing contributions to 1/Λ from CZ gates, data idle, measurement/reset, leakage, and correlated errors, and notes the model overpredicts Λ by 20%, bearing on sources of logical error in below-threshold operation.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "ae2f8c7120310df35dec9e8e4a2f0212477d10ac3212e786f68679d6d22d51a5",
-        "id": "n-98f55d12b6d33405",
+        "content_hash": "55aebaaf51f17b321190109053b5574fc8272cd7ebc625502c7ceaf3e9ad41e9",
+        "id": "r-f4767a5471a0e130",
         "revision": 1
       },
-      "time": "2026-10-12T15:22:22+00:00",
+      "time": "2026-10-17T01:54:25+00:00",
       "type": "review"
     },
     {
@@ -3679,50 +3439,92 @@
       "type": "review"
     },
     {
-      "content_hash": "c18d4369c67e73f8468a66433e9f17ddc4ca4d48c82c4f4266b33217a8e1f05f",
+      "content_hash": "8049010a32e38ab6c222188e94b26ec9949dd9c30515af4f2c3f5c56b5f1eb32",
       "evidence_checked": [
         {
-          "anchor_id": "p65",
-          "source_id": "s-7ac64084e46bbc12",
+          "anchor_id": "p4",
+          "source_id": "s-e3e0a083a70cd8d0",
           "source_revision": 1
         },
         {
-          "anchor_id": "p47",
-          "source_id": "s-7ac64084e46bbc12",
+          "anchor_id": "p5",
+          "source_id": "s-e3e0a083a70cd8d0",
           "source_revision": 1
         }
       ],
-      "id": "review-801c9fdb2450ee15703a",
+      "id": "review-7dc0880a4c4f32957946",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "10737093c47b2a739c1d3a0e1866d0f0d4245eacbe01fc620ff86ed5ed259cb6",
-        "job_id": "b8f732410989a641101ebb3feca794718cbe4131351caa02322bfb8ca84a1f45",
-        "output_hash": "76025665ffaefbeb71d71127e4492a6bc642347c7957c2ffc77bf1b9df9f913c",
-        "prompt_hash": "c9f1b93dcfb8011f6c3e09fb90a12a36e448459baab9b11e355e996b216f5a2c",
+        "input_hash": "7a3db09e8b037bb800229e7687343e27812805d7e8fdd0730a0d2bd8e106456c",
+        "job_id": "df784ac7c8142b6bacb110dfd94d0adad34e0f6d549418d8fa5844f05c7c51b4",
+        "output_hash": "2ceacdb63a386a8ed2d67b450b35013decfb9b8f2fa7e8d33f1c085d23929d06",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17",
-        "request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "4b089032-41be-4b1a-bbb3-fd9d0b5c092d",
+        "request_id": "01a1478d09cb2087639116929323b224",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:P01:75a9f0aa6a68",
-        "time": "2026-10-12T15:22:22+00:00",
-        "trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17"
+        "task": "atlas-audit:7a3db09e8b037bb80022",
+        "time": "2026-10-17T01:49:50+00:00",
+        "trace_id": "4b089032-41be-4b1a-bbb3-fd9d0b5c092d"
       },
-      "rationale": "Classical error correction on syndrome bits reduces repetitions, improving the cat state method (p65, p47).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "The text explicitly says the two-qubit stabilizer example 'demonstrates a simple form of error detection' and that 'More complex circuits can detect and precisely identify errors in much larger assemblies of qubits; the surface code is such an example,' with the surface code using four-qubit stabilizer products.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "03440af36025e7234a8488adbba7a6e00893722a7cf9eef1e998f5f27a7d3735",
-        "id": "r-0b4f0874c73afdee",
+        "content_hash": "5da39c40d1a4433c166c760b827a9fc3e9def7297741abaefed77cd1aeb35549",
+        "id": "r-39df3b7c7a31f0d4",
         "revision": 1
       },
-      "time": "2026-10-12T15:22:22+00:00",
+      "time": "2026-10-17T01:49:50+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "42181b864e3daf6fe5ab82f28a3aea3bcd39fed50c16e303bb0b90b2b3f4a494",
+      "evidence_checked": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-7e837dcecb59af51d79a",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d1358a35841a4d60b7423fc1cafefe0e445372e8c576c28d316b5000c787a14f",
+        "job_id": "20402221e4210e371e8d54312af0b70103b920d727c32c7d1f891df517406858",
+        "output_hash": "fd8f9f2e0cbc177b71eda60fafd55afc2cb797febadc5bf895cc118dfb1e8d58",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "1a8c3cd6-d20f-4904-911b-75354eb49b11",
+        "request_id": "01a1478f16429ad54bfbb2b384ca3177",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:d1358a35841a4d60b742",
+        "time": "2026-10-17T01:52:04+00:00",
+        "trace_id": "1a8c3cd6-d20f-4904-911b-75354eb49b11"
+      },
+      "rationale": "p34 reports the real-time decoder achieves Λ=2.0±0.1 and maintains below-threshold performance under real-time decoding timing constraints.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "9b4f45e4b528bd03a2bf16430bab6609900afb586f6e5a2ed99906e2b07b5a1e",
+        "id": "r-969824e22baa6e02",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:04+00:00",
       "type": "review"
     },
     {
@@ -3825,50 +3627,87 @@
       "type": "review"
     },
     {
-      "content_hash": "10f2c87b0b82b296b557a4e16e57326f66b8229474d06b519495ec8dbf3a1419",
+      "content_hash": "4dd86bd3ae50cd0b818639ef39acce0bf1812c9f88d923c179f43591dadd4aad",
       "evidence_checked": [
         {
-          "anchor_id": "p28",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p38",
+          "anchor_id": "p276",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
         }
       ],
-      "id": "review-9185501b80f62f3277a9",
+      "id": "review-8df0bf8b82d8ae5d2219",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "0774dbf52c11e0c975ebe6af1e5f0c7a287b923e2f266389e7f3a3d91ec8cabd",
-        "job_id": "ae43bcd841104b8993be169e6ba44e35bfab0f3902ea24935d6effe01c280fc4",
-        "output_hash": "8488f4a6af03e40df89dff566831d76908f895d95ddc6b48e7ab473d57e24d3a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "a016d9fc54b56012483f62ac8a2237c827687726b56db00fe1126c285bb30148",
+        "job_id": "2e9446d72c6e4fd42ef4538a5beb27b26ac665bbf2b8c24c9a5e478ac5e6fd99",
+        "output_hash": "392c970792576b46b15ea3d7aa1fd9c6147e4320c01d91b09a5afe89b3336bd5",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6",
-        "request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "3350d5ef-aaad-46b2-9b84-9e6817cb9d0e",
+        "request_id": "01a1478ea823192220b0db4bfe5b92fc",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:P01:c67a27f4bf1d",
-        "time": "2026-10-12T11:27:09+00:00",
-        "trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6"
+        "task": "atlas-audit:a016d9fc54b56012483f",
+        "time": "2026-10-17T01:51:33+00:00",
+        "trace_id": "3350d5ef-aaad-46b2-9b84-9e6817cb9d0e"
       },
-      "rationale": "The paper identifies a logical error floor of 10^-10 in repetition codes caused by correlated bursts, and states this would also affect surface codes at large distances, directly supporting the relation.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p276 describes fitting logical error per cycle and using excess residuals to estimate uncertainty including drift, which bears on the reported Λ uncertainty.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "f8ce155041c97d0c53f9b76d812fb9b50db816929b96f8f78656ae59356a5e11",
-        "id": "r-13d1d31b5a614f25",
+        "content_hash": "fd7ab885d50c9bd82d1ca1030ea87c30a5abc61b419ed68d6e139a90eb4322e4",
+        "id": "r-82b119c47b453531",
         "revision": 1
       },
-      "time": "2026-10-12T11:27:09+00:00",
+      "time": "2026-10-17T01:51:33+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "4d96fe72efc78b87506f26b8b573aa281ad8a29fae2e42b56744effcc8d2dfd9",
+      "evidence_checked": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-92f1dd602b5cc52f1099",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "4f675aba897b64f1a024f62763f48bf1ce129f6e80714c0f72f8923434eb6358",
+        "job_id": "9f51e7bd255671186e6f006ceebf779f1490d77016fa1d5a228f6d5fd9038230",
+        "output_hash": "e884c6d448c7bffbf1246cb40d1b5aaf44a62bd0c9b7ce7c7f68bed854ee6705",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c191b9ba-ba37-42e2-88c1-eea40dd7d6d4",
+        "request_id": "01a1479134f3df4976d3b3541482db7d",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:4f675aba897b64f1a024",
+        "time": "2026-10-17T01:54:23+00:00",
+        "trace_id": "c191b9ba-ba37-42e2-88c1-eea40dd7d6d4"
+      },
+      "rationale": "p24 reports average Λ=2.18±0.07 over 15 hours and states processors can remain stable over hours-long timescales, directly bearing on the stability conclusion.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "7955a4b940d9453c7ee6deb11677af19b85bd4361b4a76c89773b90c225fa8a6",
+        "id": "r-f329a3388e5c7603",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:23+00:00",
       "type": "review"
     },
     {
@@ -3911,6 +3750,58 @@
         "revision": 1
       },
       "time": "2026-10-12T11:27:09+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "e12da0420e1c1b5ece4f72dcaadd705d7dd2cc77a53bd94a07070376cff9a3b7",
+      "evidence_checked": [
+        {
+          "anchor_id": "p225",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p237",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p240",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-9a102ce49ae190bd0f5b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "304a5f04e1165bf68b564444542596487469e1eabe5b30c5541255bb7f0bd0eb",
+        "job_id": "7b26f3a3eafc7c3a933d2303cfe3ca7fda5ee021e9126f608b5f335d469d9a11",
+        "output_hash": "962086a918f567c3a43837d786d7f7352a23826ad45fff696f21fcd9fd6aee69",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "cf43dcf8-3fe7-4754-b712-1e1b7e619661",
+        "request_id": "01a147a57f8c01325c0cfcca7e0cdade",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:304a5f04e1165bf68b56",
+        "time": "2026-10-17T02:16:33+00:00",
+        "trace_id": "cf43dcf8-3fe7-4754-b712-1e1b7e619661"
+      },
+      "rationale": "p237 defines Γ as effective depolarization rate with 1/Γ an effective lifetime of a uniformly sampled pure state, directly comparable among qubits with different error channels; p240 gives Γ_logical=(4/3)(γX+γY+γZ), matching the explanation.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "c349edc33c89cfeeaa9d823f1cf1628db0e5fa605f458c8a2a0cb4c73dd6e6c0",
+        "id": "n-1ffac8bdf1c5113e",
+        "revision": 1
+      },
+      "time": "2026-10-17T02:16:33+00:00",
       "type": "review"
     },
     {
@@ -3961,6 +3852,48 @@
       "type": "review"
     },
     {
+      "content_hash": "f5021268c8066ddc00fb39c1d8416abf0a91e992ceed5532ee23f934d49a12c4",
+      "evidence_checked": [
+        {
+          "anchor_id": "p210",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-9f02d62eab408c6c2e76",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "9e159f0b5709dd442957561762b8687c9fc04c94455368fb48e8903fb537772d",
+        "job_id": "7f2318630fad8fdfbae7d47d4065579896a54ec09a1d9621fc51479c01499583",
+        "output_hash": "bb1af2a4d36df2529b8cd13e99158c27f9b9d450ef7d619ec8b99869f3e6aac5",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ba5de416-9af0-4dc2-adfa-cd4fc250f5da",
+        "request_id": "01a1478d64b316985209773e97b6055c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:9e159f0b5709dd442957",
+        "time": "2026-10-17T01:50:10+00:00",
+        "trace_id": "ba5de416-9af0-4dc2-adfa-cd4fc250f5da"
+      },
+      "rationale": "p210 states that for Λ3/5≤1.3 suppression saturates and turns around, while Λ3/5≥1.5 shows below-threshold suppression, restricting the below-threshold claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "37bb0d0eaa183c2766a8e2bb28ebbb8e472f9d05ac0410db6b86fbdfb13e4357",
+        "id": "r-482daadb7d0cc884",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:10+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "9b9a1bc5e46f8c43187e488a6888eabc656e82c29c568d5b4aa2ef10e94816ac",
       "evidence_checked": [
         {
@@ -3997,58 +3930,6 @@
       "target": {
         "content_hash": "55aebaaf51f17b321190109053b5574fc8272cd7ebc625502c7ceaf3e9ad41e9",
         "id": "r-f4767a5471a0e130",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:27:09+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "54f164b65286c4bec81a20a73e004ba46c29587388ab666ca8105940ecf70051",
-      "evidence_checked": [
-        {
-          "anchor_id": "p26",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p28",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p29",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-a73a278c0fd8b444920d",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "0774dbf52c11e0c975ebe6af1e5f0c7a287b923e2f266389e7f3a3d91ec8cabd",
-        "job_id": "ae43bcd841104b8993be169e6ba44e35bfab0f3902ea24935d6effe01c280fc4",
-        "output_hash": "8488f4a6af03e40df89dff566831d76908f895d95ddc6b48e7ab473d57e24d3a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6",
-        "request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:P01:c67a27f4bf1d",
-        "time": "2026-10-12T11:27:09+00:00",
-        "trace_id": "e6716b31-c00c-4968-8012-b92a48ff6dc6"
-      },
-      "rationale": "The paper reports repetition codes up to distance-29 revealing an apparent logical error floor of 10^-10 per cycle, caused by rare correlated error bursts occurring approximately once per hour, with unknown origin. This is explicitly stated in the text.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "846c9cce2dbaed082d138e6ae2859252ccb9d17ec1ade5417723791067a683b6",
-        "id": "n-895419cd4de08fc5",
         "revision": 1
       },
       "time": "2026-10-12T11:27:09+00:00",
@@ -4144,50 +4025,45 @@
       "type": "review"
     },
     {
-      "content_hash": "0d67c118e2454d3d4cbdf65baaca5118655997a946986d4ccf808b7575edf084",
+      "content_hash": "0cd6c23d4be7b79cd159feff05f48b894cdbf9f085f9f5d976c7178d5d08b22a",
       "evidence_checked": [
         {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p81",
-          "source_id": "s-7ac64084e46bbc12",
+          "anchor_id": "p151",
+          "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
         }
       ],
-      "id": "review-af693535801e2df659f4",
+      "id": "review-adddd8588f942ec953a8",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "10737093c47b2a739c1d3a0e1866d0f0d4245eacbe01fc620ff86ed5ed259cb6",
-        "job_id": "b8f732410989a641101ebb3feca794718cbe4131351caa02322bfb8ca84a1f45",
-        "output_hash": "76025665ffaefbeb71d71127e4492a6bc642347c7957c2ffc77bf1b9df9f913c",
-        "prompt_hash": "c9f1b93dcfb8011f6c3e09fb90a12a36e448459baab9b11e355e996b216f5a2c",
+        "input_hash": "88e9f82abba4fe8afde9e17539e39a073d1dc1cfa8caddc6ffa68331666e7750",
+        "job_id": "6e3baa51c693e97c1e94cd8c15a76ad096fcc6f22fe421887a40ab9580b34c7f",
+        "output_hash": "18dab59de7d183d63febd5470e80f852052f8801b0fd66496b03ca770be2ab58",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17",
-        "request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "3ad4a016-38a6-49d1-a495-f310a8fd14fa",
+        "request_id": "01a1479078e551241b8329f9c54efef6",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:P01:75a9f0aa6a68",
-        "time": "2026-10-12T15:22:22+00:00",
-        "trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17"
+        "task": "atlas-audit:88e9f82abba4fe8afde9",
+        "time": "2026-10-17T01:53:32+00:00",
+        "trace_id": "3ad4a016-38a6-49d1-a495-f310a8fd14fa"
       },
-      "rationale": "The Hamming bound is an upper bound while the Gilbert-Varshamov bound is a lower bound, together bounding achievable rates (p80, p81).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p151 states gated recurrence was added because data duration is much longer (250 vs 25 cycles) and 'made the training more stable for long-duration experiments,' supporting the decoding claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "5abd2d16ddeb01bf2c16ffc0358a26431944b4b577c2b2a45adcfaf8011f5dfc",
-        "id": "r-2a3c48e113ddb383",
+        "content_hash": "e4c05937d7b77dc0d08d3a131043f3d8fcceeeb26c2e6718dd59730d6a8e8033",
+        "id": "r-d24c3a2fbd0c0a1b",
         "revision": 1
       },
-      "time": "2026-10-12T15:22:22+00:00",
+      "time": "2026-10-17T01:53:32+00:00",
       "type": "review"
     },
     {
@@ -4327,6 +4203,48 @@
       "type": "review"
     },
     {
+      "content_hash": "33c69b1e779f347b2df670271fbfe8b9dd12a1259b021edbb292db7b445e2e3d",
+      "evidence_checked": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-c64c499b725b5a653711",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "e12f51c66efc86558c6345b1c805a1ecca1bf8ba8672cbea6804c4b8a46c7cb7",
+        "job_id": "7274e63f153ec70c102677aa676f96abef01d983bb81d4e779dad2a0fe6d9a39",
+        "output_hash": "fd90a2a8696c15944785d876ed570550d683a9da1066c4c4aa781ee834b9faee",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "977c6e2b-adf2-4ba2-914b-a1d90a43081f",
+        "request_id": "01a147a598a6104810b3b1fc4c8cf46a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:e12f51c66efc86558c63",
+        "time": "2026-10-17T02:16:39+00:00",
+        "trace_id": "977c6e2b-adf2-4ba2-914b-a1d90a43081f"
+      },
+      "rationale": "Passage reports 16 measurements over 15 hours, TLS frequency forecasting, recalibration every four runs, average Λ=2.18±0.07.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "699d3a9794f2075decb90beed5d2428eba5ab413dced7fe8fe622a7b66b76449",
+        "id": "n-b41aa691b922fd9a",
+        "revision": 1
+      },
+      "time": "2026-10-17T02:16:39+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "1c3e0212f3550ee838e7a7fd700b1df19031a07c698f3a06df7e3a5fbd0897d1",
       "evidence_checked": [
         {
@@ -4368,53 +4286,6 @@
       "target": {
         "content_hash": "5da39c40d1a4433c166c760b827a9fc3e9def7297741abaefed77cd1aeb35549",
         "id": "r-39df3b7c7a31f0d4",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:28:40+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "863a04f02a1678e86204b15f499188272ce7217a73d369998fcc8bd5a8c7ac1f",
-      "evidence_checked": [
-        {
-          "anchor_id": "p21",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p23",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-cea8878ee9d333915846",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "c7d4e6d89556839a9ad49117e45150a99a5ee49e3c39f494a794d8ca9bf75f32",
-        "job_id": "d424e693f270ccb0ae2e557fc7edd775a51eace5bc7cf959dc7ce5857610e1af",
-        "output_hash": "9bee129a89dc944bfcccadef26da8d074443738226bbf9c80fba4fa32122f5ca",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "e15756c1-440f-4b80-a170-c2463924af23",
-        "request_id": "01a12fdf405e3a60da9e96d836e1f223",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:P01:3b670f83238d",
-        "time": "2026-10-12T11:28:40+00:00",
-        "trace_id": "e15756c1-440f-4b80-a170-c2463924af23"
-      },
-      "rationale": "The passage states that the distance must be preserved in all logical qubit operations, and operations that involve turning stabilizers on or off must be spaced by at least d cycles, directly supporting the premise relation.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "d09ab22c1b8e7960e8d5013b7a7b43115ddb69f9d6ceec4d8e7879af989a06bc",
-        "id": "r-4d1ecab0c9708192",
         "revision": 1
       },
       "time": "2026-10-12T11:28:40+00:00",
@@ -4505,6 +4376,53 @@
       "type": "review"
     },
     {
+      "content_hash": "3e0fa886c6b3fbc506a56a27a7bfd12b344aeb4d58abda12df313f117d3320a9",
+      "evidence_checked": [
+        {
+          "anchor_id": "p225",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p248",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-dac846877d3833690b2d",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "bfe8222cb97f118d9b2071e07ef5236373e403ab5a0066b6b88a5657bfa161f7",
+        "job_id": "9baad47b6d8b1b2e76e4176f13bdf79dd075534275d5113f6fc2e86b48c10eed",
+        "output_hash": "904c9da41f1109b6681dc84929ab2ab3411a8516a00cc4adb5b13c17d57e37f0",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c9b5499e-b4f2-489f-8b36-2da60f0e7cd0",
+        "request_id": "01a1478ff52db2a5014a50dfdec68f3b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:bfe8222cb97f118d9b20",
+        "time": "2026-10-17T01:53:01+00:00",
+        "trace_id": "c9b5499e-b4f2-489f-8b36-2da60f0e7cd0"
+      },
+      "rationale": "p225 defines average channel fidelity to identity; p248 reports G=2.4±0.3 demonstrating beyond break-even quantum memory, consistent with the effective-lifetime comparison.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "d5418cd2c1dac3d921694a216483251a8619ce43abc1be58aed7c6d7df40aa49",
+        "id": "r-bede6df31ff3f0d8",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:01+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "7a12d81e8a03fd9c37b07e7323e1fdfdc98e9874cd7e66a6f275fd8201c40ae9",
       "evidence_checked": [
         {
@@ -4552,6 +4470,53 @@
       "type": "review"
     },
     {
+      "content_hash": "8260a49ce5a2b99d0026d858a14f767db3f62978fcc362930b7dcbb6878eba75",
+      "evidence_checked": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-dfeeac571eb31b9a0901",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b1e0c978e1b272ee0cfae7e9a898d6d19d0dc0a1195ef2469ddfc8655cb0e01c",
+        "job_id": "599b844ddfe6d9e525b92789ebaa43e68b367ac8020986f88b5f4a434a884a25",
+        "output_hash": "671263c5d741ed306d36ade99e5c9e7fc5ff53ec9e3465675c7210ecdc28452c",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "81476b36-68f1-4aab-be37-b76b4e1833fb",
+        "request_id": "01a1478c1e512d6f1f94afc00a717909",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:b1e0c978e1b272ee0cfa",
+        "time": "2026-10-17T01:48:50+00:00",
+        "trace_id": "81476b36-68f1-4aab-be37-b76b4e1833fb"
+      },
+      "rationale": "p15 explicitly presents array-crossing chains as one way to create logical operators, then describes a 'much more powerful approach' of holes/defects with logical operators as chains to boundary or loops around the hole, preserving the earlier construction as a special case.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "79ce9ec028e637fdba9b27a99fdc847810080a478b354ea93994981efa5a4d98",
+        "id": "r-0d6b13e11741c7ff",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:50+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "a73fd8a8fff2cf219404ef7d665e87ffaf817f252faac84c42ee88d3af51b226",
       "evidence_checked": [
         {
@@ -4591,6 +4556,48 @@
         "revision": 1
       },
       "time": "2026-10-12T11:27:09+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "fcb6dc6efb30535d839937a2a074e794846951287ab5cc349fd3c7cec5b801ba",
+      "evidence_checked": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-e6fca00465d28ee597f8",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3d64441ca2a7023df28498a9462ffdb2c98986a19d0f4fb8c2c040d57c89b9e3",
+        "job_id": "f0db6dd75c14ee1836e438f848af62defa3225bd5c91f7d5622230a1f7a54f37",
+        "output_hash": "3b4f9a29dbe3f6f96e070043323eabdd916dab0f603ac51feabc97d6881d4ee4",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a65b687a-d9fb-4daa-9c1a-2ca40929b289",
+        "request_id": "01a1478c3582a963ef5decae79d3e049",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:3d64441ca2a7023df284",
+        "time": "2026-10-17T01:48:56+00:00",
+        "trace_id": "a65b687a-d9fb-4daa-9c1a-2ca40929b289"
+      },
+      "rationale": "p21 reports logical error curves for distances 3, 5, 7 crossing near 20% detection probability and higher-distance codes showing faster error reduction, consistent with threshold behavior in situ.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "5accd6b66a78998130036eb5fd1e104a7132f4f11b1bea59753cc3ab90a4b853",
+        "id": "r-116467cc25c1452e",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:56+00:00",
       "type": "review"
     },
     {
@@ -4898,6 +4905,48 @@
       "type": "review"
     },
     {
+      "content_hash": "b6af8cbfb0dd7611c566b30797cb64f12bdd6174b4abf42dbc5d56ee5c828405",
+      "evidence_checked": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-f851567d385fe5e72818",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "03cfc0995ab915afb1aadf1b5482b2297964e7cdfce3040c432ba0b5e45b742a",
+        "job_id": "5e4578ff80820f80f6ee6a98f2abb13bc2c7c9ee358ca9f4df702813ef646c59",
+        "output_hash": "2dae34a1a052d40a90c052b92e1cb07c942661bb96ebc80e9d7a447cbb3ec0c0",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ad8e6b0c-51df-4279-92fb-c79eaf111a40",
+        "request_id": "01a1478f4aed1e984efec2caf22681c0",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:03cfc0995ab915afb1aa",
+        "time": "2026-10-17T01:52:18+00:00",
+        "trace_id": "ad8e6b0c-51df-4279-92fb-c79eaf111a40"
+      },
+      "rationale": "p19 states below-threshold performance guarantees physical lifetimes can be surpassed with a sufficiently large logical qubit, and reports the distance-7 logical lifetime exceeding physical lifetimes, bearing on the beyond-break-even conclusion.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "9a534cc078daddb56a4d208ec16754121cfa1a070e6ce269c9fe46174cf8dc01",
+        "id": "r-9f5b6672c57baf78",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:18+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "3cd86af2cf8692fd4af2a1883e7c1807614cae3991c02f24a2b7553116cde042",
       "evidence_checked": [
         {
@@ -5032,48 +5081,6 @@
       },
       "time": "2026-10-12T11:27:09+00:00",
       "type": "review"
-    },
-    {
-      "content_hash": "d2199ebd69224fd893be019c9050dda6ba0d344cc1e98e7d1a1311fcb4cac35c",
-      "evidence_checked": [
-        {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-fdd3be864f60425a0253",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "10737093c47b2a739c1d3a0e1866d0f0d4245eacbe01fc620ff86ed5ed259cb6",
-        "job_id": "b8f732410989a641101ebb3feca794718cbe4131351caa02322bfb8ca84a1f45",
-        "output_hash": "76025665ffaefbeb71d71127e4492a6bc642347c7957c2ffc77bf1b9df9f913c",
-        "prompt_hash": "c9f1b93dcfb8011f6c3e09fb90a12a36e448459baab9b11e355e996b216f5a2c",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17",
-        "request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:P01:75a9f0aa6a68",
-        "time": "2026-10-12T15:22:22+00:00",
-        "trace_id": "1cdec96e-6b3b-43d5-8b9e-4601f043fd17"
-      },
-      "rationale": "The thesis presents the quantum Hamming bound for nondegenerate codes, citing Ekert and Macchiavello [53] (p80).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "9b5bc2a9dea1503b476e328813e1e029c8070b4e7471a8e2576eabbeef14ed1b",
-        "id": "n-5c83e3bb4e735ba0",
-        "revision": 1
-      },
-      "time": "2026-10-12T15:22:22+00:00",
-      "type": "review"
     }
   ],
   "selection": {
@@ -5081,7 +5088,7 @@
     "primary_limit": 12,
     "relation_limit": 40
   },
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
   "source_anchors": [
     {
       "anchor_id": "p130",
@@ -5189,11 +5196,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p80",
-      "source_id": "s-7ac64084e46bbc12",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p23",
       "source_id": "s-40f3c9e6f557d78a",
       "source_revision": 1
@@ -5214,21 +5216,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p26",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p28",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p29",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p19",
       "source_id": "s-40f3c9e6f557d78a",
       "source_revision": 1
@@ -5241,16 +5228,6 @@
     {
       "anchor_id": "p248",
       "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p47",
-      "source_id": "s-7ac64084e46bbc12",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p72",
-      "source_id": "s-7ac64084e46bbc12",
       "source_revision": 1
     },
     {
@@ -5275,21 +5252,6 @@
     },
     {
       "anchor_id": "p24",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p38",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p39",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p206",
       "source_id": "s-40f3c9e6f557d78a",
       "source_revision": 1
     },
@@ -5359,26 +5321,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p28",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p38",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p80",
-      "source_id": "s-7ac64084e46bbc12",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p81",
-      "source_id": "s-7ac64084e46bbc12",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p210",
       "source_id": "s-40f3c9e6f557d78a",
       "source_revision": 1
@@ -5391,16 +5333,6 @@
     {
       "anchor_id": "p21",
       "source_id": "s-e3e0a083a70cd8d0",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p65",
-      "source_id": "s-7ac64084e46bbc12",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p47",
-      "source_id": "s-7ac64084e46bbc12",
       "source_revision": 1
     },
     {
@@ -5436,16 +5368,6 @@
     {
       "anchor_id": "p9",
       "source_id": "s-68c14de3125abf7e",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p21",
-      "source_id": "s-e3e0a083a70cd8d0",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p23",
-      "source_id": "s-e3e0a083a70cd8d0",
       "source_revision": 1
     },
     {
@@ -5510,11 +5432,6 @@
     },
     {
       "anchor_id": "p24",
-      "source_id": "s-40f3c9e6f557d78a",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p206",
       "source_id": "s-40f3c9e6f557d78a",
       "source_revision": 1
     },
@@ -6579,104 +6496,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p28",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p38",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-bd00254115887cfb",
-        "revision": 1
-      },
-      "content_hash": "f8ce155041c97d0c53f9b76d812fb9b50db816929b96f8f78656ae59356a5e11",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-13d1d31b5a614f25",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-895419cd4de08fc5",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The error floor from correlated bursts limits the ultimate performance of surface codes.",
-      "type": "relation",
-      "warrant": "The paper identifies a logical error floor of 10^-10 in repetition codes caused by rare correlated bursts, which would also affect surface codes at large distances."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p81",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-4b897aef075f4a4f",
-        "revision": 1
-      },
-      "content_hash": "5abd2d16ddeb01bf2c16ffc0358a26431944b4b577c2b2a45adcfaf8011f5dfc",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-2a3c48e113ddb383",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-5c83e3bb4e735ba0",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The Hamming bound is an upper bound, while the Gilbert-Varshamov bound is a lower bound.",
-      "type": "relation",
-      "warrant": "The Hamming bound limits the maximum rate, while the Gilbert-Varshamov bound guarantees existence, together bounding the achievable rates."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p210",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -6766,55 +6585,6 @@
       "scope": "From small defects to larger holes with increased distance",
       "type": "relation",
       "warrant": "Defect-based logical qubits (n10) with small holes are generalized to larger logical qubits (n14) by turning off more stabilizers to create larger holes, increasing the distance. The passage describes creating a five-stabilizer hole to increase the distance from d=3 to d=8."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p65",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p47",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-98f55d12b6d33405",
-        "revision": 1
-      },
-      "content_hash": "03440af36025e7234a8488adbba7a6e00893722a7cf9eef1e998f5f27a7d3735",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-0b4f0874c73afdee",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-09d6783c7f6c7f76",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Classical error correction on syndrome bits improves the cat state method.",
-      "type": "relation",
-      "warrant": "The method reduces the number of syndrome measurements needed, which is an improvement over the repeated measurements in the cat state method."
     },
     {
       "anchors": [
@@ -7006,55 +6776,6 @@
       "scope": "Topological order and materialized symmetry both involve hidden order.",
       "type": "relation",
       "warrant": "The paper discusses topological quantum order and materialized symmetry as related phenomena, both arising from the Hamiltonian's structure."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p21",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p23",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-a3b3386fc782226f",
-        "revision": 1
-      },
-      "content_hash": "d09ab22c1b8e7960e8d5013b7a7b43115ddb69f9d6ceec4d8e7879af989a06bc",
-      "curation": {
-        "input_hash": "ab96f867fbec32d02948546f3ab94f2b08c0e4dbe6d93ac1b7a5622d534106cb",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "3b670f83238da83641bce6a2aabd59e4f99fb645404308232685d56cd4d3c65e",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde147a4fe446cf82ccbe5353d5",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fdf405e3a60da9e96d836e1f223",
-        "time": "2026-10-12T11:27:28+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-4d1ecab0c9708192",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-2c1895febd0555f2",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Larger qubits require longer moves",
-      "type": "relation",
-      "warrant": "Larger logical qubits (n14) with increased distance require longer moves (n15) to preserve the distance. The passage states that the distance must be preserved in all logical qubit operations, and operations that involve turning stabilizers on or off must be spaced by at least d cycles."
     },
     {
       "anchors": [
@@ -7514,50 +7235,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p206",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-bd00254115887cfb",
-        "revision": 1
-      },
-      "content_hash": "426fcdf75dda3739fed6a19a44bc4040ae6e615bb95e88a0a5c3b073e02abd05",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-f4438c2ef803ab16",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-bbf3ee399b9fc634",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Resource projections show the path to algorithmically-relevant error rates.",
-      "type": "relation",
-      "warrant": "The paper's projections indicate that with improved components, the below-threshold performance can be scaled to meet algorithm requirements."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p22",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -7839,22 +7516,6 @@
     },
     {
       "contribution": {
-        "content_hash": "9b5bc2a9dea1503b476e328813e1e029c8070b4e7471a8e2576eabbeef14ed1b",
-        "id": "n-5c83e3bb4e735ba0",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "P01",
-          "origin": "record",
-          "pillar": "physics",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Below-threshold surface-code quantum memories"
-        }
-      ]
-    },
-    {
-      "contribution": {
         "content_hash": "8173f53643f1e998faf53a1d9cc2d9bf40ece649aab33cce87301cd0efb65f7e",
         "id": "n-5ce74b0acf0bb1aa",
         "revision": 1
@@ -7887,40 +7548,8 @@
     },
     {
       "contribution": {
-        "content_hash": "846c9cce2dbaed082d138e6ae2859252ccb9d17ec1ade5417723791067a683b6",
-        "id": "n-895419cd4de08fc5",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "P01",
-          "origin": "record",
-          "pillar": "physics",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Below-threshold surface-code quantum memories"
-        }
-      ]
-    },
-    {
-      "contribution": {
         "content_hash": "bf7224ea87d7dedcf979db51e044661d382fdf440d819b7ae0f675ff031bcfa1",
         "id": "n-95d9b2f181590b47",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "P01",
-          "origin": "record",
-          "pillar": "physics",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Below-threshold surface-code quantum memories"
-        }
-      ]
-    },
-    {
-      "contribution": {
-        "content_hash": "ae2f8c7120310df35dec9e8e4a2f0212477d10ac3212e786f68679d6d22d51a5",
-        "id": "n-98f55d12b6d33405",
         "revision": 1
       },
       "topics": [
@@ -7985,22 +7614,6 @@
       "contribution": {
         "content_hash": "699d3a9794f2075decb90beed5d2428eba5ab413dced7fe8fe622a7b66b76449",
         "id": "n-b41aa691b922fd9a",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "P01",
-          "origin": "record",
-          "pillar": "physics",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Below-threshold surface-code quantum memories"
-        }
-      ]
-    },
-    {
-      "contribution": {
-        "content_hash": "ec7605d8a3367411e3e8609cd55ede0ec543e2cce54085139f61c5d97cfb3508",
-        "id": "n-bbf3ee399b9fc634",
         "revision": 1
       },
       "topics": [
@@ -8130,5 +7743,802 @@
     "The source does not discuss the practical implementation of anyonic systems in specific physical materials.",
     "The source does not fully explain the origin of materialized symmetry.",
     "The source does not provide a complete proof of universality for the S5 model, only an abstract."
+  ],
+  "work_insight_memberships": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p130",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "3aa6ab4aa86f020619ba7de5662dcb687ff885ac3550c2b9615f164e367902af",
+        "id": "n-0574780fff20f0e7",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "bca8a93c218b16e588c62ca0d106e10fac1b1980955f36f3be7b43b541673785",
+        "id": "n-085f08453d78f758",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p65",
+          "source_id": "s-7ac64084e46bbc12",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "1ea769f5e6f5251e542d3681110d4c2e6be9d6ebdb1cf49cfaf2b9a81a41263b",
+        "id": "n-09d6783c7f6c7f76",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "795a3d28d8c5089b369035430924887f385b212e936a2651e98801f0439dbc49",
+        "id": "w-source-7ac64084e46bbc12",
+        "revision": 1
+      },
+      "work_id": "w-source-7ac64084e46bbc12"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p212",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p223",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "69f746d60d7e3db1b8ebf4f6a78e5ee3d4634ffd792e98d762d1c05e13aa1828",
+        "id": "n-0df535cb4bde50aa",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p225",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p237",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p240",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "c349edc33c89cfeeaa9d823f1cf1628db0e5fa605f458c8a2a0cb4c73dd6e6c0",
+        "id": "n-1ffac8bdf1c5113e",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "a76c5f4d67b1ffd0b79cd2deea138f5d2bd650b2d787c1d9bdbd4e70a2d5f282",
+        "id": "n-2074bbd94aba81dc",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "385d93244f95554dfd3c00451dc54a4b8da59634d446fb056af6e7ddcef9668b",
+        "id": "n-2a63273199cf32fe",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "620ac822af42226974080a7f9bca729f55e74eaf98877ca637f9211fdaa320a8",
+        "id": "w-source-68c14de3125abf7e",
+        "revision": 1
+      },
+      "work_id": "w-source-68c14de3125abf7e"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2a9696352f2528cf6f274b0ab3d759cc5a5d7672fff48e11810c3d91e48ad741",
+        "id": "n-2c1895febd0555f2",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "e6fd624495705c8af13a87be557dbf25b184775a0ebaa90907b0970562772d6a",
+        "id": "n-2ff1052e7ec67922",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p151",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "bd8dcc0abc60912979755e7dfbde8c78993c231f18e3d2a7ea1042eea03c2528",
+        "id": "n-38b21124bd5cf176",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p81",
+          "source_id": "s-7ac64084e46bbc12",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "e24fe2ef5ae375155c75735a8fad1d36e0d462fa009ce37fbe933b02f9826642",
+        "id": "n-4b897aef075f4a4f",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "795a3d28d8c5089b369035430924887f385b212e936a2651e98801f0439dbc49",
+        "id": "w-source-7ac64084e46bbc12",
+        "revision": 1
+      },
+      "work_id": "w-source-7ac64084e46bbc12"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p34",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "12be820940533198c23f3753d4d4fd882e21b65889a698ce161a9be2613f943e",
+        "id": "n-56e78604daea7653",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p207",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "8173f53643f1e998faf53a1d9cc2d9bf40ece649aab33cce87301cd0efb65f7e",
+        "id": "n-5ce74b0acf0bb1aa",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p204",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p205",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "4f01e7e803ae1ce262301f13ff21d0281c20524f89d8b2afac7f5b143b9efece",
+        "id": "n-6e2492d44276f24f",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p244",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p248",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "bf7224ea87d7dedcf979db51e044661d382fdf440d819b7ae0f675ff031bcfa1",
+        "id": "n-95d9b2f181590b47",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "fb8dcf2b04179ebc548337ebe25908bd5dd0bd337e0b3138c6e99e827baeee17",
+        "id": "n-a3b3386fc782226f",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-68c14de3125abf7e",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "08050206c543a61ef8df3d4794be191b1e5fa54aeead0bc6995d177c9538f766",
+        "id": "n-a7be7cb47b7285ca",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "620ac822af42226974080a7f9bca729f55e74eaf98877ca637f9211fdaa320a8",
+        "id": "w-source-68c14de3125abf7e",
+        "revision": 1
+      },
+      "work_id": "w-source-68c14de3125abf7e"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "cc2f41ecfb4bee6d63fa6c4d7d37db197b3588a66b0b83020f13e0cb97885c0a",
+        "id": "n-b13a57a414cd2b0c",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "699d3a9794f2075decb90beed5d2428eba5ab413dced7fe8fe622a7b66b76449",
+        "id": "n-b41aa691b922fd9a",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "5cad500d5f7310b64149c86a437fcd52b575676bf10d22adb5211dd09e261341",
+        "id": "n-bd00254115887cfb",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p24",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "58dabb8224fd3ebd2d026e73f785b5e8a3f3f97d964e331978790ec86851976a",
+        "id": "n-c081c4c6ce8b6cc0",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-e3e0a083a70cd8d0",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "5ef7c13ff82f21dce5fcc1ef5991ead34580c4b88a4fffcf79ccdffb49d92d80",
+        "id": "n-c08b0f162ba57914",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+        "id": "w-source-e3e0a083a70cd8d0",
+        "revision": 1
+      },
+      "work_id": "w-source-e3e0a083a70cd8d0"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p209",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p210",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "05e3bac3a3b60a35046478bfec981851a8875376553d9c4666feb1b8f7db0739",
+        "id": "n-da57943f91fc274d",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p259",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p276",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "bcf2b7054f623a4daea19aeabd67e959c7d3baa0e480257128bac32e9bd7b11f",
+        "id": "n-e5fa367f3fd09f14",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-40f3c9e6f557d78a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "19d4b97d191097f3008c4122a3b4a7456c00d922895e016e47e7b69ece226522",
+        "id": "n-ff3c6fb5b594e15e",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+        "id": "w-source-40f3c9e6f557d78a",
+        "revision": 1
+      },
+      "work_id": "w-source-40f3c9e6f557d78a"
+    }
+  ],
+  "works": [
+    {
+      "aliases": [],
+      "content_hash": "63626562efa32fc5529e2783e84923e22cb87761d0c2df6122bb3a0d9d1a686a",
+      "id": "w-source-40f3c9e6f557d78a",
+      "insight_count": 23,
+      "kind": "publication",
+      "people": [],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Quantum error correction below the surface code threshold",
+          "url": "https://arxiv.org/html/2408.13687v1"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "cefc98bb2d0a499f2ebbc32d0e6e676c436af2745afccfbdd74ac929f11c1ba3",
+          "id": "s-40f3c9e6f557d78a",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Quantum error correction below the surface code threshold",
+      "topic_ids": [
+        "P01"
+      ],
+      "year": 2024
+    },
+    {
+      "aliases": [],
+      "content_hash": "b3672604af18193235fdf04e936007d7da124664df4d7a69fa71b966243f8851",
+      "id": "w-source-e3e0a083a70cd8d0",
+      "insight_count": 17,
+      "kind": "publication",
+      "people": [
+        "person-490600c9ff608852"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Surface codes: Towards practical large-scale quantum computation",
+          "url": "https://arxiv.org/pdf/1208.0928"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "bb2df489ab0172b8a539f98162c686a3dff061cb27e2bab8443520711bedf5a9",
+          "id": "s-e3e0a083a70cd8d0",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Surface codes: Towards practical large-scale quantum computation",
+      "topic_ids": [
+        "P01"
+      ],
+      "year": 2012
+    },
+    {
+      "aliases": [],
+      "content_hash": "795a3d28d8c5089b369035430924887f385b212e936a2651e98801f0439dbc49",
+      "id": "w-source-7ac64084e46bbc12",
+      "insight_count": 16,
+      "kind": "publication",
+      "people": [],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Stabilizer Codes and Quantum Error Correction (PhD thesis)",
+          "url": "https://arxiv.org/pdf/quant-ph/9705052"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "3184b79c8708c731b9fa9eccdd57a34f8f8f67ae1cfbd840ab8fb11e06dffa30",
+          "id": "s-7ac64084e46bbc12",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Stabilizer Codes and Quantum Error Correction (PhD thesis)",
+      "topic_ids": [
+        "P01"
+      ],
+      "year": 1997
+    },
+    {
+      "aliases": [],
+      "content_hash": "620ac822af42226974080a7f9bca729f55e74eaf98877ca637f9211fdaa320a8",
+      "id": "w-source-68c14de3125abf7e",
+      "insight_count": 8,
+      "kind": "publication",
+      "people": [],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Fault-tolerant quantum computation by anyons",
+          "url": "https://arxiv.org/pdf/quant-ph/9707021"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "d7bdad1612cda19277eb79f23255b66e72115491dcb52382a2f52538c24757db",
+          "id": "s-68c14de3125abf7e",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Fault-tolerant quantum computation by anyons",
+      "topic_ids": [
+        "P01"
+      ],
+      "year": 1997
+    }
   ]
 }

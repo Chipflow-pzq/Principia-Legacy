@@ -1,0 +1,1367 @@
+{
+  "checked_at": "2026-10-16T12:09:01.892440+00:00",
+  "edition": "1.3.0.dev3 local acceptance preview",
+  "branch": "codex/local-exploration-1.3",
+  "base_commit": "db4665ac06e7d15862b1918af051074b516592e0",
+  "deployment_performed": false,
+  "remote_git_write_performed": false,
+  "changes": [
+    "One shared input card: Browse the atlas and Trace a discovery; private research input appears only in the latter mode.",
+    "Global top-right Settings, exact model discovery, local model persistence and explicit opt-in key persistence with clear-key control.",
+    "Independent transport, event and answer bounds fix repeated SSE metadata exhausting a short-answer budget.",
+    "Preserved unfinished query text, background-run return control, modal Escape/focus recovery, explicit partial-save updates and Undo removal.",
+    "Imported maps remain reachable from the header; opening the same file again works; progress stays associated with its own map.",
+    "Source packets reserve earlier work and atlas foundations; local matching includes authors, uses whole words and rejects weak broad-query overlaps.",
+    "Scope-specific model flags and a common-source admission rule withhold unsupported scientific bridges; editorial reading prerequisites remain distinct.",
+    "Bundled math, stable graph filters, distinct connection styles, scientist navigation, search continuity and offline browsing verified."
+  ],
+  "corpus": {
+    "passed": true,
+    "release_id": "1.2.0-exploratory",
+    "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+    "counts": {
+      "contribution": 2667,
+      "relation": 2233,
+      "source": 237,
+      "review": 5167
+    },
+    "exact_machine_reviews_for_all_visible_records": true,
+    "dossiers": 154,
+    "flagship_endpoint_checks": 5,
+    "tour_checks": 3,
+    "source_closure": true,
+    "neighborhood_cap_and_joint_premises": true,
+    "frozen_evaluation_files_unchanged": true,
+    "external_jsonschema": "10648 immutable versions validated against exported JSON Schemas",
+    "qualified_human_audit": "not performed"
+  },
+  "canonical_or_frozen_fixture_files_changed": [],
+  "software_checks": {
+    "python": {
+      "passed": 102,
+      "failed": 0,
+      "seconds": 8.2
+    },
+    "full_browser": {
+      "passed": 107,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "seconds": 225.43
+    },
+    "final_exploration_regression": {
+      "passed": 62,
+      "skipped": 0,
+      "failed": 0,
+      "flaky": 0,
+      "seconds": 76.97
+    },
+    "final_hosted_prefix": {
+      "passed": 2,
+      "skipped": 0,
+      "failed": 0,
+      "flaky": 0,
+      "seconds": 9.51
+    },
+    "final_performance_test": {
+      "passed": 1,
+      "skipped": 0,
+      "failed": 0,
+      "flaky": 0,
+      "seconds": 4.84
+    },
+    "scope_note": "Full reader regression preceded the final whole-word retrieval and small import-context fixes. The final exploration suite, hosted-prefix and performance checks ran against the delivered assets. Counts overlap and must not be added as independent cases.",
+    "typescript": "passed",
+    "local_build": "passed",
+    "hosted_build": "passed",
+    "math_rendering": {
+      "formulas": 5404,
+      "failures": 0,
+      "examples": []
+    },
+    "offline": {
+      "passed": true,
+      "release_id": "1.2.0-exploratory",
+      "external_socket_attempts": [],
+      "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
+      "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
+      "checked": [
+        "all bundled assets",
+        "search",
+        "dossiers",
+        "contribution inspector",
+        "shared topic links and scientist profiles",
+        "relationship inspector",
+        "neighborhood",
+        "brief",
+        "snapshot changes"
+      ]
+    },
+    "secrets": {
+      "files_checked": 483,
+      "issues": [],
+      "scope": "Tracked and nonignored files plus final hosted assets and verification report; exact credential comparison in memory, no values logged."
+    },
+    "browser_performance": {
+      "first_view_ms": 1110,
+      "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+      "js_heap_bytes": 15916579,
+      "browser_process_rss_bytes": 680275968,
+      "reader_process_rss_bytes": 437170176,
+      "combined_rss_bytes": 1117446144,
+      "memory_method": "ps RSS summed over the test Chromium process tree plus the local reader; shared pages may be counted more than once",
+      "requests": 6,
+      "external_requests": [],
+      "page_errors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    "api_performance": {
+      "base_url": "http://127.0.0.1:8767",
+      "method": "One warmup and seven sequential timed GETs per endpoint, including local HTTP transfer and JSON decoding.",
+      "search": {
+        "path": "/api/search?q=attention",
+        "median_ms": 59.513,
+        "max_ms": 62.025,
+        "samples_ms": [
+          60.222,
+          62.025,
+          59.301,
+          60.132,
+          59.513,
+          58.359,
+          57.838
+        ],
+        "release_id": "1.2.0-exploratory"
+      },
+      "neighborhood": {
+        "path": "/api/neighborhood?dossier=C01&limit=40",
+        "median_ms": 106.034,
+        "max_ms": 111.582,
+        "samples_ms": [
+          106.263,
+          104.448,
+          105.498,
+          106.034,
+          111.582,
+          103.071,
+          107.33
+        ],
+        "release_id": "1.2.0-exploratory"
+      }
+    },
+    "visual_inspection": {
+      "desktop": "passed",
+      "narrow_390px": "passed",
+      "global_settings": "passed",
+      "performed_by": "agent visual inspection, not a human scientific audit"
+    }
+  },
+  "stream_size_regression": {
+    "former_transport_limit_bytes": 2000000,
+    "transport_limit_bytes": 32000000,
+    "event_character_limit": 262144,
+    "answer_character_limit": 100000,
+    "reproduction": "The same valid fixture stream exceeds 2 MB and fails with the old transport cap, then succeeds with the new default. Oversized events and actual answers still fail.",
+    "diagnostic_live_observation": {
+      "seconds": 80.991,
+      "draft_characters": 13479,
+      "draft_wire_bytes": 1509988,
+      "receipts": [
+        {
+          "stage": "research plan",
+          "model": "deepseek-ai/DeepSeek-V4-Flash",
+          "started_at": "2026-10-16T11:06:20.102Z",
+          "outcome": "completed",
+          "input_hash": "6d3667025662e5507638701f57087a6d84bbdbcc5528077f2bb8f55044c107f9",
+          "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+          "input_tokens": 2136,
+          "output_tokens": 91,
+          "elapsed_ms": 2916,
+          "first_content_ms": 746,
+          "output_characters": 456
+        },
+        {
+          "stage": "draft graph",
+          "model": "deepseek-ai/DeepSeek-V4-Flash",
+          "started_at": "2026-10-16T11:06:28.862Z",
+          "outcome": "completed",
+          "input_hash": "236dc38f9da63996cc87ccc84b6a6802175eb8739cb12f2c210f9503dd55dfe9",
+          "prompt_hash": "20bfd56dbf353d437b2de1615360fd07468d147b007fe60be33f3abbc9a0847a",
+          "input_tokens": 7071,
+          "output_tokens": 3209,
+          "elapsed_ms": 59562,
+          "first_content_ms": 834,
+          "output_characters": 13479
+        },
+        {
+          "stage": "evidence challenge",
+          "model": "deepseek-ai/DeepSeek-V4-Flash",
+          "started_at": "2026-10-16T11:07:28.426Z",
+          "outcome": "completed",
+          "input_hash": "2a3b98c635bedaed7f86b7fcda04be7a199d73e00fce58c20ed2f4cd1fba97d9",
+          "prompt_hash": "42b4b55df7b7f7f2fc9614f0b41f1290a8fc7724cd3f7730b7cc59058b6f189e",
+          "input_tokens": 5040,
+          "output_tokens": 574,
+          "elapsed_ms": 4303,
+          "first_content_ms": 707,
+          "output_characters": 2421
+        }
+      ]
+    },
+    "qualification": "The diagnostic live run did not itself reproduce the size error. The controlled regression reproduces the faulty cap."
+  },
+  "live_qa": {
+    "batches": [
+      {
+        "phase": "shared input and corrected stream budget, before stricter scope checking",
+        "checked_at": "2026-10-16T11:19:31.899Z",
+        "attempts": [
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 25.246,
+            "seconds": 85.438,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:19:42.077Z",
+                "outcome": "completed",
+                "input_hash": "6d3667025662e5507638701f57087a6d84bbdbcc5528077f2bb8f55044c107f9",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 2136,
+                "output_tokens": 97,
+                "elapsed_ms": 3493,
+                "first_content_ms": 867,
+                "output_characters": 485,
+                "response_bytes": 46860,
+                "stream_events": 100
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:19:49.960Z",
+                "outcome": "completed",
+                "input_hash": "183e62fd8e2e5911d010998f6480042232a39a26331d43223a192a16515cbb7e",
+                "prompt_hash": "20bfd56dbf353d437b2de1615360fd07468d147b007fe60be33f3abbc9a0847a",
+                "input_tokens": 7217,
+                "output_tokens": 3135,
+                "elapsed_ms": 64063,
+                "first_content_ms": 743,
+                "output_characters": 13254,
+                "response_bytes": 1475378,
+                "stream_events": 3138
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:20:54.026Z",
+                "outcome": "completed",
+                "input_hash": "c46062a6791f5854b443a0dc297d8214e043b1fccef638bb15db615c4e9086b8",
+                "prompt_hash": "42b4b55df7b7f7f2fc9614f0b41f1290a8fc7724cd3f7730b7cc59058b6f189e",
+                "input_tokens": 5385,
+                "output_tokens": 525,
+                "elapsed_ms": 4441,
+                "first_content_ms": 778,
+                "output_characters": 2277,
+                "response_bytes": 247384,
+                "stream_events": 528
+              }
+            ],
+            "errors": [],
+            "insights": 7,
+            "connections": 1,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          },
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 12.132,
+            "seconds": 51.255,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:21:03.572Z",
+                "outcome": "completed",
+                "input_hash": "f71f25fd0c84b683cef169d463797a7985ff38c0499932fd62c31946ed46be1e",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 2136,
+                "output_tokens": 87,
+                "elapsed_ms": 1769,
+                "first_content_ms": 827,
+                "output_characters": 448,
+                "response_bytes": 41787,
+                "stream_events": 90
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:21:08.162Z",
+                "outcome": "completed",
+                "input_hash": "46b3c28c07c600f9b57eac5c2d9bf83e0429072efbf307f1ec2d3ba807ca8393",
+                "prompt_hash": "20bfd56dbf353d437b2de1615360fd07468d147b007fe60be33f3abbc9a0847a",
+                "input_tokens": 7048,
+                "output_tokens": 4014,
+                "elapsed_ms": 26146,
+                "first_content_ms": 769,
+                "output_characters": 16990,
+                "response_bytes": 1889680,
+                "stream_events": 4017
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:21:34.310Z",
+                "outcome": "completed",
+                "input_hash": "c1d17f13a248e849a8b5716450e68c4cd3fc6bbe961d6789344a68aa492c9239",
+                "prompt_hash": "42b4b55df7b7f7f2fc9614f0b41f1290a8fc7724cd3f7730b7cc59058b6f189e",
+                "input_tokens": 7074,
+                "output_tokens": 735,
+                "elapsed_ms": 17791,
+                "first_content_ms": 837,
+                "output_characters": 3141,
+                "response_bytes": 345949,
+                "stream_events": 738
+              }
+            ],
+            "errors": [],
+            "insights": 10,
+            "connections": 1,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          },
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "Pro/deepseek-ai/DeepSeek-V4",
+            "skipped": "Exact model unavailable; no substitution."
+          },
+          {
+            "query": "How did the Transformer architecture build on earlier attention mechanisms?",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 21.596,
+            "seconds": 72.754,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:21:54.958Z",
+                "outcome": "completed",
+                "input_hash": "d8ceaad9676f4a986fab625935fc207ba499e1f370d987bed4903863bb5d828e",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 1853,
+                "output_tokens": 126,
+                "elapsed_ms": 4169,
+                "first_content_ms": 787,
+                "output_characters": 590,
+                "response_bytes": 60064,
+                "stream_events": 129
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:22:03.535Z",
+                "outcome": "completed",
+                "input_hash": "5cb583e26b829e1622866a3fe562d1fdfdb427b5460303ebf01cbec833117bff",
+                "prompt_hash": "20bfd56dbf353d437b2de1615360fd07468d147b007fe60be33f3abbc9a0847a",
+                "input_tokens": 7404,
+                "output_tokens": 3475,
+                "elapsed_ms": 51487,
+                "first_content_ms": 837,
+                "output_characters": 16436,
+                "response_bytes": 1637584,
+                "stream_events": 3478
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:22:55.024Z",
+                "outcome": "completed",
+                "input_hash": "7f9091350a582c0f9fb26b23927cf77c5131987562ac8508b88bab06a07f9b51",
+                "prompt_hash": "42b4b55df7b7f7f2fc9614f0b41f1290a8fc7724cd3f7730b7cc59058b6f189e",
+                "input_tokens": 6479,
+                "output_tokens": 709,
+                "elapsed_ms": 10298,
+                "first_content_ms": 728,
+                "output_characters": 3048,
+                "response_bytes": 333774,
+                "stream_events": 712
+              }
+            ],
+            "errors": [],
+            "insights": 8,
+            "connections": 7,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          }
+        ],
+        "private_input_to_atlas": false,
+        "page_errors": [],
+        "saved_settings_restored": true,
+        "credential_cleared": true
+      },
+      {
+        "phase": "advertised Pro model, before stricter scope checking",
+        "checked_at": "2026-10-16T11:23:16.753Z",
+        "attempts": [
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "deepseek-ai/DeepSeek-V4-Pro",
+            "finished": true,
+            "first_insight_seconds": 24.392,
+            "seconds": 105.646,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Pro",
+                "started_at": "2026-10-16T11:23:22.709Z",
+                "outcome": "completed",
+                "input_hash": "6d3667025662e5507638701f57087a6d84bbdbcc5528077f2bb8f55044c107f9",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 2136,
+                "output_tokens": 122,
+                "elapsed_ms": 4799,
+                "first_content_ms": 733,
+                "output_characters": 528,
+                "response_bytes": 57898,
+                "stream_events": 125
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Pro",
+                "started_at": "2026-10-16T11:23:31.407Z",
+                "outcome": "completed",
+                "input_hash": "5a98ac50dac094b2601f4cb51cf235ad1a104519efaeeec93e57bcb275cbdfca",
+                "prompt_hash": "20bfd56dbf353d437b2de1615360fd07468d147b007fe60be33f3abbc9a0847a",
+                "input_tokens": 7282,
+                "output_tokens": 3463,
+                "elapsed_ms": 85986,
+                "first_content_ms": 1313,
+                "output_characters": 15470,
+                "response_bytes": 1623802,
+                "stream_events": 3466
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Pro",
+                "started_at": "2026-10-16T11:24:57.396Z",
+                "outcome": "completed",
+                "input_hash": "fdc20639bc6d74c674ca6c315f7eaf76ba8db1c6cae78ae23f31c6f2d1628605",
+                "prompt_hash": "42b4b55df7b7f7f2fc9614f0b41f1290a8fc7724cd3f7730b7cc59058b6f189e",
+                "input_tokens": 3553,
+                "output_tokens": 244,
+                "elapsed_ms": 7132,
+                "first_content_ms": 1700,
+                "output_characters": 1060,
+                "response_bytes": 114940,
+                "stream_events": 247
+              }
+            ],
+            "errors": [],
+            "insights": 4,
+            "connections": 1,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          }
+        ],
+        "private_input_to_atlas": false,
+        "page_errors": [],
+        "saved_settings_restored": true,
+        "credential_cleared": true
+      },
+      {
+        "phase": "scope checks and source diversity, before common-source admission",
+        "checked_at": "2026-10-16T11:34:24.580Z",
+        "attempts": [
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 24.379,
+            "seconds": 99.579,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:34:30.358Z",
+                "outcome": "completed",
+                "input_hash": "75419a3be206020eeb3254f76570a1129884d2f3e915773be88ff8b0b305a1d8",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 2102,
+                "output_tokens": 97,
+                "elapsed_ms": 3748,
+                "first_content_ms": 786,
+                "output_characters": 539,
+                "response_bytes": 46518,
+                "stream_events": 100
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:34:37.251Z",
+                "outcome": "completed",
+                "input_hash": "0059037c0f861ae10976317e96ef6eef86cb9fda3e0b5fa899e27b2a07ba01a1",
+                "prompt_hash": "85d9f1fed6f299fbc3a4b488ff972870705d83d3c9817b2afa198fc5e5e798db",
+                "input_tokens": 6683,
+                "output_tokens": 3715,
+                "elapsed_ms": 79867,
+                "first_content_ms": 887,
+                "output_characters": 15860,
+                "response_bytes": 1748468,
+                "stream_events": 3718
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:35:57.120Z",
+                "outcome": "completed",
+                "input_hash": "c412b6ad087c5cc7c1ddf306d8f9869a30e1db72b3825bb43843267c337f57ed",
+                "prompt_hash": "cc32513105b023913cd51856d8507a384cf30401cbe956bf8a8ffba0085ba4a9",
+                "input_tokens": 6489,
+                "output_tokens": 822,
+                "elapsed_ms": 5862,
+                "first_content_ms": 695,
+                "output_characters": 3473,
+                "response_bytes": 386722,
+                "stream_events": 825
+              }
+            ],
+            "errors": [],
+            "insights": 9,
+            "connections": 5,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          },
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "deepseek-ai/DeepSeek-V4-Pro",
+            "finished": true,
+            "first_insight_seconds": 27.157,
+            "seconds": 111.382,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Pro",
+                "started_at": "2026-10-16T11:36:09.983Z",
+                "outcome": "completed",
+                "input_hash": "f6fc30031da23867c0cb72b110f5a477f525fdfd79411c8549759006ded33537",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 2102,
+                "output_tokens": 120,
+                "elapsed_ms": 3979,
+                "first_content_ms": 989,
+                "output_characters": 559,
+                "response_bytes": 57003,
+                "stream_events": 123
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Pro",
+                "started_at": "2026-10-16T11:36:18.665Z",
+                "outcome": "completed",
+                "input_hash": "87202d8acacaae4d10b9a6840c56acb9bac23b2b6ca6413defb88243f4be88fa",
+                "prompt_hash": "85d9f1fed6f299fbc3a4b488ff972870705d83d3c9817b2afa198fc5e5e798db",
+                "input_tokens": 7270,
+                "output_tokens": 3362,
+                "elapsed_ms": 81251,
+                "first_content_ms": 791,
+                "output_characters": 14685,
+                "response_bytes": 1576065,
+                "stream_events": 3365
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Pro",
+                "started_at": "2026-10-16T11:37:39.917Z",
+                "outcome": "completed",
+                "input_hash": "57fa8887bd280067ed60cd3f178b414e4780720d3ff0868991b0d6060ba3879d",
+                "prompt_hash": "cc32513105b023913cd51856d8507a384cf30401cbe956bf8a8ffba0085ba4a9",
+                "input_tokens": 6126,
+                "output_tokens": 600,
+                "elapsed_ms": 14967,
+                "first_content_ms": 1212,
+                "output_characters": 2760,
+                "response_bytes": 281516,
+                "stream_events": 603
+              }
+            ],
+            "errors": [],
+            "insights": 8,
+            "connections": 0,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          },
+          {
+            "query": "How did the Transformer architecture build on earlier attention mechanisms?",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 18.307,
+            "seconds": 48.387,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:38:00.729Z",
+                "outcome": "completed",
+                "input_hash": "d153511ea3414617405182f229f5d1a160b36f9b816a2f72323f76c1cd1ffb19",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 1925,
+                "output_tokens": 100,
+                "elapsed_ms": 3746,
+                "first_content_ms": 1188,
+                "output_characters": 571,
+                "response_bytes": 47944,
+                "stream_events": 103
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:38:11.962Z",
+                "outcome": "completed",
+                "input_hash": "6c622b8b9381c326782c5683d030b1d199a4e01a42e627009e70f667a02c1ffa",
+                "prompt_hash": "85d9f1fed6f299fbc3a4b488ff972870705d83d3c9817b2afa198fc5e5e798db",
+                "input_tokens": 7293,
+                "output_tokens": 2950,
+                "elapsed_ms": 17397,
+                "first_content_ms": 754,
+                "output_characters": 13357,
+                "response_bytes": 1389081,
+                "stream_events": 2953
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:38:29.361Z",
+                "outcome": "completed",
+                "input_hash": "e7543779c19e16cb2e279e2499bd2420d571de7112372fda72f12ddc0f6a78e3",
+                "prompt_hash": "cc32513105b023913cd51856d8507a384cf30401cbe956bf8a8ffba0085ba4a9",
+                "input_tokens": 4632,
+                "output_tokens": 536,
+                "elapsed_ms": 14439,
+                "first_content_ms": 881,
+                "output_characters": 2511,
+                "response_bytes": 252727,
+                "stream_events": 539
+              }
+            ],
+            "errors": [],
+            "insights": 7,
+            "connections": 2,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          }
+        ],
+        "private_input_to_atlas": false,
+        "page_errors": [],
+        "saved_settings_restored": true,
+        "credential_cleared": true
+      },
+      {
+        "phase": "common-source admission, before whole-word retrieval correction",
+        "checked_at": "2026-10-16T11:41:29.278Z",
+        "attempts": [
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 54.563,
+            "seconds": 150.812,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:41:44.298Z",
+                "outcome": "completed",
+                "input_hash": "75419a3be206020eeb3254f76570a1129884d2f3e915773be88ff8b0b305a1d8",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 2102,
+                "output_tokens": 120,
+                "elapsed_ms": 4164,
+                "first_content_ms": 649,
+                "output_characters": 512,
+                "response_bytes": 57684,
+                "stream_events": 123
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:42:06.052Z",
+                "outcome": "completed",
+                "input_hash": "7266f0f8a935c3e2d112cb66bbe4f8f28d4dd767e43f6c7fd1a7c8ecb6d72f52",
+                "prompt_hash": "b8bbbdf5297bc6a5568fe302fac1338c2a81f8a09e11d6213f2cdde8ab05ce4b",
+                "input_tokens": 6777,
+                "output_tokens": 3266,
+                "elapsed_ms": 102759,
+                "first_content_ms": 1045,
+                "output_characters": 14896,
+                "response_bytes": 1537712,
+                "stream_events": 3269
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:43:48.814Z",
+                "outcome": "completed",
+                "input_hash": "de2d852fc55b319adb0d7cb1cf003d530fd2f737cb4c88ef26f12c8fc6c5f4de",
+                "prompt_hash": "cc32513105b023913cd51856d8507a384cf30401cbe956bf8a8ffba0085ba4a9",
+                "input_tokens": 5346,
+                "output_tokens": 370,
+                "elapsed_ms": 12918,
+                "first_content_ms": 868,
+                "output_characters": 1630,
+                "response_bytes": 174607,
+                "stream_events": 373
+              }
+            ],
+            "errors": [],
+            "insights": 8,
+            "connections": 0,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          },
+          {
+            "query": "How did the Transformer architecture build on earlier attention mechanisms?",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 27.131,
+            "seconds": 135.402,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:44:04.953Z",
+                "outcome": "completed",
+                "input_hash": "f0b10fb80591c1113e82b17858adeb7a35945924c7fb797e779c00bddd896dbb",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 1916,
+                "output_tokens": 93,
+                "elapsed_ms": 1688,
+                "first_content_ms": 635,
+                "output_characters": 503,
+                "response_bytes": 44624,
+                "stream_events": 96
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:44:09.241Z",
+                "outcome": "completed",
+                "input_hash": "4f12c69ce98db1de25034bbea80080d9223a68567e542c890ff9d81a865f92cb",
+                "prompt_hash": "b8bbbdf5297bc6a5568fe302fac1338c2a81f8a09e11d6213f2cdde8ab05ce4b",
+                "input_tokens": 7583,
+                "output_tokens": 3797,
+                "elapsed_ms": 108834,
+                "first_content_ms": 1199,
+                "output_characters": 17835,
+                "response_bytes": 1789567,
+                "stream_events": 3800
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:45:58.076Z",
+                "outcome": "completed",
+                "input_hash": "84daa95fc485c4c115b6a1bb3944ccf02cf3497214f4eb00cf33d8dd4182f069",
+                "prompt_hash": "cc32513105b023913cd51856d8507a384cf30401cbe956bf8a8ffba0085ba4a9",
+                "input_tokens": 5533,
+                "output_tokens": 637,
+                "elapsed_ms": 17317,
+                "first_content_ms": 1572,
+                "output_characters": 2922,
+                "response_bytes": 300127,
+                "stream_events": 640
+              }
+            ],
+            "errors": [],
+            "insights": 7,
+            "connections": 4,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          }
+        ],
+        "private_input_to_atlas": false,
+        "page_errors": [],
+        "saved_settings_restored": true,
+        "credential_cleared": true
+      },
+      {
+        "phase": "final retrieval, prompts, validation, settings and save/export workflow",
+        "checked_at": "2026-10-16T11:53:47.434Z",
+        "attempts": [
+          {
+            "query": "plasma enhanced chemical vapour decomposition",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 27.487,
+            "seconds": 102.679,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:53:52.950Z",
+                "outcome": "completed",
+                "input_hash": "ac0f5804f2e7e065ec8f50eb5d1099cc8f6b781c69b048077916197338c19efb",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 2136,
+                "output_tokens": 115,
+                "elapsed_ms": 5825,
+                "first_content_ms": 918,
+                "output_characters": 501,
+                "response_bytes": 54860,
+                "stream_events": 118
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:54:03.429Z",
+                "outcome": "completed",
+                "input_hash": "2baeb6fcb284f70fa18e2678e9f39e5a5b34452f9347ab4124724167a5eda715",
+                "prompt_hash": "b8bbbdf5297bc6a5568fe302fac1338c2a81f8a09e11d6213f2cdde8ab05ce4b",
+                "input_tokens": 7032,
+                "output_tokens": 3086,
+                "elapsed_ms": 68021,
+                "first_content_ms": 1355,
+                "output_characters": 13346,
+                "response_bytes": 1452342,
+                "stream_events": 3089
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:55:11.452Z",
+                "outcome": "completed",
+                "input_hash": "521a29a575593b1179b18a8ccbb6653d4112a5caeafde09a69f5dbbaa0af5aac",
+                "prompt_hash": "cc32513105b023913cd51856d8507a384cf30401cbe956bf8a8ffba0085ba4a9",
+                "input_tokens": 4560,
+                "output_tokens": 422,
+                "elapsed_ms": 18988,
+                "first_content_ms": 5610,
+                "output_characters": 1968,
+                "response_bytes": 199127,
+                "stream_events": 425
+              }
+            ],
+            "errors": [],
+            "insights": 6,
+            "connections": 0,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          },
+          {
+            "query": "How did the Transformer architecture build on earlier attention mechanisms?",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "finished": true,
+            "first_insight_seconds": 45.178,
+            "seconds": 123.372,
+            "receipts": [
+              {
+                "stage": "research plan",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:55:34.631Z",
+                "outcome": "completed",
+                "input_hash": "3fc7343f8b841d2519fbf3fec45eb95b56bdf07187f502b9787c4eaefaa193fd",
+                "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+                "input_tokens": 1874,
+                "output_tokens": 124,
+                "elapsed_ms": 4388,
+                "first_content_ms": 919,
+                "output_characters": 637,
+                "response_bytes": 59170,
+                "stream_events": 127
+              },
+              {
+                "stage": "draft graph",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:55:53.656Z",
+                "outcome": "completed",
+                "input_hash": "2d9e2512c603a37e2adac05390e1f33c3e628f369eef9c99d3970595e9d9f138",
+                "prompt_hash": "b8bbbdf5297bc6a5568fe302fac1338c2a81f8a09e11d6213f2cdde8ab05ce4b",
+                "input_tokens": 7451,
+                "output_tokens": 3632,
+                "elapsed_ms": 95955,
+                "first_content_ms": 1098,
+                "output_characters": 16590,
+                "response_bytes": 1711130,
+                "stream_events": 3635
+              },
+              {
+                "stage": "evidence challenge",
+                "model": "deepseek-ai/DeepSeek-V4-Flash",
+                "started_at": "2026-10-16T11:57:29.614Z",
+                "outcome": "completed",
+                "input_hash": "41f4723e08ae28f76c17ba2b4e1107ff8ee05ea0b44bfea06c9f6fdd2fdf6d1c",
+                "prompt_hash": "cc32513105b023913cd51856d8507a384cf30401cbe956bf8a8ffba0085ba4a9",
+                "input_tokens": 5806,
+                "output_tokens": 419,
+                "elapsed_ms": 2988,
+                "first_content_ms": 523,
+                "output_characters": 1951,
+                "response_bytes": 197722,
+                "stream_events": 422
+              }
+            ],
+            "errors": [],
+            "insights": 8,
+            "connections": 1,
+            "check_status": "completed",
+            "inspector_opened": true,
+            "explicit_local_save": true
+          }
+        ],
+        "private_input_to_atlas": false,
+        "page_errors": [],
+        "saved_settings_restored": true,
+        "credential_cleared": true
+      }
+    ],
+    "final_offline_revalidation": {
+      "checked_at": "2026-10-16T12:05:54.401Z",
+      "maps": [
+        {
+          "query": "plasma enhanced chemical vapour decomposition",
+          "original_nodes": 6,
+          "original_connections": 0,
+          "raw_import_rejected_when_changed": false,
+          "retained_nodes": 6,
+          "retained_connections": 0,
+          "new_gaps": [],
+          "source_inspector_opened": true,
+          "export_worked": true
+        },
+        {
+          "query": "How did the Transformer architecture build on earlier attention mechanisms?",
+          "original_nodes": 8,
+          "original_connections": 1,
+          "raw_import_rejected_when_changed": true,
+          "retained_nodes": 8,
+          "retained_connections": 0,
+          "new_gaps": [
+            "A proposed connection was withheld (r5): a similarity explicitly limited to a shared purpose is not a structural analogy."
+          ],
+          "source_inspector_opened": true,
+          "export_worked": true
+        }
+      ],
+      "external_requests": [],
+      "page_errors": []
+    },
+    "replay_harness_note": "An initial harness expected import to silently drop a rejected relationship. Strict import correctly refused the old file. The corrected harness asserts that rejection, replays the draft through validation, and then imports the validated result.",
+    "final_source_packets": [
+      {
+        "query": "plasma enhanced chemical vapour decomposition",
+        "model": "deepseek-ai/DeepSeek-V4-Flash",
+        "sources": [
+          {
+            "id": "source_1",
+            "title": "Performance Analysis of GaN/AlGaN HEMTs Passivation using Inductively Coupled Plasma Chemical Vapour Deposition and Plasma Enhanced Chemical Vapour Deposition Techniques",
+            "year": 2018,
+            "kind": "abstract",
+            "passage_characters": 624
+          },
+          {
+            "id": "source_2",
+            "title": "Determination of optical properties of single crystal diamond substrates grown via welding- assisted microwave plasma enhanced chemical vapour deposition",
+            "year": 2024,
+            "kind": "abstract",
+            "passage_characters": 1116
+          },
+          {
+            "id": "source_3",
+            "title": "Plasma Enhanced Chemical Vapour Deposition of Horizontally Aligned Carbon Nanotubes",
+            "year": 2013,
+            "kind": "abstract",
+            "passage_characters": 826
+          },
+          {
+            "id": "source_6",
+            "title": "Characterization of Plasma-Enhanced Chemical Vapour Deposition of Silicon-Oxynitride",
+            "year": 1986,
+            "kind": "abstract",
+            "passage_characters": 579
+          },
+          {
+            "id": "source_33",
+            "title": "Deposition of GaN by Remote Plasma-Enhanced Chemical-Vapor Deposition (Remote PECVD)",
+            "year": 1990,
+            "kind": "abstract",
+            "passage_characters": 716
+          },
+          {
+            "id": "source_34",
+            "title": "ChemInform Abstract: Generation of Thin Solid Films by PECVD (Plasma Enhanced Chemical Vapor Deposition)",
+            "year": 1991,
+            "kind": "abstract",
+            "passage_characters": 323
+          },
+          {
+            "id": "source_35",
+            "title": "Plasma and surface diagnostics in PECVD (plasma-enhanced chemical vapor deposition) from silicon containing organic monomers",
+            "year": 1994,
+            "kind": "abstract",
+            "passage_characters": 8
+          },
+          {
+            "id": "source_45",
+            "title": "Effects of micro- and macro-plasma-sheath electric fields on carbon nanotube growth in a cross-field radio-frequency discharge",
+            "year": 2004,
+            "kind": "abstract",
+            "passage_characters": 961
+          },
+          {
+            "id": "source_4",
+            "title": "High yield growth of vertically aligned carbon nanostructure through low frequency induced plasma enhanced chemical vapour deposition",
+            "year": 2019,
+            "kind": "abstract",
+            "passage_characters": 907
+          },
+          {
+            "id": "source_5",
+            "title": "Effect of Plasma Power on Growth of Multilayer Graphene on Copper Using Plasma Enhanced Chemical Vapour Deposition",
+            "year": 2016,
+            "kind": "abstract",
+            "passage_characters": 1503
+          },
+          {
+            "id": "source_7",
+            "title": "Environmental Impact of Physical Vapour Deposition and Plasma-Enhanced Chemical Vapour Deposition Technologies for Deposition of Diamond-like Carbon Coatings for Green Tribology",
+            "year": 2025,
+            "kind": "abstract",
+            "passage_characters": 1477
+          },
+          {
+            "id": "source_8",
+            "title": "Poly(ethylene glycol) Films Deposited by Atmospheric Pressure Plasma Liquid Deposition and Atmospheric Pressure Plasma\u2010Enhanced Chemical Vapour Deposition: Process, Chemical Composition Analysis and Biocompatibility",
+            "year": 2010,
+            "kind": "abstract",
+            "passage_characters": 693
+          },
+          {
+            "id": "source_9",
+            "title": "Plasma Enhanced Chemical Vapour Deposition of Nanostructured Fluorocarbon Surfaces",
+            "year": 2009,
+            "kind": "abstract",
+            "passage_characters": 689
+          },
+          {
+            "id": "source_10",
+            "title": "Modelling the effects of nitrogen doping on the carbon nanofiber growth via catalytic plasma\u2010enhanced chemical vapour deposition process",
+            "year": 2018,
+            "kind": "abstract",
+            "passage_characters": 1365
+          },
+          {
+            "id": "source_32",
+            "title": "Novel photocatalytic TiO2-based porous membranes prepared by plasma-enhanced chemical vapor deposition (PECVD) for organic pollutant degradation in water",
+            "year": null,
+            "kind": "abstract",
+            "passage_characters": 1600
+          },
+          {
+            "id": "source_39",
+            "title": "Insights into the Mechanism for Vertical Graphene Growth by Plasma-Enhanced Chemical Vapor Deposition.",
+            "year": 2022,
+            "kind": "abstract",
+            "passage_characters": 1376
+          },
+          {
+            "id": "source_47",
+            "title": "The Effects of Process Parameters on Carbon Nanotube Synthesis by Plasma Enhanced Chemical Vapor Deposition (PECVD)",
+            "year": 2005,
+            "kind": "abstract",
+            "passage_characters": 916
+          },
+          {
+            "id": "source_12",
+            "title": "Recent efforts of vapour-phase strategies for EUV resist toward high- and hyper-NA extreme ultraviolet lithography.",
+            "year": 2026,
+            "kind": "abstract",
+            "passage_characters": 1600
+          },
+          {
+            "id": "source_14",
+            "title": "Role of ethanol to water ratio in hydrogen production by ethanol steam reforming in atmospheric pressure 915 MHz microwave plasma.",
+            "year": 2025,
+            "kind": "abstract",
+            "passage_characters": 1229
+          },
+          {
+            "id": "source_49",
+            "title": "Heating and Plasma Sheath Effects in Low\u2010Temperature, Plasma\u2010Assisted Growth of Carbon Nanofibers",
+            "year": 2011,
+            "kind": "abstract",
+            "passage_characters": 868
+          }
+        ]
+      },
+      {
+        "query": "How did the Transformer architecture build on earlier attention mechanisms?",
+        "model": "deepseek-ai/DeepSeek-V4-Flash",
+        "sources": [
+          {
+            "id": "source_8",
+            "title": "Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review",
+            "year": 2023,
+            "kind": "abstract",
+            "passage_characters": 1388
+          },
+          {
+            "id": "source_16",
+            "title": "Vision Transformers: Architecture, Attention Mechanisms, and Perspectives for Computer Vision Development",
+            "year": 2025,
+            "kind": "abstract",
+            "passage_characters": 1600
+          },
+          {
+            "id": "source_9",
+            "title": "QuATLAS: Quantum-Augmented Transformer Language Architecture with Selective Entangling Attention",
+            "year": 2026,
+            "kind": "abstract",
+            "passage_characters": 1600
+          },
+          {
+            "id": "atlas_n-199d4fc84344c855",
+            "title": "Two separate LSTMs for encoder and decoder",
+            "year": 2014,
+            "kind": "atlas",
+            "passage_characters": 914
+          },
+          {
+            "id": "atlas_n-5238d4adee0de6be",
+            "title": "Empirical demonstration that a pure neural translation system outperforms a phrase-based SMT baseline",
+            "year": 2014,
+            "kind": "atlas",
+            "passage_characters": 1212
+          },
+          {
+            "id": "atlas_n-a836e26020f926a9",
+            "title": "Deep LSTM layers improve sequence-to-sequence performance",
+            "year": 2014,
+            "kind": "atlas",
+            "passage_characters": 897
+          },
+          {
+            "id": "atlas_n-7174667738dd3cf9",
+            "title": "Transformer architecture: first transduction model based solely on attention",
+            "year": 2017,
+            "kind": "atlas",
+            "passage_characters": 1147
+          },
+          {
+            "id": "atlas_n-39b5a34814500760",
+            "title": "Interpretability of attention heads",
+            "year": 2017,
+            "kind": "atlas",
+            "passage_characters": 728
+          },
+          {
+            "id": "atlas_n-5695bc0aae2c9155",
+            "title": "Ablation studies on Transformer components",
+            "year": 2017,
+            "kind": "atlas",
+            "passage_characters": 794
+          },
+          {
+            "id": "atlas_n-8b5f9ca288e9ebdb",
+            "title": "U-Net architecture with time conditioning for reverse process",
+            "year": 2020,
+            "kind": "atlas",
+            "passage_characters": 537
+          },
+          {
+            "id": "source_17",
+            "title": "The Reform of the Dublin III Regulation: How to Build or Not to Build Further Enforcing Mechanisms",
+            "year": 2019,
+            "kind": "abstract",
+            "passage_characters": 911
+          },
+          {
+            "id": "source_15",
+            "title": "Did Mercury Build the Ship of Aeneas?",
+            "year": 2019,
+            "kind": "abstract",
+            "passage_characters": 754
+          },
+          {
+            "id": "source_28",
+            "title": "Analisis Perbandingan Nilai Akurasi Mekanisme Attention Bahdanau dan Luong pada Neural Machine Translation Bahasa Indonesia ke Bahasa Melayu Ketapang dengan Arsitektur Recurrent Neural Network",
+            "year": 2021,
+            "kind": "abstract",
+            "passage_characters": 1130
+          },
+          {
+            "id": "source_32",
+            "title": "Generating Image Captions Using Bahdanau Attention Mechanism and Transfer Learning",
+            "year": 2022,
+            "kind": "abstract",
+            "passage_characters": 1170
+          },
+          {
+            "id": "source_10",
+            "title": "An Adaptive Cross Attention Multimodal Transformer Architecture for Multilingual Speech Emotion Recognition",
+            "year": 2026,
+            "kind": "abstract",
+            "passage_characters": 1600
+          },
+          {
+            "id": "source_11",
+            "title": "Energy-Based Learning and the Evolution of Hopfield Networks: From Boltzmann Machines to Transformer Attention Mechanisms",
+            "year": 2025,
+            "kind": "abstract",
+            "passage_characters": 842
+          },
+          {
+            "id": "source_12",
+            "title": "Adaptive Attention Mechanisms for Efficient Transformer Models: Learning Dynamic Complexity Scoring for Reduced Computational Cost",
+            "year": 2025,
+            "kind": "abstract",
+            "passage_characters": 1600
+          },
+          {
+            "id": "source_14",
+            "title": "Spatial-temporal Attention Model Based on Transformer Architecture for Anomaly Detection in Multivariate Time Series Data",
+            "year": 2024,
+            "kind": "abstract",
+            "passage_characters": 1017
+          },
+          {
+            "id": "source_2",
+            "title": "A two-stage deep learning framework with progressive feature fusion and attention mechanisms for multi-class retinal disease classification.",
+            "year": 2026,
+            "kind": "abstract",
+            "passage_characters": 1559
+          },
+          {
+            "id": "source_5",
+            "title": "A hybrid mamba-transformer architecture fusing clinical and genetic features for gestational diabetes mellitus prediction.",
+            "year": 2026,
+            "kind": "abstract",
+            "passage_characters": 1600
+          }
+        ]
+      }
+    ],
+    "final_build_followup": "After the live calls, a deterministic guard was added for an analogy whose own scope explicitly limits it to a shared purpose. The old Transformer file was correctly rejected by strict import. Its captured draft was replayed through the final validator, then both surviving maps were opened, inspected and exported in the offline UI, without another provider call. Request prompts, retrieval and provider contracts were unchanged.",
+    "diagnostic_quality_findings": [
+      "A pre-scope PECVD run retained a SiGe-to-GaN application with mismatched materials.",
+      "Scope prompts alone still admitted weak cross-paper applications and analogies; common-source admission was added afterward.",
+      "Recent applications crowded foundations out of an ancestry query. Source diversity and earlier atlas evidence were reserved.",
+      "Substring matching admitted unrelated source candidates, including question-word matches inside longer words; whole-word matching and query coverage were added.",
+      "The last Transformer draft still included a shared-purpose analogy; the final guard withheld it during offline replay.",
+      "These are observed draft-quality failures, not erased or relabeled as verified knowledge. Surviving draft interpretations may still be wrong."
+    ],
+    "current_round_usage": {
+      "attempts": 12,
+      "submitted_requests": 36,
+      "known_usage_requests": 36,
+      "known_input_tokens": 176688,
+      "known_output_tokens": 48989,
+      "unknown_usage_requests": 0
+    },
+    "cumulative_preview_qa_only": {
+      "attempts": 18,
+      "submitted_requests": 53,
+      "known_usage_requests": 51,
+      "known_input_tokens": 314375,
+      "known_output_tokens": 74691,
+      "unknown_usage_requests": 2,
+      "billing_note": "Nonsecret receipts only, not an exact bill or a complete project spending total. Two earlier submitted requests still have unknown usage."
+    },
+    "earlier_reports": [
+      "reports/local-preview-1.3.json",
+      "reports/local-preview-1.3-recovery.json"
+    ]
+  },
+  "limitations": [
+    "Personal maps remain unverified drafts. Automated checks and model criticism are not qualified human scientific review.",
+    "The bounded scholarly-index and atlas retrieval is not a complete web search or a reconstruction of all historical ancestry.",
+    "A common source is an admission prerequisite, not proof of the connection. This conservative rule also omits some valid cross-paper links.",
+    "Provider delays and source failures vary. Time estimates are heuristic; successful runs do not guarantee future availability.",
+    "Keys persist only when explicitly selected. Checkpoints remain session-only; saved partial maps are inspectable but cannot resume on their own.",
+    "Corpus coverage is unchanged and below the expansion targets. No new qualified human audit or frozen research-suite rerun was performed.",
+    "macOS and desktop/mobile-emulated Chrome were tested. Windows, Linux and physical phones were not tested in this local upgrade."
+  ],
+  "prebuilt_reader": {
+    "bytes": 3028469,
+    "sha256": {
+      "web_dist/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+      "web_dist/assets/KaTeX_AMS-Regular-DMm9YOAa.woff": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+      "web_dist/assets/KaTeX_AMS-Regular-DRggAlZN.ttf": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
+      "web_dist/assets/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268",
+      "web_dist/assets/KaTeX_Caligraphic-Bold-BEiXGLvX.woff": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+      "web_dist/assets/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+      "web_dist/assets/KaTeX_Caligraphic-Regular-CTRA-rTL.woff": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+      "web_dist/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+      "web_dist/assets/KaTeX_Caligraphic-Regular-wX97UBjC.ttf": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7",
+      "web_dist/assets/KaTeX_Fraktur-Bold-BdnERNNW.ttf": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1",
+      "web_dist/assets/KaTeX_Fraktur-Bold-BsDP51OF.woff": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+      "web_dist/assets/KaTeX_Fraktur-Bold-CL6g_b3V.woff2": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+      "web_dist/assets/KaTeX_Fraktur-Regular-CB_wures.ttf": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3",
+      "web_dist/assets/KaTeX_Fraktur-Regular-CTYiF6lA.woff2": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+      "web_dist/assets/KaTeX_Fraktur-Regular-Dxdc4cR9.woff": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+      "web_dist/assets/KaTeX_Main-Bold-Cx986IdX.woff2": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+      "web_dist/assets/KaTeX_Main-Bold-Jm3AIy58.woff": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+      "web_dist/assets/KaTeX_Main-Bold-waoOVXN0.ttf": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8",
+      "web_dist/assets/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+      "web_dist/assets/KaTeX_Main-BoldItalic-DzxPMmG6.ttf": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f",
+      "web_dist/assets/KaTeX_Main-BoldItalic-SpSLRI95.woff": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+      "web_dist/assets/KaTeX_Main-Italic-3WenGoN9.ttf": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a",
+      "web_dist/assets/KaTeX_Main-Italic-BMLOBm91.woff": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+      "web_dist/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+      "web_dist/assets/KaTeX_Main-Regular-B22Nviop.woff2": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+      "web_dist/assets/KaTeX_Main-Regular-Dr94JaBh.woff": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+      "web_dist/assets/KaTeX_Main-Regular-ypZvNtVU.ttf": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830",
+      "web_dist/assets/KaTeX_Math-BoldItalic-B3XSjfu4.ttf": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5",
+      "web_dist/assets/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+      "web_dist/assets/KaTeX_Math-BoldItalic-iY-2wyZ7.woff": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+      "web_dist/assets/KaTeX_Math-Italic-DA0__PXp.woff": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+      "web_dist/assets/KaTeX_Math-Italic-flOr_0UB.ttf": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a",
+      "web_dist/assets/KaTeX_Math-Italic-t53AETM-.woff2": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+      "web_dist/assets/KaTeX_SansSerif-Bold-CFMepnvq.ttf": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0",
+      "web_dist/assets/KaTeX_SansSerif-Bold-D1sUS0GD.woff2": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+      "web_dist/assets/KaTeX_SansSerif-Bold-DbIhKOiC.woff": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+      "web_dist/assets/KaTeX_SansSerif-Italic-C3H0VqGB.woff2": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+      "web_dist/assets/KaTeX_SansSerif-Italic-DN2j7dab.woff": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+      "web_dist/assets/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083",
+      "web_dist/assets/KaTeX_SansSerif-Regular-BNo7hRIc.ttf": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad",
+      "web_dist/assets/KaTeX_SansSerif-Regular-CS6fqUqJ.woff": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+      "web_dist/assets/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+      "web_dist/assets/KaTeX_Script-Regular-C5JkGWo-.ttf": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67",
+      "web_dist/assets/KaTeX_Script-Regular-D3wIWfF6.woff2": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+      "web_dist/assets/KaTeX_Script-Regular-D5yQViql.woff": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+      "web_dist/assets/KaTeX_Size1-Regular-C195tn64.woff": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+      "web_dist/assets/KaTeX_Size1-Regular-Dbsnue_I.ttf": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b",
+      "web_dist/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+      "web_dist/assets/KaTeX_Size2-Regular-B7gKUWhC.ttf": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b",
+      "web_dist/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+      "web_dist/assets/KaTeX_Size2-Regular-oD1tc_U0.woff": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+      "web_dist/assets/KaTeX_Size3-Regular-CTq5MqoE.woff": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+      "web_dist/assets/KaTeX_Size3-Regular-DgpXs0kz.ttf": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082",
+      "web_dist/assets/KaTeX_Size4-Regular-BF-4gkZK.woff": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+      "web_dist/assets/KaTeX_Size4-Regular-DWFBv043.ttf": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877",
+      "web_dist/assets/KaTeX_Size4-Regular-Dl5lxZxV.woff2": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+      "web_dist/assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+      "web_dist/assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+      "web_dist/assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa",
+      "web_dist/assets/index-BHn11VSt.js": "5d1f2ba60e43f11c64f342b986db8dccdc61b194c52071035a4da394a8b2daa4",
+      "web_dist/assets/index-Do0KlP5_.css": "6d98ef37e2c4db0de65b1e54c7bdb500b76387bee991f8ca79eb142bbcdc812e",
+      "web_dist/index.html": "43af6c3a1ea7eea385a835df89e30fe4bebd61ed957c7a2039d919e0e3d299c1"
+    }
+  }
+}

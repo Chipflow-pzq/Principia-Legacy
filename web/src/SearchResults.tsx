@@ -1,48 +1,74 @@
-import { useState } from "react";
 import { SearchData, COLORS, words } from "./types";
+import { WorkCards } from "./Works";
 import { RichText } from "./RichText";
 import { PersonCard, TopicLinks } from "./People";
 export function SearchResults({
   data,
+  filter,
+  onFilter,
   query,
   human,
   onIdea,
+  onWork,
   onPerson,
   onTopic,
   selected,
   onPage,
 }: {
   data: SearchData;
+  filter: "all" | "ideas" | "people" | "topics" | "works";
+  onFilter: (filter: "all" | "ideas" | "people" | "topics" | "works") => void;
   query: string;
   human: boolean;
   onIdea: (id: string) => void;
+  onWork: (id: string) => void;
   onPerson: (id: string) => void;
   onTopic: (id: string) => void;
   selected?: string;
   onPage: (offset: number) => void;
 }) {
-  const [filter, setFilter] = useState<"all" | "ideas" | "people" | "topics">(
-    "all",
-  );
-  const total = Math.max(
-    data.totals.ideas,
-    data.totals.people,
-    data.totals.topics,
-  );
-  const count = data.results.length + data.people.length + data.topics.length;
+  const total =
+    filter === "all"
+      ? Math.max(
+          data.totals.ideas,
+          data.totals.people,
+          data.totals.topics,
+          data.totals.works || 0,
+        )
+      : data.totals[filter] || 0;
+  const preview = <T,>(items: T[]) =>
+    filter === "all" ? items.slice(0, 4) : items;
+  const shown =
+    filter === "all"
+      ? [data.results, data.people, data.topics, data.works || []].reduce(
+          (sum, rows) => sum + Math.min(4, rows.length),
+          0,
+        )
+      : (filter === "ideas" ? data.results : data[filter] || []).length;
+  const more = (
+    kind: "ideas" | "people" | "topics" | "works",
+    label: string,
+  ) =>
+    filter === "all" && (data.totals[kind] || 0) > 4 ? (
+      <button className="text-link" onClick={() => onFilter(kind)}>
+        See all {data.totals[kind]} {label} →
+      </button>
+    ) : null;
   return (
     <section className="search-results">
       <div className="section-head">
         <h2>Search results for “{query}”</h2>
-        <span>{count} shown</span>
+        <span>{shown} shown</span>
       </div>
       <div className="search-filters" aria-label="Result types">
-        {(["all", "ideas", "people", "topics"] as const).map((k) => (
+        {(["all", "topics", "works", "ideas", "people"] as const).map((k) => (
           <button
             key={k}
             aria-pressed={filter === k}
             className={filter === k ? "active" : ""}
-            onClick={() => setFilter(k)}
+            onClick={() => {
+              onFilter(k);
+            }}
           >
             {k === "all"
               ? "All results"
@@ -50,12 +76,28 @@ export function SearchResults({
                 ? "Scientists & contributors"
                 : k === "ideas"
                   ? "Ideas"
-                  : "Topics"}
-            {k !== "all" && ` · ${data.totals[k]}`}
+                  : k === "works"
+                    ? "Works"
+                    : "Topics"}
+            {k !== "all" && ` · ${data.totals[k] || 0}`}
           </button>
         ))}
       </div>
-      {!count && (
+      {!!data.search_interpretation?.corrections.length && (
+        <p className="search-interpretation">
+          Also matching{" "}
+          {data.search_interpretation.corrections
+            .map((c) => `“${c.from}” → “${c.to}”`)
+            .join(", ")}
+          .
+        </p>
+      )}
+      {!!data.search_interpretation?.concepts.length && (
+        <p className="search-interpretation">
+          Related terms: {data.search_interpretation.concepts.join(" · ")}.
+        </p>
+      )}
+      {!shown && (
         <div className="empty-state">
           <h3>No matches in this release</h3>
           <p>
@@ -69,7 +111,7 @@ export function SearchResults({
         <section aria-label="Matching scientists and contributors">
           <h3>Scientists & contributors</h3>
           <div className="people-grid">
-            {data.people.map((p) => (
+            {preview(data.people).map((p) => (
               <PersonCard
                 key={p.id}
                 person={p}
@@ -77,18 +119,27 @@ export function SearchResults({
               />
             ))}
           </div>
+          {more("people", "people")}
         </section>
       )}
       {(filter === "all" || filter === "topics") && !!data.topics.length && (
         <section aria-label="Matching topics">
           <h3>Topics</h3>
-          <TopicLinks topics={data.topics} onTopic={onTopic} />
+          <TopicLinks topics={preview(data.topics)} onTopic={onTopic} />
+          {more("topics", "topics")}
+        </section>
+      )}
+      {(filter === "all" || filter === "works") && !!data.works?.length && (
+        <section aria-label="Matching works">
+          <h3>Works</h3>
+          <WorkCards works={preview(data.works)} onWork={onWork} />
+          {more("works", "works")}
         </section>
       )}
       {(filter === "all" || filter === "ideas") && (
         <section aria-label="Matching ideas">
           <h3>Ideas · {data.totals.ideas}</h3>
-          {data.results.map((n) => (
+          {preview(data.results).map((n) => (
             <button
               className={`result-card ${selected === n.id ? "selected" : ""}`}
               aria-current={selected === n.id ? "true" : undefined}
@@ -109,32 +160,35 @@ export function SearchResults({
               </span>
             </button>
           ))}
+          {more("ideas", "ideas")}
         </section>
       )}
-      {filter !== "all" && data.totals[filter] === 0 && (
+      {filter !== "all" && !data.totals[filter] && (
         <p className="notice">
           No {filter === "people" ? "scientists or contributors" : filter} match
           this search in the current release.
         </p>
       )}
-      <div className="pagination">
-        <button
-          disabled={!data.offset}
-          onClick={() => onPage(Math.max(0, data.offset - data.limit))}
-        >
-          Previous results
-        </button>
-        <span>
-          Page {Math.floor(data.offset / data.limit) + 1} of{" "}
-          {Math.max(1, Math.ceil(total / data.limit))}
-        </span>
-        <button
-          disabled={data.offset + data.limit >= total}
-          onClick={() => onPage(data.offset + data.limit)}
-        >
-          Next results
-        </button>
-      </div>
+      {filter !== "all" && (
+        <div className="pagination">
+          <button
+            disabled={!data.offset}
+            onClick={() => onPage(Math.max(0, data.offset - data.limit))}
+          >
+            Previous results
+          </button>
+          <span>
+            Page {Math.floor(data.offset / data.limit) + 1} of{" "}
+            {Math.max(1, Math.ceil(total / data.limit))}
+          </span>
+          <button
+            disabled={data.offset + data.limit >= total}
+            onClick={() => onPage(data.offset + data.limit)}
+          >
+            Next results
+          </button>
+        </div>
+      )}
     </section>
   );
 }

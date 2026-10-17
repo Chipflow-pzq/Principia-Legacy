@@ -12,6 +12,10 @@ type ChangeRef = {
 export type ReleaseChanges = {
   release_id: string;
   from_release: string;
+  catalog_changes?: Record<
+    string,
+    { added: string[]; removed: string[]; changed: string[] }
+  >;
   added: ChangeRef[];
   removed: ChangeRef[];
   changed: { before: ChangeRef; after: ChangeRef }[];
@@ -62,6 +66,23 @@ export function Changes({
           <strong>{removals.length}</strong> removed from this snapshot
         </span>
       </div>
+      {data.catalog_changes && (
+        <details className="notice">
+          <summary>Catalog changes: topics, works and people</summary>
+          <p>
+            Catalog entries describe selected works and contributors. They are
+            counted separately from extracted insights.
+          </p>
+          {Object.entries(data.catalog_changes).map(([kind, changes]) => (
+            <p key={kind}>
+              {kind === "dossiers" ? "Topics" : words(kind)}:{" "}
+              {changes.added.length} added, {changes.changed.length} revised,{" "}
+              {changes.removed.length} removed from the current catalog. Earlier
+              profiles remain available in the earlier snapshot.
+            </p>
+          ))}
+        </details>
+      )}
       {!!changed.length && (
         <section>
           <h2>Revised understanding</h2>

@@ -1,0 +1,53 @@
+{
+  "correction": "Primary source inspection corrects the object with full-group invariance from U to its algebraic closure V, makes the proof context explicit and repairs malformed jet-space notation.",
+  "dependent_checks": [
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation is a premise_for link from the group-theory splitting contribution (n-e8b1dc8d0c0b0dcd) to the monodromy/algebraic-closure argument (n-200651cd9458e1d6). The cited passages support the asserted dependency: p9 establishes the Lie algebra splitting and coordinate decomposition used to show π_{Y(1)^n}(U) is complex analytic and definable, and p11 explicitly states that the proof has been reduced to the case where π_{Y(1)^n}U is algebraic, then completes Theorem 1.2 via Lemma 6.1 using André–Deligne monodromy. The warrant correctly identifies the algebraic image as the hypothesis needed for the monodromy argument. The endpoint claims are within the paper’s stated setting and do not overstate causation or attribution. No substantive assertion in the relation is ungrounded."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a05b39adcea40aade8044c6e23b44f6f2d74a2a61283b67df21bf58a239f35da",
+        "job_id": "67a126d1296ae0b56e8c9e45f0295a3c413a7907c54ab8ac2a69f7a9bec9218b",
+        "output_hash": "1b9f5593211aee2d91b6eee80491e5332aa856c482711542d24639038d56df95",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3b611dc6-11c0-41a7-b29c-8b6154e1107c",
+        "request_id": "01a147b018b1392f23777573b25da8c9",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-8463d73b3c102045:2",
+        "time": "2026-10-17T02:28:05+00:00",
+        "trace_id": "3b611dc6-11c0-41a7-b29c-8b6154e1107c",
+        "usage": {
+          "completion_tokens": 203,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 4355,
+          "prompt_tokens": 4355,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4558
+        }
+      },
+      "revision": 2,
+      "target": "r-8463d73b3c102045"
+    }
+  ],
+  "patch": {
+    "applied": "586f14ebaf6567e1e858eca5e0d847f89b84e3b94b231371b234f56bc12b8088",
+    "previous_release": "before-078420e3e515",
+    "recheck": [
+      "r-8463d73b3c102045"
+    ]
+  },
+  "qualified_human_review": false
+}

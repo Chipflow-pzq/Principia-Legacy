@@ -1,0 +1,34 @@
+{
+  "kind": "User-requested local browser acceptance and development cases; not held-out research",
+  "queries": [
+    "lithography machines for chip",
+    "Plasma-enhanced chemical vapour decomposition",
+    "resuable rocket",
+    "GPU and cuda",
+    "Alphafold",
+    "large language models such as chatgpt"
+  ],
+  "first_insight_target_seconds": 60,
+  "completed_map_target_seconds": 180,
+  "browser_attempt_ceiling_seconds": 300,
+  "quality": "Exact endpoint, a relevant general foundation, a representative reachable explanatory core, individually warranted connections, explicit boundaries and inspectable quotations. Counts alone cannot establish quality.",
+  "topic_checkpoints": [
+    "Pattern transfer onto chip substrates; optical exposure and resist; diffraction/resolution or another relevant governing limit. Distinguish broad lithography from EUV-only scope.",
+    "Plasma activation, energetic electrons, precursor chemistry and film deposition; a governing electrical/chemical principle. Preserve unsupplied surface-chemistry gaps.",
+    "Propulsive motion and controlled return/recovery; Newtonian mechanics or momentum; distinguish landing from full operational reuse.",
+    "Parallel GPU hardware AND CUDA's kernel/thread programming model; shared/data parallel execution and memory limits. Graphics alone is insufficient.",
+    "Protein sequence-to-structure prediction, learned representations and relevant biological/physical foundations; state which AlphaFold generation is covered.",
+    "Language generation through conditional prediction, learned sequence representations/attention, and pretraining or instruction-following scope. Do not substitute an unrelated application."
+  ],
+  "rules": [
+    "Exact user wording, including typos",
+    "Real browser form and provider calls; no mocked evidence",
+    "One live exploration at a time, app concurrency unchanged",
+    "No model substitution",
+    "Preserve every attempt and usage receipt",
+    "Retest affected cases after substantive fixes",
+    "Never manufacture links to meet acceptance criteria",
+    "No publication or deployment",
+    "A model-generated check is not qualified human scientific review."
+  ]
+}

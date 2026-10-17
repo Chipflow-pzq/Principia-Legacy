@@ -4,7 +4,6 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import re
-import shutil
 import sqlite3
 import zipfile
 
@@ -22,7 +21,7 @@ def prepare(archive, destination, hosts=None):
     if destination.exists():
         raise ValueError('Destination already exists; use a new immutable directory')
     prefix = 'principia-legacy/'
-    reader = {'__init__.py', 'common.py', 'records.py', 'storage.py', 'catalog.py'}
+    reader = {'__init__.py', 'common.py', 'records.py', 'storage.py', 'catalog.py', 'retrieval.py', 'works.py'}
     licenses = {'LICENSE', 'DATA_LICENSE.md', 'THIRD_PARTY_NOTICES.md', 'GOVERNANCE.md'}
     selected = {}
     with zipfile.ZipFile(archive) as z:

@@ -1,0 +1,1273 @@
+[
+  {
+    "basis_relation": {
+      "content_hash": "581e878e89d23bced56b5b8968e9c495e0cbb043e8094a8bae58ccab39e36af0",
+      "id": "bridge-465f80f2a3e50411",
+      "revision": 1
+    },
+    "content_hash": "816f57920ce71f6c465e6d9c431bca0787187639cf38eeb53beeabd3b07811c4",
+    "from": {
+      "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+      "id": "w-source-7edb5c263f75a465",
+      "revision": 1
+    },
+    "id": "wr-83cf8338b59779ab",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p3 at source revision 1",
+        "title": "The sphere packing problem in dimension 8",
+        "url": "https://arxiv.org/pdf/1603.04246"
+      },
+      {
+        "note": "Evidence anchor p4 at source revision 1",
+        "title": "The sphere packing problem in dimension 8",
+        "url": "https://arxiv.org/pdf/1603.04246"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "warrant": "Viazovska's paper explicitly states 'In 2003 Cohn and Elkies [4] developed linear programming bounds that apply directly to sphere packings' and then uses Theorem 2 (Cohn, Elkies) as the key tool to prove her main result, constructing an optimal function g that satisfies the Cohn–Elkies conditions."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "756977983a3edacd4ae7d97ea32d62e5b23ad53edb03ffbfa6d3ecd641ef28db",
+      "id": "bridge-60e8498cc4e2d98c",
+      "revision": 1
+    },
+    "content_hash": "03e338ca458fb9f6a2913b2706df61e7d41221408e38523c53ba3b858e3b2d20",
+    "from": {
+      "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+      "id": "w-source-057b1d8c009ba859",
+      "revision": 1
+    },
+    "id": "wr-ce4c9d48ed329258",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p14 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      },
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+      "id": "w-source-f4a9c46d8b6e8da2",
+      "revision": 1
+    },
+    "warrant": "AF3 paper explicitly states its architecture 'echoes that of AF2' and describes modifications to the trunk and structure module, establishing AF2 as the direct predecessor."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "9535fca28575ea0282f18650b1a89daec8b8fa88078a904a18572dbf52aace16",
+      "id": "bridge-66751aa79669d373",
+      "revision": 1
+    },
+    "content_hash": "fd4e3fdcd0972245212f4503a6738554cafa1ddc3c7776b38a6ce0a6dbcf366c",
+    "from": {
+      "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+      "id": "w-source-057b1d8c009ba859",
+      "revision": 1
+    },
+    "id": "wr-d13350730ddd0f84",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p14 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      },
+      {
+        "note": "Evidence anchor p12 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+      "id": "w-source-f4a9c46d8b6e8da2",
+      "revision": 1
+    },
+    "warrant": "AF3 paper states the pairformer 'replaces the evoformer of AF2' and describes the simplification of MSA processing, indicating direct architectural evolution."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "b270f213f4b9df6fb1deb7553fd1a86476dd2c8bc1bda70c093dfc2cf7aad3c6",
+      "id": "bridge-83d538cb52505561",
+      "revision": 1
+    },
+    "content_hash": "674c31fe7875e595f270278867df4a83161ca49e073abde11fb0a42f5d02599b",
+    "from": {
+      "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+      "id": "w-source-7edb5c263f75a465",
+      "revision": 1
+    },
+    "id": "wr-784e913d6d2ff36c",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p18 at source revision 1",
+        "title": "New upper bounds on sphere packings I",
+        "url": "https://arxiv.org/pdf/math/0110009"
+      },
+      {
+        "note": "Evidence anchor p19 at source revision 1",
+        "title": "New upper bounds on sphere packings I",
+        "url": "https://arxiv.org/pdf/math/0110009"
+      },
+      {
+        "note": "Evidence anchor p4 at source revision 1",
+        "title": "The sphere packing problem in dimension 8",
+        "url": "https://arxiv.org/pdf/1603.04246"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "warrant": "Cohn and Elkies showed (Section 8) that if a function satisfying Conjecture 8.1 exists, then E8 and Leech lattices are unique periodic packings of maximal density. Viazovska's paper states 'the function g satisfies the conclusions of [4, Conjecture 8.1]. This implies the uniqueness of the densest periodic sphere packing in R8.'"
+  },
+  {
+    "basis_relation": {
+      "content_hash": "e520959f600e9341131cc12ed0f3160d68cad4b4415eda3ea78510c45dbfda29",
+      "id": "bridge-8f0bc8688fc05516",
+      "revision": 1
+    },
+    "content_hash": "538a93db4991d77ad6a240468a8fee118f3d8ab22814fafbc3e798f3c739647a",
+    "from": {
+      "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+      "id": "w-source-7edb5c263f75a465",
+      "revision": 1
+    },
+    "id": "wr-340e34bd694c05ab",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p17 at source revision 1",
+        "title": "New upper bounds on sphere packings I",
+        "url": "https://arxiv.org/pdf/math/0110009"
+      },
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "The sphere packing problem in dimension 8",
+        "url": "https://arxiv.org/pdf/1603.04246"
+      },
+      {
+        "note": "Evidence anchor p4 at source revision 1",
+        "title": "The sphere packing problem in dimension 8",
+        "url": "https://arxiv.org/pdf/1603.04246"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "warrant": "Cohn and Elkies conjectured (Conjecture 7.3) that functions satisfying their Theorem 3.2 hypotheses solve the sphere packing problem in dimensions 2, 8, and 24. Viazovska's paper proves Theorem 1 (Delta_8 = pi^4/384) by constructing such a function g, thereby confirming the conjecture for dimension 8."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "807796754d4b118dfbd98ccf04e9314e150acb75b6914e569baccef3350d75b6",
+      "id": "bridge-cd4c31c94a48f027",
+      "revision": 1
+    },
+    "content_hash": "df16ffc619e141b435af4c0ea0023f401b1167f3377151143b37379eacf5f6bb",
+    "from": {
+      "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+      "id": "w-source-057b1d8c009ba859",
+      "revision": 1
+    },
+    "id": "wr-6a32840cd7f0fbba",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p12 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      },
+      {
+        "note": "Evidence anchor p15 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+      "id": "w-source-f4a9c46d8b6e8da2",
+      "revision": 1
+    },
+    "warrant": "AF3 paper states the diffusion module 'replaces the AF2 structure module that operated on amino-acid-specific frames and side-chain torsion angles', directly building on and replacing the AF2 design."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "8b13f832d590a536aac974ac0cfe50508e5a1a2c78adc74638a465258737584f",
+      "id": "bridge-de50adc5dfc6caa6",
+      "revision": 1
+    },
+    "content_hash": "4ad70896413a79db81d626c35d2f30ffd07d6753a686c01cbc91b3f7f8d33b58",
+    "from": {
+      "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+      "id": "w-source-057b1d8c009ba859",
+      "revision": 1
+    },
+    "id": "wr-2fe794bcb8470bac",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p34 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      },
+      {
+        "note": "Evidence anchor p18 at source revision 1",
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+      "id": "w-source-f4a9c46d8b6e8da2",
+      "revision": 1
+    },
+    "warrant": "AF3 paper states 'As with AF2, AF3 confidence measures are well calibrated with accuracy' and describes the pLDDT head as in AF2, indicating continuity of the confidence concept."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "173f67bffd1cf9ca6e9103ad4a2b7862a5fa8191e503f38a053671cb7ded9e40",
+      "id": "connection-02e41463b2581ff5",
+      "revision": 1
+    },
+    "content_hash": "b64c32274e7ae66109767fc592302d25c8abceb3babbabd227a9f92763004f23",
+    "from": {
+      "content_hash": "249c67d28ed6c195a6f2f34d710a9b4d5ca3df239566fa6e49a5cda4701953d8",
+      "id": "w-source-40071f9227452f0d",
+      "revision": 1
+    },
+    "id": "wr-498657a29495f4f8",
+    "kind": "insight_projection",
+    "predicate": "generalized_by",
+    "provenance": [
+      {
+        "note": "Evidence anchor p10 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "2d0795aac2b9483719559da718c4d53a9ea1bfd6c103229919e6a7a9eb457831",
+      "id": "w-source-beeaeda1908e6236",
+      "revision": 1
+    },
+    "warrant": "Milgrom (2004) used the envelope theorem to extend the logic of Vickrey's revenue equivalence theorem, proving payoff equivalence for any two mechanisms where the highest type always wins and types are independent, thus generalizing the earlier result."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "b27ae5c7dc6a18db2642a5d3f799fdb51c07a82688a111dacd54728d695c8785",
+      "id": "connection-120bb575e9587be7",
+      "revision": 1
+    },
+    "content_hash": "9a245438fc851235695a6fa9559bdfb27d2d3424d524cb59950f5a581500f9bc",
+    "from": {
+      "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+      "id": "w-source-0480da48214bea42",
+      "revision": 1
+    },
+    "id": "wr-ff8e7f2a77d37f0a",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+      "id": "w-source-3254ab3a15dccb9a",
+      "revision": 1
+    },
+    "warrant": "The encoder-decoder framework described in Bahdanau et al. (2015) as background is explicitly attributed to prior work including Sutskever et al. (2014), establishing the latter as the historical basis."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "a639fd71a85a9f0ef85680e87bac06b43fd9e8449e60ccd6398caa3499fa387a",
+      "id": "connection-15bbbb4dd3bd4792",
+      "revision": 1
+    },
+    "content_hash": "08c4b894b40319de1f9ed00b136651b90023976a72249455b4973e598630812d",
+    "from": {
+      "content_hash": "60ef364d43fdf244d924781a2ba37ae3969ea70a9dbec5a5ecbec91cb0277d8f",
+      "id": "w-source-3e2a6afb528ab6fe",
+      "revision": 1
+    },
+    "id": "wr-0fba37f6addab2f3",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p9 at source revision 1",
+        "title": "Observation of High-Energy Astrophysical Neutrinos in Three Years of IceCube Data",
+        "url": "https://arxiv.org/pdf/1405.5303"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "6f4164313a56eb5e9faeb18149936004c33b1fc1f4d2da5be03c170d4eb4e8c2",
+      "id": "w-source-73c03c6510f9c285",
+      "revision": 1
+    },
+    "warrant": "The 2014 supplementary methods state that reconstructions used 'maximum likelihood fits of the observed photon timing distributions' as described in [12], and the angular resolution values are derived from these fits."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "de3696c937815a6ea55f4c20f9de8e567a29a0f30ee0d15aaa20cc1da8be94f5",
+      "id": "connection-1f30137ade2a6b31",
+      "revision": 1
+    },
+    "content_hash": "0f738958fc070fb0d6dadec9012d68fc778137f2a204e3ec162470647618b55f",
+    "from": {
+      "content_hash": "bc2334086b181d19e43da33508d603b23c527a77b8bd8efef76b372efc410c6c",
+      "id": "w-source-b2acf48348d2a1f4",
+      "revision": 1
+    },
+    "id": "wr-520fdd5b62a4f5de",
+    "kind": "insight_projection",
+    "predicate": "generalized_by",
+    "provenance": [
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information",
+        "url": "https://arxiv.org/pdf/math/0409186"
+      },
+      {
+        "note": "Evidence anchor p4 at source revision 1",
+        "title": "Stable Signal Recovery from Incomplete and Inaccurate Measurements",
+        "url": "https://arxiv.org/pdf/math/0503066"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "94af86d43bfa636f27b4ccc157caf3d7efc3c4208d8b46eb61874102928ce184",
+      "id": "w-source-1f319684a021c497",
+      "revision": 1
+    },
+    "warrant": "The 2004 paper proves exact recovery for signals with support size bounded by a logarithmic factor. The 2005 paper extends this to arbitrary signals, showing that l1-minimization recovers the S-largest entries with error proportional to noise plus a tail term, under the same restricted isometry condition."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "a1d5658b03536d4e6b4c48792de33e3e5be161999329223052c7405b602441b3",
+      "id": "connection-1f65861163543acc",
+      "revision": 1
+    },
+    "content_hash": "999f707e49546d588830026a7048689525c185156fa2cc79c22473780923be82",
+    "from": {
+      "content_hash": "504f08ef94f116c5b4475aea0ae9b8b1bb42a02f9a55c3baf77fc634cff1664c",
+      "id": "w-source-7135f04b26b5ce91",
+      "revision": 1
+    },
+    "id": "wr-a34d184c846cc067",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "url": "https://arxiv.org/pdf/2006.11239"
+      },
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+        "url": "https://arxiv.org/pdf/1503.03585"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "68e9dabfdc1eb39c299b25e8c39cc40d5bff694c1f55620f1c718cf55b902c23",
+      "id": "w-source-30157c08e6d2f6cf",
+      "revision": 1
+    },
+    "warrant": "n-0bf2a97e801c02db states 'Original formulation by Sohl-Dickstein et al.; this paper builds on it' and cites [53], which is the 2015 paper by Sohl-Dickstein et al. that defines the model as the endpoint of a Markov chain (n-cdc79986256a781a). The later work formalizes the same concept as a latent variable model with a fixed forward process."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "78d2a89ee3ecb39a2c302f4bcabb1e9288650afa44591b583496e686966a7893",
+      "id": "connection-245f2ba56462e52b",
+      "revision": 1
+    },
+    "content_hash": "7a383614b6ae2f02cfdb45b9248276c80341a3077c034722b0a05a231a3ab431",
+    "from": {
+      "content_hash": "60ef364d43fdf244d924781a2ba37ae3969ea70a9dbec5a5ecbec91cb0277d8f",
+      "id": "w-source-3e2a6afb528ab6fe",
+      "revision": 1
+    },
+    "id": "wr-0bf381e658c4fec4",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p3 at source revision 1",
+        "title": "Observation of High-Energy Astrophysical Neutrinos in Three Years of IceCube Data",
+        "url": "https://arxiv.org/pdf/1405.5303"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "6f4164313a56eb5e9faeb18149936004c33b1fc1f4d2da5be03c170d4eb4e8c2",
+      "id": "w-source-73c03c6510f9c285",
+      "revision": 1
+    },
+    "warrant": "The 2014 paper describes the veto as 'as before [11]' and adds the quantitative requirement of fewer than 3 of the first 250 photoelectrons on the boundary, directly extending the earlier calorimetric approach."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "51c5e2faa4556f61ed57d12c549666e57308455cb7cd5c6cc4e1661e9937615b",
+      "id": "connection-25531ce91923a013",
+      "revision": 1
+    },
+    "content_hash": "acd3daa951bd20b3fc1845e6a94ab202f606cf8addc65cc50f3a446096a7b322",
+    "from": {
+      "content_hash": "0fd0f77b729dddf15cf3b76a8ee37e431161e2df21212ebe031d5c82158b16ee",
+      "id": "w-source-a6db249dd72a8790",
+      "revision": 1
+    },
+    "id": "wr-6c9a0e2542a96cac",
+    "kind": "insight_projection",
+    "predicate": "supports",
+    "provenance": [
+      {
+        "note": "Evidence anchor p45 at source revision 1",
+        "title": "Scientific Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2022",
+        "url": "https://www.nobelprize.org/uploads/2022/10/advanced-economicsciencesprize2022.pdf"
+      },
+      {
+        "note": "Evidence anchor p4 at source revision 1",
+        "title": "Multiple Equilibria",
+        "url": "https://www.nobelprize.org/uploads/2025/03/dybvig-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "16c970acbda4c7a69061e3ef7e4ed55744f13871c77b9a9bf35b77416fa17c55",
+      "id": "w-source-b0b2b440c574001f",
+      "revision": 1
+    },
+    "warrant": "The Diamond-Dybvig model's multiple equilibria illustrate that multiple equilibria can be an important conclusion rather than a defect. Dybvig (2022) argues this reframing, supported by the bank-run model."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "c99dcdb59dc684f5ffb36b019ddcdb868dbcc8560de4b93db20b3e14d1299d42",
+      "id": "connection-27b186ee4a77bad2",
+      "revision": 1
+    },
+    "content_hash": "a1c8c5c5d8fee60a794e2d73d45f37f76b3f7f6008ad29045fd941859c8b9c31",
+    "from": {
+      "content_hash": "42d1ac1ed12c63b5d9100a9bbea342e5ae95336835cf35e304e55958d56dcae8",
+      "id": "w-source-9821e690515bf0a6",
+      "revision": 1
+    },
+    "id": "wr-8af164c9181cf713",
+    "kind": "insight_projection",
+    "predicate": "challenges",
+    "provenance": [
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "Ricci flow with surgery on three-manifolds",
+        "url": "https://arxiv.org/pdf/math/0303109"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "328a66b5ddc8d8f598814765510f11238ad1ffb959f9f8a2772641aca168143f",
+      "id": "w-source-79ddbd983d8a600c",
+      "revision": 1
+    },
+    "warrant": "The introduction of the surgery paper states: 'the claim about the lower bound for the volumes of the maximal horns and the smoothness of the solution from some time on, which turned out to be unjustified', directly contradicting the earlier claim."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "ae9e0c6bcbce34efd36d9dd93ceab211ee741b9b871399881cf91bcc7082c425",
+      "id": "connection-2f4b2094913cdb15",
+      "revision": 1
+    },
+    "content_hash": "4e655ec855a19258a594dc1eb43823ebc95da8794d680712dc22d9110ca0962f",
+    "from": {
+      "content_hash": "c521b59bed07c6837e0d315e7215d9c9048c79ba02a00b56a0f5a46583f6f6d2",
+      "id": "w-source-3a7869c67be13520",
+      "revision": 1
+    },
+    "id": "wr-597915ae7e26ebf2",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p28 at source revision 1",
+        "title": "Amartya Sen – Biographical - NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/sen/biographical/"
+      },
+      {
+        "note": "Evidence anchor p16 at source revision 1",
+        "title": "The Prize in Economic Sciences 1998 - Press release - NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/press-release/"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "f1c87ca4b48b3b72d915abacd9a1c6175e3c57bb2aa786660d358d3e5a170717",
+      "id": "w-source-2b0419520eb91a90",
+      "revision": 1
+    },
+    "warrant": "Sen's biographical account describes how Pattanaik's arrival and thesis on voting theory led to joint work. The press release states that Sen and Pattanaik specified conditions eliminating intransitivities, which is a direct product of this collaboration."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "393baf50e9baa2c593bb673c51b2028eaa9112dbe635b13ca6c8f88adeef14aa",
+      "id": "connection-326da5f0dee2e674",
+      "revision": 1
+    },
+    "content_hash": "dcd1aa852082e37844e23d21564bc4eedc5ccfe3f0ff6c42a5e2b9c73df53ea9",
+    "from": {
+      "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+      "id": "w-source-3254ab3a15dccb9a",
+      "revision": 1
+    },
+    "id": "wr-939ebfb626273a3b",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      },
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "Sequence to Sequence Learning with Neural Networks",
+        "url": "https://arxiv.org/pdf/1409.3215"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+      "id": "w-source-0480da48214bea42",
+      "revision": 1
+    },
+    "warrant": "The attention paper's background section describes the RNN encoder-decoder framework and cites Sutskever et al. (2014) as using an LSTM for encoding and decoding, which is the exact approach of the LSTM paper."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "82c605027ef6a199763cb968cd75246e85abc18a086df999529e2df14d158f6f",
+      "id": "connection-392fc158d5b53507",
+      "revision": 1
+    },
+    "content_hash": "8a6952feb22077cad6110e6b1468a0f73c25bfca9416da7e42f79841e8d7890d",
+    "from": {
+      "content_hash": "249c67d28ed6c195a6f2f34d710a9b4d5ca3df239566fa6e49a5cda4701953d8",
+      "id": "w-source-40071f9227452f0d",
+      "revision": 1
+    },
+    "id": "wr-d4d1f158663eab68",
+    "kind": "insight_projection",
+    "predicate": "generalized_by",
+    "provenance": [
+      {
+        "note": "Evidence anchor p11 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      },
+      {
+        "note": "Evidence anchor p12 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "2d0795aac2b9483719559da718c4d53a9ea1bfd6c103229919e6a7a9eb457831",
+      "id": "w-source-beeaeda1908e6236",
+      "revision": 1
+    },
+    "warrant": "Milgrom and Weber (1982) extended the revenue equivalence theorem to affiliated values, replacing equality with the linkage principle that ranks auctions by revenue, thus generalizing the independent private-values result."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "65d3204c32117059087fbf759f9de131d7b838ea8d26bc0e38c2756e97153696",
+      "id": "connection-550a4e06bb9506f8",
+      "revision": 1
+    },
+    "content_hash": "79189ad5702862257fbc176a2977cc8d1d9139101433692fa30b1e33b57ef44a",
+    "from": {
+      "content_hash": "bc2334086b181d19e43da33508d603b23c527a77b8bd8efef76b372efc410c6c",
+      "id": "w-source-b2acf48348d2a1f4",
+      "revision": 1
+    },
+    "id": "wr-846b8478f632abb5",
+    "kind": "insight_projection",
+    "predicate": "generalized_by",
+    "provenance": [
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information",
+        "url": "https://arxiv.org/pdf/math/0409186"
+      },
+      {
+        "note": "Evidence anchor p3 at source revision 1",
+        "title": "Stable Signal Recovery from Incomplete and Inaccurate Measurements",
+        "url": "https://arxiv.org/pdf/math/0503066"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "94af86d43bfa636f27b4ccc157caf3d7efc3c4208d8b46eb61874102928ce184",
+      "id": "w-source-1f319684a021c497",
+      "revision": 1
+    },
+    "warrant": "The 2004 paper establishes exact recovery with high probability for random Fourier samples. The 2005 paper introduces the deterministic condition δ3S + 3δ4S < 2 that guarantees stable recovery for any matrix satisfying it, generalizing the earlier probabilistic result."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "795fb021ed32ad6c8f11b3fc572c1337d7410c16f4ff47e3b592c4235ab8fd09",
+      "id": "connection-61eb5c924515e6fb",
+      "revision": 1
+    },
+    "content_hash": "13b7f6b27a47da8a620c9c113275210bb7e3f066d4f1d1ccdedd247b684c9dcc",
+    "from": {
+      "content_hash": "249c67d28ed6c195a6f2f34d710a9b4d5ca3df239566fa6e49a5cda4701953d8",
+      "id": "w-source-40071f9227452f0d",
+      "revision": 1
+    },
+    "id": "wr-bc65e1b4efb4c104",
+    "kind": "insight_projection",
+    "predicate": "generalized_by",
+    "provenance": [
+      {
+        "note": "Evidence anchor p10 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      },
+      {
+        "note": "Evidence anchor p11 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "2d0795aac2b9483719559da718c4d53a9ea1bfd6c103229919e6a7a9eb457831",
+      "id": "w-source-beeaeda1908e6236",
+      "revision": 1
+    },
+    "warrant": "Milgrom and Weber (1982) generalized Wilson's (1969) common-value model by allowing each bidder's value to depend on others' information and by replacing independence with affiliation, subsuming Wilson's model as a special case."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "1b57a0396eb6e8011f10f607d99a7ddcbc37fc8dae6d345c167f84a03e63ec4d",
+      "id": "connection-68765fbebbf49785",
+      "revision": 1
+    },
+    "content_hash": "57d9f5ac6e4b0c53c5c5f09cc05dd6fd383070c27c64f525b534f369c17d1c9a",
+    "from": {
+      "content_hash": "60ef364d43fdf244d924781a2ba37ae3969ea70a9dbec5a5ecbec91cb0277d8f",
+      "id": "w-source-3e2a6afb528ab6fe",
+      "revision": 1
+    },
+    "id": "wr-e8782c1381785fb3",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p12 at source revision 1",
+        "title": "Observation of High-Energy Astrophysical Neutrinos in Three Years of IceCube Data",
+        "url": "https://arxiv.org/pdf/1405.5303"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "6f4164313a56eb5e9faeb18149936004c33b1fc1f4d2da5be03c170d4eb4e8c2",
+      "id": "w-source-73c03c6510f9c285",
+      "revision": 1
+    },
+    "warrant": "The 2014 supplementary methods explicitly reference the earlier test from [10] and describe how the new likelihood ratio test improves upon it by including spectral and angular information."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "1efc24203a6eec6008c63a053699c245e5f9dca028e28e63c497e90ad114023d",
+      "id": "connection-6f7c695fd1d05837",
+      "revision": 1
+    },
+    "content_hash": "67d7a2adae2d298133ea7c9e0e584ffce9ae3450b6d141301fd78c84da10c431",
+    "from": {
+      "content_hash": "249c67d28ed6c195a6f2f34d710a9b4d5ca3df239566fa6e49a5cda4701953d8",
+      "id": "w-source-40071f9227452f0d",
+      "revision": 1
+    },
+    "id": "wr-d3fd4a2839726441",
+    "kind": "insight_projection",
+    "predicate": "applied_in",
+    "provenance": [
+      {
+        "note": "Evidence anchor p23 at source revision 1",
+        "title": "Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2020",
+        "url": "https://www.nobelprize.org/uploads/2020/09/advanced-economicsciencesprize2020.pdf"
+      },
+      {
+        "note": "Evidence anchor p27 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "2d0795aac2b9483719559da718c4d53a9ea1bfd6c103229919e6a7a9eb457831",
+      "id": "w-source-beeaeda1908e6236",
+      "revision": 1
+    },
+    "warrant": "n-03aa6187c6b63d89 states that the CCA uses core-selecting payments; n-59873cb859ae0e38 characterizes core-selecting auctions and minimum-revenue pricing, which are the payment rules applied in the CCA."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "e9644e6b59ac1c4b2b14dfa63e2ccce6198870d35db857368310cc750bc7ceab",
+      "id": "connection-a4990dce07d8620f",
+      "revision": 1
+    },
+    "content_hash": "93fa60cbb6de35fecc700bab4544ca10c199f3925245a5f912100975c1a4a89e",
+    "from": {
+      "content_hash": "bc2334086b181d19e43da33508d603b23c527a77b8bd8efef76b372efc410c6c",
+      "id": "w-source-b2acf48348d2a1f4",
+      "revision": 1
+    },
+    "id": "wr-6fd3bc92ca4b60a8",
+    "kind": "insight_projection",
+    "predicate": "generalized_by",
+    "provenance": [
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information",
+        "url": "https://arxiv.org/pdf/math/0409186"
+      },
+      {
+        "note": "Evidence anchor p4 at source revision 1",
+        "title": "Stable Signal Recovery from Incomplete and Inaccurate Measurements",
+        "url": "https://arxiv.org/pdf/math/0503066"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "94af86d43bfa636f27b4ccc157caf3d7efc3c4208d8b46eb61874102928ce184",
+      "id": "w-source-1f319684a021c497",
+      "revision": 1
+    },
+    "warrant": "The 2004 paper proves exact recovery via l1-minimization from incomplete Fourier samples under a support-size condition. The 2005 paper extends this to stable recovery of arbitrary signals with error bounded by noise and tail terms, using a deterministic restricted isometry condition rather than probabilistic Fourier sampling."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "e95437f181f1e542f6f1e2102ab5baa91c33fb974b12414ab8fea3b6e5392432",
+      "id": "connection-b91ea1837b5e216e",
+      "revision": 1
+    },
+    "content_hash": "07e6b7b6a467b70ba5063c5286f3f66ae3aeef40d4c3505db670122c7e5a1c8e",
+    "from": {
+      "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+      "id": "w-source-0480da48214bea42",
+      "revision": 1
+    },
+    "id": "wr-67d7ee78dbc8992a",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "Sequence to Sequence Learning with Neural Networks",
+        "url": "https://arxiv.org/pdf/1409.3215"
+      },
+      {
+        "note": "Evidence anchor p3 at source revision 1",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+      "id": "w-source-3254ab3a15dccb9a",
+      "revision": 1
+    },
+    "warrant": "The encoder-decoder framework with a fixed-length vector in Sutskever et al. (2014) is the direct predecessor that Bahdanau et al. (2015) extend by introducing a soft attention mechanism that computes a weighted sum of annotations instead of a single fixed vector."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "f1109c1df784c8e976b38bef24efa6ce1321d201b7e5db9bd1ebeb87a32de616",
+      "id": "connection-bd75b69cf73af7ae",
+      "revision": 1
+    },
+    "content_hash": "029dd8ada95ca727633ed9953f045c1355dbc29a73a5d00e386b7e3a33f9b3bd",
+    "from": {
+      "content_hash": "2d0795aac2b9483719559da718c4d53a9ea1bfd6c103229919e6a7a9eb457831",
+      "id": "w-source-beeaeda1908e6236",
+      "revision": 1
+    },
+    "id": "wr-8028556f1c57a954",
+    "kind": "insight_projection",
+    "predicate": "challenges",
+    "provenance": [
+      {
+        "note": "Evidence anchor p7 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      },
+      {
+        "note": "Evidence anchor p8 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "249c67d28ed6c195a6f2f34d710a9b4d5ca3df239566fa6e49a5cda4701953d8",
+      "id": "w-source-40071f9227452f0d",
+      "revision": 1
+    },
+    "warrant": "Glosten and Milgrom (1985) showed that when traders have transactional motives, informed traders can profit, challenging the no-trade theorem's conclusion that information alone cannot drive trade."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "dca8a3e58ee82243aca753b694feb06f7c81e4a46869205a7fb1da0837aeae8a",
+      "id": "connection-bda8a4f02816584c",
+      "revision": 1
+    },
+    "content_hash": "c273cf1b4314f096a7ca65c91cfe0829f4ff5414f6f1fe6fd595c1f9072d2934",
+    "from": {
+      "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+      "id": "w-source-0480da48214bea42",
+      "revision": 1
+    },
+    "id": "wr-eb5a67d38b3144cb",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p6 at source revision 1",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+      "id": "w-source-3254ab3a15dccb9a",
+      "revision": 1
+    },
+    "warrant": "The empirical finding that attention improves long-sentence translation in Bahdanau et al. (2015) directly addresses the limitation of fixed-length vectors in Sutskever et al. (2014), showing that the attention mechanism overcomes the bottleneck."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "1963fc02db781efd9cfa787997334aa58bd03bff6d809d53b3b3f2caac9f473a",
+      "id": "connection-be77623f8793d365",
+      "revision": 1
+    },
+    "content_hash": "dcc9816d97fa9b3519600d4e78fc009c96ad3d0eb0357c0d1724445febf9da3b",
+    "from": {
+      "content_hash": "c521b59bed07c6837e0d315e7215d9c9048c79ba02a00b56a0f5a46583f6f6d2",
+      "id": "w-source-3a7869c67be13520",
+      "revision": 1
+    },
+    "id": "wr-0284e86047a77908",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p44 at source revision 1",
+        "title": "Amartya Sen – Biographical - NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/sen/biographical/"
+      },
+      {
+        "note": "Evidence anchor p27 at source revision 1",
+        "title": "The Prize in Economic Sciences 1998 - Press release - NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/press-release/"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "f1c87ca4b48b3b72d915abacd9a1c6175e3c57bb2aa786660d358d3e5a170717",
+      "id": "w-source-2b0419520eb91a90",
+      "revision": 1
+    },
+    "warrant": "The biographical account describes Sen's attempt to see famines as economic problems, which is a summary of his 1981 book. The press release provides the detailed analysis from that book, showing that the conceptualization is grounded in the empirical and theoretical work."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "26509191867c19be6ce0ed6c9f4d92db0f4882875e6c589f3002e2a87d98ccac",
+      "id": "connection-c1d493aec363503e",
+      "revision": 1
+    },
+    "content_hash": "1adfe0287d7b92f5c9ed5ee6b0dae12b9fbd53ce2400fd74919f3c711be60f3e",
+    "from": {
+      "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+      "id": "w-source-0480da48214bea42",
+      "revision": 1
+    },
+    "id": "wr-10af6e91750eafd1",
+    "kind": "insight_projection",
+    "predicate": "motivated",
+    "provenance": [
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "Sequence to Sequence Learning with Neural Networks",
+        "url": "https://arxiv.org/pdf/1409.3215"
+      },
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+      "id": "w-source-3254ab3a15dccb9a",
+      "revision": 1
+    },
+    "warrant": "The LSTM paper describes compressing the input sequence into a fixed-dimensional vector, and the attention paper explicitly conjectures that this fixed-length vector is a bottleneck for long sentences, citing the LSTM approach as the basis for the conjecture."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "49a2c44dc6efd1986f607dd6f0f53143515b254691a1c1af28877d49e3d167a2",
+      "id": "connection-c65655dd65fa4ff5",
+      "revision": 1
+    },
+    "content_hash": "8afae95b2b99e8d4f511eb1ea9fe627ed7bdc805527e682cdc92333f5c78316a",
+    "from": {
+      "content_hash": "f1c87ca4b48b3b72d915abacd9a1c6175e3c57bb2aa786660d358d3e5a170717",
+      "id": "w-source-2b0419520eb91a90",
+      "revision": 1
+    },
+    "id": "wr-3497bd7783436dd8",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p24 at source revision 1",
+        "title": "The Prize in Economic Sciences 1998 - Press release - NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/press-release/"
+      },
+      {
+        "note": "Evidence anchor p50 at source revision 1",
+        "title": "Amartya Sen – Biographical - NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/sen/biographical/"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "c521b59bed07c6837e0d315e7215d9c9048c79ba02a00b56a0f5a46583f6f6d2",
+      "id": "w-source-3a7869c67be13520",
+      "revision": 1
+    },
+    "warrant": "The press release describes Sen's view that welfare is created by activities enabled by goods, with capabilities depending on factors like health. His biographical account of the Tanner Lectures (1979) presents the capability approach as assessing advantage in terms of substantive freedoms. The earlier formulation in the press release is a precursor to this more developed approach."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "7521293e4ab7080460c7f1fb4a3b160d271c1e034cd5b75e637751de67d14780",
+      "id": "connection-cc0bb6169f910cd0",
+      "revision": 1
+    },
+    "content_hash": "bb6ac56c75beabf901a31efa3fc37654e46936bf8a83f260d119e9d3589bc8e1",
+    "from": {
+      "content_hash": "249c67d28ed6c195a6f2f34d710a9b4d5ca3df239566fa6e49a5cda4701953d8",
+      "id": "w-source-40071f9227452f0d",
+      "revision": 1
+    },
+    "id": "wr-24324879817ea0c8",
+    "kind": "insight_projection",
+    "predicate": "premise_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p24 at source revision 1",
+        "title": "Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2020",
+        "url": "https://www.nobelprize.org/uploads/2020/09/advanced-economicsciencesprize2020.pdf"
+      },
+      {
+        "note": "Evidence anchor p124 at source revision 1",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "2d0795aac2b9483719559da718c4d53a9ea1bfd6c103229919e6a7a9eb457831",
+      "id": "w-source-beeaeda1908e6236",
+      "revision": 1
+    },
+    "warrant": "The incentive auction's reverse auction component relies on the descending clock auction class formalized by Milgrom and Segal (2020), which provides the theoretical foundation."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "6435fca03b6d8c38ff6bf7a7c664caabc49bc0863ac615fb82e3728c9e31c24c",
+      "id": "connection-d1d8b400a00c2908",
+      "revision": 1
+    },
+    "content_hash": "b2fd876dcb880a04fc2c87740ff4222d29fcea11fe1d9c3421eade4c1ce47f66",
+    "from": {
+      "content_hash": "1982a2d99fe1c34289c2e3e4a12fcf82100fb2b49185425dc6fc5296749b62d2",
+      "id": "w-source-ac8a203d7cffa313",
+      "revision": 1
+    },
+    "id": "wr-2cb3f16a4f3bbd48",
+    "kind": "insight_projection",
+    "predicate": "premise_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p27 at source revision 1",
+        "title": "John L. Hall - Nobel Lecture",
+        "url": "https://www.nobelprize.org/uploads/2018/06/hall-lecture.pdf"
+      },
+      {
+        "note": "Evidence anchor p28 at source revision 1",
+        "title": "John L. Hall - Nobel Lecture",
+        "url": "https://www.nobelprize.org/uploads/2018/06/hall-lecture.pdf"
+      },
+      {
+        "note": "Evidence anchor p9 at source revision 1",
+        "title": "Theodor W. Hänsch - Nobel Lecture",
+        "url": "https://www.nobelprize.org/uploads/2018/06/hansch-lecture.pdf"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "ead0c898f54ef860c1425c153cf67fd72755df3275eae6615ec2fff5062de0b7",
+      "id": "w-source-1dffa399e936fe08",
+      "revision": 1
+    },
+    "warrant": "n-cc8884ff4af42d03 explains that a repetitive pulse train's spectrum consists of sharp lines at harmonics of the repetition rate, with line spacing equal to the repetition frequency. n-a9cb143b220a4ec8 states that a mode-locked laser produces a comb with line frequencies f_m = m f_r + f_CE. The source passages (s-ac8a203d7cffa313@1:p27, s-ac8a203d7cffa313@1:p28, s-1dffa399e936fe08@1:p9) show that the Fourier analysis of a periodic pulse train is the basis for the comb line spacing, with the offset f_CE added for phase slips. The coherent addition principle is a premise for the comb ruler formula."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "6a3e677fb9496ace9f6d75633e07c1fe57101fd26459a5e24efb2ec391802bb8",
+      "id": "connection-e4d3666cb6cfa9b3",
+      "revision": 1
+    },
+    "content_hash": "f89ce4e60c6502d4558faeed4a8c6ea6d26f04ab729e2f08e76a69f8277e813e",
+    "from": {
+      "content_hash": "5a77ab045f0f8be600aa83db1f0dc63fcaf33c652be0b95240a256325be3789a",
+      "id": "w-source-2cbb8d3b3b27f740",
+      "revision": 1
+    },
+    "id": "wr-5dce2c8797d24291",
+    "kind": "insight_projection",
+    "predicate": "supports",
+    "provenance": [
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "Properties of the Binary Black Hole Merger GW150914",
+        "url": "https://arxiv.org/pdf/1602.03840"
+      },
+      {
+        "note": "Evidence anchor p11 at source revision 1",
+        "title": "Properties of the Binary Black Hole Merger GW150914",
+        "url": "https://arxiv.org/pdf/1602.03840"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "6d011c591538051b17aaed1404cb993e83d317407de4d76e538f27c132e2b349",
+      "id": "w-source-9428a9fa38da4d9d",
+      "revision": 1
+    },
+    "warrant": "The eccentricity assumption and its validation support the circular orbit assumption used in the Bayesian parameter estimation models."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "2d70ec75e2aa7502a4939bb7f5e38c1c5ef38db443c412df3eb4f81f1bcab665",
+      "id": "connection-e87e8f26c2c5f0b4",
+      "revision": 1
+    },
+    "content_hash": "2a5c42499b1c41e21a5dabddfc9ccc731b4b4f8367e78c8bcff2d283b6933966",
+    "from": {
+      "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+      "id": "w-source-3254ab3a15dccb9a",
+      "revision": 1
+    },
+    "id": "wr-a307752be027d27d",
+    "kind": "insight_projection",
+    "predicate": "challenges",
+    "provenance": [
+      {
+        "note": "Evidence anchor p9 at source revision 1",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      },
+      {
+        "note": "Evidence anchor p1 at source revision 1",
+        "title": "Sequence to Sequence Learning with Neural Networks",
+        "url": "https://arxiv.org/pdf/1409.3215"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+      "id": "w-source-0480da48214bea42",
+      "revision": 1
+    },
+    "warrant": "The attention paper identifies unknown word handling as a future challenge, while the LSTM paper explicitly states that out-of-vocabulary words are replaced with UNK, which penalizes BLEU scores, showing that the LSTM paper's limitation is an instance of the challenge."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "8d1b1e3f10ff342dd19d1c66bdcc477c61b09e95484178540dbea603b0708384",
+      "id": "connection-f3750bc82beec9d9",
+      "revision": 1
+    },
+    "content_hash": "d3e2d490c321823b33e2f59878ddd2a0554ae33be5db0cc67c90f3f7b4074b7f",
+    "from": {
+      "content_hash": "60ef364d43fdf244d924781a2ba37ae3969ea70a9dbec5a5ecbec91cb0277d8f",
+      "id": "w-source-3e2a6afb528ab6fe",
+      "revision": 1
+    },
+    "id": "wr-3f9375869647721e",
+    "kind": "insight_projection",
+    "predicate": "historical_basis_for",
+    "provenance": [
+      {
+        "note": "Evidence anchor p2 at source revision 1",
+        "title": "Observation of High-Energy Astrophysical Neutrinos in Three Years of IceCube Data",
+        "url": "https://arxiv.org/pdf/1405.5303"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "6f4164313a56eb5e9faeb18149936004c33b1fc1f4d2da5be03c170d4eb4e8c2",
+      "id": "w-source-73c03c6510f9c285",
+      "revision": 1
+    },
+    "warrant": "The 2014 paper states that the two-year data 'provided the first strong evidence' and that the three-year analysis uses 'the same methods' with an additional year, directly building on the earlier observation."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "b8739afb21afcbb0e1666d95c97c90c370f9a2f28799a2249487220856acf091",
+      "id": "r-229e181bc44504da",
+      "revision": 1
+    },
+    "content_hash": "50f0e1e32e5a533befcf86b571969099cd295bc7bfd8c1171e0245ace33a0f6b",
+    "from": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "id": "wr-88bd0fd1a7d37a7b",
+    "kind": "insight_projection",
+    "predicate": "applied_in",
+    "provenance": [
+      {
+        "note": "Evidence anchor p12 at source revision 1",
+        "title": "New upper bounds on sphere packings I",
+        "url": "https://arxiv.org/pdf/math/0110009"
+      },
+      {
+        "note": "Evidence anchor p14 at source revision 1",
+        "title": "New upper bounds on sphere packings I",
+        "url": "https://arxiv.org/pdf/math/0110009"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+      "id": "w-source-7edb5c263f75a465",
+      "revision": 1
+    },
+    "warrant": "The variational method in n4 uses the framework of Theorem 3.1 (n1) to derive a function that satisfies the hypotheses and yields a known bound."
+  },
+  {
+    "basis_relation": {
+      "content_hash": "e4a6ffcb95a8ca0d5a4ae1f200dd68083422ad937e18e34e08be0e4bad6f26a8",
+      "id": "r-ca87e06a972742ac",
+      "revision": 1
+    },
+    "content_hash": "4666f82e384f5e9a7667aba01968c36f0348f7a9577166ace42dd3528bd72995",
+    "from": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "id": "wr-afa3c517a198abde",
+    "kind": "insight_projection",
+    "predicate": "applied_in",
+    "provenance": [
+      {
+        "note": "Evidence anchor p15 at source revision 1",
+        "title": "New upper bounds on sphere packings I",
+        "url": "https://arxiv.org/pdf/math/0110009"
+      },
+      {
+        "note": "Evidence anchor p16 at source revision 1",
+        "title": "New upper bounds on sphere packings I",
+        "url": "https://arxiv.org/pdf/math/0110009"
+      }
+    ],
+    "revision": 1,
+    "scope": "This connection concerns the linked insights within these works, not every claim or the entire history of either work.",
+    "to": {
+      "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+      "id": "w-source-7edb5c263f75a465",
+      "revision": 1
+    },
+    "warrant": "The numerical approach in n5 constructs functions satisfying the hypotheses of Theorem 3.2, which is a variant of n1, to obtain bounds."
+  }
+]

@@ -1,0 +1,526 @@
+{
+  "entries": [
+    {
+      "aliases": [],
+      "biography": "Researcher in mechanics and observational astronomy, known for studies of falling bodies and telescopic observations.",
+      "key": "historical-gap-8d3da00a32df59eb",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148631a419827050fd22ea81869bb",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "c016e8f3d2576d803045024557cd854f6c4339c341a8e19612d578e2faa1beaa"
+      },
+      "name": "Galileo Galilei",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: Galileo Galilei",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "Galileo combined measurements of falling bodies with telescope-based investigations of the Moon and Jupiter’s satellites.",
+      "title": "Studies of falling bodies and telescopic observations",
+      "topic": "Motion and telescopic astronomy"
+    },
+    {
+      "aliases": [],
+      "biography": "Mathematician and astronomer who established three laws describing planetary motion.",
+      "key": "historical-gap-c4e29cd260830e3f",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148631a419827050fd22ea81869bb",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "260adffe1ed3487c3770d376ada1d3ed805209b39fc462f2364dad49a1b82e95"
+      },
+      "name": "Johannes Kepler",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: Johannes Kepler",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Kepler/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "Kepler described planetary motion using elliptical orbits and three quantitative laws. His investigations also connected astronomical calculation with optics and geometry.",
+      "title": "Three laws of planetary motion",
+      "topic": "Planetary motion"
+    },
+    {
+      "aliases": [],
+      "biography": "Experimental physicist whose investigations of electricity and magnetism shaped later field theories.",
+      "key": "historical-gap-582fad60d949da90",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148631a419827050fd22ea81869bb",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "e2e247499f4b8214c06adaef092773709ba0b4da6c350f1f313afee8025b27b0"
+      },
+      "name": "Michael Faraday",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: Michael Faraday",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Faraday/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "Faraday investigated the generation of electric effects through changing magnetic conditions and developed a field-oriented account using lines of force.",
+      "title": "Electromagnetic induction",
+      "topic": "Electromagnetic induction"
+    },
+    {
+      "aliases": [],
+      "biography": "Physicist who developed statistical and kinetic explanations of thermodynamic behavior.",
+      "key": "historical-gap-274e1a0c2e3bc55e",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148631a419827050fd22ea81869bb",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "d0c682bf2da485dd07ef455a509851fe5268babb5a37fe73b69c45ba22cd7c74"
+      },
+      "name": "Ludwig Boltzmann",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: Ludwig Boltzmann",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Boltzmann/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "Boltzmann developed statistical accounts connecting microscopic particle behavior with macroscopic thermodynamic properties.",
+      "title": "Statistical mechanics and kinetic theory",
+      "topic": "Statistical mechanics"
+    },
+    {
+      "aliases": [
+        "Lord Kelvin",
+        "William Thomson"
+      ],
+      "biography": "Physicist active in thermodynamics, electricity and the engineering of transatlantic telegraph communication.",
+      "key": "historical-gap-87b7e9e202961c8b",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148631a419827050fd22ea81869bb",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "e9a8a90e383faf0869d90c84ae35684bc6cf832b97ff7728452d28df314e627f"
+      },
+      "name": "William Thomson (Lord Kelvin)",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: William Thomson (Lord Kelvin)",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Thomson/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "physics"
+      ],
+      "summary": "Thomson proposed an absolute temperature scale within his investigations of thermodynamics.",
+      "title": "Absolute thermodynamic temperature scale",
+      "topic": "Thermodynamic temperature"
+    },
+    {
+      "aliases": [
+        "Edsger Dijkstra",
+        "Edsger Wybe Dijkstra"
+      ],
+      "biography": "Computer scientist known for algorithms, synchronization methods and mathematical approaches to programming.",
+      "key": "historical-gap-41878646e3b057b8",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148631a9c2a0dcd71abc9a258ad4e",
+        "auxiliary_draft_decision": "supported",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "ce04d4414221463380289d842608d7d159e427b5392aa07567d2ccb92f1f0805"
+      },
+      "name": "Edsger W. Dijkstra",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of Texas at Austin: Edsger W. Dijkstra",
+        "url": "https://www.cs.utexas.edu/news/2002/edsger-wybe-dijkstra-1930-2002"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "computer_science"
+      ],
+      "summary": "Dijkstra investigated how mathematical reasoning, structured programming and controlled synchronization can support reliable software construction.",
+      "title": "Structured programming and formal program development",
+      "topic": "Structured programming"
+    },
+    {
+      "aliases": [],
+      "biography": "Computer scientist associated with convolutional networks and learning-based visual recognition.",
+      "key": "historical-gap-0150d732a0f7877b",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148631a9c2a0dcd71abc9a258ad4e",
+        "auxiliary_draft_decision": "supported",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "2a96be11806c6452f4d31f5dc9ec6b881fbf8303bab4b9d9b2ac150271089afb"
+      },
+      "name": "Yann LeCun",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "New York University: Yann LeCun",
+        "url": "https://cs.nyu.edu/~yann/research/index.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "computer_science"
+      ],
+      "summary": "LeCun and collaborators investigated hierarchical visual recognition systems whose features were trained using supervised and unsupervised learning.",
+      "title": "Convolutional learning for object recognition",
+      "topic": "Convolutional neural networks"
+    },
+    {
+      "aliases": [],
+      "biography": "Philosopher and mathematician associated with algebraic approaches to geometry.",
+      "key": "historical-gap-39eb9f1c76e2fdc5",
+      "kind": "book",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148632880b5c3b1c2c52e8d894f9f",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "00d87b016968db97ad93abd9b0caae3aa0c6d887a6483a66f0e6026402f80a39"
+      },
+      "name": "René Descartes",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: René Descartes",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Descartes/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "mathematics"
+      ],
+      "summary": "Descartes used algebraic methods to investigate geometric problems in La Géométrie.",
+      "title": "La Géométrie",
+      "topic": "Analytic geometry"
+    },
+    {
+      "aliases": [],
+      "biography": "Mathematician and legal official whose work included number theory and early calculus methods.",
+      "key": "historical-gap-398402b4cc3e7be5",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148632880b5c3b1c2c52e8d894f9f",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "dc3bea56c313a568260cdedf4f6bc4fd611f770f528dbaef4ccbcaefd677c34b"
+      },
+      "name": "Pierre de Fermat",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: Pierre de Fermat",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "mathematics"
+      ],
+      "summary": "Fermat developed number-theoretic problems and arguments, including the conjecture later known as Fermat’s Last Theorem. This catalog entry does not attribute the later proof to him.",
+      "title": "Fermat’s number-theoretic investigations",
+      "topic": "Number theory"
+    },
+    {
+      "aliases": [],
+      "biography": "Mathematician whose geometry and correspondence with Fermat contributed to projective geometry and probability.",
+      "key": "historical-gap-251ded6aa42e0b74",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148632880b5c3b1c2c52e8d894f9f",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "bdb93b7e76dfb61e8801e50cbd7f7daafd9f16806b40cc6d8fea61e3e7d5934f"
+      },
+      "name": "Blaise Pascal",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "University of St Andrews MacTutor: Blaise Pascal",
+        "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "mathematics"
+      ],
+      "summary": "Pascal investigated conic sections and projective configurations, presenting results while still a teenager.",
+      "title": "Essay on Conic Sections",
+      "topic": "Projective geometry"
+    },
+    {
+      "aliases": [],
+      "biography": "Naturalist who developed and published an account of species change through natural selection.",
+      "key": "historical-gap-9247155861ce69f3",
+      "kind": "book",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148632880b5c3b1c2c52e8d894f9f",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "99ffb1e0643a82b09d124fa62da3289b5a6a425c94896e9b0ec59c46f5f36639"
+      },
+      "name": "Charles Darwin",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "Darwin Correspondence Project, University of Cambridge: Charles Darwin",
+        "url": "https://www.darwinproject.ac.uk/origin-species"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "biology_medicine"
+      ],
+      "summary": "Darwin’s 1859 book developed an account of species change through natural selection. The linked historical account also documents Wallace’s separate formulation.",
+      "title": "On the Origin of Species",
+      "topic": "Evolution by natural selection",
+      "year": 1859
+    },
+    {
+      "aliases": [],
+      "biography": "Chemist whose research connected microorganisms with fermentation and disease prevention.",
+      "key": "historical-gap-ae55ad5f733a2007",
+      "kind": "research_program",
+      "metadata_screening": {
+        "auxiliary_check_request": "01a148632880b5c3b1c2c52e8d894f9f",
+        "auxiliary_draft_decision": "revise",
+        "auxiliary_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "kind": "agent_editorial",
+        "method": "Primary agent source-based selection and concise revision after auxiliary metadata check; no qualified human review.",
+        "source_hash": "5b36f1195263798f4e26ec1575c1d630d2ee085cf8ab45bda6c0ff89ae736c17"
+      },
+      "name": "Louis Pasteur",
+      "provenance": {
+        "note": "Source supports individual identity and the selected research area. This is catalog metadata; insight extraction remains pending.",
+        "title": "Institut Pasteur: Louis Pasteur",
+        "url": "https://www.pasteur.fr/en/whats-new/latest-news/features/louis-pasteur-universal-legacy"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected to fill a foundational historical gap, using an institutional account of the person and their work.",
+      "subjects": [
+        "biology_medicine"
+      ],
+      "summary": "Pasteur and his collaborators investigated microbial fermentation and methods of vaccination, including work on rabies.",
+      "title": "Microbial fermentation and vaccine research",
+      "topic": "Microbiology and immunology"
+    },
+    {
+      "aliases": [],
+      "biography": "Economist and moral philosopher whose writing examined specialization, exchange and social cooperation.",
+      "key": "historical-economics-smith",
+      "kind": "book",
+      "metadata_screening": {
+        "kind": "agent_editorial",
+        "method": "Primary agent checked biography and bibliography via web reading, 2026-10-17. No auxiliary verdict or qualified human review is claimed."
+      },
+      "name": "Adam Smith",
+      "provenance": {
+        "note": "Biography and Selected Works identify this author, book and publication year. Retrieved through web reading after the direct source connection failed; no claim-level source anchors are asserted.",
+        "title": "Library of Economics and Liberty: Adam Smith",
+        "url": "https://www.econlib.org/library/Enc/bios/Smith.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected as a foundational author and major work in the history of economic thought; inclusion does not endorse a policy or disputed interpretation.",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "Smith examined specialization, exchange and the institutions associated with national prosperity.",
+      "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "topic": "Division of labor and economic development",
+      "year": 1776
+    },
+    {
+      "aliases": [],
+      "biography": "Economist whose work reshaped debates about employment, demand and macroeconomic policy.",
+      "key": "historical-economics-keynes",
+      "kind": "book",
+      "metadata_screening": {
+        "kind": "agent_editorial",
+        "method": "Primary agent checked biography and bibliography via web reading, 2026-10-17. No auxiliary verdict or qualified human review is claimed."
+      },
+      "name": "John Maynard Keynes",
+      "provenance": {
+        "note": "Biography and Selected Works identify this author, book and publication year. Retrieved through web reading after the direct source connection failed; no claim-level source anchors are asserted.",
+        "title": "Library of Economics and Liberty: John Maynard Keynes",
+        "url": "https://www.econlib.org/library/Enc/bios/Keynes.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected as a foundational author and major work in the history of economic thought; inclusion does not endorse a policy or disputed interpretation.",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "Keynes investigated employment, investment and aggregate demand, disputing the assumption that market adjustment necessarily restores full employment.",
+      "title": "The General Theory of Employment, Interest and Money",
+      "topic": "Aggregate demand and employment",
+      "year": 1936
+    },
+    {
+      "aliases": [],
+      "biography": "Economist associated with comparative advantage, rent and classical theories of distribution.",
+      "key": "historical-economics-ricardo",
+      "kind": "book",
+      "metadata_screening": {
+        "kind": "agent_editorial",
+        "method": "Primary agent checked biography and bibliography via web reading, 2026-10-17. No auxiliary verdict or qualified human review is claimed."
+      },
+      "name": "David Ricardo",
+      "provenance": {
+        "note": "Biography and Selected Works identify this author, book and publication year. Retrieved through web reading after the direct source connection failed; no claim-level source anchors are asserted.",
+        "title": "Library of Economics and Liberty: David Ricardo",
+        "url": "https://www.econlib.org/library/Enc/bios/Ricardo.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected as a foundational author and major work in the history of economic thought; inclusion does not endorse a policy or disputed interpretation.",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "Ricardo examined trade, relative production costs and the distribution of income among workers, landowners and capital owners.",
+      "title": "On the Principles of Political Economy and Taxation",
+      "topic": "Comparative advantage and distribution",
+      "year": 1817
+    },
+    {
+      "aliases": [],
+      "biography": "Economist who investigated population, subsistence and responses to resource constraints.",
+      "key": "historical-economics-malthus",
+      "kind": "book",
+      "metadata_screening": {
+        "kind": "agent_editorial",
+        "method": "Primary agent checked biography and bibliography via web reading, 2026-10-17. No auxiliary verdict or qualified human review is claimed."
+      },
+      "name": "Thomas Robert Malthus",
+      "provenance": {
+        "note": "Biography and Selected Works identify this author, book and publication year. Retrieved through web reading after the direct source connection failed; no claim-level source anchors are asserted.",
+        "title": "Library of Economics and Liberty: Thomas Robert Malthus",
+        "url": "https://www.econlib.org/library/Enc/bios/Malthus.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected as a foundational author and major work in the history of economic thought; inclusion does not endorse a policy or disputed interpretation.",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "Malthus examined population growth, food supply and the behavioral responses that can constrain demographic expansion. His assumptions and historical limits require separate examination.",
+      "title": "An Essay on the Principle of Population",
+      "topic": "Population and resource constraints",
+      "year": 1798
+    },
+    {
+      "aliases": [],
+      "biography": "Economist who developed influential methods for studying individual markets and price adjustment.",
+      "key": "historical-economics-marshall",
+      "kind": "book",
+      "metadata_screening": {
+        "kind": "agent_editorial",
+        "method": "Primary agent checked biography and bibliography via web reading, 2026-10-17. No auxiliary verdict or qualified human review is claimed."
+      },
+      "name": "Alfred Marshall",
+      "provenance": {
+        "note": "Biography and Selected Works identify this author, book and publication year. Retrieved through web reading after the direct source connection failed; no claim-level source anchors are asserted.",
+        "title": "Library of Economics and Liberty: Alfred Marshall",
+        "url": "https://www.econlib.org/library/Enc/bios/Marshall.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected as a foundational author and major work in the history of economic thought; inclusion does not endorse a policy or disputed interpretation.",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "Marshall analyzed price determination through supply and demand, along with elasticity, surplus and adjustment over different time horizons.",
+      "title": "Principles of Economics",
+      "topic": "Supply demand and market adjustment",
+      "year": 1890
+    },
+    {
+      "aliases": [],
+      "biography": "Political economist whose analysis examined capitalist production, labor and accumulation.",
+      "key": "historical-economics-marx",
+      "kind": "book",
+      "metadata_screening": {
+        "kind": "agent_editorial",
+        "method": "Primary agent checked biography and bibliography via web reading, 2026-10-17. No auxiliary verdict or qualified human review is claimed."
+      },
+      "name": "Karl Marx",
+      "provenance": {
+        "note": "Biography and Selected Works identify this author, book and publication year. Retrieved through web reading after the direct source connection failed; no claim-level source anchors are asserted.",
+        "title": "Library of Economics and Liberty: Karl Marx",
+        "url": "https://www.econlib.org/library/Enc/bios/Marx.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected as a foundational author and major work in the history of economic thought; inclusion does not endorse a policy or disputed interpretation.",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "Marx investigated capitalist production, labor, value and accumulation. The work is catalogued as an influential analysis, without endorsing its conclusions.",
+      "title": "Capital: A Critique of Political Economy, Volume I",
+      "topic": "Capital accumulation and political economy",
+      "year": 1867
+    },
+    {
+      "aliases": [
+        "Joseph Schumpeter"
+      ],
+      "biography": "Economist whose work emphasized innovation, entrepreneurship and economic transformation.",
+      "key": "historical-economics-schumpeter",
+      "kind": "book",
+      "metadata_screening": {
+        "kind": "agent_editorial",
+        "method": "Primary agent checked biography and bibliography via web reading, 2026-10-17. No auxiliary verdict or qualified human review is claimed."
+      },
+      "name": "Joseph Alois Schumpeter",
+      "provenance": {
+        "note": "Biography and Selected Works identify this author, book and publication year. Retrieved through web reading after the direct source connection failed; no claim-level source anchors are asserted.",
+        "title": "Library of Economics and Liberty: Joseph Alois Schumpeter",
+        "url": "https://www.econlib.org/library/Enc/bios/Schumpeter.html"
+      },
+      "recognition_year": null,
+      "selection_reason": "Selected as a foundational author and major work in the history of economic thought; inclusion does not endorse a policy or disputed interpretation.",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "Schumpeter examined entrepreneurship, innovation and the replacement of established economic structures, alongside competing accounts of capitalism’s development.",
+      "title": "Capitalism, Socialism and Democracy",
+      "topic": "Innovation and creative destruction",
+      "year": 1942
+    }
+  ],
+  "human_review": false,
+  "scope": "Source-backed catalog metadata only. No scientific insight or relationship was admitted from these summaries."
+}

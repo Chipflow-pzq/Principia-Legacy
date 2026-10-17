@@ -50,6 +50,12 @@ try:
     if people:
         profile = get("/api/people/" + people[0]["id"])
         assert profile["person"]["id"] == people[0]["id"]
+    works = get("/api/works?q=computability")["works"]
+    if info.get("catalog_counts", {}).get("works"):
+        assert works
+        work = get("/api/works/" + works[0]["id"])
+        assert work["work"]["content_hash"] and work["topics"]
+        assert get("/api/search?q=Allan%20Turing")["people"]
     neighborhood = get("/api/neighborhood?dossier=C01")
     assert neighborhood["contributions"] and neighborhood["relations"]
     arrow = get("/api/relations/" + neighborhood["relations"][0]["id"])
@@ -82,6 +88,7 @@ try:
             "dossiers",
             "contribution inspector",
             "shared topic links and scientist profiles",
+            "work catalog and offline fuzzy search",
             "relationship inspector",
             "neighborhood",
             "brief",

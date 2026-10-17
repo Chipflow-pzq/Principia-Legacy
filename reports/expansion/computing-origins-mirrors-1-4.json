@@ -1,0 +1,50 @@
+{
+  "admission": {
+    "new_contributions": 0,
+    "new_records": 0,
+    "new_relations": 0,
+    "plan_total_contributions": 0,
+    "plan_total_relations": 0
+  },
+  "completed_at": "2026-10-17T05:18:07+00:00",
+  "estimate": {
+    "assignments": 2,
+    "maximum_output_tokens_before_retries": 114688,
+    "maximum_parallel_requests": 2,
+    "normal_calls_before_retries": 4,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged.",
+    "optional_reuse_refinement_calls": 2
+  },
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "outcomes": [
+    {
+      "assignment_id": "2ac5d6928d80b9b6d9dbed1019643a9ec1e666df71d22d74c76523cddb9c53bb",
+      "depth": 0,
+      "dossier": "C1002",
+      "error": "Insufficient readable source text",
+      "need": "Turing’s 1936 machine model, universal computation and undecidability arguments. Preserve the exact problem stated; do not replace circle-freeness or the Entscheidungsproblem with a casually attributed modern halting theorem.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://www.wolframscience.com/prizes/tm23/images/Turing.pdf",
+      "state": "failed",
+      "time": "2026-10-17T05:17:10+00:00",
+      "url": "https://www.wolframscience.com/prizes/tm23/images/Turing.pdf"
+    },
+    {
+      "assignment_id": "571da99f3ef10b3f1ccbe49a855e60fa6da0bb9602a9c687a4eed288709fb15e",
+      "depth": 0,
+      "dossier": "C1401",
+      "error": "Source download exceeded total time cap",
+      "need": "John von Neumann’s First Draft of a Report on the EDVAC: memory for instructions and data, control, arithmetic, and limitations. Distinguish the report's authorship from collective EDVAC design credit.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://web.mit.edu/sts.035/www/PDFs/edvac.pdf",
+      "state": "failed",
+      "time": "2026-10-17T05:18:06+00:00",
+      "url": "https://web.mit.edu/sts.035/www/PDFs/edvac.pdf"
+    }
+  ],
+  "plan_hash": "9fced35e751c97b916986b98ab54f5ae6ab1d31623f615e6895c63343b5cd4ac",
+  "plan_id": "computing-origins-mirrors-1-4",
+  "started_at": "2026-10-17T05:16:30+00:00"
+}

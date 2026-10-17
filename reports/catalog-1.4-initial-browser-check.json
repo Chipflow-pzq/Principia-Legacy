@@ -1,0 +1,15 @@
+{
+  "status": "superseded by final run",
+  "stats": {
+    "startTime": "2026-10-17T05:54:50.435Z",
+    "duration": 237175.404,
+    "expected": 128,
+    "skipped": 171,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "notes": [
+    "One status-copy assertion needed updating for the new catalogue distinction.",
+    "Run stopped during exhaustive topic navigation to finish accessibility labels; unrun checks are not counted as passes."
+  ]
+}

@@ -1,0 +1,476 @@
+[
+  {
+    "aliases": [
+      "A. Einstein",
+      "Einstein"
+    ],
+    "bio_sources": [
+      {
+        "note": "The cited work documents the research contribution described here. This is a brief research profile, not a comprehensive biography.",
+        "title": "Fundamental ideas and problems of the theory of relativity",
+        "url": "https://www.nobelprize.org/uploads/2018/06/einstein-lecture.pdf"
+      }
+    ],
+    "biography": "Albert Einstein developed special and general relativity. His 1923 Nobel lecture explains the relation between spacetime geometry and gravitation, and discusses open problems in the theory. The ideas below distinguish the historical account from later experimental tests.",
+    "id": "person-7105df8608daf28c",
+    "kind": "person",
+    "name": "Albert Einstein",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "W. R. Hamilton",
+      "W.R. Hamilton"
+    ],
+    "bio_sources": [
+      {
+        "note": "T. D. Spearman’s institutional history describes Hamilton’s appointment and contributions to optics, dynamics and quaternions.",
+        "title": "Trinity College Dublin: Hamilton",
+        "url": "https://www.maths.tcd.ie/about/400Hist/10.php"
+      }
+    ],
+    "biography": "William Rowan Hamilton was an Irish mathematician who made major contributions to optics, dynamics and quaternions. Appointed to the astronomy chair at Trinity College Dublin in 1827, he developed the characteristic-function approach to dynamics explored in this atlas.",
+    "id": "person-edc46353e6cfd58d",
+    "kind": "person",
+    "life_dates": "Born in Dublin, 1805",
+    "name": "William Rowan Hamilton",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "Mendel",
+      "G. Mendel"
+    ],
+    "bio_sources": [
+      {
+        "note": "The cited work documents the research contribution described here. This is a brief research profile, not a comprehensive biography.",
+        "title": "12.3 Laws of Inheritance - Biology 2e | OpenStax",
+        "url": "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance"
+      }
+    ],
+    "biography": "Gregor Mendel investigated how traits pass between generations through experiments with pea plants. The atlas follows segregation and independent assortment, together with the conditions under which these patterns hold. Its current historical account is drawn from a modern biology textbook.",
+    "id": "person-1a48a6f09cc4abf7",
+    "kind": "person",
+    "name": "Gregor Mendel",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "Newton",
+      "I. Newton"
+    ],
+    "bio_sources": [
+      {
+        "note": "The cited work documents the research contribution described here. This is a brief research profile, not a comprehensive biography.",
+        "title": "5.3 The Fundamental Theorem of Calculus - Calculus Volume 1 | OpenStax",
+        "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+      }
+    ],
+    "biography": "Isaac Newton is one of the historical figures credited with the development of calculus in the textbook source used here. This profile currently links a modern exposition of calculus; the atlas has not yet reconstructed his original formulation from primary sources.",
+    "id": "person-b7ef63821b92761a",
+    "kind": "person",
+    "name": "Isaac Newton",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "Gottfried Leibniz",
+      "Leibniz",
+      "G. W. Leibniz"
+    ],
+    "bio_sources": [
+      {
+        "note": "The cited work documents the research contribution described here. This is a brief research profile, not a comprehensive biography.",
+        "title": "5.3 The Fundamental Theorem of Calculus - Calculus Volume 1 | OpenStax",
+        "url": "https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus"
+      }
+    ],
+    "biography": "Gottfried Wilhelm Leibniz is one of the historical figures credited with the development of calculus in the textbook source used here. This profile currently links a modern exposition; a separately sourced account of his original formulation remains a coverage gap.",
+    "id": "person-8b2aea225c076f74",
+    "kind": "person",
+    "name": "Gottfried Wilhelm Leibniz",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "A. Vaswani"
+    ],
+    "bio_sources": [
+      {
+        "note": "The cited work documents the research contribution described here. This is a brief research profile, not a comprehensive biography.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Ashish Vaswani coauthored Attention Is All You Need, the 2017 paper introducing the Transformer architecture. The linked insights explain the paper’s attention mechanisms, model design and experimental evidence. Credit belongs to the author team, not to this profile alone.",
+    "id": "person-d376c7e060c7c681",
+    "kind": "person",
+    "name": "Ashish Vaswani",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Noam Shazeer coauthored Attention Is All You Need. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-ba7112b748832514",
+    "kind": "person",
+    "name": "Noam Shazeer",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Niki Parmar coauthored Attention Is All You Need. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-a6bf1aef6178cf10",
+    "kind": "person",
+    "name": "Niki Parmar",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Jakob Uszkoreit coauthored Attention Is All You Need. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-6d352077e009f1c6",
+    "kind": "person",
+    "name": "Jakob Uszkoreit",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Llion Jones coauthored Attention Is All You Need. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-199d24395f2e18e2",
+    "kind": "person",
+    "name": "Llion Jones",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Aidan N. Gomez coauthored Attention Is All You Need. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-2ecfd082c710c05a",
+    "kind": "person",
+    "name": "Aidan N. Gomez",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Łukasz Kaiser coauthored Attention Is All You Need. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-9a8b93c0561cad2f",
+    "kind": "person",
+    "name": "Łukasz Kaiser",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "Attention Is All You Need",
+        "url": "https://arxiv.org/html/1706.03762v7"
+      }
+    ],
+    "biography": "Illia Polosukhin coauthored Attention Is All You Need. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-c9c3b038558ae34b",
+    "kind": "person",
+    "name": "Illia Polosukhin",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "Maryna Viazovska",
+      "M. S. Viazovska",
+      "Viazovska"
+    ],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "The sphere packing problem in dimension 8",
+        "url": "https://arxiv.org/pdf/1603.04246"
+      }
+    ],
+    "biography": "Maryna S. Viazovska authored The sphere packing problem in dimension 8. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-e944081b0c2217e6",
+    "kind": "person",
+    "name": "Maryna S. Viazovska",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      }
+    ],
+    "biography": "Dzmitry Bahdanau coauthored NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-ad51876a192511f8",
+    "kind": "person",
+    "name": "Dzmitry Bahdanau",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      }
+    ],
+    "biography": "KyungHyun Cho coauthored NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-1b4ab65c2b6d782b",
+    "kind": "person",
+    "name": "KyungHyun Cho",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Author identity and research contribution are documented by this source’s author list and content.",
+        "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+        "url": "https://arxiv.org/pdf/1409.0473"
+      }
+    ],
+    "biography": "Yoshua Bengio coauthored NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE. This research profile gathers the atlas’s source-linked account of that work. It does not imply exclusive credit or a complete career history.",
+    "id": "person-e18284faecba9b85",
+    "kind": "person",
+    "name": "Yoshua Bengio",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "Claude E. Shannon",
+      "Claude Elwood Shannon",
+      "C. E. Shannon"
+    ],
+    "bio_sources": [
+      {
+        "note": "Bell Labs identifies Shannon and the 1948 development of information theory.",
+        "title": "Nokia Bell Labs: Information Theory Turns 75",
+        "url": "https://www.nokia.com/bell-labs/about/history/innovation-stories/information-theory-turns-75/"
+      },
+      {
+        "note": "Shannon’s original paper supplies the research context and separates engineering communication from semantic meaning.",
+        "title": "A Mathematical Theory of Communication",
+        "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+      }
+    ],
+    "biography": "Claude Shannon developed a mathematical theory of communication at Bell Labs. His 1948 paper treats information as statistical selection among possible messages and studies coding, noise and communication limits. Those engineering definitions do not by themselves measure meaning or human value.",
+    "id": "person-7981efaa4aaaa3f6",
+    "kind": "person",
+    "name": "Claude Shannon",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "Paul Milgrom"
+    ],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "Paul R. Milgrom - Prize lecture in economic sciences",
+        "url": "https://www.nobelprize.org/uploads/2024/03/milgrom-lecture.pdf"
+      }
+    ],
+    "biography": "Paul R. Milgrom studies auction design and information. His prize lecture traces ideas about bidding, common values and the design of practical auctions. The linked records distinguish his contributions from collaborative results.",
+    "id": "person-423a7e6c5e4d3805",
+    "kind": "person",
+    "name": "Paul R. Milgrom",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "The entropy formula for the Ricci flow and its geometric applications",
+        "url": "https://arxiv.org/pdf/math/0211159"
+      }
+    ],
+    "biography": "Grisha Perelman developed geometric tools for studying Ricci flow. The paper represented here introduces an entropy formula and related arguments about the geometry of evolving spaces.",
+    "id": "person-27a67a67b38d0a9d",
+    "kind": "person",
+    "name": "Grisha Perelman",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "Amartya Sen – Biographical - NobelPrize.org",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/1998/sen/biographical/"
+      }
+    ],
+    "biography": "Amartya Sen works on social choice, welfare and the reasoning used to compare social outcomes. His Nobel autobiography describes this research and its collaborative development; individual ideas retain their own attribution notes.",
+    "id": "person-d9baec586f9131e6",
+    "kind": "person",
+    "name": "Amartya Sen",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "Optogenetics: 10 years of microbial opsins in neuroscience",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4790845/"
+      }
+    ],
+    "biography": "Karl Deisseroth is the author of the review “Optogenetics: 10 years of microbial opsins in neuroscience.” His account explains the development of light-sensitive tools for studying neural activity and credits the contributors involved.",
+    "id": "person-41432d9ae4c6b27e",
+    "kind": "person",
+    "name": "Karl Deisseroth",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "Alexander Fleming - Nobel Lecture",
+        "url": "https://www.nobelprize.org/uploads/2018/06/fleming-lecture.pdf"
+      }
+    ],
+    "biography": "Alexander Fleming investigated antibacterial substances, including lysozyme and penicillin. His Nobel lecture recounts the observations and experiments behind that work. These records preserve the historical scope of his account.",
+    "id": "person-9fb03f291ec71b2b",
+    "kind": "person",
+    "name": "Alexander Fleming",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "William Nordhaus"
+    ],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "William D. Nordhaus - Prize Lecture: Climate change: The Ultimate Challenge for Economics",
+        "url": "https://www.nobelprize.org/uploads/2018/10/nordhaus-lecture.pdf"
+      }
+    ],
+    "biography": "William D. Nordhaus studies the economics of climate change. His prize lecture discusses economic models linking emissions, climate effects and policy choices, while keeping uncertainties and normative judgments visible.",
+    "id": "person-d562e092388c588a",
+    "kind": "person",
+    "name": "William D. Nordhaus",
+    "revision": 1
+  },
+  {
+    "aliases": [
+      "Emmanuel Candes",
+      "Emmanuel J. Candès"
+    ],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information",
+        "url": "https://arxiv.org/pdf/math/0409186"
+      }
+    ],
+    "biography": "Emmanuel Candès coauthored work with Justin Romberg and Terence Tao on reconstructing signals from highly incomplete frequency information. The atlas records their joint reasoning about sparse signals and recovery by optimization.",
+    "id": "person-ad2831cdd1a91b28",
+    "kind": "person",
+    "name": "Emmanuel Candès",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information",
+        "url": "https://arxiv.org/pdf/math/0409186"
+      }
+    ],
+    "biography": "Justin Romberg coauthored work with Emmanuel Candès and Terence Tao on recovering signals from incomplete frequency measurements. The linked ideas retain their joint authorship and the assumptions required for recovery.",
+    "id": "person-7766ba84a90a2746",
+    "kind": "person",
+    "name": "Justin Romberg",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information",
+        "url": "https://arxiv.org/pdf/math/0409186"
+      }
+    ],
+    "biography": "Terence Tao coauthored work with Emmanuel Candès and Justin Romberg on uncertainty principles and exact signal reconstruction. This research profile links the results represented in the atlas; it is not a complete account of his mathematical work.",
+    "id": "person-a42dc0ae63c20b40",
+    "kind": "person",
+    "name": "Terence Tao",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "The Abstraction: Address Spaces (Chapter 13 of OSTEP)",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf"
+      }
+    ],
+    "biography": "Remzi H. Arpaci-Dusseau coauthors Operating Systems: Three Easy Pieces with Andrea C. Arpaci-Dusseau. Their explanations represented here cover operating-system abstractions, including virtual memory. Credit for an exposition is kept distinct from original discovery.",
+    "id": "person-23bec15eab27a42a",
+    "kind": "person",
+    "name": "Remzi H. Arpaci-Dusseau",
+    "revision": 1
+  },
+  {
+    "aliases": [],
+    "bio_sources": [
+      {
+        "note": "Research profile grounded in the author byline and the subject of this work; this is not a full biography.",
+        "title": "The Abstraction: Address Spaces (Chapter 13 of OSTEP)",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf"
+      }
+    ],
+    "biography": "Andrea C. Arpaci-Dusseau coauthors Operating Systems: Three Easy Pieces with Remzi H. Arpaci-Dusseau. The atlas links their explanations of operating-system concepts while distinguishing textbook exposition from original invention.",
+    "id": "person-c3dc2383455b5892",
+    "kind": "person",
+    "name": "Andrea C. Arpaci-Dusseau",
+    "revision": 1
+  }
+]

@@ -1,0 +1,1114 @@
+{
+  "completed_at": "2026-10-17T02:26:00+00:00",
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "outcomes": [
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's scope is that selection is one of the evolutionary forces whose absence the equilibrium conditions require. The cited passages directly support this: p13 states the Hardy-Weinberg principle assumes conditions with no selective pressure for or against genotype, and p18 lists selection among the forces (drift, mutation, migration, selection) that change natural populations and says deviations from Hardy-Weinberg expectations indicate the population is evolving. The warrant correctly connects the assumption of no selection to selection being a force that breaks the equilibrium baseline. The endpoint claims are also grounded: the Hardy-Weinberg theorem's conditions, idealized status, null-model role, and Hardy/Weinberg attribution are stated in p13/p18, and the natural-selection mechanism is supported by the supplied p10 evidence. No substantive assertion exceeds the evidence."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fcb1c91b56ca6b98ecdc7ec7a4b38983f69801f99bf8913a6624040e5c53a263",
+        "job_id": "0f5e0f57dd5fe1598e4de08444842a26929ee0a30402659384953640006c187b",
+        "output_hash": "4f040dc1e8183c757dddee8ca45fb54198a4a4c3cbae7d32064f4f738be6473b",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b22be13d-590e-44c5-9dd7-c62c3e0449df",
+        "request_id": "01a147abaaec47aa3f49d6b1028dc1b5",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-0dcc0ccfa39330cb:2",
+        "time": "2026-10-17T02:23:17+00:00",
+        "trace_id": "b22be13d-590e-44c5-9dd7-c62c3e0449df",
+        "usage": {
+          "completion_tokens": 173,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3092,
+          "prompt_tokens": 3092,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3265
+        }
+      },
+      "revision": 2,
+      "target": "r-0dcc0ccfa39330cb"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-27b2b7d62aa87640"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation is a premise_for link from two representations to the Hardy–Weinberg equilibrium theorem. The premises are grounded in the supplied passages: p13 states the Hardy–Weinberg principle of equilibrium and its assumptions; p14–p15 state allele-frequency variables p and q, p+q=1 for a two-allele locus, and genotype frequencies p², 2pq, q² summing to one. The conclusion is scoped to the equilibrium principle stated in terms of allele/genotype frequencies and the p², 2pq, q² relation. The warrant is acceptable: the formal frequency representation and genotype-frequency calculation are the apparatus on which the equilibrium claim is built. The conclusion does not overreach beyond the stated scope, and the premises jointly support it within that scope. No unsupported causal, historical, or independent-discovery claim is being used to establish the relation."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "bdc7b4362e40058079bda5d03a5116f68bd9d8cdd104e620cad7dcdf89aee166",
+        "job_id": "bb7f3ff465ad5d8b2e26e24803fb6b8010a6f5709d551aa7611e8355de2ba4d4",
+        "output_hash": "3a8d6093b8a427536a6890acc58c4c42462adfb4ae8f0d695c5fae83b3ada436",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fca3da89-f4c7-4e59-9420-72866f0b8adf",
+        "request_id": "01a147abd04f084b15afb888fd526326",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-3c12cc2c79438fbf:2",
+        "time": "2026-10-17T02:23:24+00:00",
+        "trace_id": "fca3da89-f4c7-4e59-9420-72866f0b8adf",
+        "usage": {
+          "completion_tokens": 189,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 4525,
+          "prompt_tokens": 4525,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4714
+        }
+      },
+      "revision": 2,
+      "target": "r-3c12cc2c79438fbf"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-480a42f8788a0947"
+    },
+    {
+      "outcome": {
+        "decision": "unsupported",
+        "rationale": "The relation asserts that the cited passage p74 supports the premise that Kannan proved the polynomial hierarchy is not in LINEAR-SIZE. The supplied evidence passage p74 discusses circuit lower bounds, natural proofs, and unprovable adjacent separations, but does not mention Kannan or any polynomial-hierarchy/LINEAR-SIZE separation. Therefore the premise is not grounded in the cited evidence, and the supports relation is unsupported."
+      },
+      "published": false,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6c7a6f4a32e09dd3bf48bea6417a55822c864466479d154f0e892d2d221f0ee9",
+        "job_id": "bef08ba85df9714f3ffdcd494a4c53e7725885230f69c8add51d2ba77d99247b",
+        "output_hash": "ba55f0fd904f8354c571e494dfe10dc39e3cdfd830d159ccb3348b97a05a0f89",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f4532f4b-74b3-4d5f-9804-638140eda659",
+        "request_id": "01a147abea446fc8d8b4986701815e90",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-5b5118415cfa19fa:3",
+        "time": "2026-10-17T02:23:31+00:00",
+        "trace_id": "f4532f4b-74b3-4d5f-9804-638140eda659",
+        "usage": {
+          "completion_tokens": 95,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3056,
+          "prompt_tokens": 3056,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3151
+        }
+      },
+      "revision": 3,
+      "target": "r-5b5118415cfa19fa"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-5f38862e370f56c1"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation asserts that the informal PAIRING upper bound motivates the general composition rule. Both endpoints are grounded: p17 states the PAIRING-to-SORTING reduction yields an upper bound where cheap transformations make the sort the dominant cost, and p54 states the Upper Bound Theorem composing transformation cost O(g(n)) with solver cost O(h(n)) as O(g(n)+h(n)). The warrant correctly identifies the shared composition structure (add transformation cost to solver cost, take dominant term), and the scope is limited to motivation rather than proof or historical influence. No unsupported causal or historical claim is made."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "c8dd3a99ebaf9529626d3eb660baa9c468ef7990df4dc3c50824248b95bc7d4a",
+        "job_id": "f5f5077ab230a2a062f571fa26e47dbad2781506825088d603aebf3c31c890e8",
+        "output_hash": "7b22288178a66a92f8875a219650776255d12fb739e0ca599f044c1de4310eb7",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "0a779232-56fd-4d84-a602-3e45a477df2f",
+        "request_id": "01a147abeb4e77a72e610ef850115e5f",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-60dc61aaa83de237:2",
+        "time": "2026-10-17T02:23:34+00:00",
+        "trace_id": "0a779232-56fd-4d84-a602-3e45a477df2f",
+        "usage": {
+          "completion_tokens": 131,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3132,
+          "prompt_tokens": 3132,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3263
+        }
+      },
+      "revision": 2,
+      "target": "r-60dc61aaa83de237"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's premise (n-2b1467c030ba83ee) is directly grounded in the supplied passage p16: it states the Grants and colleagues studied Galápagos finch populations every year since 1976, provided important evidence of natural selection, and found generation-to-generation changes in beak shape distribution in medium ground finches on Daphne Major linked to seed availability during an El Niño and later conditions. The conclusion (n-ea687c9c5c407e72) is a general mechanism claim about heritable differences producing differential survival/reproduction and changing trait frequencies across generations; this is a reasonable abstraction of the same passage's account of inherited bill-size variation, differential survival/reproduction of small-billed birds, and subsequent change in average bill size. The relation predicate 'supports' is appropriate: the empirical Grant study supports the general natural-selection mechanism. Scope is limited to empirical evidence of selection in action, which the passage provides. Attribution to Peter and Rosemary Grant and colleagues is explicit. Assumptions listed are implicit in the passage (inherited bill size, seed availability varying with climate, survival/reproduction affected by bill size). Limitations noted in the endpoints are consistent with the passage. No unsupported causal or historical claim is required for this relation."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "06cc6dfd204ca242808be8bddb37269472185434bab59293699a2293bc1c02f9",
+        "job_id": "5049bea998905e0a156735b2b2365d74f2a1f2029ed743dd3d3d2edd42bb8326",
+        "output_hash": "af47e854634ca92cf3e3b7708c8d53e9b37bb1d801087393e18b88b739b38b7d",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5dfec5f4-1092-430e-aa67-2904704d6327",
+        "request_id": "01a147ac0cfb5b71640eda1d014ab3ad",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-6663c629c040b852:2",
+        "time": "2026-10-17T02:23:40+00:00",
+        "trace_id": "5dfec5f4-1092-430e-aa67-2904704d6327",
+        "usage": {
+          "completion_tokens": 267,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3075,
+          "prompt_tokens": 3075,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3342
+        }
+      },
+      "revision": 2,
+      "target": "r-6663c629c040b852"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation is premise_for: the premise node defines adaptation as a heritable trait helping survival and reproduction in the present environment and states that whether a trait is favorable depends on current environmental conditions (p23, p24). The conclusion node describes natural selection as a population-level mechanism in which heritable differences affect survival and reproduction, leading to adaptation without intentional change (p13). The warrant is grounded: the source explicitly says natural selection leads to greater adaptation of the population to its local environment, and the definition of adaptation as environment-dependent is a premise for interpreting selection's outcome. Scope, direction, and joint premises are consistent; no unsupported causal or historical claims are added."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f37bae6c93d9d4fcb98ab3b66662bfbe527178df689667797b5b882e0f6d4b7f",
+        "job_id": "545a591148b49c802ba524404a95ec530c394e3e1c5bbf17b4b3c50fef741333",
+        "output_hash": "cb072d8f7cff4b89fa96fd8f9666fca36985ef945e83056974741d4d53e244d6",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9484e708-530e-49e2-bf93-1297766a973a",
+        "request_id": "01a147ac1c8b11cf190d56922ef44697",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-6d5e4b0cdf7bc08e:2",
+        "time": "2026-10-17T02:23:46+00:00",
+        "trace_id": "9484e708-530e-49e2-bf93-1297766a973a",
+        "usage": {
+          "completion_tokens": 144,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3490,
+          "prompt_tokens": 3490,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3634
+        }
+      },
+      "revision": 2,
+      "target": "r-6d5e4b0cdf7bc08e"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's premise (n-d59af00bba17abf5) is directly grounded in the supplied passages: p41 states that molecular structures reflect descent with modification, DNA universality evidences a common ancestor, and DNA sequence similarity reflects relatedness as expected from descent/diversification; p42 adds gene duplication as a mechanism. The conclusion (n-ea687c9c5c407e72) is a separate contribution about Darwin's natural selection, not a logical consequence of the molecular-similarity premise. However, the relation predicate is 'supports' with scope 'Molecular similarity provides evidence for common descent,' and the warrant explicitly frames the relation as the source stating DNA universality and sequence similarity reflect descent with modification from a common ancestor, supporting the common descent framework. Under that stated scope and warrant, the premise does support the conclusion's broader common-descent framework, and the endpoint claims are grounded in the cited passages. No unsupported causal, historical-influence, independent-formulation, or application claim is being asserted by the relation itself."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "e61605d914c964a02c9cfb65ac665362897471af7e058a146eb9bfbf199c857f",
+        "job_id": "dea1998b9c4f1e151e5a070a43f8d8ee84e2ab1630f2b63947f14f996957b7ad",
+        "output_hash": "d9a4e1392b54de8c452f4ccad3e8e3c721119caaf03edae413914e0122703a00",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "13a93b37-5fc9-4c25-b94c-8de3b5536192",
+        "request_id": "01a147ac337d8d3630d4a7a4b276186c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-7f7aa1a2ff0cd773:2",
+        "time": "2026-10-17T02:23:52+00:00",
+        "trace_id": "13a93b37-5fc9-4c25-b94c-8de3b5536192",
+        "usage": {
+          "completion_tokens": 222,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3006,
+          "prompt_tokens": 3006,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3228
+        }
+      },
+      "revision": 2,
+      "target": "r-7f7aa1a2ff0cd773"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation is premise_for: the premise (n-d5d78eb73b93e2ab) is the general three-step reduction template, and the conclusion (n-34c92faac94e31d9) is the PAIRING-to-SORTING upper bound. The supplied passages directly ground both. p25 defines reduction as a three-step process between arbitrary instances I/I' and solutions SLN/SLN'. p15–p17 instantiate that template for PAIRING: convert PAIRING input to two SORTING instances, sort, then pair by position; because the transformations are cheap, the sort dominates and PAIRING has an upper bound in O(n log n). The conclusion is explicitly scoped as an upper bound only, and the premise's limits (no solver supplied, transformation cost analyzed separately) are consistent with the warrant. No unsupported causal, historical, or independent-formulation claim is made. The joint premises within scope do support the conclusion."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "662f90551d98549cc782b599a92150cdb7dec68437b1e03257d3071393cada51",
+        "job_id": "b59ef0d4ad175cc1cd521f4478bccad1422d20ae547db4270dc70974b9343fa0",
+        "output_hash": "e8abd7fa86efc80528dad29022bb983da1bba59ab50e80f0577d56b8a7f4c3b6",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "98970f56-c411-4b07-87b4-00a94cd9a1ba",
+        "request_id": "01a147ac4d5de2827452fff99eaf353e",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-832475660aee06f7:2",
+        "time": "2026-10-17T02:23:59+00:00",
+        "trace_id": "98970f56-c411-4b07-87b4-00a94cd9a1ba",
+        "usage": {
+          "completion_tokens": 211,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3801,
+          "prompt_tokens": 3801,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4012
+        }
+      },
+      "revision": 2,
+      "target": "r-832475660aee06f7"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's scope is that drift is among the forces making real populations depart from equilibrium. The cited passages directly support this: p18 states populations in nature are constantly changing in genetic makeup due to drift, mutation, possibly migration, and selection, and that Hardy-Weinberg gives a baseline of a non-evolving population against which evolving populations can be compared; p13 states allele and genotype frequencies are inherently stable unless an evolutionary force acts, and that the principle is a useful model against which to compare real population changes. The endpoint claim about Hardy-Weinberg equilibrium is also grounded in p13 and p18, including the stated assumptions and the attribution to Hardy and Weinberg. The warrant correctly connects drift as a listed evolutionary force to departure from the idealized equilibrium. No unsupported causal or historical claims are required."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b348e1a9e814da12580fe53471c4ed9ff6a155c6b234cd2c4487daea8ff7bce2",
+        "job_id": "426083d3da76665e26698fba8e91aecc906a04bd234cf42e6640a27802e1b419",
+        "output_hash": "cfe5398a00bcd9606a50f091d2e8bb71594881fd686a120b5db3720b7a498452",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "77874c17-d211-42f4-9246-1a6a72ce8ff0",
+        "request_id": "01a147ac727b0acf069c63717c4636e3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-86fcf6df1c371d88:2",
+        "time": "2026-10-17T02:24:06+00:00",
+        "trace_id": "77874c17-d211-42f4-9246-1a6a72ce8ff0",
+        "usage": {
+          "completion_tokens": 171,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3143,
+          "prompt_tokens": 3143,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3314
+        }
+      },
+      "revision": 2,
+      "target": "r-86fcf6df1c371d88"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's scope is that genetic diversity from mutation and sexual reproduction is the variation required by natural selection. The cited passages directly support both components: p21 states natural selection requires variation with a genetic basis, and p22 states genetic diversity comes from mutation and sexual reproduction, with mutation as the ultimate source of new alleles and sexual reproduction assembling unique allele combinations. The warrant accurately reflects this source-grounded prerequisite. The premise contribution is within scope and its substantive claims about mutation and sexual reproduction as sources of genetic diversity are grounded in the evidence. No unsupported causal, historical, or attribution claims are needed for this pedagogical prerequisite relation."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "eee786181637ce716d67ac2d51f10edd80273a9fb2ca353d5e2e2166df13fc24",
+        "job_id": "912cdca6b85278a7e27bf338ea65f98da8ed25c1d104e4503ee624b16059ee92",
+        "output_hash": "bf36cd54c4acfe55a13abda12f9f8f067ad981fa54f6a60c8db9dfa02cd06591",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "2747f67c-4114-4569-89e8-3591c6b40977",
+        "request_id": "01a147ac7e7d7f73c7da2621cc5cb7fb",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-8b32b3269f3ca09d:2",
+        "time": "2026-10-17T02:24:12+00:00",
+        "trace_id": "2747f67c-4114-4569-89e8-3591c6b40977",
+        "usage": {
+          "completion_tokens": 134,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3138,
+          "prompt_tokens": 3138,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3272
+        }
+      },
+      "revision": 2,
+      "target": "r-8b32b3269f3ca09d"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's scope, predicate, and warrant are grounded in the supplied passages. Page 8 states that the CDF of normalized sums approaches the standard normal uniformly with speed 1/sqrt(n), and page 9 gives the precise Berry-Esseen bound with 6T/sigma^3. The premise contribution (n-ed32a75acb0c02b3) is the central limit theorem, and the conclusion contribution (n-08d13cf9a3702bdc) is the Berry-Esseen theorem. The relation 'bounded_by' is supported: Berry-Esseen supplies a quantitative uniform bound on the CDF difference asserted by the CLT, with the stated dependence on third absolute moments and the O(1/sqrt(n)) rate under i.i.d. assumptions. The endpoint claims are also grounded: the CLT statement and proof sketch match the lecture's characteristic-function approach, and the Berry-Esseen statement matches the exact formula and conditions on pages 8-9, including the non-identically-distributed case, the 6T/sigma^3 bound, and the Van Beeck 0.7975 refinement. No unsupported historical influence or causal claim is being made; attribution is appropriately limited to what the source states."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "e5c1b5be5137769c88f0cd690586e92eab60d2830cbd58a4fb68851c02d03d05",
+        "job_id": "39967ee9949016f51b17dec4703a95547dfdd46f2b91b5eb4847a30443d221c1",
+        "output_hash": "c42c24c3b5f460d297e1ce5e170acb9dcaac5edc7e89027442bd4d03a9de3cfa",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "569cb55b-5309-4477-b1d2-a3f11fee231a",
+        "request_id": "01a147aca12eae8a6dda0102a3018a84",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-8b67f093717f8810:2",
+        "time": "2026-10-17T02:24:18+00:00",
+        "trace_id": "569cb55b-5309-4477-b1d2-a3f11fee231a",
+        "usage": {
+          "completion_tokens": 270,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3784,
+          "prompt_tokens": 3784,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4054
+        }
+      },
+      "revision": 2,
+      "target": "r-8b67f093717f8810"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's predicate is bounded_by, with scope 'DQN performance is limited on long-horizon games.' The sole premise n-32982ed0f5fdd648 is an empirical finding that in the reported 2013 evaluation DQN scored below the expert-human benchmark on Q*bert, Seaquest and Space Invaders, and that the authors discuss long-time-scale strategies as a challenge, explicitly noting this is an interpretation rather than an isolated causal test. The warrant states the paper reports far-from-human performance on games requiring long-term strategies, bounding general applicability. The supplied evidence passage p7 (PDF page 7) contains the main evaluation section, including the statement that DQN outperforms other learning methods on all seven games and the comparison to expert human scores, but it does not itself list the per-game scores for Q*bert, Seaquest and Space Invaders; those are in Table 1, which is referenced but not included in the passage text. However, the premise is a source-grounded empirical finding with explicit limits and attribution, and the relation's conclusion is appropriately bounded: it asserts a limitation on long-horizon games, not a universal causal claim. The endpoint claim alone is not being used to establish the relation; the relation is grounded in the premise's reported empirical gap and the authors' interpretation, with the warrant matching that scope. The assumptions and limits are explicit, and the relation does not overreach into causation or general applicability beyond the reported 2013 system. Therefore all substantive assertions are grounded within the stated scope."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "0fbe8b3db3698c904fafdd3297e4627468cab4e1bf607f37ccf20d5eebacfb1c",
+        "job_id": "e11fbe25efff95641c7941317f71203f50ff107d3fa0f3dcea50f900df51d750",
+        "output_hash": "047e5f0d70417269df27ce4dc539b00e2bf17fad574d1a4543972958d716bc7c",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "8f534a03-3cec-4662-aa96-97ce719435e2",
+        "request_id": "01a147acbc1acb4717363eeb22e6409d",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-8ce02eaeed7acf8c:2",
+        "time": "2026-10-17T02:24:24+00:00",
+        "trace_id": "8f534a03-3cec-4662-aa96-97ce719435e2",
+        "usage": {
+          "completion_tokens": 326,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3522,
+          "prompt_tokens": 3522,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3848
+        }
+      },
+      "revision": 2,
+      "target": "r-8ce02eaeed7acf8c"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation asserts that the three principles jointly imply natural selection as defined in the endpoint. Passage p13 explicitly states Darwin argued natural selection was an inevitable outcome of three principles: inheritance, overproduction relative to resources, and inherited variation. It also states the joint inference: offspring with inherited characteristics better able to compete survive and reproduce more, and because traits are inherited they become better represented in the next generation, leading to population change. The endpoint’s scope, attribution to Darwin, and limitations are consistent with the passage; Wallace and Malthus are mentioned only for attribution/context, not as independent formulators in this relation. The warrant is grounded in the source’s explicit three-principle argument."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1bafc69a8a35aed2e0e5e63cc06bc132b949d2be8b385df32710e83c8609df8c",
+        "job_id": "d627b2ac0d20d5c128c72787545692fbe0ee490545ecd0fc0af21e10393ca28c",
+        "output_hash": "63ee008f24407854e6aadc141fb3629dd10ea68b9e869ee5bff22d34b649125a",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9b2b1f16-bcf4-4e92-8716-46b3e810473e",
+        "request_id": "01a147accf364ff15f49e7abe7263369",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-932a2ad553e1a71d:2",
+        "time": "2026-10-17T02:24:32+00:00",
+        "trace_id": "9b2b1f16-bcf4-4e92-8716-46b3e810473e",
+        "usage": {
+          "completion_tokens": 150,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3075,
+          "prompt_tokens": 3075,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3225
+        }
+      },
+      "revision": 2,
+      "target": "r-932a2ad553e1a71d"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's sole premise (n-ce1ffcf10649e757) is directly grounded in the supplied passage p51: it states variation is already present and does not arise in response to environmental change, and that antibiotic-resistance mutations do not arise from antibiotic application. The relation predicate 'bounded_by' matches this scope: selection is bounded to acting on pre-existing variation rather than inducing mutations. The warrant accurately reflects the passage, and the endpoint claim is within the stated scope. No unsupported causal or historical claims are required."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "74de509fa8caa9c6725c006a8c59d7a1cbedb8fbb43071ee35a883c03b5b7b09",
+        "job_id": "24c5416404a1ad93bc240815c7400d45aecb7240529702b4336aa415f78f3293",
+        "output_hash": "e8623bab98a7842ab4a101a7c91cf47e46596d806c4c33e6142af781eb6122a4",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "926c7efb-a6f4-4031-b880-f7c5e6556eb9",
+        "request_id": "01a147acf33102e7067da242f9de8401",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-9a4f9aba6662da9c:2",
+        "time": "2026-10-17T02:24:38+00:00",
+        "trace_id": "926c7efb-a6f4-4031-b880-f7c5e6556eb9",
+        "usage": {
+          "completion_tokens": 117,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2891,
+          "prompt_tokens": 2891,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3008
+        }
+      },
+      "revision": 2,
+      "target": "r-9a4f9aba6662da9c"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation is grounded in the supplied passages. Endpoint n-ae1497a238d5a9d1 is supported by p4: selection acts on heritable traits, on entire organisms rather than individual alleles, through differential contribution to the next generation's gene pool, with adaptive evolution as the resulting allele-frequency change. Endpoint n-61ed21d6a08ed447 is supported by p24: natural selection cannot produce the perfect organism, can only select on existing variation, does not create from scratch, and is limited by existing genetic variability and new alleles from mutation and gene flow. The bounded_by relation is also warranted: p24 explicitly states that selection is limited by existing variation and the supply of new alleles, which bounds what the selection mechanism described in n-ae1497a238d5a9d1 can achieve. The scope, direction, and joint premises are consistent with the evidence."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "8dd96434afe26a4c7232b434acb434e9cedb4d80f814b57c40418836da3cb05d",
+        "job_id": "da3a471abe320045f90e5e8a6e4087276155946d5177bfd2bf159d20557ee7eb",
+        "output_hash": "83f8851a988d0fd9fc4d987d88989de7efee55c0fc3a7ecd44b22a82f3651ea5",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7d76d474-2fb1-4703-93b2-f365e3cbb051",
+        "request_id": "01a147acfd6e6e349763e3c11eb22eb0",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-9d65576f24a7e439:2",
+        "time": "2026-10-17T02:24:44+00:00",
+        "trace_id": "7d76d474-2fb1-4703-93b2-f365e3cbb051",
+        "usage": {
+          "completion_tokens": 195,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2935,
+          "prompt_tokens": 2935,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3130
+        }
+      },
+      "revision": 2,
+      "target": "r-9d65576f24a7e439"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-a262174ac679ccb4"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's predicate 'bounded_by' is grounded in the supplied passage p52: it explicitly states evolution is not goal directed, species do not become 'better' over time, and they track changing environments with adaptations maximizing reproduction in a particular environment at a particular time. The warrant accurately paraphrases this as bounding natural selection to local environmental tracking rather than progress. The premise endpoint n-5fc562e00d3c8772 is directly supported by the same passage, including nondirectional environmental change and the rejection of teleology/progress. The conclusion endpoint n-ea687c9c5c407e72 is a separate natural-selection mechanism card; its core claim about heritable differences producing differential survival/reproduction is not itself established by p52, but the relation being screened is the bounded_by relation between the natural-selection mechanism and the non-goal-directed scope. The supplied evidence supports that bounding claim. No unsupported causal, historical-influence, independence, or application assertion is being accepted here beyond the passage-grounded scope limitation."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "2e0ec46792e119595d3a1a3b7c29e67e669b854b2f19075eb0e4473f44d794a9",
+        "job_id": "6119d193b2b8ad500e840a0ed743adf5a3fe3d2a66ecd7bbbf2cd1f6ef25bba8",
+        "output_hash": "29dc51e7c713276541afa8953f2174bc2a6af3e34bad446c20c6bc19ee95e132",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7b179baa-d775-4706-93d0-b81483164cd4",
+        "request_id": "01a147ad23a0b282b72f7651c93eb1cf",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-a347d00e77b3a2d7:2",
+        "time": "2026-10-17T02:24:51+00:00",
+        "trace_id": "7b179baa-d775-4706-93d0-b81483164cd4",
+        "usage": {
+          "completion_tokens": 221,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2850,
+          "prompt_tokens": 2850,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3071
+        }
+      },
+      "revision": 2,
+      "target": "r-a347d00e77b3a2d7"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The candidate relation asserts an analogy between two reductions: multiplication-to-squaring and general-matrix-multiplication-to-symmetric-matrix-multiplication. The supplied passages directly support both endpoints and the shared pattern. For squaring, p35 states the question of whether squaring is as hard as multiplying and says a simple reduction proof shows squaring is 'as hard' as multiplying; p40 states that if a linear-time squaring algorithm is found, it can construct a linear-time multiplication algorithm. For symmetric matrices, p42 states the restricted symmetric case is not faster and introduces a reduction from arbitrary n×n matrices to 2n×2n symmetric matrices; p45 states that if symmetric matrices could be multiplied in Θ(n²) time, arbitrary n×n matrices could be multiplied in Θ(n²) time. The relation’s scope, predicate, direction, and warrant are therefore grounded: both are conditional reductions showing a restricted case is as hard as the general case, with explicit algebraic/block-embedding mechanisms and linear/quadratic overheads. No unsupported causal, historical, or independent-formulation claim is required by the relation itself."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "98343dbbf6062f40d0b21c7d97216906b3e34e77714fe170fb211b9f10afb6c3",
+        "job_id": "9d975ddddd1bb58ee4fe025803af94a56cb3338602eb2bf067a02b759c167f86",
+        "output_hash": "769b5a7274e87d61aa751a0d43f50d91071fe15992a5e77dcf99da3d36cafda0",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a48a0888-c05f-4e04-b535-ab080b16ec03",
+        "request_id": "01a147ad32af10efd5e9cd9d75102d20",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-a35144144663d3b4:2",
+        "time": "2026-10-17T02:24:58+00:00",
+        "trace_id": "a48a0888-c05f-4e04-b535-ab080b16ec03",
+        "usage": {
+          "completion_tokens": 244,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3382,
+          "prompt_tokens": 3382,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3626
+        }
+      },
+      "revision": 2,
+      "target": "r-a35144144663d3b4"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation asserts that the continuity theorem is a prerequisite for the lecture's CLT proof. The cited passage p7 explicitly gives the CLT proof: it expands φ_X(t)=1−t²/2+o(t²), computes φ_{S_n/√n}(t)=φ_X(t/√n)^n, identifies the pointwise limit e^{−t²/2} as the standard normal characteristic function, and then concludes convergence in distribution. The conclusion node n-4410dab7272665f4 states the continuity theorem precisely as the bridge from pointwise convergence of characteristic functions to a limit continuous at zero to convergence in distribution, including the converse discontinuity case. The warrant correctly identifies this theorem as the inferential bridge used in the proof. The scope is limited to the CLT proof's use of the continuity theorem, which is exactly what the passage supports. The premises are joint and sufficient for the relation within this scope: the CLT proof establishes pointwise convergence to e^{−t²/2}, and the continuity theorem supplies the distributional conclusion. No unsupported historical attribution or causal overreach is present; the attribution is explicitly 'unknown' and the relation is pedagogical/prerequisite, not historical influence. The endpoint claims are grounded in the passage and the theorem statement. All substantive assertions are supported."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "2fa6734f3d0a0388409243bf921e794d04ec2879d2ca86a85abfb8c289750c44",
+        "job_id": "2259500edae08f7681906d649e4a4ca02cea4720c62e877b9aa5c5016c90eb10",
+        "output_hash": "5b02276f704fa77dfb19f4ba10c4ecc1cf7e29721d2d74de73c63760bdee550c",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "610ce557-a27d-4b18-9362-347ffb201272",
+        "request_id": "01a147ad57cfe4b38620d6aa2b3a5ae4",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-ab47cb40fc5db7e9:2",
+        "time": "2026-10-17T02:25:04+00:00",
+        "trace_id": "610ce557-a27d-4b18-9362-347ffb201272",
+        "usage": {
+          "completion_tokens": 279,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3845,
+          "prompt_tokens": 3845,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4124
+        }
+      },
+      "revision": 2,
+      "target": "r-ab47cb40fc5db7e9"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-c196b6194d8154e2"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-c414e7de0d9298b4"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's predicate 'bounded_by' is grounded in the cited passages: p25 explicitly states natural selection is limited because it works at the individual rather than allele level and because linked alleles tend to pass together, with the consequence that good alleles can be lost and bad alleles kept. The premise n-ae1497a238d5a9d1 is supported by p4, which states selection acts on entire organisms, not individual alleles, and defines fitness as contribution to the next generation's gene pool. The joint premises directly warrant the conclusion that individual-level selection and linkage disequilibrium bound allele-by-allele optimization. Endpoint claims, attribution as unknown/collective, assumptions, and limitations are consistent with the passages; no unsupported causal or historical claims are asserted."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b0e11d27c10f44a00b9a389c380820bc4f0f5c66ebcb6731fe6716f1252e67bb",
+        "job_id": "b192bdf6ed5d2ba205a6da9832c28e1394dbace3f0f46ed8810182a20b946703",
+        "output_hash": "2494d00d0c7a50de16dcb02f1db3428821ce94410c4b47e77f8d1f220956ce8c",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a887216f-20c9-42e0-9440-9bd69dbe496a",
+        "request_id": "01a147ad78c8b015809a99531e128b76",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-c5b1e4433db1e4db:2",
+        "time": "2026-10-17T02:25:13+00:00",
+        "trace_id": "a887216f-20c9-42e0-9440-9bd69dbe496a",
+        "usage": {
+          "completion_tokens": 167,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3020,
+          "prompt_tokens": 3020,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3187
+        }
+      },
+      "revision": 2,
+      "target": "r-c5b1e4433db1e4db"
+    },
+    {
+      "outcome": {
+        "decision": "unsupported",
+        "rationale": "The relation asserts that the homologous-structures finding supports the natural-selection mechanism/conclusion. The supplied evidence only shows that shared skeletal construction is presented as evidence for common ancestry; it does not state or warrant that this supports selection's cumulative effects or Darwin's formulation of natural selection. The warrant is an added inferential bridge not grounded in the cited passages, so the substantive relation is unsupported."
+      },
+      "published": false,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7255a4e119786b38e4f0c99401b50d471a701426dcec1268e66dddf6853ebb7c",
+        "job_id": "395fe41607df4a6324bea34d3203b2a58582effa187565448022da4cca65a005",
+        "output_hash": "426149828456793e672c0382baf665f6401cee1046940c5397d34343c6302ee0",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "32ac3da1-0991-4352-be47-b3b6be41effb",
+        "request_id": "01a147ad84e832345fcee6f991d081ec",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-cbd7ac1b96dadcdd:2",
+        "time": "2026-10-17T02:25:19+00:00",
+        "trace_id": "32ac3da1-0991-4352-be47-b3b6be41effb",
+        "usage": {
+          "completion_tokens": 89,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3087,
+          "prompt_tokens": 3087,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3176
+        }
+      },
+      "revision": 2,
+      "target": "r-cbd7ac1b96dadcdd"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's premise (n-308f801127f5d34e) is directly grounded in the supplied passages: p30 states fossils provide solid evidence that past organisms differ from present ones and show gradual evolutionary changes over time, with detailed records for humans and horses; p31 supports the horse/hominid fossil-sequence examples. The conclusion (n-ea687c9c5c407e72) is a separate mechanism card about Darwinian natural selection, and the relation asserts that the fossil-record premise supports the long-term operation of evolutionary mechanisms including natural selection. The warrant is acceptable within the stated scope: the fossil evidence supports gradual evolutionary change over time, and the conclusion card describes natural selection as the central mechanism of adaptive evolution. However, the supplied evidence does not itself mention natural selection or Darwin; the relation is therefore supported only as a broad evidential link between fossil-record evidence for gradual change and evolutionary mechanisms, not as direct textual evidence for natural selection. No unsupported causal, historical-influence, or independent-formulation claim is being made by this relation."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3e89823db696ab945c1d53a27667efdc1102374b12cae95bb58b191afeb5bfa4",
+        "job_id": "81e44c2f7efce497f30db78045d0ab73dc5a5abf6949927a9b62f2bb4b2b9a07",
+        "output_hash": "1d5eed8ca34781bb31eb7acf6de879ea375efe654fdae513dd73b9dd984d87c9",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3a66a003-60a7-49e7-9c5a-87bec11c8775",
+        "request_id": "01a147ad9b5fc6009104d33e41f01c3a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-ceaaf07a30a538f0:2",
+        "time": "2026-10-17T02:25:22+00:00",
+        "trace_id": "3a66a003-60a7-49e7-9c5a-87bec11c8775",
+        "usage": {
+          "completion_tokens": 225,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3123,
+          "prompt_tokens": 3123,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3348
+        }
+      },
+      "revision": 2,
+      "target": "r-ceaaf07a30a538f0"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's premise (n-be46791fe0632d64) is directly grounded in p4: amortized analysis is defined as analysis of a series of operations as a whole, charging each operation a share of total cost, and explicitly contrasts this with summing independent worst-case costs. The conclusion (n-e2055ae3bf7bfbf1) is grounded in p8: the binary counter example rejects naive n·2^n worst-case costing and instead counts flip frequencies by bit position, with the low-order bit always flipped, the next half the time, the next quarter, etc., yielding a geometric sum. The warrant correctly identifies that the counter example uses series-level accounting by summing flip frequencies across the whole counting cycle, which is the amortized-analysis pattern defined in p4. The scope is limited to the whole-series viewpoint licensing charging bit flips by position rather than per-increment worst case, which matches the evidence. The conclusion's claim of fewer than 2N flips is a standard consequence of the geometric series described in p8, and the assumptions (start at zero, no overflow, unit flip cost) are consistent with the passage. No unsupported causal, historical, or attribution claims are made."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "25eec33bc3b5c7950ffe8e60d8c7bee8e12da0e5603b06517386ee062c2fb727",
+        "job_id": "a82006a208fd386da53d292c2ab6c2116266b48689a0b014f778796f45973869",
+        "output_hash": "c3cb4f130e5d3e94f1390684e2cad4061dfef955cc1faf5ad17264f98586fa9d",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9fe31f1e-5a66-464a-9eb0-3e2e4b96069d",
+        "request_id": "01a147ada8de13bb076d029420dd2351",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-d6d62368354c90b3:2",
+        "time": "2026-10-17T02:25:28+00:00",
+        "trace_id": "9fe31f1e-5a66-464a-9eb0-3e2e4b96069d",
+        "usage": {
+          "completion_tokens": 257,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3252,
+          "prompt_tokens": 3252,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3509
+        }
+      },
+      "revision": 2,
+      "target": "r-d6d62368354c90b3"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "Both endpoint claims are directly grounded in the cited passages: p4 supports selection acting on whole organisms via differential contribution to the next generation's gene pool and the resulting allele-frequency/adaptive-evolution framing; p5 supports relative fitness as comparative reproductive contribution rather than absolute fitness, with the stated role in determining extra offspring and possible population evolution. The relation predicate prerequisite_for_reading is also supported within the stated definitional scope: p5 explicitly introduces relative fitness as the comparative measure following the Darwinian fitness concept in p4, so reading the relative-fitness contribution presupposes the fitness concept. Assumptions, limits, and attribution notes are appropriately cautious and do not overclaim causation or historical influence."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "15788b94f27b15699318d4164c65e014557e92013b2c6b7f5a69e2cc5bc83bd6",
+        "job_id": "7c17059c1bef1d716eebd0d02c47f366e57ed6a236e4cf765758c74b53751023",
+        "output_hash": "163326e68e8ec85f4a191c46deffefc8a8b9d237733c09e40450b7ed91b32617",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "0a0297cb-db9e-4d8e-8300-de47aa4e27d7",
+        "request_id": "01a147adce42bdc4bf35e604fe64a470",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-d8899d1874d620c4:2",
+        "time": "2026-10-17T02:25:35+00:00",
+        "trace_id": "0a0297cb-db9e-4d8e-8300-de47aa4e27d7",
+        "usage": {
+          "completion_tokens": 147,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 2952,
+          "prompt_tokens": 2952,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3099
+        }
+      },
+      "revision": 2,
+      "target": "r-d8899d1874d620c4"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation asserts that the weak law (n-957e07abb6d03c95) and the central limit theorem (n-ed32a75acb0c02b3) are analogous in proof method, with scope limited to the shared characteristic-function architecture: expand the transform at zero, raise to the n-th power, and identify the pointwise limit. The supplied passages directly support this. Page 6 proves the weak law by expanding φ_{X1}(t/n) to first order (1 + iμt/n + o(t/n)), raising to the n-th power, and identifying the limit e^{iμt} as a characteristic function. Page 7 proves the CLT by expanding φ_X(t/√n) to second order (1 − t²/(2n) + o(t²/n)), raising to the n-th power, and identifying the limit e^{−t²/2} as the standard normal characteristic function. Both then invoke the continuity theorem. The warrant accurately describes this parallel structure, and the scope is properly restricted to the shared proof architecture rather than claiming identity of results. The endpoint claims are also grounded: the weak law statement matches the finite-mean i.i.d. theorem proved on page 6, and the CLT statement matches the normalized-sum convergence stated and proved on page 7. No unsupported causal, historical, or independence claims are made by the relation itself."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1f383c90e19ccbb4ba5100e78dfe794135c0816224b6ad2058a757a1f55d3e2a",
+        "job_id": "e965b6b15bfb110a6175b90180796b097273c19630dbea50953771b08a418948",
+        "output_hash": "1420d5fdb2241810b147b641dbcdbd50ce135256069d5457c3aaa4b1813dcece",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "2f5d9e9e-68c6-47e6-b47e-656c8de88432",
+        "request_id": "01a147add9727dba87616529706adcd5",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-e1593a22a2f5f2e1:2",
+        "time": "2026-10-17T02:25:40+00:00",
+        "trace_id": "2f5d9e9e-68c6-47e6-b47e-656c8de88432",
+        "usage": {
+          "completion_tokens": 300,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 4626,
+          "prompt_tokens": 4626,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 4926
+        }
+      },
+      "revision": 2,
+      "target": "r-e1593a22a2f5f2e1"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-e54e5d05a5e503ba"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's scope is that Darwin's finch observations provide a motivating example for natural selection. The cited passages directly support the premise: p9 states Darwin observed Galápagos ground finches with a graded series of beak sizes/shapes, that they resembled a mainland finch, that he imagined modification from a mainland ancestor, and that varied beaks helped acquire specific foods; p10 states he postulated ancestral beaks adapted over time to different food sources. The warrant—that this pattern led Darwin to imagine modification and supports natural selection as a motivating example—is grounded in the passages. The conclusion is appropriately limited to a motivating example, not proof or causation, and attribution to Darwin is explicit. Assumptions such as heritability are not asserted as established by the source, and the endpoint's limits acknowledge the historical, non-experimental nature. No unsupported causal or historical-influence claim is required."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7863dcedcd3f297a1800254c6bbf66d084ac9702215362454907bf30840b8781",
+        "job_id": "17fda6db870952c394b6bc0f0904f647c913df541941fbc2ba734029cfce1bdf",
+        "output_hash": "3f9e08e9183f8d05dddbd6c3a49e5ba3fe54d968d3b124e1c8f0f1196af30fce",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "dc0b7379-2977-46d9-8f67-1b6324dfbf2a",
+        "request_id": "01a147ae02bc23acfb196a961bf5da1e",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-e9f6b34b57aa25d8:2",
+        "time": "2026-10-17T02:25:48+00:00",
+        "trace_id": "dc0b7379-2977-46d9-8f67-1b6324dfbf2a",
+        "usage": {
+          "completion_tokens": 189,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3322,
+          "prompt_tokens": 3322,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3511
+        }
+      },
+      "revision": 2,
+      "target": "r-e9f6b34b57aa25d8"
+    },
+    {
+      "skipped": "An endpoint remains withheld; no paid request submitted",
+      "target": "r-fa743ca8aad07ac2"
+    },
+    {
+      "new_revision": 3,
+      "outcome": {
+        "decision": "supported",
+        "rationale": "The relation's premise (n-e3781a20eb59a0bc) is directly grounded in the supplied passages p39 and p40: p39 states geographic distribution patterns are best explained by evolution together with tectonic plate movement, and distinguishes groups evolving before vs. after Pangaea's breakup; p40 gives isolation/divergence examples. The conclusion (n-ea687c9c5c407e72) is a separate contribution about Darwin's formulation of natural selection, but the relation predicate is 'supports' with scope 'Biogeographic patterns provide evidence for evolution with tectonic movement.' The warrant asserts that the source explains geographic distribution by evolution plus tectonics, supporting descent with modification. This is within the stated scope and is supported by the cited passages. No unsupported causal or historical-influence claim is being made by the relation itself; it is an evidential support relation grounded in the passages."
+      },
+      "published": true,
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "8b45c5d3b17673a4fd9454eb482a65c9a1a2ec0c96cd61d2fcce9eef71cb33ac",
+        "job_id": "5b7577a2322e112cc60c8af22ac3e4adb913c47ce7b63345b1a367db2b5ee2aa",
+        "output_hash": "48089c299a938c60b095e421d2a072cf05b54ae081509fb7661677585addfb35",
+        "prompt_hash": "ead14550534994d4ec0ab1feca434316fc1fc5853d736e467f80f0ee7b6f0dd8",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3ee5a896-6279-4e7f-af32-44da04cb5c80",
+        "request_id": "01a147ae1e432eb6f406293a0c690d8c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "revision-recheck:r-fc8e713ada1d6407:2",
+        "time": "2026-10-17T02:25:55+00:00",
+        "trace_id": "3ee5a896-6279-4e7f-af32-44da04cb5c80",
+        "usage": {
+          "completion_tokens": 194,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 3148,
+          "prompt_tokens": 3148,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 3342
+        }
+      },
+      "revision": 2,
+      "target": "r-fc8e713ada1d6407"
+    }
+  ],
+  "qualified_human_review": false,
+  "started_at": "2026-10-17T02:23:16+00:00",
+  "targets": [
+    "r-0dcc0ccfa39330cb",
+    "r-27b2b7d62aa87640",
+    "r-3c12cc2c79438fbf",
+    "r-480a42f8788a0947",
+    "r-5b5118415cfa19fa",
+    "r-5f38862e370f56c1",
+    "r-60dc61aaa83de237",
+    "r-6663c629c040b852",
+    "r-6d5e4b0cdf7bc08e",
+    "r-7f7aa1a2ff0cd773",
+    "r-832475660aee06f7",
+    "r-86fcf6df1c371d88",
+    "r-8b32b3269f3ca09d",
+    "r-8b67f093717f8810",
+    "r-8ce02eaeed7acf8c",
+    "r-932a2ad553e1a71d",
+    "r-9a4f9aba6662da9c",
+    "r-9d65576f24a7e439",
+    "r-a262174ac679ccb4",
+    "r-a347d00e77b3a2d7",
+    "r-a35144144663d3b4",
+    "r-ab47cb40fc5db7e9",
+    "r-c196b6194d8154e2",
+    "r-c414e7de0d9298b4",
+    "r-c5b1e4433db1e4db",
+    "r-cbd7ac1b96dadcdd",
+    "r-ceaaf07a30a538f0",
+    "r-d6d62368354c90b3",
+    "r-d8899d1874d620c4",
+    "r-e1593a22a2f5f2e1",
+    "r-e54e5d05a5e503ba",
+    "r-e9f6b34b57aa25d8",
+    "r-fa743ca8aad07ac2",
+    "r-fc8e713ada1d6407"
+  ]
+}

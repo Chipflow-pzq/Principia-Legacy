@@ -1,0 +1,253 @@
+{
+  "release_id": "1.4.0-exploratory",
+  "cases": [
+    {
+      "query": "Allan Turing",
+      "category": "people",
+      "expected_name": "Alan Turing",
+      "passed": true,
+      "milliseconds": 177.16,
+      "totals": {
+        "ideas": 12,
+        "people": 1,
+        "works": 2,
+        "topics": 2
+      },
+      "interpretation": {
+        "queries": [
+          "allan turing",
+          "alan turing"
+        ],
+        "corrections": [
+          {
+            "from": "allan turing",
+            "to": "alan turing"
+          }
+        ],
+        "concepts": [],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "alna turing",
+      "category": "people",
+      "expected_name": "Alan Turing",
+      "passed": true,
+      "milliseconds": 140.43,
+      "totals": {
+        "ideas": 12,
+        "people": 1,
+        "works": 2,
+        "topics": 2
+      },
+      "interpretation": {
+        "queries": [
+          "alna turing",
+          "alan turing"
+        ],
+        "corrections": [
+          {
+            "from": "alna",
+            "to": "alan"
+          }
+        ],
+        "concepts": [],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "von neuman",
+      "category": "people",
+      "expected_name": "John von Neumann",
+      "passed": true,
+      "milliseconds": 136.09,
+      "totals": {
+        "ideas": 14,
+        "people": 3,
+        "works": 4,
+        "topics": 4
+      },
+      "interpretation": {
+        "queries": [
+          "von neuman",
+          "von neumann"
+        ],
+        "corrections": [
+          {
+            "from": "neuman",
+            "to": "neumann"
+          }
+        ],
+        "concepts": [],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "general relativty",
+      "category": "ideas",
+      "expected_name": null,
+      "passed": true,
+      "milliseconds": 149.39,
+      "totals": {
+        "ideas": 32,
+        "people": 4,
+        "works": 8,
+        "topics": 8
+      },
+      "interpretation": {
+        "queries": [
+          "general relativty",
+          "general relativity",
+          "einstein gravity",
+          "spacetime curvature"
+        ],
+        "corrections": [
+          {
+            "from": "relativty",
+            "to": "relativity"
+          }
+        ],
+        "concepts": [
+          "einstein gravity",
+          "spacetime curvature"
+        ],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "hamiltonian mechancis",
+      "category": "ideas",
+      "expected_name": null,
+      "passed": true,
+      "milliseconds": 151.61,
+      "totals": {
+        "ideas": 1,
+        "people": 0,
+        "works": 1,
+        "topics": 3
+      },
+      "interpretation": {
+        "queries": [
+          "hamiltonian mechancis",
+          "hamiltonian mechanics",
+          "hamiltonian dynamics"
+        ],
+        "corrections": [
+          {
+            "from": "mechancis",
+            "to": "mechanics"
+          }
+        ],
+        "concepts": [
+          "hamiltonian dynamics"
+        ],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "what is genetic scissors",
+      "category": "topics",
+      "expected_name": null,
+      "passed": true,
+      "milliseconds": 132.08,
+      "totals": {
+        "ideas": 11,
+        "people": 0,
+        "works": 6,
+        "topics": 5
+      },
+      "interpretation": {
+        "queries": [
+          "what is genetic scissors",
+          "genetic scissors",
+          "gene editing",
+          "crispr",
+          "crispr cas9",
+          "genome editing"
+        ],
+        "corrections": [],
+        "concepts": [
+          "gene editing",
+          "crispr",
+          "crispr cas9",
+          "genome editing"
+        ],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "spacetime curvature",
+      "category": "topics",
+      "expected_name": null,
+      "passed": true,
+      "milliseconds": 128.77,
+      "totals": {
+        "ideas": 32,
+        "people": 4,
+        "works": 8,
+        "topics": 8
+      },
+      "interpretation": {
+        "queries": [
+          "spacetime curvature",
+          "general relativity",
+          "einstein gravity"
+        ],
+        "corrections": [],
+        "concepts": [
+          "general relativity",
+          "einstein gravity"
+        ],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "universal computation",
+      "category": "works",
+      "expected_name": null,
+      "passed": true,
+      "milliseconds": 120.73,
+      "totals": {
+        "ideas": 29,
+        "people": 2,
+        "works": 12,
+        "topics": 12
+      },
+      "interpretation": {
+        "queries": [
+          "universal computation",
+          "turing machine",
+          "computability"
+        ],
+        "corrections": [],
+        "concepts": [
+          "turing machine",
+          "computability"
+        ],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    },
+    {
+      "query": "Emmanuel Candes",
+      "category": "people",
+      "expected_name": "Emmanuel Cand\u00e8s",
+      "passed": true,
+      "milliseconds": 127.01,
+      "totals": {
+        "ideas": 69,
+        "people": 3,
+        "works": 7,
+        "topics": 4
+      },
+      "interpretation": {
+        "queries": [
+          "emmanuel candes"
+        ],
+        "corrections": [],
+        "concepts": [],
+        "method": "offline aliases, curated concepts and bounded spelling distance"
+      }
+    }
+  ],
+  "scope": "Hand-selected regression cases, not a general semantic-search benchmark."
+}

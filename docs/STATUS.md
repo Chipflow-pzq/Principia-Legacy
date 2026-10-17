@@ -1,31 +1,28 @@
-# Status of this source edition
+# Release status
 
-**Prepared 15 October 2026.** The public demonstration and this repository use the frozen **1.2.0-exploratory** corpus. The cloud reader's five runtime modules match the released source, and its hosted adapter is included under `hosting/`.
+**17 October 2026 · reader 1.4.1 · atlas 1.4.1-exploratory.** Accepted for publication. [Deployment and publication record](DEPLOYMENT-1.4.1.md).
 
 | Dimension | Current evidence |
 |---|---|
-| Corpus | 2,667 visible contributions, 2,233 relationships, 237 source records |
-| Coverage | Five subjects; 154 registered topics, 152 populated; two empty evidence gaps |
-| Entry points | Five flagship maps, three guided cross-disciplinary journeys |
-| People | 29 sourced research profiles within 679 searchable person/team/attribution pages |
-| Machine screening | Exact-revision, source-grounded checks on visible contributions and relationships |
-| Human review | No qualified human audit; a stratified 100-contribution/150-relation queue is prepared |
-| Software | Complete local reader, authoring CLI, canonical records, prebuilt frontend and optional hosted adapter |
+| Software | Four-category search; subjects → topics → works → insights; sourced individual profiles; exact-revision links and reproducible snapshots |
+| Catalogue | 882 works, 899 selected individuals, 781 topics; 262 works and 184 topics contain extracted insights |
+| Scientific coverage | 2,905 admitted insights, 1,941 relationships, 270 source identities; incomplete ancestry and disconnected evidence remain visible |
+| Machine review | Source-based extraction plus separate checks, with additional primary-agent corrections; positive model verdicts can still be wrong |
+| Human review | **None recorded.** The stratified 100-insight/150-relationship audit is prepared, not completed |
+| Personal research | Browser-only, user-key Trace a discovery remains experimental; no new live research-quality certification in this update |
 
-The planned minimum of **200 populated topics and 2,000 unique primary-subject insights per subject is not reached**. Shared topic membership never multiplies insight counts. The original 3,000-relationship lower target is short by 767. Full historical ancestry and broad disciplinary coverage remain open work; [COVERAGE.md](COVERAGE.md) lists the actual topic gaps.
+Read the [1.4 release notes](RELEASE-1.4.md), [actual acceptance results](../reports/product-readiness-1.4.md), and [subject-level catalogue report](../reports/catalog-1.4.json).
+The 620 catalogue works awaiting extraction are not counted as checked scientific
+coverage. Neither the suggested selection range nor the deeper populated-topic
+and insight targets have been achieved across all five subjects.
 
-## Verification
+The 120-case synthetic research pilot is unchanged: 30 development and 90 held-out
+cases, 599 responses from 600 attempts. Typed-atlas verdict agreement equaled flat
+retrieval at 66.7%; boundary removal scored 59.2%; typed correction uptake was 25%.
+Exact input-token matching and independent expert gold labels remain outstanding.
+These results do not establish improved alignment or scientific accuracy.
+[Protocol and limitations](EVALUATION.md).
 
-The original 1.2 release passed 65 backend tests, 46 browser tests plus two delayed-startup checks, offline startup, five flagship correction checks, 10,648 immutable-version schema checks, and 5,404 formula parsing checks. See [the dated release report](RELEASE-1.2.md) and `reports/1.2.0-verification-summary.json` for that original evidence.
-
-This source edition adds a reproducible hosted-prefix build, public hosting code/tests, organized documentation and publication hygiene. Its new checks and package verification are recorded in `reports/github-source-verification.json`. Do not interpret the original release results as tests of every later code change.
-
-## Research scope
-
-The 120-case synthetic pilot has 30 development and 90 held-out cases across six families. Its five conditions produced 599 responses from 600 attempts. Typed-atlas verdict agreement equaled flat retrieval at 66.7%; boundary removal scored 59.2%; typed correction uptake was 25%. Exact input-token matching and independently expert-adjudicated gold labels remain outstanding. These results do not establish improved alignment or scientific accuracy. [Protocol and limitations](EVALUATION.md).
-
-## Unreleased work
-
-The separate local curation campaign completed one of 45 batches before stopping during the next batch's editorial check on 13 October. Its later working records are not included in this frozen source edition. The original development directory retains that work and its failure receipts. Archived plans in `config/` are research inputs, not completed knowledge and not running jobs.
-
-No paid provider calls, live-site changes, remote repository creation or GitHub publication are part of preparing this source edition. Further curation, independent human review and deeper historical reconstruction remain separate work.
+Historical release reports describe their own builds: [1.3](RELEASE-1.3.md),
+[1.2](RELEASE-1.2.md) and [1.1](RELEASE_REPORT.md). Earlier evidence failures and
+unfinished source campaigns remain recorded.

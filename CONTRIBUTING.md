@@ -23,3 +23,8 @@ Describe the reader's problem and the expected behavior. Keep changes focused, r
 Machine checks and expert review are separate. Human review requires a real reviewer-authored attestation of the exact revision and scope checked. Please state relevant expertise and conflicts of interest; never attribute a human review to an agent or a model run.
 
 Code contributions use MIT. Original explanations use CC BY 4.0. Third-party rights remain separate. [Governance](GOVERNANCE.md) describes the correction and review policy; [security reporting](SECURITY.md) covers private vulnerabilities.
+
+For new coverage, start with a documented work or selected individual, then extract
+and independently check its specific insights. A bibliography entry is useful
+without claiming its scientific map is finished. See the [work-first authoring
+workflow](docs/AUTHORING.md#select-works-before-expanding-insights-14).

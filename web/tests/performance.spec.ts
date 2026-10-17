@@ -2,9 +2,13 @@ import { test, expect } from "@playwright/test";
 import { writeFileSync, mkdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const root = fileURLToPath(new URL("../../", import.meta.url));
 
 test("record first view and offline page network evidence", async ({
   page,
+  browser,
 }, testInfo) => {
   test.skip(
     testInfo.project.name !== "desktop",
@@ -24,7 +28,7 @@ test("record first view and offline page network evidence", async ({
   await expect(page.locator(".flagship-card")).toHaveCount(5);
   const firstView = Date.now() - start;
   await page.screenshot({
-    path: resolve("../docs/screenshots/reader-home.png"),
+    path: resolve(root, "docs/screenshots/reader-home.png"),
   });
   await page
     .locator(".flagship-card")
@@ -35,7 +39,7 @@ test("record first view and offline page network evidence", async ({
     /[1-9][0-9]* contributions/,
   );
   await page.screenshot({
-    path: resolve("../docs/screenshots/reader-map.png"),
+    path: resolve(root, "docs/screenshots/reader-map.png"),
   });
   const memory = await page.evaluate(
     () =>
@@ -60,15 +64,17 @@ test("record first view and offline page network evidence", async ({
         : null;
     })
     .filter((x) => x !== null);
-  const roots = new Set(
-    processes
-      .filter(
-        (p) =>
-          p.command.includes("playwright_chromiumdev_profile") &&
-          p.command.includes("--remote-debugging-pipe"),
-      )
-      .map((p) => p.pid),
+  // Scope RSS to this test's own browser. Concurrent paid QA browsers must
+  // not be silently counted as part of the reader's working set.
+  const session = await browser.newBrowserCDPSession();
+  const { processInfo } = await session.send("SystemInfo.getProcessInfo");
+  await session.detach();
+  const roots = new Set<number>(
+    processInfo
+      .filter((p: { type: string }) => p.type === "browser")
+      .map((p: { id: number }) => p.id),
   );
+  expect(roots.size).toBe(1);
   let grew = true;
   while (grew) {
     grew = false;
@@ -82,9 +88,14 @@ test("record first view and offline page network evidence", async ({
     .filter((p) => roots.has(p.pid))
     .reduce((s, p) => s + p.rss, 0);
   const serverPort = new URL(testInfo.project.use.baseURL!).port || "80";
-  const serverPids = new Set(execFileSync("lsof", ["-tiTCP:" + serverPort, "-sTCP:LISTEN"], {
-    encoding: "utf8",
-  }).trim().split(/\s+/).map(Number));
+  const serverPids = new Set(
+    execFileSync("lsof", ["-tiTCP:" + serverPort, "-sTCP:LISTEN"], {
+      encoding: "utf8",
+    })
+      .trim()
+      .split(/\s+/)
+      .map(Number),
+  );
   const serverRSS = processes
     .filter((p) => serverPids.has(p.pid))
     .reduce((s, p) => s + p.rss, 0);
@@ -97,7 +108,7 @@ test("record first view and offline page network evidence", async ({
     reader_process_rss_bytes: serverRSS,
     combined_rss_bytes: browserRSS + serverRSS,
     memory_method:
-      "ps RSS summed over the test Chromium process tree plus the local reader; shared pages may be counted more than once",
+      "ps RSS summed over this browser's CDP-identified process tree plus the local reader; unrelated QA browsers excluded; shared pages may be counted more than once",
     requests: requests.length,
     external_requests: requests.filter(
       (x) => x !== new URL(testInfo.project.use.baseURL!).origin,
@@ -105,9 +116,9 @@ test("record first view and offline page network evidence", async ({
     page_errors: errors,
     viewport: { width: 1440, height: 1000 },
   };
-  mkdirSync(resolve("../build"), { recursive: true });
+  mkdirSync(resolve(root, "build"), { recursive: true });
   writeFileSync(
-    resolve("../build/browser-performance.json"),
+    resolve(root, "build/browser-performance.json"),
     JSON.stringify(result, null, 2) + "\n",
   );
   expect(result.external_requests).toEqual([]);

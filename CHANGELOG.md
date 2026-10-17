@@ -1,3 +1,29 @@
+# Changelog
+
+## 1.4.1 — 17 October 2026
+
+Promotes the accepted reader to a public release with the unchanged 1.4.1-exploratory scientific snapshot. Updates the project introduction, publishing guidance and hosting documentation. Production activation uses a versioned Git checkout, verified assets and retained rollback configuration.
+
+## 1.4.0-rc.1 / 1.4.1-exploratory — local, 17 October 2026
+
+- Add versioned works between topics and insights, with exact evidence-pinned memberships, individual contributors and scoped connections.
+- Search four result types with bounded offline spelling recovery, accents, aliases and curated related concepts; preserve search context through work/profile navigation.
+- Match discovery suggestions to the selected subject. Mark source-only topics and pending extraction explicitly.
+- Replace automatically generated author-list profiles with a selected, sourced individual catalogue. Add Turing, von Neumann and earlier historical foundations.
+- Catalogue 882 works and 899 individuals. Retain 2,905 admitted insights and 1,941 relationships; 262 works have extracted insights, while 620 remain a documented backlog.
+- Correct a reversed reduction phrase in the final Turing reading pass and independently recheck both dependent arrows; the earlier 1.4.0 freeze remains reproducible.
+- Bound the reader cache to two decoded snapshots without retaining large JSON cache keys.
+- Preserve older snapshots, record catalogue differences, and invalidate stale work interpretations after corrections. No qualified human audit or deployment is claimed.
+
+
+Reader **1.3.1-rc.2**, frozen atlas **1.3.1-exploratory**, awaiting local acceptance. No deployment or push.
+
+Ordinary navigation and old preview bookmarks now open the same exploration workspace. Settings distinguishes software from scientific snapshots. Search prioritizes a named idea over incidental mentions. Snapshot decoding and topic summaries reduce repeated work. Topics disclose isolated insights.
+
+The corpus adds 30 foundation topics and 213 net insights. The complete old relationship collection was checked against pinned passages: 463 arrows were withheld and 23 repaired. Direct corrections address scope, attribution, reduction direction, monodromy, mathematics and evidence locators. Changed records invalidate dependent interpretations; 25 dependent arrows passed fresh checks. A later CLT exposition correction also received new dependent checks. Previous scientific releases, including the interim 1.3.0 snapshot, remain reproducible.
+
+Personal exploration uses browser-owned credentials, bounded generation and evidence checks, inspectable progress, and optional local saving. Refinement now targets the missing entrance to the requested result’s explanatory branch. Actual live outcomes, unsuccessful attempts and limits are in [the acceptance report](reports/product-readiness-1.3.md).
+
 # GitHub source edition — 2026-10-15
 
 Organized the complete source around the deployed 1.2.0-exploratory snapshot. Added a concise README, linked development/contribution/hosting guides, publication hygiene and the deployed read-only hosting adapter. Hosted asset and API prefixes now build from Vite configuration; the public build labels its online, read-only mode. The release CLI requires an explicit immutable identifier.

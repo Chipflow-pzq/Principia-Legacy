@@ -1,0 +1,790 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "M2146",
+      "need": "Explain a coherent source-supported route to Eigenvectors and diagonalization. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://textbooks.math.gatech.edu/ila/",
+      "url": "https://textbooks.math.gatech.edu/ila/diagonalization.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2152",
+      "need": "Explain a coherent source-supported route to Markov chains and stochastic matrices. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://textbooks.math.gatech.edu/ila/",
+      "url": "https://textbooks.math.gatech.edu/ila/stochastic-matrices.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2164",
+      "need": "Explain a coherent source-supported route to Orthogonal projection. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://textbooks.math.gatech.edu/ila/",
+      "url": "https://textbooks.math.gatech.edu/ila/projections.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2170",
+      "need": "Explain a coherent source-supported route to Least squares and residuals. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://textbooks.math.gatech.edu/ila/",
+      "url": "https://textbooks.math.gatech.edu/ila/least-squares.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2163",
+      "need": "Explain a coherent source-supported route to The central limit theorem. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introductory-statistics-2e/pages/preface",
+      "url": "https://openstax.org/books/introductory-statistics-2e/pages/7-1-the-central-limit-theorem-for-sample-means-averages"
+    },
+    {
+      "depth": 0,
+      "dossier": "M2159",
+      "need": "Explain a coherent source-supported route to Stokes’ theorem: local curl and boundary circulation. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/calculus-volume-3/pages/preface",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/6-7-stokes-theorem"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2113",
+      "need": "Explain a coherent source-supported route to Gauss’s law and electric flux. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-2/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2111",
+      "need": "Explain a coherent source-supported route to The Electromagnetic Spectrum. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/astronomy-2e/pages/preface",
+      "url": "https://openstax.org/books/astronomy-2e/pages/5-2-the-electromagnetic-spectrum"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2150",
+      "need": "Explain a coherent source-supported route to Photoelectric Effect. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-3/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2174",
+      "need": "Explain a coherent source-supported route to The Heisenberg Uncertainty Principle. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-3/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2238",
+      "need": "Explain a coherent source-supported route to Semiconductors and Doping. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-3/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/9-6-semiconductors-and-doping"
+    },
+    {
+      "depth": 0,
+      "dossier": "P2242",
+      "need": "Explain a coherent source-supported route to Semiconductor Devices. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/university-physics-volume-3/pages/preface",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/9-7-semiconductor-devices"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2095",
+      "need": "Explain a coherent source-supported route to Dynamic Programming. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/index.html",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/DynamicProgramming.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2101",
+      "need": "Explain a coherent source-supported route to Amortized Analysis. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/index.html",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/AmortAnal.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2116",
+      "need": "Explain a coherent source-supported route to Problem reductions and computational hardness. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/index.html",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Reduction.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2119",
+      "need": "Explain a coherent source-supported route to Why NP-completeness connects hard problems. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/index.html",
+      "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/provingNPC.html"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2121",
+      "need": "Explain a coherent source-supported route to Memory Hierarchy. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/5-5-memory-hierarchy"
+    },
+    {
+      "depth": 0,
+      "dossier": "C2091",
+      "need": "Explain a coherent source-supported route to Parallel Programming Models. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/introduction-computer-science/pages/preface",
+      "url": "https://openstax.org/books/introduction-computer-science/pages/4-3-parallel-programming-models"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2117",
+      "need": "Explain a coherent source-supported route to Efficient markets and their limits. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-finance/pages/preface",
+      "url": "https://openstax.org/books/principles-finance/pages/11-5-efficient-markets"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2155",
+      "need": "Explain a coherent source-supported route to Portfolio diversification and correlated risk. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-finance/pages/preface",
+      "url": "https://openstax.org/books/principles-finance/pages/15-2-risk-and-return-to-multiple-assets"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2174",
+      "need": "Explain a coherent source-supported route to The Phillips Curve. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/25-3-the-phillips-curve"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2198",
+      "need": "Explain a coherent source-supported route to Monetary Policy and Economic Outcomes. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2122",
+      "need": "Explain a coherent source-supported route to GDP and the limits of measuring welfare. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/19-5-how-well-gdp-measures-the-well-being-of-society"
+    },
+    {
+      "depth": 0,
+      "dossier": "E2100",
+      "need": "Explain a coherent source-supported route to Insurance, adverse selection and moral hazard. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/principles-economics-3e/pages/preface",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2181",
+      "need": "Explain a coherent source-supported route to Natural selection and common descent. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2190",
+      "need": "Explain a coherent source-supported route to Mutation, drift and population evolution. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/19-1-population-evolution"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2196",
+      "need": "Explain a coherent source-supported route to Selection, fitness and adaptation. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2130",
+      "need": "Explain a coherent source-supported route to DNA Repair. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2161",
+      "need": "Explain a coherent source-supported route to Gene regulation and the operon model. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/microbiology/pages/preface",
+      "url": "https://openstax.org/books/microbiology/pages/11-7-gene-regulation-operon-theory"
+    },
+    {
+      "depth": 0,
+      "dossier": "B2121",
+      "need": "Explain a coherent source-supported route to DNA Structure and Sequencing. Preserve the central mechanism, scope and a meaningful boundary. Reuse exact existing ideas when evidence warrants it.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://openstax.org/books/biology-2e/pages/preface",
+      "url": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing"
+    }
+  ],
+  "frozen_checklists": {
+    "B2121": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2130": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2161": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2181": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2190": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "B2196": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2091": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2095": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2101": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2116": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2119": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "C2121": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2100": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2117": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2122": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2155": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2174": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "E2198": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2146": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2152": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2159": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2163": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2164": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "M2170": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2111": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2113": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2150": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2174": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2238": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ],
+    "P2242": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ]
+  },
+  "id": "representative-foundations-1-3",
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "new_node_allowance": 24,
+  "selection": "Six consequential foundation topics per subject, selected before extraction; absent evidence is a gap, not an admission."
+}

@@ -193,15 +193,6 @@
     },
     {
       "assumptions": [
-        "Same asymptotic conditions as DML1"
-      ],
-      "id": "n-ad122f716d2d1dc5",
-      "limits": [
-        "DML2 may not be equivalent to DML1 in all settings"
-      ]
-    },
-    {
-      "assumptions": [
         "Criterion function is differentiable",
         "Nuisance parameter maximizer exists and is differentiable"
       ],
@@ -209,28 +200,6 @@
       "limits": [
         "Requires interchange of derivatives",
         "May not yield efficient score unless likelihood is used"
-      ]
-    },
-    {
-      "assumptions": [
-        "Instrument validity (exclusion restriction)",
-        "Partially linear IV model"
-      ],
-      "id": "n-d7e722b32afc435c",
-      "limits": [
-        "Results not detailed in the provided passages",
-        "Instrument validity is arguable"
-      ]
-    },
-    {
-      "assumptions": [
-        "Homoscedastic errors",
-        "Partially linear model"
-      ],
-      "id": "n-f94ea78e2150b253",
-      "limits": [
-        "Efficiency only under homoscedasticity for PLR",
-        "ATE efficiency requires correct score"
       ]
     }
   ],
@@ -242,7 +211,7 @@
   "notice": "This evidence brief is not authorization and does not establish expert validation.",
   "permitted_action_scope": "read_only",
   "query": "Flagship evidence: E01",
-  "release_id": "1.2.0-exploratory",
+  "release_id": "1.4.1-exploratory",
   "relevant_contributions": [
     {
       "anchors": [
@@ -1445,69 +1414,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p25",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Same asymptotic conditions as DML1"
-      ],
-      "attribution": [
-        {
-          "evidence_note": "The paper presents Definition 3.2 and Remark 3.1.",
-          "name": "Chernozhukov et al.",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "DML2 solves a single estimating equation pooling all folds, which is better behaved in small samples than DML1.",
-      "conceptual_move": "Define DML2 as the solution to a pooled equation across folds, improving stability.",
-      "content_hash": "cb5ff4d5c8d65ed3217a5afe6bfcc50bbdbc1f989c0b185235eecd07d11bfbd8",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "arXiv version received June 2014, published 2016.",
-        "precision": "year",
-        "year": 2016
-      },
-      "dossiers": [
-        "E01"
-      ],
-      "explanation": "The paper defines two variants of DML: DML1 averages fold-specific estimates, while DML2 solves a single equation that pools the empirical moments across all folds. The pooled Jacobian in DML2 is more stable than the separate Jacobians in DML1, making DML2 preferable in small samples. The paper recommends DML2 in most cases, except when the two are equivalent, such as in the interactive model for ATE.",
-      "human_review": "not_reviewed",
-      "id": "n-ad122f716d2d1dc5",
-      "kind": "method",
-      "limits": [
-        "DML2 may not be equivalent to DML1 in all settings"
-      ],
-      "machine_screening": "passed",
-      "pillar": "economics",
-      "problem": "DML1 averages fold-specific estimates, which may have unstable Jacobians in small samples.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Commonly used in practice.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "economics"
-      ],
-      "title": "DML2 estimator with pooled Jacobian",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p19",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
@@ -1568,141 +1474,6 @@
         "economics"
       ],
       "title": "Construction of orthogonal scores via concentrating-out",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p45",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Instrument validity (exclusion restriction)",
-        "Partially linear IV model"
-      ],
-      "attribution": [
-        {
-          "evidence_note": "The paper presents this in Section 6.3.",
-          "name": "Chernozhukov et al.",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "DML is applied to estimate the effect of institutions on GDP using settler mortality as an instrument, demonstrating use in partially linear IV models.",
-      "conceptual_move": "Apply DML to the AJR model with flexible control for covariates.",
-      "content_hash": "27d5e482bba4cd4fdf38ac81b1e24d5e1c28c2abb9b4a78d0258901670041085",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "arXiv version received June 2014, published 2016.",
-        "precision": "year",
-        "year": 2016
-      },
-      "dossiers": [
-        "E01"
-      ],
-      "explanation": "The paper applies DML to estimate the effect of institutions on GDP, using settler mortality as an instrument, following Acemoglu et al. (2001). This illustrates the use of DML in partially linear IV models, where the nuisance functions are estimated by ML. The paper does not report detailed results but highlights the method's applicability.",
-      "human_review": "not_reviewed",
-      "id": "n-d7e722b32afc435c",
-      "kind": "empirical_finding",
-      "limits": [
-        "Results not detailed in the provided passages",
-        "Instrument validity is arguable"
-      ],
-      "machine_screening": "passed",
-      "pillar": "economics",
-      "problem": "Demonstrate DML in a structural IV setting with potential endogeneity.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Illustrative application.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "economics"
-      ],
-      "title": "Empirical application to institutions and growth",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Homoscedastic errors",
-        "Partially linear model"
-      ],
-      "attribution": [
-        {
-          "evidence_note": "The paper presents this in Remark 4.2 and Theorem 5.1.",
-          "name": "Chernozhukov et al.",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "In the partially linear model with homoscedastic errors, the DML estimator achieves the semiparametric efficiency bound.",
-      "conceptual_move": "Show that under homoscedasticity, the asymptotic variance reduces to the efficiency bound.",
-      "content_hash": "45d69a57477c6a7b64f5b2032a3160b90f99715c492e725138e192e501313a38",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "arXiv version received June 2014, published 2016.",
-        "precision": "year",
-        "year": 2016
-      },
-      "dossiers": [
-        "E01"
-      ],
-      "explanation": "The paper notes that under conditional homoscedasticity, the asymptotic variance of the DML estimator in the partially linear model equals the semiparametric efficiency bound. This is stated in Remark 4.2, and the paper also shows that the ATE and ATTE estimators are efficient in general, reaching the Hahn (1998) bound.",
-      "human_review": "not_reviewed",
-      "id": "n-f94ea78e2150b253",
-      "kind": "theorem",
-      "limits": [
-        "Efficiency only under homoscedasticity for PLR",
-        "ATE efficiency requires correct score"
-      ],
-      "machine_screening": "passed",
-      "pillar": "economics",
-      "problem": "Need to know when DML is efficient.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Establishes optimality in specific cases.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "economics"
-      ],
-      "title": "Semiparametric efficiency under homoscedasticity",
       "type": "contribution"
     }
   ],
@@ -1828,31 +1599,10 @@
     },
     {
       "human_review": "not_reviewed",
-      "id": "n-ad122f716d2d1dc5",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Commonly used in practice."
-    },
-    {
-      "human_review": "not_reviewed",
       "id": "n-b1f98fc52a72bb93",
       "machine_screening": "passed",
       "revision": 1,
       "scientific_standing": "Useful for deriving orthogonal scores in practice."
-    },
-    {
-      "human_review": "not_reviewed",
-      "id": "n-d7e722b32afc435c",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Illustrative application."
-    },
-    {
-      "human_review": "not_reviewed",
-      "id": "n-f94ea78e2150b253",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Establishes optimality in specific cases."
     }
   ],
   "reviews": [
@@ -1966,6 +1716,53 @@
       "type": "review"
     },
     {
+      "content_hash": "9427458e0d8483892d8980bcb2c47f80881ed3b09894e8a2be1c0dec93145bb3",
+      "evidence_checked": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-1719aa83d6ce4d38f0fc",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "bcd662690085345c080c07ab142f002aa3811dcabcf0726604b345e49dbde5fd",
+        "job_id": "d3288e9f39fb1671845f7e5cb50c81a9e0aa32f1e5e0ded422e90d0c007a5203",
+        "output_hash": "01f6ce8bb770667125c25c4325bc922feebaefe9234b8d825bcd85357c13380f",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a605c7b4-4c29-425d-8338-0129a16e08f4",
+        "request_id": "01a1479f478cbbed831ab4bb9e739110",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "verify-arrow-repairs:a88e68ed2dca772ddf67",
+        "time": "2026-10-17T02:09:43+00:00",
+        "trace_id": "a605c7b4-4c29-425d-8338-0129a16e08f4"
+      },
+      "rationale": "p28 states Theorems 3.1 and 3.2 'can be used for standard construction of confidence regions which are uniformly valid over a large, interesting class of models,' and Theorem 3.1 gives uniform root-N concentration and Gaussian approximation; the uniform CI result is thus a corollary extending the pointwise normality claim, matching the stated scope.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "3f8415773a95a5ba31a167555ff736ec1198f620246abdc1676f857c5cd16ac1",
+        "id": "r-69003bedea715b44",
+        "revision": 3
+      },
+      "time": "2026-10-17T02:09:43+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "ec8ce8e258b79473b10257352dd09fcde8b65e8b5651ba095c262664d51270ba",
       "evidence_checked": [
         {
@@ -2013,50 +1810,144 @@
       "type": "review"
     },
     {
-      "content_hash": "976382494bd7c0dc2748b059b6fb0214a34f506b99d0d9f4130faf7bbe9659be",
+      "content_hash": "a381d393408cdba7998750d8ade97c765ffdcd2bd109f98ef91aac9c23cc1bf2",
       "evidence_checked": [
         {
-          "anchor_id": "p42",
+          "anchor_id": "p36",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         },
         {
-          "anchor_id": "p43",
+          "anchor_id": "p37",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         }
       ],
-      "id": "review-3537ca80c4bc12ba1c9a",
+      "id": "review-33029838a3f3847ae231",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "9134cfd1ed1a40625dfee380f6f4138923d795443471746317b5120a8d01ab29",
+        "job_id": "5b77d58d9d7845ccdb22182e877fb35a8b1f35d32ea6dcd3d36ed50ad67dfb73",
+        "output_hash": "7970552b7940d81f59773e129bb972b617e76ce57a20e5c8e3a2088e92701b6c",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "363e6c62-3ce3-4c97-99e0-3927d34b82c8",
+        "request_id": "01a147a5b6351c79f501d31798e30234",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
+        "task": "atlas-audit:9134cfd1ed1a40625dfe",
+        "time": "2026-10-17T02:16:44+00:00",
+        "trace_id": "363e6c62-3ce3-4c97-99e0-3927d34b82c8"
       },
-      "rationale": "The paper applies DML to estimate the effect of 401(k) eligibility, showing flexible confounding control, illustrating practical use (p42-43).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "Theorem 5.1 states DML1/DML2 estimators obey σ−1√N(θ̃−θ0)⇝N(0,1); text cites Hahn (1998) efficiency bound and rate condition product o(N^{-1/2}).",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "b212e484f0a5fc42f78c635655426227dc94458ed33a3b932d0ec3666fc28854",
-        "id": "r-0973eb607f0e21b6",
+        "content_hash": "def4d31105bfdcf182df733c58799651732ad1511d3dd2511b220060200bc6da",
+        "id": "n-33e47fd4ec6e1420",
         "revision": 1
       },
-      "time": "2026-10-12T11:34:55+00:00",
+      "time": "2026-10-17T02:16:44+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ac0a009fa8abcedfec9800314de5d7db05de05013628e3b4b10b72c29cfcaf14",
+      "evidence_checked": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-3438084e2e54fc371425",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "095fefcdb7463ae0eff124b403b3931a9540a838040de3613559ebf98fb1505c",
+        "job_id": "15de85cf3fe96cab14b4c8af406d5a4c3ee8fb5b94a7aec6e2910437491656c8",
+        "output_hash": "6fc96efec35a41b3a9f68dd80a5c8d0ac0f04aec3fbe07b93012e353882587b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d1665e56-1794-40a2-8931-7d491c75c66d",
+        "request_id": "01a1478bdb16a5f1a73a38a412790fd8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:095fefcdb7463ae0eff1",
+        "time": "2026-10-17T01:48:33+00:00",
+        "trace_id": "d1665e56-1794-40a2-8931-7d491c75c66d"
+      },
+      "rationale": "p36 states 'we specialize the results of Section 3 to estimating treatment effects' and p37 derives Theorem 5.1 as a corollary, so the general DML theory is applied to ATE/ATTE.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "8e9996d01283a4a91faf8763079bc04ae817c967ee064db341913d227df6a2ae",
+        "id": "r-010bb9c51b2ac5b5",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:33+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "d776b04f68e7db43492fdc5c02896159bf4ca950efc8a5c5dca7ee2f2f68e98a",
+      "evidence_checked": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-3c5fb68b1bda2fbdd19b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d775bc66d42e5e707ed62deed54680d0affe86f4aea41ee0a00a2c2789783c9d",
+        "job_id": "17b49cd025b84a24897196cb1d9d345706d7a56bc3216707732a7f4ab515a4b7",
+        "output_hash": "a286f36e8ec6d0c2ef3121b2c17ca3bfae8f69712726ed9f86e53621305db029",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f8ad2448-dffb-44b2-9449-f3017634151e",
+        "request_id": "01a14790e30b431fc061c01322a8251b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:d775bc66d42e5e707ed6",
+        "time": "2026-10-17T01:53:59+00:00",
+        "trace_id": "f8ad2448-dffb-44b2-9449-f3017634151e"
+      },
+      "rationale": "p19 derives the concentrating-out score and explicitly shows it equals (D−m0(X))(Y−Dθ−g0(X)); p32 presents that same score for partially linear regression.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "2228fc8b8265b72b5debb742c4f8404c80225853cd0b383b07948e2aa3a0ae33",
+        "id": "r-e432b21a1dad9b18",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:59+00:00",
       "type": "review"
     },
     {
@@ -2149,53 +2040,6 @@
       "type": "review"
     },
     {
-      "content_hash": "93b271aac7204507750184d1e906892f3e132f462dde757b878e51bbf71be668",
-      "evidence_checked": [
-        {
-          "anchor_id": "p40",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p41",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-4b47093b4cb78ff67b37",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
-      },
-      "rationale": "The paper applies DML to the Pennsylvania experiment, producing sensible estimates, illustrating practical use (p40-41).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "32bd426a7a38f70b82d2f4d2fd078ffb7478f64f7975f4f40267d52449496f6f",
-        "id": "r-64f4ce96c5ef782e",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:34:55+00:00",
-      "type": "review"
-    },
-    {
       "content_hash": "62d85adf92df1c01630ccd22a1abb39efbcf32e1e96939e5e24fbb975fa24296",
       "evidence_checked": [
         {
@@ -2243,45 +2087,97 @@
       "type": "review"
     },
     {
-      "content_hash": "d80ac904e65f9d7017fc3ef4828b6beec199aa7e78adfeaac5c7fe5efa901684",
+      "content_hash": "14e3aa67b03e45c0fc9205c5e3d7c8bbc8d896945c65571a7e0a07b5472c347c",
       "evidence_checked": [
         {
-          "anchor_id": "p45",
+          "anchor_id": "p23",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         }
       ],
-      "id": "review-5665464daa1b8230fe73",
+      "id": "review-4dd47d7b847b428c6faf",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "58d3311ed3699c917b9e333e51afb7b2d9ab1b0a7fb62f518a40328a37c5152e",
+        "job_id": "ae005faa26e369452e3d129f02d4f731c69badcb5e823acfdfd4579a405333b3",
+        "output_hash": "9b1c599ca9caa71e809da953a5b0e0f2b318d851be3b5c77b9fb738a4ac75314",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "77f9bc0f-076b-42c7-91ac-fdd6bc09b89f",
+        "request_id": "01a1479c39fad8d41b92687f5b4dd25d",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
+        "task": "verify-arrow-repairs:6f22d2df6df35e1794be",
+        "time": "2026-10-17T02:06:22+00:00",
+        "trace_id": "77f9bc0f-076b-42c7-91ac-fdd6bc09b89f"
       },
-      "rationale": "Section 6.3 (p45) describes applying DML to estimate the effect of institutions on GDP using settler mortality as an instrument, following Acemoglu et al. (2001). The paper does not report detailed results but highlights applicability.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p23 explicitly derives the orthogonal score by adding the influence-function adjustment: 'we obtain the influence function adjustment by taking the conditional expectation of the derivative...' yielding ψ={D−m0(X)}{Y−Dθ−β(X,θ)}, and states 'an orthogonal score for the partially linear model can be derived from an influence function adjustment.' This is a genuine inferential derivation, so premise_for is correctly typed.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "27d5e482bba4cd4fdf38ac81b1e24d5e1c28c2abb9b4a78d0258901670041085",
-        "id": "n-d7e722b32afc435c",
+        "content_hash": "fc8c5e10d9d43ee1905ed5ec60163c96f6651db0199c9987977b1c58e4d69cdd",
+        "id": "r-f4723a53fb1077bd",
+        "revision": 3
+      },
+      "time": "2026-10-17T02:06:22+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "f5ccd58f3b2f27369fd288368d8cc51325e82d7352d60e1b34927b4f93d52205",
+      "evidence_checked": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-590032c43a67d7080771",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7ab1da3182766fbe6712e341b047cd0d50143dbffebb8db5b01ece15e54a3bb0",
+        "job_id": "53bf0dd8466631a409c8d412949d48cd9bca31b40ac6b794e620157e249d68e0",
+        "output_hash": "f51bcfa5105a65c6767e25dbfa9e309f6c0ae6c6d2ccf9467529aa63b0cf2760",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7ce84648-c388-4cd7-b260-fefd0664886f",
+        "request_id": "01a1478dfb9013d98fd5acf1e336b350",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:7ab1da3182766fbe6712",
+        "time": "2026-10-17T01:50:52+00:00",
+        "trace_id": "7ce84648-c388-4cd7-b260-fefd0664886f"
+      },
+      "rationale": "p6 explicitly states that without sample splitting overfitting bias can lead to poor performance and that cross-fitting removes this bias, directly documenting the motivation.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "a2ac606a949b65df9b6593301cb8d0267892dc74c5521bffb185fba1233e74db",
+        "id": "r-6326334fdffd0827",
         "revision": 1
       },
-      "time": "2026-10-12T11:34:55+00:00",
+      "time": "2026-10-17T01:50:52+00:00",
       "type": "review"
     },
     {
@@ -2332,53 +2228,6 @@
       "type": "review"
     },
     {
-      "content_hash": "cf0a46febc98753fb9a829873b8be8d27fe5fbb2287ae9bf8a3dfc75771babfd",
-      "evidence_checked": [
-        {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-5cc07ad78c8222bda700",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
-      },
-      "rationale": "Remark 4.2 (p33) states under homoscedasticity the asymptotic variance reduces to the semiparametric efficiency bound for the partially linear model. Theorem 5.1 (p37) states ATE and ATTE estimators are efficient reaching Hahn (1998) bound.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "45d69a57477c6a7b64f5b2032a3160b90f99715c492e725138e192e501313a38",
-        "id": "n-f94ea78e2150b253",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:34:55+00:00",
-      "type": "review"
-    },
-    {
       "content_hash": "e829f0ed0f96d9523e6db96955fbe8ffb315b599d596fed4fe1a4779a9877a33",
       "evidence_checked": [
         {
@@ -2415,100 +2264,6 @@
       "target": {
         "content_hash": "9ec36e6193f63e67b7752caa351666b6fc11bc223c3dbfaae616cde9bb1ec922",
         "id": "n-25f6a4ba80fec06e",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:34:55+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "be1ed32a16a7662fd61d3eb9fea7628630c6532303fc4ee77e608768237abe55",
-      "evidence_checked": [
-        {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-6dd40ea7e1ce2e10cbbb",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
-      },
-      "rationale": "The paper shows cross-fitting weakens sparsity requirements, making DML applicable in broader settings, supporting the general theory (p33, p37).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "aa25f69a857f1df096611b04c06288440de0acab9941e31b5a464618ea84f300",
-        "id": "r-03af14622534dc9a",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:34:55+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "0d282990fe2e62beb0ab8f29868cad014a8d7ea683efaeaa10e7b86683928873",
-      "evidence_checked": [
-        {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-7283c1db1ff361a4e740",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
-      },
-      "rationale": "The paper shows DML achieves the semiparametric efficiency bound in specific cases, indicating optimality (p33, p37).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "bd82afd13fb85b04e39b86a47cbc8b42639ed573e39f6b2fbd85a9925c4da331",
-        "id": "r-f6aa210a9b5aa5e7",
         "revision": 1
       },
       "time": "2026-10-12T11:34:55+00:00",
@@ -2651,6 +2406,100 @@
       "type": "review"
     },
     {
+      "content_hash": "70fba2c2622ddb2a2b5c15771a703629f6ca87ba14ffb6d19d345f37828cacf6",
+      "evidence_checked": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-84b9a7d1b25d657092a2",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "265d54c35c52f388023cc562849dcf72c6a0dfa1290298a32d4aa2fd4532b0a3",
+        "job_id": "555409475950c5d1b49afceeae6f3f92d541f756b7c8f9e682b442e677042ac8",
+        "output_hash": "c7a687b9e65a9fbc6fff08c45ae9b8ba61860f194d0fc531f40b23cdecbfb6bf",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a86a5ca5-ab7e-47e8-8d1b-16c69be5f235",
+        "request_id": "01a14790fb760796111fecc274e78a56",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:265d54c35c52f388023c",
+        "time": "2026-10-17T01:54:05+00:00",
+        "trace_id": "a86a5ca5-ab7e-47e8-8d1b-16c69be5f235"
+      },
+      "rationale": "p21 derives the Neyman orthogonal score for conditional moment restrictions and explicitly applies it to derive the PLR score; p32 gives the PLR score {Y-Dθ-g(X)}(D-m(X)) with orthogonality condition.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "1cc5514c97fb604b51b43f2c7c7b25408d4760415f50764bb2b41ee184ecc58c",
+        "id": "r-e803b2d4b08b1409",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:05+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "6d9746bce16b57fd35275869c532c6a9dbbb10ed0b740522e2dad78256c1f7e7",
+      "evidence_checked": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-8507d9204d12a809d75b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "88e9f82abba4fe8afde9e17539e39a073d1dc1cfa8caddc6ffa68331666e7750",
+        "job_id": "6e3baa51c693e97c1e94cd8c15a76ad096fcc6f22fe421887a40ab9580b34c7f",
+        "output_hash": "18dab59de7d183d63febd5470e80f852052f8801b0fd66496b03ca770be2ab58",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3ad4a016-38a6-49d1-a495-f310a8fd14fa",
+        "request_id": "01a1479078e551241b8329f9c54efef6",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:88e9f82abba4fe8afde9",
+        "time": "2026-10-17T01:53:32+00:00",
+        "trace_id": "3ad4a016-38a6-49d1-a495-f310a8fd14fa"
+      },
+      "rationale": "p7 says Donsker conditions are 'inappropriate' for ML high-dimensional settings; p10 presents cross-fitting as 'a key device that we use to avoid strong entropy conditions,' documenting motivation.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "9e92f91ce3bbafe10550a3e39d6e5fa216cef5cb3981d010aa083f4db07af36d",
+        "id": "r-d24a391d060433ed",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:32+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "3ce80f4d497d106ef0ec1e6ee2efb6fd1d7be4cb09cefbe1c53c924f4df525f5",
       "evidence_checked": [
         {
@@ -2745,6 +2594,53 @@
       "type": "review"
     },
     {
+      "content_hash": "631d9b6adf9cc9176bc9daedee31b595c0a4346930ec44189e0d52c84eaeddc8",
+      "evidence_checked": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-8f145142f917193ff60f",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d0b337f26ec52414dc0b78a5e41965265214345c8e31dc7aa2784708592f9f67",
+        "job_id": "32fc6ece651a417ee837b698cfd8ec0f7b758f4d64fb3f81ffd0466f937224b6",
+        "output_hash": "3d5716c2937da086456f1e60f40f8bbb7ee034cb63fd0ccbccab293c8eaa1dbc",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5ce4a196-1ef2-4973-b1e4-35056b72c259",
+        "request_id": "01a1478bec3c591858d3f28f0c44262f",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:d0b337f26ec52414dc0b",
+        "time": "2026-10-17T01:48:37+00:00",
+        "trace_id": "5ce4a196-1ef2-4973-b1e4-35056b72c259"
+      },
+      "rationale": "The source says sample splitting 'plays a key role in establishing that remainder terms, like c*, vanish in probability,' which is needed for the root-N asymptotic normality result.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "c5d25d92f081f28c73f48b9da434737966791ca37bbb073f93f0444d5d805f4c",
+        "id": "r-04d7d25be8817372",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:37+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "32e51e2d128d698608fb7bbd20243e346c24528b70c8f99dce4b5d04fff18bfd",
       "evidence_checked": [
         {
@@ -2792,45 +2688,92 @@
       "type": "review"
     },
     {
-      "content_hash": "89e80f31c4aec8fd80987b185205bb65993c3237e7a37f06132f072e1460da99",
+      "content_hash": "43655b742e0cfbda4a7af0ec5040f66222c456257de96b563f4818bbf49477aa",
       "evidence_checked": [
         {
-          "anchor_id": "p45",
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         }
       ],
-      "id": "review-9697034b0509fe227baf",
+      "id": "review-924c2870c57e282f335c",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "5dcbb7180e7c8d33a5a71c564eb1cd78a22255923f8c125a587c653519ef1cdb",
+        "job_id": "a065eede895af0af946d22f91f370c80d47149583f1b02f97e192b3f426d3299",
+        "output_hash": "6347236dc88cf597f0dc7f255edee80edf967937cd48ead59e08baca6ed16fab",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "ac4b081a-8cd4-4107-87fc-2c9c962cc3b8",
+        "request_id": "01a1478f2668513c814776d82b9a25d3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
+        "task": "atlas-audit:5dcbb7180e7c8d33a5a7",
+        "time": "2026-10-17T01:52:05+00:00",
+        "trace_id": "ac4b081a-8cd4-4107-87fc-2c9c962cc3b8"
       },
-      "rationale": "The paper applies DML to estimate the effect of institutions on GDP, showing applicability in structural IV models (p45).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p32 defines the orthogonal score (4.3) for the partially linear model; p33's Theorem 4.1 applies it to obtain root-N consistency and asymptotic normality.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "9c7c2979342758ff28cdccaa4cbe58454e028d084f02dc482728f99fcc75bcdd",
-        "id": "r-d0b7c4a1cb68c643",
+        "content_hash": "981f9a526641663a38b37d0d0c41cc6d647e42ba7918a69ab54b3e030b8a17c8",
+        "id": "r-9799056d57fc9501",
         "revision": 1
       },
-      "time": "2026-10-12T11:34:55+00:00",
+      "time": "2026-10-17T01:52:05+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "4d80d023f3d2a92c3e8c35b0f9066242a0af70c6438a7c3f2de117c2d32b169a",
+      "evidence_checked": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-973211725f890d8863b2",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1b2b657b906a92462013cdad843338e487f669f96a72a88930fa4e57189d5207",
+        "job_id": "3286d4767450e32fec3335caedc56827867b383afb3879ef185e33b6572697ee",
+        "output_hash": "339fbc042ffb972d3c266b73d722430d6ead28c1906cee7fdb4b9ab82374fc26",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "93144bfa-84b9-48f7-873f-81bbc8d035ed",
+        "request_id": "01a1479173d52ef9e6c6bfa6f8ebb4ef",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:1b2b657b906a92462013",
+        "time": "2026-10-17T01:54:36+00:00",
+        "trace_id": "93144bfa-84b9-48f7-873f-81bbc8d035ed"
+      },
+      "rationale": "p128 states ITT is a diluted treatment effect and that dilution may make unsafe treatments appear safe, and discusses LATE as complement to ITT; this bears on the conclusion that LATE is more informative.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "bae7523de68c9cb7a054bb345255f43c980a2e6ae986e740e36db592d199b7c2",
+        "id": "r-fa1366d11e28f05d",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:36+00:00",
       "type": "review"
     },
     {
@@ -2923,6 +2866,53 @@
       "type": "review"
     },
     {
+      "content_hash": "90f261c8de4bd727dffe7df16a1a1ef98f8adefe0156aa56a5ed52c1fc92d521",
+      "evidence_checked": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p130",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-9daed626d57e7d5e4a2d",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3a75d710e7e88268c591bac54cfcfa30f51b8c2e52dcf6f17d21d89745cb8b68",
+        "job_id": "88b6ca0a8179fe4e9e683c806c9e39f880bc9870642cb69bbbe2455f2e0abcfc",
+        "output_hash": "5f7dd829ef7a411521d5e820aac4ba82821571c8acc0c689019640a7937cccac",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "0547c4b4-e0b0-43d0-97c2-08522fe31458",
+        "request_id": "01a1479032582698a2c4fbcfc506f641",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:3a75d710e7e88268c591",
+        "time": "2026-10-17T01:53:14+00:00",
+        "trace_id": "0547c4b4-e0b0-43d0-97c2-08522fe31458"
+      },
+      "rationale": "p128-p130 document LATE's use in epidemiology/medicine as complement to ITT, with LATE capturing the effect for compliers and several scholars arguing it should be the main estimand.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "c92779fa5f9d594fa739ccee456384e3e6a1ea8cdffe9b19fc98bd2e807b49e6",
+        "id": "r-c6cc52c4af280d94",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:14+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "aec2edf3369ec382c4b5bcbd74d7d00ca431762d118ea4d176ae456335275f7b",
       "evidence_checked": [
         {
@@ -2964,48 +2954,6 @@
       "target": {
         "content_hash": "9c292fe60858baebe9e9c8846e65512fd51afc813088c171219077e3cf506f8a",
         "id": "n-3e87a08911ccb520",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:34:55+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "03243fe8e33ef33a5e4492f947d8739ee14005c2ba2d51f0df3ee851f45b3c24",
-      "evidence_checked": [
-        {
-          "anchor_id": "p28",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-aa6531036397ad16e389",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
-      },
-      "rationale": "The paper proves asymptotic normality holds uniformly, allowing uniformly valid confidence intervals, a stronger result than pointwise normality (p28).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "c1589b787416440bc5d8b3fa5c94c0d8bbdd54a9d4aeb3d76ad2038811f0eadf",
-        "id": "r-69003bedea715b44",
         "revision": 1
       },
       "time": "2026-10-12T11:34:55+00:00",
@@ -3059,50 +3007,50 @@
       "type": "review"
     },
     {
-      "content_hash": "044d1a98ee806054638ecb8fbe1e6eb0020d70fd1464e0fccea5f4b6b44d1c98",
+      "content_hash": "5bb057ba88e8b131e736a361cf44ba27a58226830ea4e10969886eaa4c790c4a",
       "evidence_checked": [
         {
-          "anchor_id": "p23",
+          "anchor_id": "p38",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         },
         {
-          "anchor_id": "p32",
+          "anchor_id": "p39",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         }
       ],
-      "id": "review-b3dbf7d4322a05cbe7e2",
+      "id": "review-b4d99278aab7b9a37a07",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "f8532c443b5692f6e71a518849549e75308e5b4890697afc5afa731ae1e124ff",
+        "job_id": "4003fea6c02f35a4c39a9dad9dcf39b0ebb2e7b7df44183c32553e10adcba6c8",
+        "output_hash": "92eabc9b3fe248b9a02c8af7567ba4deb272cff33bb87ea301a6c3807d2ad436",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "75e50923-32c8-49c8-a3c7-7b394254dcc8",
+        "request_id": "01a1478d784d99dea2935ece43c775ef",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
+        "task": "atlas-audit:f8532c443b5692f6e71a",
+        "time": "2026-10-17T01:50:15+00:00",
+        "trace_id": "75e50923-32c8-49c8-a3c7-7b394254dcc8"
       },
-      "rationale": "The paper shows adding the influence function adjustment to the naive score produces the orthogonal score for the partially linear model (p23, p32).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p38-p39 explicitly apply the general DML theory to LATE using an orthogonal score and prove Theorem 5.2 root-N consistency/normality, matching the applied_in claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "8cd977d4b0843220f3059c7b10ae3372bc729895f78c4922cf6df64aac70ae11",
-        "id": "r-f4723a53fb1077bd",
+        "content_hash": "13a71be24b6661c5aa91cf94ff25a6c7b6a7edf40259cedea648b5fe44e0390d",
+        "id": "r-49b840f0af20c5dd",
         "revision": 1
       },
-      "time": "2026-10-12T11:34:55+00:00",
+      "time": "2026-10-17T01:50:15+00:00",
       "type": "review"
     },
     {
@@ -3294,53 +3242,6 @@
       "type": "review"
     },
     {
-      "content_hash": "02b5d2057250dcc6a0256fe0a9709e53ef5c8a386b6818be56103230c2f8f4f5",
-      "evidence_checked": [
-        {
-          "anchor_id": "p25",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p28",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-c52f1598e9a7d503faab",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
-      },
-      "rationale": "The paper proves both DML1 and DML2 estimators satisfy the same asymptotic properties, with DML2 recommended for small samples (p25, p28).",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "3cfe684ad96232b985d2fb0e8a33b957ae1ea7ab58a99efcc59b52a7b1906988",
-        "id": "r-4adbdce91480e899",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:34:55+00:00",
-      "type": "review"
-    },
-    {
       "content_hash": "cab5bd683c823c009b32422e909bc8a88888f32ebc7267b3ab29dd8b6f06b880",
       "evidence_checked": [
         {
@@ -3477,45 +3378,87 @@
       "type": "review"
     },
     {
-      "content_hash": "5a88599c9194d0170a9c2aa55fb7aca9d6606d5432e08aad3a8634e0fc5a924e",
+      "content_hash": "1b4a362aabc576c5b6c63888a1cf031e152045c8f2fb0163af54dabbcca8a9f2",
       "evidence_checked": [
         {
-          "anchor_id": "p25",
+          "anchor_id": "p31",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         }
       ],
-      "id": "review-e9f018c1b9c9e56d25eb",
+      "id": "review-e876c6a909054b233def",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "78989bc903fce998ffb190e28ba4fe0e70f6e69d3a98fdf76d7ff8b1ebad8258",
-        "job_id": "a8450a3aa310fe885249b565ad2a266e06cc7335ef6b1e4ece47726daa190867",
-        "output_hash": "e8482e28e78b05b1f164ade348bf577c1d38c1046180e2f036a4ed8393088f47",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "100b29ed5a819d9c7525b8083bffac8111cd07d825f7959b31c97d9ad05a98c9",
+        "job_id": "c74101f9d6cc973a5e539b32a1855e8cc9596dee67822e0bd49641b39919624f",
+        "output_hash": "9d02f5818a828d662641c1a8f980fd8226b84cd2581e86b1c3ff433d0ac333a8",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "055bb580-b525-4ad2-b702-976d86e13418",
-        "request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "22ccde2a-7259-49c2-9211-e78e6da2e492",
+        "request_id": "01a1478bfc745a209c0ce45d0c9cbf3a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:E01:89cdd878b2e8",
-        "time": "2026-10-12T11:34:55+00:00",
-        "trace_id": "055bb580-b525-4ad2-b702-976d86e13418"
+        "task": "atlas-audit:100b29ed5a819d9c7525",
+        "time": "2026-10-17T01:48:38+00:00",
+        "trace_id": "22ccde2a-7259-49c2-9211-e78e6da2e492"
       },
-      "rationale": "Definition 3.2 (p25) defines DML2 as solving a pooled equation across folds, and Remark 3.1 recommends DML2 over DML1 for better small-sample behavior due to more stable pooled Jacobian.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p31 defines median method and states DML1/DML2 estimators concentrate in 1/√N neighborhood and are approximately linear and Gaussian.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "cb5ff4d5c8d65ed3217a5afe6bfcc50bbdbc1f989c0b185235eecd07d11bfbd8",
-        "id": "n-ad122f716d2d1dc5",
+        "content_hash": "e1d29d79210d2571a8c57fd8168f664bdb8ed767c3a8ea3cedb33e918048d911",
+        "id": "r-06005d1ba524f75f",
         "revision": 1
       },
-      "time": "2026-10-12T11:34:55+00:00",
+      "time": "2026-10-17T01:48:38+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "3a1536589e42e7b3644c47bf345425511d4bcacaf652d5b7c9def140d41e54d0",
+      "evidence_checked": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-ea271dd4ae3f93ac2c2d",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "83e6a0917b67a9c9a06917dc375550c04a14460ecf1fbfb09c26b95bf6447f70",
+        "job_id": "39bf710ed9115a191bcdb9ec16f8cd5f583a9b586e6a1bc7e3679dede82ffa6d",
+        "output_hash": "70055b9332ac891b5a711c80785362053f5728701a6bb1e04018ed158b277407",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f5e05864-13cd-4146-96ba-72d176521562",
+        "request_id": "01a147a5a623dbd7bc075d13cd6527d2",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:83e6a0917b67a9c9a069",
+        "time": "2026-10-17T02:16:40+00:00",
+        "trace_id": "f5e05864-13cd-4146-96ba-72d176521562"
+      },
+      "rationale": "Definition 3.3 proposes repeating DML S times and using median of estimates and median-based variance estimator to incorporate sample-splitting uncertainty.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "9360bfed57024bb8de120cabf2b1687caf48b18eea30f6d3c637397eb13451f6",
+        "id": "n-75d35177be89e689",
+        "revision": 1
+      },
+      "time": "2026-10-17T02:16:40+00:00",
       "type": "review"
     },
     {
@@ -3712,7 +3655,7 @@
     "primary_limit": 12,
     "relation_limit": 40
   },
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
   "source_anchors": [
     {
       "anchor_id": "p42",
@@ -3890,42 +3833,12 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p25",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p19",
       "source_id": "s-72d60481d8b7ed3b",
       "source_revision": 1
     },
     {
-      "anchor_id": "p45",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p33",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p37",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p36",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p37",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p33",
       "source_id": "s-72d60481d8b7ed3b",
       "source_revision": 1
     },
@@ -3950,32 +3863,12 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p42",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p43",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p38",
       "source_id": "s-72d60481d8b7ed3b",
       "source_revision": 1
     },
     {
       "anchor_id": "p39",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p25",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p28",
       "source_id": "s-72d60481d8b7ed3b",
       "source_revision": 1
     },
@@ -3990,17 +3883,12 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p40",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p41",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p28",
+      "source_id": "s-72d60481d8b7ed3b",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p30",
       "source_id": "s-72d60481d8b7ed3b",
       "source_revision": 1
     },
@@ -4022,11 +3910,6 @@
     {
       "anchor_id": "p130",
       "source_id": "s-7a6c46a68da7d88b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p45",
-      "source_id": "s-72d60481d8b7ed3b",
       "source_revision": 1
     },
     {
@@ -4066,16 +3949,6 @@
     },
     {
       "anchor_id": "p32",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p33",
-      "source_id": "s-72d60481d8b7ed3b",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p37",
       "source_id": "s-72d60481d8b7ed3b",
       "source_revision": 1
     },
@@ -4698,55 +4571,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "aa25f69a857f1df096611b04c06288440de0acab9941e31b5a464618ea84f300",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-03af14622534dc9a",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-1def0e35b076fa6c",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Relaxed sparsity conditions support the practical applicability of DML.",
-      "type": "relation",
-      "warrant": "The paper shows that cross-fitting weakens sparsity requirements, making DML applicable in a broader range of settings, which supports the general theory."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p5",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
@@ -4840,55 +4664,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p42",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p43",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "b212e484f0a5fc42f78c635655426227dc94458ed33a3b932d0ec3666fc28854",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-0973eb607f0e21b6",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-12d4463d5bc3c830",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The 401(k) example demonstrates DML in an observational study.",
-      "type": "relation",
-      "warrant": "The paper applies DML to estimate the effect of 401(k) eligibility, showing that the method controls for confounding flexibly, illustrating its practical use."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p38",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
@@ -4934,55 +4709,6 @@
       "scope": "The LATE score is used to construct DML estimators.",
       "type": "relation",
       "warrant": "The paper applies the general DML theory to LATE estimation using an orthogonal score, proving root-N consistency and normality."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p25",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p28",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "3cfe684ad96232b985d2fb0e8a33b957ae1ea7ab58a99efcc59b52a7b1906988",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-4adbdce91480e899",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-ad122f716d2d1dc5",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "DML2 is a variant of DML that also achieves root-N consistency.",
-      "type": "relation",
-      "warrant": "The paper proves that both DML1 and DML2 estimators satisfy the same asymptotic properties, with DML2 being recommended for small samples."
     },
     {
       "anchors": [
@@ -5036,76 +4762,26 @@
     {
       "anchors": [
         {
-          "anchor_id": "p40",
+          "anchor_id": "p28",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         },
         {
-          "anchor_id": "p41",
+          "anchor_id": "p30",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-7a2dcf7d88d3269d",
         "revision": 1
       },
-      "content_hash": "32bd426a7a38f70b82d2f4d2fd078ffb7478f64f7975f4f40267d52449496f6f",
+      "content_hash": "3f8415773a95a5ba31a167555ff736ec1198f620246abdc1676f857c5cd16ac1",
       "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-64f4ce96c5ef782e",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-22a61c41440c0b1a",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The UI bonus example demonstrates DML in practice.",
-      "type": "relation",
-      "warrant": "The paper applies DML to the Pennsylvania experiment, showing that the method produces sensible estimates, illustrating its practical use."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p28",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "c1589b787416440bc5d8b3fa5c94c0d8bbdd54a9d4aeb3d76ad2038811f0eadf",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479f478cbbed831ab4bb9e739110"
       },
       "human_review": "not_reviewed",
       "id": "r-69003bedea715b44",
@@ -5120,7 +4796,7 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
       "scope": "Uniform confidence intervals extend the pointwise normality result.",
       "type": "relation",
@@ -5223,50 +4899,6 @@
       "scope": "The LATE framework is applied to medical trials with incomplete adherence.",
       "type": "relation",
       "warrant": "The source discusses how LATE can be estimated in medical trials and argues it should be the main estimand, complementing ITT analysis."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p45",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "9c7c2979342758ff28cdccaa4cbe58454e028d084f02dc482728f99fcc75bcdd",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-d0b7c4a1cb68c643",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-d7e722b32afc435c",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The institutions example demonstrates DML in an IV setting.",
-      "type": "relation",
-      "warrant": "The paper applies DML to estimate the effect of institutions on GDP, showing the method's applicability in structural IV models."
     },
     {
       "anchors": [
@@ -5428,28 +5060,22 @@
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-151095b708b8a3d1",
         "revision": 1
       },
-      "content_hash": "8cd977d4b0843220f3059c7b10ae3372bc729895f78c4922cf6df64aac70ae11",
+      "content_hash": "fc8c5e10d9d43ee1905ed5ec60163c96f6651db0199c9987977b1c58e4d69cdd",
       "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479c39fad8d41b92687f5b4dd25d"
       },
       "human_review": "not_reviewed",
       "id": "r-f4723a53fb1077bd",
-      "layer": "historical",
+      "layer": "logical",
       "machine_screening": "passed",
-      "predicate": "historical_basis_for",
+      "predicate": "premise_for",
       "premise_mode": "all",
       "premises": [
         {
@@ -5458,60 +5084,11 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
-      "scope": "The influence function adjustment yields the orthogonal score for PLR.",
+      "scope": "Derivation of the Neyman orthogonal score for the partially linear model from the influence-function adjustment.",
       "type": "relation",
-      "warrant": "The paper shows that adding the influence function adjustment to the naive score produces the orthogonal score for the partially linear model."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "bd82afd13fb85b04e39b86a47cbc8b42639ed573e39f6b2fbd85a9925c4da331",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-f6aa210a9b5aa5e7",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-f94ea78e2150b253",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Efficiency results strengthen the DML theorem.",
-      "type": "relation",
-      "warrant": "The paper shows that DML achieves the semiparametric efficiency bound in specific cases, indicating that the method is not only consistent but also optimal in those settings."
+      "warrant": "p23 shows that for the partially linear model the original score D(Y-Dθ-g(X)) is adjusted by the influence-function term -m(X)(Y-Dθ-β(X,θ)), yielding ψ={D-m(X)}{Y-Dθ-β(X,θ)}. This is a logical derivation in which the adjustment premise produces the orthogonal score conclusion, so premise_for is the accurate predicate rather than historical_basis_for."
     },
     {
       "anchors": [
@@ -5833,56 +5410,8 @@
     },
     {
       "contribution": {
-        "content_hash": "cb5ff4d5c8d65ed3217a5afe6bfcc50bbdbc1f989c0b185235eecd07d11bfbd8",
-        "id": "n-ad122f716d2d1dc5",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "E01",
-          "origin": "record",
-          "pillar": "economics",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Double/debiased machine learning and causal estimation"
-        }
-      ]
-    },
-    {
-      "contribution": {
         "content_hash": "e382d0e923604232f547c75d94aac2c4c30d519610bf95124f11fd52300d1c43",
         "id": "n-b1f98fc52a72bb93",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "E01",
-          "origin": "record",
-          "pillar": "economics",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Double/debiased machine learning and causal estimation"
-        }
-      ]
-    },
-    {
-      "contribution": {
-        "content_hash": "27d5e482bba4cd4fdf38ac81b1e24d5e1c28c2abb9b4a78d0258901670041085",
-        "id": "n-d7e722b32afc435c",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "E01",
-          "origin": "record",
-          "pillar": "economics",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Double/debiased machine learning and causal estimation"
-        }
-      ]
-    },
-    {
-      "contribution": {
-        "content_hash": "45d69a57477c6a7b64f5b2032a3160b90f99715c492e725138e192e501313a38",
-        "id": "n-f94ea78e2150b253",
         "revision": 1
       },
       "topics": [
@@ -5909,5 +5438,565 @@
     "The source does not provide guidance on how to choose between LATE and other estimands in practice.",
     "The source does not address the case where the monotonicity assumption is violated in a way that cannot be relaxed.",
     "The source does not discuss the performance of LATE under model misspecification of the treatment or outcome equations."
+  ],
+  "work_insight_memberships": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p42",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "51346f185403b46d5bf69364cf65f3e579df28195cfc4aa5db929eadc07836da",
+        "id": "n-12d4463d5bc3c830",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "74fbbe8e978de74b031b4cc6556547808d51ced6d2adf81692da1c3e236f6e03",
+        "id": "n-151095b708b8a3d1",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p33",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "cd82d36a280025e0639d6fbccd0d809351dda08aa4c2e6c73e6b3c8c8b44bd43",
+        "id": "n-1def0e35b076fa6c",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p40",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "7393998e7c04ae22bb4c4fe0500451473e65b49fa50d1fc259b01601d077b17d",
+        "id": "n-22a61c41440c0b1a",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "9ec36e6193f63e67b7752caa351666b6fc11bc223c3dbfaae616cde9bb1ec922",
+        "id": "n-25f6a4ba80fec06e",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "753a85b03b047d67dbb88687fd599b9c44f5e9c5ed880dfc9f476435df7d3beb",
+        "id": "n-2b662a58e8627bcf",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "def4d31105bfdcf182df733c58799651732ad1511d3dd2511b220060200bc6da",
+        "id": "n-33e47fd4ec6e1420",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "715fec5676b11a2638a4abbe42174abc7945c7f83f0facfff34af983af6e99b6",
+        "id": "n-345ad9fc1b14c008",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "41aff4b3a3bc7de3315a6f935242af140d6364ad5dd84fe9da4631fb7a639e8c",
+        "id": "w-source-7a6c46a68da7d88b",
+        "revision": 1
+      },
+      "work_id": "w-source-7a6c46a68da7d88b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "687046765d62b5ab7a8ca649ce9d0c4b5045a7682c24115cd94dc57be1c4d04d",
+        "id": "n-3b2f72b57fe05a8a",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "9c292fe60858baebe9e9c8846e65512fd51afc813088c171219077e3cf506f8a",
+        "id": "n-3e87a08911ccb520",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p128",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p130",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "3c231347ded9cee2e869fbce29bacb28f73d993435298318ffdc9058ce0fcdfd",
+        "id": "n-41d418049c82e5a5",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "41aff4b3a3bc7de3315a6f935242af140d6364ad5dd84fe9da4631fb7a639e8c",
+        "id": "w-source-7a6c46a68da7d88b",
+        "revision": 1
+      },
+      "work_id": "w-source-7a6c46a68da7d88b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "985c364be48be4263fa4d5f5efe489d113f1325080feca7a6a8e670e45e9d633",
+        "id": "n-5284d631475648d2",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "0135a01c991be414c9b667080edb53a33db31b678a1a946377d3a100f1d92fa0",
+        "id": "n-64b9edb48abf19e3",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "9360bfed57024bb8de120cabf2b1687caf48b18eea30f6d3c637397eb13451f6",
+        "id": "n-75d35177be89e689",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "7926e95145da0ca753cbebc1efe1177cba4470ac735dc45321affc2106311be0",
+        "id": "n-7a2dcf7d88d3269d",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p108",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p111",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p113",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p116",
+          "source_id": "s-7a6c46a68da7d88b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "1cc0541134cdb19abeb1a3e4715503b04bd5850ab14a20fe411756d9411852b4",
+        "id": "n-8d4f954e637f82dc",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "41aff4b3a3bc7de3315a6f935242af140d6364ad5dd84fe9da4631fb7a639e8c",
+        "id": "w-source-7a6c46a68da7d88b",
+        "revision": 1
+      },
+      "work_id": "w-source-7a6c46a68da7d88b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p23",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "1d5b3f1d7ff0029e6111862783969449796e678f924048fd5cadedbfec304f97",
+        "id": "n-917be3cca6a9730c",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-72d60481d8b7ed3b",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "e382d0e923604232f547c75d94aac2c4c30d519610bf95124f11fd52300d1c43",
+        "id": "n-b1f98fc52a72bb93",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+        "id": "w-source-72d60481d8b7ed3b",
+        "revision": 1
+      },
+      "work_id": "w-source-72d60481d8b7ed3b"
+    }
+  ],
+  "works": [
+    {
+      "aliases": [],
+      "content_hash": "74108af9075eb8a4c026c9bd433df3d361bb6d713b03be907e67114109fd4c38",
+      "id": "w-source-72d60481d8b7ed3b",
+      "insight_count": 18,
+      "kind": "publication",
+      "people": [
+        "person-c7bc14e8a2240966"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters",
+          "url": "https://arxiv.org/pdf/1608.00060"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "a9d8956bd4f778ecd20af9c20c0d232cb76596ab3bf068966bed35ea5fa35633",
+          "id": "s-72d60481d8b7ed3b",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters",
+      "topic_ids": [
+        "E01"
+      ],
+      "year": 2016
+    },
+    {
+      "aliases": [],
+      "content_hash": "41aff4b3a3bc7de3315a6f935242af140d6364ad5dd84fe9da4631fb7a639e8c",
+      "id": "w-source-7a6c46a68da7d88b",
+      "insight_count": 15,
+      "kind": "publication",
+      "people": [],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Scientific Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2021",
+          "url": "https://www.nobelprize.org/uploads/2021/10/advanced-economicsciencesprize2021.pdf"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "3a6a8002f6e514b8ee2cc221b68e4bd8aacaa4ac9847938ad490496c98df7160",
+          "id": "s-7a6c46a68da7d88b",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "economics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Scientific Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2021",
+      "topic_ids": [
+        "E01"
+      ],
+      "year": 2021
+    }
   ]
 }

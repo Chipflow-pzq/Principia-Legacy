@@ -1,0 +1,12 @@
+{
+  "release_id": "1.4.1-exploratory",
+  "stats": {
+    "startTime": "2026-10-17T06:16:12.053Z",
+    "duration": 78258.474,
+    "expected": 32,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "Final work, search, navigation and snapshot-recovery checks after the last UI and memory changes."
+}

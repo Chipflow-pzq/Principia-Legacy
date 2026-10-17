@@ -1,0 +1,3836 @@
+{
+  "batches": [
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "070595018a99086f9760c7cd11eb3c6091d6e1b93d389ae46c13bdcdc53a6a96",
+          "job_id": "2e404f8de6d0b7f77ccc1fc5d69d299d0cd92909e8dbb91e58f396a40f5147df",
+          "output_hash": "dc13e9ed6db04be3d1ecdff1943f1e5012d338883ca721460b6e5c7ab5c558e6",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "28e3ee69-12f5-450c-b1f9-774dfc0c2b48",
+          "request_id": "01a147a5e31d55b1fb2808d19ccdc802",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:070595018a99086f9760",
+          "time": "2026-10-17T02:16:56+00:00",
+          "trace_id": "28e3ee69-12f5-450c-b1f9-774dfc0c2b48",
+          "usage": {
+            "completion_tokens": 469,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 12251,
+            "prompt_tokens": 12251,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 12720
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-3c03c6e904e63e1d",
+          "issues": [],
+          "rationale": "p2 states circular-orbit assumption, no evidence for residual eccentricity, and radiation-reaction circularization; p11 confirms posterior waveforms consistent with minimal-assumption reconstructions and preliminary e ≲ 0.1 at 10 Hz would not introduce measurable deviations, plus lack of combined spin-eccentricity model."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a544fcdd6713feb6",
+          "issues": [],
+          "rationale": "p26 documents Allison–Korman/Medarex collaboration, MDX-010/ipilimumab development, and Wolchok/Hodi clinical program; p27 reports phase I responses and pseudoprogression; p28 reports phase III increased overall survival and FDA/EMA approval in 2011."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a17a5ce27ed5c9ce",
+          "issues": [],
+          "rationale": "p1 explicitly states the fundamental problem is reproducing a message selected at another point, semantic aspects are irrelevant to the engineering problem, and the actual message is selected from a set of possible messages."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9adb65c413d64d2a",
+          "issues": [],
+          "rationale": "p22 attributes to Roth (1990, 1991a) that Edinburgh and Cardiff used stable/deferred-acceptance algorithms and operated successfully for decades, while Birmingham, Newcastle and Sheffield quickly abandoned unstable algorithms."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9cd25dd464f03c27",
+          "issues": [],
+          "rationale": "p1 abstract gives the support bound |T| ≤ α(M)(log N)^{-1}|Ω| and exact ℓ1 recovery with probability ≥1−O(N^{-M}); p6 defines random Bernoulli sampling with E|Ω|=τN; p21 proves Theorem 1.3 with α(M) form."
+        },
+        {
+          "decision": "supported",
+          "id": "n-fc4255be16582141",
+          "issues": [],
+          "rationale": "p2 states the cosmos evolves and that tracing evolutionary processes that continue to shape the universe is one of the most important (and satisfying) parts of modern astronomy."
+        }
+      ],
+      "input_hash": "070595018a99086f9760c7cd11eb3c6091d6e1b93d389ae46c13bdcdc53a6a96",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "070595018a99086f9760c7cd11eb3c6091d6e1b93d389ae46c13bdcdc53a6a96",
+        "job_id": "2e404f8de6d0b7f77ccc1fc5d69d299d0cd92909e8dbb91e58f396a40f5147df",
+        "output_hash": "dc13e9ed6db04be3d1ecdff1943f1e5012d338883ca721460b6e5c7ab5c558e6",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "28e3ee69-12f5-450c-b1f9-774dfc0c2b48",
+        "request_id": "01a147a5e31d55b1fb2808d19ccdc802",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:070595018a99086f9760",
+        "time": "2026-10-17T02:16:56+00:00",
+        "trace_id": "28e3ee69-12f5-450c-b1f9-774dfc0c2b48",
+        "usage": {
+          "completion_tokens": 469,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 12251,
+          "prompt_tokens": 12251,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 12720
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "13cee920ec3bac093159f60e7f9fc589993c7fc57eccafafed1efc5adee01f4a",
+          "job_id": "77a36dff9fb6922d72e934475b357966654a1051dbc99ac8f1da2800618114d4",
+          "output_hash": "7104ef4c911c5b9f5226d07b96fdb7e61bb77afdfbf489ff78633842c5a73e40",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "31e3b6e6-63d2-4fd9-a260-530c6f53aee5",
+          "request_id": "01a147a59e93db677db6dcc5de961342",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:13cee920ec3bac093159",
+          "time": "2026-10-17T02:16:38+00:00",
+          "trace_id": "31e3b6e6-63d2-4fd9-a260-530c6f53aee5",
+          "usage": {
+            "completion_tokens": 635,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 19033,
+            "prompt_tokens": 19033,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 19668
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-6d40e94956d57a3d",
+          "issues": [],
+          "rationale": "p107 states amplitude damping codes are hard exactly but approximate satisfaction of (2.10) suffices for small ǫ; p109 shows four-qubit code corrects one and Shor's nine-qubit code corrects two amplitude damping errors, and notes stabilizer codes' utility for non-depolarizing channels."
+        },
+        {
+          "decision": "supported",
+          "id": "n-5fc562e00d3c8772",
+          "issues": [],
+          "rationale": "p52 states evolution is not goal directed, species do not become 'better,' they track changing environments with adaptations maximizing reproduction at a particular time, and traits may become fatal; textbook exposition with unknown attribution is acceptable."
+        },
+        {
+          "decision": "unsupported",
+          "id": "n-5ee1829e545c17d8",
+          "issues": [
+            "missing_evidence",
+            "wrong_attribution"
+          ],
+          "rationale": "The quoted p74 text does not mention Kannan, the polynomial hierarchy, or LINEAR-SIZE; it discusses Shannon's counting lower bound, natural proofs, and LOGSPACE⊊PSPACE, so the claimed Kannan separation is not established by the evidence."
+        },
+        {
+          "decision": "supported",
+          "id": "n-92921c6cd55cf2c5",
+          "issues": [],
+          "rationale": "p23 gives log-earnings as sum of two independent jump-drift components with Poisson arrival rates and normal innovations; p24 reports SMM estimation targeting eight SSA moments including kurtosis, with transitory ~3 years and persistent ~38 years."
+        },
+        {
+          "decision": "supported",
+          "id": "n-08d13cf9a3702bdc",
+          "issues": [],
+          "rationale": "p8–p9 state the Berry-Esseen theorem for independent possibly non-identically distributed variables with bound 6T/σ³, and note the i.i.d. constant 0.7975 citing Van Beeck (1972); attribution to Berry and Esseen is named in the lecture."
+        },
+        {
+          "decision": "supported",
+          "id": "n-79571942b70ab068",
+          "issues": [],
+          "rationale": "p8 recalls Newton's third law, p12 gives m1a1=−m2a2, p17–p28 derive d(p1+p2)/dt=0; textbook exposition with unknown attribution is acceptable."
+        },
+        {
+          "decision": "supported",
+          "id": "n-10602515a21fbbfe",
+          "issues": [],
+          "rationale": "p7 states plasma membranes are asymmetric with different phospholipid/protein arrays between leaflets, carbohydrates on exterior help bind substances, adding to selective nature; p8 confirms exterior differs from interior."
+        },
+        {
+          "decision": "supported",
+          "id": "n-11d0d08049e66bff",
+          "issues": [],
+          "rationale": "p42–p47 construct symmetric block matrices from arbitrary A and B whose product contains AB as a block, and p45 states a Θ(n²) symmetric multiplication would yield Θ(n²) general multiplication; p50 notes transpose costs n²."
+        }
+      ],
+      "input_hash": "13cee920ec3bac093159f60e7f9fc589993c7fc57eccafafed1efc5adee01f4a",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "13cee920ec3bac093159f60e7f9fc589993c7fc57eccafafed1efc5adee01f4a",
+        "job_id": "77a36dff9fb6922d72e934475b357966654a1051dbc99ac8f1da2800618114d4",
+        "output_hash": "7104ef4c911c5b9f5226d07b96fdb7e61bb77afdfbf489ff78633842c5a73e40",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "31e3b6e6-63d2-4fd9-a260-530c6f53aee5",
+        "request_id": "01a147a59e93db677db6dcc5de961342",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:13cee920ec3bac093159",
+        "time": "2026-10-17T02:16:38+00:00",
+        "trace_id": "31e3b6e6-63d2-4fd9-a260-530c6f53aee5",
+        "usage": {
+          "completion_tokens": 635,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 19033,
+          "prompt_tokens": 19033,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 19668
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "1fb9bb4b2ed4e3fed677be38e77b6b83dd8074b8db4ca9df76849d527adda3c0",
+          "job_id": "b54eceaee62ef7f7676263535808d72b92c997462bfecba537a8964c363b3f90",
+          "output_hash": "22ddb952fee843975a152ea4851e5f6f18eb2bc2b26f20a5bdd9298cd81f7a9e",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "cccbcc04-ee74-41cc-a5a4-e028c139a0e6",
+          "request_id": "01a147a5c0b76bcde98d07f14fde25ae",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:1fb9bb4b2ed4e3fed677",
+          "time": "2026-10-17T02:16:50+00:00",
+          "trace_id": "cccbcc04-ee74-41cc-a5a4-e028c139a0e6",
+          "usage": {
+            "completion_tokens": 456,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 19316,
+            "prompt_tokens": 19316,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 19772
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-1a51c7f417606941",
+          "issues": [],
+          "rationale": "Source computes v=sqrt(2gL(1-cosθ)) via energy conservation and states it was found 'without having to solve the differential equation for the motion of a pendulum.'"
+        },
+        {
+          "decision": "supported",
+          "id": "n-501389302877d7e0",
+          "issues": [],
+          "rationale": "Passage states PD-1 blockade extends activity beyond immunogenic tumors and 'underscore[s] the possibility that any neoplasm could be immunogenic with proper immune activation,' with minority-response caveat."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1568101e0cb63987",
+          "issues": [],
+          "rationale": "Lemma 3.3 converts pure-DP odometers/filters to handle δi>0 by using 2εi and additive δ'g failure term, matching the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-19b3b08da1fa40bd",
+          "issues": [],
+          "rationale": "Milgrom lecture recounts Bulow-Levin-Milgrom (2017) advising Comcast in 2006 AWS, forecasting final prices from budget exposure; forecast proved accurate and bidder acquired target package."
+        },
+        {
+          "decision": "supported",
+          "id": "n-70817282fae2b5ef",
+          "issues": [],
+          "rationale": "Theorem 10.1 gives |Rm|≤αt^{-1}+(εr0)^{-2} under scalar curvature and isoperimetric assumptions; text says almost singular regions cannot instantly influence almost Euclidean regions."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e0c26e49b5f3ea5c",
+          "issues": [],
+          "rationale": "Source gives plane wave ψ=Ae^{-iωt}e^{ikx}, |ψ|²=A² uniform and time-independent, definite momentum, infinite position uncertainty, consistent with uncertainty principle."
+        },
+        {
+          "decision": "supported",
+          "id": "n-308f801127f5d34e",
+          "issues": [],
+          "rationale": "Passage states fossils show past organisms differ and gradual evolutionary change, with detailed records for humans and horses and whale flipper common ancestry."
+        }
+      ],
+      "input_hash": "1fb9bb4b2ed4e3fed677be38e77b6b83dd8074b8db4ca9df76849d527adda3c0",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1fb9bb4b2ed4e3fed677be38e77b6b83dd8074b8db4ca9df76849d527adda3c0",
+        "job_id": "b54eceaee62ef7f7676263535808d72b92c997462bfecba537a8964c363b3f90",
+        "output_hash": "22ddb952fee843975a152ea4851e5f6f18eb2bc2b26f20a5bdd9298cd81f7a9e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "cccbcc04-ee74-41cc-a5a4-e028c139a0e6",
+        "request_id": "01a147a5c0b76bcde98d07f14fde25ae",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:1fb9bb4b2ed4e3fed677",
+        "time": "2026-10-17T02:16:50+00:00",
+        "trace_id": "cccbcc04-ee74-41cc-a5a4-e028c139a0e6",
+        "usage": {
+          "completion_tokens": 456,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 19316,
+          "prompt_tokens": 19316,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 19772
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "304a5f04e1165bf68b564444542596487469e1eabe5b30c5541255bb7f0bd0eb",
+          "job_id": "7b26f3a3eafc7c3a933d2303cfe3ca7fda5ee021e9126f608b5f335d469d9a11",
+          "output_hash": "962086a918f567c3a43837d786d7f7352a23826ad45fff696f21fcd9fd6aee69",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "cf43dcf8-3fe7-4754-b712-1e1b7e619661",
+          "request_id": "01a147a57f8c01325c0cfcca7e0cdade",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:304a5f04e1165bf68b56",
+          "time": "2026-10-17T02:16:33+00:00",
+          "trace_id": "cf43dcf8-3fe7-4754-b712-1e1b7e619661",
+          "usage": {
+            "completion_tokens": 763,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 16099,
+            "prompt_tokens": 16099,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 16862
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-3d4a71fa5c4d2e58",
+          "issues": [],
+          "rationale": "Remark 4 shows the coupling factorizes as a product of K−1 smaller N×N matrices (Eq. 19) and the IPFP sum rearranged as a product B of K smaller matrices, matching the claim and stated O(N^2)/O(KN^3) reductions; attribution to the paper's authors as novel contribution is consistent with 'Remark 4'."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1ffac8bdf1c5113e",
+          "issues": [],
+          "rationale": "p237 defines Γ as effective depolarization rate with 1/Γ an effective lifetime of a uniformly sampled pure state, directly comparable among qubits with different error channels; p240 gives Γ_logical=(4/3)(γX+γY+γZ), matching the explanation."
+        },
+        {
+          "decision": "supported",
+          "id": "n-362002e9b53ce644",
+          "issues": [],
+          "rationale": "p69/p71 describe chimeric RNA fusing 3' crRNA to 5' tracrRNA, guiding Cas9 cleavage of plasmid DNA, with five GFP-targeting guides all cleaving correctly; limits (shorter RNA inefficient, in vitro only) are stated in the source."
+        },
+        {
+          "decision": "supported",
+          "id": "n-bde86651380b84b3",
+          "issues": [],
+          "rationale": "p15/p17 report COCO mAP@[.5,.95] rising 21.2→27.2 (6.0 absolute, 28% relative) with identical detection implementation, and state the gain is 'solely due to the learned representations.'"
+        },
+        {
+          "decision": "supported",
+          "id": "n-25b22586b978d58b",
+          "issues": [],
+          "rationale": "p30 states one cannot in general replace the incentive compatibility constraint with a first-order condition, and Rogerson (1985) provided a sufficient condition; matches claim and attribution."
+        },
+        {
+          "decision": "supported",
+          "id": "n-bdd73e4764ef30a9",
+          "issues": [],
+          "rationale": "p45 §8.2 poses whether M*−M is comparable to M−Mr for approximately low-rank matrices and explicitly provides no answer, matching the open-question framing."
+        },
+        {
+          "decision": "supported",
+          "id": "n-da029a0b0024aeff",
+          "issues": [],
+          "rationale": "p6 gives σy(τ)=1/(2πf0√(NTmτ)) under the listed assumptions and attributes it to Itano et al. (1993); the scaling interpretation matches."
+        },
+        {
+          "decision": "supported",
+          "id": "n-4b3ce2989c4537a7",
+          "issues": [],
+          "rationale": "p16 states prokaryotes 0.1–5.0 μm and eukaryotes 10–100 μm; the record correctly notes no original measurement sources are cited and labels attribution unknown/collective."
+        },
+        {
+          "decision": "supported",
+          "id": "n-63939ee31dca85eb",
+          "issues": [],
+          "rationale": "p110/p111/p124/p126/p134 show the round-trip theorem fails, introduce normalize selecting the simplest equivalent bin, and state bin_nat_bin: nat_to_bin (bin_to_nat b) = normalize b."
+        },
+        {
+          "decision": "supported",
+          "id": "n-af7c7c4eaf0c17ec",
+          "issues": [],
+          "rationale": "p38/p39 describe above-equilibrium surplus, accumulation pressuring sellers to cut prices, others following, and higher quantity demanded driving price toward equilibrium; presented as standard theory with no origin date."
+        }
+      ],
+      "input_hash": "304a5f04e1165bf68b564444542596487469e1eabe5b30c5541255bb7f0bd0eb",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "304a5f04e1165bf68b564444542596487469e1eabe5b30c5541255bb7f0bd0eb",
+        "job_id": "7b26f3a3eafc7c3a933d2303cfe3ca7fda5ee021e9126f608b5f335d469d9a11",
+        "output_hash": "962086a918f567c3a43837d786d7f7352a23826ad45fff696f21fcd9fd6aee69",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "cf43dcf8-3fe7-4754-b712-1e1b7e619661",
+        "request_id": "01a147a57f8c01325c0cfcca7e0cdade",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:304a5f04e1165bf68b56",
+        "time": "2026-10-17T02:16:33+00:00",
+        "trace_id": "cf43dcf8-3fe7-4754-b712-1e1b7e619661",
+        "usage": {
+          "completion_tokens": 763,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 16099,
+          "prompt_tokens": 16099,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 16862
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "3dc8c1c7352d0d2211a3d396e5e358da18ea1f868a96a091847aef1e9dac7f90",
+          "job_id": "419f03960467082aed25a802d8536b4340836ff1eaf67eed500239da1f5ac325",
+          "output_hash": "8d8670056301dbf96de427e7762c6e13a1d16fee4bbd54508502fda91a08ea66",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "1ea959f1-f888-4127-8185-913eece206fc",
+          "request_id": "01a147a5a813c2367e0f04ba415d81c5",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:3dc8c1c7352d0d2211a3",
+          "time": "2026-10-17T02:16:40+00:00",
+          "trace_id": "1ea959f1-f888-4127-8185-913eece206fc",
+          "usage": {
+            "completion_tokens": 426,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 17820,
+            "prompt_tokens": 17820,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 18246
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-3ee1328937010594",
+          "issues": [],
+          "rationale": "Anchors p14–p17 state the net change theorem, give both equivalent formulas F(b)=F(a)+∫F′ and ∫F′=F(b)−F(a), and note the choice depends on application; attribution is correctly labeled as textbook authors with classical theorem noted."
+        },
+        {
+          "decision": "supported",
+          "id": "n-2cbad5a811348d58",
+          "issues": [],
+          "rationale": "p87 differentiates L=Iω with constant I to get dL/dt=I dω/dt=Iα=Στ, and p88 calls it Newton's second law for rotation; the constant-I assumption is explicit."
+        },
+        {
+          "decision": "supported",
+          "id": "n-3a8fbcad6114ce83",
+          "issues": [],
+          "rationale": "Fleming's lecture states the culture fluid inhibited staphylococci at 1,000-fold dilution while phenol loses power beyond 300-fold, making it three times as potent; the claim matches this wording."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9afb95332b083d24",
+          "issues": [],
+          "rationale": "RFC 9000 passages state connection IDs decouple delivery from lower-layer addressing, allow migration and NAT-rebinding survival, support multiple IDs with sequence/retirement, path validation, and privacy via different IDs per path."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e27e2b59be5d0e58",
+          "issues": [],
+          "rationale": "Nobel background attributes the 1983 Diamond-Dybvig model, describes endogenous optimal bank contract with demandable deposits funding long-term investment, first-best risk sharing, and liquidity creation; assumptions and limits align."
+        },
+        {
+          "decision": "supported",
+          "id": "n-60420afb22c092b1",
+          "issues": [],
+          "rationale": "p172 explicitly shows (f∘g)(x)≠(g∘f)(x) and concludes the order of composition matters; the special-case limit is appropriately noted."
+        }
+      ],
+      "input_hash": "3dc8c1c7352d0d2211a3d396e5e358da18ea1f868a96a091847aef1e9dac7f90",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3dc8c1c7352d0d2211a3d396e5e358da18ea1f868a96a091847aef1e9dac7f90",
+        "job_id": "419f03960467082aed25a802d8536b4340836ff1eaf67eed500239da1f5ac325",
+        "output_hash": "8d8670056301dbf96de427e7762c6e13a1d16fee4bbd54508502fda91a08ea66",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "1ea959f1-f888-4127-8185-913eece206fc",
+        "request_id": "01a147a5a813c2367e0f04ba415d81c5",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:3dc8c1c7352d0d2211a3",
+        "time": "2026-10-17T02:16:40+00:00",
+        "trace_id": "1ea959f1-f888-4127-8185-913eece206fc",
+        "usage": {
+          "completion_tokens": 426,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 17820,
+          "prompt_tokens": 17820,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 18246
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "49b6aace87d23a425410362ff0da204c0c64a39f9a4a523da7c51e64f71333a7",
+          "job_id": "f797e84f6f50f6821b27810aff38ba45d89dffb81cce3d2c971c72c94ce7f0dc",
+          "output_hash": "9496ec75d2cd6e306286b6162cd92ac8a0993724ebf0cd63944649c64adeb1d1",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "21b36d2e-ec85-4a9c-89ed-6fbc9d6889b6",
+          "request_id": "01a147a5cd3e99e8189f0ffe5847df3f",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:49b6aace87d23a425410",
+          "time": "2026-10-17T02:16:50+00:00",
+          "trace_id": "21b36d2e-ec85-4a9c-89ed-6fbc9d6889b6",
+          "usage": {
+            "completion_tokens": 609,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 19097,
+            "prompt_tokens": 19097,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 19706
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-d77d3a9da81ade63",
+          "issues": [],
+          "rationale": "Passage states two major reasons for threads: parallelism on multiple processors and avoiding blocking on slow I/O, with overlap within a single program; attribution is unknown/collective and no date, matching the record."
+        },
+        {
+          "decision": "supported",
+          "id": "n-be05b6030a0d05fd",
+          "issues": [],
+          "rationale": "Passage cites Hart and Moore (2008) and states fixed price with one party choosing the task, interpreted as employment vs independent contracting, with less shading as the reason."
+        },
+        {
+          "decision": "supported",
+          "id": "n-40cc51c99e506b2e",
+          "issues": [],
+          "rationale": "Passage gives the intuitive limit definition: L approached as x approaches a, f defined on an open interval except possibly at a, and notes the informal nature."
+        },
+        {
+          "decision": "supported",
+          "id": "n-79c25eb1b9973b33",
+          "issues": [],
+          "rationale": "Passage says every physical quantity can be derived from the seven base quantities and gives area, volume, speed, density, and radian examples."
+        },
+        {
+          "decision": "supported",
+          "id": "n-8c156613a3aa63cd",
+          "issues": [],
+          "rationale": "Passage states generalized rules for multihybrid crosses under independent assortment and dominant/recessive: 2^n gametes, 3^n genotypes, 2^n phenotypes."
+        },
+        {
+          "decision": "supported",
+          "id": "n-d53b3958e7be1173",
+          "issues": [],
+          "rationale": "RFC 9002 states TCP minimum one packet, loss causes PTO wait and delayed-ACK latency, and QUIC recommends two packets while still reducing rate under persistent congestion."
+        },
+        {
+          "decision": "supported",
+          "id": "n-bdb36375d8f08496",
+          "issues": [],
+          "rationale": "Passage warns inflation is not obtained by subtracting index numbers and computes 100 x (110-107)/107 = 2.8%, matching the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-adf83aae1da18a77",
+          "issues": [],
+          "rationale": "Passage derives d/dx cos(g(x)) = -sin(g(x))g'(x) via the chain rule and says these formulas need not be memorized separately."
+        },
+        {
+          "decision": "supported",
+          "id": "n-306b913e854b8097",
+          "issues": [],
+          "rationale": "Passage describes TCS with radiative ring heater, CO2 laser projector, Hartmann sensor, conjugate aberration correction, 95% mode overlap, 1 mW OMC limit, and parametric instability control."
+        },
+        {
+          "decision": "supported",
+          "id": "n-dc9829b0ba4d9e47",
+          "issues": [],
+          "rationale": "Passage describes bidirected sequence graph with oriented DNA nodes, haplotype walks, and generalized multiple alignment, matching the claim."
+        }
+      ],
+      "input_hash": "49b6aace87d23a425410362ff0da204c0c64a39f9a4a523da7c51e64f71333a7",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "49b6aace87d23a425410362ff0da204c0c64a39f9a4a523da7c51e64f71333a7",
+        "job_id": "f797e84f6f50f6821b27810aff38ba45d89dffb81cce3d2c971c72c94ce7f0dc",
+        "output_hash": "9496ec75d2cd6e306286b6162cd92ac8a0993724ebf0cd63944649c64adeb1d1",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "21b36d2e-ec85-4a9c-89ed-6fbc9d6889b6",
+        "request_id": "01a147a5cd3e99e8189f0ffe5847df3f",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:49b6aace87d23a425410",
+        "time": "2026-10-17T02:16:50+00:00",
+        "trace_id": "21b36d2e-ec85-4a9c-89ed-6fbc9d6889b6",
+        "usage": {
+          "completion_tokens": 609,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 19097,
+          "prompt_tokens": 19097,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 19706
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "4ca20ceae09970a7ccfd6639416962195886f6b067c3174406650f49ce6df228",
+          "job_id": "fc0d422872518abfa5739ecd9ab14e06b8f5995145fc82043be893dd35772f3d",
+          "output_hash": "19ba7011ba8d52ea5ba3efc5f1578ce77f1e4f202deea1231021f24a4a764274",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "54bf6df4-76d3-43f9-901b-1b234639557a",
+          "request_id": "01a147a5add52e2e0a937af41baba11c",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:4ca20ceae09970a7ccfd",
+          "time": "2026-10-17T02:16:45+00:00",
+          "trace_id": "54bf6df4-76d3-43f9-901b-1b234639557a",
+          "usage": {
+            "completion_tokens": 516,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 15926,
+            "prompt_tokens": 15926,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 16442
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-992febc6d2b97fb5",
+          "issues": [],
+          "rationale": "p76 instructs to use the divergence test as a fallback; p89–p90 show the limit of e^n/n^3 is infinite and the series diverges by the divergence test, matching the claim and limits."
+        },
+        {
+          "decision": "supported",
+          "id": "n-ed4fa3ae739dde1b",
+          "issues": [],
+          "rationale": "p4 defines chi_eff as a mass-weighted spin combination affecting inspiral rate; p5 defines chi_p for precession; p8 reports chi_eff = -0.07 and chi_p posterior consistent with prior, matching the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-c3b49a13bf01726c",
+          "issues": [],
+          "rationale": "p40 states m1ψ further improved the platform by reducing innate immune recognition and increasing protein expression, partly explained by increased ribosome occupancy."
+        },
+        {
+          "decision": "supported",
+          "id": "n-ffe5ffc9602c16ea",
+          "issues": [],
+          "rationale": "p50 notes the recursive call on n-2 makes induction harder and p51 gives even (S n) = negb (even n) as the alternative characterization."
+        },
+        {
+          "decision": "supported",
+          "id": "n-178830dda6be0098",
+          "issues": [],
+          "rationale": "p11–p12 attribute the public-private efficiency trade-off to Hart et al. (1997), including excessive cost-saving/quality-reducing incentives and the conclusion that the choice is efficiency, not ideology."
+        },
+        {
+          "decision": "supported",
+          "id": "n-5b48813eeaf2fc67",
+          "issues": [],
+          "rationale": "p8–p9 show only asymptotic convergence (Quk - vk → 0) with no convergence-rate bounds, matching the stated limitation."
+        },
+        {
+          "decision": "supported",
+          "id": "n-34f335bbd90a7400",
+          "issues": [],
+          "rationale": "p16 states that locating the sample cell outside the laser resonator allowed more ready analysis and was employed by Bordé, Hänsch, and Chebotayev in early experiments."
+        },
+        {
+          "decision": "supported",
+          "id": "n-faeeec92b355e088",
+          "issues": [],
+          "rationale": "p8–p9 describe nucleotide excision repair removing damaged bases via dual 3'/5' cuts, polymerase replacement, ligase sealing, and use for UV-induced pyrimidine dimers."
+        }
+      ],
+      "input_hash": "4ca20ceae09970a7ccfd6639416962195886f6b067c3174406650f49ce6df228",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "4ca20ceae09970a7ccfd6639416962195886f6b067c3174406650f49ce6df228",
+        "job_id": "fc0d422872518abfa5739ecd9ab14e06b8f5995145fc82043be893dd35772f3d",
+        "output_hash": "19ba7011ba8d52ea5ba3efc5f1578ce77f1e4f202deea1231021f24a4a764274",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "54bf6df4-76d3-43f9-901b-1b234639557a",
+        "request_id": "01a147a5add52e2e0a937af41baba11c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:4ca20ceae09970a7ccfd",
+        "time": "2026-10-17T02:16:45+00:00",
+        "trace_id": "54bf6df4-76d3-43f9-901b-1b234639557a",
+        "usage": {
+          "completion_tokens": 516,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 15926,
+          "prompt_tokens": 15926,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 16442
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "5403a573c26026b869c62e0ed64056a8555daf550efbb0e30eca74a516f9f705",
+          "job_id": "692ef4212226812c99767b5e571bdd60376f3bc8af9e169ec4752c6530e3754e",
+          "output_hash": "2fc7eac4d1aba9cdd54a20d9cc48852033e434e4b6985c718b3433daac20815d",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "6060776d-7ca5-4025-bd5d-246595701ca9",
+          "request_id": "01a147a5747f0a711d5fa0c1620d08c0",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:5403a573c26026b869c6",
+          "time": "2026-10-17T02:16:27+00:00",
+          "trace_id": "6060776d-7ca5-4025-bd5d-246595701ca9",
+          "usage": {
+            "completion_tokens": 661,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 16745,
+            "prompt_tokens": 16745,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 17406
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-607c07fff2c0390e",
+          "issues": [],
+          "rationale": "Source states 14% grade 3/4 toxic effects 'suggesting that therapy can be delivered in an outpatient setting with minimal supportive care'; attribution to Topalian et al. and 2012 NEJM match the anchor."
+        },
+        {
+          "decision": "unsupported",
+          "id": "n-32982ed0f5fdd648",
+          "issues": [
+            "claim_not_in_quote",
+            "overstated_scope"
+          ],
+          "rationale": "The quoted p7 text contains only training curves, value-function visualization, and general evaluation setup; it does not state that DQN is far from human level on Q*bert, Seaquest, and Space Invaders or attribute this to long time scales."
+        },
+        {
+          "decision": "supported",
+          "id": "n-48cbf6a29d48ce03",
+          "issues": [],
+          "rationale": "Nobel source states Morris and Shin (2000), Goldstein and Pauzner (2004), and Rochet and Vives (2004) show imperfectly correlated signals yield a unique equilibrium where runs occur only when expected payoffs are sufficiently low."
+        },
+        {
+          "decision": "supported",
+          "id": "n-3de6fa173cdc4047",
+          "issues": [],
+          "rationale": "p24 describes the new algorithm producing either a {33A}-molecule with a long bond or two separated {33A}-molecules, with sufficient excess in d=2,3; p49/p50 detail the cutting sequence and long-bond triangle case."
+        },
+        {
+          "decision": "supported",
+          "id": "n-aab99091d4c88de6",
+          "issues": [],
+          "rationale": "p6 states the best-fit flux is similar to the Waxman-Bahcall bound, but neutrinos likely come from 1-10 PeV protons while the bound uses >10^18 eV cosmic rays, making correspondence unclear."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0fbd662c0d836a24",
+          "issues": [],
+          "rationale": "p43 explicitly says long-read resequencing studies are now needed to comprehensively survey polymorphic variation and reveal phenotypic associations in repetitive regions."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e28bf7446a2d4ad7",
+          "issues": [],
+          "rationale": "p57 states nanotechnology can reduce storage device size in hybrid multiclouds and mentions the speculative 'Internet of Thoughts' with neural nanorobots connecting the neocortex to a synthetic cloud neocortex; attribution is correctly left unknown."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0cc4dcdf30f8de3b",
+          "issues": [],
+          "rationale": "p37 defines moral hazard as riskier behavior with insurance; p42 states imperfect information is the cause because insurers cannot monitor all risks. Textbook attribution and cited-study caveats are appropriately noted."
+        },
+        {
+          "decision": "supported",
+          "id": "n-5134b96bd23a0164",
+          "issues": [],
+          "rationale": "p13 states the partial time expansion refrains from expanding fA further, expands only cumulants, avoids the t^n divergence, and is crucial for obtaining a time-irreversible equation from reversible dynamics."
+        }
+      ],
+      "input_hash": "5403a573c26026b869c62e0ed64056a8555daf550efbb0e30eca74a516f9f705",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5403a573c26026b869c62e0ed64056a8555daf550efbb0e30eca74a516f9f705",
+        "job_id": "692ef4212226812c99767b5e571bdd60376f3bc8af9e169ec4752c6530e3754e",
+        "output_hash": "2fc7eac4d1aba9cdd54a20d9cc48852033e434e4b6985c718b3433daac20815d",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "6060776d-7ca5-4025-bd5d-246595701ca9",
+        "request_id": "01a147a5747f0a711d5fa0c1620d08c0",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:5403a573c26026b869c6",
+        "time": "2026-10-17T02:16:27+00:00",
+        "trace_id": "6060776d-7ca5-4025-bd5d-246595701ca9",
+        "usage": {
+          "completion_tokens": 661,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 16745,
+          "prompt_tokens": 16745,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 17406
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "6cae1551326097fc707a068cf19023604678302e35934c494f75880e69e97e17",
+          "job_id": "67ea04749f03468304b3e16ba6a9af9cf193165e992546cce973359bc426daf7",
+          "output_hash": "587112a91f450bd63f3d6e2569ecab73780a033be43824f6a9e40e84e9740152",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "a952ff1e-e718-45f0-bf77-c9213885885b",
+          "request_id": "01a147a57b87afcb7bb5194a9e80ffac",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:6cae1551326097fc707a",
+          "time": "2026-10-17T02:16:32+00:00",
+          "trace_id": "a952ff1e-e718-45f0-bf77-c9213885885b",
+          "usage": {
+            "completion_tokens": 590,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 19155,
+            "prompt_tokens": 19155,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 19745
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-5e6a5a597df4af65",
+          "issues": [],
+          "rationale": "p5 describes Dehmelt's electron-shelving technique with a strongly-allowed cycling transition scattering many photons to discriminate clock states; p14 confirms high efficiency and the single-photon-to-many-fluorescence amplification, plus coherence destruction and atom expulsion limits."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0e2c8ab55e43d436",
+          "issues": [],
+          "rationale": "p25 states selection works at individual not allele level, alleles linked by physical proximity (linkage disequilibrium), and gives exactly the good-allele-loss/bad-allele-persistence consequences."
+        },
+        {
+          "decision": "supported",
+          "id": "n-c40ac682358d9733",
+          "issues": [],
+          "rationale": "p52-p59 describe replace introducing two subgoals (replacement applied and equality e1=e2), and p56-p59 show rewrite affecting only the outer plus while replace targets the inner n+m."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0d4e9e51427c707c",
+          "issues": [],
+          "rationale": "p37 states using observed factor prices as marginal productivity indicators; p39 gives the 1909-1949 doubling and seven-eighths attributed to technical change."
+        },
+        {
+          "decision": "supported",
+          "id": "n-f0508f53b6d9fa8b",
+          "issues": [],
+          "rationale": "p158-p160 present f(x)=1/(x-a)^n with n positive integer, odd case negative left/positive right, even case both above axis, summarized as infinite limits."
+        },
+        {
+          "decision": "supported",
+          "id": "n-04b700011ceebdf7",
+          "issues": [],
+          "rationale": "p7 gives the Kelvin statement verbatim; p8 clarifies cyclic restriction and 'other effect'; p9 notes 100% efficiency unattainable and first law does not exclude it."
+        },
+        {
+          "decision": "supported",
+          "id": "n-59c119577e71957f",
+          "issues": [],
+          "rationale": "p45 and p49 cite activity-dependent myelination of long-range projections from neocortex via optogenetic methods, consistent with the claim though the source is a secondary historical commentary."
+        },
+        {
+          "decision": "supported",
+          "id": "n-176bb4a7465cae28",
+          "issues": [],
+          "rationale": "p61-p63 describe contact tracing graphs with vertices as people, edges as contacts, tracing contacted individuals, and studying disease spread by demographic groups."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a0522ed3a9cc1cdd",
+          "issues": [],
+          "rationale": "p22 states Akerlof and Kranton developed identity-based models for persistent African-American disadvantage; p23 details the Hobbesian choice, oppositional culture, and policy implications."
+        }
+      ],
+      "input_hash": "6cae1551326097fc707a068cf19023604678302e35934c494f75880e69e97e17",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6cae1551326097fc707a068cf19023604678302e35934c494f75880e69e97e17",
+        "job_id": "67ea04749f03468304b3e16ba6a9af9cf193165e992546cce973359bc426daf7",
+        "output_hash": "587112a91f450bd63f3d6e2569ecab73780a033be43824f6a9e40e84e9740152",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a952ff1e-e718-45f0-bf77-c9213885885b",
+        "request_id": "01a147a57b87afcb7bb5194a9e80ffac",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:6cae1551326097fc707a",
+        "time": "2026-10-17T02:16:32+00:00",
+        "trace_id": "a952ff1e-e718-45f0-bf77-c9213885885b",
+        "usage": {
+          "completion_tokens": 590,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 19155,
+          "prompt_tokens": 19155,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 19745
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "705a8d3dc81c3a4bf3042b3ab90ad15aaa947c5e3f2cc56818bb6065061bd304",
+          "job_id": "76b8acc41da5dc6bbe55fc18aa069f9c1646e98b6566c20dd08f7498b339f0c9",
+          "output_hash": "81ce845bb2ff48f4e1672d69d0413a3a5db28d59e6fbc7dd38c52cc1c940ed79",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "fc056f07-ee54-453e-a42d-22390cc35056",
+          "request_id": "01a147a574a0eb1e0e6ab0810beaae67",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:705a8d3dc81c3a4bf304",
+          "time": "2026-10-17T02:16:27+00:00",
+          "trace_id": "fc056f07-ee54-453e-a42d-22390cc35056",
+          "usage": {
+            "completion_tokens": 662,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 16002,
+            "prompt_tokens": 16002,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 16664
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-ae2c76bd2c71c56a",
+          "issues": [],
+          "rationale": "p10 states quasiparticles 'accurately described by the (2+1)-dimensional Dirac equation with an effective speed of light vF≈106m/s'; p11 derives Dirac equation from honeycomb lattice's 'two equivalent carbon sublattices A and B' and pseudospin. Attribution to Geim/Novoselov as original contributor is acceptable for a review account."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1ce856fde6e35d1a",
+          "issues": [],
+          "rationale": "p23 states AF3 'greatly outperforms classical docking tools such as Vina' while 'not using any structural inputs', and docking methods use 'privileged information' from solved test structures. p24 confirms Vina/Gold inaccuracy examples."
+        },
+        {
+          "decision": "supported",
+          "id": "n-effcf057e748f7bc",
+          "issues": [],
+          "rationale": "p8 Section 4.3: 'Regret is minimized for an intermediate value of λ' with explanation that too small λ learns nothing and too large λ prevents differentiation; Figure 2 'supports this analysis'."
+        },
+        {
+          "decision": "supported",
+          "id": "n-629791233855cae8",
+          "issues": [],
+          "rationale": "p16-p18 document quadratic payoff CPR experiments, baseline overinvestment worse than Nash, face-to-face 'cheap talk' increasing joint returns, and self-designed sanctioning achieving '90 percent of optimal'. Attribution to Ostrom, Gardner, Walker matches."
+        },
+        {
+          "decision": "supported",
+          "id": "n-5ce5643b0b545f5d",
+          "issues": [],
+          "rationale": "p12 Proposition 1.7: 'E(σ, ω) = ⇒ D(σ, ω− g(σ, ω))' with g:[0,2/3]×(0,1]→(0,1], and text describes self-improving iteration from Wolff's D(1/2,0) to D(0,0)."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e54100028236c257",
+          "issues": [],
+          "rationale": "p3 credits 1982 TKNN paper: 'TKNN showed that σxy, computed using the Kubo formula has the same form, so that N in (1) is identical to n', with Chern number as topological invariant unchanged under smooth Hamiltonian variation."
+        },
+        {
+          "decision": "supported",
+          "id": "n-f85dc1a6cfbda314",
+          "issues": [],
+          "rationale": "p8 and p11 state Casgevy is 'the first FDA-approved therapy utilizing CRISPR/Cas9' for SCD patients '12 years of age and older with recurrent vaso-occlusive crises'. Attribution to Vertex is acceptable as approval holder."
+        },
+        {
+          "decision": "supported",
+          "id": "n-6893d22e0d30155d",
+          "issues": [],
+          "rationale": "p6 describes frame-skipping: agent selects actions every kth frame, repeats last action, allowing 'roughly k times more games without significantly increasing the runtime', with k=4 except Space Invaders k=3."
+        }
+      ],
+      "input_hash": "705a8d3dc81c3a4bf3042b3ab90ad15aaa947c5e3f2cc56818bb6065061bd304",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "705a8d3dc81c3a4bf3042b3ab90ad15aaa947c5e3f2cc56818bb6065061bd304",
+        "job_id": "76b8acc41da5dc6bbe55fc18aa069f9c1646e98b6566c20dd08f7498b339f0c9",
+        "output_hash": "81ce845bb2ff48f4e1672d69d0413a3a5db28d59e6fbc7dd38c52cc1c940ed79",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fc056f07-ee54-453e-a42d-22390cc35056",
+        "request_id": "01a147a574a0eb1e0e6ab0810beaae67",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:705a8d3dc81c3a4bf304",
+        "time": "2026-10-17T02:16:27+00:00",
+        "trace_id": "fc056f07-ee54-453e-a42d-22390cc35056",
+        "usage": {
+          "completion_tokens": 662,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 16002,
+          "prompt_tokens": 16002,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 16664
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "73fd73aaa64d1c7778b3626fbca5bea34f80ab409bfb5778c12d2cbff696b2b3",
+          "job_id": "f112a891c8b76e10d5606273264ed78de1aa88d070878ce5ac6552128c6fd1e9",
+          "output_hash": "413657db43a748ca7fbb1e4e0f2032fb31f93e2c438a47b0f9128a9342bc1d28",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "0a3b1241-84eb-4817-8363-4eec93df8590",
+          "request_id": "01a147a5aef56b4b6194fc2d07f9fe9f",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:73fd73aaa64d1c7778b3",
+          "time": "2026-10-17T02:16:45+00:00",
+          "trace_id": "0a3b1241-84eb-4817-8363-4eec93df8590",
+          "usage": {
+            "completion_tokens": 497,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 13545,
+            "prompt_tokens": 13545,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 14042
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-a0d4b5c914f15ee5",
+          "issues": [],
+          "rationale": "p5/p7 report RNNsearch beating RNNencdec across lengths and matching Moses on known-word sentences; p6 confirms robustness to length and RNNsearch-30 > RNNencdec-50; p9 notes unknown-word challenge."
+        },
+        {
+          "decision": "supported",
+          "id": "n-90a348b3b3838703",
+          "issues": [],
+          "rationale": "p74 describes Allen and Gale (2000) Diamond-Dybvig model with regions, random liquidity shocks, interbank contagion, and resilience depending on network structure."
+        },
+        {
+          "decision": "supported",
+          "id": "n-55612133212fe686",
+          "issues": [],
+          "rationale": "p10 Proposition 24 proves termination via finite enlargement of L (noetherianity of P^m) and finiteness of primitive S-irreducible polynomials; attribution to Arri and Perry as own proof."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e7264097e5eed112",
+          "issues": [],
+          "rationale": "p37 explicitly states the first law is not subject to a quasi-static restriction, describes transitions between equilibrium states, and gives the exploding-gas example."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0def1610a7830099",
+          "issues": [],
+          "rationale": "p50 states optogenetics resolved a controversy on the causal role of a small (~1%) cholinergic cell population in nucleus accumbens controlling acute cocaine conditioning."
+        },
+        {
+          "decision": "supported",
+          "id": "n-d94c4a63b77a0585",
+          "issues": [],
+          "rationale": "p19/p34 describe randomized response plausible deniability and Claim 3.5 states it is (ln 3, 0)-differentially private; p19 notes social-science origin."
+        },
+        {
+          "decision": "supported",
+          "id": "n-51396c520b39063e",
+          "issues": [],
+          "rationale": "p7 defines absolute advantage as producing more, attributes it to resources/natural endowment, and states thinking in terms of absolute advantage is incomplete because trade occurs due to comparative advantage."
+        },
+        {
+          "decision": "supported",
+          "id": "n-4a322c4bf3d16408",
+          "issues": [],
+          "rationale": "p11 states the need for a large number of collocation points may introduce a severe bottleneck in higher dimensional problems."
+        }
+      ],
+      "input_hash": "73fd73aaa64d1c7778b3626fbca5bea34f80ab409bfb5778c12d2cbff696b2b3",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "73fd73aaa64d1c7778b3626fbca5bea34f80ab409bfb5778c12d2cbff696b2b3",
+        "job_id": "f112a891c8b76e10d5606273264ed78de1aa88d070878ce5ac6552128c6fd1e9",
+        "output_hash": "413657db43a748ca7fbb1e4e0f2032fb31f93e2c438a47b0f9128a9342bc1d28",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "0a3b1241-84eb-4817-8363-4eec93df8590",
+        "request_id": "01a147a5aef56b4b6194fc2d07f9fe9f",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:73fd73aaa64d1c7778b3",
+        "time": "2026-10-17T02:16:45+00:00",
+        "trace_id": "0a3b1241-84eb-4817-8363-4eec93df8590",
+        "usage": {
+          "completion_tokens": 497,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 13545,
+          "prompt_tokens": 13545,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 14042
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "83e6a0917b67a9c9a06917dc375550c04a14460ecf1fbfb09c26b95bf6447f70",
+          "job_id": "39bf710ed9115a191bcdb9ec16f8cd5f583a9b586e6a1bc7e3679dede82ffa6d",
+          "output_hash": "70055b9332ac891b5a711c80785362053f5728701a6bb1e04018ed158b277407",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "f5e05864-13cd-4146-96ba-72d176521562",
+          "request_id": "01a147a5a623dbd7bc075d13cd6527d2",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:83e6a0917b67a9c9a069",
+          "time": "2026-10-17T02:16:40+00:00",
+          "trace_id": "f5e05864-13cd-4146-96ba-72d176521562",
+          "usage": {
+            "completion_tokens": 732,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 17495,
+            "prompt_tokens": 17495,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 18227
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-51e43e8533021942",
+          "issues": [],
+          "rationale": "Passage states weak-form prices reflect price history and volume, and that charting to predict and outperform is useless, so technical analysis cannot beat the market."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a0e2d650ac5b8ed0",
+          "issues": [],
+          "rationale": "Theorem 1.2 quoted with V⊂J2H^n×J2Y(1)^n, U irreducible component of V∩Γ, projection to Y(1)^n not weakly special, no projection to J2H inside J0_2H, conclusion dim V=dim U+3n."
+        },
+        {
+          "decision": "supported",
+          "id": "n-035354dbfc356f3e",
+          "issues": [],
+          "rationale": "Passage states gate voltage induces layer asymmetry, semiconducting gap, eliminates zero-E degeneracy, restores uninterrupted QHE sequence, tunable zero to ≈0.3 eV with SiO2."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9c3064c87aae7ab3",
+          "issues": [],
+          "rationale": "Nobel text: anti-PD-1 induced responses also to tumors without detectable PD-L1/L2, at least as efficient as CTLA-4, less severe autoimmunity (Iwai 2005); Chen parallel."
+        },
+        {
+          "decision": "supported",
+          "id": "n-12f2533614a160c0",
+          "issues": [],
+          "rationale": "Passage describes signal as hint, woken thread may not run immediately, state may change (Tc2 consumes), re-check needed; Mesa semantics attributed to [LR80]."
+        },
+        {
+          "decision": "supported",
+          "id": "n-4c7a0674fec097de",
+          "issues": [],
+          "rationale": "Source states Angrist and Imbens (1995) showed IV estimand is weighted average of unit causal responses among compliers, weights positive and sum to one."
+        },
+        {
+          "decision": "supported",
+          "id": "n-88a2a7043f1f80d2",
+          "issues": [],
+          "rationale": "Textbook uses sequence 2/π,2/3π,... yielding 1,−1,1,−1,... and concludes lim sin(1/x) DNE; oscillation shown."
+        },
+        {
+          "decision": "supported",
+          "id": "n-ac37cd5eb65e7196",
+          "issues": [],
+          "rationale": "Paper reports 6.9 ms delay, annulus localization, 610 deg² (90%) and 150 deg² (50%), amplitude/phase consistency across network."
+        },
+        {
+          "decision": "supported",
+          "id": "n-6206e429dde1a3e0",
+          "issues": [],
+          "rationale": "Passage describes two-Gaussian mixture per landmark gene, mixing parameter constrained to percentage of 'on' bins in binarized in situ patterns, EM plus heuristic step."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1fc3ea8b4c9213d5",
+          "issues": [],
+          "rationale": "FIPS 204 states ML-DSA-44 category 2, ML-DSA-65 category 3, ML-DSA-87 category 5, relative to generic block cipher/hash resources."
+        },
+        {
+          "decision": "supported",
+          "id": "n-75d35177be89e689",
+          "issues": [],
+          "rationale": "Definition 3.3 proposes repeating DML S times and using median of estimates and median-based variance estimator to incorporate sample-splitting uncertainty."
+        }
+      ],
+      "input_hash": "83e6a0917b67a9c9a06917dc375550c04a14460ecf1fbfb09c26b95bf6447f70",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "83e6a0917b67a9c9a06917dc375550c04a14460ecf1fbfb09c26b95bf6447f70",
+        "job_id": "39bf710ed9115a191bcdb9ec16f8cd5f583a9b586e6a1bc7e3679dede82ffa6d",
+        "output_hash": "70055b9332ac891b5a711c80785362053f5728701a6bb1e04018ed158b277407",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f5e05864-13cd-4146-96ba-72d176521562",
+        "request_id": "01a147a5a623dbd7bc075d13cd6527d2",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:83e6a0917b67a9c9a069",
+        "time": "2026-10-17T02:16:40+00:00",
+        "trace_id": "f5e05864-13cd-4146-96ba-72d176521562",
+        "usage": {
+          "completion_tokens": 732,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 17495,
+          "prompt_tokens": 17495,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 18227
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "9134cfd1ed1a40625dfee380f6f4138923d795443471746317b5120a8d01ab29",
+          "job_id": "5b77d58d9d7845ccdb22182e877fb35a8b1f35d32ea6dcd3d36ed50ad67dfb73",
+          "output_hash": "7970552b7940d81f59773e129bb972b617e76ce57a20e5c8e3a2088e92701b6c",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "363e6c62-3ce3-4c97-99e0-3927d34b82c8",
+          "request_id": "01a147a5b6351c79f501d31798e30234",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:9134cfd1ed1a40625dfe",
+          "time": "2026-10-17T02:16:44+00:00",
+          "trace_id": "363e6c62-3ce3-4c97-99e0-3927d34b82c8",
+          "usage": {
+            "completion_tokens": 621,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 17838,
+            "prompt_tokens": 17838,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 18459
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-71bde34ce820605b",
+          "issues": [],
+          "rationale": "Passage states magnetically gapped surface gives σxy=e2/2h, α=e2/2h, θ-term with θ=π, and credits Qi/Hughes/Zhang 2008 and Essin/Moore/Vanderbilt 2009."
+        },
+        {
+          "decision": "supported",
+          "id": "n-62a034b7e9d96269",
+          "issues": [],
+          "rationale": "Passage describes split-and-pool 12 cycles yielding 4^12=16,777,216 barcodes on millions of beads, same barcode per bead; Drop-Seq 2015."
+        },
+        {
+          "decision": "supported",
+          "id": "n-b8f147f12daff5dd",
+          "issues": [],
+          "rationale": "RFC 9001 text gives HKDF-Extract with fixed salt and client Destination Connection ID, labels 'client in'/'server in', and notes Initial packets not authenticated/tamperable."
+        },
+        {
+          "decision": "supported",
+          "id": "n-33e47fd4ec6e1420",
+          "issues": [],
+          "rationale": "Theorem 5.1 states DML1/DML2 estimators obey σ−1√N(θ̃−θ0)⇝N(0,1); text cites Hahn (1998) efficiency bound and rate condition product o(N^{-1/2})."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9c074634688bd13f",
+          "issues": [],
+          "rationale": "Theorem 3 derives compressible Euler from hard-sphere Newtonian dynamics in iterated limit, using Guo-Jang-Jiang and Jiang-Luo-Tang hydrodynamic limits."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a1af125575721a0f",
+          "issues": [],
+          "rationale": "Abstract reports excess with local significance 5.0σ near 125 GeV, expected 5.8σ, five decay modes, CMS 2012."
+        },
+        {
+          "decision": "supported",
+          "id": "n-4785f2552b42aa6d",
+          "issues": [],
+          "rationale": "Passage states linear pharmacokinetics with dose-proportional peak concentration and AUC day 1–14 over 0.1–10 mg/kg in 35 patients."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0b1d2f589fd1c9a7",
+          "issues": [],
+          "rationale": "Textbook states Lower Bound Theorem with P1≤O(g(n))P2, Ω(h(n)) lower bound on P1, g(n)=o(h(n)) implies Ω(h(n)) on P2; example SORTING≤O(n)PAIRING."
+        },
+        {
+          "decision": "supported",
+          "id": "n-c13256a42ca90222",
+          "issues": [],
+          "rationale": "Lecture describes Linda conjunction ranked above constituent, violating monotonicity, attributed to representativeness substitution; correlation .99; cites Tversky & Kahneman 1983."
+        }
+      ],
+      "input_hash": "9134cfd1ed1a40625dfee380f6f4138923d795443471746317b5120a8d01ab29",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "9134cfd1ed1a40625dfee380f6f4138923d795443471746317b5120a8d01ab29",
+        "job_id": "5b77d58d9d7845ccdb22182e877fb35a8b1f35d32ea6dcd3d36ed50ad67dfb73",
+        "output_hash": "7970552b7940d81f59773e129bb972b617e76ce57a20e5c8e3a2088e92701b6c",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "363e6c62-3ce3-4c97-99e0-3927d34b82c8",
+        "request_id": "01a147a5b6351c79f501d31798e30234",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:9134cfd1ed1a40625dfe",
+        "time": "2026-10-17T02:16:44+00:00",
+        "trace_id": "363e6c62-3ce3-4c97-99e0-3927d34b82c8",
+        "usage": {
+          "completion_tokens": 621,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 17838,
+          "prompt_tokens": 17838,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 18459
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "97bee0494abfa2be0fc764e3d267d772354efcc61db60a7f1eee797737feff2d",
+          "job_id": "85da7a4f2e748258e7c269a0f1f30b0eeeb7497fd01cf8688109b78ef9be5ed8",
+          "output_hash": "49d60957f05d56a668ba8c78ebd36c13b875f5d79c0ab82ffcee0ecf6316bc9b",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "6126af4b-e55e-4d45-8f6e-4d264ec8d4ff",
+          "request_id": "01a147a580adaf5273f5084492eeaac2",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:97bee0494abfa2be0fc7",
+          "time": "2026-10-17T02:16:33+00:00",
+          "trace_id": "6126af4b-e55e-4d45-8f6e-4d264ec8d4ff",
+          "usage": {
+            "completion_tokens": 660,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 17169,
+            "prompt_tokens": 17169,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 17829
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-b1e11ddd5ccb534d",
+          "issues": [],
+          "rationale": "p1 explicitly states the claim about lower bound for volumes of maximal horns and smoothness from some time on 'turned out to be unjustified, and, on the other hand, irrelevant for the other conclusions'; p17 confirms the argument 'seems to be faulty' and that surgeries do not cause substantial problems."
+        },
+        {
+          "decision": "supported",
+          "id": "n-f08b856dbb81ad89",
+          "issues": [],
+          "rationale": "p6 reports electrons with mass me≈0.06m0 in two equivalent valleys and light/heavy holes ≈0.03m0 and ≈0.1m0 with double-valley degeneracy; p13 confirms the fit yields light holes' mass of 0.03m0 and double-valley degeneracy."
+        },
+        {
+          "decision": "supported",
+          "id": "n-fbe8c333f47fa6ab",
+          "issues": [],
+          "rationale": "p82 states tertiary rates were adjusted by crosswalking to non-tertiary and mixed facilities using MR-BRT; p158 notes much data came from mixed/unclassifiable facilities so tertiary bias may not be fully adjusted."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e65c831a6590ea2c",
+          "issues": [],
+          "rationale": "p37 gives the identity XY=((X+Y)^2-(X-Y)^2)/4; p38-p40 explain the reduction and that a linear-time squaring algorithm would yield linear-time multiplication, with the argument explicitly conditional."
+        },
+        {
+          "decision": "supported",
+          "id": "n-40c9d28c038972af",
+          "issues": [],
+          "rationale": "p19 states final goods trade should have no impact on task content estimates, offshoring directly changes task content but does not change automation correlations, and skill composition does not shift task content if factor payments are well measured; competitive markets assumption and unaddressed monopsony/markup concerns are noted."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1d16e2e77cb91e77",
+          "issues": [],
+          "rationale": "p12-p13 describe subtracting leading terms 1/39 t e^{2πt} - 10/(117π) e^{2πt} over [1,∞), nonnegative contribution, and Lemma A.3 proving the remainder bound for t≥1, establishing f_hat(r)≥0 for 0<r<√2."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a7f15b393a380648",
+          "issues": [],
+          "rationale": "p20-p22 derive I=Is[exp(qV/kT)-1] from detailed balance and minority-carrier diffusion; p23 confirms the factor e per 25 mV and notes failure at large forward bias."
+        },
+        {
+          "decision": "supported",
+          "id": "n-28d386ef4271661d",
+          "issues": [],
+          "rationale": "p36 describes laser diode-coupled fiber-optic interfaces delivering ~100 mW/mm², with heat isolation, activity feedback, and registration of virus injection to illumination site; p37 confirms deep-brain targeting and behavior control in freely moving mice."
+        }
+      ],
+      "input_hash": "97bee0494abfa2be0fc764e3d267d772354efcc61db60a7f1eee797737feff2d",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "97bee0494abfa2be0fc764e3d267d772354efcc61db60a7f1eee797737feff2d",
+        "job_id": "85da7a4f2e748258e7c269a0f1f30b0eeeb7497fd01cf8688109b78ef9be5ed8",
+        "output_hash": "49d60957f05d56a668ba8c78ebd36c13b875f5d79c0ab82ffcee0ecf6316bc9b",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "6126af4b-e55e-4d45-8f6e-4d264ec8d4ff",
+        "request_id": "01a147a580adaf5273f5084492eeaac2",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:97bee0494abfa2be0fc7",
+        "time": "2026-10-17T02:16:33+00:00",
+        "trace_id": "6126af4b-e55e-4d45-8f6e-4d264ec8d4ff",
+        "usage": {
+          "completion_tokens": 660,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 17169,
+          "prompt_tokens": 17169,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 17829
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "9a8fe98f56c32edea0d21d9e9eadfd08fca57d55230a79a9ac92cf4563a92b98",
+          "job_id": "20de434f52b586be8befb3f40ee5d36e421d7da1a97cafc8189c9a6268d1d154",
+          "output_hash": "ccac8c7e39abf02077269df4cd5f6ac638404210c2b76cae8b12ba7f86b06c12",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "009b29c3-8f33-400a-8d0d-3f6394e013d2",
+          "request_id": "01a147a568a3fa455ca04ba18dca0f03",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:9a8fe98f56c32edea0d2",
+          "time": "2026-10-17T02:16:27+00:00",
+          "trace_id": "009b29c3-8f33-400a-8d0d-3f6394e013d2",
+          "usage": {
+            "completion_tokens": 711,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 18485,
+            "prompt_tokens": 18485,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 19196
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-c403af12b62f5752",
+          "issues": [],
+          "rationale": "p11 states factor-augmenting technologies 'do not change the task content of production,' affect labor demand via productivity plus substitution, and that σ estimates 'less than but close to 1' make substitution effects small; attribution to Acemoglu and Restrepo matches the working paper."
+        },
+        {
+          "decision": "supported",
+          "id": "n-237ad098c4779506",
+          "issues": [],
+          "rationale": "p8 derives the piecewise-constant TV problem from l1-minimization on first differences and Corollary 1.4 gives the same support-size condition with T as jump locations; Candes-Romberg-Tao authorship matches the arXiv source."
+        },
+        {
+          "decision": "supported",
+          "id": "n-251dd279581e0c72",
+          "issues": [],
+          "rationale": "p244–p249 show H0 constraints loosen as model freedom increases (free Neff, curvature, w0waCDM), central values remain stable/low, and tension with SH0ES decreases as uncertainties grow."
+        },
+        {
+          "decision": "supported",
+          "id": "n-7b162c95131e0310",
+          "issues": [],
+          "rationale": "p81 explicitly states the atlas 'will be bounded in its resolution..., its coverage of disease and diversity..., and its functional assessment (to validate... but not perform...).'"
+        },
+        {
+          "decision": "supported",
+          "id": "n-62dfe950bb5198cc",
+          "issues": [],
+          "rationale": "p306/p312/p315/p316 confirm the quic_transport_parameters extension is carried in ClientHello/EncryptedExtensions, provides integrity protection, is mandatory, and is unauthenticated until handshake completion."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a4b9b533bd7cde42",
+          "issues": [],
+          "rationale": "p20/p23 credit Smith's Wealth of Nations (1776) with division of labor; p28–p33 give the pin factory, three reasons (advantage, learning, economies of scale), and the trade requirement."
+        },
+        {
+          "decision": "supported",
+          "id": "n-f09932014b380680",
+          "issues": [],
+          "rationale": "p6–p9 define breathers, use λ for steady/expanding cases and W-functional (3.4) for shrinking, concluding no nontrivial breathers on closed M; Perelman authorship matches."
+        },
+        {
+          "decision": "supported",
+          "id": "n-949f0bfc0c796e62",
+          "issues": [],
+          "rationale": "p18 calls Car-Parrinello 'the leading strategy' but 'still too demanding... for biomolecular modelling or extended supra-molecular systems,' matching the claim and 1985 attribution."
+        },
+        {
+          "decision": "supported",
+          "id": "n-f12e7c2bb2364295",
+          "issues": [],
+          "rationale": "p5/p26 give gapless assemblies for all autosomes and X, 3.055 Gbp, and 238 Mbp non-syntenic additions comprising centromeric satellites (76%), segmental duplications (19%), rDNAs (4%)."
+        },
+        {
+          "decision": "supported",
+          "id": "n-377eef01456b5df7",
+          "issues": [],
+          "rationale": "p36–p44 state cleverly crafted greedy algorithms guarantee optimal solutions, name MST, and identify Kruskal's and Prim's as greedy; textbook exposition with unknown attribution is acceptable."
+        }
+      ],
+      "input_hash": "9a8fe98f56c32edea0d21d9e9eadfd08fca57d55230a79a9ac92cf4563a92b98",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "9a8fe98f56c32edea0d21d9e9eadfd08fca57d55230a79a9ac92cf4563a92b98",
+        "job_id": "20de434f52b586be8befb3f40ee5d36e421d7da1a97cafc8189c9a6268d1d154",
+        "output_hash": "ccac8c7e39abf02077269df4cd5f6ac638404210c2b76cae8b12ba7f86b06c12",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "009b29c3-8f33-400a-8d0d-3f6394e013d2",
+        "request_id": "01a147a568a3fa455ca04ba18dca0f03",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:9a8fe98f56c32edea0d2",
+        "time": "2026-10-17T02:16:27+00:00",
+        "trace_id": "009b29c3-8f33-400a-8d0d-3f6394e013d2",
+        "usage": {
+          "completion_tokens": 711,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 18485,
+          "prompt_tokens": 18485,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 19196
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "a929b709eae0c4ffe4e7f9d79025af034ed271bfa8f1c6c3303b3230e1be50df",
+          "job_id": "9e3fa82f46b689309987433db4fd3ad52b9077f389598f1159f877fd70b4a758",
+          "output_hash": "20b1b45fd84c30e79880a824c08b5495f0cba17d78cc5efd1bf860a3c9d57981",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "d217f00b-031a-4d56-b05c-96b606ab5446",
+          "request_id": "01a147a5dd67229c00853027f880d955",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:a929b709eae0c4ffe4e7",
+          "time": "2026-10-17T02:16:54+00:00",
+          "trace_id": "d217f00b-031a-4d56-b05c-96b606ab5446",
+          "usage": {
+            "completion_tokens": 843,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 16206,
+            "prompt_tokens": 16206,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 17049
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-dc03b645a6f9d4ec",
+          "issues": [],
+          "rationale": "Source states symbols are for named entities that need not obey SSA, can be used prior to definition, examples include global variables/functions, and recursive functions would be impossible without this; nested symbol tables and referencing nested symbols are described."
+        },
+        {
+          "decision": "supported",
+          "id": "n-d51da574f9126fd7",
+          "issues": [],
+          "rationale": "Source explicitly introduces the composition effect in a multi-sector economy, says it captures sectoral reallocations, contributes positively when the expanding sector has higher labor share, and illustrates with US agricultural mechanization reallocating to industry."
+        },
+        {
+          "decision": "supported",
+          "id": "n-93f973d9b2fa994f",
+          "issues": [],
+          "rationale": "Source sketches Dirac comb and box signal counterexamples where l1-minimization fails even with |supp(f)| much smaller than |Ω|, and states the condition cannot be weakened to |supp(f)| ≤ (1/2+ε)τN."
+        },
+        {
+          "decision": "supported",
+          "id": "n-4dcbcae7b1728c9d",
+          "issues": [],
+          "rationale": "Source derives f_xi and f_gap universality from two-scale-factor universality, stating normalization makes them universal and that since A2(x) is universal, f_xi(x) is universal."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9e9b7048e9901e4f",
+          "issues": [],
+          "rationale": "Source states CHM13 lacks a Y chromosome and a different sample type is required, and that although CHM13 is a complete haplotype it does not capture full human genetic variation, motivating HPRC pangenome haplotypes."
+        },
+        {
+          "decision": "supported",
+          "id": "n-d194014580edaefb",
+          "issues": [],
+          "rationale": "Source describes SAFECode as based on a type-safe subset of LLVM, enforcing memory safety via static analysis, using LLVM type and array type information, interprocedural analysis to minimize runtime checks, and automatic pool allocation instead of GC."
+        },
+        {
+          "decision": "supported",
+          "id": "n-c7696efcfc16382f",
+          "issues": [],
+          "rationale": "Source states demand two or three times minimum efficient scale leaves room for only two or three oligopoly firms, smaller firms have higher average costs, additional large firms cannot sell profitably, and this creates the barrier to entry, with Boeing-Airbus example."
+        },
+        {
+          "decision": "supported",
+          "id": "n-991dda89062087ee",
+          "issues": [],
+          "rationale": "Source defines nuclear norm minimization subject to observed entries, notes rank minimization is NP-hard, calls nuclear norm the convex analogue of l1 for sparse recovery, and proves exact recovery under random sampling and coherence assumptions."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9327c6715003d442",
+          "issues": [],
+          "rationale": "Source generalizes point-mass torque equation to a rigid body about a fixed axis and gives τ_net = Στ_i = Iα as Newton's second law for rotation."
+        },
+        {
+          "decision": "supported",
+          "id": "n-3659517e8f80bef8",
+          "issues": [],
+          "rationale": "Source says Curevac's lower neutralizing titers suggest its lower mRNA dose compromised protection, notes confounding by variants, and concludes base modifications were critical for sufficiently high protective doses."
+        }
+      ],
+      "input_hash": "a929b709eae0c4ffe4e7f9d79025af034ed271bfa8f1c6c3303b3230e1be50df",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a929b709eae0c4ffe4e7f9d79025af034ed271bfa8f1c6c3303b3230e1be50df",
+        "job_id": "9e3fa82f46b689309987433db4fd3ad52b9077f389598f1159f877fd70b4a758",
+        "output_hash": "20b1b45fd84c30e79880a824c08b5495f0cba17d78cc5efd1bf860a3c9d57981",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d217f00b-031a-4d56-b05c-96b606ab5446",
+        "request_id": "01a147a5dd67229c00853027f880d955",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:a929b709eae0c4ffe4e7",
+        "time": "2026-10-17T02:16:54+00:00",
+        "trace_id": "d217f00b-031a-4d56-b05c-96b606ab5446",
+        "usage": {
+          "completion_tokens": 843,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 16206,
+          "prompt_tokens": 16206,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 17049
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "aa42340ded01eeaf98f6f7a531123809c2e143d4a191e54ecf27c2d6c36e864c",
+          "job_id": "4dd8e4942fca21998831d2714e3748bd7ebca07d618a37f9ee8c8ec81da86887",
+          "output_hash": "50c727ff7ce1b6bf0d23cd2ced15dbfb28287fe5d11f929e108daa50c64b7fc4",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "95e53b14-bff5-420a-9d3c-f23104d5d34d",
+          "request_id": "01a147a574d9e55e79542b8fcc48cc7a",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:aa42340ded01eeaf98f6",
+          "time": "2026-10-17T02:16:27+00:00",
+          "trace_id": "95e53b14-bff5-420a-9d3c-f23104d5d34d",
+          "usage": {
+            "completion_tokens": 518,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 15128,
+            "prompt_tokens": 15128,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 15646
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-4fb082474723186c",
+          "issues": [],
+          "rationale": "p6 defines insurance as regular premiums priced by event probability in a pool, with payments to members suffering specified bad experiences; p17–p19 give the $186,000/$1,860 example; p31 states the average-payment constraint."
+        },
+        {
+          "decision": "supported",
+          "id": "n-59613958125da35c",
+          "issues": [],
+          "rationale": "p5 states Theorem 1: for all α≥0 and M∈M, dM,α is symmetric and satisfies triangle inequalities, and 1_{r≠c}dM,α satisfies all three distance axioms; Lemma 1 is the gluing lemma with entropic constraint."
+        },
+        {
+          "decision": "supported",
+          "id": "n-8f11113e160f05fe",
+          "issues": [],
+          "rationale": "p7 gives δV = Σm(x′δx+…)−Σm(a′δa+…)+tδH and names it the law of varying action; p8 contrasts it with Lagrange's least action and says it yields integrals, not just differential equations."
+        },
+        {
+          "decision": "supported",
+          "id": "n-137dbeca62da7e63",
+          "issues": [],
+          "rationale": "p44 states top-ranked predictions keep improving with more model seeds even at 1,000 (P=2.0×10−5), and this large improvement is not observed generally for other molecule classes; p32 confirms ranking by protein–protein ipTM."
+        },
+        {
+          "decision": "supported",
+          "id": "n-78bd5b3f3f5486a7",
+          "issues": [],
+          "rationale": "p7 describes binary search locating a number in a sorted array by repeatedly halving the interval and narrowing to lower or upper half based on the middle element."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1cf70e74c4225cce",
+          "issues": [],
+          "rationale": "p5–p6 describe private undocumented shocks, illiquid bank assets (half-completed shopping center), riskless-asset simplifying assumption, liquidity mismatch, and multiple equilibria including the run equilibrium."
+        },
+        {
+          "decision": "supported",
+          "id": "n-f5431b69afe16a2d",
+          "issues": [],
+          "rationale": "p6 states the normal distribution has the same mean as the original and variance equal to original variance divided by sample size, with standard deviation σ_X/√n; p11 and p58 give the formula and examples."
+        }
+      ],
+      "input_hash": "aa42340ded01eeaf98f6f7a531123809c2e143d4a191e54ecf27c2d6c36e864c",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "aa42340ded01eeaf98f6f7a531123809c2e143d4a191e54ecf27c2d6c36e864c",
+        "job_id": "4dd8e4942fca21998831d2714e3748bd7ebca07d618a37f9ee8c8ec81da86887",
+        "output_hash": "50c727ff7ce1b6bf0d23cd2ced15dbfb28287fe5d11f929e108daa50c64b7fc4",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "95e53b14-bff5-420a-9d3c-f23104d5d34d",
+        "request_id": "01a147a574d9e55e79542b8fcc48cc7a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:aa42340ded01eeaf98f6",
+        "time": "2026-10-17T02:16:27+00:00",
+        "trace_id": "95e53b14-bff5-420a-9d3c-f23104d5d34d",
+        "usage": {
+          "completion_tokens": 518,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 15128,
+          "prompt_tokens": 15128,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 15646
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "accd84e01d755d136174726a3143c9d5baf8980a17952830691f9336a3a65f84",
+          "job_id": "934a66ed3cd825bd975c8ae35e93cccffb5a4f2f75cdbab4d259c601592ea60f",
+          "output_hash": "6113e327391f200cf0f77b1a82c2ef6d1bf1fce1af33c3fddc8c7baa83243903",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "82ffc0c4-68cc-4f4a-b82d-b366417166e5",
+          "request_id": "01a147a5dd851a21b20bacad56a9dbb6",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:accd84e01d755d136174",
+          "time": "2026-10-17T02:16:54+00:00",
+          "trace_id": "82ffc0c4-68cc-4f4a-b82d-b366417166e5",
+          "usage": {
+            "completion_tokens": 710,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 17862,
+            "prompt_tokens": 17862,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 18572
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-15344018185fd326",
+          "issues": [],
+          "rationale": "p3 states getelementptr performs pointer arithmetic preserving type information with machine-independent semantics, makes address arithmetic explicit for optimizations, and combines '.' and '[]'; attribution to Lattner/Adve matches the 2004 LLVM paper."
+        },
+        {
+          "decision": "supported",
+          "id": "n-dd8f2b86441b8301",
+          "issues": [],
+          "rationale": "p84/p86 document Bernanke and Gertler (1989) incorporating Townsend's external finance constraints into general equilibrium, and p86 states the financial multiplier exacerbates business-cycle fluctuations; the DSGE embedding is attributed to Bernanke, Gertler, and Gilchrist (1999)."
+        },
+        {
+          "decision": "supported",
+          "id": "n-83cff752e5b3535b",
+          "issues": [],
+          "rationale": "Corollary 4.6 (p26) gives lim sup E #(x(t),E,1,L) <= C for t=N^-tau, tau<=delta0/2, matching the bounded expected pair count; attribution to Bourgade et al. is consistent."
+        },
+        {
+          "decision": "supported",
+          "id": "n-d44129ccd85691a8",
+          "issues": [],
+          "rationale": "p284/p286 give the one-point formula epsilon_d=0.5(1-(1-2p_L)^(1/t)) and describe estimating error per cycle from a single cycle count via a binomial problem, with uncertainties from p_L."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0279c44178bba984",
+          "issues": [],
+          "rationale": "p31 describes G0 as quiescent exit from the cycle, temporary entry due to nutrients/growth factors, and permanent G0 for mature cardiac muscle and nerve cells; textbook exposition with unknown attribution is acceptable."
+        },
+        {
+          "decision": "supported",
+          "id": "n-b27a556cdc54f8b3",
+          "issues": [],
+          "rationale": "p3/p4 show semaphore initialized to 1 used as a lock, value going to 0 then -1 when contended, and blocking/waking; the source credits Dijkstra for semaphores generally, not this specific use."
+        },
+        {
+          "decision": "supported",
+          "id": "n-c3ea103d7b9202f6",
+          "issues": [],
+          "rationale": "p6 states finance is divided into three primary areas in the domestic market: business finance, investments, and financial markets and institutions; p7 confirms the three basic areas."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e7e9bd41ed806338",
+          "issues": [],
+          "rationale": "p69-p76 outline the stepwise strategy: familiar series, alternating series, comparison for p-series/geometric resemblance, root for b_n^n, ratio for factorials, then divergence and integral tests."
+        },
+        {
+          "decision": "supported",
+          "id": "n-97b0f2e61bbf86eb",
+          "issues": [],
+          "rationale": "p186 describes block partitioning with threads and staged fusion; p189 states a constant-sized graph buffer storing only 128 contiguous blocks maintained by a grapher thread."
+        },
+        {
+          "decision": "supported",
+          "id": "n-ed154e13dddea5c8",
+          "issues": [],
+          "rationale": "p11 reports homozygous Fbox15/ECAT3 mutants showed no obvious phenotypes, and null ES cells proliferated normally with normal differentiation; attributed to Tokuzawa's project."
+        }
+      ],
+      "input_hash": "accd84e01d755d136174726a3143c9d5baf8980a17952830691f9336a3a65f84",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "accd84e01d755d136174726a3143c9d5baf8980a17952830691f9336a3a65f84",
+        "job_id": "934a66ed3cd825bd975c8ae35e93cccffb5a4f2f75cdbab4d259c601592ea60f",
+        "output_hash": "6113e327391f200cf0f77b1a82c2ef6d1bf1fce1af33c3fddc8c7baa83243903",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "82ffc0c4-68cc-4f4a-b82d-b366417166e5",
+        "request_id": "01a147a5dd851a21b20bacad56a9dbb6",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:accd84e01d755d136174",
+        "time": "2026-10-17T02:16:54+00:00",
+        "trace_id": "82ffc0c4-68cc-4f4a-b82d-b366417166e5",
+        "usage": {
+          "completion_tokens": 710,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 17862,
+          "prompt_tokens": 17862,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 18572
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "b29535aff0b43b7d5032790f371fea2c07ae9c5c970d20a9cdd48ab1743ab4b0",
+          "job_id": "8eca587d7f49baeca5aaeb3c9497d7ca21b7b91e8f0bb6a589d6d391be77f242",
+          "output_hash": "65c9be96c9e475e7f48cf8b7786a39c3b40259a4d54cb9f7cf0222131a0e7b79",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "37feb2fd-76f1-44fc-9770-b3c64d9614f6",
+          "request_id": "01a147a5cc32e9e52e909b505ab58c3e",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:b29535aff0b43b7d5032",
+          "time": "2026-10-17T02:16:50+00:00",
+          "trace_id": "37feb2fd-76f1-44fc-9770-b3c64d9614f6",
+          "usage": {
+            "completion_tokens": 712,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 15629,
+            "prompt_tokens": 15629,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 16341
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-cb00bb9031b0bb9c",
+          "issues": [],
+          "rationale": "p5 defines the cell cycle as an ordered series of precisely timed and carefully regulated stages of growth, DNA replication, and nuclear and cytoplasmic division producing two identical daughter cells; p6 confirms interphase/mitotic phases and genetically identical daughters."
+        },
+        {
+          "decision": "supported",
+          "id": "n-28d797e4e64801cc",
+          "issues": [],
+          "rationale": "p10 gives CAS pseudocode testing expected value and conditionally setting, and states a lock can be built 'in a manner quite similar to that with test-and-set'; attribution is correctly unknown."
+        },
+        {
+          "decision": "supported",
+          "id": "n-57ec7e28e3a897e7",
+          "issues": [],
+          "rationale": "p86 attributes Kiyotaki and Moore (1997), describes capital as factor of production and collateral, and states they provided the first dynamic equilibrium model of fire-sale dynamics."
+        },
+        {
+          "decision": "supported",
+          "id": "n-de384a14a721c3ee",
+          "issues": [],
+          "rationale": "p169 gives the Maclaurin series, p172 gives the Lagrange remainder, and p174 states the remainder limit is 0 for all x, so the series converges to sin x for all real x."
+        },
+        {
+          "decision": "supported",
+          "id": "n-beb9eb37aad92253",
+          "issues": [],
+          "rationale": "p13 reports the most significant time cluster had chance probability 11%, and the spatial-group excess had post-trial p-value 33%, supporting no significant clustering."
+        },
+        {
+          "decision": "supported",
+          "id": "n-6cd52ca69a5dc08f",
+          "issues": [],
+          "rationale": "p11 states 'the first EVI functional imaging experiments' with a normal volunteer and hemifield stimulation; p17 cites Mansfield, Coxon and Hykin (1995) as the source."
+        },
+        {
+          "decision": "supported",
+          "id": "n-34c92faac94e31d9",
+          "issues": [],
+          "rationale": "p15-p17 describe reducing PAIRING to SORTING with cheap conversions and conclude the asymptotic cost of PAIRING cannot exceed SORTING's, giving O(n log n); p18 notes it is only an upper bound."
+        },
+        {
+          "decision": "supported",
+          "id": "n-3366196ccb5b97c5",
+          "issues": [],
+          "rationale": "p7-p10 describe SuperDOT, SOES and successors and explicitly conclude that speed in matching buyers and sellers at the best available price is strong evidence of operational efficiency."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1fb91bbf5e989ead",
+          "issues": [],
+          "rationale": "p2 defines statistics as the science dealing with collection, analysis, interpretation, and presentation of data, matching the four-stage framing."
+        }
+      ],
+      "input_hash": "b29535aff0b43b7d5032790f371fea2c07ae9c5c970d20a9cdd48ab1743ab4b0",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b29535aff0b43b7d5032790f371fea2c07ae9c5c970d20a9cdd48ab1743ab4b0",
+        "job_id": "8eca587d7f49baeca5aaeb3c9497d7ca21b7b91e8f0bb6a589d6d391be77f242",
+        "output_hash": "65c9be96c9e475e7f48cf8b7786a39c3b40259a4d54cb9f7cf0222131a0e7b79",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "37feb2fd-76f1-44fc-9770-b3c64d9614f6",
+        "request_id": "01a147a5cc32e9e52e909b505ab58c3e",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:b29535aff0b43b7d5032",
+        "time": "2026-10-17T02:16:50+00:00",
+        "trace_id": "37feb2fd-76f1-44fc-9770-b3c64d9614f6",
+        "usage": {
+          "completion_tokens": 712,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 15629,
+          "prompt_tokens": 15629,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 16341
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "d82308d164d7430fe2666df2ff014edcc01adfefcef27298ec7a472493bb2904",
+          "job_id": "fe58a7d81ae8ebdb0bbac8990e3ffef39273ae629b45d3320992576f2033041c",
+          "output_hash": "2ccb79dfd811490d1a50584dc413af36f0f25308ce642711ab6bd14cae91eb1a",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "fd4c7011-ae7e-4098-9de3-cbc0d034e863",
+          "request_id": "01a147a5be81d9a0bacfddf486085df0",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:d82308d164d7430fe266",
+          "time": "2026-10-17T02:16:46+00:00",
+          "trace_id": "fd4c7011-ae7e-4098-9de3-cbc0d034e863",
+          "usage": {
+            "completion_tokens": 413,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 18754,
+            "prompt_tokens": 18754,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 19167
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-32498c9165e6ff9a",
+          "issues": [],
+          "rationale": "Source states entropy is a state function, defines ΔS=∫dQ/T for reversible transitions, and proves path independence via the closed reversible cycle split into two segments."
+        },
+        {
+          "decision": "supported",
+          "id": "n-cb1ba8e56d526057",
+          "issues": [],
+          "rationale": "Conclusion paragraph explicitly lists optogenetics applications to mood disorders, addiction, Parkinson's disease, OCD, social behavior, and reward, and says it dissects causal roles of circuit components."
+        },
+        {
+          "decision": "supported",
+          "id": "n-d71b339a563b0625",
+          "issues": [],
+          "rationale": "Paper title/authors and text define the Byzantine Generals metaphor, condition A (same plan) and condition 1/2 (interactive consistency), with 1982 ACM TOPLAS date."
+        },
+        {
+          "decision": "supported",
+          "id": "n-49f91f902b3febbd",
+          "issues": [],
+          "rationale": "Paper states its first technical contribution is conditions for a contraction mapping with nondegenerate limiting value/consumption functions, naming FVAC (generalizing Ma, Stachurski, Toda 2020) and WRIC; Theorem 1 confirms contraction under (42) and (39)."
+        },
+        {
+          "decision": "supported",
+          "id": "n-de44ca994a8da1dc",
+          "issues": [],
+          "rationale": "Definition 4 gives S-reduction with LT(g)<LT(f), f−αth=g, S(th)<σ, restricted to f,h∈I; text notes when σ=S(f), S(g)=S(f) and LT decreases."
+        },
+        {
+          "decision": "supported",
+          "id": "n-d9ad28be828e6930",
+          "issues": [],
+          "rationale": "Source gives λmax=3×10^6/T with nm and K units, calls it Wien's law, notes inverse proportionality, and applies it to stellar spectra."
+        }
+      ],
+      "input_hash": "d82308d164d7430fe2666df2ff014edcc01adfefcef27298ec7a472493bb2904",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d82308d164d7430fe2666df2ff014edcc01adfefcef27298ec7a472493bb2904",
+        "job_id": "fe58a7d81ae8ebdb0bbac8990e3ffef39273ae629b45d3320992576f2033041c",
+        "output_hash": "2ccb79dfd811490d1a50584dc413af36f0f25308ce642711ab6bd14cae91eb1a",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fd4c7011-ae7e-4098-9de3-cbc0d034e863",
+        "request_id": "01a147a5be81d9a0bacfddf486085df0",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:d82308d164d7430fe266",
+        "time": "2026-10-17T02:16:46+00:00",
+        "trace_id": "fd4c7011-ae7e-4098-9de3-cbc0d034e863",
+        "usage": {
+          "completion_tokens": 413,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 18754,
+          "prompt_tokens": 18754,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 19167
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "e12f51c66efc86558c6345b1c805a1ecca1bf8ba8672cbea6804c4b8a46c7cb7",
+          "job_id": "7274e63f153ec70c102677aa676f96abef01d983bb81d4e779dad2a0fe6d9a39",
+          "output_hash": "fd90a2a8696c15944785d876ed570550d683a9da1066c4c4aa781ee834b9faee",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "977c6e2b-adf2-4ba2-914b-a1d90a43081f",
+          "request_id": "01a147a598a6104810b3b1fc4c8cf46a",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:e12f51c66efc86558c63",
+          "time": "2026-10-17T02:16:39+00:00",
+          "trace_id": "977c6e2b-adf2-4ba2-914b-a1d90a43081f",
+          "usage": {
+            "completion_tokens": 628,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 17230,
+            "prompt_tokens": 17230,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 17858
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-00a4d28be1d3fff7",
+          "issues": [],
+          "rationale": "Passage states positive profits attract entry, losses cause exit, and long-run equilibrium when no firm wants to enter/leave with economic profits driven to zero; attribution is explicitly unknown textbook formulation."
+        },
+        {
+          "decision": "supported",
+          "id": "n-37541e2154bed36e",
+          "issues": [],
+          "rationale": "Definition 1 and surrounding text define S(f)=LT(ψ(f)) with ψ:I→P^m/Syz(F), matching the claim; paper presents it as its own building on Faugère's idea."
+        },
+        {
+          "decision": "supported",
+          "id": "n-abb32c5258f2dcdc",
+          "issues": [],
+          "rationale": "Lecture states dense 76.5 MHz comb could not be resolved by spectrometer, so they used heterodyne detection with cw diode laser as local oscillator and observed stable comb lines."
+        },
+        {
+          "decision": "supported",
+          "id": "n-98aafcfbecbba052",
+          "issues": [
+            "attribution_inferred"
+          ],
+          "rationale": "Lecture says 'We and others have reported an integration-free method ... using episomal vectors' and cites [33]; claim matches, though attribution to Okita specifically is inferred from reference."
+        },
+        {
+          "decision": "supported",
+          "id": "n-5aca2a5c2d02aed5",
+          "issues": [],
+          "rationale": "Passage defines abstraction as simplifying a concept to represent it in a computer and gives sentence/string character codes as example."
+        },
+        {
+          "decision": "supported",
+          "id": "n-ba3a926f290315fe",
+          "issues": [],
+          "rationale": "Table and text give top quintile 44.1% in 1980 to 52.2% in 2020 and top 5% 16.5% to 23.0%, sourced to Census Bureau."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1314dadd4d256c7f",
+          "issues": [],
+          "rationale": "Text describes Riemann sums with arbitrary x_i* and notes left/right endpoint approximations as cases; limit uniqueness stated for continuous f."
+        },
+        {
+          "decision": "supported",
+          "id": "n-b41aa691b922fd9a",
+          "issues": [],
+          "rationale": "Passage reports 16 measurements over 15 hours, TLS frequency forecasting, recalibration every four runs, average Λ=2.18±0.07."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a40260ab248df1ac",
+          "issues": [],
+          "rationale": "FDA passage states Lyfgenia uses lentiviral vector, approved for patients 12+ with history of vaso-occlusive events, and is among first cell-based gene therapies."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1cd457f611fe759f",
+          "issues": [],
+          "rationale": "Paper describes auxiliary confidence loss reinforcing strong model's own predictions even when disagreeing with weak labels, increasing median PGR from ~25% to nearly 80% on NLP tasks."
+        }
+      ],
+      "input_hash": "e12f51c66efc86558c6345b1c805a1ecca1bf8ba8672cbea6804c4b8a46c7cb7",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "e12f51c66efc86558c6345b1c805a1ecca1bf8ba8672cbea6804c4b8a46c7cb7",
+        "job_id": "7274e63f153ec70c102677aa676f96abef01d983bb81d4e779dad2a0fe6d9a39",
+        "output_hash": "fd90a2a8696c15944785d876ed570550d683a9da1066c4c4aa781ee834b9faee",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "977c6e2b-adf2-4ba2-914b-a1d90a43081f",
+        "request_id": "01a147a598a6104810b3b1fc4c8cf46a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:e12f51c66efc86558c63",
+        "time": "2026-10-17T02:16:39+00:00",
+        "trace_id": "977c6e2b-adf2-4ba2-914b-a1d90a43081f",
+        "usage": {
+          "completion_tokens": 628,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 17230,
+          "prompt_tokens": 17230,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 17858
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "e454f441c8c4a5bfd8b12d6796f6eef8128aacb9a63738e2ca75e45808450d87",
+          "job_id": "2694c2378abb7e76ab74388614efd44aae463cb68b67467e6ce5cb14f599bff9",
+          "output_hash": "5c9eec7ae04a1d760eed9a525ddc951baa4b3a1bced6f2e8068fc5ea65f03a5e",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "492ef675-d8ae-48af-a6cd-029b4c64484f",
+          "request_id": "01a147a5ce8af21e4185311c369989b5",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:e454f441c8c4a5bfd8b1",
+          "time": "2026-10-17T02:16:50+00:00",
+          "trace_id": "492ef675-d8ae-48af-a6cd-029b4c64484f",
+          "usage": {
+            "completion_tokens": 396,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 14935,
+            "prompt_tokens": 14935,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 15331
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-a8d5600390b879fd",
+          "issues": [],
+          "rationale": "p15 states generative finetuning on RM data improves weak-to-strong performance and PGR by ~10-20%, with ceiling adjustment; p14 describes unsupervised LM finetuning on task-relevant data to increase saliency. Attribution to OpenAI Superalignment team is consistent with the arXiv paper context."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e26b2ab156037ac1",
+          "issues": [],
+          "rationale": "p20 states high GDP should not be the only goal and that higher GDP per capita accompanies improvements; p21 states GDP per capita is a reasonable rough-and-ready measure. Normative framing matches the textbook source."
+        },
+        {
+          "decision": "supported",
+          "id": "n-7690fc1806759630",
+          "issues": [],
+          "rationale": "p29 proves asymptotic volume ratio V=0 under assumptions of 11.1; p31 theorem states noncompact ancient solutions are compact modulo scaling; p31 corollary describes ε-neck structure. Assumptions (nonnegative curvature operator, κ-noncollapsing, complete non-flat bounded curvature) match 11.1."
+        },
+        {
+          "decision": "supported",
+          "id": "n-dff53422c9b9330c",
+          "issues": [],
+          "rationale": "p4-p5 present Einstein's 1923 lecture argument: empirical equality of inertial/heavy mass plus equivalence of accelerated frame to homogeneous gravitational field leads to general relativity principle and no preferred states of motion. Date and historical framing are correctly noted."
+        },
+        {
+          "decision": "supported",
+          "id": "n-58376f5b7de58b17",
+          "issues": [],
+          "rationale": "p5 states sparse multivariate model found 960 microbial/enzymatic/pathway abundances significantly associated with 15 phenotype/metadata features; ethnicity had greatest number (266) and vaginal pH correlated with Lactobacillus and metabolic diversity."
+        }
+      ],
+      "input_hash": "e454f441c8c4a5bfd8b12d6796f6eef8128aacb9a63738e2ca75e45808450d87",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "e454f441c8c4a5bfd8b12d6796f6eef8128aacb9a63738e2ca75e45808450d87",
+        "job_id": "2694c2378abb7e76ab74388614efd44aae463cb68b67467e6ce5cb14f599bff9",
+        "output_hash": "5c9eec7ae04a1d760eed9a525ddc951baa4b3a1bced6f2e8068fc5ea65f03a5e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "492ef675-d8ae-48af-a6cd-029b4c64484f",
+        "request_id": "01a147a5ce8af21e4185311c369989b5",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:e454f441c8c4a5bfd8b1",
+        "time": "2026-10-17T02:16:50+00:00",
+        "trace_id": "492ef675-d8ae-48af-a6cd-029b4c64484f",
+        "usage": {
+          "completion_tokens": 396,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 14935,
+          "prompt_tokens": 14935,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 15331
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "f09ee96f3cf25f70ee2fb36f7048e84be07ba39afacbd037d988af63935d0b63",
+          "job_id": "e975b37a9e9629f0b015ed5af5f063de4eb9ed07271163cf2f5dac25e5edbd1e",
+          "output_hash": "bce526c902b7388f61b0825783b627b64817700c995973c7782b86d9c33d90e7",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "23980203-b861-42db-ab2b-3831d919f1ab",
+          "request_id": "01a147a5e2d6e8719d204af2939015aa",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:f09ee96f3cf25f70ee2f",
+          "time": "2026-10-17T02:16:55+00:00",
+          "trace_id": "23980203-b861-42db-ab2b-3831d919f1ab",
+          "usage": {
+            "completion_tokens": 648,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 15320,
+            "prompt_tokens": 15320,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 15968
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-af2d59e1bcc77543",
+          "issues": [],
+          "rationale": "p20 defines covariate shift (X distribution changes, Y|X fixed) and says weighted conformal prediction was 'first developed in [25]'; p21 gives likelihood-ratio weights and Theorem 3 coverage guarantee. Attribution to Tibshirani et al. matches citation [25]."
+        },
+        {
+          "decision": "supported",
+          "id": "n-14f694a9d6bb1ccb",
+          "issues": [],
+          "rationale": "p24-25 document Kyoto coverage falling from two-thirds (1990) to one-fifth (2012), US withdrawal, no new middle-income participants, and Paris as 'uncoordinated and voluntary' with 'no penalties'; free-riding is the lecture's stated mechanism."
+        },
+        {
+          "decision": "supported",
+          "id": "n-23db08359e4dd3c6",
+          "issues": [],
+          "rationale": "p11 states quadratic Taylor coefficients -14347/5460 and -205/156 'as conjectured in [4]' and f'(2)=-1/16380 'in accordance with Lemma 5.1 in [4]'."
+        },
+        {
+          "decision": "supported",
+          "id": "n-fdca82df913f7847",
+          "issues": [],
+          "rationale": "p14 describes Roushan et al. (2009) combining STS and spin-ARPES, with Fourier transform matching JDOS with backscattering suppressed, concluding k to -k backscattering is absent despite strong atomic disorder."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e54eb922946ad29b",
+          "issues": [],
+          "rationale": "p81 gives mean 64 g (SD 25, range 20-100); p112 notes failures received 20 g and 60 g; p143 states three cured at 10-20 g and 'efficacy was not clearly related to the amount of stool administered, although failure... too infrequent to determine'."
+        },
+        {
+          "decision": "supported",
+          "id": "n-fdeb7673b3be32b8",
+          "issues": [],
+          "rationale": "p339 lists exactly three defenses: ClientHello padding to minimum size, 3x anti-amplification limit for unverified addresses, and authenticated Handshake acknowledgments; p338 states the reflection/amplification problem."
+        },
+        {
+          "decision": "supported",
+          "id": "n-1d1c8c973b6f891c",
+          "issues": [],
+          "rationale": "p10 attributes the first rigorous theoretical investigation of the winner's curse to Wilson (1969), explains winning as 'bad news' with E[ |signal1, signal2<signal1]<signal1, and notes bidders should shade bids."
+        },
+        {
+          "decision": "supported",
+          "id": "n-b38151fb0a1d1093",
+          "issues": [],
+          "rationale": "p2 states 'Quotients are heavily used in mathlib to avoid the need for setoids' and lists multisets, finite sets, quotient groups, tensor products, colimits, Stone-Čech, Cauchy completion; p3 adds cardinals and ordinals via quotients."
+        }
+      ],
+      "input_hash": "f09ee96f3cf25f70ee2fb36f7048e84be07ba39afacbd037d988af63935d0b63",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f09ee96f3cf25f70ee2fb36f7048e84be07ba39afacbd037d988af63935d0b63",
+        "job_id": "e975b37a9e9629f0b015ed5af5f063de4eb9ed07271163cf2f5dac25e5edbd1e",
+        "output_hash": "bce526c902b7388f61b0825783b627b64817700c995973c7782b86d9c33d90e7",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "23980203-b861-42db-ab2b-3831d919f1ab",
+        "request_id": "01a147a5e2d6e8719d204af2939015aa",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f09ee96f3cf25f70ee2f",
+        "time": "2026-10-17T02:16:55+00:00",
+        "trace_id": "23980203-b861-42db-ab2b-3831d919f1ab",
+        "usage": {
+          "completion_tokens": 648,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 15320,
+          "prompt_tokens": 15320,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 15968
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "faaaf2e86337a97b4253c425bcdbaf9ee7df87d7e86ce7660c49cfaeb92561f8",
+          "job_id": "eb7186ce8857616244c86a89c62651d5eaa3859679ac6a25c82ee18ec3eebf51",
+          "output_hash": "cede6b07b3f572403d7f58607603474a50d3af88c7a5babf0578bb1d25cb5bbe",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "ed9b9f55-6e6d-4ad7-ba5e-5c9a7db6056f",
+          "request_id": "01a147a585bd4c1e27edd1e2247f6801",
+          "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "state": "succeeded",
+          "task": "atlas-audit:faaaf2e86337a97b4253",
+          "time": "2026-10-17T02:16:35+00:00",
+          "trace_id": "ed9b9f55-6e6d-4ad7-ba5e-5c9a7db6056f",
+          "usage": {
+            "completion_tokens": 486,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 20568,
+            "prompt_tokens": 20568,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 21054
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-b257813387ae2476",
+          "issues": [],
+          "rationale": "p9 defines divide/conquer/combine and recursion termination; p10 states subproblems are independent and solved by reapplying the same algorithm."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a74f85a10a2a484e",
+          "issues": [],
+          "rationale": "p24 explicitly attributes to Roth (1984a) the proof that with couples 'there may not exist any stable matching,' and notes preferences violate substitutability."
+        },
+        {
+          "decision": "supported",
+          "id": "n-59debe6699d1a881",
+          "issues": [],
+          "rationale": "p76 defines second derivative as derivative of derivative, higher-order derivatives, and notation; p78 gives f″/f‴/f⁽ⁿ⁾ forms."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e5a261f2212363c0",
+          "issues": [],
+          "rationale": "p6 states the law of point motion in a pure gravitational field is the geodesic equation, which becomes rectilinear for constant g_mu_nu, and calls it transfer of Galileo's law."
+        },
+        {
+          "decision": "supported",
+          "id": "n-4a5679159ae260a4",
+          "issues": [],
+          "rationale": "p15–p21 enumerate concentration gradient, molecular mass, temperature, solvent density, solubility, surface area/membrane thickness, and distance travelled as factors."
+        },
+        {
+          "decision": "supported",
+          "id": "n-659e7cef45a06a64",
+          "issues": [],
+          "rationale": "p13 describes server acknowledgment when reply isn't immediate and client periodically asking whether server is still working."
+        },
+        {
+          "decision": "supported",
+          "id": "n-653fd9614cbb175e",
+          "issues": [],
+          "rationale": "p136 attributes to Brodeur, Cook, and Heyes (2020) that p-hacking is more common for DiD and IV than RCTs and RD, likely because RCT/RD are more scripted."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a08f3aa00dcb54ca",
+          "issues": [],
+          "rationale": "p8–p18 construct a,b as contour integrals of modular forms, prove F(a)=a and F(b)=−b, and show double zeroes at Λ8 vectors of length >√2."
+        }
+      ],
+      "input_hash": "faaaf2e86337a97b4253c425bcdbaf9ee7df87d7e86ce7660c49cfaeb92561f8",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "faaaf2e86337a97b4253c425bcdbaf9ee7df87d7e86ce7660c49cfaeb92561f8",
+        "job_id": "eb7186ce8857616244c86a89c62651d5eaa3859679ac6a25c82ee18ec3eebf51",
+        "output_hash": "cede6b07b3f572403d7f58607603474a50d3af88c7a5babf0578bb1d25cb5bbe",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ed9b9f55-6e6d-4ad7-ba5e-5c9a7db6056f",
+        "request_id": "01a147a585bd4c1e27edd1e2247f6801",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:faaaf2e86337a97b4253",
+        "time": "2026-10-17T02:16:35+00:00",
+        "trace_id": "ed9b9f55-6e6d-4ad7-ba5e-5c9a7db6056f",
+        "usage": {
+          "completion_tokens": 486,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 20568,
+          "prompt_tokens": 20568,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 21054
+        }
+      }
+    }
+  ],
+  "completed_at": "2026-10-17T02:17:02+00:00",
+  "counts": {
+    "supported": 198,
+    "unsupported": 2
+  },
+  "input_refs": [
+    {
+      "content_hash": "9ce7488135cc59c64a57a2b2f51d9b724f089cb443605ada72cad99e2213f396",
+      "id": "n-607c07fff2c0390e",
+      "revision": 1
+    },
+    {
+      "content_hash": "b4698b8747001a5da9d44e6ea97413464ee26f329c270ba07babdc89651f1afa",
+      "id": "n-32982ed0f5fdd648",
+      "revision": 1
+    },
+    {
+      "content_hash": "0b4aed85fed647b3ad7805b27df81055d242795198732658f458758b4b79b516",
+      "id": "n-48cbf6a29d48ce03",
+      "revision": 1
+    },
+    {
+      "content_hash": "c4d7fafa90ed8cd3ed9f4014dad6c93bc47550470b0ab5830d1c0c7be423122b",
+      "id": "n-3de6fa173cdc4047",
+      "revision": 1
+    },
+    {
+      "content_hash": "9047d1b68b1829d4b819e1afe976d6cf284083fff7099e49216d200174a3b99f",
+      "id": "n-aab99091d4c88de6",
+      "revision": 1
+    },
+    {
+      "content_hash": "3972311bee10dd9d9561d98a438bea00d94a605b217494dca2934af8ae189aa6",
+      "id": "n-0fbd662c0d836a24",
+      "revision": 1
+    },
+    {
+      "content_hash": "98ce75713d5d98c3abe73f73fb030c18c759f6cdbf235e7bd4a64bf0c8efd5b3",
+      "id": "n-e28bf7446a2d4ad7",
+      "revision": 1
+    },
+    {
+      "content_hash": "35edefbd27ef728d4634a20f87e822676c1b7e2ca9cd99c65b5ea320083e5781",
+      "id": "n-0cc4dcdf30f8de3b",
+      "revision": 1
+    },
+    {
+      "content_hash": "81876f2bcd982731f8244d6178a1d1daaef14520735eafc7b56bb46736d704c0",
+      "id": "n-5134b96bd23a0164",
+      "revision": 1
+    },
+    {
+      "content_hash": "162496bb6b15e70d7d6e40164c42af142e14d4f8aa051f8f59d0ac3e6aa0e1ee",
+      "id": "n-ae2c76bd2c71c56a",
+      "revision": 1
+    },
+    {
+      "content_hash": "bd6bb932ab7c9d9e3f1b1559c9baafc73cb86816e933d26776dff5fb625375c0",
+      "id": "n-1ce856fde6e35d1a",
+      "revision": 1
+    },
+    {
+      "content_hash": "608beb8ed035d41108fdcf2a1e0b0cf033f4533cf609d584709973b0bed55e89",
+      "id": "n-effcf057e748f7bc",
+      "revision": 1
+    },
+    {
+      "content_hash": "3f6738778d2b655580a775c032b3fbf3fe8138f7f7ddd8e14f8bd74f98b9507d",
+      "id": "n-629791233855cae8",
+      "revision": 1
+    },
+    {
+      "content_hash": "1dc94162b78599fc899c5b33064f93187d87db46c36433213ac437d00a7ca6d5",
+      "id": "n-5ce5643b0b545f5d",
+      "revision": 1
+    },
+    {
+      "content_hash": "53487f9bf3d32e17b1b72c4074e7831706b9e9992b356f7c9105e75fe0b13769",
+      "id": "n-e54100028236c257",
+      "revision": 1
+    },
+    {
+      "content_hash": "e21310f78f5fd8fd86c9e01644a8e65abd848c9ab21fe9472db3c264833f6a35",
+      "id": "n-f85dc1a6cfbda314",
+      "revision": 1
+    },
+    {
+      "content_hash": "8765175cd52d3a7d075d0bdf163ac2d6c893a5bd4859d5cb8b90e6a94cfd4b00",
+      "id": "n-6893d22e0d30155d",
+      "revision": 1
+    },
+    {
+      "content_hash": "7d4123085bebfed46e2d531d0c775e7d59b3a059e28782d3a7a8c31148cd7c1a",
+      "id": "n-c403af12b62f5752",
+      "revision": 1
+    },
+    {
+      "content_hash": "937ffc680008c672f926c6b8cc406764331928da0c47c2932ad4d9cd45dd9acf",
+      "id": "n-237ad098c4779506",
+      "revision": 1
+    },
+    {
+      "content_hash": "5d574b06e8978bfee27ebe3f70a2487cb19021e68761d15626e65f0703369a9e",
+      "id": "n-251dd279581e0c72",
+      "revision": 1
+    },
+    {
+      "content_hash": "604697458a07694d76e360a59f3212b27eee60d8d019dcd1130894bc4aaf88f6",
+      "id": "n-7b162c95131e0310",
+      "revision": 1
+    },
+    {
+      "content_hash": "725498668f5b7a98de436ef9f8c4e38395ed4d516ca0aec0dcb81413b116caec",
+      "id": "n-62dfe950bb5198cc",
+      "revision": 1
+    },
+    {
+      "content_hash": "6f16f102b1138b149329bad40922c7b32cb814995b7ca8230a5410ba5d85acb4",
+      "id": "n-a4b9b533bd7cde42",
+      "revision": 1
+    },
+    {
+      "content_hash": "c123f8c07012bcd1ad8077c02c2a519dd1237db0e8de4c31531ac564126cf8fa",
+      "id": "n-f09932014b380680",
+      "revision": 1
+    },
+    {
+      "content_hash": "d447888385bb174c582689d9dad40e12fefce35b314e0a170a49167d3468b686",
+      "id": "n-949f0bfc0c796e62",
+      "revision": 1
+    },
+    {
+      "content_hash": "fdd31cbaeeb9987d6041fb5028c2a176ce2e23bac1a60835a8dfb6abaf93bc2b",
+      "id": "n-f12e7c2bb2364295",
+      "revision": 1
+    },
+    {
+      "content_hash": "e23440dedd53a46641ed1a0e0bb5048c1cbb355b633f767cc1555aa5924f8c5d",
+      "id": "n-377eef01456b5df7",
+      "revision": 1
+    },
+    {
+      "content_hash": "9d1b8d46f81c91eb70a538508e03ef7b5ff5863843e8265d4d52cc5efc4db548",
+      "id": "n-4fb082474723186c",
+      "revision": 1
+    },
+    {
+      "content_hash": "3683953d685565bae4165fda54b64d20c782459fcb6055b8d80faad142709e51",
+      "id": "n-59613958125da35c",
+      "revision": 1
+    },
+    {
+      "content_hash": "8e916491eaa8acb084397b93f17f3b3f200c9ff916b7495e0e2fc74789d2c6d4",
+      "id": "n-8f11113e160f05fe",
+      "revision": 1
+    },
+    {
+      "content_hash": "347ca9cd05c153a55afbd1253ed44865ddaaa076cdc23c63ae02f3a448aee86a",
+      "id": "n-137dbeca62da7e63",
+      "revision": 1
+    },
+    {
+      "content_hash": "ef6397f653081b9b0c8b03025753508e0feedc6f90608e29f724851f1baea0b7",
+      "id": "n-78bd5b3f3f5486a7",
+      "revision": 1
+    },
+    {
+      "content_hash": "fcb979da2e9efd55b68a2b68133a46c247704f6ed5b37973fda66b8e113341aa",
+      "id": "n-1cf70e74c4225cce",
+      "revision": 1
+    },
+    {
+      "content_hash": "00e926671dc39fb0fd728549f675f6621505c5804f021be64e88dd1235cd567a",
+      "id": "n-f5431b69afe16a2d",
+      "revision": 1
+    },
+    {
+      "content_hash": "ac70119d2f4ff7f6149e2eb86e55d095bfbd859628606f3c5172d17392f59c8f",
+      "id": "n-5e6a5a597df4af65",
+      "revision": 1
+    },
+    {
+      "content_hash": "65a37c1e807554d6a1aacc8b1db233cf93fc6effcfd78b340c203e03cd693e08",
+      "id": "n-0e2c8ab55e43d436",
+      "revision": 1
+    },
+    {
+      "content_hash": "b7859e3eb844f48ad9c08ee0242ee85b8212fde625b834926d91ab1058e9dcb1",
+      "id": "n-c40ac682358d9733",
+      "revision": 1
+    },
+    {
+      "content_hash": "dac8df1763fb79bde0d9a5dc496ac41fb8a2b2ab716021ef2d684491a1ffae9b",
+      "id": "n-0d4e9e51427c707c",
+      "revision": 1
+    },
+    {
+      "content_hash": "4330497e141a7610dbb02f6689bcc2464d2dda93efb2e868744b71bcadfb91de",
+      "id": "n-f0508f53b6d9fa8b",
+      "revision": 1
+    },
+    {
+      "content_hash": "e6969e6a0476d4db8d2825f7f74876d31e8a12764a7fa2eb976c4c548d86dc10",
+      "id": "n-04b700011ceebdf7",
+      "revision": 1
+    },
+    {
+      "content_hash": "d99f2f76e4c899cd3f5912fe0217aca0dea9ea2c1d2454d2e232b8026e9304fa",
+      "id": "n-59c119577e71957f",
+      "revision": 1
+    },
+    {
+      "content_hash": "fa995b83a5a860ceccd23da1c64ecddf887813c63e57c71fec114cadfbf80279",
+      "id": "n-176bb4a7465cae28",
+      "revision": 1
+    },
+    {
+      "content_hash": "717bd7dcc1dddfefcfa2974d8bb5125aaf97f7c803bb0fd62d96b2fdd5383b05",
+      "id": "n-a0522ed3a9cc1cdd",
+      "revision": 1
+    },
+    {
+      "content_hash": "b0bcdc6de05cf8821fb7142c21e399d9e0da84bb02f5c49dc87dec64c074ff5a",
+      "id": "n-3d4a71fa5c4d2e58",
+      "revision": 1
+    },
+    {
+      "content_hash": "c349edc33c89cfeeaa9d823f1cf1628db0e5fa605f458c8a2a0cb4c73dd6e6c0",
+      "id": "n-1ffac8bdf1c5113e",
+      "revision": 1
+    },
+    {
+      "content_hash": "89be31a57b9c86e76dbb6a0bf201bda76b312271edfecacad3a70d630d201c9c",
+      "id": "n-362002e9b53ce644",
+      "revision": 1
+    },
+    {
+      "content_hash": "63a510e0280e7c89012fb8ae2e4ba043e6e4748122382a8eaf97265d8300d582",
+      "id": "n-bde86651380b84b3",
+      "revision": 1
+    },
+    {
+      "content_hash": "1bff36aebf4360cd80fbab3c70487ef511edf0ea192fa7f97eae05c0d5c47ce2",
+      "id": "n-25b22586b978d58b",
+      "revision": 1
+    },
+    {
+      "content_hash": "a04fa67c1dabbaeec3e4e7d0f1af11fb9c76f5ac73faa177edadbf18c871cc7e",
+      "id": "n-bdd73e4764ef30a9",
+      "revision": 1
+    },
+    {
+      "content_hash": "28908193a274b494df0ba0539644b8cbd3675ac85b2a391e37a4df06ef452be1",
+      "id": "n-da029a0b0024aeff",
+      "revision": 1
+    },
+    {
+      "content_hash": "ce06809d4aa79a649372af328415a843047b77c343c9402a3b7ca55a576aeda6",
+      "id": "n-4b3ce2989c4537a7",
+      "revision": 1
+    },
+    {
+      "content_hash": "9e4e5f5a9d5132ccadd171c603a00cbe5bf7a8db0f2d0a0d66cef8e62a6e1930",
+      "id": "n-63939ee31dca85eb",
+      "revision": 1
+    },
+    {
+      "content_hash": "743096fcd0be4207c40b3a24083c778a8f1f7e0095f6b78a194f92d6e0cae334",
+      "id": "n-af7c7c4eaf0c17ec",
+      "revision": 1
+    },
+    {
+      "content_hash": "77452d2446406b81f2e22f9b1ec3ed5179744b32f70ecb20e3f57f5eecd25877",
+      "id": "n-b1e11ddd5ccb534d",
+      "revision": 1
+    },
+    {
+      "content_hash": "6e54d131fa9f177612cc46962339f9444504c32df92fff0101d4815631e98c66",
+      "id": "n-f08b856dbb81ad89",
+      "revision": 1
+    },
+    {
+      "content_hash": "7e0c61b2bfdfcec0586e9254aa43b93f4744fd82c164357e7bc8e7103177e39c",
+      "id": "n-fbe8c333f47fa6ab",
+      "revision": 1
+    },
+    {
+      "content_hash": "9db56c7d975c5dac4294e62771d628692265242d03ed6b675e78264a4661e993",
+      "id": "n-e65c831a6590ea2c",
+      "revision": 3
+    },
+    {
+      "content_hash": "35b246ce369a8ff44ebe1c68e6e3a6a1e49ea5cddbc49822574a3b5c2dd46972",
+      "id": "n-40c9d28c038972af",
+      "revision": 1
+    },
+    {
+      "content_hash": "31f6b2e6d6a9f27d54a8e5a060bd421bfc711438c99215df09456dfa3b5927b3",
+      "id": "n-1d16e2e77cb91e77",
+      "revision": 1
+    },
+    {
+      "content_hash": "f47b0c50bf183f1dfeae3b2b07ea4d3af6f73006fce538ddb4bd465c6691fec5",
+      "id": "n-a7f15b393a380648",
+      "revision": 1
+    },
+    {
+      "content_hash": "b4bb2443774ac3300ce9f869838c80193731d3663c68afce86079c24350f59d4",
+      "id": "n-28d386ef4271661d",
+      "revision": 1
+    },
+    {
+      "content_hash": "11fc8401b6374d25d7d193b12e6c771e15019f4230297170a4a920c26650de05",
+      "id": "n-b257813387ae2476",
+      "revision": 1
+    },
+    {
+      "content_hash": "685c86f058832a29a8bdb3910b6190bebc694e8fca42c71a7a8d31b44745bda9",
+      "id": "n-a74f85a10a2a484e",
+      "revision": 1
+    },
+    {
+      "content_hash": "8edcb94d2e2102c81e85cb3f708074fce043c66e3bd768dd8a483b19d19c21f9",
+      "id": "n-59debe6699d1a881",
+      "revision": 1
+    },
+    {
+      "content_hash": "771efb266b5a000f544753863c795cc3e7776835e9d67248bca30fb542e76db3",
+      "id": "n-e5a261f2212363c0",
+      "revision": 3
+    },
+    {
+      "content_hash": "380add130c69a02a5a2903b3780571266a6d07b1609910ac385d06dee6f998a1",
+      "id": "n-4a5679159ae260a4",
+      "revision": 1
+    },
+    {
+      "content_hash": "b1070288f56d2fdac0dbbe4ef2f46fdb00472bc189c4332b065a3899a32c7bc0",
+      "id": "n-659e7cef45a06a64",
+      "revision": 1
+    },
+    {
+      "content_hash": "234b577b5ae2568d7778ae1433165cfb60148c9791da8100f503b0d2c4199d1a",
+      "id": "n-653fd9614cbb175e",
+      "revision": 1
+    },
+    {
+      "content_hash": "39d64bd68bc848e058ef4af25989f743f7e4ad5cd1687a47afd38b7add0c2dbf",
+      "id": "n-a08f3aa00dcb54ca",
+      "revision": 1
+    },
+    {
+      "content_hash": "5cbf15b5885cae5dc1312e3f1f30ea946845e5e8ae0fa387446a97ede5c68173",
+      "id": "n-6d40e94956d57a3d",
+      "revision": 1
+    },
+    {
+      "content_hash": "c28fa1d439f84d0af77965e826153fa398b149ff966963ff40c6848f07ee09c2",
+      "id": "n-5fc562e00d3c8772",
+      "revision": 1
+    },
+    {
+      "content_hash": "52b87b5211ce7402d26dd566984c40de1357d08c5fb484debcd5f0837ce0edf7",
+      "id": "n-5ee1829e545c17d8",
+      "revision": 1
+    },
+    {
+      "content_hash": "6c386ca5e80afe3101295c2ccc3081c9ec0ccac489a340d904b579aea154cfe5",
+      "id": "n-92921c6cd55cf2c5",
+      "revision": 1
+    },
+    {
+      "content_hash": "d8ce5d3b71d9403c28c738f0c82f07c19b990dbfcec43c7273e2c1ac01613cbf",
+      "id": "n-08d13cf9a3702bdc",
+      "revision": 3
+    },
+    {
+      "content_hash": "4d59ef840a54da17b4192cc092794be72e9130dd0776687812b861babf6c4428",
+      "id": "n-79571942b70ab068",
+      "revision": 1
+    },
+    {
+      "content_hash": "b66a75c4aae673c73be12510bd0ea877b21fc934ed1d7faa85d09eccb127c505",
+      "id": "n-10602515a21fbbfe",
+      "revision": 1
+    },
+    {
+      "content_hash": "9ac645b2ae375786009e22728e9149aa98f68b86610a382eab1252155b78287c",
+      "id": "n-11d0d08049e66bff",
+      "revision": 3
+    },
+    {
+      "content_hash": "77ba2102421316101e61f86b505983cd0b9d65834c02e81c82cfae04a014f49f",
+      "id": "n-00a4d28be1d3fff7",
+      "revision": 1
+    },
+    {
+      "content_hash": "3a60ec278ed16cacca7dbf7a99eff6c1203bc0f6c2ffcdbb7812979e99ae63a8",
+      "id": "n-37541e2154bed36e",
+      "revision": 1
+    },
+    {
+      "content_hash": "dd5dd6d5e3e3de3dea1c91bc6f8cd59da8712b8c98da0350be5537a20bd6dd3e",
+      "id": "n-abb32c5258f2dcdc",
+      "revision": 1
+    },
+    {
+      "content_hash": "19d576f48f18d4ab9efeb4be464e949242c25562b0c424b77f72b58550fd5668",
+      "id": "n-98aafcfbecbba052",
+      "revision": 1
+    },
+    {
+      "content_hash": "d733427aa6a7fce2364068369d6276525680e6c01ced05720b476a7231ec9d34",
+      "id": "n-5aca2a5c2d02aed5",
+      "revision": 1
+    },
+    {
+      "content_hash": "e3030dc4977008b8178677ee6619804a231ca21c41ac7a45c1d1358193badd65",
+      "id": "n-ba3a926f290315fe",
+      "revision": 1
+    },
+    {
+      "content_hash": "19771915c545007d7e76d1791a0c5a5a0cb25119a6b34cebb2f10bd7143d1ec5",
+      "id": "n-1314dadd4d256c7f",
+      "revision": 1
+    },
+    {
+      "content_hash": "699d3a9794f2075decb90beed5d2428eba5ab413dced7fe8fe622a7b66b76449",
+      "id": "n-b41aa691b922fd9a",
+      "revision": 1
+    },
+    {
+      "content_hash": "14848d759b2ec3d2e9774f7ad98ffabe1b6fe39fc482aff237d2a4cf3577c5e6",
+      "id": "n-a40260ab248df1ac",
+      "revision": 1
+    },
+    {
+      "content_hash": "b633c875e5a52571de6498bed1e566751e216934c2f782e5d93e2a44c981e91e",
+      "id": "n-1cd457f611fe759f",
+      "revision": 1
+    },
+    {
+      "content_hash": "cef64d01f09fc7cfeacecd3299f44021c4352a2cd611012a977bcd11acbec99c",
+      "id": "n-51e43e8533021942",
+      "revision": 1
+    },
+    {
+      "content_hash": "6aa156a854a9d1b13f48fc99e550d9aefd80e7d52b4add603b63c65543b5d190",
+      "id": "n-a0e2d650ac5b8ed0",
+      "revision": 1
+    },
+    {
+      "content_hash": "a847cf1de1a9f0e30007bf96d39337d83225d9c969f3efaeb21a823c1772ad45",
+      "id": "n-035354dbfc356f3e",
+      "revision": 1
+    },
+    {
+      "content_hash": "ae764bacb4945b9acc61393ba0cf172e88d89ab7f7e174a795ffd679d849d7c8",
+      "id": "n-9c3064c87aae7ab3",
+      "revision": 1
+    },
+    {
+      "content_hash": "cf2cd8f5eb4c453fc8fc3edcb93f2226a7f77cfdfaa584774b956691c655fe08",
+      "id": "n-12f2533614a160c0",
+      "revision": 1
+    },
+    {
+      "content_hash": "d09e70affbd9be5c0655df116dd7b7f70d30ff07dbf2c99a3b7e72a5affa2a8a",
+      "id": "n-4c7a0674fec097de",
+      "revision": 1
+    },
+    {
+      "content_hash": "b75f9e35bcd4803fba233e16082af1bc4374cca87874aaa2707c3d83c5b99162",
+      "id": "n-88a2a7043f1f80d2",
+      "revision": 1
+    },
+    {
+      "content_hash": "554534fbe39932d71698dfb0419b6a5e47573b3940788f01c51335f45c72c0f5",
+      "id": "n-ac37cd5eb65e7196",
+      "revision": 1
+    },
+    {
+      "content_hash": "0f4863e0f944981ce9acd67ccbcdd96b75933e0d33b81fe05a1362330327ec7a",
+      "id": "n-6206e429dde1a3e0",
+      "revision": 1
+    },
+    {
+      "content_hash": "87f5b8e17b28eb90ba04d24118caead2c90e41da7a534095b2a1735079588bcb",
+      "id": "n-1fc3ea8b4c9213d5",
+      "revision": 1
+    },
+    {
+      "content_hash": "9360bfed57024bb8de120cabf2b1687caf48b18eea30f6d3c637397eb13451f6",
+      "id": "n-75d35177be89e689",
+      "revision": 1
+    },
+    {
+      "content_hash": "3c27f9ad05286452d832dcc8e963dfe99cdf5ec86990c44541baf65c54f4c7f5",
+      "id": "n-3ee1328937010594",
+      "revision": 1
+    },
+    {
+      "content_hash": "da9acf98c912ef8ec50ae5e7428077f9d910ccde61883d1e7c64c99daaf901c9",
+      "id": "n-2cbad5a811348d58",
+      "revision": 1
+    },
+    {
+      "content_hash": "8e53b9d1f0796086472e735155f58d8e1876542cc80ba3d16e5a7c181cd71369",
+      "id": "n-3a8fbcad6114ce83",
+      "revision": 1
+    },
+    {
+      "content_hash": "74c3c3eb732d7b2cd4dba36c77e913152ff76cb9444215c1092facb96f736504",
+      "id": "n-9afb95332b083d24",
+      "revision": 1
+    },
+    {
+      "content_hash": "2c17570ca05ec7b3ac69a6bb1ff11c454caed94c08209ef1602e9afdcdc723cf",
+      "id": "n-e27e2b59be5d0e58",
+      "revision": 1
+    },
+    {
+      "content_hash": "3786393e0eed1bcde98d671080e9ed652f65fbe4416f7d75c7db58e020d18525",
+      "id": "n-60420afb22c092b1",
+      "revision": 1
+    },
+    {
+      "content_hash": "e1339e237d66d818befe7cda1cc24656cb497e4de096b22f549b79cbdddd8c02",
+      "id": "n-71bde34ce820605b",
+      "revision": 1
+    },
+    {
+      "content_hash": "ca5f9250ecc86aabe23b8c9b4d4b9ad1b8c4510d7d71d9a637efa046f4d5b8b7",
+      "id": "n-62a034b7e9d96269",
+      "revision": 1
+    },
+    {
+      "content_hash": "8096dd886515c1bebb437634cc91b7bb1a8ff064078337a2dc4b584248eb5d95",
+      "id": "n-b8f147f12daff5dd",
+      "revision": 1
+    },
+    {
+      "content_hash": "def4d31105bfdcf182df733c58799651732ad1511d3dd2511b220060200bc6da",
+      "id": "n-33e47fd4ec6e1420",
+      "revision": 1
+    },
+    {
+      "content_hash": "f3bc61a846181884b33c8058f10724dcccb04475cb7f6d587c168a219f653c10",
+      "id": "n-9c074634688bd13f",
+      "revision": 1
+    },
+    {
+      "content_hash": "ef3b9877e9a242b68942a600fdc6d178869cad244d41501a418ec3e22ba2f7b8",
+      "id": "n-a1af125575721a0f",
+      "revision": 1
+    },
+    {
+      "content_hash": "d07c3e2641f0727515921bb338cb7847741826bf16aec25552359b2102dc92f0",
+      "id": "n-4785f2552b42aa6d",
+      "revision": 1
+    },
+    {
+      "content_hash": "da5d6617514ad7f5ec9692db21dbf2d5709442e174a1232e12b2f4d7ba1aa348",
+      "id": "n-0b1d2f589fd1c9a7",
+      "revision": 1
+    },
+    {
+      "content_hash": "56f2002a6db7ba01af1a2fe33fb10f008842c13d429f4276feb4abefbd281bc9",
+      "id": "n-c13256a42ca90222",
+      "revision": 1
+    },
+    {
+      "content_hash": "027ab626f793f7b1e68ab357f7d469e2cb8a6f8400178e99df48e46040fee6c4",
+      "id": "n-992febc6d2b97fb5",
+      "revision": 1
+    },
+    {
+      "content_hash": "dd591860e96c33e3d41ba05bfafe2ab5fed6fea4852013f7209d6d1b7bc8aced",
+      "id": "n-ed4fa3ae739dde1b",
+      "revision": 1
+    },
+    {
+      "content_hash": "06c7411136a12301257dfd43ba8832e11c2e169b1ec7776ff72ff72311b2f2fd",
+      "id": "n-c3b49a13bf01726c",
+      "revision": 1
+    },
+    {
+      "content_hash": "489a8d6881e6132d69271fc529c2382407d0a9bb1d9224418b5c5bbb75c08e32",
+      "id": "n-ffe5ffc9602c16ea",
+      "revision": 1
+    },
+    {
+      "content_hash": "7adb1f3fc8e4378055eb44197182c2ab79bbb8a90c98f7eb6274b247631d1030",
+      "id": "n-178830dda6be0098",
+      "revision": 1
+    },
+    {
+      "content_hash": "7bf033582349847d8fa3dff1b700bcfa3cbe64368d66083d2efc46d83c5352e3",
+      "id": "n-5b48813eeaf2fc67",
+      "revision": 1
+    },
+    {
+      "content_hash": "c722936c606d65ce0df9ace78fa5888af1673ccfa1bc472d0ac73788aba74a61",
+      "id": "n-34f335bbd90a7400",
+      "revision": 1
+    },
+    {
+      "content_hash": "050aa1feb204659e394e5ff333f11d0ab44a10d01dfb4482a86a86f5fd69e7c7",
+      "id": "n-faeeec92b355e088",
+      "revision": 1
+    },
+    {
+      "content_hash": "c851effe4965b3adf0e5ffb0c3d6b2ca87f8214646b3325d808d5ec24722b8e6",
+      "id": "n-a0d4b5c914f15ee5",
+      "revision": 1
+    },
+    {
+      "content_hash": "5fe31401c9e19f4864af46dff6f8e9f6935993c1786461b15aaf4d25e14fe02d",
+      "id": "n-90a348b3b3838703",
+      "revision": 1
+    },
+    {
+      "content_hash": "ece7611fc7b758ed7f3a88fa3505d2975e04d3b3bb20380f1975ab4bc72f8e7a",
+      "id": "n-55612133212fe686",
+      "revision": 1
+    },
+    {
+      "content_hash": "35bf15827e0d554e6ac18cfe26ef6f481857d6bbc6f80cdb46e35ce94bb5adbb",
+      "id": "n-e7264097e5eed112",
+      "revision": 1
+    },
+    {
+      "content_hash": "3a57813352bbbd4f51de17a6b5d41221c731148c6342a458889e85043dc17cec",
+      "id": "n-0def1610a7830099",
+      "revision": 1
+    },
+    {
+      "content_hash": "ca7d4ad27eb79bfe96a625254a193bd9a8e6c611223bacd8b276a2ece94386e8",
+      "id": "n-d94c4a63b77a0585",
+      "revision": 1
+    },
+    {
+      "content_hash": "403350dcadeb9fb5f29f66342edf82a63bf301fd4b1f869056683510baa7d8ed",
+      "id": "n-51396c520b39063e",
+      "revision": 1
+    },
+    {
+      "content_hash": "3a5509efebf34331240ec9dd9eec3bd92441480cddc28456018e62f6fe889ca7",
+      "id": "n-4a322c4bf3d16408",
+      "revision": 1
+    },
+    {
+      "content_hash": "7c9943ac3c7520e47f39b72873b6c83ddd932824911fabdff8e4c03037690efb",
+      "id": "n-32498c9165e6ff9a",
+      "revision": 1
+    },
+    {
+      "content_hash": "205954309523c48ab353d2f8cbcc99f74a1120cc4a9505a76dfe23bfad41eb12",
+      "id": "n-cb1ba8e56d526057",
+      "revision": 1
+    },
+    {
+      "content_hash": "d8a7e84ad9ed4a72b80e619b7217ba6bbb7ea4c98e839a1c9068c8befccc8b30",
+      "id": "n-d71b339a563b0625",
+      "revision": 1
+    },
+    {
+      "content_hash": "762afc7302eb78e3ffebc4cb120c1309f4b8043e13b1bc0c2acba8c995e67c68",
+      "id": "n-49f91f902b3febbd",
+      "revision": 1
+    },
+    {
+      "content_hash": "89898b48d800c3e50111ed4b2722b6148396724a9bc38872d5c0eeff88a5451d",
+      "id": "n-de44ca994a8da1dc",
+      "revision": 1
+    },
+    {
+      "content_hash": "2236b438da69f9eda0fcab4d41e68a61d3718d9b24833acc1e98b4f238e16ad9",
+      "id": "n-d9ad28be828e6930",
+      "revision": 1
+    },
+    {
+      "content_hash": "56d2fddcbb21e8eab1b33fb7fa0d6461a397f4420eb675082cc2588ae59e3e49",
+      "id": "n-cb00bb9031b0bb9c",
+      "revision": 1
+    },
+    {
+      "content_hash": "3b32246b8dfc09bbabfd3373c4b1b10795e01065ecb5180cf9b1b40a14ae9aff",
+      "id": "n-28d797e4e64801cc",
+      "revision": 1
+    },
+    {
+      "content_hash": "66994d9cfb8548380eb1e0a0f6d52d59c7b7ba39a46fbbc17c77d7c55f5646fe",
+      "id": "n-57ec7e28e3a897e7",
+      "revision": 1
+    },
+    {
+      "content_hash": "f08f16fff72073a7e6f6970dad14096809bc9614fa95115e9dbed175565ec150",
+      "id": "n-de384a14a721c3ee",
+      "revision": 1
+    },
+    {
+      "content_hash": "2f509fab6d0f2d79973cfd4590cec7f4c6c400380b5944b3da928ce7c6fc657d",
+      "id": "n-beb9eb37aad92253",
+      "revision": 1
+    },
+    {
+      "content_hash": "643a912536c4dc9c4d2beb56fa1e97d5e3a9af07a22719886782c3cb06163c0f",
+      "id": "n-6cd52ca69a5dc08f",
+      "revision": 1
+    },
+    {
+      "content_hash": "11f5b6a318a653362d3b4ed06aa0f2d274fb86ba3ba2b5a1610abcc56f7e6ba1",
+      "id": "n-34c92faac94e31d9",
+      "revision": 3
+    },
+    {
+      "content_hash": "689861207961844370339d0d5facb868f65b781e75275bce8b9767912b8b016b",
+      "id": "n-3366196ccb5b97c5",
+      "revision": 1
+    },
+    {
+      "content_hash": "e801dda4bc54a62c32e9e703a6b04f88af552c039bb7dc0fa5d65d207e584cc3",
+      "id": "n-1fb91bbf5e989ead",
+      "revision": 1
+    },
+    {
+      "content_hash": "b177ef1551f92d8967d864f9adadf6793b46e8d642bf2125f7133ef47834bbc6",
+      "id": "n-1a51c7f417606941",
+      "revision": 1
+    },
+    {
+      "content_hash": "a69c05b6ffede31021600ad401db75f9e583a180fb67fc5379dad781e2487838",
+      "id": "n-501389302877d7e0",
+      "revision": 1
+    },
+    {
+      "content_hash": "c81b1ea940ba39b79882279788ddf4dc8379a3d12fc7a82f41af7e77875b82de",
+      "id": "n-1568101e0cb63987",
+      "revision": 1
+    },
+    {
+      "content_hash": "720d26b992999c35d724f17c1e59ea3d5ae11aa55c8246ccafd62979b00a6001",
+      "id": "n-19b3b08da1fa40bd",
+      "revision": 1
+    },
+    {
+      "content_hash": "af6bc2c2772f2abd572cf1c9798b1f695308f4d9441eac2eed88ceda53cdfacb",
+      "id": "n-70817282fae2b5ef",
+      "revision": 1
+    },
+    {
+      "content_hash": "e6da5d774be8202a7f4a06a138c6af49bf6f4379792c7817528eb76f572d45db",
+      "id": "n-e0c26e49b5f3ea5c",
+      "revision": 1
+    },
+    {
+      "content_hash": "5c9427ac5fd17aef5c9cf8b1c6d6cff878f6ec4810111dc5f134370c2ea9bcd2",
+      "id": "n-308f801127f5d34e",
+      "revision": 1
+    },
+    {
+      "content_hash": "dd3f4d1eb2c04810d0f3ba4f900de3d779ad441795359ce244c8f7a5a102fc9a",
+      "id": "n-d77d3a9da81ade63",
+      "revision": 1
+    },
+    {
+      "content_hash": "1c3194b7b2102dd0f6e4f398763c0af422acb9960a6ba9df4907f750be76dea7",
+      "id": "n-be05b6030a0d05fd",
+      "revision": 1
+    },
+    {
+      "content_hash": "52bb5b2f5af042ea4e953887e43385b9c5fa03c661e5afb78425228e1a27e713",
+      "id": "n-40cc51c99e506b2e",
+      "revision": 1
+    },
+    {
+      "content_hash": "6d043ad81531b6ba9b68c74f6b2e297144d18ceaceee49361e44b516aaf9654e",
+      "id": "n-79c25eb1b9973b33",
+      "revision": 1
+    },
+    {
+      "content_hash": "676e21b97ac1f8b7c7c7c64bbc26871ed9b284899d4ac06560a68f7ec9c2ee4c",
+      "id": "n-8c156613a3aa63cd",
+      "revision": 1
+    },
+    {
+      "content_hash": "77458276a18abf95b5e0223f8a09e92b4a15acfd2cbdab2f2f17598f44c1435a",
+      "id": "n-d53b3958e7be1173",
+      "revision": 1
+    },
+    {
+      "content_hash": "b8f050822013b8ec8e938838fef8f573827e075bb721714a1b10e48e06e6149b",
+      "id": "n-bdb36375d8f08496",
+      "revision": 1
+    },
+    {
+      "content_hash": "8104b7d8ef719721abec823cc8ca936fa77f0a275a2e6400deed476a397202c7",
+      "id": "n-adf83aae1da18a77",
+      "revision": 1
+    },
+    {
+      "content_hash": "f7c1e2667394b6333346dbd236f518fa177274c1658d9c9eb3384f47aea6773a",
+      "id": "n-306b913e854b8097",
+      "revision": 1
+    },
+    {
+      "content_hash": "61f936d16d9e37341243d802f704e09f2a19a656ac9a3bba643cf6b1f675f1fe",
+      "id": "n-dc9829b0ba4d9e47",
+      "revision": 1
+    },
+    {
+      "content_hash": "cc4feaa0cb77e1881f91f610cb97ea6c872f5c36b31e483b598648dcbe544a82",
+      "id": "n-a8d5600390b879fd",
+      "revision": 1
+    },
+    {
+      "content_hash": "c9018e4e57ee8925ef7bd3c8107e1dd649eb6a7a08a05e1a5dde643704211c55",
+      "id": "n-e26b2ab156037ac1",
+      "revision": 1
+    },
+    {
+      "content_hash": "73939dc19067d4a7cf62fc4b11b57beac34530523d70e44af592b7dbf4c0326f",
+      "id": "n-7690fc1806759630",
+      "revision": 1
+    },
+    {
+      "content_hash": "b385044e06fdca38a3d7d766fd1ab82121e637f0786621f8694394e9d2306c65",
+      "id": "n-dff53422c9b9330c",
+      "revision": 3
+    },
+    {
+      "content_hash": "105cf985f95b97cb60cfca12df300efa3725bd507b143ee26298037d73c875c2",
+      "id": "n-58376f5b7de58b17",
+      "revision": 1
+    },
+    {
+      "content_hash": "1d7739147e776b1218738a668bf8d870a5f94807bdd1936ec19b39ff69b7fc2a",
+      "id": "n-15344018185fd326",
+      "revision": 1
+    },
+    {
+      "content_hash": "3b55c557facda8790dcf6899b3c6e055bd2f474f7f67f4313c0b41a8283fb4af",
+      "id": "n-dd8f2b86441b8301",
+      "revision": 1
+    },
+    {
+      "content_hash": "61d654227e731889cad9189e1a0b754bb6bcde72a6f797f7f91f72f8711f7923",
+      "id": "n-83cff752e5b3535b",
+      "revision": 1
+    },
+    {
+      "content_hash": "9715ba519842bbd56a5966637db4ca8dfcbceab2bf1f142b54a3e27ede787388",
+      "id": "n-d44129ccd85691a8",
+      "revision": 1
+    },
+    {
+      "content_hash": "100fe9522ecb41c099a1c217aa710b36c98165913af47a8bb37f5286a03574aa",
+      "id": "n-0279c44178bba984",
+      "revision": 1
+    },
+    {
+      "content_hash": "9969accf3db40d6b5510970d5d13ddc0618faad29ec1919188297898905a81c4",
+      "id": "n-b27a556cdc54f8b3",
+      "revision": 1
+    },
+    {
+      "content_hash": "98161649ea8ba9a60402700fc15fc06522c99e8389ea7e1b3b3e4ce1e7e43998",
+      "id": "n-c3ea103d7b9202f6",
+      "revision": 1
+    },
+    {
+      "content_hash": "0132859a144efd9f28736ccda88031151e67dd20e195dc808214bc224c40efda",
+      "id": "n-e7e9bd41ed806338",
+      "revision": 1
+    },
+    {
+      "content_hash": "0a2e0e5fcfe00c8d59ada4f7b9cf151d5c05737e9e4908aaf4399e697ad46287",
+      "id": "n-97b0f2e61bbf86eb",
+      "revision": 1
+    },
+    {
+      "content_hash": "7d9db7bc49ab3d129706995ec8a1b018dd8da134ede45791ec7e6f0047546bbc",
+      "id": "n-ed154e13dddea5c8",
+      "revision": 1
+    },
+    {
+      "content_hash": "18762b332443ea9612bf634689088e0ed64892cc3e42cf483b95ec1041b9040c",
+      "id": "n-dc03b645a6f9d4ec",
+      "revision": 1
+    },
+    {
+      "content_hash": "4eaf0e96fa6f3c133d0f1dbc2c31a18433de95ac79dfeb771e2634ff02c4a2ab",
+      "id": "n-d51da574f9126fd7",
+      "revision": 1
+    },
+    {
+      "content_hash": "a476415d34ffe45f31774155aec85f94f9ca5d547702c939bcef7a622848cdad",
+      "id": "n-93f973d9b2fa994f",
+      "revision": 1
+    },
+    {
+      "content_hash": "9a115b7028418cf6462ea095c2816e1036b6a182a72f52aa36e758759dd3058f",
+      "id": "n-4dcbcae7b1728c9d",
+      "revision": 1
+    },
+    {
+      "content_hash": "076b26d39ae5ed158fc1fea0b727e53851c4edd7e9ed0eea16dc18b9b9a51743",
+      "id": "n-9e9b7048e9901e4f",
+      "revision": 1
+    },
+    {
+      "content_hash": "c689fca764bfd0e5c2a76109c59c09763d28a3e8d5b25a5336f190594ea2e29e",
+      "id": "n-d194014580edaefb",
+      "revision": 1
+    },
+    {
+      "content_hash": "6058606bf4768d99c6819341c99945cfffa55f86ad0d968afaf8993b0ca2d999",
+      "id": "n-c7696efcfc16382f",
+      "revision": 1
+    },
+    {
+      "content_hash": "dbcc41a1dada4d9f4a866cc4e4aa18c15e981f428aefbd5876febf47d9a2dc89",
+      "id": "n-991dda89062087ee",
+      "revision": 1
+    },
+    {
+      "content_hash": "e20243dfe75254adefdb28c07ed629a52f129b987c146b2d47d2cc60ff359841",
+      "id": "n-9327c6715003d442",
+      "revision": 1
+    },
+    {
+      "content_hash": "e50958a75173c9b7f4e18f7b3443316133f1ee9d699f0d1a08437feed56019a0",
+      "id": "n-3659517e8f80bef8",
+      "revision": 1
+    },
+    {
+      "content_hash": "0027dcceef71b91b0e4beeac58d2b4bffd00f951bf59542571c920400375f781",
+      "id": "n-af2d59e1bcc77543",
+      "revision": 1
+    },
+    {
+      "content_hash": "112c87d70fa8886b33dd62d2c4513d4b5412cbb9b615c69b8340ae754ad39978",
+      "id": "n-14f694a9d6bb1ccb",
+      "revision": 1
+    },
+    {
+      "content_hash": "50600fb39399edb8e613fc2a818873900ce48d77fb207ecc0fd48a98dd9d04a0",
+      "id": "n-23db08359e4dd3c6",
+      "revision": 1
+    },
+    {
+      "content_hash": "bbceef60c7110182b2cd1d31aa15c5c09809708470872639355d5f0e2f19386d",
+      "id": "n-fdca82df913f7847",
+      "revision": 1
+    },
+    {
+      "content_hash": "c1235477209510ad3e2f9a7f80d5bfdc21c98148a7544d69660d595ede2c179d",
+      "id": "n-e54eb922946ad29b",
+      "revision": 1
+    },
+    {
+      "content_hash": "9f3133f77243b345ffd8352bdc2f927b83b53d45c07358e436a0a7b70026f38b",
+      "id": "n-fdeb7673b3be32b8",
+      "revision": 1
+    },
+    {
+      "content_hash": "c56df27c25dcfdddd27b1331a45255275b784532bcaeeb3991ccd3b79218e3a5",
+      "id": "n-1d1c8c973b6f891c",
+      "revision": 1
+    },
+    {
+      "content_hash": "ee7322fe0fff40822de8929ec25c525b296a51e945f2d2fbbd1456debb8830d2",
+      "id": "n-b38151fb0a1d1093",
+      "revision": 1
+    },
+    {
+      "content_hash": "3dd746da6ceb1927833de6d8ee9d4a1c137d0626c1579dac9caa0e7e9d38d471",
+      "id": "n-3c03c6e904e63e1d",
+      "revision": 1
+    },
+    {
+      "content_hash": "b033385a1723c6c6e9ac12b8b2e512bfa984ffa27b52392cc7de76b7657f878c",
+      "id": "n-a544fcdd6713feb6",
+      "revision": 1
+    },
+    {
+      "content_hash": "0b713e6ed61645ed82c46f11d9bacec51a3ec489f877e243dc9c23723b8b0f95",
+      "id": "n-a17a5ce27ed5c9ce",
+      "revision": 1
+    },
+    {
+      "content_hash": "a83b50c7d902ddd710f5788db6d8a93fdb29703a400a016bbd5e16cf5e64a191",
+      "id": "n-9adb65c413d64d2a",
+      "revision": 1
+    },
+    {
+      "content_hash": "352edde4f291ced5c301204d6f354b549c090ccaa6b335288f502ec69ddd7e14",
+      "id": "n-9cd25dd464f03c27",
+      "revision": 1
+    },
+    {
+      "content_hash": "8bf4622eddc5b56d4031f4dde5648aca7908923f3ea2ee654bae00344be2f513",
+      "id": "n-fc4255be16582141",
+      "revision": 1
+    }
+  ],
+  "kind": "contribution",
+  "missing_evidence": [],
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "plan_hash": "05fb596616cf502d2fac7a2e88d5aed0116f4338676d0d48d853266deb6d6ab1",
+  "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+  "qualified_human_review": false,
+  "selection": "fixed hash order, equal subject cycling, without replacement",
+  "started_at": "2026-10-17T02:16:27+00:00",
+  "status": "complete"
+}

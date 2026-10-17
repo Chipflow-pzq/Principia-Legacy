@@ -1,0 +1,50 @@
+{
+  "admission": {
+    "new_contributions": 0,
+    "new_records": 0,
+    "new_relations": 0,
+    "plan_total_contributions": 0,
+    "plan_total_relations": 0
+  },
+  "completed_at": "2026-10-17T05:13:55+00:00",
+  "estimate": {
+    "assignments": 2,
+    "maximum_output_tokens_before_retries": 114688,
+    "maximum_parallel_requests": 2,
+    "normal_calls_before_retries": 4,
+    "notice": "Ceilings, not a bill. Interrupted requests may be charged.",
+    "optional_reuse_refinement_calls": 2
+  },
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "outcomes": [
+    {
+      "assignment_id": "e67e03ecfac332c9a11d89db72834acaa847f33b8b91d5b013f6508889c5c55c",
+      "depth": 0,
+      "dossier": "C1002",
+      "error": "<urlopen error timed out>",
+      "need": "Turing’s 1936 machine model, universal computation and undecidability arguments. Preserve the exact problem stated; do not replace circle-freeness or the Entscheidungsproblem with a casually attributed modern halting theorem.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf",
+      "state": "failed",
+      "time": "2026-10-17T05:13:55+00:00",
+      "url": "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+    },
+    {
+      "assignment_id": "19e83a9456a61bcd5ba95a34e669f11bb6073bfc030ce7f6f01a3b01fcb30f74",
+      "depth": 0,
+      "dossier": "C1401",
+      "error": "<urlopen error [Errno 61] Connection refused>",
+      "need": "John von Neumann’s First Draft of a Report on the EDVAC: memory for instructions and data, control, arithmetic, and limitations. Distinguish the report's authorship from collective EDVAC design credit.",
+      "parent": null,
+      "role": "endpoint",
+      "source_discovery": "https://cva.stanford.edu/classes/cs99s/papers/vonneumann-firstdraftedvac.pdf",
+      "state": "failed",
+      "time": "2026-10-17T05:13:43+00:00",
+      "url": "https://cva.stanford.edu/classes/cs99s/papers/vonneumann-firstdraftedvac.pdf"
+    }
+  ],
+  "plan_hash": "1bfcd401fa22f1f7d6d90a10b3abbc1943261cae031675e6268114f89974b2d4",
+  "plan_id": "computing-origins-1-4",
+  "started_at": "2026-10-17T05:13:41+00:00"
+}

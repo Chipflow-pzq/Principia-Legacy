@@ -1,0 +1,18 @@
+{
+  "additional_machine_reviews": 198,
+  "applied": {
+    "applied": "5b88f8a2c829a49a0eb8d7d6e68ff6d9852ec7cb987987634a83e45e0a5dd612",
+    "previous_release": "before-86a32de0274d",
+    "recheck": [
+      "r-5b5118415cfa19fa",
+      "r-8ce02eaeed7acf8c"
+    ]
+  },
+  "primary_corrections": {
+    "n-32982ed0f5fdd648": "Repair the page locator and distinguish the reported scores from the authors’ explanation of the gap.",
+    "n-5ee1829e545c17d8": "Repair the off-by-one evidence locator. The next page states Kannan’s result and Proposition 2; the bibliography supports the attribution and date. Remove an unsubstantiated proof-technique assertion.",
+    "n-e2055ae3bf7bfbf1": "Correct a literal carriage return introduced while authoring LaTeX floor delimiters; mathematical content is unchanged."
+  },
+  "qualified_human_review": false,
+  "source_enrichment": "Added two exact locators to unchanged archived bytes; old source versions and anchors remain immutable."
+}

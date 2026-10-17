@@ -35,7 +35,7 @@ def credentials(path=None):
     return key
 
 
-def streamed_body(response, receipt, deadline_seconds=900):
+def streamed_body(response, receipt, deadline_seconds=180):
     """Read documented SSE output with a size cap and a whole-request deadline."""
     start = time.monotonic()
     content, total, decoded_size, finish, done = [], 0, 0, None, False
@@ -125,6 +125,13 @@ class Provider:
         cached = read_json(job_path, {})
         if cached.get("state") == "succeeded":
             return cached["result"], cached["receipt"]
+        if (
+            cached.get("state") == "running"
+            or cached.get("receipt", {}).get("state") == "unknown_possible_charge"
+        ):
+            raise RuntimeError(
+                "This authoring job has an unresolved submitted request. Inspect its receipt before explicitly creating a new task; no automatic resubmission was made."
+            )
         request = {
             "model": self.model,
             "messages": [
@@ -169,7 +176,7 @@ class Provider:
                     },
                 )
                 with urllib.request.urlopen(
-                    req, context=tls_context(), timeout=240
+                    req, context=tls_context(), timeout=180
                 ) as response:
                     receipt["provider_trace_id"] = response.headers.get(
                         "x-siliconcloud-trace-id"
@@ -218,16 +225,34 @@ class Provider:
                 )
                 write_json(self.root / ".work/receipts" / (trace + ".json"), receipt)
                 write_json(job_path, {"state": "failed", "receipt": receipt})
-                if code in {400, 401, 403, 404} or attempt == 2:
+                # A timeout may still be running and charged upstream. Never
+                # replay it (including when a resumable campaign is restarted).
+                # Retry only an explicit transient HTTP rejection or malformed
+                # JSON, with at most two repairs. Truncation/identity/size errors
+                # require an author to change the task rather than repeat it.
+                retryable = code in {429, 502, 503, 504} or isinstance(
+                    exc, json.JSONDecodeError
+                )
+                if not retryable or attempt == 2:
                     raise RuntimeError(
                         f"Provider job failed ({type(exc).__name__}, HTTP {code}); see receipt {trace}"
                     ) from None
+                if isinstance(exc, json.JSONDecodeError):
+                    request["messages"] = [
+                        *request["messages"][:2],
+                        {
+                            "role": "user",
+                            "content": "The previous response was not valid JSON. Return only one complete JSON object matching the requested contract. Do not use markdown fences.",
+                        },
+                    ]
                 retry_after = (
                     getattr(exc, "headers", {}).get("Retry-After")
                     if getattr(exc, "headers", None)
                     else None
                 )
-                time.sleep(
-                    min(float(retry_after or 2 ** (attempt + 1)) + random.random(), 30)
-                )
+                try:
+                    delay = float(retry_after or 2 ** (attempt + 1))
+                except (TypeError, ValueError):
+                    delay = 2 ** (attempt + 1)
+                time.sleep(min(max(delay, 0) + random.random(), 30))
         raise RuntimeError("Provider retry limit exhausted")

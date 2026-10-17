@@ -1,6 +1,7 @@
 """Explicit correction patches and revision-bound human review."""
 
 from pathlib import Path
+
 from .common import digest, now, read_json, seal, write_json, write_lines
 from .records import validate
 from .storage import corpus, latest_records, manifest
@@ -8,6 +9,30 @@ from .storage import corpus, latest_records, manifest
 
 def impact(root, target, revision=None):
     records = latest_records(corpus(root))
+    shared = read_json(Path(root) / "manifests/topic_memberships.json", [])
+    result = _impact(records, shared, target, revision)
+    affected = set(result["recheck"]) | {target}
+    work_ids = {
+        m["work_id"]
+        for m in read_json(Path(root) / "manifests/work_insights.json", [])
+        if m["contribution"]["id"] in affected
+        or any(a["source_id"] == target for a in m.get("anchors", []))
+    }
+    works = read_json(Path(root) / "manifests/works.json", [])
+    work_ids.update(
+        w["id"]
+        for w in works
+        if any(s["id"] == target for s in w.get("source_refs", []))
+    )
+    result["affected_works"] = sorted(work_ids)
+    result["affected_dossiers"] = sorted(
+        set(result["affected_dossiers"])
+        | {t for w in works if w["id"] in work_ids for t in w["topic_ids"]}
+    )
+    return result
+
+
+def _impact(records, shared, target, revision=None):
     direct = []
     for r in records:
         if r["type"] == "relation" and any(
@@ -35,7 +60,6 @@ def impact(root, target, revision=None):
             for d in r.get("dossiers", [])
         }
     )
-    shared = read_json(Path(root) / "manifests/topic_memberships.json", [])
     navigation_recheck = [
         m
         for m in shared
@@ -71,6 +95,7 @@ def prepare_patch(root, patch):
         raise ValueError("Patch needs reason and nonempty records")
     existing = corpus(root)
     latest = {r["id"]: r for r in latest_records(existing)}
+    shared = read_json(root / "manifests/topic_memberships.json", [])
     changes = []
     affected = set()
     for candidate in patch["records"]:
@@ -92,8 +117,12 @@ def prepare_patch(root, patch):
         r["change_reason"] = patch["reason"]
         seal(r)
         changes.append(r)
-        if old:
-            affected.update(impact(root, old["id"], old["revision"])["recheck"])
+        if old and not _source_anchor_enrichment(old, r):
+            affected.update(
+                _impact(list(latest.values()), shared, old["id"], old["revision"])[
+                    "recheck"
+                ]
+            )
     changed = {r["id"] for r in changes}
     for id in sorted(affected - changed):
         old = latest[id]
@@ -118,6 +147,23 @@ def prepare_patch(root, patch):
         "generated_at": now(),
         "status": "proposed",
     }
+
+
+def _source_anchor_enrichment(old, new):
+    """Adding locators to identical source bytes cannot change older evidence.
+
+    Existing claims continue to pin the old source revision. Any changed source
+    metadata, byte version or existing anchor takes the ordinary recheck path.
+    """
+    if old.get("type") != "source" or new.get("type") != "source":
+        return False
+    ignored = {"revision", "content_hash", "anchors", "change_reason"}
+    if {k: v for k, v in old.items() if k not in ignored} != {
+        k: v for k, v in new.items() if k not in ignored
+    }:
+        return False
+    anchors = {a["id"]: a for a in new.get("anchors", [])}
+    return all(anchors.get(a["id"]) == a for a in old.get("anchors", []))
 
 
 def apply_patch(root, patch_path):

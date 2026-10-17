@@ -1,0 +1,17 @@
+{
+  "applied_at": "2026-10-17T02:28:03+00:00",
+  "impact": [
+    "r-8463d73b3c102045"
+  ],
+  "reason": "Primary source inspection corrects the object with full-group invariance from U to its algebraic closure V, makes the proof context explicit and repairs malformed jet-space notation.",
+  "record_refs": [
+    {
+      "id": "n-200651cd9458e1d6",
+      "revision": 2
+    },
+    {
+      "id": "r-8463d73b3c102045",
+      "revision": 2
+    }
+  ]
+}

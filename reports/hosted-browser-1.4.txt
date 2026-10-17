@@ -1,0 +1,78 @@
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:15] "GET /web/legacy/healthz HTTP/1.1" 200 51
+
+Running 2 tests using 1 worker
+
+(node:68731) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:17] "GET /web/legacy/ HTTP/1.1" 200 468
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:18] "GET /web/legacy/assets/index-DXn6uZEw.css HTTP/1.1" 200 70831
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:18] "GET /web/legacy/assets/index-Dql_PN-2.js HTTP/1.1" 200 1982979
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:18] "GET /web/legacy/api/info? HTTP/1.1" 200 4477
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:19] "GET /web/legacy/api/dossiers? HTTP/1.1" 200 1584509
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:19] "GET /web/legacy/api/search?human=false&offset=0&q=Einstein HTTP/1.1" 200 105603
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:20] "GET /web/legacy/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200 16440
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:20] "GET /web/legacy/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200 26272
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:20] "GET /web/legacy/api/people/person-7105df8608daf28c?human=false&release=1.4.1-exploratory HTTP/1.1" 200 79551
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:20] "GET /web/legacy/ HTTP/1.1" 200 468
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:20] "GET /web/legacy/assets/index-Dql_PN-2.js HTTP/1.1" 200 1982979
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:20] "GET /web/legacy/assets/index-DXn6uZEw.css HTTP/1.1" 200 70831
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:20] "GET /web/legacy/api/info?release=1.4.1-exploratory HTTP/1.1" 200 4477
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/api/dossiers?release=1.4.1-exploratory HTTP/1.1" 200 1584509
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/api/search?human=false&offset=0&q=Einstein&release=1.4.1-exploratory HTTP/1.1" 200 105603
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/api/people/person-7105df8608daf28c?human=false&release=1.4.1-exploratory HTTP/1.1" 200 79551
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200 16440
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200 26272
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/api/works/w-source-446e103d2c7efdb9?human=false&release=1.4.1-exploratory HTTP/1.1" 200 65588
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/ HTTP/1.1" 200 468
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/assets/index-Dql_PN-2.js HTTP/1.1" 200 1982979
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/assets/index-DXn6uZEw.css HTTP/1.1" 200 70831
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:21] "GET /web/legacy/api/info?release=1.4.1-exploratory HTTP/1.1" 200 4477
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:22] "GET /web/legacy/api/dossiers?release=1.4.1-exploratory HTTP/1.1" 200 1584509
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:22] "GET /web/legacy/api/search?human=false&offset=0&q=Einstein&release=1.4.1-exploratory HTTP/1.1" 200 105603
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:22] "GET /web/legacy/api/works/w-source-446e103d2c7efdb9?human=false&release=1.4.1-exploratory HTTP/1.1" 200 65588
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:22] "GET /web/legacy/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200 16440
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:22] "GET /web/legacy/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200 26272
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:22] "GET /web/legacy/api/people/person-7105df8608daf28c?human=false&release=1.4.1-exploratory HTTP/1.1" 200 79551
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:22] "GET /web/legacy/api/contributions/n-5ab591087d7d3fb9?release=1.4.1-exploratory HTTP/1.1" 200 27268
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:23] "GET /web/legacy/api/neighborhood?direction=both&dossier=P2150&hops=1&human=false&layers=historical%2Clogical%2Cevidential%2Cconceptual%2Cpedagogical&limit=40&release=1.4.1-exploratory HTTP/1.1" 200 50453
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:23] "GET /web/legacy/api/works?human=false&limit=6&release=1.4.1-exploratory&topic=P2150 HTTP/1.1" 200 1240
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:23] "GET /web/legacy/api/exploration-index?limit=2&release=1.2.0-exploratory HTTP/1.1" 200 3290
+  ✓  1 [desktop] › tests/hosting.prefix.ts:3:1 › hosted build keeps assets, search, profiles and reload within its mount (5.8s)
+(node:68782) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:25] "GET /web/legacy/ HTTP/1.1" 200 468
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:25] "GET /web/legacy/assets/index-Dql_PN-2.js HTTP/1.1" 200 1982979
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:25] "GET /web/legacy/assets/index-DXn6uZEw.css HTTP/1.1" 200 70831
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:25] "GET /web/legacy/api/info? HTTP/1.1" 200 4477
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:26] "GET /web/legacy/api/dossiers? HTTP/1.1" 200 1584509
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:26] "GET /web/legacy/api/search?human=false&offset=0&q=Einstein HTTP/1.1" 200 105603
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200 16440
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200 26272
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/api/people/person-7105df8608daf28c?human=false&release=1.4.1-exploratory HTTP/1.1" 200 79551
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/ HTTP/1.1" 200 468
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/assets/index-Dql_PN-2.js HTTP/1.1" 200 1982979
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/assets/index-DXn6uZEw.css HTTP/1.1" 200 70831
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/api/info?release=1.4.1-exploratory HTTP/1.1" 200 4477
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/api/dossiers?release=1.4.1-exploratory HTTP/1.1" 200 1584509
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/api/search?human=false&offset=0&q=Einstein&release=1.4.1-exploratory HTTP/1.1" 200 105603
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/api/people/person-7105df8608daf28c?human=false&release=1.4.1-exploratory HTTP/1.1" 200 79551
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200 16440
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:27] "GET /web/legacy/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200 26272
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/api/works/w-source-446e103d2c7efdb9?human=false&release=1.4.1-exploratory HTTP/1.1" 200 65588
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/ HTTP/1.1" 200 468
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/assets/index-Dql_PN-2.js HTTP/1.1" 200 1982979
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/assets/index-DXn6uZEw.css HTTP/1.1" 200 70831
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/api/info?release=1.4.1-exploratory HTTP/1.1" 200 4477
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/api/dossiers?release=1.4.1-exploratory HTTP/1.1" 200 1584509
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/api/search?human=false&offset=0&q=Einstein&release=1.4.1-exploratory HTTP/1.1" 200 105603
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/api/works/w-source-446e103d2c7efdb9?human=false&release=1.4.1-exploratory HTTP/1.1" 200 65588
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/assets/KaTeX_Math-Italic-t53AETM-.woff2 HTTP/1.1" 200 16440
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:28] "GET /web/legacy/assets/KaTeX_Main-Regular-B22Nviop.woff2 HTTP/1.1" 200 26272
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:29] "GET /web/legacy/api/people/person-7105df8608daf28c?human=false&release=1.4.1-exploratory HTTP/1.1" 200 79551
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:29] "GET /web/legacy/api/contributions/n-5ab591087d7d3fb9?release=1.4.1-exploratory HTTP/1.1" 200 27268
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:29] "GET /web/legacy/api/neighborhood?direction=both&dossier=P2150&hops=1&human=false&layers=historical%2Clogical%2Cevidential%2Cconceptual%2Cpedagogical&limit=40&release=1.4.1-exploratory HTTP/1.1" 200 50453
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:29] "GET /web/legacy/api/works?human=false&limit=6&release=1.4.1-exploratory&topic=P2150 HTTP/1.1" 200 1240
+[WebServer] 127.0.0.1 - - [17/Oct/2026 14:18:29] "GET /web/legacy/api/exploration-index?limit=2&release=1.2.0-exploratory HTTP/1.1" 200 3290
+  ✓  2 [mobile] › tests/hosting.prefix.ts:3:1 › hosted build keeps assets, search, profiles and reload within its mount (4.5s)
+
+  2 passed (16.0s)

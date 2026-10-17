@@ -1,6 +1,6 @@
 # Optional public hosting
 
-The live example is **https://atlas.chipflow.net/web/legacy/**. The public service serves the immutable `1.2.0-exploratory` snapshot. It does not expose the mutable working atlas or authoring operations.
+The live example is **https://atlas.chipflow.net/web/legacy/**. Reader 1.4.1 publishes the accepted `1.4.1-exploratory` snapshot. See the [deployment record](../docs/DEPLOYMENT-1.4.1.md) for the verified public installation. The adapter exposes only explicitly allowed immutable snapshots, never the mutable working atlas or authoring operations.
 
 The local reader remains a Python-standard-library application. Public hosting adds a small WSGI adapter, Gunicorn and a reverse proxy. `app.py` and `gunicorn.conf.py` were reconciled with the deployed adapter on 15 October 2026. Server accounts, keys, operational backups and private configuration are deliberately outside this repository.
 
@@ -9,7 +9,7 @@ The local reader remains a Python-standard-library application. Public hosting a
 Start from this complete source tree in a dedicated application directory. Use Python 3.12+ and Node.js 24+ with pnpm for the build:
 
 ```sh
-python3 start.py build --release 1.2.0-exploratory --offline
+python3 start.py build --release 1.4.1-exploratory --offline
 pnpm --dir web install --frozen-lockfile
 pnpm --dir web build:hosted
 cp hosting/hosting.example.json hosting.json
@@ -44,13 +44,15 @@ The proxy serves only `web_hosted/` assets and forwards `/web/legacy/api/` and `
 
 The adapter checks allowed hosts, permits GET/HEAD only, bounds queries and cache memory, opens SQLite read-only, and denies unpublished snapshots. It has no source-download, provider-call or authoring endpoints. These boundaries do not replace operator-managed TLS, rate limits, patching and access control.
 
+Personal exploration runs in the browser. When deploying, its HTML Content-Security-Policy must allow `connect-src 'self' https://api.siliconflow.cn https://api.crossref.org https://www.ebi.ac.uk https://en.wikipedia.org`. The example scopes this policy to the app entry page. Check inherited headers: multiple CSP headers intersect, so an additional `connect-src 'self'` policy would still block exploration. In Nginx, location-level `add_header` directives replace inherited header directives; preserve any required HSTS or other site headers explicitly when adapting the example. No server proxy, server key, write endpoint or user-result directory is required. Ordinary reading remains offline. Browsers send personal questions to external services only when readers explicitly start an exploration.
+
 ## Prepare a minimal bundle from an offline release
 
 If you already have a verified offline release ZIP, extract only its required reader files:
 
 ```sh
 python3 hosting/scripts/prepare_bundle.py \
-  dist/principia-legacy-1.2.0-exploratory.zip \
+  dist/principia-legacy-1.4.1-exploratory.zip \
   /path/to/new-reader-bundle --host atlas.example.org
 ```
 
@@ -60,4 +62,4 @@ The script verifies archive and per-file checksums, refuses an existing destinat
 
 Run `python -m pytest -q hosting/tests` from the repository root. Tests use a disposable configuration and the frozen database; no production credentials are needed. For an existing bundle, set `TEST_BUNDLE=/path/to/bundle`.
 
-For each deployment, use a new immutable directory, validate the selected snapshot and frontend prefix, retain the prior bundle for rollback, then verify search, a topic, an insight, a scientist profile and `/healthz`. Deployment and certificate issuance are separate operator actions. The examples in this repository were prepared locally; they have not replaced the currently running site's configuration.
+For each deployment, use a new immutable directory, validate the selected snapshot and frontend prefix, retain the prior bundle for rollback, then verify search, a topic, an insight, a scientist profile and `/healthz`. Deployment and certificate issuance are separate operator actions. The checked-in examples are templates, not copies of private server configuration. Consult the deployment record for the active layout.

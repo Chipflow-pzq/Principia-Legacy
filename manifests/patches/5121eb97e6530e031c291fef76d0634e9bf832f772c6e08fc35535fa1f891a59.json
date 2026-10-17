@@ -1,0 +1,27 @@
+{
+  "applied_at": "2026-10-17T02:43:44+00:00",
+  "impact": [
+    "r-8b67f093717f8810",
+    "r-ab47cb40fc5db7e9",
+    "r-e1593a22a2f5f2e1"
+  ],
+  "reason": "Primary browser reading found an inaccurate ancillary summary of local-limit refinements: the unnormalized sum and lattice probability scaling were conflated with the normalized CLT. Narrow the explanation to the proved normalized-sum result and state the boundary explicitly.",
+  "record_refs": [
+    {
+      "id": "n-ed32a75acb0c02b3",
+      "revision": 4
+    },
+    {
+      "id": "r-8b67f093717f8810",
+      "revision": 4
+    },
+    {
+      "id": "r-ab47cb40fc5db7e9",
+      "revision": 4
+    },
+    {
+      "id": "r-e1593a22a2f5f2e1",
+      "revision": 4
+    }
+  ]
+}

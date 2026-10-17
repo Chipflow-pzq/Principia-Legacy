@@ -3,11 +3,18 @@
 # limit_req_zone $binary_remote_addr zone=legacy_exports:10m rate=1r/s;
 # This snippet belongs inside an existing server {}; adapt paths and mount prefix.
 # Configure TLS, common security headers and logs in that server. Preserve its other routes.
+# Personal exploration requires this connect-src allowlist on the HTML response:
+# 'self' https://api.siliconflow.cn https://api.crossref.org https://www.ebi.ac.uk https://en.wikipedia.org
+# Use the complete scoped policy below for this app's entry page. Do not change
+# the CSP of other applications on a shared server. No server-side provider proxy is needed.
 
 location = /web/legacy { return 308 /web/legacy/; }
 location = /web/legacy/ {
     alias /opt/principia-legacy/web_hosted/index.html;
     expires -1;
+    add_header Content-Security-Policy "default-src 'self'; connect-src 'self' https://api.siliconflow.cn https://api.crossref.org https://www.ebi.ac.uk https://en.wikipedia.org; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'" always;
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy no-referrer always;
     limit_except GET { deny all; }
 }
 location ^~ /web/legacy/assets/ {

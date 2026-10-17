@@ -2,6 +2,8 @@
 import json
 import os
 import shutil
+import sqlite3
+import re
 from pathlib import Path
 import sys
 from urllib.parse import urlencode
@@ -17,12 +19,15 @@ def app(tmp_path_factory):
     source = Path(os.environ.get('TEST_BUNDLE', str(Path(__file__).resolve().parents[2])))
     if not (source / 'build/atlas.sqlite').exists():
         from principia_legacy.storage import build
-        build(source, '1.2.0-exploratory')
+        build(source, '1.4.1-exploratory')
     bundle = tmp_path_factory.mktemp('hosted-reader')
     (bundle / 'build').mkdir()
     shutil.copyfile(source / 'build/atlas.sqlite', bundle / 'build/atlas.sqlite')
-    config = {'default_release': '1.2.0-exploratory',
-              'public_releases': ['1.0.0-exploratory', '1.1.0-exploratory', '1.2.0-exploratory'],
+    with sqlite3.connect((bundle / 'build/atlas.sqlite').resolve().as_uri() + '?mode=ro', uri=True) as db:
+        current = db.execute("SELECT value FROM metadata WHERE key='current_release'").fetchone()[0]
+        releases = [r[0] for r in db.execute('SELECT id FROM snapshots') if re.fullmatch(r'\d+\.\d+\.\d+-exploratory', r[0])]
+    config = {'default_release': current,
+              'public_releases': releases,
               'hosts': ['atlas.example.org', 'localhost', '127.0.0.1']}
     (bundle / 'hosting.json').write_text(json.dumps(config))
     return HostedReader(bundle)
@@ -140,3 +145,39 @@ def test_cache_is_bounded(app):
         assert request(app, '/api/search', {'q':query})['status'] == 200
     # A single item is permitted only if it fits the configured budget.
     assert app.cache_size <= app.cache_budget
+
+
+def test_public_exploration_index_is_capped_read_only_and_snapshot_pinned(app):
+    first = request(app, '/api/exploration-index', {'limit': 200})
+    assert first['status'] == 200
+    assert len(first['json']['entries']) == 200
+    assert first['json']['total'] == request(app, '/api/info')['json']['counts']['contribution']
+    assert first['json']['release_id'] == app.release
+    second = request(app, '/api/exploration-index', {'limit': 200, 'offset': 200})
+    assert first['json']['snapshot_hash'] == second['json']['snapshot_hash']
+    assert {e['id'] for e in first['json']['entries']}.isdisjoint(e['id'] for e in second['json']['entries'])
+    assert request(app, '/api/exploration-index', {'limit': 201})['status'] == 400
+    assert request(app, '/api/exploration-index', {'release': 'working'})['status'] == 404
+    assert request(app, '/api/exploration-index', method='POST')['status'] == 405
+    csp = first['headers']['Content-Security-Policy']
+    assert 'https://api.siliconflow.cn' in csp
+    assert 'https://api.crossref.org' in csp
+    assert 'https://www.ebi.ac.uk' in csp
+    assert "connect-src *" not in csp
+
+
+def test_work_search_detail_and_subjects(app):
+    info = request(app, '/api/info')['json']
+    if not info.get('catalog_counts', {}).get('works'):
+        pytest.skip('External test bundle predates the work catalogue')
+    result = request(app, '/api/search', {'q': 'Allan Turing'})['json']
+    assert any(p['name'] == 'Alan Turing' for p in result['people'])
+    assert result['works']
+    work = request(app, '/api/works/' + result['works'][0]['id'])
+    assert work['status'] == 200
+    assert work['json']['release_id'] == app.release
+    assert work['json']['sources'] and work['json']['contributions']
+    assert request(app, '/api/works', {'topic': 'C1002'})['json']['works']
+    people = request(app, '/api/people', {'pillar': 'physics'})['json']['people']
+    assert people and all('physics' in p['subjects'] for p in people)
+    assert request(app, '/api/works', method='POST')['status'] == 405

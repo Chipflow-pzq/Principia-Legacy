@@ -1,0 +1,148 @@
+{
+  "$id": "urn:principia-legacy:catalog:work-relation:2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "basis_relation": {
+      "properties": {
+        "content_hash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "revision": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "content_hash"
+      ],
+      "type": "object"
+    },
+    "content_hash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "from": {
+      "properties": {
+        "content_hash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "revision": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "content_hash"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "type": "string"
+    },
+    "kind": {
+      "const": "insight_projection"
+    },
+    "predicate": {
+      "enum": [
+        "historical_basis_for",
+        "motivated",
+        "applied_in",
+        "independent_formulation_of",
+        "premise_for",
+        "generalized_by",
+        "bounded_by",
+        "supports",
+        "challenges",
+        "analogous_to",
+        "equivalent_under",
+        "prerequisite_for_reading"
+      ]
+    },
+    "provenance": {
+      "items": {
+        "properties": {
+          "note": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "url": {
+            "pattern": "^https://",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url",
+          "note"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "scope": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "to": {
+      "properties": {
+        "content_hash": {
+          "pattern": "^[a-f0-9]{64}$",
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "revision": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "content_hash"
+      ],
+      "type": "object"
+    },
+    "warrant": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "revision",
+    "content_hash",
+    "from",
+    "to",
+    "basis_relation",
+    "kind",
+    "predicate",
+    "scope",
+    "warrant",
+    "provenance"
+  ],
+  "type": "object"
+}

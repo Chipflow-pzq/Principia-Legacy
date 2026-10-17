@@ -16,7 +16,7 @@ import sys
 from urllib.parse import parse_qs
 
 
-CSP = "default-src 'self'; connect-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+CSP = "default-src 'self'; connect-src 'self' https://api.siliconflow.cn https://api.crossref.org https://www.ebi.ac.uk https://en.wikipedia.org; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
 
 
 class HostedReader:
@@ -53,13 +53,19 @@ class HostedReader:
             return out
         if path == '/api/dossiers':
             return atlas.dossiers()
+        if path == '/api/exploration-index':
+            return atlas.exploration_index(q.get('offset', 0), q.get('limit', 200))
         if path == '/api/search':
             args = (q.get('q', ''), q.get('pillar'), human, q.get('limit', 40))
             return atlas.search(*args, **({'offset': q.get('offset', 0)} if self.search_offset else {}))
         if path == '/api/people' and hasattr(atlas, 'people'):
-            return atlas.people(q.get('q', ''), q.get('limit', 60), q.get('offset', 0), human)
+            return atlas.people(q.get('q', ''), q.get('limit', 60), q.get('offset', 0), human, **({'pillar': q.get('pillar')} if 'pillar' in q else {}))
         if path.startswith('/api/people/') and hasattr(atlas, 'person'):
             return atlas.person(path.rsplit('/', 1)[1], human)
+        if path == '/api/works' and hasattr(atlas, 'works'):
+            return atlas.works(q.get('q',''), q.get('pillar'), q.get('topic'), q.get('person'), human, q.get('limit',40), q.get('offset',0))
+        if path.startswith('/api/works/') and hasattr(atlas, 'work'):
+            return atlas.work(path.rsplit('/',1)[1], human)
         if path == '/api/neighborhood':
             layers = None if not q.get('layers') else ([] if q['layers'] == 'none' else q['layers'].split(','))
             return atlas.neighborhood(q.get('dossier'), q.get('seed'), layers, human,

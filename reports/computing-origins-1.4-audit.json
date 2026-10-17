@@ -1,0 +1,673 @@
+{
+  "batches": [
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "0be4aa65c1ac4d475bf85da3fba0b069e0e661211b12cf40d58fb7c25f1c798e",
+          "job_id": "83ab14643e44b9308333ce7af407c02323c7efb5121dd9e3001ff18ba5d92a1a",
+          "output_hash": "ba10f241449956817fb51fc7e842040475fa1349957f84e5516bcaeac1c1e99d",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "9eac7bf2-927d-45d5-baf9-97253b0a8308",
+          "request_id": "01a148529d5689336037ad09bed852cf",
+          "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "state": "succeeded",
+          "task": "atlas-audit:0be4aa65c1ac4d475bf8",
+          "time": "2026-10-17T05:25:33+00:00",
+          "trace_id": "9eac7bf2-927d-45d5-baf9-97253b0a8308",
+          "usage": {
+            "completion_tokens": 639,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 15976,
+            "prompt_tokens": 16232,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "total_tokens": 16871
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-22ddaf106193b1c1",
+          "issues": [],
+          "rationale": "p6 states computable numbers include real parts of algebraic numbers and zeros of Bessel functions; p29 shows the description-number encoding makes computable sequences enumerable; p54 states the computable numbers do not include all definable numbers and gives the non-computable sequence P based on satisfactoriness, citing the theorem of §8. All elements of the claim are directly attested."
+        },
+        {
+          "decision": "supported",
+          "id": "n-27f0dcca3ed07a14",
+          "issues": [],
+          "rationale": "p72 explicitly states the difficulty from the original definition, formulates the intuitive requirement (A), constructs the counterexample showing (B) is false because it would decide whether N ever prints 0 contrary to §8, and notes the resolution by modifying the association. The attribution to Turing and Brouwer is also present."
+        },
+        {
+          "decision": "supported",
+          "id": "n-3ca5b06705abca80",
+          "issues": [],
+          "rationale": "p43 states orders received by CC come from M, the same place as numerical material, and lists the four classes of orders. p45 agrees that i0=0 designates a standard number and i0=1 an order. The stored-program concept with a tag bit is directly evidenced."
+        },
+        {
+          "decision": "supported",
+          "id": "n-41701ff1be894b20",
+          "issues": [],
+          "rationale": "p1 states the typescript was never proofread, contains typographical mistakes and symbol misunderstandings, and that sections on programming and input/output are missing. p2 confirms the editorial policy of correcting typographical errors without modifying intended expression. The claim is fully supported by the editor's introduction."
+        },
+        {
+          "decision": "supported",
+          "id": "n-4f36bf328c5109c3",
+          "issues": [],
+          "rationale": "p48 presents the naive diagonal argument and identifies the fallacy. p49 supposes a decision machine D, combines it with the universal machine to construct H computing J', and shows H is circle-free. p50 completes the contradiction when H tests its own description number K, concluding no machine D exists. The proof is fully attested."
+        },
+        {
+          "decision": "supported",
+          "id": "n-52393f7065097ae9",
+          "issues": [],
+          "rationale": "p25 describes binary square rooting, noting the double left shifts and subtraction of 2a+1 formed from the partial root, and states the square rooter differs very little from the divider. p28 confirms the square rooter needs no dl_I but uses dl_II and that the direct arithmetical approach is used. The claim is directly supported."
+        }
+      ],
+      "input_hash": "0be4aa65c1ac4d475bf85da3fba0b069e0e661211b12cf40d58fb7c25f1c798e",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "0be4aa65c1ac4d475bf85da3fba0b069e0e661211b12cf40d58fb7c25f1c798e",
+        "job_id": "83ab14643e44b9308333ce7af407c02323c7efb5121dd9e3001ff18ba5d92a1a",
+        "output_hash": "ba10f241449956817fb51fc7e842040475fa1349957f84e5516bcaeac1c1e99d",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9eac7bf2-927d-45d5-baf9-97253b0a8308",
+        "request_id": "01a148529d5689336037ad09bed852cf",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "atlas-audit:0be4aa65c1ac4d475bf8",
+        "time": "2026-10-17T05:25:33+00:00",
+        "trace_id": "9eac7bf2-927d-45d5-baf9-97253b0a8308",
+        "usage": {
+          "completion_tokens": 639,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 15976,
+          "prompt_tokens": 16232,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "total_tokens": 16871
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "1da26b0f9fcb9cd00efa8e6120f0f43e72c26c22f4220547b62575ab2e389bf1",
+          "job_id": "fe2480134dc5369a9985984423a8f60c5d2f26fb22d9642e2f163bfd30231a1c",
+          "output_hash": "e521c8c697b9c2307920d09c2d0fc14de63036deb3ba3b7e2c41fb8be68dfb49",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "3d8e7ace-1428-4977-8c3b-95311e3d1274",
+          "request_id": "01a148529b07a5d602f774b2f88e1379",
+          "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "state": "succeeded",
+          "task": "atlas-audit:1da26b0f9fcb9cd00efa",
+          "time": "2026-10-17T05:25:33+00:00",
+          "trace_id": "3d8e7ace-1428-4977-8c3b-95311e3d1274",
+          "usage": {
+            "completion_tokens": 516,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 14209,
+            "prompt_tokens": 14209,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 14725
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-53433f300cc90049",
+          "issues": [],
+          "rationale": "The source (p15) explicitly introduces a hypothetical E-element with a fixed synaptic delay τ, states the simplification is temporary, and postpones electromagnetic detail. The record's claim matches the text."
+        },
+        {
+          "decision": "supported",
+          "id": "n-5ff5911b1881a88a",
+          "issues": [],
+          "rationale": "The source (p12) argues that vacuum tubes are two-state all-or-none devices, making binary natural for the central arithmetical part, and discusses decimal conversion at input/output. The record's claim is directly supported."
+        },
+        {
+          "decision": "supported",
+          "id": "n-604ad94139d7b560",
+          "issues": [],
+          "rationale": "The sources (p28, p30) list +, −, ×, ÷, √, i, j, s, and mention db, bd for decimal-binary conversion, justifying inclusion based on duration and equipment comparable to multiplication. The record's claim is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "n-6058bb7235007f59",
+          "issues": [],
+          "rationale": "The sources (p55-p57) define computable functions, state the theorems including recursive functions and the restricted Dedekind theorem requiring a general process for determining truth value. The record's claim is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "n-64709d769ae649af",
+          "issues": [],
+          "rationale": "The sources (p18-p19) describe replacing E-element chains with a delay device dl(k) that holds a stimulus for kτ periods, and feeding output back to input for cyclical memory. The record's claim is supported."
+        },
+        {
+          "decision": "supported",
+          "id": "n-7d6276423ef4f216",
+          "issues": [],
+          "rationale": "The sources (p38-p39) analyze the iconoscope memory, noting ~200,000 points, static charge storage, rapid switching, and obstacles like charge spreading, deflection precision, and limited retention time. The record's claim is supported."
+        }
+      ],
+      "input_hash": "1da26b0f9fcb9cd00efa8e6120f0f43e72c26c22f4220547b62575ab2e389bf1",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1da26b0f9fcb9cd00efa8e6120f0f43e72c26c22f4220547b62575ab2e389bf1",
+        "job_id": "fe2480134dc5369a9985984423a8f60c5d2f26fb22d9642e2f163bfd30231a1c",
+        "output_hash": "e521c8c697b9c2307920d09c2d0fc14de63036deb3ba3b7e2c41fb8be68dfb49",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3d8e7ace-1428-4977-8c3b-95311e3d1274",
+        "request_id": "01a148529b07a5d602f774b2f88e1379",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "atlas-audit:1da26b0f9fcb9cd00efa",
+        "time": "2026-10-17T05:25:33+00:00",
+        "trace_id": "3d8e7ace-1428-4977-8c3b-95311e3d1274",
+        "usage": {
+          "completion_tokens": 516,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 14209,
+          "prompt_tokens": 14209,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 14725
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "2e4377cce75ae211e51a862ebed07075ef721fa58a6ef51d18f825c9532b5fe4",
+          "job_id": "66ed68bfc74262b9780c74802f7750bcf00b597a1eda7fc7e75e77b056d2a99a",
+          "output_hash": "e51dae1b81347d025ea9a67bc6eb9780ad884dc74cc8974c611b939f7471faa8",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "5c319467-7e13-4613-a51e-71a7dba55f2d",
+          "request_id": "01a14852ce04674b5fe293bc7a21ee6c",
+          "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "state": "succeeded",
+          "task": "atlas-audit:2e4377cce75ae211e51a",
+          "time": "2026-10-17T05:25:45+00:00",
+          "trace_id": "5c319467-7e13-4613-a51e-71a7dba55f2d",
+          "usage": {
+            "completion_tokens": 591,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 13751,
+            "prompt_tokens": 14007,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "total_tokens": 14598
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-c1ffc4773aede43c",
+          "issues": [],
+          "rationale": "P8 lists eight memory functions (a)-(h) with differing purposes; P9 explicitly states 'it is nevertheless tempting to treat the entire memory as one organ, and to have its parts even as interchangeable as possible for the various functions enumerated above', directly matching the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-cf5f70656e15b2a3",
+          "issues": [],
+          "rationale": "P62 states the aim to show 'there can be no general process for determining whether a given formula U of the functional calculus Z is provable' and outlines the reduction to the printing problem. P63 defines Un(M) and states the interpretation. P66 proves Lemma 2 and concludes 'Hence the Entscheidungsproblem cannot be solved'. P71 acknowledges and corrects formal errors, confirming the result stands."
+        },
+        {
+          "decision": "supported",
+          "id": "n-e115ffd1b95d1d81",
+          "issues": [],
+          "rationale": "P18 states 'each digit of the multiplicand is used an many times as there are digits in the multiplier', that the duration requires remembering for 'at least 30^2 = 900 periods τ', and that 'the multiplier needs a memory', matching the claim exactly."
+        },
+        {
+          "decision": "supported",
+          "id": "n-ec38b80285726778",
+          "issues": [],
+          "rationale": "P30 introduces the universal machine: 'It is possible to invent a single machine which can be used to compute any computable sequence... if this machine I is supplied with a tape on the beginning of which is written the S.D of some computing machine M, then I will compute the same sequence as M.' P31 describes the construction and the printing of figures. P33 and P36 provide details of the S.D format and the machine's table, supporting the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-f0f6f7e6521aad53",
+          "issues": [],
+          "rationale": "P43 introduces the distinction between permanent and transient transfers and their connection to number movement. P44 explicitly states 'The 256 DLA organs have numbers 0,1,...,255' and 'the 32 minor cycles in each DLA organ equally fixed numbers 0,1,...,31', and that 'minor cycles of any given number appear at the same time at the outputs of all 256 DLA organs of M', directly supporting the addressing scheme and transfer types."
+        }
+      ],
+      "input_hash": "2e4377cce75ae211e51a862ebed07075ef721fa58a6ef51d18f825c9532b5fe4",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "2e4377cce75ae211e51a862ebed07075ef721fa58a6ef51d18f825c9532b5fe4",
+        "job_id": "66ed68bfc74262b9780c74802f7750bcf00b597a1eda7fc7e75e77b056d2a99a",
+        "output_hash": "e51dae1b81347d025ea9a67bc6eb9780ad884dc74cc8974c611b939f7471faa8",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5c319467-7e13-4613-a51e-71a7dba55f2d",
+        "request_id": "01a14852ce04674b5fe293bc7a21ee6c",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "atlas-audit:2e4377cce75ae211e51a",
+        "time": "2026-10-17T05:25:45+00:00",
+        "trace_id": "5c319467-7e13-4613-a51e-71a7dba55f2d",
+        "usage": {
+          "completion_tokens": 591,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 13751,
+          "prompt_tokens": 14007,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "total_tokens": 14598
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "8185a280c5fc4a73e16aa90dd249ff2d2b425272e421175a39442b8efe7d7c0e",
+          "job_id": "5045de8e036e34d3c1af278e972b104061d080d585fac2964eb99e718371ee5c",
+          "output_hash": "a589fa26c72213add2e6d3590312f32e7a5c02c053142583d0ffe446ac50a16a",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "b2137748-b14d-426e-bd30-2585e9df6257",
+          "request_id": "01a148529d5ff0b6627b8bf0a60182f5",
+          "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "state": "succeeded",
+          "task": "atlas-audit:8185a280c5fc4a73e16a",
+          "time": "2026-10-17T05:25:33+00:00",
+          "trace_id": "b2137748-b14d-426e-bd30-2585e9df6257",
+          "usage": {
+            "completion_tokens": 566,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 15317,
+            "prompt_tokens": 15573,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "total_tokens": 16139
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-8d68562de944f88e",
+          "issues": [],
+          "rationale": "The source text (p31) explicitly defines the memory unit as the ability to retain one binary digit, states a standard number uses 30 binary digits, adds one unit for sign and one for type distinction, arriving at 32 units, and calls the 32-unit group a minor cycle. The claim matches the evidence exactly."
+        },
+        {
+          "decision": "supported",
+          "id": "n-922b62a1090f3c40",
+          "issues": [],
+          "rationale": "The source passages (p7, p8) define computing machines, figures (0 and 1), the sequence computed from a blank tape, circle-free machines, and computable sequences/numbers exactly as stated in the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-9ec6f65d16c511e7",
+          "issues": [],
+          "rationale": "The source text (p47, p48) discusses pooling orders within a minor cycle, lists the reasons for limiting pooling (simultaneous operations, timing, small fraction of memory), and describes the specific pooling of an operation order with a disposal order, matching the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-a4409021c7caa30d",
+          "issues": [],
+          "rationale": "The source text (p24) explicitly fixes the binary point immediately after the sign digit, confines numbers to between -1 and 1, and states this guarantees multiplication can always be carried out without overflow, matching the claim."
+        },
+        {
+          "decision": "supported",
+          "id": "n-aabaf8f226854c33",
+          "issues": [],
+          "rationale": "The source text (p29, p30) describes putting tables into standard form, numbering m-configurations and symbols, forming the standard description (S.D.) from letters, and replacing letters with digits to get a description number (D.N.), concluding that computable sequences are enumerable. The claim is fully supported."
+        },
+        {
+          "decision": "supported",
+          "id": "n-be9611d440814ff0",
+          "issues": [],
+          "rationale": "The source text (p67, p68) outlines the proof that λ-definable sequences are computable (via machine L) and that computable sequences are λ-definable (via encoding complete configurations), exactly as claimed."
+        }
+      ],
+      "input_hash": "8185a280c5fc4a73e16aa90dd249ff2d2b425272e421175a39442b8efe7d7c0e",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "8185a280c5fc4a73e16aa90dd249ff2d2b425272e421175a39442b8efe7d7c0e",
+        "job_id": "5045de8e036e34d3c1af278e972b104061d080d585fac2964eb99e718371ee5c",
+        "output_hash": "a589fa26c72213add2e6d3590312f32e7a5c02c053142583d0ffe446ac50a16a",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b2137748-b14d-426e-bd30-2585e9df6257",
+        "request_id": "01a148529d5ff0b6627b8bf0a60182f5",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "atlas-audit:8185a280c5fc4a73e16a",
+        "time": "2026-10-17T05:25:33+00:00",
+        "trace_id": "b2137748-b14d-426e-bd30-2585e9df6257",
+        "usage": {
+          "completion_tokens": 566,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 15317,
+          "prompt_tokens": 15573,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "total_tokens": 16139
+        }
+      }
+    },
+    {
+      "attempts": [
+        {
+          "attempt": 1,
+          "finish_reason": "stop",
+          "input_hash": "b2e5fd0fab14ea23f84c81d31734f5e7e470e1b5133eb6bfaccb4100786a22e3",
+          "job_id": "17e707cf0fd1143f21a61d65addbecdd6819326bb2e4097447166b9446431f63",
+          "output_hash": "010c9addc702d1927b1a8565f424c7205876ca9fd0c48ccb75e440c34c28e57e",
+          "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+          "provider": "SiliconFlow",
+          "provider_trace_id": "2c62dacb-482e-4829-ad31-3f172e608b55",
+          "request_id": "01a148529d10633a10e5c6de36ed8c44",
+          "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+          "state": "succeeded",
+          "task": "atlas-audit:b2e5fd0fab14ea23f84c",
+          "time": "2026-10-17T05:25:33+00:00",
+          "trace_id": "2c62dacb-482e-4829-ad31-3f172e608b55",
+          "usage": {
+            "completion_tokens": 703,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 16558,
+            "prompt_tokens": 16558,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 17261
+          }
+        }
+      ],
+      "checks": [
+        {
+          "decision": "supported",
+          "id": "n-03d82e1ae6035422",
+          "issues": [],
+          "rationale": "The source text (p50) explicitly states 'there can be no machine R which, when applied with the S.D of an arbitrary machine M, will determine whether M ever prints a given symbol (0 say)', constructs the reduction to the circle-free problem, and concludes 'There can therefore be no machine R'. The claim, explanation, and attribution match the source."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0c59baec5564e0c9",
+          "issues": [],
+          "rationale": "The source text (p71) states the original proof 'contained some formal errors', gives the corrected expression for Inst, declares the original implication 'false', introduces the new variable G and formula Q, and provides the corrected Un(M). The claim, explanation, and attribution (Turing, with Bernays acknowledged) are directly supported."
+        },
+        {
+          "decision": "supported",
+          "id": "n-0cac46dbae92f021",
+          "issues": [],
+          "rationale": "The source text (p37) explicitly states the general principle: 'A c = hk-way switching problem can be replaced by a k-way switching problem and an h-step temporal succession—i.e. a wait of ht.' The surrounding text (p36-37) describes the factorization into delay organs and temporal succession, matching the claim and explanation."
+        },
+        {
+          "decision": "supported",
+          "id": "n-11e226b328400d13",
+          "issues": [],
+          "rationale": "The source text (p32-34) provides the capacity estimates for function tables, boundary data, and intermediate results, arriving at totals of 8,000 or 2,000 minor cycles, choosing 8,192 minor cycles (262,144 units). It concludes 'This result deserves to be noted. It shows in a most striking way where the real difficulty, the main bottleneck, of an automatic very high speed computing device lies: At the memory.' The claim is directly supported."
+        },
+        {
+          "decision": "supported",
+          "id": "n-14a4339a93ad56f6",
+          "issues": [],
+          "rationale": "The source text (p8-10) defines the five specific parts: CA (2.2), CC (2.3), M (2.4-2.5), I (2.7), O (2.8), and states C = CA + CC (2.6). The claim matches the source's functional subdivision."
+        },
+        {
+          "decision": "supported",
+          "id": "n-17347d66ed5a8bcc",
+          "issues": [],
+          "rationale": "The source text (p25) describes carrying one extra digit, the bias of truncation, the binary rounding rule 'The 30th digit is rounded to 1 if either the 30th or the 31st digit was 1, otherwise it is rounded to 0', and credits Mauchly. The claim, explanation, and attribution are directly supported."
+        }
+      ],
+      "input_hash": "b2e5fd0fab14ea23f84c81d31734f5e7e470e1b5133eb6bfaccb4100786a22e3",
+      "receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b2e5fd0fab14ea23f84c81d31734f5e7e470e1b5133eb6bfaccb4100786a22e3",
+        "job_id": "17e707cf0fd1143f21a61d65addbecdd6819326bb2e4097447166b9446431f63",
+        "output_hash": "010c9addc702d1927b1a8565f424c7205876ca9fd0c48ccb75e440c34c28e57e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "2c62dacb-482e-4829-ad31-3f172e608b55",
+        "request_id": "01a148529d10633a10e5c6de36ed8c44",
+        "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+        "state": "succeeded",
+        "task": "atlas-audit:b2e5fd0fab14ea23f84c",
+        "time": "2026-10-17T05:25:33+00:00",
+        "trace_id": "2c62dacb-482e-4829-ad31-3f172e608b55",
+        "usage": {
+          "completion_tokens": 703,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 16558,
+          "prompt_tokens": 16558,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 17261
+        }
+      }
+    }
+  ],
+  "completed_at": "2026-10-17T05:25:58+00:00",
+  "counts": {
+    "supported": 29
+  },
+  "input_refs": [
+    {
+      "content_hash": "7bf13206c6799b70621cb2b175cd266a2b88bf7162e0b0d3523f37124a6e2af0",
+      "id": "n-03d82e1ae6035422",
+      "revision": 1
+    },
+    {
+      "content_hash": "59ac1c7d148ac163d6068c6cc30b39506ec3393c365737ccacf1635f8eaf3a79",
+      "id": "n-0c59baec5564e0c9",
+      "revision": 1
+    },
+    {
+      "content_hash": "6c09f926f2a64d880a48a7d09aa05ee1c48d2ef8cc4718b5b6e73ca81c109e8f",
+      "id": "n-0cac46dbae92f021",
+      "revision": 1
+    },
+    {
+      "content_hash": "694577b495bb1a2dede2060a67bbca24c52b8d6a687fc6928ac418cd1b9744d8",
+      "id": "n-11e226b328400d13",
+      "revision": 1
+    },
+    {
+      "content_hash": "3c6f60cf3a05c05de5212371dbdf663fec64ce2440b0fee88f48ff90b4bdad1e",
+      "id": "n-14a4339a93ad56f6",
+      "revision": 1
+    },
+    {
+      "content_hash": "b89b9a60d59a7684b76537265beec79d260c802222a4fb7406d992f699f95930",
+      "id": "n-17347d66ed5a8bcc",
+      "revision": 1
+    },
+    {
+      "content_hash": "bb622b89dfa8f242e37f297f14be1722c3e344863b40f3adaac29297e1abe47f",
+      "id": "n-22ddaf106193b1c1",
+      "revision": 1
+    },
+    {
+      "content_hash": "9d89ff129918d00727192c879082d592d954be7e911c4c6f4cd1bd8bcd3bd6f3",
+      "id": "n-27f0dcca3ed07a14",
+      "revision": 1
+    },
+    {
+      "content_hash": "ceca809cac03ddd3cface988f4786f48238d1094a96eeede39e78c06beb655ba",
+      "id": "n-3ca5b06705abca80",
+      "revision": 1
+    },
+    {
+      "content_hash": "4288883cfa788189ccd87c72462463a15318364f0b31b3d6aee7513aa0ba8d04",
+      "id": "n-41701ff1be894b20",
+      "revision": 1
+    },
+    {
+      "content_hash": "9cd4c27bc62a73f78878112c451398b14b87a4ecf6f3462dffc71e2fd96a467a",
+      "id": "n-4f36bf328c5109c3",
+      "revision": 1
+    },
+    {
+      "content_hash": "24bcb6c1da12e3dcb2f798e4e370a4e6ec7d59d177ac81aef987654bdf761038",
+      "id": "n-52393f7065097ae9",
+      "revision": 1
+    },
+    {
+      "content_hash": "fd3f7187a4709680c64a17011a8edc8ce58925ee296abd287047b42404162043",
+      "id": "n-53433f300cc90049",
+      "revision": 1
+    },
+    {
+      "content_hash": "bd8c09826b53e176469ece72535452603e09f1881d5403dc95dc4ae55812c44b",
+      "id": "n-5ff5911b1881a88a",
+      "revision": 1
+    },
+    {
+      "content_hash": "3d1e07928dca5433a23deb6e0a2a4539c9ffb2fcb72fdddf093902a97295c38d",
+      "id": "n-604ad94139d7b560",
+      "revision": 1
+    },
+    {
+      "content_hash": "d26ad01f316214dd1d122153c4f4ee2c6b67c3c14a9fdc3eaad120007d27bafe",
+      "id": "n-6058bb7235007f59",
+      "revision": 1
+    },
+    {
+      "content_hash": "f1374be1ec2f7d64a0b103478ce85f13c6446b138f03a937cfaf4640f271b3d7",
+      "id": "n-64709d769ae649af",
+      "revision": 1
+    },
+    {
+      "content_hash": "8c68731c4cf4bc8bc5018bb1da2deb9f4e3d611337ebe4c55fad9f66eb6b6e25",
+      "id": "n-7d6276423ef4f216",
+      "revision": 1
+    },
+    {
+      "content_hash": "f0ae52c453eec1396a480cc9d11b1b7c2e5e08bcb395e0bbcb2b1859a58dbf4c",
+      "id": "n-8d68562de944f88e",
+      "revision": 1
+    },
+    {
+      "content_hash": "40b4e274b911f8a2f56aa4ddffe1b0eb94cada1aeea0f59263a5468ffc890fbd",
+      "id": "n-922b62a1090f3c40",
+      "revision": 1
+    },
+    {
+      "content_hash": "2dc06c025c1d4787e1d849ff91db9a65b6e30aa604f14f1b21bc394d42812713",
+      "id": "n-9ec6f65d16c511e7",
+      "revision": 1
+    },
+    {
+      "content_hash": "623d7560931e92a23eb35234b3e7bd2e27e4935519ae231c756a4566e400b7d1",
+      "id": "n-a4409021c7caa30d",
+      "revision": 1
+    },
+    {
+      "content_hash": "6d7fd543c8e5bebed44b573adfe25d5bf571c069007eeb55d845a86891a45df1",
+      "id": "n-aabaf8f226854c33",
+      "revision": 1
+    },
+    {
+      "content_hash": "28fd56c8b58ff0f7e794143de05e471a1fa73e0334fabd62eeebddb1787e5991",
+      "id": "n-be9611d440814ff0",
+      "revision": 1
+    },
+    {
+      "content_hash": "eee06ad717248e50c6bc44cc1d839c3d8c11556df517a36ab50322b52ed255d3",
+      "id": "n-c1ffc4773aede43c",
+      "revision": 1
+    },
+    {
+      "content_hash": "dc34ea7faf9b0f0a58af1538893db9fd40a92a0125d60ef40cc2f60787b44182",
+      "id": "n-cf5f70656e15b2a3",
+      "revision": 1
+    },
+    {
+      "content_hash": "3a4aee9b617bb1ca9a157cec48f143c1d73ce4334657f11491f43e461d505653",
+      "id": "n-e115ffd1b95d1d81",
+      "revision": 1
+    },
+    {
+      "content_hash": "c1dd52cf7b237440481976819b40c0d5c592d1245736828f0835379aeb1e6352",
+      "id": "n-ec38b80285726778",
+      "revision": 1
+    },
+    {
+      "content_hash": "0add15abb980ce65672137e248ae8c2d79c300bfa84d75e588237b92ef7d80b9",
+      "id": "n-f0f6f7e6521aad53",
+      "revision": 1
+    }
+  ],
+  "kind": "contribution",
+  "missing_evidence": [],
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "plan_hash": "7a17585da65b335f0c9ef37aa6d4d12dbd94a75be4f37ece32161149d4ba78ff",
+  "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+  "qualified_human_review": false,
+  "selection": "all visible records",
+  "started_at": "2026-10-17T05:25:33+00:00",
+  "status": "complete"
+}

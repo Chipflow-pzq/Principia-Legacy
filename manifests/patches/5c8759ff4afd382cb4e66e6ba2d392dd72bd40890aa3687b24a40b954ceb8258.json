@@ -1,0 +1,95 @@
+{
+  "applied_at": "2026-10-17T05:30:17+00:00",
+  "impact": [
+    "r-128aa8bc7a19078c",
+    "r-5665156496ff267e",
+    "r-60ffc47b3437d303",
+    "r-7713e233bfc39c36",
+    "r-905910979edaa734",
+    "r-9c9f282f1c809152",
+    "r-ae204232d1629823",
+    "r-b0c746fc0bc19fde",
+    "r-ce898fb22491bf42",
+    "r-de16332dbed8ba20",
+    "r-f313309aad662437"
+  ],
+  "reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+  "record_refs": [
+    {
+      "id": "n-604ad94139d7b560",
+      "revision": 2
+    },
+    {
+      "id": "n-8d68562de944f88e",
+      "revision": 2
+    },
+    {
+      "id": "n-f0f6f7e6521aad53",
+      "revision": 2
+    },
+    {
+      "id": "n-9ec6f65d16c511e7",
+      "revision": 2
+    },
+    {
+      "id": "n-cf5f70656e15b2a3",
+      "revision": 2
+    },
+    {
+      "id": "n-aabaf8f226854c33",
+      "revision": 2
+    },
+    {
+      "id": "n-22ddaf106193b1c1",
+      "revision": 2
+    },
+    {
+      "id": "n-0c59baec5564e0c9",
+      "revision": 2
+    },
+    {
+      "id": "r-128aa8bc7a19078c",
+      "revision": 2
+    },
+    {
+      "id": "r-5665156496ff267e",
+      "revision": 2
+    },
+    {
+      "id": "r-60ffc47b3437d303",
+      "revision": 2
+    },
+    {
+      "id": "r-7713e233bfc39c36",
+      "revision": 2
+    },
+    {
+      "id": "r-905910979edaa734",
+      "revision": 2
+    },
+    {
+      "id": "r-9c9f282f1c809152",
+      "revision": 2
+    },
+    {
+      "id": "r-ae204232d1629823",
+      "revision": 2
+    },
+    {
+      "id": "r-b0c746fc0bc19fde",
+      "revision": 2
+    },
+    {
+      "id": "r-ce898fb22491bf42",
+      "revision": 2
+    },
+    {
+      "id": "r-de16332dbed8ba20",
+      "revision": 2
+    },
+    {
+      "id": "r-f313309aad662437",
+      "revision": 2
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "applied_at": "2026-10-17T02:15:54+00:00",
+  "impact": [
+    "r-0dcc0ccfa39330cb",
+    "r-27b2b7d62aa87640",
+    "r-3c12cc2c79438fbf",
+    "r-480a42f8788a0947",
+    "r-5f38862e370f56c1",
+    "r-60dc61aaa83de237",
+    "r-6663c629c040b852",
+    "r-6d5e4b0cdf7bc08e",
+    "r-7f7aa1a2ff0cd773",
+    "r-832475660aee06f7",
+    "r-86fcf6df1c371d88",
+    "r-8b32b3269f3ca09d",
+    "r-8b67f093717f8810",
+    "r-932a2ad553e1a71d",
+    "r-9a4f9aba6662da9c",
+    "r-9d65576f24a7e439",
+    "r-a262174ac679ccb4",
+    "r-a347d00e77b3a2d7",
+    "r-a35144144663d3b4",
+    "r-ab47cb40fc5db7e9",
+    "r-c196b6194d8154e2",
+    "r-c414e7de0d9298b4",
+    "r-c5b1e4433db1e4db",
+    "r-cbd7ac1b96dadcdd",
+    "r-ceaaf07a30a538f0",
+    "r-d6d62368354c90b3",
+    "r-d8899d1874d620c4",
+    "r-e1593a22a2f5f2e1",
+    "r-e54e5d05a5e503ba",
+    "r-e9f6b34b57aa25d8",
+    "r-fa743ca8aad07ac2",
+    "r-fc8e713ada1d6407"
+  ],
+  "reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+  "record_refs": [
+    {
+      "id": "n-34c92faac94e31d9",
+      "revision": 2
+    },
+    {
+      "id": "n-e65c831a6590ea2c",
+      "revision": 2
+    },
+    {
+      "id": "n-11d0d08049e66bff",
+      "revision": 2
+    },
+    {
+      "id": "n-e2055ae3bf7bfbf1",
+      "revision": 2
+    },
+    {
+      "id": "n-ae1497a238d5a9d1",
+      "revision": 2
+    },
+    {
+      "id": "n-9b532120070210b1",
+      "revision": 2
+    },
+    {
+      "id": "n-ed32a75acb0c02b3",
+      "revision": 2
+    },
+    {
+      "id": "n-08d13cf9a3702bdc",
+      "revision": 2
+    },
+    {
+      "id": "n-ea687c9c5c407e72",
+      "revision": 2
+    },
+    {
+      "id": "n-eef47bee83b5cb45",
+      "revision": 1
+    },
+    {
+      "id": "r-0dcc0ccfa39330cb",
+      "revision": 2
+    },
+    {
+      "id": "r-27b2b7d62aa87640",
+      "revision": 3
+    },
+    {
+      "id": "r-3c12cc2c79438fbf",
+      "revision": 2
+    },
+    {
+      "id": "r-480a42f8788a0947",
+      "revision": 3
+    },
+    {
+      "id": "r-5f38862e370f56c1",
+      "revision": 3
+    },
+    {
+      "id": "r-60dc61aaa83de237",
+      "revision": 2
+    },
+    {
+      "id": "r-6663c629c040b852",
+      "revision": 2
+    },
+    {
+      "id": "r-6d5e4b0cdf7bc08e",
+      "revision": 2
+    },
+    {
+      "id": "r-7f7aa1a2ff0cd773",
+      "revision": 2
+    },
+    {
+      "id": "r-832475660aee06f7",
+      "revision": 2
+    },
+    {
+      "id": "r-86fcf6df1c371d88",
+      "revision": 2
+    },
+    {
+      "id": "r-8b32b3269f3ca09d",
+      "revision": 2
+    },
+    {
+      "id": "r-8b67f093717f8810",
+      "revision": 2
+    },
+    {
+      "id": "r-932a2ad553e1a71d",
+      "revision": 2
+    },
+    {
+      "id": "r-9a4f9aba6662da9c",
+      "revision": 2
+    },
+    {
+      "id": "r-9d65576f24a7e439",
+      "revision": 2
+    },
+    {
+      "id": "r-a262174ac679ccb4",
+      "revision": 3
+    },
+    {
+      "id": "r-a347d00e77b3a2d7",
+      "revision": 2
+    },
+    {
+      "id": "r-a35144144663d3b4",
+      "revision": 2
+    },
+    {
+      "id": "r-ab47cb40fc5db7e9",
+      "revision": 2
+    },
+    {
+      "id": "r-c196b6194d8154e2",
+      "revision": 3
+    },
+    {
+      "id": "r-c414e7de0d9298b4",
+      "revision": 3
+    },
+    {
+      "id": "r-c5b1e4433db1e4db",
+      "revision": 2
+    },
+    {
+      "id": "r-cbd7ac1b96dadcdd",
+      "revision": 2
+    },
+    {
+      "id": "r-ceaaf07a30a538f0",
+      "revision": 2
+    },
+    {
+      "id": "r-d6d62368354c90b3",
+      "revision": 2
+    },
+    {
+      "id": "r-d8899d1874d620c4",
+      "revision": 2
+    },
+    {
+      "id": "r-e1593a22a2f5f2e1",
+      "revision": 2
+    },
+    {
+      "id": "r-e54e5d05a5e503ba",
+      "revision": 3
+    },
+    {
+      "id": "r-e9f6b34b57aa25d8",
+      "revision": 2
+    },
+    {
+      "id": "r-fa743ca8aad07ac2",
+      "revision": 3
+    },
+    {
+      "id": "r-fc8e713ada1d6407",
+      "revision": 2
+    }
+  ]
+}

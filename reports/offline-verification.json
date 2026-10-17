@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "release_id": "1.2.0-exploratory",
+  "release_id": "1.4.1-exploratory",
   "external_socket_attempts": [],
   "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
   "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
@@ -10,6 +10,7 @@
     "dossiers",
     "contribution inspector",
     "shared topic links and scientist profiles",
+    "work catalog and offline fuzzy search",
     "relationship inspector",
     "neighborhood",
     "brief",

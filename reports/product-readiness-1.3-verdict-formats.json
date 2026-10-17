@@ -1,0 +1,283 @@
+{
+  "purpose": "Controlled same-input comparison after a scanner-operation card was labelled general_foundation by strict output decoding. Both formats retain the same prompt, evidence, model, temperature and token budgets. This is a small diagnostic, not an accuracy estimate.",
+  "results": [
+    {
+      "format": "json_schema",
+      "repeat": 0,
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "input_hash": "2e588c171c8ee8ed78238414093e05c0165535d6f3615bcc62f920ce3e826e46",
+      "prompt_hash": "1b0d005e526e79c60ec01fdf8f1b7e0b1c733c7d5d30d8b4d10a0f016ce1ce45",
+      "usage": {
+        "prompt_tokens": 3776,
+        "completion_tokens": 640,
+        "total_tokens": 4416,
+        "completion_tokens_details": {
+          "reasoning_tokens": 513
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 64
+      },
+      "outcome": "completed",
+      "verdict": {
+        "gaps": [],
+        "node_checks": [
+          {
+            "assessed_role": "requested_result",
+            "assessment": "Passage directly supports 2018 EUV mass production with Samsung; scoped correctly.",
+            "attribution_supported": true,
+            "date_supported": true,
+            "id": "steps-4",
+            "keep": true,
+            "reason": ""
+          },
+          {
+            "assessed_role": "requested_result",
+            "assessment": "Passages explicitly describe scanner optical imaging onto photoresist and circuit formation.",
+            "attribution_supported": false,
+            "date_supported": false,
+            "id": "result-1",
+            "keep": true,
+            "reason": ""
+          }
+        ],
+        "relation_checks": []
+      },
+      "seconds": 7.912
+    },
+    {
+      "format": "json_object",
+      "repeat": 0,
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "input_hash": "2e588c171c8ee8ed78238414093e05c0165535d6f3615bcc62f920ce3e826e46",
+      "prompt_hash": "1b0d005e526e79c60ec01fdf8f1b7e0b1c733c7d5d30d8b4d10a0f016ce1ce45",
+      "usage": {
+        "prompt_tokens": 3776,
+        "completion_tokens": 642,
+        "total_tokens": 4418,
+        "completion_tokens_details": {
+          "reasoning_tokens": 513
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 64
+      },
+      "outcome": "completed",
+      "verdict": {
+        "node_checks": [
+          {
+            "assessment": "EUV mass-production claim directly supported; dates and named manufacturer correctly scoped by excerpt.",
+            "id": "steps-4",
+            "keep": true,
+            "reason": "",
+            "assessed_role": "requested_result",
+            "attribution_supported": false,
+            "date_supported": false
+          },
+          {
+            "assessment": "Scanner optical imaging and repeated wafer processing are excerpt-supported; no unsupported machine-generalization claim.",
+            "id": "result-1",
+            "keep": true,
+            "reason": "",
+            "assessed_role": "requested_result",
+            "attribution_supported": false,
+            "date_supported": false
+          }
+        ],
+        "relation_checks": [],
+        "gaps": []
+      },
+      "seconds": 5.78
+    },
+    {
+      "format": "json_schema",
+      "repeat": 1,
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "input_hash": "2e588c171c8ee8ed78238414093e05c0165535d6f3615bcc62f920ce3e826e46",
+      "prompt_hash": "1b0d005e526e79c60ec01fdf8f1b7e0b1c733c7d5d30d8b4d10a0f016ce1ce45",
+      "usage": {
+        "prompt_tokens": 3776,
+        "completion_tokens": 638,
+        "total_tokens": 4414,
+        "completion_tokens_details": {
+          "reasoning_tokens": 513
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 64
+      },
+      "outcome": "completed",
+      "verdict": {
+        "gaps": [],
+        "node_checks": [
+          {
+            "assessed_role": "requested_result",
+            "assessment": "EUV mass-production claim and Samsung date are directly supported by the cited reference.",
+            "attribution_supported": true,
+            "date_supported": true,
+            "id": "steps-4",
+            "keep": true,
+            "reason": ""
+          },
+          {
+            "assessed_role": "requested_result",
+            "assessment": "Scanner imaging, wafer resist coating, repetition and circuit formation are directly supported.",
+            "attribution_supported": true,
+            "date_supported": true,
+            "id": "result-1",
+            "keep": true,
+            "reason": ""
+          }
+        ],
+        "relation_checks": []
+      },
+      "seconds": 7.011
+    },
+    {
+      "format": "json_object",
+      "repeat": 1,
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "input_hash": "2e588c171c8ee8ed78238414093e05c0165535d6f3615bcc62f920ce3e826e46",
+      "prompt_hash": "1b0d005e526e79c60ec01fdf8f1b7e0b1c733c7d5d30d8b4d10a0f016ce1ce45",
+      "usage": {
+        "prompt_tokens": 3776,
+        "completion_tokens": 644,
+        "total_tokens": 4420,
+        "completion_tokens_details": {
+          "reasoning_tokens": 513
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 64
+      },
+      "outcome": "completed",
+      "verdict": {
+        "node_checks": [
+          {
+            "assessment": "EUV production entry and Samsung as 2018 producer directly quoted; scope-limited but accurate.",
+            "id": "steps-4",
+            "keep": true,
+            "reason": "",
+            "assessed_role": "requested_result",
+            "attribution_supported": true,
+            "date_supported": true
+          },
+          {
+            "assessment": "Scanner imaging of patterns onto photoresist-coated wafers, repeated and processed, directly quoted.",
+            "id": "result-1",
+            "keep": true,
+            "reason": "",
+            "assessed_role": "requested_result",
+            "attribution_supported": true,
+            "date_supported": false
+          }
+        ],
+        "relation_checks": [],
+        "gaps": []
+      },
+      "seconds": 9.668
+    },
+    {
+      "format": "json_schema",
+      "repeat": 2,
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "input_hash": "2e588c171c8ee8ed78238414093e05c0165535d6f3615bcc62f920ce3e826e46",
+      "prompt_hash": "1b0d005e526e79c60ec01fdf8f1b7e0b1c733c7d5d30d8b4d10a0f016ce1ce45",
+      "usage": {
+        "prompt_tokens": 3776,
+        "completion_tokens": 658,
+        "total_tokens": 4434,
+        "completion_tokens_details": {
+          "reasoning_tokens": 513
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 64
+      },
+      "outcome": "completed",
+      "verdict": {
+        "gaps": [],
+        "node_checks": [
+          {
+            "assessed_role": "requested_result",
+            "assessment": "Excerpt states EUV entered mass production as of 2018 by Samsung; scoped claim supported.",
+            "attribution_supported": true,
+            "date_supported": true,
+            "id": "steps-4",
+            "keep": true,
+            "reason": "assessed_role"
+          },
+          {
+            "assessed_role": "requested_result",
+            "assessment": "Excerpt describes scanners optically imaging patterns onto photoresist-coated wafers, repeated, then processed into circuits; supported.",
+            "attribution_supported": false,
+            "date_supported": false,
+            "id": "result-1",
+            "keep": true,
+            "reason": ""
+          }
+        ],
+        "relation_checks": []
+      },
+      "seconds": 7.052
+    },
+    {
+      "format": "json_object",
+      "repeat": 2,
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "input_hash": "2e588c171c8ee8ed78238414093e05c0165535d6f3615bcc62f920ce3e826e46",
+      "prompt_hash": "1b0d005e526e79c60ec01fdf8f1b7e0b1c733c7d5d30d8b4d10a0f016ce1ce45",
+      "usage": {
+        "prompt_tokens": 3776,
+        "completion_tokens": 646,
+        "total_tokens": 4422,
+        "completion_tokens_details": {
+          "reasoning_tokens": 513
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 64
+      },
+      "outcome": "completed",
+      "verdict": {
+        "node_checks": [
+          {
+            "id": "steps-4",
+            "assessment": "Passage explicitly states EUV in mass production as of 2018 by Samsung; claim matches scope.",
+            "keep": true,
+            "reason": "",
+            "assessed_role": "requested_result",
+            "attribution_supported": true,
+            "date_supported": true
+          },
+          {
+            "id": "result-1",
+            "assessment": "ASML excerpt explicitly describes scanners optically imaging patterns onto photoresist wafers; procedure repeated.",
+            "keep": true,
+            "reason": "",
+            "assessed_role": "requested_result",
+            "attribution_supported": false,
+            "date_supported": false
+          }
+        ],
+        "relation_checks": [],
+        "gaps": []
+      },
+      "seconds": 6.703
+    }
+  ],
+  "interpretation": "All six controlled replays assigned the scanner card the requested-result role in both formats. The original contradictory classification was not reproduced. This small diagnostic does not establish that strict decoding caused it or that either format is more accurate; no review gate was relaxed.",
+  "preliminary_transport_failure": "Six initial Python attempts failed certificate verification before HTTP submission. The retry used the installed certifi trust store with TLS verification enabled; no certificate check was bypassed."
+}

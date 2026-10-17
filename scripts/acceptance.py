@@ -88,6 +88,16 @@ else:
     }
     for r in records:
         validators[r["type"]].validate(r)
+    for kind, name in (
+        ("work", "works"),
+        ("person", "people"),
+        ("work-insight", "work_insights"),
+        ("work-relation", "work_relations"),
+    ):
+        schema = read_json(root / "schemas" / f"{kind}.schema.json")
+        validator = jsonschema.Draft202012Validator(schema)
+        for entry in a.manifest.get(name, []):
+            validator.validate(entry)
     schema_status = (
         f"{len(records)} immutable versions validated against exported JSON Schemas"
     )
@@ -107,6 +117,7 @@ print(
             "frozen_evaluation_files_unchanged": True,
             "external_jsonschema": schema_status,
             "qualified_human_audit": "not performed",
+            "catalog_counts": a.info().get("catalog_counts", {}),
         },
         indent=2,
     )

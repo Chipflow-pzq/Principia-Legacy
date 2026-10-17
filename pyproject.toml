@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "principia-legacy"
-version = "1.2.0"
+version = "1.4.1"
 description = "A local-first living atlas of human understanding"
 requires-python = ">=3.12"
 license = "MIT"

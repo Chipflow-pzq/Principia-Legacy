@@ -15,6 +15,7 @@ root = Path(__file__).resolve().parents[1]
 atlas = Atlas(root)
 records = atlas.records
 summary = report(root)
+catalog = read_json(root / "reports/catalog-1.4.json", {})
 write_json(root / "build/source-attempts.json", summary["source_attempts"])
 write_json(
     root / "build/coverage.json",
@@ -134,7 +135,7 @@ print(
 atlas.close()
 
 status = (
-    "Packaged exploratory release"
+    "Local exploratory candidate; not deployed or published"
     if "--final" in sys.argv
     else "Implementation and bounded source passes remain active"
 )
@@ -159,10 +160,11 @@ body = f"""# Build status
 | Dimension | Current evidence |
 |---|---|
 | Corpus | {counts["contribution"]} contributions, {counts["relation"]} relationships, {counts["source"]} source records |
+| Work catalogue | {catalog.get("catalog", {}).get("works", "n/a")} works; {catalog.get("catalog", {}).get("people", "n/a")} selected people; {catalog.get("catalog", {}).get("works_with_insights", "n/a")} works with extracted insights. Metadata-only entries do not increase scientific coverage. |
 | Scope | Five subjects; {topic_count} registered topics, {populated} populated; empty assignments remain visible |
 | Expanded content target | **{target_status}**: at least 200 populated topics and 2,000 unique primary-subject insights per subject. Counts never override the evidence requirement. |
 | Machine screening | Passage-grounded extraction and a separate critic; exact-revision provenance retained |
-| Human review | **{summary["human_reviewed_contributions"]} contributions with recorded human review; {summary["independent_human_audit"]} qualified human audit** |
+| Human review | **{summary["human_reviewed_contributions"]} contributions with recorded human review; qualified human audit {summary["independent_human_audit"]}** |
 | Audit preparation | {len(node_sample)} contributions and {len(edge_sample)} relationships sampled; adjudication fields empty |
 | Research pilot | 120 frozen synthetic cases, 30 development / 90 held out; five conditions, 600 recorded case attempts |
 | Normative content | Attributed normative arguments remain distinct from empirical findings |
@@ -181,16 +183,19 @@ The typed-atlas condition did not improve rule-based verdict agreement over flat
 - Provider attempts: {usage["requests"]}; successful: {usage["successful"]}; unknown possible charges after interruption/timeout: {usage["unknown_possible_charge"]}.
 - Separate interruption markers: {usage["interruption_markers"]}; up to {usage["unreceipted_interruption_upper_bound"]} additional in-flight requests may lack individual receipts. These are not counted as free.
 - Reported usage: {usage["prompt_tokens"]:,} prompt tokens; {usage["completion_tokens"]:,} completion tokens. These totals exclude unreported usage for interrupted requests.
+- Unpriced model requests: {usage["planning_estimate"]["unpriced_requests"]}. The dated-rate known subtotal excludes these and all unreported usage; it is not the complete cost. Personal browser-test receipts are reported separately in the current acceptance report.
 - US$300-equivalent planning allowance is owner-managed. No exact bill or hard spending enforcement is claimed.
 - Model identities appear in individual receipts. Flash handled the expansion and its separate relationship critic; Pro was used for calibration, editorial triage and the stricter cross-source warrant check. No silent model substitution.
 
 ## Verification and remaining limits
 
-Software checks cover schemas, references, source anchors, joint premises, literal search, read-only serving, correction quarantine and recheck, stale approvals, preserved snapshots, unsafe inputs and export closure. Browser tests cover desktop and narrow-screen reading, sources, arrows, search, comparison, keyboard access, filtering, expansion and brief content. The offline smoke test denies outbound socket connections while serving and reading all bundled assets; browser routes separately block external requests.
+Software checks cover schemas, references, source anchors, joint premises, four-category bounded fuzzy/concept search, work membership, read-only serving, correction quarantine and recheck, stale approvals, preserved snapshots, unsafe inputs and export closure. Browser tests cover desktop and narrow-screen reading, sources, arrows, search, comparison, keyboard access, filtering, expansion and brief content. The offline smoke test denies outbound socket connections while serving and reading all bundled assets; browser routes separately block external requests.
 
 Measured results are in `build/performance.json`, and the research results in `build/evaluation-summary.json`. Only macOS was actually tested here. Windows and Linux launchers plus a three-platform CI workflow are supplied; those platforms have not been executed in this session.
 
 The current content is a bounded set of explicit source passes. It is not a completed recursive depth-six reconstruction of the history of science. Independent priority, inaccessible sources, exact current frontier relevance, unresolved endpoints and alternative traditions need further source work. Three tours are reading sequences; they do not invent cross-pillar historical arrows.
+
+Representative-selection counts and per-subject shortfalls are in `reports/catalog-1.4.json`. Personal Trace a discovery remains experimental under the unchanged live-evaluation limitations in `reports/product-readiness-1.3.md`. This catalogue upgrade does not certify unattended public research.
 
 Next bounded content work: resolve the gaps enumerated in `docs/COVERAGE.md` and `build/coverage.json`, admit precise endpoints, then extend each neighborhood from its explanatory checklist. Keep count targets subordinate to evidence. A prepared human-audit queue is available in `build/audit-sample.json`.
 """

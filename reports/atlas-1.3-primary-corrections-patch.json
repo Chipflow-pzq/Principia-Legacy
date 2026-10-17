@@ -1,0 +1,2581 @@
+{
+  "base_corpus_hash": "4231649a4654e604dca1bcc02ba21c33961bb17bc07e98752a34311a560b0da9",
+  "generated_at": "2026-10-17T02:15:49+00:00",
+  "impact": [
+    "r-0dcc0ccfa39330cb",
+    "r-27b2b7d62aa87640",
+    "r-3c12cc2c79438fbf",
+    "r-480a42f8788a0947",
+    "r-5f38862e370f56c1",
+    "r-60dc61aaa83de237",
+    "r-6663c629c040b852",
+    "r-6d5e4b0cdf7bc08e",
+    "r-7f7aa1a2ff0cd773",
+    "r-832475660aee06f7",
+    "r-86fcf6df1c371d88",
+    "r-8b32b3269f3ca09d",
+    "r-8b67f093717f8810",
+    "r-932a2ad553e1a71d",
+    "r-9a4f9aba6662da9c",
+    "r-9d65576f24a7e439",
+    "r-a262174ac679ccb4",
+    "r-a347d00e77b3a2d7",
+    "r-a35144144663d3b4",
+    "r-ab47cb40fc5db7e9",
+    "r-c196b6194d8154e2",
+    "r-c414e7de0d9298b4",
+    "r-c5b1e4433db1e4db",
+    "r-cbd7ac1b96dadcdd",
+    "r-ceaaf07a30a538f0",
+    "r-d6d62368354c90b3",
+    "r-d8899d1874d620c4",
+    "r-e1593a22a2f5f2e1",
+    "r-e54e5d05a5e503ba",
+    "r-e9f6b34b57aa25d8",
+    "r-fa743ca8aad07ac2",
+    "r-fc8e713ada1d6407"
+  ],
+  "reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+  "records": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The forward and backward transformations can be done 'fast enough' relative to the sort.",
+        "The sort's cost is $O(n \\log n)$."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no original attribution is given.",
+          "name": "unknown",
+          "role": "unknown"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "If PAIRING reduces to SORTING with cheap transformations, then PAIRING's asymptotic cost is at most SORTING's, since the sort dominates the total work.",
+      "conceptual_move": "Compose the transformation costs with the known solver cost and observe that the dominant term bounds the new problem from above.",
+      "content_hash": "3259150db165ee6048cc4dd5d4a474d3cd167b2ab38938a5b0895e226ec0c852",
+      "curation": {
+        "draft_request_id": "01a14795e387a2aebc59333dca470bd3",
+        "input_hash": "51026b04df1da62f30106bcd8c79e42e0a90a4981b9b9bf2ba34d394375eecb0",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "eafba62a3bc4e1611fca1489e99532069cd34bf4c5a53578d780d080a5d36cf1",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14795e387a2aebc59333dca470bd3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14796a13237a19a767ce4870c3a90",
+        "time": "2026-10-17T01:59:27+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "No historical origin provided.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "C2116"
+      ],
+      "explanation": "The PAIRING problem asks for a pairing of two integer sequences in which the least value of $X$ is paired with the least value of $Y$, the next least with the next least, and so on. One solution sorts each sequence and pairs by position, so PAIRING is reduced to SORTING. The conversion of PAIRING input into two SORTING instances is trivial, and the conversion back pairs the first elements, then the second, and so on. Because the transformations are cheap, the dominant cost is the sort, giving an upper bound of $O(n \\log n)$ for PAIRING. The passage stresses that PAIRING does not require sorted output; sorting is merely one route, so this upper bound does not preclude a faster approach.",
+      "human_review": "not_reviewed",
+      "id": "n-34c92faac94e31d9",
+      "kind": "argument",
+      "limits": [
+        "The bound is an upper bound only; it does not show PAIRING requires $\\Omega(n \\log n)$.",
+        "The passage notes another approach might conceivably be faster."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "How can an existing solver for one problem be used to bound the cost of a different problem?",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook example of an upper-bound reduction.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Reducing pairing to sorting gives an upper bound for pairing",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p35",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p38",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Addition, subtraction, and division by 4 cost linear time.",
+        "The identity holds for the number representation used."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no original attribution is given.",
+          "name": "unknown",
+          "role": "unknown"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "Because $X \\times Y = ((X+Y)^2 - (X-Y)^2)/4$, a linear-time squaring routine would yield a linear-time multiplication routine, so squaring is as hard as multiplying.",
+      "conceptual_move": "Express a product through two squarings plus linear-time additions and a shift, turning squaring into a subroutine for multiplication.",
+      "content_hash": "b7e40249281d42520cfad694e59d983e8fafc919fb43222a7c5e2d9e1593449c",
+      "curation": {
+        "draft_request_id": "01a14795e387a2aebc59333dca470bd3",
+        "input_hash": "51026b04df1da62f30106bcd8c79e42e0a90a4981b9b9bf2ba34d394375eecb0",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "eafba62a3bc4e1611fca1489e99532069cd34bf4c5a53578d780d080a5d36cf1",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14795e387a2aebc59333dca470bd3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14796a13237a19a767ce4870c3a90",
+        "time": "2026-10-17T01:59:27+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "No historical origin provided.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "C2116"
+      ],
+      "explanation": "The source compares general integer multiplication with the restricted task of squaring. The identity $XY=((X+Y)^2-(X-Y)^2)/4$ provides a reduction from multiplication to squaring: form a sum and a difference, square each, subtract, and divide by four. Under the stated digit-operation cost model, the surrounding additions, subtraction and division cost only linear time. Thus a linear-time squaring algorithm would yield a linear-time multiplication algorithm. This is a conditional transfer of algorithmic cost, not a proof that either task requires a particular lower bound. Squaring also reduces directly to multiplication by using the same input twice. The useful insight is that a seemingly restricted arithmetic task can retain the difficulty of the general one when cheap transformations connect them.",
+      "human_review": "not_reviewed",
+      "id": "n-e65c831a6590ea2c",
+      "kind": "argument",
+      "limits": [
+        "The argument is conditional on a hypothetical linear-time squaring algorithm.",
+        "It does not establish an unconditional lower bound for squaring."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Does the special case of squaring an $n$-digit number admit a faster algorithm than general multiplication?",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook reduction example.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Multiplication reduces to squaring via the difference-of-squares identity",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p41",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p47",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Matrix entries are simple integers and integer multiplication is constant time.",
+        "Transposition costs $n^2$ time.",
+        "Block matrix multiplication behaves as usual."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; no original attribution is given.",
+          "name": "unknown",
+          "role": "unknown"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "Embedding arbitrary $n \\times n$ matrices into $2n \\times 2n$ symmetric block matrices shows that a fast symmetric-matrix multiplication algorithm would give a fast general matrix multiplication algorithm.",
+      "conceptual_move": "Construct symmetric block matrices from arbitrary matrices so that their product contains the desired product as a block.",
+      "content_hash": "b248be5154b7d32d6ce0b245ab6cf7c056b177f3a567c70843f43c81b085c39d",
+      "curation": {
+        "draft_request_id": "01a14795e387a2aebc59333dca470bd3",
+        "input_hash": "51026b04df1da62f30106bcd8c79e42e0a90a4981b9b9bf2ba34d394375eecb0",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "eafba62a3bc4e1611fca1489e99532069cd34bf4c5a53578d780d080a5d36cf1",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14795e387a2aebc59333dca470bd3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14796a13237a19a767ce4870c3a90",
+        "time": "2026-10-17T01:59:27+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "No historical origin provided.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "C2116"
+      ],
+      "explanation": "Given arbitrary square matrices $A$ and $B$, place $A$ and its transpose in the off-diagonal blocks of one larger symmetric matrix, and place the transpose of $B$ and $B$ in the corresponding blocks of another. Multiplying the larger symmetric matrices produces $AB$ as one diagonal block. Constructing the blocks and extracting the result costs quadratic time in the original dimension. Therefore, a quadratic-time algorithm for the symmetric case would provide a quadratic-time algorithm for the unrestricted case. This establishes a conditional reduction with explicit overhead. It does not prove that quadratic-time general multiplication is impossible, and it makes no claim about the best algorithm available today. The example shows how structural restrictions can be removed by encoding a general instance inside a larger structured one.",
+      "human_review": "not_reviewed",
+      "id": "n-11d0d08049e66bff",
+      "kind": "argument",
+      "limits": [
+        "The conclusion is conditional on a hypothetical $\\Theta(n^2)$ symmetric algorithm.",
+        "It does not rule out faster-than-$\\Theta(n^3)$ algorithms for the general case."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Does restricting to symmetric matrices allow faster multiplication than the general $\\Theta(n^3)$ case?",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook reduction example.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "General matrix multiplication reduces to symmetric matrix multiplication",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The counter starts at zero and has enough bits for all N increments without overflow.",
+        "Each bit flip has unit cost."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Presented as a textbook example; the binary counter example is a classic illustration but the source names no originator.",
+          "name": "OpenDSA Project Contributors",
+          "role": "authors of exposition"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "Starting from zero, a sequence of $N$ binary-counter increments performs fewer than $2N$ bit flips when overflow is excluded. The low-order bit changes every time, the next at most half as often, and successive bits geometrically less often.",
+      "conceptual_move": "Charge each bit flip to the bit position and sum the geometric series of flip frequencies across positions.",
+      "content_hash": "00df18f01e4935446ba61130f3edc078e630541eaf27858e85f638450dd298f4",
+      "curation": {
+        "draft_request_id": "01a147958f22f5e77468c606c0dd92a5",
+        "input_hash": "d60087e8462ffde0b23576a66869e42c51f412df572253a049e07257629f3a41",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "5566a4b2d3ebe09dd74da044ca5a27c1a1b6d9e228228f372c17620fbe9429e3",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147958f22f5e77468c606c0dd92a5",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479620549ff78c8be0445c74bdd7",
+        "time": "2026-10-17T01:59:05+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook exposition.",
+        "precision": "year",
+        "year": 2020
+      },
+      "dossiers": [
+        "C2101"
+      ],
+      "explanation": "A single increment can flip many bits when a suffix of ones changes to zeros. Charging that worst case to every increment overstates the total. Across $N$ increments from zero, the lowest bit flips $N$ times, the next at most $\\lfloor N/2\rfloor$ times, the next at most $\\lfloor N/4\rfloor$ times, and so on. Their sum is less than $2N$. The source displays the corresponding geometric sum as less than two per operation, although its prose rounds this to two. The bounded sum, rather than an exact equality, is the substantive result. It gives constant amortized bit-flip cost while allowing an individual increment to be expensive. This bound concerns a whole sequence and requires enough bits to avoid overflow; it is not a probabilistic average over randomly selected counter states.",
+      "human_review": "not_reviewed",
+      "id": "n-e2055ae3bf7bfbf1",
+      "kind": "empirical_finding",
+      "limits": [
+        "Individual increments can flip many bits.",
+        "The bound is for bit-flip cost, not a claim about every hardware instruction or counter representation."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Naive worst-case analysis of binary counter increments charges n bit flips per increment, giving n·2^n for 2^n increments, which overstates the real cost.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Correct and standard; the geometric-series argument is elementary and well established.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Binary counting has a constant amortized number of bit flips",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Traits under selection are heritable.",
+        "Individuals differ in reproductive contribution.",
+        "Selection acts on organisms, not directly on individual alleles."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Textbook exposition; the term Darwinian fitness is used but no originator is credited in the passage.",
+          "name": "unknown",
+          "role": "collective"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "Selection acts on heritable phenotypes of organisms through differences in reproductive contribution. The resulting change in allele frequencies is measured across generations in the population; under the stated environment this can increase adaptation.",
+      "conceptual_move": "Relocate the unit of selection from the allele to the whole organism and treat fitness as the organism's contribution to the next generation's gene pool, so that allele-frequency change is a downstream consequence of differential reproductive success.",
+      "content_hash": "781760adc7ab16f2904c94e35515336a5cc48953982c979be4756143a0ba2b02",
+      "curation": {
+        "draft_request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "input_hash": "75511f3ea328a630bb568941fb84ab7d1a3775ee383aed45cf32368dfdd7a8de",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fe00bc3eaa39847007879da6fd8cf6d4cbc3de42be04de22a9249bca305d4af4",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479a5524877cb8d3c9ec315736b9",
+        "time": "2026-10-17T02:02:48+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Textbook publication date; the underlying concept is presented as established knowledge.",
+        "precision": "year",
+        "year": 2018
+      },
+      "dossiers": [
+        "B2196"
+      ],
+      "explanation": "The source distinguishes the units being selected from the population in which evolutionary change is measured. Organisms carrying different heritable combinations can leave different numbers of descendants. Those differences change the representation of alleles in the next generation. A beneficial allele does not act in isolation: its carrier may also have a combination that prevents survival or reproduction. The source illustrates this with a genotype that would increase reproductive capacity but is carried alongside an early lethal condition. Thus an allele cannot be assessed independently of its organismal context. Adaptive evolution names population change associated with selection in the relevant environment; it does not mean that an individual organism changes its inherited genome in order to adapt, nor that every evolutionary change improves fitness.",
+      "human_review": "not_reviewed",
+      "id": "n-ae1497a238d5a9d1",
+      "kind": "mechanism",
+      "limits": [
+        "The passage does not quantify fitness or specify how it is measured beyond relative comparison.",
+        "It does not treat non-selective evolutionary forces in this section beyond a closing remark."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "How can a population become better matched to its environment without any individual changing its inherited makeup during its lifetime?",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard textbook exposition of natural selection and fitness; presented as established, with no primary citation given.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Adaptive evolution: natural selection shifts heritable allele frequencies toward environmental fit",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Infinitely large population size.",
+        "No mutation, migration, or emigration.",
+        "No selective pressure for or against any genotype.",
+        "Random mating with respect to the locus under study."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The passage names Hardy as having stated the principle of equilibrium in the early twentieth century.",
+          "name": "Godfrey Hardy",
+          "role": "original contributor"
+        },
+        {
+          "evidence_note": "The passage names Weinberg as having stated the principle of equilibrium in the early twentieth century.",
+          "name": "Wilhelm Weinberg",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "In the idealized Hardy–Weinberg model, random mating at a locus in an effectively infinite population, with no mutation, migration or selection, produces stable allele frequencies and the corresponding equilibrium genotype proportions.",
+      "conceptual_move": "State conditions under which allele and genotype frequencies are inherently stable, then use departures from that stability as evidence that some evolutionary force is operating.",
+      "content_hash": "2b006b0f9cd0cd7222a1a84078f6235efcac129cad588247fb54deb72a3e5b3b",
+      "curation": {
+        "draft_request_id": "01a1479851f6facb948bc62753eaafc8",
+        "input_hash": "e27470ce33c494c15e186fc4f6cf79d1b6efc9a11d468f26c18e8d1b970c965a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "ae17aff3b848c5109c839b1cb862698961364152274b96cb75961a5f9ce1d944",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1479851f6facb948bc62753eaafc8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147991cad9cdfdd8251bf234a4946",
+        "time": "2026-10-17T02:02:09+00:00"
+      },
+      "date": {
+        "event": "formulation",
+        "note": "The passage places the formulation in the early twentieth century but gives no exact year.",
+        "precision": "approximate",
+        "year": null
+      },
+      "dossiers": [
+        "B2190"
+      ],
+      "explanation": "Hardy–Weinberg equilibrium supplies a null model for population genetics. For a two-allele locus with frequencies $p$ and $q$, random combination of alleles gives genotype proportions $p^2$, $2pq$ and $q^2$. The idealization excludes selection, mutation, migration and finite-population drift, and it assumes random mating with respect to the locus. These conditions distinguish a theoretical baseline from a universal description of natural populations. Comparing observations with the baseline can expose a need to investigate assumptions or biological processes. A departure by itself does not identify which cause is responsible, and genotype proportions must not be conflated with allele frequencies. The source attributes the equilibrium principle to Hardy and Weinberg; this secondary account does not establish details of their separate original formulations.",
+      "human_review": "not_reviewed",
+      "id": "n-9b532120070210b1",
+      "kind": "theorem",
+      "limits": [
+        "The source states that no population can satisfy the conditions.",
+        "Even Hardy and Weinberg recognized that no natural population is immune to evolution.",
+        "The exact phenotype distribution still requires counting phenotypes in the field."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "Without a baseline for what frequencies would be if nothing evolutionary happened, observed allele and genotype frequencies cannot be interpreted.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Standard population-genetics principle; the source presents it as accepted and explicitly notes its idealized assumptions.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Hardy-Weinberg equilibrium as a null model for non-evolving populations",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The variables $X_1,X_2,\\dots$ are independent and identically distributed",
+        "The common distribution has finite mean $\\mu$ and finite variance $\\sigma^2$",
+        "The characteristic function is twice differentiable at zero, which follows from finiteness of the first two moments",
+        "The variance is strictly positive; a degenerate constant distribution cannot be standardized by division by zero."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The lecture states and proves the central limit theorem without naming an originator; no historical attribution is provided.",
+          "name": "unknown",
+          "role": "unknown"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "For i.i.d. random variables with finite mean $\\mu$ and finite positive variance $\\sigma^2$, the centered and normalized sum $(S_n-n\\mu)/(\\sigma\\sqrt{n})$ converges in distribution to a standard normal random variable.",
+      "conceptual_move": "Reduce to zero mean and unit variance, expand the characteristic function to second order as $1-t^2/2+o(t^2)$, raise it to the $n$-th power at argument $t/\\sqrt{n}$, and identify the pointwise limit $e^{-t^2/2}$ as the standard normal transform, then apply the continuity theorem.",
+      "content_hash": "244719e1b0cc904bbf0184e4664d2def0ff2c92e5b42759a1b075e6f41e9c37b",
+      "curation": {
+        "draft_request_id": "01a147a10c647e5da711928166b34cee",
+        "input_hash": "c53ddd482f8680f2f1c0c90f82223a4e944b648cf3038255976564bdae739bb2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e35a539c8c7307759cadae9715768a055347709ed34c5a1946cdb1742903e328",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147a10c647e5da711928166b34cee",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147a1a396c1b9bbb835561060fffb",
+        "time": "2026-10-17T02:11:41+00:00"
+      },
+      "date": {
+        "event": "formulation",
+        "note": "No historical date or originator is given in the source.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M2163"
+      ],
+      "explanation": "The lecture states the central limit theorem for i.i.d. variables with finite mean and variance, normalizing the sum by subtracting $n\\mu$ and dividing by $\\sigma\\sqrt{n}$. For the proof it assumes zero mean and unit variance, so that the first two moments of $X_1$ are finite and the characteristic function is twice differentiable at zero, with first derivative zero and second derivative $-1$. This gives the expansion $\\varphi_X(t)=1-t^2/2+o(t^2)$. Independence makes the transform of $S_n/\\sqrt{n}$ equal to $\\varphi_X(t/\\sqrt{n})^n$, which becomes $(1-t^2/(2n)+o(t^2/n))^n$ and converges pointwise to $e^{-t^2/2}$, the characteristic function of a standard normal variable. The continuity theorem then yields convergence in distribution. The lecture also records two refinements: if $\\int|\\varphi_{X_1}(t)|^r\\,dt<\\infty$ for some positive integer $r$, then $S_n$ is continuous for $n\\ge r$ and its density converges uniformly to the standard normal density; and for lattice-valued variables, the point probabilities at the lattice points converge to the normal density value divided by the lattice spacing.",
+      "human_review": "not_reviewed",
+      "id": "n-ed32a75acb0c02b3",
+      "kind": "theorem",
+      "limits": [
+        "The theorem gives no information about the PDF or PMF of $S_n$ for finite $n$",
+        "The proof is given only for the zero-mean, unit-variance case; the general case is obtained by rescaling",
+        "No rate of convergence is provided by the theorem itself; that is supplied separately by the Berry-Esseen bound",
+        "The lecture does not discuss infinite-variance or dependent cases"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "One needs a precise statement of the universal limiting shape of normalized sums, together with a proof that does not presuppose any particular distributional form.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Established theorem; the lecture provides a proof via characteristic functions and notes further refinements under additional assumptions.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Central limit theorem: normalized i.i.d. sums converge in distribution to the standard normal",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The variables $X_1,\\dots,X_n$ are independent, but need not be identically distributed",
+        "Each variable has finite mean, finite variance, and finite third absolute central moment",
+        "The total variance $\\sigma^2$ is positive"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The theorem is named 'Berry-Esseen' in the lecture, but no further historical detail or date is provided.",
+          "name": "Berry and Esseen",
+          "role": "original contributor"
+        },
+        {
+          "evidence_note": "The lecture cites Van Beeck (1972) for the improved constant $0.7975$ in the i.i.d. case.",
+          "name": "P. Van Beeck",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "For independent, possibly non-identically distributed variables with finite third absolute central moments, the CDF of the normalized sum differs from the standard normal CDF by at most $6T/\\sigma^3$, where $T$ is the sum of third absolute central moments and $\\sigma^2$ the sum of variances.",
+      "conceptual_move": "Bound the uniform distance between the two CDFs by a quantity built from the third absolute central moments and the total variance, yielding a rate of order $1/\\sqrt{n}$ under identical distributions.",
+      "content_hash": "29fb31b692300f97f471ef4f3569028073208615f081eafe05f68ab272510793",
+      "curation": {
+        "draft_request_id": "01a147a10c647e5da711928166b34cee",
+        "input_hash": "c53ddd482f8680f2f1c0c90f82223a4e944b648cf3038255976564bdae739bb2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e35a539c8c7307759cadae9715768a055347709ed34c5a1946cdb1742903e328",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147a10c647e5da711928166b34cee",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147a1a396c1b9bbb835561060fffb",
+        "time": "2026-10-17T02:11:41+00:00"
+      },
+      "date": {
+        "event": "formulation",
+        "note": "No date is given for the Berry-Esseen theorem itself; the cited improvement is dated 1972.",
+        "precision": "unknown",
+        "year": null
+      },
+      "dossiers": [
+        "M2163"
+      ],
+      "explanation": "The lecture introduces the Berry-Esseen theorem as a refinement of the central limit theorem that quantifies the speed of convergence. It defines, for independent variables that need not be identically distributed, the individual means $\\mu_k$, variances $\\sigma_k^2$, and third absolute central moments $t_k=E[|X_k-\\mu_k|^3]$, then sets $\\sigma^2=\\sum_k\\sigma_k^2$ and $T=\\sum_k t_k$. The theorem states that for every real $\\lambda$, the probability that the centered sum is at most $\\lambda\\sigma$ differs from the standard normal CDF $\\Phi(\\lambda)$ by at most $6T/\\sigma^3$. For i.i.d. variables this bound is of order $1/\\sqrt{n}$, since $T$ grows linearly and $\\sigma^3$ grows like $n^{3/2}$. The lecture notes that the constant $6$ is not optimal: for i.i.d. variables it is known that $0.7975$ can be used instead, citing Van Beeck. The theorem is stated without proof, with a reference to Feller's volume for the proof.",
+      "human_review": "not_reviewed",
+      "id": "n-08d13cf9a3702bdc",
+      "kind": "theorem",
+      "limits": [
+        "The theorem is stated without proof in this lecture",
+        "The constant $6$ is not optimal; the lecture notes $0.7975$ is known for the i.i.d. case",
+        "The bound concerns the CDF only, not densities or point probabilities",
+        "The lecture does not discuss sharpness or lower bounds for the approximation error"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "mathematics",
+      "problem": "The central limit theorem asserts convergence but gives no quantitative control on how close the normalized sum's distribution is to the normal for finite $n$.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Established theorem; stated without proof and with a reference to Feller for the proof.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "mathematics",
+        "foundations"
+      ],
+      "title": "Berry–Esseen bounds finite-sample normal-approximation error",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Most characteristics are inherited from parent to offspring.",
+        "More offspring are produced than can survive, so resources are limited.",
+        "Offspring vary in inherited characteristics.",
+        "Variation has a genetic basis for selection to change the next generation."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Secondary source explicitly distinguishes Darwin and Wallace as independent formulators; this card records Darwin.",
+          "name": "Charles Darwin",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "Heritable differences among organisms can produce differences in survival and reproduction. Across generations, traits associated with greater reproductive contribution can become more common in a population, explaining adaptation without intentional change by individuals.",
+      "conceptual_move": "Replace static species with a population-level mechanism in which heritable trait differences cause differential survival and reproduction.",
+      "content_hash": "9c9e49c4506d657e3395998839568326aed0dfcf12edf0f75322539c2954c7d1",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Secondary account dates the jointly presented papers to 1858; the book followed in 1859.",
+        "precision": "year",
+        "year": 1858
+      },
+      "dossiers": [
+        "B2181"
+      ],
+      "explanation": "The intellectual move is to explain population change through differential reproduction of inherited variation. Organisms produce more offspring than the available resources can sustain, and offspring differ in inherited characteristics. If some of those differences affect reproductive success in a particular environment, their representation can change in subsequent generations. The source describes this mechanism as natural selection and explicitly identifies Darwin and Wallace as independent formulators. This card records Darwin's contribution; Wallace's is preserved separately rather than being merged into a joint invention. The source dates their jointly presented papers to 1858 and Darwin's book to 1859. This is a secondary account of that history, not an analysis of the original manuscripts or their differences. Selection concerns a population across generations; it does not imply intention or guarantee that every evolutionary change is adaptive.",
+      "human_review": "not_reviewed",
+      "id": "n-ea687c9c5c407e72",
+      "kind": "mechanism",
+      "limits": [
+        "The source does not discuss genetic drift, gene flow, or non-adaptive evolution in this section.",
+        "It presents natural selection as the only known mechanism for adaptive evolution, a strong claim not qualified here.",
+        "The mechanism is described without molecular details of inheritance."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "How can species change over time without an external directing force?",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Accepted as the central mechanism of adaptive evolution in modern biology; textbook exposition.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Darwin's formulation of natural selection",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Most characteristics are inherited from parent to offspring.",
+        "More offspring are produced than can survive, so resources are limited.",
+        "Offspring vary in inherited characteristics.",
+        "Variation has a genetic basis for selection to change the next generation."
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Secondary source explicitly describes independent formulation and the 1858 joint presentation.",
+          "name": "Alfred Russel Wallace",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Primary agent source-grounded corrections to direction, mathematical scope and independent-discovery attribution; no human review.",
+      "claim": "Heritable differences among organisms can produce differences in survival and reproduction. Across generations, traits associated with greater reproductive contribution can become more common in a population, explaining adaptation without intentional change by individuals.",
+      "conceptual_move": "Replace static species with a population-level mechanism in which heritable trait differences cause differential survival and reproduction.",
+      "content_hash": "af39b8c8da073126e0c060620fcf9a0df4b17c744a99754911b3b22a998a1f43",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Secondary account dates the jointly presented papers to 1858; the book followed in 1859.",
+        "precision": "year",
+        "year": 1858
+      },
+      "dossiers": [
+        "B2181"
+      ],
+      "explanation": "The intellectual move is to explain population change through differential reproduction of inherited variation. Organisms produce more offspring than the available resources can sustain, and offspring differ in inherited characteristics. If some of those differences affect reproductive success in a particular environment, their representation can change in subsequent generations. The source describes this mechanism as natural selection and explicitly identifies Darwin and Wallace as independent formulators. This card records Wallace's contribution; Darwin's is preserved separately rather than being merged into a joint invention. The source dates their jointly presented papers to 1858 and Darwin's book to 1859. This is a secondary account of that history, not an analysis of the original manuscripts or their differences. Selection concerns a population across generations; it does not imply intention or guarantee that every evolutionary change is adaptive.",
+      "human_review": "not_reviewed",
+      "id": "n-eef47bee83b5cb45",
+      "kind": "mechanism",
+      "limits": [
+        "The source does not discuss genetic drift, gene flow, or non-adaptive evolution in this section.",
+        "It presents natural selection as the only known mechanism for adaptive evolution, a strong claim not qualified here.",
+        "The mechanism is described without molecular details of inheritance."
+      ],
+      "machine_screening": "not_run",
+      "pillar": "biology_medicine",
+      "problem": "How can species change over time without an external directing force?",
+      "publication_state": "candidate",
+      "revision": 1,
+      "schema_version": 1,
+      "scientific_standing": "Accepted as the central mechanism of adaptive evolution in modern biology; textbook exposition.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "biology_medicine",
+        "foundations"
+      ],
+      "title": "Wallace's independent formulation of natural selection",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-f41af55c2c10162b",
+        "revision": 1
+      },
+      "content_hash": "763556f58f93f0c57fe0e646756444c768155c42db80ec3606ca65b2df6dcd27",
+      "curation": {
+        "draft_request_id": "01a1479851f6facb948bc62753eaafc8",
+        "input_hash": "e27470ce33c494c15e186fc4f6cf79d1b6efc9a11d468f26c18e8d1b970c965a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "ae17aff3b848c5109c839b1cb862698961364152274b96cb75961a5f9ce1d944",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1479851f6facb948bc62753eaafc8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147991cad9cdfdd8251bf234a4946",
+        "time": "2026-10-17T02:02:09+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-0dcc0ccfa39330cb",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-9b532120070210b1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Selection is one of the evolutionary forces whose absence the equilibrium conditions require.",
+      "type": "relation",
+      "warrant": "The Hardy-Weinberg assumptions include no selective pressure for or against genotype, and the source says deviations from the expected frequencies indicate that evolutionary forces are at play. Selection is thus a force that breaks the equilibrium baseline."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "75039291cc141d4392cea0d076e23bd19e02514d0f91e0e541c6b3b186854650",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-27b2b7d62aa87640",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-061cbb0883953152",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Vestigial structures provide evidence for common descent.",
+      "type": "relation",
+      "warrant": "The source presents vestigial structures as residual parts from a past common ancestor, supporting the common descent framework that natural selection operates within."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-9b532120070210b1",
+        "revision": 1
+      },
+      "content_hash": "9434284d565c8320edd2c3e225634c0ff4c92d6d0077fbf79ea5c86f2645c62c",
+      "curation": {
+        "draft_request_id": "01a1479851f6facb948bc62753eaafc8",
+        "input_hash": "e27470ce33c494c15e186fc4f6cf79d1b6efc9a11d468f26c18e8d1b970c965a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "ae17aff3b848c5109c839b1cb862698961364152274b96cb75961a5f9ce1d944",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1479851f6facb948bc62753eaafc8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147991cad9cdfdd8251bf234a4946",
+        "time": "2026-10-17T02:02:09+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-3c12cc2c79438fbf",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-6cead7fc21cbdec4",
+          "revision": 1
+        },
+        {
+          "id": "n-bf7698c41984542f",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The equilibrium principle is stated in terms of allele and genotype frequencies and the p², 2pq, q² relation.",
+      "type": "relation",
+      "warrant": "The Hardy-Weinberg principle asserts stability of allele and genotype frequencies, and the textbook develops it using p and q and the genotype frequencies p², 2pq, and q². The frequency representation and the genotype calculation are the formal apparatus on which the equilibrium claim is built."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "642f167b7e7c0d829c8b3e4077227f79f9a076a5990c8f373f721cb060de5b2f",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-480a42f8788a0947",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "historical_basis_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-fbd312fa91c78cd4",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Pre-Darwinian ideas about evolution, geology, and inheritance influenced Darwin's thinking.",
+      "type": "relation",
+      "warrant": "The source states Lyell's ideas were influential on Darwin's thinking, providing time and analogy for gradual change, and Lamarck's ideas were an important influence on evolutionary thought. These are documented historical antecedents."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p27",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-c4978dcc9cd59717",
+        "revision": 1
+      },
+      "content_hash": "da5c3726f6e84219e82e62f8ec64d9ec4416f83580ce348ee27b3ea72e0402f1",
+      "curation": {
+        "draft_request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "input_hash": "75511f3ea328a630bb568941fb84ab7d1a3775ee383aed45cf32368dfdd7a8de",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fe00bc3eaa39847007879da6fd8cf6d4cbc3de42be04de22a9249bca305d4af4",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479a5524877cb8d3c9ec315736b9",
+        "time": "2026-10-17T02:02:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-5f38862e370f56c1",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ae1497a238d5a9d1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Non-selective forces mean evolutionary change is not always adaptive.",
+      "type": "relation",
+      "warrant": "The passage states that while natural selection often results in a more fit population, genetic drift and gene flow often do the opposite by introducing deleterious alleles, and that evolution has no purpose. This bounds the adaptive interpretation of the selection mechanism in n1."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p54",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-e226683e5357365c",
+        "revision": 1
+      },
+      "content_hash": "b84b4480ddf60440793afca68abc0d2d52f3d99150b3a430911d4fa3db3324bc",
+      "curation": {
+        "draft_request_id": "01a14795e387a2aebc59333dca470bd3",
+        "input_hash": "51026b04df1da62f30106bcd8c79e42e0a90a4981b9b9bf2ba34d394375eecb0",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "eafba62a3bc4e1611fca1489e99532069cd34bf4c5a53578d780d080a5d36cf1",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14795e387a2aebc59333dca470bd3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14796a13237a19a767ce4870c3a90",
+        "time": "2026-10-17T01:59:27+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-60dc61aaa83de237",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "motivated",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-34c92faac94e31d9",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The informal PAIRING upper bound motivates the general composition rule.",
+      "type": "relation",
+      "warrant": "The PAIRING example adds transformation cost to sort cost and takes the dominant term. The Upper Bound Theorem states the same composition as $O(g(n) + h(n))$, so the worked example motivates the general statement."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "93a6ad0c56a86427403e87231619cac8abe3141c5ab8f4fc4881bb49abbbe16f",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-6663c629c040b852",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-2b1467c030ba83ee",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Grant long-term study provides empirical evidence of selection in action.",
+      "type": "relation",
+      "warrant": "The source describes the Grants' annual study since 1976 showing generation-to-generation changes in beak size linked to seed availability, providing important evidence of natural selection."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p23",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "40155519d9e08976eee7e83e01809fa3eb62a89175e980c7b04e476a365ebcf6",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-6d5e4b0cdf7bc08e",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-e10e2c86b251f810",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Adaptation as environment-dependent heritable trait is the outcome of natural selection.",
+      "type": "relation",
+      "warrant": "The source defines adaptation as a heritable trait helping survival and reproduction in the present environment, and states natural selection leads to greater adaptation. This definition is a premise for interpreting selection's outcome."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p41",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "abae935eb826e929e33b5367d8fdf404cc61baf06482b2903bb40c0da4339f26",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-7f7aa1a2ff0cd773",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-d59af00bba17abf5",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Molecular similarity provides evidence for common descent.",
+      "type": "relation",
+      "warrant": "The source states DNA universality and sequence similarity reflect descent with modification from a common ancestor, supporting the common descent framework."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p25",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-34c92faac94e31d9",
+        "revision": 1
+      },
+      "content_hash": "f3de591d4e213e0bf520e1c37f23cf7e93237dc204d1e5301a575471f07d5f2a",
+      "curation": {
+        "draft_request_id": "01a14795e387a2aebc59333dca470bd3",
+        "input_hash": "51026b04df1da62f30106bcd8c79e42e0a90a4981b9b9bf2ba34d394375eecb0",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "eafba62a3bc4e1611fca1489e99532069cd34bf4c5a53578d780d080a5d36cf1",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14795e387a2aebc59333dca470bd3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14796a13237a19a767ce4870c3a90",
+        "time": "2026-10-17T01:59:27+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-832475660aee06f7",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-d5d78eb73b93e2ab",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The three-step template is the inferential basis for the PAIRING upper bound.",
+      "type": "relation",
+      "warrant": "The upper bound for PAIRING is derived by instantiating the template: convert PAIRING input to two SORTING instances, sort, then pair by position. The claim that the sort dominates follows from the template plus the observation that the transformations are cheap."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-36c096f922960b73",
+        "revision": 1
+      },
+      "content_hash": "474d531b9604c1184b2d73bf2da572cb1e6e179f56cefde1eec2b2569646e95d",
+      "curation": {
+        "draft_request_id": "01a1479851f6facb948bc62753eaafc8",
+        "input_hash": "e27470ce33c494c15e186fc4f6cf79d1b6efc9a11d468f26c18e8d1b970c965a",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "ae17aff3b848c5109c839b1cb862698961364152274b96cb75961a5f9ce1d944",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1479851f6facb948bc62753eaafc8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147991cad9cdfdd8251bf234a4946",
+        "time": "2026-10-17T02:02:09+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-86fcf6df1c371d88",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-9b532120070210b1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Drift is among the forces that make real populations depart from equilibrium.",
+      "type": "relation",
+      "warrant": "The source states that populations in nature are constantly changing in genetic makeup due to drift, mutation, possibly migration, and selection, and that the Hardy-Weinberg principle provides a baseline against which evolving populations can be compared. Drift is therefore a departure from the idealized equilibrium."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p22",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "db6814933a886239538673a4185a36157f921c542a1e5ddd47948005f7a14cb7",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-8b32b3269f3ca09d",
+      "layer": "pedagogical",
+      "machine_screening": "not_run",
+      "predicate": "prerequisite_for_reading",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5b907c9ae3e89db3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Genetic diversity from mutation and sexual reproduction is the source of variation required by natural selection.",
+      "type": "relation",
+      "warrant": "The source states natural selection can only take place if there is variation with a genetic basis. Mutation and sexual reproduction are described as the main mechanisms producing that genetic diversity, making this a prerequisite for understanding selection."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-08d13cf9a3702bdc",
+        "revision": 1
+      },
+      "content_hash": "79d0fcbc6b9a516f28ea67deaa157944630a6bb93878a2ce094bdb8edb61ee4f",
+      "curation": {
+        "draft_request_id": "01a147a10c647e5da711928166b34cee",
+        "input_hash": "c53ddd482f8680f2f1c0c90f82223a4e944b648cf3038255976564bdae739bb2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e35a539c8c7307759cadae9715768a055347709ed34c5a1946cdb1742903e328",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147a10c647e5da711928166b34cee",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147a1a396c1b9bbb835561060fffb",
+        "time": "2026-10-17T02:11:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-8b67f093717f8810",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ed32a75acb0c02b3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Berry-Esseen quantifies the error of the normal approximation asserted by the central limit theorem, giving a uniform $O(1/\\sqrt{n})$ bound on the CDF difference.",
+      "type": "relation",
+      "warrant": "The lecture presents Berry-Esseen as a refinement of the central limit theorem that supplies a quantitative bound on the uniform distance between the normalized sum's CDF and the standard normal CDF. It limits the claim of convergence by specifying the rate and the dependence on third absolute moments."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "1ff6d9cc8ae84c6cd677d7214e5978328d8786738f0c3b46501f7ef381ad110f",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-932a2ad553e1a71d",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-43095066bddd6aac",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The three principles jointly imply natural selection as defined in n1.",
+      "type": "relation",
+      "warrant": "The source states Darwin argued natural selection was an inevitable outcome of three principles: inheritance, overproduction, and inherited variation. These principles are the inferential premises from which the mechanism follows."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p51",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "704affeb6daa778eb9a189730b238890ad2b355e2ac2e3ffcf719cc917eccfe9",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-9a4f9aba6662da9c",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ce1ffcf10649e757",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Selection acts on pre-existing variation, not environmentally induced mutations.",
+      "type": "relation",
+      "warrant": "The source states variation does not arise in response to environmental change and experiments show antibiotic resistance mutations do not arise from antibiotic application, bounding the mechanism to pre-existing variation."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-61ed21d6a08ed447",
+        "revision": 1
+      },
+      "content_hash": "799a3f480fbc1b60339b526b47202972778cedb8e9434c86fd71471c916a87a7",
+      "curation": {
+        "draft_request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "input_hash": "75511f3ea328a630bb568941fb84ab7d1a3775ee383aed45cf32368dfdd7a8de",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fe00bc3eaa39847007879da6fd8cf6d4cbc3de42be04de22a9249bca305d4af4",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479a5524877cb8d3c9ec315736b9",
+        "time": "2026-10-17T02:02:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-9d65576f24a7e439",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ae1497a238d5a9d1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The selection mechanism is limited by the supply of existing variation.",
+      "type": "relation",
+      "warrant": "After describing how selection raises beneficial and lowers deleterious allele frequencies, the passage states that selection can only select on existing variation and does not create anything from scratch. This limitation bounds what the mechanism in n1 can achieve."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "e9a3f4596bd659ef4a55ca38f54318bfef644767b9befeebafbfc7dee8d57fe2",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-a262174ac679ccb4",
+      "layer": "historical",
+      "machine_screening": "not_run",
+      "predicate": "independent_formulation_of",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-2ad3b0ea26f1a2a4",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Darwin and Wallace independently formulated the same mechanism.",
+      "type": "relation",
+      "warrant": "The source explicitly states they independently conceived and described the actual mechanism for evolution, and presented joint papers in 1858. This documents independent formulation of the same idea."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p52",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "de9d8ad7a059dcee641c59e8f7b6e15a243e0e07b6b4b24890a72a64d31afaca",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-a347d00e77b3a2d7",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5fc562e00d3c8772",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Evolution is not goal directed or progressive.",
+      "type": "relation",
+      "warrant": "The source states evolution is not goal directed and species do not become better over time, bounding natural selection to local tracking of changing environments rather than progress."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p35",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-11d0d08049e66bff",
+        "revision": 1
+      },
+      "content_hash": "fa63ef67aed1ea6787cd1ab40c387c8f3fc32c9c7b080ed3fa71f2d5a0c142b1",
+      "curation": {
+        "draft_request_id": "01a14795e387a2aebc59333dca470bd3",
+        "input_hash": "51026b04df1da62f30106bcd8c79e42e0a90a4981b9b9bf2ba34d394375eecb0",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "eafba62a3bc4e1611fca1489e99532069cd34bf4c5a53578d780d080a5d36cf1",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14795e387a2aebc59333dca470bd3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14796a13237a19a767ce4870c3a90",
+        "time": "2026-10-17T01:59:27+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-a35144144663d3b4",
+      "layer": "conceptual",
+      "machine_screening": "not_run",
+      "predicate": "analogous_to",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-e65c831a6590ea2c",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Both are conditional reductions showing a restricted case is as hard as the general case.",
+      "type": "relation",
+      "warrant": "Squaring is reduced to multiplication via an algebraic identity, and symmetric matrix multiplication is reduced to general matrix multiplication via a block embedding. Both argue that a fast restricted-case algorithm would yield a fast general algorithm, so the reasoning pattern is analogous."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ed32a75acb0c02b3",
+        "revision": 1
+      },
+      "content_hash": "2298499f9ca94c6a547ada3aeff4021822bd351f0535f8b1e8b12cc38084d0e0",
+      "curation": {
+        "draft_request_id": "01a147a10c647e5da711928166b34cee",
+        "input_hash": "c53ddd482f8680f2f1c0c90f82223a4e944b648cf3038255976564bdae739bb2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e35a539c8c7307759cadae9715768a055347709ed34c5a1946cdb1742903e328",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147a10c647e5da711928166b34cee",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147a1a396c1b9bbb835561060fffb",
+        "time": "2026-10-17T02:11:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ab47cb40fc5db7e9",
+      "layer": "pedagogical",
+      "machine_screening": "not_run",
+      "predicate": "prerequisite_for_reading",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-4410dab7272665f4",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The central limit theorem proof uses the continuity theorem to turn pointwise convergence of characteristic functions to $e^{-t^2/2}$ into convergence in distribution to the standard normal.",
+      "type": "relation",
+      "warrant": "The lecture's proof of the central limit theorem establishes that the characteristic functions of $S_n/\\sqrt{n}$ converge pointwise to $e^{-t^2/2}$ and then concludes convergence in distribution by invoking the continuity theorem. The theorem is the inferential bridge from the analytic limit to the distributional statement."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p46",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "e9609e31f09046b3a49225dfb613d1ee07ba76eff1dd7a0b4f0019d9919d9748",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-c196b6194d8154e2",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-6af0240e2a45f451",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Population-level definition of evolution is a prerequisite for understanding natural selection.",
+      "type": "relation",
+      "warrant": "The source defines evolution as change in a population's genetic composition over generations, clarifying that individuals do not evolve. This definition is a prerequisite for correctly interpreting natural selection."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p48",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p49",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "26c2a0699fe79b73112a8c39380544f86e5d097e2e2eecf74d5c78772e9e5cf9",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-c414e7de0d9298b4",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-c1f602c97fde9108",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Evolutionary theory does not explain the origin of life.",
+      "type": "relation",
+      "warrant": "The source explicitly states the theory of evolution does not try to explain the origin of life, bounding the scope of natural selection to populations after a mechanism of inheritance exists."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p25",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-0e2c8ab55e43d436",
+        "revision": 1
+      },
+      "content_hash": "a5d93020f809cbca8bba13413dad4ef405dd7bf17955d6bb223df5804b3cd1e6",
+      "curation": {
+        "draft_request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "input_hash": "75511f3ea328a630bb568941fb84ab7d1a3775ee383aed45cf32368dfdd7a8de",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fe00bc3eaa39847007879da6fd8cf6d4cbc3de42be04de22a9249bca305d4af4",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479a5524877cb8d3c9ec315736b9",
+        "time": "2026-10-17T02:02:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-c5b1e4433db1e4db",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ae1497a238d5a9d1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Individual-level selection and linkage disequilibrium limit allele-by-allele optimization.",
+      "type": "relation",
+      "warrant": "The passage states that selection acts at the individual level and that linked alleles tend to be inherited together, so good alleles can be lost and bad alleles kept. This directly bounds the allele-frequency account given in n1."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p32",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "b3986a693ca9952ad5eafa94db9ed99336ba06b54e572d2ddb8251fdcaae1870",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-cbd7ac1b96dadcdd",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-4007c27cfa9d61a3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Homologous structures provide evidence for common descent, which is the historical basis for selection's cumulative effects.",
+      "type": "relation",
+      "warrant": "The source presents homologous structures as evidence of common ancestry, supporting the framework in which natural selection acts on inherited variation over long time spans."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p30",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "5f0c837d6ce41367e3f6907d956b26fec7d44ac7cdba6fd091ac824eb2c97da8",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ceaaf07a30a538f0",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-308f801127f5d34e",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Fossil record provides evidence for gradual evolutionary change over time.",
+      "type": "relation",
+      "warrant": "The source states fossils show gradual evolutionary changes over time and detailed records for humans and horses, supporting the long-term operation of evolutionary mechanisms including natural selection."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-e2055ae3bf7bfbf1",
+        "revision": 1
+      },
+      "content_hash": "10813fd9ba0959241fe6c83fabe06fc18016061e64b3641670042018f3f582c1",
+      "curation": {
+        "draft_request_id": "01a147958f22f5e77468c606c0dd92a5",
+        "input_hash": "d60087e8462ffde0b23576a66869e42c51f412df572253a049e07257629f3a41",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "5566a4b2d3ebe09dd74da044ca5a27c1a1b6d9e228228f372c17620fbe9429e3",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147958f22f5e77468c606c0dd92a5",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479620549ff78c8be0445c74bdd7",
+        "time": "2026-10-17T01:59:05+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d6d62368354c90b3",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-be46791fe0632d64",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The whole-series viewpoint licenses charging bit flips by position instead of per-increment worst case.",
+      "type": "relation",
+      "warrant": "The counter example rejects naive per-increment worst-case costing and instead sums flip frequencies across the whole counting cycle, which is the series-level accounting the module defines as amortized analysis."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-71a116d3440a3fd2",
+        "revision": 1
+      },
+      "content_hash": "cb24bc715af3de0fabbba2411aac1e0852b56f1ae4c8fa0a09db0e3d978e84fa",
+      "curation": {
+        "draft_request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "input_hash": "75511f3ea328a630bb568941fb84ab7d1a3775ee383aed45cf32368dfdd7a8de",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fe00bc3eaa39847007879da6fd8cf6d4cbc3de42be04de22a9249bca305d4af4",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479a5524877cb8d3c9ec315736b9",
+        "time": "2026-10-17T02:02:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-d8899d1874d620c4",
+      "layer": "pedagogical",
+      "machine_screening": "not_run",
+      "predicate": "prerequisite_for_reading",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ae1497a238d5a9d1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Definitional: relative fitness operationalizes the fitness concept introduced in n1.",
+      "type": "relation",
+      "warrant": "The passage defines Darwinian fitness as contribution to the next generation's gene pool and then immediately explains that absolute fitness is not what counts, introducing relative fitness as the comparative measure. Reading n2 requires the fitness concept from n1, since relative fitness is defined by comparison against other organisms' contributions."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ed32a75acb0c02b3",
+        "revision": 1
+      },
+      "content_hash": "966d7a5027f2efa2d8b5098df8eab9084c3adc52f3a5d378cb4816c28761b202",
+      "curation": {
+        "draft_request_id": "01a147a10c647e5da711928166b34cee",
+        "input_hash": "c53ddd482f8680f2f1c0c90f82223a4e944b648cf3038255976564bdae739bb2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "e35a539c8c7307759cadae9715768a055347709ed34c5a1946cdb1742903e328",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147a10c647e5da711928166b34cee",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a147a1a396c1b9bbb835561060fffb",
+        "time": "2026-10-17T02:11:41+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-e1593a22a2f5f2e1",
+      "layer": "conceptual",
+      "machine_screening": "not_run",
+      "predicate": "analogous_to",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-957e07abb6d03c95",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Both results are proved by the same characteristic-function method: expand the transform at zero, raise to the $n$-th power, and identify the pointwise limit.",
+      "type": "relation",
+      "warrant": "The lecture proves the weak law by expanding $\\varphi_{X_1}$ to first order and the central limit theorem by expanding it to second order, in both cases raising the transform to the $n$-th power and identifying the limit as a characteristic function. The shared proof architecture is explicitly parallel in the text."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "2a7e77be47d73199a79bd3d670d3adc259b6421369a183930c3e68d25f51399f",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-e54e5d05a5e503ba",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-29467bd75d6a4712",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "Embryological similarities provide evidence of relatedness.",
+      "type": "relation",
+      "warrant": "The source presents conserved embryonic features across divergent groups as evidence of relatedness, supporting the common descent framework within which natural selection operates."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "1b01d4d1732a8b0222af3d08dc324448b1e523214f400a1f6dfaa187253f8bdd",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-e9f6b34b57aa25d8",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-5e6f5cb5ca04b786",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Darwin's finch observations provide a motivating example for natural selection.",
+      "type": "relation",
+      "warrant": "The source presents Darwin's observation of graded beak variation correlated with diet as the pattern that led him to imagine modification from a mainland ancestor, supporting the mechanism of natural selection."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-86d2bc84c606fc55",
+        "revision": 1
+      },
+      "content_hash": "db68980076bd71e7ef2cc6c442032198534219c5a4f023ca8bdb3eb149c2e8b0",
+      "curation": {
+        "draft_request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "input_hash": "75511f3ea328a630bb568941fb84ab7d1a3775ee383aed45cf32368dfdd7a8de",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "fe00bc3eaa39847007879da6fd8cf6d4cbc3de42be04de22a9249bca305d4af4",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a14798e74fdfd2ff7bdde0faef9728",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479a5524877cb8d3c9ec315736b9",
+        "time": "2026-10-17T02:02:48+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-fa743ca8aad07ac2",
+      "layer": "pedagogical",
+      "machine_screening": "not_run",
+      "predicate": "prerequisite_for_reading",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-ae1497a238d5a9d1",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 3,
+      "schema_version": 1,
+      "scope": "The modes of selection are classified by which phenotypes they favor, presupposing the selection mechanism.",
+      "type": "relation",
+      "warrant": "The passage first establishes that natural selection acts on heritable traits and shifts allele frequencies, then enumerates the ways selection can affect population variation. The taxonomy of modes presupposes the mechanism described in n1, since each mode is defined by which part of the phenotypic distribution selection favors."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p39",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ea687c9c5c407e72",
+        "revision": 1
+      },
+      "content_hash": "4eebe07231f72c319a1053aef63b41be3e7ee68c482ef5b5cdbbc0836466f1b5",
+      "curation": {
+        "draft_request_id": "01a147980496a1cfaddf968d79267060",
+        "input_hash": "00a530c4aae96e5e5f46120f7c56fecbd37d476dc5179dbf07e44bca20ba50c2",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f6a79e69e748e6512aad064e875a3904cff610961f2dc45f354be278071334a6",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a147980496a1cfaddf968d79267060",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a14799734006c57351ebdc8274f76d",
+        "time": "2026-10-17T02:01:46+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-fc8e713ada1d6407",
+      "layer": "evidential",
+      "machine_screening": "not_run",
+      "predicate": "supports",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-e3781a20eb59a0bc",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Biogeographic patterns provide evidence for evolution with tectonic movement.",
+      "type": "relation",
+      "warrant": "The source explains geographic distribution patterns by evolution in conjunction with tectonic plate movement, supporting the historical reality of descent with modification."
+    }
+  ],
+  "status": "proposed"
+}

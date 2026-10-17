@@ -1,0 +1,1209 @@
+{
+  "base_corpus_hash": "783b990075cfd9ac2e0ea13475f16041674ff31f3749539f0bffc2db8fe4f895",
+  "generated_at": "2026-10-17T05:29:44+00:00",
+  "impact": [
+    "r-128aa8bc7a19078c",
+    "r-5665156496ff267e",
+    "r-60ffc47b3437d303",
+    "r-7713e233bfc39c36",
+    "r-905910979edaa734",
+    "r-9c9f282f1c809152",
+    "r-ae204232d1629823",
+    "r-b0c746fc0bc19fde",
+    "r-ce898fb22491bf42",
+    "r-de16332dbed8ba20",
+    "r-f313309aad662437"
+  ],
+  "reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+  "records": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p28",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Function tables with interpolation can supply other functions",
+        "Direct operations are justified when duration and equipment are comparable to multiplication",
+        "Internal transfers and sign selection are needed for control"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Sections 10.3-10.4 and 11.4 develop the list.",
+          "name": "John von Neumann",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "CA needs ten operations: +, −, ×, ÷, √, i, j, s, db, bd, where i and j transfer inputs to output, s selects between two numbers by sign, and db, bd convert decimal and binary.",
+      "conceptual_move": "Include operations whose direct arithmetical treatment has duration and equipment comparable to multiplication, and add elementary transfer and selection operations needed for internal administration.",
+      "content_hash": "d460d902321eaca4b357be5b16e55c8805c2bf158c2f0fad864fa34bd041fc95",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Report dated June 30, 1945.",
+        "precision": "year",
+        "year": 1945
+      },
+      "dossiers": [
+        "C1401"
+      ],
+      "explanation": "Von Neumann argues that once multiplication is available, other functions can be obtained from function tables with interpolation, so no further analytical operations need be built in. Division and square root are nevertheless included because their arithmetical procedures have about the same duration as multiplication and require only about a 50 percent increase in equipment. Cube root, logarithm, and trigonometric functions do not meet these specifications and are better handled by tables or power series under logical control. To these five arithmetical operations he adds i and j, direct transfers from the two CA inputs to the output, useful for doubling, squaring, and unsymmetric operations; s, which senses the sign of a difference and selects between two numbers; and db and bd for decimal-binary conversion. The list is a design decision about the boundary between built-in arithmetic and programmed computation.",
+      "human_review": "not_reviewed",
+      "id": "n-604ad94139d7b560",
+      "kind": "representation",
+      "limits": [
+        "The list is preliminary and the networks for db and bd are not given",
+        "The report notes the operations should be merged into one network selected by controls",
+        "Further operations are excluded on equipment and duration grounds"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Which operations must the central arithmetical part perform directly, and which can be obtained from tables or power series?",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Design specification; preliminary.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Ten operations of the central arithmetical part",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "A standard number uses 30 binary digits",
+        "One unit suffices for sign and one for type distinction",
+        "Orders can be formulated to fit 32 units"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Section 12.2 defines the unit and minor cycle.",
+          "name": "John von Neumann",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "The unit of memory is the ability to retain one binary digit; a standard number occupies 30 digits plus sign and type markers, giving a 32-unit minor cycle.",
+      "conceptual_move": "Define capacity in binary digits and group memory into fixed 32-unit blocks called minor cycles, one per standard number or order.",
+      "content_hash": "0848cf2567bc40c8ccbb06e42bd4430af7d1d391560f38328e7b914f5775cda7",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Report dated June 30, 1945.",
+        "precision": "year",
+        "year": 1945
+      },
+      "dossiers": [
+        "C1401"
+      ],
+      "explanation": "Von Neumann defines the capacity unit as the ability to remember whether a stimulus was present at a given occasion, which represents one binary digit. A standard real number is fixed at 30 binary digits, keeping relative rounding errors below 2^-30, roughly 10^-9. Adding one unit for the sign and one to distinguish a number from an order gives 32 units per number. The memory is therefore subdivided into units and then into groups of 32 units called minor cycles, each holding exactly one standard number. Orders must also be formulated to occupy precisely one minor cycle. This organization simplifies synchronization and addressing: the digits of a number follow each other automatically, and the type marker in the first unit distinguishes numbers from orders. The 32-unit minor cycle is thus both a capacity accounting device and a structural unit of the code.",
+      "human_review": "not_reviewed",
+      "id": "n-8d68562de944f88e",
+      "kind": "representation",
+      "limits": [
+        "The 30-digit precision is a design choice, not a universal requirement",
+        "The report notes some CA memory organs deviate from the standard number size",
+        "The organization assumes a delay-type memory with temporal sequence"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Memory capacity must be quantified and organized so that numbers and orders can be stored and retrieved uniformly.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Representation and capacity accounting; became a standard organizing idea.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Memory capacity unit and 32-unit minor cycle",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p43",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "All delay organs are synchronized",
+        "Minor cycles of a given number appear simultaneously at all outputs",
+        "Control can switch its connection among organs"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Sections 14.3-14.5 develop the addressing and transfer types.",
+          "name": "John von Neumann",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "Memory is addressed by a major cycle number µ (0-255) and a minor cycle number ρ (0-31); control transfers are permanent or transient, with transient transfers used for number movement.",
+      "conceptual_move": "Number the delay organs and the minor cycles within them, synchronize their outputs, and define transfer orders that either keep or restore the control connection.",
+      "content_hash": "1009cc8d9a72e1dc8de81e4dda13758f7f09506d1cf8e2747e2e6ccf625f7934",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Report dated June 30, 1945.",
+        "precision": "year",
+        "year": 1945
+      },
+      "dossiers": [
+        "C1401"
+      ],
+      "explanation": "The 256 delay organs are numbered 0 to 255, and the 32 minor cycles in each are numbered 0 to 31. Because all organs are synchronized, minor cycles of a given number appear at the same time at all outputs. A minor cycle is completely defined by the pair µ, ρ. Von Neumann calls a delay organ a major cycle. A transfer of central control's connection to another minor cycle is permanent if control continues there, and transient if control must return to the original organ after the transfer. Number transfers between CA and M require abandoning the current connection and reestablishing it, so they are transient. He notes that every permanent transfer involves waiting on average half a transit through a delay organ, 512 periods τ, while a transient transfer involves two such waits, totaling one full transit of 1,024 periods τ. This addressing scheme is what makes a delay memory usable as a stored-program store.",
+      "human_review": "not_reviewed",
+      "id": "n-f0f6f7e6521aad53",
+      "kind": "representation",
+      "limits": [
+        "Access involves waiting times",
+        "Transient transfers cost a full transit",
+        "The report notes timing tricks to shorten transfers are inadvisable at this stage"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Central control must locate and retrieve orders and numbers from a delay memory whose contents appear only at particular times.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Design specification; preliminary.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Major and minor cycle addressing with permanent and transient transfers",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p47",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p48",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Instruction cycles are a small fraction of total memory",
+        "Pooling must not require simultaneous operations",
+        "Spare capacity is desirable for later changes"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Sections 15.4-15.5 develop the pooling rules.",
+          "name": "John von Neumann",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "Orders are pooled within a 32-unit minor cycle where logically possible, but pooling is limited by the principle of temporal succession, timing, and the desire to conserve spare capacity.",
+      "conceptual_move": "Combine an arithmetic operation order with a result-disposal order, while keeping transfer-in and control-transfer orders separate.",
+      "content_hash": "b3ed383e1b15c7c2f688a5f1abb6c1549fcda8090f79d291af4ab0069fa46630",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Report dated June 30, 1945.",
+        "precision": "year",
+        "year": 1945
+      },
+      "dossiers": [
+        "C1401"
+      ],
+      "explanation": "Von Neumann compares the digits needed by each order type with the 31 available in a minor cycle. Operation orders need 5 digits, transfer orders need 13, and some need none. Pooling could save memory, but he limits it for three reasons: pooling should not require simultaneous operations, it should not upset timing, and it saves only instruction cycles, which are a small fraction of total memory. He therefore pools an operation order with the disposal of its result, since every disposal must be preceded by an operation and every transfer into CA must be followed by one. Transfer-in orders and control-transfer orders occur alone. The resulting seven order types use an average of about 50 percent of the 32 digits, leaving spare capacity for later changes. This is a concrete example of code design balancing memory efficiency against logical simplicity and timing constraints.",
+      "human_review": "not_reviewed",
+      "id": "n-9ec6f65d16c511e7",
+      "kind": "method",
+      "limits": [
+        "Pooling is limited by timing and logical structure",
+        "The efficiency is only about 50 percent",
+        "The report notes the number of major cycles might later increase"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Many order types use far fewer than 31 available digits, so packing several orders per minor cycle could save memory.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Design method; preliminary.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Pooling orders within a minor cycle to simplify the code",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p62",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p63",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p66",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p71",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The formulation of the Entscheidungsproblem is as given in Hilbert and Ackermann, chapter 3",
+        "The functional calculus Z is consistent, as cited from Hilbert and Ackermann",
+        "The construction of Un(M) correctly expresses the printing behaviour of M"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Section 11 presents this proof as Turing's own; the correction acknowledges P. Bernays for pointing out errors.",
+          "name": "A. M. Turing",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "There is no general mechanical procedure deciding provability in the restricted Hilbert functional calculus. Encoding whether a machine prints a symbol as a provability question shows that such a decision procedure would solve an impossible machine decision problem.",
+      "conceptual_move": "Construct for each machine M a formula Un(M) expressing that 0 appears in some complete configuration of M, prove that Un(M) is provable exactly when M prints 0, and conclude that a provability decision method would decide the printing problem, which is impossible.",
+      "content_hash": "9296320688e74397d5ee9a58ca368ab6f5547a516e9784b2b3d90c5737b0795a",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Section 11 of the 1936 paper; corrections published 1937.",
+        "precision": "year",
+        "year": 1936
+      },
+      "dossiers": [
+        "C1002"
+      ],
+      "explanation": "Turing states that the results of §8 show the Hilbert Entscheidungsproblem can have no solution. He refers to Hilbert and Ackermann for the formulation and proposes to show there can be no general process for determining whether a given formula U of the functional calculus Z is provable. He distinguishes this from Gödel's results: Gödel showed there are propositions U such that neither U nor its negation is provable, whereas Turing shows there is no general method telling whether a given U is provable, equivalently whether Z with the negation of U adjoined is consistent. For each computing machine M he constructs a formula Un(M) whose interpretation is that 0 appears in some complete configuration of M. Lemma 1 shows that if 0 appears then Un(M) is provable; Lemma 2 shows that if Un(M) is provable then 0 appears. Hence a general provability decision process would decide whether M ever prints 0, which §8 shows impossible. Therefore the Entscheidungsproblem cannot be solved.",
+      "human_review": "not_reviewed",
+      "id": "n-cf5f70656e15b2a3",
+      "kind": "negative_result",
+      "limits": [
+        "The proof is for the restricted Hilbert functional calculus as formulated in the cited reference",
+        "The paper notes that the proof contained formal errors, corrected in the 1937 correction, where a new functional variable G is introduced and the formula Un(M) is modified",
+        "The result is distinct from Gödel's incompleteness results and should not be conflated with them"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "Hilbert's Entscheidungsproblem asks for a general method deciding provability of formulas in the functional calculus; Turing aims to show no such method exists.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Established foundational negative result; the paper's central application, with formal corrections published in 1937.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "The Hilbert Entscheidungsproblem has no solution",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "Tables can always be rewritten in the standard operation forms by introducing more m-configurations",
+        "The mapping of letters to digits is fixed and unambiguous"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Presented in §5 of the paper as Turing's construction.",
+          "name": "A. M. Turing",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "A finite machine table can be encoded as a standard description and then an integer. The machine descriptions are effectively enumerable, while the sequences produced by circle-free machines form a countable collection; the latter need not be effectively enumerated.",
+      "conceptual_move": "Normalize every table line into one of a few operation forms, number m-configurations and symbols, replace them by repeated letters, and map the resulting alphabet to digits, yielding a unique description number for each machine.",
+      "content_hash": "7299408781364b121917cbbb0677fd0f9b65bbc86971c9e409ae46d16aa5a9c4",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Section 5 of the 1936 paper.",
+        "precision": "year",
+        "year": 1936
+      },
+      "dossiers": [
+        "C1002"
+      ],
+      "explanation": "Turing first puts each machine table into a standard form in which every operation is one of a small set of forms such as erase-and-move or print-and-move. He numbers the m-configurations q1,...,qR and the symbols S0,S1,...,Sm, with blank as S0, 0 as S1, and 1 as S2. Each line becomes an expression like qi Sj Sk L qm, and all such expressions separated by semicolons form the standard description (S.D). Replacing qi by D followed by i copies of A, and Sj by D followed by j copies of C, and finally substituting digits for A, C, D, L, R, N, and semicolon yields an arabic numeral, the description number (D.N). The D.N determines the S.D and the machine uniquely; each computable sequence corresponds to at least one D.N, and no D.N corresponds to more than one computable sequence. Hence the computable sequences are enumerable. This encoding is what makes the universal machine and the diagonal argument possible.",
+      "human_review": "not_reviewed",
+      "id": "n-aabaf8f226854c33",
+      "kind": "representation",
+      "limits": [
+        "The encoding is not unique: a machine may have several description numbers, as the paper notes for its example",
+        "The encoding is a technical device, not a claim about the nature of computation"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "To apply diagonal arguments and to build a universal machine, Turing needs a uniform finite encoding of arbitrary machine tables that can be written on a tape and manipulated mechanically.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Established technical construction used throughout the paper.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Standard description and description number encode each machine as an integer",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p29",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p54",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The description-number encoding gives a complete enumeration of computable sequences",
+        "The notion of 'definable number' is used in its ordinary sense",
+        "The theorem of §8 applies to the sequence P"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "Sections 9 and 10 present these results as Turing's own.",
+          "name": "A. M. Turing",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "Finite descriptions make the computable numbers countable, although they include familiar algebraic and analytic constants. This does not provide an effective enumeration of all circle-free machines, and some definable numbers are not computable.",
+      "conceptual_move": "Use the description-number encoding to enumerate computable sequences, and construct a definable number based on whether a number is satisfactory, which is shown not computable by the diagonal result.",
+      "content_hash": "4418edb606a2f3758e7506b1ef0f89117eecde324202cb59c7861c285e626750",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Sections 9 and 10 of the 1936 paper.",
+        "precision": "year",
+        "year": 1936
+      },
+      "dossiers": [
+        "C1002"
+      ],
+      "explanation": "Turing says the computable numbers include the real parts of all algebraic numbers, the real parts of the zeros of Bessel functions, and numbers such as π and e. He also says the computable numbers do not include all definable numbers and gives an example of a definable number which is not computable. Although the class is great and in many ways similar to the reals, it is nevertheless enumerable. The enumeration follows from the description-number encoding: each computable sequence corresponds to at least one description number, and no description number corresponds to more than one computable sequence. The non-computable definable number is the sequence P whose n-th figure is 1 or 0 according as n is or is not satisfactory; by the theorem of §8, P is not computable. Turing notes it may be possible to calculate any assigned number of figures of P, but not by a uniform process; when sufficiently many figures have been calculated, an essentially new method is necessary for more.",
+      "human_review": "not_reviewed",
+      "id": "n-22ddaf106193b1c1",
+      "kind": "argument",
+      "limits": [
+        "The enumeration is of computable sequences, not of all definable numbers",
+        "The example of a non-computable definable number depends on the undecidability result",
+        "The paper notes that the class of computable numbers is enumerable but does not claim this settles all questions about definability"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "It might seem that the computable numbers, being so numerous and similar to the reals, cannot be enumerable; Turing must explain why they are and give an example of a definable but non-computable number.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Established results within the paper's framework.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Computable numbers form a countable collection, but not an effectively listed set of infinite outputs",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p71",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "assumptions": [
+        "The new functional variable G and formula Q correctly express the needed ordering properties",
+        "The corrected Un(M) has the intended interpretation",
+        "The proof with these modifications is correct"
+      ],
+      "attribution": [
+        {
+          "evidence_note": "The correction is authored by Turing, who acknowledges P. Bernays for pointing out the errors.",
+          "name": "A. M. Turing",
+          "role": "original contributor"
+        },
+        {
+          "evidence_note": "Turing acknowledges Bernays for pointing out the errors in the original proof.",
+          "name": "P. Bernays",
+          "role": "original contributor"
+        }
+      ],
+      "change_reason": "Editorial refinement of computing foundations: clarify reduction direction and countability, make corrections readable, and omit implementation inventories. Machine source review; no human audit.",
+      "claim": "Turing’s correction repairs formal expressions and an invalid step in the simulation-to-provability argument, introducing an additional predicate and a revised encoding. The correction concerns the original proof, not a reversal of the undecidability conclusion.",
+      "conceptual_move": "Introduce a new functional variable G(x,y) meaning 'x precedes y', add a formula Q expressing its properties, and modify Un(M) and the disputed line so that the proof goes through.",
+      "content_hash": "32696a21925aab970ebb3f1ffeb41238e8ccb7f6277d59fc66a59ad07729f418",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "date": {
+        "event": "publication",
+        "note": "Published in Proceedings of the London Mathematical Society, Series 2, Vol. 43 (1937), pages 544-546.",
+        "precision": "year",
+        "year": 1937
+      },
+      "dossiers": [
+        "C1002"
+      ],
+      "explanation": "In the 1937 correction, Turing states that his proof of the insolubility of the Entscheidungsproblem contained some formal errors, and that other statements should be modified although not actually false as they stand. The expression for Inst{qi Sj Sk Lqo} is corrected, and the statement that Inst{qa Sb Sd Lqc} & F[n+1] implies CCn → CCn+1 is declared false even with the new expression, because one cannot deduce F[n+1] → (¬F(u,u'')) and therefore cannot use the term involving F(y',z) in Inst. To correct this, Turing introduces a new functional variable G, with G(x,y) interpreted as 'x precedes y', and defines Q as an abbreviation for a formula expressing the needed ordering properties. The corrected Un(M) is then (∃u)A(M) → (∃s)(∃t)RS1(s,t), where A(M) includes Q. With these modifications the proof is correct, and Un(M) can be put in the prenex form with n = 4. Turing acknowledges P. Bernays for pointing out the errors.",
+      "human_review": "not_reviewed",
+      "id": "n-0c59baec5564e0c9",
+      "kind": "negative_result",
+      "limits": [
+        "The correction is itself a technical document and does not re-derive every step",
+        "The original paper's proof is not valid as it stands; the correction is required",
+        "The correction acknowledges that some statements in the original paper should be modified"
+      ],
+      "machine_screening": "not_run",
+      "pillar": "computer_science",
+      "problem": "The 1936 proof of the insolubility of the Entscheidungsproblem contained formal errors that needed correction for the proof to be valid.",
+      "publication_state": "candidate",
+      "revision": 2,
+      "schema_version": 1,
+      "scientific_standing": "Established correction; the original proof required these modifications to be valid.",
+      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
+      "tags": [
+        "computer_science",
+        "foundations"
+      ],
+      "title": "Corrections repair the encoding used in the Entscheidungsproblem proof",
+      "type": "contribution"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p37",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-f0f6f7e6521aad53",
+        "revision": 1
+      },
+      "content_hash": "b223f621dd39c4ecbd08939ee575fb049875c98a7f0fefb671d8b45c10038f5d",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-128aa8bc7a19078c",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-0cac46dbae92f021",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The factorization into major and minor cycles provides the addressing units used by control transfers.",
+      "type": "relation",
+      "warrant": "Section 12.7 chooses 256 delay organs of 1,024 units; Section 14.5 numbers the organs 0-255 and the minor cycles 0-31. The factorization is the premise for the addressing scheme."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p43",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-f0f6f7e6521aad53",
+        "revision": 1
+      },
+      "content_hash": "01e84637b96343c518615797d5b5943bf291ae2c3d562b831aafce983a67710b",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-5665156496ff267e",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-3ca5b06705abca80",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "Orders that transfer control to another minor cycle require an addressing scheme for memory locations.",
+      "type": "relation",
+      "warrant": "Section 14.1 classifies orders including control transfers; Sections 14.3-14.5 define major and minor cycle numbers and permanent versus transient transfers. The order classification is the premise for the addressing scheme."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-ec38b80285726778",
+        "revision": 1
+      },
+      "content_hash": "715911da0ff322df6854756ccf1a0aeb94339162725bbcb02332d99f27545952",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-60ffc47b3437d303",
+      "layer": "pedagogical",
+      "machine_screening": "not_run",
+      "predicate": "prerequisite_for_reading",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-aabaf8f226854c33",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The universal machine reads and manipulates the standard description of another machine.",
+      "type": "relation",
+      "warrant": "The universal machine is supplied with the S.D of a computing machine on its tape and uses that description to simulate the machine. The S.D encoding is therefore a prerequisite for the universal machine construction."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p71",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-0c59baec5564e0c9",
+        "revision": 1
+      },
+      "content_hash": "8ae6633d6aff8bba16721f442697f4fd0fca969bd90a29a8d150c53e879a307e",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-7713e233bfc39c36",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "bounded_by",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-cf5f70656e15b2a3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The correction identifies formal errors in the original Entscheidungsproblem proof and supplies modifications.",
+      "type": "relation",
+      "warrant": "The 1937 correction states that the proof of the insolubility of the Entscheidungsproblem contained formal errors, corrects the expression for Inst and the disputed implication, and introduces a new functional variable G and corrected Un(M). This limits the original proof as published."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-11e226b328400d13",
+        "revision": 1
+      },
+      "content_hash": "c398a450093fb1e3a1b1d03a78d2d3e478e5a725c38937a8d6c0fbe585bb4628",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-905910979edaa734",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d68562de944f88e",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The capacity unit and minor cycle are the accounting units in which memory requirements are estimated.",
+      "type": "relation",
+      "warrant": "Section 12.2 defines the memory unit and the 32-unit minor cycle; Sections 12.3-12.4 estimate requirements in minor cycles and units. The capacity unit is the premise for the capacity estimate."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-3ca5b06705abca80",
+        "revision": 1
+      },
+      "content_hash": "331d1592ddbfc17479c09d0f0faeb75504d72d2d772acbf38d3e2053ee6812af",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-9c9f282f1c809152",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-8d68562de944f88e",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The 32-unit minor cycle and its first unit provide the structure for distinguishing numbers from orders.",
+      "type": "relation",
+      "warrant": "Section 12.2 defines the minor cycle and notes a unit for distinguishing numbers from orders; Sections 14.1 and 15.1 use i0 as the tag. The minor cycle structure is the premise for the stored-order representation."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p54",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-22ddaf106193b1c1",
+        "revision": 1
+      },
+      "content_hash": "ed5a80aa52bfd9dc3900ee3e2bb1840a1352510800d9e88f9adf9021aa0501ec",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ae204232d1629823",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-aabaf8f226854c33",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The enumeration of computable sequences follows from the description-number encoding.",
+      "type": "relation",
+      "warrant": "Turing argues that each computable sequence corresponds to at least one description number and no description number corresponds to more than one computable sequence, so the computable sequences are enumerable. The encoding is the premise of the enumeration."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p45",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p47",
+          "source_id": "s-455079c4ec5e0855",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-9ec6f65d16c511e7",
+        "revision": 1
+      },
+      "content_hash": "02f191e17c65c18f42e4cae748461b874b9f3e10e60a664baf9314dd7c9d38be",
+      "curation": {
+        "draft_request_id": "01a1484d48b76ad985735f36ab46f134",
+        "input_hash": "7179c369f512be01a4c92e9054162fbe1418436e11f977f346ad95e0efa1130d",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "6870df0553700d660a42395bf152ffea547007fb1e83e70cd73862a3892e89f7",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d48b76ad985735f36ab46f134",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484ec5fddc2bd4ba5e8654a7ca2a",
+        "time": "2026-10-17T05:19:49+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-b0c746fc0bc19fde",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-3ca5b06705abca80",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The classification of orders and their digit requirements set up the pooling analysis.",
+      "type": "relation",
+      "warrant": "Section 15.3 lists the order types and their required digits; Sections 15.4-15.5 analyze pooling within a minor cycle. The order classification is the premise for the pooling rules."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p63",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p66",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-cf5f70656e15b2a3",
+        "revision": 1
+      },
+      "content_hash": "9dfd7a80d1ea6090176a93bc9eaa8894b0f397a35096c9b4946652c072bc5b15",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-ce898fb22491bf42",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-4f36bf328c5109c3",
+          "revision": 1
+        },
+        {
+          "id": "n-03d82e1ae6035422",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The two undecidability results about circle-freeness and printing are used to show the Entscheidungsproblem has no solution.",
+      "type": "relation",
+      "warrant": "Turing's reduction constructs Un(M) so that provability of Un(M) is equivalent to M printing 0. A provability decision method would therefore decide the printing problem, which §8 shows impossible. Both undecidability results are premises of the conclusion."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p54",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-22ddaf106193b1c1",
+        "revision": 1
+      },
+      "content_hash": "84dbb7e3a572c852ba4ae4855c58672b3e914e294c03ac19a1f5c4ff2b175ec9",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-de16332dbed8ba20",
+      "layer": "logical",
+      "machine_screening": "not_run",
+      "predicate": "premise_for",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-4f36bf328c5109c3",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The example of a definable but non-computable number uses the theorem of §8.",
+      "type": "relation",
+      "warrant": "Turing says the sequence P, whose n-th figure is 1 or 0 according as n is or is not satisfactory, is not computable as an immediate consequence of the theorem of §8. The undecidability result is the premise for the non-computability of P."
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p29",
+          "source_id": "s-06ba34f673d82421",
+          "source_revision": 1
+        }
+      ],
+      "change_reason": "Supporting record changed; requires recheck.",
+      "conclusion": {
+        "id": "n-aabaf8f226854c33",
+        "revision": 1
+      },
+      "content_hash": "2f27016e3e57564e7352340e7f8b04b34754c85501d47c3958034d1db126fde3",
+      "curation": {
+        "draft_request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "input_hash": "312229e8345edac00e4471ecce278032265a232c37684fb47383a3983f464a45",
+        "method": "passage-grounded extraction plus separate source-grounded machine critic",
+        "output_hash": "f84f3a7723eaeb29984fbec742d3e64bd43c6430a9dab4b8c24cadbe7c45f956",
+        "prompt_hash": "4805ff75819a8c7f9256fa50d9970f76f0444d3e94fd367a192d7fe58394a1e4",
+        "provider": "SiliconFlow",
+        "request_id": "01a1484d63d12b488f51c7306b0ee7b7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1484e8c9f364c673e970bb533dbf0",
+        "time": "2026-10-17T05:19:53+00:00"
+      },
+      "human_review": "not_reviewed",
+      "id": "r-f313309aad662437",
+      "layer": "pedagogical",
+      "machine_screening": "not_run",
+      "predicate": "prerequisite_for_reading",
+      "premise_mode": "all",
+      "premises": [
+        {
+          "id": "n-922b62a1090f3c40",
+          "revision": 1
+        }
+      ],
+      "publication_state": "quarantined",
+      "revision": 2,
+      "schema_version": 1,
+      "scope": "The definition of computable sequences and machines is needed before the standard description encoding can be understood.",
+      "type": "relation",
+      "warrant": "The standard description encodes machine tables whose lines are defined in terms of m-configurations, scanned symbols, and operations introduced in the definition of computing machines. Without the machine model of §1-2, the encoding of §5 has no referent."
+    }
+  ],
+  "status": "proposed"
+}

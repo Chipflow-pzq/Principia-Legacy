@@ -69,6 +69,54 @@ python3 scripts/expand_curriculum.py --plan config/foundations-curriculum-1-2-v2
 
 The runner checkpoints each completed batch, rejects concurrent instances of the same campaign, and refreshes the working database. A Pro editorial pass can withhold generic or redundant fragments through immutable patches; it cannot grant source approval or human review. Exact-revision shared-insight reuse is separately checked against the new source. A bounded second lookup uses extracted claims, rather than a broad chapter title, to find closer reuse candidates. At most one optional extraction refinement follows; similarity alone never merges records. Failed sources, duplicate/reuse decisions, usage receipts and gaps remain inspectable. Provider work stops for inspection after excessive source failures, a large increase in unknown-charge attempts, or the conservative known-token planning subtotal trigger (default CNY 1,000). This is not exact billing enforcement of the owner-managed US$300-equivalent allowance.
 
-Create `.work/foundations-curriculum-1-2-v2.stop` to stop between batches; remove that file before explicitly resuming. `reports/campaigns/foundations-curriculum-1-2-v2.json` records progress, and `BUILD_STATUS.md` records actual admitted coverage. `--max-batches N` means the first N batches of the plan, including already completed batches, rather than N additional batches. Published release manifests remain unchanged. Select **working** in the reader, then reload, to see a newly completed batch. Typography checks, release-wide verification and a new release freeze are separate finishing steps.
+Create `.work/foundations-curriculum-1-2-v2.stop` to stop between batches; remove that file before explicitly resuming. `reports/campaigns/foundations-curriculum-1-2-v2.json` records progress, and `BUILD_STATUS.md` records actual admitted coverage. `--max-batches N` means the first N batches of the plan, including already completed batches, rather than N additional batches. Published release manifests remain unchanged. Open a local URL with `#release=working`, then reload, to inspect a newly completed batch. The reader has no release selector. Typography checks, release-wide verification and a new release freeze are separate finishing steps.
 
 Contributor biographies in `manifests/people.json` require sources. Only explicit aliases join names. `credit_groups.json` can expand a collective byline into named people only for specified source identities; it preserves the original credit role. `topic_memberships.json` adds explanatory reading routes pinned to a contribution revision/hash and, for machine-screened reuse, source anchors and screening receipts. A changed contribution or supporting source invalidates that route until it is checked again. These navigation manifests never create historical arrows.
+
+## Recheck an existing collection
+
+`python3 scripts/audit_atlas.py --env-file /outside/repository/provider.env --kind relation --output reports/my-relation-audit.json` reviews all currently visible arrows in bounded batches. Add `--sample 200 --kind contribution` for a stratified contribution sample. The selected revisions, prompt hash, attempts and exact source-version checks are retained. These commands make paid calls only when explicitly invoked; they produce reports and do not silently edit the atlas.
+
+For flagged relationships, `scripts/resolve_audit.py --help` describes the source-grounded resolution pass and optional endpoint-evidence follow-up. `scripts/apply_atlas_audit.py --help` describes explicit application of completed decisions. Proposed repairs require a separate critic. A failed or incomplete adjudication cannot earn an approval. Before applying, the original input hashes and corpus state must still match.
+
+Source enrichment may add a locator to identical archived bytes without invalidating older evidence pins, provided every existing anchor and all other source metadata are unchanged. A changed byte version, existing anchor or metadata takes the ordinary dependent-recheck path. Changed insight content always requires a new revision and rechecking dependent interpretations.
+
+After reviewing corrections, use the normal build, acceptance and release commands. Never replace a frozen release identifier, overwrite a historical record, equate model screening with human review, or add an arrow merely to improve graph connectivity.
+
+## Select works before expanding insights (1.4)
+
+1. Select a documented work or influential individual using original publications,
+   institutional histories, prize records or demonstrated technological impact.
+   Record why it belongs; recognition alone cannot validate its claims.
+2. Add concise metadata to `config/representative_catalog.json`, or an existing
+   source-linked individual to `config/people_seeds.json`. Use one person per
+   entry, explicit aliases, independent discovery credit and HTTPS provenance.
+   `config/extra_works.json` holds documented works without a selected person.
+3. Freeze the topic's endpoint and explanatory checklist. Acquire the precise work
+   version and extract several substantive insights when the work warrants them.
+   Use the existing bounded expansion and separate source/relationship checks.
+4. Reuse an insight in another work only with exact revision pins and evidence
+   showing what that work establishes, uses, explains or discusses. Record the
+   rationale in `config/work_membership_seeds.json`; never infer influence from
+   overlap or a citation alone.
+5. Run `python3 scripts/build_work_catalog.py`, then validate and build. The compiler
+   is offline and deterministic. It creates navigation metadata from admitted
+   source records and explicit selections; it does not grant scientific approval.
+   Inspect the work/people changes before freezing a fresh release.
+
+```sh
+python3 scripts/build_work_catalog.py
+python3 start.py validate corpus/
+python3 start.py build --offline
+python3 scripts/catalog_report.py
+```
+
+The 1.4 selection uses Nobel data, IMU/Abel records, Computer History Museum
+profiles, university histories and a focused historical supplement. Reports retain
+inaccessible pages, provider request hashes and metadata-only limits. These source
+families have selection biases; the catalogue is not a ranking or an exhaustive
+history. Complete ACM access, regional traditions, industrial work, earlier
+foundations and contributions outside prize institutions remain explicit gaps.
+The suggested 200–500 people/works per field is a planning range, never an
+admission threshold. The next bounded extraction batch should add evidence to
+existing catalogue works, not manufacture more empty topics to reach a count.
