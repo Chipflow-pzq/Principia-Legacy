@@ -10,6 +10,11 @@
 
 location = /web/legacy { return 308 /web/legacy/; }
 location = /web/legacy/ {
+    # A file alias at a trailing-slash URL makes Nginx append its index name.
+    # Redirect internally so the exact index location serves the file and CSP.
+    rewrite ^ /web/legacy/index.html last;
+}
+location = /web/legacy/index.html {
     alias /opt/principia-legacy/web_hosted/index.html;
     expires -1;
     add_header Content-Security-Policy "default-src 'self'; connect-src 'self' https://api.siliconflow.cn https://api.crossref.org https://www.ebi.ac.uk https://en.wikipedia.org; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'" always;
