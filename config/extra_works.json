@@ -1,0 +1,27 @@
+[
+  {
+    "id": "w-interactive-linear-algebra",
+    "title": "Interactive Linear Algebra",
+    "kind": "book",
+    "subjects": [
+      "mathematics"
+    ],
+    "summary": "An open textbook connecting linear systems, vector spaces, linear transformations, eigenvectors and orthogonality. Its chapters are also indexed as individual source works.",
+    "people": [],
+    "topic_ids": [
+      "M2004"
+    ],
+    "aliases": [
+      "linear algebra textbook"
+    ],
+    "provenance": [
+      {
+        "url": "https://textbooks.math.gatech.edu/ila/",
+        "title": "Interactive Linear Algebra \u2014 Georgia Institute of Technology",
+        "note": "Publisher index for the textbook. Chapter-level evidence is tracked in separate source versions."
+      }
+    ],
+    "source_refs": [],
+    "representative": false
+  }
+]

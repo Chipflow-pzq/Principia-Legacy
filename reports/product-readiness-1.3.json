@@ -1,0 +1,438 @@
+{
+  "created_at": "2026-10-17T03:55:26.114952+00:00",
+  "reader_version": "1.3.1-rc.2",
+  "release_id": "1.3.1-exploratory",
+  "snapshot_hash": "1c7e874593a7d883d25835befbaf5e236f82bd6fdfa13da5dfdc9bfed8e7621c",
+  "scope": "Local acceptance candidate. No deployment, push, repository publication or GitHub release.",
+  "software": {
+    "python_tests_passed": 106,
+    "browser": {
+      "startTime": "2026-10-17T03:40:15.024Z",
+      "duration": 314703.624,
+      "expected": 287,
+      "skipped": 3,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "hosted_prefix_tests_passed": 2,
+    "typescript_no_unused": "passed",
+    "python_undefined_names": "passed",
+    "math": {
+      "formulas": 8658,
+      "failures": [],
+      "historicalWarnings": [
+        {
+          "where": "n-200651cd9458e1d6@1.assumptions.2",
+          "record": {
+            "id": "n-200651cd9458e1d6",
+            "revision": 1
+          },
+          "error": "Unexpected control character in explanatory text"
+        },
+        {
+          "where": "n-200651cd9458e1d6@1.explanation",
+          "record": {
+            "id": "n-200651cd9458e1d6",
+            "revision": 1
+          },
+          "error": "Unexpected control character in explanatory text"
+        },
+        {
+          "where": "n-e2055ae3bf7bfbf1@2.explanation",
+          "record": {
+            "id": "n-e2055ae3bf7bfbf1",
+            "revision": 2
+          },
+          "error": "Unexpected control character in explanatory text"
+        },
+        {
+          "where": "n-e2055ae3bf7bfbf1@3.explanation",
+          "record": {
+            "id": "n-e2055ae3bf7bfbf1",
+            "revision": 3
+          },
+          "error": "Unexpected control character in explanatory text"
+        }
+      ],
+      "note": "Superseded immutable versions remain auditable. Control-character errors in current versions fail this check."
+    },
+    "integrity": {
+      "passed": true,
+      "release_id": "1.3.1-exploratory",
+      "snapshot_hash": "1c7e874593a7d883d25835befbaf5e236f82bd6fdfa13da5dfdc9bfed8e7621c",
+      "counts": {
+        "contribution": 2880,
+        "relation": 1920,
+        "source": 268,
+        "review": 7606
+      },
+      "exact_machine_reviews_for_all_visible_records": true,
+      "dossiers": 184,
+      "flagship_endpoint_checks": 5,
+      "tour_checks": 3,
+      "source_closure": true,
+      "neighborhood_cap_and_joint_premises": true,
+      "frozen_evaluation_files_unchanged": true,
+      "external_jsonschema": "14218 immutable versions validated against exported JSON Schemas",
+      "qualified_human_audit": "not performed"
+    },
+    "living": {
+      "passed": true,
+      "scope": "Actual flagship records, isolated disposable corpus copy; no fabricated corrections or human reviews added to distributed corpus",
+      "checks": [
+        {
+          "dossier": "M06",
+          "target": "n-b25ad0851484c7b2",
+          "dependent_interpretations": 9,
+          "old_snapshot_preserved": true,
+          "new_approval_required": true,
+          "coverage_updated": true,
+          "brief_updated": true
+        },
+        {
+          "dossier": "P01",
+          "target": "n-bd00254115887cfb",
+          "dependent_interpretations": 14,
+          "old_snapshot_preserved": true,
+          "new_approval_required": true,
+          "coverage_updated": true,
+          "brief_updated": true
+        },
+        {
+          "dossier": "C01",
+          "target": "n-7174667738dd3cf9",
+          "dependent_interpretations": 10,
+          "old_snapshot_preserved": true,
+          "new_approval_required": true,
+          "coverage_updated": true,
+          "brief_updated": true
+        },
+        {
+          "dossier": "E01",
+          "target": "n-7a2dcf7d88d3269d",
+          "dependent_interpretations": 12,
+          "old_snapshot_preserved": true,
+          "new_approval_required": true,
+          "coverage_updated": true,
+          "brief_updated": true
+        },
+        {
+          "dossier": "B01",
+          "target": "n-711b35dd72329889",
+          "dependent_interpretations": 19,
+          "old_snapshot_preserved": true,
+          "new_approval_required": true,
+          "coverage_updated": true,
+          "brief_updated": true
+        }
+      ]
+    },
+    "offline": {
+      "passed": true,
+      "release_id": "1.3.1-exploratory",
+      "external_socket_attempts": [],
+      "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
+      "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
+      "checked": [
+        "all bundled assets",
+        "search",
+        "dossiers",
+        "contribution inspector",
+        "shared topic links and scientist profiles",
+        "relationship inspector",
+        "neighborhood",
+        "brief",
+        "snapshot changes"
+      ]
+    },
+    "performance": {
+      "release_id": "1.3.1-exploratory",
+      "counts": {
+        "contribution": 2880,
+        "relation": 1920,
+        "source": 268,
+        "review": 7606
+      },
+      "machine": {
+        "os": "macOS-26.3.1-x86_64-i386-64bit",
+        "python": "3.12.7",
+        "architecture": "x86_64"
+      },
+      "warm_http": {
+        "search": {
+          "samples": 30,
+          "p50_ms": 30.41,
+          "p95_ms": 38.67,
+          "max_ms": 41.33
+        },
+        "neighborhood": {
+          "samples": 30,
+          "p50_ms": 74.4,
+          "p95_ms": 84.93,
+          "max_ms": 87.17
+        },
+        "dossiers": {
+          "samples": 30,
+          "p50_ms": 267.96,
+          "p95_ms": 279.41,
+          "max_ms": 287.87
+        }
+      },
+      "targets": {
+        "search_p95_ms": 500,
+        "neighborhood_p95_ms": 1000,
+        "first_view_ms": 5000,
+        "combined_memory_bytes_approx": 1000000000
+      },
+      "browser": {
+        "first_view_ms": 1160,
+        "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+        "js_heap_bytes": 15128653,
+        "browser_process_rss_bytes": 681783296,
+        "reader_process_rss_bytes": 431194112,
+        "combined_rss_bytes": 1112977408,
+        "memory_method": "ps RSS summed over this browser's CDP-identified process tree plus the local reader; unrelated QA browsers excluded; shared pages may be counted more than once",
+        "requests": 6,
+        "external_requests": [],
+        "page_errors": [],
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        }
+      }
+    },
+    "long_session_memory_observation": {
+      "first_view_ms": 1145,
+      "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+      "js_heap_bytes": 15003056,
+      "browser_process_rss_bytes": 749776896,
+      "reader_process_rss_bytes": 425603072,
+      "combined_rss_bytes": 1175379968,
+      "memory_method": "ps RSS summed over this browser's CDP-identified process tree plus the local reader; unrelated QA browsers excluded; shared pages may be counted more than once",
+      "requests": 6,
+      "external_requests": [],
+      "page_errors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    "platforms_executed": [
+      "macOS x86_64, Python 3.12, Chrome desktop and mobile viewport emulation"
+    ],
+    "not_executed": [
+      "Windows",
+      "Linux",
+      "physical mobile devices",
+      "public server deployment"
+    ]
+  },
+  "corpus": {
+    "counts": {
+      "contribution": 2880,
+      "relation": 1920,
+      "source": 268,
+      "review": 7606
+    },
+    "registered_topics": 184,
+    "populated_topics": 182,
+    "baseline_release": "1.2.0-exploratory",
+    "net_new_insights": 213,
+    "net_new_populated_topics": 30,
+    "coverage": {
+      "mathematics": {
+        "dossiers": 37,
+        "populated_topics": 36,
+        "initial_neighborhoods": 23,
+        "contributions": 564,
+        "macro_checklist_coverage": 0.972972972972973
+      },
+      "physics": {
+        "dossiers": 37,
+        "populated_topics": 37,
+        "initial_neighborhoods": 15,
+        "contributions": 537,
+        "macro_checklist_coverage": 0.990990990990991
+      },
+      "computer_science": {
+        "dossiers": 38,
+        "populated_topics": 37,
+        "initial_neighborhoods": 15,
+        "contributions": 639,
+        "macro_checklist_coverage": 0.9298245614035089
+      },
+      "economics": {
+        "dossiers": 36,
+        "populated_topics": 36,
+        "initial_neighborhoods": 13,
+        "contributions": 519,
+        "macro_checklist_coverage": 0.9814814814814815
+      },
+      "biology_medicine": {
+        "dossiers": 36,
+        "populated_topics": 36,
+        "initial_neighborhoods": 15,
+        "contributions": 621,
+        "macro_checklist_coverage": 0.9629629629629629
+      }
+    },
+    "shortfall_by_subject": {
+      "mathematics": {
+        "populated_topics": 164,
+        "unique_primary_subject_insights": 1436
+      },
+      "physics": {
+        "populated_topics": 163,
+        "unique_primary_subject_insights": 1463
+      },
+      "computer_science": {
+        "populated_topics": 163,
+        "unique_primary_subject_insights": 1361
+      },
+      "economics": {
+        "populated_topics": 164,
+        "unique_primary_subject_insights": 1481
+      },
+      "biology_medicine": {
+        "populated_topics": 164,
+        "unique_primary_subject_insights": 1379
+      }
+    },
+    "relationship_target_shortfall": 1080,
+    "empty_topics": [
+      "C1002",
+      "M2004"
+    ],
+    "isolated_topic_memberships": 600,
+    "topics_with_isolated_members": 147,
+    "old_relations_audit": {
+      "examined": 2233,
+      "retained": 1747,
+      "repaired": 23,
+      "withheld": 463
+    },
+    "contribution_machine_sample": {
+      "size": 200,
+      "supported": 198,
+      "locator_corrections": 2
+    },
+    "new_foundation_topics": 30,
+    "editorial_exclusion_decisions": 71,
+    "qualified_human_audit_performed": false,
+    "human_reviewed_contributions": 0,
+    "prepared_human_audit": {
+      "contributions": 100,
+      "relations": 150
+    }
+  },
+  "live_browser": {
+    "report": "product-readiness-1.3-live.json",
+    "current_matrix": {
+      "attempts": 6,
+      "finished": 6,
+      "structural_target_met": 4,
+      "timing_target_met": 6
+    },
+    "editorial_assessment": [
+      {
+        "query": "lithography machines for chip",
+        "assessment": "Six ideas and six arrows were returned, but the checker demoted the scanner-operation endpoint to a supporting idea, so the required route criterion failed. The wavelength-only resolution phrasing also oversimplifies the optical and process assumptions. This is a useful partial explanation, not a complete ancestry map."
+      },
+      {
+        "query": "Plasma-enhanced chemical vapour decomposition",
+        "assessment": "The graph connects electric force and ionization through discharge, energetic electrons and deposition. It meets the structural criterion, but two carbon-radical deposition cards substantially repeat each other. The carbon-growth example is correctly scoped to its source and must not be read as a universal PECVD mechanism or chronology."
+      },
+      {
+        "query": "resuable rocket",
+        "assessment": "Momentum conservation, the rocket equation, retrograde burns and recovery form a recognizable path. However, one warrant says propellant is expelled opposite the motion while explaining deceleration; the sign/direction needs correction. The restart/throttle title extends beyond the cited multi-engine description, and a simulated landing-controller example does not establish the control algorithm used by a named launcher. Structural success is not scientific acceptance."
+      },
+      {
+        "query": "GPU and cuda",
+        "assessment": "Data parallelism, threads/blocks/grids and kernel execution provide a useful short route. The memory-management card uses universal language that exceeds a scoped description of explicit-memory CUDA programming, and the compiler/toolchain card is isolated. This map should not be treated as a complete account of CUDA memory models or GPU architecture."
+      },
+      {
+        "query": "Alphafold",
+        "assessment": "The map identifies sequence-based structure prediction, evolutionary information and the Evoformer, but lacks a retained general foundation and a connected explanation of the main mechanism. The alignment-depth bound needs to stay tied to the reported AlphaFold generation and evaluation, rather than all later systems. It fails the structural criterion."
+      },
+      {
+        "query": "large language models such as chatgpt",
+        "assessment": "Conditional probability and maximum likelihood connect to autoregressive language modeling and a scoped decoder-only generation endpoint. The bounded refinement restored that endpoint, and the graph meets the structural criterion. It still conflates words with tokens in several cards, includes an isolated historical neural-network summary, and does not establish a complete training or attribution history. Claims about the representative GPT-style branch do not identify the undisclosed architecture of every current ChatGPT model."
+      }
+    ],
+    "not_a_guarantee": "Six development queries are not a held-out scientific evaluation or an assurance of future provider availability or accuracy."
+  },
+  "authoring_usage": {
+    "requests": 1742,
+    "unreceipted_interruption_upper_bound": 4,
+    "interruption_markers": 1,
+    "successful": 1653,
+    "unknown_possible_charge": 53,
+    "prompt_tokens": 31124084,
+    "completion_tokens": 3697818,
+    "planning_allowance_usd": 300,
+    "cost_status": "Account charges managed manually by owner; tokens are receipts, not an exact bill.",
+    "planning_estimate": {
+      "currency": "CNY",
+      "known_token_subtotal": 108.667,
+      "rates_per_million_input_output": {
+        "deepseek-ai/DeepSeek-V4-Flash": [
+          3,
+          9
+        ],
+        "deepseek-ai/DeepSeek-V4-Pro": [
+          12,
+          24
+        ]
+      },
+      "pricing_source": "https://www.siliconflow.cn/pricing",
+      "rates_checked": "2026-10-13",
+      "unpriced_requests": 593,
+      "unpriced_model_ids": [
+        "deepseek-ai/DeepSeek-V4.1-Flash"
+      ],
+      "notice": "Planning estimate using dated standard rates, before cache/time discounts. Excludes models without a verified rate, unreported and unknown request usage. Unpriced requests are not free. Not the account bill or an enforcement of the USD allowance."
+    }
+  },
+  "browser_qa_usage": {
+    "reported_prompt_tokens": 2302362,
+    "reported_completion_tokens": 398715,
+    "requests_with_reported_usage": 485,
+    "requests_without_reported_usage": 0
+  },
+  "output_format_diagnostic": {
+    "report": "product-readiness-1.3-verdict-formats.json",
+    "usage": {
+      "requests": 6,
+      "reported_prompt_tokens": 22656,
+      "reported_completion_tokens": 3868
+    },
+    "interpretation": "All six controlled replays assigned the scanner card the requested-result role in both formats. The original contradictory classification was not reproduced. This small diagnostic does not establish that strict decoding caused it or that either format is more accurate; no review gate was relaxed."
+  },
+  "research_pilot": {
+    "rerun_for_this_candidate": false,
+    "cases": 120,
+    "development": 30,
+    "heldout": 90,
+    "conditions": 5,
+    "attempts": 600,
+    "responses": 599,
+    "typed_verdict_agreement_percent": 66.7,
+    "flat_verdict_agreement_percent": 66.7,
+    "boundary_removal_percent": 59.2,
+    "typed_correction_uptake_percent": 25,
+    "limitations": [
+      "Synthetic cases; no independent expert gold labels",
+      "Exact input-token matching was not achieved",
+      "No demonstrated advantage over flat retrieval",
+      "No demonstrated alignment benefit"
+    ]
+  },
+  "development_failures_retained": [
+    "Initial patch application rejected a changed-corpus fingerprint; rebuilt against the new corpus before applying.",
+    "Five final source-context follow-ups were incomplete; the affected relationships stayed withheld.",
+    "Earlier real browser runs produced incomplete cores, disconnected insights, invalid classifications and a copied input response. All recorded attempts remain in the sanitized live report.",
+    "One browser run targeted the older 8765 server accidentally; it was stopped and rerun explicitly against 8767. It is not candidate acceptance evidence.",
+    "Two stale test assertions expected one four-node review batch after the implementation changed to two-node batches; corrected to verify each original insight is checked exactly once."
+  ],
+  "packaging": "Archive-specific checksums, extraction/startup and secret exclusion results are in the delivery report beside the archives, avoiding a self-referential checksum."
+}

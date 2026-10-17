@@ -1,0 +1,371 @@
+{
+  "corrected_or_added": [
+    {
+      "content_hash": "11f5b6a318a653362d3b4ed06aa0f2d274fb86ba3ba2b5a1610abcc56f7e6ba1",
+      "evidence_checked": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-34c92faac94e31d9",
+      "reason": "Correct the direction stated in the title to match the source example and unchanged claim.",
+      "revision": 3
+    },
+    {
+      "content_hash": "9db56c7d975c5dac4294e62771d628692265242d03ed6b675e78264a4661e993",
+      "evidence_checked": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p35",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p38",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-e65c831a6590ea2c",
+      "reason": "The displayed identity computes multiplication using squaring. Correct the reversed title and avoid an undated claim about the best currently known algorithm.",
+      "revision": 3
+    },
+    {
+      "content_hash": "9ac645b2ae375786009e22728e9149aa98f68b86610a382eab1252155b78287c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p41",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p42",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p47",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-fbc2d74bee634bfc",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-11d0d08049e66bff",
+      "reason": "Correct the direction: the block construction solves arbitrary multiplication using symmetric multiplication. Preserve its overhead instead of claiming a new lower bound.",
+      "revision": 3
+    },
+    {
+      "content_hash": "efe4f692a5eaeeb3a745deab3e0b44f57a642885ca0fa34b8200a5a35e9980bf",
+      "evidence_checked": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-2cc0b817a9c26497",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-e2055ae3bf7bfbf1",
+      "reason": "The exact geometric-series expression in the source is strictly less than two; correct the prose equality to an amortized upper bound.",
+      "revision": 3
+    },
+    {
+      "content_hash": "45157335557dd1b690095f5782c7d41192c9be0e47fe884d7bc42b79fb2f9c1e",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-87774cba136e0356",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-ae1497a238d5a9d1",
+      "reason": "Distinguish the level of selection from population-level evolutionary change, as the source explicitly does.",
+      "revision": 3
+    },
+    {
+      "content_hash": "7211333a535ee9d69726a70bb92b44fc635c960b9357aeda4bad33090f6f8b3a",
+      "evidence_checked": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-e7e0c8ec197817ae",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-9b532120070210b1",
+      "reason": "Bring random mating into the claim and avoid treating every genotype-frequency departure as proof of allele-frequency evolution.",
+      "revision": 3
+    },
+    {
+      "content_hash": "d9de14ab4cbe5b4cbeb5c49373abcca052f85981f50dc7b4c078340b7ffe10b9",
+      "evidence_checked": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-ed32a75acb0c02b3",
+      "reason": "Make the nonzero variance required by the normalization explicit.",
+      "revision": 3
+    },
+    {
+      "content_hash": "d8ce5d3b71d9403c28c738f0c82f07c19b990dbfcec43c7273e2c1ac01613cbf",
+      "evidence_checked": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-ae5df2add01439c9",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-08d13cf9a3702bdc",
+      "reason": "The general non-identical bound is 6T/sigma^3; only the IID specialization has the stated 1/sqrt(n) rate. Keep that qualification in the explanation.",
+      "revision": 3
+    },
+    {
+      "content_hash": "5727b7c1144fbeee6d0426b9d0d9be08ba4cf825257b320a6ce72d9f629681ef",
+      "evidence_checked": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-ea687c9c5c407e72",
+      "reason": "Separate independently attributed discoveries and remove the suggestion that environmental change is always required.",
+      "revision": 3
+    },
+    {
+      "content_hash": "12a0ffdaa4f0bd095d145e43fbd376f506abc1a068ab4f27478834183e7a73ac",
+      "evidence_checked": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-fff08970be31f7f3",
+          "source_revision": 1
+        }
+      ],
+      "id": "n-eef47bee83b5cb45",
+      "reason": "Preserve the independently formulated contribution as a distinct identity under the source-supported attribution.",
+      "revision": 2
+    }
+  ],
+  "new_independence_relation": "r-5d8a4a436362a48c",
+  "note": "Dependent arrows are withheld for recheck; approvals were not inherited across corrected content.",
+  "patch": {
+    "applied": "4c066de4f8bb9b20d8bbdf28f32429dc0f095a99da264360fcfb27d319fe7631",
+    "previous_release": "before-4231649a4654",
+    "recheck": [
+      "r-0dcc0ccfa39330cb",
+      "r-27b2b7d62aa87640",
+      "r-3c12cc2c79438fbf",
+      "r-480a42f8788a0947",
+      "r-5f38862e370f56c1",
+      "r-60dc61aaa83de237",
+      "r-6663c629c040b852",
+      "r-6d5e4b0cdf7bc08e",
+      "r-7f7aa1a2ff0cd773",
+      "r-832475660aee06f7",
+      "r-86fcf6df1c371d88",
+      "r-8b32b3269f3ca09d",
+      "r-8b67f093717f8810",
+      "r-932a2ad553e1a71d",
+      "r-9a4f9aba6662da9c",
+      "r-9d65576f24a7e439",
+      "r-a262174ac679ccb4",
+      "r-a347d00e77b3a2d7",
+      "r-a35144144663d3b4",
+      "r-ab47cb40fc5db7e9",
+      "r-c196b6194d8154e2",
+      "r-c414e7de0d9298b4",
+      "r-c5b1e4433db1e4db",
+      "r-cbd7ac1b96dadcdd",
+      "r-ceaaf07a30a538f0",
+      "r-d6d62368354c90b3",
+      "r-d8899d1874d620c4",
+      "r-e1593a22a2f5f2e1",
+      "r-e54e5d05a5e503ba",
+      "r-e9f6b34b57aa25d8",
+      "r-fa743ca8aad07ac2",
+      "r-fc8e713ada1d6407"
+    ]
+  },
+  "qualified_human_review": false,
+  "reviewer_type": "machine"
+}

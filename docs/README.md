@@ -5,7 +5,9 @@ Start with the [project README](../README.md) for the purpose and a first explor
 | I want to… | Read |
 |---|---|
 | Run the reader, search, trace, or compare ideas | [Reading guide](USAGE.md) |
+| Run locally and trace a new discovery | [Local acceptance](LOCAL_PREVIEW.md) · [Personal research](PERSONAL_EXPLORATION.md) |
 | Understand what is included and what remains unfinished | [Current status](STATUS.md) · [Coverage](COVERAGE.md) |
+| Review this candidate and its actual checks | [1.4 release notes](RELEASE-1.4.md) · [Acceptance report](../reports/product-readiness-1.4.md) |
 | Change the code or build the frontend | [Development](DEVELOPMENT.md) |
 | Understand the record model and correction rules | [Data contract](CONTRACT.md) |
 | Use read-only queries and evidence exports | [API](API.md) |

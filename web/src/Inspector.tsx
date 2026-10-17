@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { RichText } from "./RichText";
 export { RichText } from "./RichText";
 import { Contribution, Inspection, Relation, words } from "./types";
+import { WorkCards } from "./Works";
 import { TopicLinks } from "./People";
 export function Inspector({
   data,
@@ -11,6 +12,7 @@ export function Inspector({
   onSelect,
   onTopic,
   onPerson,
+  onWork,
   searchNavigation,
 }: {
   data: Inspection;
@@ -20,6 +22,7 @@ export function Inspector({
   onSelect: (id: string) => void;
   onTopic: (id: string) => void;
   onPerson: (id: string) => void;
+  onWork: (id: string) => void;
   searchNavigation?: {
     index: number;
     total: number;
@@ -82,11 +85,16 @@ export function Inspector({
           </button>
         </nav>
       )}
-      <div className="inspector-body">
+      <div className="inspector-body" aria-busy={data.pending || false}>
+        {data.pending && (
+          <p className="muted" role="status">
+            Loading sources and review…
+          </p>
+        )}
         <div className="record-badges">
           <span className="badge">Machine-screened</span>
           <span className="muted">
-            {words(r.effective_human_review || r.human_review)}
+            Human review: {words(r.effective_human_review || r.human_review)}
           </span>
         </div>
         <h2>
@@ -104,7 +112,14 @@ export function Inspector({
                     {p.name} ↗
                   </button>
                 ))
-              : node.attribution.map((a) => a.name).join(" · ")}
+              : node.attribution
+                  .filter(
+                    (a) =>
+                      a.role !== "unknown" &&
+                      a.name.toLowerCase() !== "unknown",
+                  )
+                  .map((a) => a.name)
+                  .join(" · ") || "Attribution not established"}
             <span>
               {node.date.year || "Date uncertain"} · {words(node.kind)}
             </span>
@@ -116,14 +131,22 @@ export function Inspector({
           </p>
         )}
         {node && (
-          <section className="insight-topics">
-            <h3>Explore this idea in</h3>
-            <TopicLinks topics={data.topics || []} onTopic={onTopic} />
-            <p className="muted">
-              Open a topic to see the wider story. Use Trace to follow this
-              idea’s evidenced connections.
-            </p>
-          </section>
+          <>
+            {!!data.works?.length && (
+              <section>
+                <h3>Works explaining this insight</h3>
+                <WorkCards works={data.works} onWork={onWork} />
+              </section>
+            )}
+            <section className="insight-topics">
+              <h3>Explore this idea in</h3>
+              <TopicLinks topics={data.topics || []} onTopic={onTopic} />
+              <p className="muted">
+                Open a topic to see the wider story. Use Trace to follow this
+                idea’s evidenced connections.
+              </p>
+            </section>
+          </>
         )}
         <div className="tabs">
           <button
@@ -134,9 +157,11 @@ export function Inspector({
           </button>
           <button
             className={depth === "evidence" ? "active" : ""}
+            disabled={data.pending}
             onClick={() => setDepth("evidence")}
           >
-            Sources & review <span>{data.sources.length}</span>
+            Sources & review{" "}
+            <span>{data.pending ? "…" : data.sources.length}</span>
           </button>
         </div>
         {depth === "insight" && node && (

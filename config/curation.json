@@ -5,7 +5,7 @@
   "escalation_model": "deepseek-ai/DeepSeek-V4-Pro",
   "expansion_nodes": 45,
   "first_pass_nodes": 24,
-  "initial_release_id": "1.2.0-exploratory",
+  "initial_release_id": "1.4.1-exploratory",
   "max_depth": 6,
   "max_extended_depth": 10,
   "max_source_bytes": 12000000,

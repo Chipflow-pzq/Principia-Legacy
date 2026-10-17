@@ -2,10 +2,16 @@
 
 import json
 import sqlite3
+from collections import OrderedDict
+from hashlib import sha256
 from pathlib import Path
+from threading import Lock
+
+from . import retrieval
+from .catalog import navigation_index
 from .common import digest, read_json, read_lines
 from .records import PILLARS, PREDICATES, validate, visible
-from .catalog import navigation_index
+from .works import compile_works
 
 
 def corpus(root):
@@ -45,6 +51,17 @@ def manifest(root, release_id="working"):
         "people": read_json(root / "manifests/people.json", []),
         "credit_groups": read_json(root / "manifests/credit_groups.json", []),
         "coverage_targets": read_json(root / "config/coverage_targets.json", {}),
+        **(
+            {
+                "catalog_version": 2,
+                "works": read_json(root / "manifests/works.json", []),
+                "work_insights": read_json(root / "manifests/work_insights.json", []),
+                "work_relations": read_json(root / "manifests/work_relations.json", []),
+                "search_concepts": read_json(root / "config/search_concepts.json", []),
+            }
+            if (root / "manifests/works.json").exists()
+            else {}
+        ),
         "maturity": "exploratory",
         "human_review_claim": "Only explicit human review records count. No expert audit is implied.",
     }
@@ -94,8 +111,15 @@ def build(root, release_id=None):
         CREATE TABLE people(snapshot TEXT,id TEXT,payload TEXT,PRIMARY KEY(snapshot,id));
         CREATE TABLE person_members(snapshot TEXT,person TEXT,id TEXT,revision INTEGER,credit TEXT,PRIMARY KEY(snapshot,person,id));
         CREATE INDEX person_by_node ON person_members(snapshot,id);
+        CREATE TABLE works(snapshot TEXT,id TEXT,payload TEXT,PRIMARY KEY(snapshot,id));
+        CREATE TABLE work_links(snapshot TEXT,id TEXT,payload TEXT,PRIMARY KEY(snapshot,id));
+        CREATE TABLE work_members(snapshot TEXT,work TEXT,id TEXT,payload TEXT,PRIMARY KEY(snapshot,work,id));
+        CREATE INDEX work_by_node ON work_members(snapshot,id);
+        CREATE TABLE work_topics(snapshot TEXT,work TEXT,topic TEXT,PRIMARY KEY(snapshot,topic,work));
+        CREATE TABLE work_people(snapshot TEXT,work TEXT,person TEXT,PRIMARY KEY(snapshot,person,work));
         CREATE VIRTUAL TABLE catalog_search USING fts5(snapshot UNINDEXED,id UNINDEXED,kind UNINDEXED,title,description,tokenize='unicode61 remove_diacritics 2');
         """)
+        retrieval.install(db)
         indexed = {(r["id"], r["revision"]): r for r in records}
         for r in sorted(records, key=lambda x: (x["id"], x["revision"])):
             db.execute(
@@ -111,15 +135,19 @@ def build(root, release_id=None):
             membership = {ref["id"]: ref["revision"] for ref in m["record_refs"]}
             for ref in m["record_refs"]:
                 record = indexed.get((ref["id"], ref["revision"]))
-                if record and record["type"] == "relation" and visible(record):
-                    if any(
+                if (
+                    record
+                    and record["type"] == "relation"
+                    and visible(record)
+                    and any(
                         membership.get(endpoint["id"]) != endpoint["revision"]
                         for endpoint in [*record["premises"], record["conclusion"]]
-                    ):
-                        raise ValueError(
-                            "Visible relation does not pin the active endpoint revision in snapshot "
-                            + m["release_id"]
-                        )
+                    )
+                ):
+                    raise ValueError(
+                        "Visible relation does not pin the active endpoint revision in snapshot "
+                        + m["release_id"]
+                    )
             db.execute(
                 "INSERT INTO snapshots VALUES(?,?)",
                 (m["release_id"], json.dumps(m, sort_keys=True, ensure_ascii=False)),
@@ -130,6 +158,62 @@ def build(root, release_id=None):
             nodes, topic_links, people, credits = navigation_index(
                 m, snapshot_records, records
             )
+            works, work_members, work_links = compile_works(m, nodes, records)
+            # The compiled snapshot stores only revision-valid interpretations.
+            # Its immutable manifest remains the reproducible source of truth.
+            db.executemany(
+                "INSERT INTO work_links VALUES(?,?,?)",
+                (
+                    (
+                        m["release_id"],
+                        r["id"],
+                        json.dumps(r, ensure_ascii=False, sort_keys=True),
+                    )
+                    for r in work_links
+                ),
+            )
+            for id, work in works.items():
+                db.execute(
+                    "INSERT INTO works VALUES(?,?,?)",
+                    (
+                        m["release_id"],
+                        id,
+                        json.dumps(work, ensure_ascii=False, sort_keys=True),
+                    ),
+                )
+                db.execute(
+                    "INSERT INTO catalog_search VALUES(?,?,?,?,?)",
+                    (
+                        m["release_id"],
+                        id,
+                        "work",
+                        work["title"],
+                        " ".join(
+                            [
+                                work.get("summary", ""),
+                                *work.get("aliases", []),
+                                *(
+                                    people[p]["name"]
+                                    for p in work.get("people", [])
+                                    if p in people
+                                ),
+                            ]
+                        ),
+                    ),
+                )
+                db.executemany(
+                    "INSERT INTO work_topics VALUES(?,?,?)",
+                    ((m["release_id"], id, t) for t in work["topic_ids"]),
+                )
+                db.executemany(
+                    "INSERT INTO work_people VALUES(?,?,?)",
+                    ((m["release_id"], id, p) for p in work.get("people", [])),
+                )
+            for (work, id), member in work_members.items():
+                db.execute(
+                    "INSERT INTO work_members VALUES(?,?,?,?)",
+                    (m["release_id"], work, id, json.dumps(member, sort_keys=True)),
+                )
             for (topic, node), value in sorted(topic_links.items()):
                 db.execute(
                     "INSERT INTO topic_members VALUES(?,?,?,?,?,?)",
@@ -232,6 +316,29 @@ def build(root, release_id=None):
                             for endpoint in endpoints
                         ],
                     )
+            retrieval.index(
+                db,
+                m["release_id"],
+                [
+                    *(n["title"] for n in nodes.values()),
+                    *(d["title"] for d in m["dossiers"]),
+                    *(
+                        label
+                        for p in people.values()
+                        for label in [p["name"], *p.get("aliases", [])]
+                    ),
+                    *(
+                        label
+                        for w in works.values()
+                        for label in [w["title"], *w.get("aliases", [])]
+                    ),
+                    *(
+                        term
+                        for concept in m.get("search_concepts", [])
+                        for term in concept["terms"]
+                    ),
+                ],
+            )
         db.execute("INSERT INTO metadata VALUES(?,?)", ("current_release", current))
         db.commit()
         db.execute("VACUUM")
@@ -249,6 +356,29 @@ def build(root, release_id=None):
     }
 
 
+_snapshots = OrderedDict()
+_snapshot_lock = Lock()
+
+
+def _snapshot(payload):
+    """Cache two public snapshots without retaining multi-megabyte JSON keys.
+
+    Exact payload hashes invalidate working builds. Two entries cover a release
+    comparison; source strings and personal queries are never retained as keys.
+    The lock prevents parallel first-page requests from decoding duplicate copies.
+    """
+    key = sha256(payload.encode("utf-8")).digest()
+    with _snapshot_lock:
+        if key in _snapshots:
+            _snapshots.move_to_end(key)
+        else:
+            value = json.loads(payload)
+            _snapshots[key] = (value, digest(value))
+            while len(_snapshots) > 2:
+                _snapshots.popitem(last=False)
+        return _snapshots[key]
+
+
 class Atlas:
     def __init__(self, root, release=None):
         self.root = Path(root)
@@ -263,13 +393,16 @@ class Atlas:
                 "SELECT value FROM metadata WHERE key='current_release'"
             ).fetchone()[0]
         )
-        row = self.db.execute(
-            "SELECT payload FROM snapshots WHERE id=?", (self.release,)
-        ).fetchone()
-        if not row:
+        try:
+            row = self.db.execute(
+                "SELECT payload FROM snapshots WHERE id=?", (self.release,)
+            ).fetchone()
+            if not row:
+                raise ValueError("Unknown release snapshot")
+            self.manifest, self.snapshot_hash = _snapshot(row[0])
+        except Exception:
             self.db.close()
-            raise ValueError("Unknown release snapshot")
-        self.manifest = json.loads(row[0])
+            raise
         self._records = None
         self._human_states = None
         self._extra_memberships = {
@@ -321,7 +454,7 @@ class Atlas:
     def response(self, **values):
         return {
             "release_id": self.release,
-            "snapshot_hash": digest(self.manifest),
+            "snapshot_hash": self.snapshot_hash,
             **values,
         }
 
@@ -333,6 +466,67 @@ class Atlas:
                 (self.release,),
             )
         ]
+
+    def exploration_index(self, offset=0, limit=200):
+        """Public snapshot pages for browser-local matching; no personal query."""
+        offset, limit = int(offset), int(limit)
+        if not 0 <= offset <= 10000 or not 1 <= limit <= 200:
+            raise ValueError("Invalid exploration index page")
+        where = (
+            "FROM records r JOIN members m ON r.id=m.id AND r.revision=m.revision "
+            "WHERE m.snapshot=? AND r.type='contribution' "
+            "AND json_extract(r.payload,'$.publication_state') IN ('exploratory','reviewed') "
+            "AND json_extract(r.payload,'$.machine_screening')='passed'"
+        )
+        total = self.db.execute("SELECT COUNT(*) " + where, (self.release,)).fetchone()[
+            0
+        ]
+        fields = (
+            "id",
+            "revision",
+            "content_hash",
+            "title",
+            "kind",
+            "pillar",
+            "claim",
+            "explanation",
+            "assumptions",
+            "limits",
+            "attribution",
+            "date",
+        )
+        entries = []
+        for row in self.db.execute(
+            "SELECT r.payload " + where + " ORDER BY r.id LIMIT ? OFFSET ?",
+            (self.release, limit, offset),
+        ):
+            record = json.loads(row[0])
+            entries.append({key: record[key] for key in fields})
+        # Ship public adjacency with the same query-free pages. The browser can
+        # follow a matched foundation without revealing the user's selected seeds.
+        by_id = {entry["id"]: entry for entry in entries}
+        neighbors = {id: set() for id in by_id}
+        for relation in self.adjacent_relations(
+            set(by_id), {p[0] for p in PREDICATES.values()}
+        ):
+            if not relation or not visible(relation):
+                continue
+            refs = [*relation["premises"], relation["conclusion"]]
+            try:
+                endpoints = [self.get(ref["id"], "contribution") for ref in refs]
+            except KeyError:
+                continue
+            if any(
+                not n or not visible(n) or n["revision"] != ref["revision"]
+                for n, ref in zip(endpoints, refs)
+            ):
+                continue
+            ids = {ref["id"] for ref in refs}
+            for id in ids & by_id.keys():
+                neighbors[id].update(ids - {id})
+        for id, entry in by_id.items():
+            entry["neighbors"] = sorted(neighbors[id])
+        return self.response(entries=entries, total=total, offset=offset, limit=limit)
 
     def adjacent_relations(self, ids, layers):
         if not ids or not layers:
@@ -385,6 +579,7 @@ class Atlas:
         ]
         return self.response(
             record={**r, "effective_human_review": self.human_state(r)},
+            works=self.works_for(id) if kind == "contribution" else [],
             sources=list(sources.values()),
             topics=topics,
             navigation_source_anchors=navigation_anchors,
@@ -464,9 +659,12 @@ class Atlas:
             )
         )
         topic_ids = {t["id"] for n in contributions for t in self.topics_for(n["id"])}
+        works = self.works(person=id, human=human, limit=100)["works"]
+        topic_ids.update(t for w in works for t in w["topic_ids"])
         return self.response(
             person=person,
             contributions=contributions,
+            works=works,
             topics=[
                 {k: d[k] for k in ("id", "title", "pillar")}
                 for d in self.manifest["dossiers"]
@@ -475,7 +673,7 @@ class Atlas:
             notice="Recorded credit and navigational topic membership do not establish exclusive authorship, priority, or influence. Biographical sources are identified separately.",
         )
 
-    def people(self, query="", limit=60, offset=0, human=False):
+    def people(self, query="", limit=60, offset=0, human=False, pillar=None):
         limit = min(max(int(limit), 1), 100)
         offset = max(int(offset), 0)
         if len(query) > 500:
@@ -490,6 +688,10 @@ class Atlas:
         ]
         if matches is not None:
             rows = [r for r in rows if r["id"] in matches]
+            rank = {id: i for i, id in enumerate(matches)}
+            rows.sort(key=lambda r: rank[r["id"]])
+        if pillar:
+            rows = [r for r in rows if pillar in r["subjects"]]
         if human:
             reviewed = {
                 id
@@ -512,39 +714,232 @@ class Atlas:
             people=rows[offset : offset + limit], total=len(rows), offset=offset
         )
 
-    def catalog_matches(self, query, kind):
-        import re
+    def search_plan(self, query):
+        if len(query) > 500:
+            raise ValueError("Search query is too long")
+        return retrieval.plan(
+            self.db, self.release, query, self.manifest.get("search_concepts", [])
+        )
 
-        terms = re.findall(r"[^\W_]+", query, flags=re.UNICODE)[:16]
-        if not terms:
+    def catalog_matches(self, query, kind, queries=None):
+        queries = queries if queries is not None else self.search_plan(query)["queries"]
+        expression = retrieval.expression(queries)
+        if not expression:
             return []
-        expression = " AND ".join('"' + t.replace('"', '""') + '"*' for t in terms)
         return [
             r[0]
             for r in self.db.execute(
-                "SELECT id FROM catalog_search WHERE catalog_search MATCH ? AND snapshot=? AND kind=? ORDER BY bm25(catalog_search)",
-                (expression, self.release, kind),
+                "SELECT id FROM catalog_search WHERE catalog_search MATCH ? AND snapshot=? AND kind=? ORDER BY CASE WHEN lower(title)=lower(?) THEN 0 WHEN instr(lower(title),lower(?))=1 THEN 1 ELSE 2 END,bm25(catalog_search,0,0,0,8,1),id",
+                (expression, self.release, kind, query.strip(), query.strip()),
             )
         ]
+
+    def works_for(self, node):
+        return [
+            json.loads(r[0])
+            for r in self.db.execute(
+                "SELECT w.payload FROM works w JOIN work_members m ON w.snapshot=m.snapshot AND w.id=m.work WHERE m.snapshot=? AND m.id=? ORDER BY w.id",
+                (self.release, node),
+            )
+        ]
+
+    def works(
+        self,
+        query="",
+        pillar=None,
+        topic=None,
+        person=None,
+        human=False,
+        limit=40,
+        offset=0,
+    ):
+        limit = min(max(int(limit), 1), 100)
+        offset = max(0, int(offset))
+        if len(query) > 500:
+            raise ValueError("Search query is too long")
+        ids = self.catalog_matches(query, "work") if query.strip() else None
+        where = ["w.snapshot=?"]
+        params = [self.release]
+        for value, table, column in (
+            (topic, "work_topics", "topic"),
+            (person, "work_people", "person"),
+        ):
+            if value:
+                where.append(
+                    f"EXISTS(SELECT 1 FROM {table} l WHERE l.snapshot=w.snapshot AND l.work=w.id AND l.{column}=?)"
+                )
+                params.append(value)
+        if pillar:
+            where.append(
+                "EXISTS(SELECT 1 FROM json_each(w.payload,'$.subjects') WHERE value=?)"
+            )
+            params.append(pillar)
+        rows = [
+            json.loads(r[0])
+            for r in self.db.execute(
+                "SELECT w.payload FROM works w WHERE "
+                + " AND ".join(where)
+                + " ORDER BY json_extract(w.payload,'$.title') COLLATE NOCASE",
+                params,
+            )
+        ]
+        if ids is not None:
+            ranks = {id: i for i, id in enumerate(ids)}
+            rows = sorted(
+                (w for w in rows if w["id"] in ranks), key=lambda w: ranks[w["id"]]
+            )
+        if human:
+            accepted = {
+                work
+                for work, content_hash in self.db.execute(
+                    "SELECT m.work,json_extract(r.payload,'$.content_hash') FROM work_members m JOIN members a ON a.snapshot=m.snapshot AND a.id=m.id JOIN records r ON r.id=a.id AND r.revision=a.revision WHERE m.snapshot=?",
+                    (self.release,),
+                )
+                if self.human_state({"content_hash": content_hash}) != "not_reviewed"
+            }
+            rows = [w for w in rows if w["id"] in accepted]
+        return self.response(
+            works=rows[offset : offset + limit],
+            total=len(rows),
+            limit=limit,
+            offset=offset,
+        )
+
+    def work(self, id, human=False):
+        row = self.db.execute(
+            "SELECT payload FROM works WHERE snapshot=? AND id=?", (self.release, id)
+        ).fetchone()
+        if not row:
+            raise KeyError(id)
+        work = json.loads(row[0])
+        contributions = []
+        memberships = []
+        for node, payload in self.db.execute(
+            "SELECT id,payload FROM work_members WHERE snapshot=? AND work=?",
+            (self.release, id),
+        ):
+            n = self.get(node, "contribution")
+            if not human or self.human_state(n) != "not_reviewed":
+                contributions.append(n)
+                memberships.append(json.loads(payload))
+        related = []
+        for link in (
+            json.loads(r[0])
+            for r in self.db.execute(
+                "SELECT payload FROM work_links WHERE snapshot=?", (self.release,)
+            )
+        ):
+            if id not in (link["from"]["id"], link["to"]["id"]):
+                continue
+            basis = self.get(link["basis_relation"]["id"], "relation")
+            if human and (
+                self.human_state(basis) == "not_reviewed"
+                or any(
+                    self.human_state(self.get(e["id"], "contribution"))
+                    == "not_reviewed"
+                    for e in [*basis["premises"], basis["conclusion"]]
+                )
+            ):
+                continue
+            ends = [
+                self.db.execute(
+                    "SELECT payload FROM works WHERE snapshot=? AND id=?",
+                    (self.release, e["id"]),
+                ).fetchone()
+                for e in (link["from"], link["to"])
+            ]
+            if all(
+                row
+                and all(
+                    json.loads(row[0])[k] == ref[k]
+                    for k in ("revision", "content_hash")
+                )
+                for row, ref in zip(ends, (link["from"], link["to"]))
+            ):
+                related.append(
+                    {
+                        **link,
+                        "layer": PREDICATES[link["predicate"]][0],
+                        "symmetric": PREDICATES[link["predicate"]][1],
+                        "machine_screening": basis["machine_screening"],
+                        "human_review": self.human_state(basis),
+                        "endpoints": [json.loads(r[0]) for r in ends],
+                    }
+                )
+        eligible_ids = [n["id"] for n in contributions]
+        shared_filter = (
+            " AND a.id IN (" + ",".join("?" for _ in eligible_ids) + ")"
+            if human
+            else ""
+        )
+        shared = (
+            [
+                {"work": json.loads(row[0]), "insight_count": row[1]}
+                for row in self.db.execute(
+                    "SELECT w.payload,COUNT(*) FROM work_members a JOIN work_members b ON a.snapshot=b.snapshot AND a.id=b.id AND a.work!=b.work JOIN works w ON w.snapshot=b.snapshot AND w.id=b.work WHERE a.snapshot=? AND a.work=?"
+                    + shared_filter
+                    + " GROUP BY w.id ORDER BY COUNT(*) DESC,w.id LIMIT 12",
+                    (self.release, id, *(eligible_ids if human else [])),
+                )
+            ]
+            if not human or eligible_ids
+            else []
+        )
+        source_versions = []
+        for ref in work.get("source_refs", []):
+            row = self.db.execute(
+                "SELECT payload FROM records WHERE id=? AND revision=?",
+                (ref["id"], ref["revision"]),
+            ).fetchone()
+            if row:
+                source_versions.append(json.loads(row[0]))
+        return self.response(
+            work=work,
+            contributions=contributions,
+            memberships=memberships,
+            topics=[
+                {k: t[k] for k in ("id", "title", "pillar")}
+                for t in self.manifest["dossiers"]
+                if t["id"] in work["topic_ids"]
+            ],
+            people=[
+                json.loads(r[0])
+                for p in work.get("people", [])
+                if (
+                    r := self.db.execute(
+                        "SELECT payload FROM people WHERE snapshot=? AND id=?",
+                        (self.release, p),
+                    ).fetchone()
+                )
+            ],
+            sources=source_versions,
+            relations=related,
+            shared_insights=shared,
+            notice="Catalog provenance identifies the work. Insight support and discovery credit are separate. Shared insights are navigation, not historical influence.",
+        )
 
     def search(
         self, query="", pillar=None, human=False, limit=40, match_any=False, offset=0
     ):
-        import re
+        """Rank direct text matches first, then explicit catalog memberships.
 
+        Navigation expansion is one hop only. It never invents a scientific
+        connection or repeatedly expands a broad query through the entire atlas.
+        """
         limit = min(max(int(limit), 1), 100)
         offset = max(int(offset), 0)
-        if len(query) > 500:
-            raise ValueError("Search query is too long")
-        empty = dict(
-            results=[],
-            people=[],
-            topics=[],
-            totals={"ideas": 0, "people": 0, "topics": 0},
-            offset=offset,
-            limit=limit,
-        )
-        terms = re.findall(r"[^\W_]+", query, flags=re.UNICODE)[:16]
+        plan = self.search_plan(query)
+        terms = retrieval.tokens(query)
+        empty = {
+            "results": [],
+            "people": [],
+            "topics": [],
+            "works": [],
+            "totals": {k: 0 for k in ("ideas", "people", "topics", "works")},
+            "offset": offset,
+            "limit": limit,
+            "search_interpretation": plan,
+        }
         if query.strip() and not terms:
             return self.response(**empty)
         if (
@@ -555,80 +950,157 @@ class Atlas:
             ).fetchone()
         ):
             return self.response(**empty)
+        person_ids = (
+            self.catalog_matches(query, "person", plan["queries"]) if terms else []
+        )
+        work_ids = self.catalog_matches(query, "work", plan["queries"]) if terms else []
+        topic_ids = (
+            self.catalog_matches(query, "topic", plan["queries"]) if terms else []
+        )
         params = [self.release]
         source = "records r JOIN members m ON r.id=m.id AND r.revision=m.revision"
         where = "m.snapshot=? AND r.type='contribution' AND json_extract(r.payload,'$.publication_state') IN ('exploratory','reviewed') AND json_extract(r.payload,'$.machine_screening')='passed'"
         order = "r.id"
+        order_params = []
         if terms:
             source += " JOIN search ON search.id=r.id AND search.snapshot=m.snapshot"
             where += " AND search MATCH ?"
-            params.append(
-                (" OR " if match_any else " AND ").join('"' + t + '"*' for t in terms)
-            )
-            order = "bm25(search,0,0,8,3,1),r.id"
+            params.append(retrieval.expression(plan["queries"], match_any))
+            order = "CASE WHEN instr(lower(search.title),lower(?))=1 THEN 0 WHEN instr(lower(search.title),lower(?))>0 THEN 1 ELSE 2 END,bm25(search,0,0,8,3,1),r.id"
+            order_params = [query.strip(), query.strip()]
         if pillar:
             where += " AND json_extract(r.payload,'$.pillar')=?"
             params.append(pillar)
-        # Count in SQLite and decode only the requested page for ordinary search.
-        sql = " FROM " + source + " WHERE " + where
-        if human:
-            candidates = [
-                json.loads(r[0])
-                for r in self.db.execute(
-                    "SELECT r.payload" + sql + " ORDER BY " + order, params
-                )
-            ]
-            candidates = [
-                n for n in candidates if self.human_state(n) != "not_reviewed"
-            ]
-            matches = candidates[offset : offset + limit]
-            total = len(candidates)
-        else:
-            total = self.db.execute("SELECT COUNT(*)" + sql, params).fetchone()[0]
-            matches = [
-                json.loads(r[0])
-                for r in self.db.execute(
-                    "SELECT r.payload"
-                    + sql
-                    + " ORDER BY "
-                    + order
-                    + " LIMIT ? OFFSET ?",
-                    (*params, limit, offset),
-                )
-            ]
-        people = []
-        for id in self.catalog_matches(query, "person") if terms else []:
-            p = json.loads(
-                self.db.execute(
-                    "SELECT payload FROM people WHERE snapshot=? AND id=?",
-                    (self.release, id),
-                ).fetchone()[0]
+        direct = [
+            r[0]
+            for r in self.db.execute(
+                "SELECT r.id FROM " + source + " WHERE " + where + " ORDER BY " + order,
+                (*params, *order_params),
             )
-            if (not pillar or pillar in p["subjects"]) and (
-                not human or self.person(id, True)["contributions"]
-            ):
-                people.append(p)
-        topic_ids = set(self.catalog_matches(query, "topic")) if terms else set()
-        topics = [
-            {k: d[k] for k in ("id", "title", "pillar")}
-            for d in self.manifest["dossiers"]
-            if d["id"] in topic_ids and (not pillar or d["pillar"] == pillar)
         ]
-        if human:
-            reviewed_topics = {
-                t["id"]
-                for n in self.contributions()
-                if visible(n) and self.human_state(n) != "not_reviewed"
-                for t in self.topics_for(n["id"])
+        people = {
+            r[0]: json.loads(r[1])
+            for r in self.db.execute(
+                "SELECT id,payload FROM people WHERE snapshot=?", (self.release,)
+            )
+        }
+        works = {
+            r[0]: json.loads(r[1])
+            for r in self.db.execute(
+                "SELECT id,payload FROM works WHERE snapshot=?", (self.release,)
+            )
+        }
+        person_ids = [
+            i for i in person_ids if not pillar or pillar in people[i]["subjects"]
+        ]
+        work_ids = [i for i in work_ids if not pillar or pillar in works[i]["subjects"]]
+        credits = list(
+            self.db.execute(
+                "SELECT person,id FROM person_members WHERE snapshot=?", (self.release,)
+            )
+        )
+        memberships = list(
+            self.db.execute(
+                "SELECT work,id FROM work_members WHERE snapshot=?", (self.release,)
+            )
+        )
+        named_people = set(person_ids)
+        selected_works = {
+            w
+            for w, p in self.db.execute(
+                "SELECT work,person FROM work_people WHERE snapshot=?", (self.release,)
+            )
+            if p in named_people and (not pillar or pillar in works[w]["subjects"])
+        }
+        work_ids += sorted(selected_works - set(work_ids))
+        matched_people, matched_works = named_people, set(work_ids)
+        direct_ids = set(direct)
+        related = {n for p, n in credits if p in matched_people} | {
+            n for w, n in memberships if w in matched_works
+        }
+        eligible = {
+            r[0]
+            for r in self.db.execute(
+                "SELECT r.id,json_extract(r.payload,'$.pillar'),json_extract(r.payload,'$.content_hash') FROM records r JOIN members m ON r.id=m.id AND r.revision=m.revision WHERE m.snapshot=? AND r.type='contribution' AND json_extract(r.payload,'$.publication_state') IN ('exploratory','reviewed') AND json_extract(r.payload,'$.machine_screening')='passed'",
+                (self.release,),
+            )
+            if (not pillar or r[1] == pillar)
+            and (
+                not human or self.human_state({"content_hash": r[2]}) != "not_reviewed"
+            )
+        }
+        idea_ids = [i for i in direct if i in eligible] + sorted(
+            (related - direct_ids) & eligible
+        )
+        # Direct idea matches expose their works and credited individuals. These
+        # additions do not themselves generate a second wave of idea matches.
+        work_ids += sorted(
+            {
+                w
+                for w, n in memberships
+                if n in direct_ids
+                and w not in matched_works
+                and (not pillar or pillar in works[w]["subjects"])
             }
-            topics = [t for t in topics if t["id"] in reviewed_topics]
+        )
+        person_ids += sorted(
+            {
+                p
+                for p, n in credits
+                if n in direct_ids
+                and p not in matched_people
+                and (not pillar or pillar in people[p]["subjects"])
+            }
+        )
+        work_people = {p for w in matched_works for p in works[w].get("people", [])}
+        person_ids += sorted(work_people - set(person_ids))
+        if human:
+            allowed_works = {w for w, n in memberships if n in eligible}
+            allowed_people = {p for p, n in credits if n in eligible}
+            work_ids = [w for w in work_ids if w in allowed_works]
+            person_ids = [p for p in person_ids if p in allowed_people]
+        matched_idea_ids = set(idea_ids)
+        linked_topics = {t for w in work_ids for t in works[w]["topic_ids"]} | {
+            t
+            for t, n in self.db.execute(
+                "SELECT topic,id FROM topic_members WHERE snapshot=?", (self.release,)
+            )
+            if n in matched_idea_ids
+        }
+        topic_ids += sorted(linked_topics - set(topic_ids))
+        if human:
+            allowed_topics = {
+                t
+                for t, n in self.db.execute(
+                    "SELECT topic,id FROM topic_members WHERE snapshot=?",
+                    (self.release,),
+                )
+                if n in eligible
+            }
+            topic_ids = [t for t in topic_ids if t in allowed_topics]
+        topics = {t["id"]: t for t in self.manifest["dossiers"]}
+        topic_ids = [
+            t for t in topic_ids if not pillar or topics[t]["pillar"] == pillar
+        ]
         return self.response(
-            results=matches,
-            people=people[offset : offset + limit],
-            topics=topics[offset : offset + limit],
+            results=[
+                self.get(i, "contribution") for i in idea_ids[offset : offset + limit]
+            ],
+            people=[people[i] for i in person_ids[offset : offset + limit]],
+            works=[works[i] for i in work_ids[offset : offset + limit]],
+            topics=[
+                {k: topics[i][k] for k in ("id", "title", "pillar")}
+                for i in topic_ids[offset : offset + limit]
+            ],
+            totals={
+                "ideas": len(idea_ids),
+                "people": len(person_ids),
+                "works": len(work_ids),
+                "topics": len(topic_ids),
+            },
             offset=offset,
             limit=limit,
-            totals={"ideas": total, "people": len(people), "topics": len(topics)},
+            search_interpretation=plan,
         )
 
     def dossiers(self):
@@ -637,12 +1109,19 @@ class Atlas:
         subject_records = [
             json.loads(row[0])
             for row in self.db.execute(
-                "SELECT r.payload FROM records r JOIN members m ON r.id=m.id AND r.revision=m.revision "
-                "WHERE m.snapshot=? AND r.type IN ('contribution','relation')",
+                "SELECT json_object('id',r.id,'revision',r.revision,'type',r.type,"
+                "'content_hash',json_extract(r.payload,'$.content_hash'),"
+                "'anchors',json_extract(r.payload,'$.anchors'),"
+                "'premises',json_extract(r.payload,'$.premises'),"
+                "'conclusion',json_extract(r.payload,'$.conclusion'),"
+                "'layer',json_extract(r.payload,'$.layer'),'predicate',json_extract(r.payload,'$.predicate')) "
+                "FROM records r JOIN members m ON r.id=m.id AND r.revision=m.revision "
+                "WHERE m.snapshot=? AND r.type IN ('contribution','relation') "
+                "AND json_extract(r.payload,'$.publication_state') IN ('exploratory','reviewed') "
+                "AND json_extract(r.payload,'$.machine_screening')='passed'",
                 (self.release,),
             )
         ]
-        subject_records = [r for r in subject_records if visible(r)]
         members_by_topic = {}
         by_id = {r["id"]: r for r in subject_records if r["type"] == "contribution"}
         for topic, id in self.db.execute(
@@ -664,10 +1143,18 @@ class Atlas:
             )
             for topic in common:
                 edges_by_topic.setdefault(topic, []).append(edge)
+        works_by_topic = {}
+        for topic, work in self.db.execute(
+            "SELECT topic,work FROM work_topics WHERE snapshot=?", (self.release,)
+        ):
+            works_by_topic.setdefault(topic, []).append(work)
         for d in self.manifest["dossiers"]:
             members = members_by_topic.get(d["id"], [])
             ids = {r["id"] for r in members}
             edges = edges_by_topic.get(d["id"], [])
+            connected = {
+                ref["id"] for e in edges for ref in [*e["premises"], e["conclusion"]]
+            }
             checklist = [
                 {**c, "supported": any(id in ids for id in c.get("contributions", []))}
                 for c in d["checklist"]
@@ -700,8 +1187,11 @@ class Atlas:
                     ),
                     "declared_endpoint": d.get("endpoint"),
                     "checklist": checklist,
+                    "work_count": len(works_by_topic.get(d["id"], [])),
+                    "work_ids": works_by_topic.get(d["id"], []),
                     "contribution_count": len(members),
                     "relation_count": len(edges),
+                    "isolated_contribution_count": len(ids - connected),
                     "source_count": len(
                         {a["source_id"] for n in members for a in n.get("anchors", [])}
                     ),
@@ -903,6 +1393,20 @@ class Atlas:
         anchors = [a for r in [*contributions, *edges] for a in r.get("anchors", [])]
         anchors.extend(navigation_anchors)
         source_refs = {(a["source_id"], a["source_revision"]) for a in anchors}
+        works = {w["id"]: w for n in contributions for w in self.works_for(n["id"])}
+        work_memberships = [
+            json.loads(row[0])
+            for n in contributions
+            for row in self.db.execute(
+                "SELECT payload FROM work_members WHERE snapshot=? AND id=?",
+                (self.release, n["id"]),
+            )
+        ]
+        source_refs.update(
+            (r["id"], r["revision"])
+            for w in works.values()
+            for r in w.get("source_refs", [])
+        )
         sources = []
         for source_id, revision in sorted(source_refs):
             row = self.db.execute(
@@ -919,6 +1423,8 @@ class Atlas:
             source_anchors=anchors,
             sources=sources,
             topic_memberships=memberships,
+            works=list(works.values()),
+            work_insight_memberships=work_memberships,
             navigation_source_anchors=navigation_anchors,
             assumptions_and_scope=[
                 {"id": r["id"], "assumptions": r["assumptions"], "limits": r["limits"]}
@@ -966,7 +1472,21 @@ class Atlas:
         ).fetchone()
         if not row:
             raise ValueError("Unknown comparison snapshot")
-        old = {r["id"]: r for r in json.loads(row[0])["record_refs"]}
+        prior_manifest = json.loads(row[0])
+        old = {r["id"]: r for r in prior_manifest["record_refs"]}
+        catalog_changes = {}
+        for kind in ("works", "people", "dossiers"):
+            before = {r["id"]: r for r in prior_manifest.get(kind, [])}
+            after = {r["id"]: r for r in self.manifest.get(kind, [])}
+            catalog_changes[kind] = {
+                "added": sorted(after.keys() - before.keys()),
+                "removed": sorted(before.keys() - after.keys()),
+                "changed": sorted(
+                    k
+                    for k in before.keys() & after.keys()
+                    if digest(before[k]) != digest(after[k])
+                ),
+            }
         new = {r["id"]: r for r in self.manifest["record_refs"]}
 
         def describe(ref):
@@ -989,6 +1509,7 @@ class Atlas:
 
         return self.response(
             from_release=from_release,
+            catalog_changes=catalog_changes,
             added=[describe(new[k]) for k in sorted(new.keys() - old.keys())],
             removed=[describe(old[k]) for k in sorted(old.keys() - new.keys())],
             changed=[
@@ -1027,9 +1548,22 @@ class Atlas:
                 )
             ),
             counts=counts,
+            catalog_counts={
+                "works": self.db.execute(
+                    "SELECT COUNT(*) FROM works WHERE snapshot=?", (self.release,)
+                ).fetchone()[0],
+                "people": self.db.execute(
+                    "SELECT COUNT(*) FROM people WHERE snapshot=?", (self.release,)
+                ).fetchone()[0],
+                "topics": len(self.manifest["dossiers"]),
+                "works_with_insights": self.db.execute(
+                    "SELECT COUNT(DISTINCT work) FROM work_members WHERE snapshot=?",
+                    (self.release,),
+                ).fetchone()[0],
+            },
             pillars=PILLARS,
             predicates={
-                k: {"layer": v[0], "symmetric": v[1], "label": v[2]}
+                k: {"layer": v[0], "symmetric": v[1], "label": v[2], "meaning": v[3]}
                 for k, v in PREDICATES.items()
             },
             releases=[

@@ -1,0 +1,69 @@
+{
+  "check": {
+    "decision": "supported",
+    "reason": "The insight claims a center-density bound f(0)/(2^n f_hat(0)). The source passages restate the Cohn–Elkies bound as density ≤ (f(0)/f_hat(0)) * Vol(B_d(0,1/2)). Since center density = density / Vol(B_d(0,1/2)), the source's density bound is equivalent to center density ≤ f(0)/f_hat(0). The source explicitly applies this to dimension 8, where 2^n = 256, but the general formulation in Theorem 2 matches the insight's claim after dividing out the unit-ball volume. The insight's normalization is consistent with the source's use of the bound."
+  },
+  "human_review": false,
+  "membership": {
+    "anchors": [
+      {
+        "anchor_id": "p3",
+        "source_id": "s-7414b1e9b6725a75",
+        "source_revision": 1
+      },
+      {
+        "anchor_id": "p4",
+        "source_id": "s-7414b1e9b6725a75",
+        "source_revision": 1
+      }
+    ],
+    "contribution": {
+      "content_hash": "1a7cce37d5392c2e05f07a112db5767bebb9ce46659b07cf8dafbd59e6665fa3",
+      "id": "n-ffb331e98ffc2fc2",
+      "revision": 1
+    },
+    "reason": "Viazovska restates the Cohn–Elkies admissible-function bound as Theorem 2 and applies it to the optimal function for dimension eight. The source expresses packing density; dividing out unit-ball volume gives the center-density normalization used by this insight. This reading membership does not reassign discovery credit.",
+    "role": "uses",
+    "work": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "work_id": "w-source-7414b1e9b6725a75"
+  },
+  "receipt": {
+    "attempt": 1,
+    "finish_reason": "stop",
+    "input_hash": "504d6cb6681c7057a6348fcf4fd5a039f5cb860e88c4ac8744e67d099c560d5d",
+    "job_id": "d48812728fc2652323067d2f0a6fbe068c7d24aa9bff658384dce580d93198a5",
+    "output_hash": "6d06df0107939f0da1a294376e251e9564951cce1ad11ffa03cd12115468474d",
+    "prompt_hash": "4028ed51e55487ff3ca3d5ea638d677aee86e6ea70f7db7b0f700dbc0c094aac",
+    "provider": "SiliconFlow",
+    "provider_trace_id": "81713baf-4d57-4410-85e9-4c177023df3a",
+    "request_id": "01a14866ca6a115124df98a48ca70023",
+    "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "state": "succeeded",
+    "task": "catalog-1.4-shared-cohn-elkies",
+    "time": "2026-10-17T05:47:38+00:00",
+    "trace_id": "81713baf-4d57-4410-85e9-4c177023df3a",
+    "usage": {
+      "completion_tokens": 162,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3077,
+      "prompt_tokens": 3077,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3239
+    }
+  },
+  "editorial_disposition": {
+    "status": "superseded",
+    "reason": "The affirmative verdict contained an incorrect center-density conversion. It was not accepted on its own. See the corrected normalization and independent recheck.",
+    "follow_up": "catalog-1.4-shared-insight-recheck.json"
+  }
+}

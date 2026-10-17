@@ -1,0 +1,64 @@
+{
+  "check": {
+    "decision": "supported",
+    "reason": "The insight claims the Cohn–Elkies bound gives center density ≤ f(0)/(2^n f̂(0)). The source passage (Theorem 2) states the bound for sphere packing density as (f(0)/f̂(0)) · Vol(B_d(0,1/2)). For unit exclusion distance (radius 1/2 spheres), center density δ_center = (packing density) / Vol(B_d(0,1)). Since Vol(B_d(0,1)) = 2^d · Vol(B_d(0,1/2)), dividing the source's density bound by Vol(B_d(0,1)) yields f(0)/(2^d f̂(0)), exactly matching the insight's claim. The source explicitly attributes the theorem to Cohn and Elkies [4] and applies it directly to sphere packing, confirming the conceptual move. The prior critic's correction is itself correct, and the insight's formulation is consistent with the source."
+  },
+  "human_review": false,
+  "membership": {
+    "anchors": [
+      {
+        "anchor_id": "p3",
+        "source_id": "s-7414b1e9b6725a75",
+        "source_revision": 1
+      },
+      {
+        "anchor_id": "p4",
+        "source_id": "s-7414b1e9b6725a75",
+        "source_revision": 1
+      }
+    ],
+    "contribution": {
+      "content_hash": "1a7cce37d5392c2e05f07a112db5767bebb9ce46659b07cf8dafbd59e6665fa3",
+      "id": "n-ffb331e98ffc2fc2",
+      "revision": 1
+    },
+    "reason": "Viazovska restates the Cohn–Elkies admissible-function bound as Theorem 2 and applies it to the optimal function for dimension eight. The source expresses packing density; dividing by the volume of the radius-one unit ball gives the center-density normalization used by this insight: delta_center <= f(0)/(2^d f_hat(0)). The exclusion distance is one, so the packed spheres have radius one-half. This reading membership does not reassign discovery credit.",
+    "role": "uses",
+    "work": {
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "revision": 1
+    },
+    "work_id": "w-source-7414b1e9b6725a75"
+  },
+  "receipt": {
+    "attempt": 1,
+    "finish_reason": "stop",
+    "input_hash": "9a40d6077e6c4418d0c3eb85f26d7dd5b9abb1200bbaeb7ff04d071b9ec86b76",
+    "job_id": "93fc8b22e07ffc202e85466e9211bbd76b887acc5606ab243e34af085a798ce9",
+    "output_hash": "bd9d55188856f77ecaff5556b359c06f0ec215d8d98700324a3f55734fd9f910",
+    "prompt_hash": "4028ed51e55487ff3ca3d5ea638d677aee86e6ea70f7db7b0f700dbc0c094aac",
+    "provider": "SiliconFlow",
+    "provider_trace_id": "2d4501d2-9a47-43e0-8511-f75538b5900f",
+    "request_id": "01a14869d8c47234599a23dcf99c0d57",
+    "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "returned_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "state": "succeeded",
+    "task": "catalog-1.4-shared-cohn-elkies-normalization-recheck",
+    "time": "2026-10-17T05:50:56+00:00",
+    "trace_id": "2d4501d2-9a47-43e0-8511-f75538b5900f",
+    "usage": {
+      "completion_tokens": 217,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 3185,
+      "prompt_tokens": 3185,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 3402
+    }
+  }
+}

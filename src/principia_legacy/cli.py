@@ -5,9 +5,10 @@ import json
 import sqlite3
 import sys
 from pathlib import Path
+
 from .common import read_json, read_lines, root_path, write_json
-from .storage import Atlas, build, corpus
 from .records import validate
+from .storage import Atlas, build, corpus
 
 
 def parser():
@@ -80,13 +81,17 @@ def parser():
     brief.add_argument("--offline", action="store_true")
     brief.add_argument("--output")
     rel = sub.add_parser("release")
-    rel.add_argument("--id", required=True, help="Explicit immutable release identifier")
+    rel.add_argument(
+        "--id", required=True, help="Explicit immutable release identifier"
+    )
     rel.add_argument("--report")
     ev = sub.add_parser("evaluate")
     ev.add_argument("--allow-network", action="store_true")
     ev.add_argument("--env-file")
     ev.add_argument("--split", choices=["dev", "heldout", "all"], default="dev")
-    ex = sub.add_parser("expand", help="Execute a frozen, bounded source expansion plan")
+    ex = sub.add_parser(
+        "expand", help="Execute a frozen, bounded source expansion plan"
+    )
     ex.add_argument("--plan", required=True)
     ex.add_argument("--allow-network", action="store_true")
     ex.add_argument("--env-file")
@@ -122,6 +127,17 @@ def main(argv=None):
                 ]
             )
             errors = validate(records)
+            if not args.corpus and not errors:
+                from .catalog import navigation_index
+                from .storage import latest_records, manifest
+                from .works import compile_works
+
+                try:
+                    m = manifest(root)
+                    nodes, *_ = navigation_index(m, latest_records(records), records)
+                    compile_works(m, nodes, records)
+                except (ValueError, KeyError, TypeError) as e:
+                    errors.append("Catalog: " + str(e))
             result = {"valid": not errors, "records": len(records), "errors": errors}
             if errors:
                 print(json.dumps(result, indent=2))
@@ -166,8 +182,9 @@ def main(argv=None):
                 "notice": "Registry assignments are a scouting backlog, not verified endpoint claims.",
             }
             if args.allow_network and not args.dry_run:
-                from .acquire import acquire
                 from urllib.parse import urlparse
+
+                from .acquire import acquire
 
                 candidates = read_json(root / "config/source_candidates.json", {})
                 hosts = {
@@ -216,9 +233,10 @@ def main(argv=None):
                 else args.dossier.split(",")
             )
             if args.command == "refresh":
+                from urllib.parse import urlparse
+
                 from .acquire import acquire
                 from .common import digest, now
-                from urllib.parse import urlparse
 
                 candidates = read_json(root / "config/source_candidates.json", {})
                 hosts = {
@@ -270,8 +288,11 @@ def main(argv=None):
                 return 0
         elif args.command == "expand":
             if not args.allow_network:
-                raise ValueError("Expansion is an explicit authoring action; add --allow-network")
+                raise ValueError(
+                    "Expansion is an explicit authoring action; add --allow-network"
+                )
             from .expansion import expand
+
             result = expand(root, root / args.plan, args.env_file, args.workers)
         elif args.command == "propose":
             from .lifecycle import prepare_patch

@@ -129,15 +129,6 @@
     },
     {
       "assumptions": [
-        "These regularization methods are beneficial."
-      ],
-      "id": "n-54871f8b872a0c37",
-      "limits": [
-        "Label smoothing hurts perplexity."
-      ]
-    },
-    {
-      "assumptions": [
         "Development set performance is indicative of generalization."
       ],
       "id": "n-5695bc0aae2c9155",
@@ -256,7 +247,7 @@
   "notice": "This evidence brief is not authorization and does not establish expert validation.",
   "permitted_action_scope": "read_only",
   "query": "Flagship evidence: C01",
-  "release_id": "1.2.0-exploratory",
+  "release_id": "1.4.1-exploratory",
   "relevant_contributions": [
     {
       "anchors": [
@@ -1160,79 +1151,6 @@
         "computer_science"
       ],
       "title": "Empirical demonstration that a pure neural translation system outperforms a phrase-based SMT baseline",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p65",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p66",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p67",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "These regularization methods are beneficial."
-      ],
-      "attribution": [
-        {
-          "evidence_note": "Described in the paper.",
-          "name": "Vaswani et al.",
-          "role": "collective"
-        }
-      ],
-      "claim": "Dropout is applied to the output of each sub-layer before addition and normalization, and to the sums of embeddings and positional encodings; label smoothing of 0.1 is used, which hurts perplexity but improves accuracy and BLEU.",
-      "conceptual_move": "Apply dropout at specific points and use label smoothing.",
-      "content_hash": "6931793d71acc701762e47c2885af686075f8ebfcfb38391d988da7ac835e8ea",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "Described in the paper.",
-        "precision": "year",
-        "year": 2017
-      },
-      "dossiers": [
-        "C01"
-      ],
-      "explanation": "The paper employs three types of regularization: residual dropout, label smoothing, and (implicitly) checkpoint averaging. Dropout is applied to the output of each sub-layer before it is added to the sub-layer input and normalized, and also to the sums of embeddings and positional encodings. Label smoothing of 0.1 is used, which makes the model learn to be more unsure but improves accuracy and BLEU score. These techniques are part of the training recipe.",
-      "human_review": "not_reviewed",
-      "id": "n-54871f8b872a0c37",
-      "kind": "method",
-      "limits": [
-        "Label smoothing hurts perplexity."
-      ],
-      "machine_screening": "passed",
-      "pillar": "computer_science",
-      "problem": "Prevent overfitting during training.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Standard in transformer training.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "computer_science"
-      ],
-      "title": "Regularization techniques: residual dropout and label smoothing",
       "type": "contribution"
     },
     {
@@ -2175,13 +2093,6 @@
     },
     {
       "human_review": "not_reviewed",
-      "id": "n-54871f8b872a0c37",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Standard in transformer training."
-    },
-    {
-      "human_review": "not_reviewed",
       "id": "n-5695bc0aae2c9155",
       "machine_screening": "passed",
       "revision": 1,
@@ -2259,6 +2170,53 @@
     }
   ],
   "reviews": [
+    {
+      "content_hash": "2b684e2c567bb76e2d7e8eb79452a6ea54612f0ae95eebd659b33c98f83ad8b2",
+      "evidence_checked": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-03f1a5b5eeedd317f9b2",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "62ac801f5b1c66767ef2814e158baa9702c832392a0d43e9a26bb4affe10c656",
+        "job_id": "300270219051c4d295eaae4a079174501c2895732ea548a4402a965fd9754711",
+        "output_hash": "59a039b66faf94927ebe345c74d4bea6d2c5a7db4ebe099630cfcddbe0470a74",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "2a8ea358-32ea-4f54-8834-68bbfaa7815c",
+        "request_id": "01a1478c77e2a40ef2a4ce9be870ff1c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:62ac801f5b1c66767ef2",
+        "time": "2026-10-17T01:49:10+00:00",
+        "trace_id": "2a8ea358-32ea-4f54-8834-68bbfaa7815c"
+      },
+      "rationale": "The supplementary equations apply layer normalization to LSTM gates/cell states and GRU components, preserving the base method as the recurrent special case.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "c326b336b515ee12a94805555366fb7423fe41a73fc866e59849dc99a1c00db9",
+        "id": "r-195dd1f7d718ec27",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:10+00:00",
+      "type": "review"
+    },
     {
       "content_hash": "26fd7f0515b08daca56c1b6f26574bb304a0aa9c423d680a5628e7e4b0d39bd4",
       "evidence_checked": [
@@ -2338,48 +2296,6 @@
       "target": {
         "content_hash": "25cb9cca57a5f2349f01d785418a8b08fb1d70212dbc2a4f7af62947a28e4114",
         "id": "r-3bfb73f8faaf7a78",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:31:28+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "69503d0815802f19ed80bc9ae4b06ff7bab0224eafd61166829aa362a0c1702f",
-      "evidence_checked": [
-        {
-          "anchor_id": "p87",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-09357ec35ffb0f76a2b1",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "5db592526a3efbcf577e14edad15005bd4adae728f3c5512728b2d980f3dcadf",
-        "job_id": "930d145f80d6c77e8c5ab3be35fcfc3fa19eb449effb1d67583bc31c8d3b5177",
-        "output_hash": "f4a40fb38b3cfd0690f100f16c48be72b61d6dae777073c60fcdc6304b03755a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951",
-        "request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:C01:d5d5374a71b4",
-        "time": "2026-10-12T11:31:28+00:00",
-        "trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951"
-      },
-      "rationale": "The ablations vary the base model, which is the same architecture used for the main translation results. The passage supports this.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "ff085dbb4dc6cba14a56b00192f5d20a211efce208e0202b33ae79106316b3bf",
-        "id": "r-69e305a81612eb9f",
         "revision": 1
       },
       "time": "2026-10-12T11:31:28+00:00",
@@ -2502,6 +2418,48 @@
         "revision": 1
       },
       "time": "2026-10-12T14:53:34+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "bc2ddfcd4adb51f6826984f9081cb4583b485fff6411d6205e8a44b0c84a2402",
+      "evidence_checked": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-15bdceefea2c6eb1b17b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5d23d37034e173586d1ff85e2dbab51c8c79db78b38c40ab53903ddeafd29e32",
+        "job_id": "3902e497a4b38712932775f537c70cf733e81cf3c657776ca40dc272b13e76a0",
+        "output_hash": "a42864dda6f2c042603bbda79c8ddae392db01220215e2f65c34964c9325696c",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "36e5a335-9f43-4519-91c1-ff5b6320af0c",
+        "request_id": "01a1478ce889e69eb07e08e1570feca7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:5d23d37034e173586d1f",
+        "time": "2026-10-17T01:49:38+00:00",
+        "trace_id": "36e5a335-9f43-4519-91c1-ff5b6320af0c"
+      },
+      "rationale": "p17 states each encoder layer has a position-wise fully connected feed-forward network as its second sub-layer, so the feed-forward network is a genuine component of the Transformer layer.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "40132c82008916143b70d1d9702bdd85159f39327e31bb32f241800aff7eed63",
+        "id": "r-31231f2f4cb541ff",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:38+00:00",
       "type": "review"
     },
     {
@@ -2722,6 +2680,93 @@
         "revision": 1
       },
       "time": "2026-10-12T11:30:46+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "30d6242858e9f2f712a915a7b4be913a5c763bd0224ef98934272d69ae6894f2",
+      "evidence_checked": [
+        {
+          "anchor_id": "p107",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p109",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p96",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p101",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p108",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-2165705d7870198e7480",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "710f7ae4e379a0085a4c8b657fcb58abc209b420c119e5e8a5d660469f10a825",
+        "job_id": "13a4fa6f727d3bd66cbe29b217cb5267e139a67065c7c6812fbea47f92b84993",
+        "output_hash": "9c9f3d4e8c44e323cbd1c51ec0b3c58192d7ce650b66f484ac17f983baca60ce",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7fc101fc-6ce8-45d7-aad8-54796a5eb94d",
+        "request_id": "01a1479f4365d454e06fdc1dd7f84926",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "verify-arrow-repairs:564347ca61a2a1519254",
+        "time": "2026-10-17T02:09:44+00:00",
+        "trace_id": "7fc101fc-6ce8-45d7-aad8-54796a5eb94d"
+      },
+      "rationale": "p6 abstract states the Transformer 'generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data'; p104 frames parsing as a generalization test; p96/p101 give 91.3 WSJ-only and 92.7 semi-supervised; p108 says it outperforms BerkeleyParser with only WSJ 40K sentences. The premise (parsing success) bears on the conclusion (versatility/generalization).",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "af423d0b907253a08c0c167277fc414000b88e3c41f734a738e3284cd124b31f",
+        "id": "r-83530ef857c48a41",
+        "revision": 3
+      },
+      "time": "2026-10-17T02:09:44+00:00",
       "type": "review"
     },
     {
@@ -3208,45 +3253,45 @@
       "type": "review"
     },
     {
-      "content_hash": "bf13080fd541f601a56e429021d460dfc357675892ad1bd066535ce8bc11fe5c",
+      "content_hash": "96dcb628918fc19c173789ac9dee0a88b66bf9cbf4edda763969559a8a0bf5d1",
       "evidence_checked": [
         {
-          "anchor_id": "p107",
+          "anchor_id": "p50",
           "source_id": "s-f593f350d93c7f67",
           "source_revision": 1
         }
       ],
-      "id": "review-3a18d97b5bda85dd721a",
+      "id": "review-3cd6db2c199e7f123a3a",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "5db592526a3efbcf577e14edad15005bd4adae728f3c5512728b2d980f3dcadf",
-        "job_id": "930d145f80d6c77e8c5ab3be35fcfc3fa19eb449effb1d67583bc31c8d3b5177",
-        "output_hash": "f4a40fb38b3cfd0690f100f16c48be72b61d6dae777073c60fcdc6304b03755a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "4ca91dadb22ea6f01762a08be8f33e6706dd76e04b6f474d61228085ab2d38e1",
+        "job_id": "f1f95b6c250919d0fefe31314b24190ad72f3f4e26790dd4896af13f60d382c5",
+        "output_hash": "bd53a02ea647f67fd439540221dff5cc09fdb2d0e89ee25c7e5cf9a3b2f6df37",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951",
-        "request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "4940e61c-b936-4927-b040-f4b70f56a5a3",
+        "request_id": "01a1478d29a6d4b9647c22e289a7eb50",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:C01:d5d5374a71b4",
-        "time": "2026-10-12T11:31:28+00:00",
-        "trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951"
+        "task": "atlas-audit:4ca91dadb22ea6f01762",
+        "time": "2026-10-17T01:49:55+00:00",
+        "trace_id": "4940e61c-b936-4927-b040-f4b70f56a5a3"
       },
-      "rationale": "The successful application to constituency parsing indicates the architecture is not limited to translation. The passage supports this.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "The path-length analysis (O(1) max path length for self-attention) is an argument bearing on the conclusion that the architecture can learn long-range dependencies, matching the stated warrant.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "6c0e9110cf1834b062c1440c58e2260df3b85aff834b2c0b36923805e6f8ac0a",
-        "id": "r-83530ef857c48a41",
+        "content_hash": "25cb9cca57a5f2349f01d785418a8b08fb1d70212dbc2a4f7af62947a28e4114",
+        "id": "r-3bfb73f8faaf7a78",
         "revision": 1
       },
-      "time": "2026-10-12T11:31:28+00:00",
+      "time": "2026-10-17T01:49:55+00:00",
       "type": "review"
     },
     {
@@ -3448,48 +3493,6 @@
       "type": "review"
     },
     {
-      "content_hash": "f1177ec744b1430c2ad5ea564ddc76f9d4b5132d90785877ac2446704a55e1d7",
-      "evidence_checked": [
-        {
-          "anchor_id": "p52",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-481ae4d9c4cf8b6f450b",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "5db592526a3efbcf577e14edad15005bd4adae728f3c5512728b2d980f3dcadf",
-        "job_id": "930d145f80d6c77e8c5ab3be35fcfc3fa19eb449effb1d67583bc31c8d3b5177",
-        "output_hash": "f4a40fb38b3cfd0690f100f16c48be72b61d6dae777073c60fcdc6304b03755a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951",
-        "request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:C01:d5d5374a71b4",
-        "time": "2026-10-12T11:31:28+00:00",
-        "trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951"
-      },
-      "rationale": "The analysis of self-attention complexity includes the scaled dot-product attention mechanism. The passage supports this.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "cdc6ae065e8a3774b35bce9235dec7db51544302c0983daafce7d835a0e67ce6",
-        "id": "r-ad3f3c024720513f",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:31:28+00:00",
-      "type": "review"
-    },
-    {
       "content_hash": "0bf635070b50da396fe0e88c60f0cbd9bee2208c28db9ad1067bff142535b1d6",
       "evidence_checked": [
         {
@@ -3656,6 +3659,48 @@
       "type": "review"
     },
     {
+      "content_hash": "6fe061eba8dffbcbfb4bbfeaff52ac554953bcb97e8d27693e20353e59db7118",
+      "evidence_checked": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-54dbf0d6b6b50a04209e",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f821bc8e215f5b46898bb9e969d9ebcf1420e7f84ef339821e9cef59e09415fc",
+        "job_id": "27fd1875b330e551f9744acefbe5b49d1c26d610c7594e5cd91039cd4b09a70c",
+        "output_hash": "d4afe54c8843c857d72fa216ae943b306e4b27343f4fe49b08f4c772dd97ce38",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a55f3f21-8221-4c85-ba80-4eba5a8dfaea",
+        "request_id": "01a1478edd0015ef8f6fa748903fbe7a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f821bc8e215f5b46898b",
+        "time": "2026-10-17T01:51:49+00:00",
+        "trace_id": "a55f3f21-8221-4c85-ba80-4eba5a8dfaea"
+      },
+      "rationale": "The passage defines multi-head attention as performing the attention function in parallel on projected queries/keys/values, and Figure 2 labels that function as scaled dot-product attention, so scaled dot-product attention is the core premise/component of multi-head attention.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "a96e6b68976b7b237b6b571fad90daf9a1f4f943da529ed765211f05a95e6cab",
+        "id": "r-8b62274d2331bd9a",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:49+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "953712697361ef76922f7cd623b9afd1ea856923943f6aa2d92bdad8f50ed56a",
       "evidence_checked": [
         {
@@ -3705,6 +3750,48 @@
         "revision": 1
       },
       "time": "2026-10-12T11:31:28+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "e282ff5f722f763dee56a8acb2c8850b063b3a3d7f9b7580be8716d9ff34426c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p58",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-68113e6144bac8ae6aa3",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7ff338728b02ce94cca5798df27ccd86a870e10b78de3bdb4b75e6e9bd9bbf5c",
+        "job_id": "94a01ddce8c8c23697adc863c8f5eaa14313a7aa9812438bdb90651cff527d14",
+        "output_hash": "fa1ff6e2c4cd6c697f97749c06c5a18ed90d1812e70a60b1b58abbce5a8a7473",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d736a476-a50a-4160-84e8-1bbed17c7ed3",
+        "request_id": "01a1478d04a7aff91ccdd965e19cc033",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:7ff338728b02ce94cca5",
+        "time": "2026-10-17T01:49:46+00:00",
+        "trace_id": "d736a476-a50a-4160-84e8-1bbed17c7ed3"
+      },
+      "rationale": "p58 states 'self-attention could yield more interpretable models' and that attention heads 'learn to perform different tasks' related to syntactic/semantic structure, directly supporting the interpretability claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "0ff256af536f892ab3807869e1da904e12497665aa085504b7664a2688001f01",
+        "id": "r-3665bd4511245903",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:46+00:00",
       "type": "review"
     },
     {
@@ -3789,6 +3876,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:31:28+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "3c5acf700f51910469280bdcbc8fb2bf63d8fd5608fdf0bd34917a0ee0c9f0a2",
+      "evidence_checked": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-7d391bd9016d0fd00aab",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "499d52db7761a7cbb039553f17039a1c3279d33c04865b20c484ab026331eeda",
+        "job_id": "ec3c556f7b8476291aaeb1ec89f370a53355bbd682c2b51d4ba96ec1988d77c8",
+        "output_hash": "d02afab76fe80213b83312e31751812b9e7e187d70d8cc964529f7f93042dc58",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "8b39101e-5f9d-4891-acf6-d89ef942feea",
+        "request_id": "01a1478c1c419d3cefc14c40d24810df",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:499d52db7761a7cbb039",
+        "time": "2026-10-17T01:48:46+00:00",
+        "trace_id": "8b39101e-5f9d-4891-acf6-d89ef942feea"
+      },
+      "rationale": "p6 Table 2 shows rescoring the baseline 1000-best with an ensemble of 5 reversed LSTMs gives 36.5 versus baseline 33.30, matching the claim that the LSTM rescoring improves BLEU.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "e1266c6a15ebd42168e73db1eeee8f67e5168c884e5aea945d8b4ad8fce75f05",
+        "id": "r-0afd75536c56371f",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:46+00:00",
       "type": "review"
     },
     {
@@ -3896,45 +4030,129 @@
       "type": "review"
     },
     {
-      "content_hash": "cf25e6a61be6659f8221defa94cf007f3135ccf4e33b8c84e5e026ef957689b6",
+      "content_hash": "95547f22d2ac730b0b9937c21409869aa44d3bc3ee93adac6db7a56e75004779",
       "evidence_checked": [
         {
-          "anchor_id": "p65",
-          "source_id": "s-f593f350d93c7f67",
+          "anchor_id": "p3",
+          "source_id": "s-0480da48214bea42",
           "source_revision": 1
         }
       ],
-      "id": "review-ab5c2e5f9ebad578849a",
+      "id": "review-8da67b586b7f11fc29db",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "5db592526a3efbcf577e14edad15005bd4adae728f3c5512728b2d980f3dcadf",
-        "job_id": "930d145f80d6c77e8c5ab3be35fcfc3fa19eb449effb1d67583bc31c8d3b5177",
-        "output_hash": "f4a40fb38b3cfd0690f100f16c48be72b61d6dae777073c60fcdc6304b03755a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "b296293129a47fb994831b2862bcb83e776db64d62cf3ae01051764fc2540fd2",
+        "job_id": "9d29a443dee90eb131871b0fe698c5f9a7a11867aacae17fa9af9dc10482e120",
+        "output_hash": "44e9d2fd213afe6f9f20aff11f03a3decd22b00339b70352eb923709d04cb533",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951",
-        "request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "939660d1-952d-4e38-88c8-e06fdaf96e6f",
+        "request_id": "01a147913ee84be0a5c0c9d63cb915ea",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:C01:d5d5374a71b4",
-        "time": "2026-10-12T11:31:28+00:00",
-        "trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951"
+        "task": "atlas-audit:b296293129a47fb99483",
+        "time": "2026-10-17T01:54:23+00:00",
+        "trace_id": "939660d1-952d-4e38-88c8-e06fdaf96e6f"
       },
-      "rationale": "The paper describes dropout and label smoothing as part of the training regime for the models that achieved the reported results. The passage supports this.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p3 states 'we used two different LSTMs: one for the input sequence and another for the output sequence' within the fixed-vector scheme, directly grounding the premise that separate encoder/decoder LSTMs are part of the model.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "e78e337cdb16c75840ee70361e49d5a9caa7fdea1306343244120505f8561685",
-        "id": "r-2e8c012865669510",
+        "content_hash": "e7a6c206dee4cfa7cc7ebbaeffebf63db03abea88a69b7d19094a107c08df35a",
+        "id": "r-f1deda4d3c238269",
         "revision": 1
       },
-      "time": "2026-10-12T11:31:28+00:00",
+      "time": "2026-10-17T01:54:23+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "7493b39c859d5b16a7b0d4e6817144d9b5ae6750f5d79e6d7b3453a44d065fe3",
+      "evidence_checked": [
+        {
+          "anchor_id": "p89",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-962621f1f77ec99a7049",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b99fc9247098a59a65d31ea1c42a24b07b0bfb89b2d1793b97c6fa20a5313024",
+        "job_id": "b60ba67f8f1d455fdb7cc9cd68add6445fe51a6ef94abeab05923fe618197000",
+        "output_hash": "1b732f34bef322a5a680ab95d5c709171ce26b4e70b0450ba2e3b3a8f357ec67",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "bf221d7c-a72c-4993-af0b-e05e6dd5b412",
+        "request_id": "01a1478ff1b07773f2d1e8e37cb9decf",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:b99fc9247098a59a65d3",
+        "time": "2026-10-17T01:52:58+00:00",
+        "trace_id": "bf221d7c-a72c-4993-af0b-e05e6dd5b412"
+      },
+      "rationale": "Row (E) ablation replaces sinusoidal positional encoding with learned positional embeddings and observes 'nearly identical results to the base model,' directly supporting the claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "965f378183c9cf8ff1bb800f93e5bb870714f1b7f8fe4f958b6de600de6dfefa",
+        "id": "r-bdaaa667751b690e",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:58+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "3d9795825696c42b41d814d3ddc69b37d294646d1a8d2236ff005d460424e175",
+      "evidence_checked": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-b046a7b20b98b475841d",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "095fefcdb7463ae0eff124b403b3931a9540a838040de3613559ebf98fb1505c",
+        "job_id": "15de85cf3fe96cab14b4c8af406d5a4c3ee8fb5b94a7aec6e2910437491656c8",
+        "output_hash": "6fc96efec35a41b3a9f68dd80a5c8d0ac0f04aec3fbe07b93012e353882587b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d1665e56-1794-40a2-8931-7d491c75c66d",
+        "request_id": "01a1478bdb16a5f1a73a38a412790fd8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:095fefcdb7463ae0eff1",
+        "time": "2026-10-17T01:48:33+00:00",
+        "trace_id": "d1665e56-1794-40a2-8931-7d491c75c66d"
+      },
+      "rationale": "p18 says the decoder self-attention is masked 'to prevent positions from attending to subsequent positions,' ensuring predictions depend only on earlier known outputs.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "f5296b9c64812e884826a6891655fbd695f3154fb7de779dc770fef58dad3585",
+        "id": "r-01390496addc62e3",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:33+00:00",
       "type": "review"
     },
     {
@@ -4267,55 +4485,45 @@
       "type": "review"
     },
     {
-      "content_hash": "f9757b48ef369cf59e9710ab9883a3712be08abefddc22698058e9bb1c724ff5",
+      "content_hash": "c78df6e2357c3a48e9b8511f9f9d002a57eee0de628b948753ca830d625cb955",
       "evidence_checked": [
         {
-          "anchor_id": "p65",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p66",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p67",
-          "source_id": "s-f593f350d93c7f67",
+          "anchor_id": "p12",
+          "source_id": "s-3254ab3a15dccb9a",
           "source_revision": 1
         }
       ],
-      "id": "review-cbf56551d2aa2ceeeaa9",
+      "id": "review-c99c2eae29c95682d0fa",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "5db592526a3efbcf577e14edad15005bd4adae728f3c5512728b2d980f3dcadf",
-        "job_id": "930d145f80d6c77e8c5ab3be35fcfc3fa19eb449effb1d67583bc31c8d3b5177",
-        "output_hash": "f4a40fb38b3cfd0690f100f16c48be72b61d6dae777073c60fcdc6304b03755a",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "f22c6825533abfd31c61723c8d7a183fbcf361ae71d400587f5273be4f70f66f",
+        "job_id": "7094adc2e244747dda8beeec8876de201ee6ee78f247c25829e23858aa53c3b9",
+        "output_hash": "2ba67ebd1a56c45bb2b2cf4a9f7217309d34af262b90993fc910797b7f60e70f",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951",
-        "request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "794c730c-5201-4a55-b1b3-3415c46b6736",
+        "request_id": "01a1478c80eef7b68b4c2a501362a8f5",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:C01:d5d5374a71b4",
-        "time": "2026-10-12T11:31:28+00:00",
-        "trace_id": "0c7ef0c2-260d-4e7c-88e8-aedcf965b951"
+        "task": "atlas-audit:f22c6825533abfd31c61",
+        "time": "2026-10-17T01:49:12+00:00",
+        "trace_id": "794c730c-5201-4a55-b1b3-3415c46b6736"
       },
-      "rationale": "The paper describes residual dropout and label smoothing, including the effect on perplexity and BLEU. The passages support the claim.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p12 states 'For the activation function f of an RNN, we use the gated hidden unit recently proposed by Cho et al. (2014a),' documenting use of the gated unit in the attention model's RNN.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "6931793d71acc701762e47c2885af686075f8ebfcfb38391d988da7ac835e8ea",
-        "id": "n-54871f8b872a0c37",
+        "content_hash": "9ba8200a1e779664bff4e39922635b4293f2a51623402b7bfbb15062a19d7902",
+        "id": "r-1afdbb54d9d7bccf",
         "revision": 1
       },
-      "time": "2026-10-12T11:31:28+00:00",
+      "time": "2026-10-17T01:49:12+00:00",
       "type": "review"
     },
     {
@@ -4358,6 +4566,48 @@
         "revision": 1
       },
       "time": "2026-10-12T14:53:34+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "21990bc548291b6156bddec9cf6feb97463f2ca1c7beef75261a4a3ddcd82d52",
+      "evidence_checked": [
+        {
+          "anchor_id": "p78",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-d4900f5d3eaf16f8edab",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a91c6b8485f45c0cc7f5a55f34bfb417ac0dbb7b370f2e3177bae1e98e9f3d10",
+        "job_id": "04b7e0baf2fd1b4e29a0286ad78cf407862fff599285ac9164745eee5b379a96",
+        "output_hash": "9a18e375aa2e939c14ca5f5d39ee9660495682f92df58145b2be7c6a3a6d170f",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d6b5ee60-11fa-41aa-a78f-d97c49472021",
+        "request_id": "01a1479005c9e37cb1cedeb91cc59d9f",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:a91c6b8485f45c0cc7f5",
+        "time": "2026-10-17T01:53:06+00:00",
+        "trace_id": "d6b5ee60-11fa-41aa-a78f-d97c49472021"
+      },
+      "rationale": "p78 reports the big Transformer outperforming prior models including ensembles by >2.0 BLEU, a new state of the art of 28.4, and lower training cost, directly supporting the empirical finding.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "479b206db5ad8173e022bcd091c684d96da0659624d51dd2eb957f46c6d5d9f6",
+        "id": "r-c1aca9c6bce5f977",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:06+00:00",
       "type": "review"
     },
     {
@@ -4410,6 +4660,48 @@
         "revision": 1
       },
       "time": "2026-10-12T14:53:34+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "e963718a45a7c8fa5ec7b9a2268988d01357a7c08f173f559cea05973bb61db5",
+      "evidence_checked": [
+        {
+          "anchor_id": "p16",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-e4869bd073ecc84416d8",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "19fb2841156dc473200624252b3a9961411833aca2b97b17f47256e6c0ec49bc",
+        "job_id": "c42b1c10521939206a78f8dc2a4ae5c5a2e2bb64fd28aa24beb7e2e667afea90",
+        "output_hash": "6793f7461e50822f57e1bb8d8f9869bb55b41c8b0803ca29d381810e5ccfdff1",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7ac76fd1-70ea-4207-9f4a-3c3c5ef7c036",
+        "request_id": "01a1478f337313565d071d2a331ed60a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:19fb2841156dc4732006",
+        "time": "2026-10-17T01:52:12+00:00",
+        "trace_id": "7ac76fd1-70ea-4207-9f4a-3c3c5ef7c036"
+      },
+      "rationale": "p16 states the Transformer uses stacked self-attention layers, making multi-head attention a component premise of the architecture.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "a7c09d713036543899490d194dcc20af423917093ecb03181116f2a5d6cc3812",
+        "id": "r-9cdf468e0808836b",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:12+00:00",
       "type": "review"
     },
     {
@@ -4495,6 +4787,268 @@
       },
       "time": "2026-10-12T11:30:46+00:00",
       "type": "review"
+    },
+    {
+      "content_hash": "e4bc1439cada95be1b2ef29b036d121bdbb83a21391bc507ff558875468d2d16",
+      "evidence_checked": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-f21b2e7ff865c1e3363b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d7118ccbcc264abcc832b97e282429686842ec389f6037daa9953657a38d08db",
+        "job_id": "24e41b54ee0bb7d8e8d3b4d185b74e164ab7d602e46ce9533e3fe41ab4ceabc0",
+        "output_hash": "49762a1536d5d45dd47bb3ba649814aab59cfa0a603398c5514fcd49461f247a",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ddea3296-2ae1-4ae4-bdd4-13ce0bce221d",
+        "request_id": "01a147917426ae0df8bbdbe3d7c02981",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:d7118ccbcc264abcc832",
+        "time": "2026-10-17T01:54:39+00:00",
+        "trace_id": "ddea3296-2ae1-4ae4-bdd4-13ce0bce221d"
+      },
+      "rationale": "p3 states layer normalization 'make[s] it invariant to re-scaling all of the summed inputs to a layer,' and p2/p3 define the method and its normalization scalars, grounding the invariance claim in the definition.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "01878e1ce6c0128179744f175cc8d0ce843cba35e1cb6cbf2a4c3c9ca05c2a5c",
+        "id": "r-fc8b3b0006a75e2f",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:39+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "0cc4e065238f33e46e2884e19a6bb956a3577c6c2d9568c8715cd50237f6e72c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-f2943b32975171614d12",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a299f3fdc8c4820e330ffc9ed96af92141869862b835c9bb87bf75c42ad11995",
+        "job_id": "b5d20d6182f85e10550faa5234143457a41dfef874f575ebf442cecddd7aad04",
+        "output_hash": "65e43982205c2ed67a091909992b85790b4e9ce96db0f309d9edc10736d28f53",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "639be1cd-f20b-4d8f-aed8-afa4919f91e1",
+        "request_id": "01a1478ef75950b298a61f19e6e65f7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:a299f3fdc8c4820e330f",
+        "time": "2026-10-17T01:51:56+00:00",
+        "trace_id": "639be1cd-f20b-4d8f-aed8-afa4919f91e1"
+      },
+      "rationale": "p8 explicitly compares to Graves (2013) and states 'The main difference from our approach is that... the modes... only move in one direction,' a concrete limited correspondence.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "1b15c12b0a454887b391ceed738fa37aa94b75fa03ea6a8d083df12d5dae2222",
+        "id": "r-91247c8f07e09e1a",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:56+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "270b0996d528fd9551508bf9d35e08a285162e8fa96a2ae75706f9bcc79a3924",
+      "evidence_checked": [
+        {
+          "anchor_id": "p42",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-f9bb53d322eae71616cd",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "08d1ccdecdd76633a956726557a63a8259bcb6032ac257b0550cdc7f87e933e5",
+        "job_id": "4416014177b42a4565f214aaca23d5a0de6e04ffadc3717de43d59aa8f9233d2",
+        "output_hash": "f5508bdc0d712076de67c959540b3d5dc2d5c274cd2ebfc7a440aaacefb3b736",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "0bcf1807-11c4-4486-8a6d-425df998c277",
+        "request_id": "01a1478fb82806669c3ee507f0d721aa",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:08d1ccdecdd76633a956",
+        "time": "2026-10-17T01:52:46+00:00",
+        "trace_id": "0bcf1807-11c4-4486-8a6d-425df998c277"
+      },
+      "rationale": "p42 states the model has no recurrence/convolution, so to use sequence order 'we must inject some information about the relative or absolute position'; this is the stated premise for needing positional encodings.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "f2a9d246948f1c7e943f887c16711530e8feb6c454f817bf2212808434c05b9f",
+        "id": "r-b0e466d85a255885",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:46+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "f19d0fab40b6e0a84d5769d183a7c54e7e110fcf2b2460e8507145aef3866b49",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-fd566d9183d2fe53a6c2",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "347a962cf32874f99676553330c5d916b26efaeaf27f3787b9e811047618398b",
+        "job_id": "63d30440fe64dfdecdc228c4217c57e2409646aa54f0df29217e5c6b503e679d",
+        "output_hash": "1f5e35d07360528ecfbc975fcf9e7596609d9d99e48dd67e1a244d985339bd83",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d249e8f7-fbd2-4d2a-9c6c-c7af1d464e34",
+        "request_id": "01a1478f6dc18aa98b1946a242c7b543",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:347a962cf32874f99676",
+        "time": "2026-10-17T01:52:24+00:00",
+        "trace_id": "d249e8f7-fbd2-4d2a-9c6c-c7af1d464e34"
+      },
+      "rationale": "p4 presents the invariance results (Table 1) and then states 'In this section, we analyze learning behavior through the geometry and the manifold of the parameter space,' framing the Riemannian metric analysis as following from the invariance investigation; p5 develops the Riemannian metric and implicit learning-rate reduction.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "7a3aca826e212a88a84ed3c095e7f5e67b02040e92c2b2793e6a52be73315949",
+        "id": "r-a29c5ada0e436442",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:24+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "a7bdf49cd7b0165cd129f861a6797f510e7f0c5f4acc54729dc5a918a0d3547f",
+      "evidence_checked": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-fdc5ca09601c2c0601a3",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "42b0a12a537f408abd39d030c784ec3ab8a3ea380388d2847f6003a3ca234843",
+        "job_id": "000dd40f3815782632d8467bec9ef56ee373b8a4edfcb744059b0872f9b53b05",
+        "output_hash": "b40539f3ae79bce70349c6f2abfb33556cec05e4131ad779942cd249cc9e4847",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "75e3f8a4-844b-467f-b653-3778b657b72e",
+        "request_id": "01a147908241add37cf23f1996ac421d",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:42b0a12a537f408abd39",
+        "time": "2026-10-17T01:53:34+00:00",
+        "trace_id": "75e3f8a4-844b-467f-b653-3778b657b72e"
+      },
+      "rationale": "p21 describes scaled dot-product attention as the attention used in the architecture; the Transformer's multi-head attention is built from it, so it is a component premise.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "c4e6b041a48346ff2d619e2e5b5789cf434a6b7272fc2032bbbe81edb522d5c2",
+        "id": "r-d3cc79c9331681da",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:34+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "003039101fe4e2241b4099834ed1cf43289e71f05cf02e6ccca185bd9195a0ad",
+      "evidence_checked": [
+        {
+          "anchor_id": "p41",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-ff41bfa3e39cb88a8e3b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a0989c217ef0d9390dbbb23cc60c0cad658a6f1e7707b06f81cdbb7d23175553",
+        "job_id": "f38bc8775dcc3712e3d1b08028fb0c8e1bfcc29196bac1422f8fd1e961460832",
+        "output_hash": "c7fb6258ea726e32c797239b96b551688625e82aeb988c905929a8ba820ae867",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5af6bc85-7b88-49f4-9131-789098e21746",
+        "request_id": "01a147918aed108248d9584d1b8cc447",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:a0989c217ef0d9390dbb",
+        "time": "2026-10-17T01:54:42+00:00",
+        "trace_id": "5af6bc85-7b88-49f4-9131-789098e21746"
+      },
+      "rationale": "p41 states the same weight matrix is shared between the two embedding layers and the pre-softmax linear transformation, with embedding weights multiplied by sqrt(d_model).",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "db01e755b2e4e770333b914f8eb6f2227c66def3d3730957ccc50928a0f69ae8",
+        "id": "r-fe4ebe6128a3cd5f",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:42+00:00",
+      "type": "review"
     }
   ],
   "selection": {
@@ -4502,7 +5056,7 @@
     "primary_limit": 12,
     "relation_limit": 40
   },
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
   "source_anchors": [
     {
       "anchor_id": "p13",
@@ -4692,21 +5246,6 @@
     {
       "anchor_id": "p6",
       "source_id": "s-0480da48214bea42",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p65",
-      "source_id": "s-f593f350d93c7f67",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p66",
-      "source_id": "s-f593f350d93c7f67",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p67",
-      "source_id": "s-f593f350d93c7f67",
       "source_revision": 1
     },
     {
@@ -4940,11 +5479,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p65",
-      "source_id": "s-f593f350d93c7f67",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p17",
       "source_id": "s-f593f350d93c7f67",
       "source_revision": 1
@@ -4960,12 +5494,52 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p87",
+      "anchor_id": "p107",
       "source_id": "s-f593f350d93c7f67",
       "source_revision": 1
     },
     {
-      "anchor_id": "p107",
+      "anchor_id": "p6",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p10",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p14",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p109",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p90",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p96",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p101",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p104",
+      "source_id": "s-f593f350d93c7f67",
+      "source_revision": 1
+    },
+    {
+      "anchor_id": "p108",
       "source_id": "s-f593f350d93c7f67",
       "source_revision": 1
     },
@@ -4992,11 +5566,6 @@
     {
       "anchor_id": "p5",
       "source_id": "s-9ba66ec259647822",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p52",
-      "source_id": "s-f593f350d93c7f67",
       "source_revision": 1
     },
     {
@@ -6187,50 +6756,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p65",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-1ebb6249ceed5973",
-        "revision": 1
-      },
-      "content_hash": "e78e337cdb16c75840ee70361e49d5a9caa7fdea1306343244120505f8561685",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-2e8c012865669510",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-54871f8b872a0c37",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Regularization techniques contribute to the training success.",
-      "type": "relation",
-      "warrant": "The paper describes dropout and label smoothing as part of the training regime for the models that achieved the reported results."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p17",
           "source_id": "s-f593f350d93c7f67",
           "source_revision": 1
@@ -6363,71 +6888,66 @@
     {
       "anchors": [
         {
-          "anchor_id": "p87",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-5695bc0aae2c9155",
-        "revision": 1
-      },
-      "content_hash": "ff085dbb4dc6cba14a56b00192f5d20a211efce208e0202b33ae79106316b3bf",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-69e305a81612eb9f",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-1ebb6249ceed5973",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Ablation studies are based on the same model family as the main results.",
-      "type": "relation",
-      "warrant": "The ablations vary the base model, which is the same architecture used for the main translation results."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p107",
           "source_id": "s-f593f350d93c7f67",
           "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p109",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p96",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p101",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p108",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-142b0ef6570377b2",
         "revision": 1
       },
-      "content_hash": "6c0e9110cf1834b062c1440c58e2260df3b85aff834b2c0b36923805e6f8ac0a",
+      "content_hash": "af423d0b907253a08c0c167277fc414000b88e3c41f734a738e3284cd124b31f",
       "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479f4365d454e06fdc1dd7f84926"
       },
       "human_review": "not_reviewed",
       "id": "r-83530ef857c48a41",
@@ -6442,7 +6962,7 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
       "scope": "Generalization to parsing shows the Transformer's versatility.",
       "type": "relation",
@@ -6628,50 +7148,6 @@
       "scope": "The invariance analysis motivates the geometric study of learning dynamics.",
       "type": "relation",
       "warrant": "The paper uses the invariance properties to frame the Riemannian metric analysis, connecting normalization to implicit learning rate reduction."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p52",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-6132cf11d7ca9b0b",
-        "revision": 1
-      },
-      "content_hash": "cdc6ae065e8a3774b35bce9235dec7db51544302c0983daafce7d835a0e67ce6",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-ad3f3c024720513f",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-0d8ad2c483c75944",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Scaled dot-product attention is part of the complexity analysis.",
-      "type": "relation",
-      "warrant": "The analysis of self-attention complexity includes the scaled dot-product attention mechanism."
     },
     {
       "anchors": [
@@ -7182,22 +7658,6 @@
     },
     {
       "contribution": {
-        "content_hash": "6931793d71acc701762e47c2885af686075f8ebfcfb38391d988da7ac835e8ea",
-        "id": "n-54871f8b872a0c37",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "C01",
-          "origin": "record",
-          "pillar": "computer_science",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "Transformer-based foundation models"
-        }
-      ]
-    },
-    {
-      "contribution": {
         "content_hash": "116cd1a4b9b4455736aed6a1c634131e188b16fdfbfee632908ec5c5607b54e8",
         "id": "n-5695bc0aae2c9155",
         "revision": 1
@@ -7429,5 +7889,940 @@
     "The source does not include independent replication or external validation of the results beyond CAMEO.",
     "The source does not provide a complete historical account of the development of RoseTTAFold, only references to prior work.",
     "Some source accounts were held during the 1.1 editorial correction; their dependent interpretations require recheck. Earlier snapshots remain available."
+  ],
+  "work_insight_memberships": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "a088087d3241687e4545a466b89b9b6c3d5fa6312e293873e1f1705661b877f9",
+        "id": "n-0056f937953b88cb",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "bf5eb6f5d2eb27be5776e3e830769ead4cf559318b4bdaf3a8e40d3ca8ad233d",
+        "id": "w-source-9ba66ec259647822",
+        "revision": 1
+      },
+      "work_id": "w-source-9ba66ec259647822"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p23",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p25",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2309add774aa2aaae644d2affe3822d8e265b4c1a6b23a4105f1e9de2f9a5c5c",
+        "id": "n-0d8ad2c483c75944",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "55abfbda0d8a2f006af073f9a5500e9444aa72641d0fe5a9c4c084db79005c92",
+        "id": "n-1297d13e2df3c280",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+        "id": "w-source-3254ab3a15dccb9a",
+        "revision": 1
+      },
+      "work_id": "w-source-3254ab3a15dccb9a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p90",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p96",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p101",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p107",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p108",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "b51d151a5736b284de48cc05c360c5e10c07a7865c3b0dade6ca9c2257b5f099",
+        "id": "n-142b0ef6570377b2",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p42",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p45",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p46",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p47",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "cdd1b6623b8a546088086e229bad5267d66093868b972d6644e31613fc6170ae",
+        "id": "n-168d39dc8caf9866",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "48c0a5aca18f90451cdf5149277c5973df4326c2cb9247e8433a809c0ee35a81",
+        "id": "n-199d4fc84344c855",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+        "id": "w-source-0480da48214bea42",
+        "revision": 1
+      },
+      "work_id": "w-source-0480da48214bea42"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "869235a247598683724410bb687d7131eb0b3bdd40be8fc27c7c06902e892559",
+        "id": "n-1b90e3a117f79e45",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+        "id": "w-source-0480da48214bea42",
+        "revision": 1
+      },
+      "work_id": "w-source-0480da48214bea42"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p68",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p76",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p77",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p78",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p79",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "55d03ad2e0ef011317fb99ab3a492400515e7c90aae429e3e24cea66b810b046",
+        "id": "n-1ebb6249ceed5973",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "a10e9e4220da2cac7b5102f5726af8f1d5e30bc6df5a8b1523408691593fc41b",
+        "id": "n-2afb6619dd774080",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+        "id": "w-source-3254ab3a15dccb9a",
+        "revision": 1
+      },
+      "work_id": "w-source-3254ab3a15dccb9a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "8e165d93e68bc3658f04e96d42aa93d70a51b3cd9bdf47f67fead4b8a07dba7a",
+        "id": "n-340467eb6466559d",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "bf5eb6f5d2eb27be5776e3e830769ead4cf559318b4bdaf3a8e40d3ca8ad233d",
+        "id": "w-source-9ba66ec259647822",
+        "revision": 1
+      },
+      "work_id": "w-source-9ba66ec259647822"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p58",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p154",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p155",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p156",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2d26ab4f61966725ebeaaa533e2f40d43eeb923c935a66299c5f924d9a0b69ba",
+        "id": "n-39b5a34814500760",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "ff2a8f6ee512375443c42612a92810d55feea63805d544457c53e9a67c7291d9",
+        "id": "n-5238d4adee0de6be",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+        "id": "w-source-0480da48214bea42",
+        "revision": 1
+      },
+      "work_id": "w-source-0480da48214bea42"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p87",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p88",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p89",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "116cd1a4b9b4455736aed6a1c634131e188b16fdfbfee632908ec5c5607b54e8",
+        "id": "n-5695bc0aae2c9155",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "52b6d990c5ef5e3914b7d4c1650b9f379613324208c9aafdc84b4241170ddcdf",
+        "id": "n-593b21799bcdb85f",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "131fa7c23384c1a26f21bc5f544cb4831baafc4d86fcc315d2620c6e14028452",
+        "id": "n-60b0c1922dab7aa0",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "bf5eb6f5d2eb27be5776e3e830769ead4cf559318b4bdaf3a8e40d3ca8ad233d",
+        "id": "w-source-9ba66ec259647822",
+        "revision": 1
+      },
+      "work_id": "w-source-9ba66ec259647822"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p48",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p49",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p50",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p51",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p52",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p53",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p54",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p55",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p56",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p57",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "e34ecb9b977543ed630437b082ab8b14bd6d6a7312d66d2deb64981f48762e93",
+        "id": "n-6132cf11d7ca9b0b",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p109",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "85c1f2e49b816c0fba5a4b26d6b278d23d416faa932b44a3842643dad59949b4",
+        "id": "n-7174667738dd3cf9",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-0480da48214bea42",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "c21e9aa06eb0f3f57c10f4e279e7877cb0d29e83d948782a92e4711ad24dbe48",
+        "id": "n-75686d8b595f7df8",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+        "id": "w-source-0480da48214bea42",
+        "revision": 1
+      },
+      "work_id": "w-source-0480da48214bea42"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p38",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p39",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p40",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "6ed348e72593aa49b6bc61b7301f9ecb8ce9fe134405224dde64d6429cfa8728",
+        "id": "n-801c5739bee56db3",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-9ba66ec259647822",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "718560f32b04f00b9cdba52c2c64ec0dd5b88d7f297ca7cbc9b6ab154502960d",
+        "id": "n-a8af448fb215dfe6",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "bf5eb6f5d2eb27be5776e3e830769ead4cf559318b4bdaf3a8e40d3ca8ad233d",
+        "id": "w-source-9ba66ec259647822",
+        "revision": 1
+      },
+      "work_id": "w-source-9ba66ec259647822"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p41",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "5e849747909298f6bea5f6ed00d2f08445ed5a29c68f1093df362f7bf3900c0d",
+        "id": "n-f217d30557d0c330",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-3254ab3a15dccb9a",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "360e1ed87a229e8b24f4f7bdf267f5cf2484339547f94201f95305ef9a3e40f5",
+        "id": "n-f58299fcb8c9d328",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+        "id": "w-source-3254ab3a15dccb9a",
+        "revision": 1
+      },
+      "work_id": "w-source-3254ab3a15dccb9a"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p27",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p29",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "ce2c5bde32db1fe72cc3f1865d6b0d407ec61ac72831ab6de4edb0042f0de707",
+        "id": "n-f758ba89eb6bda13",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+        "id": "w-source-f593f350d93c7f67",
+        "revision": 1
+      },
+      "work_id": "w-source-f593f350d93c7f67"
+    }
+  ],
+  "works": [
+    {
+      "aliases": [],
+      "content_hash": "bf5eb6f5d2eb27be5776e3e830769ead4cf559318b4bdaf3a8e40d3ca8ad233d",
+      "id": "w-source-9ba66ec259647822",
+      "insight_count": 6,
+      "kind": "publication",
+      "people": [],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Layer Normalization",
+          "url": "https://arxiv.org/pdf/1607.06450"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "db37bf9308b8c0e17cb935a4fc66b91cc645f6d0fe36686a4561c06994d94836",
+          "id": "s-9ba66ec259647822",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "computer_science"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Layer Normalization",
+      "topic_ids": [
+        "C01"
+      ],
+      "year": 2016
+    },
+    {
+      "aliases": [],
+      "content_hash": "de52f68c23922b33599032e93b0a8cacbf379b84fed076f1712992688ee38970",
+      "id": "w-source-f593f350d93c7f67",
+      "insight_count": 13,
+      "kind": "publication",
+      "people": [
+        "person-199d24395f2e18e2",
+        "person-2ecfd082c710c05a",
+        "person-6d352077e009f1c6",
+        "person-9a8b93c0561cad2f",
+        "person-a6bf1aef6178cf10",
+        "person-ba7112b748832514",
+        "person-c9c3b038558ae34b",
+        "person-d376c7e060c7c681"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/html/1706.03762v7"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "5e7dddab16bc77bcfa6b101971b0c31aaea243aaf609571720de328594d206fd",
+          "id": "s-f593f350d93c7f67",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "computer_science"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Attention Is All You Need",
+      "topic_ids": [
+        "C01"
+      ],
+      "year": 2023
+    },
+    {
+      "aliases": [],
+      "content_hash": "47c7e2a772ff0c6023b4ecb1bb989eea9307609253182bda67a1167fe5d5d053",
+      "id": "w-source-3254ab3a15dccb9a",
+      "insight_count": 13,
+      "kind": "publication",
+      "people": [
+        "person-1b4ab65c2b6d782b",
+        "person-ad51876a192511f8",
+        "person-e18284faecba9b85"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+          "url": "https://arxiv.org/pdf/1409.0473"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "a7241ab3a4d2201462988ae92bdda476d6b050b7dd7dfd2358197250ea98d17a",
+          "id": "s-3254ab3a15dccb9a",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "computer_science"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE",
+      "topic_ids": [
+        "B01",
+        "C01"
+      ],
+      "year": 2015
+    },
+    {
+      "aliases": [],
+      "content_hash": "2fabf8ec930fea40eb3e5e8be10b3b041ef8029c48928721e0da02b448506ff7",
+      "id": "w-source-0480da48214bea42",
+      "insight_count": 15,
+      "kind": "publication",
+      "people": [],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Sequence to Sequence Learning with Neural Networks",
+          "url": "https://arxiv.org/pdf/1409.3215"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "a01b6577b1bc8506006d68979eda8fa8fe4fd1d31001500075a4e99078868be9",
+          "id": "s-0480da48214bea42",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "computer_science"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Sequence to Sequence Learning with Neural Networks",
+      "topic_ids": [
+        "C01"
+      ],
+      "year": 2014
+    }
   ]
 }

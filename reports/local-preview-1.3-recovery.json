@@ -1,0 +1,363 @@
+{
+  "checked_at": "2026-10-16T10:54:17.753579+00:00",
+  "edition": "1.3.0.dev2 local acceptance preview",
+  "base_commit": "db4665ac06e7d15862b1918af051074b516592e0",
+  "branch": "codex/local-exploration-1.3",
+  "deployment_performed": false,
+  "remote_git_write_performed": false,
+  "changes": [
+    "One Explore workspace with Browse and Research views; search handoff and context restoration.",
+    "Streaming model output with validated partial insights and a separate evidence-check state.",
+    "Five-stage progress, source/activity counts, elapsed time and a heuristic remaining-time range; explicit uncertainty after slow stages.",
+    "Tab-only checkpoints, explicit resume of unfinished stages, receipt retention, and no automatic request replay.",
+    "Smaller source packets and drafts, abstract-priority retrieval, bounded parallel follow-up searches, and focused relevance prompts.",
+    "Explicit save updates distinguish a saved partial map from newer unsaved work."
+  ],
+  "corpus": {
+    "passed": true,
+    "release_id": "1.2.0-exploratory",
+    "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+    "counts": {
+      "contribution": 2667,
+      "relation": 2233,
+      "source": 237,
+      "review": 5167
+    },
+    "exact_machine_reviews_for_all_visible_records": true,
+    "dossiers": 154,
+    "flagship_endpoint_checks": 5,
+    "tour_checks": 3,
+    "source_closure": true,
+    "neighborhood_cap_and_joint_premises": true,
+    "frozen_evaluation_files_unchanged": true,
+    "external_jsonschema": "10648 immutable versions validated against exported JSON Schemas",
+    "qualified_human_audit": "not performed"
+  },
+  "canonical_or_frozen_fixture_files_changed": [],
+  "software_checks": {
+    "python": {
+      "passed": 102,
+      "failed": 0,
+      "seconds": 6.97
+    },
+    "full_browser": {
+      "passed": 92,
+      "skipped": 2,
+      "failed": 0,
+      "flaky": 0,
+      "duration_seconds": 215.95
+    },
+    "hosted_prefix": {
+      "passed": 2,
+      "skipped": 0,
+      "failed": 0,
+      "flaky": 0,
+      "duration_seconds": 11.61
+    },
+    "typescript": "passed",
+    "local_build": "passed",
+    "hosted_build": "passed",
+    "math_rendering": {
+      "formulas": 5404,
+      "failures": 0,
+      "examples": []
+    },
+    "corpus_validation": {
+      "valid": true,
+      "records": 10648,
+      "errors": []
+    },
+    "offline": {
+      "passed": true,
+      "release_id": "1.2.0-exploratory",
+      "external_socket_attempts": [],
+      "reader_environment": "Python standard library; launch this test with -S to exclude site packages",
+      "network_policy": "Outbound socket.connect denied except loopback; no OS firewall configuration changed",
+      "checked": [
+        "all bundled assets",
+        "search",
+        "dossiers",
+        "contribution inspector",
+        "shared topic links and scientist profiles",
+        "relationship inspector",
+        "neighborhood",
+        "brief",
+        "snapshot changes"
+      ]
+    },
+    "visual_inspection": {
+      "desktop": "passed",
+      "narrow_390px": "passed",
+      "progress": "controlled fixture inspected",
+      "notes": "No real API key entered in the user-facing review tab; mobile browser tests use emulation."
+    },
+    "secret_exclusion": {
+      "files_checked": 419,
+      "issues": [],
+      "scope": "Current tracked and nonignored project files; credentials were compared in memory and never printed."
+    },
+    "git_diff_check": "passed"
+  },
+  "performance": {
+    "browser": {
+      "first_view_ms": 1113,
+      "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+      "js_heap_bytes": 15851534,
+      "browser_process_rss_bytes": 722907136,
+      "reader_process_rss_bytes": 386473984,
+      "combined_rss_bytes": 1109381120,
+      "memory_method": "ps RSS summed over the test Chromium process tree plus the local reader; shared pages may be counted more than once",
+      "requests": 6,
+      "external_requests": [],
+      "page_errors": [],
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    "warm_api": {
+      "search": {
+        "first_ms": 76.57,
+        "warm_median_ms": 63.63,
+        "warm_samples_ms": [
+          68.2,
+          63.63,
+          64.67,
+          63.55,
+          60.41
+        ]
+      },
+      "neighborhood": {
+        "first_ms": 114.27,
+        "warm_median_ms": 112.14,
+        "warm_samples_ms": [
+          110.1,
+          110.7,
+          114.19,
+          114.1,
+          112.14
+        ]
+      }
+    },
+    "environment": "This Mac, Chrome desktop and emulated mobile, loopback server. Not production-server latency or a physical-phone benchmark."
+  },
+  "live_provider_qa": {
+    "query": "plasma enhanced chemical vapour decomposition",
+    "model": "deepseek-ai/DeepSeek-V4-Flash",
+    "attempts": [
+      {
+        "attempt": 1,
+        "completed": true,
+        "seconds": 60.946,
+        "first_insight_seconds": 20.117,
+        "insights": 6,
+        "connections": 0,
+        "sources": 6,
+        "model_requests": 3,
+        "receipts": [
+          {
+            "stage": "research plan",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "started_at": "2026-10-16T10:32:10.861Z",
+            "outcome": "completed",
+            "input_hash": "a0270b2266e5ce7e06af0a97384f74d2ab1e15cbfe50906c926d1921068b4602",
+            "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+            "input_tokens": 2067,
+            "output_tokens": 92,
+            "elapsed_ms": 1610,
+            "first_content_ms": 506,
+            "output_characters": 484
+          },
+          {
+            "stage": "draft graph",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "started_at": "2026-10-16T10:32:14.676Z",
+            "outcome": "completed",
+            "input_hash": "9d5421f9d56837d967387f8fb4aa6e6a6d6a550bf13989137a72ef3377db0852",
+            "prompt_hash": "b111049daa31faa1477cacbc8198cad3f8c62c35fc983f082c8dbc7c7c57c94a",
+            "input_tokens": 7525,
+            "output_tokens": 2406,
+            "elapsed_ms": 46453,
+            "first_content_ms": 1230,
+            "output_characters": 10493
+          },
+          {
+            "stage": "evidence challenge",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "started_at": "2026-10-16T10:33:01.131Z",
+            "outcome": "completed",
+            "input_hash": "7dcfb471284a42257bdc18eb377934861e4c30323e8a3814850889d77b790a89",
+            "prompt_hash": "200a1ee9cae2338b60eb8a79894789b9cb52e57347f27b8be74fa125287a48b2",
+            "input_tokens": 4712,
+            "output_tokens": 160,
+            "elapsed_ms": 2099,
+            "first_content_ms": 912,
+            "output_characters": 697
+          }
+        ],
+        "external_hosts": [
+          "api.crossref.org",
+          "api.siliconflow.cn",
+          "www.ebi.ac.uk"
+        ],
+        "private_input_transmitted_to_atlas": false,
+        "quality_limit": "Completed but retrieval was application-heavy and included tangential papers. No connection survived; this was not a successful reconstruction of historical ancestry."
+      },
+      {
+        "attempt": 2,
+        "completed": true,
+        "seconds": 51.461,
+        "first_insight_seconds": 20.121,
+        "insights": 7,
+        "connections": 1,
+        "sources": 7,
+        "model_requests": 3,
+        "receipts": [
+          {
+            "stage": "research plan",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "started_at": "2026-10-16T10:40:42.868Z",
+            "outcome": "completed",
+            "input_hash": "6d3667025662e5507638701f57087a6d84bbdbcc5528077f2bb8f55044c107f9",
+            "prompt_hash": "b61cd6480f8af54073a28e4133968fc03f8bcc797e1dce50773a2b2085393d8e",
+            "input_tokens": 2136,
+            "output_tokens": 128,
+            "elapsed_ms": 5705,
+            "first_content_ms": 2461,
+            "output_characters": 540
+          },
+          {
+            "stage": "draft graph",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "started_at": "2026-10-16T10:40:51.476Z",
+            "outcome": "completed",
+            "input_hash": "57082c15783581bd47a44f3deaa815ca34df902a8aee573c3b803c8d0c0acff9",
+            "prompt_hash": "20bfd56dbf353d437b2de1615360fd07468d147b007fe60be33f3abbc9a0847a",
+            "input_tokens": 7080,
+            "output_tokens": 3346,
+            "elapsed_ms": 23671,
+            "first_content_ms": 751,
+            "output_characters": 14306
+          },
+          {
+            "stage": "evidence challenge",
+            "model": "deepseek-ai/DeepSeek-V4-Flash",
+            "started_at": "2026-10-16T10:41:15.150Z",
+            "outcome": "completed",
+            "input_hash": "400c7ae7a00119fc9cda884b4ef92c471b91cb8fe42f72fbe920d25228dc8e91",
+            "prompt_hash": "42b4b55df7b7f7f2fc9614f0b41f1290a8fc7724cd3f7730b7cc59058b6f189e",
+            "input_tokens": 5612,
+            "output_tokens": 653,
+            "elapsed_ms": 11959,
+            "first_content_ms": 930,
+            "output_characters": 2747
+          }
+        ],
+        "external_hosts": [
+          "api.crossref.org",
+          "api.siliconflow.cn",
+          "www.ebi.ac.uk"
+        ],
+        "private_input_transmitted_to_atlas": false,
+        "quality_limit": "Abstract-priority retrieval and tighter relevance instructions improved PECVD focus. The sole retained relationship is an analogy, not historical influence. Missing mechanisms, attribution and ancestry remain explicit gaps."
+      }
+    ],
+    "new_request_count": 6,
+    "known_input_tokens": 29132,
+    "known_output_tokens": 6785,
+    "unknown_usage_requests": 0,
+    "final_ui_followup": "After the live runs, saved-version labeling, resume counters and empty-connection guidance were verified with controlled tests. Retrieval and model request contracts were unchanged.",
+    "prior_preview_report": "reports/local-preview-1.3.json",
+    "cumulative_preview_qa_only": {
+      "attempts": 6,
+      "completed_attempts": 5,
+      "failed_attempts": 1,
+      "submitted_requests": 17,
+      "known_usage_requests": 15,
+      "known_input_tokens": 137687,
+      "known_output_tokens": 25702,
+      "unknown_usage_requests": 2,
+      "billing_note": "Receipts are not an exact bill or a complete project spending total. Missing usage is not zero cost."
+    }
+  },
+  "limitations": [
+    "Generated maps remain unverified drafts; no qualified human scientific audit was performed.",
+    "The PECVD result is a small evidence-bounded starting point, not a complete historical graph.",
+    "Two completed queries are not a broad provider reliability or latency benchmark.",
+    "Remaining-time ranges are heuristic, not a calibrated service guarantee.",
+    "First-content, idle and overall deadlines still bound stalled or long model requests; manual resume may incur charges.",
+    "Checkpoints are not saved/exported and disappear on reload. Partial map files remain inspectable but cannot resume computation alone.",
+    "Corpus coverage is unchanged and still below the per-subject expansion targets.",
+    "Windows, Linux and physical mobile devices were not tested.",
+    "Approximately 1.03 GiB combined RSS was observed after the full test session; summed RSS may count shared pages more than once."
+  ],
+  "prebuilt_reader": {
+    "bytes": 3020714,
+    "sha256": {
+      "web_dist/assets/Explorer-BLaNlHj2.js": "7256db2e0fde8d38bfb3f8496e1914528ef5482be93de23f29109ac0e59a6ae5",
+      "web_dist/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+      "web_dist/assets/KaTeX_AMS-Regular-DMm9YOAa.woff": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+      "web_dist/assets/KaTeX_AMS-Regular-DRggAlZN.ttf": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
+      "web_dist/assets/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268",
+      "web_dist/assets/KaTeX_Caligraphic-Bold-BEiXGLvX.woff": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+      "web_dist/assets/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+      "web_dist/assets/KaTeX_Caligraphic-Regular-CTRA-rTL.woff": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+      "web_dist/assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+      "web_dist/assets/KaTeX_Caligraphic-Regular-wX97UBjC.ttf": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7",
+      "web_dist/assets/KaTeX_Fraktur-Bold-BdnERNNW.ttf": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1",
+      "web_dist/assets/KaTeX_Fraktur-Bold-BsDP51OF.woff": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+      "web_dist/assets/KaTeX_Fraktur-Bold-CL6g_b3V.woff2": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+      "web_dist/assets/KaTeX_Fraktur-Regular-CB_wures.ttf": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3",
+      "web_dist/assets/KaTeX_Fraktur-Regular-CTYiF6lA.woff2": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+      "web_dist/assets/KaTeX_Fraktur-Regular-Dxdc4cR9.woff": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+      "web_dist/assets/KaTeX_Main-Bold-Cx986IdX.woff2": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+      "web_dist/assets/KaTeX_Main-Bold-Jm3AIy58.woff": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+      "web_dist/assets/KaTeX_Main-Bold-waoOVXN0.ttf": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8",
+      "web_dist/assets/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+      "web_dist/assets/KaTeX_Main-BoldItalic-DzxPMmG6.ttf": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f",
+      "web_dist/assets/KaTeX_Main-BoldItalic-SpSLRI95.woff": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+      "web_dist/assets/KaTeX_Main-Italic-3WenGoN9.ttf": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a",
+      "web_dist/assets/KaTeX_Main-Italic-BMLOBm91.woff": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+      "web_dist/assets/KaTeX_Main-Italic-NWA7e6Wa.woff2": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+      "web_dist/assets/KaTeX_Main-Regular-B22Nviop.woff2": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+      "web_dist/assets/KaTeX_Main-Regular-Dr94JaBh.woff": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+      "web_dist/assets/KaTeX_Main-Regular-ypZvNtVU.ttf": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830",
+      "web_dist/assets/KaTeX_Math-BoldItalic-B3XSjfu4.ttf": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5",
+      "web_dist/assets/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+      "web_dist/assets/KaTeX_Math-BoldItalic-iY-2wyZ7.woff": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+      "web_dist/assets/KaTeX_Math-Italic-DA0__PXp.woff": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+      "web_dist/assets/KaTeX_Math-Italic-flOr_0UB.ttf": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a",
+      "web_dist/assets/KaTeX_Math-Italic-t53AETM-.woff2": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+      "web_dist/assets/KaTeX_SansSerif-Bold-CFMepnvq.ttf": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0",
+      "web_dist/assets/KaTeX_SansSerif-Bold-D1sUS0GD.woff2": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+      "web_dist/assets/KaTeX_SansSerif-Bold-DbIhKOiC.woff": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+      "web_dist/assets/KaTeX_SansSerif-Italic-C3H0VqGB.woff2": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+      "web_dist/assets/KaTeX_SansSerif-Italic-DN2j7dab.woff": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+      "web_dist/assets/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083",
+      "web_dist/assets/KaTeX_SansSerif-Regular-BNo7hRIc.ttf": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad",
+      "web_dist/assets/KaTeX_SansSerif-Regular-CS6fqUqJ.woff": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+      "web_dist/assets/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+      "web_dist/assets/KaTeX_Script-Regular-C5JkGWo-.ttf": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67",
+      "web_dist/assets/KaTeX_Script-Regular-D3wIWfF6.woff2": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+      "web_dist/assets/KaTeX_Script-Regular-D5yQViql.woff": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+      "web_dist/assets/KaTeX_Size1-Regular-C195tn64.woff": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+      "web_dist/assets/KaTeX_Size1-Regular-Dbsnue_I.ttf": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b",
+      "web_dist/assets/KaTeX_Size1-Regular-mCD8mA8B.woff2": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+      "web_dist/assets/KaTeX_Size2-Regular-B7gKUWhC.ttf": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b",
+      "web_dist/assets/KaTeX_Size2-Regular-Dy4dx90m.woff2": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+      "web_dist/assets/KaTeX_Size2-Regular-oD1tc_U0.woff": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+      "web_dist/assets/KaTeX_Size3-Regular-CTq5MqoE.woff": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+      "web_dist/assets/KaTeX_Size3-Regular-DgpXs0kz.ttf": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082",
+      "web_dist/assets/KaTeX_Size4-Regular-BF-4gkZK.woff": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+      "web_dist/assets/KaTeX_Size4-Regular-DWFBv043.ttf": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877",
+      "web_dist/assets/KaTeX_Size4-Regular-Dl5lxZxV.woff2": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+      "web_dist/assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+      "web_dist/assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+      "web_dist/assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa",
+      "web_dist/assets/index-BleRJppG.js": "b2b3c318f03c438e13dc78ef3d45d2d7b7e09b0643d4422f9a3edc64203368eb",
+      "web_dist/assets/index-CYqJc8iQ.css": "68b91d557824eab8bd2da74e96b566f3f1ba09b697c7df691aee5d0249944b07",
+      "web_dist/index.html": "9006de977391be48bcfc6e4a577b4c2a6e289837f8993f4ffb11bf2fb35fb7a4"
+    }
+  },
+  "next_step": "Local acceptance at http://127.0.0.1:8767/. No deployment, push or automatic corpus expansion."
+}

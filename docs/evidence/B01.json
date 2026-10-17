@@ -195,17 +195,6 @@
     },
     {
       "assumptions": [
-        "Pair representation is sufficient to capture inter-residue and inter-atom relationships.",
-        "Reducing MSA processing does not significantly harm accuracy for most targets."
-      ],
-      "id": "n-6ecdc3cdb0cf0aac",
-      "limits": [
-        "Shallow MSAs still lead to lower accuracy, similar to AF2.",
-        "The pairformer may not capture all evolutionary information that the evoformer did."
-      ]
-    },
-    {
-      "assumptions": [
         "Training data from PDB covers the chemical diversity of interest.",
         "Diffusion-based generative modeling can capture both local and global structural constraints."
       ],
@@ -214,18 +203,6 @@
         "Model predicts static structures, not dynamical ensembles.",
         "Hallucination in disordered regions remains a challenge.",
         "Stereochemical violations (chirality, clashes) persist in some outputs."
-      ]
-    },
-    {
-      "assumptions": [
-        "Diffusion models can learn both local and global structural constraints from data.",
-        "Global rotation and translation invariance is not necessary for accurate prediction."
-      ],
-      "id": "n-779419114e545af4",
-      "limits": [
-        "Generative models are prone to hallucination in unstructured regions.",
-        "Stereochemical violations (chirality, clashes) can still occur.",
-        "Multiple seeds are needed to ensure correct chirality and avoid clashes."
       ]
     },
     {
@@ -599,7 +576,7 @@
   "notice": "This evidence brief is not authorization and does not establish expert validation.",
   "permitted_action_scope": "read_only",
   "query": "Flagship evidence: B01",
-  "release_id": "1.2.0-exploratory",
+  "release_id": "1.4.1-exploratory",
   "relevant_contributions": [
     {
       "anchors": [
@@ -1824,76 +1801,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p14",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Pair representation is sufficient to capture inter-residue and inter-atom relationships.",
-        "Reducing MSA processing does not significantly harm accuracy for most targets."
-      ],
-      "attribution": [
-        {
-          "evidence_note": "Described as part of AF3 architecture in the paper.",
-          "name": "Google DeepMind and Isomorphic Labs teams",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "The pairformer module processes only pair and single representations, discarding the MSA representation after initial embedding, reducing computational cost while maintaining accuracy.",
-      "conceptual_move": "Simplify the trunk by funneling all information through the pair representation, using inexpensive pair-weighted averaging for MSA processing.",
-      "content_hash": "e7e24b5e858080c1eebd475345f2a1b6f2a1e05bd7b3a04652d73cfdcd5c15ca",
-      "curation": {
-        "input_hash": "60917dadceae00610f710f2132d19d1b23a4f684e310acfae720b216cd68b1e3",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "14b17692a6312cac20c0cec47ab5d22f6be7f60d372c1a1b2ccfa9580902f6c1",
-        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ff7fb8aeac98b957bca94f7d796",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "time": "2026-10-12T11:55:42+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "Published in Nature, 2024.",
-        "precision": "year",
-        "year": 2024
-      },
-      "dossiers": [
-        "B01"
-      ],
-      "explanation": "The pairformer module operates on a pair representation (n, n, c) and a single representation (n, c), with 48 blocks each having independent parameters. Unlike the evoformer, it does not retain the MSA representation; all information passes through the pair representation. This reduces the amount of MSA processing and improves data efficiency. The design was driven by the need to accommodate a wide range of chemical entities without excessive special casing, and by observations of AF2 performance with different modifications. The pairformer is a key architectural change that enables the model to handle general biomolecular complexes.",
-      "human_review": "not_reviewed",
-      "id": "n-6ecdc3cdb0cf0aac",
-      "kind": "method",
-      "limits": [
-        "Shallow MSAs still lead to lower accuracy, similar to AF2.",
-        "The pairformer may not capture all evolutionary information that the evoformer did."
-      ],
-      "machine_screening": "passed",
-      "pillar": "biology_medicine",
-      "problem": "The AF2 evoformer retained and processed MSA representations throughout the trunk, which was computationally expensive and less adaptable to diverse chemical entities.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Peer-reviewed publication; architectural choice validated by overall AF3 performance.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "biology_medicine"
-      ],
-      "title": "Pairformer module replacing evoformer for efficient pair representation processing",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p2",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
@@ -1970,77 +1877,6 @@
         "biology_medicine"
       ],
       "title": "Unified diffusion-based architecture for joint biomolecular complex prediction",
-      "type": "contribution"
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p15",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        }
-      ],
-      "assumptions": [
-        "Diffusion models can learn both local and global structural constraints from data.",
-        "Global rotation and translation invariance is not necessary for accurate prediction."
-      ],
-      "attribution": [
-        {
-          "evidence_note": "Described as part of AF3 architecture in the paper.",
-          "name": "Google DeepMind and Isomorphic Labs teams",
-          "role": "original contributor"
-        }
-      ],
-      "claim": "The diffusion module generates raw atom coordinates directly, without rotational frames or equivariant processing, and without requiring invariance to global rotations and translations.",
-      "conceptual_move": "Adopt a standard diffusion approach where the model learns to denoise noised atomic coordinates, leveraging the multiscale nature of diffusion to handle local and global structure.",
-      "content_hash": "33774ed399d66a93d84b04be804ec6d197dc993f310d8d9405b1688e1406e900",
-      "curation": {
-        "input_hash": "60917dadceae00610f710f2132d19d1b23a4f684e310acfae720b216cd68b1e3",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "14b17692a6312cac20c0cec47ab5d22f6be7f60d372c1a1b2ccfa9580902f6c1",
-        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ff7fb8aeac98b957bca94f7d796",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "time": "2026-10-12T11:55:42+00:00"
-      },
-      "date": {
-        "event": "publication",
-        "note": "Published in Nature, 2024.",
-        "precision": "year",
-        "year": 2024
-      },
-      "dossiers": [
-        "B01"
-      ],
-      "explanation": "The diffusion module is trained to receive 'noised' atomic coordinates and predict the true coordinates. At low noise levels, the denoising task emphasizes local stereochemistry; at high noise, it emphasizes large-scale structure. This generative procedure produces a distribution of answers, allowing local structure to be sharply defined even when the network is uncertain about positions. The authors found that no invariance or equivariance with respect to global rotations and translations is required, simplifying the architecture. This approach eliminates the need for torsion-based parametrizations and violation losses, handling the full complexity of general ligands.",
-      "human_review": "not_reviewed",
-      "id": "n-779419114e545af4",
-      "kind": "method",
-      "limits": [
-        "Generative models are prone to hallucination in unstructured regions.",
-        "Stereochemical violations (chirality, clashes) can still occur.",
-        "Multiple seeds are needed to ensure correct chirality and avoid clashes."
-      ],
-      "machine_screening": "passed",
-      "pillar": "biology_medicine",
-      "problem": "AF2's structure module used amino-acid-specific frames and side-chain torsion angles, which added complexity for general molecular graphs and required stereochemical violation penalties.",
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scientific_standing": "Peer-reviewed publication; validated by AF3 performance on benchmarks.",
-      "source_evidence_role": "Source-grounded account; consult attribution notes for original versus secondary evidence.",
-      "tags": [
-        "biology_medicine"
-      ],
-      "title": "Diffusion module for direct atom coordinate generation without equivariance",
       "type": "contribution"
     },
     {
@@ -3002,24 +2838,10 @@
     },
     {
       "human_review": "not_reviewed",
-      "id": "n-6ecdc3cdb0cf0aac",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Peer-reviewed publication; architectural choice validated by overall AF3 performance."
-    },
-    {
-      "human_review": "not_reviewed",
       "id": "n-711b35dd72329889",
       "machine_screening": "passed",
       "revision": 1,
       "scientific_standing": "Peer-reviewed publication in Nature; validated on benchmarks but not independently replicated in this source."
-    },
-    {
-      "human_review": "not_reviewed",
-      "id": "n-779419114e545af4",
-      "machine_screening": "passed",
-      "revision": 1,
-      "scientific_standing": "Peer-reviewed publication; validated by AF3 performance on benchmarks."
     },
     {
       "human_review": "not_reviewed",
@@ -3276,6 +3098,90 @@
       "type": "review"
     },
     {
+      "content_hash": "7951da8dca85beedc036b33568208a2f00094ada410689de941eac92b52a85e0",
+      "evidence_checked": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-100afcbc47ae07a5d8a5",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "53e9e28868134bf82f9e90c5e27ef414a8de093f72362c439035fabb3b3d65ef",
+        "job_id": "5225939758387bdfb39d2245336e8b4a6d9e20ac9df694280e80de6ae2188c8f",
+        "output_hash": "8011eef5c71af8193d0deefc3d28de1c395831304af89057fc0ea1c4185328da",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3d845c3b-23f4-46d7-bb54-c8239c564e30",
+        "request_id": "01a1478dd8abbdf4d34b7739255d65a8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:53e9e28868134bf82f9e",
+        "time": "2026-10-17T01:50:43+00:00",
+        "trace_id": "3d845c3b-23f4-46d7-bb54-c8239c564e30"
+      },
+      "rationale": "p5 reports the correlation between MSA depth and model accuracy is lower for RoseTTAFold than trRosetta and other CASP14 methods, supporting the stated empirical finding.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "3a402d78bfb271501d479b8cf588b2279933d4976ad571879de71b1884cae129",
+        "id": "r-5e22fe974e0e4537",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:43+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "48de532b74e1b677c6e12f4e3f0dc9f2777f902aeacfecbf5fa2c4bf6295b650",
+      "evidence_checked": [
+        {
+          "anchor_id": "p30",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-11d1f3ee1d70736b4986",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "df2e774792ebf675e570cf0423a585e1fa3a6148c1c1aa523819ab70de8d7710",
+        "job_id": "424dc91e6fd503c5a75dcdd826fbd6faa1f1cafa0b7738b7bbc286e1b7fbebdc",
+        "output_hash": "fa2b7abc0fb37ce351c86e1fe9847b444a328c6ed29063473dfbfa75ef828458",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "579594a6-c04a-4be1-920b-af55b922cfe0",
+        "request_id": "01a14791240afe0336b4a11cde374874",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:df2e774792ebf675e570",
+        "time": "2026-10-17T01:54:19+00:00",
+        "trace_id": "579594a6-c04a-4be1-920b-af55b922cfe0"
+      },
+      "rationale": "p30 reports paired Wilcoxon comparison showing AF3 generally achieves better backbone accuracy when modelling phosphorylation, supporting the empirical finding.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "b73fd0d9951ee2d8f03d96d31a89a6ce99e937e3494f2ab2e28ef5a0a461a694",
+        "id": "r-f147acd0bcb16baa",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:19+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "a80fffa237d37ebb907680e535e9b8d14a16307c1d5fe36d9a0300490dbc2a3a",
       "evidence_checked": [
         {
@@ -3323,6 +3229,48 @@
       "type": "review"
     },
     {
+      "content_hash": "d9b5f44bd1f8e31dcb0dbdd0d5c8ba4d96006b386543d3ec89d0389b813bc253",
+      "evidence_checked": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-15a64156abb92bd37294",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f733da036d0641b52836833d1cd145aec64af41541130173031cac42f65141ef",
+        "job_id": "b6cab70137dbc96e75e80ddc6bc22a3a5141fdc45cd0b2f461bfc04adf32f4df",
+        "output_hash": "1f91121d04ad5db6fe09bb29fbe4e3ca1b3d5e47d617d26355153cc90a97da51",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "57837533-f805-4aaf-83aa-a3d402ced14f",
+        "request_id": "01a1478dc5de498dd491339748c6976c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f733da036d0641b52836",
+        "time": "2026-10-17T01:50:35+00:00",
+        "trace_id": "57837533-f805-4aaf-83aa-a3d402ced14f"
+      },
+      "rationale": "p26 states AF3 predicts protein–nucleic complexes and RNA structures with higher accuracy than RoseTTAFold2NA, directly bearing on the conclusion.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "4c1dad0e3a381c6f38fa39a5af2dea12319830722f6e2acf1925e7ad187681a1",
+        "id": "r-56b6b6cff3de3589",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:35+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "5b9f17773adbc297844bcc5699dc78118bf75e21a3b4abfd4c4f8223ba7820d5",
       "evidence_checked": [
         {
@@ -3367,6 +3315,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:56:59+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "413d8afc8398bb95d150afd2a3aa0fe1fee20b62adbe60c94a8a4882434b41df",
+      "evidence_checked": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-1c032acb29f5546a0d5a",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "067ebc585cda2ba1e263803b51ad11aa9bd1c7b055930efc5f27de6b06344e49",
+        "job_id": "7ba8bc88f4f9276811dd8a49f96bb4706a792a685c954cbad41e0d58cb14f9bd",
+        "output_hash": "37b5891a8e5229ed77bf670e0b0a446460e8ad63b29198b2a09ce7ac427d4b47",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b152af3d-be4b-4624-995c-b0b7da7ffe27",
+        "request_id": "01a1478dbaf848bb6002da668c96bae1",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:067ebc585cda2ba1e263",
+        "time": "2026-10-17T01:50:32+00:00",
+        "trace_id": "b152af3d-be4b-4624-995c-b0b7da7ffe27"
+      },
+      "rationale": "p17 shows AF3 disorder predictions on CAID 2 with pLDDT, and p41 states distillation training from AF2 encourages ribbon-like disordered-region predictions, bearing on the conclusion.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "2ee286481553014617a6ec06cdbb1599d769f03d3732d3f3f26a60b98386ef0f",
+        "id": "r-554621e0d841bdcc",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:32+00:00",
       "type": "review"
     },
     {
@@ -3726,50 +3721,92 @@
       "type": "review"
     },
     {
-      "content_hash": "1c44c7f40c5d2d687e5adfebe66cd8eebf7674f9a9421f9350395560f90d43d4",
+      "content_hash": "01a0c6073ceeefeead0cc7a637f26e43f72980d87b3893376cb29cce1b13c01c",
       "evidence_checked": [
         {
-          "anchor_id": "p12",
+          "anchor_id": "p23",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
         },
         {
-          "anchor_id": "p15",
+          "anchor_id": "p24",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
         }
       ],
-      "id": "review-33903fe7026bf0988f81",
+      "id": "review-3ca4438933c835a776a7",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "34780e2a0f3ccb2f72292e1c5489646f2f64c06751c3a8b176dac8a63a47d60f",
-        "job_id": "4ef3393ed06f11592c6afe363e3811ba29af0cb00fd06ec811336bcefddececd",
-        "output_hash": "5e3ac6a1712ad471346e37d88f48230421095478827ac6c328d0e45e8f9f7401",
-        "prompt_hash": "dee0710e007f993346448fe4ca48baed38972335a1c17162b988e9340552b5dd",
+        "input_hash": "705a8d3dc81c3a4bf3042b3ab90ad15aaa947c5e3f2cc56818bb6065061bd304",
+        "job_id": "76b8acc41da5dc6bbe55fc18aa069f9c1646e98b6566c20dd08f7498b339f0c9",
+        "output_hash": "81ce845bb2ff48f4e1672d69d0413a3a5db28d59e6fbc7dd38c52cc1c940ed79",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d",
-        "request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "fc056f07-ee54-453e-a42d-22390cc35056",
+        "request_id": "01a147a574a0eb1e0e6ab0810beaae67",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:B01:14b17692a631",
-        "time": "2026-10-12T11:56:59+00:00",
-        "trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d"
+        "task": "atlas-audit:705a8d3dc81c3a4bf304",
+        "time": "2026-10-17T02:16:27+00:00",
+        "trace_id": "fc056f07-ee54-453e-a42d-22390cc35056"
       },
-      "rationale": "The claim is directly supported by p15, which states the diffusion module operates on raw atom coordinates without rotational frames or equivariant processing, and that no invariance or equivariance to global rotations/translations is required.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p23 states AF3 'greatly outperforms classical docking tools such as Vina' while 'not using any structural inputs', and docking methods use 'privileged information' from solved test structures. p24 confirms Vina/Gold inaccuracy examples.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "33774ed399d66a93d84b04be804ec6d197dc993f310d8d9405b1688e1406e900",
-        "id": "n-779419114e545af4",
+        "content_hash": "bd6bb932ab7c9d9e3f1b1559c9baafc73cb86816e933d26776dff5fb625375c0",
+        "id": "n-1ce856fde6e35d1a",
         "revision": 1
       },
-      "time": "2026-10-12T11:56:59+00:00",
+      "time": "2026-10-17T02:16:27+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ebb2a84880af2524c0e1737f52c8437ae444c55617eb4282b1c12235c9463cab",
+      "evidence_checked": [
+        {
+          "anchor_id": "p36",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-3cee5a69ce7c6e84baed",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "983e86c2b5da6591954fe7d6308c7c33764820a325b9a0f14ed1d5f45da914e4",
+        "job_id": "ba3dca1ca68b92749f5ef718926397476bef18990cc37689b850a7989fe93935",
+        "output_hash": "b0999c212169bfaa8cf6a763275dc3cf07c3856e45ceb8459894efacb1f134e3",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "1c847a51-81fc-4c0f-9290-cca4f54b8ae6",
+        "request_id": "01a1478d7f4bc27b70da9d949e6a37f4",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:983e86c2b5da6591954f",
+        "time": "2026-10-17T01:50:20+00:00",
+        "trace_id": "1c847a51-81fc-4c0f-9290-cca4f54b8ae6"
+      },
+      "rationale": "p36 reports that removing BFD reduced mean accuracy by 0.4 GDT and that metagenomic databases are important for poorly represented classes, an observation bearing on AlphaFold2 accuracy.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "21f03364e55c76395b6ce9193cc2ea25cfbaffa51b95cd767f90dbf3d9581c84",
+        "id": "r-4d792059629a5289",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:20+00:00",
       "type": "review"
     },
     {
@@ -3998,6 +4035,53 @@
       "type": "review"
     },
     {
+      "content_hash": "8590c95452fea75acb9f7736e5244d7e694cd6993f46da7fe59fee0ec018d23b",
+      "evidence_checked": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p29",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-513fee8e8931e8cf691c",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "5250e71640ba61c3386acf68571837de4945cef97763e3f7037439558f57a69b",
+        "job_id": "7a6aed3159e185d0432a14b9917fcc6f1913cac82f4b4498ec6ed52b7c094f0c",
+        "output_hash": "c13b2f86b2329c89fbcb4212270d284d73e960e8ca2947cabd388cb8884e271e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "1c4b0070-aed8-4af7-ac47-576409c4d4da",
+        "request_id": "01a1478cc8b6ff4224eeea8ff63f5980",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:5250e71640ba61c3386a",
+        "time": "2026-10-17T01:49:33+00:00",
+        "trace_id": "1c4b0070-aed8-4af7-ac47-576409c4d4da"
+      },
+      "rationale": "p12 describes the unified diffusion architecture accommodating arbitrary chemical components, and p29 reports accurate prediction of covalent modifications with success rates (42.1%, 46.1%), evidencing the claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "e3f7ffeca5b5c28736126467b9f1059d909069798fedb2e093feb02f9a795cdd",
+        "id": "r-2bed8b8680ac6c95",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:33+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "4cc98a6d764a24c97927812ec8fe5dc5f089bd6f7b71d9733d4c01ae3d2c76b1",
       "evidence_checked": [
         {
@@ -4171,6 +4255,137 @@
       "type": "review"
     },
     {
+      "content_hash": "ebe12b373fd12b052f83abcbbdf430a9e8d560011858da3e29fd90eea2971078",
+      "evidence_checked": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-6152c363a19ccaa877f7",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "2de58e69476b6397363eb3d52f9982706629071e331aead07bbdb627dc2ac63b",
+        "job_id": "64b5b7655906bf4314113fdb13b75876ce629fcd5222f49db85d4a126f403713",
+        "output_hash": "301eb1f9563df960e371c7e8f5f5bf0cae9c1f957f27aa029355920dcb19272b",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "4e491a8d-6aa0-48a1-adb9-af1766c40a6b",
+        "request_id": "01a1478c07eed704ce68ca629347dc4a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:2de58e69476b6397363e",
+        "time": "2026-10-17T01:48:44+00:00",
+        "trace_id": "4e491a8d-6aa0-48a1-adb9-af1766c40a6b"
+      },
+      "rationale": "p22 reports AF3 examples with a novel fold (ligand r.m.s.d. 1.92 Å) and an allosteric site (0.37 Å), bearing on the claim of accurate binding prediction.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "bfd0ed6de364c337abf453c38f765ea2e92a5aa129f44d4e326770a89dcf39ef",
+        "id": "r-09d29ce550e175e3",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:44+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "4218711f8964b870ae21c75888b90a45032ba7cc17ece30e51ace359491c5829",
+      "evidence_checked": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-6388ce9b528b3d5a4072",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fc28a7cd8bf0d4d080357122f5972f99d16aeef8ec35a6f93f326c629d1b8514",
+        "job_id": "a39ab09aa9b781f9354aa7561f3f51f2554738285c19cc6dca6aca64071ac71d",
+        "output_hash": "8541f5027389a6946be5dc4f216793c78965a52193ecd26c652561f63dd295b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4",
+        "request_id": "01a1478bb1dce5f9141972420e22fae3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:fc28a7cd8bf0d4d08035",
+        "time": "2026-10-17T01:48:22+00:00",
+        "trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4"
+      },
+      "rationale": "AF3 p34 states 'As with AF2, AF3 confidence measures are well calibrated with accuracy,' and p18 describes pLDDT/PAE heads as in AF2, showing continuity.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "8b13f832d590a536aac974ac0cfe50508e5a1a2c78adc74638a465258737584f",
+        "id": "bridge-de50adc5dfc6caa6",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:22+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ed7b74c9c378f86537baa0fc789c45ca0a91dc0fd92f22f28aeef8aa9f7b4b78",
+      "evidence_checked": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-64426e0c01dfee2c526e",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "ad5b03c306b408371d277d30dab37b625b91fe5ba219bec6bc85aa9cc68a15fe",
+        "job_id": "37c4ed87f3ad7deadb4c29b4b1805d6759f01f1596d65c9d62f0a51e50b8f96a",
+        "output_hash": "17f20e051c336a3b3ad98f83970a00ffaaab3c80f21f347b055e2d1e0ae5c43e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3ed7fdba-b60c-4f52-85dd-f45451f929b9",
+        "request_id": "01a1478ebce0d386856030bca5c6eb38",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:ad5b03c306b408371d27",
+        "time": "2026-10-17T01:51:38+00:00",
+        "trace_id": "3ed7fdba-b60c-4f52-85dd-f45451f929b9"
+      },
+      "rationale": "p31 reports increased protein-protein success (DockQ>0.23) and marked antibody-protein improvement versus AlphaFold-Multimer v.2.3, directly supporting the empirical finding.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "3c765748ab9e59481922933474693c91e5f15275f9cee651e8883ffce812036e",
+        "id": "r-85d4ea05e2e2e833",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:38+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "664b0a4724bd78d1ff2e605ee146e617d481720af16bb953d95fcde5a62ded20",
       "evidence_checked": [
         {
@@ -4215,6 +4430,48 @@
         "revision": 1
       },
       "time": "2026-10-12T11:56:59+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "49cfcca320bb5df75d874461edf2f7b2611394c755c7246d6b0746ed2d3df4e2",
+      "evidence_checked": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-6d580d5f6efb48b4ae6d",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "40646e9aaa3b8e908f9249c686e450602e41d02e86cf3830ee4db8dcd5482933",
+        "job_id": "a6240f16c7e2a170b5772275a85b3e735e37a0f4faf94ee6abe3539eb1656168",
+        "output_hash": "32c8acdad4522225b11088625138590bfbb6fd71169ea893d895ea82bf8ae051",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "57ca49c5-c548-4ad1-b7ab-447571d93070",
+        "request_id": "01a1478f9fc5216b68401cb2b6be1029",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:40646e9aaa3b8e908f92",
+        "time": "2026-10-17T01:52:40+00:00",
+        "trace_id": "57ca49c5-c548-4ad1-b7ab-447571d93070"
+      },
+      "rationale": "p6 reports pLDDT reliably predicts lDDT-Cα accuracy (r=0.76) and validates transfer to recent PDB structures, bearing on the usability/accuracy claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "57ce0f604510fd718183739eabaf7e1f1a37c62e344f966d6406092d385ce93d",
+        "id": "r-ace01763e966bce5",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:40+00:00",
       "type": "review"
     },
     {
@@ -4267,6 +4524,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:59:23+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "504bb88b1e4449ce984ee173df0daa2195e7733c840a2637f07ca6a90f86ee80",
+      "evidence_checked": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-7033d74a9e4595484f3c",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "499d52db7761a7cbb039553f17039a1c3279d33c04865b20c484ab026331eeda",
+        "job_id": "ec3c556f7b8476291aaeb1ec89f370a53355bbd682c2b51d4ba96ec1988d77c8",
+        "output_hash": "d02afab76fe80213b83312e31751812b9e7e187d70d8cc964529f7f93042dc58",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "8b39101e-5f9d-4891-acf6-d89ef942feea",
+        "request_id": "01a1478c1c419d3cefc14c40d24810df",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:499d52db7761a7cbb039",
+        "time": "2026-10-17T01:48:46+00:00",
+        "trace_id": "8b39101e-5f9d-4891-acf6-d89ef942feea"
+      },
+      "rationale": "p26 states AF3 predicts protein–nucleic complexes and RNA structures more accurately than RF2NA; p28 reports DNA/RNA-only accuracy comparisons, bearing on the conclusion that AF3 predicts DNA and RNA complexes with high accuracy.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "0a3c64e262a25b872db47bbb04a17232cd3160094432f125198fa6a36f9be6ee",
+        "id": "r-0aeb1f43a84717f0",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:46+00:00",
       "type": "review"
     },
     {
@@ -4542,6 +4846,48 @@
       "type": "review"
     },
     {
+      "content_hash": "db2baac1532a0de458e7b55cc7813d960e723745400281311824c1a4aab6320b",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-8170a76485da34ad271a",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b0ddc8d7ee9b3daad4f63d80fedcc3199b1eaa2cf46cb4fd9cdea3d0e4c87360",
+        "job_id": "b33c5031ceb541fe58314a793fc3908a6e2dce12b62bacc78f63e1b893407670",
+        "output_hash": "fcf3524acfd90ad7a74de0b7313229ddd386d63122f372056cc52f5ead12bca1",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "71a3dd89-cbdb-42cf-85de-03a16191a2e2",
+        "request_id": "01a147914b75e9b3eb2afe6f2cc2e468",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:b0ddc8d7ee9b3daad4f6",
+        "time": "2026-10-17T01:54:29+00:00",
+        "trace_id": "71a3dd89-cbdb-42cf-85de-03a16191a2e2"
+      },
+      "rationale": "The source states that 'Because of computer hardware memory limitations, we could not train models on large proteins directly as the 3-track models have many millions of parameters; instead, we presented to the network many discontinuous crops,' directly linking the 3-track architecture's memory demands to the discontinuous-crop training method.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "ea2a9e49d12d9b37a9b427ad966a0fefd6681c1dd97d086c8c365e14e5913582",
+        "id": "r-f580311e06879e6d",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:29+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "1ced02f7e89f8b285249b34be5a2d1e6f74a2347ab7d43f079b1949f3750f52c",
       "evidence_checked": [
         {
@@ -4581,6 +4927,48 @@
         "revision": 1
       },
       "time": "2026-10-12T11:59:23+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "0f0b789a0ad4d438e082df97958ff4b55690c8702da895551961d1fa1ec8497c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-8ba732cd3ee1e28b9e8c",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "9607ed688e9893dd13d283575360e7e7a7ced4b3365054e292473dc9558a5f5b",
+        "job_id": "0512700bf2d1ac0edf32b26fc0e338f77f87a35072181b03648520e93da3a783",
+        "output_hash": "833f68e21e221a6d80411d897d3903b1d3541b9ebf5f4d56fbccd95c0d405b6d",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "6a06c3d8-8697-4a08-8cb9-357a382caedf",
+        "request_id": "01a1478cd53cbe1acc063b7b498b43da",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:9607ed688e9893dd13d2",
+        "time": "2026-10-17T01:49:34+00:00",
+        "trace_id": "6a06c3d8-8697-4a08-8cb9-357a382caedf"
+      },
+      "rationale": "p29 reports AF3 accurately predicts glycosylation and gives success rates 42.1% and 46.1%, directly supporting the empirical finding.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "1825aabbe96021912869f5241bb301ad89f2e367fdab94e67a0c5df5f200f8ce",
+        "id": "r-2c3708243322773d",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:34+00:00",
       "type": "review"
     },
     {
@@ -4730,45 +5118,87 @@
       "type": "review"
     },
     {
-      "content_hash": "972390716ba1eb48f2d3b0f9597596b50490e4679d22f40b399ade87ed8ca5ee",
+      "content_hash": "28ab3d380df6fa8c34d054cf11b420d9004de05f2bd55ef23a3c56236449f8d1",
       "evidence_checked": [
         {
-          "anchor_id": "p7",
-          "source_id": "s-7b2101824f73d1a9",
+          "anchor_id": "p27",
+          "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
         }
       ],
-      "id": "review-9e78b54cb2558d268839",
+      "id": "review-9bc1e9e136d0d24247a7",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "62efee7ebfdaeb94995a95fb340e53405dc758a36da9471d416e8a2953ecac6f",
-        "job_id": "a464e71e5b2975fb66601d82ecb739655dc71a08dc07923e3a062ccb2cc0ccb9",
-        "output_hash": "284c6b9707f611d41f030613ef0ad5bda6e0359850a9cc30da97cb8b8e4b9a85",
-        "prompt_hash": "c9f1b93dcfb8011f6c3e09fb90a12a36e448459baab9b11e355e996b216f5a2c",
+        "input_hash": "cb37aabef7eda25e152e911b0a40c836d1c289cf0c6221f408a742777fa10e23",
+        "job_id": "1803c51366eef6ee97911a9ddfb788c9920d54518e5ad6dd7b760f0b224a35b8",
+        "output_hash": "06b423209acb2d377a5fc9542262321d85240725d8e6611b0ce7edd945823701",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "c43f8e27-4d1f-46a4-8c29-05e1fd6eec17",
-        "request_id": "01a130ca168c9c8e6f71fc39a005b762",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "07f7b74c-4302-4ba1-866e-72ff90c66fbd",
+        "request_id": "01a1478dee0ed11a8060630ce5574853",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:B01:cc62aaef8b37",
-        "time": "2026-10-12T15:45:03+00:00",
-        "trace_id": "c43f8e27-4d1f-46a4-8c29-05e1fd6eec17"
+        "task": "atlas-audit:cb37aabef7eda25e152e",
+        "time": "2026-10-17T01:50:49+00:00",
+        "trace_id": "07f7b74c-4302-4ba1-866e-72ff90c66fbd"
       },
-      "rationale": "Passage p7 provides independent validation of the architecture's effectiveness. The edge is warranted.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p27 states AF3 'did not reach the performance of the best human-expert-aided CASP15 submission AIchemy_RNA2,' directly bounding the unified architecture's RNA prediction performance.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "af7912b9cd58a3cadc86aad92aba94260fd8d4cd81a278d8fd80950145c9e210",
-        "id": "r-7466fc3525bd75f9",
+        "content_hash": "d210d5c09a2157b3db1de3e59f8de6b68b5265deb4f76c8efe28648b232bd47b",
+        "id": "r-61a39d8cd04b0a4c",
         "revision": 1
       },
-      "time": "2026-10-12T15:45:03+00:00",
+      "time": "2026-10-17T01:50:49+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "8ed1b21d252db8b4e3ff32fa6926f8f45dd29db437a55ffdb118aafa5995ed96",
+      "evidence_checked": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-9d9bf8ee52e3f9009d69",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f0351fa51c4e7b6940de36e8062fdf658ce93b4cfd8807afc5784fa10e9d6ccd",
+        "job_id": "585639d693c8952ed01ad0b296e22b900373cbb9daea9725932ea5c75e415db0",
+        "output_hash": "4bb9ef65c75589df074596558a164299b30a7cefe40631ec7586ece584265ff6",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b6124895-d2cd-4be8-8ed5-9826e02e17c7",
+        "request_id": "01a1478cd254a42b61bd249a0d6d4692",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f0351fa51c4e7b6940de",
+        "time": "2026-10-17T01:49:36+00:00",
+        "trace_id": "b6124895-d2cd-4be8-8ed5-9826e02e17c7"
+      },
+      "rationale": "p21 states ablations 'demonstrate that a variety of different mechanisms contribute to AlphaFold accuracy,' directly supporting the claim that multiple components contribute.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "50b6313e91d0aeb146f5686daf375f34ade88ebead45f58275c189d79f85131f",
+        "id": "r-2d584a051c66641e",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:36+00:00",
       "type": "review"
     },
     {
@@ -4905,6 +5335,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:56:59+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "d4574eb8c2a249ee39e1d9c5781abd7c0026bc57cf7f70d9b5f708de3898f9dd",
+      "evidence_checked": [
+        {
+          "anchor_id": "p14",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-a6dd6dab48227d09b474",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fc28a7cd8bf0d4d080357122f5972f99d16aeef8ec35a6f93f326c629d1b8514",
+        "job_id": "a39ab09aa9b781f9354aa7561f3f51f2554738285c19cc6dca6aca64071ac71d",
+        "output_hash": "8541f5027389a6946be5dc4f216793c78965a52193ecd26c652561f63dd295b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4",
+        "request_id": "01a1478bb1dce5f9141972420e22fae3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:fc28a7cd8bf0d4d08035",
+        "time": "2026-10-17T01:48:22+00:00",
+        "trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4"
+      },
+      "rationale": "AF3 p14 says the overall structure 'echoes that of AF2' with modifications, and p2 describes the updated diffusion-based architecture; direct predecessor relation documented.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "756977983a3edacd4ae7d97ea32d62e5b23ad53edb03ffbfa6d3ecd641ef28db",
+        "id": "bridge-60e8498cc4e2d98c",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:22+00:00",
       "type": "review"
     },
     {
@@ -5049,6 +5526,48 @@
       "type": "review"
     },
     {
+      "content_hash": "b5200a49fd781aab78b1e32133bf9a20e2be43d02f5feffc57d1a24255e29162",
+      "evidence_checked": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-b48a0782bac8413ad69a",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7b60d5f6678a722fdaf23216684e23be16f86771e5428f76cbc7301892c0dc88",
+        "job_id": "6bed29724a226243506185842c92df9aa1783e4ab0bfa9ac862f0d9b919af491",
+        "output_hash": "3d630c648c33bb8c0964783461a91b94e251b8a93d2059176f54b7717bdd95bf",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "e61347a9-2057-4c3c-8758-b2acf1caf443",
+        "request_id": "01a1478eb50b38c8a1c998efbf71168b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:7b60d5f6678a722fdaf2",
+        "time": "2026-10-17T01:51:39+00:00",
+        "trace_id": "e61347a9-2057-4c3c-8758-b2acf1caf443"
+      },
+      "rationale": "p22 gives AF3 predictions of multi-chain complexes (ribosome, homodimer, antibody-antigen) with accuracy metrics, supporting the empirical finding.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "32f3cd8d1f9251767bd59776d7d866d6028ee112eadcd8e3d8152c8a611b3dd2",
+        "id": "r-867e16bb57045d3a",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:39+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "8e9d2743d31e1d8af63ca5726c51d6f3cc7a2e86c6413529b97625ed9ae1bea0",
       "evidence_checked": [
         {
@@ -5185,6 +5704,90 @@
       "type": "review"
     },
     {
+      "content_hash": "2156863978bb28f912fb57ed9788b4e87ef97657ffc9408a2da9bb6615375003",
+      "evidence_checked": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-be8323b195444e29a15f",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "53e9e28868134bf82f9e90c5e27ef414a8de093f72362c439035fabb3b3d65ef",
+        "job_id": "5225939758387bdfb39d2245336e8b4a6d9e20ac9df694280e80de6ae2188c8f",
+        "output_hash": "8011eef5c71af8193d0deefc3d28de1c395831304af89057fc0ea1c4185328da",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3d845c3b-23f4-46d7-bb54-c8239c564e30",
+        "request_id": "01a1478dd8abbdf4d34b7739255d65a8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:53e9e28868134bf82f9e",
+        "time": "2026-10-17T01:50:43+00:00",
+        "trace_id": "3d845c3b-23f4-46d7-bb54-c8239c564e30"
+      },
+      "rationale": "p22 states accuracy decreases substantially when median alignment depth is below ~30 sequences and a threshold effect above ~100, directly bounding AlphaFold's applicability.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "da09cce318d58a32e04afdb175937d2d5f895b2cae8d35cb63c546f693d43a8f",
+        "id": "r-5d8addebd44455b2",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:43+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ffa11ffbfea3e1b32e94628da8b6b755a3ab73c45441bcd7f119c89d8a09e74e",
+      "evidence_checked": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-befa00e2851cfa16064e",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "dcf3cd1192ecb6723735f062e23caa1122f039e52b4384d7ff5769be5df7e209",
+        "job_id": "5093306e03970db9a02b879738399b667c8df48128b584ee5a7fa96f3e92c594",
+        "output_hash": "dc43b71dc23229fb4dfa6dbf4730c4760de4320153f21b5d955cae550c6219dd",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "6be8c119-5d69-4f71-ab09-bac06a5179ba",
+        "request_id": "01a147913ed2c71a997a4e694d3c4cab",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:dcf3cd1192ecb6723735",
+        "time": "2026-10-17T01:54:23+00:00",
+        "trace_id": "6be8c119-5d69-4f71-ab09-bac06a5179ba"
+      },
+      "rationale": "p5 reports lower correlation between MSA depth and accuracy for RoseTTAFold than trRosetta/other CASP14 methods, directly supporting the robustness finding.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "44b318635234d26f6192982b60aa7f1bf9d907f4b2b93f2ad2d24f1442a4f71b",
+        "id": "r-f2a381238f4b4c7a",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:23+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "1cb88fd3810357dd10a64dcd8fbc65893b6a18fab9f0bdb6550c616aeba1e09a",
       "evidence_checked": [
         {
@@ -5232,50 +5835,87 @@
       "type": "review"
     },
     {
-      "content_hash": "2f84fa06d627089192546aa2964430c39103b4e566df88c7c81f8089226ec479",
+      "content_hash": "0ab2fe58a0854b8b0e089a31f5b593df6ce3610ae1f8274c6b7f78244cf0685f",
       "evidence_checked": [
         {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p15",
-          "source_id": "s-f4a9c46d8b6e8da2",
+          "anchor_id": "p19",
+          "source_id": "s-7b2101824f73d1a9",
           "source_revision": 1
         }
       ],
-      "id": "review-c196eee66a6864b4f46a",
+      "id": "review-c115021b4f84842da8f7",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "34780e2a0f3ccb2f72292e1c5489646f2f64c06751c3a8b176dac8a63a47d60f",
-        "job_id": "4ef3393ed06f11592c6afe363e3811ba29af0cb00fd06ec811336bcefddececd",
-        "output_hash": "5e3ac6a1712ad471346e37d88f48230421095478827ac6c328d0e45e8f9f7401",
-        "prompt_hash": "dee0710e007f993346448fe4ca48baed38972335a1c17162b988e9340552b5dd",
+        "input_hash": "3b5ec2f90ab39d8e7b2fb0c293854cfa3bdc417b553516868c1fe7c8eed156eb",
+        "job_id": "8dee7b1a438cac9e95a0c6ff100ca67b21ee01ae6164fc7eebb98e277646d2dd",
+        "output_hash": "d1a3ea474324b83f3e8a484d0cf5ee3d20b634d85642b851874a497b37c21159",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d",
-        "request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "41fa8af6-d25c-4b8a-b5d4-5731b3e0280d",
+        "request_id": "01a1478d743f841cff45c58aaf830432",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:B01:14b17692a631",
-        "time": "2026-10-12T11:56:59+00:00",
-        "trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d"
+        "task": "atlas-audit:3b5ec2f90ab39d8e7b2f",
+        "time": "2026-10-17T01:50:17+00:00",
+        "trace_id": "41fa8af6-d25c-4b8a-b5d4-5731b3e0280d"
       },
-      "rationale": "The diffusion module is described as the structure generation component of AF3 (p12, p15), so the premise relation is justified.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p19 states the network 'can seamlessly handle chain breaks' from discontinuous crops and that this enables direct building of complex models from sequence, short-circuiting subunit modeling and docking.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "e8b1220d169b6128b4beace5af891a94d14d507d19fb103dbf46280d12651e53",
-        "id": "r-a6dcbe2c63841aba",
+        "content_hash": "a29c930ffa4f1f8646eda18226953add44047f001289d138a68658fa47dae915",
+        "id": "r-4cc20b7a4d49d3f0",
         "revision": 1
       },
-      "time": "2026-10-12T11:56:59+00:00",
+      "time": "2026-10-17T01:50:17+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ab9da46969f0f47a351a4334986c717345b8ae6ed6861990d0b2353063903b37",
+      "evidence_checked": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-c446f4c077640a0f0e47",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "c2e6ddae2ae8f85b49540ffa7ed5c2f6583caaf74538cb4fc757a17c45201518",
+        "job_id": "e1db5e83c03724630d6d0b44b5d72166fd43acb9d61cd116afc7b7f4814081f4",
+        "output_hash": "33c15073b577cb2062ea3c4db94f7e25dc233ab94b079be78372156683126efd",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "97fbe775-bd3f-40a5-b132-ffcb6980a1d2",
+        "request_id": "01a14790c3c479c5bcc93b688fb94a35",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:c2e6ddae2ae8f85b4954",
+        "time": "2026-10-17T01:53:51+00:00",
+        "trace_id": "97fbe775-bd3f-40a5-b132-ffcb6980a1d2"
+      },
+      "rationale": "p7 reports RoseTTAFold 'outperformed all other servers evaluated' on 69 CAMEO medium/hard targets (May 15–June 19, 2021), an observation bearing on the 3-track architecture's effectiveness.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "e53fc874588167cbaf0c2adb33599f4a4054ace538fffebf86b27d7d683f4605",
+        "id": "r-def42cc5d1dd02a6",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:51+00:00",
       "type": "review"
     },
     {
@@ -5336,50 +5976,45 @@
       "type": "review"
     },
     {
-      "content_hash": "2bc3ee49f1e9b6668c1f3e1efa3bfb3497e65bfb26d0e97d43f15fa08239231c",
+      "content_hash": "7169df0bf24096c95c0a5a79224f48fefad68534696e763b6b18d92a6215fce8",
       "evidence_checked": [
         {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p14",
+          "anchor_id": "p30",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
         }
       ],
-      "id": "review-cb6bce913556c8fe2fc7",
+      "id": "review-ca9395fba7bd42f8631e",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "34780e2a0f3ccb2f72292e1c5489646f2f64c06751c3a8b176dac8a63a47d60f",
-        "job_id": "4ef3393ed06f11592c6afe363e3811ba29af0cb00fd06ec811336bcefddececd",
-        "output_hash": "5e3ac6a1712ad471346e37d88f48230421095478827ac6c328d0e45e8f9f7401",
-        "prompt_hash": "dee0710e007f993346448fe4ca48baed38972335a1c17162b988e9340552b5dd",
+        "input_hash": "cff2073d5dc765309d6aa6581c4b8d9e7fb3097f407db16f57fefa2b6fb78c64",
+        "job_id": "5931eb641b58b2e416eb21ef2f50e3d291e70c47e8f2996e72ec8963a6e484a4",
+        "output_hash": "a5b223e033df8a2055b23061aeff954d8b28860fcf6fb9cd35b08635321f719c",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d",
-        "request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "6abd7328-cdf2-4fd2-9676-9c718c3e46ab",
+        "request_id": "01a1478d0092520085e8c9bb2c9536bc",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:B01:14b17692a631",
-        "time": "2026-10-12T11:56:59+00:00",
-        "trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d"
+        "task": "atlas-audit:cff2073d5dc765309d6a",
+        "time": "2026-10-17T01:49:45+00:00",
+        "trace_id": "6abd7328-cdf2-4fd2-9676-9c718c3e46ab"
       },
-      "rationale": "The claim matches the paper's description of the pairformer module processing only pair and single representations, discarding the MSA representation after initial embedding, and reducing MSA processing. Passages p12 and p14 support this.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p30 shows examples of AF3 predictions for modified nucleic acids (methylated DNA, modified RNA) and ions, with RMSD values, matching the empirical claim.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "e7e24b5e858080c1eebd475345f2a1b6f2a1e05bd7b3a04652d73cfdcd5c15ca",
-        "id": "n-6ecdc3cdb0cf0aac",
+        "content_hash": "3023103d5c87d1239e04fc4438b208a9d90964fc14f25682f29e3ee3638a1686",
+        "id": "r-353479eecc1dd91b",
         "revision": 1
       },
-      "time": "2026-10-12T11:56:59+00:00",
+      "time": "2026-10-17T01:49:45+00:00",
       "type": "review"
     },
     {
@@ -5534,105 +6169,6 @@
       "type": "review"
     },
     {
-      "content_hash": "e3a74796973612e6ad6e05f5fcb1a2d9cf2b514c0c42f074dccaedb1c9c2e5a0",
-      "evidence_checked": [
-        {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p14",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-d72bbd93fb022cbd796c",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "34780e2a0f3ccb2f72292e1c5489646f2f64c06751c3a8b176dac8a63a47d60f",
-        "job_id": "4ef3393ed06f11592c6afe363e3811ba29af0cb00fd06ec811336bcefddececd",
-        "output_hash": "5e3ac6a1712ad471346e37d88f48230421095478827ac6c328d0e45e8f9f7401",
-        "prompt_hash": "dee0710e007f993346448fe4ca48baed38972335a1c17162b988e9340552b5dd",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d",
-        "request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:B01:14b17692a631",
-        "time": "2026-10-12T11:56:59+00:00",
-        "trace_id": "cacd8a18-bd90-4887-aa91-026ac666a47d"
-      },
-      "rationale": "The pairformer is described as a key component of the AF3 architecture (p12, p14), so the premise relation from the unified architecture to the pairformer is justified.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "7f4f3c56db96e04d11c8777b1670506c7300344253ddcac5ffdd58e108c0ac8a",
-        "id": "r-e33a33a15883653e",
-        "revision": 1
-      },
-      "time": "2026-10-12T11:56:59+00:00",
-      "type": "review"
-    },
-    {
-      "content_hash": "4b15738e707871dff0a22ecb50ff4495ad97d50fab9d745ecd641d268a70e9e5",
-      "evidence_checked": [
-        {
-          "anchor_id": "p16",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p17",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p18",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        }
-      ],
-      "id": "review-d9623eb9d024d1b957cc",
-      "judgment": "accepted",
-      "provider_receipt": {
-        "attempt": 1,
-        "finish_reason": "stop",
-        "input_hash": "62efee7ebfdaeb94995a95fb340e53405dc758a36da9471d416e8a2953ecac6f",
-        "job_id": "a464e71e5b2975fb66601d82ecb739655dc71a08dc07923e3a062ccb2cc0ccb9",
-        "output_hash": "284c6b9707f611d41f030613ef0ad5bda6e0359850a9cc30da97cb8b8e4b9a85",
-        "prompt_hash": "c9f1b93dcfb8011f6c3e09fb90a12a36e448459baab9b11e355e996b216f5a2c",
-        "provider": "SiliconFlow",
-        "provider_trace_id": "c43f8e27-4d1f-46a4-8c29-05e1fd6eec17",
-        "request_id": "01a130ca168c9c8e6f71fc39a005b762",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "state": "succeeded",
-        "task": "check:B01:cc62aaef8b37",
-        "time": "2026-10-12T15:45:03+00:00",
-        "trace_id": "c43f8e27-4d1f-46a4-8c29-05e1fd6eec17"
-      },
-      "rationale": "Passages p16–p18 show functional insights derived from RoseTTAFold models. The edge is warranted.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
-      "reviewer_type": "machine",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "source_fidelity_and_relation_warrant",
-      "target": {
-        "content_hash": "a8c89680a44976e15ea454b110a9051020e92860ccd8497d2313198084297206",
-        "id": "r-06b24b6bbd1016dd",
-        "revision": 1
-      },
-      "time": "2026-10-12T15:45:03+00:00",
-      "type": "review"
-    },
-    {
       "content_hash": "18a7cf75aec5fba4e320cea469afaa8f7de6840d17a0e8db4294e2b3d7201ecb",
       "evidence_checked": [
         {
@@ -5737,6 +6273,48 @@
       "type": "review"
     },
     {
+      "content_hash": "423edba753bfc97f3a056ebb2c0888d2033ac8f29641b2927043e465a58ed1af",
+      "evidence_checked": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-df7e9e0d4665c8f8402e",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "a99d44a96d200a8de19f3159833f9ee91b7f5e2e3aeadd288a12d17651de8373",
+        "job_id": "a8eb33a287ea50694ac639a58405e9136567641cc9202873debed824abb41b76",
+        "output_hash": "639c9a950045005cf820d6901d1195dda7cd4e732356e9c82f69ebd060b214fd",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "0fed46ef-4673-46fc-8a44-9c02bdcbad17",
+        "request_id": "01a1478f642f7f2db41d7af76013561b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:a99d44a96d200a8de19f",
+        "time": "2026-10-17T01:52:24+00:00",
+        "trace_id": "0fed46ef-4673-46fc-8a44-9c02bdcbad17"
+      },
+      "rationale": "p23 reports AF3 greatly outperforms classical docking tools such as Vina and Gold while not using structural inputs, directly bearing on the stated empirical conclusion.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "f1c4298a0c0df2fa113e83f8c9b466578e26f3e28579d5306f9137c3af127e9b",
+        "id": "r-a3dcc0416096ec8c",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:24+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "42b2e3ddb919ded41fd66a108245b580e132ac71b496ccae67078e21ab888248",
       "evidence_checked": [
         {
@@ -5776,6 +6354,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:56:59+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "823ce5006f41b6139a9bce194dbd66bdae1aaff255cc65e55264d769ea5d0cca",
+      "evidence_checked": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-e19e0ae62076f314c7c7",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f2e3579918b0d8ae69e7af1edf5cedc92609c9126eb3dab10549e32df021dcdf",
+        "job_id": "74a182abe84881ab389a2aaf1a611a2fe5613d1a33ecea8c83f22f4e455fe754",
+        "output_hash": "482f92d13da25b8654c97b06a6031e6395fec79fa87cfd2b147bba6f94fe2c15",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fee2568b-f3c1-448b-8cc1-a849ff69069d",
+        "request_id": "01a1478f0ac35995f3963789b9e6d3cc",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f2e3579918b0d8ae69e7",
+        "time": "2026-10-17T01:51:58+00:00",
+        "trace_id": "fee2568b-f3c1-448b-8cc1-a849ff69069d"
+      },
+      "rationale": "p44 states antibody-antigen top-ranked predictions keep improving with more seeds up to 1,000, incurring extra computational cost, and this effect is not general. This limits the AF3 outperformance claim's practical applicability.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "c6395553e6664321c4e081337096eef71ba7d80e5ec887ee3c762f152bdfeb49",
+        "id": "r-93b05285344dfc6d",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:58+00:00",
       "type": "review"
     },
     {
@@ -5826,6 +6451,48 @@
       "type": "review"
     },
     {
+      "content_hash": "9c39f2ac32b94a7beab12ba69aea6d822f9a3eea066860dcd64a7ce4ebe36f99",
+      "evidence_checked": [
+        {
+          "anchor_id": "p42",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-e59840aad27708d1f5ec",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "80a8cc6c767d79405ca1cd2573ab0abbf83fdfd01c9c60f8eaca4f28f5affc8d",
+        "job_id": "ea3657df911104ecb654053adb7adb9dee3a057249904eaa455a557932273afb",
+        "output_hash": "2f6c82c462bc82af2768266e2c0a27b006c10c05dbb5a88dec5849e2fa06b4a3",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "06df6e5a-23d0-4b4e-a002-371de871264c",
+        "request_id": "01a1478d7c82cefbdf201ac4113b125e",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:80a8cc6c767d79405ca1",
+        "time": "2026-10-17T01:50:16+00:00",
+        "trace_id": "06df6e5a-23d0-4b4e-a002-371de871264c"
+      },
+      "rationale": "p42 states AF3 predicts static structures and multiple random seeds 'do not produce an approximation of the solution ensemble,' a limitation bounding the architecture.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "62101a52c89bb07ba8d87dd4459f09ce130ad95347fc3f0ce5ff702d012b49df",
+        "id": "r-4b6e937dd032845c",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:16+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "7af0371b96122715a57c6b7b4efec92ea754a80b4a75ef62522aa2ce0364cc6c",
       "evidence_checked": [
         {
@@ -5865,6 +6532,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:56:59+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "63cb847c6994c46b51dd62238c3e9c299d5f8c520c8c48ef715d55dbe68aace7",
+      "evidence_checked": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-eeeb7d38409ac4609b8e",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "01929efcd212a96b67ded13d29f18aac7be49b5dabe4b351f0f2e0180cebea4d",
+        "job_id": "adf5f0f4db015406243b9bbf8cd1f9628c45d15709ff9269f6687b1761dc1119",
+        "output_hash": "8239fccc539e49727ff18b34dc6145eef6bf009a00acab14cfbb6266c0d2820f",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "a31df5dc-21c2-40e1-8e24-d32a94ac63ce",
+        "request_id": "01a147914efdaf49fc320fe7489a509a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:01929efcd212a96b67de",
+        "time": "2026-10-17T01:54:30+00:00",
+        "trace_id": "a31df5dc-21c2-40e1-8e24-d32a94ac63ce"
+      },
+      "rationale": "The abstract and results state AF3's diffusion-based unified framework achieves substantially higher accuracy than specialized tools across protein-ligand, nucleic-acid, and antibody-antigen tasks.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "30db0aa47089a0bea0c0a550c71da8e91374f937a7a9937a9f81a39a3ae1b90e",
+        "id": "r-f7f406e350065beb",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:30+00:00",
       "type": "review"
     },
     {
@@ -5915,6 +6629,53 @@
       "type": "review"
     },
     {
+      "content_hash": "8a0699dc794b3726da72ae8c15df80915431721b4b32229d4922d97928c19856",
+      "evidence_checked": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p22",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-f1507aa6350e826395aa",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f0351fa51c4e7b6940de36e8062fdf658ce93b4cfd8807afc5784fa10e9d6ccd",
+        "job_id": "585639d693c8952ed01ad0b296e22b900373cbb9daea9725932ea5c75e415db0",
+        "output_hash": "4bb9ef65c75589df074596558a164299b30a7cefe40631ec7586ece584265ff6",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b6124895-d2cd-4be8-8ed5-9826e02e17c7",
+        "request_id": "01a1478cd254a42b61bd249a0d6d4692",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f0351fa51c4e7b6940de",
+        "time": "2026-10-17T01:49:36+00:00",
+        "trace_id": "b6124895-d2cd-4be8-8ed5-9826e02e17c7"
+      },
+      "rationale": "p9 and p22 report AF3 predictions of large complexes (4,665-residue spike, 7,663-residue ribosomal subunit) with high LDDT/GDT scores, supporting the scalability claim of the unified architecture.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "d1e7e4da297435ab3190746aa55e7971aaab71310ae48703de110257ea738736",
+        "id": "r-2db85665cc839974",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:36+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "4583cd1a734bf50b6abc1481e12e8833488e9c537d91a30d0bf2d70fe65c0b19",
       "evidence_checked": [
         {
@@ -5959,6 +6720,53 @@
         "revision": 1
       },
       "time": "2026-10-12T11:56:59+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ddb561a8213fea62435b5282fbe1a44edba8893803510e74ff6ef90a9757adbb",
+      "evidence_checked": [
+        {
+          "anchor_id": "p32",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-f36e86054dd9f2661b1e",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "aa42340ded01eeaf98f6f7a531123809c2e143d4a191e54ecf27c2d6c36e864c",
+        "job_id": "4dd8e4942fca21998831d2714e3748bd7ebca07d618a37f9ee8c8ec81da86887",
+        "output_hash": "50c727ff7ce1b6bf0d23cd2ced15dbfb28287fe5d11f929e108daa50c64b7fc4",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "95e53b14-bff5-420a-9d3c-f23104d5d34d",
+        "request_id": "01a147a574d9e55e79542b8fcc48cc7a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:aa42340ded01eeaf98f6",
+        "time": "2026-10-17T02:16:27+00:00",
+        "trace_id": "95e53b14-bff5-420a-9d3c-f23104d5d34d"
+      },
+      "rationale": "p44 states top-ranked predictions keep improving with more model seeds even at 1,000 (P=2.0×10−5), and this large improvement is not observed generally for other molecule classes; p32 confirms ranking by protein–protein ipTM.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "347ca9cd05c153a55afbd1253ed44865ddaaa076cdc23c63ae02f3a448aee86a",
+        "id": "n-137dbeca62da7e63",
+        "revision": 1
+      },
+      "time": "2026-10-17T02:16:27+00:00",
       "type": "review"
     },
     {
@@ -6049,6 +6857,53 @@
       },
       "time": "2026-10-12T11:56:59+00:00",
       "type": "review"
+    },
+    {
+      "content_hash": "bd4fdcf90e3ce582223eba792ea996c658eb21cc4e93a7c0e549407e4cef186e",
+      "evidence_checked": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-fd882758894931c3f63e",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3fa446104c5eebe3066b6bc769a2607d29d7b0e4f7e2d86e9931e66d756577af",
+        "job_id": "cb31b6dcaa0508bc241d4b1b776dd58f289a66c0f04ccc5256c9c683e89ebbc5",
+        "output_hash": "04dccbd76dac1a2acb163523c0265e7afb8f651c614dddc8aafa4f2339d0c779",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fb3ae432-674f-4fbd-92ef-5aacc167b7a8",
+        "request_id": "01a1478e470fcadae218dac886f2eca7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:3fa446104c5eebe3066b",
+        "time": "2026-10-17T01:51:08+00:00",
+        "trace_id": "fb3ae432-674f-4fbd-92ef-5aacc167b7a8"
+      },
+      "rationale": "p31 states AF3 'has a very similar dependence on MSA depth to AlphaFold-Multimer v.2.3; proteins with shallow MSAs are predicted with lower accuracy', and p33 restricts the analysis to complexes <20 chains and <2,560 tokens.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "ffcdb0c9b310ed4c43cd6f1cefbfae0dceda4d1324f73c915bc8d6d9de427afd",
+        "id": "r-6f08f57696b26c1d",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:08+00:00",
+      "type": "review"
     }
   ],
   "selection": {
@@ -6056,7 +6911,7 @@
     "primary_limit": 12,
     "relation_limit": 40
   },
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
   "source_anchors": [
     {
       "anchor_id": "p4",
@@ -6254,16 +7109,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p12",
-      "source_id": "s-f4a9c46d8b6e8da2",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p14",
-      "source_id": "s-f4a9c46d8b6e8da2",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p2",
       "source_id": "s-f4a9c46d8b6e8da2",
       "source_revision": 1
@@ -6275,16 +7120,6 @@
     },
     {
       "anchor_id": "p14",
-      "source_id": "s-f4a9c46d8b6e8da2",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p15",
-      "source_id": "s-f4a9c46d8b6e8da2",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p12",
       "source_id": "s-f4a9c46d8b6e8da2",
       "source_revision": 1
     },
@@ -6464,21 +7299,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p16",
-      "source_id": "s-7b2101824f73d1a9",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p17",
-      "source_id": "s-7b2101824f73d1a9",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p18",
-      "source_id": "s-7b2101824f73d1a9",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p22",
       "source_id": "s-f4a9c46d8b6e8da2",
       "source_revision": 1
@@ -6559,11 +7379,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p7",
-      "source_id": "s-7b2101824f73d1a9",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p31",
       "source_id": "s-f4a9c46d8b6e8da2",
       "source_revision": 1
@@ -6579,16 +7394,6 @@
       "source_revision": 1
     },
     {
-      "anchor_id": "p12",
-      "source_id": "s-f4a9c46d8b6e8da2",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p15",
-      "source_id": "s-f4a9c46d8b6e8da2",
-      "source_revision": 1
-    },
-    {
       "anchor_id": "p6",
       "source_id": "s-057b1d8c009ba859",
       "source_revision": 1
@@ -6596,16 +7401,6 @@
     {
       "anchor_id": "p7",
       "source_id": "s-7b2101824f73d1a9",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p12",
-      "source_id": "s-f4a9c46d8b6e8da2",
-      "source_revision": 1
-    },
-    {
-      "anchor_id": "p14",
-      "source_id": "s-f4a9c46d8b6e8da2",
       "source_revision": 1
     },
     {
@@ -7802,60 +8597,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p16",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p17",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p18",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-058619048b6760c2",
-        "revision": 1
-      },
-      "content_hash": "a8c89680a44976e15ea454b110a9051020e92860ccd8497d2313198084297206",
-      "curation": {
-        "input_hash": "c94a2860c8c62b447c14826c44a957b5e2512aafb49b757d1acd46aae1e92b98",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "cc62aaef8b3750c1e97be44e1ee57aef8577662b7ad4830af3bb2838b35b2870",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130c9304517db6d4096bc12b63e19",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130ca168c9c8e6f71fc39a005b762",
-        "time": "2026-10-12T15:44:04+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-06b24b6bbd1016dd",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-43db577b823f7b5d",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The 3-track architecture's accuracy enables functional insights.",
-      "type": "relation",
-      "warrant": "RoseTTAFold's accurate models, based on the 3-track architecture, provided functional insights for proteins without known structures."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p22",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
@@ -8404,50 +9145,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p7",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-43db577b823f7b5d",
-        "revision": 1
-      },
-      "content_hash": "af7912b9cd58a3cadc86aad92aba94260fd8d4cd81a278d8fd80950145c9e210",
-      "curation": {
-        "input_hash": "c94a2860c8c62b447c14826c44a957b5e2512aafb49b757d1acd46aae1e92b98",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "cc62aaef8b3750c1e97be44e1ee57aef8577662b7ad4830af3bb2838b35b2870",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130c9304517db6d4096bc12b63e19",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130ca168c9c8e6f71fc39a005b762",
-        "time": "2026-10-12T15:44:04+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-7466fc3525bd75f9",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-160befdf51314fb8",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "CAMEO results support the 3-track architecture's effectiveness.",
-      "type": "relation",
-      "warrant": "Outperforming other servers on CAMEO provides independent validation of the 3-track architecture's accuracy."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p31",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
@@ -8580,55 +9277,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p15",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-779419114e545af4",
-        "revision": 1
-      },
-      "content_hash": "e8b1220d169b6128b4beace5af891a94d14d507d19fb103dbf46280d12651e53",
-      "curation": {
-        "input_hash": "60917dadceae00610f710f2132d19d1b23a4f684e310acfae720b216cd68b1e3",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "14b17692a6312cac20c0cec47ab5d22f6be7f60d372c1a1b2ccfa9580902f6c1",
-        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ff7fb8aeac98b957bca94f7d796",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "time": "2026-10-12T11:55:42+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-a6dcbe2c63841aba",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-711b35dd72329889",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Architectural evolution",
-      "type": "relation",
-      "warrant": "The unified diffusion-based architecture (n1) incorporates the diffusion module (n3) as the structure generation component, replacing the AF2 structure module. The diffusion module operates directly on raw atom coordinates, which is essential for handling arbitrary chemical components."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p6",
           "source_id": "s-057b1d8c009ba859",
           "source_revision": 1
@@ -8713,55 +9361,6 @@
       "scope": "The 3-track architecture's performance is validated by CAMEO blind tests.",
       "type": "relation",
       "warrant": "RoseTTAFold's superior performance on CAMEO targets supports the effectiveness of the 3-track architecture."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p14",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-6ecdc3cdb0cf0aac",
-        "revision": 1
-      },
-      "content_hash": "7f4f3c56db96e04d11c8777b1670506c7300344253ddcac5ffdd58e108c0ac8a",
-      "curation": {
-        "input_hash": "60917dadceae00610f710f2132d19d1b23a4f684e310acfae720b216cd68b1e3",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "14b17692a6312cac20c0cec47ab5d22f6be7f60d372c1a1b2ccfa9580902f6c1",
-        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ff7fb8aeac98b957bca94f7d796",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "time": "2026-10-12T11:55:42+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-e33a33a15883653e",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-711b35dd72329889",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Architectural evolution",
-      "type": "relation",
-      "warrant": "The unified diffusion-based architecture (n1) relies on the pairformer module (n2) as a key component to process pair and single representations, replacing the evoformer. The pairformer is described as part of the substantial evolution of the AF2 architecture, enabling the model to handle diverse chemical entities."
     },
     {
       "anchors": [
@@ -9220,40 +9819,8 @@
     },
     {
       "contribution": {
-        "content_hash": "e7e24b5e858080c1eebd475345f2a1b6f2a1e05bd7b3a04652d73cfdcd5c15ca",
-        "id": "n-6ecdc3cdb0cf0aac",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "B01",
-          "origin": "record",
-          "pillar": "biology_medicine",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "AlphaFold 3 biomolecular-interaction structure prediction"
-        }
-      ]
-    },
-    {
-      "contribution": {
         "content_hash": "e57ab7d236b820f65be5430c492f945655ee73578c6d745af52498a26ea94879",
         "id": "n-711b35dd72329889",
-        "revision": 1
-      },
-      "topics": [
-        {
-          "id": "B01",
-          "origin": "record",
-          "pillar": "biology_medicine",
-          "reason": "Included in the source-screened contribution record.",
-          "title": "AlphaFold 3 biomolecular-interaction structure prediction"
-        }
-      ]
-    },
-    {
-      "contribution": {
-        "content_hash": "33774ed399d66a93d84b04be804ec6d197dc993f310d8d9405b1688e1406e900",
-        "id": "n-779419114e545af4",
         "revision": 1
       },
       "topics": [
@@ -9478,5 +10045,958 @@
     "The source does not include independent replication or external validation of the results beyond CAMEO.",
     "The source does not provide a complete historical account of the development of RoseTTAFold, only references to prior work.",
     "Some source accounts were held during the 1.1 editorial correction; their dependent interpretations require recheck. Earlier snapshots remain available."
+  ],
+  "work_insight_memberships": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "0a1dd45017003fa3918bd38a976b795d53491cdf9035c7d18ec2426de7591ef5",
+        "id": "n-00d342843ee2479a",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "c1fe869be78e84d1942aab7affacd67f741b275b3946ce4144886e90b83789b1",
+        "id": "w-source-7b2101824f73d1a9",
+        "revision": 1
+      },
+      "work_id": "w-source-7b2101824f73d1a9"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p15",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2115d80351dbb8ee9ec099fd6025e41e9ee97febbf313a488c0c3973cc1b1c67",
+        "id": "n-058619048b6760c2",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "c1fe869be78e84d1942aab7affacd67f741b275b3946ce4144886e90b83789b1",
+        "id": "w-source-7b2101824f73d1a9",
+        "revision": 1
+      },
+      "work_id": "w-source-7b2101824f73d1a9"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p32",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "4eff28cf5288c822b706493b796fa7795daafca79cdafb0ce71bb136a88c1236",
+        "id": "n-083f6daeeca77f9b",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+        "id": "w-source-057b1d8c009ba859",
+        "revision": 1
+      },
+      "work_id": "w-source-057b1d8c009ba859"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p5",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "a788179ed22dc845648ddfe00fa2b642e36370486c2c474e109a72dd2905ba49",
+        "id": "n-0e38b8822dd12b20",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "c1fe869be78e84d1942aab7affacd67f741b275b3946ce4144886e90b83789b1",
+        "id": "w-source-7b2101824f73d1a9",
+        "revision": 1
+      },
+      "work_id": "w-source-7b2101824f73d1a9"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "1babcbb8b7f2c84898ca4275a6e5f9b17344d0e148e51069254bc7dcdd417a53",
+        "id": "n-111816b6705fa729",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+        "id": "w-source-057b1d8c009ba859",
+        "revision": 1
+      },
+      "work_id": "w-source-057b1d8c009ba859"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p32",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p44",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "347ca9cd05c153a55afbd1253ed44865ddaaa076cdc23c63ae02f3a448aee86a",
+        "id": "n-137dbeca62da7e63",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p32",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "1275ae6732ac07c037ef14f69adc7a5ad729662965f741381eddcbdf2ac2db49",
+        "id": "n-143fd0ebd9c38e03",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "cc8df4508b72aff8a5648e137780b14237bb60f2a39e36ecadc8f7cf0310b01d",
+        "id": "n-160befdf51314fb8",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "c1fe869be78e84d1942aab7affacd67f741b275b3946ce4144886e90b83789b1",
+        "id": "w-source-7b2101824f73d1a9",
+        "revision": 1
+      },
+      "work_id": "w-source-7b2101824f73d1a9"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p23",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p24",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "bd6bb932ab7c9d9e3f1b1559c9baafc73cb86816e933d26776dff5fb625375c0",
+        "id": "n-1ce856fde6e35d1a",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p21",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "56eefb2cfe7873b1b29724cb2c67092e498be675014348a78ac66322092530ed",
+        "id": "n-24490ec7020f39dd",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+        "id": "w-source-057b1d8c009ba859",
+        "revision": 1
+      },
+      "work_id": "w-source-057b1d8c009ba859"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "efb10b8ae8289380194e3c62b53952cd9ad3ba79d6594ffcdceae909d539e2bb",
+        "id": "n-2a2a0298d1245141",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+        "id": "w-source-057b1d8c009ba859",
+        "revision": 1
+      },
+      "work_id": "w-source-057b1d8c009ba859"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-057b1d8c009ba859",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2aa679387330abcd7706c57456c8674f823a45ede55705468ae89af57b706fbc",
+        "id": "n-2cb219a9998c1a05",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+        "id": "w-source-057b1d8c009ba859",
+        "revision": 1
+      },
+      "work_id": "w-source-057b1d8c009ba859"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p31",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p33",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "0d2612daeb1da55f6b2f17d1ac0674b1d001f8a5a6b644a889782415f3aa7f9b",
+        "id": "n-36199efa1e91cb6a",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "f4e0ee688b9a899acdc1cc10ff1bb980c3631d961f6f8e2aabb6ff468dcfe8db",
+        "id": "n-36d6c10a528c4447",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "c1fe869be78e84d1942aab7affacd67f741b275b3946ce4144886e90b83789b1",
+        "id": "w-source-7b2101824f73d1a9",
+        "revision": 1
+      },
+      "work_id": "w-source-7b2101824f73d1a9"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-7b2101824f73d1a9",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "cb70d2479aa2657d1b6a299cbf2d2f43698134d0c52c5f6a9494f70c36137361",
+        "id": "n-43db577b823f7b5d",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "c1fe869be78e84d1942aab7affacd67f741b275b3946ce4144886e90b83789b1",
+        "id": "w-source-7b2101824f73d1a9",
+        "revision": 1
+      },
+      "work_id": "w-source-7b2101824f73d1a9"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p42",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p43",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "35168dad7158d6acc13f90c9002d82fdbbc9e2c77245d8bb7c19e8300d564525",
+        "id": "n-45adf700ccba91c9",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p41",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "e542dcf5c6ee3e1c3b45177d8b4852b7bc342d0a85ead1c4c05f98dc1435d0d3",
+        "id": "n-60bd317af3d28a6a",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "e57ab7d236b820f65be5430c492f945655ee73578c6d745af52498a26ea94879",
+        "id": "n-711b35dd72329889",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p30",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "b510e79e28c12e672facab519a6e11e8e0dad3eccb635c9409f828bccc7c77ca",
+        "id": "n-7b9f43b45e25c221",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p34",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p36",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p37",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "3009ab22a6c190944d71733750b8ff4b7a7916d2ab4a300b5d3ef7c6004735cf",
+        "id": "n-7f92a136b6dbe37b",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p27",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "b8a5870f4131f9db5e874c98c4fa08bae4d48da48cfeef0d9ac2f3213c18cfb9",
+        "id": "n-8ee9810539d14639",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p30",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "412ccab979133640e8f7f9d24cf0e9eaf1d0129e7e509f501c43fbee501456a7",
+        "id": "n-9c9cf88cda0ba36f",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p27",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p62",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "dac4acf0616f18c27efb10a41025241c698c1cc06fdf010e68cf4e8fbed03e9a",
+        "id": "n-9e2728319c4ed2b0",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p30",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2e53abb14b499cdc170b77f5006289b1c37d4d73be91318415fb14864016a285",
+        "id": "n-a32c34dd9e1248de",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "489ffc0c996bb96c576165d55d672d83b7bf1a128c15dbe138cd442819c94e9c",
+        "id": "n-a723dc08f3320cc3",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p26",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p28",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "a5e3aff270af62203b828e9a1c6378b627923ec6e3ab3bf7cddd9986efec20cb",
+        "id": "n-b14ef59696253b87",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p22",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "4444f7dd8375f446d193ecd6645f536671e17c4cc6a01cb9fdd6b61601e55b83",
+        "id": "n-e6a299176bb14107",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p23",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p26",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p31",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "630c32ffb77407fe950279aa60355165c2320131321013d2c450c84f29804f6b",
+        "id": "n-f3afe3ca519fca0b",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p9",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p22",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "683b809cebbeb9867ab60de7296c3e75d5c180f98a4469af883dc7fdfee92648",
+        "id": "n-f4001d8ae6f581bd",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p29",
+          "source_id": "s-f4a9c46d8b6e8da2",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2c5b6fc489f5e2a0894083921ae30299035d5a1fd45e61d8d018d4bfa49c47e7",
+        "id": "n-feedb19c2c0d0955",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+        "id": "w-source-f4a9c46d8b6e8da2",
+        "revision": 1
+      },
+      "work_id": "w-source-f4a9c46d8b6e8da2"
+    }
+  ],
+  "works": [
+    {
+      "aliases": [],
+      "content_hash": "c1fe869be78e84d1942aab7affacd67f741b275b3946ce4144886e90b83789b1",
+      "id": "w-source-7b2101824f73d1a9",
+      "insight_count": 15,
+      "kind": "publication",
+      "people": [
+        "person-ab8b61ec8eed9bdc"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Accurate prediction of protein structures and interactions using a 3-track neural network",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7612213/fullTextXML"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "d73813b0e5373366552bcac75eedfe32eb5f6046aa2ecfc4652136462cad7c82",
+          "id": "s-7b2101824f73d1a9",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "biology_medicine"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Accurate prediction of protein structures and interactions using a 3-track neural network",
+      "topic_ids": [
+        "B01"
+      ],
+      "year": 2021
+    },
+    {
+      "aliases": [],
+      "content_hash": "18c7b3ffeea3a9905171974dd551fc078dd40b2be20658941db80c7e46980e27",
+      "id": "w-source-057b1d8c009ba859",
+      "insight_count": 15,
+      "kind": "publication",
+      "people": [
+        "person-1b0f85e0cb9cac27",
+        "person-402a831d0811aa2c"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Highly accurate protein structure prediction with AlphaFold",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8371605/fullTextXML"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "3b5f2845cfc0f7cf2b225f1ffbb5af057a6bb3890b20fb88d2e91fad1f2cda4d",
+          "id": "s-057b1d8c009ba859",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "biology_medicine"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Highly accurate protein structure prediction with AlphaFold",
+      "topic_ids": [
+        "B01"
+      ],
+      "year": 2021
+    },
+    {
+      "aliases": [],
+      "content_hash": "058633d3017cdf9281eb26e5981a03dea9e581e09c6851ac50c1aae7cd4481b7",
+      "id": "w-source-f4a9c46d8b6e8da2",
+      "insight_count": 24,
+      "kind": "publication",
+      "people": [
+        "person-402a831d0811aa2c"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11168924/fullTextXML"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "77f78e406890a8d3527e3a64d32ed9f0466fe7ff6abf2519d73973e90b177cff",
+          "id": "s-f4a9c46d8b6e8da2",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "biology_medicine"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "topic_ids": [
+        "B01"
+      ],
+      "year": 2024
+    }
   ]
 }

@@ -1,0 +1,1954 @@
+{
+  "release_id": "1.4.1-exploratory",
+  "scope": "Bibliographic selection and identity metadata, separately from insight extraction. Source documents are private authoring cache and are not redistributed.",
+  "acquisitions": [
+    {
+      "batch": "acquisition",
+      "name": "nobel",
+      "url": "https://api.nobelprize.org/2.1/nobelPrizes?limit=1000&sort=asc",
+      "status": 200,
+      "bytes": 793812,
+      "sha256": "aa974ccdaa77e3d4ba0ae4195a3e3a0bf91a3bea0f9c773ec9ea96130cb68232"
+    },
+    {
+      "batch": "acquisition",
+      "name": "nobel-terms",
+      "url": "https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/",
+      "status": 200,
+      "bytes": 158190,
+      "sha256": "fe470897e13e5e3b53001171bf05535df12078e1307a52d0399110c811f82cca"
+    },
+    {
+      "batch": "acquisition",
+      "name": "fields",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal",
+      "status": 200,
+      "bytes": 58511,
+      "sha256": "34094646371300a5dc59de8bdaa35895aedb5df8707763c1fcf54234d93c5057"
+    },
+    {
+      "batch": "acquisition",
+      "name": "abel",
+      "url": "https://abelprisen.no/winners",
+      "status": 200,
+      "bytes": 132852,
+      "sha256": "ec4b5169e194ca9df30096a778ead449a21c0928024d91ce47135ce2ee482b6b"
+    },
+    {
+      "batch": "acquisition",
+      "name": "acm",
+      "url": "https://amturing.acm.org/byyear.cfm",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "batch": "acquisition",
+      "name": "acm-awards",
+      "url": "https://awards.acm.org/award_winners/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "batch": "acquisition2",
+      "name": "chm",
+      "url": "https://computerhistory.org/hall-of-fellows/",
+      "bytes": 130816,
+      "sha256": "b7c7fd9594c43ac82abdace50de4acfd34e760ed6f9f1d917e62eba3a9529a0a"
+    },
+    {
+      "batch": "acquisition2",
+      "name": "turing",
+      "url": "https://turingarchive.kings.cam.ac.uk/about-alan-turing",
+      "bytes": 25196,
+      "sha256": "9368975d3200f815d7e53230a2f0014ee4516226e84aaf0fb69bbe9ae69e5e27"
+    },
+    {
+      "batch": "acquisition2",
+      "name": "turing-works",
+      "url": "https://turingarchive.kings.cam.ac.uk/computable-numbers",
+      "bytes": 24693,
+      "sha256": "f2d57dce81ef8e87f9fd33d4c5b65e19365ed8fdd93ad8ee44bc9b9ab353e315"
+    },
+    {
+      "batch": "acquisition2",
+      "name": "ias",
+      "url": "https://www.ias.edu/electronic-computer-project",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "batch": "acquisition2",
+      "name": "fields2026",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+      "bytes": 37798,
+      "sha256": "21a9fa3c9a25d5b22124e10cd189d7901bb1690a3db00b655d6d213040c6e862"
+    },
+    {
+      "batch": "acquisition2",
+      "name": "abel-en",
+      "url": "https://abelprize.no/winners",
+      "bytes": 132623,
+      "sha256": "511c93c86a98e5242f6c6a5384f5bf7eca525bf4da5f5137c937e36b9450ccec"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Euclid",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/",
+      "bytes": 95342,
+      "sha256": "5104340fd296b2c805d5a6b25d0851e4af2967ad92783d288bf6a3bb106e0ece",
+      "people": [
+        "Euclid"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Archimedes",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+      "bytes": 86853,
+      "sha256": "e745d909db995490057ad05fffd795c342d6d82df27855491c0f63f699140a07",
+      "people": [
+        "Archimedes"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Leonhard Euler",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/",
+      "bytes": 173626,
+      "sha256": "972ba28877f8f333f6abbe1134e5e174064bb1c97aa0f3f8b3a5c6cf2cc2ab8b",
+      "people": [
+        "Leonhard Euler"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Carl Friedrich Gauss",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/",
+      "bytes": 81508,
+      "sha256": "669d563dd9d4a2342eae760f2cfea956e724d3a0151319e0377f9210f0b0de05",
+      "people": [
+        "Carl Friedrich Gauss"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Bernhard Riemann",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/",
+      "bytes": 65448,
+      "sha256": "55899400342dc870aff3fe043366594cbcdedbb7a15dc081872f7a4a5bcad06b",
+      "people": [
+        "Bernhard Riemann"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Emmy Noether",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Noether_Emmy/",
+      "bytes": 80077,
+      "sha256": "419c64f50f5e508b1e6526aacfc7a99c46925101813a64d8745ac474e07269d7",
+      "people": [
+        "Emmy Noether"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "David Hilbert",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/",
+      "bytes": 134590,
+      "sha256": "8d9329efca79aa2dbfcc5475be0060e8f572a3ad43aea4c842ec6fa97576be2e",
+      "people": [
+        "David Hilbert"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Kurt Gödel",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Godel/",
+      "bytes": 46063,
+      "sha256": "b1bb251032761f0e334386a7b24b329bc2599bc234f6e477bd0fa491e105df67",
+      "people": [
+        "Kurt Gödel"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Alonzo Church",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Church/",
+      "bytes": 36459,
+      "sha256": "5615d5dc58d6587d6bafe33af68a31c0e08489dc5c15abc1f12c307608a91ac7",
+      "people": [
+        "Alonzo Church"
+      ],
+      "subject": "computer_science"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Alan Turing",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Turing/",
+      "bytes": 49133,
+      "sha256": "0fe6be29118ed1c152e751700c29ff2e09f4df71f9a2bf8625f0ef697bd534ae",
+      "people": [
+        "Alan Turing"
+      ],
+      "subject": "computer_science"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "John von Neumann",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Von_Neumann/",
+      "bytes": 65368,
+      "sha256": "6181071efe796ac63add45b983c66fc3c9490ac294b47103d65bcb20de39597c",
+      "people": [
+        "John von Neumann"
+      ],
+      "subject": "computer_science"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "George Boole",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Boole/",
+      "bytes": 43560,
+      "sha256": "fc74f388afd4dc98d7c44ac01034e58a3b18842386a772272724b98bcacbfcd5",
+      "people": [
+        "George Boole"
+      ],
+      "subject": "computer_science"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Ada Lovelace",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Lovelace/",
+      "bytes": 41128,
+      "sha256": "b666d326893ad8b4f59343f1ccc65fbde0f4d52b1a5ae246818f1541b5c22c95",
+      "people": [
+        "Ada Lovelace"
+      ],
+      "subject": "computer_science"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Charles Babbage",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Babbage/",
+      "bytes": 75774,
+      "sha256": "33dc10c5c3b075bb0e71a9ac2c6cd1daf3e3f4a6f4792cfaeb3d0a64533ab326",
+      "people": [
+        "Charles Babbage"
+      ],
+      "subject": "computer_science"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Joseph Fourier",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/",
+      "bytes": 47096,
+      "sha256": "2d669ad8bd2d5909649137e6abaa2ebd52f41455f0c0fa6360331cd46458c5ff",
+      "people": [
+        "Joseph Fourier"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Pierre-Simon Laplace",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/",
+      "bytes": 92997,
+      "sha256": "7e01dcc5b75309975ff272a1794d35894d2251ee859f72feaeaf7c7b0ed3f2dd",
+      "people": [
+        "Pierre-Simon Laplace"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Joseph-Louis Lagrange",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/",
+      "bytes": 81108,
+      "sha256": "fccc1fde7a77120db4c00ba6a8b9fe8a9773ba60047c62c935b91ea5e2262f06",
+      "people": [
+        "Joseph-Louis Lagrange"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Augustin-Louis Cauchy",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/",
+      "bytes": 64145,
+      "sha256": "b9be157f09ad6ddc2d4f423edc9472e4c5bd9a0b7d6ae7299357b8f35211a193",
+      "people": [
+        "Augustin-Louis Cauchy"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Évariste Galois",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Galois/",
+      "bytes": 44388,
+      "sha256": "5ab1c1c2197e807be5facf35d661ad11e34ca33adcdc931541b15020a2999744",
+      "people": [
+        "Évariste Galois"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Georg Cantor",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Cantor/",
+      "bytes": 65858,
+      "sha256": "911c8ebd8246716cbe8e19fb77e9abf7d1c828d2f405c648d7dced0faa043d7d",
+      "people": [
+        "Georg Cantor"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Srinivasa Ramanujan",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Ramanujan/",
+      "bytes": 61488,
+      "sha256": "4427bb2d3051af5df9c4eee0e452cd7e4fb9c514e992e9cceb973f3b7a4c7bf1",
+      "people": [
+        "Srinivasa Ramanujan"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Florence Nightingale",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Nightingale/",
+      "bytes": 30925,
+      "sha256": "6282bfd7fb3759fb45ba5d7bb70c0abe69af5b61db35e5422b67bfd036d0ab22",
+      "people": [
+        "Florence Nightingale"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Sofia Kovalevskaya",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/",
+      "bytes": 95515,
+      "sha256": "f9529dff418166cd8fec7208926688262378b679491007bced7967c781264166",
+      "people": [
+        "Sofia Kovalevskaya"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Muhammad ibn Musa al-Khwarizmi",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/",
+      "bytes": 105922,
+      "sha256": "2381600956a9a26e0256ff82c077020b58b3f9c35fa31e6f4b915ee736c3bd77",
+      "people": [
+        "Muhammad ibn Musa al-Khwarizmi"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "James Clerk Maxwell",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Maxwell/",
+      "bytes": 64995,
+      "sha256": "ad82ad3e82c89590663dd56f3c0ed50dc312d477753f43467235ea577ce27d31",
+      "people": [
+        "James Clerk Maxwell"
+      ],
+      "subject": "physics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Thomas Bayes",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Bayes/",
+      "bytes": 41390,
+      "sha256": "772bb165a5018d772b40fae522119deb29c66356e58e4546ce044a237c7bd58d",
+      "people": [
+        "Thomas Bayes"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Ronald Aylmer Fisher",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Fisher/",
+      "bytes": 39970,
+      "sha256": "3546b02b6257d6c31c05fcf6446880a0d79a03464060189a0ce282b11d584e8d",
+      "people": [
+        "Ronald Aylmer Fisher"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "classics-acquisition",
+      "family": "mactutor",
+      "name": "Andrey Kolmogorov",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Kolmogorov/",
+      "bytes": 57083,
+      "sha256": "0c29fbbb315e1c35548a14523c648d671ad59d3d2e12b6a2f6e13a7683ac1091",
+      "people": [
+        "Andrey Kolmogorov"
+      ],
+      "subject": "mathematics"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "8d3da00a32df59eb",
+      "name": "Galileo Galilei",
+      "sha256": "c016e8f3d2576d803045024557cd854f6c4339c341a8e19612d578e2faa1beaa",
+      "subject": "physics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "c4e29cd260830e3f",
+      "name": "Johannes Kepler",
+      "sha256": "260adffe1ed3487c3770d376ada1d3ed805209b39fc462f2364dad49a1b82e95",
+      "subject": "physics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Kepler/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "582fad60d949da90",
+      "name": "Michael Faraday",
+      "sha256": "e2e247499f4b8214c06adaef092773709ba0b4da6c350f1f313afee8025b27b0",
+      "subject": "physics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Faraday/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "274e1a0c2e3bc55e",
+      "name": "Ludwig Boltzmann",
+      "sha256": "d0c682bf2da485dd07ef455a509851fe5268babb5a37fe73b69c45ba22cd7c74",
+      "subject": "physics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Boltzmann/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "87b7e9e202961c8b",
+      "name": "William Thomson (Lord Kelvin)",
+      "sha256": "e9a8a90e383faf0869d90c84ae35684bc6cf832b97ff7728452d28df314e627f",
+      "subject": "physics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Thomson/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "HTTP Error 404: Not Found",
+      "family": "University of St Andrews MacTutor",
+      "name": "Heinrich Hertz",
+      "subject": "physics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Hertz/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "39eb9f1c76e2fdc5",
+      "name": "René Descartes",
+      "sha256": "00d87b016968db97ad93abd9b0caae3aa0c6d887a6483a66f0e6026402f80a39",
+      "subject": "mathematics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Descartes/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "398402b4cc3e7be5",
+      "name": "Pierre de Fermat",
+      "sha256": "dc3bea56c313a568260cdedf4f6bc4fd611f770f528dbaef4ccbcaefd677c34b",
+      "subject": "mathematics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of St Andrews MacTutor",
+      "key": "251ded6aa42e0b74",
+      "name": "Blaise Pascal",
+      "sha256": "bdb93b7e76dfb61e8801e50cbd7f7daafd9f16806b40cc6d8fea61e3e7d5934f",
+      "subject": "mathematics",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "family": "Library of Economics and Liberty",
+      "name": "Adam Smith",
+      "subject": "economics",
+      "url": "https://www.econlib.org/library/Enc/bios/Smith.html"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "family": "Library of Economics and Liberty",
+      "name": "John Maynard Keynes",
+      "subject": "economics",
+      "url": "https://www.econlib.org/library/Enc/bios/Keynes.html"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "family": "Library of Economics and Liberty",
+      "name": "David Ricardo",
+      "subject": "economics",
+      "url": "https://www.econlib.org/library/Enc/bios/Ricardo.html"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "family": "Library of Economics and Liberty",
+      "name": "Thomas Robert Malthus",
+      "subject": "economics",
+      "url": "https://www.econlib.org/library/Enc/bios/Malthus.html"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "family": "Library of Economics and Liberty",
+      "name": "Alfred Marshall",
+      "subject": "economics",
+      "url": "https://www.econlib.org/library/Enc/bios/Marshall.html"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "family": "Library of Economics and Liberty",
+      "name": "Karl Marx",
+      "subject": "economics",
+      "url": "https://www.econlib.org/library/Enc/bios/Marx.html"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "family": "Library of Economics and Liberty",
+      "name": "Joseph Schumpeter",
+      "subject": "economics",
+      "url": "https://www.econlib.org/library/Enc/bios/Schumpeter.html"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "Darwin Correspondence Project, University of Cambridge",
+      "key": "9247155861ce69f3",
+      "name": "Charles Darwin",
+      "sha256": "99ffb1e0643a82b09d124fa62da3289b5a6a425c94896e9b0ec59c46f5f36639",
+      "subject": "biology_medicine",
+      "url": "https://www.darwinproject.ac.uk/origin-species"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "Institut Pasteur",
+      "key": "ae55ad5f733a2007",
+      "name": "Louis Pasteur",
+      "sha256": "5b36f1195263798f4e26ec1575c1d630d2ee085cf8ab45bda6c0ff89ae736c17",
+      "subject": "biology_medicine",
+      "url": "https://www.pasteur.fr/en/whats-new/latest-news/features/louis-pasteur-universal-legacy"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "University of Texas at Austin",
+      "key": "41878646e3b057b8",
+      "name": "Edsger W. Dijkstra",
+      "sha256": "ce04d4414221463380289d842608d7d159e427b5392aa07567d2ccb92f1f0805",
+      "subject": "computer_science",
+      "url": "https://www.cs.utexas.edu/news/2002/edsger-wybe-dijkstra-1930-2002"
+    },
+    {
+      "batch": "historical-gaps-acquisition",
+      "family": "New York University",
+      "key": "0150d732a0f7877b",
+      "name": "Yann LeCun",
+      "sha256": "2a96be11806c6452f4d31f5dc9ec6b881fbf8303bab4b9d9b2ac150271089afb",
+      "subject": "computer_science",
+      "url": "https://cs.nyu.edu/~yann/research/index.html"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "John Chowning",
+      "url": "https://computerhistory.org/profile/john-chowning-2/",
+      "bytes": 82087,
+      "sha256": "fc17e34b934a81bb42b277cb0290b6f768de54312fe7b528f8ae0d0facac4a97"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Ed Colligan",
+      "url": "https://computerhistory.org/profile/ed-colligan-2/",
+      "bytes": 81484,
+      "sha256": "567629f47b411f6bcbc602d7648aec065c2bc6b2ab26642320071dfb6cf95dbf"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Donna Dubinsky",
+      "url": "https://computerhistory.org/profile/donna-dubinksy/",
+      "bytes": 81850,
+      "sha256": "63feb64a1490297e25a1fb8bad00f38ad317bf9c3785d9e7ae9a6e7fa608b301"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Jeff Hawkins",
+      "url": "https://computerhistory.org/profile/jeff-hawkins-2/",
+      "bytes": 81624,
+      "sha256": "bcbe048c6b958b0f792a1d948c4f78a96f7823a44bde5789f7fcb8a6ecc7b8ad"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Brewster Kahle",
+      "url": "https://computerhistory.org/profile/brewster-kahle-2/",
+      "bytes": 81492,
+      "sha256": "68b3976a90082745c5bc5d8892cd50215c7bd8d8c5ba95f052d767bac335b9fe"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Allan Alcorn",
+      "url": "https://computerhistory.org/profile/allan-alcorn/",
+      "bytes": 82890,
+      "sha256": "eae6863e3291b78bcd5546013597ae136ca615bd6b0d97698c2195e8a2fc6bd7"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Nolan Bushnell",
+      "url": "https://computerhistory.org/profile/nolan-bushnell-fellow/",
+      "bytes": 83020,
+      "sha256": "cbacd39d8711c8e6fcbfb76da7f54c171f38de2fb21e956111e71035b6dfdb3c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Elizabeth \"Jake\" Feinler",
+      "url": "https://computerhistory.org/profile/elizabeth-jake-feinler/",
+      "bytes": 83404,
+      "sha256": "ce39214032c5211ccecef6e883bb13dab9868298974b0e4a61855eb44e76692c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Jensen Huang",
+      "url": "https://computerhistory.org/profile/jensen-huang/",
+      "bytes": 82727,
+      "sha256": "abad9d7682fbc113cd74a9d96ae4b55e9f88c2c9a2468a8708fdd38fec57a3c0"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Steven Mayer",
+      "url": "https://computerhistory.org/profile/steven-mayer/",
+      "bytes": 82606,
+      "sha256": "610e5f707bd693f0754e68c3792e1de0bc7676b1e56c0a762598091eafe70309"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Rodney Brooks",
+      "url": "https://computerhistory.org/profile/rodney-brooks/",
+      "bytes": 83180,
+      "sha256": "c1bbcf1b52102701c1b56133cea06d64bb2c991cc80aeb9e072b6ef6836d6d27"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Thomas E. Kurtz",
+      "url": "https://computerhistory.org/profile/thomas-e-kurtz/",
+      "bytes": 83854,
+      "sha256": "cb4494a403b1fdfa3064509baad2633544f117f44a7e71b2dda1c1ffee71f8c4"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Barbara Liskov",
+      "url": "https://computerhistory.org/profile/barbara-liskov/",
+      "bytes": 83882,
+      "sha256": "ad027768ad7de4040da2a2f5d58af2b74084eb7788ee7a9877e74db87fd9c731"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Don Bitzer",
+      "url": "https://computerhistory.org/profile/don-bitzer/",
+      "bytes": 83508,
+      "sha256": "a9490e3f0f8165248f3aa70837993f8ffd5ae8b666907db2b3a1b9a9431e7cba"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Dan Ingalls",
+      "url": "https://computerhistory.org/profile/dan-ingalls-2/",
+      "bytes": 84307,
+      "sha256": "206a861ebb4b1193688b015600d47cf2918438def4222103094f5f7fed7d0051"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Adele Goldberg",
+      "url": "https://computerhistory.org/profile/adele-goldberg/",
+      "bytes": 84549,
+      "sha256": "068b000e10be03fb08ca357103217232c1f7492e2daf16bc6e366492c9c88916"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Leonard Kleinrock",
+      "url": "https://computerhistory.org/profile/leonard-kleinrock-2/",
+      "bytes": 83281,
+      "sha256": "07fddd0303df2b1a3778a33de92a2f9ef5f6f50b9953643b1f3fe0aa9ba57d86"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Raymond Ozzie",
+      "url": "https://computerhistory.org/profile/raymond-ozzie/",
+      "bytes": 84314,
+      "sha256": "1671ddcc5ecedb8448f05140d2a4e364eb651fc7b14aecb4242690c42689d0d7"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Raj Reddy",
+      "url": "https://computerhistory.org/profile/raj-reddy/",
+      "bytes": 82554,
+      "sha256": "433b846e15742eeffbc3ab73e95fbcb89b393d28d1c6e511d06e597e80c8c807"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Lillian F. Schwartz",
+      "url": "https://computerhistory.org/profile/lillian-f-schwartz/",
+      "bytes": 84394,
+      "sha256": "72a87088be0dfb5cda48debc884aaf93905dda81c57ab890ef2c4d1f6729094f"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Andries van Dam",
+      "url": "https://computerhistory.org/profile/andries-van-dam/",
+      "bytes": 84345,
+      "sha256": "73532ddb35bccb230f23edec4d3d79ac766b9a3c64a7bf98098789d2e5f8cff6"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "James Gosling",
+      "url": "https://computerhistory.org/profile/james-gosling/",
+      "bytes": 83020,
+      "sha256": "d4dbd0982576222b32393593706478257c6876214dea90f588e997d8dce8fe5f"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Katherine Johnson",
+      "url": "https://computerhistory.org/profile/katherine-johnson/",
+      "bytes": 83419,
+      "sha256": "a477849f4491dc38f051dfdbddafe8e96417d03bb3244aa6189eb407470c89d8"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Leslie Lamport",
+      "url": "https://computerhistory.org/profile/leslie-lamport/",
+      "bytes": 83515,
+      "sha256": "38c4df4f22e2edd74fe7dadd3e8e80580b433ec4e31cb1fddcadd52341227e1d"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Louis Pouzin",
+      "url": "https://computerhistory.org/profile/louis-pouzin/",
+      "bytes": 83456,
+      "sha256": "01dd4f25b5958e11f35cec5139c5a0615004f5e2abb682751669467ed66727aa"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Dov Frohman-Bentchkowsky",
+      "url": "https://computerhistory.org/profile/dov-frohman-bentchkowsky/",
+      "bytes": 83369,
+      "sha256": "3d6d86d144763a985be425a372f0d4351fdd2fa33e79d352aa8155f67ec28492"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Dame Stephanie Shirley",
+      "url": "https://computerhistory.org/profile/dame-stephanie-shirley/",
+      "bytes": 82363,
+      "sha256": "a6545ae793ad72aca755b4b853e59b1db3b6e7d3b0820dfc81ea922dd3b201f4"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Guido van Rossum",
+      "url": "https://computerhistory.org/profile/guido-van-rossum/",
+      "bytes": 82847,
+      "sha256": "f3ea8ad61d5a47edd6efbd5377c1ae1b82ec0154d808da457144970a3e2a8f1a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Alan Cooper",
+      "url": "https://computerhistory.org/profile/alan-cooper/",
+      "bytes": 83277,
+      "sha256": "f3fea7e353d7144d541808e6b6c6015f2da9681d1c8b48beb567ce9a61d84466"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Margaret Hamilton",
+      "url": "https://computerhistory.org/profile/margaret-hamilton/",
+      "bytes": 54441,
+      "sha256": "9c98e79a4a847a8f5c0ee8fd6cb4e4bcf911be2744f5c9b5e506afa359b3a589"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Cleve Moler",
+      "url": "https://computerhistory.org/profile/cleve-moler/",
+      "bytes": 82097,
+      "sha256": "998ea3a5be0ec9fed8ee6dd39bf858ded554d4cc39bcfcf714cdab124f389e33"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Larry Roberts",
+      "url": "https://computerhistory.org/profile/larry-roberts/",
+      "bytes": 82547,
+      "sha256": "82605da26befef7763a47a75be791bb16b667642f1594b83f3218e3fe2c68714"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "David Cutler",
+      "url": "https://computerhistory.org/profile/david-cutler/",
+      "bytes": 82619,
+      "sha256": "943ce5cd91e51eea7dded27312157fafc808ad16e177cbcbc315b31381bddf6d"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Lee Felsenstein",
+      "url": "https://computerhistory.org/profile/lee-felsenstein/",
+      "bytes": 83971,
+      "sha256": "e50a2f0cab8adacb54bec50c94a5f36e895cba01b58f29d96ac79d4dde2f7553"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Philip Moorby",
+      "url": "https://computerhistory.org/profile/philip-moorby/",
+      "bytes": 83821,
+      "sha256": "2142b806e34160bfa3cb607744cf5ac01e9821f14011e49b973ee6cf4f3c43f0"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Charles W. Bachman",
+      "url": "https://computerhistory.org/profile/charles-w-bachman/",
+      "bytes": 82987,
+      "sha256": "d693aa095ae7a47e7bc11a3a94ff0dd462bb9977213aa4c6341d4aa6024b1264"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Evelyn Berezin",
+      "url": "https://computerhistory.org/profile/evelyn-berezin/",
+      "bytes": 83011,
+      "sha256": "78143fe868c85d6c16d480ef959d64750f05099f5410a28ebcb0c8cc56b5ad62"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Bjarne Stroustrup",
+      "url": "https://computerhistory.org/profile/bjarne-stroustrup/",
+      "bytes": 81838,
+      "sha256": "be2d925c3a4a1cf392a5f9810a7358d7fa0274d2c32d808e8c7494bd44acad18"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Lynn Conway",
+      "url": "https://computerhistory.org/profile/lynn-conway/",
+      "bytes": 85236,
+      "sha256": "12365ff7ae6822bc05349e0623fc838b0e1a883d75360dc391c567a856349d50"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "John Crawford",
+      "url": "https://computerhistory.org/profile/john-crawford/",
+      "bytes": 82343,
+      "sha256": "b77a60331e64b5d528abb26d55ada9bdf6f42da4fcb3a54ff78099e8725ae53a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Irwin Jacobs",
+      "url": "https://computerhistory.org/profile/irwin-jacobs/",
+      "bytes": 83789,
+      "sha256": "35e84f61d884fb632f6fb69cdfc5626b45654da991d40a1a652456c74140ff01"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Edwin Catmull",
+      "url": "https://computerhistory.org/profile/edwin-catmull/",
+      "bytes": 84168,
+      "sha256": "3f42bf8f50a0c7d53166fafdeca5f2ea7d1a16a17a0ce701b3f52c79c46864df"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Harry D. Huskey",
+      "url": "https://computerhistory.org/profile/harry-d-huskey/",
+      "bytes": 83148,
+      "sha256": "7c1a17d4c2837d4699bcf7f080f3459f48a7a4ca9e27d67f78c4251064569801"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Robert W. Taylor",
+      "url": "https://computerhistory.org/profile/robert-w-taylor/",
+      "bytes": 84446,
+      "sha256": "7ccad66993430034cddad62fd45e1fe5ddaad57601d043c631ae11c137954c5c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Fernando Corbató",
+      "url": "https://computerhistory.org/profile/fernando-corbato/",
+      "bytes": 82143,
+      "sha256": "2ff876716c4335a46ede7ee766dfdbeb0a3616ce4fce0b3fb2a5230f729a26aa"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Edward Feigenbaum",
+      "url": "https://computerhistory.org/profile/edward-feigenbaum/",
+      "bytes": 83064,
+      "sha256": "74010983a5b7df7984c194bb3fe3796c7c742e4c0e0f1e0513b8bfd3d6f25b4c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Steve Furber",
+      "url": "https://computerhistory.org/profile/steve-furber/",
+      "bytes": 81738,
+      "sha256": "9a85018fabd79bd4eadc53e9e4bba9e108547abefbeda16ffba83bc123c459d5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Sophie Wilson",
+      "url": "https://computerhistory.org/profile/sophie-wilson/",
+      "bytes": 82993,
+      "sha256": "dd97dcc837629e1bfc7924558bcded8e3536201f500c64488cec013b0458434a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Whitfield Diffie",
+      "url": "https://computerhistory.org/profile/whitfield-diffie/",
+      "bytes": 83014,
+      "sha256": "5eb8849757fa568371b8e3dda3a7fcd23fe6f6285498ab229ebf5b147d65ff32"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Martin Hellman",
+      "url": "https://computerhistory.org/profile/martin-hellman/",
+      "bytes": 81581,
+      "sha256": "a94858e75b58c9b78945fe690d775d3edd4c2bcdc6e797e2a84b9029fe50fbe8"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Bill Joy",
+      "url": "https://computerhistory.org/profile/bill-joy/",
+      "bytes": 83293,
+      "sha256": "6123b97f073bab0bb43a05e7f7489c8d8844dc96d74ce93d776845695a2d5525"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Ralph Merkle",
+      "url": "https://computerhistory.org/profile/ralph-merkle/",
+      "bytes": 82475,
+      "sha256": "cd495347ae05e8b465cab1c3adc74e59c2ac6829546e475ae3b4b37476e88271"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Donald Chamberlin",
+      "url": "https://computerhistory.org/profile/donald-chamberlin/",
+      "bytes": 81682,
+      "sha256": "8f96b1662760b56e8a8535a06776f3c974094423594071797f9d154ab9746bb4"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Robert Everett",
+      "url": "https://computerhistory.org/profile/robert-everett/",
+      "bytes": 82644,
+      "sha256": "5ea0ff42ea7924a352ab36698a9ee3dd2174ee5cdedc1239b48e42d29573efa0"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Federico Faggin",
+      "url": "https://computerhistory.org/profile/federico-faggin/",
+      "bytes": 84878,
+      "sha256": "1b78459496a14b83edf28f058f87095e7367a530cb9d01264a291ce7fc95d2c2"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Marcian Hoff",
+      "url": "https://computerhistory.org/profile/marcian-hoff/",
+      "bytes": 82429,
+      "sha256": "7da2bd4177620b8c2b7c8c038b03fb7fb876f6a92f9858fdc38c7136760a8ed8"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Stan Mazor",
+      "url": "https://computerhistory.org/profile/stan-mazor/",
+      "bytes": 81554,
+      "sha256": "34e58c0e579f9e57fb6913ba411f2414b86724418529ac38caf7dbccde353755"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Masatoshi Shima",
+      "url": "https://computerhistory.org/profile/masatoshi-shima/",
+      "bytes": 82600,
+      "sha256": "36279a8d0e02332188faa67e3ae9a7664b7de3742c12e64bad05a9bc46ab78bc"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Jean Jennings Bartik",
+      "url": "https://computerhistory.org/profile/jean-jennings-bartik/",
+      "bytes": 82958,
+      "sha256": "2cd2969a8d16c0578c503d7c4d766ff8ddabce6d843082fe0fcfbdbe977f6fbd"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Bob Metcalfe",
+      "url": "https://computerhistory.org/profile/bob-metcalfe-fellow/",
+      "bytes": 84455,
+      "sha256": "a26a56c7bfb9dcb0a55a5a376f48433386153b2671867a1aadc33c178a02dce8"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Linus Torvalds",
+      "url": "https://computerhistory.org/profile/linus-torvalds/",
+      "bytes": 82817,
+      "sha256": "26b88a275667f79f344294bc10a8c69309511d2bb28b410c6858cd5c8f7698ed"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Morris Chang",
+      "url": "https://computerhistory.org/profile/fellow-morris-chang/",
+      "bytes": 81812,
+      "sha256": "8e08912fbf73bed10628589d4dc69fd9486a4d901004d3bf1c6c745582463e0a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "John Hennessy",
+      "url": "https://computerhistory.org/profile/john-hennessy/",
+      "bytes": 82886,
+      "sha256": "51d7c2ee70aa00ee5fb88388cf1ad778b8bc02a3b760fddfb1e611a012bec4de"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "David Patterson",
+      "url": "https://computerhistory.org/profile/david-patterson/",
+      "bytes": 83083,
+      "sha256": "58e3ab704aacf81ca5ed1732a99e6ac48a9085a07b9dae6144334eff2860a84d"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Charles Thacker",
+      "url": "https://computerhistory.org/profile/charles-thacker/",
+      "bytes": 84860,
+      "sha256": "7706955b00a9bba7fd03cc0ccce2c5fcdcee11bbd598ea1d66443a1e29315f81"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Sir Antony Hoare",
+      "url": "https://computerhistory.org/profile/sir-antony-hoare/",
+      "bytes": 81861,
+      "sha256": "ed06b386d395764848a76f2d7e1c8633bbd15238cbf3e39a6af3da0a57b9fe64"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Robert Kahn",
+      "url": "https://computerhistory.org/profile/robert-kahn/",
+      "bytes": 83499,
+      "sha256": "4efbf1b85cfbf2fb766d22b643dc3a7b234e110910e71b9b6c48b88eb89286dd"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Butler Lampson",
+      "url": "https://computerhistory.org/profile/butler-lampson/",
+      "bytes": 82625,
+      "sha256": "f239398e18b3ea947eb2166d28da3f99a6163b14bcca7c7df57f3de111ae6359"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Marvin Minsky",
+      "url": "https://computerhistory.org/profile/marvin-minsky/",
+      "bytes": 82677,
+      "sha256": "eb265125db0409e92d9c72debfcfac42476f0d91cbc81cbc5df2b36b31b7f721"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Paul Baran",
+      "url": "https://computerhistory.org/profile/paul-baran/",
+      "bytes": 83893,
+      "sha256": "7af6a8f8fef9c6547894f621ea11be930a0b134d89bf1df0694d9e3eba84cd13"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Douglas C. Engelbart",
+      "url": "https://computerhistory.org/profile/doug-engelbart/",
+      "bytes": 81898,
+      "sha256": "6684bd9de33d5028ec3b106ce4bc71981a57297190495439459aa85b9e37b464"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Alan F. Shugart",
+      "url": "https://computerhistory.org/profile/alan-f-shugart/",
+      "bytes": 81520,
+      "sha256": "522865da49b871991b793daca2e298177829a96b30d50ae2e2a640746d0c34b5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Ivan Sutherland",
+      "url": "https://computerhistory.org/profile/ivan-sutherland/",
+      "bytes": 82440,
+      "sha256": "906aac219206c07a5bb9cd66716dc0d5deea3652181955006dd78d6d9ec31989"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Erich Bloch",
+      "url": "https://computerhistory.org/profile/erich-bloch/",
+      "bytes": 82792,
+      "sha256": "313be16be807624b592f8e65369eb52e0a5732248e29087a1e86cf5711acba3f"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Dan Bricklin",
+      "url": "https://computerhistory.org/profile/dan-bricklin/",
+      "bytes": 83150,
+      "sha256": "9526cf18600a28cb43bd23d9d7f3139b7bcf8ac4f705c9a6ee2950bf06f1f92d"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Bob Evans",
+      "url": "https://computerhistory.org/profile/bob-evans/",
+      "bytes": 82854,
+      "sha256": "08455025db596c43d9036cd0e94051b5ac88f9d26ef7b395c7b930e4bb5f0e12"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Bob Frankston",
+      "url": "https://computerhistory.org/profile/bob-frankston/",
+      "bytes": 83196,
+      "sha256": "245254ae738f45bc9fbf776741361b55b1d4209cfe2a11ccad9ed1a7bebdcfb5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Niklaus Wirth",
+      "url": "https://computerhistory.org/profile/niklaus-wirth/",
+      "bytes": 83167,
+      "sha256": "13e4bf157051ac022e9236589cb483a59a83084c4b314a83539449ab1f16366b"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "C. Gordon Bell",
+      "url": "https://computerhistory.org/profile/gordon-bell-2003-fellow/",
+      "bytes": 83846,
+      "sha256": "b8b671eee5ed97671c7560a438be75e9499afd5819f1785faf08a03a62102c36"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Tim Berners-Lee",
+      "url": "https://computerhistory.org/profile/tim-berners-lee/",
+      "bytes": 82782,
+      "sha256": "3c0833abf85235cc2cc6ae1fa3c53d96b632047cfd8c41fa744200305134b3b3"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "David John Wheeler",
+      "url": "https://computerhistory.org/profile/david-john-wheeler/",
+      "bytes": 83404,
+      "sha256": "8ab0d00e7ab7e783e75ef440078a408be8c4bcdd72424be5ac727d76673f1e43"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "John Cocke",
+      "url": "https://computerhistory.org/profile/john-cocke/",
+      "bytes": 81587,
+      "sha256": "d5aa7d1755c5d0c7fd054cabcea3e6de8450914809684c0f8e3c7cde4e8279db"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Charles M. Geschke",
+      "url": "https://computerhistory.org/profile/charles-m-geschke/",
+      "bytes": 84481,
+      "sha256": "5f136a08c81514226d828e9555effa3c8d2f6b7286b90e0d9b08d8dc4e9258ad"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Carver Mead",
+      "url": "https://computerhistory.org/profile/carver-mead/",
+      "bytes": 82167,
+      "sha256": "64f770d8eac0f2a544edef12743150aad3bff1640229b8a3565ca3345c714a79"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "John Warnock",
+      "url": "https://computerhistory.org/profile/john-warnock/",
+      "bytes": 84046,
+      "sha256": "cefd62bc70ce0603b68456fbb734dd447c9f0af8b226d7f5f76f4fbc48b07a06"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Frederick P. Brooks Jr.",
+      "url": "https://computerhistory.org/profile/frederick-p-brooks-jr/",
+      "bytes": 82619,
+      "sha256": "adf84961338308e50cb4d5c7c3e8e781ab07b7a60487973cfa42034e006c608c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Jean Sammet",
+      "url": "https://computerhistory.org/profile/jean-sammet/",
+      "bytes": 52472,
+      "sha256": "c63748838c7027cd549afdc1315fbcc0f36f8568908ff22747e8a5a718c3cdcd"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Sir Maurice V. Wilkes",
+      "url": "https://computerhistory.org/profile/sir-maurice-v-wilkes/",
+      "bytes": 83058,
+      "sha256": "9c1fdce182171b21436826da7ce5b549c3e17a2dc68a13e543772af29f487dc5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Frances Allen",
+      "url": "https://computerhistory.org/profile/frances-allen/",
+      "bytes": 83647,
+      "sha256": "14689319c8fd42f1783113658dbab1cc7f5ee51cf0c4b4049c518b5cf0edbe30"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Vinton Cerf",
+      "url": "https://computerhistory.org/profile/vint-cerf/",
+      "bytes": 82597,
+      "sha256": "6d4b016b540d97755bea95618032e287890227d5f1a560c9ad2b4378052852c9"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Tom Kilburn",
+      "url": "https://computerhistory.org/profile/tom-kilburn/",
+      "bytes": 81658,
+      "sha256": "53b400d9a86486cafcd406b4c1ac7f2fc4a0838d253b1eb3d6f86a030a63caf2"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Alan Kay",
+      "url": "https://computerhistory.org/profile/alan-kay/",
+      "bytes": 83864,
+      "sha256": "fdb34395d7b7d4338d61e4941ffd99cee68556c27d73527a783eff26ce72d62c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "John McCarthy",
+      "url": "https://computerhistory.org/profile/john-mccarthy/",
+      "bytes": 82890,
+      "sha256": "a52088baf6927b4fdfd412fb347beb94d8a3f31335c500d76ec11426a60171ec"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Konrad Zuse",
+      "url": "https://computerhistory.org/profile/konrad-zuse/",
+      "bytes": 81705,
+      "sha256": "8daf8032fa880e6866495066edec36c0d472a5aa909add2c50f254a68f883291"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Gene Myron Amdahl",
+      "url": "https://computerhistory.org/profile/gene-myron-amdahl/",
+      "bytes": 84036,
+      "sha256": "d8f5dea22840a878830553c6e5a95fb7e55b143ad5f1cd7f5326bbd8cb60db40"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Donald Knuth",
+      "url": "https://computerhistory.org/profile/donald-knuth/",
+      "bytes": 81859,
+      "sha256": "79db1dd3b314e4793650ec49308e6791302200f72bef5b2f4055cc47536791e5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Gordon Moore (In Memoriam)",
+      "url": "https://computerhistory.org/profile/gordon-moore/",
+      "bytes": 81836,
+      "sha256": "9d423e1140f9ad5146acd2a38416ee6d5fcf85705e91abeab79417d89e78ba2f"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Steve Wozniak",
+      "url": "https://computerhistory.org/profile/steve-wozniak/",
+      "bytes": 81821,
+      "sha256": "1e5406cdd7c07dff2d2ca9b409b8d97bdc5eeb327bb633f831381408644d1a36"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "John Backus",
+      "url": "https://computerhistory.org/profile/john-backus/",
+      "bytes": 81618,
+      "sha256": "0671abf5fd9a7758a3b6b54638382894dff17c476233fda1a123503b07858b2a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Dennis Ritchie",
+      "url": "https://computerhistory.org/profile/dennis-ritchie/",
+      "bytes": 82420,
+      "sha256": "4ac3fb158cec56b50f0812b7be29443bdc76297ea0e4906d9ef595988664fbd3"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Ken Thompson",
+      "url": "https://computerhistory.org/profile/ken-thompson/",
+      "bytes": 81532,
+      "sha256": "5e9c8796c8ce218ddcf0e4568057bde9cdffb229abb2c9272cf7345712aa1cea"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Mitchell Kapor",
+      "url": "https://computerhistory.org/profile/mitchell-kapor/",
+      "bytes": 82367,
+      "sha256": "e09bef416f8e81a939b9c728a92415f5e2fe402d957d4126691e3029aa3c800c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Ken Olsen",
+      "url": "https://computerhistory.org/profile/ken-olsen/",
+      "bytes": 82762,
+      "sha256": "5eb52f9a1626b3882985ca10a23e50e8383d6c39f89e134a72261f7a8feb6c5a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Jay W. Forrester",
+      "url": "https://computerhistory.org/profile/jay-w-forrester/",
+      "bytes": 82006,
+      "sha256": "08424da520f471e08bfca4eff8b0806635b93f8409554e6ecef9ab81411edc12"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "chm",
+      "name": "Grace Murray Hopper",
+      "url": "https://computerhistory.org/profile/grace-murray-hopper/",
+      "bytes": 82798,
+      "sha256": "93d0da521cc26ac528364f64bd5d8aad4039665ae0779af63365c169acf3acc1"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2026: Gerd Faltings",
+      "url": "https://abelprize.no/abel-prize-laureates/2026",
+      "bytes": 104454,
+      "sha256": "5e11071752dc8b4b988199f6022b6a7d70daa07e884fedb11272bffbdcc0d7ad"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2025: Masaki Kashiwara",
+      "url": "https://abelprize.no/abel-prize-laureates/2025",
+      "bytes": 103684,
+      "sha256": "2a9111d35d37c7e8040f66c10ddb28b7bba7dd166a86d5904d608ea7c003504b"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2024: Michel Talagrand",
+      "url": "https://abelprize.no/abel-prize-laureates/2024",
+      "bytes": 103573,
+      "sha256": "e5b5d10c89425ea344c05043301de5e6e492f605916fc9dfd7366cea660135a8"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2023: Luis A. Caffarelli",
+      "url": "https://abelprize.no/abel-prize-laureates/2023",
+      "bytes": 109842,
+      "sha256": "d2694c266942e6cf309673a03d13a3bd948cb784092b0cdcb921ed356d0cb64a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2022: Dennis Parnell Sullivan",
+      "url": "https://abelprize.no/abel-prize-laureates/2022",
+      "bytes": 112296,
+      "sha256": "e7b5ead74fa696f4998b22266c45429959b8b686ff7770bd49588b5e6ec16fa3"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2021: László Lovász",
+      "url": "https://abelprize.no/abel-prize-laureates/2021",
+      "bytes": 113668,
+      "sha256": "f0b7519c5c51b9d8265f1b054275fa4660b71eb5e665f7bcdcd1ce05f72f3a03"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2020: Hillel Furstenberg",
+      "url": "https://abelprize.no/abel-prize-laureates/2020",
+      "bytes": 117818,
+      "sha256": "5a3a59c2e4836fe4b42fb381d75fc3fbb49737e19a387f39aa43e344bf238cf8"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2019: Karen Keskulla Uhlenbeck",
+      "url": "https://abelprize.no/abel-prize-laureates/2019",
+      "bytes": 114429,
+      "sha256": "6649595f7c5389dbba7243f87d235104818d1e7cad46c05d688e275b72b898ac"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2018: Robert P. Langlands",
+      "url": "https://abelprize.no/abel-prize-laureates/2018",
+      "bytes": 113821,
+      "sha256": "46914516c57b4c5aeeb7e128731e31c2257595b81b8d03779a41f7724d86717a"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2017: Yves Meyer",
+      "url": "https://abelprize.no/abel-prize-laureates/2017",
+      "bytes": 112697,
+      "sha256": "2e05ee583ba26cc6182cc5a566b6af7a093aaab3b2634cd2e159742da774ef6c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2016: Sir Andrew J. Wiles",
+      "url": "https://abelprize.no/abel-prize-laureates/2016",
+      "bytes": 113259,
+      "sha256": "ea738d7ab6bce8d9383d33d0014d7af95393b411e22ac9e0811239f1a46d0309"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2015: Louis Nirenberg",
+      "url": "https://abelprize.no/abel-prize-laureates/2015",
+      "bytes": 114173,
+      "sha256": "1b06cb755e60976cd45de2e48181843d686acd15f0147fa30e12ad8f05373d1c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2014: Yakov G. Sinai",
+      "url": "https://abelprize.no/abel-prize-laureates/2014",
+      "bytes": 112868,
+      "sha256": "2b08b082682803d4ebe29910ca3181ee5e77840ae327adcbd4b6460a0729584c"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2013: Pierre Deligne",
+      "url": "https://abelprize.no/abel-prize-laureates/2013",
+      "bytes": 112100,
+      "sha256": "2b02e5c3632b4e8bb641db0c191cd70196676fb929e7f63f252976f647fa04a8"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2012: Endre Szemerédi",
+      "url": "https://abelprize.no/abel-prize-laureates/2012",
+      "bytes": 112973,
+      "sha256": "b81863ac39505ebb2165e332755820c2b34697c8c6ca7a662da5120ad454c6b7"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2011: John Milnor",
+      "url": "https://abelprize.no/abel-prize-laureates/2011",
+      "bytes": 109845,
+      "sha256": "00a3e8cdc52ae8ae7ca3f131dce2be8ef4a7cc898021a66a18a7224dd9b303c2"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2010: John Torrence Tate",
+      "url": "https://abelprize.no/abel-prize-laureates/2010",
+      "bytes": 107620,
+      "sha256": "62edf3ba4aead75dacadcacf7770146aea679da65b0a7954978c81ab148b26d7"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2009: Mikhail Leonidovich Gromov",
+      "url": "https://abelprize.no/abel-prize-laureates/2009",
+      "bytes": 108941,
+      "sha256": "58c634ed7deea76eb7d5dcea7b170924ba784de4ebe788d0f519ad4543dd9eb4"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2008: Jacques Tits",
+      "url": "https://abelprize.no/abel-prize-laureates/2008",
+      "bytes": 110709,
+      "sha256": "c92878d028e7c2c024ecf472b5f8c120b09bc49446d2b373b6efe4f3f962acb0"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2007: Srinivasa S. R. Varadhan",
+      "url": "https://abelprize.no/abel-prize-laureates/2007",
+      "bytes": 107949,
+      "sha256": "26446a1983ebad4161d49a5372e73b8d528c1f9d3234ecff6a935f01dd15c681"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2006: Lennart Carleson",
+      "url": "https://abelprize.no/abel-prize-laureates/2006",
+      "bytes": 107830,
+      "sha256": "7302f5f1278d7c6cdc20ded89dec93e67afc1df241c8b8684c6e501475352973"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2005: Peter D. Lax",
+      "url": "https://abelprize.no/abel-prize-laureates/2005",
+      "bytes": 109118,
+      "sha256": "33f31b973d42349e174a0abe0b0c9c5a21be3c20ad008700527ef1d001f558ae"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2004: Isadore M. Singer",
+      "url": "https://abelprize.no/abel-prize-laureates/2004",
+      "bytes": 108103,
+      "sha256": "16b8853349efc5e203b3178bc85923b64fe956eb7d6ddb016c3b277b4cade893"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "abel",
+      "name": "2003: Jean-Pierre Serre",
+      "url": "https://abelprize.no/abel-prize-laureates/2003",
+      "bytes": 104370,
+      "sha256": "0abf7f4d74b1dd0b56c972c62bd79ebb9b080e934150a46ce3d3d849c53cbfa9"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Fields Medals 2026",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+      "bytes": 37798,
+      "sha256": "21a9fa3c9a25d5b22124e10cd189d7901bb1690a3db00b655d6d213040c6e862"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Fields Medals 2022",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+      "bytes": 42054,
+      "sha256": "55a0d9a161821526afed00240013b1185d85cdea636ce1021ac8a197e2c515b5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Fields Medals 2018",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2018",
+      "bytes": 37430,
+      "sha256": "46f0f17ed8bc7c176d0d0b47d28c8261af28bce8ccdedebe346b9c7b23ba85f0"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Fields Medals 2014",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2014",
+      "bytes": 38227,
+      "sha256": "d130a4837f1ecfd28a9b191b66e2fabb3ed66673b7f962897c224e9fe6ba0595"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Fields Medals 2006",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2006",
+      "bytes": 36349,
+      "sha256": "7dde76270fff258546f602193e592b99e37b67333669e5480a91a7eb32d0f367"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Vladimir Voevodsky",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2002",
+      "bytes": 33044,
+      "sha256": "7ca78c52449f978f89ece6e5fd1216b6bf3d2c051fbe34af13b60a8c57c8b6ad"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Curtis T. Mcmullen",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1998",
+      "bytes": 34408,
+      "sha256": "4aa5d1269b9ce9b27ef332d8baf43239621557c9f92d0866d223eb8b860b65f5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Efim Zelmanov",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1994",
+      "bytes": 35795,
+      "sha256": "45595aa5b30a53ec4f3d28d4baeecb091b1266fe4061b7f7de2833d4d8e03443"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Edward Witten",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1990",
+      "bytes": 35784,
+      "sha256": "b3aef475262a4b7760b3b446c8555f1dcb04eac7f2bb8279cb023e4c2b28f016"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Michael H. Freedman",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1986",
+      "bytes": 34861,
+      "sha256": "5bf9eb837d5580d3f73a203e534e1169f5a63e7a5ebe745eaa7c666941b37c7f"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Shing-Tung Yau",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1982",
+      "bytes": 35048,
+      "sha256": "e9c57103c3f0f4bb14b94c13e7c3aa000ff77d7803cb5d3179f056036f5ff166"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Daniel G. Quillen",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1978",
+      "error": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "David Bryant Mumford",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1974",
+      "bytes": 34343,
+      "sha256": "f964273f97696f2a97a735edc1d74ffdd91930c225b5d708a7e4e67c33ed0a28"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "John Griggs Thompson",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1970",
+      "bytes": 35722,
+      "sha256": "f8d0deb72de035756a49808191f96e757761a9b12ef158d3474fe5690bc35988"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Stephen Smale",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1966",
+      "bytes": 35899,
+      "sha256": "a3f5e865626ffa315ba0e313cdb033dff5d9e2c2e386845636e0871cadb57c90"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "John Willard Milnor",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1962",
+      "bytes": 34093,
+      "sha256": "27eae912d9253a5da6d79f1fe2dab9fbc9d929450df619b0150a71d22d35aa42"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "René Thom",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1958",
+      "bytes": 34274,
+      "sha256": "3ffa5e98d6551ea27c3b9ad2f0d2fc05b3dc99da4485d6d60fccf167a82959e0"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Jean-Pierre Serre",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1954",
+      "bytes": 34196,
+      "sha256": "175cecf7b1fdbd52b71f3269f3838432b9a2958e23a153eb908e059efa5ef574"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Atle Selberg",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1950",
+      "bytes": 34120,
+      "sha256": "a8637f2a9174dc1835f6e4ec8ea60d42c3931c3245c9cc1a87c57e68caf2d9a5"
+    },
+    {
+      "batch": "institutional-profile-pages",
+      "family": "fields",
+      "name": "Jesse Douglas",
+      "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-1936",
+      "bytes": 34188,
+      "sha256": "f72f2e2b5d58fb7b290f86160840a43a712d01e0892b1847ded0650aa553c543"
+    }
+  ],
+  "outcomes": {
+    "acquired": 197,
+    "failed": 12
+  },
+  "receipt_task_counts": {
+    "catalog-1.4-shared-cohn-elkies-normalization-recheck": 1,
+    "catalog-1.4-metadata-check-144": 1,
+    "catalog-1.4-profiles-120": 1,
+    "catalog-1.4-metadata-check-48": 1,
+    "catalog-1.4-classic-check-16": 1,
+    "catalog-1.4-profiles-104": 1,
+    "catalog-1.4-award-labels-144": 1,
+    "catalog-1.4-historical-gaps-5": 1,
+    "catalog-1.4-profiles-32": 1,
+    "catalog-1.4-award-labels-120": 1,
+    "catalog-1.4-profiles-8": 1,
+    "catalog-1.4-award-labels-96": 1,
+    "catalog-1.4-profiles-144": 2,
+    "catalog-1.4-profiles-24": 1,
+    "catalog-1.4-historical-gaps-check-0": 1,
+    "catalog-1.4-metadata-check-72": 1,
+    "catalog-1.4-profiles-160": 1,
+    "computing-origins-printing-direction-1.4-format-1": 1,
+    "computing-origins-corrections-1.4-format-1": 1,
+    "catalog-1.4-award-labels-336": 1,
+    "catalog-1.4-profiles-48": 1,
+    "catalog-1.4-profiles-96": 1,
+    "catalog-1.4-award-labels-192": 1,
+    "catalog-1.4-metadata-check-120": 1,
+    "catalog-1.4-metadata-check-80": 1,
+    "catalog-1.4-historical-gaps-check-10": 1,
+    "catalog-1.4-profiles-16": 1,
+    "catalog-1.4-profiles-88": 1,
+    "catalog-1.4-historical-gaps-0": 1,
+    "catalog-1.4-profiles-56": 1,
+    "catalog-1.4-metadata-check-16": 1,
+    "catalog-1.4-award-labels-240": 1,
+    "catalog-1.4-award-labels-48": 1,
+    "catalog-1.4-historical-gaps-10": 1,
+    "computing-origins-printing-direction-1.4": 1,
+    "catalog-1.4-award-labels-288": 1,
+    "catalog-1.4-metadata-check-24": 1,
+    "catalog-1.4-award-labels-360": 1,
+    "catalog-1.4-metadata-check-128": 1,
+    "catalog-1.4-profiles-64": 1,
+    "catalog-1.4-metadata-check-0": 1,
+    "catalog-1.4-profiles-80": 1,
+    "catalog-1.4-award-labels-264": 1,
+    "catalog-1.4-metadata-check-32": 1,
+    "catalog-1.4-profiles-72": 1,
+    "catalog-1.4-award-labels-0": 1,
+    "catalog-1.4-profiles-136": 1,
+    "catalog-1.4-historical-gaps-check-5": 1,
+    "catalog-1.4-profiles-152": 1,
+    "catalog-1.4-profiles-40": 1,
+    "catalog-1.4-metadata-check-56": 1,
+    "catalog-1.4-award-labels-384": 1,
+    "catalog-1.4-profiles-112": 1,
+    "computing-origins-corrections-1.4": 1,
+    "catalog-1.4-award-labels-168": 1,
+    "catalog-1.4-classic-check-24": 1,
+    "catalog-1.4-profiles-0": 1,
+    "catalog-1.4-metadata-check-104": 1,
+    "catalog-1.4-metadata-check-64": 1,
+    "catalog-1.4-metadata-check-112": 1,
+    "catalog-1.4-shared-cohn-elkies": 1,
+    "catalog-1.4-metadata-check-96": 1,
+    "catalog-1.4-classic-check-0": 1,
+    "catalog-1.4-award-labels-72": 1,
+    "catalog-1.4-metadata-check-88": 1,
+    "catalog-1.4-classic-check-8": 1,
+    "catalog-1.4-metadata-check-40": 1,
+    "catalog-1.4-metadata-check-136": 1,
+    "catalog-1.4-profiles-128": 1,
+    "catalog-1.4-profiles-168": 1,
+    "catalog-1.4-award-labels-312": 1,
+    "catalog-1.4-award-labels-216": 1,
+    "catalog-1.4-award-labels-24": 1,
+    "catalog-1.4-metadata-check-8": 1
+  },
+  "receipt_trace_ids": [
+    "2d4501d2-9a47-43e0-8511-f75538b5900f",
+    "bdb48db6-dc70-40b4-a38c-7746c1fb1b4c",
+    "dbf11584-74e8-4424-b6fb-86435db29dce",
+    "c5492b53-1ed8-4647-ba95-0c5b164d3cd5",
+    "d2e11e86-be6a-4b03-a983-1ea442c3a763",
+    "8a5ea4e1-829c-40ec-b059-38218e873558",
+    "ae12ce13-830f-4c8c-9fa1-bfb513e6a95b",
+    "50b98bbe-9b75-48b1-a876-cbec3b52af1a",
+    "c8dc358c-901c-4602-af57-c3ff05224bee",
+    "f6c0a28d-7d58-4123-9fcd-74cb75947492",
+    "24fb2c4e-4aba-47d9-98d1-d406a61fbd6e",
+    "ea7e492f-9ac8-4e06-a50f-3e618364f232",
+    "da7d5dd7-193c-47b0-949d-4ecc1b335d7d",
+    "cae892e0-45c7-49b5-9c7e-6a59bf6bca59",
+    "84c673ad-db76-412d-a68f-0948b0b54d1b",
+    "b9b7b27a-ba91-4c9a-96b1-5f8af5aaaa33",
+    "1ea36438-d372-492e-8d23-fb45ee79b15e",
+    "23f64b24-343b-45ac-87a2-d5cd9d279f99",
+    "1dd5b79c-f719-4262-98ba-070fd4aaac6c",
+    "55d03d98-05cd-4ccd-8427-9956cae4d454",
+    "cc21b895-e7dd-4268-a822-2d953b1d2cb0",
+    "38528bb6-b94d-40a6-b2f0-5dcaa198f9d3",
+    "6f37c45c-0107-4947-9a91-c330546d05d9",
+    "f139084c-c936-4c90-a247-e7538518b749",
+    "7d1550e2-2191-4dfe-83ea-a8118ab48aac",
+    "77ca05f4-4631-4e4c-9884-4a56ec9d3808",
+    "551f019a-ef90-43c8-beaa-f95eafaf02b4",
+    "ab6305ba-7873-4e70-ab18-fc987010b310",
+    "68270c84-ca06-4920-8213-63de2f7d893b",
+    "6092c8ea-6a7f-4d83-b31b-fdb71e04c454",
+    "342ff3bb-abd9-4dd3-9cad-a03ad9441759",
+    "ae211ef9-4dbe-4f64-b702-63311bf6d612",
+    "f12759e2-fac6-4627-836c-6b1bb443a90f",
+    "21087a2e-787e-47e0-a133-e19cc586338d",
+    "1cbae9df-2b8a-4bb3-a04c-851813dada9e",
+    "eb676ac8-a8dd-4e1d-8596-b292eea46f7f",
+    "f1128eac-5dd3-4887-af78-efc3c0bb29e4",
+    "36dbd23d-fc8c-4f5b-b3b9-1f7576211f3a",
+    "a2392ee3-e9b4-4035-a02c-e64e6539c28e",
+    "7ff15b07-d136-4aef-bf57-1777cd085258",
+    "87293ed3-7dce-449a-8763-50470d284545",
+    "d5465b2d-26cd-44fe-b945-2f233e0e5943",
+    "ffe05c8b-7dc2-4637-9556-7055ca548c5a",
+    "08d113a5-fd78-4904-bcfe-bef470c2f672",
+    "ae806d6a-8cc6-454b-bd48-f41951a90dbf",
+    "39d8b678-91ea-4c46-b638-c0dc5aef657b",
+    "8b1f6b7f-5bc2-4551-b4cd-28b2d97cd1c8",
+    "23705ee0-7a8a-498f-afc2-13f226c9b7f1",
+    "4f215b44-7e5a-4584-b717-5a7f29145b03",
+    "228b43a9-bbab-43bb-b73b-c608d4f86273",
+    "b160193f-5122-4152-8422-00279f11264c",
+    "afe16af5-e6a9-4e62-8cd8-d7e106f6431f",
+    "d34833ff-6088-42a0-b14c-8a55fe5108fb",
+    "49cfce1c-8798-4cce-af46-64d9597bd3f8",
+    "af654164-7132-4d07-93b2-139a6f3bf2ca",
+    "2e6ba1ff-d5d9-4cf3-bb2b-f49662ccb360",
+    "b29f13ee-e188-4299-965d-7fbd2036898a",
+    "9f093238-b9f0-4dbb-8ec3-f0ad2b85f316",
+    "ecac1a6c-cdf7-4cf9-a6fd-1c78659f1f25",
+    "7b56c747-99fb-416a-a6e9-45c366af9e4f",
+    "2db5d70b-25c0-4cd9-872c-a40c01990738",
+    "81713baf-4d57-4410-85e9-4c177023df3a",
+    "058a51ef-8578-41c7-a71b-9400ae57a49e",
+    "baa9d6e2-6e14-4b93-849f-62a5282d2ddb",
+    "58d1f9a5-345f-44d4-9a28-1583be0dc286",
+    "6ddf0d60-51d7-456a-8b8a-0b01589aee95",
+    "97332d50-6373-418a-9699-177189c26155",
+    "b6f6c22b-d991-437a-b43b-9cb4ed665d9e",
+    "50aa2f60-8e68-4241-9313-ae14a524a16c",
+    "d2101d6c-43ec-4e7e-bf2a-de2af7357186",
+    "0d325ef3-9070-42b8-b7ff-b3bf2817fa3b",
+    "0ec82538-7073-4e91-905b-148abbdf0075",
+    "7095ba68-c2ad-442c-9e4e-e4b6d2f21ca9",
+    "dde04381-b41c-45d1-885b-c8e7eef05941",
+    "d70ba7a4-23b8-4e23-a3e2-a69ec5e08297"
+  ],
+  "limits": [
+    "Direct ACM listing access failed.",
+    "Some institutional profiles and historical source pages were unavailable.",
+    "Econlib bibliographies were inspected through web reading after direct acquisition failed; no byte hash or scientific evidence anchor is asserted for those pages.",
+    "Catalog provenance establishes documented relevance only."
+  ],
+  "related_provider_attempts": 75
+}

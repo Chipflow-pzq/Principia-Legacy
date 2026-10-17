@@ -1,6 +1,6 @@
 # Development
 
-The reader has no Python runtime dependencies. Node.js is needed only to rebuild the interface; model-provider credentials are needed only for explicitly invoked authoring operations.
+The reader has no Python runtime dependencies. Node.js is needed only to rebuild the interface. Credentials are needed for explicitly invoked authoring or optional personal exploration; ordinary reading needs none.
 
 ## Repository map
 
@@ -26,7 +26,7 @@ python3 -m venv .venv
 python -m pip install -e '.[authoring,test]'
 python -m pytest -q
 python start.py validate
-python start.py build --release 1.2.0-exploratory --offline
+python start.py build --release 1.4.1-exploratory --offline
 python start.py doctor
 ```
 
@@ -72,4 +72,58 @@ After building both the database and hosted assets, verify the hosted mount with
 
 Read [CONTRACT.md](CONTRACT.md) before changing meanings or record semantics. Stable identities, revision hashes, source anchors and historical snapshots must remain reproducible. Corrections use new revisions and explicit patches. Preserve independent formulations and distinguish navigation memberships from evidenced relationships.
 
-See [AUTHORING.md](AUTHORING.md) for source acquisition and paid model use. Reading, testing and index rebuilding must never trigger a provider call. Follow [PUBLISHING.md](PUBLISHING.md) to prepare a source archive; do not publish caches, credentials or working databases.
+See [AUTHORING.md](AUTHORING.md) for canonical curation and [PERSONAL_EXPLORATION.md](PERSONAL_EXPLORATION.md) for the separate browser agent. Ordinary reading, automated fixture tests and index rebuilding never trigger a provider call. Live provider checks are explicit, paid authoring QA and must use an external secret with no recording of headers or keys. Follow [PUBLISHING.md](PUBLISHING.md) to prepare a source archive; do not publish caches, credentials or working databases.
+
+
+## Opt-in live browser acceptance
+
+The ordinary browser suite uses synthetic fixtures and does not spend API credit.
+For the six user-supplied exploration cases, `scripts/live_browser_qa.mjs` operates
+the actual browser form, discovers the account’s exact model IDs, downloads each
+map, and checks its inspectors. This **submits paid provider requests**. Run from
+the repository root with the development dependencies installed:
+
+```sh
+SILICONFLOW_ENV_FILE=/absolute/path/to/external.env \
+PRINCIPIA_TEST_URL=http://127.0.0.1:8767 \
+node scripts/live_browser_qa.mjs deepseek-ai/DeepSeek-V4.1-Flash
+```
+
+Pass additional exact model IDs as additional arguments to repeat all six cases.
+The credential file is read by the test process; it is never copied into the repo.
+The browser sends the key directly to SiliconFlow, with persistence unchecked.
+Outputs, source passages and diagnostic responses stay in ignored
+`.work/live-browser/<timestamp>/`. A nonempty `STOP` file there stops the runner
+after the current case. Reports retain failures, timings, receipts and source
+hosts. Structural thresholds are diagnostics, not scientific correctness scores;
+inspect the actual claims and arrows before accepting a result.
+
+A stopped run can continue without paying to repeat completed cases:
+
+```sh
+SILICONFLOW_ENV_FILE=/absolute/path/to/external.env \
+PRINCIPIA_TEST_URL=http://127.0.0.1:8767 \
+PRINCIPIA_QA_RESUME_DIR=.work/live-browser/RECORDED-RUN-DIRECTORY \
+node scripts/live_browser_qa.mjs deepseek-ai/DeepSeek-V4.1-Flash
+```
+
+Remove the run's `STOP` file before resuming. The runner checks the original URL,
+model, query protocol and application bundle; it does not replay completed failures
+or silently resubmit an unfinished, potentially charged attempt. Resume only on
+the same build. Keep all earlier outcomes when reporting an iteration.
+
+## Work catalogue and offline search
+
+`works.py` validates work identity, exact evidence-pinned memberships and scoped
+projections of checked insight connections. `retrieval.py` owns bounded spelling
+and related-concept expansion; it has no external service or embedding dependency.
+`storage.py` compiles their SQLite indexes, and `Works.tsx` renders work navigation.
+The source selection is in small configuration manifests; the deterministic
+`scripts/build_work_catalog.py` compiles it without calling a provider.
+
+The reader retains at most two decoded public snapshots for comparisons. Cache
+keys are fixed-size hashes of exact JSON payloads, avoiding retained multi-megabyte
+strings. A lock prevents duplicate parallel decoding; no personal query is cached.
+Working builds invalidate by payload content, including rebuilt databases at the
+same path. Inspect `reports/catalog-1.4-memory-stress.json` for the actual historical
+browsing test rather than assuming a process has a fixed resident size.

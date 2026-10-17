@@ -1,0 +1,646 @@
+{
+  "additional_source_for_clt": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/f44fa78f05ac31a4ba2bd82f599dcf60_MIT6_436JF18_lec17.pdf",
+  "applied_correction": {
+    "applied": "63c2d6130a6251c4e6687862a0946317e7a766af97012e4b9b656d86d55d57ef",
+    "previous_release": "before-493a4571613e",
+    "recheck": [
+      "r-073954deaa30bc91",
+      "r-10dfd72eaf680d1d",
+      "r-141084c5a3e3c818",
+      "r-157690be1885c0bf",
+      "r-261e14200756338b",
+      "r-2729ee152d7aacd4",
+      "r-27b2b7d62aa87640",
+      "r-36e7cc3c502d368b",
+      "r-3e4e884c8985ab5f",
+      "r-480a42f8788a0947",
+      "r-4f7dcb4d2679778b",
+      "r-5adbca70634ac67f",
+      "r-5f38862e370f56c1",
+      "r-6d9eb20a8fe826af",
+      "r-732e46a280d384fd",
+      "r-765185ac6bf4fea2",
+      "r-8e1fbd2408e8a9b7",
+      "r-929ff01ef5f8a386",
+      "r-959eb3f1e45aece9",
+      "r-9c36de259f214584",
+      "r-a262174ac679ccb4",
+      "r-a2a53ab5d05abfc6",
+      "r-adcdfd59b9cad0ed",
+      "r-b06f761924e00067",
+      "r-c196b6194d8154e2",
+      "r-c2cc9703d6e28ff6",
+      "r-c414e7de0d9298b4",
+      "r-cfa0f1f1d7e27580",
+      "r-d05f9452ac94f62f",
+      "r-d8d07317384dc65f",
+      "r-db0a94c0f65f50cf",
+      "r-e54e5d05a5e503ba",
+      "r-f84dedbc7a09adf6",
+      "r-fa743ca8aad07ac2",
+      "r-fa8fd631a848e3a4",
+      "r-fb9f5c6927cb19b0",
+      "r-febbfdc8df7c0132"
+    ]
+  },
+  "decisions": [
+    {
+      "content_hash": "db29a1fb7c73d802af9b9d9431e9142ea0374e5076a6c7086ee3acabfdf52270",
+      "decision": "withhold_before_admission",
+      "dossier": "M2170",
+      "id": "n-c9587b0426d5ba84",
+      "reason": "Routine execution of the already documented normal-equation characterization; not another contribution.",
+      "title": "Recipe: form $A^{T}A$ and $A^{T}b$, then row-reduce the augmented system"
+    },
+    {
+      "content_hash": "d14bc5219538cbf4e084abab4d9f03fe1f10f506b1446b6c5d2d4c616e976e40",
+      "decision": "withhold_before_admission",
+      "dossier": "M2152",
+      "id": "n-d54813822cc1e5dd",
+      "reason": "Routine execution of the documented stationary-eigenvector characterization.",
+      "title": "Recipe for computing the steady state by solving $(A-I)v=0$ and normalizing"
+    },
+    {
+      "content_hash": "0d2e9c2286d5312a15400f75c24e896946c8a3cd6a036a71f69d66b1a82d098c",
+      "decision": "withhold_before_admission",
+      "dossier": "M2152",
+      "id": "n-d9840098896bf819",
+      "reason": "Worked numeric example duplicates the general convergence result and is too narrowly numerical for a separate insight.",
+      "title": "Eigenvector decomposition explains convergence to the 1-eigenspace"
+    },
+    {
+      "content_hash": "a956d800b672a45c7de350779740c88e89e21efa82842f3ad0f8e63d6e3eeb21",
+      "decision": "withhold_before_admission",
+      "dossier": "M2146",
+      "id": "n-415ab6e19735bdb5",
+      "reason": "Routine procedure already contained in the diagonalization theorem and its explanation.",
+      "title": "Diagonalization recipe: eigenvalues, eigenspace bases, count vectors"
+    },
+    {
+      "content_hash": "1a10c466f5fbc4c522650f8ea6d1147d76bbd3ce00ae1b91473e3930a8838ce4",
+      "decision": "withhold_before_admission",
+      "dossier": "M2146",
+      "id": "n-50d98b32da91a03f",
+      "reason": "Repeats the same coordinate-change insight as the diagonalizability representation in this source.",
+      "title": "Geometric picture: diagonalizable matrices scale eigenvector axes"
+    },
+    {
+      "content_hash": "da005604b705a18b28e1ac62bd2027ca133dd2da9665f32f58bdd6ae0718f1a4",
+      "decision": "withhold_before_admission",
+      "dossier": "M2146",
+      "id": "n-70ef8a888ec0f478",
+      "reason": "Glossary fragment; the consequential multiplicity inequality and criterion contain the useful move.",
+      "title": "Algebraic and geometric multiplicity defined for an eigenvalue"
+    },
+    {
+      "content_hash": "83b6ee4779622ab234884876810924025ec5f57521fd75b1d92c1f5762e48e9a",
+      "decision": "withhold_before_admission",
+      "dossier": "M2146",
+      "id": "n-800f8bf82b293ae9",
+      "reason": "Routine case enumeration of the already documented eigenvector criterion; retain as explanatory context, not another card.",
+      "title": "Four-case classification of $2\\times2$ diagonalizability"
+    },
+    {
+      "content_hash": "695798b4038cd9be0f8dd629600436eddcde70ee2cdb70209948095d5e95a88f",
+      "decision": "withhold_before_admission",
+      "dossier": "M2163",
+      "id": "n-a15197a2054e6391",
+      "reason": "Overbroad classical CLT: any distribution omits finite variance and identical-distribution assumptions. Replace with a source that states the theorem precisely.",
+      "title": "Sampling distribution of the sample mean approaches normality as sample size grows"
+    },
+    {
+      "content_hash": "765b14a022035fbeecb3c0509b79d1b459549731b399df2af9ff3421e707abbe",
+      "decision": "withhold_before_admission",
+      "dossier": "M2163",
+      "id": "n-e38c650621e720ad",
+      "reason": "Routine substitution of the standard error into a z-score, not a distinct intellectual move beyond the sampling result.",
+      "title": "Standardization of the sample mean for normal probability calculations"
+    },
+    {
+      "content_hash": "92b2cc6983198422bedf93d711c9f7dd187b57c3c16b5a3f177481ba4e7f5367",
+      "decision": "withhold_before_admission",
+      "dossier": "M2163",
+      "id": "n-70aa7c6132d4fb17",
+      "reason": "Standard error is a standard deviation, not the mean absolute distance; this paraphrase states an incorrect equality.",
+      "title": "Standard error of the mean as average distance of sample mean from population mean"
+    },
+    {
+      "content_hash": "d741edb9dad866c9894eeda676cea441c65668cb3ebd5072b2026ab57895dd99",
+      "decision": "withhold_before_admission",
+      "dossier": "M2163",
+      "id": "n-901656e337afe527",
+      "reason": "A source coverage gap belongs in topic gaps, not an independent scientific contribution.",
+      "title": "Limitation: no proof, rate, or explicit conditions for the normal approximation"
+    },
+    {
+      "content_hash": "1e8691c5a439252727ac866a3e7c2a5bfd58febfb65375e0d66e24425c036a7c",
+      "decision": "withhold_before_admission",
+      "dossier": "P2113",
+      "id": "n-c90b6e931db41eaa",
+      "reason": "Repeats the cancellation already explained by the integrated point-charge flux derivation.",
+      "title": "Radius independence explained by inverse-square field versus area growth"
+    },
+    {
+      "content_hash": "ab54e76c5ad194ea609af207fd501dcba1ba107847b73467591ad67009987177",
+      "decision": "withhold_before_admission",
+      "dossier": "P2113",
+      "id": "n-bd8b1e7b834fbe01",
+      "reason": "Definition needed inside the Gauss-law explanation, not a separate advance.",
+      "title": "Gaussian surface as an arbitrary closed mathematical construct"
+    },
+    {
+      "content_hash": "66a7d5e4f8ff042b94116cb8f650d942f3f69103b763ec9d2a2b661255f779c6",
+      "decision": "withhold_before_admission",
+      "dossier": "P2113",
+      "id": "n-759ac98659c2aef8",
+      "reason": "Routine definition of enclosed charge, not a separate scientific move.",
+      "title": "Enclosed charge computed by summing point charges or integrating continuous distributions"
+    },
+    {
+      "content_hash": "c992d80d6f55986c5a78aaaca520798c91318658f4e3481dc9e760cfc0ec2f3c",
+      "decision": "withhold_before_admission",
+      "dossier": "P2113",
+      "id": "n-c08cbd1f0f9ce4bb",
+      "reason": "Numerical exercise substitutions, not distinct intellectual contributions.",
+      "title": "Worked flux evaluations for symmetric and cubical Gaussian surfaces"
+    },
+    {
+      "content_hash": "288b696a6fd967e4f635e51189897eaaf9e3eced4b567035c4150ba39b347605",
+      "decision": "withhold_before_admission",
+      "dossier": "P2111",
+      "id": "n-4a9158008ad9063e",
+      "reason": "Taxonomic list without a distinct explanatory advance.",
+      "title": "The electromagnetic spectrum as a wavelength-ordered set of bands"
+    },
+    {
+      "content_hash": "174de5407ab5b0561ae399ec65bdc66b51f9dc88667e876aaa7cce83ff7d9e93",
+      "decision": "withhold_before_admission",
+      "dossier": "P2111",
+      "id": "n-ad56f57a6776a8dc",
+      "reason": "Conflates the ideal absorption property with an assumed radiative-equilibrium process; retain the warranted radiation laws instead.",
+      "title": "Blackbody as an idealized absorber and emitter"
+    },
+    {
+      "content_hash": "653bf50f22ae53f0edc24dadbafd8da7fb30a1c63b15371e217b2bd2e97e45de",
+      "decision": "withhold_before_admission",
+      "dossier": "P2111",
+      "id": "n-94bce84e05402d44",
+      "reason": "Broad evolutionary adaptation speculation and generic band description do not establish a specific scientific contribution.",
+      "title": "Visible light as the band most readily reaching Earth's surface and perceived by human vision"
+    },
+    {
+      "content_hash": "8ee2ed9bcbfcee4f9da096d9a25380ec04420c9807a2fbbdb19b15025125de41",
+      "decision": "withhold_before_admission",
+      "dossier": "P2150",
+      "id": "n-e35e7c869bb79aeb",
+      "reason": "Routine algebraic substitution into the already documented photoelectric equation.",
+      "title": "Worked-example determination of work function and cut-off frequency from stopping potential"
+    },
+    {
+      "content_hash": "7037e092d6fe2371dafd02ec9abc83444443b6914386f1a3205996ba6d69e5a6",
+      "decision": "withhold_before_admission",
+      "dossier": "P2174",
+      "id": "n-c0caa25fa35329af",
+      "reason": "Worked numerical comparison is explanatory context rather than a separate intellectual move.",
+      "title": "Uncertainty bound is negligible for macroscopic objects"
+    },
+    {
+      "content_hash": "af17530837b35ab3905ab26d7d49f82973db525d73c2315073fa37d647af96f2",
+      "decision": "withhold_before_admission",
+      "dossier": "P2174",
+      "id": "n-fce359c3e6ae6bf4",
+      "reason": "Rough one-dimensional worked example is neither a new hydrogen result nor a precise universal bound.",
+      "title": "Hydrogen ground-state energy estimated from the uncertainty relation"
+    },
+    {
+      "content_hash": "16b4e9a183269b6d99c92cb35abe00640895f0037c4b6d9660cec4b1a71fc114",
+      "decision": "withhold_before_admission",
+      "dossier": "P2242",
+      "id": "n-ec02d8946a293736",
+      "reason": "List of people and milestones bundles different discoveries without preserving their specific intellectual moves.",
+      "title": "Historical sequence from first transistor to MOSFET integrated circuits"
+    },
+    {
+      "content_hash": "72069a9e6d52ae059c3c28322009acc265be0132f7ca40a2f5b35aaa76d2bb25",
+      "decision": "withhold_before_admission",
+      "dossier": "C2101",
+      "id": "n-1dc5df0be9933ee4",
+      "reason": "Worked constant-factor example belongs inside amortized-analysis explanation.",
+      "title": "Sequential searches show worst-case summation overstates series cost"
+    },
+    {
+      "content_hash": "9b4026135bcab770ed06b46e10f82b0dfc403cbbf03319bf08f9711762388baf",
+      "decision": "withhold_before_admission",
+      "dossier": "E2155",
+      "id": "n-b64f1cf3a8d9cba5",
+      "reason": "A source-specific historical numerical exercise, without a distinct conceptual inference beyond diversification.",
+      "title": "Two-stock portfolio standard deviation falls below the single stock's standard deviation"
+    },
+    {
+      "content_hash": "636f6fc372a6d3a5e72bc49ade16eda44007a778be7f393b8e03cc63fb86eb15",
+      "decision": "withhold_before_admission",
+      "dossier": "E2155",
+      "id": "n-d6f31bc7ce2fb2c3",
+      "reason": "Contains a dated rule-of-thumb stock count and investment advice rather than a scoped foundational inference.",
+      "title": "Diminishing risk reduction as portfolio size grows, with no exact well-diversified number"
+    },
+    {
+      "content_hash": "8eeb6e40a4f1532f65094cbef394ca1897d7ea5316da0ae67b11a4a2a76581eb",
+      "decision": "withhold_before_admission",
+      "dossier": "C2121",
+      "id": "n-ff3ae5df3d8a9c28",
+      "reason": "Hierarchy listing is implementation taxonomy rather than a distinct substantive advance.",
+      "title": "Bank, chip, rank, DIMM, and channel organization of DRAM"
+    },
+    {
+      "content_hash": "f7a22754dc342d7c3ab6f8f364e82c5d32173ca319e9dbc81cff0eef1bd006f8",
+      "decision": "withhold_before_admission",
+      "dossier": "C2121",
+      "id": "n-01c8dc36f51ef0a9",
+      "reason": "Generic hardware comparison without a distinct recorded discovery or design argument.",
+      "title": "HDD slowness due to mechanical movement"
+    },
+    {
+      "content_hash": "f9005761129228f5e6f401936db5eb8cfd4ded80e17cb1b83f5dc52bfe27b825",
+      "decision": "withhold_before_admission",
+      "dossier": "C2121",
+      "id": "n-ea58d38b92b65a03",
+      "reason": "Generic glossary description, not a specific intellectual contribution.",
+      "title": "Cloud storage as off-machine persistent storage"
+    },
+    {
+      "content_hash": "54dff6c0f6a4a8e4d6d3049e1f6922b3f2b9e78f2e405e68e513178e3dea3026",
+      "decision": "withhold_before_admission",
+      "dossier": "C2121",
+      "id": "n-db90de7014d3d6be",
+      "reason": "Conflates architecture word/register width with external memory-bus width; not a general property of 64-bit machines.",
+      "title": "64-bit processor-memory connection width"
+    },
+    {
+      "content_hash": "30f117b7452bee67ee1d52defe355daeb142c6ecaeb66b88627936fb17fcb0c2",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-3c08d390425a61a1",
+      "reason": "Glossary definition; the individual substantive programming models contain the relevant advances.",
+      "title": "Parallel programming model as a high-level conception of processor and data control"
+    },
+    {
+      "content_hash": "dab54827a068867a7a85e80db5d8ae849e501c1d5d748fc6ecd2e06e777ac636",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-cc6d8057a91198ac",
+      "reason": "Locks and semaphores do not themselves prevent deadlock; the claim overstates the guarantee.",
+      "title": "Shared memory model with locks and semaphores for contention control"
+    },
+    {
+      "content_hash": "8925a2b4dcd39eb32210fdbe9bbeafc35f1759246ecfe4ca32d3c9153a21f1c0",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-03675591dc4ad486",
+      "reason": "Background exposition repeats the already published concurrency/thread contribution, without a distinct formulation or mechanism.",
+      "title": "Threads as lightweight concurrent paths within a heavyweight process"
+    },
+    {
+      "content_hash": "7f846262abe837fc4a34f7ffb33cca955562a5d07c8ca4cca209346a4c4e15ee",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-71c65589a5a56064",
+      "reason": "Taxonomy and popularity claim, not a specific explanatory advance.",
+      "title": "Four strategies for adding parallelism, with language extension most popular"
+    },
+    {
+      "content_hash": "c9443dd1c9337ecb324250edbf1855377d4173ffbc40f65384345db5898659a9",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-83814c8d5cd203ea",
+      "reason": "Workflow checklist rather than an independent scientific insight.",
+      "title": "Ten-step procedure for developing parallel software"
+    },
+    {
+      "content_hash": "cf5e669804cd55e81df942cbea51208f2c5fe040d7932066ce314dc6ddcdb20c",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-10cd7f8621d15caf",
+      "reason": "Concurrency need not be simultaneous execution; this definition conflates interleaving with parallelism.",
+      "title": "Distinction between concurrent, parallel, and distributed computing"
+    },
+    {
+      "content_hash": "44745639cc6c2c9caf99ab7340d20317d979d38dc17fa4a8083819ccbf7d221f",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-c114d5b26312909f",
+      "reason": "Generic hardware description, without the consequential execution-model or architectural insight.",
+      "title": "GPUs as massively parallel processors with many weak cores"
+    },
+    {
+      "content_hash": "0affaca480b1571dd13c24c95a1766ff64de262ae9e9358e501dca5ea1a30221",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-13b20ed50aba25b0",
+      "reason": "Dated hardware counts and prevalence do not constitute a standalone intellectual move.",
+      "title": "Multicore CPUs as the prevalent hardware substrate for parallelism"
+    },
+    {
+      "content_hash": "5830b68ee64f43beee96f05d359fbf6ab3768bef7128ccbef6446026d603c686",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-a09072cd0411211d",
+      "reason": "Overgeneralizes language/runtime behavior and promises full speed from core count; not a general scientific result.",
+      "title": "Default single-core execution and the need for explicit work division"
+    },
+    {
+      "content_hash": "6c04722ae888d36f81c47ff24ef1aa5fae4d5504d0e2631c736e65f42a66ca49",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-6df82db9925a72fc",
+      "reason": "Teaching metaphor belongs in an explanation, not a contribution node.",
+      "title": "Parallel work illustrated by a factory assembly line"
+    },
+    {
+      "content_hash": "3b4d2eeceec0bafd31ec4ad19cf875c811c0304daee5746cbc47ef0a70aa7b37",
+      "decision": "withhold_before_admission",
+      "dossier": "C2091",
+      "id": "n-3c39b9c7a6551c7a",
+      "reason": "Generic workload-scale and importance claim without a specific computational inference.",
+      "title": "ANN training as a parallel workload motivating GPU-based machines"
+    },
+    {
+      "content_hash": "9c7b6eaf2f8174db8e0abbafdeabc95be12aac8f6f1111a91775d48338963652",
+      "decision": "withhold_before_admission",
+      "dossier": "E2174",
+      "id": "n-6eff42adab16625c",
+      "reason": "Conflates the original wage-rate change study with a general price-inflation claim; retrieve the original study before asserting historical findings.",
+      "title": "Phillips's empirical finding of a British unemployment-inflation tradeoff"
+    },
+    {
+      "content_hash": "010f1afc60c85e300a749ff7e4249841766f749f15ed77b33333292564801aee",
+      "decision": "withhold_before_admission",
+      "dossier": "E2198",
+      "id": "n-d588277c9195ec66",
+      "reason": "Presents a stylized scarce-reserve mechanism as an unqualified current Federal Reserve operating mechanism; requires explicit regime and date qualification.",
+      "title": "Open market operations shift loanable-funds supply and move the federal funds rate"
+    },
+    {
+      "content_hash": "9cde8b5ff78ac48911eccb5fcb0f5aed349c850dc3bd236a232312b04ce44a70",
+      "decision": "withhold_before_admission",
+      "dossier": "E2198",
+      "id": "n-f83d8b6668636533",
+      "reason": "A missing explanation is a topic evidence gap, not a scientific insight.",
+      "title": "Quantitative easing is flagged as significant but not explained in this section"
+    },
+    {
+      "content_hash": "fdef63d587d0044a549aa42041aba1706a7ea01c7f46fbe3308d5ebb19b5a71c",
+      "decision": "withhold_by_correction",
+      "dossier": "C2095",
+      "id": "n-d0bf28a0e5bc5f41",
+      "reason": "Routine table notation; keep it in the dynamic-programming explanation rather than a separate intellectual move.",
+      "title": "Table annotations O, I, I/O record inclusion and omission solutions"
+    },
+    {
+      "content_hash": "eb5c6642af28881859283c54b92b721eaa31467f2824382dc97358292d84e669",
+      "decision": "withhold_by_correction",
+      "dossier": "C2095",
+      "id": "n-3be14e776882fc9a",
+      "reason": "Name origin is bibliographic context, not a scientific contribution.",
+      "title": "Etymology of 'dynamic programming' from dynamic control systems"
+    },
+    {
+      "content_hash": "48ce3c8cb2c45026230a41840549c48e3431c415894e233cb72de4d495dd2c25",
+      "decision": "withhold_by_correction",
+      "dossier": "C2116",
+      "id": "n-e4665710f7389e15",
+      "reason": "Generic definition repeats the already published problem/algorithm distinction.",
+      "title": "Problem defined as an input-to-output mapping, distinct from an algorithm"
+    },
+    {
+      "content_hash": "69fb37ebf41d0e1accce594e9ca6689554decf41e43989754468629d1a8f43dd",
+      "decision": "withhold_by_correction",
+      "dossier": "C2119",
+      "id": "n-52be4af22aea9c10",
+      "reason": "Definition used by the NP-completeness argument, not a separate advance.",
+      "title": "SAT defined over Boolean expressions in conjunctive normal form"
+    },
+    {
+      "content_hash": "cc9471154a6309030604ccd4dd226c3a788bdcbe80041c547de9c7c848b677c5",
+      "decision": "withhold_by_correction",
+      "dossier": "C2119",
+      "id": "n-33ea64f8ed860667",
+      "reason": "Overstates Cook reduction as applying polynomially to every computable decision problem. It needs the polynomial-time nondeterministic computation restriction; supplied excerpt is insufficiently precise.",
+      "title": "Turing-machine-to-Boolean-expression encoding as the core of Cook's argument"
+    },
+    {
+      "content_hash": "26cf4564cdbbdcd3ce5f5340e89af7e174f25e4bce710820f28eab8bce8f0d1f",
+      "decision": "withhold_by_correction",
+      "dossier": "E2122",
+      "id": "n-adc23b71d8f73fd2",
+      "reason": "GDP is not restricted to production bought and sold in markets; it also accounts for government non-market output. This categorical wording is inaccurate.",
+      "title": "Scope distinction: GDP covers market production, standard of living covers all well-being determinants"
+    },
+    {
+      "content_hash": "7d2132b2e69708bd8fb4f74e4de9b81eab79578492fb198a7672d593f286c610",
+      "decision": "withhold_by_correction",
+      "dossier": "E2122",
+      "id": "n-ee4240682e6a3181",
+      "reason": "Unqualified net welfare comparison over unspecified decades; missing outcome measurement and time scope.",
+      "title": "GDP growth understates welfare gains from leisure, health, environment, technology, and variety"
+    },
+    {
+      "content_hash": "23cc258c1ebe283261b1b2d33735d13fd78742800326ab6ff6847556f47ec14e",
+      "decision": "withhold_by_correction",
+      "dossier": "E2122",
+      "id": "n-405984dcf8c74794",
+      "reason": "Undated empirical comparison and unmeasured net-welfare claim require explicit period and evidence.",
+      "title": "Countervailing factors: crime, congestion, inequality, and marketization overstate measured gains"
+    },
+    {
+      "content_hash": "67b7c89e0afd60158a0f7f68ac32078168fa8808f0f0ecead4dcf572f5d6f7ec",
+      "decision": "withhold_by_correction",
+      "dossier": "E2122",
+      "id": "n-6755d4ee7af55ecf",
+      "reason": "Name attribution alone does not preserve an intellectual move; belongs in contributor context.",
+      "title": "Historical attribution: Simon Kuznets credited as creator of GDP measurement"
+    },
+    {
+      "content_hash": "2d85880b4195101e69e14bd8ba7fd999107903ad71b2e17c215efef9bd471b19",
+      "decision": "withhold_by_correction",
+      "dossier": "E2100",
+      "id": "n-7361ec6fd362272a",
+      "reason": "Generic definition of uncertainty repeats the substantive adverse-selection and moral-hazard mechanisms.",
+      "title": "Imperfect information as the underlying condition of insurance markets"
+    },
+    {
+      "content_hash": "4383bef2cb8ef74d6ce7093da684d1f5d8b35b16c62ddecae0953c2cad37fcbe",
+      "decision": "withhold_by_correction",
+      "dossier": "E2100",
+      "id": "n-8cff48baf2c1391f",
+      "reason": "Historical policy detail needs date, exceptions and changed enforcement scope, rather than an unqualified general policy description.",
+      "title": "Individual mandate as a response to adverse selection in the ACA"
+    },
+    {
+      "content_hash": "e7e61716cc4e3767acc7d30e81c9da6b1d8dfe92ce954f1c460975763503398c",
+      "decision": "withhold_by_correction",
+      "dossier": "E2100",
+      "id": "n-12a95ddbb641e7a3",
+      "reason": "Dated policy statistics and loosely attributed fiscal/political causation need primary evidence and explicit measurement scope.",
+      "title": "ACA coverage expansion and its unresolved cost and political limits"
+    },
+    {
+      "content_hash": "cd14f2a56d3badbec9dcfa4abc474aa33c6d96f8fae65c147f6412b33c8a78ba",
+      "decision": "withhold_by_correction",
+      "dossier": "E2100",
+      "id": "n-76f6ba0bdc400083",
+      "reason": "Undated international descriptive comparison lacks a defined measurement period and is not a causal inference.",
+      "title": "U.S. health spending and outcomes compared internationally"
+    },
+    {
+      "content_hash": "882c9a3442830c65fda708f57e33646a38a68bf97dd3628142c7576904ee5336",
+      "decision": "withhold_by_correction",
+      "dossier": "B2181",
+      "id": "n-2ad3b0ea26f1a2a4",
+      "reason": "Independent discovery is a relationship between distinct contributions; do not collapse them into one biographical contribution card.",
+      "title": "Independent formulation of natural selection by Darwin and Wallace"
+    },
+    {
+      "content_hash": "c5d1d4cb3586587b5587097e5fad39f3e7637871f143ae74f82c14c7ecc3b774",
+      "decision": "withhold_by_correction",
+      "dossier": "B2181",
+      "id": "n-061cbb0883953152",
+      "reason": "Vestigial does not universally mean functionless; the source paraphrase overstates loss of function.",
+      "title": "Vestigial structures as residual parts from a past common ancestor"
+    },
+    {
+      "content_hash": "7c318780d19f7ceaee312ceda0ddfd48c628acd111958bba5df29891d5f6c3a4",
+      "decision": "withhold_by_correction",
+      "dossier": "B2181",
+      "id": "n-29467bd75d6a4712",
+      "reason": "Casual gill-slit wording conflates embryonic pharyngeal structures with functional gills; needs a precise developmental account.",
+      "title": "Embryological similarities as evidence of relatedness"
+    },
+    {
+      "content_hash": "f4a56e6cdd9a52f01fd7c5052a0f39a65fd258e8bfcf9a318395573578849ca9",
+      "decision": "withhold_by_correction",
+      "dossier": "B2181",
+      "id": "n-6af0240e2a45f451",
+      "reason": "Duplicates population-genetic definition while excluding non-selective evolutionary mechanisms in its claim.",
+      "title": "Evolution as change in population genetic composition, not individual change"
+    },
+    {
+      "content_hash": "ed4daa0d32a432ea17728727de891afe7f3319487e61f3b80083cae8c51468f4",
+      "decision": "withhold_by_correction",
+      "dossier": "B2181",
+      "id": "n-c1f602c97fde9108",
+      "reason": "A disciplinary boundary belongs in assumptions and limits, not a separate discovery.",
+      "title": "Evolution does not explain the origin of life"
+    },
+    {
+      "content_hash": "ae12c4ed77a13f252b54be942197a2a1df97004de4457ce662d6531231109688",
+      "decision": "withhold_by_correction",
+      "dossier": "B2181",
+      "id": "n-fbd312fa91c78cd4",
+      "reason": "Bundled list of names and opinions does not preserve distinct intellectual contributions.",
+      "title": "Historical antecedents: Buffon, Hutton, Lyell, Lamarck"
+    },
+    {
+      "content_hash": "7a2b5e20f8d36c8ab20e4c66929c35c503699a77f1a27c1b72ff5b08a6cea8a6",
+      "decision": "withhold_by_correction",
+      "dossier": "B2196",
+      "id": "n-86d2bc84c606fc55",
+      "reason": "Taxonomic overview duplicates the substantive mechanism cards that follow.",
+      "title": "Five modes of selection classified by their effect on population variation"
+    },
+    {
+      "content_hash": "291696d736ac08e6adb88e970d9f47ac716a747c197e5c3e89bfbbebcd7b284e",
+      "decision": "withhold_by_correction",
+      "dossier": "B2196",
+      "id": "n-a7448a3ec9f94ef2",
+      "reason": "Does not explain the self-reinforcing preference/trait mechanism; the dated name attribution alone is insufficient.",
+      "title": "Fisher's 1915 runaway model: preference and trait coevolve through sexual preference"
+    },
+    {
+      "content_hash": "a2664991e5220b10fcf61fac37739e3cbec4522eed83448a20f0b19dcd4f44d4",
+      "decision": "withhold_by_correction",
+      "dossier": "B2196",
+      "id": "n-c4978dcc9cd59717",
+      "reason": "Genetic drift changes frequencies of existing alleles; it does not introduce new alleles. This conflates distinct mechanisms.",
+      "title": "Not all evolution is adaptive: drift and gene flow can introduce deleterious alleles"
+    },
+    {
+      "content_hash": "9d1741e4908552b7d50a4e6bb465d3961b08c983e292afb752ffaa17307c3218",
+      "decision": "withhold_by_correction",
+      "dossier": "B2130",
+      "id": "n-ac804a0c34437e34",
+      "reason": "The claim treats all xeroderma pigmentosa as nucleotide-excision-repair deficiency, omitting the variant associated with translesion synthesis.",
+      "title": "Xeroderma pigmentosa links defective nucleotide excision repair to UV sensitivity and skin cancer risk"
+    },
+    {
+      "content_hash": "ed43ecc069b010b4f96b9ccb55b4b2e00d6fcb1fc8e2af42b8bc5697fff7cc1f",
+      "decision": "withhold_by_correction",
+      "dossier": "B2130",
+      "id": "n-d42409c6fdf31a7f",
+      "reason": "Glossary listing of mutation classes, without a distinct explanatory advance.",
+      "title": "Point mutation taxonomy: transitions, transversions, silent, missense, and nonsense substitutions"
+    },
+    {
+      "content_hash": "5bddf7add81406df45966f07a9dbfab6061ec1f00a2f4422643608a349571f12",
+      "decision": "withhold_by_correction",
+      "dossier": "B2130",
+      "id": "n-00f40e467c45ffad",
+      "reason": "Bundles a taxonomy rather than explaining one specific intellectual move.",
+      "title": "Insertions, deletions, frameshifts, trinucleotide repeat expansions, and translocations as distinct mutation classes"
+    },
+    {
+      "content_hash": "14e7a6d85036cf2f6811c4e508d3305a4a7d387251cf561ab2c46cf20a54b738",
+      "decision": "withhold_by_correction",
+      "dossier": "B2121",
+      "id": "n-ed5e60983b19a98d",
+      "reason": "Basic composition/numbering glossary belongs inside the structural explanation.",
+      "title": "Nucleotide architecture: base, pentose sugar, and phosphate as the repeating unit of DNA"
+    },
+    {
+      "content_hash": "6b92dc643c84add0fc5a61cfbad50e6cb96590957565c4400745f669c71517f0",
+      "decision": "withhold_by_correction",
+      "dossier": "B2121",
+      "id": "n-9a6038e9c1333f55",
+      "reason": "Presents a uniform 30-nm-fiber hierarchy as general in vivo organization without model/regime qualification.",
+      "title": "Nucleosome and chromatin hierarchy: DNA wrapped on histone octamers, then compacted into higher-order fibers"
+    },
+    {
+      "content_hash": "2853c9968d5991a28c15e1d8023c1500d2401a78d0a4eada537b107658490fe5",
+      "decision": "withhold_by_correction",
+      "dossier": "B2121",
+      "id": "n-188e27f6744bd90b",
+      "reason": "Conflates ancestry percentage with greater sequence similarity and belongs to a distinct genomic-inference topic with primary evidence.",
+      "title": "Neanderthal genome comparison as evidence for interbreeding with modern humans"
+    }
+  ],
+  "external_verification": [
+    {
+      "topic": "CLT finite variance and IID assumptions",
+      "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/f44fa78f05ac31a4ba2bd82f599dcf60_MIT6_436JF18_lec17.pdf"
+    },
+    {
+      "topic": "Phillips studied money wage changes",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0335.1958.tb00003.x"
+    },
+    {
+      "topic": "Ample reserve policy implementation",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/implementing-monetary-policy-in-an-ample-reserves-regime-the-basics-note-1-of-3-20200701.html"
+    },
+    {
+      "topic": "XP variant and normal excision repair",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2562952/"
+    },
+    {
+      "topic": "Nonmarket government output is included in national accounts",
+      "url": "https://www.bea.gov/sites/default/files/2019-12/Chapter-9.pdf"
+    },
+    {
+      "topic": "Chromatin organization and limitations of the universal 30-nm-fiber hierarchy",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5646685/"
+    }
+  ],
+  "qualified_human_review": false,
+  "reviewer": "Primary coding/research agent",
+  "reviewer_type": "machine",
+  "scope": "Direct editorial inspection of pending foundation extraction, with source-qualified mathematical checks; not a complete expert audit."
+}

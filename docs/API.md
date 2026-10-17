@@ -5,14 +5,16 @@ All routes use GET (or HEAD) on the loopback reader. Successful JSON responses i
 | Route | Parameters and result |
 |---|---|
 | `/api/info` | Pillars, counts, predicate registry, tours, snapshot choices and review summary |
-| `/api/search` | `q`, `pillar`, `human=true`, `limit` (maximum 100), `offset`; literal FTS terms; separate idea, person and topic results with per-category totals |
-| `/api/contributions/{id}` | Contribution, source details, exact-revision reviews, all indexed topic memberships and credited people |
-| `/api/people` | `q`, `limit` ≤100, `offset`, `human=true`; scientist and contributor directory |
+| `/api/search` | `q`, `pillar`, `human=true`, `limit` (maximum 100), `offset`; bounded offline FTS, spelling and related-concept search; separate idea, work, person and topic results, per-category totals and `search_interpretation` |
+| `/api/contributions/{id}` | Contribution, source details, exact-revision reviews, all indexed topic memberships, works and credited people |
+| `/api/people` | `q`, `pillar`, `limit` ≤100, `offset`, `human=true`; scientist and contributor directory |
 | `/api/people/{id}` | Sourced profile or explicitly incomplete attribution page, related ideas with credit notes, and topics; optional `human=true` |
+| `/api/works` | `q`, `pillar`, `topic`, `person`, `human=true`, `limit` ≤100, `offset`; source-backed work catalogue |
+| `/api/works/{id}` | Work revision, selected contributors, topics, exact insight memberships, shared works, scoped relationships and source versions |
 | `/api/relations/{id}` | Predicate, scope, warrant, joint premises, source details and reviews |
 | `/api/neighborhood` | `dossier` or `seed`, `layers` comma-separated (`none` for empty), `human=true`, `limit` ≤200, `hops` ≤6, `direction=both/ancestors/descendants` |
 | `/api/dossiers` | All registered topic assignments, including empty ones, current coverage, checklist evidence and gaps |
-| `/api/changes` | `from`, `release` (destination snapshot); added, removed and changed record identities between snapshots |
+| `/api/changes` | `from`, `release` (destination snapshot); added, removed and changed record identities between snapshots; `catalog_changes` includes works, people and topics |
 | `/api/brief` | `q`, optional `dossier`; deterministic evidence package, action scope `read_only` |
 
 Topic responses also report `available_count` after the review filter and prioritize the topic endpoint. Increasing `limit` retains the existing topic node set. The reader starts with at most 40 ideas and expands to at most 200.

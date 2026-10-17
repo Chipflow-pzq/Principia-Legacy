@@ -4223,50 +4223,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p8",
-          "source_id": "s-3254ab3a15dccb9a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p52",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-6132cf11d7ca9b0b",
-        "revision": 1
-      },
-      "content_hash": "e9395a79db7deabb419f819aa2105c22fea0e5bbd495556876ff5b40bc8b9925",
-      "curation": {
-        "method": "Cross-source proposal and separate exact-passage criticism",
-        "provider": "SiliconFlow",
-        "request_id": "01a130ddda58dd925536f672d60b98ac",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130df6f6a1787f90495d536ea9d1a"
-      },
-      "human_review": "not_reviewed",
-      "id": "connection-9c01d241a97c4d0c",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-4a8b48aed8d9affe",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The computational cost of attention in the NMT paper is a limitation that the Transformer's complexity analysis addresses.",
-      "type": "relation",
-      "warrant": "The NMT paper states that attention requires computing alignment weights for every source word for each target word, which may limit scalability, and the Transformer paper analyzes self-attention's O(n^2 * d) complexity, directly addressing this limitation."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p2",
           "source_id": "s-0480da48214bea42",
           "source_revision": 1
@@ -4575,94 +4531,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p5",
-          "source_id": "s-0480da48214bea42",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-5238d4adee0de6be",
-        "revision": 1
-      },
-      "content_hash": "d91e96dc0bf8d040b08fa6b493818c38f2d11838eb6da4d9f808a0d5cceb96b5",
-      "curation": {
-        "input_hash": "123c52f77a663d45abcc13044688ed793b63c3c6b43af0d64197138d672f0de0",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "92de5f47bb6222a081fe0e11bbabd80c341bc3bc823695f150c1c979d6e2797f",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a13099e505feebd578a4a68073e1d6",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a1309ad41f201bbf473e2119502ca6",
-        "time": "2026-10-12T14:52:33+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-0f1b898f11dc43bb",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-71ef89ded18301c8",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Length-based batching improves training efficiency, enabling the experiments.",
-      "type": "relation",
-      "warrant": "The paper reports a 2x speedup from length-based batching, which made the large-scale training feasible within ten days."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p17",
-          "source_id": "s-1243b0daadf113cc",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-4d48f67affeac563",
-        "revision": 1
-      },
-      "content_hash": "285b62376f7b24710674cbf3ad3adef65662b434f25ba0cc8a5b2e6750a44f19",
-      "curation": {
-        "input_hash": "5fd4ae68720df070929326bdbf4e3c84c856fad6c70b686f5b335847e727c649",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "dfd296e4851cc2894a5e9466db9c82a5c317891a0a4550e2c1a32a2e1ce78c80",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe1cc82310f4029332099d8822e",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe2f7a8189cf958074a6894468a",
-        "time": "2026-10-12T11:31:31+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-1008890ee323e273",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-bde86651380b84b3",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Residual networks used with multi-scale testing",
-      "type": "relation",
-      "warrant": "Multi-scale testing is applied to detection systems using residual networks, improving mAP on COCO."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p13",
           "source_id": "s-9ba66ec259647822",
           "source_revision": 1
@@ -4801,138 +4669,6 @@
       "scope": "Layer response analysis supports residual preconditioning hypothesis",
       "type": "relation",
       "warrant": "The empirical finding that residual networks have smaller layer responses than plain networks supports the hypothesis that residual functions are closer to zero, validating the preconditioning effect of identity mappings."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p52",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-6132cf11d7ca9b0b",
-        "revision": 1
-      },
-      "content_hash": "d2f3b88909ff9302e154f7b9d4e8a4a1b232458cedcec5437ed4979796ba8a37",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-27ae627347e514d5",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-f758ba89eb6bda13",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Multi-head attention is considered in the complexity analysis.",
-      "type": "relation",
-      "warrant": "The analysis of self-attention layers includes multi-head attention, as it is the core attention mechanism."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p3",
-          "source_id": "s-3254ab3a15dccb9a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-8b4edffa52a17c09",
-        "revision": 1
-      },
-      "content_hash": "2c31c2f1cdd95e3b9f68434f964b4450c0eaed398739c44189ddf041db21b690",
-      "curation": {
-        "input_hash": "29930f1a8ccd4a952c790341888b74a88babfb453ac5dde5c9ab004546c6e850",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "e35c5f16bb79a31fdcf62063285f6566a88c7abb5fa89f1563e32f7bcee47f33",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdff6f300b83ad5235233b8c660",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe124c8703d2d8a271d2f3e9af6",
-        "time": "2026-10-12T11:29:31+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-2850cd0c977e918e",
-      "layer": "conceptual",
-      "machine_screening": "passed",
-      "predicate": "equivalent_under",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-f58299fcb8c9d328",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The attention mechanism can be interpreted as computing an expected annotation.",
-      "type": "relation",
-      "warrant": "The paper explains that the weighted sum of annotations is equivalent to an expected annotation over possible alignments, providing a probabilistic interpretation."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p65",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-1ebb6249ceed5973",
-        "revision": 1
-      },
-      "content_hash": "e78e337cdb16c75840ee70361e49d5a9caa7fdea1306343244120505f8561685",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-2e8c012865669510",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-54871f8b872a0c37",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Regularization techniques contribute to the training success.",
-      "type": "relation",
-      "warrant": "The paper describes dropout and label smoothing as part of the training regime for the models that achieved the reported results."
     },
     {
       "anchors": [
@@ -5461,50 +5197,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p87",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-5695bc0aae2c9155",
-        "revision": 1
-      },
-      "content_hash": "ff085dbb4dc6cba14a56b00192f5d20a211efce208e0202b33ae79106316b3bf",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-69e305a81612eb9f",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-1ebb6249ceed5973",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Ablation studies are based on the same model family as the main results.",
-      "type": "relation",
-      "warrant": "The ablations vary the base model, which is the same architecture used for the main translation results."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p3",
           "source_id": "s-3254ab3a15dccb9a",
           "source_revision": 1
@@ -5686,50 +5378,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p9",
-          "source_id": "s-1243b0daadf113cc",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-eb793c7bd4e7ae3c",
-        "revision": 1
-      },
-      "content_hash": "c8c182c069e8efa16b3637ee8247371464386d4cd8ddd3eec72afb7b98e11eb8",
-      "curation": {
-        "input_hash": "5fd4ae68720df070929326bdbf4e3c84c856fad6c70b686f5b335847e727c649",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "dfd296e4851cc2894a5e9466db9c82a5c317891a0a4550e2c1a32a2e1ce78c80",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe1cc82310f4029332099d8822e",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe2f7a8189cf958074a6894468a",
-        "time": "2026-10-12T11:31:31+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-78d8d52a07c27bf0",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-db91fa68ed42f857",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Residual learning enables bottleneck architectures for deeper networks",
-      "type": "relation",
-      "warrant": "The residual framework allows the use of bottleneck blocks with 1x1 convolutions to reduce computational cost, enabling very deep networks like ResNet-152 with lower complexity than VGG nets."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p5",
           "source_id": "s-3254ab3a15dccb9a",
           "source_revision": 1
@@ -5782,24 +5430,63 @@
           "anchor_id": "p107",
           "source_id": "s-f593f350d93c7f67",
           "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p109",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p90",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p96",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p101",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p104",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p108",
+          "source_id": "s-f593f350d93c7f67",
+          "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-142b0ef6570377b2",
         "revision": 1
       },
-      "content_hash": "6c0e9110cf1834b062c1440c58e2260df3b85aff834b2c0b36923805e6f8ac0a",
+      "content_hash": "af423d0b907253a08c0c167277fc414000b88e3c41f734a738e3284cd124b31f",
       "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479f4365d454e06fdc1dd7f84926"
       },
       "human_review": "not_reviewed",
       "id": "r-83530ef857c48a41",
@@ -5814,7 +5501,7 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
       "scope": "Generalization to parsing shows the Transformer's versatility.",
       "type": "relation",
@@ -6004,55 +5691,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p4",
-          "source_id": "s-0480da48214bea42",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p5",
-          "source_id": "s-0480da48214bea42",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-5238d4adee0de6be",
-        "revision": 1
-      },
-      "content_hash": "81df15442edfa02ee325312c0e2fbb3e2a866afa3e025d76ad461b2c9d92b7ee",
-      "curation": {
-        "input_hash": "123c52f77a663d45abcc13044688ed793b63c3c6b43af0d64197138d672f0de0",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "92de5f47bb6222a081fe0e11bbabd80c341bc3bc823695f150c1c979d6e2797f",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a13099e505feebd578a4a68073e1d6",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a1309ad41f201bbf473e2119502ca6",
-        "time": "2026-10-12T14:52:33+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-91a9778b39d39aff",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-5a47dad74d8aeba5",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Beam search decoding contributes to the empirical results.",
-      "type": "relation",
-      "warrant": "The paper uses beam search to decode translations, and the best results are obtained with beam size 12, so the decoding method is part of the empirical success."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p16",
           "source_id": "s-f593f350d93c7f67",
           "source_revision": 1
@@ -6146,50 +5784,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p3",
-          "source_id": "s-0480da48214bea42",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-75686d8b595f7df8",
-        "revision": 1
-      },
-      "content_hash": "6855a43d23578f45f9e5c3a3220e8f915fd1f99cb974ea566b1f3b5e4a1e54ae",
-      "curation": {
-        "input_hash": "123c52f77a663d45abcc13044688ed793b63c3c6b43af0d64197138d672f0de0",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "92de5f47bb6222a081fe0e11bbabd80c341bc3bc823695f150c1c979d6e2797f",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a13099e505feebd578a4a68073e1d6",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a1309ad41f201bbf473e2119502ca6",
-        "time": "2026-10-12T14:52:33+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-a5cbbf61680d313f",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-451aa0eafeca1298",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The EOS token is part of the fixed-vector model's output generation.",
-      "type": "relation",
-      "warrant": "The paper uses the EOS token to enable variable-length output, which is a component of the fixed-vector encoder-decoder model."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p8",
           "source_id": "s-0480da48214bea42",
           "source_revision": 1
@@ -6230,50 +5824,6 @@
       "scope": "The conjecture generalizes the reversal trick's success.",
       "type": "relation",
       "warrant": "The paper concludes that problem encodings with short-term dependencies are easier to learn, which is a generalization of the reversal trick's success."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p52",
-          "source_id": "s-f593f350d93c7f67",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-6132cf11d7ca9b0b",
-        "revision": 1
-      },
-      "content_hash": "cdc6ae065e8a3774b35bce9235dec7db51544302c0983daafce7d835a0e67ce6",
-      "curation": {
-        "input_hash": "b93682fa7d8b6f63285c7d520827456cd548ee8d8eb33fc6b20b07bccd1bd257",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "d5d5374a71b404f3415678c9dda7799388c52e8065e0a91f88420869600f7c2c",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde3b738b6be3c280f5d7af10d0",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe1c88a16c32e10910f1a4f09e3",
-        "time": "2026-10-12T11:27:35+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-ad3f3c024720513f",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-0d8ad2c483c75944",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Scaled dot-product attention is part of the complexity analysis.",
-      "type": "relation",
-      "warrant": "The analysis of self-attention complexity includes the scaled dot-product attention mechanism."
     },
     {
       "anchors": [
@@ -6508,22 +6058,16 @@
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-5238d4adee0de6be",
         "revision": 1
       },
-      "content_hash": "0fb1ce6a4cc97aa1649cf25028d89360bd565574b378657fee2d8f350c1d2aba",
+      "content_hash": "02ce72a8f4dbc4e2be0e4c5046b520c169b21ad734e56f82959b13dec0bf67f8",
       "curation": {
-        "input_hash": "123c52f77a663d45abcc13044688ed793b63c3c6b43af0d64197138d672f0de0",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "92de5f47bb6222a081fe0e11bbabd80c341bc3bc823695f150c1c979d6e2797f",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a13099e505feebd578a4a68073e1d6",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a1309ad41f201bbf473e2119502ca6",
-        "time": "2026-10-12T14:52:33+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479cbaf9dd8109654ed22c5a20e2"
       },
       "human_review": "not_reviewed",
       "id": "r-be7f844e8bd2f836",
@@ -6538,11 +6082,11 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
-      "scope": "Gradient clipping enables stable training of the LSTM.",
+      "scope": "Gradient clipping was part of the training procedure used for the deep LSTM models that produced the reported BLEU results.",
       "type": "relation",
-      "warrant": "The paper uses gradient clipping to prevent exploding gradients, which is necessary for training the deep LSTM that achieves the reported BLEU scores."
+      "warrant": "The passage states that LSTMs can have exploding gradients and that the authors enforced a hard constraint on the gradient norm by scaling it when its norm exceeded 5. This clipping was part of the training setup for the deep LSTMs whose ensemble achieved the reported BLEU score, so it supports the method's role in that training procedure, not a necessity claim."
     },
     {
       "anchors": [
@@ -6587,50 +6131,6 @@
       "scope": "Empirical results demonstrate the effectiveness of the Transformer.",
       "type": "relation",
       "warrant": "The state-of-the-art BLEU scores on translation tasks validate the architecture's design."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p19",
-          "source_id": "s-1243b0daadf113cc",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-70418ebdb5651f51",
-        "revision": 1
-      },
-      "content_hash": "3b47e6e651a3f76e6640eb1d9139500482ef9d443dc606ffc5e0aa3bcb01f6f6",
-      "curation": {
-        "input_hash": "5fd4ae68720df070929326bdbf4e3c84c856fad6c70b686f5b335847e727c649",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "dfd296e4851cc2894a5e9466db9c82a5c317891a0a4550e2c1a32a2e1ce78c80",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe1cc82310f4029332099d8822e",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe2f7a8189cf958074a6894468a",
-        "time": "2026-10-12T11:31:31+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-c79cc2dafe67bd9d",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-bde86651380b84b3",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Residual networks used in per-class RPN for localization",
-      "type": "relation",
-      "warrant": "The per-class RPN for localization is built on residual networks, leveraging their deep features to improve localization accuracy."
     },
     {
       "anchors": [
@@ -7005,6 +6505,6 @@
       "warrant": "The successful training of a 1202-layer residual network demonstrates that residual learning overcomes optimization difficulties at extreme depths, though overfitting becomes a limitation."
     }
   ],
-  "release_id": "1.2.0-exploratory",
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf"
+  "release_id": "1.4.1-exploratory",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f"
 }

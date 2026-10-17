@@ -1,0 +1,38 @@
+{
+  "applied_at": "2026-10-17T02:22:30+00:00",
+  "impact": [
+    "r-5b5118415cfa19fa",
+    "r-8ce02eaeed7acf8c"
+  ],
+  "reason": "Complete the stratified contribution audit: correct exact evidence locators, narrow causal scope and repair a LaTeX escape. Source enrichment preserves identical old anchors and bytes.",
+  "record_refs": [
+    {
+      "id": "s-53e00d2b7920b142",
+      "revision": 2
+    },
+    {
+      "id": "s-acc933f4ccfb3046",
+      "revision": 2
+    },
+    {
+      "id": "n-5ee1829e545c17d8",
+      "revision": 2
+    },
+    {
+      "id": "n-32982ed0f5fdd648",
+      "revision": 2
+    },
+    {
+      "id": "n-e2055ae3bf7bfbf1",
+      "revision": 4
+    },
+    {
+      "id": "r-5b5118415cfa19fa",
+      "revision": 3
+    },
+    {
+      "id": "r-8ce02eaeed7acf8c",
+      "revision": 2
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "audited": 2233,
+  "new_exact_machine_reviews": 1770,
+  "patch": {
+    "applied": "fb195f6882c07e255d57cd7c627f4635eefe5d706099571fa602ab83ddaec0d4",
+    "previous_release": "before-78602b6678fe",
+    "recheck": []
+  },
+  "qualified_human_review": false,
+  "repaired": 23,
+  "retained_without_change": 1747,
+  "withheld": 463
+}

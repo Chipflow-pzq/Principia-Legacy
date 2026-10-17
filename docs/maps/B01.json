@@ -4084,60 +4084,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p16",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p17",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p18",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-058619048b6760c2",
-        "revision": 1
-      },
-      "content_hash": "a8c89680a44976e15ea454b110a9051020e92860ccd8497d2313198084297206",
-      "curation": {
-        "input_hash": "c94a2860c8c62b447c14826c44a957b5e2512aafb49b757d1acd46aae1e92b98",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "cc62aaef8b3750c1e97be44e1ee57aef8577662b7ad4830af3bb2838b35b2870",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130c9304517db6d4096bc12b63e19",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130ca168c9c8e6f71fc39a005b762",
-        "time": "2026-10-12T15:44:04+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-06b24b6bbd1016dd",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-43db577b823f7b5d",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The 3-track architecture's accuracy enables functional insights.",
-      "type": "relation",
-      "warrant": "RoseTTAFold's accurate models, based on the 3-track architecture, provided functional insights for proteins without known structures."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p22",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
@@ -4740,55 +4686,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p9",
-          "source_id": "s-057b1d8c009ba859",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p11",
-          "source_id": "s-057b1d8c009ba859",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-2cb219a9998c1a05",
-        "revision": 1
-      },
-      "content_hash": "a9177dbdd06170907287d07169c27ff0128e0878c0133adb49fe82f1db70d38a",
-      "curation": {
-        "input_hash": "e4558143505011adfb1c1a3ef0d70b04b5d83a4b96367f0fa1b00d7177cbcaa8",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "36e2d3afa77915556f3a39f041bc81975a91d6d1ff398dea8409040463ee52da",
-        "prompt_hash": "e043ee214e7a2ccc4a8a1044179f3e01c6818d7c574ae43799c9ff36ddb658a2",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ffa546799698c9b600acca4336a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ffb622f39a6397b321d2bd353f6",
-        "time": "2026-10-12T11:58:30+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-44a386e654b43d77",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-6cf530f8f03b7dab",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Architecture to end-to-end prediction",
-      "type": "relation",
-      "warrant": "The Evoformer block is a core component of the AlphaFold network that processes MSA and pair representations, enabling the end-to-end prediction of structures. Without this component, the network would not achieve the same accuracy."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p42",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
@@ -5288,50 +5185,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p7",
-          "source_id": "s-7b2101824f73d1a9",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-43db577b823f7b5d",
-        "revision": 1
-      },
-      "content_hash": "af7912b9cd58a3cadc86aad92aba94260fd8d4cd81a278d8fd80950145c9e210",
-      "curation": {
-        "input_hash": "c94a2860c8c62b447c14826c44a957b5e2512aafb49b757d1acd46aae1e92b98",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "cc62aaef8b3750c1e97be44e1ee57aef8577662b7ad4830af3bb2838b35b2870",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130c9304517db6d4096bc12b63e19",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130ca168c9c8e6f71fc39a005b762",
-        "time": "2026-10-12T15:44:04+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-7466fc3525bd75f9",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-160befdf51314fb8",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "CAMEO results support the 3-track architecture's effectiveness.",
-      "type": "relation",
-      "warrant": "Outperforming other servers on CAMEO provides independent validation of the 3-track architecture's accuracy."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p10",
           "source_id": "s-057b1d8c009ba859",
           "source_revision": 1
@@ -5567,28 +5420,22 @@
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-2cb219a9998c1a05",
         "revision": 1
       },
-      "content_hash": "63556abf4987ded00896653897c13dae1793c921f0c20555b60723c1699948c1",
+      "content_hash": "c1b39c2f2f5078c7bdd1ae039d0a9a816d0380eb45527fbd8883ba3b76813420",
       "curation": {
-        "input_hash": "e4558143505011adfb1c1a3ef0d70b04b5d83a4b96367f0fa1b00d7177cbcaa8",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "36e2d3afa77915556f3a39f041bc81975a91d6d1ff398dea8409040463ee52da",
-        "prompt_hash": "e043ee214e7a2ccc4a8a1044179f3e01c6818d7c574ae43799c9ff36ddb658a2",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ffa546799698c9b600acca4336a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ffb622f39a6397b321d2bd353f6",
-        "time": "2026-10-12T11:58:30+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479cd2dc03e96770613901e4f2c9"
       },
       "human_review": "not_reviewed",
       "id": "r-95e2d8dde9b486db",
-      "layer": "logical",
+      "layer": "historical",
       "machine_screening": "passed",
-      "predicate": "premise_for",
+      "predicate": "applied_in",
       "premise_mode": "all",
       "premises": [
         {
@@ -5597,11 +5444,11 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
-      "scope": "Loss function to training",
+      "scope": "FAPE loss used in training AlphaFold2",
       "type": "relation",
-      "warrant": "The FAPE loss is the primary supervision signal for training the network to produce accurate structures, making it a prerequisite for the end-to-end prediction capability."
+      "warrant": "The source states FAPE is the final loss used to train the network, comparing predicted and true atom positions under multiple alignments and providing the main source of chirality. This documents FAPE as a contribution demonstrably used within the AlphaFold2 training pipeline, matching applied_in rather than premise_for, which would require FAPE to be an inferential premise for the end-to-end capability."
     },
     {
       "anchors": [
@@ -5690,55 +5537,6 @@
       "scope": "Empirical validation",
       "type": "relation",
       "warrant": "The unified architecture (n1) outperforms docking tools without using pocket information (n14), demonstrating that a deep-learning framework can handle ligand diversity without structural inputs."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p15",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-779419114e545af4",
-        "revision": 1
-      },
-      "content_hash": "e8b1220d169b6128b4beace5af891a94d14d507d19fb103dbf46280d12651e53",
-      "curation": {
-        "input_hash": "60917dadceae00610f710f2132d19d1b23a4f684e310acfae720b216cd68b1e3",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "14b17692a6312cac20c0cec47ab5d22f6be7f60d372c1a1b2ccfa9580902f6c1",
-        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ff7fb8aeac98b957bca94f7d796",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "time": "2026-10-12T11:55:42+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-a6dcbe2c63841aba",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-711b35dd72329889",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Architectural evolution",
-      "type": "relation",
-      "warrant": "The unified diffusion-based architecture (n1) incorporates the diffusion module (n3) as the structure generation component, replacing the AF2 structure module. The diffusion module operates directly on raw atom coordinates, which is essential for handling arbitrary chemical components."
     },
     {
       "anchors": [
@@ -6061,55 +5859,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p12",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p14",
-          "source_id": "s-f4a9c46d8b6e8da2",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-6ecdc3cdb0cf0aac",
-        "revision": 1
-      },
-      "content_hash": "7f4f3c56db96e04d11c8777b1670506c7300344253ddcac5ffdd58e108c0ac8a",
-      "curation": {
-        "input_hash": "60917dadceae00610f710f2132d19d1b23a4f684e310acfae720b216cd68b1e3",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "14b17692a6312cac20c0cec47ab5d22f6be7f60d372c1a1b2ccfa9580902f6c1",
-        "prompt_hash": "e01b2b4eb050fe7ed06ad8cc98196cbcbf632e5c4c52957ac645fa6af9689830",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ff7fb8aeac98b957bca94f7d796",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ff919eea58ffc9dd6288ae31390",
-        "time": "2026-10-12T11:55:42+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-e33a33a15883653e",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-711b35dd72329889",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Architectural evolution",
-      "type": "relation",
-      "warrant": "The unified diffusion-based architecture (n1) relies on the pairformer module (n2) as a key component to process pair and single representations, replacing the evoformer. The pairformer is described as part of the substantial evolution of the AF2 architecture, enabling the model to handle diverse chemical entities."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p18",
           "source_id": "s-f4a9c46d8b6e8da2",
           "source_revision": 1
@@ -6340,50 +6089,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p25",
-          "source_id": "s-057b1d8c009ba859",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-2cb219a9998c1a05",
-        "revision": 1
-      },
-      "content_hash": "0ce0b70631bacb73740d00269f4b1c12de4be1738e6d4d3677864fbbd41c0576",
-      "curation": {
-        "input_hash": "e4558143505011adfb1c1a3ef0d70b04b5d83a4b96367f0fa1b00d7177cbcaa8",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "36e2d3afa77915556f3a39f041bc81975a91d6d1ff398dea8409040463ee52da",
-        "prompt_hash": "e043ee214e7a2ccc4a8a1044179f3e01c6818d7c574ae43799c9ff36ddb658a2",
-        "provider": "SiliconFlow",
-        "request_id": "01a12ffa546799698c9b600acca4336a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12ffb622f39a6397b321d2bd353f6",
-        "time": "2026-10-12T11:58:30+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-fb4488c3fa74da8a",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-38c9c9e13228f681",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Prediction vs. confirmation",
-      "type": "relation",
-      "warrant": "The argument that predictions are not experimental confirmation bounds the interpretation of AlphaFold's results, reminding users of the limits."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p19",
           "source_id": "s-057b1d8c009ba859",
           "source_revision": 1
@@ -6470,6 +6175,6 @@
       "warrant": "The improved accuracy of RoseTTAFold, based on the 3-track architecture, was critical for solving MR problems where trRosetta failed."
     }
   ],
-  "release_id": "1.2.0-exploratory",
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf"
+  "release_id": "1.4.1-exploratory",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f"
 }

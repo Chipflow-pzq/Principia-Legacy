@@ -5,7 +5,8 @@
 *.bat text eol=crlf
 *.jsonl text eol=lf
 *.svg text eol=lf
-web_dist/** linguist-generated=true
+# Bundled dependency shader strings can contain intentional trailing spaces.
+web_dist/** linguist-generated=true -whitespace
 web/src/notation.json linguist-generated=true
 corpus/** linguist-generated=true
 manifests/releases/** linguist-generated=true

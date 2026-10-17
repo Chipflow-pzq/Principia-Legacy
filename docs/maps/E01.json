@@ -2357,55 +2357,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "aa25f69a857f1df096611b04c06288440de0acab9941e31b5a464618ea84f300",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-03af14622534dc9a",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-1def0e35b076fa6c",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Relaxed sparsity conditions support the practical applicability of DML.",
-      "type": "relation",
-      "warrant": "The paper shows that cross-fitting weakens sparsity requirements, making DML applicable in a broader range of settings, which supports the general theory."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p5",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
@@ -2495,55 +2446,6 @@
       "scope": "The median method provides a robust way to aggregate DML estimates.",
       "type": "relation",
       "warrant": "The paper shows that the median estimator is first-order equivalent to the single-split estimator, supporting the practical use of DML."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p42",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p43",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "b212e484f0a5fc42f78c635655426227dc94458ed33a3b932d0ec3666fc28854",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-0973eb607f0e21b6",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-12d4463d5bc3c830",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The 401(k) example demonstrates DML in an observational study.",
-      "type": "relation",
-      "warrant": "The paper applies DML to estimate the effect of 401(k) eligibility, showing that the method controls for confounding flexibly, illustrating its practical use."
     },
     {
       "anchors": [
@@ -2758,55 +2660,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p25",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p28",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "3cfe684ad96232b985d2fb0e8a33b957ae1ea7ab58a99efcc59b52a7b1906988",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-4adbdce91480e899",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-ad122f716d2d1dc5",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "DML2 is a variant of DML that also achieves root-N consistency.",
-      "type": "relation",
-      "warrant": "The paper proves that both DML1 and DML2 estimators satisfy the same asymptotic properties, with DML2 being recommended for small samples."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p135",
           "source_id": "s-7a6c46a68da7d88b",
           "source_revision": 1
@@ -2900,76 +2753,26 @@
     {
       "anchors": [
         {
-          "anchor_id": "p40",
+          "anchor_id": "p28",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         },
         {
-          "anchor_id": "p41",
+          "anchor_id": "p30",
           "source_id": "s-72d60481d8b7ed3b",
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-7a2dcf7d88d3269d",
         "revision": 1
       },
-      "content_hash": "32bd426a7a38f70b82d2f4d2fd078ffb7478f64f7975f4f40267d52449496f6f",
+      "content_hash": "3f8415773a95a5ba31a167555ff736ec1198f620246abdc1676f857c5cd16ac1",
       "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-64f4ce96c5ef782e",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-22a61c41440c0b1a",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The UI bonus example demonstrates DML in practice.",
-      "type": "relation",
-      "warrant": "The paper applies DML to the Pennsylvania experiment, showing that the method produces sensible estimates, illustrating its practical use."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p28",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "c1589b787416440bc5d8b3fa5c94c0d8bbdd54a9d4aeb3d76ad2038811f0eadf",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479f478cbbed831ab4bb9e739110"
       },
       "human_review": "not_reviewed",
       "id": "r-69003bedea715b44",
@@ -2984,7 +2787,7 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
       "scope": "Uniform confidence intervals extend the pointwise normality result.",
       "type": "relation",
@@ -3219,50 +3022,6 @@
       "scope": "The LATE framework is applied to medical trials with incomplete adherence.",
       "type": "relation",
       "warrant": "The source discusses how LATE can be estimated in medical trials and argues it should be the main estimand, complementing ITT analysis."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p45",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "9c7c2979342758ff28cdccaa4cbe58454e028d084f02dc482728f99fcc75bcdd",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-d0b7c4a1cb68c643",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-d7e722b32afc435c",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The institutions example demonstrates DML in an IV setting.",
-      "type": "relation",
-      "warrant": "The paper applies DML to estimate the effect of institutions on GDP, showing the method's applicability in structural IV models."
     },
     {
       "anchors": [
@@ -3571,28 +3330,22 @@
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-151095b708b8a3d1",
         "revision": 1
       },
-      "content_hash": "8cd977d4b0843220f3059c7b10ae3372bc729895f78c4922cf6df64aac70ae11",
+      "content_hash": "fc8c5e10d9d43ee1905ed5ec60163c96f6651db0199c9987977b1c58e4d69cdd",
       "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479c39fad8d41b92687f5b4dd25d"
       },
       "human_review": "not_reviewed",
       "id": "r-f4723a53fb1077bd",
-      "layer": "historical",
+      "layer": "logical",
       "machine_screening": "passed",
-      "predicate": "historical_basis_for",
+      "predicate": "premise_for",
       "premise_mode": "all",
       "premises": [
         {
@@ -3601,109 +3354,11 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
-      "scope": "The influence function adjustment yields the orthogonal score for PLR.",
+      "scope": "Derivation of the Neyman orthogonal score for the partially linear model from the influence-function adjustment.",
       "type": "relation",
-      "warrant": "The paper shows that adding the influence function adjustment to the naive score produces the orthogonal score for the partially linear model."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p123",
-          "source_id": "s-7a6c46a68da7d88b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p127",
-          "source_id": "s-7a6c46a68da7d88b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-8cbbf667ea03c2b5",
-        "revision": 1
-      },
-      "content_hash": "87a8d453b8d84a2f178ea5448b2d80e8b29fa5575df39067c65ea72dd8dc78ad",
-      "curation": {
-        "input_hash": "50d95662a40164c6039069f457ed5dd07c775eecd1a06653c4746f404e7e96c9",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "84fa7ef5bf8dbae1f8ee3b541118882eb5d4b8b4c6695c3ae8fa7ad08092311c",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130cb577246c1a49747beca2e312a",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130cca1e567b7de97f9ad6e328a18",
-        "time": "2026-10-12T15:46:48+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-f59a04f1003d7485",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-8d4f954e637f82dc",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The LATE framework is applied to judge leniency designs.",
-      "type": "relation",
-      "warrant": "The source describes how judge leniency designs use random assignment of judges as an instrument, and the LATE framework provides the interpretation of the resulting estimates."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p33",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p37",
-          "source_id": "s-72d60481d8b7ed3b",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-7a2dcf7d88d3269d",
-        "revision": 1
-      },
-      "content_hash": "bd82afd13fb85b04e39b86a47cbc8b42639ed573e39f6b2fbd85a9925c4da331",
-      "curation": {
-        "input_hash": "5d32f945d0916661b73a7e0a511fa655c81338de690efc02d4e07e53e711d16a",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "89cdd878b2e819b78ed8d9a022a9525e59a52d59ab67a905fd5f409d7c7a5181",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2dc6de4f8edc2498d12913e7b",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe4e9558bedd7da64dc2dbad54d",
-        "time": "2026-10-12T11:32:41+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-f6aa210a9b5aa5e7",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-f94ea78e2150b253",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Efficiency results strengthen the DML theorem.",
-      "type": "relation",
-      "warrant": "The paper shows that DML achieves the semiparametric efficiency bound in specific cases, indicating that the method is not only consistent but also optimal in those settings."
+      "warrant": "p23 shows that for the partially linear model the original score D(Y-Dθ-g(X)) is adjusted by the influence-function term -m(X)(Y-Dθ-β(X,θ)), yielding ψ={D-m(X)}{Y-Dθ-β(X,θ)}. This is a logical derivation in which the adjustment premise produces the orthogonal score conclusion, so premise_for is the accurate predicate rather than historical_basis_for."
     },
     {
       "anchors": [
@@ -3750,6 +3405,6 @@
       "warrant": "The source uses the dilution argument to show that ITT can be misleading, which motivates the use of LATE."
     }
   ],
-  "release_id": "1.2.0-exploratory",
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf"
+  "release_id": "1.4.1-exploratory",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f"
 }

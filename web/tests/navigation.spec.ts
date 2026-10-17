@@ -41,7 +41,7 @@ test("search survives reading, next result, closing, browser back and reload", a
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("general relativity");
   const result = page
     .locator(".result-card")
@@ -82,20 +82,61 @@ test("search survives reading, next result, closing, browser back and reload", a
   ).toBeVisible();
   await page.goBack();
   await expect(
-    page.getByRole("textbox", { name: "Search contributions" }),
+    page.getByRole("textbox", { name: "Search the atlas" }),
   ).toHaveValue("general relativity");
   await expect(inspector).toBeVisible();
   await page.reload();
   await expect(
-    page.getByRole("textbox", { name: "Search contributions" }),
+    page.getByRole("textbox", { name: "Search the atlas" }),
   ).toHaveValue("general relativity");
   await expect(inspector).toBeVisible();
+});
+
+test("a topic link works when its search result arrives before the catalogue", async ({
+  page,
+}) => {
+  let releaseCatalogue!: () => void;
+  const held = new Promise<void>((resolve) => {
+    releaseCatalogue = resolve;
+  });
+  let calls = 0;
+  await page.route("**/api/dossiers*", async (route) => {
+    if (++calls === 1) await held;
+    await route.continue();
+  });
+  try {
+    await page.goto("/");
+    await page
+      .getByRole("textbox", { name: "Search the atlas" })
+      .fill("general relativity");
+    await page
+      .locator(".result-card")
+      .filter({ hasText: "Consistency tests of general relativity" })
+      .click();
+    const inspector = page.getByRole("complementary", {
+      name: "Record inspector",
+    });
+    await inspector
+      .locator(".topic-link")
+      .filter({ hasText: "General relativity" })
+      .last()
+      .click();
+    await expect(
+      page.getByRole("heading", { name: "General relativity", exact: true }),
+    ).toBeVisible();
+    expect(calls).toBeGreaterThanOrEqual(2);
+    await expect(
+      page.getByRole("textbox", { name: "Search the atlas" }),
+    ).toHaveValue("");
+  } finally {
+    releaseCatalogue();
+  }
 });
 test("scientist search opens a sourced profile, linked ideas and topics", async ({
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("Einstein");
   await page
     .locator(".person-card")
@@ -116,13 +157,17 @@ test("scientist search opens a sourced profile, linked ideas and topics", async 
   await page
     .getByRole("button", { name: "← Back to search results", exact: true })
     .click();
-  await expect(page.locator(".search-results .person-card")).toBeVisible();
+  await expect(
+    page
+      .locator(".search-results .person-card")
+      .filter({ hasText: "Albert Einstein" }),
+  ).toBeVisible();
 });
 test("Hamiltonian mechanics is discoverable as a topic and via Hamilton", async ({
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("Hamiltonian mechanics");
   await expect(
     page
@@ -130,7 +175,7 @@ test("Hamiltonian mechanics is discoverable as a topic and via Hamilton", async 
       .filter({ hasText: "Hamiltonian mechanics" }),
   ).toBeVisible();
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("Hamilton");
   await page
     .locator(".person-card")
@@ -147,14 +192,15 @@ test("search paginates broad results without discarding the query", async ({
   page,
 }) => {
   await page
-    .getByRole("textbox", { name: "Search contributions" })
+    .getByRole("textbox", { name: "Search the atlas" })
     .fill("model");
+  await page.getByRole("button", { name: /^Ideas ·/ }).click();
   await expect(page.locator(".result-card")).toHaveCount(40);
   const first = await page.locator(".result-card h3").first().innerText();
   await page.getByRole("button", { name: "Next results", exact: true }).click();
   await expect(page.locator(".result-card h3").first()).not.toHaveText(first);
   await expect(
-    page.getByRole("textbox", { name: "Search contributions" }),
+    page.getByRole("textbox", { name: "Search the atlas" }),
   ).toHaveValue("model");
   await page
     .getByRole("button", { name: "Previous results", exact: true })
@@ -176,7 +222,7 @@ test("search and tracing work while the initial catalogue is still loading", asy
   try {
     await page.goto("/");
     await page
-      .getByRole("textbox", { name: "Search contributions" })
+      .getByRole("textbox", { name: "Search the atlas" })
       .fill("attention");
     await page.locator(".result-card").first().click();
     await page.getByRole("button", { name: "Trace its connections ↗" }).click();

@@ -1,10 +1,10 @@
 {
-  "release_id": "1.2.0-exploratory",
+  "release_id": "1.4.1-exploratory",
   "counts": {
-    "contribution": 2667,
-    "relation": 2233,
-    "source": 237,
-    "review": 5167
+    "contribution": 2905,
+    "relation": 1941,
+    "source": 270,
+    "review": 7674
   },
   "machine": {
     "os": "macOS-26.3.1-x86_64-i386-64bit",
@@ -14,21 +14,21 @@
   "warm_http": {
     "search": {
       "samples": 30,
-      "p50_ms": 73.77,
-      "p95_ms": 106.08,
-      "max_ms": 111.14
+      "p50_ms": 141.64,
+      "p95_ms": 150.42,
+      "max_ms": 151.14
     },
     "neighborhood": {
       "samples": 30,
-      "p50_ms": 116.33,
-      "p95_ms": 580.74,
-      "max_ms": 606.24
+      "p50_ms": 103.22,
+      "p95_ms": 108.63,
+      "max_ms": 110.56
     },
     "dossiers": {
       "samples": 30,
-      "p50_ms": 308.69,
-      "p95_ms": 1293.46,
-      "max_ms": 1429.47
+      "p50_ms": 318.31,
+      "p95_ms": 329.17,
+      "max_ms": 329.69
     }
   },
   "targets": {
@@ -38,14 +38,14 @@
     "combined_memory_bytes_approx": 1000000000
   },
   "browser": {
-    "first_view_ms": 1088,
+    "first_view_ms": 1122,
     "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
-    "js_heap_bytes": 14426090,
-    "browser_process_rss_bytes": 700182528,
-    "reader_process_rss_bytes": 365838336,
-    "combined_rss_bytes": 1066020864,
-    "memory_method": "ps RSS summed over the test Chromium process tree plus the local reader; shared pages may be counted more than once",
-    "requests": 6,
+    "js_heap_bytes": 15657024,
+    "browser_process_rss_bytes": 688361472,
+    "reader_process_rss_bytes": 263802880,
+    "combined_rss_bytes": 952164352,
+    "memory_method": "ps RSS summed over this browser's CDP-identified process tree plus the local reader; unrelated QA browsers excluded; shared pages may be counted more than once",
+    "requests": 7,
     "external_requests": [],
     "page_errors": [],
     "viewport": {

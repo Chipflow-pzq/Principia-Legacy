@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "scope": "Local clean preflight distributions; final documentation receipts are added afterwards without changing tested code, canonical content or assets.",
+  "platform": "macOS 26.3.1 x86_64",
+  "distributions": [
+    {
+      "distribution": "offline",
+      "archive": "principia-legacy-1.4.1-exploratory.zip",
+      "tested_archive_sha256": "6295fb5aebd6a1ba4ea69cf5cc611eb6d934cd27f68e8edf428e0679ee9fee23",
+      "checksums": {
+        "verified": true,
+        "files": 635,
+        "failures": []
+      },
+      "prebuilt_database": true,
+      "startup_seconds_including_index_build": 0.73,
+      "release_id": "1.4.1-exploratory",
+      "catalog_counts": {
+        "works": 882,
+        "people": 899,
+        "topics": 781,
+        "works_with_insights": 262
+      },
+      "external_requests": [],
+      "reader_environment": "Python 3.12.7 with -S; external socket connections blocked; no Node or installed Python packages"
+    },
+    {
+      "distribution": "source",
+      "archive": "principia-legacy-1.4.1-exploratory-source.zip",
+      "tested_archive_sha256": "b25c5fd409d0d233ec77ff82999b765244398e29accae07723bfa5b2ac55ca3c",
+      "checksums": {
+        "verified": true,
+        "files": 626,
+        "failures": []
+      },
+      "prebuilt_database": false,
+      "startup_seconds_including_index_build": 17.65,
+      "release_id": "1.4.1-exploratory",
+      "catalog_counts": {
+        "works": 882,
+        "people": 899,
+        "topics": 781,
+        "works_with_insights": 262
+      },
+      "external_requests": [],
+      "reader_environment": "Python 3.12.7 with -S; external socket connections blocked; no Node or installed Python packages"
+    }
+  ],
+  "hosted_allowlist_import": "isolated reader imports and work search passed",
+  "qualified_human_audit": false
+}

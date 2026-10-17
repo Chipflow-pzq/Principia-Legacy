@@ -1,0 +1,12 @@
+{
+  "reader": "1.4.0rc1",
+  "stats": {
+    "startTime": "2026-10-17T05:59:38.659Z",
+    "duration": 358834.644,
+    "expected": 297,
+    "skipped": 3,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "Full desktop/mobile regression. Initial snapshot 1.4.0; final targeted checks also cover the immutable 1.4.1 scientific correction. No live provider calls are made by this deterministic suite."
+}

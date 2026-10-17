@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { api, Person, PersonDetail, TopicLink, words } from "./types";
+import { WorkCards } from "./Works";
 import { RichText } from "./RichText";
 
 export function PersonPage({
@@ -7,6 +8,7 @@ export function PersonPage({
   release,
   onIdea,
   onTopic,
+  onWork,
   onBack,
   hasSearch,
   human,
@@ -15,6 +17,7 @@ export function PersonPage({
   release: string;
   onIdea: (id: string) => void;
   onTopic: (id: string) => void;
+  onWork: (id: string) => void;
   onBack: () => void;
   hasSearch: boolean;
   human: boolean;
@@ -49,8 +52,10 @@ export function PersonPage({
       ) : (
         <>
           <span className="eyebrow">
-            {data.person.kind === "person" ? "Scientist" : "Contributor"} ·{" "}
-            {data.person.profile_status}
+            {data.person.kind === "person"
+              ? "Scientist / contributor"
+              : "Contributor"}{" "}
+            · {data.person.profile_status}
           </span>
           <h1>{data.person.name}</h1>
           {data.person.life_dates && (
@@ -77,7 +82,13 @@ export function PersonPage({
               ))}
             </details>
           )}
-          <h2>Explore their ideas in these topics</h2>
+          {!!data.works?.length && (
+            <section>
+              <h2>Selected works</h2>
+              <WorkCards works={data.works} onWork={onWork} />
+            </section>
+          )}
+          <h2>Related topics</h2>
           {human && !data.contributions.length && (
             <p role="status">
               No ideas on this page have a recorded human review in this
@@ -91,6 +102,12 @@ export function PersonPage({
             Credit is shown for each idea; this list does not claim sole
             authorship or a complete body of work.
           </p>
+          {!data.contributions.length && !human && (
+            <p className="notice">
+              This individual has a sourced profile. Insight extraction from
+              their selected works is pending.
+            </p>
+          )}
           <div className="node-list">
             {data.contributions.map((n) => (
               <button key={n.id} onClick={() => onIdea(n.id)}>
@@ -140,6 +157,7 @@ export function TopicLinks({
 }
 export function PeopleDirectory({
   release,
+  pillar,
   onPerson,
   human,
   query,
@@ -148,6 +166,7 @@ export function PeopleDirectory({
   onPage,
 }: {
   release: string;
+  pillar?: string;
   onPerson: (id: string) => void;
   human: boolean;
   query: string;
@@ -167,7 +186,7 @@ export function PeopleDirectory({
       () =>
         api<{ people: Person[]; total: number }>(
           "people",
-          { release, human, q: query, offset, limit: 48 },
+          { release, human, pillar, q: query, offset, limit: 48 },
           c.signal,
         )
           .then(setData)
@@ -180,7 +199,7 @@ export function PeopleDirectory({
       clearTimeout(t);
       c.abort();
     };
-  }, [release, human, offset, query]);
+  }, [release, human, offset, query, pillar]);
   return (
     <section className="people-directory">
       <span className="eyebrow">The people behind the ideas</span>
@@ -242,11 +261,14 @@ export function PersonCard({
   return (
     <button className="person-card" onClick={onClick}>
       <span className="eyebrow">
-        {p.kind === "person" ? "Scientist" : "Contributor"}
+        {p.kind === "person" ? "Scientist / contributor" : "Contributor"}
       </span>
       <h3>{p.name}</h3>
       <p>{p.biography || p.subjects.map(words).join(" · ")}</p>
-      <span>{p.contribution_count} insights · Open profile ↗</span>
+      <span>
+        {p.work_count || 0} selected {p.work_count === 1 ? "work" : "works"} ·{" "}
+        {p.contribution_count} insights · Open profile ↗
+      </span>
     </button>
   );
 }

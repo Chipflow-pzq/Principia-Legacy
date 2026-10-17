@@ -1,20 +1,26 @@
 {
   "passed": true,
-  "release_id": "1.2.0-exploratory",
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+  "release_id": "1.4.1-exploratory",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
   "counts": {
-    "contribution": 2667,
-    "relation": 2233,
-    "source": 237,
-    "review": 5167
+    "contribution": 2905,
+    "relation": 1941,
+    "source": 270,
+    "review": 7674
   },
   "exact_machine_reviews_for_all_visible_records": true,
-  "dossiers": 154,
+  "dossiers": 781,
   "flagship_endpoint_checks": 5,
   "tour_checks": 3,
   "source_closure": true,
   "neighborhood_cap_and_joint_premises": true,
   "frozen_evaluation_files_unchanged": true,
-  "external_jsonschema": "10648 immutable versions validated against exported JSON Schemas",
-  "qualified_human_audit": "not performed"
+  "external_jsonschema": "14378 immutable versions validated against exported JSON Schemas",
+  "qualified_human_audit": "not performed",
+  "catalog_counts": {
+    "works": 882,
+    "people": 899,
+    "topics": 781,
+    "works_with_insights": 262
+  }
 }

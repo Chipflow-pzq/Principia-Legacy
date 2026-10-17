@@ -1,0 +1,305 @@
+{
+  "applied_at": "2026-10-17T02:10:55+00:00",
+  "impact": [
+    "r-073954deaa30bc91",
+    "r-10dfd72eaf680d1d",
+    "r-141084c5a3e3c818",
+    "r-157690be1885c0bf",
+    "r-261e14200756338b",
+    "r-2729ee152d7aacd4",
+    "r-27b2b7d62aa87640",
+    "r-36e7cc3c502d368b",
+    "r-3e4e884c8985ab5f",
+    "r-480a42f8788a0947",
+    "r-4f7dcb4d2679778b",
+    "r-5adbca70634ac67f",
+    "r-5f38862e370f56c1",
+    "r-6d9eb20a8fe826af",
+    "r-732e46a280d384fd",
+    "r-765185ac6bf4fea2",
+    "r-8e1fbd2408e8a9b7",
+    "r-929ff01ef5f8a386",
+    "r-959eb3f1e45aece9",
+    "r-9c36de259f214584",
+    "r-a262174ac679ccb4",
+    "r-a2a53ab5d05abfc6",
+    "r-adcdfd59b9cad0ed",
+    "r-b06f761924e00067",
+    "r-c196b6194d8154e2",
+    "r-c2cc9703d6e28ff6",
+    "r-c414e7de0d9298b4",
+    "r-cfa0f1f1d7e27580",
+    "r-d05f9452ac94f62f",
+    "r-d8d07317384dc65f",
+    "r-db0a94c0f65f50cf",
+    "r-e54e5d05a5e503ba",
+    "r-f84dedbc7a09adf6",
+    "r-fa743ca8aad07ac2",
+    "r-fa8fd631a848e3a4",
+    "r-fb9f5c6927cb19b0",
+    "r-febbfdc8df7c0132"
+  ],
+  "reason": "Primary agent editorial audit: withhold misleading, redundant, or non-substantive new cards and recheck their dependent arrows. No qualified human review is implied.",
+  "record_refs": [
+    {
+      "id": "n-d0bf28a0e5bc5f41",
+      "revision": 2
+    },
+    {
+      "id": "n-3be14e776882fc9a",
+      "revision": 2
+    },
+    {
+      "id": "n-e4665710f7389e15",
+      "revision": 2
+    },
+    {
+      "id": "n-52be4af22aea9c10",
+      "revision": 2
+    },
+    {
+      "id": "n-33ea64f8ed860667",
+      "revision": 2
+    },
+    {
+      "id": "n-adc23b71d8f73fd2",
+      "revision": 2
+    },
+    {
+      "id": "n-ee4240682e6a3181",
+      "revision": 2
+    },
+    {
+      "id": "n-405984dcf8c74794",
+      "revision": 2
+    },
+    {
+      "id": "n-6755d4ee7af55ecf",
+      "revision": 2
+    },
+    {
+      "id": "n-7361ec6fd362272a",
+      "revision": 2
+    },
+    {
+      "id": "n-8cff48baf2c1391f",
+      "revision": 2
+    },
+    {
+      "id": "n-12a95ddbb641e7a3",
+      "revision": 2
+    },
+    {
+      "id": "n-76f6ba0bdc400083",
+      "revision": 2
+    },
+    {
+      "id": "n-2ad3b0ea26f1a2a4",
+      "revision": 2
+    },
+    {
+      "id": "n-061cbb0883953152",
+      "revision": 2
+    },
+    {
+      "id": "n-29467bd75d6a4712",
+      "revision": 2
+    },
+    {
+      "id": "n-6af0240e2a45f451",
+      "revision": 2
+    },
+    {
+      "id": "n-c1f602c97fde9108",
+      "revision": 2
+    },
+    {
+      "id": "n-fbd312fa91c78cd4",
+      "revision": 2
+    },
+    {
+      "id": "n-86d2bc84c606fc55",
+      "revision": 2
+    },
+    {
+      "id": "n-a7448a3ec9f94ef2",
+      "revision": 2
+    },
+    {
+      "id": "n-c4978dcc9cd59717",
+      "revision": 2
+    },
+    {
+      "id": "n-ac804a0c34437e34",
+      "revision": 2
+    },
+    {
+      "id": "n-d42409c6fdf31a7f",
+      "revision": 2
+    },
+    {
+      "id": "n-00f40e467c45ffad",
+      "revision": 2
+    },
+    {
+      "id": "n-ed5e60983b19a98d",
+      "revision": 2
+    },
+    {
+      "id": "n-9a6038e9c1333f55",
+      "revision": 2
+    },
+    {
+      "id": "n-188e27f6744bd90b",
+      "revision": 2
+    },
+    {
+      "id": "r-073954deaa30bc91",
+      "revision": 2
+    },
+    {
+      "id": "r-10dfd72eaf680d1d",
+      "revision": 2
+    },
+    {
+      "id": "r-141084c5a3e3c818",
+      "revision": 2
+    },
+    {
+      "id": "r-157690be1885c0bf",
+      "revision": 2
+    },
+    {
+      "id": "r-261e14200756338b",
+      "revision": 2
+    },
+    {
+      "id": "r-2729ee152d7aacd4",
+      "revision": 2
+    },
+    {
+      "id": "r-27b2b7d62aa87640",
+      "revision": 2
+    },
+    {
+      "id": "r-36e7cc3c502d368b",
+      "revision": 2
+    },
+    {
+      "id": "r-3e4e884c8985ab5f",
+      "revision": 2
+    },
+    {
+      "id": "r-480a42f8788a0947",
+      "revision": 2
+    },
+    {
+      "id": "r-4f7dcb4d2679778b",
+      "revision": 2
+    },
+    {
+      "id": "r-5adbca70634ac67f",
+      "revision": 2
+    },
+    {
+      "id": "r-5f38862e370f56c1",
+      "revision": 2
+    },
+    {
+      "id": "r-6d9eb20a8fe826af",
+      "revision": 2
+    },
+    {
+      "id": "r-732e46a280d384fd",
+      "revision": 2
+    },
+    {
+      "id": "r-765185ac6bf4fea2",
+      "revision": 2
+    },
+    {
+      "id": "r-8e1fbd2408e8a9b7",
+      "revision": 2
+    },
+    {
+      "id": "r-929ff01ef5f8a386",
+      "revision": 2
+    },
+    {
+      "id": "r-959eb3f1e45aece9",
+      "revision": 2
+    },
+    {
+      "id": "r-9c36de259f214584",
+      "revision": 2
+    },
+    {
+      "id": "r-a262174ac679ccb4",
+      "revision": 2
+    },
+    {
+      "id": "r-a2a53ab5d05abfc6",
+      "revision": 2
+    },
+    {
+      "id": "r-adcdfd59b9cad0ed",
+      "revision": 2
+    },
+    {
+      "id": "r-b06f761924e00067",
+      "revision": 2
+    },
+    {
+      "id": "r-c196b6194d8154e2",
+      "revision": 2
+    },
+    {
+      "id": "r-c2cc9703d6e28ff6",
+      "revision": 2
+    },
+    {
+      "id": "r-c414e7de0d9298b4",
+      "revision": 2
+    },
+    {
+      "id": "r-cfa0f1f1d7e27580",
+      "revision": 2
+    },
+    {
+      "id": "r-d05f9452ac94f62f",
+      "revision": 2
+    },
+    {
+      "id": "r-d8d07317384dc65f",
+      "revision": 2
+    },
+    {
+      "id": "r-db0a94c0f65f50cf",
+      "revision": 2
+    },
+    {
+      "id": "r-e54e5d05a5e503ba",
+      "revision": 2
+    },
+    {
+      "id": "r-f84dedbc7a09adf6",
+      "revision": 2
+    },
+    {
+      "id": "r-fa743ca8aad07ac2",
+      "revision": 2
+    },
+    {
+      "id": "r-fa8fd631a848e3a4",
+      "revision": 2
+    },
+    {
+      "id": "r-fb9f5c6927cb19b0",
+      "revision": 2
+    },
+    {
+      "id": "r-febbfdc8df7c0132",
+      "revision": 2
+    }
+  ]
+}

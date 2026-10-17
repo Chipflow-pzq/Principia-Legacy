@@ -4519,50 +4519,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p166",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-56e78604daea7653",
-        "revision": 1
-      },
-      "content_hash": "0de9489098e86968a74be04efcbe15a0bc25dcf48d90e4ebfe6c019926c0fb45",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-068efd8a35dd1f0b",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-c6d205f98488de3b",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The requirements for real-time decoding motivate the design of the decoder.",
-      "type": "relation",
-      "warrant": "The paper's formalization of latency and throughput requirements guides the development of the real-time decoding system."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p7",
           "source_id": "s-e3e0a083a70cd8d0",
           "source_revision": 1
@@ -4661,55 +4617,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p65",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p47",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-98f55d12b6d33405",
-        "revision": 1
-      },
-      "content_hash": "03440af36025e7234a8488adbba7a6e00893722a7cf9eef1e998f5f27a7d3735",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-0b4f0874c73afdee",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-09d6783c7f6c7f76",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Classical error correction on syndrome bits improves the cat state method.",
-      "type": "relation",
-      "warrant": "The method reduces the number of syndrome measurements needed, which is an improvement over the repeated measurements in the cat state method."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p8",
           "source_id": "s-e3e0a083a70cd8d0",
           "source_revision": 1
@@ -4799,55 +4706,6 @@
       "scope": "Error injection experiments confirm threshold behavior in situ.",
       "type": "relation",
       "warrant": "The crossing of logical error curves for different distances near 20% detection probability is consistent with threshold behavior, supporting the below-threshold claim."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p28",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p38",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-bd00254115887cfb",
-        "revision": 1
-      },
-      "content_hash": "f8ce155041c97d0c53f9b76d812fb9b50db816929b96f8f78656ae59356a5e11",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-13d1d31b5a614f25",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-895419cd4de08fc5",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The error floor from correlated bursts limits the ultimate performance of surface codes.",
-      "type": "relation",
-      "warrant": "The paper identifies a logical error floor of 10^-10 in repetition codes caused by rare correlated bursts, which would also affect surface codes at large distances."
     },
     {
       "anchors": [
@@ -5087,104 +4945,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p81",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-4b897aef075f4a4f",
-        "revision": 1
-      },
-      "content_hash": "5abd2d16ddeb01bf2c16ffc0358a26431944b4b577c2b2a45adcfaf8011f5dfc",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-2a3c48e113ddb383",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "bounded_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-5c83e3bb4e735ba0",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The Hamming bound is an upper bound, while the Gilbert-Varshamov bound is a lower bound.",
-      "type": "relation",
-      "warrant": "The Hamming bound limits the maximum rate, while the Gilbert-Varshamov bound guarantees existence, together bounding the achievable rates."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p51",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p107",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-ea1f461897e77604",
-        "revision": 1
-      },
-      "content_hash": "06f181e08c7bddb20a61252717d0f09992a814213540b1b72ce3362305618b4b",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-2a58f2e3509ceed3",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-faf0fa9b84c0e04f",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "CSS codes have transversal CNOT, which is a key fault-tolerant operation.",
-      "type": "relation",
-      "warrant": "The thesis states that bitwise CNOT is valid for CSS codes, which is a specific instance of the general transversal operation framework."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p23",
           "source_id": "s-e3e0a083a70cd8d0",
           "source_revision": 1
@@ -5323,50 +5083,6 @@
       "scope": "From two-qubit stabilizers to four-qubit stabilizers in a 2D array",
       "type": "relation",
       "warrant": "The two-qubit stabilizer example (n1) demonstrates error detection with commuting operators, which is extended to four-qubit stabilizers in the surface code array (n2). The passage explicitly states that the two-qubit example is a simple form of error detection and that more complex circuits like the surface code can detect and identify errors in larger assemblies."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p28",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-895419cd4de08fc5",
-        "revision": 1
-      },
-      "content_hash": "979eb6e7617db3c763fe44f95812faf9a5740a9cec94b674af87205494a1b547",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-3bf8c91c8f450136",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "historical_basis_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-bcee38151e12bfe5",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Gap engineering improved the error floor from 10^-6 to below 10^-6, but new bursts still limit performance.",
-      "type": "relation",
-      "warrant": "The paper attributes the mitigation of high-energy impact events to gap-engineered junctions, which broke the previous floor, but new bursts now dominate."
     },
     {
       "anchors": [
@@ -5562,55 +5278,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p21",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p23",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-a3b3386fc782226f",
-        "revision": 1
-      },
-      "content_hash": "d09ab22c1b8e7960e8d5013b7a7b43115ddb69f9d6ceec4d8e7879af989a06bc",
-      "curation": {
-        "input_hash": "ab96f867fbec32d02948546f3ab94f2b08c0e4dbe6d93ac1b7a5622d534106cb",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "3b670f83238da83641bce6a2aabd59e4f99fb645404308232685d56cd4d3c65e",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde147a4fe446cf82ccbe5353d5",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fdf405e3a60da9e96d836e1f223",
-        "time": "2026-10-12T11:27:28+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-4d1ecab0c9708192",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-2c1895febd0555f2",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Larger qubits require longer moves",
-      "type": "relation",
-      "warrant": "Larger logical qubits (n14) with increased distance require longer moves (n15) to preserve the distance. The passage states that the distance must be preserved in all logical qubit operations, and operations that involve turning stabilizers on or off must be spaced by at least d cycles."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p182",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -5660,55 +5327,6 @@
       "scope": "The preweight correlations and block-based parallelization are key components of the real-time decoder.",
       "type": "relation",
       "warrant": "The real-time decoder's accuracy and constant latency are achieved through these methods, as described in the paper."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p97",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-5c83e3bb4e735ba0",
-        "revision": 1
-      },
-      "content_hash": "f5bb304928178a13917c76c2c2f04120d871ec261db56c542e9b7e749914ebc1",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-57d8a59c24452c7e",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-4bcae558a380d9d4",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The five-qubit code saturates the Hamming bound.",
-      "type": "relation",
-      "warrant": "The five-qubit code is perfect, meaning it achieves equality in the Hamming bound, demonstrating the bound's tightness."
     },
     {
       "anchors": [
@@ -5855,50 +5473,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p72",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-828e93e3f1fd55f4",
-        "revision": 1
-      },
-      "content_hash": "d5b8d882b483da7fb43e56c393269bcf3fe2dd2884865a021b3752a20e2f390d",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-67c7dac9bd46c316",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-98f55d12b6d33405",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Fault-tolerant syndrome measurement is a component of concatenated codes.",
-      "type": "relation",
-      "warrant": "Concatenated codes require fault-tolerant error correction at each level, which uses the cat state method."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p178",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -5939,50 +5513,6 @@
       "scope": "Software-based decoding is shown to be feasible for real-time performance.",
       "type": "relation",
       "warrant": "The paper demonstrates that a software decoder can achieve real-time performance, supporting the choice of software implementation."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p48",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-ea1f461897e77604",
-        "revision": 1
-      },
-      "content_hash": "6605e03f8f9313ab532689381fde23ce314662e6bd5c40b233979e52cb709f39",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-6f853f76c0c3e4f9",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-ba3a6429f2d5cd66",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Transversal operations are characterized by their action on the stabilizer.",
-      "type": "relation",
-      "warrant": "The definition of valid encoded operations requires that they map the stabilizer to itself, which is a stabilizer formalism concept."
     },
     {
       "anchors": [
@@ -6164,99 +5694,6 @@
       "scope": "Below-threshold performance is maintained under real-time decoding constraints.",
       "type": "relation",
       "warrant": "The paper demonstrates that the real-time decoder achieves Λ=2.0±0.1, which is below threshold, on the same processor that achieves below-threshold performance offline."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p11",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p13",
-          "source_id": "s-e3e0a083a70cd8d0",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-e87cafb8e7011ea6",
-        "revision": 1
-      },
-      "content_hash": "c32232b23de0343393b0c7eb3a84a1edcd0ec98d27c073db6237cbdfc081c217",
-      "curation": {
-        "input_hash": "ab96f867fbec32d02948546f3ab94f2b08c0e4dbe6d93ac1b7a5622d534106cb",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "3b670f83238da83641bce6a2aabd59e4f99fb645404308232685d56cd4d3c65e",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fde147a4fe446cf82ccbe5353d5",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fdf405e3a60da9e96d836e1f223",
-        "time": "2026-10-12T11:27:28+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-97a4dc854a92838b",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-bf14f0b4f4e09158",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Overall threshold is decomposed into per-class thresholds",
-      "type": "relation",
-      "warrant": "The overall threshold error rate (n7) is decomposed into per-class thresholds in the error class sensitivity analysis (n9). The passage states that the different error classes have very different thresholds, with class-0 having a per-step threshold of 4.3%, class-1 of 12.5-25%, and class-2 of 1.25%."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p107",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-ba3a6429f2d5cd66",
-        "revision": 1
-      },
-      "content_hash": "567b38b032ba1696a3d4f6f12bfbb8de38591fbd1dc0602e1d8e99cd77a1f8ca",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-9ccc81bb23623c6f",
-      "layer": "historical",
-      "machine_screening": "passed",
-      "predicate": "applied_in",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-6d40e94956d57a3d",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Amplitude damping codes are constructed using the stabilizer formalism.",
-      "type": "relation",
-      "warrant": "The codes are described by their stabilizers, and the error correction condition is applied within the stabilizer framework."
     },
     {
       "anchors": [
@@ -6819,55 +6256,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p22",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p28",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-ba3a6429f2d5cd66",
-        "revision": 1
-      },
-      "content_hash": "eb4ae80212673e875fffd57838c0f71d39dbdc79b2f48ac057a7a591e30a8fde",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-dffd68fdd350afa5",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-c61c5cc4c214ae39",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The error correction condition underpins the stabilizer formalism.",
-      "type": "relation",
-      "warrant": "The stabilizer formalism is designed to satisfy the Knill-Laflamme condition, as it ensures errors are distinguishable and do not reveal information."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p69",
           "source_id": "s-7ac64084e46bbc12",
           "source_revision": 1
@@ -6956,50 +6344,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p25",
-          "source_id": "s-68c14de3125abf7e",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-bf939418f0d0c7b9",
-        "revision": 1
-      },
-      "content_hash": "8bae6fbe2373cb7435200e13079a5447008d84ead90fdd7b705c33884adb1ea4",
-      "curation": {
-        "input_hash": "0ee4e7629c26f8eb07a67a268d794fdc617dd5a0372ce25f15862d4143cd54a1",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "5f2b1756b24ce461e4b7d71996be02dc4dfefc56d9c2613f7477e42e08e86160",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130a6be6319d224e3ef2585ba7c95",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130a8428cf02a0325a1694457b9e5",
-        "time": "2026-10-12T15:06:21+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-e69bd5e35a68d980",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "premise_for",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-8fd72160ce6992b9",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Ribbon operators enable braiding and fusion, which are used for universal computation.",
-      "type": "relation",
-      "warrant": "The paper shows that braiding and fusion of anyons, implemented via ribbon operators, provide the operations for universal quantum computation."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p53",
           "source_id": "s-7ac64084e46bbc12",
           "source_revision": 1
@@ -7044,55 +6388,6 @@
     {
       "anchors": [
         {
-          "anchor_id": "p83",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        },
-        {
-          "anchor_id": "p80",
-          "source_id": "s-7ac64084e46bbc12",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-5c83e3bb4e735ba0",
-        "revision": 1
-      },
-      "content_hash": "e781083b96dccea24b55ecfa9b3e9c101f434c72c97786cd5fba9fbe26c7a5d7",
-      "curation": {
-        "input_hash": "4de02f76aa8a5381bde88823a483ebeddae4d44005261f0a4704c7151de3a404",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "75a9f0aa6a68656507f2117fa2a58d83aba4767a9af0d6b1a20a641cc18f8cf4",
-        "prompt_hash": "7aa5825e403cc13e789e0d962411e36ffb6db72df9e10d5d705f0cd8621df3ac",
-        "provider": "SiliconFlow",
-        "request_id": "01a130b4573d4d824ef0af86a4b1cdca",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a130b56573688d0a1bfeafb704b0d1",
-        "time": "2026-10-12T15:21:26+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-eeb2ba017365081f",
-      "layer": "evidential",
-      "machine_screening": "passed",
-      "predicate": "supports",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-ae36de7d8a31828e",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "The MacWilliams identity provides bounds that include the Hamming bound.",
-      "type": "relation",
-      "warrant": "The linear programming bounds derived from the identity can reproduce the Hamming bound for nondegenerate codes."
-    },
-    {
-      "anchors": [
-        {
           "anchor_id": "p24",
           "source_id": "s-40f3c9e6f557d78a",
           "source_revision": 1
@@ -7133,50 +6428,6 @@
       "scope": "Stability over hours is demonstrated for below-threshold operation.",
       "type": "relation",
       "warrant": "The paper shows that Λ remains above 2 over 15 hours, indicating that below-threshold performance is stable over timescales needed for algorithms."
-    },
-    {
-      "anchors": [
-        {
-          "anchor_id": "p206",
-          "source_id": "s-40f3c9e6f557d78a",
-          "source_revision": 1
-        }
-      ],
-      "conclusion": {
-        "id": "n-bd00254115887cfb",
-        "revision": 1
-      },
-      "content_hash": "426fcdf75dda3739fed6a19a44bc4040ae6e615bb95e88a0a5c3b073e02abd05",
-      "curation": {
-        "input_hash": "df2a0e6972dd65d5e5fb707d8c7c7b93144cf1aed62975c686a3a3733844019f",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "c67a27f4bf1d5555849d3aa992c8f0603d9419f8725f1365b2281c516881d8c8",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fdb1d37b99fd9ebc680228fdda1",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fddd66f0a88c9b6a561aac4b37a",
-        "time": "2026-10-12T11:24:09+00:00"
-      },
-      "human_review": "not_reviewed",
-      "id": "r-f4438c2ef803ab16",
-      "layer": "logical",
-      "machine_screening": "passed",
-      "predicate": "generalized_by",
-      "premise_mode": "all",
-      "premises": [
-        {
-          "id": "n-bbf3ee399b9fc634",
-          "revision": 1
-        }
-      ],
-      "publication_state": "exploratory",
-      "revision": 1,
-      "schema_version": 1,
-      "scope": "Resource projections show the path to algorithmically-relevant error rates.",
-      "type": "relation",
-      "warrant": "The paper's projections indicate that with improved components, the below-threshold performance can be scaled to meet algorithm requirements."
     },
     {
       "anchors": [
@@ -7311,6 +6562,6 @@
       "warrant": "The paper uses one-point estimates for the 10-cycle error injection experiments to resolve high error rates."
     }
   ],
-  "release_id": "1.2.0-exploratory",
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf"
+  "release_id": "1.4.1-exploratory",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f"
 }

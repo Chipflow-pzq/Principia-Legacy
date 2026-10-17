@@ -94,7 +94,17 @@ def report(root):
         "rates_per_million_input_output": rates,
         "pricing_source": "https://www.siliconflow.cn/pricing",
         "rates_checked": "2026-10-13",
-        "notice": "Planning estimate using standard daytime rates, before cache/time discounts. Excludes unreported and unknown request usage. Not the account bill or an enforcement of the USD allowance.",
+        "unpriced_requests": sum(
+            r.get("requested_model") not in rates for r in attempt_receipts
+        ),
+        "unpriced_model_ids": sorted(
+            {
+                r.get("requested_model", "unknown")
+                for r in attempt_receipts
+                if r.get("requested_model") not in rates
+            }
+        ),
+        "notice": "Planning estimate using dated standard rates, before cache/time discounts. Excludes models without a verified rate, unreported and unknown request usage. Unpriced requests are not free. Not the account bill or an enforcement of the USD allowance.",
     }
     outcomes = list(
         {

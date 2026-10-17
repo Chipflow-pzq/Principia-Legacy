@@ -1,12 +1,16 @@
 {
-  "default_release": "1.2.0-exploratory",
-  "public_releases": [
-    "1.0.0-exploratory",
-    "1.1.0-exploratory",
-    "1.2.0-exploratory"
-  ],
+  "default_release": "1.4.1-exploratory",
   "hosts": [
     "localhost",
     "127.0.0.1"
+  ],
+  "public_releases": [
+    "1.0.0-exploratory",
+    "1.1.0-exploratory",
+    "1.2.0-exploratory",
+    "1.3.0-exploratory",
+    "1.3.1-exploratory",
+    "1.4.0-exploratory",
+    "1.4.1-exploratory"
   ]
 }

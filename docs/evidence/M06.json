@@ -292,7 +292,7 @@
   "notice": "This evidence brief is not authorization and does not establish expert validation.",
   "permitted_action_scope": "read_only",
   "query": "Flagship evidence: M06",
-  "release_id": "1.2.0-exploratory",
+  "release_id": "1.4.1-exploratory",
   "relevant_contributions": [
     {
       "anchors": [
@@ -2834,6 +2834,58 @@
       "type": "review"
     },
     {
+      "content_hash": "70d6429e17696e82ff3c6280d74dfe2101de466a2b4c31c8c9dec4ea64ba953e",
+      "evidence_checked": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-177e4e58334d2fa8a630",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6cf856a2e7fca9ae89e0ff8b5abcb7e12d84fffc0d57c5225a25e341b75d1897",
+        "job_id": "7b95b047a891b6fb6dd1e434ec4b0f0870170a5953f31b87a342fe3764bc63e0",
+        "output_hash": "a5bed235c56213b70a510242492562aacd95baf68890069cdd205adaf3ad49e1",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fb1ab297-4a0b-4e50-9d60-cdfd12428e2f",
+        "request_id": "01a1478e83b69057fb737aa6f002b79c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:6cf856a2e7fca9ae89e0",
+        "time": "2026-10-17T01:51:27+00:00",
+        "trace_id": "fb1ab297-4a0b-4e50-9d60-cdfd12428e2f"
+      },
+      "rationale": "p8 defines ψ_I and ψ_S+ψ_T=ψ_I; p9 defines b(r) using ψ_I; p11 combines a and b into f, so ψ_I is an actual inferential component of the construction.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "e57d749094cbafd5a8ec5804fd882e12d5513352767b1855d2113bfbc01f9d8b",
+        "id": "r-7cdacc6f7f19ed51",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:27+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "a69b841a7f02123ed2a5642a9e3493c022f856f807e0cddb7604ab577c59c64d",
       "evidence_checked": [
         {
@@ -2945,6 +2997,53 @@
         "revision": 1
       },
       "time": "2026-10-12T15:22:04+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "91b821edc6cba38042565bc6b50dbe4c1ca5a5104d6c7a4947c4bdf94a3f794c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-1a5f7ae4fbf7df067e31",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1602a84b4c1b94a36000372b2806877600c43693e129e4a0e79cf849d2f4d03c",
+        "job_id": "54c006cebdac1b31a04ee5423f0e1dcc38dc0f7d8a45f0387e67e59da785ce31",
+        "output_hash": "4c4006544add8d5dfb78e89c3ba47975d4c19c25bfc27bd65fca75a40bd4eb4e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "9bbfb44e-966b-4600-9009-af79bd034294",
+        "request_id": "01a1478de53633d65abf170eb4babc08",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:1602a84b4c1b94a36000",
+        "time": "2026-10-17T01:50:46+00:00",
+        "trace_id": "9bbfb44e-966b-4600-9009-af79bd034294"
+      },
+      "rationale": "p3 describes the Cohn–Elkies linear programming bounds and p4 constructs the optimal radial Schwartz function g satisfying the Cohn–Elkies conditions, so the method is applied in the construction.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "a4b2d6307c3e8b11b79d78f7f27d02002ff5456de7c18a88e7e9dbaf7f4c70a3",
+        "id": "r-6047b86499fa74e7",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:46+00:00",
       "type": "review"
     },
     {
@@ -3201,6 +3300,48 @@
       "type": "review"
     },
     {
+      "content_hash": "df1a3d8aa4fed2688d6ecf7f6c42d98fa9ebaf543340cafadaf7c6d80298c696",
+      "evidence_checked": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-3583076f2d54dc2ffdd8",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "f09ee96f3cf25f70ee2fb36f7048e84be07ba39afacbd037d988af63935d0b63",
+        "job_id": "e975b37a9e9629f0b015ed5af5f063de4eb9ed07271163cf2f5dac25e5edbd1e",
+        "output_hash": "bce526c902b7388f61b0825783b627b64817700c995973c7782b86d9c33d90e7",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "23980203-b861-42db-ab2b-3831d919f1ab",
+        "request_id": "01a147a5e2d6e8719d204af2939015aa",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:f09ee96f3cf25f70ee2f",
+        "time": "2026-10-17T02:16:55+00:00",
+        "trace_id": "23980203-b861-42db-ab2b-3831d919f1ab"
+      },
+      "rationale": "p11 states quadratic Taylor coefficients -14347/5460 and -205/156 'as conjectured in [4]' and f'(2)=-1/16380 'in accordance with Lemma 5.1 in [4]'.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "50600fb39399edb8e613fc2a818873900ce48d77fb207ecc0fd48a98dd9d04a0",
+        "id": "n-23db08359e4dd3c6",
+        "revision": 1
+      },
+      "time": "2026-10-17T02:16:55+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "a0cb409bafa40103841f0dd2fb861e386185419bc904cd16ed1780e5a90bb611",
       "evidence_checked": [
         {
@@ -3451,6 +3592,53 @@
       "type": "review"
     },
     {
+      "content_hash": "7503af0fd94090334d1bf97696fb696a96fe87b9cff56dc7d8c416da186da53c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-4d37020fc72f47959d7b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7ff338728b02ce94cca5798df27ccd86a870e10b78de3bdb4b75e6e9bd9bbf5c",
+        "job_id": "94a01ddce8c8c23697adc863c8f5eaa14313a7aa9812438bdb90651cff527d14",
+        "output_hash": "fa1ff6e2c4cd6c697f97749c06c5a18ed90d1812e70a60b1b58abbce5a8a7473",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d736a476-a50a-4160-84e8-1bbed17c7ed3",
+        "request_id": "01a1478d04a7aff91ccdd965e19cc033",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:7ff338728b02ce94cca5",
+        "time": "2026-10-17T01:49:46+00:00",
+        "trace_id": "d736a476-a50a-4160-84e8-1bbed17c7ed3"
+      },
+      "rationale": "p18 states uniqueness 'can be used to prove this uniqueness... given the following slight strengthening of Conjecture 7.3' (Conjecture 8.1); p19 concludes 'Conjecture 8.1 implies that E8 and the Leech lattice are the only periodic packings of maximal density.' The sharp-bound function is a genuine premise.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "9a3641e0a804598884854316e976595907fc92abea77b9e00e68a36bce9caaf2",
+        "id": "r-36f4e8100f05917c",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:46+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "4aca7108008c6d38af19b363ae57ffb1eaa0a52476fccdfe6ac59b12f23334a9",
       "evidence_checked": [
         {
@@ -3542,6 +3730,58 @@
         "revision": 1
       },
       "time": "2026-10-12T11:34:11+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "77e299cf661e75ab7ce994c3d1c401c842c4d4be26d0284adc538f875d97f18b",
+      "evidence_checked": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p1",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-5d4b01ab6d72473cda6d",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fc28a7cd8bf0d4d080357122f5972f99d16aeef8ec35a6f93f326c629d1b8514",
+        "job_id": "a39ab09aa9b781f9354aa7561f3f51f2554738285c19cc6dca6aca64071ac71d",
+        "output_hash": "8541f5027389a6946be5dc4f216793c78965a52193ecd26c652561f63dd295b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4",
+        "request_id": "01a1478bb1dce5f9141972420e22fae3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:fc28a7cd8bf0d4d08035",
+        "time": "2026-10-17T01:48:22+00:00",
+        "trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4"
+      },
+      "rationale": "Cohn–Elkies p17 states Conjecture 7.3 for dimensions 2, 8, 24; Viazovska p1 proves the R8 density bound and p4 constructs the optimal function, confirming dimension 8.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "e520959f600e9341131cc12ed0f3160d68cad4b4415eda3ea78510c45dbfda29",
+        "id": "bridge-8f0bc8688fc05516",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:22+00:00",
       "type": "review"
     },
     {
@@ -3740,6 +3980,301 @@
         "revision": 1
       },
       "time": "2026-10-12T15:22:04+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "1a220fdc044e458d24f0442d503f6efb8d4605754d21c3fccdc50b2044911bf4",
+      "evidence_checked": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-7330b01e903076e43b3b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "faaaf2e86337a97b4253c425bcdbaf9ee7df87d7e86ce7660c49cfaeb92561f8",
+        "job_id": "eb7186ce8857616244c86a89c62651d5eaa3859679ac6a25c82ee18ec3eebf51",
+        "output_hash": "cede6b07b3f572403d7f58607603474a50d3af88c7a5babf0578bb1d25cb5bbe",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ed9b9f55-6e6d-4ad7-ba5e-5c9a7db6056f",
+        "request_id": "01a147a585bd4c1e27edd1e2247f6801",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:faaaf2e86337a97b4253",
+        "time": "2026-10-17T02:16:35+00:00",
+        "trace_id": "ed9b9f55-6e6d-4ad7-ba5e-5c9a7db6056f"
+      },
+      "rationale": "p8–p18 construct a,b as contour integrals of modular forms, prove F(a)=a and F(b)=−b, and show double zeroes at Λ8 vectors of length >√2.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "39d64bd68bc848e058ef4af25989f743f7e4ad5cd1687a47afd38b7add0c2dbf",
+        "id": "n-a08f3aa00dcb54ca",
+        "revision": 1
+      },
+      "time": "2026-10-17T02:16:35+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "fe150cd8916296b717e1eaf523dd3a7790de82f592f8fa941a1365db2c54e5dc",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-759e5b60e37a54108741",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "29cf7a21808a3ded4bccc0b5abcbeb033888cc94b4fec86b049dd7fd8de70b1d",
+        "job_id": "95be71ba62fbb542bc9637a84ff7b6c4b56744503771fcca90ac8684b19e4f8f",
+        "output_hash": "6c9a3483c9392e366037a80b279ffdb46289df574b365ba23ace1dedd6b8b248",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7fbba44b-db90-42f0-ba76-95ab31e78df9",
+        "request_id": "01a1478edcd154680c4da0733bdb1c78",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:29cf7a21808a3ded4bcc",
+        "time": "2026-10-17T01:51:50+00:00",
+        "trace_id": "7fbba44b-db90-42f0-ba76-95ab31e78df9"
+      },
+      "rationale": "Theorem 3 explicitly states the values g(x) and ĝ(x) do not vanish for ||x||² ∉ 2Z_{>0}, directly matching the conclusion.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "ebd15d658a1fbaf7baab42649611dbc2c3d2c19a153f5d8549825fce82bcbb7c",
+        "id": "r-8c0bb170ec96fafb",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:50+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "1d4fe136669b6f85f2ff2628fe72d591dd66dab0b5e0d9553eb0a075641a775d",
+      "evidence_checked": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-77cee4eb4cebb3c8ffbc",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "97bee0494abfa2be0fc764e3d267d772354efcc61db60a7f1eee797737feff2d",
+        "job_id": "85da7a4f2e748258e7c269a0f1f30b0eeeb7497fd01cf8688109b78ef9be5ed8",
+        "output_hash": "49d60957f05d56a668ba8c78ebd36c13b875f5d79c0ab82ffcee0ecf6316bc9b",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "6126af4b-e55e-4d45-8f6e-4d264ec8d4ff",
+        "request_id": "01a147a580adaf5273f5084492eeaac2",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:97bee0494abfa2be0fc7",
+        "time": "2026-10-17T02:16:33+00:00",
+        "trace_id": "6126af4b-e55e-4d45-8f6e-4d264ec8d4ff"
+      },
+      "rationale": "p12-p13 describe subtracting leading terms 1/39 t e^{2πt} - 10/(117π) e^{2πt} over [1,∞), nonnegative contribution, and Lemma A.3 proving the remainder bound for t≥1, establishing f_hat(r)≥0 for 0<r<√2.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "31f6b2e6d6a9f27d54a8e5a060bd421bfc711438c99215df09456dfa3b5927b3",
+        "id": "n-1d16e2e77cb91e77",
+        "revision": 1
+      },
+      "time": "2026-10-17T02:16:33+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "9099117ba3009ecaa79985beb3aeb193c2b49cc606600ea7e1137c22f35ee466",
+      "evidence_checked": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-8111c8e1978c03701d3d",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "b5956464e5885706b5a74da06c9b50ee58945c5e027ac727d530c496158cc676",
+        "job_id": "331b189f4e512947d02db8e27e4f06c97ac092f3b3e433301d04d0244f64f860",
+        "output_hash": "128213cec8bbb9460187b0db3c57dbd4be8a8b352e68c28d17d4806e879a53f0",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "867f4bc5-c566-4e7d-b754-9b6f06abac83",
+        "request_id": "01a1478c6c5ff1c75b7e682b1b5efab7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:b5956464e5885706b5a7",
+        "time": "2026-10-17T01:49:07+00:00",
+        "trace_id": "867f4bc5-c566-4e7d-b754-9b6f06abac83"
+      },
+      "rationale": "p1/p2 state Theorem 1.1 proves optimality and uniqueness, and p13 says f has no roots r>2 other than sqrt(2k), which implies uniqueness of the densest periodic packing.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "3e8de396c9ac3076132ee4b708211cca559ac38d570d004c2f7ea27bbfd12ae1",
+        "id": "r-17e74b144f02f0ae",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:07+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ea65116eaf98e46bfed7a00b3def7a08c236c8ea1b121597e5b861b9f00f3198",
+      "evidence_checked": [
+        {
+          "anchor_id": "p7",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-811e09bd46e43d8dab59",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d775bc66d42e5e707ed62deed54680d0affe86f4aea41ee0a00a2c2789783c9d",
+        "job_id": "17b49cd025b84a24897196cb1d9d345706d7a56bc3216707732a7f4ab515a4b7",
+        "output_hash": "a286f36e8ec6d0c2ef3121b2c17ca3bfae8f69712726ed9f86e53621305db029",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "f8ad2448-dffb-44b2-9449-f3017634151e",
+        "request_id": "01a14790e30b431fc061c01322a8251b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:d775bc66d42e5e707ed6",
+        "time": "2026-10-17T01:53:59+00:00",
+        "trace_id": "f8ad2448-dffb-44b2-9449-f3017634151e"
+      },
+      "rationale": "p7 gives explicit a-values/derivatives at 0, √2, 2; p10–p11 give b-values/derivatives and state f(0)=f̂(0)=1 and roots at Leech lengths, matching the warrant that these formulas supply the needed values/derivatives.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "451708081776c782f9e2047832170baddea84deeb04d8809325f80ec6476e86b",
+        "id": "r-e348172ba5a59bc8",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:59+00:00",
       "type": "review"
     },
     {
@@ -4035,6 +4570,53 @@
       "type": "review"
     },
     {
+      "content_hash": "fcc6fbafca3c6552e789833d066be386d13cd6550c5e19315f9d23cad9d854e0",
+      "evidence_checked": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-8c81b11db2b107314f59",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6ee39205c30135ee250315e79c9bf1e28bb9c6b718d1a1e8bf1a4ea3e194cec9",
+        "job_id": "b218edcd45466a3de39728584d082d99aa6d0095c077133160147be070a50de0",
+        "output_hash": "8733b0b535a47636fa45ced081c60a6352232eadef13ba42d8c2bf9730a55f7e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c68acd71-1482-4920-ba23-c61f7c33fa08",
+        "request_id": "01a1478e9fa3b7f83ce5e8eeac399e55",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:6ee39205c30135ee2503",
+        "time": "2026-10-17T01:51:34+00:00",
+        "trace_id": "c68acd71-1482-4920-ba23-c61f7c33fa08"
+      },
+      "rationale": "p10 and p15 show Bessel K_1 estimates bounding a and b, used to prove they are Schwartz functions, which is the stated conclusion.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "ee3d099dde1ede86f8ff71ee17ef7087559748cf4488e4dab1d7e0a68ed1d8b7",
+        "id": "r-83a166a78a9f27e9",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:34+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "79ce77bc524fbed4c5995d942efb70c3603f8c6e0f681df7b29f062ca2440208",
       "evidence_checked": [
         {
@@ -4186,6 +4768,130 @@
       "type": "review"
     },
     {
+      "content_hash": "556eba61a805b98bc2df298063c8caa5a30d72b59b54386f7a9cca0a50954248",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-98bbe7aed9e262bdab33",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "095fefcdb7463ae0eff124b403b3931a9540a838040de3613559ebf98fb1505c",
+        "job_id": "15de85cf3fe96cab14b4c8af406d5a4c3ee8fb5b94a7aec6e2910437491656c8",
+        "output_hash": "6fc96efec35a41b3a9f68dd80a5c8d0ac0f04aec3fbe07b93012e353882587b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "d1665e56-1794-40a2-8931-7d491c75c66d",
+        "request_id": "01a1478bdb16a5f1a73a38a412790fd8",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:095fefcdb7463ae0eff1",
+        "time": "2026-10-17T01:48:33+00:00",
+        "trace_id": "d1665e56-1794-40a2-8931-7d491c75c66d"
+      },
+      "rationale": "p4/p5 and p9/p10 construct a(r) and b(r) via contour integrals with analytic continuation and Fourier eigenfunction properties; p11 combines them into f, the auxiliary function for the Leech lattice.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "acea15b5d8e4b236fe4424a32323dc3180769e24aa4c4a500070dc4d14da329b",
+        "id": "r-01508d7b92f0b04c",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:33+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "624c8a572e9e44e76967e6373e4d429fbbbb4d33156bdd621f2f4c21efbafad4",
+      "evidence_checked": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-9ccae63a4df0d27d7fad",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "88e9f82abba4fe8afde9e17539e39a073d1dc1cfa8caddc6ffa68331666e7750",
+        "job_id": "6e3baa51c693e97c1e94cd8c15a76ad096fcc6f22fe421887a40ab9580b34c7f",
+        "output_hash": "18dab59de7d183d63febd5470e80f852052f8801b0fd66496b03ca770be2ab58",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "3ad4a016-38a6-49d1-a495-f310a8fd14fa",
+        "request_id": "01a1479078e551241b8329f9c54efef6",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:88e9f82abba4fe8afde9",
+        "time": "2026-10-17T01:53:32+00:00",
+        "trace_id": "3ad4a016-38a6-49d1-a495-f310a8fd14fa"
+      },
+      "rationale": "p12 reduces f≤0 and f̂≥0 to inequalities (4.1) and (4.4), and p13-p15 prove these via Sturm's theorem on truncated q-series, so the sign verification is a genuine premise.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "04b4edc538dbe89fa0e56b024c7c1cef1c1fa3ef2aa6e5bfe241dd6088ef7341",
+        "id": "r-d21b1c1ec39cb42b",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:32+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "429a565de2982314f08fc01f7bae2904a0c07039906359530e2a23d412da2fa0",
       "evidence_checked": [
         {
@@ -4225,6 +4931,236 @@
         "revision": 1
       },
       "time": "2026-10-12T15:22:04+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "cd99ed904bbcc2fe170c422cb40aa0a81d78d6e3e1faf4037556021b4bef70f3",
+      "evidence_checked": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-a0836729bd6484f9921f",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "03cfc0995ab915afb1aadf1b5482b2297964e7cdfce3040c432ba0b5e45b742a",
+        "job_id": "5e4578ff80820f80f6ee6a98f2abb13bc2c7c9ee358ca9f4df702813ef646c59",
+        "output_hash": "2dae34a1a052d40a90c052b92e1cb07c942661bb96ebc80e9d7a447cbb3ec0c0",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ad8e6b0c-51df-4279-92fb-c79eaf111a40",
+        "request_id": "01a1478f4aed1e984efec2caf22681c0",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:03cfc0995ab915afb1aa",
+        "time": "2026-10-17T01:52:18+00:00",
+        "trace_id": "ad8e6b0c-51df-4279-92fb-c79eaf111a40"
+      },
+      "rationale": "p13 gives the integral representation (38) with sin^2(πr^2/2) factor and analytic continuation, bearing on non-vanishing of a and hence g.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "e8f7ac61ea09b72d2dcc400082f41813b9c552602b45fd54be161790ade196e7",
+        "id": "r-a0c802dcdb2484e4",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:18+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "034315e28d75d05207bd16ab535edc8d975e197db020d26101b8d43dd1ff0563",
+      "evidence_checked": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-a378e4c2ba43646caddf",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fb539185e687bffb123eae4c3523ce834027f2bcda10ff761945b3be34aaeba6",
+        "job_id": "4684207a8070027c2325a3d99a70841f0f51aee841564ff9de6d1ce3f7e675c9",
+        "output_hash": "4120bccd3cd2a6e2e3f1a0fd61e09146045d35b5a66ed5b060c81e1dca74d964",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "bc931dd7-9648-42d6-b7cf-3f48d5cac4d9",
+        "request_id": "01a1478d457aa1525a20eda1120ea192",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:fb539185e687bffb123e",
+        "time": "2026-10-17T01:50:02+00:00",
+        "trace_id": "bc931dd7-9648-42d6-b7cf-3f48d5cac4d9"
+      },
+      "rationale": "Abstract states 'Building on Viazovska's recent solution... we prove...' and 'an analogue of Viazovska's function,' documenting inheritance of her method into the dimension-24 construction.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "3212c8f6d3be8061795ed7116c6ca6f533e2dd39bd4728a5ad52aa35c4ff78b7",
+        "id": "r-4366ba042ec6b1ae",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:02+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "6fc3178766eb544cdd9870bbdfec8e95991beac8447782d8dabd25822b4a2196",
+      "evidence_checked": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-a50f9dd62c3eabeaefcc",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "100b29ed5a819d9c7525b8083bffac8111cd07d825f7959b31c97d9ad05a98c9",
+        "job_id": "c74101f9d6cc973a5e539b32a1855e8cc9596dee67822e0bd49641b39919624f",
+        "output_hash": "9d02f5818a828d662641c1a8f980fd8226b84cd2581e86b1c3ff433d0ac333a8",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "22ccde2a-7259-49c2-9211-e78e6da2e492",
+        "request_id": "01a1478bfc745a209c0ce45d0c9cbf3a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:100b29ed5a819d9c7525",
+        "time": "2026-10-17T01:48:38+00:00",
+        "trace_id": "22ccde2a-7259-49c2-9211-e78e6da2e492"
+      },
+      "rationale": "p20 cites convergent asymptotic expansion for Fourier coefficients of weakly holomorphic modular forms; p10 uses coefficient bounds to derive Bessel-function estimates.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "d4a8a0fe7cbb755c03e1eafcc8a8004eab6f74a11eb739893e94f09817d3b553",
+        "id": "r-05ef7282a47f2165",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:38+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "980c351c682d438917ddc82bc711263f67883a81c59407ea5073e9a18275abd1",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-a9954ae86ed036744e50",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "65aabed013b8c8e858063b35b4354205e28f7b713d495caf19dee0c28c2666a9",
+        "job_id": "14dd3f73480172a1a2389886ff7c536bb930b4a97370d08939b4326638cbc02f",
+        "output_hash": "bf91f3d4390805cf239ed6c603da6a226bf9ee78de59be0614194d8388e12389",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "6833ef5d-cf2f-43ca-99fe-568a57e57000",
+        "request_id": "01a1478d222c390dfffff93d7b707c9f",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:65aabed013b8c8e85806",
+        "time": "2026-10-17T01:49:53+00:00",
+        "trace_id": "6833ef5d-cf2f-43ca-99fe-568a57e57000"
+      },
+      "rationale": "The source states Theorem 2 applied to f(x)=g(sqrt(2)x) immediately implies Theorem 1, and Theorem 4 constructs g satisfying conditions (3)-(5), so the explicit optimal g is a genuine premise for the E8 density theorem.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "04e0bdba0612edbe27f3c23ebe98c198042bd373abe1ab4f7d55bdd35716b6ca",
+        "id": "r-3b6554576b3b348d",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:53+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "445a3c5c53670bfb7ee41ca1d58ffbbbac3ed0823ca3aa1d113fb2ac784b9355",
+      "evidence_checked": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-ae7086c64ea38a2d02f0",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "ca84b3135bd1ea18b0a46b0dab0f15206ed55e6a2da9f6354b6f7279d70db55c",
+        "job_id": "e15218041481442159d746bfce8d43ba2d5278fdb9116a3d74d69f50a968c562",
+        "output_hash": "07331e6a6a6324b533ca74c803e41f003e68cd2268daf5d301ce0809cb3b2ea6",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "972712c0-6f48-4d16-b43e-a6b4e11ee7e4",
+        "request_id": "01a1478d00ab96f2e6c9c17cf3ca662f",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:ca84b3135bd1ea18b0a4",
+        "time": "2026-10-17T01:49:45+00:00",
+        "trace_id": "972712c0-6f48-4d16-b43e-a6b4e11ee7e4"
+      },
+      "rationale": "p13 and p18 both prove the integral representation first for r>sqrt(2), then extend to all r>=0 by analytic continuation, matching the generalized_by relation.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "692eda21aa99dfb5b4c9542f35bb5f51b8660e44445a424aaf0eec0019907075",
+        "id": "r-34d28535973855f4",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:49:45+00:00",
       "type": "review"
     },
     {
@@ -4644,6 +5580,199 @@
       "type": "review"
     },
     {
+      "content_hash": "98837910f65517cc23e5bcfb4fdd11f945585fc43333e874dc4a76c7dcb8ea72",
+      "evidence_checked": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-b7523c5a87b19f1b26a6",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6ca1669c9271bf34fc2e19183feefdd88b9015275aa9deb4cbcbcc40ac3ceca7",
+        "job_id": "89209488f19c133c79d7b30078e3ba593d3e8e8d7440af6702c2aa82189fdfcc",
+        "output_hash": "eec16f22fa62038163631f06006a7428b6aa39ab0f2743cfdf0ad65f64723c8b",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "159728a2-4125-4d7f-954e-de4ad6886ff9",
+        "request_id": "01a147912b981ef2f8bfe81156b68c9e",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:6ca1669c9271bf34fc2e",
+        "time": "2026-10-17T01:54:18+00:00",
+        "trace_id": "159728a2-4125-4d7f-954e-de4ad6886ff9"
+      },
+      "rationale": "p12 notes the 0<r<√2 complication, p13 says it must be analyzed by subtracting terms and proving B(t)≥..., and p16 proves Lemma A.3, completing f_hat≥0 for all r.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "844b0b5c05249be5a55b2b271cfc313d2c49bd3b4bf873f10c57f3380dda1c5f",
+        "id": "r-f0cc7a3a531dc618",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:18+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "31c12d24b5636cea15c52c67870d74c597c5666c52e98c4904da70165fb6fa6c",
+      "evidence_checked": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-bb3a3e79c03af8c4b648",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fc28a7cd8bf0d4d080357122f5972f99d16aeef8ec35a6f93f326c629d1b8514",
+        "job_id": "a39ab09aa9b781f9354aa7561f3f51f2554738285c19cc6dca6aca64071ac71d",
+        "output_hash": "8541f5027389a6946be5dc4f216793c78965a52193ecd26c652561f63dd295b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4",
+        "request_id": "01a1478bb1dce5f9141972420e22fae3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:fc28a7cd8bf0d4d08035",
+        "time": "2026-10-17T01:48:22+00:00",
+        "trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4"
+      },
+      "rationale": "Viazovska p3 states Cohn–Elkies 'developed linear programming bounds that apply directly to sphere packings' and p4 uses Theorem 2 (Cohn, Elkies) to construct optimal g, a documented inheritance.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "581e878e89d23bced56b5b8968e9c495e0cbb043e8094a8bae58ccab39e36af0",
+        "id": "bridge-465f80f2a3e50411",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:22+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "020cee6daca652d45154bf50f0eb2203184854b7806dee4bdf301ae856913dbb",
+      "evidence_checked": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-bbcfd8cdc41717e3d7f5",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fc28a7cd8bf0d4d080357122f5972f99d16aeef8ec35a6f93f326c629d1b8514",
+        "job_id": "a39ab09aa9b781f9354aa7561f3f51f2554738285c19cc6dca6aca64071ac71d",
+        "output_hash": "8541f5027389a6946be5dc4f216793c78965a52193ecd26c652561f63dd295b9",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4",
+        "request_id": "01a1478bb1dce5f9141972420e22fae3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:fc28a7cd8bf0d4d08035",
+        "time": "2026-10-17T01:48:22+00:00",
+        "trace_id": "c0182031-fd5e-44ac-8b59-14e9962f33d4"
+      },
+      "rationale": "Cohn–Elkies p18–19 show Conjecture 8.1 implies E8/Leech uniqueness among periodic packings; Viazovska p4 states g satisfies Conjecture 8.1 conclusions, implying uniqueness in R8.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "b270f213f4b9df6fb1deb7553fd1a86476dd2c8bc1bda70c093dfc2cf7aad3c6",
+        "id": "bridge-83d538cb52505561",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:48:22+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "8194507743dbb576f0fa5c597ee9325e66786e8eb98bd84a37314d0914f98b0e",
+      "evidence_checked": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-bc3719a0b208c75fd859",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "1f97a2df5f10cf8c821a82970b1aaa8d061f45f8781c230b5e028b7dec11ce2f",
+        "job_id": "64997bce32b85400a682ac587f1187bce73b7486ae2b57b72c8cc66483f38b9d",
+        "output_hash": "e556dd870f91eb5054d25ee248471a8632132cf5100940939249bcc9461f553e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "0e6c910e-15b1-4436-b7b8-131257ee9fe5",
+        "request_id": "01a147904a376b498871caa06b2f47a9",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:1f97a2df5f10cf8c821a",
+        "time": "2026-10-17T01:53:20+00:00",
+        "trace_id": "0e6c910e-15b1-4436-b7b8-131257ee9fe5"
+      },
+      "rationale": "p19 gives g as a combination of a and b and states g and g-hat do not vanish for vectors with norm squared not in 2Z_{>0}.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "7b8750518ec4af61be5e223d46a4883aedfdded351a7958101573ce94b5e65fd",
+        "id": "r-cb3d58006cc9e6f5",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:20+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "a25e18c33960890b7f1db246b690fee7e981bd75eccf5584f133d03c25d8b768",
       "evidence_checked": [
         {
@@ -4698,6 +5827,105 @@
         "revision": 1
       },
       "time": "2026-10-12T15:22:04+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "b9561b534d676ed4ee2adfbfe20738d8da3bedec4ceba15557b6523c54078e45",
+      "evidence_checked": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-bdc8fdbbfb22568ac452",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "d7118ccbcc264abcc832b97e282429686842ec389f6037daa9953657a38d08db",
+        "job_id": "24e41b54ee0bb7d8e8d3b4d185b74e164ab7d602e46ce9533e3fe41ab4ceabc0",
+        "output_hash": "49762a1536d5d45dd47bb3ba649814aab59cfa0a603398c5514fcd49461f247a",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "ddea3296-2ae1-4ae4-bdd4-13ce0bce221d",
+        "request_id": "01a147917426ae0df8bbdbe3d7c02981",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:d7118ccbcc264abcc832",
+        "time": "2026-10-17T01:54:39+00:00",
+        "trace_id": "ddea3296-2ae1-4ae4-bdd4-13ce0bce221d"
+      },
+      "rationale": "p4 explicitly states 'The Poisson summation formula implies sum... = 2^4 sum...' and 'Hence... f(0)/f_hat(0) ≥ 2^4,' matching the premise-to-conclusion inference.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "9d3bd5fd089c4c068d71ca5aa1af94fdcd45a3ca56b06cd494169bcdac95dfb5",
+        "id": "r-fd076ec66a450ef9",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:39+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "90581d0465f204dfa35a1e2f505c59e09df7beefb9a5eac697a3a79324f45a56",
+      "evidence_checked": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-bfb3b5e687f399b1aeff",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "6cf856a2e7fca9ae89e0ff8b5abcb7e12d84fffc0d57c5225a25e341b75d1897",
+        "job_id": "7b95b047a891b6fb6dd1e434ec4b0f0870170a5953f31b87a342fe3764bc63e0",
+        "output_hash": "a5bed235c56213b70a510242492562aacd95baf68890069cdd205adaf3ad49e1",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fb1ab297-4a0b-4e50-9d60-cdfd12428e2f",
+        "request_id": "01a1478e83b69057fb737aa6f002b79c",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:6cf856a2e7fca9ae89e0",
+        "time": "2026-10-17T01:51:27+00:00",
+        "trace_id": "fb1ab297-4a0b-4e50-9d60-cdfd12428e2f"
+      },
+      "rationale": "p3/p4 define φ of weight -8 depth 2 and a(r) via φ; p11 combines a and b into f, so φ is a genuine premise for the auxiliary function.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "233433d9cce0247c30d1b3d6af3a209e22a5bd9ea0d0fe6a560274a63d6df79b",
+        "id": "r-7cf7e1b0d823bc46",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:27+00:00",
       "type": "review"
     },
     {
@@ -4797,6 +6025,53 @@
         "revision": 1
       },
       "time": "2026-10-12T15:22:04+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "16d3d093fed17ec83c11a9c388f5045ec2662bae7d8ba58e9bbd60c6a0c50c4e",
+      "evidence_checked": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-c7758eb2fdb381d13ea7",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "826e5c9f16ec05cad9cb023a02e3f5f9d95531772b286840652b985eb5fbed74",
+        "job_id": "d12604e4dbea5ef819ae58305460de199560be62d173aad3ffc7119fa753ce0c",
+        "output_hash": "52e33f4f3409ff4ed0384f2d762fd055f2d50a174be0b3065a85c3764dc5243c",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "4adec363-8664-4e9a-a8a7-e357db3c95b6",
+        "request_id": "01a1478f868164104d55e8508a83dd23",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:826e5c9f16ec05cad9cb",
+        "time": "2026-10-17T01:52:30+00:00",
+        "trace_id": "4adec363-8664-4e9a-a8a7-e357db3c95b6"
+      },
+      "rationale": "p3 states 'Our proof of Theorem 1 is based on linear programming bounds' and p4 applies Theorem 2 (Cohn–Elkies) to the optimal function to imply Theorem 1, so the Cohn–Elkies bound is a genuine inferential premise for the dimension-8 result.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "9da87ea150d2291aa1b93b5880842f1b6d461ef6fea84d3fac8c02965034c8b6",
+        "id": "r-a76074c147a95669",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:30+00:00",
       "type": "review"
     },
     {
@@ -5045,6 +6320,48 @@
       "type": "review"
     },
     {
+      "content_hash": "97455bd6e42400f4f50a7be751a5e3490d3934752f749fdf6ed421455a6ba246",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-cde5b51908a8cc779a31",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "33b84e86a29c3ad95108c9e784bd814ac2e5d1a5598c0d08ff9032d50cd61b47",
+        "job_id": "238dabdc5435205940ee01ff30acf595ae9fcd6f2e076af872143ea763167c06",
+        "output_hash": "205f37601bbe355d3f1e5c2b95049e54fb65ddd3247c1609ea8349f2d28d72d0",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "534d53ea-bc82-49d6-8e43-ce32cca11a2c",
+        "request_id": "01a1479c745d0ed35f069ce18b7b2d7b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "verify-arrow-repairs:c0bdbe39727656770544",
+        "time": "2026-10-17T02:06:37+00:00",
+        "trace_id": "534d53ea-bc82-49d6-8e43-ce32cca11a2c"
+      },
+      "rationale": "p4 states Theorem 3 supplies g with the non-vanishing property and that Theorem 2 applied to f(x)=g(√2x) immediately implies Theorem 1, so the property functions as an inferential premise in the proof.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "046059147fe51bd84847653908afc68cdac350d7fb4362176d0acb3cb4a6ca78",
+        "id": "r-d489ee50eb0dc05f",
+        "revision": 3
+      },
+      "time": "2026-10-17T02:06:37+00:00",
+      "type": "review"
+    },
+    {
       "content_hash": "53a01784a90eb72adbfc7157f28f703f44059a73189464830aec227a8a7c0966",
       "evidence_checked": [
         {
@@ -5104,6 +6421,142 @@
         "revision": 1
       },
       "time": "2026-10-12T15:22:04+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "6dd83cf1425a805c88143e35827de52bb7f3b63b2d72e899c2b1b04dc6a22896",
+      "evidence_checked": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-cfe103e98baef367659b",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "81a8c5607ddd92cb28f12eaebc9c513d7f04ffea00a0b710e76f3376826edaa0",
+        "job_id": "47439c32d05f89a6e22e716d30cad76bd5dc7ccb918711226f4b1f4a41d6c268",
+        "output_hash": "b1a25fb3086be5567871417c2690fa877ae8e3062bbea087628df8006dd56dd6",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "5b00f0c9-7b11-413d-a252-549fc18c6749",
+        "request_id": "01a1478f30e43d4525c44714c5297401",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:81a8c5607ddd92cb28f1",
+        "time": "2026-10-17T01:52:11+00:00",
+        "trace_id": "5b00f0c9-7b11-413d-a252-549fc18c6749"
+      },
+      "rationale": "p18 gives the integral representation (58) with sin^2(pi r^2/2) and derives b(0)=0, b(sqrt2)=0, b'(sqrt2)=2sqrt2 pi i, which is the stated contribution to the non-vanishing result.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "531cff5c435ca1e68320c44f80eb8bd7f6e32845f5f78cdff44352ecbc1e4512",
+        "id": "r-9b2a90bb88b6d974",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:11+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "e03d11189f28ecefb2bc00b5beaba6070619780bbfcef064015a8c685a2ee398",
+      "evidence_checked": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-d603a16ae3264de99d85",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7ab1da3182766fbe6712e341b047cd0d50143dbffebb8db5b01ece15e54a3bb0",
+        "job_id": "53bf0dd8466631a409c8d412949d48cd9bca31b40ac6b794e620157e249d68e0",
+        "output_hash": "f51bcfa5105a65c6767e25dbfa9e309f6c0ae6c6d2ccf9467529aa63b0cf2760",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "7ce84648-c388-4cd7-b260-fefd0664886f",
+        "request_id": "01a1478dfb9013d98fd5acf1e336b350",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:7ab1da3182766fbe6712",
+        "time": "2026-10-17T01:50:52+00:00",
+        "trace_id": "7ce84648-c388-4cd7-b260-fefd0664886f"
+      },
+      "rationale": "p21 explicitly says interval arithmetic is used to check the sign inequalities for A(t) and B(t), which are the auxiliary functions used to prove non-vanishing.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "bef3d144483e81b4616fa5d31238195afe60804e29f012ffb3ead8e71a647266",
+        "id": "r-63b0ec3868275199",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:50:52+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ba0d7e361ced47bd50e729b924218f890d45d456e8c7332506b42e7411150324",
+      "evidence_checked": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-d698512057a8c03a21f7",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "3fa446104c5eebe3066b6bc769a2607d29d7b0e4f7e2d86e9931e66d756577af",
+        "job_id": "cb31b6dcaa0508bc241d4b1b776dd58f289a66c0f04ccc5256c9c683e89ebbc5",
+        "output_hash": "04dccbd76dac1a2acb163523c0265e7afb8f651c614dddc8aafa4f2339d0c779",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "fb3ae432-674f-4fbd-92ef-5aacc167b7a8",
+        "request_id": "01a1478e470fcadae218dac886f2eca7",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:3fa446104c5eebe3066b",
+        "time": "2026-10-17T01:51:08+00:00",
+        "trace_id": "fb3ae432-674f-4fbd-92ef-5aacc167b7a8"
+      },
+      "rationale": "p19 Theorem 4 states g and ĝ do not vanish for ||x||²∉2Z>0, and p4 shows Theorem 2 applied to f(x)=g(√2x) implies Theorem 1, so the non-vanishing is part of the sharpness proof.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "5820557836e44b48cad3baff37217b3e5694bb6c96ec0e0dd2b9c406fec5f3c5",
+        "id": "r-6ea04bae5a66d3de",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:51:08+00:00",
       "type": "review"
     },
     {
@@ -5253,45 +6706,139 @@
       "type": "review"
     },
     {
-      "content_hash": "550b77b0ab6b8cc95803e7a473a55b710818b51f5a5eb3f70b0837ed9994a408",
+      "content_hash": "6dcacf2e2697beb80b8f4d51d40cb3bf7f1b5d0af91d5871df0219bdb9c40e53",
       "evidence_checked": [
         {
-          "anchor_id": "p4",
-          "source_id": "s-7414b1e9b6725a75",
+          "anchor_id": "p11",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7edb5c263f75a465",
           "source_revision": 1
         }
       ],
-      "id": "review-e46728ba4ff580a1b56a",
+      "id": "review-e6e53b87c120d5651ea1",
       "judgment": "accepted",
       "provider_receipt": {
         "attempt": 1,
         "finish_reason": "stop",
-        "input_hash": "47c80f6a31823cbf87ba9a88b421888ca228262b1ec92378e1abc05a221eb044",
-        "job_id": "81e2587d93d556f736b8fa499f2f60da0827bbfc6a8bb94231eefff7f04948cb",
-        "output_hash": "5c9fae24dea53c9785a9ce1558dd9cc9470154109845f58ac76fc2a36a666e53",
-        "prompt_hash": "104a36e7be18d95c5fc2c50befa4ac99cff441b06f6361f866b1cbab735d857e",
+        "input_hash": "62da1d5490f7ddd00261809dade3c7c871f0b1b303d5e7f33f65d806906527f3",
+        "job_id": "d849be19728fe4985b0b692fb8388a172c99d12a174f305bfb9ddfa31352503b",
+        "output_hash": "9cbf66b5bc6af6cd8efcc904d6f29662c82356d8a3e9f98b1d5af2e32041547e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
         "provider": "SiliconFlow",
-        "provider_trace_id": "4218523b-da00-44b0-828a-2ab1dab2635c",
-        "request_id": "01a12fe455dd15ebd0324904e84d6e28",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
+        "provider_trace_id": "8c2da737-f12c-49c0-ad04-02ed23f2bfc2",
+        "request_id": "01a1478efac8f30b7743833a8d5a055a",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
         "state": "succeeded",
-        "task": "check:M06:be9e87a6ff9a",
-        "time": "2026-10-12T11:34:11+00:00",
-        "trace_id": "4218523b-da00-44b0-828a-2ab1dab2635c"
+        "task": "atlas-audit:62da1d5490f7ddd00261",
+        "time": "2026-10-17T01:51:57+00:00",
+        "trace_id": "8c2da737-f12c-49c0-ad04-02ed23f2bfc2"
       },
-      "rationale": "The non-vanishing property is part of Theorem 3, which is used to prove Theorem 1.",
-      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4-Flash",
+      "rationale": "p11 argues that for a sharp bound above dimension 1, compact Fourier support is impossible, and p17 describes the numerical search for functions satisfying Theorem 3.2's hypotheses, consistent with the negative result motivating the conjecture.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
       "reviewer_type": "machine",
       "revision": 1,
       "schema_version": 1,
       "scope": "source_fidelity_and_relation_warrant",
       "target": {
-        "content_hash": "08b6b9358eeed36981111fa2d79590a9fe6ff150866702c525de1aee00dffffb",
-        "id": "r-d489ee50eb0dc05f",
+        "content_hash": "0e0ebcf4613fd645a5b383a6bf94a4e9d5df41c7a603e8105048210e75b10a2d",
+        "id": "r-91bbe5aee796fc39",
         "revision": 1
       },
-      "time": "2026-10-12T11:34:11+00:00",
+      "time": "2026-10-17T01:51:57+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "ad152c03c6fa61960dfeeb3ea088ca5e2ab8bd65feeab0bbd8a330d2ecc29a91",
+      "evidence_checked": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-ed5416c2c1fd35193e4c",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "fe4788a5a0ec91208e2dbfdf8f4b2a3e35d3af0ef9deeec869bf0f5754cadbcc",
+        "job_id": "6f22c4b8348507c418213599633b09a4675650c9d81a52cc2dbdc5411cdac43f",
+        "output_hash": "a81169fbb25aab6c19425df0734ad5a32fbdc8ed5d1c744024db773f093a562a",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b8652f91-cdb7-4540-8de8-e70d10f6bb01",
+        "request_id": "01a1479025592e2602cdc7289c5b87f3",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:fe4788a5a0ec91208e2d",
+        "time": "2026-10-17T01:53:14+00:00",
+        "trace_id": "b8652f91-cdb7-4540-8de8-e70d10f6bb01"
+      },
+      "rationale": "p8 constructs a,b as Fourier eigenfunctions with double zeroes at Λ8 vectors, and p19 defines g as a linear combination of a and b used to prove Theorem 3, so the construction is a genuine premise.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "f0780821b97724563f24dfd4271f695cb15303901b3f0b6264b5f463b7837dfd",
+        "id": "r-c59a037f0561684e",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:53:14+00:00",
+      "type": "review"
+    },
+    {
+      "content_hash": "eb9f045b7a2c4c2a8eeba9c12860a3ecd1801972dac42f49d847f34be1fd793d",
+      "evidence_checked": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-f2cc47339b886df62ab7",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "74bbd737d1df7ef3118bb030cddfe07ea64ff43eb8ca0049d6454d337dc8f054",
+        "job_id": "62c5a74bd93206722bca0f66224a3e38b39afb8e28e6da83d8b80068103bd60c",
+        "output_hash": "c2da7595dd7b9ff7b592968fbcd855c37db264223621d74f5856661e74219e7f",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "b0c64af0-05fd-4ed0-8683-d7cf638715da",
+        "request_id": "01a1478fd027c26414ed9e429d65d42b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:74bbd737d1df7ef3118b",
+        "time": "2026-10-17T01:52:49+00:00",
+        "trace_id": "b0c64af0-05fd-4ed0-8683-d7cf638715da"
+      },
+      "rationale": "p11 states the quadratic Taylor coefficients of f and bf are '-14347/5460 and -205/156, respectively, as conjectured in [4]', an observation bearing on the construction's correctness.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "775bc349f7dd2729df4650e17f821651c07e39f2e9963af3abd94b1f641f8e08",
+        "id": "r-b6c7b79eae816104",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:52:49+00:00",
       "type": "review"
     },
     {
@@ -5397,6 +6944,53 @@
       },
       "time": "2026-10-12T12:21:19+00:00",
       "type": "review"
+    },
+    {
+      "content_hash": "96d5da02e7f4fa48d89346b99a591e669c8a908f5d53730b9144ba9d0594f201",
+      "evidence_checked": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "id": "review-fa9dade4b43d5c19fa83",
+      "judgment": "accepted",
+      "provider_receipt": {
+        "attempt": 1,
+        "finish_reason": "stop",
+        "input_hash": "7ee600d62672e334712f858198d6d443c52998661ee21ca9b48e7af7f09073bc",
+        "job_id": "f768ff41a27897c80c79092a4244e9e5acb1b165312a27edf1b4fa068ad147b1",
+        "output_hash": "16c69ce58370b3aab8bad14b2ca44065cd3db653a2fa2c17cf10e5d7bb0da37e",
+        "prompt_hash": "6bc06ee031585d657d1c621613d295f3a6dcc6e59a8cab98aca49877d84b9d71",
+        "provider": "SiliconFlow",
+        "provider_trace_id": "082405e4-4a12-4eda-baf6-01bbc60a02ad",
+        "request_id": "01a147914e70aa5a1c365ed0270c428b",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "returned_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "state": "succeeded",
+        "task": "atlas-audit:7ee600d62672e334712f",
+        "time": "2026-10-17T01:54:30+00:00",
+        "trace_id": "082405e4-4a12-4eda-baf6-01bbc60a02ad"
+      },
+      "rationale": "p2 states the proof of Theorem 1 combined with [4, Section 8] implies the E8-lattice packing is the unique periodic packing of maximal density, and p4 repeats that g satisfies [4, Conjecture 8.1], implying uniqueness of the densest periodic packing.",
+      "reviewer_identity": "SiliconFlow/deepseek-ai/DeepSeek-V4.1-Flash",
+      "reviewer_type": "machine",
+      "revision": 1,
+      "schema_version": 1,
+      "scope": "source_fidelity_and_relation_warrant",
+      "target": {
+        "content_hash": "bdff1a585e6cc1151404415e59cf42d1f2ef042bba147285ef67461d0b95f493",
+        "id": "r-f65fd616448fa278",
+        "revision": 1
+      },
+      "time": "2026-10-17T01:54:30+00:00",
+      "type": "review"
     }
   ],
   "selection": {
@@ -5404,7 +6998,7 @@
     "primary_limit": 12,
     "relation_limit": 40
   },
-  "snapshot_hash": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
   "source_anchors": [
     {
       "anchor_id": "p3",
@@ -7970,28 +9564,22 @@
           "source_revision": 1
         }
       ],
+      "change_reason": "Source-grounded relation audit: correct type, scope and evidence; withhold unsupported arrows. Historical versions remain reproducible.",
       "conclusion": {
         "id": "n-2289cb8ea0a7d9d1",
         "revision": 1
       },
-      "content_hash": "08b6b9358eeed36981111fa2d79590a9fe6ff150866702c525de1aee00dffffb",
+      "content_hash": "046059147fe51bd84847653908afc68cdac350d7fb4362176d0acb3cb4a6ca78",
       "curation": {
-        "input_hash": "51b98a02c88b8bcafa06971d7a46a2cba245b4b93d12fcfdb900b8aaa685e0ec",
-        "method": "passage-grounded extraction plus separate source-grounded machine critic",
-        "output_hash": "be9e87a6ff9a21caa2f9acbb221c5e8e2e48b89bc16ffecd9203d1291130a3d4",
-        "prompt_hash": "9590157a75e223f3fc01a5e17a2ce9f6f7f749400ed473388feb90ab51cce53d",
-        "provider": "SiliconFlow",
-        "request_id": "01a12fe2a1a84b1ddcbda3190cf9cef9",
-        "requested_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "returned_model": "deepseek-ai/DeepSeek-V4-Flash",
-        "screening_request_id": "01a12fe455dd15ebd0324904e84d6e28",
-        "time": "2026-10-12T11:32:23+00:00"
+        "method": "Explicit typed-arrow correction with separately checked pinned source evidence",
+        "requested_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "screening_request_id": "01a1479c745d0ed35f069ce18b7b2d7b"
       },
       "human_review": "not_reviewed",
       "id": "r-d489ee50eb0dc05f",
-      "layer": "evidential",
+      "layer": "logical",
       "machine_screening": "passed",
-      "predicate": "supports",
+      "predicate": "premise_for",
       "premise_mode": "all",
       "premises": [
         {
@@ -8000,11 +9588,11 @@
         }
       ],
       "publication_state": "exploratory",
-      "revision": 1,
+      "revision": 3,
       "schema_version": 1,
-      "scope": "The main theorem relies on the non-vanishing property of g.",
+      "scope": "The non-vanishing property of g is a premise in the proof of the E8 sphere-packing theorem.",
       "type": "relation",
-      "warrant": "The non-vanishing property is part of Theorem 3, which is used to prove Theorem 1."
+      "warrant": "Theorem 3 supplies the radial Schwartz function g satisfying the sign and non-vanishing conditions. Applying Theorem 2 to f(x)=g(√2x) immediately yields Theorem 1, so the non-vanishing property functions as an inferential premise in the proof rather than as evidence bearing on the theorem's truth."
     },
     {
       "anchors": [
@@ -8661,5 +10249,1028 @@
     "The source does not detail the arguments in [2, Section 8] that imply uniqueness of the densest periodic packing.",
     "The source does not discuss the sphere packing problem in dimensions other than 8 and 24, except as background.",
     "The paper does not provide a proof of the sharp bound conjecture in dimensions other than 8 and 24."
+  ],
+  "work_insight_memberships": [
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "ac1da0ffd71b41fb586f163996c9f1faf313d9194e24aba6af318d9662345d01",
+        "id": "n-0341505e7fee0eb7",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "223e5ab897e1d3cffa6fabe314802b3b69ba14a63b3093d7a85958e18c96ce48",
+        "id": "n-082481582d8e5584",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p10",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "64de62b976dfe19ddde557c6865c118b9d9c776f28f158afcc5db7613daf84ca",
+        "id": "n-084b746d4477f87d",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "aa146474690214e4bf72fb14f0cbc07b5f85e331246a983563d59eb4a6e11618",
+        "id": "n-0e21616ff3dcac8b",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+        "id": "w-source-7edb5c263f75a465",
+        "revision": 1
+      },
+      "work_id": "w-source-7edb5c263f75a465"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "b58ab9458a65f16eeb3d1cbf54ca0ae8060d3fc5641075eebf5eb85034722790",
+        "id": "n-112ac1ac61a00a92",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p12",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "31f6b2e6d6a9f27d54a8e5a060bd421bfc711438c99215df09456dfa3b5927b3",
+        "id": "n-1d16e2e77cb91e77",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "ea324ffec081b6cfbb5703f34fa1f390701cf9d5fd2ebe5775170180a6723d15",
+        "id": "n-1eb3efc9d77886ae",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "13ca13c0ee57aed8190b81fa9e7047ceca8098c0aecacbc77d9b69e247056b26",
+        "id": "n-2137f86967f871b1",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "f7e4810338e817dceb214b32df8d2ff3c4c64f9b400af5782aad21dcc9f1cd5f",
+        "id": "n-2289cb8ea0a7d9d1",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "50600fb39399edb8e613fc2a818873900ce48d77fb207ecc0fd48a98dd9d04a0",
+        "id": "n-23db08359e4dd3c6",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "b1a189df4de32bbed38d9b764dc4a56f18e5ec89b0d7520b7fc535391f7b4173",
+        "id": "n-29ff2cc56f6c1540",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+        "id": "w-source-7edb5c263f75a465",
+        "revision": 1
+      },
+      "work_id": "w-source-7edb5c263f75a465"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p5",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p6",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "f8a9e0c9e78a1f7d44cfd4832d1101e2251c79286c1fc1e456e632b31bcaeb05",
+        "id": "n-38998e55ebd657ea",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "ff201e3b29652ed1256377cf229d2c6ed7dfae920e8c7210dccbb5b355271de3",
+        "id": "n-3ce02bc03dc28c79",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2cbfcc058ccad8cac502dda190492845e404bf4001b21633be750896fc225ee0",
+        "id": "n-45ef8aff07a789e9",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p19",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p22",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "ad60bbf214b0bea989cb19a407427eae511d099ee70d8afb71633c48a145969c",
+        "id": "n-47edbe1f27703a29",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "70bab1cc834bdab5cc41a7a2b0a18a176eda19459513b4411add8cfc1acb79e9",
+        "id": "n-5e12972f4aa7edd7",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p2",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "2fdc46d1631ab86dda37c490a29ada098a9bf9b8fd30726936b1cbbb6fbf8177",
+        "id": "n-61545435b8d41483",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "9f2a7633c1fca9285aa1b5bf19ad845054f419257b0bd055ad2d77a5481f5d61",
+        "id": "n-7f9cb2c2aadf1857",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "3b0b932ae3dcd6eb527704dc0b814b1a9701cd5ac04064c8455ccf80907b1551",
+        "id": "n-817dd0e8df4365d1",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p20",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p21",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p22",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "8d902b13447d3f64dbdadc7702773cc9f960309802dbcdf06d9b151dab9c2798",
+        "id": "n-8c8147ef38ef300c",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p8",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p9",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p10",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p12",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p14",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p15",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p16",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p17",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p18",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "39d64bd68bc848e058ef4af25989f743f7e4ad5cd1687a47afd38b7add0c2dbf",
+        "id": "n-a08f3aa00dcb54ca",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "424dc8fb7864d846d7041d4de3611d9dfdad4663c5f5b512b3070b6c32ac2715",
+        "id": "n-b25ad0851484c7b2",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p11",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "43a6ec1d169e9713dbdbf654f15959b2f68cbf0c670f3523f44593e65d377c5c",
+        "id": "n-b64cbd6fa171c197",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+        "id": "w-source-7edb5c263f75a465",
+        "revision": 1
+      },
+      "work_id": "w-source-7edb5c263f75a465"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "49a4f7f1a8550f77f495bfa62f58442bf3e8aecf8b3c3eb55155847a4ccd0044",
+        "id": "n-b71bf01a2832bea4",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p11",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p13",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "97918cc40534c1eefc5b84bf10baee7daefedd9b79c9c39a939f5c20f9c1289d",
+        "id": "n-d9127ea8b22bd4fc",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p1",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p2",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p3",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p8",
+          "source_id": "s-69512c05c214f09d",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "da6bcfac9354d6fb9f342125a1386f2bd15bc9b2004ed11486802ec9b49e466b",
+        "id": "n-dea18e44e9b44405",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+        "id": "w-source-69512c05c214f09d",
+        "revision": 1
+      },
+      "work_id": "w-source-69512c05c214f09d"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p3",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p4",
+          "source_id": "s-7414b1e9b6725a75",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "1a7cce37d5392c2e05f07a112db5767bebb9ce46659b07cf8dafbd59e6665fa3",
+        "id": "n-ffb331e98ffc2fc2",
+        "revision": 1
+      },
+      "reason": "Viazovska restates the Cohn–Elkies admissible-function bound as Theorem 2 and applies it to the optimal function for dimension eight. The source expresses packing density; dividing by the volume of the radius-one unit ball gives the center-density normalization used by this insight: delta_center <= f(0)/(2^d f_hat(0)). The exclusion distance is one, so the packed spheres have radius one-half. This reading membership does not reassign discovery credit.",
+      "role": "uses",
+      "screening_model": "deepseek-ai/DeepSeek-V4-Pro",
+      "screening_request_id": "01a14869d8c47234599a23dcf99c0d57",
+      "work": {
+        "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+        "id": "w-source-7414b1e9b6725a75",
+        "revision": 1
+      },
+      "work_id": "w-source-7414b1e9b6725a75"
+    },
+    {
+      "anchors": [
+        {
+          "anchor_id": "p6",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        },
+        {
+          "anchor_id": "p7",
+          "source_id": "s-7edb5c263f75a465",
+          "source_revision": 1
+        }
+      ],
+      "contribution": {
+        "content_hash": "1a7cce37d5392c2e05f07a112db5767bebb9ce46659b07cf8dafbd59e6665fa3",
+        "id": "n-ffb331e98ffc2fc2",
+        "revision": 1
+      },
+      "reason": "The source passages support this account of the insight; original authorship is assessed separately in its attribution.",
+      "role": "explains",
+      "work": {
+        "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+        "id": "w-source-7edb5c263f75a465",
+        "revision": 1
+      },
+      "work_id": "w-source-7edb5c263f75a465"
+    }
+  ],
+  "works": [
+    {
+      "aliases": [],
+      "content_hash": "8d78387e58084993ac0fb774d8c2d50399ed3ad0a6f21ec46d1ea7825ccd345a",
+      "id": "w-source-7414b1e9b6725a75",
+      "insight_count": 21,
+      "kind": "publication",
+      "people": [
+        "person-e944081b0c2217e6"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "The sphere packing problem in dimension 8",
+          "url": "https://arxiv.org/pdf/1603.04246"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "e893388ae2889a4850aae994dcd237ceae77d65bf2691701c00fee2a2371ee09",
+          "id": "s-7414b1e9b6725a75",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "mathematics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "The sphere packing problem in dimension 8",
+      "topic_ids": [
+        "M06"
+      ],
+      "year": 2017
+    },
+    {
+      "aliases": [],
+      "content_hash": "5ade9c88448a6a0a0540f10a7827b286db3a66f2b3e719e51c3a0b418bbc76dd",
+      "id": "w-source-69512c05c214f09d",
+      "insight_count": 10,
+      "kind": "publication",
+      "people": [
+        "person-e944081b0c2217e6"
+      ],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "The sphere packing problem in dimension 24",
+          "url": "https://arxiv.org/pdf/1603.06518"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "fb0a9efad526990ecec6cf7f166733940d5b94e08df764e74763ee7382ff182e",
+          "id": "s-69512c05c214f09d",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "mathematics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "The sphere packing problem in dimension 24",
+      "topic_ids": [
+        "M06"
+      ],
+      "year": 2017
+    },
+    {
+      "aliases": [],
+      "content_hash": "889176f61fc028c97a0ea4730afecbc69c6b349272ce4ba03781662247ff9f65",
+      "id": "w-source-7edb5c263f75a465",
+      "insight_count": 8,
+      "kind": "publication",
+      "people": [],
+      "provenance": [
+        {
+          "note": "The pinned source editions contain the anchors used by the linked insights. This membership explains where an idea is discussed, not exclusive discovery credit.",
+          "title": "New upper bounds on sphere packings I",
+          "url": "https://arxiv.org/pdf/math/0110009"
+        }
+      ],
+      "representative": false,
+      "revision": 1,
+      "source_refs": [
+        {
+          "content_hash": "7543483b195685c1641c5aba3dc5397c7bdc68c7224182b4dc317e0ac49ef71e",
+          "id": "s-7edb5c263f75a465",
+          "revision": 1
+        }
+      ],
+      "status": "insights_available",
+      "subjects": [
+        "mathematics"
+      ],
+      "summary": "A source work explaining the checked insights listed below. Consult the insight attribution notes to distinguish original discoveries from later exposition.",
+      "title": "New upper bounds on sphere packings I",
+      "topic_ids": [
+        "M06"
+      ],
+      "year": 2003
+    }
   ]
 }

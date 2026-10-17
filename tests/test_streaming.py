@@ -58,8 +58,11 @@ def test_attempt_is_recorded_before_transmission(tmp_path, monkeypatch):
     monkeypatch.setattr("principia_legacy.providers.urllib.request.urlopen", fail)
     with pytest.raises(RuntimeError, match="Provider job failed"):
         Provider(tmp_path).complete("fixture", {}, "fixture", 10)
-    assert len(set(seen)) == 3
+    assert len(set(seen)) == 1
     assert all(
         json.loads(p.read_text())["state"] == "unknown_possible_charge"
         for p in (tmp_path / ".work/receipts").glob("*.json")
     )
+    with pytest.raises(RuntimeError, match="unresolved submitted request"):
+        Provider(tmp_path).complete("fixture", {}, "fixture", 10)
+    assert len(seen) == 1

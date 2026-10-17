@@ -62,6 +62,9 @@ export type Source = {
   }[];
 };
 export type Dossier = {
+  work_count?: number;
+  work_ids?: string[];
+  isolated_contribution_count?: number;
   area?: string;
   topic_kind?: string;
   tags?: string[];
@@ -93,10 +96,16 @@ export type Info = {
   release_id: string;
   counts: Record<string, number>;
   subject_counts?: Record<string, number>;
+  catalog_counts?: {
+    works: number;
+    people: number;
+    topics: number;
+    works_with_insights: number;
+  };
   pillars: Record<string, string>;
   predicates: Record<
     string,
-    { layer: string; symmetric: boolean; label: string }
+    { layer: string; symmetric: boolean; label: string; meaning?: string }
   >;
   releases: string[];
   current_release_id?: string;
@@ -111,6 +120,8 @@ export type Neighborhood = {
   notice: string;
 };
 export type Inspection = {
+  pending?: boolean;
+  works?: Work[];
   topics?: TopicLink[];
   people?: Person[];
   idea_families?: {
@@ -130,24 +141,63 @@ export type Inspection = {
     reviewer_identity: string;
   }[];
 };
+const responseCache = new Map<
+  string,
+  { value: unknown; time: number; bytes: number }
+>();
+let cachedBytes = 0;
+function apiURL(
+  path: string,
+  params: Record<string, string | number | boolean | undefined>,
+) {
+  const query = new URLSearchParams();
+  Object.entries(params)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .forEach(([k, v]) => {
+      if (v !== undefined && v !== "") query.set(k, String(v));
+    });
+  return `${import.meta.env.BASE_URL}api/${path}?${query}`;
+}
+export function cachedAPI<T>(
+  path: string,
+  params: Record<string, string | number | boolean | undefined> = {},
+): T | undefined {
+  const entry = responseCache.get(apiURL(path, params));
+  return entry && Date.now() - entry.time < 60_000
+    ? (entry.value as T)
+    : undefined;
+}
 export async function api<T>(
   path: string,
   params: Record<string, string | number | boolean | undefined> = {},
   signal?: AbortSignal,
 ): Promise<T> {
-  const query = new URLSearchParams();
-  Object.entries(params).forEach(([k, v]) => {
-    if (v !== undefined && v !== "") query.set(k, String(v));
-  });
-  const response = await fetch(
-    `${import.meta.env.BASE_URL}api/${path}?${query}`,
-    { signal },
-  );
-  const data = await response.json();
+  signal?.throwIfAborted();
+  const hit = cachedAPI<T>(path, params);
+  if (hit !== undefined) return hit;
+  const url = apiURL(path, params);
+  const response = await fetch(url, { signal });
+  const text = await response.text();
+  const data = JSON.parse(text);
   if (!response.ok)
     throw new Error(
       data.error || "The reader could not complete this request.",
     );
+  if (text.length < 4_000_000) {
+    cachedBytes -= responseCache.get(url)?.bytes || 0;
+    responseCache.delete(url);
+    responseCache.set(url, {
+      value: data,
+      time: Date.now(),
+      bytes: text.length * 2,
+    });
+    cachedBytes += text.length * 2;
+    while (responseCache.size > 80 || cachedBytes > 24_000_000) {
+      const first = responseCache.keys().next().value!;
+      cachedBytes -= responseCache.get(first)!.bytes;
+      responseCache.delete(first);
+    }
+  }
   return data;
 }
 export const COLORS: Record<string, string> = {
@@ -164,6 +214,42 @@ export const LAYERS = [
   "conceptual",
   "pedagogical",
 ];
+// One palette for the canvas, controls and legends; dash patterns also encode type.
+export const CONNECTIONS: Record<
+  string,
+  {
+    color: string;
+    ink: string;
+    style: "solid" | "dashed" | "dotted";
+    dash: number[];
+  }
+> = {
+  historical: {
+    color: "#e9b665",
+    ink: "#936016",
+    style: "solid",
+    dash: [1, 0],
+  },
+  logical: { color: "#78aff7", ink: "#326cba", style: "solid", dash: [1, 0] },
+  evidential: {
+    color: "#64d2ac",
+    ink: "#207b5e",
+    style: "dashed",
+    dash: [12, 4],
+  },
+  conceptual: {
+    color: "#d69ce7",
+    ink: "#8e479f",
+    style: "dashed",
+    dash: [6, 5],
+  },
+  pedagogical: {
+    color: "#f2929f",
+    ink: "#b1425a",
+    style: "dotted",
+    dash: [2, 5],
+  },
+};
 export function words(value: string) {
   const labels: Record<string, string> = {
     historical: "History",
@@ -173,7 +259,7 @@ export function words(value: string) {
     pedagogical: "Learning prerequisites",
     historical_basis_for: "informed the development of",
     motivated: "motivated",
-    applied_in: "was applied in",
+    applied_in: "is used in",
     independent_formulation_of: "independent formulation of",
     premise_for: "is a premise for",
     generalized_by: "is generalized by",
@@ -209,10 +295,13 @@ export type Person = {
   contribution_count: number;
   topic_ids: string[];
   profile_status: string;
+  work_count?: number;
+  selection_reason?: string;
 };
 export type PersonDetail = {
   release_id: string;
   person: Person;
+  works?: Work[];
   contributions: (Contribution & {
     credit?: { role: string; recorded_name: string; evidence_note: string };
   })[];
@@ -224,5 +313,48 @@ export type SearchData = {
   results: Contribution[];
   people: Person[];
   topics: TopicLink[];
-  totals: { ideas: number; people: number; topics: number };
+  works?: Work[];
+  search_interpretation?: {
+    corrections: { from: string; to: string }[];
+    concepts: string[];
+  };
+  totals: { ideas: number; people: number; topics: number; works?: number };
+};
+
+export type CatalogSource = { url: string; title: string; note: string };
+export type Work = {
+  id: string;
+  revision: number;
+  content_hash: string;
+  title: string;
+  kind: string;
+  subjects: string[];
+  year?: number;
+  recognition_year?: number;
+  summary: string;
+  insight_count: number;
+  status: string;
+  provenance: CatalogSource[];
+};
+export type WorkDetail = {
+  release_id: string;
+  work: Work;
+  contributions: Contribution[];
+  memberships: { contribution: Ref; role: string; reason: string }[];
+  topics: TopicLink[];
+  people: Person[];
+  sources: Source[];
+  relations: {
+    id: string;
+    predicate: string;
+    layer: string;
+    warrant: string;
+    endpoints: Work[];
+    symmetric: boolean;
+    human_review?: string;
+    machine_screening?: string;
+    provenance: CatalogSource[];
+  }[];
+  shared_insights: { work: Work; insight_count: number }[];
+  notice: string;
 };

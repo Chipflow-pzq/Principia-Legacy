@@ -1,4 +1,39 @@
 {
-  "formulas": 5404,
-  "failures": []
+  "formulas": 8658,
+  "failures": [],
+  "historicalWarnings": [
+    {
+      "where": "n-200651cd9458e1d6@1.assumptions.2",
+      "record": {
+        "id": "n-200651cd9458e1d6",
+        "revision": 1
+      },
+      "error": "Unexpected control character in explanatory text"
+    },
+    {
+      "where": "n-200651cd9458e1d6@1.explanation",
+      "record": {
+        "id": "n-200651cd9458e1d6",
+        "revision": 1
+      },
+      "error": "Unexpected control character in explanatory text"
+    },
+    {
+      "where": "n-e2055ae3bf7bfbf1@2.explanation",
+      "record": {
+        "id": "n-e2055ae3bf7bfbf1",
+        "revision": 2
+      },
+      "error": "Unexpected control character in explanatory text"
+    },
+    {
+      "where": "n-e2055ae3bf7bfbf1@3.explanation",
+      "record": {
+        "id": "n-e2055ae3bf7bfbf1",
+        "revision": 3
+      },
+      "error": "Unexpected control character in explanatory text"
+    }
+  ],
+  "note": "Superseded immutable versions remain auditable. Control-character errors in current versions fail this check."
 }

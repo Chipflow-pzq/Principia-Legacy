@@ -1,0 +1,33 @@
+{
+  "assignments": [
+    {
+      "depth": 0,
+      "dossier": "M2163",
+      "need": "Replace an overbroad introductory central-limit claim with the precise IID, finite nonzero variance, centered and scaled limit theorem. Explain convergence in distribution, distinguish sums and means, preserve independence assumptions and limitations of finite-sample tail approximation. At most four developed contributions; no routine recipes, glossary fragments, exercise calculations, or unsupported historical credit.",
+      "role": "endpoint",
+      "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/f44fa78f05ac31a4ba2bd82f599dcf60_MIT6_436JF18_lec17.pdf"
+    }
+  ],
+  "frozen_checklists": {
+    "M2163": [
+      {
+        "contributions": [],
+        "id": "formal",
+        "requirement": "State a substantive idea and the assumptions needed for it"
+      },
+      {
+        "contributions": [],
+        "id": "method",
+        "requirement": "Explain its argument, mechanism or evidence"
+      },
+      {
+        "contributions": [],
+        "id": "limits",
+        "requirement": "Identify limits, alternatives and attribution gaps"
+      }
+    ]
+  },
+  "id": "clt-assumptions-1-3",
+  "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "new_node_allowance": 8
+}

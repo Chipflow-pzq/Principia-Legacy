@@ -333,3 +333,111 @@ def test_reuse_admission_keeps_one_identity_and_source_corrections_invalidate_ro
         assert len(a.topics_for("n1")) == 1
     with closing(Atlas(atlas_root, "reuse-before-source-correction")) as a:
         assert len(a.topics_for("n1")) == 2
+
+
+def test_checked_reuse_can_be_a_relation_endpoint_at_its_actual_revision(
+    atlas_root, monkeypatch
+):
+    from principia_legacy import curate
+
+    existing = copy.deepcopy(records()[1])
+    existing.update(revision=2, claim="A corrected finite result")
+    seal(existing)
+    write_lines(atlas_root / "corpus/correction.jsonl", [existing])
+    (atlas_root / "prompts").mkdir()
+    for name in ("extract.txt", "check.txt"):
+        (atlas_root / "prompts" / name).write_text("Fixture contract")
+    passage = {
+        "id": "p1",
+        "selector": "Section 1",
+        "text": "The corrected finite result entails a distinct application under the stated conditions.",
+    }
+    monkeypatch.setattr(
+        curate,
+        "acquire",
+        lambda *args: {
+            "title": "Application",
+            "creators": ["Test author"],
+            "date": "2020",
+            "resolved_url": "https://example.org/application",
+            "bytes_hash": "fixture-v1",
+            "retrieved_at": "2026-10-17",
+            "passages": [passage],
+        },
+    )
+    candidate = {
+        **records()[2],
+        "local_id": "new",
+        "title": "A distinct application",
+        "claim": "An application follows under additional conditions",
+        "passage_ids": ["p1"],
+    }
+    reuse = {
+        "id": "n1",
+        "reason": "Exactly the same corrected result",
+        "passage_ids": ["p1"],
+    }
+
+    class FixtureProvider:
+        def __init__(self, *args):
+            pass
+
+        def complete(self, system, payload, task, *args):
+            receipt = {
+                "request_id": task,
+                "requested_model": "fixture",
+                "time": "2026-10-17T00:00:00Z",
+            }
+            if task.startswith("extract:"):
+                return {
+                    "relevant": True,
+                    "contributions": [candidate],
+                    "reuse": [reuse],
+                    "relations": [
+                        {
+                            "from": ["n1"],
+                            "to": "new",
+                            "predicate": "premise_for",
+                            "scope": "Finite input",
+                            "warrant": "The finite result entails the application within this scope.",
+                            "passage_ids": ["p1"],
+                        }
+                    ],
+                }, receipt
+            return {
+                "source_relevant": True,
+                "contributions": [
+                    {
+                        "local_id": "new",
+                        "decision": "supported",
+                        "rationale": "Checked new move",
+                    }
+                ],
+                "reuse": [
+                    {
+                        "index": 0,
+                        "decision": "supported",
+                        "rationale": "Checked identity",
+                    }
+                ],
+                "relations": [
+                    {
+                        "index": 0,
+                        "decision": "supported",
+                        "rationale": "Checked entailment",
+                    }
+                ],
+            }, receipt
+
+    monkeypatch.setattr(curate, "Provider", FixtureProvider)
+    topic = {
+        "id": "M01",
+        "pillar": "mathematics",
+        "title": "Finite applications",
+        "documented_contributions": [existing],
+    }
+    result = curate.process_source(atlas_root, topic, "https://example.org/application")
+    edge = next(r for r in result["records"] if r["type"] == "relation")
+    assert edge["premises"] == [{"id": "n1", "revision": 2}]
+    assert result["screened"]["accepted_nodes"] == 1
+    assert not any(r["id"] == "n1" for r in result["records"])

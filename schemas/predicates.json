@@ -2,61 +2,73 @@
   "analogous_to": {
     "label": "analogous to",
     "layer": "conceptual",
+    "meaning": "A specific structural analogy between two ideas, with its limits stated. Shared task or topic alone is insufficient.",
     "symmetric": true
   },
   "applied_in": {
     "label": "applied in",
     "layer": "historical",
+    "meaning": "A method or insight -> the particular later application that demonstrably uses it. Not an inferred influence or mere component listing.",
     "symmetric": false
   },
   "bounded_by": {
     "label": "bounded by",
     "layer": "logical",
+    "meaning": "A claim or method -> the bound, condition or counterexample restricting it. A technique that repairs a limitation is not itself the limiting bound.",
     "symmetric": false
   },
   "challenges": {
     "label": "challenges",
     "layer": "evidential",
+    "meaning": "Counterevidence or counterargument -> the claim or method it challenges. A failed prediction challenges the model, not the reverse.",
     "symmetric": false
   },
   "equivalent_under": {
     "label": "equivalent under",
     "layer": "conceptual",
+    "meaning": "Two formulations shown equivalent under explicit conditions. Similar performance or appearance is insufficient.",
     "symmetric": true
   },
   "generalized_by": {
     "label": "generalized by",
     "layer": "logical",
+    "meaning": "A scoped result -> a genuinely more general result that contains it as a special case. State the scope and reduction.",
     "symmetric": false
   },
   "historical_basis_for": {
     "label": "historical basis for",
     "layer": "historical",
+    "meaning": "Earlier insight -> later insight. Evidence explicitly documents intellectual influence; chronology, citation or resemblance alone is insufficient.",
     "symmetric": false
   },
   "independent_formulation_of": {
     "label": "independent formulation of",
     "layer": "historical",
+    "meaning": "Two distinct formulations with evidence of independent discovery. Shared subject matter or different authors is insufficient.",
     "symmetric": true
   },
   "motivated": {
     "label": "motivated",
     "layer": "historical",
+    "meaning": "An earlier problem, result or limitation -> the later response it explicitly inspired. Requires documented motivation.",
     "symmetric": false
   },
   "premise_for": {
     "label": "premise for",
     "layer": "logical",
+    "meaning": "Premise claim(s) -> an inferential conclusion under stated assumptions. Explain the derivation. A system and its components are NOT automatically premises for one another; do not use this for part-whole membership.",
     "symmetric": false
   },
   "prerequisite_for_reading": {
     "label": "helps explain",
     "layer": "pedagogical",
+    "meaning": "A foundation -> the idea it helps a reader understand. Explicit editorial teaching rationale; this does not assert historical influence or logical necessity.",
     "symmetric": false
   },
   "supports": {
     "label": "supports",
     "layer": "evidential",
+    "meaning": "Evidence, observation or argument -> the claim it supports. Do not reverse the arrow: a model is not evidence for its evaluation result.",
     "symmetric": false
   }
 }

@@ -1,0 +1,112 @@
+{
+  "catalog": {
+    "people": 899,
+    "topics": 781,
+    "works": 882,
+    "works_with_insights": 262
+  },
+  "human_reviewed_contributions": 0,
+  "limitations": [
+    "Catalog membership establishes documented relevance, not verified insight-level support.",
+    "Most new achievement entries are a source-backed extraction backlog; they do not have completed maps.",
+    "Nobel, Fields, Abel and institutional computing selections privilege recognized traditions and omit many important teams, regions and earlier discoveries.",
+    "The full ACM Turing Award listing was inaccessible in this source pass. Selected computing figures use other institutional evidence.",
+    "Broad award citations remain research-result or research-program entries; they are not invented paper titles. Recognition years are not discovery years.",
+    "Exposition works preserve evidence provenance; their authors are not automatically credited with originating every explained insight.",
+    "Independent discoveries remain distinct. Shared topics and shared insights do not establish historical influence.",
+    "Small spelling corrections and named concept expansions are offline and bounded; arbitrary semantic paraphrases are not guaranteed.",
+    "No qualified human audit has been performed. Personal Trace a discovery retains the limitations documented in the 1.3 live evaluation."
+  ],
+  "release_id": "1.4.1-exploratory",
+  "scientific_records": {
+    "contribution": 2905,
+    "relation": 1941,
+    "review": 7674,
+    "source": 270
+  },
+  "selection_source_families": {
+    "abelprize.no": 28,
+    "api.nobelprize.org": 638,
+    "arxiv.org": 16,
+    "computerhistory.org": 105,
+    "cs.nyu.edu": 1,
+    "mathshistory.st-andrews.ac.uk": 37,
+    "openstax.org": 3,
+    "pages.cs.wisc.edu": 2,
+    "pmc.ncbi.nlm.nih.gov": 1,
+    "www.cs.utexas.edu": 1,
+    "www.darwinproject.ac.uk": 1,
+    "www.econlib.org": 7,
+    "www.maths.tcd.ie": 1,
+    "www.mathunion.org": 51,
+    "www.nobelprize.org": 5,
+    "www.nokia.com": 1,
+    "www.pasteur.fr": 1
+  },
+  "snapshot_hash": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f",
+  "subjects": {
+    "biology_medicine": {
+      "catalog_shortfall_to_suggested_200_people": 0,
+      "catalog_shortfall_to_suggested_200_works": 0,
+      "catalogued_works": 214,
+      "populated_topics": 36,
+      "registered_topics": 200,
+      "selected_people": 287,
+      "unique_primary_subject_insights": 621,
+      "works_with_extracted_insights": 50
+    },
+    "computer_science": {
+      "catalog_shortfall_to_suggested_200_people": 71,
+      "catalog_shortfall_to_suggested_200_works": 36,
+      "catalogued_works": 164,
+      "populated_topics": 39,
+      "registered_topics": 140,
+      "selected_people": 129,
+      "unique_primary_subject_insights": 664,
+      "works_with_extracted_insights": 57
+    },
+    "economics": {
+      "catalog_shortfall_to_suggested_200_people": 90,
+      "catalog_shortfall_to_suggested_200_works": 76,
+      "catalogued_works": 124,
+      "populated_topics": 36,
+      "registered_topics": 109,
+      "selected_people": 110,
+      "unique_primary_subject_insights": 519,
+      "works_with_extracted_insights": 51
+    },
+    "mathematics": {
+      "catalog_shortfall_to_suggested_200_people": 87,
+      "catalog_shortfall_to_suggested_200_works": 43,
+      "catalogued_works": 157,
+      "populated_topics": 36,
+      "registered_topics": 123,
+      "selected_people": 113,
+      "unique_primary_subject_insights": 564,
+      "works_with_extracted_insights": 53
+    },
+    "physics": {
+      "catalog_shortfall_to_suggested_200_people": 0,
+      "catalog_shortfall_to_suggested_200_works": 0,
+      "catalogued_works": 225,
+      "populated_topics": 37,
+      "registered_topics": 209,
+      "selected_people": 270,
+      "unique_primary_subject_insights": 537,
+      "works_with_extracted_insights": 51
+    }
+  },
+  "topic_without_work": [],
+  "work_connections": 36,
+  "work_insight_memberships": 2906,
+  "work_kinds": {
+    "book": 12,
+    "exposition": 107,
+    "paper": 1,
+    "publication": 153,
+    "report": 1,
+    "research_program": 88,
+    "research_result": 394,
+    "technology_or_research": 126
+  }
+}

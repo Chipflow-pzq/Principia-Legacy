@@ -3805,5 +3805,736 @@
     "error": "Insufficient readable source text",
     "state": "failed",
     "url": "https://textbooks.math.gatech.edu/ila/index.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "B2130",
+    "gaps": [
+      "No dates or original contributors are given for proofreading, mismatch repair, or nucleotide excision repair.",
+      "The eukaryotic mismatch repair strand-discrimination mechanism is described as not well understood, with no molecular details.",
+      "Specific enzymes, genes, and proteins involved in each repair pathway are not identified.",
+      "No quantitative data on replication fidelity, repair efficiency, or mutation rates are provided.",
+      "Alternative repair pathways (base excision repair, recombination-based repair) are not discussed.",
+      "The link between repair-gene mutations and specific cancers is stated without citing primary evidence or identifying the genes involved.",
+      "The question about three-nucleotide versus one-nucleotide frameshift insertions is posed but not answered.",
+      "No historical account of how these repair mechanisms were discovered or formulated is provided."
+    ],
+    "screened": {
+      "accepted_nodes": 8,
+      "accepted_relations": 2,
+      "proposed_nodes": 8,
+      "proposed_relations": 6
+    },
+    "source_title": "14.6 DNA Repair - Biology 2e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "B2196",
+    "gaps": [
+      "No primary citations are given for any concept in the passages; the textbook exposition cannot establish priority or original attribution for stabilizing, directional, diversifying, or frequency-dependent selection, relative fitness, or the constraints on selection.",
+      "The handicap principle and good genes hypothesis are named but not attributed to any originator in the passages.",
+      "The peppered moth example is presented as classic but the passage itself notes recent questioning of the underlying facts, without specifying the nature or outcome of that dispute.",
+      "The passages do not discuss genetic drift or gene flow beyond a single closing sentence, so their mechanisms and relative strengths are not explained.",
+      "No quantitative treatment of fitness, selection coefficients, or variability change is provided; all numerical or distributional statements are qualitative or illustrated with hypothetical examples.",
+      "The passages do not address the history of evolutionary thought or the development of the fitness concept beyond Fisher's 1915 model."
+    ],
+    "screened": {
+      "accepted_nodes": 14,
+      "accepted_relations": 13,
+      "proposed_nodes": 14,
+      "proposed_relations": 13
+    },
+    "source_title": "19.3 Adaptive Evolution - Biology 2e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C2119",
+    "gaps": [
+      "No year is given for Cook's proof or for the textbook's own publication date beyond a 2016 copyright and 2020 last-updated notice.",
+      "The Cook–Levin independent formulation is not mentioned; the source credits Cook alone.",
+      "The full Cook proof, including the polynomial-time bound and formula size, is not supplied.",
+      "The reduction sequence in Figure 8.4.1 is referenced but its contents are not in the supplied text.",
+      "No formal definition of NP, polynomial-time reduction, or NP-hardness appears in the supplied passages.",
+      "The source does not discuss whether the solution-back transformation is required for the hardness argument."
+    ],
+    "screened": {
+      "accepted_nodes": 5,
+      "accepted_relations": 4,
+      "proposed_nodes": 5,
+      "proposed_relations": 4
+    },
+    "source_title": "8.4. NP-Completeness Proofs — Senior Algorithms",
+    "state": "succeeded",
+    "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/provingNPC.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "E2198",
+    "gaps": [
+      "No explanation of quantitative easing is provided despite the stated learning objective; the mechanism, magnitude, and evaluation of QE are absent.",
+      "No discussion of alternative monetary transmission channels such as exchange rates, asset prices, credit availability, or expectations.",
+      "No empirical estimates or causal identification for the claimed effects of monetary policy on output, unemployment, or inflation.",
+      "No discussion of policy lags, uncertainty about potential GDP, or political constraints on central bank action.",
+      "No attribution of the core mechanisms to original contributors; the source is a textbook summary.",
+      "The historical narrative is explicitly incomplete and leaves out many other macroeconomic factors.",
+      "The section states that the monetary policy discussed is what was used prior to 2009, limiting coverage of later tools and episodes."
+    ],
+    "screened": {
+      "accepted_nodes": 7,
+      "accepted_relations": 6,
+      "proposed_nodes": 7,
+      "proposed_relations": 6
+    },
+    "source_title": "28.4 Monetary Policy and Economic Outcomes - Principles of Economics 3e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "M2152",
+    "gaps": [
+      "No dates or original citations are given for the Perron–Frobenius theorem, the stochastic-matrix definition, or the difference-equation framework.",
+      "The proof of Perron–Frobenius is omitted, so the theorem's assumptions and scope are stated but not derived.",
+      "The strict inequality $|\\lambda|<1$ for non-1 eigenvalues of positive stochastic matrices is asserted without proof.",
+      "The convergence rate of power iteration and the role of subdominant eigenvalues are not analyzed.",
+      "The text does not discuss regular stochastic matrices in detail beyond noting that Perron–Frobenius also applies to them.",
+      "No discussion of reducible or periodic chains, or of what happens when the positivity assumption fails.",
+      "The PageRank construction is described but the choice of damping factor $p$ is not derived or justified.",
+      "The source is a textbook exposition; it does not establish priority or historical influence for any of the ideas presented."
+    ],
+    "screened": {
+      "accepted_nodes": 11,
+      "accepted_relations": 10,
+      "proposed_nodes": 11,
+      "proposed_relations": 11
+    },
+    "source_title": "Stochastic Matrices",
+    "state": "succeeded",
+    "url": "https://textbooks.math.gatech.edu/ila/stochastic-matrices.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "B2181",
+    "gaps": [
+      "The source does not provide primary citations or detailed evidence for historical claims about Buffon, Hutton, Lyell, or Lamarck.",
+      "The source does not discuss genetic drift, gene flow, or non-adaptive evolution as alternative mechanisms.",
+      "The source does not provide statistical details or effect sizes for the Grant finch study.",
+      "The source does not discuss horizontal gene transfer or convergent molecular evolution.",
+      "The source does not explain the molecular mechanism of inheritance beyond mentioning DNA.",
+      "The source does not address the origin of life, explicitly stating it is outside evolutionary theory's scope.",
+      "The source does not discuss modern phylogenetic methods or the three-domain tree.",
+      "The source does not provide quantitative dating methods for fossils.",
+      "The source does not discuss constraints on adaptation such as trade-offs or developmental limits.",
+      "The source does not address cases where vestigial structures retain subtle functions."
+    ],
+    "screened": {
+      "accepted_nodes": 20,
+      "accepted_relations": 17,
+      "proposed_nodes": 20,
+      "proposed_relations": 19
+    },
+    "source_title": "18.1 Understanding Evolution - Biology 2e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "M2163",
+    "gaps": [
+      "No historical origin, priority, or independent formulation of the central limit theorem is documented in this source.",
+      "No proof or derivation of the theorem is provided.",
+      "No rate of convergence or error bound for the normal approximation is given.",
+      "The assumptions of independence and identical distribution are not stated explicitly.",
+      "The source does not discuss cases with infinite variance or dependent observations.",
+      "No empirical validation of the normal approximation for specific sample sizes is provided."
+    ],
+    "screened": {
+      "accepted_nodes": 5,
+      "accepted_relations": 4,
+      "proposed_nodes": 6,
+      "proposed_relations": 5
+    },
+    "source_title": "7.1 The Central Limit Theorem for Sample Means (Averages) - Introductory Statistics 2e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/introductory-statistics-2e/pages/7-1-the-central-limit-theorem-for-sample-means-averages"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "E2117",
+    "gaps": [
+      "No attribution to an original formulator of the efficient market hypothesis or its three forms is provided in the supplied passages.",
+      "The semi-strong form of efficiency is named but not defined in the supplied text.",
+      "No empirical evidence for or against any form of the efficient market hypothesis is presented.",
+      "No quantitative measures of operational or informational efficiency are given.",
+      "The source does not discuss limits of the efficient market hypothesis, anomalies, or behavioral critiques.",
+      "No historical antecedents or intellectual lineage for the efficiency concepts is documented in the source.",
+      "The date of formulation of the efficient market hypothesis is not given; only the textbook publication date (2022) is known."
+    ],
+    "screened": {
+      "accepted_nodes": 5,
+      "accepted_relations": 4,
+      "proposed_nodes": 5,
+      "proposed_relations": 4
+    },
+    "source_title": "11.5 Efficient Markets - Principles of Finance | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/principles-finance/pages/11-5-efficient-markets"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "M2146",
+    "gaps": [
+      "No historical attribution or priority information is provided for any result, including the diagonalization theorem and the multiplicity inequality.",
+      "The proof of the inequality between geometric and algebraic multiplicity is omitted as beyond the text's scope.",
+      "Complex eigenvalues and diagonalizability over the complex numbers are deferred to a later section not included here.",
+      "The counterexample showing the converse of the multiplicity-similarity theorem fails is referenced but its content is not in the supplied passages.",
+      "The source metadata lists no creators and no date, so authorship and publication year cannot be established from the evidence.",
+      "The classification of $3\\times3$ matrices is announced but its detailed content is not present in the supplied passages."
+    ],
+    "screened": {
+      "accepted_nodes": 15,
+      "accepted_relations": 10,
+      "proposed_nodes": 15,
+      "proposed_relations": 10
+    },
+    "source_title": "Diagonalization",
+    "state": "succeeded",
+    "url": "https://textbooks.math.gatech.edu/ila/diagonalization.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "M2164",
+    "gaps": [
+      "No historical attribution is provided for any of the results; the source does not identify original contributors or dates of discovery.",
+      "The source does not discuss the relationship between orthogonal projection and least-squares problems beyond a brief mention in the introduction to Chapter 6.",
+      "No numerical or computational limitations of the normal-equation method are discussed, such as conditioning or the cost of forming $A^T A$.",
+      "The source does not cover projections in general inner product spaces, infinite-dimensional Hilbert spaces, or complex vector spaces.",
+      "The source does not discuss the projection matrix's symmetry or its characterization as a symmetric idempotent matrix, which are standard properties.",
+      "No alternative computational methods (e.g., QR decomposition, SVD, pseudoinverse) are presented or compared.",
+      "The source does not address the case where $A$ has linearly dependent columns beyond noting that $A^T A$ need not be invertible."
+    ],
+    "screened": {
+      "accepted_nodes": 8,
+      "accepted_relations": 6,
+      "proposed_nodes": 8,
+      "proposed_relations": 7
+    },
+    "source_title": "Orthogonal Projection",
+    "state": "succeeded",
+    "url": "https://textbooks.math.gatech.edu/ila/projections.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "B2190",
+    "gaps": [
+      "No quantitative treatment of genetic drift magnitude or its dependence on population size is provided.",
+      "The source does not explain mutation as a mechanism beyond listing it among forces that change populations; no mutation-rate or mutational-process account is given.",
+      "The historical account of the modern synthesis is a brief textbook summary and does not document priority, debates, or the specific contributions of individual scientists.",
+      "The passage names Hardy and Weinberg but gives no exact year for the formulation of their principle.",
+      "The influenza example is illustrative and provides no empirical data on strain evolution or vaccine efficacy.",
+      "The source does not discuss migration or gene flow in any detail beyond listing it among evolutionary forces.",
+      "No treatment of non-random mating or of selection coefficients is provided."
+    ],
+    "screened": {
+      "accepted_nodes": 7,
+      "accepted_relations": 6,
+      "proposed_nodes": 7,
+      "proposed_relations": 7
+    },
+    "source_title": "19.1 Population Evolution - Biology 2e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/biology-2e/pages/19-1-population-evolution"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "P2113",
+    "gaps": [
+      "No historical attribution or priority information is supplied for Gauss's law or the flux concept.",
+      "No derivation of Gauss's law from a more fundamental principle is given; the law is stated and illustrated.",
+      "The continuous-distribution integration for enclosed charge is described but not carried out.",
+      "The cubical-surface exercises are posed without worked answers in the supplied passages.",
+      "No experimental evidence or empirical test of Gauss's law is presented.",
+      "The source does not discuss time-dependent fields, media other than free space, or the differential form of the law."
+    ],
+    "screened": {
+      "accepted_nodes": 9,
+      "accepted_relations": 10,
+      "proposed_nodes": 9,
+      "proposed_relations": 10
+    },
+    "source_title": "6.2 Explaining Gauss’s Law - University Physics Volume 2 | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "P2111",
+    "gaps": [
+      "No primary references or dates are given for Wien's law or the Stefan-Boltzmann law.",
+      "The source does not derive the blackbody spectrum from first principles.",
+      "The historical development of the electromagnetic spectrum beyond Herschel's infrared discovery is not covered.",
+      "The source does not discuss non-thermal emission mechanisms or deviations from blackbody behavior.",
+      "The evolutionary explanation for visible light sensitivity is not supported by evidence in the source.",
+      "The source does not provide quantitative atmospheric transmission data."
+    ],
+    "screened": {
+      "accepted_nodes": 10,
+      "accepted_relations": 7,
+      "proposed_nodes": 10,
+      "proposed_relations": 7
+    },
+    "source_title": "5.2 The Electromagnetic Spectrum - Astronomy 2e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/astronomy-2e/pages/5-2-the-electromagnetic-spectrum"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C2095",
+    "gaps": [
+      "No historical attribution: the source does not name Richard Bellman or any originator of dynamic programming, memoization, or tabulation.",
+      "No dates for the formulation of dynamic programming or its component techniques.",
+      "No formal definition, complexity class analysis, or proof of the Theta(nK) bound beyond the constant-time cell-filling argument.",
+      "No general criterion for when dynamic programming applies or when table reduction is safe.",
+      "No discussion of optimization problems beyond the subset-sum knapsack formulation.",
+      "The etymology of 'dynamic programming' is asserted without citation and cannot be independently verified from the supplied passages.",
+      "The source does not establish priority or historical influence for any technique it presents."
+    ],
+    "screened": {
+      "accepted_nodes": 9,
+      "accepted_relations": 7,
+      "proposed_nodes": 9,
+      "proposed_relations": 8
+    },
+    "source_title": "7.1. Dynamic Programming — Senior Algorithms",
+    "state": "succeeded",
+    "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/DynamicProgramming.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "E2100",
+    "gaps": [
+      "No historical attribution for the concepts of moral hazard, adverse selection, risk pooling, or actuarial fairness; the source presents them as standard without naming originators.",
+      "The cited study on deductibles and copayments reducing medical care by about one-third is not fully identified (no author, year, or journal in the passage).",
+      "No formal model or equilibrium analysis of adverse selection; the driver example is pedagogical.",
+      "No quantitative comparison of alternative remedies (mandates, group pooling, cost sharing, provider payment reform).",
+      "The ACA coverage figures and deficit estimate are reported secondhand; the passage does not provide a causal evaluation.",
+      "The international spending-outcome comparison is descriptive and the passage itself notes outcomes may not be significantly affected by expenditures.",
+      "No discussion of signaling, screening, or risk classification methods beyond the general idea of separating buyers into risk groups."
+    ],
+    "screened": {
+      "accepted_nodes": 12,
+      "accepted_relations": 11,
+      "proposed_nodes": 12,
+      "proposed_relations": 11
+    },
+    "source_title": "16.2 Insurance and Imperfect Information - Principles of Economics 3e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/16-2-insurance-and-imperfect-information"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C2116",
+    "gaps": [
+      "No historical attribution: the passages do not identify who formulated reduction, the Lower Bound Theorem, or the Upper Bound Theorem.",
+      "No proof of the Lower Bound Theorem or Upper Bound Theorem is supplied.",
+      "The claim that the only simple polygon through points on a circle is the convex polygon is asserted without justification.",
+      "The relationship between this reduction framework and NP-completeness is only signposted as the next section, not explained.",
+      "No source creators or publication date are recorded in the metadata."
+    ],
+    "screened": {
+      "accepted_nodes": 9,
+      "accepted_relations": 8,
+      "proposed_nodes": 9,
+      "proposed_relations": 8
+    },
+    "source_title": "8.2. Reductions — Senior Algorithms",
+    "state": "succeeded",
+    "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/Reduction.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "E2122",
+    "gaps": [
+      "No primary source or date is given for Kuznets's creation of GDP measurement; the attribution is a secondary textbook claim and cannot support priority or content claims.",
+      "The section does not describe the intellectual content of Kuznets's contribution, only that he created the measurement.",
+      "No formal alternative welfare indicator is presented; Raworth's advocacy is described but not operationalized.",
+      "The net direction of bias (understatement versus overstatement) is asserted qualitatively and not quantified.",
+      "The correlation between higher GDP per capita and improvements in education, health, and environmental protection is stated generally without citation or evidence.",
+      "The passage on the COVID-19 recession and 2021 GDP levels reports current statistics but does not establish any new conceptual contribution.",
+      "The section is a textbook exposition; it does not establish priority for any of the critiques it presents, many of which are long-standing in welfare economics."
+    ],
+    "screened": {
+      "accepted_nodes": 12,
+      "accepted_relations": 10,
+      "proposed_nodes": 12,
+      "proposed_relations": 11
+    },
+    "source_title": "19.5 How Well GDP Measures the Well-Being of Society - Principles of Economics 3e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/19-5-how-well-gdp-measures-the-well-being-of-society"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "E2174",
+    "gaps": [
+      "No primary citation or exact year is given for Phillips's study; the passage places it only in the 1950s.",
+      "The estimation method, sample construction, and functional form of Phillips's British analysis are not described.",
+      "No individual is named for the conclusion that supply shocks and inflation expectations shift the curve, nor for the 1960s policy-menu interpretation.",
+      "The passage gives no statistical test or estimated break date for the 1970s instability; the evidence is narrative.",
+      "The length of the 'short run' over which the tradeoff is said to hold is not specified.",
+      "The source does not discuss expectation-formation models, natural-rate reasoning, or later formal Phillips curve specifications.",
+      "The zone boundaries of the curved aggregate supply representation are illustrative and not empirically located."
+    ],
+    "screened": {
+      "accepted_nodes": 7,
+      "accepted_relations": 7,
+      "proposed_nodes": 7,
+      "proposed_relations": 7
+    },
+    "source_title": "25.3 The Phillips Curve - Principles of Economics 3e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/25-3-the-phillips-curve"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "B2121",
+    "gaps": [
+      "No primary citations or years are given for the Watson-Crick proposal, Chargaff's rules, or the Sanger method, so priority and exact dates cannot be established from this source.",
+      "The passage does not explain how individual sequencing reads are assembled into a full genome, nor does it describe later high-throughput sequencing technologies.",
+      "No quantitative performance data (read length, accuracy, cost) are provided for any sequencing method.",
+      "The histone and nucleosome account lacks experimental detail and does not date the discovery of the nucleosome.",
+      "The Neanderthal section does not report contamination controls, coverage depth, or statistical tests supporting the interbreeding inference.",
+      "The source does not discuss RNA structure or function beyond noting the 2' hydroxyl difference.",
+      "No information is given about mitochondrial DNA, plasmids, or other non-chromosomal DNA."
+    ],
+    "screened": {
+      "accepted_nodes": 8,
+      "accepted_relations": 6,
+      "proposed_nodes": 8,
+      "proposed_relations": 6
+    },
+    "source_title": "14.2 DNA Structure and Sequencing - Biology 2e | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C2121",
+    "gaps": [
+      "No historical attribution for the memory hierarchy concept, cache memory, DRAM, SRAM, or locality; the source presents them as established background without naming originators.",
+      "No priority or first-publication information for any technology or design idea.",
+      "No quantitative data for the processor-memory performance gap; only a qualitative trend and a figure.",
+      "No formal derivation or proof of the average latency formula or of the hierarchy's optimality.",
+      "No discussion of cache associativity, replacement policy, coherence, virtual memory, or prefetching, which are standard parts of a full memory hierarchy treatment.",
+      "Cloud storage is mentioned but not integrated into the hierarchy or analyzed for latency, cost, or reliability.",
+      "The source date is the textbook publication date, not the date of discovery or formulation of any of the ideas."
+    ],
+    "screened": {
+      "accepted_nodes": 14,
+      "accepted_relations": 12,
+      "proposed_nodes": 14,
+      "proposed_relations": 12
+    },
+    "source_title": "5.5 Memory Hierarchy - Introduction to Computer Science | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/introduction-computer-science/pages/5-5-memory-hierarchy"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C2101",
+    "gaps": [
+      "No historical originator or date is given for amortized analysis, the potential method, the binary counter example, or the move-to-front bound.",
+      "The source does not define amortized cost formally or state the potential-function method as a general theorem.",
+      "No comparison with alternative analysis techniques (average-case, competitive analysis) is provided.",
+      "The Quicksort partition connection is asserted by reference to an earlier module and is not derived here.",
+      "The move-to-front theorem's assumptions about the optimal static ordering are stated but its relationship to later competitive-analysis literature is absent."
+    ],
+    "screened": {
+      "accepted_nodes": 6,
+      "accepted_relations": 5,
+      "proposed_nodes": 6,
+      "proposed_relations": 5
+    },
+    "source_title": "7.3. Amortized Analysis — Senior Algorithms",
+    "state": "succeeded",
+    "url": "https://opendsa-server.cs.vt.edu/ODSA/Books/pubbook/senalgs/fall-2020/F20_Public/html/AmortAnal.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "M2163",
+    "gaps": [
+      "No historical origin, priority, or independent formulation of the central limit theorem is documented in this source.",
+      "No proof or derivation of the Berry-Esseen theorem is provided; it is stated with a reference to Feller.",
+      "The assumptions of independence and identical distribution for the central limit theorem are stated but not discussed in terms of necessity or relaxation.",
+      "The source does not discuss cases with infinite variance or dependent observations.",
+      "No empirical validation of the normal approximation for specific sample sizes is provided.",
+      "The continuity theorem is stated and proved without attribution, so its historical origin is unresolved.",
+      "The complex sequence limit $(1+a_n/n)^n\\to e^a$ is stated without proof."
+    ],
+    "screened": {
+      "accepted_nodes": 4,
+      "accepted_relations": 4,
+      "proposed_nodes": 4,
+      "proposed_relations": 4
+    },
+    "source_title": "6.436J / 15.085J Fundamentals of Probability, Lecture 17: Laws of Large Numbers and Central Limit Theorem",
+    "state": "succeeded",
+    "url": "https://ocw.mit.edu/courses/6-436j-fundamentals-of-probability-fall-2018/f44fa78f05ac31a4ba2bd82f599dcf60_MIT6_436JF18_lec17.pdf"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "E2155",
+    "gaps": [
+      "The source does not provide the mathematical formula for portfolio variance or the derivation linking correlation to portfolio standard deviation.",
+      "The cited research by Meir Statman is referenced but not fully cited, dated, or reproduced, so its precise claim and scope cannot be verified from this source.",
+      "The source does not discuss how correlations are estimated, how stable they are over time, or how estimation error affects diversification decisions.",
+      "The source does not address asset classes beyond stocks, such as bonds, real estate, or international diversification.",
+      "The source does not discuss the distinction between correlation and covariance, or the role of portfolio weights beyond equal weighting.",
+      "The source does not provide a formal definition or measurement of systematic risk, nor does it connect systematic risk to beta or asset pricing models.",
+      "The historical origins of diversification theory and the correlation-based portfolio model are not discussed; no priority or ancestry claims are made."
+    ],
+    "screened": {
+      "accepted_nodes": 6,
+      "accepted_relations": 6,
+      "proposed_nodes": 6,
+      "proposed_relations": 6
+    },
+    "source_title": "15.2 Risk and Return to Multiple Assets - Principles of Finance | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/principles-finance/pages/15-2-risk-and-return-to-multiple-assets"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "P2150",
+    "gaps": [
+      "No primary experimental sources or experimenter names are given for the three photoelectric characteristics.",
+      "No date or attribution is given for the introduction of the stopping-potential method.",
+      "The source does not discuss the historical priority dispute or the sequence of experimental confirmations of Einstein's equation.",
+      "No numerical values, uncertainties, or historical measurements of Planck's constant from photoelectric data are provided.",
+      "The source does not address multi-photon processes, temperature dependence, or surface-state effects that can modify the simple work-function picture.",
+      "The source does not explain how the work function is determined microscopically or why different crystal faces of the same metal can have different values."
+    ],
+    "screened": {
+      "accepted_nodes": 9,
+      "accepted_relations": 12,
+      "proposed_nodes": 9,
+      "proposed_relations": 12
+    },
+    "source_title": "6.2 Photoelectric Effect - University Physics Volume 3 | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "M2159",
+    "gaps": [
+      "No historical attribution or date for the original formulation of Stokes’ theorem is provided.",
+      "The complete proof of Stokes’ theorem is not given; only an informal argument and a special-case proof are included.",
+      "No discussion of independent formulations or alternative proofs.",
+      "No treatment of surfaces with non-simple boundaries or non-smooth surfaces.",
+      "The source does not address the relationship between Stokes’ theorem and the generalized Stokes’ theorem for differential forms."
+    ],
+    "screened": {
+      "accepted_nodes": 8,
+      "accepted_relations": 7,
+      "proposed_nodes": 8,
+      "proposed_relations": 7
+    },
+    "source_title": "6.7 Stokes’ Theorem - Calculus Volume 3 | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/calculus-volume-3/pages/6-7-stokes-theorem"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "P2238",
+    "gaps": [
+      "No historical attribution is given for the discovery or formulation of doping, donor and acceptor levels, holes, impurity bands, or the Hall effect.",
+      "The source does not provide quantitative carrier statistics, mass-action law, or Fermi-level equations.",
+      "No discussion of compensation, degenerate doping, or the metal-insulator transition.",
+      "No treatment of alternative doping methods or of doping in materials other than silicon.",
+      "The Hall-effect analysis is restricted to a single carrier type and does not cover mixed conduction.",
+      "The source does not explain how impurity-band formation depends on dopant concentration or disorder."
+    ],
+    "screened": {
+      "accepted_nodes": 7,
+      "accepted_relations": 8,
+      "proposed_nodes": 7,
+      "proposed_relations": 8
+    },
+    "source_title": "9.6 Semiconductors and Doping - University Physics Volume 3 | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/9-6-semiconductors-and-doping"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "P2242",
+    "gaps": [
+      "No derivation or quantitative expression for depletion width, built-in potential, or junction capacitance is provided.",
+      "The diode equation is presented as an estimate; recombination, series resistance, and high-injection effects are not treated.",
+      "The transistor current gain $\\beta$ is not derived or related to device geometry and doping.",
+      "The historical account lacks dates and citations, so priority and independent formulation cannot be assessed from this source.",
+      "The source does not discuss surface states, interface traps, or the role of the surface process credited to Atalla.",
+      "No connection is made between the p-n junction mechanism and the MOSFET structure, despite the historical mention of the MOSFET."
+    ],
+    "screened": {
+      "accepted_nodes": 5,
+      "accepted_relations": 3,
+      "proposed_nodes": 5,
+      "proposed_relations": 4
+    },
+    "source_title": "9.7 Semiconductor Devices - University Physics Volume 3 | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/9-7-semiconductor-devices"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "M2170",
+    "gaps": [
+      "No primary-source citation or date is given for the normal-equations theorem or the projection characterization.",
+      "The Gauss note lacks citation and does not address Legendre or other independent formulations of least squares.",
+      "Numerical conditioning of $A^{T}A$ and alternatives to row reduction are not discussed.",
+      "Statistical justification of squared-error loss and treatment of measurement-error models are absent.",
+      "The source does not state when the least-squares definition or recipes were first formulated."
+    ],
+    "screened": {
+      "accepted_nodes": 8,
+      "accepted_relations": 7,
+      "proposed_nodes": 9,
+      "proposed_relations": 9
+    },
+    "source_title": "The Method of Least Squares",
+    "state": "succeeded",
+    "url": "https://textbooks.math.gatech.edu/ila/least-squares.html"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "B2161",
+    "gaps": [
+      "No dates are supplied for the formulation of the operon concept, attenuation, riboswitches, cAMP-CAP activation or sigma-factor switching; only the 1965 Nobel Prize and Monod's 1940s studies are dated.",
+      "The source does not identify the original contributors for most specific mechanisms beyond Jacob and Monod, so priority and independent formulation cannot be assessed from these passages.",
+      "The passage references a summary table (Table 11.6) of lac operon conditions but does not reproduce its contents, so the full combinatorial logic is not available here.",
+      "No primary citations, experimental evidence or quantitative data are provided for the mechanisms described; the account is textbook-level.",
+      "The relationship between alarmone signaling and virulence gene upregulation is asserted as important but not demonstrated in these passages.",
+      "The claim that some epigenetic changes are heritable is stated generally without specific examples, mechanisms or evidence."
+    ],
+    "screened": {
+      "accepted_nodes": 10,
+      "accepted_relations": 8,
+      "proposed_nodes": 10,
+      "proposed_relations": 9
+    },
+    "source_title": "11.7 Gene Regulation: Operon Theory - Microbiology | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/microbiology/pages/11-7-gene-regulation-operon-theory"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C2091",
+    "gaps": [
+      "No originator or date is given for the parallel programming model concept or for any of the four named models.",
+      "The claim that language extension is the most popular strategy for adding parallelism is asserted without evidence.",
+      "The core-count figures for smartphones, budget PCs, and high-end PCs are unsourced and undated.",
+      "The caveats about automatic parallelization are not quantified and are not tied to any specific compiler or benchmark.",
+      "The section does not discuss synchronization semantics, memory consistency models, or correctness criteria for any model.",
+      "No performance comparisons among shared memory, threads, message passing, and hybrid models are provided.",
+      "The ten-step development procedure has no completion criteria or evidence of effectiveness.",
+      "The relationship between the parallel programming models and the low-level programming language topic is not developed in these passages beyond naming C, MPI, OpenMP, and CUDA."
+    ],
+    "screened": {
+      "accepted_nodes": 16,
+      "accepted_relations": 13,
+      "proposed_nodes": 16,
+      "proposed_relations": 13
+    },
+    "source_title": "4.3 Parallel Programming Models - Introduction to Computer Science | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/introduction-computer-science/pages/4-3-parallel-programming-models"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "P2174",
+    "gaps": [
+      "The source does not derive the position–momentum relation; it defers the derivation to a more advanced course, so the mechanism behind the bound is not established here.",
+      "No dates are given for Heisenberg's formulation or for the quoted work, so the historical chronology cannot be established from this source.",
+      "The source does not discuss independent formulations of the uncertainty principle or priority among contributors.",
+      "The technical reason why the energy–time relation does not follow from the position–momentum relation is explicitly left beyond the discussion.",
+      "The Gaussian minimum-uncertainty result is stated without proof.",
+      "The hydrogen ground-state estimate is presented as rough and only roughly confirmed; no error analysis is given.",
+      "The source does not address the measurement-disturbance interpretation or the later debates about what the uncertainty relation means.",
+      "The source does not state whether the quoted Heisenberg remark represents present-day consensus or a dated authorial position."
+    ],
+    "screened": {
+      "accepted_nodes": 9,
+      "accepted_relations": 8,
+      "proposed_nodes": 9,
+      "proposed_relations": 8
+    },
+    "source_title": "7.2 The Heisenberg Uncertainty Principle - University Physics Volume 3 | OpenStax",
+    "state": "succeeded",
+    "url": "https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C1002",
+    "gaps": [
+      "The source does not establish present-day consensus on the Church-Turing thesis or on the status of the Entscheidungsproblem; it presents Turing's 1936 position.",
+      "The paper's equivalence proof with Church's effective calculability is given in outline, with several formulas assumed without proof.",
+      "The detailed table for the universal machine is complex and the paper does not fully verify every step in the reproduction.",
+      "The correction does not re-derive every step of the corrected proof; it states the modifications and asserts the proof is then correct.",
+      "The source does not discuss later developments in computability theory, complexity theory, or the halting problem as a modern formulation.",
+      "Priority and historical influence of the paper relative to Church's work are not fully resolved by the passages; the paper acknowledges Church's independent formulation but does not settle priority."
+    ],
+    "screened": {
+      "accepted_nodes": 11,
+      "accepted_relations": 11,
+      "proposed_nodes": 11,
+      "proposed_relations": 12
+    },
+    "source_title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+    "state": "succeeded",
+    "url": "https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf"
+  },
+  {
+    "admission": "admitted",
+    "dossier": "C1401",
+    "gaps": [
+      "The passages do not establish the collective EDVAC design credit or distinguish von Neumann's individual contributions from those of other Moore School staff.",
+      "The report's missing sections on programming and input/output are not available in these passages.",
+      "The passages do not provide evidence about the historical influence of the report beyond Godfrey's statement that Turing cited it and that it influenced the first generation of computer engineers.",
+      "The passages do not give a date for the formulation of the stored-program idea independent of the report's publication date.",
+      "The passages do not provide empirical performance data for the proposed machine.",
+      "The passages do not resolve whether the iconoscope memory was ever realized as described."
+    ],
+    "screened": {
+      "accepted_nodes": 18,
+      "accepted_relations": 15,
+      "proposed_nodes": 18,
+      "proposed_relations": 15
+    },
+    "source_title": "First Draft of a Report on the EDVAC",
+    "state": "succeeded",
+    "url": "https://www.cs.sjsu.edu/~mak/archive/CS185C/EDVAC.pdf"
+  },
+  {
+    "dossier": "C1401",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "state": "failed",
+    "url": "https://cva.stanford.edu/classes/cs99s/papers/vonneumann-firstdraftedvac.pdf"
+  },
+  {
+    "dossier": "C1002",
+    "error": "Insufficient readable source text",
+    "state": "failed",
+    "url": "https://www.wolframscience.com/prizes/tm23/images/Turing.pdf"
+  },
+  {
+    "dossier": "C1401",
+    "error": "Source download exceeded total time cap",
+    "state": "failed",
+    "url": "https://web.mit.edu/sts.035/www/PDFs/edvac.pdf"
   }
 ]
