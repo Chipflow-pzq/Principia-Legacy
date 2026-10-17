@@ -39,7 +39,41 @@ original paths. For later upgrades, use a new release directory and retain the
 previous `current` target and configuration. Never synchronize over an active
 release or copy private keys to the server.
 
-The activation results and exact commit/checksums will be appended after public
-verification. Earlier local acceptance evidence is in
-[the readiness report](../reports/product-readiness-1.4.md); it is not a
-production load test or a qualified human audit.
+## Activated and verified
+
+Activated **17 October 2026 at 07:50 UTC** (15:50 Asia/Shanghai).
+
+| Item | Value |
+|---|---|
+| Active release directory | `/data/xia/Principia-legacy/releases/20261017073758Z-1.4.1-r2` |
+| Deployed source commit | `2c2fcf1442424b5bd2f2c03dd770366babcec414` |
+| Server Git tag | `deployed/20261017073758Z-1.4.1-r2` |
+| Operational evidence and backups | `/data/xia/Principia-legacy/deployment/20261017073758Z-1.4.1-r2/` |
+| Pull request | [#1](https://github.com/Chipflow-pzq/Principia-Legacy/pull/1), intentionally unmerged |
+
+All 64 runtime files were checksum-verified. The database is byte-identical to the
+owner-accepted offline package. Local publication checks passed 117 backend tests,
+TypeScript, both frontend builds, desktop/mobile hosted-prefix tests, and an
+offline smoke test with zero external socket attempts. GitHub CI separately passed
+on Linux, macOS and Windows for the accepted source commit; later documentation
+commits have their own check results on the PR.
+
+The private backend canary verified spelling recovery, works, people, a graph,
+historical snapshots and read-only boundaries. Actual Nginx checks verified the
+HTML, hashed JavaScript/CSS, a single appropriate HTML security policy, and denied
+private paths and writes. Public HTTPS also verified the live snapshot and record
+APIs from outside the server. The main website remained healthy; its service PID
+and unrelated configuration files were unchanged. No provider request or paid
+exploration was initiated.
+
+The first activation exposed a trailing-slash file-alias error in Nginx. It was
+rolled back, corrected, and covered by `hosting/scripts/check_public.py` before the
+successful second activation. Both attempts and the temporary canary configuration
+failure are retained in the operational record.
+
+The browser-control tool subsequently timed out, so a completed interactive
+public-site walkthrough is **not claimed**. Desktop/mobile interaction was checked
+against the exact hosted build locally; final public HTML, assets and APIs passed
+over HTTPS. These checks are not a production load test or a qualified human audit.
+See the [deployment receipt](../reports/deployment-1.4.1.json) and
+[earlier acceptance evidence](../reports/product-readiness-1.4.md).

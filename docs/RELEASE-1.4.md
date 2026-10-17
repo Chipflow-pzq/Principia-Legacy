@@ -1,6 +1,6 @@
 # 1.4 — Works, people and connected ideas
 
-**Reader 1.4.1 · atlas 1.4.1-exploratory · 17 October 2026.** Accepted for publication. The scientific snapshot is unchanged from the accepted local build.
+**Reader 1.4.1 · atlas 1.4.1-exploratory · 17 October 2026.** Published at [the live atlas](https://atlas.chipflow.net/web/legacy/). The scientific snapshot is unchanged from the accepted local build.
 
 The earlier acceptance reports retain their original candidate versions and test context. See [deployment and publication](DEPLOYMENT-1.4.1.md) for the production record.
 

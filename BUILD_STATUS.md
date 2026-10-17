@@ -1,6 +1,6 @@
 # Build status
 
-Accepted exploratory release 1.4.1; scientific snapshot 1.4.1-exploratory. Deployment and publication evidence is recorded separately. This file reports actual admitted content, not the founding project's ambitions.
+Published exploratory reader 1.4.1; scientific snapshot 1.4.1-exploratory. Public activation and rollback evidence is in `reports/deployment-1.4.1.json`; GitHub PR #1 remains for manual merge. This file reports actual admitted content, not the founding project's ambitions.
 
 | Dimension | Current evidence |
 |---|---|
@@ -40,7 +40,7 @@ The typed-atlas condition did not improve rule-based verdict agreement over flat
 
 Software checks cover schemas, references, source anchors, joint premises, four-category bounded fuzzy/concept search, work membership, read-only serving, correction quarantine and recheck, stale approvals, preserved snapshots, unsafe inputs and export closure. Browser tests cover desktop and narrow-screen reading, sources, arrows, search, comparison, keyboard access, filtering, expansion and brief content. The offline smoke test denies outbound socket connections while serving and reading all bundled assets; browser routes separately block external requests.
 
-Measured results are in `build/performance.json`, and the research results in `build/evaluation-summary.json`. Only macOS was actually tested here. Windows and Linux launchers plus a three-platform CI workflow are supplied; those platforms have not been executed in this session.
+Measured results are in `build/performance.json`, and the research results in `build/evaluation-summary.json`. Browser and local restoration measurements were performed on macOS. Publication CI passed backend, validation and offline-build checks on Linux, macOS and Windows; the public adapter also passed Linux canary and HTTPS checks. This does not imply GUI testing on all three platforms.
 
 The current content is a bounded set of explicit source passes. It is not a completed recursive depth-six reconstruction of the history of science. Independent priority, inaccessible sources, exact current frontier relevance, unresolved endpoints and alternative traditions need further source work. Three tours are reading sequences; they do not invent cross-pillar historical arrows.
 

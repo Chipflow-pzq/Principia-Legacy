@@ -1,0 +1,213 @@
+{
+  "activated_at": "2026-10-17T07:50:13.086143+00:00",
+  "deployment_id": "20261017073758Z-1.4.1-r2",
+  "source_commit": "2c2fcf1442424b5bd2f2c03dd770366babcec414",
+  "reader_version": "1.4.1",
+  "snapshot": "1.4.1-exploratory",
+  "public_url": "https://atlas.chipflow.net/web/legacy/",
+  "rollback": "Saved service and Legacy snippet; previous flat installation retained",
+  "unrelated_configuration": "Checksums unchanged",
+  "main_site_health": "Unchanged",
+  "canary_stopped": true,
+  "git_pull_request": "https://github.com/Chipflow-pzq/Principia-Legacy/pull/1",
+  "git_branch": "codex/release-1.4.1",
+  "merge_policy": "Maintainer merges manually; not merged by deployment.",
+  "runtime_verification": {
+    "passed": true,
+    "release_id": "1.4.1-exploratory",
+    "counts": {
+      "contribution": 2905,
+      "relation": 1941,
+      "source": 270,
+      "review": 7674
+    },
+    "catalog_counts": {
+      "works": 882,
+      "people": 899,
+      "topics": 781,
+      "works_with_insights": 262
+    },
+    "checks": {
+      "health": {
+        "status": 200,
+        "milliseconds": 20.24
+      },
+      "info": {
+        "status": 200,
+        "milliseconds": 252.3
+      },
+      "spelling_search": {
+        "status": 200,
+        "milliseconds": 81.59
+      },
+      "work": {
+        "status": 200,
+        "milliseconds": 25.97
+      },
+      "person": {
+        "status": 200,
+        "milliseconds": 24.65
+      },
+      "graph": {
+        "status": 200,
+        "milliseconds": 55.07
+      },
+      "historical_snapshot": {
+        "status": 200,
+        "milliseconds": 151.87
+      },
+      "exploration_index": {
+        "status": 200,
+        "milliseconds": 64.91
+      },
+      "read_only": {
+        "status": 405,
+        "milliseconds": 0.76
+      },
+      "host_restriction": {
+        "status": 403,
+        "milliseconds": 0.55
+      },
+      "unpublished_snapshot": {
+        "status": 404,
+        "milliseconds": 0.56
+      }
+    }
+  },
+  "public_static_verification": {
+    "passed": true,
+    "base_url": "https://atlas.chipflow.net/web/legacy/",
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "bytes": 468
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 468
+      },
+      {
+        "path": "assets/index-DLggeSJF.js",
+        "status": 200,
+        "sha256": "b989dea2d3a6455798408d8c0b20896be2c6abb892da4ab466450cce331413d9"
+      },
+      {
+        "path": "assets/index-DXn6uZEw.css",
+        "status": 200,
+        "sha256": "79abd27ed4bef8f8343d40dfe64abfab78550ed6e6720cd0aaad1f6dcdac5453"
+      },
+      {
+        "path": ".env",
+        "status": 404
+      },
+      {
+        "path": ".git/config",
+        "status": 404
+      },
+      {
+        "path": "assets/.env",
+        "status": 404
+      },
+      {
+        "path": "assets/missing-file.js",
+        "status": 404
+      },
+      {
+        "path": "/",
+        "method": "POST",
+        "status": 405
+      },
+      {
+        "path": "healthz",
+        "status": 200,
+        "release_id": "1.4.1-exploratory"
+      }
+    ]
+  },
+  "external_https_verification": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "milliseconds": 1132.75,
+        "bytes": 468
+      },
+      {
+        "path": "api/info",
+        "status": 200,
+        "milliseconds": 953.27,
+        "bytes": 4477
+      },
+      {
+        "path": "api/search?q=Allan%20Turing",
+        "status": 200,
+        "milliseconds": 1878.47,
+        "bytes": 54152
+      },
+      {
+        "path": "api/works/w-0eb61c7b942b1630",
+        "status": 200,
+        "milliseconds": 1998.38,
+        "bytes": 69197
+      },
+      {
+        "path": "api/neighborhood?dossier=C01&limit=40",
+        "status": 200,
+        "milliseconds": 2681.28,
+        "bytes": 182858
+      },
+      {
+        "path": "api/info?release=1.2.0-exploratory",
+        "status": 200,
+        "milliseconds": 893.88,
+        "bytes": 4473
+      }
+    ]
+  },
+  "local_release_checks": {
+    "python_passed": 117,
+    "hosted_browser_passed": 2,
+    "typescript": "passed",
+    "offline_external_socket_attempts": 0,
+    "source_scan_private_paths": [],
+    "source_scan_credential_patterns": []
+  },
+  "production_observation": {
+    "service_memory_bytes": 137072640,
+    "automatic_restarts": 0,
+    "scope": "Point observation, not a load benchmark; other service PID unchanged."
+  },
+  "prior_attempts": [
+    {
+      "stage": "backend_canary",
+      "outcome": "temporary service lacked PrivateTmp; corrected to production isolation settings before activation"
+    },
+    {
+      "stage": "first_public_activation",
+      "outcome": "HTML index alias returned 500; restored prior service and routing. Fixed trailing-slash routing; added actual Nginx HTML/assets/CSP checks; second activation passed."
+    }
+  ],
+  "interactive_public_browser_verification": "Browser-control tool timed out repeatedly. Public HTML/assets/API were verified over HTTPS; desktop/mobile UI passed against the exact hosted build locally. No successful final interactive public walkthrough is claimed.",
+  "paid_provider_requests": 0,
+  "github_ci": {
+    "source_commit": "2c2fcf1442424b5bd2f2c03dd770366babcec414",
+    "run_url": "https://github.com/Chipflow-pzq/Principia-Legacy/actions/runs/39014966463",
+    "jobs": [
+      {
+        "name": "verify (ubuntu-latest)",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify (windows-latest)",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify (macos-latest)",
+        "conclusion": "success"
+      }
+    ]
+  }
+}

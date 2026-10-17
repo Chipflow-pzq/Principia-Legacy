@@ -1,6 +1,6 @@
 # Release status
 
-**17 October 2026 · reader 1.4.1 · atlas 1.4.1-exploratory.** Accepted for publication. [Deployment and publication record](DEPLOYMENT-1.4.1.md).
+**17 October 2026 · reader 1.4.1 · atlas 1.4.1-exploratory.** Live at [atlas.chipflow.net/web/legacy/](https://atlas.chipflow.net/web/legacy/). [Deployment and publication record](DEPLOYMENT-1.4.1.md).
 
 | Dimension | Current evidence |
 |---|---|
