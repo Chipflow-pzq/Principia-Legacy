@@ -1,0 +1,843 @@
+{
+  "config": {
+    "argv": [
+      "/Users/zhengqipei/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/node_modules/@playwright/test/cli.js",
+      "test",
+      "tests/coverage.spec.ts",
+      "tests/cloud-search.spec.ts"
+    ],
+    "configFile": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/playwright.config.ts",
+    "rootDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "snapshotDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8767",
+          "headless": true,
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "snapshotDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8767",
+          "headless": true,
+          "channel": "chrome",
+          "viewport": {
+            "width": 390,
+            "height": 664
+          },
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+          "screen": {
+            "width": 390,
+            "height": 844
+          },
+          "deviceScaleFactor": 3,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "cloud-search.spec.ts",
+      "file": "cloud-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "neuroscience wording finds a transparent topic and real works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3409,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:48:53.686Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-26cb3aa52353ddf49736",
+          "file": "cloud-search.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "area choices are optional, bounded and searchable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5658,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.area-choices button')\nExpected: \u001b[32m8\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.area-choices button') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.area-choices button')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.area-choices button')\nExpected: \u001b[32m8\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.area-choices button') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.area-choices button')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/cloud-search.spec.ts:42:54",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/cloud-search.spec.ts",
+                      "column": 54,
+                      "line": 42
+                    },
+                    "snippet": "  40 |   await expect(page.locator(\".area-picker\")).not.toHaveAttribute(\"open\", \"\");\n  41 |   await page.getByText(\"Refine by area\", { exact: true }).click();\n> 42 |   await expect(page.locator(\".area-choices button\")).toHaveCount(8);\n     |                                                      ^\n  43 |   await page\n  44 |     .getByRole(\"searchbox\", { name: \"Find an area\" })\n  45 |     .fill(\"neuroscience\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/cloud-search.spec.ts",
+                        "column": 54,
+                        "line": 42
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.area-choices button')\nExpected: \u001b[32m8\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.area-choices button') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.area-choices button')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  40 |   await expect(page.locator(\".area-picker\")).not.toHaveAttribute(\"open\", \"\");\n  41 |   await page.getByText(\"Refine by area\", { exact: true }).click();\n> 42 |   await expect(page.locator(\".area-choices button\")).toHaveCount(8);\n     |                                                      ^\n  43 |   await page\n  44 |     .getByRole(\"searchbox\", { name: \"Find an area\" })\n  45 |     .fill(\"neuroscience\");\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/cloud-search.spec.ts:42:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:48:58.240Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/cloud-search-area-choices--15504-onal-bounded-and-searchable-desktop/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/cloud-search.spec.ts",
+                    "column": 54,
+                    "line": 42
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-342426782598d247b29c",
+          "file": "cloud-search.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "cloud semantic search handles a paraphrase without an LLM key",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2891,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:05.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-6830982dfde3fd34b2a7",
+          "file": "cloud-search.spec.ts",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "a pinned reading view does not wait for homepage suggestions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5635,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:08.659Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-2e73151e9882aa97effd",
+          "file": "cloud-search.spec.ts",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "neuroscience wording finds a transparent topic and real works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:28.389Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-2426e3d2f7d3dde343f0",
+          "file": "cloud-search.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "area choices are optional, bounded and searchable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5743,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:31.656Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-24ebdd24666eadbe88b9",
+          "file": "cloud-search.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "cloud semantic search handles a paraphrase without an LLM key",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:37.423Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-bafb02bf5ab48730fd22",
+          "file": "cloud-search.spec.ts",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "a pinned reading view does not wait for homepage suggestions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4652,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:39.702Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-6aac25511c4dba727ede",
+          "file": "cloud-search.spec.ts",
+          "line": 81,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "coverage.spec.ts",
+      "file": "coverage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "population communication opens actual insights and preserves the search",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3346,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:14.320Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-6181e099f8efc5062b4e",
+          "file": "coverage.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "coverage shows explained content separately from catalogue size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1452,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:17.683Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-b2a60bb4cc060e47fe08",
+          "file": "coverage.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "catalogue-only matches explain their limitation before opening",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2368,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:19.164Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-a5c69c51243a4ef66dcf",
+          "file": "coverage.spec.ts",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "older snapshot remains readable with a path to the current atlas",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5691,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.result-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.result-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.result-card').first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.result-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.result-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.result-card').first()\u001b[22m\n\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts:74:54",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts",
+                      "column": 54,
+                      "line": 74
+                    },
+                    "snippet": "  72 |     page.getByRole(\"textbox\", { name: \"Search the atlas\" }),\n  73 |   ).toHaveValue(\"neuronal state space\");\n> 74 |   await expect(page.locator(\".result-card\").first()).toBeVisible();\n     |                                                      ^\n  75 | });\n  76 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts",
+                        "column": 54,
+                        "line": 74
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.result-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.result-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.result-card').first()\u001b[22m\n\n\n  72 |     page.getByRole(\"textbox\", { name: \"Search the atlas\" }),\n  73 |   ).toHaveValue(\"neuronal state space\");\n> 74 |   await expect(page.locator(\".result-card\").first()).toBeVisible();\n     |                                                      ^\n  75 | });\n  76 |\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts:74:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:21.549Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/coverage-older-snapshot-re-149aa-a-path-to-the-current-atlas-desktop/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts",
+                    "column": 54,
+                    "line": 74
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-5cb5d59da237ffeaa824",
+          "file": "coverage.spec.ts",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "population communication opens actual insights and preserves the search",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30038,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts",
+                        "column": 70,
+                        "line": 23
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nBrowser logs:\n\n<launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/hg/b92hf0r56hb4mrb3y64dq0400000gn/T/playwright_chromiumdev_profile-AytrTQ --remote-debugging-pipe --no-startup-window\n<launched> pid=16577\n[pid=16577][err] Trying to load the allocator multiple times. This is *not* supported.\n[pid=16577][err] [16582:1392233:1028/214929.451929:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214929.452516:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214929.454742:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214929.454873:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214929.457560:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214929.457709:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214929.458671:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214929.458800:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214929.459307:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214929.459418:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214931.881375:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214931.881535:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214931.885370:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214931.885516:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214931.892858:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214931.893059:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214931.893431:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214931.893540:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214931.893907:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214931.894020:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16577:1392220:1028/214934.667469:ERROR:google_apis/gcm/engine/mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret\n[pid=16577][err] [16577:1392220:1028/214934.667489:ERROR:google_apis/gcm/engine/mcs_client.cc:704] Failed to log in to GCM, resetting connection.\n[pid=16577][err] [16582:1392233:1028/214934.797854:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214934.797997:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16577:1392220:1028/214934.991917:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=16577][err] [16582:1392233:1028/214937.603628:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214937.603773:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214937.611914:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214937.612099:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214937.612620:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214937.612795:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214937.613181:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214937.613317:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214937.613747:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214937.613887:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16577:1392231:1028/214939.707680:ERROR:base/process/process_mac.cc:45] task_policy_set TASK_CATEGORY_POLICY: (os/kern) invalid argument (4)\n[pid=16577][err] [16577:1392231:1028/214939.707718:ERROR:base/process/process_mac.cc:90] task_policy_set TASK_SUPPRESSION_POLICY: (os/kern) invalid argument (4)\n[pid=16577][err] [16582:1392233:1028/214939.864058:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214939.864248:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214939.864737:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214939.864872:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214939.865285:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214939.865435:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214939.865861:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214939.865991:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214939.866408:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214939.866545:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16577:1392231:1028/214944.382648:ERROR:base/process/process_mac.cc:45] task_policy_set TASK_CATEGORY_POLICY: (os/kern) invalid argument (4)\n[pid=16577][err] [16577:1392231:1028/214944.382692:ERROR:base/process/process_mac.cc:90] task_policy_set TASK_SUPPRESSION_POLICY: (os/kern) invalid argument (4)\n[pid=16577][err] [16582:1392233:1028/214944.563374:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214944.563525:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214944.565466:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214944.565585:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214944.567084:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214944.567222:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214944.567576:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214944.567712:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392233:1028/214944.568128:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16582:1392309:1028/214944.568241:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[pid=16577][err] [16577:1392220:1028/214958.215260:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=16577] <gracefully close start>\n[pid=16577][err] [16577:1392231:1028/215014.448893:ERROR:base/process/process_mac.cc:45] task_policy_set TASK_CATEGORY_POLICY: (os/kern) invalid argument (4)\n[pid=16577][err] [16577:1392231:1028/215014.448921:ERROR:base/process/process_mac.cc:90] task_policy_set TASK_SUPPRESSION_POLICY: (os/kern) invalid argument (4)\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Back to search results/ })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"back-link\">← Back to search results</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"inspector-top\">…</div> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <span>In anesthetized macaque V1-V2 recordings, trial-t…</span> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <button class=\"person-credit\">Christian K. Machens ↗</button> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m  2 × retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m      - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"inspector-top\">…</div> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m  12 × retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <span>In anesthetized macaque V1-V2 recordings, trial-t…</span> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <button class=\"person-credit\">Christian K. Machens ↗</button> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"inspector-top\">…</div> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"inspector-top\">…</div> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <span>In anesthetized macaque V1-V2 recordings, trial-t…</span> from <aside tabindex=\"-1\" class=\"inspector\" aria-label=\"Record inspector\">…</aside> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n  21 |     .click();\n  22 |   await expect(page.locator(\".inspector\")).toContainText(/V1|V2/);\n> 23 |   await page.getByRole(\"button\", { name: /Back to search results/ }).click();\n     |                                                                      ^\n  24 |   await expect(\n  25 |     page.getByRole(\"textbox\", { name: \"Search the atlas\" }),\n  26 |   ).toHaveValue(\"neuronal group communication\");\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts:23:70"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:49:44.387Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/coverage-population-commun-163c9-ts-and-preserves-the-search-mobile/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-039017995a6fb0ed828a",
+          "file": "coverage.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "coverage shows explained content separately from catalogue size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5190,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:50:15.716Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-3a284fd1fc0a79217b8d",
+          "file": "coverage.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "catalogue-only matches explain their limitation before opening",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:50:21.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-873e3b0dba6702154c06",
+          "file": "coverage.spec.ts",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "older snapshot remains readable with a path to the current atlas",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5816,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.result-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.result-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.result-card').first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.result-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.result-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.result-card').first()\u001b[22m\n\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts:74:54",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts",
+                      "column": 54,
+                      "line": 74
+                    },
+                    "snippet": "  72 |     page.getByRole(\"textbox\", { name: \"Search the atlas\" }),\n  73 |   ).toHaveValue(\"neuronal state space\");\n> 74 |   await expect(page.locator(\".result-card\").first()).toBeVisible();\n     |                                                      ^\n  75 | });\n  76 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts",
+                        "column": 54,
+                        "line": 74
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.result-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.result-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.result-card').first()\u001b[22m\n\n\n  72 |     page.getByRole(\"textbox\", { name: \"Search the atlas\" }),\n  73 |   ).toHaveValue(\"neuronal state space\");\n> 74 |   await expect(page.locator(\".result-card\").first()).toBeVisible();\n     |                                                      ^\n  75 | });\n  76 |\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts:74:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T13:50:33.104Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/coverage-older-snapshot-re-149aa-a-path-to-the-current-atlas-mobile/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/coverage.spec.ts",
+                    "column": 54,
+                    "line": 74
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-f09474df87f23f5b5a65",
+          "file": "coverage.spec.ts",
+          "line": 62,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T13:48:52.842Z",
+    "duration": 107025.85600000001,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

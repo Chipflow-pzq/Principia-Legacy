@@ -14,6 +14,7 @@ from principia_legacy.providers import Provider
 root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("env_file")
+parser.add_argument("--data-home", type=Path, default=root)
 parser.add_argument(
     "--baseline", help="Inspect contributions absent from this immutable release"
 )
@@ -28,6 +29,7 @@ parser.add_argument(
     help="Quarantine editorial exclusions through an explicit immutable patch; never add approvals",
 )
 args = parser.parse_args()
+root = args.data_home.resolve()
 registry = {d["id"]: d for d in read_lines(root / "manifests/FRONTIER_REGISTRY.jsonl")}
 records = latest_records(corpus(root))
 nodes = [r for r in records if r["type"] == "contribution" and visible(r)]
@@ -191,7 +193,8 @@ print(
 )
 
 if args.apply:
-    from principia_legacy.lifecycle import prepare_patch, apply_patch
+    from principia_legacy.lifecycle import prepare_patch, _apply_patch
+    from principia_legacy.authoring_store import writer, recover, Commit
     from principia_legacy.common import seal
     import copy
 
@@ -223,14 +226,18 @@ if args.apply:
         )
         path = (root / args.output).with_name(Path(args.output).stem + "-patch.json")
         write_json(path, patch)
-        applied = apply_patch(root, path)
-        exclusions_path = root / "config/admission_exclusions.json"
-        exclusions = read_json(exclusions_path, {})
-        exclusions.update({c["id"]: c["reason"] for c in excluded})
-        write_json(exclusions_path, exclusions)
-        result = read_json(root / args.output)
-        result.update(applied_patch=applied, human_review=False)
-        write_json(root / args.output, result)
+        with writer(root):
+            recover(root)
+            commit = Commit(root, "editorial-exclusions:" + str(args.output))
+            applied = _apply_patch(root, path, commit)
+            exclusions_path = root / "config/admission_exclusions.json"
+            exclusions = read_json(exclusions_path, {})
+            exclusions.update({c["id"]: c["reason"] for c in excluded})
+            commit.json(exclusions_path, exclusions)
+            result = read_json(root / args.output)
+            result.update(applied_patch=applied, human_review=False)
+            commit.json(root / args.output, result)
+            commit.publish()
         print(
             {
                 "withheld_contributions": len(proposals),

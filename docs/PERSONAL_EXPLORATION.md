@@ -1,11 +1,11 @@
 # Personal research exploration
 
-**Reader 1.3.1-rc.2 · atlas 1.3.1-exploratory.** Prepared for local acceptance; the deployed site may still use an earlier edition. Generated maps never enlarge or modify the canonical corpus.
+**Reader 1.5.0rc1 · local review candidate.** The public site remains on accepted 1.4.1 until owner acceptance. Generated maps never enlarge or modify the canonical corpus.
 
 ## Try it
 
 1. Open **Explore**. The same input card offers **Browse the atlas** and **Trace a discovery**. The second action reveals a specific research input for a paper, technique or scientific advance. Switching from a public search can prefill it.
-2. Enter your own SiliconFlow API key in the top-right global **Settings**. The default is `deepseek-ai/DeepSeek-V4-Flash`. **Load my available models** discovers exact IDs from your account without changing your selection. Model availability and pricing are determined by SiliconFlow.
+2. Enter your own SiliconFlow API key in the top-right global **Settings**. The default is `deepseek-ai/DeepSeek-V4.1-Flash`; an existing saved selection is preserved. **Load my available models** discovers exact IDs from your account without changing your selection. Model availability and pricing are determined by SiliconFlow.
 3. Select **Build research map**. The agent retrieves passages, plans bounded follow-up searches, streams the insights, connects the complete set and challenges its claims and connections. The progress panel shows stages, source counts, recent activity, arriving insights, elapsed time and an approximate remaining-time range. The final evidence review shows counts of completed verdicts and a firm 60-second limit. **Inspect draft now** opens the map while the check continues.
 4. Click an insight or arrow, or use **List** and the accessible connection list. Inspect the quotation, attribution, assumptions and limits. Use connection filters to distinguish history, reasoning, evidence, analogy and teaching prerequisites.
 5. Choose **Save on this device** if you want browser persistence, or **Download map** for a portable JSON file. **Open a map file** restores that file without a key or a provider call.
@@ -20,9 +20,9 @@ A background run remains reachable through **Tracing…**, **Map ready**, or **T
 |---|---|
 | API key | Tab memory, or localStorage when **Remember API key on this device** is selected. Sent only as an authorization header directly to `api.siliconflow.cn`; never included in map files or sent to the atlas server. |
 | Research question | Tab memory; sent to SiliconFlow and scholarly and reference search services during a requested run. Never included in atlas API URLs or uploaded to the atlas server. |
-| Public atlas index | Downloaded in revision-pinned pages; searched in browser memory. |
+| Public atlas index | Compressed, hashed shards pinned to one release; cached in a separate local IndexedDB store (128 MiB bound) and ranked in a Web Worker. |
 | Generated map | Tab memory until explicitly saved or downloaded. |
-| Saved map | IndexedDB in this browser, scoped to this site's origin. Other devices and browsers do not receive it. |
+| Saved map | IndexedDB in this browser, scoped to this site's origin. A separate metadata index lists the library without parsing every map. Other devices and browsers do not receive it. |
 | Portable copy | A JSON file in the user's chosen download location; it contains no API key. |
 | Receipts | Exact model, stage, outcome, prompt/input hashes and provider-reported tokens; included with the map. |
 | Recovery checkpoint | Tab memory only; source passages and the last completed stage, without credentials. Discarded on reload. |
@@ -81,7 +81,9 @@ batch judges its own records; it cannot make whole-map absence claims.
 - `settings.ts` and `Settings.tsx`: global provider configuration and explicit local key persistence.
 - `Explorer.tsx`: reader workflow; reuses the existing graph renderer and predicate registry.
 
-The server adds only `GET /api/exploration-index?release=...&offset=...&limit=...`, with a maximum page size of 200. It returns public contribution summaries, visible revision-matched adjacency, record revisions/content hashes and the release snapshot hash. There are no scientific schema changes or new canonical record types.
+The reader exposes a versioned `/api/exploration-manifest`, bounded `/api/exploration-shard` responses and `/api/exploration-records` for at most 40 full-record IDs per request. All are public, snapshot-pinned data; matching runs locally without a 10,000-record cutoff. The server can see requested shard and record IDs, which may reveal the public subjects being read, but does not receive the personal research prompt. The legacy paginated `/api/exploration-index` remains available for compatibility. [API contract](API.md).
+
+Live 1.5 browser acceptance includes the six requested queries and multiple exact model IDs. Timings and completeness vary; some runs received HTTP 429 responses or timed out, and a completed review can leave an incomplete graph. All outcomes and known usage are retained in the [acceptance report](../reports/acceptance-1.5.md). Bulk authoring and browser tests sharing one provider account can contend for its rate limit. A discovered model ID is not a service guarantee.
 
 API references: [SiliconFlow models](https://docs.siliconflow.cn/docs/api/models-get), [chat completions](https://docs.siliconflow.cn/docs/api/chat-completions-post), [Crossref REST API](https://www.crossref.org/documentation/retrieve-metadata/rest-api/), [Europe PMC REST services](https://europepmc.org/RestfulWebService), [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page).
 

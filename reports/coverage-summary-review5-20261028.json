@@ -1,0 +1,146 @@
+{
+  "audited_at": "2026-10-28T13:41:02+00:00",
+  "counts": {
+    "cross_subject_relations": 4,
+    "insights": 5700,
+    "isolated_insights": 926,
+    "joint_premise_relations": 143,
+    "relations": 4211
+  },
+  "created_at": "2026-10-28T13:41:00+00:00",
+  "cross_subject_relation_ids": [
+    "connection-072d73287795c99b",
+    "connection-6481afaca2053456",
+    "connection-8ec94952b6bf26c8",
+    "connection-e38057f33457204e"
+  ],
+  "human_audit": "Not performed",
+  "integrity": {
+    "exact_duplicate_claim_groups": [
+      [
+        "n-ea687c9c5c407e72",
+        "n-eef47bee83b5cb45"
+      ]
+    ],
+    "interpretation": "Exact pins and passages are checked; entailment, attribution and semantic duplication still require independent assessment. Zero integrity errors is not a correctness certificate.",
+    "missing_claim_anchors": [],
+    "missing_exact_machine_approval": [],
+    "missing_limits": [],
+    "private_evidence_errors": [],
+    "qualified_human_reviews": 0
+  },
+  "inventory": {
+    "people": 911,
+    "people_with_insights": 113,
+    "people_with_sourced_profile": 911,
+    "route_ready_topics": 49,
+    "source_versions": 627,
+    "sources_by_access": {
+      "anchor_checked": 627
+    },
+    "topics": 1154,
+    "topics_with_insights": 509,
+    "works": 1233,
+    "works_with_insights": 593
+  },
+  "longer_term_target": {
+    "insights_per_subject": 2000,
+    "topics_per_subject": 200
+  },
+  "person_depth_notice": "A sourced profile and linked works are not a complete biography. No unsourced biography enrichment is inferred.",
+  "release_id": "1.5.0-review5",
+  "scope": "Structural candidates count complete joint-premise relations and an endpoint-connected component, not historical ancestry or pedagogical sufficiency. Route readiness also requires a current, pinned editorial assessment. All current editorial work is machine work.",
+  "search_scope": "A finite curated scientific corpus cannot guarantee a relevant, substantive answer to arbitrary queries; catalogue hits must not be counted as explained answers.",
+  "snapshot_hash": "bd2161f6c40e05a9ac52a6aa831de5ab39024aa6f0f642d8d47c06a5f4558dd6",
+  "subjects": {
+    "biology_medicine": {
+      "people_with_insights": 30,
+      "people_with_sourced_profile": 296,
+      "registered_topics": 275,
+      "route_ready_topics": 4,
+      "selected_people": 296,
+      "shortfall": {
+        "insights": 0,
+        "route_ready_topics": 96
+      },
+      "structural_route_candidates": 25,
+      "topics_with_content": 97,
+      "topics_with_eight_insights": 74,
+      "unique_primary_subject_insights": 1195,
+      "works": 280,
+      "works_with_insights": 112
+    },
+    "computer_science": {
+      "people_with_insights": 29,
+      "people_with_sourced_profile": 130,
+      "registered_topics": 214,
+      "route_ready_topics": 12,
+      "selected_people": 130,
+      "shortfall": {
+        "insights": 0,
+        "route_ready_topics": 88
+      },
+      "structural_route_candidates": 33,
+      "topics_with_content": 98,
+      "topics_with_eight_insights": 80,
+      "unique_primary_subject_insights": 1342,
+      "works": 230,
+      "works_with_insights": 117
+    },
+    "economics": {
+      "people_with_insights": 24,
+      "people_with_sourced_profile": 111,
+      "registered_topics": 180,
+      "route_ready_topics": 6,
+      "selected_people": 111,
+      "shortfall": {
+        "insights": 0,
+        "route_ready_topics": 94
+      },
+      "structural_route_candidates": 18,
+      "topics_with_content": 97,
+      "topics_with_eight_insights": 55,
+      "unique_primary_subject_insights": 1011,
+      "works": 188,
+      "works_with_insights": 112
+    },
+    "mathematics": {
+      "people_with_insights": 15,
+      "people_with_sourced_profile": 113,
+      "registered_topics": 197,
+      "route_ready_topics": 12,
+      "selected_people": 113,
+      "shortfall": {
+        "insights": 0,
+        "route_ready_topics": 88
+      },
+      "structural_route_candidates": 24,
+      "topics_with_content": 107,
+      "topics_with_eight_insights": 55,
+      "unique_primary_subject_insights": 1035,
+      "works": 230,
+      "works_with_insights": 124
+    },
+    "physics": {
+      "people_with_insights": 25,
+      "people_with_sourced_profile": 273,
+      "registered_topics": 288,
+      "route_ready_topics": 15,
+      "selected_people": 273,
+      "shortfall": {
+        "insights": 0,
+        "route_ready_topics": 85
+      },
+      "structural_route_candidates": 31,
+      "topics_with_content": 110,
+      "topics_with_eight_insights": 54,
+      "unique_primary_subject_insights": 1117,
+      "works": 308,
+      "works_with_insights": 128
+    }
+  },
+  "target": {
+    "insights_per_subject": 1000,
+    "route_ready_topics_per_subject": 100
+  }
+}

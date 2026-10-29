@@ -1,0 +1,11 @@
+{
+  "scope": "Frozen development smoke set, 28 October 2026. Measures availability of content-bearing results, not entailment or unrestricted recall. Negative controls must stay empty. Returned titles are retained for relevance inspection; a nonempty result is not automatically a correct answer.",
+  "queries": [
+    "neuronal group communication", "neuronal state space", "communication subspace", "brain activity as trajectories in a low dimensional space", "how brain regions exchange information", "how neurons pass signals to each other", "neural population dynamics during reaching", "Byron Yu", "John Cunningham", "how bacteria become resistant to antibiotics", "CRISPR gene editing", "protein structure prediction",
+    "Lagrange multipliers", "Euclid prime numbers", "why there are infinitely many primes", "singular value decomposition", "how to integrate over a curved surface", "Bayes theorem", "random variables become normally distributed", "Alan Turing", "von neuman", "Emmy Noether",
+    "relativity of simultaneity", "why light bends near a massive star", "quantum error correction", "diffraction limits microscope resolution", "how photons collide with electrons", "Higgs boson", "Newton laws of motion", "superconductivity", "lithography machines for chip", "plasma enhanced chemical vapour deposition",
+    "GPU and CUDA", "large language models such as chatgpt", "how to prevent threads from deadlocking", "distributed file systems", "weakest precondition", "public key encryption", "why sorting cannot be faster than n log n", "neural network backpropagation", "Claude Shannon", "resuable rocket",
+    "natural monopoly regulation", "externalities and pollution", "why banks create money", "instrumental variables", "causal inference with machine learning", "Nash equilibrium", "difference in differences", "Amartya Sen", "auction design", "economic growth and innovation"
+  ],
+  "negative_queries": ["best pizza near me tonight", "purple invisible dragon sandwich", "my missing suitcase at the airport", "zzqxv9 nonexistent proposition"]
+}

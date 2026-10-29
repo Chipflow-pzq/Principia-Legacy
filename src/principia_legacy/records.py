@@ -12,30 +12,78 @@ PILLARS = {
     "biology_medicine": "Biology & medicine",
 }
 PREDICATES = {
-    "historical_basis_for": ("historical", False, "historical basis for",
-        "Earlier insight -> later insight. Evidence explicitly documents intellectual influence; chronology, citation or resemblance alone is insufficient."),
-    "motivated": ("historical", False, "motivated",
-        "An earlier problem, result or limitation -> the later response it explicitly inspired. Requires documented motivation."),
-    "applied_in": ("historical", False, "applied in",
-        "A method or insight -> the particular later application that demonstrably uses it. Not an inferred influence or mere component listing."),
-    "independent_formulation_of": ("historical", True, "independent formulation of",
-        "Two distinct formulations with evidence of independent discovery. Shared subject matter or different authors is insufficient."),
-    "premise_for": ("logical", False, "premise for",
-        "Premise claim(s) -> an inferential conclusion under stated assumptions. Explain the derivation. A system and its components are NOT automatically premises for one another; do not use this for part-whole membership."),
-    "generalized_by": ("logical", False, "generalized by",
-        "A scoped result -> a genuinely more general result that contains it as a special case. State the scope and reduction."),
-    "bounded_by": ("logical", False, "bounded by",
-        "A claim or method -> the bound, condition or counterexample restricting it. A technique that repairs a limitation is not itself the limiting bound."),
-    "supports": ("evidential", False, "supports",
-        "Evidence, observation or argument -> the claim it supports. Do not reverse the arrow: a model is not evidence for its evaluation result."),
-    "challenges": ("evidential", False, "challenges",
-        "Counterevidence or counterargument -> the claim or method it challenges. A failed prediction challenges the model, not the reverse."),
-    "analogous_to": ("conceptual", True, "analogous to",
-        "A specific structural analogy between two ideas, with its limits stated. Shared task or topic alone is insufficient."),
-    "equivalent_under": ("conceptual", True, "equivalent under",
-        "Two formulations shown equivalent under explicit conditions. Similar performance or appearance is insufficient."),
-    "prerequisite_for_reading": ("pedagogical", False, "helps explain",
-        "A foundation -> the idea it helps a reader understand. Explicit editorial teaching rationale; this does not assert historical influence or logical necessity."),
+    "historical_basis_for": (
+        "historical",
+        False,
+        "historical basis for",
+        "Earlier insight -> later insight. Evidence explicitly documents intellectual influence; chronology, citation or resemblance alone is insufficient.",
+    ),
+    "motivated": (
+        "historical",
+        False,
+        "motivated",
+        "An earlier problem, result or limitation -> the later response it explicitly inspired. Requires documented motivation.",
+    ),
+    "applied_in": (
+        "historical",
+        False,
+        "applied in",
+        "A method or insight -> the particular later application that demonstrably uses it. Not an inferred influence or mere component listing.",
+    ),
+    "independent_formulation_of": (
+        "historical",
+        True,
+        "independent formulation of",
+        "Two distinct formulations with evidence of independent discovery. Shared subject matter or different authors is insufficient.",
+    ),
+    "premise_for": (
+        "logical",
+        False,
+        "premise for",
+        "Premise claim(s) -> an inferential conclusion under stated assumptions. Explain the derivation. A system and its components are NOT automatically premises for one another; do not use this for part-whole membership.",
+    ),
+    "generalized_by": (
+        "logical",
+        False,
+        "generalized by",
+        "A scoped result -> a genuinely more general result that contains it as a special case. State the scope and reduction.",
+    ),
+    "bounded_by": (
+        "logical",
+        False,
+        "bounded by",
+        "A claim or method -> the bound, condition or counterexample restricting it. A technique that repairs a limitation is not itself the limiting bound.",
+    ),
+    "supports": (
+        "evidential",
+        False,
+        "supports",
+        "Evidence, observation or argument -> the claim it supports. Do not reverse the arrow: a model is not evidence for its evaluation result.",
+    ),
+    "challenges": (
+        "evidential",
+        False,
+        "challenges",
+        "Counterevidence or counterargument -> the claim or method it challenges. A failed prediction challenges the model, not the reverse.",
+    ),
+    "analogous_to": (
+        "conceptual",
+        True,
+        "analogous to",
+        "A specific structural analogy between two ideas, with its limits stated. Shared task or topic alone is insufficient.",
+    ),
+    "equivalent_under": (
+        "conceptual",
+        True,
+        "equivalent under",
+        "Two formulations shown equivalent under explicit conditions. Similar performance or appearance is insufficient.",
+    ),
+    "prerequisite_for_reading": (
+        "pedagogical",
+        False,
+        "helps explain",
+        "A foundation -> the idea it helps a reader understand. Explicit editorial teaching rationale; this does not assert historical influence or logical necessity.",
+    ),
 }
 KINDS = {
     "theorem",
@@ -113,6 +161,19 @@ def visible(record):
         record.get("publication_state") in {"exploratory", "reviewed"}
         and record.get("machine_screening") == "passed"
     )
+
+
+def source_anchor_enrichment(old, new):
+    """Only additive locators for identical source bytes preserve prior checks."""
+    if not old or not new or old.get("type") != "source" or new.get("type") != "source":
+        return False
+    ignored = {"revision", "content_hash", "anchors", "change_reason"}
+    if {k: v for k, v in old.items() if k not in ignored} != {
+        k: v for k, v in new.items() if k not in ignored
+    }:
+        return False
+    anchors = {a["id"]: a for a in new.get("anchors", [])}
+    return all(anchors.get(a["id"]) == a for a in old.get("anchors", []))
 
 
 def validate(records):

@@ -22,19 +22,23 @@ Suggested topics: `knowledge-graph`, `history-of-science`, `open-science`, `scie
 
 ## Reproduce a source archive
 
-The existing release pipeline can package the unchanged frozen data with the current reader:
+The release pipeline provides separate reader and source packages. Use the accepted frozen snapshot ID; never reuse an older ID for changed data.
 
 ```sh
-python3 start.py release --id 1.4.1-exploratory
-python3 scripts/source_archive.py dist/principia-legacy-1.4.1-exploratory.zip
+python3 start.py release --id RELEASE_ID --kind reader
+python3 start.py release --id RELEASE_ID --kind source
 ```
 
-The `-source.zip` contains the complete source, canonical corpus, prebuilt offline interface, documentation, tests and per-file checksums. It omits the rebuildable database. The offline ZIP also includes that database. Neither includes credentials or authoring caches. Package verification is an explicit final step; `scripts/verify_release.py` checks an extracted distribution's `CHECKSUMS.json`.
+The **reader** archive contains prebuilt assets, the compiled database, canonical record versions and all public release manifests. Internal `before-*` correction checkpoints and unselected numbered `-qaN`/`-reviewN` development snapshots remain in the **source** archive and authoritative server data home. The selected review snapshot is always included in the reader. Other internal snapshots can be explicitly rebuilt from the source archive; they are not silently discarded. The source archive includes these checkpoints, tests and authoring code, and omits the rebuildable database. This separation keeps routine installations smaller without deleting historical evidence.
 
-A content correction requires a **new release identifier**; never reuse `1.4.1-exploratory` for changed canonical membership. Reader 1.4.1 uses the accepted scientific snapshot and preserves older manifests and record versions.
+Neither package includes credentials, personal maps or private authoring caches. Verify a clean extraction with `scripts/verify_release.py`, then launch it offline. Record compressed and installed sizes, the archive SHA-256, tested platforms and any failed checks in the dated acceptance report.
+
+**1.5 was accepted for public deployment and a GitHub PR on 29 October 2026.** The maintainer will merge the PR manually. The publication branch starts from GitHub `main` and carries the net software changes, preserving the accepted development branch and its unpublished data separately. It retains the 1.4.1 reference corpus; the full 1.5 canonical dataset, derived database/model and private evidence stay on the server. See [deployment provenance](DEPLOYMENT-1.5.md).
 
 ## GitHub releases and repository presentation
 
 Use the README as the landing page and `docs/` for detailed guides. Preserve historical evidence in `reports/`; generated records and assets are marked in `.gitattributes` so repository language statistics better reflect the implementation.
 
 When creating a GitHub release, describe software changes, admitted coverage, machine screening and human review separately. Attach the verified source/offline archives and their SHA-256 files, and link the current limitations. A source cleanup or successful build does not establish broader scientific coverage or completed human review.
+
+Earlier 1.5 review archives are dated artifacts, not the public release source. Their checksums continue to describe those exact files. Build full scientific archives from the authoritative server data home; a Git checkout alone intentionally contains only the smaller reference corpus. Never relabel an old review archive as the current public snapshot.

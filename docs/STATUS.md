@@ -1,28 +1,19 @@
 # Release status
 
-**17 October 2026 · reader 1.4.1 · atlas 1.4.1-exploratory.** Live at [atlas.chipflow.net/web/legacy/](https://atlas.chipflow.net/web/legacy/). [Deployment and publication record](DEPLOYMENT-1.4.1.md).
+**29 October 2026 · reader 1.5.0 · atlas 1.5.0-exploratory.** The owner accepted review5 for public deployment. [Public atlas](https://atlas.chipflow.net/web/legacy/) · [Deployment verification](DEPLOYMENT-1.5.md) · [Detailed coverage audit](../reports/coverage-review5-20261028.md).
 
-| Dimension | Current evidence |
+| Dimension | Actual status |
 |---|---|
-| Software | Four-category search; subjects → topics → works → insights; sourced individual profiles; exact-revision links and reproducible snapshots |
-| Catalogue | 882 works, 899 selected individuals, 781 topics; 262 works and 184 topics contain extracted insights |
-| Scientific coverage | 2,905 admitted insights, 1,941 relationships, 270 source identities; incomplete ancestry and disconnected evidence remain visible |
-| Machine review | Source-based extraction plus separate checks, with additional primary-agent corrections; positive model verdicts can still be wrong |
-| Human review | **None recorded.** The stratified 100-insight/150-relationship audit is prepared, not completed |
-| Personal research | Browser-only, user-key Trace a discovery remains experimental; no new live research-quality certification in this update |
+| Software | Publication branch: 167 backend tests pass. The accepted review5 repair passed 92 desktop/mobile workflows followed by 12 affected graph checks. |
+| Coverage | 5,700 insights, 4,211 relationships, 1,233 works, 911 profiles. 509 topics contain insights; 49 meet the stricter route milestone. |
+| Machine screening | Exact source/revision checks and editorial corrections; agreement and connectivity do not establish scientific correctness. |
+| Human review | **None performed.** A pinned 100-insight/150-relation audit is prepared. |
+| Personal exploration | Experimental; depends on source access and the chosen provider. Earlier live evaluations retain failures and timing limits. |
+| Retrieval | The frozen availability set has content-bearing results for 49/52 queries; arbitrary-query recall is not established. |
+| Scale | Indexed SQL pagination and bounded graphs improve current-corpus use. Earlier 100,000-insight synthetic tests miss some latency and memory targets. |
+| Data editions | Public server: full accepted 1.5 corpus. Git source: 1.5 software with the existing 1.4.1 reference corpus. |
+| Spending | Prior campaign conservative exposure CNY605.46 against CNY1,500 planning ceiling. Publication uses no paid model calls. Estimates are not a provider bill. |
 
-Read the [1.4 release notes](RELEASE-1.4.md), [actual acceptance results](../reports/product-readiness-1.4.md), and [subject-level catalogue report](../reports/catalog-1.4.json).
-The 620 catalogue works awaiting extraction are not counted as checked scientific
-coverage. Neither the suggested selection range nor the deeper populated-topic
-and insight targets have been achieved across all five subjects.
+The subject-level shortfall is explicit in [BUILD_STATUS](../BUILD_STATUS.md): 451 of the intended 500 route-ready topics remain outstanding. Catalogue size is not completed coverage.
 
-The 120-case synthetic research pilot is unchanged: 30 development and 90 held-out
-cases, 599 responses from 600 attempts. Typed-atlas verdict agreement equaled flat
-retrieval at 66.7%; boundary removal scored 59.2%; typed correction uptake was 25%.
-Exact input-token matching and independent expert gold labels remain outstanding.
-These results do not establish improved alignment or scientific accuracy.
-[Protocol and limitations](EVALUATION.md).
-
-Historical release reports describe their own builds: [1.3](RELEASE-1.3.md),
-[1.2](RELEASE-1.2.md) and [1.1](RELEASE_REPORT.md). Earlier evidence failures and
-unfinished source campaigns remain recorded.
+The earlier 120-case synthetic research pilot remains unchanged. Typed-atlas verdict agreement equaled flat retrieval; independent expert gold and exact token matching remain outstanding. These results do not establish improved alignment. [Protocol](EVALUATION.md).

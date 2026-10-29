@@ -113,7 +113,7 @@ function analyze(
     scientific: 0,
   };
   const substantial = (path: typeof best) =>
-    path.nodes.length >= (readConstraints ? 3 : 4) && path.scientific >= 1;
+    path.nodes.length >= 3 && path.scientific >= 1;
   // A direct teaching shortcut must not hide a longer, evidenced explanation.
   // Enumerate simple paths within a fixed work/depth budget, then prefer a
   // compact substantial route. This is navigation, not transitive entailment.

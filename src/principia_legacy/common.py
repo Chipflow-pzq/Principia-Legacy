@@ -3,6 +3,7 @@
 import hashlib
 import json
 import os
+import re
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -10,12 +11,22 @@ from pathlib import Path
 
 def root_path(value=None):
     return Path(
-        value or os.environ.get("PRINCIPIA_HOME") or Path(__file__).resolve().parents[2]
+        value
+        or os.environ.get("PRINCIPIA_DATA_HOME")
+        or os.environ.get("PRINCIPIA_HOME")
+        or Path(__file__).resolve().parents[2]
     ).resolve()
 
 
 def now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def internal_snapshot(release_id):
+    """Keep development checkpoints reproducible without indexing each by default."""
+    return release_id.startswith("before-") or bool(
+        re.fullmatch(r"\d+\.\d+\.\d+-(?:qa|review)\d+", release_id)
+    )
 
 
 def digest(value):
@@ -84,3 +95,44 @@ def write_lines(path, values):
             json.dumps(v, ensure_ascii=False, sort_keys=True) + "\n" for v in values
         ),
     )
+
+
+def accepts_gzip(value):
+    """Honor an explicit gzip preference, including q=0 refusal."""
+    for entry in value.lower().split(","):
+        parts = [part.strip() for part in entry.split(";")]
+        if parts[0] != "gzip":
+            continue
+        try:
+            quality = next(
+                (float(p.split("=", 1)[1]) for p in parts[1:] if p.startswith("q=")),
+                1.0,
+            )
+            return 0 < quality <= 1
+        except ValueError:
+            return False
+    return False
+
+
+def encode_snapshot(value):
+    """Compress rebuildable SQLite metadata; canonical manifests stay untouched."""
+    import zlib
+
+    return b"PLZ1" + zlib.compress(
+        json.dumps(
+            value, sort_keys=True, ensure_ascii=False, separators=(",", ":")
+        ).encode(),
+        level=6,
+    )
+
+
+def decode_snapshot(value):
+    """Read current compressed indexes and earlier text indexes."""
+    import zlib
+
+    if isinstance(value, bytes) and value.startswith(b"PLZ1"):
+        decoder = zlib.decompressobj()
+        value = decoder.decompress(value[4:], 512 * 1024**2 + 1)
+        if len(value) > 512 * 1024**2 or not decoder.eof or decoder.unused_data:
+            raise ValueError("Invalid or oversized compiled snapshot")
+    return json.loads(value)

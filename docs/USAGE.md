@@ -22,7 +22,9 @@ If port 8765 is occupied, run `python3 start.py serve --port 8766 --offline` and
 4. Use **Trace its connections** to inspect a bounded neighborhood, **Compare** to place two contributions alongside each other, and **Explore limitations** to expose limitations.
 5. Export a deterministic evidence brief or inspect **What changed** between saved snapshots.
 
-Search finds **ideas, topics and scientists**. Opening an idea keeps the search results available; use **Back to results** or the previous/next controls to continue reading. **Explore this idea in** opens every topic containing that idea, including shared topics across subjects. A person's name opens a profile with sourced information, credit notes, related ideas and topics. Profiles without biographical research say so explicitly.
+Search finds **topics, works, ideas and scientists**. Opening an idea keeps the search results available; use **Back to results** or the previous/next controls to continue reading. **Explore this idea in** opens every topic containing that idea, including shared topics across subjects. A person's name opens a profile with sourced information, credit notes, related ideas and topics. Profiles without biographical research say so explicitly.
+
+Topic cards and large work/profile collections have independent pages. **List** reaches all topic insights even when the map stops at 200. The Coverage filter distinguishes any available ideas from **Reading route checked by AI**: the latter requires a scoped, connected route with at least eight substantive insights, a resolved endpoint and explicit limitations, with all selected revisions still current. It is not human review. Returning from a detail preserves the earlier filters, page, scroll and focus.
 
 Use `/` to focus search and Escape to close an inspector. The list and connection controls provide keyboard access to the same records as the canvas. On a narrow screen, the inspector opens below the reader. Subject navigation stays available as you scroll. Use Back and Forward to revisit a topic or selected contribution. The comparison panel can search for the second idea.
 
@@ -40,7 +42,7 @@ python3 start.py brief --dossier C01 --query 'attention' --output attention-brie
 python3 scripts/verify_release.py .
 ```
 
-`build` compiles the current working corpus. To restore a published snapshot, add `--release 1.3.1-exploratory`. Older manifests and record revisions remain available. Internal correction checkpoints are retained and can be explicitly rebuilt by ID; they are not all indexed into the default reader. The brief includes selected claims, complete selected relation premises, source revisions, review states, boundaries, gaps, and any explicitly supplied `--policy-profile profile.json`. Its permitted action scope is always `read_only`.
+`build` compiles the current working corpus. To restore a published snapshot, add `--release 1.4.1-exploratory`. Older manifests and record revisions remain available. Internal correction checkpoints are retained and can be explicitly rebuilt by ID; they are not all indexed into the default reader. The brief includes selected claims, complete selected relation premises, source revisions, review states, boundaries, gaps, and any explicitly supplied `--policy-profile profile.json`. Its permitted action scope is always `read_only`.
 
 See [the data contract](CONTRACT.md), [authoring workflow](AUTHORING.md), [API reference](API.md), [evaluation protocol](EVALUATION.md), and [contribution guidance](../GOVERNANCE.md).
 

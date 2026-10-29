@@ -41,7 +41,9 @@ test("hosted build keeps assets, search, profiles and reload within its mount", 
   await expect(page.locator(".work-page h1")).toBeVisible();
   await page.reload();
   await expect(page.locator(".work-page h1")).toBeVisible();
-  await page.getByRole("button", { name: "← Back to browsing" }).click();
+  await page
+    .getByRole("button", { name: "← Back to scientist profile" })
+    .click();
   await expect(page.locator(".person-page h1")).toHaveText("Albert Einstein");
   await page.locator(".person-page .node-list button").first().click();
   const inspector = page.getByRole("complementary", {

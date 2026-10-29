@@ -22,10 +22,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--env-file", required=True)
     parser.add_argument("--batch", default="connections-1-1")
+    parser.add_argument("--data-home", type=Path)
     args = parser.parse_args()
     if not args.batch.replace("-", "").isalnum():
         raise ValueError("Invalid connection batch identity")
-    root = Path(__file__).resolve().parents[1]
+    root = args.data_home or Path(__file__).resolve().parents[1]
     history = corpus(root)
     by_version = {(r["id"], r["revision"]): r for r in history}
     current = {r["id"]: r for r in latest_records(history)}
@@ -116,8 +117,7 @@ def main():
     for case in cases:
         combined = {**passages, **case["evidence"]}
         if pending and (
-            len(pending) >= 20
-            or sum(len(p["text"]) for p in combined.values()) > 130000
+            len(pending) >= 4 or sum(len(p["text"]) for p in combined.values()) > 48000
         ):
             batches.append({"cases": pending, "evidence": passages})
             pending, passages = [], {}
@@ -136,13 +136,20 @@ def main():
         payload = {
             **payload,
             "predicates": {
-                k: {"layer": v[0], "symmetric": v[1]} for k, v in PREDICATES.items()
+                k: {"layer": v[0], "symmetric": v[1], "meaning": v[3]}
+                for k, v in PREDICATES.items()
             },
         }
         wanted = {c["relation"]["id"] for c in payload["cases"]}
         try:
             result, receipt = provider.complete(
-                PROMPT, payload, "connection-escalation:" + digest(payload)[:16], 7000
+                PROMPT
+                + "\n"
+                + (root / "prompts/check.txt").read_text()
+                + "\nFor premise_for, the ACTUAL premise claims together with explicit assumptions must entail the ACTUAL conclusion. A definition of a general mechanism does not establish a different observed mechanism or the existence of a specific device. Mere relevance or bearing on a conclusion is insufficient. Separate necessary conditions from sufficient premises. For bounded_by, the to claim itself must state a restricting condition or counterexample: an empirical application is not a limit just because its title mentions validation. Analogies need an explicit shared structure and failure conditions. Generic resemblance is insufficient. Historical inheritance must concern the precise contributions and be supported beyond a bare citation. Assess each relation independently of previous acceptance.",
+                payload,
+                "connection-escalation:" + digest(payload)[:16],
+                4096,
             )
             decisions = result.get("checks", [])
             ids = [c.get("id") for c in decisions]

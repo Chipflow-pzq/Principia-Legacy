@@ -14,7 +14,7 @@ import {
 
 const ENDPOINT = "https://api.siliconflow.cn/v1";
 const REASONING_ALLOWANCE = 1024;
-export const DEFAULT_MODEL = "deepseek-ai/DeepSeek-V4-Flash";
+export const DEFAULT_MODEL = "deepseek-ai/DeepSeek-V4.1-Flash";
 type OptionalFeature = "format" | "thinking";
 // Session-only capabilities learned from explicit API rejections, never model-name guesses.
 const unsupportedOptions = new Map<string, Set<OptionalFeature>>();
@@ -111,7 +111,7 @@ function parse(content: string, stage: string, input?: unknown) {
   const data = object(value);
   if (stage === "draft graph" && Object.keys(data).length === 0)
     throw new EmptyComposition("The model completed an empty composition.");
-  if (
+  const missingRecords =
     (stage === "connect insights" && !Array.isArray(data.relations)) ||
     (stage === "draft graph" &&
       !["result", "roots", "steps", "nodes", "map", "backbone"].some(
@@ -119,8 +119,32 @@ function parse(content: string, stage: string, input?: unknown) {
           Array.isArray(data[key]) ||
           (["result", "roots", "steps"].includes(key) &&
             typeof object(data[key]).claim === "string"),
-      ))
-  )
+      ));
+  if (missingRecords && stage === "draft graph") {
+    // A completed glossary/role description has nothing a syntax repair can
+    // preserve. Spend the existing one-composition allowance instead. Nested
+    // scientific records under a misplaced key still receive a format repair.
+    const pending: unknown[] = [data];
+    let hasClaim = false,
+      remaining = 5000;
+    while (pending.length && remaining-- > 0) {
+      const item = pending.pop();
+      if (Array.isArray(item)) pending.push(...item);
+      else if (item && typeof item === "object") {
+        const record = object(item);
+        if (typeof record.claim === "string") {
+          hasClaim = true;
+          break;
+        }
+        pending.push(...Object.values(record));
+      }
+    }
+    if (!hasClaim && !pending.length)
+      throw new EmptyComposition(
+        "The completed response contained no insight records.",
+      );
+  }
+  if (missingRecords)
     throw new Error("The response omitted the requested record arrays.");
   const errors =
     stage === "connect insights"

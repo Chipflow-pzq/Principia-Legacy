@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { TopicCatalog, TopicInsightList } from "./TopicCatalog";
 import { Graph } from "./Graph";
 import { ConnectionFilter, ConnectionLegend } from "./Connections";
 import { Compare } from "./Compare";
@@ -21,13 +22,24 @@ import {
   words,
 } from "./types";
 import "./style.css";
-import Explorer from "./Explorer";
+import { watchCloudConnection } from "./cloudConnection";
+const Explorer = React.lazy(() => import("./Explorer"));
 import { Settings } from "./Settings";
 import { loadSettings } from "./explore/settings";
-import { normalizeLocation } from "./location";
+import {
+  normalizeLocation,
+  readerOptions,
+  rememberReadingPosition,
+  restoreReadingPosition,
+} from "./location";
 // Older preview links remain valid, without suggesting that a query string
 // chooses an application build or a personal map's evidence snapshot.
-history.replaceState(null, "", normalizeLocation(new URL(location.href)));
+history.replaceState(
+  history.state,
+  "",
+  normalizeLocation(new URL(location.href)),
+);
+history.scrollRestoration = "manual";
 const emptyGraph: Neighborhood = {
   release_id: "",
   contributions: [],
@@ -42,6 +54,8 @@ const shortTitles: Record<string, string> = {
   B01: "Predicting biomolecular structures",
 };
 function App() {
+  const [reconnecting, setReconnecting] = useState(false);
+  useEffect(() => watchCloudConnection(setReconnecting), []);
   const [info, setInfo] = useState<Info | null>(null),
     [dossiers, setDossiers] = useState<Dossier[]>([]),
     [release, setRelease] = useState(
@@ -60,7 +74,7 @@ function App() {
     [searchKind, setSearchKind] = useState<
       "all" | "ideas" | "people" | "topics" | "works"
     >("all"),
-    [catalogLimit, setCatalogLimit] = useState(60),
+    [catalogOffset, setCatalogOffset] = useState(0),
     [area, setArea] = useState(""),
     [coverageFilter, setCoverageFilter] = useState("all"),
     [person, setPerson] = useState(""),
@@ -79,12 +93,14 @@ function App() {
       (Contribution & { snapshot_id: string })[]
     >([]),
     [comparison, setComparison] = useState<ReleaseChanges | null>(null),
+    [comparisonBusy, setComparisonBusy] = useState(false),
     [from, setFrom] = useState(""),
     [traceSeed, setTraceSeed] = useState(""),
     [traceHops, setTraceHops] = useState(1),
     [topicLimit, setTopicLimit] = useState(40),
     [direction, setDirection] = useState("both");
   const [explorerVisited, setExplorerVisited] = useState(false);
+  const [researchReady, setResearchReady] = useState(false);
   const [researchQuestion, setResearchQuestion] = useState("");
   const [providerSettings, setProviderSettings] = useState(loadSettings);
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -99,6 +115,41 @@ function App() {
   const initialLinkHandled = useRef(false);
   const appliedLocation = useRef(location.hash);
   const inspectionRequest = useRef(0);
+  const comparisonRequest = useRef<AbortController | null>(null);
+  useEffect(() => {
+    comparisonRequest.current?.abort();
+    setComparison(null);
+    setComparisonBusy(false);
+    return () => comparisonRequest.current?.abort();
+  }, [from, release, page]);
+  async function compareReleases(offset = 0) {
+    comparisonRequest.current?.abort();
+    const controller = new AbortController();
+    comparisonRequest.current = controller;
+    setComparisonBusy(true);
+    try {
+      const data = await api<ReleaseChanges>(
+        "changes",
+        { from, release: info?.release_id || release, limit: 20, offset },
+        controller.signal,
+      );
+      if (!controller.signal.aborted)
+        setComparison((previous) =>
+          offset && previous
+            ? {
+                ...data,
+                added: [...previous.added, ...data.added],
+                removed: [...previous.removed, ...data.removed],
+                changed: [...previous.changed, ...data.changed],
+              }
+            : data,
+        );
+    } catch (e) {
+      if (!controller.signal.aborted) setError(String(e));
+    } finally {
+      if (!controller.signal.aborted) setComparisonBusy(false);
+    }
+  }
   const [locationKey, setLocationKey] = useState(location.hash);
   useEffect(() => {
     const restore = () => {
@@ -107,6 +158,7 @@ function App() {
       initialLinkHandled.current = false;
       inspectionRequest.current++;
       setLocationKey(location.hash);
+      restoreReadingPosition();
     };
     window.addEventListener("popstate", restore);
     window.addEventListener("hashchange", restore);
@@ -118,13 +170,50 @@ function App() {
   function navigate(parameters: Record<string, string>) {
     initialLinkHandled.current = true;
     const target = "#" + new URLSearchParams(parameters).toString();
-    if (location.hash !== target) history.pushState(null, "", target);
+    if (location.hash !== target) {
+      rememberReadingPosition();
+      const owner = parameters.work
+        ? `work:${parameters.work}`
+        : parameters.person
+          ? `person:${parameters.person}`
+          : parameters.dossier
+            ? `topic:${parameters.dossier}`
+            : "";
+      const previous = history.state;
+      history.pushState(
+        previous?.detailBack === owner && owner
+          ? {
+              detailBack: owner,
+              detailBackLabel: previous.detailBackLabel,
+              detailBackSteps: (previous.detailBackSteps || 1) + 1,
+            }
+          : null,
+        "",
+        target,
+      );
+    }
     appliedLocation.current = target;
     setLocationKey(target);
   }
   function readingContext() {
+    const currentRoute = new URLSearchParams(location.hash.slice(1));
+    const collectionPages = Object.fromEntries(
+      ["topicpage", "workpage", "personpage", "worklistpage"].flatMap((key) =>
+        currentRoute.has(key) ? [[key, currentRoute.get(key)!]] : [],
+      ),
+    );
     return {
+      ...collectionPages,
       ...(active ? { dossier: active.id } : {}),
+      ...(area ? { area } : {}),
+      ...(catalogOffset ? { catalogoffset: String(catalogOffset) } : {}),
+      ...(coverageFilter !== "all" ? { coverage: coverageFilter } : {}),
+      ...(human ? { human: "1" } : {}),
+      view,
+      layers: layers.join(","),
+      direction,
+      hops: String(traceHops),
+      depth: String(topicLimit),
       ...(query
         ? { q: query, offset: String(searchOffset), kind: searchKind }
         : {}),
@@ -171,14 +260,40 @@ function App() {
     window.scrollTo({ top: 0 });
   }
   function openWork(id: string) {
+    const previous = location.hash;
+    const backLabel = work
+      ? "Back to previous work"
+      : inspection
+        ? "Back to insight"
+        : person
+          ? "Back to scientist profile"
+          : query
+            ? "Back to search results"
+            : active
+              ? "Back to topic"
+              : "Back to browsing";
     setWork(id);
     setInspection(null);
     setPage("atlas");
     inspectionRequest.current++;
-    navigate({ ...readingContext(), page: "atlas", work: id });
+    navigate({ ...readingContext(), page: "atlas", work: id, workpage: "0" });
+    if (location.hash !== previous)
+      history.replaceState(
+        {
+          ...history.state,
+          detailBack: `work:${id}`,
+          detailBackLabel: backLabel,
+          detailBackSteps: 1,
+        },
+        "",
+      );
     window.scrollTo({ top: 0 });
   }
   function leaveWork() {
+    if (history.state?.detailBack === `work:${work}`) {
+      history.go(-(history.state.detailBackSteps || 1));
+      return;
+    }
     setWork("");
     setInspection(null);
     inspectionRequest.current++;
@@ -186,12 +301,35 @@ function App() {
     window.scrollTo({ top: 0 });
   }
   function openPerson(id: string) {
+    const previous = location.hash;
+    const backLabel =
+      page === "people"
+        ? "All scientists & contributors"
+        : query && !work && !inspection
+          ? "Back to search results"
+          : "Back to previous view";
     setWork("");
     setPerson(id);
     setInspection(null);
     setPage("atlas");
     inspectionRequest.current++;
-    navigate({ ...readingContext(), page: "atlas", person: id, work: "" });
+    navigate({
+      ...readingContext(),
+      page: "atlas",
+      person: id,
+      work: "",
+      personpage: "0",
+    });
+    if (location.hash !== previous)
+      history.replaceState(
+        {
+          ...history.state,
+          detailBack: `person:${id}`,
+          detailBackLabel: backLabel,
+          detailBackSteps: 1,
+        },
+        "",
+      );
     window.scrollTo({ top: 0 });
   }
   function changePeople(query: string, offset: number, replace = false) {
@@ -211,6 +349,10 @@ function App() {
     } else navigate(parameters);
   }
   function leavePerson() {
+    if (history.state?.detailBack === `person:${person}`) {
+      history.go(-(history.state.detailBackSteps || 1));
+      return;
+    }
     inspectionRequest.current++;
     setPerson("");
     setWork("");
@@ -234,14 +376,12 @@ function App() {
     // link must still work, while a later navigation cancels this pending intent.
     const request = ++inspectionRequest.current;
     try {
-      const data = await api<{ dossiers: Dossier[]; release_id: string }>(
-        "dossiers",
+      const data = await api<{ dossier: Dossier; release_id: string }>(
+        `dossiers/${encodeURIComponent(id)}`,
         { release: snapshot },
       );
-      if (request !== inspectionRequest.current) return;
-      const found = data.dossiers.find((d) => d.id === id);
-      if (!found)
-        throw new Error("This topic is unavailable in the selected snapshot.");
+      const found = data.dossier;
+      setDossiers((old) => [...old.filter((d) => d.id !== id), found]);
       openDossier(found, data.release_id || snapshot);
     } catch (e) {
       if (request === inspectionRequest.current) setError(String(e));
@@ -258,20 +398,27 @@ function App() {
     setCompare([]);
     setComparison(null);
     const controller = new AbortController();
-    Promise.all([
-      api<Info>("info", { release }, controller.signal),
-      api<{ dossiers: Dossier[] }>("dossiers", { release }, controller.signal),
-    ])
-      .then(([i, d]) => {
-        setInfo(i);
+    const failed = (e: Error) => {
+      if (e.name !== "AbortError") setError(e.message);
+    };
+    // Reading a pinned record must not wait for the homepage suggestions.
+    api<Info>("info", { release }, controller.signal)
+      .then(setInfo)
+      .catch(failed);
+    api<{ dossiers: Dossier[] }>(
+      "topic-overview",
+      { release },
+      controller.signal,
+    )
+      .then((d) => {
         setDossiers(d.dossiers);
         setActive((current) =>
-          current ? d.dossiers.find((x) => x.id === current.id) || null : null,
+          current
+            ? d.dossiers.find((x) => x.id === current.id) || current
+            : null,
         );
       })
-      .catch((e) => {
-        if (e.name !== "AbortError") setError(e.message);
-      });
+      .catch(failed);
     return () => controller.abort();
   }, [release]);
   useEffect(() => {
@@ -357,7 +504,7 @@ function App() {
   useEffect(() => {
     // A passive effect from the previous render must not consume a newer URL.
     if (locationKey !== location.hash) return;
-    if (!dossiers.length || !info || initialLinkHandled.current) return;
+    if (!info || initialLinkHandled.current) return;
     const hash = new URLSearchParams(locationKey.slice(1));
     const linkedRelease = hash.get("release");
     if (linkedRelease) {
@@ -371,7 +518,16 @@ function App() {
       if (info.release_id !== linkedRelease) return;
     }
     initialLinkHandled.current = true;
-    setTopicLimit(40);
+    const options = readerOptions(hash, LAYERS);
+    setTopicLimit(options.depth);
+    setHuman(options.human);
+    setView(options.view);
+    setLayers(options.layers);
+    setArea(options.area);
+    setCoverageFilter(options.coverage);
+    setCatalogOffset(options.catalogOffset);
+    setTraceHops(options.hops);
+    setDirection(options.direction);
     setTraceSeed("");
     setInspection(null);
     setCompare([]);
@@ -405,9 +561,25 @@ function App() {
     );
     const assignment = dossiers.find((d) => d.id === hash.get("dossier"));
     setActive(assignment || null);
+    if (!assignment && hash.get("dossier")) {
+      const linkedTopic = hash.get("dossier")!;
+      api<{ dossier: Dossier }>(`dossiers/${encodeURIComponent(linkedTopic)}`, {
+        release: linkedRelease || release,
+      })
+        .then((data) => {
+          if (location.hash === locationKey) {
+            setDossiers((old) => [
+              ...old.filter((d) => d.id !== data.dossier.id),
+              data.dossier,
+            ]);
+            setActive(data.dossier);
+          }
+        })
+        .catch((e) => setError(e.message));
+    }
     const id = hash.get("node") || hash.get("relation");
     if (id) inspect(id, hash.has("relation"), linkedRelease || release, false);
-  }, [dossiers, locationKey]);
+  }, [info, dossiers, locationKey]);
   async function inspect(
     id: string,
     relation = false,
@@ -457,18 +629,18 @@ function App() {
         release: snapshot,
       });
       const n = data.record as Contribution;
-      // Search can finish before the catalogue, or refer to another snapshot.
-      const topics =
-        dossiers.length && info?.release_id === data.release_id
-          ? dossiers
-          : (
-              await api<{ dossiers: Dossier[] }>("dossiers", {
-                release: data.release_id,
-              })
-            ).dossiers;
+      const topicId = data.topics?.[0]?.id || n.dossiers[0];
+      const topic = topicId
+        ? (
+            await api<{ dossier: Dossier }>(
+              `dossiers/${encodeURIComponent(topicId)}`,
+              { release: data.release_id },
+            )
+          ).dossier
+        : null;
       if (data.release_id !== release) setRelease(data.release_id);
       setPage("atlas");
-      setActive(topics.find((d) => n.dossiers.includes(d.id)) || null);
+      setActive(topic);
       setTraceSeed(id);
       setTraceHops(1);
       setDirection("both");
@@ -512,10 +684,22 @@ function App() {
     d: Dossier,
     snapshot = info?.release_id || release || "",
   ) {
+    const previous = location.hash;
+    const backLabel = inspection
+      ? "Back to insight"
+      : work
+        ? "Back to work"
+        : person
+          ? "Back to scientist profile"
+          : query
+            ? "Back to search results"
+            : active
+              ? "Back to previous topic"
+              : "Back to topics";
     setGraph(emptyGraph);
+    setBusy(true);
     setTopicLimit(40);
     setTraceSeed("");
-    window.scrollTo({ top: 0 });
     setActive(d);
     setPerson("");
     setWork("");
@@ -526,14 +710,66 @@ function App() {
     inspectionRequest.current++;
     if (snapshot && snapshot !== info?.release_id && snapshot !== release)
       setRelease(snapshot);
-    navigate({ dossier: d.id, release: snapshot });
+    navigate({
+      ...readingContext(),
+      dossier: d.id,
+      release: snapshot,
+      person: "",
+      work: "",
+      q: "",
+      page: "atlas",
+      trace: "",
+      depth: "40",
+      topicpage: "0",
+      worklistpage: "0",
+    });
+    if (location.hash !== previous)
+      history.replaceState(
+        {
+          ...history.state,
+          detailBack: `topic:${d.id}`,
+          detailBackLabel: backLabel,
+          detailBackSteps: 1,
+        },
+        "",
+      );
+    window.scrollTo({ top: 0 });
+  }
+  function leaveTopic() {
+    if (history.state?.detailBack === `topic:${active?.id}`) {
+      history.go(-(history.state.detailBackSteps || 1));
+      return;
+    }
+    setActive(null);
+    setInspection(null);
+    setTraceSeed("");
+    navigate({
+      ...readingContext(),
+      page: "atlas",
+      dossier: "",
+      trace: "",
+      topicpage: "0",
+      worklistpage: "0",
+    });
+  }
+  function openLatestAtlas() {
+    const latest = info?.current_release_id;
+    if (!latest) return;
+    setError("");
+    setInfo(null);
+    setRelease(latest);
+    navigate({
+      ...Object.fromEntries(new URLSearchParams(location.hash.slice(1))),
+      release: latest,
+    });
+    initialLinkHandled.current = false;
   }
   function chooseSubject(id: string) {
     inspectionRequest.current++;
     setPerson("");
     setWork("");
     setPillar(id);
-    setCatalogLimit(60);
+    setCatalogOffset(0);
     setArea("");
     setSearchOffset(0);
     setActive(null);
@@ -541,8 +777,18 @@ function App() {
     setTraceSeed("");
     setPage("atlas");
     navigate({
-      ...(id ? { subject: id } : {}),
-      ...(query ? { q: query } : {}),
+      ...readingContext(),
+      subject: id,
+      area: "",
+      catalogoffset: "0",
+      offset: "0",
+      dossier: "",
+      person: "",
+      work: "",
+      trace: "",
+      page: "atlas",
+      topicpage: "0",
+      worklistpage: "0",
       release: info?.release_id || release || "",
     });
     window.scrollTo({ top: 0 });
@@ -580,18 +826,6 @@ function App() {
       })
       .catch((e) => setError(e.message));
   }
-  const subjectTopics = dossiers.filter((d) => !pillar || d.pillar === pillar);
-  const areas = [
-    ...new Set(subjectTopics.map((d) => d.area || "Frontier research")),
-  ].sort();
-  const filtered = subjectTopics.filter(
-    (d) =>
-      (!area || (d.area || "Frontier research") === area) &&
-      (coverageFilter === "all" ||
-        (coverageFilter === "available"
-          ? d.contribution_count > 0
-          : !d.contribution_count)),
-  );
   const nodes = challenge
     ? graph.contributions.filter(
         (n) => n.limits.length || n.kind === "negative_result",
@@ -690,9 +924,13 @@ function App() {
           )}
           <div className="local-status">
             <span className="live-dot" />
-            {import.meta.env.MODE === "hosted"
-              ? "Public · read-only"
-              : "Local · offline ready"}
+            {reconnecting
+              ? "Reconnecting…"
+              : import.meta.env.MODE === "hosted"
+                ? "Public · read-only"
+                : info?.connection_mode === "private_cloud"
+                  ? "Private cloud · SSH"
+                  : "Local · offline ready"}
           </div>
           <button
             className="settings-trigger"
@@ -729,15 +967,10 @@ function App() {
           info.current_release_id !== info.release_id && (
             <button
               className="current-version"
-              onClick={() => {
-                setRelease(info.current_release_id!);
-                navigate({
-                  ...(active ? { dossier: active.id } : {}),
-                  release: info.current_release_id!,
-                });
-              }}
+              aria-label="Open the latest atlas"
+              onClick={openLatestAtlas}
             >
-              Reading an earlier version · Open current version ↗
+              Reading an earlier version · Open the latest atlas ↗
             </button>
           )}
         {page !== "explore" && (
@@ -745,12 +978,33 @@ function App() {
             <input
               type="checkbox"
               checked={human}
-              onChange={(e) => setHuman(e.target.checked)}
+              onChange={(e) => {
+                setHuman(e.target.checked);
+                setSearchOffset(0);
+                navigate({
+                  ...readingContext(),
+                  human: e.target.checked ? "1" : "0",
+                  offset: "0",
+                  topicpage: "0",
+                  workpage: "0",
+                  personpage: "0",
+                  worklistpage: "0",
+                });
+              }}
             />{" "}
             Human-reviewed only
           </label>
         )}
       </div>
+      {reconnecting && (
+        <div className="connection-notice" role="status" aria-live="polite">
+          <strong>Reconnecting to your cloud atlas…</strong>
+          <span>
+            Browsing will resume automatically. Your current view and saved maps
+            stay on this device.
+          </span>
+        </div>
+      )}
       {error && (
         <div className="error" role="alert">
           {error}
@@ -969,6 +1223,7 @@ function App() {
                           className="primary"
                           disabled={
                             !info ||
+                            !researchReady ||
                             researchRunning ||
                             !providerSettings.key.trim() ||
                             !providerSettings.model.trim() ||
@@ -1007,19 +1262,24 @@ function App() {
           )}
           {explorerVisited && info && (
             <div hidden={page !== "explore"}>
-              <Explorer
-                info={info}
-                query={researchQuestion}
-                settings={providerSettings}
-                onStatus={setResearchStatus}
-                onAtlas={(id, snapshot) => {
-                  initialLinkHandled.current = false;
-                  location.hash = new URLSearchParams({
-                    node: id,
-                    release: snapshot,
-                  }).toString();
-                }}
-              />
+              <React.Suspense
+                fallback={<p role="status">Opening your research workspace…</p>}
+              >
+                <Explorer
+                  info={info}
+                  query={researchQuestion}
+                  settings={providerSettings}
+                  onReady={setResearchReady}
+                  onStatus={setResearchStatus}
+                  onAtlas={(id, snapshot) => {
+                    initialLinkHandled.current = false;
+                    location.hash = new URLSearchParams({
+                      node: id,
+                      release: snapshot,
+                    }).toString();
+                  }}
+                />
+              </React.Suspense>
             </div>
           )}
           {page === "atlas" && (
@@ -1027,6 +1287,11 @@ function App() {
               {work ? (
                 <WorkPage
                   id={work}
+                  backLabel={
+                    history.state?.detailBack === `work:${work}`
+                      ? history.state.detailBackLabel
+                      : undefined
+                  }
                   release={info?.release_id || release}
                   human={human}
                   onBack={leaveWork}
@@ -1040,6 +1305,11 @@ function App() {
                   id={person}
                   release={info?.release_id || release}
                   hasSearch={!!query}
+                  backLabel={
+                    history.state?.detailBack === `person:${person}`
+                      ? history.state.detailBackLabel
+                      : undefined
+                  }
                   human={human}
                   onBack={leavePerson}
                   onIdea={(id) => inspect(id)}
@@ -1073,19 +1343,11 @@ function App() {
                 />
               ) : active ? (
                 <section className="dossier-view">
-                  <button
-                    className="back-link"
-                    onClick={() => {
-                      setActive(null);
-                      setInspection(null);
-                      navigate({
-                        page: "atlas",
-                        ...(pillar ? { subject: pillar } : {}),
-                        release,
-                      });
-                    }}
-                  >
-                    ← All topics
+                  <button className="back-link" onClick={leaveTopic}>
+                    ←{" "}
+                    {history.state?.detailBack === `topic:${active.id}`
+                      ? history.state.detailBackLabel
+                      : "All topics"}
                   </button>
                   <div className="dossier-heading">
                     <div>
@@ -1099,7 +1361,10 @@ function App() {
                           : ""}
                       </span>
                       <h1>{shortTitles[active.id] || active.title}</h1>
-                      <p>{active.title}</p>
+                      {shortTitles[active.id] &&
+                        shortTitles[active.id] !== active.title && (
+                          <p>{active.title}</p>
+                        )}
                     </div>
                     <button onClick={downloadBrief}>
                       Export evidence brief ↓
@@ -1118,6 +1383,18 @@ function App() {
                       ◌ Earlier ideas still being added
                     </span>
                   </div>
+                  {active.reading_route?.ready && (
+                    <details className="notice">
+                      <summary>
+                        Reading route checked by AI · human review pending
+                      </summary>
+                      <p>
+                        {active.reading_route.scope ||
+                          active.reading_route.rationale}
+                      </p>
+                      <p>{active.reading_route.notice}</p>
+                    </details>
+                  )}
                   <details
                     className="topic-work-toggle"
                     open={!active.contribution_count}
@@ -1134,9 +1411,9 @@ function App() {
                   </details>
                   {!active.contribution_count && (
                     <p className="notice">
-                      This topic has documented works. Passage-grounded insight
-                      extraction is still pending; its scientific map is not yet
-                      available.
+                      This is a reading list, with no explained insights or map
+                      yet. Open a work below for its original source, or return
+                      to browse topics with ideas available.
                     </p>
                   )}
                   {!!active.contribution_count && (
@@ -1153,18 +1430,33 @@ function App() {
                         <div className="segmented">
                           <button
                             className={view === "map" ? "active" : ""}
-                            onClick={() => setView("map")}
+                            onClick={() => {
+                              setView("map");
+                              navigate({ ...readingContext(), view: "map" });
+                            }}
                           >
                             Map
                           </button>
                           <button
                             className={view === "list" ? "active" : ""}
-                            onClick={() => setView("list")}
+                            onClick={() => {
+                              setView("list");
+                              navigate({ ...readingContext(), view: "list" });
+                            }}
                           >
                             List
                           </button>
                         </div>
-                        <ConnectionFilter value={layers} onChange={setLayers} />
+                        <ConnectionFilter
+                          value={layers}
+                          onChange={(value) => {
+                            setLayers(value);
+                            navigate({
+                              ...readingContext(),
+                              layers: value.join(","),
+                            });
+                          }}
+                        />
                         <button
                           className={challenge ? "selected" : ""}
                           onClick={() => {
@@ -1182,7 +1474,13 @@ function App() {
                             <select
                               aria-label="Trace direction"
                               value={direction}
-                              onChange={(e) => setDirection(e.target.value)}
+                              onChange={(e) => {
+                                setDirection(e.target.value);
+                                navigate({
+                                  ...readingContext(),
+                                  direction: e.target.value,
+                                });
+                              }}
                             >
                               <option value="both">All connections</option>
                               <option value="ancestors">Follow premises</option>
@@ -1192,9 +1490,14 @@ function App() {
                             </select>
                             <button
                               disabled={traceHops >= 6}
-                              onClick={() =>
-                                setTraceHops((n) => Math.min(6, n + 1))
-                              }
+                              onClick={() => {
+                                const hops = Math.min(6, traceHops + 1);
+                                setTraceHops(hops);
+                                navigate({
+                                  ...readingContext(),
+                                  hops: String(hops),
+                                });
+                              }}
                             >
                               Expand · {traceHops} of 6 steps
                             </button>
@@ -1204,13 +1507,19 @@ function App() {
                           </>
                         )}
                         {!traceSeed &&
+                          view === "map" &&
                           (graph.available_count ?? 0) >
                             graph.contributions.length && (
                             <button
                               disabled={busy || topicLimit >= 200}
-                              onClick={() =>
-                                setTopicLimit((n) => Math.min(200, n + 40))
-                              }
+                              onClick={() => {
+                                const depth = Math.min(200, topicLimit + 40);
+                                setTopicLimit(depth);
+                                navigate({
+                                  ...readingContext(),
+                                  depth: String(depth),
+                                });
+                              }}
                             >
                               {topicLimit < 200
                                 ? "Show more ideas"
@@ -1221,6 +1530,14 @@ function App() {
                           )}
                         {busy && <span className="muted">Loading…</span>}
                       </div>
+                      {traceSeed && graph.traversal_bounded && (
+                        <p className="muted" role="status">
+                          This trace reached the view limit. Select an insight
+                          to trace another neighborhood, or narrow the
+                          connection types. Complete joint premises stay
+                          together.
+                        </p>
+                      )}
                       {view === "map" ? (
                         <Graph
                           key={active.id}
@@ -1243,6 +1560,14 @@ function App() {
                           }
                           onSelect={(id) => inspect(id)}
                           onRelation={(id) => inspect(id, true)}
+                        />
+                      ) : !traceSeed ? (
+                        <TopicInsightList
+                          topic={active.id}
+                          release={info?.release_id || release || ""}
+                          human={human}
+                          challenge={challenge}
+                          onSelect={(id) => inspect(id)}
                         />
                       ) : (
                         <div className="node-list">
@@ -1397,7 +1722,12 @@ function App() {
                             </span>
                             <h3>{shortTitles[d.id] || d.title}</h3>
                             <div className="card-bottom">
-                              <span>{d.contribution_count} insights</span>
+                              <span>
+                                {d.contribution_count}{" "}
+                                {d.contribution_count === 1
+                                  ? "insight"
+                                  : "insights"}
+                              </span>
                               <span>
                                 {d.contribution_count
                                   ? "Open the map"
@@ -1408,97 +1738,25 @@ function App() {
                         ))}
                     </div>
                   </section>
-                  <section className="all-dossiers">
-                    <div className="section-head">
-                      <div>
-                        <span className="eyebrow">THE COLLECTION</span>
-                        <h2>
-                          {pillar ? info?.pillars[pillar] : "Browse all topics"}
-                        </h2>
-                      </div>
-                      <span className="count-pill">
-                        {filtered.length} topics
-                      </span>
-                    </div>
-                    <p className="section-description">
-                      Each topic connects a scientific achievement to its
-                      foundations. Incomplete topics show what is still missing.
-                    </p>
-                    <div className="catalog-filters">
-                      <label>
-                        Area{" "}
-                        <select
-                          value={area}
-                          onChange={(e) => {
-                            setArea(e.target.value);
-                            setCatalogLimit(60);
-                          }}
-                        >
-                          <option value="">All areas</option>
-                          {areas.map((a) => (
-                            <option key={a}>{a}</option>
-                          ))}
-                        </select>
-                      </label>
-                      <label>
-                        Coverage{" "}
-                        <select
-                          value={coverageFilter}
-                          onChange={(e) => {
-                            setCoverageFilter(e.target.value);
-                            setCatalogLimit(60);
-                          }}
-                        >
-                          <option value="all">
-                            All topics, including gaps
-                          </option>
-                          <option value="available">Ideas available</option>
-                          <option value="pending">Awaiting evidence</option>
-                        </select>
-                      </label>
-                    </div>
-                    <div className="dossier-grid">
-                      {filtered.slice(0, catalogLimit).map((d) => (
-                        <button
-                          className="dossier-tile"
-                          key={d.id}
-                          onClick={() => openDossier(d)}
-                        >
-                          <span
-                            className="dossier-id"
-                            aria-hidden={d.id.startsWith("T-")}
-                            style={{ color: COLORS[d.pillar] }}
-                          >
-                            {d.id.startsWith("T-") ? "▤" : d.id}
-                          </span>
-                          <div>
-                            <h3>{d.title}</h3>
-                            <span>
-                              {d.contribution_count} contributions ·{" "}
-                              {d.contribution_count === 0
-                                ? d.work_count
-                                  ? `${d.work_count} ${d.work_count === 1 ? "work" : "works"} · insights pending`
-                                  : "Awaiting sources"
-                                : d.endpoint
-                                  ? "Ready to explore · growing"
-                                  : "Foundations available"}
-                            </span>
-                          </div>
-                          <span className="tile-arrow">↗</span>
-                        </button>
-                      ))}
-                    </div>
-                    {filtered.length > catalogLimit && (
-                      <button
-                        className="load-more"
-                        onClick={() => setCatalogLimit((n) => n + 60)}
-                      >
-                        Show more topics ·{" "}
-                        {Math.min(catalogLimit, filtered.length)} of{" "}
-                        {filtered.length} shown
-                      </button>
-                    )}
-                  </section>
+                  <TopicCatalog
+                    release={info?.release_id || release || ""}
+                    pillar={pillar}
+                    area={area}
+                    coverage={coverageFilter}
+                    offset={catalogOffset}
+                    onTopic={(id) => openTopic(id)}
+                    onChange={(next) => {
+                      setArea(next.area);
+                      setCoverageFilter(next.coverage);
+                      setCatalogOffset(next.offset);
+                      navigate({
+                        ...readingContext(),
+                        area: next.area,
+                        coverage: next.coverage,
+                        catalogoffset: String(next.offset),
+                      });
+                    }}
+                  />
                 </>
               )}
             </>
@@ -1569,14 +1827,10 @@ function App() {
                   </select>
                 </label>
                 <button
-                  disabled={!from}
-                  onClick={() =>
-                    api<ReleaseChanges>("changes", { from, release })
-                      .then(setComparison)
-                      .catch((e) => setError(e.message))
-                  }
+                  disabled={!from || comparisonBusy}
+                  onClick={() => compareReleases()}
                 >
-                  Compare releases
+                  {comparisonBusy ? "Comparing snapshots…" : "Compare releases"}
                 </button>
               </div>
               {comparison ? (
@@ -1584,7 +1838,15 @@ function App() {
                   key={`${comparison.from_release}:${comparison.release_id}`}
                   data={comparison}
                   onInspect={inspect}
+                  loading={comparisonBusy}
+                  onMore={() =>
+                    compareReleases(
+                      (comparison.offset || 0) + (comparison.limit || 20),
+                    )
+                  }
                 />
+              ) : comparisonBusy ? (
+                <p role="status">Loading the first page of changes…</p>
               ) : (
                 <div className="empty-state">
                   <h3>
@@ -1624,6 +1886,15 @@ function App() {
             onTopic={openTopic}
             onWork={openWork}
             onPerson={openPerson}
+            onReturnToSearch={
+              active &&
+              history.state?.detailBack === `topic:${active.id}` &&
+              history.state?.detailBackLabel === "Back to search results"
+                ? leaveTopic
+                : query && !person && !work
+                  ? closeInspector
+                  : undefined
+            }
             searchNavigation={
               results &&
               !person &&

@@ -1,8 +1,8 @@
 # Optional public hosting
 
-The live example is **https://atlas.chipflow.net/web/legacy/**. Reader 1.4.1 publishes the accepted `1.4.1-exploratory` snapshot. See the [deployment record](../docs/DEPLOYMENT-1.4.1.md) for the verified public installation. The adapter exposes only explicitly allowed immutable snapshots, never the mutable working atlas or authoring operations.
+The live example is **https://atlas.chipflow.net/web/legacy/**. Reader 1.5 publishes the accepted `1.5.0-exploratory` snapshot. See the [deployment record](../docs/DEPLOYMENT-1.5.md) for the verified public installation. The adapter exposes only explicitly allowed immutable snapshots, never the mutable working atlas or authoring operations.
 
-The local reader remains a Python-standard-library application. Public hosting adds a small WSGI adapter, Gunicorn and a reverse proxy. `app.py` and `gunicorn.conf.py` were reconciled with the deployed adapter on 15 October 2026. Server accounts, keys, operational backups and private configuration are deliberately outside this repository.
+The local reader remains a Python-standard-library application. Public hosting adds a small WSGI adapter, Gunicorn and a reverse proxy. The production adapter also supports a separately managed data home and an optional offline semantic index. Server accounts, keys, operational backups and private configuration are deliberately outside this repository.
 
 ## Build a standalone hosted reader
 
@@ -14,6 +14,8 @@ pnpm --dir web install --frozen-lockfile
 pnpm --dir web build:hosted
 cp hosting/hosting.example.json hosting.json
 ```
+
+The command above uses the reference corpus bundled with Git. The full public data edition is maintained separately.
 
 Edit the `hosts` list in `hosting.json` to contain your exact public hostname. Keep only explicitly published releases in `public_releases`. The default configuration permits local hostnames only; it does not authorize a production deployment.
 
@@ -63,3 +65,20 @@ The script verifies archive and per-file checksums, refuses an existing destinat
 Run `python -m pytest -q hosting/tests` from the repository root. Tests use a disposable configuration and the frozen database; no production credentials are needed. For an existing bundle, set `TEST_BUNDLE=/path/to/bundle`.
 
 For each deployment, use a new immutable directory, validate the selected snapshot and frontend prefix, retain the prior bundle for rollback, then verify search, a topic, an insight, a scientist profile and `/healthz`. Deployment and certificate issuance are separate operator actions. The checked-in examples are templates, not copies of private server configuration. Consult the deployment record for the active layout.
+
+## Separate production data and semantic retrieval
+
+Set `data_home` in the operator-owned `hosting.json` to an absolute data directory containing `build/atlas.sqlite`. Omit it to use the bundle itself. HTTP requests cannot change this path. Keep it outside `web_hosted/`, owned by the operator and readable, but not writable, by the service account.
+
+Compile the database with the matching 1.5 software in an isolated build directory. Do not reuse an older schema in place or point production at mutable authoring staging. Keep every formerly public manifest byte-for-byte unchanged. Promoting an accepted candidate uses the explicit frozen manifest:
+
+```sh
+python3 start.py --data-home /private/authoring-data promote \
+  --from 1.5.0-review5 --id 1.5.0-exploratory
+```
+
+This changes only the release identity and does not activate a reader. Build an index containing only the approved public snapshots, validate it, then configure the default and allowlist. Retain the old code, data and runtime for rollback.
+
+Semantic search is optional and server-side. Install `requirements-semantic.txt` in the hosting runtime; on the deployed Linux x86_64 platform the complete tested dependency set is pinned in `requirements-linux-1.5.txt`. Prebuild the index with `scripts/build_semantic_index.py` from the exact public snapshot. Set `PRINCIPIA_SEMANTIC_HOME`, `PRINCIPIA_MODEL_CACHE` and `HF_HUB_OFFLINE=1` in the service environment. The adapter refuses startup for a configured index that fails its snapshot or checksum checks. Startup and search do not download a model; normal reader requests have no provider dependency. Limit numerical library threads on small servers.
+
+Test the new release on a separate loopback listener before atomically switching the code symlink and restarting the service. Verify the HTTPS mount, historical links, semantic searches and neighbouring applications afterward. Retain a dated receipt of database, assets, runtime and source hashes.

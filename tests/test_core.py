@@ -296,6 +296,14 @@ def test_frozen_release_and_correction(atlas_root):
         a.get("n1")
     assert b.get("n1")["claim"] == "A finite result"
     assert len(a.changes("v1")["changed"]) == 2
+    complete = a.changes("v1")
+    first, second = a.changes("v1", limit=1), a.changes("v1", limit=1, offset=1)
+    assert first["changed"] + second["changed"] == complete["changed"]
+    assert first["totals"] == {"added": 0, "removed": 0, "changed": 2}
+    assert first["record_counts"]["changed"] == {"contribution": 1, "relation": 1}
+    assert first["release_id"] == complete["release_id"]
+    assert first["snapshot_hash"] == complete["snapshot_hash"]
+    assert a.changes("v1", limit=1, offset=2)["changed"] == []
     assert a.neighborhood()["relations"] == []
     a.close()
     b.close()
@@ -316,6 +324,27 @@ def test_source_correction_invalidates_dependents(atlas_root):
         },
     )
     assert set(p["impact"]) == {"n1", "n2", "n3", "r1"}
+
+
+def test_promotion_preserves_accepted_snapshot_and_excludes_later_edits(atlas_root):
+    from principia_legacy.release import promote
+
+    accepted = freeze(atlas_root, "accepted-review")
+    original = (atlas_root / "manifests/releases/accepted-review.json").read_bytes()
+    changed = copy.deepcopy(records()[1])
+    changed.update(revision=2, claim="A later unaccepted edit")
+    write_lines(atlas_root / "corpus/later.jsonl", [seal(changed)])
+    published = promote(atlas_root, "accepted-review", "1.5.0-exploratory")
+    assert published == {**accepted, "release_id": "1.5.0-exploratory"}
+    assert promote(atlas_root, "accepted-review", "1.5.0-exploratory") == published
+    assert (atlas_root / "manifests/releases/accepted-review.json").read_bytes() == original
+    freeze(atlas_root, "later-review")
+    with pytest.raises(ValueError, match="already frozen"):
+        promote(atlas_root, "later-review", "1.5.0-exploratory")
+    with pytest.raises(ValueError, match="safe immutable"):
+        promote(atlas_root, "../accepted-review", "bad")
+    with pytest.raises(ValueError, match="Unknown frozen"):
+        promote(atlas_root, "missing", "new")
 
 
 def test_stale_patch_rejected(atlas_root):
@@ -481,6 +510,15 @@ def test_correction_can_be_machine_rechecked_without_human_approval(
             pass
 
         def complete(self, *args):
+            context = args[1]
+            if context["candidate"]["type"] == "relation":
+                predicate = context["candidate"]["predicate"]
+                assert (
+                    context["predicate_contract"]["meaning"]
+                    == curate.PREDICATES[predicate][3]
+                )
+            else:
+                assert context["predicate_contract"] is None
             return {
                 "decision": "supported",
                 "rationale": "Fixture evidence supports finite scope.",
@@ -560,10 +598,12 @@ def test_release_checksums_and_secret_exclusion(atlas_root):
     import zipfile
     from principia_legacy.release import package
 
-    (atlas_root / ".work").mkdir()
+    (atlas_root / ".work").mkdir(exist_ok=True)
     (atlas_root / ".work" / "private.env").write_text("PRIVATE=never-package")
     (atlas_root / "docs").mkdir()
     (atlas_root / "docs" / ".env").write_text("PRIVATE=never-package")
+    freeze(atlas_root, "before-fixture")
+    freeze(atlas_root, "1.5.0-qa1")
     result = package(atlas_root, "package-fixture")
     archive_path = atlas_root / "dist/principia-legacy-package-fixture.zip"
     with zipfile.ZipFile(archive_path) as archive:
@@ -577,6 +617,23 @@ def test_release_checksums_and_secret_exclusion(atlas_root):
             i.file_size for i in archive.infolist()
         )
     assert result
+    package(atlas_root, "package-fixture", kind="reader")
+    package(atlas_root, "package-fixture", kind="source")
+    with zipfile.ZipFile(
+        atlas_root / "dist/principia-legacy-package-fixture-reader.zip"
+    ) as archive:
+        names = archive.namelist()
+        assert "principia-legacy/build/atlas.sqlite" in names
+        assert "principia-legacy/manifests/releases/package-fixture.json" in names
+        assert "principia-legacy/manifests/releases/before-fixture.json" not in names
+        assert "principia-legacy/manifests/releases/1.5.0-qa1.json" not in names
+    with zipfile.ZipFile(
+        atlas_root / "dist/principia-legacy-package-fixture-source.zip"
+    ) as archive:
+        names = archive.namelist()
+        assert "principia-legacy/build/atlas.sqlite" not in names
+        assert "principia-legacy/manifests/releases/before-fixture.json" in names
+        assert "principia-legacy/manifests/releases/1.5.0-qa1.json" in names
 
 
 def test_critic_must_identify_every_candidate_once():

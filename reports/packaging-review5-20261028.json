@@ -1,0 +1,12 @@
+{
+  "release": "1.5.0-review5",
+  "reader": "1.5.0rc4",
+  "installed_bytes": 3207277,
+  "checksummed_files": 81,
+  "zip_bytes": 1487123,
+  "zip_sha256": "faa5bbaef583e907ec73a596910b65c160f1976beedf7b3bfe51940016ef45df",
+  "canonical_data_included": false,
+  "network_required": true,
+  "public_deployed": false,
+  "archive": "principia-legacy-1.5.0rc4-review5-cloud-preview.zip"
+}

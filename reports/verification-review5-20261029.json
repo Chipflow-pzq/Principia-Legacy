@@ -1,0 +1,54 @@
+{
+  "reader": "1.5.0rc4",
+  "release": "1.5.0-review5",
+  "snapshot_hash": "bd2161f6c40e05a9ac52a6aa831de5ab39024aa6f0f642d8d47c06a5f4558dd6",
+  "backend_tests": {
+    "passed": 163,
+    "seconds": 48.05
+  },
+  "focused_backend_recheck": {
+    "passed": 50,
+    "seconds": 10.97
+  },
+  "workflow_tests": {
+    "startTime": "2026-10-28T15:37:38.842Z",
+    "duration": 516170.701,
+    "expected": 92,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "final_graph_tests": {
+    "startTime": "2026-10-28T15:54:49.827Z",
+    "duration": 58763.571,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "recovery_and_performance_tests": {
+    "startTime": "2026-10-28T15:57:59.516Z",
+    "duration": 22960.61,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "reported_query": {
+    "ideas": 10,
+    "people": 5,
+    "works": 1,
+    "topics": 1
+  },
+  "qualified_human_reviews": 0,
+  "public_deployed": false,
+  "external_private_source_files_in_package": false,
+  "checksums_verified": 81,
+  "limitations": [
+    "Finite incomplete corpus; 640 catalogue works lack extracted insights.",
+    "49 strict ready routes; 451 short of the 500-route milestone.",
+    "Cloud network latency does not consistently meet end-to-end targets.",
+    "Machine checks do not certify scientific accuracy; human audit not performed.",
+    "No review5 offline database package or Windows test is claimed."
+  ]
+}

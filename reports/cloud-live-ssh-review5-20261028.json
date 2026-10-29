@@ -1,0 +1,9 @@
+{
+  "interruption": "ssh",
+  "elapsed_ms": 4464,
+  "query_preserved": true,
+  "recovered_without_reload": true,
+  "exactly_one_ssh_child": true,
+  "reader_pid_changed": false,
+  "snapshot": "1.5.0-review5"
+}

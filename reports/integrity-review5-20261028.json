@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "release_id": "1.5.0-review5",
+  "snapshot_hash": "bd2161f6c40e05a9ac52a6aa831de5ab39024aa6f0f642d8d47c06a5f4558dd6",
+  "counts": {
+    "contribution": 5700,
+    "relation": 4211,
+    "source": 605,
+    "review": 13120
+  },
+  "exact_machine_reviews_for_all_visible_records": true,
+  "same_source_attributed_claim_duplicates": 0,
+  "deduplication_scope": "Exact claim wording after whitespace normalization, source identities, named credit and date. This is not an exhaustive semantic-duplication audit; independent formulations retain separate credit.",
+  "dossiers": 1154,
+  "flagship_endpoint_checks": 5,
+  "tour_checks": 3,
+  "source_closure": true,
+  "neighborhood_cap_and_joint_premises": true,
+  "frozen_evaluation_files_unchanged": true,
+  "external_jsonschema": "not run; optional authoring dependency unavailable",
+  "qualified_human_audit": "not performed",
+  "catalog_counts": {
+    "works": 1233,
+    "people": 911,
+    "topics": 1154,
+    "works_with_insights": 593
+  }
+}

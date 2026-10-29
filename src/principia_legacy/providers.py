@@ -10,6 +10,13 @@ import urllib.request
 import uuid
 from pathlib import Path
 from .common import digest, now, read_json, write_json
+from .authoring_store import (
+    reserve,
+    settle,
+    provider_slot,
+    provider_cooldown,
+    QueueBusy,
+)
 
 
 def tls_context():
@@ -43,6 +50,7 @@ def streamed_body(response, receipt, deadline_seconds=180):
         if time.monotonic() - start > deadline_seconds:
             raise TimeoutError("Streaming response exceeded bounded duration")
         total += len(line)
+        receipt["transport_bytes"] = total
         # SSE repeats a JSON envelope for each tiny token delta. Bound that
         # transport overhead separately from the actual model output.
         if total > 32_000_000:
@@ -69,8 +77,12 @@ def streamed_body(response, receipt, deadline_seconds=180):
             if decoded_size > 2_000_000:
                 raise ValueError("Provider decoded output exceeded size cap")
             content.append(delta)
+            receipt["decoded_bytes"] = decoded_size
             if choice.get("finish_reason"):
                 finish = choice["finish_reason"]
+                receipt["finish_reason"] = finish
+    receipt["completion_marker_received"] = done
+    receipt["stream_elapsed_seconds"] = round(time.monotonic() - start, 3)
     if not done:
         raise TimeoutError("Provider stream ended without completion marker")
     return {
@@ -150,7 +162,20 @@ class Provider:
         )
         for attempt in range(3):
             trace = str(uuid.uuid4())
+            try:
+                planning_price = reserve(self.root, self.model, request, trace)
+            except (ValueError, RuntimeError):
+                write_json(
+                    job_path,
+                    {
+                        "state": "waiting_for_budget_inspection",
+                        "task": task,
+                        "submitted": False,
+                    },
+                )
+                raise
             receipt = {
+                "planning_price": planning_price,
                 "provider": "SiliconFlow",
                 "requested_model": self.model,
                 "task": task,
@@ -161,6 +186,7 @@ class Provider:
                 "input_hash": digest(payload),
                 "prompt_hash": digest(system),
                 "state": "running",
+                "submitted": False,
             }
             # Persist the attempt before transmission so a killed authoring process
             # cannot make a potentially charged request disappear from the ledger.
@@ -175,13 +201,18 @@ class Provider:
                         "X-Trace-Id": trace,
                     },
                 )
-                with urllib.request.urlopen(
-                    req, context=tls_context(), timeout=180
-                ) as response:
-                    receipt["provider_trace_id"] = response.headers.get(
-                        "x-siliconcloud-trace-id"
+                with provider_slot(self.root, self.model):
+                    receipt["submitted"] = True
+                    write_json(
+                        self.root / ".work/receipts" / (trace + ".json"), receipt
                     )
-                    body = streamed_body(response, receipt)
+                    with urllib.request.urlopen(
+                        req, context=tls_context(), timeout=180
+                    ) as response:
+                        receipt["provider_trace_id"] = response.headers.get(
+                            "x-siliconcloud-trace-id"
+                        )
+                        body = streamed_body(response, receipt)
                 choice = body["choices"][0]
                 receipt.update(
                     {
@@ -202,15 +233,45 @@ class Provider:
                 if not isinstance(result, dict):
                     raise ValueError("Structured response must be a JSON object")
                 receipt.update({"state": "succeeded", "output_hash": digest(result)})
+                settle(self.root, trace, planning_price, receipt)
                 write_json(self.root / ".work/receipts" / (trace + ".json"), receipt)
                 write_json(
                     job_path,
                     {"state": "succeeded", "result": result, "receipt": receipt},
                 )
                 return result, receipt
+            except QueueBusy:
+                receipt.update(
+                    state="not_submitted",
+                    submitted=False,
+                    usage={"prompt_tokens": 0, "completion_tokens": 0},
+                    error_type="QueueBusy",
+                )
+                write_json(self.root / ".work/receipts" / (trace + ".json"), receipt)
+                write_json(job_path, {"state": "failed", "receipt": receipt})
+                settle(self.root, trace, planning_price, receipt)
+                raise
             except (urllib.error.URLError, TimeoutError, ValueError, KeyError) as exc:
                 # Never serialize request headers or credentials into exceptions/logs.
                 code = getattr(exc, "code", None)
+                if isinstance(exc, urllib.error.HTTPError):
+                    # Keep a bounded diagnostic, never headers or echoed credentials.
+                    try:
+                        detail = (
+                            exc.read(2048)
+                            .decode("utf-8", errors="replace")
+                            .replace(self.key, "[redacted]")
+                        )
+                        receipt["provider_error"] = detail[:1000]
+                    except OSError:
+                        pass
+                    if code == 429:
+                        try:
+                            cooldown = float(exc.headers.get("Retry-After", 60))
+                        except (ValueError, TypeError):
+                            cooldown = 60
+                        provider_cooldown(self.root, self.model, cooldown)
+                        receipt["model_cooldown_seconds"] = min(max(cooldown, 30), 180)
                 receipt.update(
                     {
                         "state": "failed"
@@ -225,6 +286,7 @@ class Provider:
                 )
                 write_json(self.root / ".work/receipts" / (trace + ".json"), receipt)
                 write_json(job_path, {"state": "failed", "receipt": receipt})
+                settle(self.root, trace, planning_price, receipt)
                 # A timeout may still be running and charged upstream. Never
                 # replay it (including when a resumable campaign is restarted).
                 # Retry only an explicit transient HTTP rejection or malformed

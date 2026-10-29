@@ -1,17 +1,55 @@
 """Allowlisted, reproducible release archives with integrity and coverage reports."""
 
 import json
+import os
 import platform
 import re
 import zipfile
 from pathlib import Path
-from .common import digest, read_json, read_lines, write_json
-from .storage import Atlas, build, corpus, manifest
-from .records import validate, visible
+
 from . import __version__
+from .common import digest, internal_snapshot, read_json, read_lines, write_json
+from .records import validate, visible
+from .storage import Atlas, build, corpus, manifest
 
 
 def freeze(root, release_id):
+    from .authoring_store import Commit, recover, writer
+
+    with writer(root):
+        recover(root)
+        commit = Commit(root, "freeze:" + release_id)
+        result = _freeze(root, release_id, commit)
+        commit.publish()
+        return result
+
+
+def promote(root, source_release, release_id):
+    """Name an accepted frozen snapshot without including later authoring changes."""
+    from .authoring_store import Commit, recover, writer
+
+    root = Path(root)
+    for name in (source_release, release_id):
+        if not re.fullmatch(r"[A-Za-z0-9._-]+", name) or name in (".", "..", "working"):
+            raise ValueError("Use safe immutable release identifiers")
+    with writer(root):
+        recover(root)
+        source = read_json(root / "manifests/releases" / (source_release + ".json"))
+        if not source or source.get("release_id") != source_release:
+            raise ValueError("Unknown frozen source release")
+        promoted = {**source, "release_id": release_id}
+        path = root / "manifests/releases" / (release_id + ".json")
+        previous = read_json(path)
+        if previous is not None and previous != promoted:
+            raise ValueError("Release identifier already frozen with different content")
+        if previous is None:
+            commit = Commit(root, "promote:" + source_release + ":" + release_id)
+            commit.json(path, promoted)
+            commit.publish()
+        return promoted
+
+
+def _freeze(root, release_id, commit):
     if not re.fullmatch(r"[A-Za-z0-9._-]+", release_id) or release_id in (
         ".",
         "..",
@@ -24,7 +62,7 @@ def freeze(root, release_id):
     old = read_json(path)
     if old and old != m:
         raise ValueError("Release identifier already frozen with different content")
-    write_json(path, m)
+    commit.json(path, m)
     return m
 
 
@@ -71,10 +109,15 @@ def report(root):
         "planning_allowance_usd": 300,
         "cost_status": "Account charges managed manually by owner; tokens are receipts, not an exact bill.",
     }
+    budget = read_json(root / "config/provider_budget.json", {})
     rates = {
+        model: (price["input_cny_per_million"], price["output_cny_per_million"])
+        for model, price in budget.get("models", {}).items()
+    } or {
         "deepseek-ai/DeepSeek-V4-Flash": (3, 9),
         "deepseek-ai/DeepSeek-V4-Pro": (12, 24),
     }
+    usage["current_campaign"] = read_json(root / "reports/usage-1.5.json", {})
     usage["planning_estimate"] = {
         "currency": "CNY",
         "known_token_subtotal": round(
@@ -93,7 +136,7 @@ def report(root):
         ),
         "rates_per_million_input_output": rates,
         "pricing_source": "https://www.siliconflow.cn/pricing",
-        "rates_checked": "2026-10-13",
+        "rates_checked": budget.get("checked_at", "2026-10-13"),
         "unpriced_requests": sum(
             r.get("requested_model") not in rates for r in attempt_receipts
         ),
@@ -140,6 +183,28 @@ def report(root):
         }
         for p in info["pillars"]
     }
+    if coverage_targets.get("topic_counting_mode") == "route_ready":
+        from .coverage import coverage_report
+
+        route_report = coverage_report(root)
+        for subject, row in per_pillar.items():
+            row.update(
+                {
+                    k: v
+                    for k, v in route_report["subjects"][subject].items()
+                    if k
+                    in {
+                        "route_ready_topics",
+                        "structural_route_candidates",
+                        "topics_with_eight_insights",
+                    }
+                }
+            )
+    topic_metric = (
+        "route_ready_topics"
+        if coverage_targets.get("topic_counting_mode") == "route_ready"
+        else "populated_topics"
+    )
     return {
         "release_id": info["release_id"],
         "software_version": __version__,
@@ -156,7 +221,7 @@ def report(root):
         },
         "content_target_met": (
             all(
-                v["populated_topics"] >= coverage_targets.get("topics_per_subject", 200)
+                v[topic_metric] >= coverage_targets.get("topics_per_subject", 200)
                 and v["contributions"]
                 >= coverage_targets.get("insights_per_subject", 2000)
                 for v in per_pillar.values()
@@ -168,10 +233,9 @@ def report(root):
         ),
         "shortfall_by_subject": {
             p: {
-                "populated_topics": max(
+                topic_metric: max(
                     0,
-                    coverage_targets.get("topics_per_subject", 200)
-                    - v["populated_topics"],
+                    coverage_targets.get("topics_per_subject", 200) - v[topic_metric],
                 ),
                 "unique_primary_subject_insights": max(
                     0,
@@ -272,7 +336,9 @@ WEB_FILES = {
 }
 
 
-def package(root, release_id, report_path=None):
+def package(root, release_id, report_path=None, kind="full"):
+    if kind not in {"full", "reader", "source"}:
+        raise ValueError("Choose full, reader or source packaging")
     root = Path(root)
     errors = validate(corpus(root))
     if errors:
@@ -280,12 +346,49 @@ def package(root, release_id, report_path=None):
     freeze(root, release_id)
     build(root, release_id)
     release_report = report(root)
+    release_report["package_kind"] = kind
+    release_report["history_scope"] = (
+        "All public releases and canonical record revisions; internal correction and development checkpoints remain in the full source archive and authoritative data home."
+        if kind == "reader"
+        else "All canonical records and immutable manifests, including internal correction checkpoints."
+    )
     files = []
-    for p in root.rglob("*"):
+    # Prune ignored trees before walking: source caches and node_modules may be
+    # much larger than the release and must never enter the packaging scan.
+    excluded = {
+        "node_modules",
+        "__pycache__",
+        ".work",
+        ".venv",
+        ".git",
+        ".pytest_cache",
+        ".ruff_cache",
+        "test-results",
+        "playwright-report",
+        ".secrets",
+    }
+    candidates = []
+    for directory, children, names in os.walk(root, followlinks=False):
+        children[:] = [
+            name
+            for name in children
+            if name not in excluded and not (Path(directory) / name).is_symlink()
+        ]
+        candidates.extend(Path(directory) / name for name in names)
+    for p in candidates:
         if not p.is_file() or p.is_symlink():
             continue
         relative = p.relative_to(root)
         parts = relative.parts
+        if kind == "source" and parts[0] == "build":
+            continue
+        if (
+            kind == "reader"
+            and parts[:2] == ("manifests", "releases")
+            and internal_snapshot(p.stem)
+            and p.stem != release_id
+        ):
+            continue
         if any(
             x
             in {
@@ -368,7 +471,9 @@ def package(root, release_id, report_path=None):
         "source_cache_bytes": sum(
             p.stat().st_size for p in (root / ".work/sources").rglob("*") if p.is_file()
         ),
-        "database_bytes": (root / "build/atlas.sqlite").stat().st_size,
+        "database_bytes": 0
+        if kind == "source"
+        else (root / "build/atlas.sqlite").stat().st_size,
         "size_investigation_required": size > 1_000_000_000,
     }
     checksums = {rel.as_posix(): digest(p.read_bytes()) for rel, p in sorted(files)}
@@ -381,7 +486,8 @@ def package(root, release_id, report_path=None):
         )
     out = root / "dist"
     out.mkdir(exist_ok=True)
-    destination = out / f"principia-legacy-{release_id}.zip"
+    suffix = "" if kind == "full" else "-" + kind
+    destination = out / f"principia-legacy-{release_id}{suffix}.zip"
     with zipfile.ZipFile(
         destination, "w", zipfile.ZIP_DEFLATED, compresslevel=9
     ) as archive:
@@ -407,13 +513,18 @@ def package(root, release_id, report_path=None):
         )
     release_report["sizes"]["download_bytes"] = destination.stat().st_size
     release_report["archive_sha256"] = digest(destination.read_bytes())
-    write_json(report_path or root / "build/release-report.json", release_report)
+    write_json(
+        report_path or root / "build" / ("release-report" + suffix + ".json"),
+        release_report,
+    )
     (out / (destination.name + ".sha256")).write_text(
         release_report["archive_sha256"] + "  " + destination.name + "\n"
     )
     return {
         "archive": str(destination),
-        "report": str(report_path or root / "build/release-report.json"),
+        "report": str(
+            report_path or root / "build" / ("release-report" + suffix + ".json")
+        ),
         "counts": release_report["counts"],
         "sizes": release_report["sizes"],
         "content_target_met": release_report["content_target_met"],

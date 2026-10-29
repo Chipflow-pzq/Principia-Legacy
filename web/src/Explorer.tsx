@@ -16,7 +16,15 @@ import {
   type Insight,
   type Receipt,
 } from "./explore/model";
-import { deleteMap, downloadMap, savedMaps, saveMap } from "./explore/library";
+import {
+  deleteMap,
+  downloadMap,
+  savedMaps,
+  saveMap,
+  loadMap,
+  fingerprint,
+  type SavedMap,
+} from "./explore/library";
 import { lineage, readingRoute, roleLabels } from "./explore/lineage";
 import { sourceCautions } from "./explore/sourceQuality";
 
@@ -269,13 +277,19 @@ export default function Explorer({
   query,
   settings,
   onStatus,
+  onReady,
 }: {
   info: Info;
   onAtlas: (id: string, release: string) => void;
   query: string;
   settings: ProviderSettings;
   onStatus: (status: "idle" | "running" | "ready" | "paused") => void;
+  onReady: (ready: boolean) => void;
 }) {
+  useEffect(() => {
+    onReady(true);
+    return () => onReady(false);
+  }, [onReady]);
   const { key, model } = settings;
   const [running, setRunning] = useState(false),
     [progress, setProgress] = useState<Progress | null>(null),
@@ -297,7 +311,8 @@ export default function Explorer({
   }, [running]);
   const [receipts, setReceipts] = useState<Receipt[]>([]),
     [draft, setDraft] = useState<Exploration | null>(null);
-  const [library, setLibrary] = useState<Exploration[]>([]),
+  const [mapOffset, setMapOffset] = useState(0);
+  const [library, setLibrary] = useState<SavedMap[]>([]),
     [session, setSession] = useState<Exploration[]>([]),
     [notice, setNotice] = useState("");
   const [removed, setRemoved] = useState<{
@@ -330,10 +345,11 @@ export default function Explorer({
     [draft, coverage],
   );
   const savedVersions = useMemo(
-    () => new Set(library.map((d) => JSON.stringify(d))),
+    () => new Set(library.map((d) => d.fingerprint)),
     [library],
   );
-  const isSaved = (d: Exploration) => savedVersions.has(JSON.stringify(d));
+  const isSaved = (d: Exploration | SavedMap) =>
+    "fingerprint" in d || savedVersions.has(fingerprint(d));
   const unsaved =
     session.some((s) => !isSaved(s)) ||
     (!!checkpoint && checkpoint.phase !== "done");
@@ -423,7 +439,7 @@ export default function Explorer({
       await saveMap(d, info.predicates);
       const stored = await savedMaps(info.predicates);
       setLibrary(stored);
-      const saved = stored.find((s) => s.id === d.id)!;
+      const saved = await loadMap(d.id, info.predicates);
       setSession((old) => old.map((s) => (s.id === d.id ? saved : s)));
       setDraft((current) => (current?.id === d.id ? saved : current));
       setNotice(
@@ -436,10 +452,15 @@ export default function Explorer({
   async function remove(id: string) {
     try {
       const existing =
-        session.find((d) => d.id === id) || library.find((d) => d.id === id);
+        session.find((d) => d.id === id) ||
+        (library.some((d) => d.id === id)
+          ? await loadMap(id, info.predicates)
+          : undefined);
+      const saved = library.some((d) => d.id === id)
+        ? await loadMap(id, info.predicates)
+        : undefined;
       await deleteMap(id);
-      if (existing)
-        setRemoved({ map: existing, saved: library.find((d) => d.id === id) });
+      if (existing) setRemoved({ map: existing, saved });
       setLibrary((old) => old.filter((d) => d.id !== id));
       setSession((old) => old.filter((d) => d.id !== id));
       if (draft?.id === id) {
@@ -502,6 +523,12 @@ export default function Explorer({
     ...session,
     ...library.filter((l) => !session.some((d) => d.id === l.id)),
   ];
+  useEffect(() => {
+    setMapOffset((offset) =>
+      Math.min(offset, Math.max(0, Math.ceil(maps.length / 25) - 1) * 25),
+    );
+  }, [maps.length]);
+
   return (
     <section className="explorer" aria-label="Personal research exploration">
       <form id="research-run" onSubmit={run} />
@@ -580,11 +607,44 @@ export default function Explorer({
             Only Save on this device writes a map to browser storage. Unsaved
             session maps disappear when this tab closes. Nothing is uploaded.
           </p>
+          {maps.length > 25 && (
+            <nav className="pagination" aria-label="Saved map pages">
+              <button
+                disabled={!mapOffset}
+                onClick={() => setMapOffset(Math.max(0, mapOffset - 25))}
+              >
+                Previous maps
+              </button>
+              <span>
+                {mapOffset + 1}–{Math.min(mapOffset + 25, maps.length)} of{" "}
+                {maps.length}
+              </span>
+              <button
+                disabled={mapOffset + 25 >= maps.length}
+                onClick={() => setMapOffset(mapOffset + 25)}
+              >
+                Next maps
+              </button>
+            </nav>
+          )}
           {maps.length ? (
             <ul>
-              {maps.map((d) => (
+              {maps.slice(mapOffset, mapOffset + 25).map((d) => (
                 <li key={d.id}>
-                  <button onClick={() => open(d)} disabled={running}>
+                  <button
+                    onClick={async () => {
+                      try {
+                        open(
+                          "nodes" in d
+                            ? d
+                            : await loadMap(d.id, info.predicates),
+                        );
+                      } catch (e) {
+                        setError((e as Error).message);
+                      }
+                    }}
+                    disabled={running}
+                  >
                     {d.title}
                     <small>
                       {isSaved(d)

@@ -33,6 +33,7 @@ def test_expansion_allowance_survives_resume(atlas_root):
     for id in ("new-a", "new-b"):
         n = copy.deepcopy(records()[1])
         n["id"] = id
+        n["claim"] = "A distinct result for " + id
         seal(n)
         nodes.append(n)
 
@@ -195,3 +196,56 @@ def test_completed_source_batch_resumes_without_credentials_or_writes(atlas_root
         == report
     )
     assert (atlas_root / "manifests/FRONTIER_REGISTRY.jsonl").read_bytes() == registry
+
+
+def test_reworded_title_cannot_readmit_same_claim_or_inherit_arrows():
+    from principia_legacy.admission_versions import prepare_versions
+
+    existing = records()
+    duplicate = copy.deepcopy(existing[1])
+    duplicate.update(id="retitled-copy", title="A new title for the same move")
+    seal(duplicate)
+    result, _, withheld = prepare_versions(existing, [duplicate])
+    assert not result
+    assert withheld[0]["possible_duplicate_of"] in {
+        r["id"] for r in existing if r["type"] == "contribution"
+    }
+
+    relation = copy.deepcopy(next(r for r in existing if r["type"] == "relation"))
+    relation["id"] = "relation-from-duplicate"
+    relation["premises"] = [
+        {k: duplicate[k] for k in ("id", "revision", "content_hash")}
+    ]
+    seal(relation)
+    result, _, withheld = prepare_versions(existing, [duplicate, relation])
+    assert not result
+    assert {r["id"] for r in withheld} == {duplicate["id"], relation["id"]}
+
+    # An independent named formulation is not merged with the first discovery.
+    independent = copy.deepcopy(duplicate)
+    independent["attribution"] = [
+        {
+            "name": "Independent contributor",
+            "role": "original contributor",
+            "evidence_note": "Distinct documented formulation",
+        }
+    ]
+    seal(independent)
+    result, _, withheld = prepare_versions(existing, [independent])
+    assert not withheld and result[0]["id"] == independent["id"]
+
+
+def test_same_batch_duplicate_is_quarantined_without_changing_math_case():
+    from principia_legacy.admission_versions import prepare_versions
+
+    first = copy.deepcopy(records()[1])
+    second = copy.deepcopy(first)
+    second.update(id="retitled-copy", title="Another title")
+    seal(second)
+    result, _, withheld = prepare_versions([], [first, second])
+    assert [r["id"] for r in result] == [first["id"]]
+    assert withheld[0]["id"] == second["id"]
+    second["claim"] = first["claim"].upper()
+    seal(second)
+    result, _, withheld = prepare_versions([], [first, second])
+    assert len(result) == 2 and not withheld

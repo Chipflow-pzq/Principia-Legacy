@@ -1,0 +1,3390 @@
+{
+  "catalogue_only": 2,
+  "created_at": "2026-10-28T14:27:11+00:00",
+  "fixture_sha256": "7c814ad6321bf5a31bead024f5c0a714ee7c1e9e0a2588886d64cd75154e043b",
+  "negative_controls_empty": 4,
+  "network_latency_ms": 0,
+  "no_results": 2,
+  "outcomes": [
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "neuronal group communication",
+      "timings_ms": [
+        104.26,
+        2.62,
+        2.51
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-6411c99c49a22867",
+            "title": "Amin Zandvakili"
+          },
+          {
+            "id": "person-65d48d96f4fa3dfd",
+            "title": "Adam Kohn"
+          },
+          {
+            "id": "person-7e76de4554bfb7db",
+            "title": "João D. Semedo"
+          },
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          },
+          {
+            "id": "person-dd2c166caa0fae63",
+            "title": "Christian K. Machens"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-06c079f89793d2af",
+            "title": "Matched comparisons address alternative explanations for interaction selectivity"
+          },
+          {
+            "id": "n-224d53004ebf4112",
+            "title": "Reduced-rank regression identifies predictive dimensions of source population"
+          },
+          {
+            "id": "n-47641c6f9279a34f",
+            "title": "Proposed testable predictions linking communication subspace to attention, learning and perturbation"
+          },
+          {
+            "id": "n-4c5b2a929a6ed611",
+            "title": "Population regression predicts more target variability than single neurons"
+          },
+          {
+            "id": "n-56d8da9a9d73e95a",
+            "title": "Selective routing simulation: distinct subspaces allow one source to address two targets"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3002",
+            "title": "Communication between neural populations"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-semedo-communication-subspace",
+            "insight_count": 10,
+            "title": "Cortical areas interact through a communication subspace"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 10,
+        "people": 5,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "neuronal state space",
+      "timings_ms": [
+        106.47,
+        5.16,
+        5.09
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-5cff975b1d4f3499",
+            "title": "Mark M. Churchland"
+          },
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          },
+          {
+            "id": "person-b43e69fbcbd1418b",
+            "title": "John P. Cunningham"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-b213eb845fa56572",
+            "title": "Preparatory state predicts subsequent population trajectory but not single-neuron tuning"
+          },
+          {
+            "id": "n-c4be2865a5b378a1",
+            "title": "Conservative preprocessing: PCA reduction and condition mean-centering"
+          },
+          {
+            "id": "n-3937ecae85581ee5",
+            "title": "Latent dimensionality as a complexity measure with mechanistic and coding interpretations"
+          },
+          {
+            "id": "n-33b77482968c9d5d",
+            "title": "Rotations explain confusing single-neuron features and offer a movement-generation basis"
+          },
+          {
+            "id": "n-d26e651c0b5050af",
+            "title": "Rotations share direction and angular velocity across conditions and speeds"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3001",
+            "title": "Neural population dynamics and state-space analysis"
+          },
+          {
+            "id": "B3002",
+            "title": "Communication between neural populations"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-cunningham-yu-neural-recordings",
+            "insight_count": 14,
+            "title": "Dimensionality reduction for large-scale neural recordings"
+          },
+          {
+            "id": "w-churchland-neural-population-dynamics",
+            "insight_count": 10,
+            "title": "Neural population dynamics during reaching"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 24,
+        "people": 3,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "communication subspace",
+      "timings_ms": [
+        22.77,
+        2.67,
+        2.42
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-6411c99c49a22867",
+            "title": "Amin Zandvakili"
+          },
+          {
+            "id": "person-65d48d96f4fa3dfd",
+            "title": "Adam Kohn"
+          },
+          {
+            "id": "person-7e76de4554bfb7db",
+            "title": "João D. Semedo"
+          },
+          {
+            "id": "person-dd2c166caa0fae63",
+            "title": "Christian K. Machens"
+          },
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-d345cf445dcbe8f4",
+            "title": "Communication subspace: V2 fluctuations predicted by a small subset of V1 population patterns"
+          },
+          {
+            "id": "n-47641c6f9279a34f",
+            "title": "Proposed testable predictions linking communication subspace to attention, learning and perturbation"
+          },
+          {
+            "id": "n-56d8da9a9d73e95a",
+            "title": "Selective routing simulation: distinct subspaces allow one source to address two targets"
+          },
+          {
+            "id": "n-93896f865249adb1",
+            "title": "Generality checks: shared subspace across gratings, naturalistic movies, and awake V1-V4"
+          },
+          {
+            "id": "n-cafa2e3f255571aa",
+            "title": "Simulation checks that nonlinearities and sparse projections do not trivially produce the subspace"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3002",
+            "title": "Communication between neural populations"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-semedo-communication-subspace",
+            "insight_count": 10,
+            "title": "Cortical areas interact through a communication subspace"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 10,
+        "people": 5,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "semantic",
+      "negative_control": false,
+      "query": "brain activity as trajectories in a low dimensional space",
+      "timings_ms": [
+        774.86,
+        94.92,
+        104.54
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          },
+          {
+            "id": "person-b43e69fbcbd1418b",
+            "title": "John P. Cunningham"
+          },
+          {
+            "id": "person-6411c99c49a22867",
+            "title": "Amin Zandvakili"
+          },
+          {
+            "id": "person-65d48d96f4fa3dfd",
+            "title": "Adam Kohn"
+          },
+          {
+            "id": "person-7e76de4554bfb7db",
+            "title": "João D. Semedo"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-c64d17958144c540",
+            "title": "Population firing-rate vectors as points in a high-dimensional state space"
+          },
+          {
+            "id": "n-208ae4b550d124ed",
+            "title": "Nonlinear manifold methods are fragile and can magnify trajectory differences under sparse sampling"
+          },
+          {
+            "id": "n-b67490868facf48d",
+            "title": "Population-level dynamical hypotheses: preparatory state setting and gated readout directions"
+          },
+          {
+            "id": "n-ff83141d919fa443",
+            "title": "Private dimensions concept: source fluctuations outside predictive subspace are hidden from target"
+          },
+          {
+            "id": "n-0af5b7c48a45f931",
+            "title": "Latent-variable models separate shared population structure from assumed noise"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3001",
+            "title": "Neural population dynamics and state-space analysis"
+          },
+          {
+            "id": "T-05c6a0cd5c2b",
+            "title": "Brain positioning system cells"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-cunningham-yu-neural-recordings",
+            "insight_count": 14,
+            "title": "Dimensionality reduction for large-scale neural recordings"
+          },
+          {
+            "id": "w-semedo-communication-subspace",
+            "insight_count": 10,
+            "title": "Cortical areas interact through a communication subspace"
+          },
+          {
+            "id": "w-churchland-neural-population-dynamics",
+            "insight_count": 10,
+            "title": "Neural population dynamics during reaching"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 29,
+        "people": 7,
+        "topics": 2,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "semantic",
+      "negative_control": false,
+      "query": "how brain regions exchange information",
+      "timings_ms": [
+        53.12,
+        29.29,
+        32.79
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-6411c99c49a22867",
+            "title": "Amin Zandvakili"
+          },
+          {
+            "id": "person-65d48d96f4fa3dfd",
+            "title": "Adam Kohn"
+          },
+          {
+            "id": "person-7e76de4554bfb7db",
+            "title": "João D. Semedo"
+          },
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          },
+          {
+            "id": "person-dd2c166caa0fae63",
+            "title": "Christian K. Machens"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-4ee9d994c883c659",
+            "title": "Causal identification of memory engrams via activity-guided opsin expression"
+          },
+          {
+            "id": "n-d345cf445dcbe8f4",
+            "title": "Communication subspace: V2 fluctuations predicted by a small subset of V1 population patterns"
+          },
+          {
+            "id": "n-93896f865249adb1",
+            "title": "Generality checks: shared subspace across gratings, naturalistic movies, and awake V1-V4"
+          },
+          {
+            "id": "n-06c079f89793d2af",
+            "title": "Matched comparisons address alternative explanations for interaction selectivity"
+          },
+          {
+            "id": "n-4c5b2a929a6ed611",
+            "title": "Population regression predicts more target variability than single neurons"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3002",
+            "title": "Communication between neural populations"
+          },
+          {
+            "id": "T-25ed2440bb57",
+            "title": "Cerebral hemisphere functional specialization"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-semedo-communication-subspace",
+            "insight_count": 10,
+            "title": "Cortical areas interact through a communication subspace"
+          },
+          {
+            "id": "w-8d9132d9759a006b",
+            "insight_count": 0,
+            "title": "Discovery of functional specialization of the cerebral hemispheres"
+          },
+          {
+            "id": "w-a38666fdacf6f716",
+            "insight_count": 0,
+            "title": "Discovery of cells constituting a positioning system in the brain"
+          },
+          {
+            "id": "w-source-9446bf056e68af5b",
+            "insight_count": 12,
+            "title": "12.5 Communication Between Neurons - Anatomy and Physiology 2e | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 18,
+        "people": 9,
+        "topics": 2,
+        "works": 4
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "semantic",
+      "negative_control": false,
+      "query": "how neurons pass signals to each other",
+      "timings_ms": [
+        77.67,
+        45.97,
+        29.92
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-666096e918b46f34",
+            "title": "Calcium-triggered vesicle fusion and exocytosis as the electrical-to-chemical step"
+          },
+          {
+            "id": "n-f7251a099714d501",
+            "title": "Chemical classification of transmitter systems with their receptors and clearance"
+          },
+          {
+            "id": "n-d29f7b8121a03be9",
+            "title": "Chemical versus electrical synapses: transmitter-mediated versus direct ion passage"
+          },
+          {
+            "id": "n-cab78ad5e3186430",
+            "title": "Common architecture of chemical synapses, illustrated by the neuromuscular junction"
+          },
+          {
+            "id": "n-b6061414aaf17169",
+            "title": "EPSPs and IPSPs defined by direction of movement toward or away from threshold"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B2204",
+            "title": "Communication Between Neurons"
+          },
+          {
+            "id": "T-456a746c1b22",
+            "title": "Neuron functions"
+          },
+          {
+            "id": "T-427ef6491fbe",
+            "title": "Signal transduction in nervous system"
+          },
+          {
+            "id": "T-aaadf69519b0",
+            "title": "Chemical synaptic transmission"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-9446bf056e68af5b",
+            "insight_count": 12,
+            "title": "12.5 Communication Between Neurons - Anatomy and Physiology 2e | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 8,
+        "people": 0,
+        "topics": 4,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "neural population dynamics during reaching",
+      "timings_ms": [
+        21.18,
+        13.05,
+        12.04
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-5cff975b1d4f3499",
+            "title": "Mark M. Churchland"
+          },
+          {
+            "id": "person-b43e69fbcbd1418b",
+            "title": "John P. Cunningham"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-257d170fa6ac574c",
+            "title": "Generator model: fixed-frequency rotations whose initial state sets amplitude and phase"
+          },
+          {
+            "id": "n-33b77482968c9d5d",
+            "title": "Rotations explain confusing single-neuron features and offer a movement-generation basis"
+          },
+          {
+            "id": "n-4d95efb4dd28dfc9",
+            "title": "Brief quasi-oscillatory rotations of the neural state during reaching"
+          },
+          {
+            "id": "n-4e3215a432086722",
+            "title": "Population response as a neural state vector governed by a dynamical system"
+          },
+          {
+            "id": "n-66521809d8ddd961",
+            "title": "Skew-symmetric fit quality distinguishes neural data from kinematic models"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3001",
+            "title": "Neural population dynamics and state-space analysis"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-churchland-neural-population-dynamics",
+            "insight_count": 10,
+            "title": "Neural population dynamics during reaching"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 10,
+        "people": 2,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Byron Yu",
+      "timings_ms": [
+        10.91,
+        3.6,
+        3.32
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          },
+          {
+            "id": "person-6411c99c49a22867",
+            "title": "Amin Zandvakili"
+          },
+          {
+            "id": "person-65d48d96f4fa3dfd",
+            "title": "Adam Kohn"
+          },
+          {
+            "id": "person-7e76de4554bfb7db",
+            "title": "João D. Semedo"
+          },
+          {
+            "id": "person-b43e69fbcbd1418b",
+            "title": "John P. Cunningham"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-47641c6f9279a34f",
+            "title": "Proposed testable predictions linking communication subspace to attention, learning and perturbation"
+          },
+          {
+            "id": "n-4c5b2a929a6ed611",
+            "title": "Population regression predicts more target variability than single neurons"
+          },
+          {
+            "id": "n-06c079f89793d2af",
+            "title": "Matched comparisons address alternative explanations for interaction selectivity"
+          },
+          {
+            "id": "n-cafa2e3f255571aa",
+            "title": "Simulation checks that nonlinearities and sparse projections do not trivially produce the subspace"
+          },
+          {
+            "id": "n-56d8da9a9d73e95a",
+            "title": "Selective routing simulation: distinct subspaces allow one source to address two targets"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3001",
+            "title": "Neural population dynamics and state-space analysis"
+          },
+          {
+            "id": "B3002",
+            "title": "Communication between neural populations"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-cunningham-yu-neural-recordings",
+            "insight_count": 14,
+            "title": "Dimensionality reduction for large-scale neural recordings"
+          },
+          {
+            "id": "w-semedo-communication-subspace",
+            "insight_count": 10,
+            "title": "Cortical areas interact through a communication subspace"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 24,
+        "people": 6,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "John Cunningham",
+      "timings_ms": [
+        12.43,
+        6.2,
+        6.0
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-b43e69fbcbd1418b",
+            "title": "John P. Cunningham"
+          },
+          {
+            "id": "person-5cff975b1d4f3499",
+            "title": "Mark M. Churchland"
+          },
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-087066bfff4ab90e",
+            "title": "Method choice determines which statistical structure is preserved, so interpretation depends on the objective"
+          },
+          {
+            "id": "n-0af5b7c48a45f931",
+            "title": "Latent-variable models separate shared population structure from assumed noise"
+          },
+          {
+            "id": "n-208ae4b550d124ed",
+            "title": "Nonlinear manifold methods are fragile and can magnify trajectory differences under sparse sampling"
+          },
+          {
+            "id": "n-257d170fa6ac574c",
+            "title": "Generator model: fixed-frequency rotations whose initial state sets amplitude and phase"
+          },
+          {
+            "id": "n-2df4965b96c8819b",
+            "title": "Two complementary readings of a linear latent model: temporal basis functions versus low-dimensional readouts"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3001",
+            "title": "Neural population dynamics and state-space analysis"
+          },
+          {
+            "id": "B3002",
+            "title": "Communication between neural populations"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-churchland-neural-population-dynamics",
+            "insight_count": 10,
+            "title": "Neural population dynamics during reaching"
+          },
+          {
+            "id": "w-cunningham-yu-neural-recordings",
+            "insight_count": 14,
+            "title": "Dimensionality reduction for large-scale neural recordings"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 24,
+        "people": 3,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "semantic",
+      "negative_control": false,
+      "query": "how bacteria become resistant to antibiotics",
+      "timings_ms": [
+        51.53,
+        47.77,
+        49.26
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-ce1ffcf10649e757",
+            "title": "Variation pre-exists environmental change; selection does not induce mutations"
+          },
+          {
+            "id": "n-1933ec17fa98d3b1",
+            "title": "Transposon-mediated colocalization of multiple antibiotic-resistance genes on an R plasmid"
+          },
+          {
+            "id": "n-a87a2b0fd27c1154",
+            "title": "Corrective scope: selection acts on pre-existing variation, is not goal directed, and does not explain the origin of life"
+          },
+          {
+            "id": "n-62829936e5a310bd",
+            "title": "Warning about the danger of underdosage leading to antibiotic resistance"
+          },
+          {
+            "id": "n-fbe8c333f47fa6ab",
+            "title": "Adjustment for tertiary care bias in resistance data"
+          }
+        ],
+        "topics": [],
+        "works": [
+          {
+            "id": "w-source-d8b6b456b54a4ffc",
+            "insight_count": 16,
+            "title": "Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 12,
+        "people": 0,
+        "topics": 0,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "CRISPR gene editing",
+      "timings_ms": [
+        35.21,
+        13.4,
+        6.53
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-863f3e1a7406de67",
+            "title": "Mechanism of Casgevy: CRISPR/Cas9 editing to increase fetal hemoglobin"
+          },
+          {
+            "id": "n-12463f1c6b63f665",
+            "title": "Mechanism of Lyfgenia: Lentiviral vector delivery of HbAT87Q"
+          },
+          {
+            "id": "n-a40260ab248df1ac",
+            "title": "First FDA-approved lentiviral vector-based gene therapy for sickle cell disease"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B02",
+            "title": "CRISPR-enabled therapies and dated regulatory milestones"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-251aee296a654062",
+            "insight_count": 10,
+            "title": "FDA Approves First Gene Therapies to Treat Patients with Sickle Cell Disease | FDA"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 3,
+        "people": 0,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "protein structure prediction",
+      "timings_ms": [
+        42.21,
+        7.49,
+        7.1
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-1b0f85e0cb9cac27",
+            "title": "John Jumper"
+          },
+          {
+            "id": "person-402a831d0811aa2c",
+            "title": "Demis Hassabis"
+          },
+          {
+            "id": "person-41432d9ae4c6b27e",
+            "title": "Karl Deisseroth"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-2cb219a9998c1a05",
+            "title": "End-to-end deep learning architecture for protein structure prediction"
+          },
+          {
+            "id": "n-723e6098b43c2e71",
+            "title": "Protein folding as a combinatorial problem requiring approximation algorithms"
+          },
+          {
+            "id": "n-0fb1412f7d57fa82",
+            "title": "Simplified protein representation using pseudoatoms"
+          },
+          {
+            "id": "n-f3afe3ca519fca0b",
+            "title": "Empirical finding: AF3 outperforms specialized tools across complex types"
+          },
+          {
+            "id": "n-45adf700ccba91c9",
+            "title": "Negative result: AF3 does not capture conformational ensembles or dynamics"
+          }
+        ],
+        "topics": [
+          {
+            "id": "T-479c857847e7",
+            "title": "Protein structure prediction"
+          },
+          {
+            "id": "B01",
+            "title": "AlphaFold 3 biomolecular-interaction structure prediction"
+          },
+          {
+            "id": "B08",
+            "title": "Optogenetics and causal circuit interrogation"
+          },
+          {
+            "id": "B2025",
+            "title": "Proteins"
+          },
+          {
+            "id": "B2142",
+            "title": "Ribosomes and Protein Synthesis"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-5a4ebcad78613620",
+            "insight_count": 0,
+            "title": "Protein structure prediction"
+          },
+          {
+            "id": "w-source-057b1d8c009ba859",
+            "insight_count": 15,
+            "title": "Highly accurate protein structure prediction with AlphaFold"
+          },
+          {
+            "id": "w-source-d2c6bb5cadf55abb",
+            "insight_count": 10,
+            "title": "3.4 Proteins - Biology 2e | OpenStax"
+          },
+          {
+            "id": "w-source-d63c2ab8cd931a58",
+            "insight_count": 12,
+            "title": "3.4 Algorithmic Paradigms - Introduction to Computer Science | OpenStax"
+          },
+          {
+            "id": "w-source-f46f71db46d1fcd2",
+            "insight_count": 16,
+            "title": "Optogenetics: 10 years of microbial opsins in neuroscience"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 45,
+        "people": 3,
+        "topics": 8,
+        "works": 7
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Lagrange multipliers",
+      "timings_ms": [
+        17.31,
+        2.08,
+        2.0
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-c2817b1d8b4761aa",
+            "title": "Bengt Holmström"
+          },
+          {
+            "id": "person-edc46353e6cfd58d",
+            "title": "William Rowan Hamilton"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-57e677fb9415675d",
+            "title": "Tangency of level curve and constraint as the geometric basis of Lagrange multipliers"
+          },
+          {
+            "id": "n-c1378513e1c7a9f7",
+            "title": "Transformation to arbitrary coordinates"
+          },
+          {
+            "id": "n-d78e296a71faec0b",
+            "title": "Informativeness principle for additional signals"
+          },
+          {
+            "id": "n-2be7b36a5a4bfeab",
+            "title": "Extension of the multiplier method to three variables and to multiple constraints"
+          },
+          {
+            "id": "n-57729f65b8a016dd",
+            "title": "Chain-rule derivation of the parallel-gradient condition along an arc-length parametrization"
+          }
+        ],
+        "topics": [
+          {
+            "id": "M2106",
+            "title": "Lagrange Multipliers"
+          },
+          {
+            "id": "M08",
+            "title": "Convex duality and modern conic optimization certificates"
+          },
+          {
+            "id": "E07",
+            "title": "Information asymmetry, principal-agent models, and contract design"
+          },
+          {
+            "id": "P1001",
+            "title": "Hamiltonian mechanics"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-8697593885116d3b",
+            "insight_count": 4,
+            "title": "4.8 Lagrange Multipliers - Calculus Volume 3 | OpenStax"
+          },
+          {
+            "id": "w-source-3b3e248222b3b39a",
+            "insight_count": 11,
+            "title": "On a General Method in Dynamics"
+          },
+          {
+            "id": "w-source-69ccc13228065078",
+            "insight_count": 12,
+            "title": "Bengt Holmström - Prize Lecture: Pay for Performance and Beyond"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 6,
+        "people": 2,
+        "topics": 4,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Euclid prime numbers",
+      "timings_ms": [
+        12.59,
+        2.19,
+        1.95
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-783f42e72482e218",
+            "title": "Euclid"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-e1fc1c4b0833320f",
+            "title": "Any assigned finite list of primes can be exceeded by constructing a number one greater than their least common multiple"
+          },
+          {
+            "id": "n-b1ca9b7f4943350a",
+            "title": "Case split on primality of the constructed number, with a divisibility contradiction excluding old primes"
+          }
+        ],
+        "topics": [
+          {
+            "id": "M3001",
+            "title": "Why there are infinitely many primes"
+          },
+          {
+            "id": "T-31d101408098",
+            "title": "Geometry and mathematics"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-cbe70676605f7e6c",
+            "insight_count": 2,
+            "title": "The Elements"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 2,
+        "people": 1,
+        "topics": 2,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "why there are infinitely many primes",
+      "timings_ms": [
+        10.11,
+        3.89,
+        3.79
+      ],
+      "top_results": {
+        "people": [],
+        "results": [],
+        "topics": [
+          {
+            "id": "M3001",
+            "title": "Why there are infinitely many primes"
+          }
+        ],
+        "works": []
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 0,
+        "topics": 1,
+        "works": 0
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "singular value decomposition",
+      "timings_ms": [
+        12.81,
+        2.01,
+        1.74
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-6411c99c49a22867",
+            "title": "Amin Zandvakili"
+          },
+          {
+            "id": "person-65d48d96f4fa3dfd",
+            "title": "Adam Kohn"
+          },
+          {
+            "id": "person-7e76de4554bfb7db",
+            "title": "João D. Semedo"
+          },
+          {
+            "id": "person-a47061832af689c4",
+            "title": "Byron M. Yu"
+          },
+          {
+            "id": "person-dd2c166caa0fae63",
+            "title": "Christian K. Machens"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-bdd73e4764ef30a9",
+            "title": "Approximately low-rank recovery as open problem"
+          },
+          {
+            "id": "n-224d53004ebf4112",
+            "title": "Reduced-rank regression identifies predictive dimensions of source population"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B3002",
+            "title": "Communication between neural populations"
+          },
+          {
+            "id": "M09",
+            "title": "Sparse recovery and high-dimensional statistical guarantees"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-semedo-communication-subspace",
+            "insight_count": 10,
+            "title": "Cortical areas interact through a communication subspace"
+          },
+          {
+            "id": "w-source-90fe33645aeeee34",
+            "insight_count": 16,
+            "title": "Exact Matrix Completion via Convex Optimization"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 2,
+        "people": 5,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "how to integrate over a curved surface",
+      "timings_ms": [
+        59.74,
+        53.9,
+        54.05
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-1573e79943be9339",
+            "title": "Spherical capacitor capacitance from Gauss's law and radial integration"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P2149",
+            "title": "Capacitors and Capacitance"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-5be93b1b3c6dabfe",
+            "insight_count": 12,
+            "title": "8.1 Capacitors and Capacitance - University Physics Volume 2 | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 1,
+        "people": 0,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Bayes theorem",
+      "timings_ms": [
+        9.3,
+        2.3,
+        1.99
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-fc9a4719050c734a",
+            "title": "Thomas Bayes"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-fdad1160a5ff194f",
+            "title": "Coherent Bayesian parameter estimation with calibration uncertainty"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P03",
+            "title": "LIGO/Virgo direct detection and modern gravitational-wave inference"
+          },
+          {
+            "id": "T-51518af000d1",
+            "title": "Probability theory and statistical inference"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-df56516d18128ed2",
+            "insight_count": 0,
+            "title": "Essay towards solving a problem in the doctrine of chances"
+          },
+          {
+            "id": "w-source-2cbb8d3b3b27f740",
+            "insight_count": 16,
+            "title": "Properties of the Binary Black Hole Merger GW150914"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 1,
+        "people": 1,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "random variables become normally distributed",
+      "timings_ms": [
+        19.25,
+        20.0,
+        19.94
+      ],
+      "top_results": {
+        "people": [],
+        "results": [],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Alan Turing",
+      "timings_ms": [
+        26.96,
+        5.25,
+        7.18
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-868db500641839d8",
+            "title": "Alan Turing"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-67e10daf41b7c865",
+            "title": "Turing completeness as a universal model of computation"
+          },
+          {
+            "id": "n-8abf58214f92ac01",
+            "title": "Turing machine characterized as a mathematical model able to implement any algorithm"
+          },
+          {
+            "id": "n-03d82e1ae6035422",
+            "title": "No machine decides whether an arbitrary machine ever prints a given symbol"
+          },
+          {
+            "id": "n-0c59baec5564e0c9",
+            "title": "Corrections repair the encoding used in the Entscheidungsproblem proof"
+          },
+          {
+            "id": "n-22ddaf106193b1c1",
+            "title": "Computable numbers form a countable collection, but not an effectively listed set of infinite outputs"
+          }
+        ],
+        "topics": [
+          {
+            "id": "C1002",
+            "title": "Computability and the limits of algorithms"
+          },
+          {
+            "id": "C2000",
+            "title": "Computer Science"
+          },
+          {
+            "id": "C2078",
+            "title": "Models of Computation"
+          },
+          {
+            "id": "C2109",
+            "title": "Computer Levels of Abstraction"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-0eb61c7b942b1630",
+            "insight_count": 11,
+            "title": "On computable numbers, with an application to the Entscheidungsproblem"
+          },
+          {
+            "id": "w-source-a68f8a5ac345bcc9",
+            "insight_count": 17,
+            "title": "4.1 Models of Computation - Introduction to Computer Science | OpenStax"
+          },
+          {
+            "id": "w-source-ce73913278821bca",
+            "insight_count": 13,
+            "title": "1.1 Computer Science - Introduction to Computer Science | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 13,
+        "people": 1,
+        "topics": 4,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "von neuman",
+      "timings_ms": [
+        26.67,
+        3.54,
+        3.33
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-cccb8329680cfeca",
+            "title": "John von Neumann"
+          },
+          {
+            "id": "person-4a4f45dfdc7e401f",
+            "title": "Oskar Morgenstern"
+          },
+          {
+            "id": "person-848f59f601d6c510",
+            "title": "Vaughan F.R. Jones"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-52393f7065097ae9",
+            "title": "Square rooter built by modifying the divider network"
+          },
+          {
+            "id": "n-53433f300cc90049",
+            "title": "Hypothetical E-element for preliminary logical design"
+          },
+          {
+            "id": "n-e115ffd1b95d1d81",
+            "title": "Multiplier requires an internal memory for both factors"
+          },
+          {
+            "id": "n-5ff5911b1881a88a",
+            "title": "Binary arithmetic chosen for two-state relay elements"
+          },
+          {
+            "id": "n-17347d66ed5a8bcc",
+            "title": "Rounding rule based on the 30th and 31st digits"
+          }
+        ],
+        "topics": [
+          {
+            "id": "T-1da6b4f1cd27",
+            "title": "Knot theory and von Neumann algebras"
+          },
+          {
+            "id": "C1401",
+            "title": "Stored programs and computer architecture"
+          },
+          {
+            "id": "T-5aded8bb7b97",
+            "title": "Quantum mechanics and operator algebras"
+          },
+          {
+            "id": "T-9f64d38f8c62",
+            "title": "Game theory and strategic interaction"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-ced68738a1d79cff",
+            "insight_count": 0,
+            "title": "Theory of Games and Economic Behaviour"
+          },
+          {
+            "id": "w-847e1e571f069cce",
+            "insight_count": 0,
+            "title": "Mathematical foundations of quantum mechanics"
+          },
+          {
+            "id": "w-3b72a63aacf54b06",
+            "insight_count": 14,
+            "title": "First Draft of a Report on the EDVAC"
+          },
+          {
+            "id": "w-8e06f39679a44016",
+            "insight_count": 0,
+            "title": "Discovery of the Jones polynomial and work on knot polynomials"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 14,
+        "people": 3,
+        "topics": 4,
+        "works": 4
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Emmy Noether",
+      "timings_ms": [
+        5.16,
+        1.63,
+        1.49
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-5728bf98d1d34fcd",
+            "title": "Emmy Noether"
+          }
+        ],
+        "results": [],
+        "topics": [
+          {
+            "id": "T-baafae1bed6f",
+            "title": "Abstract algebra and ideal theory"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-33444e98059797c2",
+            "insight_count": 0,
+            "title": "Idealtheorie in Ringbereichen"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 1,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "relativity of simultaneity",
+      "timings_ms": [
+        25.24,
+        13.06,
+        10.28
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-10d5f25f551b7c07",
+            "title": "Simultaneity declared relative rather than absolute"
+          },
+          {
+            "id": "n-ba251873851e8901",
+            "title": "Thought experiments require observational confirmation"
+          },
+          {
+            "id": "n-d64c20ac68da537c",
+            "title": "Light-signal thought experiment showing simultaneity is frame-dependent"
+          },
+          {
+            "id": "n-db4ba7fb459ab8ca",
+            "title": "Invariant light speed as the premise forcing revised simultaneity"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P2114",
+            "title": "Relativity of Simultaneity"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-ad5a99f282ad75bf",
+            "insight_count": 4,
+            "title": "5.2 Relativity of Simultaneity - University Physics Volume 3 | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 4,
+        "people": 0,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "why light bends near a massive star",
+      "timings_ms": [
+        51.28,
+        59.18,
+        58.0
+      ],
+      "top_results": {
+        "people": [],
+        "results": [],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "quantum error correction",
+      "timings_ms": [
+        46.65,
+        10.17,
+        5.9
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-490600c9ff608852",
+            "title": "John M. Martinis"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-ba3a6429f2d5cd66",
+            "title": "Stabilizer formalism for quantum error correction"
+          },
+          {
+            "id": "n-bd00254115887cfb",
+            "title": "Demonstration of below-threshold surface code memory"
+          },
+          {
+            "id": "n-d708efbb4273fddc",
+            "title": "Quiescent state of the surface code"
+          },
+          {
+            "id": "n-b13a57a414cd2b0c",
+            "title": "Surface code as a 2D array of data and measurement qubits"
+          },
+          {
+            "id": "n-6e2492d44276f24f",
+            "title": "Simulation of surface codes with non-uniform errors"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P01",
+            "title": "Below-threshold surface-code quantum memories"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-40f3c9e6f557d78a",
+            "insight_count": 39,
+            "title": "Quantum error correction below the surface code threshold"
+          },
+          {
+            "id": "w-source-7ac64084e46bbc12",
+            "insight_count": 16,
+            "title": "Stabilizer Codes and Quantum Error Correction (PhD thesis)"
+          },
+          {
+            "id": "w-source-e3e0a083a70cd8d0",
+            "insight_count": 17,
+            "title": "Surface codes: Towards practical large-scale quantum computation"
+          },
+          {
+            "id": "w-source-68c14de3125abf7e",
+            "insight_count": 8,
+            "title": "Fault-tolerant quantum computation by anyons"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 73,
+        "people": 1,
+        "topics": 1,
+        "works": 4
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "diffraction limits microscope resolution",
+      "timings_ms": [
+        8.4,
+        3.0,
+        2.75
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-64cb7c79c09fcefa",
+            "title": "Diffraction limit applies to any finite-diameter lens, mirror, pupil or beam, not only to physical apertures"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P2098",
+            "title": "Circular Apertures and Resolution"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-a503512cd0e01cd4",
+            "insight_count": 9,
+            "title": "4.5 Circular Apertures and Resolution - University Physics Volume 3 | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 1,
+        "people": 0,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "how photons collide with electrons",
+      "timings_ms": [
+        22.26,
+        12.03,
+        12.01
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-c329f6ece7ba76ed",
+            "title": "Arthur H. Compton"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-d094217786df4a9f",
+            "title": "Two-peak spectra: shifted line from free-like electrons, unshifted line from tightly bound inner electrons"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P2154",
+            "title": "The Compton Effect"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-6cac72cd395e66a4",
+            "insight_count": 8,
+            "title": "6.3 The Compton Effect - University Physics Volume 3 | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 1,
+        "people": 1,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Higgs boson",
+      "timings_ms": [
+        20.5,
+        2.26,
+        1.97
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-03628ffc9944a11f",
+            "title": "Measurement of the Higgs boson mass using profile likelihood ratio"
+          },
+          {
+            "id": "n-79eadd8f6374c5ed",
+            "title": "Exclusion limits using CLs prescription"
+          },
+          {
+            "id": "n-acaeded6ad147639",
+            "title": "Exclusion limits using CLs prescription"
+          },
+          {
+            "id": "n-020e96860f920129",
+            "title": "Combined search across five decay modes"
+          },
+          {
+            "id": "n-766031f38f67f134",
+            "title": "Signal strength measurement and compatibility with Standard Model"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P04",
+            "title": "Higgs discovery and precision tests of the Standard Model"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-0f6aad1d94a97c2f",
+            "insight_count": 16,
+            "title": "Observation of a New Particle in the Search for the Standard Model Higgs Boson with the ATLAS Detector at the LHC"
+          },
+          {
+            "id": "w-source-ef30fca12d2d8b92",
+            "insight_count": 16,
+            "title": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 24,
+        "people": 0,
+        "topics": 1,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Newton laws of motion",
+      "timings_ms": [
+        33.1,
+        13.88,
+        13.84
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-b7ef63821b92761a",
+            "title": "Isaac Newton"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-127db8164ef7cbf0",
+            "title": "Distance-dependent force makes direct Newtonian dynamics hard, motivating energy methods"
+          },
+          {
+            "id": "n-0b6c7e92a4238b56",
+            "title": "System selection determines which forces are external and affect motion"
+          },
+          {
+            "id": "n-1a51c7f417606941",
+            "title": "Energy conservation bypasses differential equations for pendulum motion"
+          },
+          {
+            "id": "n-c5ae1717655d797d",
+            "title": "Definition of mechanical energy as sum of kinetic and potential energies"
+          },
+          {
+            "id": "n-98eba769b660ee36",
+            "title": "Action-reaction forces act on different bodies and do not cancel"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P1102",
+            "title": "Newton’s Third Law"
+          },
+          {
+            "id": "P1103",
+            "title": "Work-Energy Theorem"
+          },
+          {
+            "id": "P1104",
+            "title": "Conservation of Energy"
+          },
+          {
+            "id": "P2089",
+            "title": "Coulomb's Law"
+          },
+          {
+            "id": "P2096",
+            "title": "Newton's Second Law"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-4ac99b0ff49b443f",
+            "insight_count": 8,
+            "title": "5.9 Relativistic Energy - University Physics Volume 3 | OpenStax"
+          },
+          {
+            "id": "w-source-6eb6bf725143731b",
+            "insight_count": 9,
+            "title": "8.3 Conservation of Energy - University Physics Volume 1 | OpenStax"
+          },
+          {
+            "id": "w-source-a69c88c8ca3a16ea",
+            "insight_count": 6,
+            "title": "5.5 Newton’s Third Law - University Physics Volume 1 | OpenStax"
+          },
+          {
+            "id": "w-source-a9eacfe57c5064d3",
+            "insight_count": 8,
+            "title": "5.3 Coulomb's Law - University Physics Volume 2 | OpenStax"
+          },
+          {
+            "id": "w-source-bbfbbc8d50065937",
+            "insight_count": 5,
+            "title": "7.3 Work-Energy Theorem - University Physics Volume 1 | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 8,
+        "people": 1,
+        "topics": 6,
+        "works": 5
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "superconductivity",
+      "timings_ms": [
+        8.95,
+        1.68,
+        1.46
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-7f804846c5105046",
+            "title": "J. Georg Bednorz"
+          },
+          {
+            "id": "person-a9093a8dfd6c0742",
+            "title": "Robert Schrieffer"
+          },
+          {
+            "id": "person-7d141f1813d8ad33",
+            "title": "Leon N. Cooper"
+          },
+          {
+            "id": "person-a07bf85c6a511004",
+            "title": "K. Alex Müller"
+          },
+          {
+            "id": "person-d7acbf22540e37fa",
+            "title": "John Bardeen"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-f1575359c2c45888",
+            "title": "Majorana zero modes at superconductor-topological insulator interfaces"
+          }
+        ],
+        "topics": [
+          {
+            "id": "T-62dbb0fcf36a",
+            "title": "Superconductivity theory"
+          },
+          {
+            "id": "T-fbf9a99649b9",
+            "title": "Ceramic superconductivity"
+          },
+          {
+            "id": "P08",
+            "title": "Topological phases and quantum Hall transport"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-0229b31f5ad1468c",
+            "insight_count": 0,
+            "title": "Breakthrough discovery of superconductivity in ceramic materials"
+          },
+          {
+            "id": "w-5923692d956370ff",
+            "insight_count": 0,
+            "title": "Jointly developed theory of superconductivity, the BCS theory"
+          },
+          {
+            "id": "w-source-1ac30ea8132204ed",
+            "insight_count": 16,
+            "title": "Topological Insulators"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 1,
+        "people": 5,
+        "topics": 3,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "lithography machines for chip",
+      "timings_ms": [
+        17.27,
+        10.72,
+        11.76
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-a83e15e202eee192",
+            "title": "Wavelength reduction as a disruptive generation change, not a free scaling law"
+          },
+          {
+            "id": "n-0c7f74f807b0f223",
+            "title": "Resolution improved jointly by shorter wavelength, larger NA and lower k1"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P1502",
+            "title": "Chip lithography: resolution, light sources and EUV patterning"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-c1078aec82937f3f",
+            "insight_count": 6,
+            "title": "The Rayleigh criterion for resolution | ASML"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 2,
+        "people": 0,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "plasma enhanced chemical vapour deposition",
+      "timings_ms": [
+        12.05,
+        3.15,
+        3.01
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-5c0d5ca660b665c4",
+            "title": "Remote PECVD reduces ion and UV damage by separating plasma from substrate"
+          },
+          {
+            "id": "n-0039d706e4f0a683",
+            "title": "Sterling and Swann's 1965 RF-discharge PECVD of amorphous silicon from silane"
+          },
+          {
+            "id": "n-1235d86dadefb4d4",
+            "title": "Process guidance: balance temperature and RF power for densification versus rate"
+          },
+          {
+            "id": "n-20cca383817497bb",
+            "title": "Stochastic species-ratio protocol for simulating oxidant-to-silane flux"
+          },
+          {
+            "id": "n-60ffb71c04ead662",
+            "title": "Oxidant supply controls stoichiometry, hydrogen content and density saturation"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P1503",
+            "title": "Plasma-enhanced chemical vapour deposition: activation and film growth"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-e8cf3ae7510ad1e1",
+            "insight_count": 10,
+            "title": "Atomic-Scale Mechanisms of SiO2 Plasma-Enhanced Chemical Vapor Deposition Revealed by Molecular Dynamics with a Machine-Learning Interatomic Potential"
+          },
+          {
+            "id": "w-source-215cf18838ce3272",
+            "insight_count": 15,
+            "title": "From Basics to Frontiers: A Comprehensive Review of Plasma-Modified and Plasma-Synthesized Polymer Films"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 12,
+        "people": 0,
+        "topics": 1,
+        "works": 2
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "GPU and CUDA",
+      "timings_ms": [
+        14.83,
+        11.69,
+        12.01
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-888816de2002518b",
+            "title": "Jensen Huang"
+          }
+        ],
+        "results": [],
+        "topics": [
+          {
+            "id": "T-4e9bca7287ca",
+            "title": "Computer graphics, accelerated computing, and artificial intelligence"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-dd4511e3147d760f",
+            "insight_count": 0,
+            "title": "Founding NVIDIA and advancing graphics, accelerated computing, and AI"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 1,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "large language models such as chatgpt",
+      "timings_ms": [
+        14.9,
+        6.74,
+        6.45
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-a8d5600390b879fd",
+            "title": "Generative finetuning on task-relevant data improves reward model weak-to-strong performance"
+          },
+          {
+            "id": "n-c41d7f4bb44f718f",
+            "title": "Masked MSA objective for learning evolutionary correlations"
+          },
+          {
+            "id": "n-75686d8b595f7df8",
+            "title": "Fixed-dimensional vector encoding for variable-length sequences"
+          }
+        ],
+        "topics": [
+          {
+            "id": "B01",
+            "title": "AlphaFold 3 biomolecular-interaction structure prediction"
+          },
+          {
+            "id": "C01",
+            "title": "Transformer-based foundation models"
+          },
+          {
+            "id": "C12",
+            "title": "Weak-to-strong supervision and assumption-sensitive AI deference"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-0480da48214bea42",
+            "insight_count": 15,
+            "title": "Sequence to Sequence Learning with Neural Networks"
+          },
+          {
+            "id": "w-source-057b1d8c009ba859",
+            "insight_count": 15,
+            "title": "Highly accurate protein structure prediction with AlphaFold"
+          },
+          {
+            "id": "w-source-d3ce3ac366bdb9da",
+            "insight_count": 16,
+            "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 3,
+        "people": 0,
+        "topics": 3,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "semantic",
+      "negative_control": false,
+      "query": "how to prevent threads from deadlocking",
+      "timings_ms": [
+        26.76,
+        40.19,
+        41.3
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-0407833f31980f5e",
+            "title": "Deadlock as a circular wait condition and prevention strategies"
+          },
+          {
+            "id": "n-8decb562e830ebc4",
+            "title": "Evaluation criteria for locks: mutual exclusion, fairness, performance"
+          },
+          {
+            "id": "n-8d14e8bb04b01c9e",
+            "title": "Livelock from interrupt floods and polling as control"
+          }
+        ],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 3,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "distributed file systems",
+      "timings_ms": [
+        18.23,
+        4.79,
+        7.76
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-76a0e094785ab5a8",
+            "title": "Transaction management, locking and two-phase commit for distributed transactions"
+          },
+          {
+            "id": "n-7de35015ddbf08fe",
+            "title": "OS-maintained per-process capability lists in protected kernel memory"
+          }
+        ],
+        "topics": [
+          {
+            "id": "C2084",
+            "title": "Access Control"
+          },
+          {
+            "id": "C2158",
+            "title": "Relational Database Management Systems"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-3650368ae51c775d",
+            "insight_count": 11,
+            "title": "Access Control (Operating Systems: Three Easy Pieces, chapter 55)"
+          },
+          {
+            "id": "w-source-733e343861ae3ced",
+            "insight_count": 16,
+            "title": "8.3 Relational Database Management Systems - Introduction to Computer Science | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 2,
+        "people": 0,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "weakest precondition",
+      "timings_ms": [
+        23.51,
+        4.81,
+        4.81
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-841624596da3939c",
+            "title": "Edsger W. Dijkstra"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-6cef6d11958109cb",
+            "title": "Weakest precondition as a heap predicate characterized by equivalence with triples"
+          },
+          {
+            "id": "n-2c866f9daeeade7b",
+            "title": "Historical attribution of weakest preconditions to Dijkstra and modern tool lineage"
+          },
+          {
+            "id": "n-4b0c1dcfae730255",
+            "title": "wp is a valid precondition and the weakest one"
+          },
+          {
+            "id": "n-628c2f219bdb28d0",
+            "title": "mkstruct preserves soundness because it leaves wp unchanged"
+          },
+          {
+            "id": "n-908d2a78bd42c2c3",
+            "title": "Reformulating wpgen soundness via a formula_sound predicate on formulas"
+          }
+        ],
+        "topics": [
+          {
+            "id": "C2045",
+            "title": "Semantics of Weakest Preconditions (WPsem)"
+          },
+          {
+            "id": "C2060",
+            "title": "Soundness of the Weakest Precondition Generator (WPsound)"
+          },
+          {
+            "id": "C2021",
+            "title": "Structural Reasoning Rules (Triples)"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-1910fc43e2ec9dcf",
+            "insight_count": 10,
+            "title": "WPsem: Semantics of Weakest Preconditions"
+          },
+          {
+            "id": "w-source-236134590bc49608",
+            "insight_count": 7,
+            "title": "WPsound: Soundness of the Weakest Precondition Generator"
+          },
+          {
+            "id": "w-source-4ec2bfb9a66124c8",
+            "insight_count": 15,
+            "title": "Triples: Structural Reasoning Rules"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 18,
+        "people": 1,
+        "topics": 3,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "public key encryption",
+      "timings_ms": [
+        16.48,
+        5.24,
+        5.24
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-2d7d48b1af01ffc7",
+            "title": "K-PKE component scheme from MLWE"
+          },
+          {
+            "id": "n-9ef7e97690dbe8e6",
+            "title": "Efficient LWE-based public-key cryptosystem"
+          }
+        ],
+        "topics": [
+          {
+            "id": "C06",
+            "title": "NIST standardized post-quantum cryptographic primitives"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-1fdf33d9fdefcf23",
+            "insight_count": 12,
+            "title": "On Lattices, Learning with Errors, Random Linear Codes, and Cryptography"
+          },
+          {
+            "id": "w-source-8cfa97546eff02c9",
+            "insight_count": 20,
+            "title": "Module-Lattice-Based Key-Encapsulation Mechanism Standard"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 2,
+        "people": 0,
+        "topics": 1,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "semantic",
+      "negative_control": false,
+      "query": "why sorting cannot be faster than n log n",
+      "timings_ms": [
+        67.45,
+        103.11,
+        81.05
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-a596b52bf40ecf83",
+            "title": "Comparison-sort lower bound transfers to running time and yields $\\Theta(n \\log n)$ for sorting"
+          },
+          {
+            "id": "n-fd5110686d4af1d1",
+            "title": "Trivial $\\Omega(n)$ bound from reading input and writing output"
+          },
+          {
+            "id": "n-d87406598f7d81d6",
+            "title": "Logarithmic growth from halving the remaining elements"
+          }
+        ],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 3,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "neural network backpropagation",
+      "timings_ms": [
+        7.92,
+        4.52,
+        8.87
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-11ea2d210ba6144d",
+            "title": "Memory cost of retaining intermediates for backpropagation"
+          },
+          {
+            "id": "n-7100f2877348a453",
+            "title": "Automatic differentiation as relief from hand-derived update rules"
+          },
+          {
+            "id": "n-83e7d028579272c9",
+            "title": "Interdependence of forward and backward passes in training"
+          },
+          {
+            "id": "n-87870e3c44dbbf20",
+            "title": "Reverse-order gradient computation via the chain rule with stored intermediates"
+          },
+          {
+            "id": "n-bb528c58b32d7adf",
+            "title": "Computational graph as a dependency representation of forward computation"
+          }
+        ],
+        "topics": [
+          {
+            "id": "C3001",
+            "title": "Backpropagation and computational graphs"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-d2l-backpropagation",
+            "insight_count": 5,
+            "title": "Dive into Deep Learning — Backpropagation and computational graphs"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 5,
+        "people": 0,
+        "topics": 1,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Claude Shannon",
+      "timings_ms": [
+        12.66,
+        4.68,
+        6.74
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-7981efaa4aaaa3f6",
+            "title": "Claude Shannon"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-1616464942739747",
+            "title": "Asymptotic equipartition property for ergodic sources"
+          },
+          {
+            "id": "n-1b6c17bd214745a8",
+            "title": "Capacity of band-limited channel with white noise: C = W log(1 + P/N)"
+          },
+          {
+            "id": "n-1dfc573a2f14a53b",
+            "title": "Noisy channel coding theorem"
+          },
+          {
+            "id": "n-2f452eb39e2eec93",
+            "title": "Gaussian distribution maximizes entropy under power constraint"
+          },
+          {
+            "id": "n-46273bbb4cc1b07c",
+            "title": "Reliability function: maximum number of distinguishable signals"
+          }
+        ],
+        "topics": [
+          {
+            "id": "C10",
+            "title": "QUIC secure multiplexed transport"
+          },
+          {
+            "id": "C1003",
+            "title": "Information, entropy and reliable communication"
+          },
+          {
+            "id": "M12",
+            "title": "Random-matrix and stochastic universality results"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-29abacd45198e0c2",
+            "insight_count": 10,
+            "title": "A Mathematical Theory of Communication"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 10,
+        "people": 1,
+        "topics": 3,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "resuable rocket",
+      "timings_ms": [
+        12.76,
+        2.59,
+        2.72
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-e667f428d9b63084",
+            "title": "Rocket propulsion via reaction force, not pushing on air"
+          }
+        ],
+        "topics": [
+          {
+            "id": "P1102",
+            "title": "Newton’s Third Law"
+          },
+          {
+            "id": "P2096",
+            "title": "Newton's Second Law"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-a69c88c8ca3a16ea",
+            "insight_count": 6,
+            "title": "5.5 Newton’s Third Law - University Physics Volume 1 | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 1,
+        "people": 0,
+        "topics": 2,
+        "works": 1
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "natural monopoly regulation",
+      "timings_ms": [
+        11.64,
+        3.22,
+        2.95
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-9e01f4c52369b5bf",
+            "title": "Regulation is needed because competition will not take root, but designing it is hard"
+          },
+          {
+            "id": "n-00a80bf72198582e",
+            "title": "Unregulated natural monopoly earns economic profit at the MR = MC output"
+          },
+          {
+            "id": "n-090ae91e7501cb4d",
+            "title": "Technology change can dissolve natural and legal monopoly boundaries"
+          },
+          {
+            "id": "n-d29cd97456a3aa15",
+            "title": "Splitting a natural monopoly raises average cost and may not produce competition"
+          },
+          {
+            "id": "n-6f71748596d3ef5a",
+            "title": "Marginal-cost pricing is allocatively efficient but financially unviable without subsidy"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E2044",
+            "title": "Costs in the Long Run"
+          },
+          {
+            "id": "E2052",
+            "title": "How Monopolies Form: Barriers to Entry"
+          },
+          {
+            "id": "E2060",
+            "title": "Regulating Natural Monopolies"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-09eec35c7a75ac2c",
+            "insight_count": 12,
+            "title": "11.3 Regulating Natural Monopolies - Principles of Economics 3e"
+          },
+          {
+            "id": "w-source-a8b16930304384ba",
+            "insight_count": 10,
+            "title": "9.1 How Monopolies Form: Barriers to Entry - Principles of Economics 3e | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 5,
+        "people": 0,
+        "topics": 3,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "externalities and pollution",
+      "timings_ms": [
+        24.01,
+        26.29,
+        34.27
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-438975d9030f21ef",
+            "title": "Assumed-away real-world features: externalities, technology, poverty, public goods, discrimination, imperfect information"
+          },
+          {
+            "id": "n-542f671ed74740af",
+            "title": "Market failure argument: with pollution, social costs exceed social benefits and output is too high"
+          },
+          {
+            "id": "n-8d7495d42f33c3b2",
+            "title": "Allocative efficiency as price equal to marginal cost, reading price as social benefit and marginal cost as social cost"
+          },
+          {
+            "id": "n-053409def1b183e2",
+            "title": "Efficiency results are a hypothetical benchmark, not a description of observed market structures"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E2050",
+            "title": "Efficiency in Perfectly Competitive Markets"
+          },
+          {
+            "id": "E2064",
+            "title": "The Economics of Pollution"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-070c1cc0ff46214d",
+            "insight_count": 7,
+            "title": "8.4 Efficiency in Perfectly Competitive Markets - Principles of Economics 3e | OpenStax"
+          },
+          {
+            "id": "w-source-30cce9079f253800",
+            "insight_count": 5,
+            "title": "12.1 The Economics of Pollution - Principles of Economics 3e | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 4,
+        "people": 0,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "why banks create money",
+      "timings_ms": [
+        8.43,
+        2.35,
+        2.21
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-6ab7e58aea70adcd",
+            "title": "Informationally insensitive debt as money"
+          },
+          {
+            "id": "n-1e4be75dadb293ed",
+            "title": "Central bank creates money by crediting reserves when it buys bonds"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E08",
+            "title": "Banking fragility and financial-stability mechanisms"
+          },
+          {
+            "id": "E2196",
+            "title": "How a Central Bank Executes Monetary Policy"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-8187d37864049590",
+            "insight_count": 10,
+            "title": "28.3 How a Central Bank Executes Monetary Policy - Principles of Economics 3e | OpenStax"
+          },
+          {
+            "id": "w-source-a6db249dd72a8790",
+            "insight_count": 16,
+            "title": "Scientific Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2022"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 2,
+        "people": 0,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "instrumental variables",
+      "timings_ms": [
+        13.0,
+        1.97,
+        1.73
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-4e31a732cec41142",
+            "title": "Daron Acemoglu"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-cb5403801808122a",
+            "title": "Instrumental variables strategy using settler mortality"
+          },
+          {
+            "id": "n-9113f5903af67a9f",
+            "title": "Equivalence of IV and selection-correction estimates for LATE"
+          },
+          {
+            "id": "n-d82cbf475eae1d7a",
+            "title": "Merging IV framework with potential outcomes to clarify identifying assumptions"
+          },
+          {
+            "id": "n-8d4f954e637f82dc",
+            "title": "LATE framework: identifying causal effects for compliers under minimal assumptions"
+          },
+          {
+            "id": "n-3f381052349c98ad",
+            "title": "DML for LATE with binary treatment and instrument"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E01",
+            "title": "Double/debiased machine learning and causal estimation"
+          },
+          {
+            "id": "E04",
+            "title": "Innovation-based explanations of sustained economic growth"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-72d60481d8b7ed3b",
+            "insight_count": 31,
+            "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters"
+          },
+          {
+            "id": "w-source-7a6c46a68da7d88b",
+            "insight_count": 15,
+            "title": "Scientific Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2021"
+          },
+          {
+            "id": "w-source-df123f9b2705c257",
+            "insight_count": 10,
+            "title": "Institutions, Technology and Prosperity"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 6,
+        "people": 1,
+        "topics": 2,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "semantic",
+      "negative_control": false,
+      "query": "causal inference with machine learning",
+      "timings_ms": [
+        24.51,
+        37.32,
+        39.27
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-5ae18be7d5e39eca",
+            "title": "Constructing orthogonal scores by concentrating out the nuisance"
+          },
+          {
+            "id": "n-3b2f72b57fe05a8a",
+            "title": "Cross-fitting as efficient sample splitting"
+          },
+          {
+            "id": "n-d00aa01d31fbecf9",
+            "title": "Cross-fitting weakens sparsity requirements to a product condition"
+          },
+          {
+            "id": "n-9deec7bd172d985a",
+            "title": "Cross-fitting: swap fold roles and average to remove overfitting bias"
+          },
+          {
+            "id": "n-7a2dcf7d88d3269d",
+            "title": "DML estimator achieves root-N consistency and asymptotic normality"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E01",
+            "title": "Double/debiased machine learning and causal estimation"
+          }
+        ],
+        "works": []
+      },
+      "totals": {
+        "ideas": 8,
+        "people": 0,
+        "topics": 1,
+        "works": 0
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Nash equilibrium",
+      "timings_ms": [
+        24.9,
+        5.35,
+        8.85
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-22d95956b9a9bd30",
+            "title": "Robert B. Wilson"
+          },
+          {
+            "id": "person-423a7e6c5e4d3805",
+            "title": "Paul R. Milgrom"
+          },
+          {
+            "id": "person-6091dc062b9e3daf",
+            "title": "Philip Dybvig"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-0f23f26e9119a8c0",
+            "title": "All undominated Nash equilibrium outcomes of preference manipulation game are stable"
+          },
+          {
+            "id": "n-c873b5bfd18ffb6a",
+            "title": "Bayesian Nash equilibrium in common-value auctions"
+          },
+          {
+            "id": "n-0b6b3ff3ecacce19",
+            "title": "Rationalizability as a broader equilibrium concept for bank runs"
+          },
+          {
+            "id": "n-1bee91e6bdad3c80",
+            "title": "Boston mechanism is manipulable and Pareto dominated by deferred acceptance"
+          },
+          {
+            "id": "n-6f77557fcec7c07a",
+            "title": "Dominant strategy concept in prisoner's dilemma"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E02",
+            "title": "Modern auction design and incentive-compatible mechanisms"
+          },
+          {
+            "id": "E03",
+            "title": "Stable matching and exchange-market design"
+          },
+          {
+            "id": "E08",
+            "title": "Banking fragility and financial-stability mechanisms"
+          },
+          {
+            "id": "E11",
+            "title": "Climate economics and institutional management of common resources"
+          },
+          {
+            "id": "E1106",
+            "title": "Oligopoly"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-17e64978201cbb0c",
+            "insight_count": 16,
+            "title": "Prize Lecture by Elinor Ostrom"
+          },
+          {
+            "id": "w-source-40071f9227452f0d",
+            "insight_count": 16,
+            "title": "Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2020"
+          },
+          {
+            "id": "w-source-a590861cddfef691",
+            "insight_count": 14,
+            "title": "10.2 Oligopoly - Principles of Economics 3e | OpenStax"
+          },
+          {
+            "id": "w-source-b0b2b440c574001f",
+            "insight_count": 9,
+            "title": "Multiple Equilibria"
+          },
+          {
+            "id": "w-source-beeaeda1908e6236",
+            "insight_count": 16,
+            "title": "Paul R. Milgrom - Prize lecture in economic sciences"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 9,
+        "people": 3,
+        "topics": 6,
+        "works": 6
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "difference in differences",
+      "timings_ms": [
+        25.39,
+        18.15,
+        18.06
+      ],
+      "top_results": {
+        "people": [],
+        "results": [
+          {
+            "id": "n-f8ab89b5a14b6f7e",
+            "title": "Robust difference-in-differences estimators confirm main results"
+          },
+          {
+            "id": "n-653fd9614cbb175e",
+            "title": "Publication bias and p-hacking in design-based research"
+          },
+          {
+            "id": "n-5e2b1d7ca6b7f37d",
+            "title": "Field deployment of generative AI raises average productivity by 14%"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E01",
+            "title": "Double/debiased machine learning and causal estimation"
+          },
+          {
+            "id": "E05",
+            "title": "Task-based analyses of automation and new tasks, extended with contemporary AI evidence"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-7a6c46a68da7d88b",
+            "insight_count": 15,
+            "title": "Scientific Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2021"
+          },
+          {
+            "id": "w-source-9af08cf39717811c",
+            "insight_count": 16,
+            "title": "Generative AI at Work"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 3,
+        "people": 0,
+        "topics": 2,
+        "works": 2
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "Amartya Sen",
+      "timings_ms": [
+        20.24,
+        3.07,
+        2.73
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-d9baec586f9131e6",
+            "title": "Amartya Sen"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-db57fd533d8ce072",
+            "title": "Sen's attribution of food insecurity to macroeconomic policy failure"
+          },
+          {
+            "id": "n-b62baa376734eb51",
+            "title": "Integration of philosophy into economics for foundational issues"
+          },
+          {
+            "id": "n-db9db5a637b4c29b",
+            "title": "Human Development Reports as broader informational approach to development"
+          },
+          {
+            "id": "n-4b824ab8d577fd8d",
+            "title": "Expanded informational base as crucial for applied welfare economics"
+          },
+          {
+            "id": "n-bd994ba2dc451192",
+            "title": "Gender inequality analysis using empirical data and cooperative conflict theory"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E12",
+            "title": "Social-choice limits and multidimensional welfare assessment"
+          },
+          {
+            "id": "E2130",
+            "title": "Economic Convergence"
+          },
+          {
+            "id": "T-43400d097c23",
+            "title": "Welfare economics"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-3a7869c67be13520",
+            "insight_count": 11,
+            "title": "Amartya Sen – Biographical - NobelPrize.org"
+          },
+          {
+            "id": "w-953eb209bafd47cd",
+            "insight_count": 0,
+            "title": "Contributions to welfare economics"
+          },
+          {
+            "id": "w-source-2b0419520eb91a90",
+            "insight_count": 8,
+            "title": "The Prize in Economic Sciences 1998 - Press release - NobelPrize.org"
+          },
+          {
+            "id": "w-source-a0d408b6fa202b11",
+            "insight_count": 10,
+            "title": "20.4 Economic Convergence - Principles of Economics 3e | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 20,
+        "people": 1,
+        "topics": 3,
+        "works": 4
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "auction design",
+      "timings_ms": [
+        14.32,
+        4.23,
+        4.04
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-423a7e6c5e4d3805",
+            "title": "Paul R. Milgrom"
+          },
+          {
+            "id": "person-22d95956b9a9bd30",
+            "title": "Robert B. Wilson"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-6c588cf4bfa83c75",
+            "title": "Simulation study of FCC incentive auction design"
+          },
+          {
+            "id": "n-6e8551ed2449ad49",
+            "title": "Incentive auction design for spectrum repurposing"
+          },
+          {
+            "id": "n-8add6a93928bd69c",
+            "title": "Simultaneous Multiple Round Auction design"
+          },
+          {
+            "id": "n-03aa6187c6b63d89",
+            "title": "Combinatorial Clock Auction design"
+          },
+          {
+            "id": "n-30b74863813e151c",
+            "title": "Simultaneous multiple round auction design with activity rules"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E02",
+            "title": "Modern auction design and incentive-compatible mechanisms"
+          },
+          {
+            "id": "T-8c37dd0e397e",
+            "title": "Auction theory and market design"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-2cffb79f40669929",
+            "insight_count": 0,
+            "title": "Improvements to auction theory and inventions of new auction formats"
+          },
+          {
+            "id": "w-source-40071f9227452f0d",
+            "insight_count": 16,
+            "title": "Background on the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2020"
+          },
+          {
+            "id": "w-source-beeaeda1908e6236",
+            "insight_count": 16,
+            "title": "Paul R. Milgrom - Prize lecture in economic sciences"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 25,
+        "people": 2,
+        "topics": 2,
+        "works": 3
+      }
+    },
+    {
+      "content_available": true,
+      "match_mode": "direct",
+      "negative_control": false,
+      "query": "economic growth and innovation",
+      "timings_ms": [
+        25.35,
+        14.91,
+        14.62
+      ],
+      "top_results": {
+        "people": [
+          {
+            "id": "person-daa27f587f2bd35d",
+            "title": "Robert M. Solow"
+          }
+        ],
+        "results": [
+          {
+            "id": "n-833de38efd6af310",
+            "title": "Ample excess reserves may slow growth by withholding lendable funds"
+          },
+          {
+            "id": "n-0d6d5cb987582155",
+            "title": "Endogenous growth theory rests on arbitrary linearity assumptions"
+          },
+          {
+            "id": "n-4e336d80fcfa56f4",
+            "title": "Explanations for changing balance between automation and new tasks"
+          },
+          {
+            "id": "n-f183b8d00adf0ffb",
+            "title": "Perez: technological revolutions bring transition costs then broad gains"
+          },
+          {
+            "id": "n-c1b0a30f9695cd9e",
+            "title": "Policy implications: rebalancing technological change"
+          }
+        ],
+        "topics": [
+          {
+            "id": "E04",
+            "title": "Innovation-based explanations of sustained economic growth"
+          },
+          {
+            "id": "E05",
+            "title": "Task-based analyses of automation and new tasks, extended with contemporary AI evidence"
+          },
+          {
+            "id": "E2076",
+            "title": "Investments in Innovation"
+          },
+          {
+            "id": "E2078",
+            "title": "How Governments Can Encourage Innovation"
+          },
+          {
+            "id": "E2196",
+            "title": "How a Central Bank Executes Monetary Policy"
+          }
+        ],
+        "works": [
+          {
+            "id": "w-source-27718d2beae4ec05",
+            "insight_count": 14,
+            "title": "Automation and New Tasks: How Technology Displaces and Reinstates Labor"
+          },
+          {
+            "id": "w-source-8187d37864049590",
+            "insight_count": 10,
+            "title": "28.3 How a Central Bank Executes Monetary Policy - Principles of Economics 3e | OpenStax"
+          },
+          {
+            "id": "w-source-b0c7c6c90192bbba",
+            "insight_count": 7,
+            "title": "Robert M. Solow – Prize Lecture: Growth Theory and After"
+          },
+          {
+            "id": "w-source-ea96daadcbd0c7dc",
+            "insight_count": 9,
+            "title": "13.1 Investments in Innovation - Principles of Economics 3e | OpenStax"
+          }
+        ]
+      },
+      "totals": {
+        "ideas": 5,
+        "people": 1,
+        "topics": 5,
+        "works": 4
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": true,
+      "query": "best pizza near me tonight",
+      "timings_ms": [
+        24.3,
+        33.92,
+        35.93
+      ],
+      "top_results": {
+        "people": [],
+        "results": [],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": true,
+      "query": "purple invisible dragon sandwich",
+      "timings_ms": [
+        26.0,
+        15.97,
+        16.0
+      ],
+      "top_results": {
+        "people": [],
+        "results": [],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": true,
+      "query": "my missing suitcase at the airport",
+      "timings_ms": [
+        73.99,
+        58.46,
+        66.49
+      ],
+      "top_results": {
+        "people": [],
+        "results": [],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    },
+    {
+      "content_available": false,
+      "match_mode": "direct",
+      "negative_control": true,
+      "query": "zzqxv9 nonexistent proposition",
+      "timings_ms": [
+        24.27,
+        17.21,
+        11.95
+      ],
+      "top_results": {
+        "people": [],
+        "results": [],
+        "topics": [],
+        "works": []
+      },
+      "totals": {
+        "ideas": 0,
+        "people": 0,
+        "topics": 0,
+        "works": 0
+      }
+    }
+  ],
+  "positive_queries": 52,
+  "release_id": "1.5.0-review5",
+  "scope": "Frozen development smoke set, 28 October 2026. Measures availability of content-bearing results, not entailment or unrestricted recall. Negative controls must stay empty. Returned titles are retained for relevance inspection; a nonempty result is not automatically a correct answer.",
+  "snapshot_hash": "bd2161f6c40e05a9ac52a6aa831de5ab39024aa6f0f642d8d47c06a5f4558dd6",
+  "warm_p95_ms": 59.18,
+  "with_content": 48
+}

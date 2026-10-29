@@ -1,0 +1,24 @@
+[Unit]
+Description=Principia-Legacy private 1.5 staging reader
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/data/xia/Principia-legacy/staging/1.5/code
+Environment=PRINCIPIA_SEMANTIC_HOME=/data/xia/Principia-legacy/staging/1.5/data/build/semantic-review4
+Environment=PRINCIPIA_MODEL_CACHE=/data/xia/Principia-legacy/staging/1.5/models
+Environment=HF_HUB_OFFLINE=1
+Environment=OPENBLAS_NUM_THREADS=2
+ExecStart=/data/xia/Principia-legacy/staging/1.5/authoring-venv/bin/python start.py --data-home /data/xia/Principia-legacy/staging/1.5/data serve --offline --port 18765
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadOnlyPaths=/data/xia/Principia-legacy/staging/1.5/data /data/xia/Principia-legacy/staging/1.5/models /data/xia/Principia-legacy/staging/1.5/code
+MemoryMax=1G
+
+[Install]
+WantedBy=multi-user.target

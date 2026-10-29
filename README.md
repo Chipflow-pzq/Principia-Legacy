@@ -43,7 +43,7 @@ Your browser contacts the research services directly. Keys can optionally be rem
 
 ### Run locally
 
-Download the source, extract it, and run with **Python 3.12+**:
+Clone this repository and run with **Python 3.12+**:
 
 ```sh
 python3 start.py
@@ -51,11 +51,15 @@ python3 start.py
 
 Open **http://127.0.0.1:8765**. On Windows, use `py -3 start.py`.
 
-Reading works offline: prebuilt assets are included, and the search database rebuilds on first launch. **No Node.js, API key, GPU, or online installation is needed to browse.** [Reading guide](docs/USAGE.md) · [Development](docs/DEVELOPMENT.md) · [Hosting](hosting/README.md)
+The source checkout includes the prebuilt 1.5 interface and the **1.4.1 reference corpus**; it rebuilds a local database on first launch and then works offline. The expanded **1.5 atlas is served from the cloud**, keeping the large database and private authoring evidence out of Git. **No Node.js, API key, GPU, or online installation is needed to browse the bundled corpus.** [Reading guide](docs/USAGE.md) · [Development](docs/DEVELOPMENT.md) · [Hosting](hosting/README.md)
+
+To use the complete published collection, [open the public atlas](https://atlas.chipflow.net/web/legacy/). Operators with authorized SSH access can also run **`python3 start-cloud.py`** for a roughly **3.2 MB** local preview backed by the private staging database. [Preview and data editions →](docs/LOCAL_PREVIEW.md)
 
 ### An open, growing inheritance
 
-**1.4.1 · exploratory atlas:** 882 catalogued works · 899 selected contributors · 2,905 insights · 1,941 checked relationships. Of 781 registered topics, 184 have populated maps; 620 works still await insight extraction. Content is machine-screened, coverage is incomplete, and qualified human auditing remains outstanding. [Evidence and limitations →](docs/STATUS.md)
+**1.5 · exploratory release.** This edition deepens existing works, adds foundational explanations, and makes large collections easier to navigate. Indexed pagination and compact browser search keep evidence close without loading every full record. Private remote authoring preserves one canonical dataset; checksummed snapshots make offline review reproducible. The public edition contains **5,700 insights and 4,211 warranted relationships**. Snapshot-pinned semantic retrieval adds related concepts without a paid search service.
+
+Coverage is measured in supported explanations, not catalogue entries. Registered topics, topics with content, and complete reading routes are reported separately. Content is exploratory and machine-screened; **qualified human auditing has not been performed**. [Actual coverage and checks →](BUILD_STATUS.md) · [Remote authoring →](docs/STAGING.md)
 
 Preserving knowledge also means preserving how it became credible—and where it remains unsettled. This project offers a shared, inspectable record for learning, research, and correction. Its longer-term relevance to AI alignment is a research ambition, not an established result.
 

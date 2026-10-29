@@ -8,10 +8,28 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import json
 
-from .common import digest, now, read_json, read_lines, write_json, write_lines
+from .common import digest, now, read_json, read_lines, write_json
 from .curate import process_source
 from .records import validate, visible
 from .storage import corpus, latest_records
+
+
+def _indexed_candidates(root, queries, dossier=None):
+    """Bounded hints from the last compiled snapshot, checked again before reuse."""
+    from contextlib import closing
+    from .storage import Atlas
+
+    if not (Path(root) / "build/atlas.sqlite").exists():
+        return None
+    selected = {}
+    with closing(Atlas(root)) as reader:
+        if dossier:
+            for n in reader.topic_contributions(dossier, limit=40)["contributions"]:
+                selected[n["id"]] = n
+        for query in queries[:24]:
+            for n in reader.search(query[:500], limit=12, match_any=True)["results"]:
+                selected[n["id"]] = n
+    return list(selected.values())[:120]
 
 
 def nearby_contributions(root, dossier):
@@ -23,11 +41,16 @@ def nearby_contributions(root, dossier):
             r"[a-z]{4,}", (dossier["title"] + " " + dossier.get("area", "")).lower()
         )
     )
-    nodes = [
-        n
-        for n in latest_records(corpus(root))
-        if n["type"] == "contribution" and visible(n)
-    ]
+    try:
+        nodes = _indexed_candidates(root, [dossier["title"]], dossier["id"])
+    except KeyError:
+        nodes = _indexed_candidates(root, [dossier["title"]])
+    if nodes is None:
+        nodes = [
+            n
+            for n in latest_records(corpus(root))
+            if n["type"] == "contribution" and visible(n)
+        ]
 
     def score(n):
         return (100 if dossier["id"] in n["dossiers"] else 0) + len(
@@ -86,11 +109,13 @@ def candidate_reuse_hints(root, candidates):
     def terms(value):
         return set(re.findall(r"[a-z]{4,}", value.lower())) - stop
 
-    nodes = [
-        n
-        for n in latest_records(corpus(root))
-        if n["type"] == "contribution" and visible(n)
-    ]
+    nodes = _indexed_candidates(root, [c.get("title", "") for c in candidates])
+    if nodes is None:
+        nodes = [
+            n
+            for n in latest_records(corpus(root))
+            if n["type"] == "contribution" and visible(n)
+        ]
     ranked = {}
     for c in candidates:
         title = terms(c.get("title", ""))
@@ -151,6 +176,17 @@ def validate_plan(plan, registry):
 
 
 def admit(root, plan, outcomes):
+    from .authoring_store import writer, recover, Commit
+
+    with writer(root):
+        recover(root)
+        commit = Commit(root, "admit:" + plan["id"])
+        result = _admit(root, plan, outcomes, commit)
+        commit.publish()
+        return result
+
+
+def _admit(root, plan, outcomes, commit):
     """Never mutate an existing record version or remove frozen source evidence."""
     root = Path(root)
     existing = corpus(root)
@@ -168,7 +204,23 @@ def admit(root, plan, outcomes):
         if outcome.get("state") != "succeeded":
             continue
         result = outcome["result"]
-        records = result["records"]
+        from .admission_versions import prepare_versions
+
+        records, memberships, withheld = prepare_versions(
+            [*existing, *additions],
+            result["records"],
+            result.get("reused_memberships", []),
+        )
+        result["reused_memberships"] = memberships
+        outcome["retained_existing_identities"] = withheld
+        if (
+            withheld
+            and not memberships
+            and not any(r["type"] in ("contribution", "relation") for r in records)
+        ):
+            outcome["admission"] = "needs_revision_patch"
+            outcome["conflicts"] = [item["id"] for item in withheld]
+            continue
         conflict = [
             r["id"]
             for r in records
@@ -209,7 +261,7 @@ def admit(root, plan, outcomes):
             indexed[(r["id"], r["revision"])] = r
         outcome["admission"] = "admitted" if pending else "already_documented"
         outcome["new_contributions"] = count
-    write_lines(output, [*prior_admissions, *additions])
+    commit.lines(output, [*prior_admissions, *additions])
     current = [r for r in latest_records([*existing, *additions]) if visible(r)]
     nodes = [r for r in current if r["type"] == "contribution"]
     memberships = read_json(root / "manifests/topic_memberships.json", [])
@@ -226,8 +278,12 @@ def admit(root, plan, outcomes):
                     **membership,
                     "topic_id": outcome["dossier"],
                 }
-    write_json(root / "manifests/topic_memberships.json", list(keyed.values()))
+    commit.json(root / "manifests/topic_memberships.json", list(keyed.values()))
     registry = read_lines(root / "manifests/FRONTIER_REGISTRY.jsonl")
+    registered = {d["id"] for d in registry}
+    registry.extend(
+        d for d in plan.get("topic_templates", []) if d["id"] not in registered
+    )
     fixed = read_json(root / "config/flagship_endpoints.json", {})
     for d in registry:
         good = [
@@ -242,8 +298,21 @@ def admit(root, plan, outcomes):
             id for topic, id in keyed if topic == d["id"] and id in by_node
         }
         if d["id"] not in fixed and d.get("endpoint") not in members:
+            endpoint_results = [
+                o["result"]
+                for o in outcomes
+                if o["dossier"] == d["id"]
+                and o.get("role") == "endpoint"
+                and o.get("admission") in {"admitted", "already_documented"}
+            ]
             d["endpoint"] = next(
-                (n for r in good for n in r.get("endpoints", []) if n in members), None
+                (
+                    n
+                    for r in endpoint_results
+                    for n in r.get("endpoints", [])
+                    if n in members
+                ),
+                None,
             )
         for check in d["checklist"]:
             check["contributions"] = sorted(
@@ -294,7 +363,7 @@ def admit(root, plan, outcomes):
             {a["source_id"] for n in nodes if n["id"] in members for a in n["anchors"]}
         )
         d["frontier_open"] = True
-    write_lines(root / "manifests/FRONTIER_REGISTRY.jsonl", registry)
+    commit.lines(root / "manifests/FRONTIER_REGISTRY.jsonl", registry)
     total = [*prior_admissions, *additions]
     return {
         "new_records": len(additions),
@@ -326,12 +395,18 @@ def expand(root, plan_path, env_file=None, workers=4):
         return read_json(public_path) or old
     outcomes = {o["assignment_id"]: o for o in old.get("outcomes", [])}
     # Public source allowlist remains explicit and inspectable.
-    candidates = read_json(root / "config/source_candidates.json", {})
-    for j in jobs:
-        candidates.setdefault(j["dossier"], [])
-        if j["url"] not in candidates[j["dossier"]]:
-            candidates[j["dossier"]].append(j["url"])
-    write_json(root / "config/source_candidates.json", candidates)
+    from .authoring_store import writer, recover, Commit
+
+    with writer(root):
+        recover(root)
+        candidates = read_json(root / "config/source_candidates.json", {})
+        for j in jobs:
+            candidates.setdefault(j["dossier"], [])
+            if j["url"] not in candidates[j["dossier"]]:
+                candidates[j["dossier"]].append(j["url"])
+        commit = Commit(root, "source-assignments:" + plan["id"])
+        commit.json(root / "config/source_candidates.json", candidates)
+        commit.publish()
     receipt = {
         "plan_id": plan["id"],
         "plan_hash": plan_hash,
@@ -356,7 +431,14 @@ def expand(root, plan_path, env_file=None, workers=4):
         d["assignment"] = j
         d["documented_contributions"] = nearby_contributions(root, d)
         try:
-            result = process_source(root, d, j["url"], env_file, receipt["model"])
+            result = process_source(
+                root,
+                d,
+                j["url"],
+                env_file,
+                receipt["model"],
+                critic_model=plan.get("critic_model"),
+            )
             return {
                 "assignment_id": key,
                 **j,

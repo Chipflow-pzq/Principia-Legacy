@@ -39,7 +39,7 @@ export const RichText = memo(function RichText({ text }: { text: string }) {
             }}
           />
         ) : (
-          <span key={i}>{s}</span>
+          <span key={i}>{s.replace(/\\\$/g, "$")}</span>
         ),
       )}
     </>

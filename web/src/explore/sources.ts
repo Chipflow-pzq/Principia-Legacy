@@ -1,175 +1,24 @@
-import { api, type Contribution } from "../types";
+import { api } from "../types";
 import { fetchJSON } from "./network";
 import { object, safeURL, text, type ResearchSource } from "./model";
 
-type Entry = Pick<
-  Contribution,
-  | "id"
-  | "revision"
-  | "content_hash"
-  | "title"
-  | "pillar"
-  | "kind"
-  | "claim"
-  | "explanation"
-  | "assumptions"
-  | "limits"
-  | "attribution"
-  | "date"
-> & { neighbors?: string[] };
-type Index = {
-  entries: Entry[];
-  total: number;
-  snapshot_hash: string;
-  release_id: string;
-};
-let indexCache: Index | null = null;
-export async function atlasIndex(
-  release: string,
-  signal: AbortSignal,
-  progress: (loaded: number, total: number) => void = () => {},
-): Promise<Index> {
-  if (indexCache?.release_id === release) {
-    progress(indexCache.entries.length, indexCache.total);
-    return indexCache;
-  }
-  const first = await api<Index>(
-    "exploration-index",
-    { release, offset: 0, limit: 200 },
-    signal,
-  );
-  if (first.total > 10000)
-    throw new Error("The local index exceeds this explorer’s supported size.");
-  const entries = [...first.entries];
-  progress(entries.length, first.total);
-  for (let offset = 200; offset < first.total; offset += 200) {
-    signal.throwIfAborted();
-    const page = await api<Index>(
-      "exploration-index",
-      { release, offset, limit: 200 },
-      signal,
-    );
-    if (page.snapshot_hash !== first.snapshot_hash)
-      throw new Error(
-        "The atlas snapshot changed during loading. Please retry.",
-      );
-    entries.push(...page.entries);
-    progress(entries.length, first.total);
-  }
-  indexCache = { ...first, entries };
-  return indexCache;
-}
+import type { Entry, Index } from "./indexTypes";
+import { rankEntries } from "./ranking";
+import { hydrateRelated } from "./publicIndex";
+export { atlasIndex, hydrateAtlas, matchAtlas } from "./publicIndex";
 export function localMatches(
   index: Index,
   query: string,
   limit = 8,
   subjects: string[] = [],
 ): ResearchSource[] {
-  // Common field names and eponyms differ from the wording of individual insights.
-  // These expand retrieval only; they never create claims or graph relationships.
-  query = query
-    .replace(/\b(?:Newtonian|classical) mechanics\b/gi, "Newton law")
-    .replace(/\bBayesian (?:inference|statistics)\b/gi, "Bayes probability")
-    .replace(/\bDarwinian evolution\b/gi, "natural selection");
-  const stop = new Set([
-    "the",
-    "and",
-    "for",
-    "with",
-    "from",
-    "what",
-    "how",
-    "does",
-    "research",
-    "result",
-    "results",
-    "into",
-    "that",
-    "this",
-    "its",
-    "did",
-    "was",
-    "were",
-    "has",
-    "have",
-    "had",
-    "can",
-    "could",
-    "would",
-    "should",
-    "which",
-    "where",
-    "when",
-    "why",
-    "their",
-    "these",
-    "build",
-    "built",
-    "earlier",
-    "later",
-    "prior",
-    "using",
-    "used",
-    "based",
-    "history",
-    "origins",
-    "review",
-    "mechanism",
-    "mechanisms",
-    "fundamentals",
-    "foundations",
-    "limitations",
-    "evidence",
-  ]);
-  const stem = (word: string) =>
-    word.replace(/vapour/g, "vapor").replace(/s$/, "");
-  const words = (value: string) =>
-    new Set((value.toLowerCase().match(/[\p{L}\p{N}]{3,}/gu) || []).map(stem));
-  const tokens = [
-    ...new Set(
-      (query.toLowerCase().match(/[\p{L}\p{N}]{3,}/gu) || [])
-        .filter((w) => !stop.has(w))
-        .map(stem),
-    ),
-  ];
-  const scored = index.entries
-    .filter((entry) => !subjects.length || subjects.includes(entry.pillar))
-    .map((entry) => {
-      // Whole words avoid matches such as question-word "did" in "candidate".
-      const title = words(entry.title),
-        body = words(
-          `${entry.claim} ${entry.explanation} ${entry.attribution.map((a) => a.name).join(" ")} ${entry.date.year ?? ""}`,
-        );
-      const hits = tokens.filter((t) => title.has(t) || body.has(t));
-      const attribution = words(entry.attribution.map((a) => a.name).join(" "));
-      const claim = words(entry.claim);
-      return {
-        entry,
-        score:
-          hits.reduce((s, t) => s + (title.has(t) ? 5 : 1), 0) +
-          (entry.title.toLowerCase().includes(query.toLowerCase()) ? 8 : 0),
-        hits: hits.length,
-        specific:
-          tokens.some((t) => title.has(t) || attribution.has(t)) ||
-          (tokens.length > 1 && tokens.every((t) => claim.has(t))),
-      };
-    })
-    .filter(
-      (v) =>
-        v.specific &&
-        v.hits >=
-          Math.max(Math.min(2, tokens.length), Math.ceil(tokens.length / 2)) &&
-        v.score > 0,
-    )
-    .sort(
-      (a, b) =>
-        b.score - a.score ||
-        (a.entry.date.year ?? 9999) - (b.entry.date.year ?? 9999) ||
-        a.entry.id.localeCompare(b.entry.id),
-    );
-  return scored.slice(0, limit).map(({ entry }) => atlasSource(entry));
+  return rankEntries(index, query, limit, subjects).map(atlasSource);
 }
 export function atlasSource(e: Entry): ResearchSource {
+  if (e.compact)
+    throw new Error(
+      "Compact search metadata must be hydrated before use as evidence.",
+    );
   return {
     id: `atlas_${e.id}`,
     title: e.title,
@@ -262,6 +111,43 @@ export function relatedMatches(
     .sort((a, b) => b.score - a.score || a.e.id.localeCompare(b.e.id))
     .slice(0, limit)
     .map(({ e }) => ({ ...atlasSource(e), search_group: "atlas connections" }));
+}
+export async function relatedAtlas(
+  index: Index,
+  seeds: ResearchSource[],
+  query: string,
+  limit = 6,
+  signal?: AbortSignal,
+): Promise<ResearchSource[]> {
+  const seedIds = new Set(seeds.map((s) => s.atlas_id));
+  const candidates = new Set(
+    index.entries
+      .filter((e) => seedIds.has(e.id))
+      .flatMap((e) => e.neighbors || []),
+  );
+  const words = query.toLowerCase().match(/[\p{L}\p{N}]{4,}/gu) || [];
+  const score = (e: Entry) =>
+    words.reduce(
+      (n, w) =>
+        n +
+        Number(
+          `${e.title} ${e.claim} ${e.explanation}`
+            .toLowerCase()
+            .includes(w.replace(/s$/, "")),
+        ),
+      0,
+    );
+  const ids = index.entries
+    .filter((e) => candidates.has(e.id) && !seedIds.has(e.id))
+    .map((e) => ({ e, score: score(e) }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || a.e.id.localeCompare(b.e.id))
+    .slice(0, limit)
+    .map(({ e }) => e.id);
+  return (await hydrateRelated(index, ids, signal)).map((s) => ({
+    ...s,
+    search_group: "atlas connections",
+  }));
 }
 function plain(value: unknown): string {
   // DOMParser is deliberately avoided: source markup cannot trigger image loads.
@@ -496,6 +382,14 @@ export function mergeSources(
         : (s.doi && x.doi === s.doi) || x.url === s.url,
     );
     if (existing) {
+      if (
+        s.kind === "atlas" &&
+        s.search_group?.startsWith("foundation: ") &&
+        existing.search_group !== "selected foundation" &&
+        !existing.search_group?.startsWith("foundation: ")
+      ) {
+        existing.search_group = s.search_group;
+      }
       // Before drafting, a targeted explanatory lookup can improve the passage
       // and category of an initial broad overview without changing its identity.
       if (s.kind === "reference_excerpt") {

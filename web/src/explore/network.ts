@@ -1,4 +1,36 @@
 /** All network destinations are chosen by code; source text cannot supply a tool URL. */
+let active = 0;
+const waiting: (() => void)[] = [];
+function sourceSlot(signal: AbortSignal): Promise<() => void> {
+  return new Promise((resolve, reject) => {
+    const cancel = () => {
+      const index = waiting.indexOf(start);
+      if (index >= 0) waiting.splice(index, 1);
+      reject(signal.reason || new DOMException("Cancelled", "AbortError"));
+    };
+    const start = () => {
+      signal.removeEventListener("abort", cancel);
+      if (signal.aborted) {
+        cancel();
+        waiting.shift()?.();
+        return;
+      }
+      active++;
+      resolve(() => {
+        active--;
+        waiting.shift()?.();
+      });
+    };
+    if (signal.aborted) {
+      cancel();
+      return;
+    }
+    signal.addEventListener("abort", cancel, { once: true });
+    if (active < 4) start();
+    else waiting.push(start);
+  });
+}
+
 export async function fetchText(
   url: string,
   init: RequestInit,
@@ -6,6 +38,21 @@ export async function fetchText(
   timeout = 20000,
   maximum = 2_000_000,
 ): Promise<string> {
+  const release = await sourceSlot(signal);
+  try {
+    return await readText(url, init, signal, timeout, maximum);
+  } finally {
+    release();
+  }
+}
+
+async function readText(
+  url: string,
+  init: RequestInit,
+  signal: AbortSignal,
+  timeout: number,
+  maximum: number,
+) {
   const requestSignal = AbortSignal.any([signal, AbortSignal.timeout(timeout)]);
   const response = await fetch(url, {
     ...init,

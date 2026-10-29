@@ -9,7 +9,7 @@ from collections import defaultdict
 from urllib.parse import urlparse
 
 from .common import digest
-from .records import PILLARS, PREDICATES, visible
+from .records import PILLARS, PREDICATES, visible, source_anchor_enrichment
 
 
 def provenance(sources):
@@ -92,14 +92,7 @@ def compile_works(manifest, nodes, records):
                 else None
             )
             if old and current and old["revision"] != current["revision"]:
-                ignored = {"revision", "content_hash", "anchors", "change_reason"}
-                unchanged = {k: v for k, v in old.items() if k not in ignored} == {
-                    k: v for k, v in current.items() if k not in ignored
-                }
-                current_anchors = {a["id"]: a for a in current["anchors"]}
-                stale_source |= not unchanged or any(
-                    current_anchors.get(a["id"]) != a for a in old["anchors"]
-                )
+                stale_source |= not source_anchor_enrichment(old, current)
         if stale_source:
             continue
         source_refs = {

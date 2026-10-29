@@ -1,0 +1,2 @@
+# Optional private-server CPU semantic retrieval; never needed by the thin client.
+fastembed==0.7.4

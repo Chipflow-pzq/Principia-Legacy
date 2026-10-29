@@ -5,19 +5,24 @@ are republished, with new revision-bound machine reviews. No human review implie
 """
 
 import argparse
-from pathlib import Path
 import sys
+from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root / "src"))
 from principia_legacy.common import digest, read_json, seal, write_json, write_lines
 from principia_legacy.curate import make_review
-from principia_legacy.lifecycle import prepare_patch, apply_patch
+from principia_legacy.lifecycle import apply_patch, prepare_patch
 from principia_legacy.records import PREDICATES, validate
 from principia_legacy.storage import corpus, latest_records
 
 
 def run(args):
+    root = (
+        args.data_home.resolve()
+        if args.data_home
+        else Path(__file__).resolve().parents[1]
+    )
     audit, resolution = read_json(root / args.audit), read_json(root / args.resolution)
     if (
         audit["status"] != "complete"
@@ -129,6 +134,7 @@ def run(args):
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--audit", required=True)
+    p.add_argument("--data-home", type=Path)
     p.add_argument("--resolution", required=True)
     p.add_argument("--context")
     p.add_argument("--name", required=True)

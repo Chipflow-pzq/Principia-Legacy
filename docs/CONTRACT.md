@@ -1,5 +1,32 @@
 # Data and release contract, schema version 1
 
+## Optional cloud retrieval extension (1.5)
+
+The read-only search API retains keyword, curated-alias and spelling matching as
+its first pass. Expanded multiword concepts use phrase matching; scattered words
+do not establish a scientific synonym. Only an empty result can invoke optional
+semantic retrieval, followed by explicitly declared related-concept suggestions.
+Suggestions preserve all four entity categories, subject/review filters, revision
+pins and pagination. `search_interpretation.match_mode` identifies `direct`,
+`semantic` or `related`; semantic similarity never admits a claim or relationship.
+
+The optional server index pins the exact snapshot, encoder identity and file
+hashes. It is a rebuildable normalized vector matrix with bounded results, not a
+second canonical dataset. The reader loads the cached encoder offline; it never
+downloads a model or submits queries to an inference provider. A missing or
+mismatched index leaves keyword search available. Ordinary browsing queries go
+to the private read-only server and are not logged by the reader. Personal
+exploration prompts, keys and maps retain their separate browser-local boundary.
+
+The thin local launcher serves bundled assets and forwards only GET API reads to
+a fixed loopback SSH tunnel. User headers, credentials and cookies are not
+forwarded; redirects and oversized/non-JSON responses are rejected. It requires
+network access, downloads no scientific dataset, and does not silently substitute
+an older local database after a connection failure. Offline packages remain a
+separate, explicit distribution option.
+
+## Canonical records
+
 Canonical objects are Contribution, Relation, Source, and Review. UTF-8 JSONL stores complete versions. IDs are independent of revisions; content_hash is SHA-256 over canonical JSON excluding content_hash itself. The shared records.py predicate registry defines five layers, directions, and symmetry. schemas/ exports the corresponding external interface. Additional fields permit compatible extensions; changing meanings requires a schema migration.
 
 historical_basis_for is earlier to later. Chronology and citations do not independently establish influence. premise_for with multiple premises means all premises jointly; the viewer displays a diamond relation group. The graph is not globally acyclic. No mixed-layer path is promoted into a transitive proof. Independent formulations remain distinct unless documented evidence establishes identical occurrence identity.
@@ -47,6 +74,14 @@ Internal `before-*` correction checkpoints remain immutable manifest files. To
 avoid duplicating the entire search index for each screened correction, index
 these checkpoints only with explicit `build --release CHECKPOINT_ID` restoration.
 Published release snapshots remain addressable through pinned links and release comparisons. The sidebar has no release selector.
+
+`/api/changes` accepts optional `limit` (capped at 200) and `offset` parameters.
+Paginated responses return contribution/relation references in deterministic ID
+order, with a separate page for each of `added`, `removed`, and `changed`.
+`totals` counts those references before pagination; `record_counts` also counts
+source and review changes. Revision and snapshot pins are preserved. Omitting
+`limit` retains the original complete response for export clients. The browser
+requests 20 entries per category and cancels obsolete comparisons.
 
 The expanded coverage goal is recorded in `config/coverage_targets.json` and pinned
 in new release manifests. Registered topics, populated topics and initial
@@ -222,10 +257,16 @@ inspectors, contributor pages and deterministic briefs include work links. Relea
 comparisons include catalogue additions, removals and revisions. All responses
 retain the release identity and snapshot hash.
 
-Search stays offline: SQLite FTS5, accent normalization, bounded spelling recovery,
+The standard offline reader uses SQLite FTS5, accent normalization, bounded spelling recovery,
 explicit contributor aliases and a small related-concept registry. At most 16 query
 tokens, 120 spelling candidates and six query forms are considered. A whole-name
 check resolves some valid-word misspellings without scanning all biographies.
 Ambiguous corrections are not arbitrarily chosen. Related concepts are navigation
-hints, not equivalence claims; the interface reports expansions. There is no
-embedding service, runtime model call or promise of unrestricted paraphrase search.
+hints, not equivalence claims; the interface reports expansions. This baseline has no
+embedding service or runtime model call. The optional 1.5 server
+extension described above adds bounded semantic fallback without promising
+unrestricted paraphrase understanding.
+
+## Publishing an accepted frozen snapshot
+
+`promote --from CANDIDATE --id PUBLIC` copies an existing frozen manifest and changes only its `release_id`. It preserves every record revision, catalogue membership, route assessment and source pin; mutable authoring edits cannot enter the publication. The source manifest stays unchanged. Publication uses the same single-writer journal as other immutable admissions, is idempotent for identical content, and refuses to replace an existing identity with different content. Promotion does not switch a running reader; compilation and operational activation are separate steps.

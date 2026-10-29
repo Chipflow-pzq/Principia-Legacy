@@ -56,6 +56,47 @@ test("an unmistakable streamed input echo stops without spending a format repair
   }
 });
 
+test("a completed role glossary does not waste a format repair on absent insights", async () => {
+  const original = globalThis.fetch;
+  let calls = 0;
+  globalThis.fetch = async () => {
+    calls++;
+    return new Response(
+      JSON.stringify({
+        model: "fixture/role-glossary",
+        choices: [
+          {
+            message: {
+              content: JSON.stringify({
+                foundation:
+                  "states a general principle that applies beyond this technology.",
+              }),
+            },
+            finish_reason: "stop",
+          },
+        ],
+        usage: { prompt_tokens: 30, completion_tokens: 20 },
+      }),
+      { headers: { "Content-Type": "application/json" } },
+    );
+  };
+  try {
+    const provider = new Provider(
+      "fixture-key",
+      "fixture/role-glossary",
+      new AbortController().signal,
+    );
+    await expect(
+      provider.json("draft graph", "Fixture", {}, 500),
+    ).rejects.toBeInstanceOf(EmptyComposition);
+    expect(calls).toBe(1);
+    expect(provider.receipts[0].input_tokens).toBe(30);
+    expect(provider.receipts[0].outcome).toBe("failed");
+  } finally {
+    globalThis.fetch = original;
+  }
+});
+
 test("operational composition excludes already-ineligible deductions without changing registry meanings", () => {
   const registry = {
     premise_for: { layer: "logical", symmetric: false },

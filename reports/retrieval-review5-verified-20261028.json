@@ -1,0 +1,768 @@
+{
+  "label": "review5-verified",
+  "release_id": "1.5.0-review5",
+  "snapshot_hash": "bd2161f6c40e05a9ac52a6aa831de5ab39024aa6f0f642d8d47c06a5f4558dd6",
+  "query_fixture_sha256": "b97c4376e8d1cea6194f9f0368e79930069bf3dc63baf4ee1c900ab0a00443fd",
+  "case_count": 35,
+  "hit_at_10": 0.9393939393939394,
+  "mrr_at_10": 0.9242424242424242,
+  "missing_queries_correct": 2,
+  "warm_search_p95_ms": 11.3816331140697,
+  "network_latency_ms": 0,
+  "outcomes": [
+    {
+      "query": "Alan Turing",
+      "category": "people",
+      "expected": "Alan Turing",
+      "family": "name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Alan Turing"
+      ],
+      "warm_ms": [
+        3.7916710134595633,
+        3.7327532190829515,
+        3.631634870544076,
+        3.5221280995756388
+      ],
+      "first_query_ms": 9.059377945959568
+    },
+    {
+      "query": "Allan Turing",
+      "category": "people",
+      "expected": "Alan Turing",
+      "family": "spelling",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Alan Turing"
+      ],
+      "warm_ms": [
+        3.792711067944765,
+        3.978525986894965,
+        3.919410053640604,
+        5.798724014312029
+      ],
+      "first_query_ms": 3.859250107780099
+    },
+    {
+      "query": "von neuman",
+      "category": "people",
+      "expected": "John von Neumann",
+      "family": "spelling",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "John von Neumann",
+        "Oskar Morgenstern",
+        "Vaughan F.R. Jones"
+      ],
+      "warm_ms": [
+        6.765861064195633,
+        6.590354023501277,
+        3.8784591015428305,
+        4.020396154373884
+      ],
+      "first_query_ms": 6.984025938436389
+    },
+    {
+      "query": "John von Neumann",
+      "category": "people",
+      "expected": "John von Neumann",
+      "family": "name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "John von Neumann",
+        "Oskar Morgenstern"
+      ],
+      "warm_ms": [
+        7.035085000097752,
+        6.88674789853394,
+        7.156692212447524,
+        7.250241003930569
+      ],
+      "first_query_ms": 7.300060009583831
+    },
+    {
+      "query": "Emmy Noether",
+      "category": "people",
+      "expected": "Noether",
+      "family": "name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Emmy Noether"
+      ],
+      "warm_ms": [
+        2.23343912512064,
+        2.220038091763854,
+        2.054582815617323,
+        2.118839882314205
+      ],
+      "first_query_ms": 2.565949922427535
+    },
+    {
+      "query": "Hamilton",
+      "category": "people",
+      "expected": "Hamilton",
+      "family": "ambiguous_name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Hamilton O. Smith",
+        "Margaret Hamilton",
+        "William Rowan Hamilton",
+        "Daniel Nathans",
+        "Grisha Perelman",
+        "Werner Arber"
+      ],
+      "warm_ms": [
+        4.867085954174399,
+        5.13835996389389,
+        4.937774036079645,
+        5.088662030175328
+      ],
+      "first_query_ms": 5.064692115411162
+    },
+    {
+      "query": "Euler",
+      "category": "people",
+      "expected": "Euler",
+      "family": "ambiguous_name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Leonhard Euler",
+        "Hans von Euler-Chelpin",
+        "Ulf von Euler",
+        "Srinivasa Ramanujan",
+        "Sir Bernard Katz",
+        "Arthur Harden",
+        "Julius Axelrod"
+      ],
+      "warm_ms": [
+        3.8246610201895237,
+        3.9159979205578566,
+        3.997136140242219,
+        4.313579993322492
+      ],
+      "first_query_ms": 4.055144963786006
+    },
+    {
+      "query": "Maryna Viazovska",
+      "category": "people",
+      "expected": "Viazovska",
+      "family": "name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Maryna S. Viazovska"
+      ],
+      "warm_ms": [
+        5.411743186414242,
+        5.791194038465619,
+        5.454701837152243,
+        5.560440011322498
+      ],
+      "first_query_ms": 6.050958065316081
+    },
+    {
+      "query": "Einstein",
+      "category": "people",
+      "expected": "Einstein",
+      "family": "name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Albert Einstein",
+        "Wolfgang Ketterle",
+        "Carl Wieman",
+        "Eric Cornell"
+      ],
+      "warm_ms": [
+        4.84948605298996,
+        4.830355988815427,
+        4.7377790324389935,
+        4.683200968429446
+      ],
+      "first_query_ms": 5.191258853301406
+    },
+    {
+      "query": "Claude Shannon",
+      "category": "people",
+      "expected": "Shannon",
+      "family": "name",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Claude Shannon"
+      ],
+      "warm_ms": [
+        3.3882400020956993,
+        3.420399036258459,
+        3.388090990483761,
+        3.4952580463141203
+      ],
+      "first_query_ms": 3.8681388832628727
+    },
+    {
+      "query": "general relativity",
+      "category": "topics",
+      "expected": "relativity",
+      "family": "topic",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "General relativity",
+        "Black hole formation and general relativity",
+        "LIGO/Virgo direct detection and modern gravitational-wave inference",
+        "Conservation of Linear Momentum",
+        "Newton's Law of Universal Gravitation",
+        "Newton\u2019s Universal Law of Gravitation",
+        "Time Dilation",
+        "The Lorentz Transformation",
+        "Relativistic Energy",
+        "Blackbody Radiation"
+      ],
+      "warm_ms": [
+        6.334281992167234,
+        6.4813869539648294,
+        6.654504919424653,
+        6.804751930758357
+      ],
+      "first_query_ms": 6.4532579854130745
+    },
+    {
+      "query": "hamiltonian mechanics",
+      "category": "topics",
+      "expected": "Hamilton",
+      "family": "topic",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Hamiltonian mechanics",
+        "From particle dynamics to the Boltzmann equation"
+      ],
+      "warm_ms": [
+        3.0098790302872658,
+        3.0457889661192894,
+        3.1057968735694885,
+        2.9056130442768335
+      ],
+      "first_query_ms": 3.160686930641532
+    },
+    {
+      "query": "sphere packing",
+      "category": "topics",
+      "expected": "sphere",
+      "family": "topic",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Sphere packing and Fourier analysis",
+        "Viazovska's optimal sphere packing in dimension eight"
+      ],
+      "warm_ms": [
+        5.252886796370149,
+        5.479841958731413,
+        5.355235189199448,
+        5.236297147348523
+      ],
+      "first_query_ms": 5.6241280399262905
+    },
+    {
+      "query": "gene editing",
+      "category": "topics",
+      "expected": "CRISPR",
+      "family": "synonym",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "CRISPR-enabled therapies and dated regulatory milestones",
+        "Human Cell Atlas and single-cell/spatial measurement",
+        "The Science of Biology"
+      ],
+      "warm_ms": [
+        7.493083830922842,
+        7.699890062212944,
+        7.880914956331253,
+        7.6710309367626905
+      ],
+      "first_query_ms": 11.1049790866673
+    },
+    {
+      "query": "what is genetic scissors",
+      "category": "topics",
+      "expected": "CRISPR",
+      "family": "natural_language",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "CRISPR-enabled therapies and dated regulatory milestones",
+        "Human Cell Atlas and single-cell/spatial measurement",
+        "The Science of Biology"
+      ],
+      "warm_ms": [
+        11.066972045227885,
+        11.3816331140697,
+        11.022572172805667,
+        11.146348202601075
+      ],
+      "first_query_ms": 10.577891953289509
+    },
+    {
+      "query": "reusable rocket",
+      "category": "topics",
+      "expected": "rocket",
+      "family": "coverage",
+      "hit": false,
+      "rank": null,
+      "top_titles": [
+        "Newton\u2019s Third Law",
+        "Newton's Second Law"
+      ],
+      "warm_ms": [
+        2.933911047875881,
+        2.8055449947714806,
+        2.917461097240448,
+        2.997550182044506
+      ],
+      "first_query_ms": 3.2700931187719107
+    },
+    {
+      "query": "quantum error correction",
+      "category": "topics",
+      "expected": "quantum",
+      "family": "synonym",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Below-threshold surface-code quantum memories"
+      ],
+      "warm_ms": [
+        7.733738981187344,
+        7.708568824455142,
+        7.672161096706986,
+        7.3677669279277325
+      ],
+      "first_query_ms": 7.550673093646765
+    },
+    {
+      "query": "protein folding",
+      "category": "topics",
+      "expected": "AlphaFold",
+      "family": "synonym",
+      "hit": true,
+      "rank": 2,
+      "top_titles": [
+        "Protein structure prediction",
+        "AlphaFold 3 biomolecular-interaction structure prediction",
+        "Optogenetics and causal circuit interrogation",
+        "Proteins",
+        "Ribosomes and Protein Synthesis",
+        "Efficient algorithms and the limits of computation",
+        "Algorithms and computational problems",
+        "Multiscale simulation of fluids and materials"
+      ],
+      "warm_ms": [
+        7.774809142574668,
+        7.603171980008483,
+        7.728639058768749,
+        7.600812939926982
+      ],
+      "first_query_ms": 16.360566951334476
+    },
+    {
+      "query": "attention",
+      "category": "results",
+      "expected": "attention",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Multi-head attention",
+        "Interpretability of attention heads",
+        "Encoder-decoder attention drawing decoder queries over encoder outputs",
+        "Transformer architecture: first transduction model based solely on attention",
+        "Transformer: sequence transduction using only attention, no recurrence or convolution",
+        "Scaled dot-product attention",
+        "Limitation: computational cost of attention",
+        "Masked self-attention in decoder for auto-regressive property",
+        "Complexity and path length analysis of self-attention vs recurrent and convolutional layers",
+        "Proposed testable predictions linking communication subspace to attention, learning and perturbation"
+      ],
+      "warm_ms": [
+        6.029979093000293,
+        5.863142898306251,
+        5.7563260197639465,
+        6.954476935788989
+      ],
+      "first_query_ms": 6.373350042849779
+    },
+    {
+      "query": "eigenvectors",
+      "category": "results",
+      "expected": "eigen",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Diagonalization theorem: diagonalizable iff $n$ linearly independent eigenvectors",
+        "Diagonalization is non-unique: ordering and scaling of eigenvectors",
+        "Eigenvector delocalization for universal Wigner matrices",
+        "Distinct eigenvalues guarantee diagonalizability",
+        "jPCA: finding rotation-dominated planes within top principal components",
+        "Multiplicity variant of the diagonalization theorem",
+        "Eigenvalue structure of projection matrices: 1 on $W$, 0 on $W^\\perp$",
+        "Similar matrices preserve algebraic and geometric multiplicities",
+        "Converse of the multiplicity-similarity theorem fails in general",
+        "Diagonalizable matrices are similar iff they share a characteristic polynomial"
+      ],
+      "warm_ms": [
+        4.28039999678731,
+        4.133712965995073,
+        3.989696968346834,
+        3.829509951174259
+      ],
+      "first_query_ms": 10.03747503273189
+    },
+    {
+      "query": "Newton second law",
+      "category": "results",
+      "expected": "second law",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Newtonian inverse-square force plus second law yields conic-section orbits",
+        "Derivation of rotational analog of Newton's second law for a point mass",
+        "Deriving the differential equation for SHM from Newton's second law",
+        "Vector form of rotational Newton's second law via cross product",
+        "Work-energy theorem as a computational shortcut over Newton's second law",
+        "Newton's second law for rotation: torque equals moment of inertia times angular acceleration",
+        "Schr\u00f6dinger time-dependent equation as the quantum analogue of Newton's second law",
+        "Newton's momentum form of the second law and its reduction to $m\\vec{a}$ for constant mass",
+        "Secondary attribution of the first law's origin to Galileo and clarification to Newton",
+        "Derivation of the work-energy theorem from Newton's second law"
+      ],
+      "warm_ms": [
+        7.506965193897486,
+        7.8199070412665606,
+        7.575702155008912,
+        7.47632491402328
+      ],
+      "first_query_ms": 7.001915015280247
+    },
+    {
+      "query": "conditional probability",
+      "category": "results",
+      "expected": "probability",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Conditional probability as restriction of the sample space with ratio formula",
+        "Conditional probability computed by restricting the sample space",
+        "General multiplication rule linking joint probability to a conditional probability",
+        "Maxout deep output for probability computation",
+        "Several equivalent numerical tests for independence, chosen by available information",
+        "Asymmetry of conditional probabilities illustrated by $P(A|B)\\neq P(B|A)$",
+        "Probability as a measure of certainty about outcomes of a chance experiment",
+        "Independence defined as knowledge of one event leaving the other's probability unchanged",
+        "Fixed-dimensional vector encoding for variable-length sequences",
+        "Product rule for joint independent events and sum rule for mutually exclusive alternatives"
+      ],
+      "warm_ms": [
+        4.525184165686369,
+        4.661049926653504,
+        4.623070824891329,
+        4.376797936856747
+      ],
+      "first_query_ms": 5.092511186376214
+    },
+    {
+      "query": "natural selection",
+      "category": "results",
+      "expected": "selection",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Natural selection requires heritable variation and differential reproductive success",
+        "Natural selection as allele-frequency change through differential survival and reproduction",
+        "Adaptation as consequence of natural selection tracking environmental change",
+        "Three principles jointly yielding natural selection",
+        "Darwin's formulation of natural selection",
+        "Wallace's independent formulation of natural selection",
+        "Adaptive evolution: natural selection shifts heritable allele frequencies toward environmental fit",
+        "Historical obstacle: blending inheritance and the delayed integration of genetics with evolution",
+        "Hypothesis that early cells depleted nutrients, selecting for pathways that extracted more value",
+        "Selection cannot create variation and is limited by existing genetic variability"
+      ],
+      "warm_ms": [
+        4.593011923134327,
+        4.634772893041372,
+        4.415126051753759,
+        4.276209976524115
+      ],
+      "first_query_ms": 4.894885001704097
+    },
+    {
+      "query": "recursion",
+      "category": "results",
+      "expected": "recurs",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Scope boundary: normalization fails once general recursion or recursive types are added",
+        "Dependency graph collapses a recursion tree into unique subproblems",
+        "Dependency graph collapses a recursion tree into unique subproblems",
+        "Call stack as LIFO stack frames that determine return, local scope, and recursion limits",
+        "Alternating split of a list into two roughly equal halves by structural recursion",
+        "Software-managed TLB misses via trap handler, with re-execution and miss-recursion hazards",
+        "Induction hypothesis shape matches recursive program structure",
+        "Memoization: top-down table lookup avoids recomputation",
+        "Divide and conquer as recursive decomposition with independent subproblems",
+        "Tabulation: bottom-up computation order from the dependency graph"
+      ],
+      "warm_ms": [
+        4.12523397244513,
+        4.237240878865123,
+        4.240459995344281,
+        4.187391838058829
+      ],
+      "first_query_ms": 4.446604987606406
+    },
+    {
+      "query": "DNA replication",
+      "category": "results",
+      "expected": "replication",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Three models of DNA replication: conservative, semi-conservative, dispersive",
+        "Cell cycle as ordered, regulated sequence of growth, replication, and division",
+        "Evolution of meiosis from mitosis: hypothesized steps",
+        "Meiosis as a reductional division requiring one replication and two divisions",
+        "Interphase subdivided into G1, S, and G2 phases with distinct functions",
+        "Meiosis II as equational division analogous to mitosis",
+        "Template-directed complementary strand synthesis in daughter DNA",
+        "Molecular similarity reflecting descent with modification",
+        "Basic and applied science as interdependent, not hierarchical",
+        "Semi-conservative replication confirmed by intermediate and mixed banding patterns"
+      ],
+      "warm_ms": [
+        4.844717914238572,
+        5.11051993817091,
+        4.9347952008247375,
+        5.231559043750167
+      ],
+      "first_query_ms": 4.976182943210006
+    },
+    {
+      "query": "inflation",
+      "category": "results",
+      "expected": "inflation",
+      "family": "idea",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Inflation as percentage change in an aggregate price level",
+        "Inflation rate calculation via percentage change in basket cost",
+        "Inflation affects wages and incomes, not just goods prices",
+        "Scalar spectral index consistent with inflation",
+        "Downward nominal wage rigidity creates long-run inflation-unemployment tradeoff",
+        "Core inflation index excludes volatile items to gauge persistent underlying inflation",
+        "Real interest rate as nominal rate minus inflation, the reward for delaying consumption",
+        "Supply shocks and inflation expectations as the two shifters of the Phillips curve",
+        "Arbitrariness of base year does not affect inflation rates",
+        "Percentage change, not subtraction, for inflation from index numbers"
+      ],
+      "warm_ms": [
+        5.420883884653449,
+        5.283206002786756,
+        5.18303900025785,
+        5.280936835333705
+      ],
+      "first_query_ms": 5.659847054630518
+    },
+    {
+      "query": "Attention is all you need",
+      "category": "works",
+      "expected": "Attention Is All You Need",
+      "family": "work",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Attention Is All You Need"
+      ],
+      "warm_ms": [
+        11.415403103455901,
+        11.259636143222451,
+        11.456512846052647,
+        11.300435056909919
+      ],
+      "first_query_ms": 11.613558977842331
+    },
+    {
+      "query": "On computable numbers",
+      "category": "works",
+      "expected": "computable numbers",
+      "family": "work",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "On computable numbers, with an application to the Entscheidungsproblem"
+      ],
+      "warm_ms": [
+        9.34045109897852,
+        9.176556020975113,
+        9.163843933492899,
+        9.632124099880457
+      ],
+      "first_query_ms": 9.628305211663246
+    },
+    {
+      "query": "EDVAC",
+      "category": "works",
+      "expected": "EDVAC",
+      "family": "work",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "First Draft of a Report on the EDVAC",
+        "ENIAC programming and stored-program conversion",
+        "Williams-Kilburn Tube, the Baby, and Atlas"
+      ],
+      "warm_ms": [
+        4.788456950336695,
+        4.751328844577074,
+        4.7459888737648726,
+        4.813957959413528
+      ],
+      "first_query_ms": 4.506354918703437
+    },
+    {
+      "query": "AlphaFold",
+      "category": "works",
+      "expected": "AlphaFold",
+      "family": "work",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Highly accurate protein structure prediction with AlphaFold",
+        "Protein structure prediction",
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "Accurate prediction of protein structures and interactions using a 3-track neural network",
+        "3.4 Proteins - Biology 2e | OpenStax",
+        "3.4 Algorithmic Paradigms - Introduction to Computer Science | OpenStax",
+        "Optogenetics: 10 years of microbial opsins in neuroscience",
+        "Scientific Background on the Nobel Prize in Chemistry 2013: Development of Multiscale Models for Complex Chemical Systems"
+      ],
+      "warm_ms": [
+        5.4627228528261185,
+        5.254506831988692,
+        4.986313870176673,
+        5.523339845240116
+      ],
+      "first_query_ms": 6.121216109022498
+    },
+    {
+      "query": "double machine learning",
+      "category": "works",
+      "expected": "machine learning",
+      "family": "work",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Double/Debiased Machine Learning for Treatment and Structural Parameters"
+      ],
+      "warm_ms": [
+        4.933733958750963,
+        4.943884909152985,
+        4.926406079903245,
+        5.070080980658531
+      ],
+      "first_query_ms": 5.365655058994889
+    },
+    {
+      "query": "surface code",
+      "category": "works",
+      "expected": "surface code",
+      "family": "work",
+      "hit": true,
+      "rank": 1,
+      "top_titles": [
+        "Surface codes: Towards practical large-scale quantum computation",
+        "Quantum error correction below the surface code threshold",
+        "Stabilizer Codes and Quantum Error Correction (PhD thesis)",
+        "Fault-tolerant quantum computation by anyons"
+      ],
+      "warm_ms": [
+        6.8218600936234,
+        6.778700975701213,
+        6.695452844724059,
+        6.667174166068435
+      ],
+      "first_query_ms": 6.540558068081737
+    },
+    {
+      "query": "CRISPR",
+      "category": "works",
+      "expected": "CRISPR",
+      "family": "work",
+      "hit": false,
+      "rank": null,
+      "top_titles": [
+        "FDA Approves First Gene Therapies to Treat Patients with Sickle Cell Disease | FDA",
+        "1.1 The Science of Biology - Biology 2e | OpenStax",
+        "A programmable dual RNA-guided DNA endonuclease in adaptive bacterial immunity",
+        "The Human Cell Atlas"
+      ],
+      "warm_ms": [
+        3.761432133615017,
+        3.8087209686636925,
+        3.6653948482125998,
+        3.6997220013290644
+      ],
+      "first_query_ms": 3.9220480248332024
+    },
+    {
+      "query": "principiazzx nonexistent astronomical gearbox",
+      "category": "none",
+      "expected": "",
+      "family": "missing",
+      "hit": true,
+      "rank": null,
+      "top_titles": [],
+      "warm_ms": [
+        13.979771872982383,
+        22.34055707231164,
+        20.91832901351154,
+        20.740184001624584
+      ],
+      "first_query_ms": 667.884883005172
+    },
+    {
+      "query": "zzqvplm",
+      "category": "none",
+      "expected": "",
+      "family": "missing",
+      "hit": true,
+      "rank": null,
+      "top_titles": [],
+      "warm_ms": [
+        3.1073270365595818,
+        1.0726850014179945,
+        3.050117986276746,
+        0.9998970199376345
+      ],
+      "first_query_ms": 3.3344619441777468
+    }
+  ],
+  "scope": "Development acceptance queries, not held-out research. Compare identical 1.4.1 content before evaluating expanded 1.5 coverage. Preserve failures."
+}

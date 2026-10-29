@@ -7,11 +7,11 @@ Start with the [project README](../README.md) for the purpose and a first explor
 | Run the reader, search, trace, or compare ideas | [Reading guide](USAGE.md) |
 | Run locally and trace a new discovery | [Local acceptance](LOCAL_PREVIEW.md) · [Personal research](PERSONAL_EXPLORATION.md) |
 | Understand what is included and what remains unfinished | [Current status](STATUS.md) · [Coverage](COVERAGE.md) |
-| Review this candidate and its actual checks | [1.4 release notes](RELEASE-1.4.md) · [Acceptance report](../reports/product-readiness-1.4.md) |
+| Inspect this release and its actual checks | [1.5 release notes](RELEASE-1.5.md) · [Acceptance results](../reports/coverage-review5-20261028.md) · [Build status](../BUILD_STATUS.md) |
 | Change the code or build the frontend | [Development](DEVELOPMENT.md) |
 | Understand the record model and correction rules | [Data contract](CONTRACT.md) |
 | Use read-only queries and evidence exports | [API](API.md) |
-| Add sources and curate contributions | [Authoring](AUTHORING.md) |
+| Add sources and curate contributions | [Authoring](AUTHORING.md) · [Private staging and restoration](STAGING.md) |
 | Propose an idea, correction, or code change | [Contributing](../CONTRIBUTING.md) · [Governance](../GOVERNANCE.md) |
 | Host an immutable public reader | [Hosting](../hosting/README.md) |
 | Prepare this source tree for GitHub | [Publishing](PUBLISHING.md) |

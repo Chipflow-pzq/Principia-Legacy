@@ -33,8 +33,9 @@ import {
   atlasIndex,
   atlasSource,
   foundationCatalog,
-  localMatches,
-  relatedMatches,
+  matchAtlas as localMatches,
+  hydrateAtlas,
+  relatedAtlas as relatedMatches,
   mergeSources,
   referenceSources,
   rankLiterature,
@@ -101,13 +102,42 @@ export function packet(
   // Reserve room for existing explanations and earlier works. Title matching
   // alone otherwise fills the packet with recent papers applying the frontier.
   const atlasRanked = ranked.filter((s) => s.kind === "atlas" && s.passage);
+  // Keep the best match to each explicit mechanism search. Otherwise old,
+  // tangential works can occupy all reserved slots merely by having an earlier date.
+  const mechanisms = new Map<string, ResearchSource[]>();
+  for (const s of atlasRanked) {
+    if (!s.search_group?.startsWith("foundation: ")) continue;
+    const group = s.search_group;
+    mechanisms.set(group, [...(mechanisms.get(group) || []), s]);
+  }
+  const mechanismMatches = [...mechanisms].map(([group, values]) => {
+    const words =
+      group
+        .slice("foundation: ".length)
+        .toLowerCase()
+        .match(/[\p{L}\p{N}]{3,}/gu) || [];
+    const relevance = (s: ResearchSource) =>
+      words.reduce(
+        (n, word) =>
+          n + Number(s.title.toLowerCase().includes(word.replace(/s$/, ""))),
+        0,
+      );
+    return values.sort(
+      (a, b) => relevance(b) - relevance(a) || score(b) - score(a),
+    )[0];
+  });
   const atlasEarlier = atlasRanked
     .filter((s) => s.year !== null)
     .sort((a, b) => a.year! - b.year! || score(b) - score(a))
     .slice(0, planning ? 1 : 3);
   const atlas = [
     ...new Map(
-      [...atlasEarlier, ...atlasRanked].map((s) => [s.id, s]),
+      [
+        ...mechanismMatches,
+        ...atlasRanked.slice(0, 1),
+        ...atlasEarlier,
+        ...atlasRanked,
+      ].map((s) => [s.id, s]),
     ).values(),
   ].slice(0, planning ? 3 : 7);
   const earlier = ranked
@@ -141,7 +171,13 @@ export function packet(
         // Preserve a directly retrieved study before eight reference excerpts
         // can exhaust the packet's character allowance. No extra network call.
         ...(!planning ? studies.slice(0, 1) : []),
-        ...ranked.filter((s) => s.search_group === "mechanism reference"),
+        ...ranked
+          .filter((s) => s.search_group === "mechanism reference")
+          .slice(0, 1),
+        // Retrieval is wasted if several long overviews exhaust the packet
+        // before the atlas's checked mechanisms reach the model.
+        ...atlas.slice(0, planning ? 2 : 4),
+        ...earlier.slice(0, 2),
         ...ranked.filter((s) => s.search_group === "enabling reference"),
         ...ranked.filter((s) => s.kind === "reference_excerpt"),
         ...(!planning ? studies.slice(0, 3) : []),
@@ -154,9 +190,9 @@ export function packet(
     ).values(),
   ];
   let remaining = planning ? 6000 : 24000;
-  return chosen
-    .slice(0, planning ? 10 : 16)
-    .map((s) => {
+  const selected = chosen.slice(0, planning ? 10 : 16);
+  return selected
+    .map((s, position) => {
       let available = Math.min(
         planning
           ? 650
@@ -169,7 +205,12 @@ export function packet(
               : ["article_excerpt", "reference_excerpt"].includes(s.kind)
                 ? 5000
                 : 2200,
-        remaining,
+        // Give every selected source a small usable excerpt allocation. This
+        // does not create evidence: exact stable excerpt IDs are still checked.
+        Math.max(
+          0,
+          remaining - (selected.length - position - 1) * (planning ? 180 : 600),
+        ),
       );
       const anchors = [];
       for (const excerpt of excerpts(s.passage)) {
@@ -463,7 +504,10 @@ export async function explore(options: {
       if (initial[0].status === "fulfilled") {
         index = initial[0].value;
         state.snapshot = index.snapshot_hash;
-        state.sources = mergeSources(state.sources, localMatches(index, query));
+        state.sources = mergeSources(
+          state.sources,
+          await localMatches(index, query, 8, [], signal),
+        );
         report(
           undefined,
           `${state.sources.filter((s) => s.kind === "atlas").length} relevant atlas insights found locally.`,
@@ -576,7 +620,10 @@ export async function explore(options: {
           signal.throwIfAborted();
         }
       }
-      const root = index?.entries.find((e) => e.id === state.foundationId);
+      const root =
+        index && state.foundationId
+          ? await hydrateAtlas(index, state.foundationId, signal)
+          : undefined;
       if (root)
         state.sources = mergeSources(state.sources, [
           { ...atlasSource(root), search_group: "selected foundation" },
@@ -598,12 +645,13 @@ export async function explore(options: {
         for (const concept of [
           ...new Set([...(state.foundations || []), ...(state.backbone || [])]),
         ]) {
-          const matches = localMatches(index, concept, 3, state.subjects).map(
-            (s) => ({
+          const matches =
+            // General foundations may live in another subject. Topic-scoped
+            // follow-up searches below retain the planned subject filter.
+            (await localMatches(index, concept, 3, [], signal)).map((s) => ({
               ...s,
               search_group: `foundation: ${concept}`,
-            }),
-          );
+            }));
           state.sources = mergeSources(state.sources, matches);
           report(
             undefined,
@@ -613,10 +661,12 @@ export async function explore(options: {
       if (index)
         state.sources = mergeSources(
           state.sources,
-          relatedMatches(
+          await relatedMatches(
             index,
             state.sources.filter((s) => s.kind === "atlas"),
             [query, ...(state.backbone || [])].join(" "),
+            6,
+            signal,
           ),
         );
       // The plan already covers the defining work, both mechanism transitions
@@ -632,6 +682,17 @@ export async function explore(options: {
         ]),
       ].slice(0, 4);
       const pending = [...searches];
+      // Independent reference reading overlaps literature searches. The shared
+      // source transport still caps all outbound retrieval at four requests.
+      const referencesPromise = referenceExplanations(
+        topic,
+        state.foundations || [],
+        signal,
+        state.mechanism,
+        query,
+        state.backbone || [],
+        { endpoint: state.endpoint, subjects: state.subjects },
+      );
       let finished = 0;
       async function worker() {
         while (pending.length) {
@@ -639,7 +700,7 @@ export async function explore(options: {
           if (index)
             state.sources = mergeSources(
               state.sources,
-              localMatches(index, q, 2, state.subjects),
+              await localMatches(index, q, 2, state.subjects, signal),
             );
           const result = await searchLiterature(
             q,
@@ -659,19 +720,14 @@ export async function explore(options: {
           );
         }
       }
-      // Two searches, each making two requests: at most four source requests in flight.
-      await Promise.all([worker(), worker()]);
+      // The shared transport bounds requests across both retrieval paths.
+      const [references] = await Promise.all([
+        referencesPromise,
+        worker(),
+        worker(),
+      ]);
       report(
         "Reading explanations of the technology and its underlying principles…",
-      );
-      const references = await referenceExplanations(
-        topic,
-        state.foundations || [],
-        signal,
-        state.mechanism,
-        query,
-        state.backbone || [],
-        { endpoint: state.endpoint, subjects: state.subjects },
       );
       state.sources = mergeSources(state.sources, references.sources);
       state.gaps.push(...references.gaps);
@@ -743,7 +799,7 @@ export async function explore(options: {
               (state.emptyComposition
                 ? state.inputEcho
                   ? "\nThe previous response copied the input packet and was stopped. Return ONLY title, summary, result, roots, steps and gaps. Compose new source-linked insight records. Do not repeat the query fields, registry, sources, source passages or input object. This is the only replacement composition allowed."
-                  : "\nThe previous completed response was an empty JSON object. Compose actual source-linked insights from these supplied passages using the requested record shape. If the evidence is insufficient, return empty record arrays with specific evidence gaps. This is the only replacement composition allowed."
+                  : "\nThe previous completed response contained no insight records; a glossary or role definition is not an insight. Compose actual source-linked insights from these supplied passages using the requested record shape. If the evidence is insufficient, return empty record arrays with specific evidence gaps. This is the only replacement composition allowed."
                 : "") +
               (state.refinementFeedback ? REFINE : "") +
               "\nReturn only this output shape (no sources, registry, schema or input fields): " +
@@ -831,11 +887,11 @@ export async function explore(options: {
             .find((r) => r.stage === "draft graph");
           if (receipt) receipt.outcome = "failed";
           state.gaps.push(
-            `The first drafting response ${inputEcho ? "copied the input packet" : emptyComposition ? "was an empty object" : "copied example placeholders"} and was rejected. One replacement composition was requested from the same evidence; both attempts are retained in receipts. Unreported usage may still be charged.`,
+            `The first drafting response ${inputEcho ? "copied the input packet" : emptyComposition ? "contained no insight records" : "copied example placeholders"} and was rejected. One replacement composition was requested from the same evidence; both attempts are retained in receipts. Unreported usage may still be charged.`,
           );
           save();
           report(
-            `The model returned ${inputEcho ? "the input packet" : emptyComposition ? "an empty object" : "example text"} instead of insights. Making one replacement composition from the retrieved evidence…`,
+            `The model returned ${inputEcho ? "the input packet" : emptyComposition ? "no insight records" : "example text"} instead of insights. Making one replacement composition from the retrieved evidence…`,
           );
           continue;
         }

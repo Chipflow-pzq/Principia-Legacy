@@ -1,5 +1,6 @@
 """Verify release-specific integrity against the actual corpus, not sample fixtures."""
 
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -9,12 +10,17 @@ from principia_legacy.common import digest, read_json
 from principia_legacy.storage import Atlas, corpus
 from principia_legacy.records import validate, visible
 
-root = Path(__file__).resolve().parents[1]
+code = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--data-home", type=Path, default=code)
+parser.add_argument("--release")
+args = parser.parse_args()
+root = args.data_home.resolve()
 records = corpus(root)
 errors = validate(records)
 if errors:
     raise ValueError(errors[:20])
-a = Atlas(root)
+a = Atlas(root, args.release)
 latest = a.records
 accepted = {
     r["target"]["content_hash"]
@@ -26,6 +32,20 @@ accepted = {
 readable = [
     r for r in latest if r["type"] in ("contribution", "relation") and visible(r)
 ]
+from principia_legacy.admission_versions import occurrence_key
+
+occurrences = {}
+duplicates = []
+for record in readable:
+    if record["type"] != "contribution":
+        continue
+    key = occurrence_key(record)
+    if key in occurrences:
+        duplicates.append([occurrences[key], record["id"]])
+    occurrences[key] = record["id"]
+assert not duplicates, (
+    f"Same-source attributed claims require duplicate review: {duplicates}"
+)
 assert all(r["content_hash"] in accepted for r in readable), (
     "Machine-screened label needs an exact accepted review"
 )
@@ -65,10 +85,10 @@ for d in ["M06", "P01", "C01", "E01", "B01"]:
     assert all(
         (r["source_id"], r["source_revision"]) in refs for r in brief["source_anchors"]
     )
-eval_manifest = read_json(root / "tests/evaluation/manifest.json")
+eval_manifest = read_json(code / "tests/evaluation/manifest.json")
 for split in ("dev", "heldout"):
     assert (
-        digest((root / "tests/evaluation" / f"{split}.jsonl").read_bytes())
+        digest((code / "tests/evaluation" / f"{split}.jsonl").read_bytes())
         == eval_manifest[split + "_hash"]
     )
 try:
@@ -109,6 +129,8 @@ print(
             "snapshot_hash": digest(a.manifest),
             "counts": counts,
             "exact_machine_reviews_for_all_visible_records": True,
+            "same_source_attributed_claim_duplicates": 0,
+            "deduplication_scope": "Exact claim wording after whitespace normalization, source identities, named credit and date. This is not an exhaustive semantic-duplication audit; independent formulations retain separate credit.",
             "dossiers": len(dossiers),
             "flagship_endpoint_checks": 5,
             "tour_checks": 3,

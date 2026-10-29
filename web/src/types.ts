@@ -1,3 +1,4 @@
+import { readAtlas } from "./cloudConnection";
 export type Ref = { id: string; revision: number };
 export type AnchorRef = {
   source_id: string;
@@ -62,6 +63,13 @@ export type Source = {
   }[];
 };
 export type Dossier = {
+  reading_route?: {
+    ready: boolean;
+    review: string;
+    scope: string;
+    rationale: string;
+    notice: string;
+  };
   work_count?: number;
   work_ids?: string[];
   isolated_contribution_count?: number;
@@ -93,6 +101,7 @@ export type Tour = {
   dossiers: string[];
 };
 export type Info = {
+  connection_mode?: "private_cloud";
   release_id: string;
   counts: Record<string, number>;
   subject_counts?: Record<string, number>;
@@ -114,6 +123,7 @@ export type Info = {
 };
 export type Neighborhood = {
   available_count?: number | null;
+  traversal_bounded?: boolean;
   release_id: string;
   contributions: Contribution[];
   relations: Relation[];
@@ -176,13 +186,7 @@ export async function api<T>(
   const hit = cachedAPI<T>(path, params);
   if (hit !== undefined) return hit;
   const url = apiURL(path, params);
-  const response = await fetch(url, { signal });
-  const text = await response.text();
-  const data = JSON.parse(text);
-  if (!response.ok)
-    throw new Error(
-      data.error || "The reader could not complete this request.",
-    );
+  const { data, text } = await readAtlas(url, signal);
   if (text.length < 4_000_000) {
     cachedBytes -= responseCache.get(url)?.bytes || 0;
     responseCache.delete(url);
@@ -280,6 +284,10 @@ export type TopicLink = {
   pillar: string;
   reason?: string;
   origin?: string;
+  contribution_count?: number;
+  relation_count?: number;
+  work_count?: number;
+  reading_route?: { ready: boolean };
 };
 export type Person = {
   id: string;
@@ -315,6 +323,8 @@ export type SearchData = {
   topics: TopicLink[];
   works?: Work[];
   search_interpretation?: {
+    match_mode?: "direct" | "related" | "semantic";
+    notice?: string;
     corrections: { from: string; to: string }[];
     concepts: string[];
   };

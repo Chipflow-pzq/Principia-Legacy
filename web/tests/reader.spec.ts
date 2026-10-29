@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { resolve } from "node:path";
+import { atlasJSON, atlasTopics } from "./atlas";
 test.beforeEach(async ({ page }) => {
   await page.route("**/*", async (route) => {
     const url = new URL(route.request().url());
@@ -157,10 +158,10 @@ test("dossier brief preserves nonempty claims and source closure", async ({
   page,
   request,
 }) => {
-  const response = await request.get(
+  const data = await atlasJSON(
+    request,
     "/api/brief?dossier=C01&q=Transformer-based%20foundation%20models",
   );
-  const data = await response.json();
   expect(data.relevant_contributions.length).toBeGreaterThan(0);
   expect(data.sources.length).toBeGreaterThan(0);
   expect(data.permitted_action_scope).toBe("read_only");
@@ -212,6 +213,23 @@ test("release differences have readable summaries and working revision links", a
   await expect(
     page.getByRole("heading", { name: "New to this snapshot" }),
   ).toBeVisible();
+  const initialCards = await page.locator(".change-card").count();
+  expect(initialCards).toBeLessThanOrEqual(60);
+  const nextPage = page.waitForResponse((response) => {
+    const url = new URL(response.url());
+    return (
+      url.pathname === "/api/changes" && url.searchParams.get("offset") === "20"
+    );
+  });
+  await page
+    .getByRole("button", { name: "Show more changes", exact: true })
+    .click();
+  const payload = await (await nextPage).json();
+  expect(payload.limit).toBe(20);
+  expect(payload.added.length).toBeLessThanOrEqual(20);
+  await expect
+    .poll(() => page.locator(".change-card").count())
+    .toBeGreaterThan(initialCards);
   await page
     .locator(".change-card")
     .filter({ hasText: "contribution" })
@@ -227,10 +245,10 @@ test("historical relationship navigation stays in its pinned snapshot", async ({
   page,
   request,
 }) => {
-  const response = await request.get(
+  const graph = await atlasJSON(
+    request,
     "/api/neighborhood?dossier=C01&release=evaluation-baseline",
   );
-  const graph = await response.json();
   const edge = graph.relations[0];
   await page.goto(
     `/?snapshot-test=1#relation=${encodeURIComponent(edge.id)}&release=evaluation-baseline`,
@@ -278,10 +296,10 @@ test("subject navigation stays available while scrolling and switches topics", a
   expect(Math.abs(second!.y - first!.y)).toBeLessThan(2);
   expect(second!.y).toBeGreaterThanOrEqual(-1);
   await sidebar.getByRole("button", { name: /Mathematics/ }).click();
-  const { dossiers } = await (await page.request.get("/api/dossiers")).json();
-  const expected = dossiers.filter(
-    (d: { pillar: string }) => d.pillar === "mathematics",
-  ).length;
+  const { total: expected } = await atlasJSON(
+    page.request,
+    "/api/dossiers?pillar=mathematics&summary=true&limit=1",
+  );
   await expect(page.locator(".dossier-tile")).toHaveCount(
     Math.min(60, expected),
   );
@@ -394,14 +412,18 @@ test("every populated topic and each subject’s catalog-only page open correctl
     "Full content traversal runs once; narrow-screen interactions have separate coverage.",
   );
   test.setTimeout(600000);
-  const catalogue = await (await page.request.get("/api/dossiers")).json();
+  const catalogue = await atlasTopics(page.request);
   expect(catalogue.dossiers.length).toBeGreaterThanOrEqual(60);
   // Every admitted neighborhood is inspected. Empty catalogue pages share one
   // component; exercise one per subject here, while acceptance validates every
   // topic and its work references offline.
-  const populated = catalogue.dossiers.filter((d: { contribution_count: number }) => d.contribution_count > 0);
+  const populated = catalogue.dossiers.filter(
+    (d: { contribution_count: number }) => d.contribution_count > 0,
+  );
   const emptyBySubject = new Map<string, { id: string }>();
-  for (const d of catalogue.dossiers) if (!d.contribution_count && !emptyBySubject.has(d.pillar)) emptyBySubject.set(d.pillar, d);
+  for (const d of catalogue.dossiers)
+    if (!d.contribution_count && !emptyBySubject.has(d.pillar))
+      emptyBySubject.set(d.pillar, d);
   for (const topic of [...populated, ...emptyBySubject.values()]) {
     await page.goto(
       "/#" +
@@ -481,15 +503,21 @@ test("keyboard focus enters the inspector and returns to its opener", async ({
   await expect(result).toBeFocused();
 });
 
-test("large topics expand the readable view without losing existing ideas", async ({
+test("large topics page through all insights independently of the graph", async ({
   page,
   request,
 }) => {
-  const response = await request.get("/api/dossiers");
-  const { dossiers } = await response.json();
-  const topic = dossiers.find(
-    (d: { contribution_count: number }) => d.contribution_count > 40,
-  );
+  let topic;
+  for (let offset = 0; ; offset += 100) {
+    const data = await atlasJSON(
+      request,
+      `/api/dossiers?summary=true&limit=100&offset=${offset}`,
+    );
+    topic = data.dossiers.find(
+      (d: { contribution_count: number }) => d.contribution_count > 40,
+    );
+    if (topic || offset + 100 >= data.total) break;
+  }
   test.skip(
     !topic,
     "This snapshot has no topic above the initial 40-idea view.",
@@ -498,12 +526,18 @@ test("large topics expand the readable view without losing existing ideas", asyn
   await page.getByRole("button", { name: "List", exact: true }).click();
   await expect(page.locator(".node-list > button")).toHaveCount(40);
   const before = await page.locator(".node-list > button h3").allTextContents();
-  await page.getByRole("button", { name: /Show more ideas/ }).click();
+  await page
+    .getByRole("button", { name: "Next insights", exact: true })
+    .click();
   await expect(page.locator(".node-list > button")).toHaveCount(
-    Math.min(80, topic.contribution_count),
+    Math.min(40, topic.contribution_count - 40),
   );
   const after = await page.locator(".node-list > button h3").allTextContents();
-  for (const title of before) expect(after).toContain(title);
+  for (const title of before) expect(after).not.toContain(title);
+  await page
+    .getByRole("button", { name: "Previous insights", exact: true })
+    .click();
+  await expect(page.locator(".node-list > button h3")).toHaveText(before);
 });
 
 test("connection filtering preserves the canvas without waiting on another request", async ({
