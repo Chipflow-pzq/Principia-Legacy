@@ -1,5 +1,6 @@
 """Report catalog breadth separately from passage-grounded scientific coverage."""
 
+import argparse
 import json
 import sys
 from collections import Counter
@@ -12,8 +13,15 @@ from principia_legacy.common import write_json
 from principia_legacy.records import PILLARS
 from principia_legacy.storage import Atlas
 
-root = Path(__file__).resolve().parents[1]
-with closing(Atlas(root)) as atlas:
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument(
+    "--data-home", type=Path, default=Path(__file__).resolve().parents[1]
+)
+parser.add_argument("--release")
+parser.add_argument("--output", type=Path)
+args = parser.parse_args()
+root = args.data_home.resolve()
+with closing(Atlas(root, args.release)) as atlas:
     topics = atlas.dossiers()["dossiers"]
     works = [
         json.loads(r[0])
@@ -69,11 +77,11 @@ with closing(Atlas(root)) as atlas:
             "Exposition works preserve evidence provenance; their authors are not automatically credited with originating every explained insight.",
             "Independent discoveries remain distinct. Shared topics and shared insights do not establish historical influence.",
             "Small spelling corrections and named concept expansions are offline and bounded; arbitrary semantic paraphrases are not guaranteed.",
-            "No qualified human audit has been performed. Personal Trace a discovery retains the limitations documented in the 1.3 live evaluation.",
+            "No qualified human audit has been performed. Personal Trace a discovery is separate from this catalogue; consult the dated live-browser acceptance reports.",
         ],
     }
     assert not report["topic_without_work"], report["topic_without_work"]
-    write_json(root / "reports/catalog-1.4.json", report)
+    write_json(args.output or root / "reports/catalog-1.4.json", report)
     print(
         {
             k: report[k]

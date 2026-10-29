@@ -2,8 +2,9 @@
 
 from pathlib import Path
 
-from .common import digest, now, read_json, seal, write_json, write_lines
+from .common import digest, now, read_json, seal
 from .records import validate
+from .records import source_anchor_enrichment as _source_anchor_enrichment
 from .storage import corpus, latest_records, manifest
 
 
@@ -149,24 +150,18 @@ def prepare_patch(root, patch):
     }
 
 
-def _source_anchor_enrichment(old, new):
-    """Adding locators to identical source bytes cannot change older evidence.
-
-    Existing claims continue to pin the old source revision. Any changed source
-    metadata, byte version or existing anchor takes the ordinary recheck path.
-    """
-    if old.get("type") != "source" or new.get("type") != "source":
-        return False
-    ignored = {"revision", "content_hash", "anchors", "change_reason"}
-    if {k: v for k, v in old.items() if k not in ignored} != {
-        k: v for k, v in new.items() if k not in ignored
-    }:
-        return False
-    anchors = {a["id"]: a for a in new.get("anchors", [])}
-    return all(anchors.get(a["id"]) == a for a in old.get("anchors", []))
-
-
 def apply_patch(root, patch_path):
+    from .authoring_store import writer, recover, Commit
+
+    with writer(root):
+        recover(root)
+        commit = Commit(root, "correction")
+        result = _apply_patch(root, patch_path, commit)
+        commit.publish()
+        return result
+
+
+def _apply_patch(root, patch_path, commit):
     root = Path(root)
     patch = read_json(patch_path)
     if patch.get("status") != "proposed":
@@ -181,10 +176,10 @@ def apply_patch(root, patch_path):
     before = manifest(root, "before-" + digest(existing)[:12])
     dest = root / "manifests/releases" / (before["release_id"] + ".json")
     if not dest.exists():
-        write_json(dest, before)
+        commit.json(dest, before)
     patch_id = digest(patch)
-    write_lines(root / "corpus/patches" / f"{patch_id}.jsonl", patch["records"])
-    write_json(
+    commit.lines(root / "corpus/patches" / f"{patch_id}.jsonl", patch["records"])
+    commit.json(
         root / "manifests/patches" / f"{patch_id}.json",
         {
             "reason": patch["reason"],
@@ -210,6 +205,21 @@ def human_review(
     attestation_path,
     scope="editorial",
     judgment="accepted",
+):
+    from .authoring_store import writer, recover, Commit
+
+    with writer(root):
+        recover(root)
+        commit = Commit(root, "human-review:" + target)
+        result = _human_review(
+            root, target, revision, reviewer, attestation_path, scope, judgment, commit
+        )
+        commit.publish()
+        return result
+
+
+def _human_review(
+    root, target, revision, reviewer, attestation_path, scope, judgment, commit
 ):
     if scope not in ("editorial", "domain_expert") or judgment not in (
         "accepted",
@@ -260,5 +270,5 @@ def human_review(
     dest = Path(root) / "corpus/reviews" / f"{r['id']}.jsonl"
     if dest.exists():
         raise ValueError("This attestation already has a review record")
-    write_lines(dest, [r])
+    commit.lines(dest, [r])
     return r

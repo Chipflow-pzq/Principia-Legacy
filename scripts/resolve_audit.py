@@ -4,9 +4,9 @@ Produces a reviewable report only. Applying a report is a separate patch action.
 """
 
 import argparse
+import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-import sys
 
 root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root / "src"))
@@ -20,6 +20,11 @@ PROMPT = """Reconsider flagged scientific atlas arrows against exact source pass
 
 
 def run(args):
+    root = (
+        args.data_home.resolve()
+        if args.data_home
+        else Path(__file__).resolve().parents[1]
+    )
     audit = read_json(root / args.audit)
     if audit["status"] != "complete":
         raise ValueError("Resolve only a completed audit")
@@ -225,6 +230,7 @@ def run(args):
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--env-file", required=True)
+    p.add_argument("--data-home", type=Path)
     p.add_argument("--audit", required=True)
     p.add_argument("--output", required=True)
     p.add_argument("--only-withheld-from")

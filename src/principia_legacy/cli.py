@@ -16,7 +16,13 @@ def parser():
         prog="principia",
         description="A living atlas of human understanding. Browsing is local and read-only.",
     )
-    p.add_argument("--root", type=Path, help="Atlas directory (or PRINCIPIA_HOME)")
+    p.add_argument(
+        "--root",
+        "--data-home",
+        dest="root",
+        type=Path,
+        help="Canonical data directory (or PRINCIPIA_DATA_HOME / PRINCIPIA_HOME)",
+    )
     sub = p.add_subparsers(dest="command", required=True)
     sub.add_parser("doctor")
     v = sub.add_parser("validate")
@@ -85,6 +91,13 @@ def parser():
         "--id", required=True, help="Explicit immutable release identifier"
     )
     rel.add_argument("--report")
+    rel.add_argument("--kind", choices=["full", "reader", "source"], default="full")
+    promotion = sub.add_parser(
+        "promote",
+        help="Name an accepted frozen snapshot without publishing later edits",
+    )
+    promotion.add_argument("--from", dest="source_release", required=True)
+    promotion.add_argument("--id", required=True)
     ev = sub.add_parser("evaluate")
     ev.add_argument("--allow-network", action="store_true")
     ev.add_argument("--env-file")
@@ -96,6 +109,22 @@ def parser():
     ex.add_argument("--allow-network", action="store_true")
     ex.add_argument("--env-file")
     ex.add_argument("--workers", type=int, default=4)
+    backup = sub.add_parser(
+        "backup", help="Create a private checksummed data-home archive"
+    )
+    backup.add_argument("--output", required=True)
+    snapshot = sub.add_parser(
+        "snapshot",
+        help="Export a checksummed offline review snapshot without private authoring caches",
+    )
+    snapshot.add_argument("--release", required=True)
+    snapshot.add_argument("--output", required=True)
+    restore = sub.add_parser(
+        "restore", help="Verify and restore a private archive into a new directory"
+    )
+    restore.add_argument("--archive", required=True)
+    restore.add_argument("--destination", required=True)
+    restore.add_argument("--sha256", required=True)
     return p
 
 
@@ -116,6 +145,18 @@ def main(argv=None):
                 "network_required_for_reader": False,
                 "root": str(root),
             }
+        elif args.command == "backup":
+            from .backups import backup
+
+            result = backup(root, args.output)
+        elif args.command == "snapshot":
+            from .backups import backup
+
+            result = backup(root, args.output, review_release=args.release)
+        elif args.command == "restore":
+            from .backups import restore
+
+            result = restore(args.archive, args.destination, args.sha256)
         elif args.command == "validate":
             records = (
                 corpus(root)
@@ -348,10 +389,20 @@ def main(argv=None):
                 a.close()
             if args.output:
                 write_json(args.output, result)
+        elif args.command == "promote":
+            from .release import promote
+
+            promoted = promote(root, args.source_release, args.id)
+            result = {
+                "release_id": promoted["release_id"],
+                "from_release": args.source_release,
+                "record_versions": len(promoted["record_refs"]),
+                "activated": False,
+            }
         elif args.command == "release":
             from .release import package
 
-            result = package(root, args.id, args.report)
+            result = package(root, args.id, args.report, args.kind)
         elif args.command == "evaluate":
             from .evaluation import evaluate
 

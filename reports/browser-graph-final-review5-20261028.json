@@ -1,0 +1,609 @@
+{
+  "config": {
+    "argv": [
+      "/Users/zhengqipei/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/node_modules/@playwright/test/cli.js",
+      "test",
+      "coverage.spec.ts",
+      "reader.spec.ts",
+      "--grep",
+      "population communication|map, accessible|connection filtering|keyboard search, trace|large topics|subject navigation"
+    ],
+    "configFile": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/playwright.config.ts",
+    "rootDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "snapshotDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8767",
+          "headless": true,
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "snapshotDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8767",
+          "headless": true,
+          "channel": "chrome",
+          "viewport": {
+            "width": 390,
+            "height": 664
+          },
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+          "screen": {
+            "width": 390,
+            "height": 844
+          },
+          "deviceScaleFactor": 3,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "coverage.spec.ts",
+      "file": "coverage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "population communication opens actual insights and preserves the search",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9373,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:54:50.816Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-6181e099f8efc5062b4e",
+          "file": "coverage.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "population communication opens actual insights and preserves the search",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4246,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:20.577Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-039017995a6fb0ed828a",
+          "file": "coverage.spec.ts",
+          "line": 23,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "reader.spec.ts",
+      "file": "reader.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "map, accessible list, source inspector and relationship warrant",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4257,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:01.236Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-336dda50dda4f3f4a232",
+          "file": "reader.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "keyboard search, trace and progressive expansion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:05.509Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-3c55ba590ad71487e404",
+          "file": "reader.spec.ts",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "subject navigation stays available while scrolling and switches topics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:10.447Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-e5ea6245742be81a48e0",
+          "file": "reader.spec.ts",
+          "line": 284,
+          "column": 1
+        },
+        {
+          "title": "large topics page through all insights independently of the graph",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3824,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:12.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-dc0bbcee8f37b29bcf83",
+          "file": "reader.spec.ts",
+          "line": 506,
+          "column": 1
+        },
+        {
+          "title": "connection filtering preserves the canvas without waiting on another request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:16.771Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "connection-filter-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcmFjdGlvbl9tcyI6ODAsInNlcnZlcl9yZXF1ZXN0cyI6MH0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d4491a99862a198d83cc",
+          "file": "reader.spec.ts",
+          "line": 543,
+          "column": 1
+        },
+        {
+          "title": "map, accessible list, source inspector and relationship warrant",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4121,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:25.672Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d58abe6d92628e0eca29",
+          "file": "reader.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "keyboard search, trace and progressive expansion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5288,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:29.821Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-3a1964d7f05ce78d48eb",
+          "file": "reader.spec.ts",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "subject navigation stays available while scrolling and switches topics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:35.132Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-56049eb78304e70fb75b",
+          "file": "reader.spec.ts",
+          "line": 284,
+          "column": 1
+        },
+        {
+          "title": "large topics page through all insights independently of the graph",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4624,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:38.806Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-bf82f942ad9f6eb0b3f5",
+          "file": "reader.spec.ts",
+          "line": 506,
+          "column": 1
+        },
+        {
+          "title": "connection filtering preserves the canvas without waiting on another request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:55:43.456Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "connection-filter-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcmFjdGlvbl9tcyI6NzYsInNlcnZlcl9yZXF1ZXN0cyI6MH0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-3b97db8c4a056f16a614",
+          "file": "reader.spec.ts",
+          "line": 543,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T15:54:49.827Z",
+    "duration": 58763.571,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

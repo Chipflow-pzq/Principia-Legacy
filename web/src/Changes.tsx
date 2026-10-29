@@ -12,6 +12,13 @@ type ChangeRef = {
 export type ReleaseChanges = {
   release_id: string;
   from_release: string;
+  offset?: number;
+  limit?: number;
+  totals?: Record<"added" | "removed" | "changed", number>;
+  record_counts?: Record<
+    "added" | "removed" | "changed",
+    Record<string, number>
+  >;
   catalog_changes?: Record<
     string,
     { added: string[]; removed: string[]; changed: string[] }
@@ -23,11 +30,16 @@ export type ReleaseChanges = {
 export function Changes({
   data,
   onInspect,
+  onMore,
+  loading = false,
 }: {
   data: ReleaseChanges;
   onInspect: (id: string, relation: boolean, snapshot: string) => void;
+  onMore?: () => void;
+  loading?: boolean;
 }) {
-  const [limit, setLimit] = useState(20);
+  const [legacyLimit, setLimit] = useState(20);
+  const limit = data.limit ? Infinity : legacyLimit;
   const additions = data.added.filter(
     (r) => r.type === "contribution" || r.type === "relation",
   );
@@ -57,13 +69,15 @@ export function Changes({
       </p>
       <div className="hero-stats">
         <span>
-          <strong>{additions.length}</strong> new contributions & connections
+          <strong>{data.totals?.added ?? additions.length}</strong> new
+          contributions & connections
         </span>
         <span>
-          <strong>{changed.length}</strong> revised
+          <strong>{data.totals?.changed ?? changed.length}</strong> revised
         </span>
         <span>
-          <strong>{removals.length}</strong> removed from this snapshot
+          <strong>{data.totals?.removed ?? removals.length}</strong> removed
+          from this snapshot
         </span>
       </div>
       {data.catalog_changes && (
@@ -130,20 +144,31 @@ export function Changes({
           ))}
         </section>
       )}
-      {Math.max(additions.length, removals.length, changed.length) > limit && (
-        <button onClick={() => setLimit((n) => n + 30)}>
-          Show more changes
+      {(data.totals
+        ? Math.max(...Object.values(data.totals)) >
+          (data.offset || 0) + (data.limit || 0)
+        : Math.max(additions.length, removals.length, changed.length) >
+          limit) && (
+        <button
+          disabled={loading}
+          onClick={() => (onMore ? onMore() : setLimit((n) => n + 30))}
+        >
+          {loading ? "Loading changes…" : "Show more changes"}
         </button>
       )}
       <details className="notice">
         <summary>Sources and review records</summary>
         <p>
-          {data.added.filter((r) => r.type === "source").length} new sources;{" "}
-          {data.added.filter((r) => r.type === "review").length} new review
-          records;{" "}
-          {data.changed.filter((r) => r.after.type === "source").length} source
-          revisions. Review records remain attached to the exact content they
-          checked.
+          {data.record_counts?.added.source ??
+            data.added.filter((r) => r.type === "source").length}{" "}
+          new sources;{" "}
+          {data.record_counts?.added.review ??
+            data.added.filter((r) => r.type === "review").length}{" "}
+          new review records;{" "}
+          {data.record_counts?.changed.source ??
+            data.changed.filter((r) => r.after.type === "source").length}{" "}
+          source revisions. Review records remain attached to the exact content
+          they checked.
         </p>
       </details>
       {!additions.length && !changed.length && !removals.length && (

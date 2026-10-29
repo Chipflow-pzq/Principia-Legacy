@@ -5,6 +5,11 @@ import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../../", import.meta.url));
+const acceptance = process.env.PRINCIPIA_ACCEPTANCE_ID;
+const screenshotRoot = resolve(
+  root,
+  acceptance ? "reports/screenshots" : "docs/screenshots",
+);
 
 test("record first view and offline page network evidence", async ({
   page,
@@ -28,7 +33,10 @@ test("record first view and offline page network evidence", async ({
   await expect(page.locator(".flagship-card")).toHaveCount(5);
   const firstView = Date.now() - start;
   await page.screenshot({
-    path: resolve(root, "docs/screenshots/reader-home.png"),
+    path: resolve(
+      screenshotRoot,
+      acceptance ? `home-${acceptance}.png` : "reader-home.png",
+    ),
   });
   await page
     .locator(".flagship-card")
@@ -39,7 +47,10 @@ test("record first view and offline page network evidence", async ({
     /[1-9][0-9]* contributions/,
   );
   await page.screenshot({
-    path: resolve(root, "docs/screenshots/reader-map.png"),
+    path: resolve(
+      screenshotRoot,
+      acceptance ? `map-${acceptance}.png` : "reader-map.png",
+    ),
   });
   const memory = await page.evaluate(
     () =>
@@ -118,7 +129,12 @@ test("record first view and offline page network evidence", async ({
   };
   mkdirSync(resolve(root, "build"), { recursive: true });
   writeFileSync(
-    resolve(root, "build/browser-performance.json"),
+    resolve(
+      root,
+      acceptance
+        ? `reports/browser-performance-${acceptance}.json`
+        : "build/browser-performance.json",
+    ),
     JSON.stringify(result, null, 2) + "\n",
   );
   expect(result.external_requests).toEqual([]);

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { api, Person, PersonDetail, TopicLink, words } from "./types";
-import { WorkCards } from "./Works";
+import { WorkCards, TopicWorks } from "./Works";
+import { usePageOffset } from "./usePageOffset";
 import { RichText } from "./RichText";
 
 export function PersonPage({
@@ -11,6 +12,7 @@ export function PersonPage({
   onWork,
   onBack,
   hasSearch,
+  backLabel,
   human,
 }: {
   id: string;
@@ -20,17 +22,21 @@ export function PersonPage({
   onWork: (id: string) => void;
   onBack: () => void;
   hasSearch: boolean;
+  backLabel?: string;
   human: boolean;
 }) {
-  const [data, setData] = useState<PersonDetail | null>(null),
+  const [offset, setOffset] = usePageOffset("personpage", `${id}/${human}`, 40);
+  const [data, setData] = useState<
+      (PersonDetail & { contribution_total: number }) | null
+    >(null),
     [error, setError] = useState("");
   useEffect(() => {
     const c = new AbortController();
     setData(null);
     setError("");
-    api<PersonDetail>(
+    api<PersonDetail & { contribution_total: number }>(
       `people/${encodeURIComponent(id)}`,
-      { release, human },
+      { release, human, limit: 40, offset },
       c.signal,
     )
       .then(setData)
@@ -38,12 +44,15 @@ export function PersonPage({
         if (e.name !== "AbortError") setError(e.message);
       });
     return () => c.abort();
-  }, [id, release, human]);
+  }, [id, release, human, offset]);
   return (
     <section className="person-page">
       <button className="back-link" onClick={onBack}>
         ←{" "}
-        {hasSearch ? "Back to search results" : "All scientists & contributors"}
+        {backLabel ||
+          (hasSearch
+            ? "Back to search results"
+            : "All scientists & contributors")}
       </button>
       {error ? (
         <p role="alert">{error}</p>
@@ -67,7 +76,8 @@ export function PersonPage({
           </p>
           <p className="muted">
             {data.person.subjects.map(words).join(" · ")} ·{" "}
-            {data.contributions.length} insights · {data.topics.length} topics
+            {data.contribution_total ?? data.contributions.length} insights ·{" "}
+            {data.topics.length} topics
           </p>
           {!!data.person.bio_sources?.length && (
             <details>
@@ -82,12 +92,13 @@ export function PersonPage({
               ))}
             </details>
           )}
-          {!!data.works?.length && (
-            <section>
-              <h2>Selected works</h2>
-              <WorkCards works={data.works} onWork={onWork} />
-            </section>
-          )}
+          <TopicWorks
+            topic=""
+            person={id}
+            release={release}
+            human={human}
+            onWork={onWork}
+          />
           <h2>Related topics</h2>
           {human && !data.contributions.length && (
             <p role="status">
@@ -130,6 +141,26 @@ export function PersonPage({
               </button>
             ))}
           </div>
+          {data.contribution_total > 40 && (
+            <nav className="pagination" aria-label="Contributor insight pages">
+              <button
+                disabled={!offset}
+                onClick={() => setOffset(Math.max(0, offset - 40))}
+              >
+                Previous insights
+              </button>
+              <span>
+                {offset + 1}–{Math.min(offset + 40, data.contribution_total)} of{" "}
+                {data.contribution_total}
+              </span>
+              <button
+                disabled={offset + 40 >= data.contribution_total}
+                onClick={() => setOffset(offset + 40)}
+              >
+                Next insights
+              </button>
+            </nav>
+          )}
         </>
       )}
     </section>
@@ -149,7 +180,16 @@ export function TopicLinks({
           <span className="eyebrow">{words(t.pillar)}</span>
           <strong>{t.title}</strong>
           {t.reason && <span className="muted">{t.reason}</span>}
-          <span>Open topic ↗</span>
+          {t.contribution_count !== undefined && (
+            <span className="topic-availability">
+              {t.contribution_count
+                ? `${t.contribution_count} insights · ${t.relation_count || 0} connections${t.reading_route?.ready ? " · Reading route checked by AI" : " · Explanation in progress"}`
+                : "Reading list only · explanation not yet available"}
+            </span>
+          )}
+          <span>
+            {t.contribution_count === 0 ? "View reading list" : "Open topic"} ↗
+          </span>
         </button>
       ))}
     </div>
@@ -267,7 +307,8 @@ export function PersonCard({
       <p>{p.biography || p.subjects.map(words).join(" · ")}</p>
       <span>
         {p.work_count || 0} selected {p.work_count === 1 ? "work" : "works"} ·{" "}
-        {p.contribution_count} insights · Open profile ↗
+        {p.contribution_count}{" "}
+        {p.contribution_count === 1 ? "insight" : "insights"} · Open profile ↗
       </span>
     </button>
   );

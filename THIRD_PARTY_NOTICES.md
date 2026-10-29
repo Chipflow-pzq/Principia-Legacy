@@ -28,3 +28,13 @@ IMU, Abel Prize, Computer History Museum, MacTutor, university, museum and schol
 biography pages retain their respective rights. Their full pages and acquisition
 caches are not bundled. Links and hashes identify the consulted material; the
 project's CC BY license does not relicense source prose or original publications.
+
+## Optional private-server semantic search
+
+FastEmbed (Apache-2.0) and ONNX Runtime (MIT), installed separately, run the
+`sentence-transformers/all-MiniLM-L6-v2` encoder (Apache-2.0) from the
+[Qdrant ONNX distribution](https://huggingface.co/Qdrant/all-MiniLM-L6-v2-onnx).
+The private index records exact model file hashes and dependency version. Neither
+these dependencies nor the encoder weights are bundled in the cloud preview or
+standard offline reader. Their own licenses remain applicable to separate
+installation and redistribution.

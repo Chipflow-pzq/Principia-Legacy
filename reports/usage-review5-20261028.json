@@ -1,0 +1,28 @@
+{
+  "baseline_exposure_cny": 584.08,
+  "baseline_known_cny": 232.874,
+  "conservative_exposure_cny": 605.459934,
+  "ledger": [
+    {
+      "attempts": 2657,
+      "known_estimate_cny": 254.25836,
+      "reserved_cny": 1102.668522,
+      "state": "known"
+    },
+    {
+      "attempts": 3,
+      "known_estimate_cny": null,
+      "reserved_cny": 300.43682,
+      "state": "reserved"
+    },
+    {
+      "attempts": 104,
+      "known_estimate_cny": null,
+      "reserved_cny": 50.764753999999996,
+      "state": "unknown"
+    }
+  ],
+  "notice": "Estimates, not a provider bill. Older uncertain requests and the separate CNY300 browser-testing reservation remain included; they were not cleared or replayed.",
+  "time": "2026-10-28T13:50:27+00:00",
+  "working_ceiling_cny": 1500
+}

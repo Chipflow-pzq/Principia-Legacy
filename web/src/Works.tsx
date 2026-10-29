@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { api, Work, WorkDetail, words } from "./types";
 import { TopicLinks } from "./People";
+import { usePageOffset } from "./usePageOffset";
 import { RichText } from "./RichText";
 
 export function WorkCard({
@@ -11,7 +12,7 @@ export function WorkCard({
   onClick: () => void;
 }) {
   return (
-    <button className="work-card" onClick={onClick}>
+    <button id={`work-card-${work.id}`} className="work-card" onClick={onClick}>
       <span className="eyebrow">
         {words(work.kind)}
         {work.year ? ` · ${work.year}` : ""}
@@ -24,7 +25,7 @@ export function WorkCard({
         <span>
           {work.insight_count
             ? `${work.insight_count} extracted insights`
-            : "Catalogued · insights pending"}
+            : "Reading list only · no extracted insights"}
         </span>
         <span>Read work ↗</span>
       </span>
@@ -48,11 +49,13 @@ export function WorkCards({
 }
 export function TopicWorks({
   topic,
+  person,
   release,
   human,
   onWork,
 }: {
   topic: string;
+  person?: string;
   release: string;
   human: boolean;
   onWork: (id: string) => void;
@@ -60,16 +63,19 @@ export function TopicWorks({
   const [data, setData] = useState<{ works: Work[]; total: number } | null>(
       null,
     ),
-    [error, setError] = useState(""),
-    [limit, setLimit] = useState(6);
-  useEffect(() => setLimit(6), [topic]);
+    [error, setError] = useState("");
+  const [offset, setOffset] = usePageOffset(
+    "worklistpage",
+    `${topic || person}/${human}`,
+    12,
+  );
   useEffect(() => {
     const c = new AbortController();
     setData(null);
     setError("");
     api<{ works: Work[]; total: number }>(
       "works",
-      { topic, release, human, limit },
+      { topic, person, release, human, limit: 12, offset },
       c.signal,
     )
       .then(setData)
@@ -77,33 +83,46 @@ export function TopicWorks({
         if (e.name !== "AbortError") setError(e.message);
       });
     return () => c.abort();
-  }, [topic, release, human, limit]);
+  }, [topic, person, release, human, offset]);
   if (error) return <p role="alert">{error}</p>;
   if (!data) return <p role="status">Loading works…</p>;
   if (!data.total) return null;
   return (
     <section className="topic-works" aria-label="Works in this topic">
       <h2>
-        Works behind this topic <span className="muted">· {data.total}</span>
+        {person ? "Selected works" : "Works behind this topic"}{" "}
+        <span className="muted">· {data.total}</span>
       </h2>
       <p className="muted">
         Papers, books, discoveries and technologies. One work can explain
         several insights and appear in several topics.
       </p>
       <WorkCards works={data.works} onWork={onWork} />
-      {data.works.length < data.total && (
-        <button
-          onClick={() => setLimit(Math.min(100, limit + 12))}
-          disabled={limit >= 100}
-        >
-          Show more works
-        </button>
+      {data.total > 12 && (
+        <nav className="pagination" aria-label="Works in topic pages">
+          <button
+            disabled={!offset}
+            onClick={() => setOffset(Math.max(0, offset - 12))}
+          >
+            Previous works
+          </button>
+          <span>
+            {offset + 1}–{Math.min(offset + 12, data.total)} of {data.total}
+          </span>
+          <button
+            disabled={offset + 12 >= data.total}
+            onClick={() => setOffset(offset + 12)}
+          >
+            Next works
+          </button>
+        </nav>
       )}
     </section>
   );
 }
 export function WorkPage({
   id,
+  backLabel,
   release,
   human,
   onBack,
@@ -113,6 +132,7 @@ export function WorkPage({
   onWork,
 }: {
   id: string;
+  backLabel?: string;
   release: string;
   human: boolean;
   onBack: () => void;
@@ -121,15 +141,18 @@ export function WorkPage({
   onIdea: (id: string) => void;
   onWork: (id: string) => void;
 }) {
-  const [data, setData] = useState<WorkDetail | null>(null),
+  const [offset, setOffset] = usePageOffset("workpage", `${id}/${human}`, 40);
+  const [data, setData] = useState<
+      (WorkDetail & { contribution_total: number }) | null
+    >(null),
     [error, setError] = useState("");
   useEffect(() => {
     const c = new AbortController();
     setData(null);
     setError("");
-    api<WorkDetail>(
+    api<WorkDetail & { contribution_total: number }>(
       `works/${encodeURIComponent(id)}`,
-      { release, human },
+      { release, human, limit: 40, offset },
       c.signal,
     )
       .then(setData)
@@ -137,11 +160,11 @@ export function WorkPage({
         if (e.name !== "AbortError") setError(e.message);
       });
     return () => c.abort();
-  }, [id, release, human]);
+  }, [id, release, human, offset]);
   return (
     <article className="work-page">
       <button className="back-link" onClick={onBack}>
-        ← Back to browsing
+        ← {backLabel || "Back to browsing"}
       </button>
       {error ? (
         <p role="alert">{error}</p>
@@ -188,7 +211,7 @@ export function WorkPage({
             <p className="notice">
               {human
                 ? "No insights from this work have a recorded human review."
-                : "This work is documented in the catalog. Passage-grounded insight extraction is still pending; no claims or connections have been inferred from its award or reputation."}
+                : "This is a reading-list entry. Its insights have not yet been extracted and checked. You can open the original work below, or return to your search for available explanations."}
             </p>
           )}
           <div className="node-list">
@@ -213,6 +236,26 @@ export function WorkPage({
               </button>
             ))}
           </div>
+          {data.contribution_total > 40 && (
+            <nav className="pagination" aria-label="Work insight pages">
+              <button
+                disabled={!offset}
+                onClick={() => setOffset(Math.max(0, offset - 40))}
+              >
+                Previous insights
+              </button>
+              <span>
+                {offset + 1}–{Math.min(offset + 40, data.contribution_total)} of{" "}
+                {data.contribution_total}
+              </span>
+              <button
+                disabled={offset + 40 >= data.contribution_total}
+                onClick={() => setOffset(offset + 40)}
+              >
+                Next insights
+              </button>
+            </nav>
+          )}
           {!!data.memberships.length && (
             <details>
               <summary>Why these insights belong to this work</summary>

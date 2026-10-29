@@ -1,10 +1,10 @@
 """Bounded, resumable evidence review. Produces a report; never silently edits records."""
 
 import argparse
+import sys
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-import sys
 
 root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root / "src"))
@@ -16,14 +16,19 @@ from principia_legacy.storage import corpus, latest_records
 
 
 def run(args):
+    root = (
+        args.data_home.resolve()
+        if args.data_home
+        else Path(__file__).resolve().parents[1]
+    )
     history = corpus(root)
     versions = {(r["id"], r["revision"]): r for r in history}
     records = [
         r for r in latest_records(history) if r["type"] == args.kind and visible(r)
     ]
     if args.records_file:
-        ids={r["id"] for r in read_lines(root/args.records_file)}
-        records=[r for r in records if r["id"] in ids]
+        ids = {r["id"] for r in read_lines(root / args.records_file)}
+        records = [r for r in records if r["id"] in ids]
     if args.sample:
         groups = defaultdict(list)
         for r in records:
@@ -198,6 +203,7 @@ def run(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--env-file", required=True)
+    parser.add_argument("--data-home", type=Path)
     parser.add_argument("--kind", choices=["contribution", "relation"], required=True)
     parser.add_argument("--records-file", help="Audit a bounded admitted batch")
     parser.add_argument("--sample", type=int, default=0)

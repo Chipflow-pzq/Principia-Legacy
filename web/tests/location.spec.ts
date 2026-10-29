@@ -1,5 +1,9 @@
 import { test, expect } from "@playwright/test";
+import { atlasJSON } from "./atlas";
 import { normalizeLocation } from "../src/location";
+test.afterEach(async ({ page }) => {
+  await page.unrouteAll({ behavior: "ignoreErrors" });
+});
 
 test("old preview labels normalize without losing reproducible atlas links", () => {
   expect(
@@ -45,10 +49,10 @@ test("a historical topic returns intact while new research uses the current atla
   page,
   request,
 }) => {
-  const info = await (await request.get("/api/info")).json();
+  const info = await atlasJSON(request, "/api/info");
   await page.goto("/#dossier=C01&release=1.2.0-exploratory");
   await expect(
-    page.getByText("Reading an earlier version · Open current version ↗"),
+    page.getByRole("button", { name: "Open the latest atlas" }),
   ).toBeVisible();
   await page
     .getByRole("button", { name: "Trace a discovery", exact: true })
@@ -63,7 +67,7 @@ test("a historical topic returns intact while new research uses the current atla
     .click();
   await expect(page).toHaveURL(/#dossier=C01&release=1\.2\.0-exploratory$/);
   await expect(
-    page.getByText("Reading an earlier version · Open current version ↗"),
+    page.getByRole("button", { name: "Open the latest atlas" }),
   ).toBeVisible();
 });
 
@@ -71,7 +75,7 @@ test("an open tab can follow a newly available snapshot absent from its cached l
   page,
   request,
 }) => {
-  const current = (await (await request.get("/api/info")).json()).release_id;
+  const current = (await atlasJSON(request, "/api/info")).release_id;
   await page.route("**/api/info?**", async (route) => {
     const response = await route.fetch();
     const data = await response.json();

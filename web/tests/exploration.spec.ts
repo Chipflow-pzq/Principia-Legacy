@@ -186,7 +186,11 @@ function exported() {
     receipts: [],
   };
 }
-async function setup(page: Page, mode = "success") {
+async function setup(
+  page: Page,
+  mode = "success",
+  beforeNavigation?: () => Promise<void>,
+) {
   const localRequests: string[] = [],
     external: string[] = [],
     modelBodies: unknown[] = [];
@@ -202,6 +206,15 @@ async function setup(page: Page, mode = "success") {
       localRequests.push(
         `${req.method()} ${req.url()} ${req.postData() || ""}`,
       );
+      if (url.pathname.endsWith("/api/exploration-manifest"))
+        return route.fulfill({
+          json: {
+            shards: [],
+            total: 0,
+            release_id: "1.2.0-exploratory",
+            snapshot_hash: "a".repeat(64),
+          },
+        });
       if (url.pathname.endsWith("/api/exploration-index"))
         return route.fulfill({
           json: {
@@ -248,7 +261,7 @@ async function setup(page: Page, mode = "success") {
         headers: cors,
         json: {
           data: [
-            { id: "deepseek-ai/DeepSeek-V4-Flash" },
+            { id: "deepseek-ai/DeepSeek-V4.1-Flash" },
             { id: "fixture/another-model" },
           ],
         },
@@ -575,6 +588,7 @@ async function setup(page: Page, mode = "success") {
       },
     });
   });
+  await beforeNavigation?.();
   await page.goto("/#page=explore");
   await expect(
     page.getByRole("heading", {
@@ -635,6 +649,37 @@ async function stored(page: Page) {
     });
   });
 }
+
+test("first submission waits for the lazily loaded research workspace", async ({
+  page,
+}) => {
+  let release!: () => void;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await setup(page, "success", async () => {
+    await page.route(
+      /\/(?:assets\/Explorer-[^/]+\.js|src\/Explorer\.tsx)(?:\?.*)?$/,
+      async (route) => {
+        await gate;
+        await route.continue();
+      },
+    );
+  });
+  await configure(page);
+  await page.getByLabel("Which discovery would you like to trace?").fill(QUERY);
+  const button = page.getByRole("button", {
+    name: "Build research map",
+    exact: true,
+  });
+  await expect(button).toBeDisabled();
+  release();
+  await expect(button).toBeEnabled();
+  await button.click();
+  await expect(
+    page.getByRole("heading", { name: "A fixture exploration of attention" }),
+  ).toBeVisible();
+});
 
 test("short technology names can be submitted without padding the user's question", async ({
   page,
@@ -1157,7 +1202,7 @@ test("saving, reopening and export retain maps but never credentials", async ({
       exact: true,
     })
     .click();
-  expect(await stored(page)).toEqual([]);
+  await expect.poll(() => stored(page)).toEqual([]);
   await page.getByRole("button", { name: "Undo removal", exact: true }).click();
   await expect(
     page.getByRole("heading", {
@@ -1230,7 +1275,7 @@ test("model discovery preserves the exact selected model and clearing the key wo
     page.getByText("2 models available to your account.", { exact: false }),
   ).toBeVisible();
   await expect(page.getByLabel("Model ID", { exact: true })).toHaveValue(
-    "deepseek-ai/DeepSeek-V4-Flash",
+    "deepseek-ai/DeepSeek-V4.1-Flash",
   );
   await page
     .getByRole("button", { name: "Clear API key", exact: true })
@@ -1531,10 +1576,12 @@ test("progress shows a draft and pause resumes only the unfinished evidence chec
       exact: true,
     })
     .click();
-  expect(await stored(page)).toEqual([]);
+  await expect.poll(() => stored(page)).toEqual([]);
   await page.getByRole("button", { name: "Undo removal", exact: true }).click();
   // Undo restores the previously saved partial version, without silently saving later changes.
-  expect((await stored(page))[0].completion).toBe("partial");
+  await expect
+    .poll(async () => (await stored(page))[0]?.completion)
+    .toBe("partial");
   await expect(
     page.getByRole("button", { name: "Save updated map", exact: true }),
   ).toBeVisible();

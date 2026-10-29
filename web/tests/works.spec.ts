@@ -65,7 +65,7 @@ test("typo search reaches a real person and work, preserving the results", async
   await expect(page.locator(".work-page h1")).toContainText(
     /On computable numbers/i,
   );
-  await page.getByRole("button", { name: "← Back to browsing" }).click();
+  await page.getByRole("button", { name: "← Back to search results" }).click();
   await expect(page.getByRole("button", { name: /^Works ·/ })).toHaveAttribute(
     "aria-pressed",
     "true",
@@ -129,21 +129,21 @@ test("concept search and catalog-only topics disclose extraction gaps", async ({
     .filter({ hasText: "Interactive Linear Algebra" })
     .click();
   await expect(page.locator(".work-page")).toContainText(
-    "insight extraction is still pending",
+    "Its insights have not yet been extracted and checked",
   );
   await page.locator(".work-page .topic-link").first().click();
-  await expect(page.locator(".dossier-view")).toContainText(
-    "insight extraction",
-  );
+  await expect(page.locator(".dossier-view")).toContainText("reading list");
   await expect(page.locator(".graph")).toHaveCount(0);
   await expect(
-    page.getByRole("button", { name: "← All topics" }),
+    page.getByRole("button", { name: "← Back to work", exact: true }),
   ).toBeVisible();
-  await page.getByRole("button", { name: "← All topics" }).click();
+  await page
+    .getByRole("button", { name: "← Back to work", exact: true })
+    .click();
   await page.reload();
-  await expect(
-    page.getByRole("heading", { name: "Browse all topics" }),
-  ).toBeVisible();
+  await expect(page.locator(".work-page h1")).toContainText(
+    "Interactive Linear Algebra",
+  );
 });
 
 test("catalog pages fit narrow screens without horizontal overflow", async ({

@@ -1,65 +1,60 @@
-# Local review workspace
+# Review Principia-Legacy 1.5 locally
 
-**Reader 1.4.1 · atlas 1.4.1-exploratory · 17 October 2026.** The local version has passed owner acceptance. It includes the corrected and expanded scientific collection as well as the reader and personal-exploration workflow.
+**Accepted preview: reader 1.5.0rc4 · atlas 1.5.0-review5.** Accepted on 29 October 2026; the same scientific records are published as `1.5.0-exploratory` with reader 1.5.0. [Public deployment](DEPLOYMENT-1.5.md). The preview remains separate for future development.
 
-## Open it
+Open **[http://127.0.0.1:8767/](http://127.0.0.1:8767/)**. The lightweight preview uses bundled assets and the private server's read-only database through SSH. The header identifies **Private cloud · SSH**. Network access and the configured `principia-hk` SSH host are required; no database, model or corpus is downloaded. Settings → About this installation identifies software and scientific snapshot separately. Reload an older tab. Old `?preview=...` parameters never selected a different application build.
 
-Use **[the ordinary local address](http://127.0.0.1:8767/)**, then choose **Trace a discovery**. The direct link is **[the same exploration workspace](http://127.0.0.1:8767/#page=explore)**. Old `?preview=...` links normalize automatically. A preview parameter never selected a different application build. **Settings → About this installation** identifies the reader version and the separate atlas snapshot. Topic and insight links retain their snapshot for reproducibility; personal exploration does not need a snapshot in its navigation URL. Open a fresh tab if an older tab retains earlier JavaScript. An existing reader on port 8765 is separate.
+This Mac starts the preview automatically at login. After this software update, reload an already-open tab once to load its reconnection support.
 
-To restart from the repository root:
+For a manual installation, double-click `start-cloud.command` in the **Principia-Legacy Preview** folder next to the development folder, or run this from either folder:
 
 ```sh
-python3 start.py serve --offline --port 8767
+python3 start-cloud.py
 ```
 
-Python 3.12+ is sufficient for the prebuilt reader. Reading the atlas or opening a saved map needs no network or API key. Creating a personal exploration is explicitly online and uses the key entered in the browser; the server process does not make provider requests.
+Python 3.12+ and SSH are sufficient; Node.js and an API key are unnecessary. The cloud package is approximately **3.2 MB**. Existing personal maps remain available at the same browser origin. A disconnected tunnel reconnects automatically, and pending atlas reads resume in the same page. A temporary connection notice preserves your query and current view. The supplied Mac now starts this preview at login and restarts it if the local process exits. You can open the URL directly without starting a terminal. Internet access and a reachable server remain necessary.
 
-## Explore from one place
+Offline review remains available through the previously verified **review3** reader archive, launched with `python3 start.py` (default port 8765). It does not contain review5's new explanations or the server-only semantic index. Keep explicitly downloaded snapshots separate from authoritative server data.
 
-The same input card offers **Browse the atlas** and **Trace a discovery**. The second button reveals the research input. Switching modes preserves an unfinished question, and returning to Browse restores the earlier search or topic. A public search can also prefill a research question.
+## Search and topic browsing
 
-Enter your own SiliconFlow key and exact model ID once in the global top-right **Settings**. **Load my available models** discovers your account's model IDs without silently changing the selection. The model is stored locally. Select **Remember API key on this device** only if you want the key retained after a reload; otherwise it stays in tab memory. **Clear API key** removes it from both places.
+**Browse the atlas** prioritizes exact terms, curated aliases and spelling corrections. If these return no matches, the private server ranks related entries using a small, locally cached sentence encoder. Suggestions are labelled **Related by meaning**; similarity is not evidence, scientific equivalence, or complete coverage. No provider key or external inference service is involved. Single names and nonsense queries do not automatically acquire neighbours.
 
-Enter a paper, technique or scientific advance and select **Build research map**. Source counts, new insights, stage activity and elapsed time appear as work progresses. **Inspect draft now** opens the emerging map. The final evidence check shows the number of insights and connections assessed, together with a **60-second maximum wait**, shared by formatting repair and any compatibility handling. Earlier stages show approximate remaining-time ranges.
+Try **neuronal group communication**, **neuronal state space**, and **brain activity as trajectories in a low dimensional space**. Two neuroscience topics now contain checked explanations from three full-text papers. The communication topic has 11 insights and eight warranted relationships, including a separately labelled teaching prerequisite. Its ancestry remains incomplete. Open **What is available in this atlas?** to distinguish explained works and topics from reading-list entries.
 
-If generation ends early, whole source-linked insights can still proceed to evidence review. If the review is incomplete, the map remains available with an unfinished-review label; it is never presented as having passed the check. **Resume evidence check** repeats only that unfinished step. Pausing preserves the draft and session checkpoint. A background run stays reachable from the header while browsing elsewhere.
+Multiword method names receive phrase priority; spelling variants, known singular forms and questions containing an example are handled without a provider call. Semantic suggestions remain approximate. A match is a place to continue reading, not an answer verified against every premise in a question.
 
-Use **Save on this device** for browser storage or **Download map** for a portable file. **Open a map file** restores it offline without a key. After resuming a saved partial map, **Save updated map** explicitly replaces that local copy. **Undo removal** restores a map removed during the session. Closing or reloading the tab discards unsaved work and recovery checkpoints; a downloaded partial map preserves its content, not the ability to resume that session.
+Under **Browse all topics**, **Refine by area** is optional. It shows at most eight choices; typing narrows them. Subject, area, coverage and page remain in navigation history and survive reload.
 
-## Catalogue changes in 1.4
+## A short reading journey
 
-Discovery suggestions follow the selected subject. Search returns topics, works,
-ideas and selected individual contributors; spelling corrections and related
-concepts are explained inline. Open a work to see its people, containing topics,
-checked insights and source versions. Search context survives reading and Back.
-Metadata-only works clearly show that extraction is pending. See the [1.4 notes](RELEASE-1.4.md).
+1. Choose **Physics**. Discovery suggestions and topic cards now follow that subject.
+2. Set **Coverage → Ideas available**, or select **Reading route checked by AI** for the stricter explanatory-route subset. This means machine editorial review, not expert human approval.
+3. Open a topic, switch between **Map** and **List**, and select an insight. The inspector starts with its claim and reasoning; related works, other topics, attribution and evidence follow.
+4. Select an arrow to inspect its precise meaning and warrant. History, reasoning, evidence, analogy and learning prerequisites remain distinct.
+5. Follow a work or scientist, then use the contextual **Back** control. Subject, filters, pagination, display mode, scroll and focus return with you.
+6. Search for an idea or a person—for example, a spelling variant of Alan Turing. Results include **topics, works, ideas and people**. Reading-list cards disclose the absence of checked insights before opening. They also link to the original work. Use the inspector’s **Back to results** control to return directly to a search, including on a phone.
 
-## Personal exploration inherited from 1.3
+Topic lists have their own pages, so every admitted insight remains reachable while graphs keep the 200-node safety bound. Work and person collections also paginate. Try keyboard navigation, the list alternative and a narrow window; inline mathematics uses bundled KaTeX.
 
-The explorer now looks for a governing principle, intermediate mechanisms and the requested result. It retrieves additional intermediate route concepts within the same eight-reference budget and preserves the main passage when multiple queries return one article. It reads bounded explanatory passages alongside research abstracts and the public atlas. Insights and connections are drafted separately. A bridge can use its own source rather than being restricted to sources already cited by both endpoints.
+## Trace a discovery
 
-The application preserves complete singleton result objects as well as arrays, assigns node IDs, validates evidence anchors and independently checks each arrow's direction, scope and warrant. Generative requests use JSON-object mode after live comparisons exposed failures in nested strict decoding. Planning uses a small explicit reasoning allowance because some models ignored the non-thinking flag. Small verdict requests retain structured contracts. A completed empty drafting object, copied template or unmistakable input echo can receive one bounded replacement; no timed-out generation is automatically replayed. Four focused literature searches complement direct foundation and mechanism lookups. Node checks use batches of two and compare earlier ideas to avoid duplicate moves; a missing route can receive one bounded refinement that preserves already-checked records.
+Choose **Trace a discovery** in the same input area. Enter a paper, technique or scientific result. In the top-right **Settings**, add your SiliconFlow key and exact model ID. **Load my available models** checks account availability without silently substituting a model. The default is `deepseek-ai/DeepSeek-V4.1-Flash`; a saved selection is respected. Saving a key on this device is optional.
 
-The map distinguishes **Foundation**, **Enabling idea**, **Requested result** and **Boundary or tradeoff**. Its reading route is navigation through individually labelled relationships, never a claim that a mixed path is a proof or documented historical influence. A mainly pedagogical route is labelled **guided reading path**. Missing links remain visible.
+The progress view shows sources, new insights, checks completed and elapsed time. Remaining-time ranges are estimates. **Inspect draft now** opens the emerging map. Pausing preserves the current tab's checkpoint; an unfinished evidence review can be resumed explicitly. A missing link is shown as a gap, not invented to connect the drawing.
 
-A known source conflict is excluded by exact reference revision. Older saved maps using it show an inspectable warning without rewriting their content.
+Use **Save on this device** or **Download map** to retain a result. The saved-map library reads compact metadata instead of parsing every full map. Unsaved tab checkpoints do not survive reload; a downloaded map preserves its content, not the running session.
 
-Actual provider runs, unfavorable developmental results, test counts, timings and usage are recorded in [BUILD_STATUS](../BUILD_STATUS.md), the [1.3 live evaluation](../reports/product-readiness-1.3.md), and the [earlier six-query report](../reports/local-preview-1.3-six-query.md). Completion of a model check does not establish scientific correctness. No qualified human audit has been performed.
+The final six-query Flash test completed all six maps in 142–193 seconds. Four met the structural-route check; GPU/CUDA and ChatGPT remained incomplete. Only one met both the first-insight and completion-time targets. Earlier provider failures remain recorded. These are experimental drafts, not a guaranteed reconstruction of scientific ancestry or a human-reviewed account. [Actual acceptance evidence](../reports/acceptance-1.5.md).
 
-## Reader details to inspect
+## Privacy and reproducibility
 
-- **Mathematics:** inspect scaled dot-product attention in the Transformer topic. Inline formulas use bundled KaTeX; display equations scroll independently when necessary.
-- **Navigation:** switch insights and connection types. Existing graph positions stay stable; returning from an inspector preserves search results. A streaming personal graph fits new nodes until you take control of the viewport.
-- **Connections:** a new map starts with all connection types visible and shows how many are displayed. History is amber, reasoning blue, evidence green with long dashes, similar ideas purple with short dashes, and learning prerequisites pink and dotted. Legends and arrows share the same styles.
-- **Sidebar:** the release dropdown is removed. Historical links and Changes remain available for reproducibility.
-- **Accessibility:** use the list view, keyboard navigation and Escape to close Settings or an inspector without losing context. Check a narrow browser width as well as the desktop layout.
+Personal exploration ranks public, snapshot-pinned atlas shards in a browser worker. It fetches only bounded record matches; the atlas server does not receive the private research prompt, API key or generated map. The provider and scholarly search services receive the requests sent directly to them. Ordinary **Browse the atlas** queries use the atlas search API.
 
-## Evidence and privacy
+Maps and optional credentials stay in this browser's local storage. Local ports and the public site have separate storage. Historical topic links remain snapshot-pinned; **What changed** compares public snapshots. Internal development and correction snapshots remain reproducible from the source archive.
 
-The agent searches Crossref, Europe PMC, revision-pinned Wikipedia reference passages and the public atlas index, with bounded follow-up retrieval. It does not browse the entire web or establish scientific priority. Sparse abstracts, paywalls, inaccessible sources and missing ancestry stay visible as gaps.
+[Coverage and remaining work](../BUILD_STATUS.md) · [Personal exploration](PERSONAL_EXPLORATION.md) · [Private staging and restoration](STAGING.md)
 
-All generated maps remain **Personal draft · not verified**. Exact quotations, source identifiers, chronology, scope, relationship direction and a separate model check constrain admission, but can still miss errors. Cross-paper connections require a specific bridge or explicit, scoped synthesis; a citation or shared topic alone is insufficient. No map enters the published corpus automatically; no human scientific audit has been performed.
+## Current completion audit
 
-The key goes directly to SiliconFlow. Research questions go directly to the provider and scholarly search services, whose policies apply. The atlas server receives no private research question, key or generated map. Ordinary **Browse the atlas** searches use the server's read-only search API; transferring an earlier public search into Research does not undo that earlier request. Maps are saved only by explicit choice, to this browser's IndexedDB or a downloaded JSON file. Local preview ports and the public site have separate browser storage.
-
-See [Personal exploration](PERSONAL_EXPLORATION.md) for data flow and operational bounds, [build status](../BUILD_STATUS.md) for readiness and spending receipts, and [verification](../reports/product-readiness-1.3.md) for actual results. See the [deployment record](DEPLOYMENT-1.4.1.md) for the separately verified public installation.
+[28 October coverage and verification report](../reports/coverage-review5-20261028.md): 5,700 insights, 4,211 relationships, 593 explained works out of 1,233 listed, and 49 topics meeting the strict reading-route criteria. The collection remains exploratory; qualified human review is zero. Catalogue size is not completeness. The cloud stores the authoritative corpus, evidence, model, index and receipts; the Mac runs only the thin reader.

@@ -6,6 +6,42 @@ import { packet } from "../src/explore/agent";
 import { mergeSources } from "../src/explore/sources";
 import type { ResearchSource } from "../src/explore/model";
 
+test("long reference excerpts cannot starve checked atlas mechanisms", () => {
+  const sources: ResearchSource[] = Array.from({ length: 9 }, (_, i) => ({
+    id: `reference-${i}`,
+    title: `Predictive systems reference ${i}`,
+    passage:
+      "A synthetic explanatory passage about the operation and its explicit conditions. ".repeat(
+        180,
+      ),
+    authors: [],
+    year: 2024,
+    kind: "reference_excerpt",
+    url: "https://example.org/reference",
+    retrieved_at: "fixture",
+    search_group: i === 0 ? "technology overview" : "enabling reference",
+  }));
+  const atlas = {
+    ...sources[0],
+    id: "atlas-mechanism",
+    title: "Predictive systems enabling operation",
+    kind: "atlas" as const,
+    search_group: "foundation: enabling operation",
+    year: 1960,
+  };
+  const selected = packet([...sources, atlas], "Predictive systems");
+  expect(
+    selected.find((s) => s.id === atlas.id)?.excerpts.length,
+  ).toBeGreaterThan(5);
+  expect(selected.every((s) => s.excerpts.length > 0)).toBe(true);
+  expect(
+    selected.reduce(
+      (sum, s) => sum + s.excerpts.reduce((n, e) => n + e.quote.length, 0),
+      0,
+    ),
+  ).toBeLessThanOrEqual(24000);
+});
+
 test("reviews cannot crowd the direct study out of full-text acquisition or the evidence packet", () => {
   const source = (id: string, title: string): ResearchSource => ({
     id,

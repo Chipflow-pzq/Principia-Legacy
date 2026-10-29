@@ -1,0 +1,26 @@
+{
+  "backup": {
+    "archive": "review5-verified-20261028.tar.gz",
+    "bytes": 371137392,
+    "created_at": "2026-10-28T14:16:13+00:00",
+    "files": 8127,
+    "private": true,
+    "review_release": null,
+    "sha256": "a469b5c17979b7bd893c79229983a05ac3372c2519fbdd3ac869b30e472e555d"
+  },
+  "current_manifest_sha256": "e48c9e92e4ce9747b8ae458103ed8b9c41933f63cfcd15ff9aedc955f486eeae",
+  "notice": "Restored every archived file and verified its checksum. No corpus or private source cache was downloaded to the Mac.",
+  "platform": "Linux",
+  "previous_snapshot_preserved": true,
+  "private_evidence_checksums_verified": true,
+  "restoration": {
+    "archive_sha256": "a469b5c17979b7bd893c79229983a05ac3372c2519fbdd3ac869b30e472e555d",
+    "destination": "/data/xia/Principia-legacy/staging/1.5/restore-review5-verified-20261028",
+    "index_rebuild_required": true,
+    "restored_files": 8127,
+    "review_release": null,
+    "verified": true
+  },
+  "validated_records": 25533,
+  "validation_errors": []
+}

@@ -14,6 +14,7 @@ export function Inspector({
   onPerson,
   onWork,
   searchNavigation,
+  onReturnToSearch,
 }: {
   data: Inspection;
   onClose: () => void;
@@ -23,6 +24,7 @@ export function Inspector({
   onTopic: (id: string) => void;
   onPerson: (id: string) => void;
   onWork: (id: string) => void;
+  onReturnToSearch?: () => void;
   searchNavigation?: {
     index: number;
     total: number;
@@ -60,29 +62,38 @@ export function Inspector({
           ×
         </button>
       </div>
-      {searchNavigation && (
+      {(searchNavigation || onReturnToSearch) && (
         <nav
           className="inspector-search-nav"
           aria-label="Search result navigation"
         >
-          <button onClick={onClose}>← Back to results</button>
-          <span>
-            {searchNavigation.index + 1} of {searchNavigation.total}
-          </span>
           <button
-            aria-label="Previous search result"
-            disabled={!searchNavigation.previous}
-            onClick={searchNavigation.previous}
+            onClick={onReturnToSearch || onClose}
+            aria-label="Back to search results"
           >
-            ←
+            ← Back to results
           </button>
-          <button
-            aria-label="Next search result"
-            disabled={!searchNavigation.next}
-            onClick={searchNavigation.next}
-          >
-            →
-          </button>
+          {searchNavigation && (
+            <>
+              <span>
+                {searchNavigation.index + 1} of {searchNavigation.total}
+              </span>
+              <button
+                aria-label="Previous search result"
+                disabled={!searchNavigation.previous}
+                onClick={searchNavigation.previous}
+              >
+                ←
+              </button>
+              <button
+                aria-label="Next search result"
+                disabled={!searchNavigation.next}
+                onClick={searchNavigation.next}
+              >
+                →
+              </button>
+            </>
+          )}
         </nav>
       )}
       <div className="inspector-body" aria-busy={data.pending || false}>
@@ -125,6 +136,11 @@ export function Inspector({
             </span>
           </div>
         )}
+        {node && (
+          <p className="claim">
+            <RichText text={node.claim} />
+          </p>
+        )}
         {edge && (
           <p className="relation-type">
             {words(edge.predicate)} <span> / {words(edge.layer)}</span>
@@ -166,9 +182,6 @@ export function Inspector({
         </div>
         {depth === "insight" && node && (
           <>
-            <p className="claim">
-              <RichText text={node.claim} />
-            </p>
             <section>
               <h3>The question</h3>
               <p>

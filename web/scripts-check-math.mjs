@@ -3,6 +3,15 @@ import path from "node:path";
 import katex from "katex";
 import { mathTokens, mathBody, isMath } from "./src/math.ts";
 const root = path.resolve("..");
+const argument = (name) => {
+  const i = process.argv.indexOf(name);
+  if (i < 0) return undefined;
+  if (!process.argv[i + 1]) throw new Error(`Missing value for ${name}`);
+  return path.resolve(process.argv[i + 1]);
+};
+const input = argument("--input");
+const output =
+  argument("--output") || path.join(root, "reports/math-validation.json");
 const notation = JSON.parse(fs.readFileSync("src/notation.json", "utf8"));
 const fields = [];
 const latest = new Map();
@@ -25,9 +34,9 @@ function files(dir) {
         : [path.join(dir, e.name)],
     );
 }
-for (const file of files(path.join(root, "corpus")).filter((f) =>
-  f.endsWith(".jsonl"),
-)) {
+for (const file of input
+  ? [input]
+  : files(path.join(root, "corpus")).filter((f) => f.endsWith(".jsonl"))) {
   for (const line of fs
     .readFileSync(file, "utf8")
     .split("\n")
@@ -74,7 +83,7 @@ for (const { text, where, record } of fields) {
   }
 }
 fs.writeFileSync(
-  path.join(root, "reports/math-validation.json"),
+  output,
   JSON.stringify(
     {
       formulas,

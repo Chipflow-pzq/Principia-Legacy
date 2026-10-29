@@ -1,9 +1,14 @@
 {
-  "topics_per_subject": 200,
-  "insights_per_subject": 2000,
+  "topics_per_subject": 100,
+  "insights_per_subject": 1000,
   "subjects": 5,
-  "interpretation": "Working minimum for the owner's expanded request: hundreds of substantive topics and thousands of high-quality insights in each subject. Counts do not establish completeness or qualify records for admission.",
-  "topic_counting": "Report registered, populated, and initial-neighborhood topics separately. Empty source assignments do not satisfy the populated-topic target.",
+  "interpretation": "1.5 milestone, not an admission quota. Report any shortfall explicitly. Preserve the larger long-term goal.",
+  "topic_counting": "Separate registered, some-content, eight-insight, structural-route-candidate and route-ready counts. Route ready needs a current pinned editorial assessment of a representative evidenced route, a resolved endpoint and explicit limits/gaps. Machine work is not human review.",
   "insight_counting": "Count unique visible contributions by their primary subject; shared navigational membership does not multiply the global or subject insight total.",
-  "relationships": "Admit only independently warranted relationships; no relationship quota."
+  "relationships": "Admit only independently warranted relationships; no relationship quota.",
+  "topic_counting_mode": "route_ready",
+  "longer_term_target": {
+    "topics_per_subject": 200,
+    "insights_per_subject": 2000
+  }
 }

@@ -82,6 +82,10 @@ export function Graph({
           },
         },
         {
+          selector: "node.compact",
+          style: { "font-size": 14, "text-max-width": "150px" },
+        },
+        {
           selector: "node:selected",
           style: {
             "border-color": "#ffffff",
@@ -169,7 +173,8 @@ export function Graph({
     });
     const observer = new ResizeObserver(() => {
       cy.resize();
-      if (autoFit && !viewportTouched.current) fit(cy);
+      if ((autoFit || cy.nodes().length <= 24) && !viewportTouched.current)
+        fit(cy);
     });
     observer.observe(container.current);
     return () => {
@@ -193,6 +198,7 @@ export function Graph({
           a.title.localeCompare(b.title),
       )
       .map((n, i) => ({
+        classes: nodes.length <= 24 && !autoFit ? "compact" : "",
         data: {
           id: n.id,
           label: n.title,
@@ -202,7 +208,7 @@ export function Graph({
         },
         position:
           positions.current[n.id] ||
-          (autoFit
+          (autoFit || nodes.length <= 24
             ? (() => {
                 const slot = nextPosition++;
                 return {
@@ -270,7 +276,7 @@ export function Graph({
           },
         });
     }
-    if (autoFit) {
+    if (autoFit || nodes.length <= 24) {
       // Stable grid positions keep streaming maps readable, but a straight
       // chord can pass through a third node and imply a nonexistent link.
       // Bend only those chords; keep parallel relationships distinguishable.
@@ -316,11 +322,13 @@ export function Graph({
         .remove();
       for (const element of elements) {
         const existing = cy.getElementById(element.data.id!);
-        if (existing.length) existing.data(element.data);
-        else cy.add(element);
+        if (existing.length) {
+          existing.data(element.data);
+          existing.classes(element.classes || "");
+        } else cy.add(element);
       }
     });
-    if (autoFit && !viewportTouched.current) fit(cy);
+    if ((autoFit || nodes.length <= 24) && !viewportTouched.current) fit(cy);
     else if (fresh && nodes.length === 1) {
       cy.zoom(1);
       cy.center();
@@ -340,11 +348,15 @@ export function Graph({
       cy.nodes().forEach((n) => {
         positions.current[n.id()] = n.position();
       });
-      // Start at a readable scale around the selected result. The overview
-      // control is available without making every initial label microscopic.
-      cy.zoom(Math.max(cy.zoom(), 0.82));
-      const focus = selected ? cy.getElementById(selected) : cy.nodes().first();
-      if (focus.length) cy.center(focus);
+      if (nodes.length <= 24) fit(cy);
+      else {
+        // Larger maps start at a readable scale; compact maps show every node.
+        cy.zoom(Math.max(cy.zoom(), 0.82));
+        const focus = selected
+          ? cy.getElementById(selected)
+          : cy.nodes().first();
+        if (focus.length) cy.center(focus);
+      }
     } else if (nodes.length) cy.viewport(viewport);
     if (selected) {
       cy.getElementById(selected).select();

@@ -410,6 +410,31 @@ test("a chain of teaching arrows alone does not qualify as a scientific backbone
   });
 });
 
+test("a direct teaching shortcut does not hide supported converging three-node routes", () => {
+  const d = validateDraft(fixture(), sources, registry);
+  const links = [
+    {
+      ...d.relations[0],
+      id: "shortcut",
+      conclusion: "n3",
+      predicate: "prerequisite_for_reading",
+      layer: "pedagogical",
+    },
+    d.relations[0],
+    { ...d.relations[1], premises: ["n0"] },
+    { ...d.relations[2], premises: ["n1"] },
+    { ...d.relations[2], id: "parallel", premises: ["n2"] },
+  ];
+  expect(lineage(d.nodes, links)).toMatchObject({
+    route: ["n0", "n1", "n3"],
+    hasBackbone: true,
+  });
+  // A three-node route alone still lacks the required four-node core.
+  expect(lineage(d.nodes, links.slice(0, 2).concat(links[3])).hasBackbone).toBe(
+    false,
+  );
+});
+
 test("evidence basis and explanatory roles survive a validated portable map", () => {
   const raw = fixture();
   raw.relations[0].basis = "synthesis";
@@ -1071,4 +1096,38 @@ test("clearing an unsupported date also withholds the historical claim that depe
   expect(result.gaps.join(" ")).toContain(
     "Discovery dates were not established",
   );
+});
+
+test("mechanism-specific atlas matches keep evidence space ahead of tangential older work", () => {
+  const older: ResearchSource[] = Array.from({ length: 8 }, (_, i) => ({
+    ...sources[0],
+    id: `old-${i}`,
+    kind: "atlas",
+    year: 1900 + i,
+    title: "Earlier model for an unrelated operation",
+    search_group: "initial",
+  }));
+  const mechanism: ResearchSource = {
+    ...sources[1],
+    id: "mechanism",
+    kind: "atlas",
+    year: 2017,
+    title: "Attention-only Transformer architecture",
+    search_group: "foundation: Transformer architecture",
+  };
+  const explicitRoot: ResearchSource = {
+    ...sources[2],
+    id: "root",
+    kind: "atlas",
+    year: 1950,
+    title: "Conditional probability",
+    search_group: "foundation: Conditional probability",
+  };
+  const result = packet([...older, mechanism, explicitRoot], "language models");
+  expect(result.slice(0, 4).map((s) => s.id)).toEqual(
+    expect.arrayContaining(["mechanism", "root"]),
+  );
+  expect(
+    result.find((s) => s.id === "mechanism")?.excerpts.length,
+  ).toBeGreaterThan(0);
 });

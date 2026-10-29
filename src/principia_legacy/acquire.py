@@ -202,6 +202,10 @@ def acquire(root, url, allowed_hosts, force=False):
             env=env,
         )
         if parsed.returncode:
+            if b"No module named 'pypdf'" in parsed.stderr:
+                raise ValueError(
+                    "PDF authoring dependency missing. Run this job with the isolated authoring environment; no model request was submitted."
+                )
             raise ValueError(
                 "PDF parser failed or exceeded its CPU budget; use a lawful HTML/text alternative"
             )

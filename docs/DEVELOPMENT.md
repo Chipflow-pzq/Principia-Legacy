@@ -117,13 +117,27 @@ the same build. Keep all earlier outcomes when reporting an iteration.
 `works.py` validates work identity, exact evidence-pinned memberships and scoped
 projections of checked insight connections. `retrieval.py` owns bounded spelling
 and related-concept expansion; it has no external service or embedding dependency.
-`storage.py` compiles their SQLite indexes, and `Works.tsx` renders work navigation.
+`compiler.py` builds SQLite indexes; `query_index.py` builds compact membership,
+coverage and catalogue indexes. `queries.py` owns bounded catalogue/search pages,
+`graph_queries.py` owns graph traversal, and `storage.py` retains the reader facade
+and revision-aware inspectors. `Works.tsx` renders work navigation.
 The source selection is in small configuration manifests; the deterministic
 `scripts/build_work_catalog.py` compiles it without calling a provider.
 
-The reader retains at most two decoded public snapshots for comparisons. Cache
-keys are fixed-size hashes of exact JSON payloads, avoiding retained multi-megabyte
-strings. A lock prevents duplicate parallel decoding; no personal query is cached.
-Working builds invalidate by payload content, including rebuilt databases at the
-same path. Inspect `reports/catalog-1.4-memory-stress.json` for the actual historical
-browsing test rather than assuming a process has a fixed resident size.
+Homepage summaries and collection pages use precomputed SQL indexes. Individual
+topic, work and person memberships have independent pagination; the graph's
+200-node limit does not hide the remaining list entries. Snapshot metadata uses
+compressed payloads in SQLite, without altering canonical manifest hashes. FTS
+indexes each unique insight revision once and joins snapshot membership at query
+time. No ORM, embedding service or server-side personal-query cache is required.
+
+Personal research downloads hash-checked public search shards, pins their snapshot,
+and ranks compact entries in a Web Worker. Full evidence records are fetched only
+for bounded matches. The public-shard cache and saved-map metadata index are separate
+from personal map contents. See [remote authoring and offline review](STAGING.md).
+
+Synthetic scale fixtures must remain outside `corpus/`. `scripts/scale_reader.py`
+measures 10k–100k generated insight indexes; `scripts/scale_browser.mjs` measures the
+actual browser ranking worker with synthetic entries. Report broad and distinct
+queries, compilation memory, reader memory, browser memory and network latency
+separately. A passing average cannot hide a failing tail-latency target.

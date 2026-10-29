@@ -16,8 +16,7 @@ from principia_legacy.common import (
     digest,
     read_json,
     read_lines,
-    write_json,
-    write_lines,
+    root_path,
 )
 from principia_legacy.records import visible
 from principia_legacy.retrieval import normalize
@@ -44,8 +43,7 @@ def ref(r):
     return {k: r[k] for k in ("id", "revision", "content_hash")}
 
 
-def main():
-    root = ROOT
+def compile_catalog(root, commit):
     records = corpus(root)
     current = latest_records(records)
     by_version = {(r["id"], r["revision"]): r for r in records}
@@ -183,6 +181,18 @@ def main():
             w["summary"] += " " + item["summary"]
         if item.get("source_id"):
             w.setdefault("evidence_source_ids", []).append(item["source_id"])
+    # Explicit source bindings let a previously catalogue-only paper gain its
+    # checked insights without creating a second, disconnected work identity.
+    for w in read_json(root / "config/extra_works.json", []):
+        if w["id"] in works:
+            raise ValueError("Duplicate extra work")
+        works[w["id"]] = w
+    source_bindings = {}
+    for w in works.values():
+        for sid in w.get("evidence_source_ids", []):
+            if sid in source_bindings and source_bindings[sid] != w["id"]:
+                raise ValueError("Ambiguous explicit work/source binding: " + sid)
+            source_bindings[sid] = w["id"]
     # Existing checked insights get explicit 'explains' memberships. A modern
     # textbook is not silently promoted into the original discovery.
     source_members = defaultdict(list)
@@ -198,9 +208,7 @@ def main():
             extra[m["contribution"]["id"]].add(m["topic_id"])
     for sid, ns in source_members.items():
         source = sources[sid]
-        existing = next(
-            (w for w in works.values() if sid in w.get("evidence_source_ids", [])), None
-        )
+        existing = works.get(source_bindings.get(sid))
         wid = existing["id"] if existing else "w-source-" + sid.removeprefix("s-")
         w = existing or {
             "id": wid,
@@ -258,10 +266,6 @@ def main():
                     "anchors": [a for a in n["anchors"] if a["source_id"] == sid],
                 }
             )
-    for w in read_json(root / "config/extra_works.json", []):
-        if w["id"] in works:
-            raise ValueError("Duplicate extra work")
-        works[w["id"]] = w
     topic_ids = {t for w in works.values() for t in w["topic_ids"]}
     topics = [
         t
@@ -300,10 +304,10 @@ def main():
         n = nodes_by_id.get(seed["contribution"]["id"])
         if w and n and ref(w) == seed["work"] and ref(n) == seed["contribution"]:
             memberships.append(seed)
-    write_json(
+    commit.json(
         root / "manifests/works.json", sorted(works.values(), key=lambda w: w["id"])
     )
-    write_json(
+    commit.json(
         root / "manifests/work_insights.json",
         sorted(memberships, key=lambda m: (m["work_id"], m["contribution"]["id"])),
     )
@@ -364,12 +368,12 @@ def main():
                         link["revision"] += 1
                 link["content_hash"] = digest(link)
                 links.append(link)
-    write_json(root / "manifests/work_relations.json", links)
-    write_json(
+    commit.json(root / "manifests/work_relations.json", links)
+    commit.json(
         root / "manifests/people.json",
         sorted(profiles.values(), key=lambda p: p["name"]),
     )
-    write_lines(root / "manifests/FRONTIER_REGISTRY.jsonl", topics)
+    commit.lines(root / "manifests/FRONTIER_REGISTRY.jsonl", topics)
     print(
         {
             "people": len(profiles),
@@ -381,4 +385,16 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    from principia_legacy.authoring_store import Commit, recover, writer
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data-home")
+    args = parser.parse_args()
+    root = root_path(args.data_home)
+    with writer(root):
+        recover(root)
+        commit = Commit(root, "compile-work-catalog")
+        compile_catalog(root, commit)
+        commit.publish()

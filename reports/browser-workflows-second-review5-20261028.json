@@ -1,0 +1,3833 @@
+{
+  "config": {
+    "argv": [
+      "/Users/zhengqipei/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/node_modules/@playwright/test/cli.js",
+      "test",
+      "coverage.spec.ts",
+      "cloud-search.spec.ts",
+      "cloud-reconnect.spec.ts",
+      "reader.spec.ts",
+      "works.spec.ts",
+      "navigation.spec.ts",
+      "location.spec.ts",
+      "performance.spec.ts",
+      "--grep-invert",
+      "every populated topic"
+    ],
+    "configFile": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/playwright.config.ts",
+    "rootDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "snapshotDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8767",
+          "headless": true,
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "snapshotDir": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8767",
+          "headless": true,
+          "channel": "chrome",
+          "viewport": {
+            "width": 390,
+            "height": 664
+          },
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+          "screen": {
+            "width": 390,
+            "height": 844
+          },
+          "deviceScaleFactor": 3,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "cloud-reconnect.spec.ts",
+      "file": "cloud-reconnect.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "a cold page automatically recovers and preserves its query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2881,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:23.787Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "342aeeea50d11d6b3354-92b1a3b6e0e275988d46",
+          "file": "cloud-reconnect.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "a dropped connection retries the current search and cancels an old one",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:27.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "342aeeea50d11d6b3354-763853c14f46d4766cc7",
+          "file": "cloud-reconnect.spec.ts",
+          "line": 40,
+          "column": 1
+        },
+        {
+          "title": "a cold page automatically recovers and preserves its query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3356,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:15:50.508Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "342aeeea50d11d6b3354-f69ce055cadda17b2ab5",
+          "file": "cloud-reconnect.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "a dropped connection retries the current search and cancels an old one",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:15:54.928Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "342aeeea50d11d6b3354-da0f9dd8d8800865295d",
+          "file": "cloud-reconnect.spec.ts",
+          "line": 40,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "cloud-search.spec.ts",
+      "file": "cloud-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "neuroscience wording finds a transparent topic and real works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2742,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:33.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-26cb3aa52353ddf49736",
+          "file": "cloud-search.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "area choices are optional, bounded and searchable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8132,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:36.015Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-342426782598d247b29c",
+          "file": "cloud-search.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "cloud semantic search handles a paraphrase without an LLM key",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:44.168Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-6830982dfde3fd34b2a7",
+          "file": "cloud-search.spec.ts",
+          "line": 65,
+          "column": 1
+        },
+        {
+          "title": "a pinned reading view does not wait for homepage suggestions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3049,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:46.399Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-2e73151e9882aa97effd",
+          "file": "cloud-search.spec.ts",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "neuroscience wording finds a transparent topic and real works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:15:58.375Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-2426e3d2f7d3dde343f0",
+          "file": "cloud-search.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "area choices are optional, bounded and searchable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7828,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:04.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-24ebdd24666eadbe88b9",
+          "file": "cloud-search.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "cloud semantic search handles a paraphrase without an LLM key",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2219,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:12.164Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-bafb02bf5ab48730fd22",
+          "file": "cloud-search.spec.ts",
+          "line": 65,
+          "column": 1
+        },
+        {
+          "title": "a pinned reading view does not wait for homepage suggestions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:14.404Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05aebce022e3b11986d6-6aac25511c4dba727ede",
+          "file": "cloud-search.spec.ts",
+          "line": 84,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "coverage.spec.ts",
+      "file": "coverage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "currency and equations stay readable in an economics explanation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2105,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:49.482Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-569893f76b51129e3318",
+          "file": "coverage.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "population communication opens actual insights and preserves the search",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2954,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:51.603Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-6181e099f8efc5062b4e",
+          "file": "coverage.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "coverage shows explained content separately from catalogue size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1944,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:54.574Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-b2a60bb4cc060e47fe08",
+          "file": "coverage.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "catalogue-only matches explain their limitation before opening",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1351,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:56.535Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-a5c69c51243a4ef66dcf",
+          "file": "coverage.spec.ts",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "older snapshot remains readable with a path to the current atlas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:10:57.904Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-5cb5d59da237ffeaa824",
+          "file": "coverage.spec.ts",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "currency and equations stay readable in an economics explanation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2669,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:20.656Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-e911db369edfbeeee304",
+          "file": "coverage.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "population communication opens actual insights and preserves the search",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:23.342Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-039017995a6fb0ed828a",
+          "file": "coverage.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "coverage shows explained content separately from catalogue size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:31.381Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-3a284fd1fc0a79217b8d",
+          "file": "coverage.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "catalogue-only matches explain their limitation before opening",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:35.390Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-873e3b0dba6702154c06",
+          "file": "coverage.spec.ts",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "older snapshot remains readable with a path to the current atlas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3774,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:37.259Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7e25cba056857e6e293-f09474df87f23f5b5a65",
+          "file": "coverage.spec.ts",
+          "line": 85,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "location.spec.ts",
+      "file": "location.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "old preview labels normalize without losing reproducible atlas links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:00.207Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-8046cf993b22858a41d2",
+          "file": "location.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "bare navigation and bookmarked previews reach the same personal workspace",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:00.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-d5c4972310f57e98c871",
+          "file": "location.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "a historical topic returns intact while new research uses the current atlas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:02.461Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-9dd8dad1f0e329033fe1",
+          "file": "location.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "an open tab can follow a newly available snapshot absent from its cached list",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:05.719Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-65302885150f07c0e1ba",
+          "file": "location.spec.ts",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "old preview labels normalize without losing reproducible atlas links",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:41.059Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-e71fd58e50d96ca9fd03",
+          "file": "location.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "bare navigation and bookmarked previews reach the same personal workspace",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1669,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:41.073Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-e04355aa73db9a2060cc",
+          "file": "location.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "a historical topic returns intact while new research uses the current atlas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3650,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:42.757Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-9822656e95dad168f869",
+          "file": "location.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "an open tab can follow a newly available snapshot absent from its cached list",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:46.423Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab8a465736113eb11d5a-04aa73095e7544b7e976",
+          "file": "location.spec.ts",
+          "line": 71,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "navigation.spec.ts",
+      "file": "navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "topic return restores catalogue filters, page, scroll and focus after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8933,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:11.585Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-20cff268c024f5efddbc",
+          "file": "navigation.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "human-review filter survives reload and shows an honest empty state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7009,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:20.532Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-99e008e7cff421245eaf",
+          "file": "navigation.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "scientist directory remembers its query when reading a profile and reloading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:27.561Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-0f0a0d20070d715c6b23",
+          "file": "navigation.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "a work's contributor returns to that work after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:37.020Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-b76561aa9cb55228bb5c",
+          "file": "navigation.spec.ts",
+          "line": 92,
+          "column": 1
+        },
+        {
+          "title": "search survives reading, next result, closing, browser back and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9930,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:42.590Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-1f695ba7670c08f27192",
+          "file": "navigation.spec.ts",
+          "line": 129,
+          "column": 1
+        },
+        {
+          "title": "a topic link works when its search result arrives before the catalogue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3681,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:52.537Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-5acc477601faf4cc321e",
+          "file": "navigation.spec.ts",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "scientist search opens a sourced profile, linked ideas and topics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4513,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:11:56.237Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-880b6990b79a95314f15",
+          "file": "navigation.spec.ts",
+          "line": 225,
+          "column": 1
+        },
+        {
+          "title": "Hamiltonian mechanics is discoverable as a topic and via Hamilton",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4165,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:00.766Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-4f0a49aeba92337f060b",
+          "file": "navigation.spec.ts",
+          "line": 256,
+          "column": 1
+        },
+        {
+          "title": "search paginates broad results without discarding the query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4694,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:04.950Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-e9a4d166ce710d0ded95",
+          "file": "navigation.spec.ts",
+          "line": 281,
+          "column": 1
+        },
+        {
+          "title": "search and tracing work while the initial catalogue is still loading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:09.662Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-38050ec325c3126b2762",
+          "file": "navigation.spec.ts",
+          "line": 299,
+          "column": 1
+        },
+        {
+          "title": "topic return restores catalogue filters, page, scroll and focus after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.261Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-45eef3efd21bbb37bc69",
+          "file": "navigation.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "human-review filter survives reload and shows an honest empty state",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "failed",
+                  "duration": 0,
+                  "error": {
+                    "message": "Error: \"route.fetch: Test ended.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8767/api/info?release=9.9.9-missing\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - accept-language: en-US\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?1\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"iOS\"\u001b[22m\n\" while running route callback.\nConsider awaiting `await page.unrouteAll({ behavior: 'ignoreErrors' })`\nbefore the end of the test to ignore remaining routes in flight.",
+                    "stack": "Error: \"route.fetch: Test ended.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8767/api/info?release=9.9.9-missing\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - accept-language: en-US\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?1\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"iOS\"\u001b[22m\n\" while running route callback.\nConsider awaiting `await page.unrouteAll({ behavior: 'ignoreErrors' })`\nbefore the end of the test to ignore remaining routes in flight.\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/location.spec.ts:77:34",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/location.spec.ts",
+                      "column": 34,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39mlocation.spec.ts:77\n\n  75 |   const current = (await atlasJSON(request, \"/api/info\")).release_id;\n  76 |   await page.route(\"**/api/info?**\", async (route) => {\n> 77 |     const response = await route.fetch();\n     |                                  ^\n  78 |     const data = await response.json();\n  79 |     if (data.release_id === \"1.3.1-exploratory\")\n  80 |       data.releases = [\"1.3.1-exploratory\"];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/location.spec.ts",
+                        "column": 34,
+                        "line": 77
+                      },
+                      "message": "Error: \"route.fetch: Test ended.\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8767/api/info?release=9.9.9-missing\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - accept-language: en-US\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?1\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"iOS\"\u001b[22m\n\" while running route callback.\nConsider awaiting `await page.unrouteAll({ behavior: 'ignoreErrors' })`\nbefore the end of the test to ignore remaining routes in flight.\n\n   at location.spec.ts:77\n\n  75 |   const current = (await atlasJSON(request, \"/api/info\")).release_id;\n  76 |   await page.route(\"**/api/info?**\", async (route) => {\n> 77 |     const response = await route.fetch();\n     |                                  ^\n  78 |     const data = await response.json();\n  79 |     if (data.release_id === \"1.3.1-exploratory\")\n  80 |       data.releases = [\"1.3.1-exploratory\"];\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/location.spec.ts:77:34"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.627Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/location.spec.ts",
+                    "column": 34,
+                    "line": 77
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-1846ed19351382a01be0",
+          "file": "navigation.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "scientist directory remembers its query when reading a profile and reloading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-eb55d27bbf3086fe280a",
+          "file": "navigation.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "a work's contributor returns to that work after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-b3cbc8fd73c1d37e09af",
+          "file": "navigation.spec.ts",
+          "line": 92,
+          "column": 1
+        },
+        {
+          "title": "search survives reading, next result, closing, browser back and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-a2e620dfc69bf91d5ffe",
+          "file": "navigation.spec.ts",
+          "line": 129,
+          "column": 1
+        },
+        {
+          "title": "a topic link works when its search result arrives before the catalogue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-035c1d6a1336f8bf3ce7",
+          "file": "navigation.spec.ts",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "scientist search opens a sourced profile, linked ideas and topics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-c34c9dce62d89061b44b",
+          "file": "navigation.spec.ts",
+          "line": 225,
+          "column": 1
+        },
+        {
+          "title": "Hamiltonian mechanics is discoverable as a topic and via Hamilton",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-49faa923b203deec2cd9",
+          "file": "navigation.spec.ts",
+          "line": 256,
+          "column": 1
+        },
+        {
+          "title": "search paginates broad results without discarding the query",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-5e21d9e96513846989cb",
+          "file": "navigation.spec.ts",
+          "line": 281,
+          "column": 1
+        },
+        {
+          "title": "search and tracing work while the initial catalogue is still loading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:52.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "5d2868f7d23420c27cca-2bc9f4c5f78409dc840d",
+          "file": "navigation.spec.ts",
+          "line": 299,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "record first view and offline page network evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5600,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:14.317Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-1000deab3c31534e5d23",
+          "file": "performance.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "record first view and offline page network evidence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Measure one desktop profile; mobile has separate UX tests.",
+                  "location": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/performance.spec.ts",
+                    "line": 18,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 390,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:53.298Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Measure one desktop profile; mobile has separate UX tests.",
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/performance.spec.ts",
+                        "line": 18,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-934f5859723923fe508b",
+          "file": "performance.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "reader.spec.ts",
+      "file": "reader.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "offline landing, five subjects and paginated topic collection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2444,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:19.947Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-717b80feac4bf9fb9624",
+          "file": "reader.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "map, accessible list, source inspector and relationship warrant",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:22.408Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-336dda50dda4f3f4a232",
+          "file": "reader.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "search, empty human review filter, and no external font requests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4117,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:29.097Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d7a117287e79d4e64f29",
+          "file": "reader.spec.ts",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "comparison and evidence export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17333,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:33.233Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-313e2848f39d60b99338",
+          "file": "reader.spec.ts",
+          "line": 74,
+          "column": 1
+        },
+        {
+          "title": "layer filters, boundaries and snapshot screen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3425,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:50.584Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-f35ed6f4c50c212266d6",
+          "file": "reader.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "keyboard search, trace and progressive expansion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10792,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:12:54.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-3c55ba590ad71487e404",
+          "file": "reader.spec.ts",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "dossier brief preserves nonempty claims and source closure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:13:04.836Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-58ae637e46e9cddd4b83",
+          "file": "reader.spec.ts",
+          "line": 157,
+          "column": 1
+        },
+        {
+          "title": "source text cannot inject HTML or approve itself",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:13:11.016Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-7069b5f13ea69284e4dd",
+          "file": "reader.spec.ts",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "release differences have readable summaries and working revision links",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15873,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'New to this snapshot' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'New to this snapshot' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'New to this snapshot' })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'New to this snapshot' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'New to this snapshot' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'New to this snapshot' })\u001b[22m\n\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:215:5",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                      "column": 5,
+                      "line": 215
+                    },
+                    "snippet": "  213 |   await expect(\n  214 |     page.getByRole(\"heading\", { name: \"New to this snapshot\" }),\n> 215 |   ).toBeVisible();\n      |     ^\n  216 |   await page\n  217 |     .locator(\".change-card\")\n  218 |     .filter({ hasText: \"contribution\" })"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                        "column": 5,
+                        "line": 215
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'New to this snapshot' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'New to this snapshot' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'New to this snapshot' })\u001b[22m\n\n\n  213 |   await expect(\n  214 |     page.getByRole(\"heading\", { name: \"New to this snapshot\" }),\n> 215 |   ).toBeVisible();\n      |     ^\n  216 |   await page\n  217 |     .locator(\".change-card\")\n  218 |     .filter({ hasText: \"contribution\" })\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:215:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:13:15.866Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/reader-release-differences-3ada0--and-working-revision-links-desktop/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                    "column": 5,
+                    "line": 215
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-f84db5bd1c4a8c0bb8bd",
+          "file": "reader.spec.ts",
+          "line": 205,
+          "column": 1
+        },
+        {
+          "title": "historical relationship navigation stays in its pinned snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14008,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:13:33.345Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-138e3a6a8b03b9fa462c",
+          "file": "reader.spec.ts",
+          "line": 227,
+          "column": 1
+        },
+        {
+          "title": "subject navigation stays available while scrolling and switches topics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12588,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:13:48.347Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-e5ea6245742be81a48e0",
+          "file": "reader.spec.ts",
+          "line": 267,
+          "column": 1
+        },
+        {
+          "title": "choose a second comparison without dismissing the panel",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8561,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:00.954Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-c2cc49a39223be6e1d32",
+          "file": "reader.spec.ts",
+          "line": 295,
+          "column": 1
+        },
+        {
+          "title": "mathematics is typeset in search, list, inspector and comparison",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10846,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:09.533Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-248b9161cd13ff2914bd",
+          "file": "reader.spec.ts",
+          "line": 320,
+          "column": 1
+        },
+        {
+          "title": "browser back and forward restore a topic and its selected contribution",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:20.400Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-13bf7f76ebdf23a832ec",
+          "file": "reader.spec.ts",
+          "line": 356,
+          "column": 1
+        },
+        {
+          "title": "back restores an initial saved link and skip navigation keeps its topic",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10841,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:27.002Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-33c784348f9d25e20e57",
+          "file": "reader.spec.ts",
+          "line": 439,
+          "column": 1
+        },
+        {
+          "title": "keyboard focus enters the inspector and returns to its opener",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2112,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:37.859Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-db8e121e513d88850bdb",
+          "file": "reader.spec.ts",
+          "line": 472,
+          "column": 1
+        },
+        {
+          "title": "large topics page through all insights independently of the graph",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9674,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:39.988Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-dc0bbcee8f37b29bcf83",
+          "file": "reader.spec.ts",
+          "line": 489,
+          "column": 1
+        },
+        {
+          "title": "connection filtering preserves the canvas without waiting on another request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:49.680Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "connection-filter-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcmFjdGlvbl9tcyI6NzEsInNlcnZlcl9yZXF1ZXN0cyI6MH0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d4491a99862a198d83cc",
+          "file": "reader.spec.ts",
+          "line": 519,
+          "column": 1
+        },
+        {
+          "title": "offline landing, five subjects and paginated topic collection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2652,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:54.696Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-77eede781caa2ac45681",
+          "file": "reader.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "map, accessible list, source inspector and relationship warrant",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8669,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:16:57.374Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d58abe6d92628e0eca29",
+          "file": "reader.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "search, empty human review filter, and no external font requests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4571,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:17:06.071Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-d1547fafadb98e0c4cfe",
+          "file": "reader.spec.ts",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "comparison and evidence export",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15369,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:17:10.666Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-6713dca983bb44e3e9b2",
+          "file": "reader.spec.ts",
+          "line": 74,
+          "column": 1
+        },
+        {
+          "title": "layer filters, boundaries and snapshot screen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1956,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:17:26.059Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-ceb9a33018ee2dabc9de",
+          "file": "reader.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "keyboard search, trace and progressive expansion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 19598,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Back to this topic' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: 'Back to this topic' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Back to this topic' })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Back to this topic' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: 'Back to this topic' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Back to this topic' })\u001b[22m\n\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:140:5",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                      "column": 5,
+                      "line": 140
+                    },
+                    "snippet": "  138 |   await expect(\n  139 |     page.getByRole(\"button\", { name: \"Back to this topic\" }),\n> 140 |   ).toBeVisible();\n      |     ^\n  141 |   await expect(\n  142 |     page.getByRole(\"textbox\", { name: \"Search the atlas\" }),\n  143 |   ).toHaveValue(\"\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                        "column": 5,
+                        "line": 140
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Back to this topic' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: 'Back to this topic' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Back to this topic' })\u001b[22m\n\n\n  138 |   await expect(\n  139 |     page.getByRole(\"button\", { name: \"Back to this topic\" }),\n> 140 |   ).toBeVisible();\n      |     ^\n  141 |   await expect(\n  142 |     page.getByRole(\"textbox\", { name: \"Search the atlas\" }),\n  143 |   ).toHaveValue(\"\");\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:140:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:17:28.034Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/reader-keyboard-search-trace-and-progressive-expansion-mobile/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                    "column": 5,
+                    "line": 140
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-3a1964d7f05ce78d48eb",
+          "file": "reader.spec.ts",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "dossier brief preserves nonempty claims and source closure",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 794,
+                  "error": {
+                    "message": "TypeError: Cannot read properties of undefined (reading 'length')",
+                    "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:165:38",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                      "column": 38,
+                      "line": 165
+                    },
+                    "snippet": "  163 |   );\n  164 |   const data = await response.json();\n> 165 |   expect(data.relevant_contributions.length).toBeGreaterThan(0);\n      |                                      ^\n  166 |   expect(data.sources.length).toBeGreaterThan(0);\n  167 |   expect(data.permitted_action_scope).toBe(\"read_only\");\n  168 |   const ids = new Set("
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                        "column": 38,
+                        "line": 165
+                      },
+                      "message": "TypeError: Cannot read properties of undefined (reading 'length')\n\n  163 |   );\n  164 |   const data = await response.json();\n> 165 |   expect(data.relevant_contributions.length).toBeGreaterThan(0);\n      |                                      ^\n  166 |   expect(data.sources.length).toBeGreaterThan(0);\n  167 |   expect(data.permitted_action_scope).toBe(\"read_only\");\n  168 |   const ids = new Set(\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:165:38"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:17:48.728Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/reader-dossier-brief-prese-a811e-y-claims-and-source-closure-mobile/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                    "column": 38,
+                    "line": 165
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-29c186d94131628b2f65",
+          "file": "reader.spec.ts",
+          "line": 157,
+          "column": 1
+        },
+        {
+          "title": "source text cannot inject HTML or approve itself",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4002,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:17:51.434Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-0722129c59f47fb7e9b5",
+          "file": "reader.spec.ts",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "release differences have readable summaries and working revision links",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 16526,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'New to this snapshot' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'New to this snapshot' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'New to this snapshot' })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'New to this snapshot' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'New to this snapshot' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'New to this snapshot' })\u001b[22m\n\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:215:5",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                      "column": 5,
+                      "line": 215
+                    },
+                    "snippet": "  213 |   await expect(\n  214 |     page.getByRole(\"heading\", { name: \"New to this snapshot\" }),\n> 215 |   ).toBeVisible();\n      |     ^\n  216 |   await page\n  217 |     .locator(\".change-card\")\n  218 |     .filter({ hasText: \"contribution\" })"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                        "column": 5,
+                        "line": 215
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'New to this snapshot' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: 'New to this snapshot' }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'New to this snapshot' })\u001b[22m\n\n\n  213 |   await expect(\n  214 |     page.getByRole(\"heading\", { name: \"New to this snapshot\" }),\n> 215 |   ).toBeVisible();\n      |     ^\n  216 |   await page\n  217 |     .locator(\".change-card\")\n  218 |     .filter({ hasText: \"contribution\" })\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:215:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:17:56.177Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/reader-release-differences-3ada0--and-working-revision-links-mobile/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                    "column": 5,
+                    "line": 215
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-83ab362ebfc26c26a73e",
+          "file": "reader.spec.ts",
+          "line": 205,
+          "column": 1
+        },
+        {
+          "title": "historical relationship navigation stays in its pinned snapshot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15436,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:18:13.777Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-48ac4738fd263252c37f",
+          "file": "reader.spec.ts",
+          "line": 227,
+          "column": 1
+        },
+        {
+          "title": "subject navigation stays available while scrolling and switches topics",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22121,
+                  "error": {
+                    "message": "Error: Timeout 20000ms exceeded while waiting on the predicate",
+                    "stack": "Error: Timeout 20000ms exceeded while waiting on the predicate\n    at atlasJSON (/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts:20:6)\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:282:30",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts",
+                      "column": 6,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39matlas.ts:20\n\n  18 |       { timeout: 20000, intervals: [250, 1000, 2000] },\n  19 |     )\n> 20 |     .toBe(true);\n     |      ^\n  21 |   return data;\n  22 | }\n  23 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts",
+                        "column": 6,
+                        "line": 20
+                      },
+                      "message": "Error: Timeout 20000ms exceeded while waiting on the predicate\n\n   at atlas.ts:20\n\n  18 |       { timeout: 20000, intervals: [250, 1000, 2000] },\n  19 |     )\n> 20 |     .toBe(true);\n     |      ^\n  21 |   return data;\n  22 | }\n  23 |\n    at atlasJSON (/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts:20:6)\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:282:30"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:18:30.030Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/reader-subject-navigation--97c3f-rolling-and-switches-topics-mobile/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts",
+                    "column": 6,
+                    "line": 20
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-56049eb78304e70fb75b",
+          "file": "reader.spec.ts",
+          "line": 267,
+          "column": 1
+        },
+        {
+          "title": "choose a second comparison without dismissing the panel",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30060,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts",
+                        "column": 46,
+                        "line": 301
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.result-card').first()\u001b[22m\n\n\n  299 |     .getByRole(\"textbox\", { name: \"Search the atlas\" })\n  300 |     .fill(\"attention\");\n> 301 |   await page.locator(\".result-card\").first().click();\n      |                                              ^\n  302 |   await page.getByRole(\"button\", { name: \"Compare\", exact: true }).click();\n  303 |   const dialog = page.getByRole(\"dialog\", { name: \"Compare contributions\" });\n  304 |   await dialog\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:301:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:18:53.309Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/reader-choose-a-second-com-f9aa5-ithout-dismissing-the-panel-mobile/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-4fd722a90786b698018d",
+          "file": "reader.spec.ts",
+          "line": 295,
+          "column": 1
+        },
+        {
+          "title": "mathematics is typeset in search, list, inspector and comparison",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20931,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:19:25.344Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-76c592f7456c7147b027",
+          "file": "reader.spec.ts",
+          "line": 320,
+          "column": 1
+        },
+        {
+          "title": "browser back and forward restore a topic and its selected contribution",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7590,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:19:47.150Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-ee0d46f4ac7f336df263",
+          "file": "reader.spec.ts",
+          "line": 356,
+          "column": 1
+        },
+        {
+          "title": "back restores an initial saved link and skip navigation keeps its topic",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9959,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:19:54.764Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-2d252a95456a1d667ded",
+          "file": "reader.spec.ts",
+          "line": 439,
+          "column": 1
+        },
+        {
+          "title": "keyboard focus enters the inspector and returns to its opener",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9718,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:20:04.743Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-fa3b17d60787228a99c6",
+          "file": "reader.spec.ts",
+          "line": 472,
+          "column": 1
+        },
+        {
+          "title": "large topics page through all insights independently of the graph",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20651,
+                  "error": {
+                    "message": "Error: Timeout 20000ms exceeded while waiting on the predicate",
+                    "stack": "Error: Timeout 20000ms exceeded while waiting on the predicate\n    at atlasJSON (/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts:20:6)\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:493:30",
+                    "location": {
+                      "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts",
+                      "column": 6,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39matlas.ts:20\n\n  18 |       { timeout: 20000, intervals: [250, 1000, 2000] },\n  19 |     )\n> 20 |     .toBe(true);\n     |      ^\n  21 |   return data;\n  22 | }\n  23 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts",
+                        "column": 6,
+                        "line": 20
+                      },
+                      "message": "Error: Timeout 20000ms exceeded while waiting on the predicate\n\n   at atlas.ts:20\n\n  18 |       { timeout: 20000, intervals: [250, 1000, 2000] },\n  19 |     )\n> 20 |     .toBe(true);\n     |      ^\n  21 |   return data;\n  22 | }\n  23 |\n    at atlasJSON (/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts:20:6)\n    at /Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/reader.spec.ts:493:30"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:20:14.480Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/test-results/reader-large-topics-page-t-aa009--independently-of-the-graph-mobile/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/zhengqipei/Desktop/ChipFlow/Principia-Legacy/projects/Principia-Legacy 1.0-dev/web/tests/atlas.ts",
+                    "column": 6,
+                    "line": 20
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-bf82f942ad9f6eb0b3f5",
+          "file": "reader.spec.ts",
+          "line": 489,
+          "column": 1
+        },
+        {
+          "title": "connection filtering preserves the canvas without waiting on another request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17750,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:20:36.271Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "connection-filter-timing.json",
+                      "contentType": "application/json",
+                      "body": "eyJpbnRlcmFjdGlvbl9tcyI6NzgsInNlcnZlcl9yZXF1ZXN0cyI6MH0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74de4b60cc20d5f05aaf-3b97db8c4a056f16a614",
+          "file": "reader.spec.ts",
+          "line": 519,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "works.spec.ts",
+      "file": "works.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "discovery choices follow the selected subject and restore on reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:14:59.235Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-957413300dae01c856d7",
+          "file": "works.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "typo search reaches a real person and work, preserving the results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:15:03.888Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-bea7344c969a9c7d6fde",
+          "file": "works.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "a work exposes sourced ideas and links back to its topic",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:15:12.759Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-6d63365e864e786255df",
+          "file": "works.spec.ts",
+          "line": 88,
+          "column": 1
+        },
+        {
+          "title": "concept search and catalog-only topics disclose extraction gaps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:15:23.008Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-5ab81f9954b223d1a9a3",
+          "file": "works.spec.ts",
+          "line": 114,
+          "column": 1
+        },
+        {
+          "title": "catalog pages fit narrow screens without horizontal overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8865,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:15:40.554Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-af491601219977811e43",
+          "file": "works.spec.ts",
+          "line": 149,
+          "column": 1
+        },
+        {
+          "title": "discovery choices follow the selected subject and restore on reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7179,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:20:55.122Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-0de6109d487a50f95b7e",
+          "file": "works.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "typo search reaches a real person and work, preserving the results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10206,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:21:02.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-e2e244f377b1dee179e0",
+          "file": "works.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "a work exposes sourced ideas and links back to its topic",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8261,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:21:12.547Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-cb52558ae496f1f42fd4",
+          "file": "works.spec.ts",
+          "line": 88,
+          "column": 1
+        },
+        {
+          "title": "concept search and catalog-only topics disclose extraction gaps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7917,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:21:20.843Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-a632f0ae62b2b19d453b",
+          "file": "works.spec.ts",
+          "line": 114,
+          "column": 1
+        },
+        {
+          "title": "catalog pages fit narrow screens without horizontal overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T15:21:28.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1d145a64e62816d55f8-5002952c6d0f3aefd606",
+          "file": "works.spec.ts",
+          "line": 149,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T15:10:22.874Z",
+    "duration": 668642.232,
+    "expected": 80,
+    "skipped": 10,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

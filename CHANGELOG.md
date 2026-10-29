@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.5.0 — 29 October 2026
+
+- Publish the accepted review5 scientific records as `1.5.0-exploratory`: 5,700 insights and 4,211 relationships, preserving all seven earlier public snapshots. Human review remains zero; 49 topics meet the strict reading-route criteria.
+- Search all four entity types with optional snapshot-pinned semantic retrieval, clearer content availability and compact collection pagination. Preserve reading position, filters, graph settings and contextual return across navigation.
+- Keep canonical authoring private on the server, with a single admission writer, immutable versions, crash recovery and verified backups. Personal keys and saved maps remain browser-local.
+- Separate production code, read-only data and runtime; validate database compatibility and semantic pins before activation. Bound hosted release comparisons as well as local comparisons.
+- Publish complete software changes in a new PR while leaving the expanded database and private evidence on the server. The repository retains its 1.4.1 reference corpus for offline startup.
+
+[Deployment verification](docs/DEPLOYMENT-1.5.md) · [Coverage and limitations](BUILD_STATUS.md).
+
+## 1.5.0rc1 — local review, 2026-10-26
+
+- Expanded to 5,499 insights and 4,113 warranted relationships, with 1,209 works and 904 individual profiles; explicitly reports the shortfall to 500 route-ready topics.
+- Indexed collection pagination, shared historical search data, compact snapshot summaries and browser-worker exploration shards; preserves offline reading and exact revision links.
+- Continuous navigation with contextual return, scroll/focus restoration, independent topic lists, on-demand evidence, subject-aware discovery and a clearer inspector.
+- Private authoritative server staging, single-writer admission, crash recovery and tested backup restoration; public deployment remains 1.4.1.
+- Stronger correction, duplicate-admission and relationship checks. Five maps, three tours, read-only briefs and a pinned human-audit sample accompany the candidate.
+- 145 backend and 317 browser tests pass. Live exploration and 100,000-insight scale limits remain explicit; no human review or alignment benefit is claimed.
+
+See [the dated acceptance report](reports/coverage-review5-20261028.md). No public deployment or GitHub publication accompanies this candidate.
+
 ## 1.4.1 — 17 October 2026
 
 Promotes the accepted reader to a public release with the unchanged 1.4.1-exploratory scientific snapshot. Updates the project introduction, publishing guidance and hosting documentation. Production activation uses a versioned Git checkout, verified assets and retained rollback configuration.

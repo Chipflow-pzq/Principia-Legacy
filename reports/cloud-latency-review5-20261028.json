@@ -1,0 +1,390 @@
+{
+  "scope": "Mac-to-private-cloud latency includes the SSH link; limit 3 per search category. Four concurrent distinct searches. Availability only; relevance is evaluated separately.",
+  "release": "1.5.0-review5",
+  "health": {
+    "requests": 8,
+    "passed": 8,
+    "p50_ms": 241.69,
+    "p95_ms": 310.43,
+    "rows": [
+      {
+        "ms": 259.5,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 239.85,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 249.68,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 208.43,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 241.69,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 200.09,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 199.69,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 310.43,
+        "wire_bytes": 1806,
+        "release": "1.5.0-review5",
+        "ok": true
+      }
+    ]
+  },
+  "sequential_search": {
+    "requests": 20,
+    "passed": 20,
+    "p50_ms": 500.05,
+    "p95_ms": 1159.03,
+    "rows": [
+      {
+        "ms": 290.6,
+        "wire_bytes": 5221,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 649.39,
+        "wire_bytes": 5118,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 251.53,
+        "wire_bytes": 5205,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 607.01,
+        "wire_bytes": 8153,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 941.9,
+        "wire_bytes": 7878,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 1159.03,
+        "wire_bytes": 6302,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 240.14,
+        "wire_bytes": 4621,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 400.13,
+        "wire_bytes": 5393,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 500.05,
+        "wire_bytes": 5371,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 349.27,
+        "wire_bytes": 4682,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 300.13,
+        "wire_bytes": 3424,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 2000.11,
+        "wire_bytes": 6713,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 599.05,
+        "wire_bytes": 5957,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 301.29,
+        "wire_bytes": 3905,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 608.96,
+        "wire_bytes": 1298,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 490.7,
+        "wire_bytes": 5018,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 299.6,
+        "wire_bytes": 3115,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 800.54,
+        "wire_bytes": 3882,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 298.13,
+        "wire_bytes": 918,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 601.38,
+        "wire_bytes": 6165,
+        "release": "1.5.0-review5",
+        "ok": true
+      }
+    ]
+  },
+  "concurrent_search": {
+    "requests": 24,
+    "passed": 24,
+    "p50_ms": 843.83,
+    "p95_ms": 2150.41,
+    "rows": [
+      {
+        "ms": 958.15,
+        "wire_bytes": 5506,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 748.65,
+        "wire_bytes": 2803,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 955.99,
+        "wire_bytes": 4192,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 1046.66,
+        "wire_bytes": 724,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 757.14,
+        "wire_bytes": 5009,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 642.54,
+        "wire_bytes": 4957,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 690.89,
+        "wire_bytes": 2985,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 651.52,
+        "wire_bytes": 4007,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 843.83,
+        "wire_bytes": 5473,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 550.47,
+        "wire_bytes": 3446,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 750.36,
+        "wire_bytes": 3644,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 799.76,
+        "wire_bytes": 5285,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 949.87,
+        "wire_bytes": 5679,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 699.58,
+        "wire_bytes": 5643,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 1049.29,
+        "wire_bytes": 3427,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 1099.12,
+        "wire_bytes": 2635,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 2149.93,
+        "wire_bytes": 5237,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 2299.52,
+        "wire_bytes": 3488,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 2150.41,
+        "wire_bytes": 3753,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 2050.94,
+        "wire_bytes": 4376,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 600.71,
+        "wire_bytes": 3969,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 349.92,
+        "wire_bytes": 2537,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 500.64,
+        "wire_bytes": 4762,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 1149.17,
+        "wire_bytes": 5039,
+        "release": "1.5.0-review5",
+        "ok": true
+      }
+    ]
+  },
+  "neighborhood": {
+    "requests": 7,
+    "passed": 7,
+    "p50_ms": 1298.19,
+    "p95_ms": 5506.27,
+    "rows": [
+      {
+        "ms": 5506.27,
+        "wire_bytes": 24313,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 1901.89,
+        "wire_bytes": 32653,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 800.63,
+        "wire_bytes": 35185,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 1298.19,
+        "wire_bytes": 35862,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 2652.35,
+        "wire_bytes": 34376,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 495.78,
+        "wire_bytes": 22615,
+        "release": "1.5.0-review5",
+        "ok": true
+      },
+      {
+        "ms": 846.7,
+        "wire_bytes": 12561,
+        "release": "1.5.0-review5",
+        "ok": true
+      }
+    ]
+  }
+}

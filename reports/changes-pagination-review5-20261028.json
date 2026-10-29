@@ -1,0 +1,38 @@
+{
+  "unpaginated_comparison_bytes": 1719272,
+  "network": "Mac to private staging over SSH",
+  "pages": [
+    {
+      "offset": 0,
+      "wire_bytes": 33867,
+      "milliseconds": 2935.68,
+      "totals": {
+        "added": 10420,
+        "removed": 0,
+        "changed": 57
+      },
+      "returned": {
+        "added": 20,
+        "changed": 20,
+        "removed": 0
+      },
+      "release": "1.5.0-review5"
+    },
+    {
+      "offset": 20,
+      "wire_bytes": 33459,
+      "milliseconds": 1751.77,
+      "totals": {
+        "added": 10420,
+        "removed": 0,
+        "changed": 57
+      },
+      "returned": {
+        "added": 20,
+        "changed": 20,
+        "removed": 0
+      },
+      "release": "1.5.0-review5"
+    }
+  ]
+}

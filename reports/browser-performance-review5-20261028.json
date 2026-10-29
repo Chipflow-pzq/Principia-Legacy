@@ -1,0 +1,16 @@
+{
+  "first_view_ms": 2635,
+  "first_view_definition": "fresh automated Chrome page, bundled app loaded and five flagship controls visible",
+  "js_heap_bytes": 14914638,
+  "browser_process_rss_bytes": 700866560,
+  "reader_process_rss_bytes": 55558144,
+  "combined_rss_bytes": 756424704,
+  "memory_method": "ps RSS summed over this browser's CDP-identified process tree plus the local reader; unrelated QA browsers excluded; shared pages may be counted more than once",
+  "requests": 9,
+  "external_requests": [],
+  "page_errors": [],
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  }
+}

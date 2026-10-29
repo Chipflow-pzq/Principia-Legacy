@@ -4,6 +4,9 @@ export default defineConfig({
   fullyParallel: false,
   workers: 1,
   timeout: 30000,
+  // Cloud workflow checks allow tunnel recovery. Performance tests retain their
+  // explicit timing assertions and report network-inclusive latency separately.
+  expect: { timeout: process.env.PRINCIPIA_TEST_CLOUD === "1" ? 15000 : 5000 },
   use: {
     baseURL: process.env.PRINCIPIA_TEST_URL || "http://127.0.0.1:8765",
     headless: true,

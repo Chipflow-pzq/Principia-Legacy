@@ -316,6 +316,8 @@ try {
         await expect(submit).toBeEnabled({ timeout: 10000 });
         const start = Date.now();
         await submit.click();
+        // A missing workspace/progress panel is a UI failure, not a slow model.
+        await page.locator('.research-progress').waitFor({ state: 'visible', timeout: 10000 });
         let lastStage = "",
           lastLog = 0;
         console.log(
@@ -327,11 +329,11 @@ try {
         ) {
           const heading = await page
               .locator(".research-progress h2")
-              .textContent()
+              .textContent({ timeout: 2000 })
               .catch(() => ""),
             detail = await page
               .locator(".explore-progress")
-              .textContent()
+              .textContent({ timeout: 2000 })
               .catch(() => ""),
             elapsed = (Date.now() - start) / 1000;
           if (heading !== lastStage) {
@@ -471,6 +473,9 @@ try {
       } catch (e) {
         a.errors.push(String(e.message || e).replaceAll(key, "[redacted]"));
       } finally {
+        a.final_url = page.url();
+        a.final_visible_text = (await page.locator('body').innerText().catch(() => '')).slice(0, 16000).replaceAll(key, '[redacted]');
+        await page.screenshot({ path: `${dir}/case-${caseId}-final.png` }).catch(() => {});
         const observations = await page
           .evaluate(() => window.__qaResponses || [])
           .catch(() => []);

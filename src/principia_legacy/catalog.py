@@ -64,8 +64,14 @@ def navigation_index(manifest, records, source_versions=None):
                 raise ValueError(
                     "Shared topic membership has an unresolved source anchor"
                 )
+        from .records import source_anchor_enrichment
+
         if any(
             active_sources.get(a["source_id"]) != a["source_revision"]
+            and not source_anchor_enrichment(
+                sources.get((a["source_id"], a["source_revision"])),
+                sources.get((a["source_id"], active_sources.get(a["source_id"]))),
+            )
             for a in m.get("anchors", [])
         ):
             continue  # A changed supporting source requires a fresh navigation check.

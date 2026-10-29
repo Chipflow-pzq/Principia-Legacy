@@ -83,6 +83,20 @@ export function SearchResults({
           </button>
         ))}
       </div>
+      {data.search_interpretation?.notice && (
+        <p className="notice" role="status">
+          {data.search_interpretation.notice}
+        </p>
+      )}
+      {!data.totals.ideas &&
+        shown > 0 &&
+        !data.works?.some((w) => w.insight_count > 0) &&
+        !data.topics.some((t) => (t.contribution_count || 0) > 0) && (
+          <p className="notice" role="status">
+            Reading-list or profile matches only. An evidence-backed explanation
+            of this question is not yet available in this snapshot.
+          </p>
+        )}
       {!!data.search_interpretation?.corrections.length && (
         <p className="search-interpretation">
           Also matching{" "}
@@ -106,21 +120,6 @@ export function SearchResults({
               : "Try a related term or a scientist’s name. Missing results can also be coverage gaps."}
           </p>
         </div>
-      )}
-      {(filter === "all" || filter === "people") && !!data.people.length && (
-        <section aria-label="Matching scientists and contributors">
-          <h3>Scientists & contributors</h3>
-          <div className="people-grid">
-            {preview(data.people).map((p) => (
-              <PersonCard
-                key={p.id}
-                person={p}
-                onClick={() => onPerson(p.id)}
-              />
-            ))}
-          </div>
-          {more("people", "people")}
-        </section>
       )}
       {(filter === "all" || filter === "topics") && !!data.topics.length && (
         <section aria-label="Matching topics">
@@ -161,6 +160,21 @@ export function SearchResults({
             </button>
           ))}
           {more("ideas", "ideas")}
+        </section>
+      )}
+      {(filter === "all" || filter === "people") && !!data.people.length && (
+        <section aria-label="Matching scientists and contributors">
+          <h3>Scientists & contributors</h3>
+          <div className="people-grid">
+            {preview(data.people).map((p) => (
+              <PersonCard
+                key={p.id}
+                person={p}
+                onClick={() => onPerson(p.id)}
+              />
+            ))}
+          </div>
+          {more("people", "people")}
         </section>
       )}
       {filter !== "all" && !data.totals[filter] && (

@@ -1,16 +1,43 @@
 """Loopback-only GET/HEAD reader. No authoring or outbound-network routes."""
 
+import gzip
+import io
 import json
 import mimetypes
+import os
+from http.client import HTTPConnection, HTTPException
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
-from .storage import Atlas
+
+from .common import accepts_gzip
 
 
-def handler_for(root):
+class ReaderServer(ThreadingHTTPServer):
+    # Browsers issue bursts of assets and API reads. The stdlib's queue of five
+    # can cause TCP retries during page changes, especially through SSH.
+    request_queue_size = 64
+
+
+def handler_for(root, api_origin=None, cloud_connection=None):
     root = Path(root).resolve()
-    assets = (root / "web_dist").resolve()
+    upstream = urlparse(api_origin) if api_origin else None
+    if upstream and (
+        upstream.scheme != "http"
+        or upstream.hostname != "127.0.0.1"
+        or not upstream.port
+        or upstream.username
+        or upstream.password
+        or upstream.path not in ("", "/")
+        or upstream.query
+        or upstream.fragment
+    ):
+        raise ValueError("Cloud reader requires a fixed loopback SSH tunnel origin")
+    assets = (
+        (root / "web_dist")
+        if (root / "web_dist").exists()
+        else Path(__file__).resolve().parents[2] / "web_dist"
+    ).resolve()
 
     class Handler(BaseHTTPRequestHandler):
         server_version = "PrincipiaLegacy/1.0"
@@ -32,7 +59,17 @@ def handler_for(root):
                 if not isinstance(value, bytes)
                 else value
             )
+            compressed = (
+                content_type.startswith("application/json")
+                and len(data) > 4096
+                and accepts_gzip(self.headers.get("Accept-Encoding", ""))
+            )
+            if compressed:
+                data = gzip.compress(data, compresslevel=5, mtime=0)
             self.send_response(status)
+            if compressed:
+                self.send_header("Content-Encoding", "gzip")
+                self.send_header("Vary", "Accept-Encoding")
             self.send_header("Content-Type", content_type)
             self.send_header("Content-Length", str(len(data)))
             self.send_header("X-Content-Type-Options", "nosniff")
@@ -62,9 +99,21 @@ def handler_for(root):
             atlas = None
             try:
                 if parsed.path.startswith("/api/"):
+                    if upstream:
+                        if parsed.path == "/api/connection" and cloud_connection:
+                            return self.reply(200, cloud_connection.status())
+                        if cloud_connection and not cloud_connection.ready.is_set():
+                            return self.cloud_unavailable()
+                        return self.proxy_api(upstream)
+                    from .api_routes import collection_route
+                    from .storage import Atlas
+
                     atlas = Atlas(root, q.get("release"))
                     path = parsed.path
-                    if path == "/api/info":
+                    collection = collection_route(atlas, path, q)
+                    if collection is not None:
+                        out = collection
+                    elif path == "/api/info":
                         out = atlas.info()
                     elif path == "/api/dossiers":
                         out = atlas.dossiers()
@@ -131,7 +180,9 @@ def handler_for(root):
                     elif path == "/api/brief":
                         out = atlas.brief(q.get("q", ""), dossier=q.get("dossier"))
                     elif path == "/api/changes":
-                        out = atlas.changes(q.get("from", ""))
+                        out = atlas.changes(
+                            q.get("from", ""), q.get("limit"), q.get("offset", 0)
+                        )
                     else:
                         return self.reply(
                             404,
@@ -179,13 +230,82 @@ def handler_for(root):
                 if atlas:
                     atlas.close()
 
+        def cloud_unavailable(self):
+            return self.reply(
+                503,
+                {
+                    "error": "Reconnecting to your cloud atlas. Browsing will resume automatically when the connection returns. Saved maps remain on this device.",
+                    "code": "cloud_reconnecting"
+                    if cloud_connection
+                    else "cloud_unavailable",
+                },
+            )
+
+        def proxy_api(self, upstream):
+            # Only this fixed SSH-forwarded reader is reachable. No user headers,
+            # cookies, keys, redirect destinations or arbitrary hosts are forwarded.
+            connection = HTTPConnection("127.0.0.1", upstream.port, timeout=12)
+            try:
+                connection.request(
+                    "GET",
+                    self.path,
+                    headers={"Accept": "application/json", "Accept-Encoding": "gzip"},
+                )
+                response = connection.getresponse()
+                data = response.read(20_000_001)
+                if len(data) > 20_000_000 or not response.getheader(
+                    "Content-Type", ""
+                ).startswith("application/json"):
+                    return self.reply(
+                        502, {"error": "Unexpected cloud reader response"}
+                    )
+                if response.getheader("Content-Encoding") == "gzip":
+                    with gzip.GzipFile(fileobj=io.BytesIO(data)) as stream:
+                        data = stream.read(20_000_001)
+                    if len(data) > 20_000_000:
+                        return self.reply(
+                            502,
+                            {
+                                "error": "Cloud reader response exceeds the supported size"
+                            },
+                        )
+                if urlparse(self.path).path == "/api/info" and response.status == 200:
+                    value = json.loads(data)
+                    value["connection_mode"] = "private_cloud"
+                    data = json.dumps(value).encode()
+            except (OSError, HTTPException, ValueError) as error:
+                # Diagnose transport failures without recording queries or keys.
+                print(
+                    f"Cloud read failed ({type(error).__name__}); checking connection.",
+                    flush=True,
+                )
+                if cloud_connection:
+                    cloud_connection.invalidate()
+                return self.cloud_unavailable()
+            finally:
+                connection.close()
+            # Client cancellation is handled by do_GET, not reported as a
+            # failure of the healthy upstream connection.
+            if cloud_connection:
+                cloud_connection.note_response()
+            return self.reply(response.status, data)
+
     return Handler
 
 
-def serve(root, host="127.0.0.1", port=8765):
+def serve(root, host="127.0.0.1", port=8765, api_origin=None, cloud_connection=None):
     if host != "127.0.0.1":
         raise ValueError("Only 127.0.0.1 is supported; this is a local reader")
-    server = ThreadingHTTPServer((host, port), handler_for(root))
+    if not api_origin and os.environ.get("PRINCIPIA_SEMANTIC_HOME"):
+        from .semantic import load
+        from .storage import Atlas
+
+        atlas = Atlas(root)
+        try:
+            load(atlas)  # Warm the optional local encoder before accepting queries.
+        finally:
+            atlas.close()
+    server = ReaderServer((host, port), handler_for(root, api_origin, cloud_connection))
     server.daemon_threads = True
     print(
         f"Principia-Legacy is ready at http://{host}:{server.server_port}", flush=True

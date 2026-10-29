@@ -21,7 +21,11 @@ def prepare(archive, destination, hosts=None):
     if destination.exists():
         raise ValueError('Destination already exists; use a new immutable directory')
     prefix = 'principia-legacy/'
-    reader = {'__init__.py', 'common.py', 'records.py', 'storage.py', 'catalog.py', 'retrieval.py', 'works.py'}
+    reader = {
+        '__init__.py', 'common.py', 'records.py', 'storage.py', 'catalog.py',
+        'retrieval.py', 'works.py', 'compiler.py', 'queries.py', 'graph_queries.py',
+        'query_index.py', 'api_routes.py', 'exploration_index.py', 'semantic.py',
+    }
     licenses = {'LICENSE', 'DATA_LICENSE.md', 'THIRD_PARTY_NOTICES.md', 'GOVERNANCE.md'}
     selected = {}
     with zipfile.ZipFile(archive) as z:

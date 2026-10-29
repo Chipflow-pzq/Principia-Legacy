@@ -200,5 +200,84 @@
       "reusable launch vehicle",
       "rocket propulsion"
     ]
+  },
+  {
+    "references": [
+      "https://doi.org/10.1038/nn.3776",
+      "https://doi.org/10.1038/nature11129"
+    ],
+    "related": [
+      "neural population",
+      "nerve membrane"
+    ],
+    "terms": [
+      "neuronal state space",
+      "neural state space",
+      "neural population dynamics",
+      "neuronal population dynamics",
+      "neural manifolds",
+      "population activity trajectories"
+    ]
+  },
+  {
+    "related": [
+      "principal component analysis",
+      "singular value decomposition"
+    ],
+    "terms": [
+      "dimensionality reduction",
+      "dimension reduction",
+      "low dimensional representation",
+      "latent space"
+    ]
+  },
+  {
+    "terms": [
+      "principal component analysis",
+      "PCA",
+      "principal components"
+    ]
+  },
+  {
+    "related": [
+      "nerve membrane",
+      "Hodgkin Huxley"
+    ],
+    "terms": [
+      "action potential",
+      "nerve impulse",
+      "neuronal spike"
+    ]
+  },
+  {
+    "related": [
+      "neural population",
+      "nerve membrane"
+    ],
+    "terms": [
+      "neuronal dynamics",
+      "neural dynamics",
+      "neuron dynamics"
+    ]
+  },
+  {
+    "related": [
+      "optogenetics"
+    ],
+    "terms": [
+      "brain circuits",
+      "neural circuits",
+      "neuronal circuits"
+    ]
+  },
+  {
+    "related": [
+      "dynamical systems"
+    ],
+    "terms": [
+      "state space model",
+      "state space models",
+      "latent dynamical model"
+    ]
   }
 ]

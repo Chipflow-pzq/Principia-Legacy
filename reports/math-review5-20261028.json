@@ -1,0 +1,6 @@
+{
+  "formulas": 15627,
+  "failures": [],
+  "historicalWarnings": [],
+  "note": "Superseded immutable versions remain auditable. Control-character errors in current versions fail this check."
+}
