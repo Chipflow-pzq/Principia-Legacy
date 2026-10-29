@@ -1,6 +1,6 @@
 # Principia-Legacy 1.5 — current acceptance status
 
-**29 October 2026 · reader 1.5.0 · atlas 1.5.0-exploratory.** The owner accepted review5 and authorized public deployment plus a source PR. The public snapshot preserves the accepted scientific records unchanged. [Deployment verification and rollback](docs/DEPLOYMENT-1.5.md).
+**29 October 2026 · reader 1.5.0 · atlas 1.5.0-exploratory.** The accepted review5 content is now deployed at [the public URL](https://atlas.chipflow.net/web/legacy/). The public snapshot preserves its scientific records unchanged; the new GitHub PR is reserved for manual merging by the owner. [Deployment verification and rollback](docs/DEPLOYMENT-1.5.md).
 
 The Git source edition contains the complete 1.5 software and the existing 1.4.1 reference corpus. Counts below describe the full server dataset, not the smaller Git checkout.
 

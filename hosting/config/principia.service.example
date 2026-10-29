@@ -9,7 +9,7 @@ Group=principia
 WorkingDirectory=/opt/principia-legacy/hosting
 Environment=PRINCIPIA_BUNDLE=/opt/principia-legacy
 Environment=PYTHONDONTWRITEBYTECODE=1
-ExecStart=/opt/principia-legacy/.venv/bin/gunicorn --config /opt/principia-legacy/hosting/gunicorn.conf.py app:create_app()
+ExecStart=/opt/principia-legacy/.venv/bin/gunicorn --config /opt/principia-legacy/hosting/gunicorn.conf.py --no-control-socket app:create_app()
 Restart=on-failure
 RestartSec=3
 TimeoutStopSec=30

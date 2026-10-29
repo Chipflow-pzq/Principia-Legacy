@@ -1,0 +1,634 @@
+{
+  "verified_at": "2026-10-29T04:05:46.016129+00:00",
+  "url": "https://atlas.chipflow.net/web/legacy/",
+  "software_version": "1.5.0",
+  "scientific_release": "1.5.0-exploratory",
+  "deployed_code_commit": "6cc73ca9319c02d95df0fba388c07f0b7ba548c0",
+  "activation": {
+    "activated_at": "2026-10-29T03:59:46.293030+00:00",
+    "release_id": "1.5.0-exploratory",
+    "previous_release": "20261017073758Z-1.4.1-r2",
+    "current_release": "20261029-1.5.0",
+    "readiness_seconds": 2.319,
+    "nginx_configuration_changed": false,
+    "source_commit": "6cc73ca9319c02d95df0fba388c07f0b7ba548c0"
+  },
+  "database": {
+    "from_snapshot": "1.5.0-review5",
+    "release": "1.5.0-exploratory",
+    "source_snapshot_hash": "bd2161f6c40e05a9ac52a6aa831de5ab39024aa6f0f642d8d47c06a5f4558dd6",
+    "public_snapshot_hash": "dc046696082d63a5b1203255c87ef8c5423c495adfd12ced65f2b320bd71720d",
+    "scientific_content_unchanged": true,
+    "public_releases": [
+      "1.0.0-exploratory",
+      "1.1.0-exploratory",
+      "1.2.0-exploratory",
+      "1.3.0-exploratory",
+      "1.3.1-exploratory",
+      "1.4.0-exploratory",
+      "1.4.1-exploratory",
+      "1.5.0-exploratory"
+    ],
+    "historical_snapshot_hashes": {
+      "1.0.0-exploratory": "a10162e9d484a6965d50838c6e4a7b1631610f83511deb39804377b506f41f26",
+      "1.1.0-exploratory": "2a9f3ff6a2491d497b5708b9ec80e767287bf28d3858ba4d25f27eaf3e7b8bb6",
+      "1.2.0-exploratory": "6aeed0934f03eca2a0199bedb53488458ccb5835ccad19015b59a8d2420e1ecf",
+      "1.3.0-exploratory": "458f4b32bd4335b7acdd5c54d1c8da25995c149a656a5977823ea7af799a4ece",
+      "1.3.1-exploratory": "1c7e874593a7d883d25835befbaf5e236f82bd6fdfa13da5dfdc9bfed8e7621c",
+      "1.4.0-exploratory": "83e879c1f3bc3e57e139a9f3b0d15819cdbac738b2401f036412b086363596d5",
+      "1.4.1-exploratory": "44771bc72ce100da912984da42c26338a7cd6f7e912bc111b26a59c4c2d7a48f"
+    },
+    "sqlite_integrity": "ok",
+    "counts": {
+      "contribution": 5700,
+      "relation": 4211,
+      "source": 605,
+      "review": 13120
+    },
+    "reported_query": {
+      "ideas": 10,
+      "people": 5,
+      "works": 1,
+      "topics": 1
+    },
+    "database_bytes": 259166208,
+    "backup_sha256": "a469b5c17979b7bd893c79229983a05ac3372c2519fbdd3ac869b30e472e555d"
+  },
+  "database_sha256": "eb9ba67aea33ece67b5f2796ef64122f59396b1ecb0bf43bf8c3eb540311e4ec",
+  "semantic_index": {
+    "created_at": "2026-10-29T03:44:40+00:00",
+    "release_id": "1.5.0-exploratory",
+    "snapshot_hash": "dc046696082d63a5b1203255c87ef8c5423c495adfd12ced65f2b320bd71720d",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "fastembed": "0.7.4",
+    "model_files": {
+      "models--qdrant--all-MiniLM-L6-v2-onnx/snapshots/d13954661f83248295ba75c1ed411eef3b7b936e/tokenizer_config.json": "abda01c8c14c5151ae498aceb30db406d6b91242c394fd88d3b6fd5a63a101e6",
+      "models--qdrant--all-MiniLM-L6-v2-onnx/snapshots/d13954661f83248295ba75c1ed411eef3b7b936e/tokenizer.json": "851ca67100d372ca3ae031a6abd168f53489eebfd7d89523f35c5c9b4d372c3c",
+      "models--qdrant--all-MiniLM-L6-v2-onnx/snapshots/d13954661f83248295ba75c1ed411eef3b7b936e/model.onnx": "bbd7b466f6d58e646fdc2bd5fd67b2f5e93c0b687011bd4548c420f7bd46f0c5",
+      "models--qdrant--all-MiniLM-L6-v2-onnx/snapshots/d13954661f83248295ba75c1ed411eef3b7b936e/config.json": "1b4d8e2a3988377ed8b519a31d8d31025a25f1c5f8606998e8014111438efcd7",
+      "models--qdrant--all-MiniLM-L6-v2-onnx/snapshots/d13954661f83248295ba75c1ed411eef3b7b936e/special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+    },
+    "dimensions": 384,
+    "text_projection_version": 2,
+    "entries": 8998,
+    "sha256": {
+      "entries.json": "405c2d951443bb2fc3e6f3698ee537b1680c3d907be76d86cee054802b4c6c1a",
+      "vectors.npy": "ad0ddb9970d5a786ef37ae6ccb7891b310a88b9ce2f9e8f45291a8dac6f68a87"
+    }
+  },
+  "backend_tests": {
+    "passed": 167,
+    "platform": "macOS / Python 3.12"
+  },
+  "canary_api": {
+    "passed": true,
+    "scope": "Linux loopback, two Gunicorn workers, four concurrent clients",
+    "release_id": "1.5.0-exploratory",
+    "snapshot_hash": "dc046696082d63a5b1203255c87ef8c5423c495adfd12ced65f2b320bd71720d",
+    "check_count": 58,
+    "concurrent_distinct_search_p95_ms": 44.17,
+    "checks": [
+      {
+        "path": "/api/info",
+        "status": 200,
+        "ms": 20.49,
+        "bytes": 4506
+      },
+      {
+        "path": "/api/info?release=1.0.0-exploratory",
+        "status": 200,
+        "ms": 0.94,
+        "bytes": 4490
+      },
+      {
+        "path": "/api/info?release=1.1.0-exploratory",
+        "status": 200,
+        "ms": 0.71,
+        "bytes": 4493
+      },
+      {
+        "path": "/api/info?release=1.2.0-exploratory",
+        "status": 200,
+        "ms": 0.74,
+        "bytes": 4494
+      },
+      {
+        "path": "/api/info?release=1.3.0-exploratory",
+        "status": 200,
+        "ms": 0.7,
+        "bytes": 4494
+      },
+      {
+        "path": "/api/info?release=1.3.1-exploratory",
+        "status": 200,
+        "ms": 0.62,
+        "bytes": 4494
+      },
+      {
+        "path": "/api/info?release=1.4.0-exploratory",
+        "status": 200,
+        "ms": 0.59,
+        "bytes": 4498
+      },
+      {
+        "path": "/api/info?release=1.4.1-exploratory",
+        "status": 200,
+        "ms": 0.59,
+        "bytes": 4498
+      },
+      {
+        "path": "/api/search?q=neuronal+group+communication",
+        "status": 200,
+        "ms": 0.9,
+        "bytes": 47742
+      },
+      {
+        "path": "/api/works/w-semedo-communication-subspace",
+        "status": 200,
+        "ms": 1.21,
+        "bytes": 78745
+      },
+      {
+        "path": "/api/people/person-6411c99c49a22867",
+        "status": 200,
+        "ms": 0.88,
+        "bytes": 45474
+      },
+      {
+        "path": "/api/contributions/n-06c079f89793d2af",
+        "status": 200,
+        "ms": 0.86,
+        "bytes": 32459
+      },
+      {
+        "path": "/api/neighborhood?dossier=B3002",
+        "status": 200,
+        "ms": 0.9,
+        "bytes": 57946
+      },
+      {
+        "path": "/api/relations/connection-894d8c5b380eea7d",
+        "status": 200,
+        "ms": 0.81,
+        "bytes": 43955
+      },
+      {
+        "path": "/api/neighborhood?dossier=M06",
+        "status": 200,
+        "ms": 15.16,
+        "bytes": 271772
+      },
+      {
+        "path": "/api/neighborhood?dossier=P01",
+        "status": 200,
+        "ms": 12.57,
+        "bytes": 341821
+      },
+      {
+        "path": "/api/neighborhood?dossier=C01",
+        "status": 200,
+        "ms": 10.28,
+        "bytes": 286082
+      },
+      {
+        "path": "/api/neighborhood?dossier=E01",
+        "status": 200,
+        "ms": 8.01,
+        "bytes": 209815
+      },
+      {
+        "path": "/api/neighborhood?dossier=B01",
+        "status": 200,
+        "ms": 9.51,
+        "bytes": 268455
+      },
+      {
+        "path": "/api/dossiers/B3002",
+        "status": 200,
+        "ms": 1.82,
+        "bytes": 3859
+      },
+      {
+        "path": "/api/dossiers/B3002/contributions?limit=5",
+        "status": 200,
+        "ms": 2.26,
+        "bytes": 20133
+      },
+      {
+        "path": "/api/brief?dossier=B3002",
+        "status": 200,
+        "ms": 60.81,
+        "bytes": 233197
+      },
+      {
+        "path": "/api/changes?from=1.4.1-exploratory&limit=3",
+        "status": 200,
+        "ms": 407.05,
+        "bytes": 18464
+      },
+      {
+        "path": "/api/exploration-manifest",
+        "status": 200,
+        "ms": 1.77,
+        "bytes": 2309
+      },
+      {
+        "path": "/api/search?q=how+populations+of+brain+cells+talk",
+        "status": 200,
+        "ms": 35.37,
+        "bytes": 82101
+      },
+      {
+        "path": "/api/info?release=working",
+        "status": 404,
+        "ms": 0.95,
+        "bytes": 59
+      },
+      {
+        "path": "/api/info?release=1.5.0-review5",
+        "status": 404,
+        "ms": 0.63,
+        "bytes": 59
+      },
+      {
+        "path": "/api/changes?from=evaluation-baseline",
+        "status": 400,
+        "ms": 2.36,
+        "bytes": 33
+      },
+      {
+        "path": "/.env",
+        "status": 404,
+        "ms": 0.6,
+        "bytes": 30
+      },
+      {
+        "path": "/hosting.json",
+        "status": 404,
+        "ms": 0.87,
+        "bytes": 30
+      },
+      {
+        "path": "/build/atlas.sqlite",
+        "status": 404,
+        "ms": 0.81,
+        "bytes": 30
+      },
+      {
+        "path": "/api/authoring",
+        "status": 404,
+        "ms": 1.86,
+        "bytes": 59
+      },
+      {
+        "path": "/api/info",
+        "status": 405,
+        "ms": 1.84,
+        "bytes": 32
+      },
+      {
+        "path": "/api/info",
+        "status": 403,
+        "ms": 0.94,
+        "bytes": 25
+      },
+      {
+        "path": "/api/search?q=Alan+Turing",
+        "status": 200,
+        "ms": 21.45,
+        "bytes": 62007
+      },
+      {
+        "path": "/api/search?q=Hamiltonian+mechanics",
+        "status": 200,
+        "ms": 14.49,
+        "bytes": 1368
+      },
+      {
+        "path": "/api/search?q=neuronal+state+space",
+        "status": 200,
+        "ms": 14.09,
+        "bytes": 93825
+      },
+      {
+        "path": "/api/search?q=quantum+memory",
+        "status": 200,
+        "ms": 8.98,
+        "bytes": 7675
+      },
+      {
+        "path": "/api/search?q=AlphaFold",
+        "status": 200,
+        "ms": 14.4,
+        "bytes": 147064
+      },
+      {
+        "path": "/api/search?q=general+relativity",
+        "status": 200,
+        "ms": 15.18,
+        "bytes": 169349
+      },
+      {
+        "path": "/api/search?q=Transformer+architecture",
+        "status": 200,
+        "ms": 9.68,
+        "bytes": 63335
+      },
+      {
+        "path": "/api/search?q=double+machine+learning",
+        "status": 200,
+        "ms": 9.53,
+        "bytes": 105815
+      },
+      {
+        "path": "/api/search?q=sphere+packing",
+        "status": 200,
+        "ms": 10.36,
+        "bytes": 128628
+      },
+      {
+        "path": "/api/search?q=how+populations+of+brain+cells+talk",
+        "status": 200,
+        "ms": 1.19,
+        "bytes": 82101
+      },
+      {
+        "path": "/api/search?q=how+cells+process+genetic+instructions",
+        "status": 200,
+        "ms": 23.47,
+        "bytes": 39931
+      },
+      {
+        "path": "/api/search?q=how+machines+learn+from+language",
+        "status": 200,
+        "ms": 46.15,
+        "bytes": 26821
+      },
+      {
+        "path": "/api/search?q=Alan+Turing",
+        "status": 200,
+        "ms": 2.03,
+        "bytes": 62007
+      },
+      {
+        "path": "/api/search?q=Hamiltonian+mechanics",
+        "status": 200,
+        "ms": 15.34,
+        "bytes": 1368
+      },
+      {
+        "path": "/api/search?q=quantum+memory",
+        "status": 200,
+        "ms": 17.01,
+        "bytes": 7675
+      },
+      {
+        "path": "/api/search?q=neuronal+state+space",
+        "status": 200,
+        "ms": 28.37,
+        "bytes": 93825
+      },
+      {
+        "path": "/api/search?q=general+relativity",
+        "status": 200,
+        "ms": 19.96,
+        "bytes": 169349
+      },
+      {
+        "path": "/api/search?q=AlphaFold",
+        "status": 200,
+        "ms": 48.62,
+        "bytes": 147064
+      },
+      {
+        "path": "/api/search?q=double+machine+learning",
+        "status": 200,
+        "ms": 24.49,
+        "bytes": 105815
+      },
+      {
+        "path": "/api/search?q=sphere+packing",
+        "status": 200,
+        "ms": 21.52,
+        "bytes": 128628
+      },
+      {
+        "path": "/api/search?q=how+populations+of+brain+cells+talk",
+        "status": 200,
+        "ms": 7.68,
+        "bytes": 82101
+      },
+      {
+        "path": "/api/search?q=how+cells+process+genetic+instructions",
+        "status": 200,
+        "ms": 5.03,
+        "bytes": 39931
+      },
+      {
+        "path": "/api/search?q=how+machines+learn+from+language",
+        "status": 200,
+        "ms": 4.95,
+        "bytes": 26821
+      },
+      {
+        "path": "/api/search?q=Transformer+architecture",
+        "status": 200,
+        "ms": 44.17,
+        "bytes": 63335
+      }
+    ]
+  },
+  "public_https": {
+    "passed": true,
+    "base_url": "https://atlas.chipflow.net/web/legacy/",
+    "checks": [
+      {
+        "path": "/",
+        "status": 200,
+        "bytes": 468
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 468
+      },
+      {
+        "path": "assets/index-DimThnjL.js",
+        "status": 200,
+        "sha256": "008333aefe1845b1af30cf8b7146b3224cbce9c86d3398fef17517cba2f89ff9"
+      },
+      {
+        "path": "assets/index-Dd_Qw0yT.css",
+        "status": 200,
+        "sha256": "c5226175cb16e24311eae2947275a879e82ab966a3fb2618aa1c0e0406bd0d1b"
+      },
+      {
+        "path": ".env",
+        "status": 404
+      },
+      {
+        "path": ".git/config",
+        "status": 404
+      },
+      {
+        "path": "assets/.env",
+        "status": 404
+      },
+      {
+        "path": "assets/missing-file.js",
+        "status": 404
+      },
+      {
+        "path": "/",
+        "method": "POST",
+        "status": 405
+      },
+      {
+        "path": "healthz",
+        "status": 200,
+        "release_id": "1.5.0-exploratory"
+      }
+    ]
+  },
+  "public_browser": {
+    "passed": 6,
+    "failed": 0,
+    "projects": [
+      "desktop Chrome",
+      "Chromium iPhone 13 emulation"
+    ],
+    "journeys": [
+      {
+        "name": "hosted build keeps assets, search, profiles and reload within its mount",
+        "project": "desktop",
+        "status": "passed",
+        "duration_ms": 30934
+      },
+      {
+        "name": "hosted build keeps assets, search, profiles and reload within its mount",
+        "project": "mobile",
+        "status": "passed",
+        "duration_ms": 24142
+      },
+      {
+        "name": "published neuroscience route has insights, arrows and a continuous return",
+        "project": "desktop",
+        "status": "passed",
+        "duration_ms": 9827
+      },
+      {
+        "name": "public semantic search, formulas and historical links survive publication",
+        "project": "desktop",
+        "status": "passed",
+        "duration_ms": 13738
+      },
+      {
+        "name": "published neuroscience route has insights, arrows and a continuous return",
+        "project": "mobile",
+        "status": "passed",
+        "duration_ms": 7523
+      },
+      {
+        "name": "public semantic search, formulas and historical links survive publication",
+        "project": "mobile",
+        "status": "passed",
+        "duration_ms": 5672
+      }
+    ]
+  },
+  "performance": {
+    "first_view_ms": 4890,
+    "network_included": true,
+    "navigations": [
+      {
+        "domContentLoaded": 3951.0999999940395,
+        "transferSize": 768
+      }
+    ],
+    "searches": [
+      {
+        "q": "neuronal state space",
+        "ms": 330,
+        "totals": {
+          "ideas": 24,
+          "people": 3,
+          "works": 2,
+          "topics": 2
+        }
+      },
+      {
+        "q": "Alan Turing",
+        "ms": 230,
+        "totals": {
+          "ideas": 13,
+          "people": 1,
+          "works": 3,
+          "topics": 4
+        }
+      },
+      {
+        "q": "Hamiltonian mechanics",
+        "ms": 66,
+        "totals": {
+          "ideas": 0,
+          "people": 0,
+          "works": 0,
+          "topics": 2
+        }
+      },
+      {
+        "q": "how populations of brain cells talk",
+        "ms": 108,
+        "totals": {
+          "ideas": 17,
+          "topics": 2,
+          "works": 2,
+          "people": 5
+        }
+      },
+      {
+        "q": "quantum memory",
+        "ms": 87,
+        "totals": {
+          "ideas": 2,
+          "people": 0,
+          "works": 1,
+          "topics": 1
+        }
+      },
+      {
+        "q": "Transformer",
+        "ms": 262,
+        "totals": {
+          "ideas": 31,
+          "people": 8,
+          "works": 9,
+          "topics": 8
+        }
+      }
+    ],
+    "unexpected_origins": []
+  },
+  "service": {
+    "active": true,
+    "restarts": 0,
+    "memory_bytes_sample": 388194304,
+    "outgoing_network": "Restricted to loopback by systemd",
+    "reader_data_read_only": true
+  },
+  "publication": {
+    "branch": "codex/release-1.5",
+    "base": "7732dda",
+    "full_server_database_in_git": false,
+    "git_reference_corpus": "1.4.1-exploratory",
+    "qualified_human_audits": 0,
+    "new_paid_model_calls": 0
+  },
+  "retained_diagnostics": [
+    "Two initial canary browser cases exceeded the 30-second whole-journey timeout; the unchanged journeys passed in 32.3 and 36.4 seconds with a 90-second production-network test budget. No performance assertion was removed.",
+    "The canary smoke script initially used a nonexistent exploration manifest route and expected 404 instead of the intentional 400 for a private comparison. The fixture was corrected to the documented API; the adapter behavior was unchanged.",
+    "The Mac Python installation lacked its default CA bundle. HTTPS checks passed with certifi certificate verification enabled; TLS verification was never disabled.",
+    "The hardened Gunicorn 26 runtime disables its unused control socket; it otherwise tried to create a socket in the service account nonexistent home.",
+    "ONNX Runtime logs an inability to persist a telemetry identifier under the read-only service. The reader remains functional and outgoing non-loopback networking is denied."
+  ]
+}

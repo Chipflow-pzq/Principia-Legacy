@@ -21,6 +21,12 @@ The verified private review5 backup has 8,127 files and SHA-256 `a469b5c17979b7b
 
 ## Verification
 
-The publication branch passed 167 backend tests, TypeScript checking and both local and `/web/legacy/` frontend builds. Production activation and public checks are recorded in the dated deployment receipt after verification. This is an operational release of the accepted content; it does not claim new coverage or expert review.
+The publication branch passed 167 backend tests, TypeScript checking and both local and `/web/legacy/` frontend builds. **Activated at 03:59:46 UTC on 29 October 2026**, from code `6cc73ca9319c02d95df0fba388c07f0b7ba548c0`. New service readiness took 2.319 seconds. The existing Nginx configuration was preserved; earlier hashed asset chunks remain available for already-open tabs.
+
+The private canary passed **58 API and boundary checks**. The actual public HTTPS mount passed asset hashes, CSP, private-file denial and health checks. **All six desktop/mobile browser journeys passed**: search, profiles, works, insights, graphs, contextual return, formulas, semantic retrieval, old snapshot links and the exploration/settings interface. The neighbouring demo health check also passed.
+
+One fresh-browser first view took **4.89 seconds**; six network-inclusive searches took **66–330 ms**. Four-client distinct search p95 on server loopback was **44.17 ms**. The two-worker production service used approximately **388 MB** in the sampled measurement, with no service restarts. These are deployment samples, not a broad load guarantee.
+
+[Machine-readable deployment receipt](../reports/deployment-1.5-20261029.json) preserves hashes, exact checks, timing scope and initial diagnostics. Browser tests used Chromium mobile emulation, not physical phones. No paid model generation was rerun for this deployment. This is an operational release of the accepted content; it does not claim new coverage or expert review.
 
 [Accepted coverage audit](../reports/coverage-review5-20261028.md) · [Hosting instructions](../hosting/README.md) · [Historical 1.4.1 deployment](DEPLOYMENT-1.4.1.md).

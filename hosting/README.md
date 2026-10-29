@@ -27,7 +27,7 @@ python3 -m venv .venv
 python -m pip install --require-hashes -r hosting/requirements.txt
 export PRINCIPIA_BUNDLE="$PWD"
 cd hosting
-gunicorn --config gunicorn.conf.py 'app:create_app()'
+gunicorn --no-control-socket --config gunicorn.conf.py 'app:create_app()'
 ```
 
 Gunicorn listens on **127.0.0.1:8766**. A local health check with the example configuration is:
@@ -79,6 +79,6 @@ python3 start.py --data-home /private/authoring-data promote \
 
 This changes only the release identity and does not activate a reader. Build an index containing only the approved public snapshots, validate it, then configure the default and allowlist. Retain the old code, data and runtime for rollback.
 
-Semantic search is optional and server-side. Install `requirements-semantic.txt` in the hosting runtime; on the deployed Linux x86_64 platform the complete tested dependency set is pinned in `requirements-linux-1.5.txt`. Prebuild the index with `scripts/build_semantic_index.py` from the exact public snapshot. Set `PRINCIPIA_SEMANTIC_HOME`, `PRINCIPIA_MODEL_CACHE` and `HF_HUB_OFFLINE=1` in the service environment. The adapter refuses startup for a configured index that fails its snapshot or checksum checks. Startup and search do not download a model; normal reader requests have no provider dependency. Limit numerical library threads on small servers.
+Semantic search is optional and server-side. Install `requirements-semantic.txt` in the hosting runtime; on the deployed Linux x86_64 platform the complete tested dependency set is pinned in `requirements-linux-1.5.txt`. Prebuild the index with `scripts/build_semantic_index.py` from the exact public snapshot. Set `PRINCIPIA_SEMANTIC_HOME`, `PRINCIPIA_MODEL_CACHE` and `HF_HUB_OFFLINE=1` in the service environment. The adapter refuses startup for a configured index that fails its snapshot or checksum checks. Startup and search do not download a model; normal reader requests have no provider dependency. Limit numerical library threads on small servers. The hardened service disables Gunicorn 26's unused control socket so it does not attempt to write into the service account's home.
 
 Test the new release on a separate loopback listener before atomically switching the code symlink and restarting the service. Verify the HTTPS mount, historical links, semantic searches and neighbouring applications afterward. Retain a dated receipt of database, assets, runtime and source hashes.

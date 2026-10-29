@@ -13,7 +13,7 @@ test("hosted build keeps assets, search, profiles and reload within its mount", 
   await page.route("**/*", async (route) => {
     const url = new URL(route.request().url());
     requests.push(url.pathname);
-    expect(url.origin).toBe("http://127.0.0.1:18766");
+    expect(url.origin).toBe(new URL(testInfo.project.use.baseURL!).origin);
     expect(url.pathname).toMatch(/^\/web\/legacy\//);
     await route.continue();
   });
