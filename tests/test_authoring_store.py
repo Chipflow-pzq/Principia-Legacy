@@ -1,3 +1,4 @@
+from contextlib import closing
 import copy
 import json
 from pathlib import Path
@@ -128,10 +129,13 @@ def test_queued_request_timeout_is_explicitly_unsent_and_cleans_waiter(tmp_path)
         with pytest.raises(QueueBusy):
             with provider_slot(tmp_path, "fixture", wait_seconds=0):
                 pytest.fail("A fifth transmission slot was granted")
-        with sqlite3.connect(tmp_path / ".work/provider-slots.sqlite") as db:
+        with (
+            closing(sqlite3.connect(tmp_path / ".work/provider-slots.sqlite")) as db,
+            db,
+        ):
             assert db.execute("SELECT count(*) FROM slots").fetchone()[0] == 4
             assert db.execute("SELECT count(*) FROM waiting").fetchone()[0] == 0
-    with sqlite3.connect(tmp_path / ".work/provider-slots.sqlite") as db:
+    with closing(sqlite3.connect(tmp_path / ".work/provider-slots.sqlite")) as db, db:
         assert db.execute("SELECT count(*) FROM slots").fetchone()[0] == 0
 
 
@@ -174,7 +178,7 @@ def test_waiting_order_and_model_cooldown_do_not_starve_other_models(tmp_path):
     with provider_slot(tmp_path, "setup"):
         pass
     path = tmp_path / ".work/provider-slots.sqlite"
-    with sqlite3.connect(path) as db:
+    with closing(sqlite3.connect(path)) as db, db:
         db.execute(
             "INSERT INTO waiting(token,pid,model) VALUES(?,?,?)",
             ("earlier", os.getpid(), "A"),
@@ -184,7 +188,7 @@ def test_waiting_order_and_model_cooldown_do_not_starve_other_models(tmp_path):
             pytest.fail("New arrival skipped an eligible earlier request")
     provider_cooldown(tmp_path, "A", 30)
     with provider_slot(tmp_path, "B", wait_seconds=0):
-        with sqlite3.connect(path) as db:
+        with closing(sqlite3.connect(path)) as db, db:
             assert db.execute("SELECT token FROM waiting").fetchall() == [("earlier",)]
 
 

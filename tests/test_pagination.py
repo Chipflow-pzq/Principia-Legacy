@@ -31,9 +31,12 @@ def test_compilation_does_not_hold_authoring_lock_during_indexing(
     acquired = []
 
     def populate(*args):
-        with sqlite3.connect(
-            atlas_root / ".work/coordination.sqlite", timeout=0.1
-        ) as db:
+        with (
+            closing(
+                sqlite3.connect(atlas_root / ".work/coordination.sqlite", timeout=0.1)
+            ) as db,
+            db,
+        ):
             db.execute("BEGIN IMMEDIATE")
             acquired.append(True)
         return original(*args)

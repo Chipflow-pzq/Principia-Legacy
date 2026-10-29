@@ -1,5 +1,6 @@
 """Contract and access-boundary tests against the actual frozen reader database."""
 
+from contextlib import closing
 import json
 import os
 import shutil
@@ -36,8 +37,11 @@ def app():
             for name in ("corpus", "manifests", "config", "tours"):
                 (bundle / name).symlink_to(source / name, target_is_directory=True)
             build(bundle, "1.4.1-exploratory")
-        with sqlite3.connect(
-            (bundle / "build/atlas.sqlite").resolve().as_uri() + "?mode=ro", uri=True
+        with closing(
+            sqlite3.connect(
+                (bundle / "build/atlas.sqlite").resolve().as_uri() + "?mode=ro",
+                uri=True,
+            )
         ) as db:
             current = db.execute(
                 "SELECT value FROM metadata WHERE key='current_release'"
