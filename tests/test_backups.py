@@ -49,3 +49,28 @@ def test_review_snapshot_excludes_authoring_caches_and_pins_release(tmp_path):
     assert not (destination / ".work/jobs").exists()
     with tarfile.open(tmp_path / "review.tar.gz") as archive:
         assert not any(name.startswith(".work/") for name in archive.getnames())
+
+
+def test_backup_closes_all_sqlite_handles_before_returning(tmp_path, monkeypatch):
+    import sqlite3
+    from principia_legacy import backups
+
+    connections = []
+    real_connect = sqlite3.connect
+
+    def connect(*args, **kwargs):
+        db = real_connect(*args, **kwargs)
+        connections.append(db)  # Retain references: garbage collection cannot hide a leak.
+        return db
+
+    monkeypatch.setattr(backups.sqlite3, "connect", connect)
+    root = tmp_path / "data"
+    write_json(root / "corpus/example.json", {"evidence": "original"})
+    result = backup(root, tmp_path / "archive.tar.gz")
+    assert result["files"] == 2
+    for db in connections:
+        with pytest.raises(sqlite3.ProgrammingError, match="closed"):
+            db.execute("SELECT 1")
+    with tarfile.open(tmp_path / "archive.tar.gz") as archive:
+        assert "corpus/example.json" in archive.getnames()
+        assert all("\\" not in name for name in archive.getnames())

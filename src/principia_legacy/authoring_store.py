@@ -1,6 +1,6 @@
 """One private writer, recoverable multi-file admissions, and conservative usage estimates."""
 
-from contextlib import contextmanager
+from contextlib import closing, contextmanager
 import json
 from pathlib import Path
 import sqlite3
@@ -173,6 +173,48 @@ class QueueBusy(RuntimeError):
     """The request never acquired a transmission slot."""
 
 
+def _process_alive(pid):
+    if pid <= 0:
+        return False
+    if pid == os.getpid():
+        return True
+    if os.name == "nt":
+        # os.kill(pid, 0) can terminate a Windows process. Query its status instead.
+        import ctypes
+        from ctypes import wintypes
+
+        kernel = ctypes.WinDLL("kernel32", use_last_error=True)
+        kernel.OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
+        kernel.OpenProcess.restype = wintypes.HANDLE
+        kernel.GetExitCodeProcess.argtypes = [
+            wintypes.HANDLE,
+            ctypes.POINTER(wintypes.DWORD),
+        ]
+        kernel.GetExitCodeProcess.restype = wintypes.BOOL
+        kernel.CloseHandle.argtypes = [wintypes.HANDLE]
+        kernel.CloseHandle.restype = wintypes.BOOL
+        handle = kernel.OpenProcess(0x1000, False, pid)  # QUERY_LIMITED_INFORMATION
+        if not handle:
+            return (
+                ctypes.get_last_error() != 87
+            )  # Invalid PID; access denial is not death.
+        try:
+            code = wintypes.DWORD()
+            return (
+                not kernel.GetExitCodeProcess(handle, ctypes.byref(code))
+                or code.value == 259
+            )
+        finally:
+            kernel.CloseHandle(handle)
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True
+    return True
+
+
 @contextmanager
 def provider_slot(root, model="", wait_seconds=600):
     """Four shared slots, FIFO among models not in a provider cooldown."""
@@ -180,7 +222,7 @@ def provider_slot(root, model="", wait_seconds=600):
     path.parent.mkdir(parents=True, exist_ok=True)
     token = str(uuid.uuid4())
     deadline = time.monotonic() + wait_seconds
-    with sqlite3.connect(path, timeout=30) as db:
+    with closing(sqlite3.connect(path, timeout=30)) as db, db:
         db.executescript("""
         CREATE TABLE IF NOT EXISTS slots(token TEXT PRIMARY KEY,pid INTEGER);
         CREATE TABLE IF NOT EXISTS cooldowns(model TEXT PRIMARY KEY,until REAL);
@@ -192,20 +234,16 @@ def provider_slot(root, model="", wait_seconds=600):
         )
     try:
         while True:
-            with sqlite3.connect(path, timeout=30) as db:
+            with closing(sqlite3.connect(path, timeout=30)) as db, db:
                 db.execute("BEGIN IMMEDIATE")
                 for table in ("slots", "waiting"):
                     for old, pid in db.execute(
                         "SELECT token,pid FROM " + table
                     ).fetchall():
-                        try:
-                            os.kill(pid, 0)
-                        except ProcessLookupError:
+                        if not _process_alive(pid):
                             db.execute(
                                 "DELETE FROM " + table + " WHERE token=?", (old,)
                             )
-                        except PermissionError:
-                            pass
                 first = db.execute(
                     "SELECT w.token FROM waiting w LEFT JOIN cooldowns c ON w.model=c.model WHERE coalesce(c.until,0)<=? ORDER BY w.sequence LIMIT 1",
                     (time.time(),),
@@ -223,7 +261,7 @@ def provider_slot(root, model="", wait_seconds=600):
             time.sleep(0.1)
         yield
     finally:
-        with sqlite3.connect(path, timeout=30) as db:
+        with closing(sqlite3.connect(path, timeout=30)) as db, db:
             db.execute("DELETE FROM slots WHERE token=?", (token,))
             db.execute("DELETE FROM waiting WHERE token=?", (token,))
 
@@ -231,7 +269,7 @@ def provider_slot(root, model="", wait_seconds=600):
 def provider_cooldown(root, model, seconds):
     """An explicit 429 pauses this model for every local authoring worker."""
     path = Path(root) / ".work/provider-slots.sqlite"
-    with sqlite3.connect(path, timeout=30) as db:
+    with closing(sqlite3.connect(path, timeout=30)) as db, db:
         db.execute(
             "CREATE TABLE IF NOT EXISTS cooldowns(model TEXT PRIMARY KEY,until REAL)"
         )

@@ -186,3 +186,21 @@ def test_waiting_order_and_model_cooldown_do_not_starve_other_models(tmp_path):
     with provider_slot(tmp_path, "B", wait_seconds=0):
         with sqlite3.connect(path) as db:
             assert db.execute("SELECT token FROM waiting").fetchall() == [("earlier",)]
+
+
+def test_process_probe_preserves_live_worker_and_detects_exit():
+    import os
+    import subprocess
+    import sys
+    from principia_legacy.authoring_store import _process_alive
+
+    assert _process_alive(os.getpid())
+    assert not _process_alive(0)
+    child = subprocess.Popen([sys.executable, "-c", "import time; time.sleep(30)"])
+    try:
+        assert _process_alive(child.pid)
+        assert child.poll() is None
+    finally:
+        child.terminate()
+        child.wait(timeout=5)
+    assert not _process_alive(child.pid)

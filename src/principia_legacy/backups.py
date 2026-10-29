@@ -5,6 +5,7 @@ the reader. Explicit review snapshots exclude private caches and pin a frozen
 release. Credentials stay outside the data home in both cases.
 """
 
+from contextlib import closing
 from hashlib import sha256
 import io
 import json
@@ -86,13 +87,20 @@ def backup(root, output, review_release=None):
             prefix="principia-ledger-"
         ) as temporary_ledger:
             ledger = Path(temporary_ledger) / "coordination.sqlite"
-            entries = [(str(p.relative_to(root)), p) for p in files]
+            entries = [(p.relative_to(root).as_posix(), p) for p in files]
             if not review_release:
-                with sqlite3.connect(
-                    (root / ".work/coordination.sqlite").as_uri() + "?mode=ro", uri=True
-                ) as source:
-                    with sqlite3.connect(ledger) as destination:
-                        source.backup(destination)
+                # A SQLite transaction context does not close its file handle.
+                # Close both before archiving/removing the temporary ledger.
+                with (
+                    closing(
+                        sqlite3.connect(
+                            (root / ".work/coordination.sqlite").as_uri() + "?mode=ro",
+                            uri=True,
+                        )
+                    ) as source,
+                    closing(sqlite3.connect(ledger)) as destination,
+                ):
+                    source.backup(destination)
                 entries.append((".work/coordination.sqlite", ledger))
             manifest = {
                 "format": "principia-review-snapshot/v1"
