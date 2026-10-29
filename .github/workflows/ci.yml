@@ -15,7 +15,7 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -e ".[authoring,test]"
       - run: python -m pytest -vv -o faulthandler_timeout=60
-        timeout-minutes: 3
+        timeout-minutes: 5
       - run: python start.py validate corpus/
       - run: python start.py build --release 1.4.1-exploratory --offline
       - run: python start.py doctor

@@ -55,7 +55,12 @@ def test_compiled_index_is_readable_after_atomic_replacement(atlas_root):
     before = index.stat().st_ino
     build(atlas_root)
     assert index.stat().st_ino != before
-    assert index.stat().st_mode & 0o777 == 0o644
+    # Windows exposes the read-only flag rather than POSIX group/other modes.
+    # Atomic replacement and actual query access are verified on every platform.
+    import os
+
+    if os.name != "nt":
+        assert index.stat().st_mode & 0o777 == 0o644
     with closing(Atlas(atlas_root)) as reader:
         assert reader.info()["release_id"] == "working"
 
